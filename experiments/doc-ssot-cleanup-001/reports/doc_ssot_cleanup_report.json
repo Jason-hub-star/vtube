@@ -1,0 +1,37 @@
+{
+  "experiment_id": "DOC-SSOT-CLEANUP-001",
+  "date": "2026-06-03",
+  "status": "VERIFIED",
+  "inputs": [
+    "/Users/family/jason/Vtube/2d-vtuber-ai-tool-plan.md",
+    "/Users/family/jason/Vtube/vtube-validation-evidence-log.md",
+    "/Users/family/jason/Vtube/experiments/live2d-keypose-spec-001/reports/live2d_keypose_spec.md",
+    "/Users/family/.codex/skills/vtube-custom-parts-validation/references/current-pattern.md",
+    "/Users/family/jason/jason-agent-harness-template/harnesses/vtube-doc-ssot-cleanup.md"
+  ],
+  "outputs": [
+    "/Users/family/jason/Vtube/2d-vtuber-ai-tool-plan.md",
+    "/Users/family/jason/Vtube/docs/status/PROJECT-STATUS.md",
+    "/Users/family/jason/Vtube/docs/archive/ARCHIVE-INDEX.md",
+    "/Users/family/jason/Vtube/docs/archive/2026-06-03-legacy-2d-vtuber-ai-tool-plan.md"
+  ],
+  "metrics": {
+    "doc_like_files_excluding_external_repos_before": 58,
+    "largest_superseded_doc_lines": 1115
+  },
+  "result": {
+    "ssot_entrypoint_created": true,
+    "current_status_created": true,
+    "legacy_plan_archived": true,
+    "evidence_deleted": false,
+    "production_direction": "Live2D/Cubism production rigging",
+    "png_frame_swap_as_production": false
+  },
+  "human_review": {
+    "required": false,
+    "verdict": "PASS",
+    "notes": "Cleanup is structural only. No evidence report was deleted."
+  },
+  "decision": "keep",
+  "next_action": "Run PSD-LAYER-SCHEMA-001 and LIVE2D-PARAM-MAP-001."
+}

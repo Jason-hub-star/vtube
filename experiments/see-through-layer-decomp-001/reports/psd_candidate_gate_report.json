@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "experiment_id": "see-through-layer-decomp-001",
+  "generated_at": "2026-06-04T02:57:18.804073+00:00",
+  "status": "BLOCKED_NO_O_LAYERS",
+  "source_manifest": "experiments/see-through-layer-decomp-001/layer_manifest.json",
+  "source_review": "experiments/see-through-layer-decomp-001/reports/part_visual_review.json",
+  "gate": {
+    "accepted_verdict": "O",
+    "require_production_candidate": true,
+    "excluded_verdicts": [
+      "X",
+      "REVISE",
+      "REFERENCE_ONLY",
+      "UNREVIEWED"
+    ]
+  },
+  "accepted_layer_count": 0,
+  "excluded_layer_count": 0,
+  "accepted_layers": [],
+  "excluded_layers": [],
+  "psd_writer": null,
+  "psd_candidate": "experiments/see-through-layer-decomp-001/import_ready_candidate.psd",
+  "import_ready_psd": "experiments/see-through-layer-decomp-001/import_ready.psd",
+  "psd_metadata": {
+    "exists": false
+  },
+  "cubism_import_smoke": null,
+  "cubism_gate_note": "Cubism Editor actual import is still required before accepting this See-through PSD."
+}

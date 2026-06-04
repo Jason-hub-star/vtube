@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "experiment_id": "concept-regeneration-001",
+  "date": "2026-06-04T02:08:34Z",
+  "cubism_version": "Live2D Cubism Editor 5.3.01",
+  "input_psd": "experiments/concept-regeneration-001/import_ready_candidate.psd",
+  "cubism_import_success": true,
+  "layers_flattened": false,
+  "visible_layer_evidence": [
+    "choker",
+    "mouth_line",
+    "R_highlight",
+    "L_highlight",
+    "neck",
+    "face_underpaint"
+  ],
+  "evidence_screenshot": "experiments/concept-regeneration-001/reports/cubism_smoke_evidence/cubism_import_layers_visible.png",
+  "reviewer": "Codex visual smoke",
+  "notes": [
+    "Cubism Editor window title showed import_ready_candidate.",
+    "The left Parts panel showed individual layer entries, so the PSD was not flattened.",
+    "This is a technical smoke using AI-generated clean smoke layers, not final art-quality approval for all concept parts."
+  ]
+}

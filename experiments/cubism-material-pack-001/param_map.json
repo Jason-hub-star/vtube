@@ -1,0 +1,78 @@
+{
+  "experiment_id": "cubism-material-pack-001",
+  "date": "2026-06-03",
+  "parameters": {
+    "ParamEyeLOpen": {
+      "open": {
+        "value": 1.0,
+        "reference": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png"
+      },
+      "half": {
+        "value": 0.5,
+        "reference": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/blink/blink_half_corrected_full.png"
+      },
+      "mostly_closed": {
+        "value": 0.2,
+        "reference": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/blink/blink_mostly_closed_corrected_full.png"
+      },
+      "closed": {
+        "value": 0.0,
+        "reference": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/blink/blink_closed_corrected_full.png"
+      }
+    },
+    "ParamEyeROpen": {
+      "open": {
+        "value": 1.0,
+        "reference": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png"
+      },
+      "half": {
+        "value": 0.5,
+        "reference": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/blink/blink_half_corrected_full.png"
+      },
+      "mostly_closed": {
+        "value": 0.2,
+        "reference": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/blink/blink_mostly_closed_corrected_full.png"
+      },
+      "closed": {
+        "value": 0.0,
+        "reference": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/blink/blink_closed_corrected_full.png"
+      }
+    },
+    "ParamMouthOpenY": {
+      "neutral_smile": {
+        "value": 0.0,
+        "reference_glob": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/mouth/*neutral_smile*_corrected_full.png"
+      },
+      "small_open": {
+        "value": 0.3,
+        "reference_glob": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/mouth/*small_open*_corrected_full.png"
+      },
+      "o_vowel": {
+        "value": 0.5,
+        "reference_glob": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/mouth/*o_vowel*_corrected_full.png"
+      },
+      "wide_or_happy_open": {
+        "value": 0.85,
+        "reference_glob": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/mouth/*open*_corrected_full.png"
+      }
+    },
+    "ParamMouthForm": {
+      "smile": {
+        "value": 1.0,
+        "reference_glob": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/mouth/*smile*_corrected_full.png"
+      },
+      "round": {
+        "value": -1.0,
+        "reference_glob": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/mouth/*o_vowel*_corrected_full.png"
+      },
+      "neutral": {
+        "value": 0.0,
+        "reference": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png"
+      }
+    }
+  },
+  "notes": [
+    "References are key-pose guides for Cubism keyforms, not production frame-swap layers.",
+    "Blink remains REVISE/REFERENCE_ONLY until a passing Cubism visual review exists."
+  ]
+}

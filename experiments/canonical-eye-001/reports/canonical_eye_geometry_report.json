@@ -1,0 +1,80 @@
+{
+  "experiment_id": "CANON-EYE-001",
+  "date": "2026-06-02",
+  "status": "VERIFIED",
+  "inputs": [
+    "/Users/family/jason/Vtube/experiments/imagegen-limit-test-001/generated/canonical_front.png",
+    "/Users/family/jason/Vtube/experiments/coordinate-align-001/reports/coordinate_alignment_report.json"
+  ],
+  "outputs": [
+    "/Users/family/jason/Vtube/experiments/canonical-eye-001/masks/left_eye_roi.png",
+    "/Users/family/jason/Vtube/experiments/canonical-eye-001/masks/right_eye_roi.png",
+    "/Users/family/jason/Vtube/experiments/canonical-eye-001/overlays/canonical_eye_geometry_overlay.png"
+  ],
+  "metrics": {
+    "sides": {
+      "left": {
+        "iris_center": [
+          686.75,
+          300.02
+        ],
+        "previous_iris_center": [
+          686.75,
+          300.02
+        ],
+        "iris_center_delta_px": 0.003,
+        "iris_bbox": [
+          673,
+          282,
+          702,
+          315
+        ],
+        "eye_roi_bbox": [
+          619,
+          251,
+          754,
+          340
+        ],
+        "mask": "/Users/family/jason/Vtube/experiments/canonical-eye-001/masks/left_eye_roi.png",
+        "pass": true
+      },
+      "right": {
+        "iris_center": [
+          802.77,
+          299.32
+        ],
+        "previous_iris_center": [
+          802.77,
+          299.32
+        ],
+        "iris_center_delta_px": 0.005,
+        "iris_bbox": [
+          789,
+          280,
+          818,
+          315
+        ],
+        "eye_roi_bbox": [
+          735,
+          250,
+          870,
+          339
+        ],
+        "mask": "/Users/family/jason/Vtube/experiments/canonical-eye-001/masks/right_eye_roi.png",
+        "pass": true
+      }
+    }
+  },
+  "result": {
+    "iris_center_delta": "PASS",
+    "eye_roi_bbox": "PASS",
+    "shape_mask_saved": "PASS"
+  },
+  "human_review": {
+    "required": true,
+    "verdict": "REVISE",
+    "notes": "Geometry extraction is technical evidence; final art layer strategy still needs visual review."
+  },
+  "decision": "keep",
+  "next_action": "Use canonical eye ROI masks for blink-only layer tests; do not use full eye sheet grouping."
+}

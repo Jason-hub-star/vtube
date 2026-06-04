@@ -1,0 +1,320 @@
+{
+  "experiment_id": "BLINK-STAGE-001",
+  "date": "2026-06-03",
+  "status": "OBSERVED",
+  "inputs": [
+    "/Users/family/jason/Vtube/experiments/asset-generation-2048-001/raw/blink_stage_sheet_source.png",
+    "/Users/family/jason/Vtube/experiments/blink-stage-001/canonical/canonical_front_2048.png",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/reports/anchor_2048_report.json",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/reports/manual_adjustments_2048.json"
+  ],
+  "outputs": [
+    "/Users/family/jason/Vtube/experiments/blink-stage-001/preview/index.html",
+    "/Users/family/jason/Vtube/experiments/blink-stage-001/reports/blink_stage_report.json",
+    "/Users/family/jason/Vtube/experiments/blink-stage-001/layers/blink_half_full.png",
+    "/Users/family/jason/Vtube/experiments/blink-stage-001/layers/blink_mostly_closed_full.png",
+    "/Users/family/jason/Vtube/experiments/blink-stage-001/layers/blink_closed_full.png",
+    "/Users/family/jason/Vtube/experiments/blink-stage-001/overlays/blink_half_overlay.png",
+    "/Users/family/jason/Vtube/experiments/blink-stage-001/overlays/blink_mostly_closed_overlay.png",
+    "/Users/family/jason/Vtube/experiments/blink-stage-001/overlays/blink_closed_overlay.png"
+  ],
+  "metrics": {
+    "canvas_size": [
+      2048,
+      2048
+    ],
+    "left_eye_roi": [
+      742,
+      626,
+      208,
+      138
+    ],
+    "right_eye_roi": [
+      1083,
+      626,
+      208,
+      138
+    ],
+    "saved_manual_blink_delta": {
+      "dx": -9.46,
+      "dy": 37.842,
+      "calibrated_canvas_delta": true
+    },
+    "placement_strategy": "eye_roi_center_no_delta",
+    "manual_blink_delta_applied": {
+      "dx": 0.0,
+      "dy": 0.0,
+      "applied": false
+    },
+    "stage_count": 3,
+    "inside_eye_roi_stage_count": 3,
+    "coverage_by_stage": {
+      "half": 0.5204675306577481,
+      "mostly_closed": 0.40515259197324416,
+      "closed": 0.2796474358974359
+    }
+  },
+  "result": {
+    "stage_layers_created": "PASS",
+    "full_canvas_layers": "PASS",
+    "no_full_eye_replacement": "PASS",
+    "both_parts_inside_eye_roi": "PASS",
+    "coverage_decreases_by_stage": "PASS",
+    "visual_alignment": "REVISE"
+  },
+  "stages": [
+    {
+      "stage": "half",
+      "parts": [
+        {
+          "side": "left",
+          "source_bbox": [
+            81,
+            295,
+            228,
+            135
+          ],
+          "crop": "/Users/family/jason/Vtube/experiments/blink-stage-001/crops/half_left_crop.png",
+          "source_area": 30780,
+          "scale": 0.9759615384615384,
+          "target_center": [
+            846.0,
+            695.0
+          ],
+          "alpha_bbox": [
+            744,
+            639,
+            204,
+            113
+          ],
+          "alpha_center": [
+            855.815,
+            693.905
+          ],
+          "placement_error_px": 9.876,
+          "inside_eye_roi": true,
+          "full_layer": "/Users/family/jason/Vtube/experiments/blink-stage-001/layers/half_left_full.png",
+          "eye_roi": [
+            742,
+            626,
+            208,
+            138
+          ],
+          "roi_alpha_coverage": 0.5184294871794872
+        },
+        {
+          "side": "right",
+          "source_bbox": [
+            415,
+            295,
+            229,
+            134
+          ],
+          "crop": "/Users/family/jason/Vtube/experiments/blink-stage-001/crops/half_right_crop.png",
+          "source_area": 30686,
+          "scale": 0.9712918660287081,
+          "target_center": [
+            1187.0,
+            695.0
+          ],
+          "alpha_bbox": [
+            1085,
+            639,
+            204,
+            112
+          ],
+          "alpha_center": [
+            1175.657,
+            693.708
+          ],
+          "placement_error_px": 11.416,
+          "inside_eye_roi": true,
+          "full_layer": "/Users/family/jason/Vtube/experiments/blink-stage-001/layers/half_right_full.png",
+          "eye_roi": [
+            1083,
+            626,
+            208,
+            138
+          ],
+          "roi_alpha_coverage": 0.522505574136009
+        }
+      ],
+      "combined_layer": "/Users/family/jason/Vtube/experiments/blink-stage-001/layers/blink_half_full.png",
+      "overlay": "/Users/family/jason/Vtube/experiments/blink-stage-001/overlays/blink_half_overlay.png",
+      "coverage_mean": 0.5204675306577481,
+      "both_inside_eye_roi": true,
+      "human_verdict": "REVISE"
+    },
+    {
+      "stage": "mostly_closed",
+      "parts": [
+        {
+          "side": "left",
+          "source_bbox": [
+            790,
+            344,
+            210,
+            96
+          ],
+          "crop": "/Users/family/jason/Vtube/experiments/blink-stage-001/crops/mostly_closed_left_crop.png",
+          "source_area": 20160,
+          "scale": 1.068421052631579,
+          "target_center": [
+            846.0,
+            695.0
+          ],
+          "alpha_bbox": [
+            744,
+            654,
+            204,
+            82
+          ],
+          "alpha_center": [
+            850.751,
+            690.933
+          ],
+          "placement_error_px": 6.254,
+          "inside_eye_roi": true,
+          "full_layer": "/Users/family/jason/Vtube/experiments/blink-stage-001/layers/mostly_closed_left_full.png",
+          "eye_roi": [
+            742,
+            626,
+            208,
+            138
+          ],
+          "roi_alpha_coverage": 0.4047867892976589
+        },
+        {
+          "side": "right",
+          "source_bbox": [
+            1103,
+            344,
+            210,
+            96
+          ],
+          "crop": "/Users/family/jason/Vtube/experiments/blink-stage-001/crops/mostly_closed_right_crop.png",
+          "source_area": 20160,
+          "scale": 1.068421052631579,
+          "target_center": [
+            1187.0,
+            695.0
+          ],
+          "alpha_bbox": [
+            1085,
+            654,
+            204,
+            82
+          ],
+          "alpha_center": [
+            1181.549,
+            690.859
+          ],
+          "placement_error_px": 6.845,
+          "inside_eye_roi": true,
+          "full_layer": "/Users/family/jason/Vtube/experiments/blink-stage-001/layers/mostly_closed_right_full.png",
+          "eye_roi": [
+            1083,
+            626,
+            208,
+            138
+          ],
+          "roi_alpha_coverage": 0.40551839464882944
+        }
+      ],
+      "combined_layer": "/Users/family/jason/Vtube/experiments/blink-stage-001/layers/blink_mostly_closed_full.png",
+      "overlay": "/Users/family/jason/Vtube/experiments/blink-stage-001/overlays/blink_mostly_closed_overlay.png",
+      "coverage_mean": 0.40515259197324416,
+      "both_inside_eye_roi": true,
+      "human_verdict": "REVISE"
+    },
+    {
+      "stage": "closed",
+      "parts": [
+        {
+          "side": "left",
+          "source_bbox": [
+            1476,
+            368,
+            208,
+            72
+          ],
+          "crop": "/Users/family/jason/Vtube/experiments/blink-stage-001/crops/closed_left_crop.png",
+          "source_area": 14976,
+          "scale": 1.0797872340425532,
+          "target_center": [
+            846.0,
+            695.0
+          ],
+          "alpha_bbox": [
+            744,
+            666,
+            204,
+            57
+          ],
+          "alpha_center": [
+            848.84,
+            691.796
+          ],
+          "placement_error_px": 4.282,
+          "inside_eye_roi": true,
+          "full_layer": "/Users/family/jason/Vtube/experiments/blink-stage-001/layers/closed_left_full.png",
+          "eye_roi": [
+            742,
+            626,
+            208,
+            138
+          ],
+          "roi_alpha_coverage": 0.27835841694537344
+        },
+        {
+          "side": "right",
+          "source_bbox": [
+            1782,
+            368,
+            207,
+            71
+          ],
+          "crop": "/Users/family/jason/Vtube/experiments/blink-stage-001/crops/closed_right_crop.png",
+          "source_area": 14697,
+          "scale": 1.085561497326203,
+          "target_center": [
+            1187.0,
+            695.0
+          ],
+          "alpha_bbox": [
+            1085,
+            666,
+            204,
+            57
+          ],
+          "alpha_center": [
+            1182.474,
+            692.34
+          ],
+          "placement_error_px": 5.25,
+          "inside_eye_roi": true,
+          "full_layer": "/Users/family/jason/Vtube/experiments/blink-stage-001/layers/closed_right_full.png",
+          "eye_roi": [
+            1083,
+            626,
+            208,
+            138
+          ],
+          "roi_alpha_coverage": 0.2809364548494983
+        }
+      ],
+      "combined_layer": "/Users/family/jason/Vtube/experiments/blink-stage-001/layers/blink_closed_full.png",
+      "overlay": "/Users/family/jason/Vtube/experiments/blink-stage-001/overlays/blink_closed_overlay.png",
+      "coverage_mean": 0.2796474358974359,
+      "both_inside_eye_roi": true,
+      "human_verdict": "REVISE"
+    }
+  ],
+  "human_review": {
+    "required": true,
+    "verdict": "REVISE",
+    "notes": "Review whether stages read as eyelid closure rather than eyebrow/eyeliner. Numeric ROI is not enough."
+  },
+  "decision": "revise",
+  "next_action": "Open preview/index.html and visually review half/mostly_closed/closed stages. If visual REVISE/PASS, run BLINK-CALIBRATION-001 to save a blink-specific correction."
+}

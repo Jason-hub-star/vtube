@@ -1,0 +1,66 @@
+{
+  "experiment_id": "BLINK-LABEL-001",
+  "date": "2026-06-02T15:24:53.098Z",
+  "source": "saved_with_review",
+  "complete": true,
+  "selected": "half",
+  "selected_label_complete": true,
+  "labels": {
+    "half": {
+      "stage_label": "half",
+      "semantic_type": "eyelid_closure",
+      "order_label": "half",
+      "notes": ""
+    },
+    "mostly_closed": {
+      "stage_label": "mostly_closed",
+      "semantic_type": "blink_stage",
+      "order_label": "mostly_closed",
+      "source": "inferred_from_file_candidate"
+    },
+    "closed": {
+      "stage_label": "closed",
+      "semantic_type": "blink_stage",
+      "order_label": "closed",
+      "source": "inferred_from_file_candidate"
+    }
+  },
+  "placements": {
+    "half": {
+      "dx": -1,
+      "dy": 23,
+      "scale": 1,
+      "opacity": 0.65,
+      "viewMode": "compare",
+      "unit": "display_px",
+      "display_dx": -1,
+      "display_dy": 23,
+      "canvas_dx": -3.153,
+      "canvas_dy": 72.53
+    },
+    "closed": {
+      "dx": -1,
+      "dy": 23,
+      "scale": 1,
+      "opacity": 0.65,
+      "viewMode": "compare",
+      "unit": "display_px",
+      "display_dx": -1,
+      "display_dy": 23,
+      "canvas_dx": -3.153,
+      "canvas_dy": 72.53
+    },
+    "mostly_closed": {
+      "dx": -1,
+      "dy": 23,
+      "scale": 1,
+      "opacity": 0.65,
+      "viewMode": "compare",
+      "unit": "display_px",
+      "display_dx": -1,
+      "display_dy": 23,
+      "canvas_dx": -3.153,
+      "canvas_dy": 72.53
+    }
+  }
+}

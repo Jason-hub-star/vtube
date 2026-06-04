@@ -1,0 +1,165 @@
+{
+  "experiment_id": "MOUTH-GEN-2048-001",
+  "date": "2026-06-02",
+  "status": "OBSERVED",
+  "inputs": [
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/assets/mouth_sheet_source.png"
+  ],
+  "outputs": [
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/layers/mouth_neutral_smile_full.png",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/layers/mouth_small_open_full.png",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/layers/mouth_wide_open_full.png",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/layers/mouth_o_vowel_full.png",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/layers/mouth_happy_open_full.png",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/overlays/mouth_neutral_smile_overlay.png",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/overlays/mouth_small_open_overlay.png",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/overlays/mouth_wide_open_overlay.png",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/overlays/mouth_o_vowel_overlay.png",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/overlays/mouth_happy_open_overlay.png"
+  ],
+  "metrics": {
+    "candidate_count": 5,
+    "numeric_pass_count": 5,
+    "mouth_roi": [
+      959,
+      915,
+      182,
+      120
+    ]
+  },
+  "result": {
+    "full_canvas_layers_created": "PASS",
+    "placement_error_px_lte_1": "PASS",
+    "human_visual_quality": "REVISE"
+  },
+  "candidates": [
+    {
+      "expression_type": "neutral_smile",
+      "candidate_crop": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/assets/mouth_candidate_01.png",
+      "layer": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/layers/mouth_neutral_smile_full.png",
+      "overlay": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/overlays/mouth_neutral_smile_overlay.png",
+      "alpha_bbox": [
+        984,
+        957,
+        132,
+        35
+      ],
+      "alpha_center": [
+        1049.6767216846897,
+        974.9368241320433
+      ],
+      "target_center": [
+        1050.0,
+        975.0
+      ],
+      "placement_error_px": 0.3293934720694138,
+      "bbox_inside_mouth_roi": true,
+      "numeric_verdict": "PASS",
+      "human_verdict": "REVISE"
+    },
+    {
+      "expression_type": "small_open",
+      "candidate_crop": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/assets/mouth_candidate_02.png",
+      "layer": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/layers/mouth_small_open_full.png",
+      "overlay": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/overlays/mouth_small_open_overlay.png",
+      "alpha_bbox": [
+        985,
+        945,
+        131,
+        70
+      ],
+      "alpha_center": [
+        1049.8736396614268,
+        975.3725816203143
+      ],
+      "target_center": [
+        1050.0,
+        975.0
+      ],
+      "placement_error_px": 0.3934259764687791,
+      "bbox_inside_mouth_roi": true,
+      "numeric_verdict": "PASS",
+      "human_verdict": "REVISE"
+    },
+    {
+      "expression_type": "wide_open",
+      "candidate_crop": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/assets/mouth_candidate_03.png",
+      "layer": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/layers/mouth_wide_open_full.png",
+      "overlay": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/overlays/mouth_wide_open_overlay.png",
+      "alpha_bbox": [
+        1010,
+        938,
+        82,
+        86
+      ],
+      "alpha_center": [
+        1050.4533119085877,
+        975.4424209962507
+      ],
+      "target_center": [
+        1050.0,
+        975.0
+      ],
+      "placement_error_px": 0.6334256265662683,
+      "bbox_inside_mouth_roi": true,
+      "numeric_verdict": "PASS",
+      "human_verdict": "REVISE"
+    },
+    {
+      "expression_type": "o_vowel",
+      "candidate_crop": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/assets/mouth_candidate_04.png",
+      "layer": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/layers/mouth_o_vowel_full.png",
+      "overlay": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/overlays/mouth_o_vowel_overlay.png",
+      "alpha_bbox": [
+        1022,
+        933,
+        56,
+        87
+      ],
+      "alpha_center": [
+        1049.5970272502063,
+        975.2647949353152
+      ],
+      "target_center": [
+        1050.0,
+        975.0
+      ],
+      "placement_error_px": 0.482186058326911,
+      "bbox_inside_mouth_roi": true,
+      "numeric_verdict": "PASS",
+      "human_verdict": "REVISE"
+    },
+    {
+      "expression_type": "happy_open",
+      "candidate_crop": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/assets/mouth_candidate_05.png",
+      "layer": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/layers/mouth_happy_open_full.png",
+      "overlay": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/overlays/mouth_happy_open_overlay.png",
+      "alpha_bbox": [
+        988,
+        939,
+        125,
+        86
+      ],
+      "alpha_center": [
+        1050.0860961866072,
+        975.1449351330101
+      ],
+      "target_center": [
+        1050.0,
+        975.0
+      ],
+      "placement_error_px": 0.16857860519340365,
+      "bbox_inside_mouth_roi": true,
+      "numeric_verdict": "PASS",
+      "human_verdict": "REVISE"
+    }
+  ],
+  "human_review": {
+    "required": true,
+    "verdict": "REVISE",
+    "notes": "Numeric overlay is ready; choose visually acceptable mouths manually."
+  },
+  "decision": "keep",
+  "next_action": "Connect these layers to the local preview and manually approve/reject each expression."
+}

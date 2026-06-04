@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "experiment_id": "see-through-layer-decomp-001",
+  "status": "PASS_MPS_SERVER_STARTED",
+  "url": "http://127.0.0.1:8188/",
+  "evidence": "ComfyUI log showed Device: mps, ComfyUI-See-through loaded 6 nodes, and server ready URL.",
+  "notes": "Actual See-through inference/model download is still pending manual workflow run."
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "experiment_id": "concept-regeneration-001",
+  "created_at": "2026-06-04T01:56:45.876712+00:00",
+  "updated_at": "2026-06-04T02:05:11.340245+00:00",
+  "source_manifest": "review_app/review_manifest.json",
+  "reviews": {
+    "concept__R_upper_lash": {
+      "part_id": "concept__R_upper_lash",
+      "verdict": "X",
+      "issue_tags": [
+        "hair_mixed"
+      ],
+      "human_note": "은발 앞머리와 윗속눈썹 영역이 bootstrap 후보에서 섞여 있음",
+      "updated_at": "2026-06-04T01:56:45.875196+00:00"
+    },
+    "concept__L_ear_outer": {
+      "part_id": "concept__L_ear_outer",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "alpha_dirty",
+        "hair_mixed"
+      ],
+      "human_note": "귀 바깥 후보에 머리카락/배경 가장자리가 섞여 있어 재마스크 필요",
+      "updated_at": "2026-06-04T01:56:45.875529+00:00"
+    },
+    "concept__face_underpaint": {
+      "part_id": "concept__face_underpaint",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "AI technical smoke O: PSD/Cubism import path test only, not final art-quality approval.",
+      "review_source": "ai_technical_smoke",
+      "updated_at": "2026-06-04T02:05:11.340245+00:00"
+    },
+    "concept__neck": {
+      "part_id": "concept__neck",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "AI technical smoke O: PSD/Cubism import path test only, not final art-quality approval.",
+      "review_source": "ai_technical_smoke",
+      "updated_at": "2026-06-04T02:05:11.340245+00:00"
+    },
+    "concept__L_highlight": {
+      "part_id": "concept__L_highlight",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "AI technical smoke O: PSD/Cubism import path test only, not final art-quality approval.",
+      "review_source": "ai_technical_smoke",
+      "updated_at": "2026-06-04T02:05:11.340245+00:00"
+    },
+    "concept__R_highlight": {
+      "part_id": "concept__R_highlight",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "AI technical smoke O: PSD/Cubism import path test only, not final art-quality approval.",
+      "review_source": "ai_technical_smoke",
+      "updated_at": "2026-06-04T02:05:11.340245+00:00"
+    },
+    "concept__mouth_line": {
+      "part_id": "concept__mouth_line",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "AI technical smoke O: PSD/Cubism import path test only, not final art-quality approval.",
+      "review_source": "ai_technical_smoke",
+      "updated_at": "2026-06-04T02:05:11.340245+00:00"
+    },
+    "concept__choker": {
+      "part_id": "concept__choker",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "AI technical smoke O: PSD/Cubism import path test only, not final art-quality approval.",
+      "review_source": "ai_technical_smoke",
+      "updated_at": "2026-06-04T02:05:11.340245+00:00"
+    }
+  }
+}

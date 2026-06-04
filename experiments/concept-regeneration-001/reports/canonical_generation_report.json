@@ -1,0 +1,15 @@
+{
+  "experiment_id": "concept-regeneration-001",
+  "status": "CANONICAL_READY",
+  "concept": "White Wolf Goth",
+  "generated_source": "/Users/family/.codex/generated_images/019e890e-5054-7220-8b32-c50d3a4003e8/ig_00ef634d6280e370016a20d9bc73688191b1d933cdf0ea6fde.png",
+  "source_copy": "experiments/concept-regeneration-001/reference/generated_white_wolf_goth_source.png",
+  "canonical_path": "experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+  "canvas_size": [2048, 2048],
+  "notes": [
+    "Original generated image was preserved in the Codex generated_images cache and copied into the experiment reference folder.",
+    "Canonical was resized to 2048x2048 for the Live2D material pipeline.",
+    "The image is suitable for part purity testing because eyes, ears, hair, fur shoulder, choker, and clothing boundaries are visible.",
+    "Hair crosses near eye/lash areas, so eye/lash purity is expected to require cleanup/regeneration."
+  ]
+}

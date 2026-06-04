@@ -1,0 +1,28 @@
+{
+  "experiment_id": "HARNESS-2048-001",
+  "date": "2026-06-02",
+  "status": "OBSERVED",
+  "inputs": [
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/assets/canonical_source.png",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/assets/mouth_sheet_source.png"
+  ],
+  "outputs": [
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/reports/qa_report.md",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/preview/index.html"
+  ],
+  "metrics": {
+    "repeatable_script": "scripts/production_canvas_2048_smoke.py"
+  },
+  "result": {
+    "codex_claude_repeatable_steps": "PASS",
+    "common_harness_written": "PASS",
+    "requires_human_review": "PASS"
+  },
+  "human_review": {
+    "required": false,
+    "verdict": "PASS",
+    "notes": "Harness records steps and expected evidence; visual QA remains separate."
+  },
+  "decision": "keep",
+  "next_action": "Reuse this harness for the next regenerated canonical or mouth sheet."
+}

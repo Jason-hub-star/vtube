@@ -1,0 +1,105 @@
+{
+  "experiment_id": "MANUAL-REVIEW-2048-001",
+  "date": "2026-06-02T14:14:32.423Z",
+  "canvas_size": [
+    2048,
+    2048
+  ],
+  "canonical_canvas_size": [
+    2048,
+    2048
+  ],
+  "canvas_display_size": [
+    649.438,
+    649.438
+  ],
+  "display_to_canvas_scale": [
+    3.153498,
+    3.153498
+  ],
+  "review_units": {
+    "dx_dy": "display_px_for_browser_transform",
+    "canvas_dx_canvas_dy": "2048_canvas_px_for_image_processing"
+  },
+  "selected": "mouth:wide_open",
+  "reviews": {
+    "mouth:neutral_smile": {
+      "dx": -12,
+      "dy": 2,
+      "scale": 1,
+      "opacity": 1,
+      "verdict": "REVISE",
+      "notes": "",
+      "unit": "display_px",
+      "display_dx": -12,
+      "display_dy": 2,
+      "canvas_dx": -37.842,
+      "canvas_dy": 6.307
+    },
+    "mouth:small_open": {
+      "dx": -12,
+      "dy": 2,
+      "scale": 1,
+      "opacity": 1,
+      "verdict": "REVISE",
+      "notes": "",
+      "unit": "display_px",
+      "display_dx": -12,
+      "display_dy": 2,
+      "canvas_dx": -37.842,
+      "canvas_dy": 6.307
+    },
+    "mouth:wide_open": {
+      "dx": -12,
+      "dy": 2,
+      "scale": 1,
+      "opacity": 1,
+      "verdict": "REVISE",
+      "notes": "",
+      "unit": "display_px",
+      "display_dx": -12,
+      "display_dy": 2,
+      "canvas_dx": -37.842,
+      "canvas_dy": 6.307
+    },
+    "mouth:o_vowel": {
+      "dx": -12,
+      "dy": 2,
+      "scale": 1,
+      "opacity": 1,
+      "verdict": "REVISE",
+      "notes": "",
+      "unit": "display_px",
+      "display_dx": -12,
+      "display_dy": 2,
+      "canvas_dx": -37.842,
+      "canvas_dy": 6.307
+    },
+    "mouth:happy_open": {
+      "dx": -12,
+      "dy": 2,
+      "scale": 1,
+      "opacity": 1,
+      "verdict": "REVISE",
+      "notes": "",
+      "unit": "display_px",
+      "display_dx": -12,
+      "display_dy": 2,
+      "canvas_dx": -37.842,
+      "canvas_dy": 6.307
+    },
+    "blink:closed_lids": {
+      "dx": -3,
+      "dy": 12,
+      "scale": 1,
+      "opacity": 1,
+      "verdict": "REVISE",
+      "notes": "",
+      "unit": "display_px",
+      "display_dx": -3,
+      "display_dy": 12,
+      "canvas_dx": -9.46,
+      "canvas_dy": 37.842
+    }
+  }
+}

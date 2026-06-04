@@ -1,0 +1,626 @@
+{
+  "schema_version": 1,
+  "experiment_id": "concept-regeneration-001",
+  "generated_at": "2026-06-04T04:37:36.561309+00:00",
+  "source_review_manifest": "review_app/review_manifest.json",
+  "targets": [
+    {
+      "part_id": "concept__face_underpaint",
+      "ko_name": "얼굴 언더페인트",
+      "group": "face",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_smoke/face_underpaint.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "hidden skin fill behind face parts"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "eyes",
+        "mouth",
+        "clothes"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__back_hair",
+      "ko_name": "뒷머리",
+      "group": "hair",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/back_hair.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "rear hair mass only"
+      ],
+      "forbidden_contamination": [
+        "face",
+        "neck",
+        "front_hair",
+        "side_hair"
+      ],
+      "suggested_generation_mode": "part_mask_regeneration"
+    },
+    {
+      "part_id": "concept__body",
+      "ko_name": "몸통",
+      "group": "body",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/body.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "body skin and torso base"
+      ],
+      "forbidden_contamination": [
+        "clothes",
+        "hair",
+        "face"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__clothes",
+      "ko_name": "의상",
+      "group": "body",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/clothes.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "clothing pixels only"
+      ],
+      "forbidden_contamination": [
+        "skin",
+        "hair",
+        "face"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__neck",
+      "ko_name": "목",
+      "group": "face",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_smoke/neck.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "neck skin only"
+      ],
+      "forbidden_contamination": [
+        "clothes",
+        "hair",
+        "face_outline"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__face_base",
+      "ko_name": "얼굴 베이스",
+      "group": "face",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/face_base.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "visible face skin and face outline"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "eyes",
+        "mouth"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__L_eye_white",
+      "ko_name": "왼쪽 흰자",
+      "group": "eyes",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/L_eye_white.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "left sclera only"
+      ],
+      "forbidden_contamination": [
+        "iris",
+        "pupil",
+        "lash",
+        "hair",
+        "skin"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__R_eye_white",
+      "ko_name": "오른쪽 흰자",
+      "group": "eyes",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/R_eye_white.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "right sclera only"
+      ],
+      "forbidden_contamination": [
+        "iris",
+        "pupil",
+        "lash",
+        "hair",
+        "skin"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__L_iris",
+      "ko_name": "왼쪽 홍채",
+      "group": "eyes",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/L_iris.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "left iris color only"
+      ],
+      "forbidden_contamination": [
+        "pupil",
+        "highlight",
+        "eye_white",
+        "lash"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__R_iris",
+      "ko_name": "오른쪽 홍채",
+      "group": "eyes",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/R_iris.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "right iris color only"
+      ],
+      "forbidden_contamination": [
+        "pupil",
+        "highlight",
+        "eye_white",
+        "lash"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__L_pupil",
+      "ko_name": "왼쪽 동공",
+      "group": "eyes",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/L_pupil.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "left pupil only"
+      ],
+      "forbidden_contamination": [
+        "iris",
+        "highlight",
+        "eye_white"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__R_pupil",
+      "ko_name": "오른쪽 동공",
+      "group": "eyes",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/R_pupil.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "right pupil only"
+      ],
+      "forbidden_contamination": [
+        "iris",
+        "highlight",
+        "eye_white"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__L_highlight",
+      "ko_name": "왼쪽 눈 하이라이트",
+      "group": "eyes",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_smoke/L_highlight.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "left eye catchlight only"
+      ],
+      "forbidden_contamination": [
+        "iris",
+        "pupil",
+        "eye_white"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__R_highlight",
+      "ko_name": "오른쪽 눈 하이라이트",
+      "group": "eyes",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_smoke/R_highlight.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "right eye catchlight only"
+      ],
+      "forbidden_contamination": [
+        "iris",
+        "pupil",
+        "eye_white"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__L_upper_lash",
+      "ko_name": "왼쪽 윗속눈썹",
+      "group": "eyes",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/L_upper_lash.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "upper lash line only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "eye_white",
+        "iris"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__R_upper_lash",
+      "ko_name": "오른쪽 윗속눈썹",
+      "group": "eyes",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/R_upper_lash.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "upper lash line only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "eye_white",
+        "iris"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__L_lower_lash",
+      "ko_name": "왼쪽 아랫속눈썹",
+      "group": "eyes",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/L_lower_lash.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "lower lash line only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "eye_white",
+        "iris"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__R_lower_lash",
+      "ko_name": "오른쪽 아랫속눈썹",
+      "group": "eyes",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/R_lower_lash.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "lower lash line only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "eye_white",
+        "iris"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__L_brow",
+      "ko_name": "왼쪽 눈썹",
+      "group": "brows",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/L_brow.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "left brow only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "lash"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__R_brow",
+      "ko_name": "오른쪽 눈썹",
+      "group": "brows",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/R_brow.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "right brow only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "lash"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__mouth_line",
+      "ko_name": "입 라인",
+      "group": "mouth",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_smoke/mouth_line.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "mouth outline and lip line only"
+      ],
+      "forbidden_contamination": [
+        "teeth",
+        "tongue",
+        "skin"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__mouth_inner",
+      "ko_name": "입 안쪽",
+      "group": "mouth",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/mouth_inner.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "dark mouth cavity only"
+      ],
+      "forbidden_contamination": [
+        "teeth",
+        "tongue",
+        "skin",
+        "cropped_line"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__teeth",
+      "ko_name": "치아",
+      "group": "mouth",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/teeth.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "teeth only"
+      ],
+      "forbidden_contamination": [
+        "tongue",
+        "mouth_line",
+        "skin"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__tongue",
+      "ko_name": "혀",
+      "group": "mouth",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/tongue.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "tongue only"
+      ],
+      "forbidden_contamination": [
+        "teeth",
+        "mouth_line",
+        "skin"
+      ],
+      "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+    },
+    {
+      "part_id": "concept__L_side_hair",
+      "ko_name": "왼쪽 옆머리",
+      "group": "hair",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/L_side_hair.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "left side hair lock only"
+      ],
+      "forbidden_contamination": [
+        "face",
+        "eye",
+        "brow",
+        "back_hair"
+      ],
+      "suggested_generation_mode": "part_mask_regeneration"
+    },
+    {
+      "part_id": "concept__R_side_hair",
+      "ko_name": "오른쪽 옆머리",
+      "group": "hair",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/R_side_hair.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "right side hair lock only"
+      ],
+      "forbidden_contamination": [
+        "face",
+        "eye",
+        "brow",
+        "back_hair"
+      ],
+      "suggested_generation_mode": "part_mask_regeneration"
+    },
+    {
+      "part_id": "concept__front_hair",
+      "ko_name": "앞머리",
+      "group": "hair",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/front_hair.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "front bangs only"
+      ],
+      "forbidden_contamination": [
+        "face",
+        "eye",
+        "brow",
+        "side_hair",
+        "back_hair"
+      ],
+      "suggested_generation_mode": "part_mask_regeneration"
+    },
+    {
+      "part_id": "concept__L_ear_outer",
+      "ko_name": "왼쪽 귀 바깥",
+      "group": "ears",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/L_ear_outer.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "left animal ear outer fur only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "ear_inner",
+        "accessory"
+      ],
+      "suggested_generation_mode": "part_mask_regeneration"
+    },
+    {
+      "part_id": "concept__R_ear_outer",
+      "ko_name": "오른쪽 귀 바깥",
+      "group": "ears",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/R_ear_outer.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "right animal ear outer fur only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "ear_inner",
+        "accessory"
+      ],
+      "suggested_generation_mode": "part_mask_regeneration"
+    },
+    {
+      "part_id": "concept__L_ear_inner",
+      "ko_name": "왼쪽 귀 안쪽",
+      "group": "ears",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/L_ear_inner.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "left animal ear inner shadow and color only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "ear_outer"
+      ],
+      "suggested_generation_mode": "part_mask_regeneration"
+    },
+    {
+      "part_id": "concept__R_ear_inner",
+      "ko_name": "오른쪽 귀 안쪽",
+      "group": "ears",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/R_ear_inner.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "right animal ear inner shadow and color only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "ear_outer"
+      ],
+      "suggested_generation_mode": "part_mask_regeneration"
+    },
+    {
+      "part_id": "concept__L_fur_shoulder",
+      "ko_name": "왼쪽 어깨 털",
+      "group": "fur",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/L_fur_shoulder.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "left white shoulder fur only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "clothes",
+        "body"
+      ],
+      "suggested_generation_mode": "part_mask_regeneration"
+    },
+    {
+      "part_id": "concept__R_fur_shoulder",
+      "ko_name": "오른쪽 어깨 털",
+      "group": "fur",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/R_fur_shoulder.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "right white shoulder fur only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "clothes",
+        "body"
+      ],
+      "suggested_generation_mode": "part_mask_regeneration"
+    },
+    {
+      "part_id": "concept__choker",
+      "ko_name": "초커",
+      "group": "accessory",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_smoke/choker.png",
+      "include_in_import_psd": true,
+      "allowed_features": [
+        "black choker band only"
+      ],
+      "forbidden_contamination": [
+        "neck",
+        "clothes",
+        "gold_ornaments",
+        "hair"
+      ],
+      "suggested_generation_mode": "part_mask_regeneration"
+    },
+    {
+      "part_id": "concept__gold_ornaments",
+      "ko_name": "금색 장식",
+      "group": "accessory",
+      "section": "concept_parts",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/gold_ornaments.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "gold ornaments only"
+      ],
+      "forbidden_contamination": [
+        "choker",
+        "clothes",
+        "skin",
+        "hair"
+      ],
+      "suggested_generation_mode": "part_mask_regeneration"
+    }
+  ]
+}

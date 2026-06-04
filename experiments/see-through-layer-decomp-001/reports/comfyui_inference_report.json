@@ -1,0 +1,312 @@
+{
+  "schema_version": 1,
+  "experiment_id": "see-through-layer-decomp-001",
+  "generated_at": "2026-06-04T04:07:32.566077+00:00",
+  "status": "COMPLETED_NO_LAYERS_JSON",
+  "base_url": "http://127.0.0.1:8188",
+  "prompt_id": "cf146ef7-4e34-4426-ada9-d1d74ef930f0",
+  "started_at_epoch": 1780545729.079958,
+  "timeout_seconds": 7200,
+  "poll_interval_seconds": 15,
+  "response": {
+    "prompt_id": "cf146ef7-4e34-4426-ada9-d1d74ef930f0",
+    "number": 2,
+    "node_errors": {}
+  },
+  "last_error": null,
+  "history": {
+    "prompt": [
+      2,
+      "cf146ef7-4e34-4426-ada9-d1d74ef930f0",
+      {
+        "27": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "canonical_front_1280.png"
+          }
+        },
+        "28": {
+          "class_type": "SeeThrough_LoadLayerDiffModel",
+          "inputs": {
+            "model": "layerdifforg/seethroughv0.0.2_layerdiff3d",
+            "vae_ckpt": "",
+            "unet_ckpt": "",
+            "quant_mode": "none",
+            "cache_tag_embeds": true,
+            "group_offload": false,
+            "auto_download": true
+          }
+        },
+        "29": {
+          "class_type": "SeeThrough_LoadDepthModel",
+          "inputs": {
+            "model": "layerdifforg/seethroughv0.0.1_marigold",
+            "quant_mode": "none",
+            "cache_tag_embeds": true,
+            "group_offload": false,
+            "auto_download": true
+          }
+        },
+        "24": {
+          "class_type": "SeeThrough_GenerateLayers",
+          "inputs": {
+            "image": [
+              "27",
+              0
+            ],
+            "layerdiff_model": [
+              "28",
+              0
+            ],
+            "seed": 42,
+            "resolution": 1280,
+            "num_inference_steps": 30
+          }
+        },
+        "23": {
+          "class_type": "SeeThrough_GenerateDepth",
+          "inputs": {
+            "layers": [
+              "24",
+              0
+            ],
+            "depth_model": [
+              "29",
+              0
+            ],
+            "seed": 42,
+            "resolution_depth": 720
+          }
+        },
+        "20": {
+          "class_type": "SeeThrough_PostProcess",
+          "inputs": {
+            "layers_depth": [
+              "23",
+              0
+            ],
+            "tblr_split": true,
+            "use_lama": true
+          }
+        },
+        "21": {
+          "class_type": "SeeThrough_SavePSD",
+          "inputs": {
+            "parts": [
+              "20",
+              0
+            ],
+            "filename_prefix": "white_wolf_goth_seethrough"
+          }
+        },
+        "22": {
+          "class_type": "PreviewImage",
+          "inputs": {
+            "images": [
+              "20",
+              1
+            ]
+          }
+        }
+      },
+      {
+        "client_id": "vtube-see-through-runner",
+        "create_time": 1780545729086
+      },
+      [
+        "22",
+        "21"
+      ]
+    ],
+    "outputs": {},
+    "status": {
+      "status_str": "error",
+      "completed": false,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "cf146ef7-4e34-4426-ada9-d1d74ef930f0",
+            "timestamp": 1780545729090
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "29"
+            ],
+            "prompt_id": "cf146ef7-4e34-4426-ada9-d1d74ef930f0",
+            "timestamp": 1780545729100
+          }
+        ],
+        [
+          "execution_error",
+          {
+            "prompt_id": "cf146ef7-4e34-4426-ada9-d1d74ef930f0",
+            "node_id": "28",
+            "node_type": "SeeThrough_LoadLayerDiffModel",
+            "executed": [],
+            "exception_message": "I/O error: IO Error: No space left on device (os error 28)\n",
+            "exception_type": "OSError",
+            "traceback": [
+              "  File \"/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/execution.py\", line 536, in execute\n    output_data, output_ui, has_subgraph, has_pending_tasks = await get_output_data(prompt_id, unique_id, obj, input_data_all, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb, v3_data=v3_data)\n                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+              "  File \"/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/execution.py\", line 336, in get_output_data\n    return_values = await _async_map_node_over_list(prompt_id, unique_id, obj, input_data_all, obj.FUNCTION, allow_interrupt=True, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb, v3_data=v3_data)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+              "  File \"/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/execution.py\", line 310, in _async_map_node_over_list\n    await process_inputs(input_dict, i)\n",
+              "  File \"/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/execution.py\", line 298, in process_inputs\n    result = f(**inputs)\n             ^^^^^^^^^^^\n",
+              "  File \"/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/custom_nodes/ComfyUI-See-through/nodes.py\", line 344, in load_model\n    pipeline = KDiffusionStableDiffusionXLPipeline.from_pretrained(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+              "  File \"/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/.venv-comfyui/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py\", line 88, in _inner_fn\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n",
+              "  File \"/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/.venv-comfyui/lib/python3.11/site-packages/diffusers/pipelines/pipeline_utils.py\", line 853, in from_pretrained\n    cached_folder = cls.download(\n                    ^^^^^^^^^^^^^\n",
+              "  File \"/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/.venv-comfyui/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py\", line 88, in _inner_fn\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n",
+              "  File \"/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/.venv-comfyui/lib/python3.11/site-packages/diffusers/pipelines/pipeline_utils.py\", line 1778, in download\n    cached_folder = snapshot_download(\n                    ^^^^^^^^^^^^^^^^^^\n",
+              "  File \"/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/.venv-comfyui/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py\", line 88, in _inner_fn\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n",
+              "  File \"/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/.venv-comfyui/lib/python3.11/site-packages/huggingface_hub/_snapshot_download.py\", line 454, in snapshot_download\n    thread_map(\n",
+              "  File \"/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/.venv-comfyui/lib/python3.11/site-packages/tqdm/contrib/concurrent.py\", line 69, in thread_map\n    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+              "  File \"/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/.venv-comfyui/lib/python3.11/site-packages/tqdm/contrib/concurrent.py\", line 51, in _executor_map\n    return list(tqdm_class(ex.map(fn, *iterables, chunksize=chunksize), **kwargs))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+              "  File \"/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/.venv-comfyui/lib/python3.11/site-packages/tqdm/std.py\", line 1181, in __iter__\n    for obj in iterable:\n",
+              "  File \"/Users/family/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/concurrent/futures/_base.py\", line 619, in result_iterator\n    yield _result_or_cancel(fs.pop())\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+              "  File \"/Users/family/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/concurrent/futures/_base.py\", line 317, in _result_or_cancel\n    return fut.result(timeout)\n           ^^^^^^^^^^^^^^^^^^^\n",
+              "  File \"/Users/family/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/concurrent/futures/_base.py\", line 456, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n",
+              "  File \"/Users/family/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n",
+              "  File \"/Users/family/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/concurrent/futures/thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+              "  File \"/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/.venv-comfyui/lib/python3.11/site-packages/huggingface_hub/_snapshot_download.py\", line 434, in _inner_hf_hub_download\n    hf_hub_download(  # type: ignore\n",
+              "  File \"/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/.venv-comfyui/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py\", line 88, in _inner_fn\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n",
+              "  File \"/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/.venv-comfyui/lib/python3.11/site-packages/huggingface_hub/file_download.py\", line 1010, in hf_hub_download\n    return _hf_hub_download_to_cache_dir(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+              "  File \"/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/.venv-comfyui/lib/python3.11/site-packages/huggingface_hub/file_download.py\", line 1229, in _hf_hub_download_to_cache_dir\n    _download_to_tmp_and_move(\n",
+              "  File \"/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/.venv-comfyui/lib/python3.11/site-packages/huggingface_hub/file_download.py\", line 1856, in _download_to_tmp_and_move\n    xet_get(\n",
+              "  File \"/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/.venv-comfyui/lib/python3.11/site-packages/huggingface_hub/file_download.py\", line 571, in xet_get\n    download_files(\n"
+            ],
+            "current_inputs": {
+              "model": [
+                "layerdifforg/seethroughv0.0.2_layerdiff3d"
+              ],
+              "vae_ckpt": [
+                ""
+              ],
+              "unet_ckpt": [
+                ""
+              ],
+              "quant_mode": [
+                "none"
+              ],
+              "cache_tag_embeds": [
+                true
+              ],
+              "group_offload": [
+                false
+              ],
+              "auto_download": [
+                true
+              ]
+            },
+            "current_outputs": [
+              "29",
+              "28",
+              "24",
+              "23",
+              "27",
+              "21",
+              "22",
+              "20"
+            ],
+            "timestamp": 1780546043279
+          }
+        ]
+      ]
+    },
+    "meta": {}
+  },
+  "layers_json": [],
+  "output_dir": "/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/output",
+  "prompt": {
+    "27": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "canonical_front_1280.png"
+      }
+    },
+    "28": {
+      "class_type": "SeeThrough_LoadLayerDiffModel",
+      "inputs": {
+        "model": "layerdifforg/seethroughv0.0.2_layerdiff3d",
+        "vae_ckpt": "",
+        "unet_ckpt": "",
+        "quant_mode": "none",
+        "cache_tag_embeds": true,
+        "group_offload": false,
+        "auto_download": true
+      }
+    },
+    "29": {
+      "class_type": "SeeThrough_LoadDepthModel",
+      "inputs": {
+        "model": "layerdifforg/seethroughv0.0.1_marigold",
+        "quant_mode": "none",
+        "cache_tag_embeds": true,
+        "group_offload": false,
+        "auto_download": true
+      }
+    },
+    "24": {
+      "class_type": "SeeThrough_GenerateLayers",
+      "inputs": {
+        "image": [
+          "27",
+          0
+        ],
+        "layerdiff_model": [
+          "28",
+          0
+        ],
+        "seed": 42,
+        "resolution": 1280,
+        "num_inference_steps": 30
+      }
+    },
+    "23": {
+      "class_type": "SeeThrough_GenerateDepth",
+      "inputs": {
+        "layers": [
+          "24",
+          0
+        ],
+        "depth_model": [
+          "29",
+          0
+        ],
+        "seed": 42,
+        "resolution_depth": 720
+      }
+    },
+    "20": {
+      "class_type": "SeeThrough_PostProcess",
+      "inputs": {
+        "layers_depth": [
+          "23",
+          0
+        ],
+        "tblr_split": true,
+        "use_lama": true
+      }
+    },
+    "21": {
+      "class_type": "SeeThrough_SavePSD",
+      "inputs": {
+        "parts": [
+          "20",
+          0
+        ],
+        "filename_prefix": "white_wolf_goth_seethrough"
+      }
+    },
+    "22": {
+      "class_type": "PreviewImage",
+      "inputs": {
+        "images": [
+          "20",
+          1
+        ]
+      }
+    }
+  }
+}

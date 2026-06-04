@@ -1,0 +1,236 @@
+{
+  "experiment_id": "BLINK-APPLY-REVIEW-001",
+  "date": "2026-06-03",
+  "status": "OBSERVED",
+  "inputs": [
+    "/Users/family/jason/Vtube/experiments/blink-stage-001/reports/blink_stage_review.json",
+    "/Users/family/jason/Vtube/experiments/blink-stage-001/reports/blink_stage_report.json"
+  ],
+  "outputs": [
+    "/Users/family/jason/Vtube/experiments/blink-apply-review-001/preview/index.html",
+    "/Users/family/jason/Vtube/experiments/blink-apply-review-001/reports/blink_apply_review_report.json",
+    "/Users/family/jason/Vtube/experiments/blink-apply-review-001/layers/blink_half_corrected_full.png",
+    "/Users/family/jason/Vtube/experiments/blink-apply-review-001/layers/blink_mostly_closed_corrected_full.png",
+    "/Users/family/jason/Vtube/experiments/blink-apply-review-001/layers/blink_closed_corrected_full.png",
+    "/Users/family/jason/Vtube/experiments/blink-apply-review-001/overlays/blink_half_corrected_overlay.png",
+    "/Users/family/jason/Vtube/experiments/blink-apply-review-001/overlays/blink_mostly_closed_corrected_overlay.png",
+    "/Users/family/jason/Vtube/experiments/blink-apply-review-001/overlays/blink_closed_corrected_overlay.png"
+  ],
+  "metrics": {
+    "canvas_size": [
+      2048,
+      2048
+    ],
+    "stage_count": 3,
+    "corrected_inside_eye_roi_stage_count": 0,
+    "reviewed_stage_count": 3
+  },
+  "result": {
+    "saved_placement_applied": "PASS",
+    "full_canvas_layers": "PASS",
+    "corrected_inside_eye_roi": "REVISE",
+    "human_review_all_stages_present": "PASS",
+    "production_candidate": "REVISE"
+  },
+  "stages": [
+    {
+      "stage": "half",
+      "placement": {
+        "dx": -1,
+        "dy": 23,
+        "scale": 1,
+        "opacity": 0.65,
+        "viewMode": "compare",
+        "unit": "display_px",
+        "display_dx": -1,
+        "display_dy": 23,
+        "canvas_dx": -3.153,
+        "canvas_dy": 72.53
+      },
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/blink-apply-review-001/layers/blink_half_corrected_full.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/blink-apply-review-001/overlays/blink_half_corrected_overlay.png",
+      "auto_overlay": "/Users/family/jason/Vtube/experiments/blink-apply-review-001/overlays/blink_half_auto_overlay.png",
+      "parts": [
+        {
+          "side": "left",
+          "corrected_layer": "/Users/family/jason/Vtube/experiments/blink-apply-review-001/layers/half_left_corrected_full.png",
+          "eye_roi": [
+            742,
+            626,
+            208,
+            138
+          ],
+          "alpha_bbox": [
+            741,
+            712,
+            204,
+            113
+          ],
+          "alpha_center": [
+            852.815,
+            766.905
+          ],
+          "inside_eye_roi": false
+        },
+        {
+          "side": "right",
+          "corrected_layer": "/Users/family/jason/Vtube/experiments/blink-apply-review-001/layers/half_right_corrected_full.png",
+          "eye_roi": [
+            1083,
+            626,
+            208,
+            138
+          ],
+          "alpha_bbox": [
+            1082,
+            712,
+            204,
+            112
+          ],
+          "alpha_center": [
+            1172.657,
+            766.708
+          ],
+          "inside_eye_roi": false
+        }
+      ],
+      "both_inside_eye_roi": false,
+      "human_verdict": "REVISE"
+    },
+    {
+      "stage": "mostly_closed",
+      "placement": {
+        "dx": -1,
+        "dy": 23,
+        "scale": 1,
+        "opacity": 0.65,
+        "viewMode": "compare",
+        "unit": "display_px",
+        "display_dx": -1,
+        "display_dy": 23,
+        "canvas_dx": -3.153,
+        "canvas_dy": 72.53
+      },
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/blink-apply-review-001/layers/blink_mostly_closed_corrected_full.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/blink-apply-review-001/overlays/blink_mostly_closed_corrected_overlay.png",
+      "auto_overlay": "/Users/family/jason/Vtube/experiments/blink-apply-review-001/overlays/blink_mostly_closed_auto_overlay.png",
+      "parts": [
+        {
+          "side": "left",
+          "corrected_layer": "/Users/family/jason/Vtube/experiments/blink-apply-review-001/layers/mostly_closed_left_corrected_full.png",
+          "eye_roi": [
+            742,
+            626,
+            208,
+            138
+          ],
+          "alpha_bbox": [
+            741,
+            727,
+            204,
+            82
+          ],
+          "alpha_center": [
+            847.751,
+            763.933
+          ],
+          "inside_eye_roi": false
+        },
+        {
+          "side": "right",
+          "corrected_layer": "/Users/family/jason/Vtube/experiments/blink-apply-review-001/layers/mostly_closed_right_corrected_full.png",
+          "eye_roi": [
+            1083,
+            626,
+            208,
+            138
+          ],
+          "alpha_bbox": [
+            1082,
+            727,
+            204,
+            82
+          ],
+          "alpha_center": [
+            1178.549,
+            763.859
+          ],
+          "inside_eye_roi": false
+        }
+      ],
+      "both_inside_eye_roi": false,
+      "human_verdict": "REVISE"
+    },
+    {
+      "stage": "closed",
+      "placement": {
+        "dx": -1,
+        "dy": 23,
+        "scale": 1,
+        "opacity": 0.65,
+        "viewMode": "compare",
+        "unit": "display_px",
+        "display_dx": -1,
+        "display_dy": 23,
+        "canvas_dx": -3.153,
+        "canvas_dy": 72.53
+      },
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/blink-apply-review-001/layers/blink_closed_corrected_full.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/blink-apply-review-001/overlays/blink_closed_corrected_overlay.png",
+      "auto_overlay": "/Users/family/jason/Vtube/experiments/blink-apply-review-001/overlays/blink_closed_auto_overlay.png",
+      "parts": [
+        {
+          "side": "left",
+          "corrected_layer": "/Users/family/jason/Vtube/experiments/blink-apply-review-001/layers/closed_left_corrected_full.png",
+          "eye_roi": [
+            742,
+            626,
+            208,
+            138
+          ],
+          "alpha_bbox": [
+            741,
+            739,
+            204,
+            57
+          ],
+          "alpha_center": [
+            845.84,
+            764.796
+          ],
+          "inside_eye_roi": false
+        },
+        {
+          "side": "right",
+          "corrected_layer": "/Users/family/jason/Vtube/experiments/blink-apply-review-001/layers/closed_right_corrected_full.png",
+          "eye_roi": [
+            1083,
+            626,
+            208,
+            138
+          ],
+          "alpha_bbox": [
+            1082,
+            739,
+            204,
+            57
+          ],
+          "alpha_center": [
+            1179.474,
+            765.34
+          ],
+          "inside_eye_roi": false
+        }
+      ],
+      "both_inside_eye_roi": false,
+      "human_verdict": "REVISE"
+    }
+  ],
+  "human_review": {
+    "required": true,
+    "verdict": "REVISE",
+    "notes": "Saved blink placement was applied to all stages. Numeric ROI may differ from visual judgement; final production approval still requires visual PASS."
+  },
+  "decision": "revise",
+  "next_action": "Open preview/index.html and compare auto vs corrected. If corrected visual alignment passes, promote blink path; otherwise adjust saved placement or use canonical edit fallback."
+}

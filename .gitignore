@@ -1,0 +1,27 @@
+# Python/runtime caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local virtual environments
+.venv*/
+venv/
+env/
+experiments/**/.venv*/
+
+# Browser/test runtime state
+.playwright-mcp/
+
+# Reproducible external checkouts
+experiments/**/external_repos/
+
+# Local OS/editor noise
+.DS_Store
+*.swp
+*.swo
+
+# ComfyUI temporary runtime output that is not curated evidence
+experiments/**/temp/
+experiments/**/cache/

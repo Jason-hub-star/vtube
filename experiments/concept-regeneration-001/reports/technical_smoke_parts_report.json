@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "experiment_id": "concept-regeneration-001",
+  "generated_at": "2026-06-04T02:05:11.340245+00:00",
+  "status": "TECHNICAL_SMOKE_O_PARTS_READY",
+  "smoke_layer_dir": "experiments/concept-regeneration-001/production_layers_smoke",
+  "generated_count": 6,
+  "generated": [
+    {
+      "part_id": "concept__face_underpaint",
+      "original_part_id": "face_underpaint",
+      "ko_name": "얼굴 언더페인트",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_smoke/face_underpaint.png",
+      "bbox": [
+        700,
+        610,
+        682,
+        652
+      ],
+      "note": "clean skin underpaint ellipse for PSD/Cubism technical smoke; not final art approval."
+    },
+    {
+      "part_id": "concept__neck",
+      "original_part_id": "neck",
+      "ko_name": "목",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_smoke/neck.png",
+      "bbox": [
+        900,
+        1130,
+        282,
+        262
+      ],
+      "note": "clean neck skin block for PSD/Cubism technical smoke; not final art approval."
+    },
+    {
+      "part_id": "concept__L_highlight",
+      "original_part_id": "L_highlight",
+      "ko_name": "왼쪽 눈 하이라이트",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_smoke/L_highlight.png",
+      "bbox": [
+        845,
+        730,
+        38,
+        47
+      ],
+      "note": "clean left eye highlight for PSD/Cubism technical smoke; not final art approval."
+    },
+    {
+      "part_id": "concept__R_highlight",
+      "original_part_id": "R_highlight",
+      "ko_name": "오른쪽 눈 하이라이트",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_smoke/R_highlight.png",
+      "bbox": [
+        1195,
+        730,
+        38,
+        47
+      ],
+      "note": "clean right eye highlight for PSD/Cubism technical smoke; not final art approval."
+    },
+    {
+      "part_id": "concept__mouth_line",
+      "original_part_id": "mouth_line",
+      "ko_name": "입 라인",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_smoke/mouth_line.png",
+      "bbox": [
+        956,
+        1043,
+        160,
+        39
+      ],
+      "note": "clean neutral mouth line for PSD/Cubism technical smoke; not final art approval."
+    },
+    {
+      "part_id": "concept__choker",
+      "original_part_id": "choker",
+      "ko_name": "초커",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_smoke/choker.png",
+      "bbox": [
+        845,
+        1234,
+        362,
+        78
+      ],
+      "note": "clean choker band for PSD/Cubism technical smoke; not final art approval."
+    }
+  ],
+  "warning": "These O verdicts are only for PSD/Cubism import smoke and do not replace 주인님 final visual review."
+}

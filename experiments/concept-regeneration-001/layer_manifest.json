@@ -1,0 +1,952 @@
+{
+  "experiment_id": "concept-regeneration-001",
+  "date": "2026-06-04",
+  "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+  "layers": [
+    {
+      "layer_name": "concept__face_underpaint",
+      "original_part_id": "face_underpaint",
+      "role": "face",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_smoke/face_underpaint.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        700,
+        610,
+        682,
+        652
+      ],
+      "alpha_coverage": 0.785258,
+      "draw_order": 100,
+      "status": "O",
+      "include_in_import_psd": true,
+      "notes": "clean skin underpaint ellipse for PSD/Cubism technical smoke; not final art approval.",
+      "relative_output_path": "production_layers_smoke/face_underpaint.png",
+      "ko_name": "얼굴 언더페인트",
+      "group": "face",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__back_hair",
+      "original_part_id": "back_hair",
+      "role": "hair",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/back_hair.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        260,
+        120,
+        1531,
+        1581
+      ],
+      "alpha_coverage": 0.999784,
+      "draw_order": 101,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/back_hair.png",
+      "ko_name": "뒷머리",
+      "group": "hair",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__body",
+      "original_part_id": "body",
+      "role": "body",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/body.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        470,
+        1180,
+        1111,
+        851
+      ],
+      "alpha_coverage": 0.999446,
+      "draw_order": 102,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/body.png",
+      "ko_name": "몸통",
+      "group": "body",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__clothes",
+      "original_part_id": "clothes",
+      "role": "body",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/clothes.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        620,
+        1180,
+        821,
+        851
+      ],
+      "alpha_coverage": 0.99925,
+      "draw_order": 103,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/clothes.png",
+      "ko_name": "의상",
+      "group": "body",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__neck",
+      "original_part_id": "neck",
+      "role": "face",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_smoke/neck.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        900,
+        1130,
+        282,
+        262
+      ],
+      "alpha_coverage": 0.967787,
+      "draw_order": 104,
+      "status": "O",
+      "include_in_import_psd": true,
+      "notes": "clean neck skin block for PSD/Cubism technical smoke; not final art approval.",
+      "relative_output_path": "production_layers_smoke/neck.png",
+      "ko_name": "목",
+      "group": "face",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__face_base",
+      "original_part_id": "face_base",
+      "role": "face",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/face_base.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        705,
+        600,
+        671,
+        621
+      ],
+      "alpha_coverage": 0.785165,
+      "draw_order": 105,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/face_base.png",
+      "ko_name": "얼굴 베이스",
+      "group": "face",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__L_eye_white",
+      "original_part_id": "L_eye_white",
+      "role": "eyes",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/L_eye_white.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        720,
+        745,
+        261,
+        141
+      ],
+      "alpha_coverage": 0.785223,
+      "draw_order": 106,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/L_eye_white.png",
+      "ko_name": "왼쪽 흰자",
+      "group": "eyes",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__R_eye_white",
+      "original_part_id": "R_eye_white",
+      "role": "eyes",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/R_eye_white.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1070,
+        745,
+        261,
+        141
+      ],
+      "alpha_coverage": 0.785223,
+      "draw_order": 107,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/R_eye_white.png",
+      "ko_name": "오른쪽 흰자",
+      "group": "eyes",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__L_iris",
+      "original_part_id": "L_iris",
+      "role": "eyes",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/L_iris.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        800,
+        745,
+        101,
+        131
+      ],
+      "alpha_coverage": 0.78505,
+      "draw_order": 108,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/L_iris.png",
+      "ko_name": "왼쪽 홍채",
+      "group": "eyes",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__R_iris",
+      "original_part_id": "R_iris",
+      "role": "eyes",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/R_iris.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1150,
+        745,
+        101,
+        131
+      ],
+      "alpha_coverage": 0.78505,
+      "draw_order": 109,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/R_iris.png",
+      "ko_name": "오른쪽 홍채",
+      "group": "eyes",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__L_pupil",
+      "original_part_id": "L_pupil",
+      "role": "eyes",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/L_pupil.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        835,
+        770,
+        46,
+        71
+      ],
+      "alpha_coverage": 0.784446,
+      "draw_order": 110,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/L_pupil.png",
+      "ko_name": "왼쪽 동공",
+      "group": "eyes",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__R_pupil",
+      "original_part_id": "R_pupil",
+      "role": "eyes",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/R_pupil.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1185,
+        770,
+        46,
+        71
+      ],
+      "alpha_coverage": 0.784446,
+      "draw_order": 111,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/R_pupil.png",
+      "ko_name": "오른쪽 동공",
+      "group": "eyes",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__L_highlight",
+      "original_part_id": "L_highlight",
+      "role": "eyes",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_smoke/L_highlight.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        845,
+        730,
+        38,
+        47
+      ],
+      "alpha_coverage": 0.787234,
+      "draw_order": 112,
+      "status": "O",
+      "include_in_import_psd": true,
+      "notes": "clean left eye highlight for PSD/Cubism technical smoke; not final art approval.",
+      "relative_output_path": "production_layers_smoke/L_highlight.png",
+      "ko_name": "왼쪽 눈 하이라이트",
+      "group": "eyes",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__R_highlight",
+      "original_part_id": "R_highlight",
+      "role": "eyes",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_smoke/R_highlight.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1195,
+        730,
+        38,
+        47
+      ],
+      "alpha_coverage": 0.787234,
+      "draw_order": 113,
+      "status": "O",
+      "include_in_import_psd": true,
+      "notes": "clean right eye highlight for PSD/Cubism technical smoke; not final art approval.",
+      "relative_output_path": "production_layers_smoke/R_highlight.png",
+      "ko_name": "오른쪽 눈 하이라이트",
+      "group": "eyes",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__L_upper_lash",
+      "original_part_id": "L_upper_lash",
+      "role": "eyes",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/L_upper_lash.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        685,
+        710,
+        331,
+        116
+      ],
+      "alpha_coverage": 0.986353,
+      "draw_order": 114,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/L_upper_lash.png",
+      "ko_name": "왼쪽 윗속눈썹",
+      "group": "eyes",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__R_upper_lash",
+      "original_part_id": "R_upper_lash",
+      "role": "eyes",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/R_upper_lash.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1035,
+        710,
+        331,
+        116
+      ],
+      "alpha_coverage": 0.986353,
+      "draw_order": 115,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/R_upper_lash.png",
+      "ko_name": "오른쪽 윗속눈썹",
+      "group": "eyes",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__L_lower_lash",
+      "original_part_id": "L_lower_lash",
+      "role": "eyes",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/L_lower_lash.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        725,
+        850,
+        251,
+        81
+      ],
+      "alpha_coverage": 0.974227,
+      "draw_order": 116,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/L_lower_lash.png",
+      "ko_name": "왼쪽 아랫속눈썹",
+      "group": "eyes",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__R_lower_lash",
+      "original_part_id": "R_lower_lash",
+      "role": "eyes",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/R_lower_lash.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1075,
+        850,
+        251,
+        81
+      ],
+      "alpha_coverage": 0.974227,
+      "draw_order": 117,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/R_lower_lash.png",
+      "ko_name": "오른쪽 아랫속눈썹",
+      "group": "eyes",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__L_brow",
+      "original_part_id": "L_brow",
+      "role": "brows",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/L_brow.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        700,
+        650,
+        301,
+        91
+      ],
+      "alpha_coverage": 0.98087,
+      "draw_order": 118,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/L_brow.png",
+      "ko_name": "왼쪽 눈썹",
+      "group": "brows",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__R_brow",
+      "original_part_id": "R_brow",
+      "role": "brows",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/R_brow.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1050,
+        650,
+        301,
+        91
+      ],
+      "alpha_coverage": 0.98087,
+      "draw_order": 119,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/R_brow.png",
+      "ko_name": "오른쪽 눈썹",
+      "group": "brows",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__mouth_line",
+      "original_part_id": "mouth_line",
+      "role": "mouth",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_smoke/mouth_line.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        956,
+        1043,
+        160,
+        39
+      ],
+      "alpha_coverage": 0.292628,
+      "draw_order": 120,
+      "status": "O",
+      "include_in_import_psd": true,
+      "notes": "clean neutral mouth line for PSD/Cubism technical smoke; not final art approval.",
+      "relative_output_path": "production_layers_smoke/mouth_line.png",
+      "ko_name": "입 라인",
+      "group": "mouth",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__mouth_inner",
+      "original_part_id": "mouth_inner",
+      "role": "mouth",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/mouth_inner.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        970,
+        1025,
+        131,
+        66
+      ],
+      "alpha_coverage": 0.784409,
+      "draw_order": 121,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/mouth_inner.png",
+      "ko_name": "입 안쪽",
+      "group": "mouth",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__teeth",
+      "original_part_id": "teeth",
+      "role": "mouth",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/teeth.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        980,
+        1018,
+        111,
+        29
+      ],
+      "alpha_coverage": 0.788754,
+      "draw_order": 122,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/teeth.png",
+      "ko_name": "치아",
+      "group": "mouth",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__tongue",
+      "original_part_id": "tongue",
+      "role": "mouth",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/tongue.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        990,
+        1050,
+        91,
+        36
+      ],
+      "alpha_coverage": 0.786325,
+      "draw_order": 123,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/tongue.png",
+      "ko_name": "혀",
+      "group": "mouth",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__L_side_hair",
+      "original_part_id": "L_side_hair",
+      "role": "hair",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/L_side_hair.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        260,
+        360,
+        611,
+        1321
+      ],
+      "alpha_coverage": 0.999351,
+      "draw_order": 124,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/L_side_hair.png",
+      "ko_name": "왼쪽 옆머리",
+      "group": "hair",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__R_side_hair",
+      "original_part_id": "R_side_hair",
+      "role": "hair",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/R_side_hair.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1180,
+        360,
+        611,
+        1321
+      ],
+      "alpha_coverage": 0.999351,
+      "draw_order": 125,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/R_side_hair.png",
+      "ko_name": "오른쪽 옆머리",
+      "group": "hair",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__front_hair",
+      "original_part_id": "front_hair",
+      "role": "hair",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/front_hair.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        520,
+        150,
+        1011,
+        901
+      ],
+      "alpha_coverage": 0.999425,
+      "draw_order": 126,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/front_hair.png",
+      "ko_name": "앞머리",
+      "group": "hair",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__L_ear_outer",
+      "original_part_id": "L_ear_outer",
+      "role": "ears",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/L_ear_outer.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        560,
+        20,
+        421,
+        501
+      ],
+      "alpha_coverage": 0.50114,
+      "draw_order": 127,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/L_ear_outer.png",
+      "ko_name": "왼쪽 귀 바깥",
+      "group": "ears",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__R_ear_outer",
+      "original_part_id": "R_ear_outer",
+      "role": "ears",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/R_ear_outer.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1120,
+        20,
+        421,
+        501
+      ],
+      "alpha_coverage": 0.50114,
+      "draw_order": 128,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/R_ear_outer.png",
+      "ko_name": "오른쪽 귀 바깥",
+      "group": "ears",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__L_ear_inner",
+      "original_part_id": "L_ear_inner",
+      "role": "ears",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/L_ear_inner.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        650,
+        80,
+        241,
+        351
+      ],
+      "alpha_coverage": 0.502075,
+      "draw_order": 129,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/L_ear_inner.png",
+      "ko_name": "왼쪽 귀 안쪽",
+      "group": "ears",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__R_ear_inner",
+      "original_part_id": "R_ear_inner",
+      "role": "ears",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/R_ear_inner.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1210,
+        80,
+        241,
+        351
+      ],
+      "alpha_coverage": 0.502075,
+      "draw_order": 130,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/R_ear_inner.png",
+      "ko_name": "오른쪽 귀 안쪽",
+      "group": "ears",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__L_fur_shoulder",
+      "original_part_id": "L_fur_shoulder",
+      "role": "fur",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/L_fur_shoulder.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        70,
+        1460,
+        781,
+        471
+      ],
+      "alpha_coverage": 0.998576,
+      "draw_order": 131,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/L_fur_shoulder.png",
+      "ko_name": "왼쪽 어깨 털",
+      "group": "fur",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__R_fur_shoulder",
+      "original_part_id": "R_fur_shoulder",
+      "role": "fur",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/R_fur_shoulder.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1200,
+        1460,
+        781,
+        471
+      ],
+      "alpha_coverage": 0.998576,
+      "draw_order": 132,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/R_fur_shoulder.png",
+      "ko_name": "오른쪽 어깨 털",
+      "group": "fur",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__choker",
+      "original_part_id": "choker",
+      "role": "accessory",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_smoke/choker.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        845,
+        1234,
+        362,
+        78
+      ],
+      "alpha_coverage": 0.989517,
+      "draw_order": 133,
+      "status": "O",
+      "include_in_import_psd": true,
+      "notes": "clean choker band for PSD/Cubism technical smoke; not final art approval.",
+      "relative_output_path": "production_layers_smoke/choker.png",
+      "ko_name": "초커",
+      "group": "accessory",
+      "experiment_id": "concept-regeneration-001"
+    },
+    {
+      "layer_name": "concept__gold_ornaments",
+      "original_part_id": "gold_ornaments",
+      "role": "accessory",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/gold_ornaments.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        820,
+        1270,
+        421,
+        521
+      ],
+      "alpha_coverage": 0.997611,
+      "draw_order": 134,
+      "status": "REVISE",
+      "include_in_import_psd": false,
+      "notes": "Bootstrap rough mask candidate for visual review; not final segmentation.",
+      "relative_output_path": "production_layers_candidate/gold_ornaments.png",
+      "ko_name": "금색 장식",
+      "group": "accessory",
+      "experiment_id": "concept-regeneration-001"
+    }
+  ]
+}

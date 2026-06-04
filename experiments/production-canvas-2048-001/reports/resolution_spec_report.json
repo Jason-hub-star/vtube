@@ -1,0 +1,37 @@
+{
+  "experiment_id": "RESOLUTION-SPEC-001",
+  "date": "2026-06-02",
+  "status": "VERIFIED",
+  "inputs": [
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/assets/canonical_source.png"
+  ],
+  "outputs": [
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png"
+  ],
+  "metrics": {
+    "canvas_size": [
+      2048,
+      2048
+    ],
+    "framing": "bust-up",
+    "source_original_size": [
+      1254,
+      1254
+    ],
+    "native_2048_generation": false,
+    "resized_to_2048": true
+  },
+  "result": {
+    "production_canvas_fixed": "PASS",
+    "canonical_master_size_2048": "PASS",
+    "preview_export_scale_only": "PASS",
+    "native_2048_generation": "OBSERVED_NOT_NATIVE"
+  },
+  "human_review": {
+    "required": false,
+    "verdict": "PASS",
+    "notes": "Resolution policy fixed; visual review belongs to CANON-MASTER-001."
+  },
+  "decision": "keep",
+  "next_action": "Generate and validate all production candidates against this 2048 canvas."
+}

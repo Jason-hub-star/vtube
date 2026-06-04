@@ -1,0 +1,34 @@
+{
+  "experiment_id": "cubism-material-pack-001",
+  "date": "2026-06-04",
+  "status": "PASS_WITH_CUBISM_IMPORT",
+  "checks": {
+    "manifest_schema": "PASS",
+    "duplicate_layer_names": "PASS",
+    "required_production_roles": "PASS",
+    "reference_layers_excluded_from_import_psd": "PASS",
+    "psd_metadata": "PASS",
+    "cubism_import_smoke": "PASS"
+  },
+  "psd_metadata": {
+    "exists": true,
+    "valid_header": true,
+    "channels": 3,
+    "width": 2048,
+    "height": 2048,
+    "depth": 8,
+    "color_mode": "RGB",
+    "layer_mask_section_length": 18001292,
+    "layer_count": 27
+  },
+  "psd_writer": {
+    "date": "2026-06-03",
+    "writer": "psd-tools"
+  },
+  "errors": [],
+  "warnings": [],
+  "acceptance": {
+    "import_ready_psd_promoted": true,
+    "acceptance_gate": "Cubism Editor actual import must pass before import_ready.psd is trusted."
+  }
+}

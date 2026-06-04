@@ -1,0 +1,399 @@
+{
+  "experiment_id": "MOUTH-APPLY-DELTA-001",
+  "date": "2026-06-02",
+  "status": "VERIFIED",
+  "inputs": [
+    "/Users/family/jason/Vtube/experiments/asset-generation-2048-001/raw/mouth_set_a_stylematch_source.png",
+    "/Users/family/jason/Vtube/experiments/asset-generation-2048-001/raw/mouth_set_b_simple_source.png",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/reports/manual_adjustments_2048.json"
+  ],
+  "outputs": [
+    "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/preview/index.html",
+    "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/reports/mouth_apply_delta_report.json"
+  ],
+  "metrics": {
+    "canvas_size": [
+      2048,
+      2048
+    ],
+    "mouth_roi": [
+      959,
+      915,
+      182,
+      120
+    ],
+    "original_target": [
+      1050.0,
+      975.0
+    ],
+    "applied_delta": {
+      "dx": -37.842,
+      "dy": 6.307,
+      "scale": 1.0,
+      "opacity": 1.0
+    },
+    "candidate_count": 10,
+    "corrected_numeric_pass_count": 4,
+    "delta_interpretation": "manual canvas_dx/canvas_dy interpreted as 2048 canvas pixels",
+    "calibrated_canvas_delta": true
+  },
+  "result": {
+    "corrected_full_canvas_layers": "PASS",
+    "corrected_bbox_inside_mouth_roi": "PASS",
+    "human_visual_quality": "PASS_BY_USER_REVIEW",
+    "position_after_delta": "PASS_BY_USER_REVIEW",
+    "set_winner": "ALL_CANDIDATES_BY_USER_REVIEW",
+    "production_candidate": "KEEP_ALL_MOUTH_CANDIDATES_BY_USER_REVIEW",
+    "mouth_global_delta_locked": "PASS_FOR_NEXT_PART_TESTS"
+  },
+  "candidates": [
+    {
+      "set": "set_a_stylematch",
+      "expression": "neutral_smile",
+      "crop": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/crops/set_a_stylematch_neutral_smile_crop.png",
+      "auto_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_neutral_smile_auto_full.png",
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_neutral_smile_corrected_full.png",
+      "auto_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_a_stylematch_neutral_smile_auto_overlay.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_a_stylematch_neutral_smile_corrected_overlay.png",
+      "auto_bbox": [
+        985,
+        962,
+        131,
+        23
+      ],
+      "corrected_bbox": [
+        947,
+        968,
+        131,
+        23
+      ],
+      "auto_center": [
+        1050.2768052516412,
+        975.4770240700219
+      ],
+      "corrected_center": [
+        1012.2768052516411,
+        981.4770240700219
+      ],
+      "auto_error_px": 0.5515189123832813,
+      "corrected_error_px": 0.20741955598331854,
+      "corrected_bbox_inside_mouth_roi": false,
+      "human_verdict": "KEEP",
+      "production_use": "KEEP_BY_USER_REVIEW"
+    },
+    {
+      "set": "set_a_stylematch",
+      "expression": "small_open",
+      "crop": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/crops/set_a_stylematch_small_open_crop.png",
+      "auto_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_small_open_auto_full.png",
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_small_open_corrected_full.png",
+      "auto_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_a_stylematch_small_open_auto_overlay.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_a_stylematch_small_open_corrected_overlay.png",
+      "auto_bbox": [
+        984,
+        949,
+        132,
+        58
+      ],
+      "corrected_bbox": [
+        947,
+        956,
+        132,
+        58
+      ],
+      "auto_center": [
+        1049.578947368421,
+        974.7068457857931
+      ],
+      "corrected_center": [
+        1012.578947368421,
+        981.7068457857931
+      ],
+      "auto_error_px": 0.5130542971916517,
+      "corrected_error_px": 0.5805801748226436,
+      "corrected_bbox_inside_mouth_roi": false,
+      "human_verdict": "KEEP",
+      "production_use": "KEEP_BY_USER_REVIEW"
+    },
+    {
+      "set": "set_a_stylematch",
+      "expression": "wide_open",
+      "crop": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/crops/set_a_stylematch_wide_open_crop.png",
+      "auto_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_wide_open_auto_full.png",
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_wide_open_corrected_full.png",
+      "auto_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_a_stylematch_wide_open_auto_overlay.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_a_stylematch_wide_open_corrected_overlay.png",
+      "auto_bbox": [
+        1002,
+        937,
+        97,
+        87
+      ],
+      "corrected_bbox": [
+        964,
+        943,
+        97,
+        87
+      ],
+      "auto_center": [
+        1050.2103487064117,
+        974.9694681022015
+      ],
+      "corrected_center": [
+        1012.2103487064117,
+        980.9694681022015
+      ],
+      "auto_error_px": 0.21255299356215102,
+      "corrected_error_px": 0.34156722485394864,
+      "corrected_bbox_inside_mouth_roi": true,
+      "human_verdict": "KEEP",
+      "production_use": "KEEP_BY_USER_REVIEW"
+    },
+    {
+      "set": "set_a_stylematch",
+      "expression": "o_vowel",
+      "crop": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/crops/set_a_stylematch_o_vowel_crop.png",
+      "auto_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_o_vowel_auto_full.png",
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_o_vowel_corrected_full.png",
+      "auto_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_a_stylematch_o_vowel_auto_overlay.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_a_stylematch_o_vowel_corrected_overlay.png",
+      "auto_bbox": [
+        1025,
+        933,
+        51,
+        87
+      ],
+      "corrected_bbox": [
+        987,
+        939,
+        51,
+        87
+      ],
+      "auto_center": [
+        1049.9648033126293,
+        975.3708961845608
+      ],
+      "corrected_center": [
+        1011.9648033126294,
+        981.3708961845608
+      ],
+      "auto_error_px": 0.3725624598958444,
+      "corrected_error_px": 0.20348877711655577,
+      "corrected_bbox_inside_mouth_roi": true,
+      "human_verdict": "KEEP",
+      "production_use": "KEEP_BY_USER_REVIEW"
+    },
+    {
+      "set": "set_a_stylematch",
+      "expression": "happy_open",
+      "crop": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/crops/set_a_stylematch_happy_open_crop.png",
+      "auto_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_happy_open_auto_full.png",
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_happy_open_corrected_full.png",
+      "auto_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_a_stylematch_happy_open_auto_overlay.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_a_stylematch_happy_open_corrected_overlay.png",
+      "auto_bbox": [
+        985,
+        940,
+        132,
+        83
+      ],
+      "corrected_bbox": [
+        947,
+        946,
+        132,
+        83
+      ],
+      "auto_center": [
+        1050.4651728553138,
+        974.8591549295775
+      ],
+      "corrected_center": [
+        1012.4651728553137,
+        980.8591549295775
+      ],
+      "auto_error_px": 0.4860278995933157,
+      "corrected_error_px": 0.5430657143875939,
+      "corrected_bbox_inside_mouth_roi": false,
+      "human_verdict": "KEEP",
+      "production_use": "KEEP_BY_USER_REVIEW"
+    },
+    {
+      "set": "set_b_simple",
+      "expression": "neutral_smile",
+      "crop": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/crops/set_b_simple_neutral_smile_crop.png",
+      "auto_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_b_simple_neutral_smile_auto_full.png",
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_b_simple_neutral_smile_corrected_full.png",
+      "auto_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_b_simple_neutral_smile_auto_overlay.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_b_simple_neutral_smile_corrected_overlay.png",
+      "auto_bbox": [
+        985,
+        961,
+        131,
+        25
+      ],
+      "corrected_bbox": [
+        947,
+        967,
+        131,
+        25
+      ],
+      "auto_center": [
+        1049.9470198675497,
+        975.2295805739515
+      ],
+      "corrected_center": [
+        1011.9470198675497,
+        981.2295805739515
+      ],
+      "auto_error_px": 0.2356143764084423,
+      "corrected_error_px": 0.2247362539032189,
+      "corrected_bbox_inside_mouth_roi": false,
+      "human_verdict": "KEEP",
+      "production_use": "KEEP_BY_USER_REVIEW"
+    },
+    {
+      "set": "set_b_simple",
+      "expression": "small_open",
+      "crop": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/crops/set_b_simple_small_open_crop.png",
+      "auto_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_b_simple_small_open_auto_full.png",
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_b_simple_small_open_corrected_full.png",
+      "auto_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_b_simple_small_open_auto_overlay.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_b_simple_small_open_corrected_overlay.png",
+      "auto_bbox": [
+        984,
+        942,
+        132,
+        74
+      ],
+      "corrected_bbox": [
+        947,
+        948,
+        132,
+        74
+      ],
+      "auto_center": [
+        1049.5006121616107,
+        975.3343762753367
+      ],
+      "corrected_center": [
+        1012.5006121616107,
+        981.3343762753367
+      ],
+      "auto_error_px": 0.6009955961895374,
+      "corrected_error_px": 0.3437041660131992,
+      "corrected_bbox_inside_mouth_roi": false,
+      "human_verdict": "KEEP",
+      "production_use": "KEEP_BY_USER_REVIEW"
+    },
+    {
+      "set": "set_b_simple",
+      "expression": "wide_open",
+      "crop": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/crops/set_b_simple_wide_open_crop.png",
+      "auto_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_b_simple_wide_open_auto_full.png",
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_b_simple_wide_open_corrected_full.png",
+      "auto_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_b_simple_wide_open_auto_overlay.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_b_simple_wide_open_corrected_overlay.png",
+      "auto_bbox": [
+        1005,
+        936,
+        90,
+        86
+      ],
+      "corrected_bbox": [
+        968,
+        942,
+        90,
+        86
+      ],
+      "auto_center": [
+        1049.5531240088803,
+        974.9077069457659
+      ],
+      "corrected_center": [
+        1012.5531240088804,
+        980.9077069457659
+      ],
+      "auto_error_px": 0.45630708881086657,
+      "corrected_error_px": 0.5617454277102452,
+      "corrected_bbox_inside_mouth_roi": true,
+      "human_verdict": "KEEP",
+      "production_use": "KEEP_BY_USER_REVIEW"
+    },
+    {
+      "set": "set_b_simple",
+      "expression": "o_vowel",
+      "crop": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/crops/set_b_simple_o_vowel_crop.png",
+      "auto_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_b_simple_o_vowel_auto_full.png",
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_b_simple_o_vowel_corrected_full.png",
+      "auto_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_b_simple_o_vowel_auto_overlay.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_b_simple_o_vowel_corrected_overlay.png",
+      "auto_bbox": [
+        1021,
+        933,
+        60,
+        86
+      ],
+      "corrected_bbox": [
+        983,
+        939,
+        60,
+        86
+      ],
+      "auto_center": [
+        1050.4612778315586,
+        975.370522749274
+      ],
+      "corrected_center": [
+        1012.4612778315586,
+        981.370522749274
+      ],
+      "auto_error_px": 0.5916623577826754,
+      "corrected_error_px": 0.30985897242166244,
+      "corrected_bbox_inside_mouth_roi": true,
+      "human_verdict": "KEEP",
+      "production_use": "KEEP_BY_USER_REVIEW"
+    },
+    {
+      "set": "set_b_simple",
+      "expression": "happy_open",
+      "crop": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/crops/set_b_simple_happy_open_crop.png",
+      "auto_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_b_simple_happy_open_auto_full.png",
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_b_simple_happy_open_corrected_full.png",
+      "auto_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_b_simple_happy_open_auto_overlay.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_b_simple_happy_open_corrected_overlay.png",
+      "auto_bbox": [
+        985,
+        939,
+        131,
+        83
+      ],
+      "corrected_bbox": [
+        947,
+        946,
+        131,
+        83
+      ],
+      "auto_center": [
+        1050.015730067243,
+        974.6268011527377
+      ],
+      "corrected_center": [
+        1012.015730067243,
+        981.6268011527377
+      ],
+      "auto_error_px": 0.37353020575769175,
+      "corrected_error_px": 0.35001930098072653,
+      "corrected_bbox_inside_mouth_roi": false,
+      "human_verdict": "KEEP",
+      "production_use": "KEEP_BY_USER_REVIEW"
+    }
+  ],
+  "human_review": {
+    "required": true,
+    "verdict": "PASS",
+    "notes": "주인님 decision: 입은 다 사용. Calibrated global mouth delta is good enough; do not spend more time tuning mouth before testing other parts. Numeric ROI remains 4/10, so keep numeric and human evidence separate."
+  },
+  "decision": "keep",
+  "next_action": "Freeze the calibrated mouth global delta for now and move to the next part test, starting with blink stages. Revisit per-expression mouth offsets only if rig preview shows a visible issue."
+}

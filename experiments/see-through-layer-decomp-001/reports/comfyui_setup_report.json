@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "experiment_id": "see-through-layer-decomp-001",
+  "generated_at": "2026-06-04T02:55:48.822693+00:00",
+  "host": {
+    "platform": "macOS-26.3.1-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "python_used_for_probe": "/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/.venv-comfyui/bin/python"
+  },
+  "source": {
+    "canonical_2048": "experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+    "plugin_source": "experiments/validation-smoke-001/external_repos/ComfyUI-See-through"
+  },
+  "clone_comfyui": {
+    "status": "EXISTS",
+    "path": "/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI"
+  },
+  "custom_node": {
+    "status": "EXISTS",
+    "target": "/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/custom_nodes/ComfyUI-See-through",
+    "source": "/Users/family/jason/Vtube/experiments/validation-smoke-001/external_repos/ComfyUI-See-through"
+  },
+  "workflow": {
+    "status": "PASS",
+    "workflow": "experiments/see-through-layer-decomp-001/workflow/seethrough-basic-vtube.json"
+  },
+  "dependency_install": [
+    {
+      "status": "SKIPPED_EXISTING_VENV",
+      "reason": "--skip-install-deps",
+      "python": "/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/.venv-comfyui/bin/python"
+    }
+  ],
+  "torch_probe": {
+    "cmd": [
+      "/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/.venv-comfyui/bin/python",
+      "-c",
+      "\nimport json, platform, sys\ntry:\n    import torch\n    payload = {\n        \"python\": sys.version,\n        \"platform\": platform.platform(),\n        \"torch\": torch.__version__,\n        \"cuda\": torch.cuda.is_available(),\n        \"mps\": torch.backends.mps.is_available(),\n        \"mps_built\": torch.backends.mps.is_built(),\n    }\nexcept Exception as exc:\n    payload = {\"error\": repr(exc), \"python\": sys.version}\nprint(json.dumps(payload))\n"
+    ],
+    "cwd": null,
+    "started_at": "2026-06-04T02:55:34.277124+00:00",
+    "returncode": 0,
+    "stdout_tail": "{\"python\": \"3.11.15 (main, Mar 20 2026, 00:41:54) [Clang 22.1.1 ]\", \"platform\": \"macOS-26.3.1-arm64-arm-64bit\", \"torch\": \"2.12.0\", \"cuda\": false, \"mps\": true, \"mps_built\": true}\n",
+    "stderr_tail": "",
+    "payload": {
+      "python": "3.11.15 (main, Mar 20 2026, 00:41:54) [Clang 22.1.1 ]",
+      "platform": "macOS-26.3.1-arm64-arm-64bit",
+      "torch": "2.12.0",
+      "cuda": false,
+      "mps": true,
+      "mps_built": true
+    }
+  },
+  "node_load_probe": {
+    "cmd": [
+      "/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/.venv-comfyui/bin/python",
+      "-c",
+      "\nimport importlib.util\nimport json\nimport sys\nfrom pathlib import Path\n\ncomfy = Path('/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI')\nplugin = Path('/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/custom_nodes/ComfyUI-See-through')\nsys.path.insert(0, str(comfy))\nspec = importlib.util.spec_from_file_location(\n    \"ComfyUI_See_through\",\n    plugin / \"__init__.py\",\n    submodule_search_locations=[str(plugin)],\n)\nmodule = importlib.util.module_from_spec(spec)\nsys.modules[spec.name] = module\nspec.loader.exec_module(module)\nprint(json.dumps({\n    \"node_count\": len(getattr(module, \"NODE_CLASS_MAPPINGS\", {})),\n    \"nodes\": sorted(getattr(module, \"NODE_CLASS_MAPPINGS\", {}).keys()),\n}))\n"
+    ],
+    "cwd": null,
+    "started_at": "2026-06-04T02:55:36.895558+00:00",
+    "returncode": 0,
+    "stdout_tail": "[ComfyUI-See-through] __init__.py loading...\n[SeeThrough] nodes.py: starting imports...\n[SeeThrough] nodes.py: comfy imports OK\n[SeeThrough] CURRENT_DIR = /Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/custom_nodes/ComfyUI-See-through\n[SeeThrough] SEETHROUGH_COMMON_DIR = /Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/custom_nodes/ComfyUI-See-through/see-through/common\n[SeeThrough] common dir exists = True\n[SeeThrough] pycocotools not found, installing mock...\n[SeeThrough] Added to sys.path: /Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/custom_nodes/ComfyUI-See-through/see-through/common\n[SeeThrough] Added to sys.path: /Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/custom_nodes/ComfyUI-See-through/see-through\n[SeeThrough] Importing see-through modules...\n[SeeThrough] All see-through imports OK\n[ComfyUI-See-through] Loaded 6 nodes: ['SeeThrough_LoadLayerDiffModel', 'SeeThrough_LoadDepthModel', 'SeeThrough_GenerateLayers', 'SeeThrough_GenerateDepth', 'SeeThrough_PostProcess', 'SeeThrough_SavePSD']\n{\"node_count\": 6, \"nodes\": [\"SeeThrough_GenerateDepth\", \"SeeThrough_GenerateLayers\", \"SeeThrough_LoadDepthModel\", \"SeeThrough_LoadLayerDiffModel\", \"SeeThrough_PostProcess\", \"SeeThrough_SavePSD\"]}\n",
+    "stderr_tail": "",
+    "payload": {
+      "node_count": 6,
+      "nodes": [
+        "SeeThrough_GenerateDepth",
+        "SeeThrough_GenerateLayers",
+        "SeeThrough_LoadDepthModel",
+        "SeeThrough_LoadLayerDiffModel",
+        "SeeThrough_PostProcess",
+        "SeeThrough_SavePSD"
+      ]
+    }
+  },
+  "launch_command": [
+    "/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/.venv-comfyui/bin/python",
+    "/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/main.py",
+    "--listen",
+    "127.0.0.1",
+    "--port",
+    "8188"
+  ],
+  "manual_steps": [
+    "Run the launch command.",
+    "Open http://127.0.0.1:8188/.",
+    "Load experiments/see-through-layer-decomp-001/workflow/seethrough-basic-vtube.json.",
+    "Run the workflow once and keep the generated *_layers.json plus layer PNG outputs.",
+    "Run scripts/normalize_seethrough_outputs.py --layers-json <ComfyUI output layers.json>.",
+    "Run scripts/build_review_manifest.py and review the See-through candidates in the local review app."
+  ],
+  "status": "PASS_MPS"
+}

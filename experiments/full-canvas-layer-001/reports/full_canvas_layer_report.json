@@ -1,0 +1,228 @@
+{
+  "experiment_id": "FCANVAS-001",
+  "date": "2026-06-02",
+  "status": "OBSERVED",
+  "inputs": [
+    "/Users/family/jason/Vtube/experiments/imagegen-limit-test-001/generated/canonical_front.png",
+    "/Users/family/jason/Vtube/experiments/coordinate-align-001/reports/coordinate_alignment_report.json",
+    "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/mouth"
+  ],
+  "outputs": [
+    "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/layers/mouth_open_full.png",
+    "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/layers/mouth_02_full.png",
+    "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/layers/mouth_03_full.png",
+    "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/layers/mouth_04_full.png",
+    "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/layers/mouth_05_full.png",
+    "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/layers/mouth_06_full.png",
+    "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/overlays/mouth_open_full_overlay.png",
+    "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/overlays/mouth_02_full_overlay.png",
+    "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/overlays/mouth_03_full_overlay.png",
+    "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/overlays/mouth_04_full_overlay.png",
+    "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/overlays/mouth_05_full_overlay.png",
+    "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/overlays/mouth_06_full_overlay.png"
+  ],
+  "metrics": {
+    "candidate_count": 6,
+    "numeric_pass_count": 6,
+    "face_roi": [
+      640,
+      300,
+      870,
+      440
+    ]
+  },
+  "result": {
+    "full_canvas_layer": "PASS",
+    "no_runtime_place_needed": "PASS",
+    "visual_quality": "REVISE"
+  },
+  "candidates": [
+    {
+      "id": "mouth_01",
+      "source": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/mouth/mouth_01.png",
+      "layer": "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/layers/mouth_open_full.png",
+      "overlay": "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/overlays/mouth_open_full_overlay.png",
+      "alpha_bbox": [
+        10,
+        10,
+        215,
+        184
+      ],
+      "target_center": [
+        744.76,
+        373.93
+      ],
+      "target_width_px": 48.73,
+      "scale": 0.2377,
+      "placed_bbox": [
+        719,
+        353,
+        772,
+        398
+      ],
+      "placement_error_px": 0.442,
+      "canvas_size_match": true,
+      "bbox_in_face_roi": true,
+      "numeric_pass": true,
+      "human_visual_verdict": "REVISE",
+      "notes": "Full-canvas technical layer; visual style still requires human review."
+    },
+    {
+      "id": "mouth_02",
+      "source": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/mouth/mouth_02.png",
+      "layer": "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/layers/mouth_02_full.png",
+      "overlay": "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/overlays/mouth_02_full_overlay.png",
+      "alpha_bbox": [
+        10,
+        10,
+        208,
+        138
+      ],
+      "target_center": [
+        744.76,
+        373.93
+      ],
+      "target_width_px": 48.73,
+      "scale": 0.2461,
+      "placed_bbox": [
+        719,
+        356,
+        772,
+        392
+      ],
+      "placement_error_px": 0.36,
+      "canvas_size_match": true,
+      "bbox_in_face_roi": true,
+      "numeric_pass": true,
+      "human_visual_verdict": "REVISE",
+      "notes": "Full-canvas technical layer; visual style still requires human review."
+    },
+    {
+      "id": "mouth_03",
+      "source": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/mouth/mouth_03.png",
+      "layer": "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/layers/mouth_03_full.png",
+      "overlay": "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/overlays/mouth_03_full_overlay.png",
+      "alpha_bbox": [
+        10,
+        10,
+        175,
+        149
+      ],
+      "target_center": [
+        744.76,
+        373.93
+      ],
+      "target_width_px": 48.73,
+      "scale": 0.2953,
+      "placed_bbox": [
+        718,
+        353,
+        772,
+        399
+      ],
+      "placement_error_px": 0.376,
+      "canvas_size_match": true,
+      "bbox_in_face_roi": true,
+      "numeric_pass": true,
+      "human_visual_verdict": "REVISE",
+      "notes": "Full-canvas technical layer; visual style still requires human review."
+    },
+    {
+      "id": "mouth_04",
+      "source": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/mouth/mouth_04.png",
+      "layer": "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/layers/mouth_04_full.png",
+      "overlay": "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/overlays/mouth_04_full_overlay.png",
+      "alpha_bbox": [
+        10,
+        10,
+        137,
+        166
+      ],
+      "target_center": [
+        744.76,
+        373.93
+      ],
+      "target_width_px": 48.73,
+      "scale": 0.3837,
+      "placed_bbox": [
+        718,
+        342,
+        772,
+        407
+      ],
+      "placement_error_px": 0.233,
+      "canvas_size_match": true,
+      "bbox_in_face_roi": true,
+      "numeric_pass": true,
+      "human_visual_verdict": "REVISE",
+      "notes": "Full-canvas technical layer; visual style still requires human review."
+    },
+    {
+      "id": "mouth_05",
+      "source": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/mouth/mouth_05.png",
+      "layer": "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/layers/mouth_05_full.png",
+      "overlay": "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/overlays/mouth_05_full_overlay.png",
+      "alpha_bbox": [
+        10,
+        10,
+        215,
+        59
+      ],
+      "target_center": [
+        744.76,
+        373.93
+      ],
+      "target_width_px": 48.73,
+      "scale": 0.2377,
+      "placed_bbox": [
+        719,
+        367,
+        772,
+        383
+      ],
+      "placement_error_px": 0.472,
+      "canvas_size_match": true,
+      "bbox_in_face_roi": true,
+      "numeric_pass": true,
+      "human_visual_verdict": "REVISE",
+      "notes": "Full-canvas technical layer; visual style still requires human review."
+    },
+    {
+      "id": "mouth_06",
+      "source": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/mouth/mouth_06.png",
+      "layer": "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/layers/mouth_06_full.png",
+      "overlay": "/Users/family/jason/Vtube/experiments/full-canvas-layer-001/overlays/mouth_06_full_overlay.png",
+      "alpha_bbox": [
+        10,
+        10,
+        207,
+        59
+      ],
+      "target_center": [
+        744.76,
+        373.93
+      ],
+      "target_width_px": 48.73,
+      "scale": 0.2474,
+      "placed_bbox": [
+        719,
+        367,
+        772,
+        383
+      ],
+      "placement_error_px": 0.319,
+      "canvas_size_match": true,
+      "bbox_in_face_roi": true,
+      "numeric_pass": true,
+      "human_visual_verdict": "REVISE",
+      "notes": "Full-canvas technical layer; visual style still requires human review."
+    }
+  ],
+  "human_review": {
+    "required": true,
+    "verdict": "REVISE",
+    "notes": "Technical overlay is valid, but art/style quality must not be auto-promoted."
+  },
+  "decision": "keep",
+  "next_action": "Use full-canvas mouth layers for previewer smoke, then apply mouth style scoring before production adoption."
+}

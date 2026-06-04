@@ -1,0 +1,78 @@
+{
+  "experiment_id": "BLINK-001",
+  "date": "2026-06-02",
+  "status": "DISCARDED",
+  "inputs": [
+    "/Users/family/jason/Vtube/experiments/imagegen-limit-test-001/generated/canonical_front.png",
+    "/Users/family/jason/Vtube/experiments/canonical-eye-001/reports/canonical_eye_geometry_report.json",
+    "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye"
+  ],
+  "outputs": [
+    "/Users/family/jason/Vtube/experiments/blink-001/layers/closed_lid_full.png",
+    "/Users/family/jason/Vtube/experiments/blink-001/overlays/closed_lid_overlay.png"
+  ],
+  "metrics": {
+    "placements": {
+      "left": {
+        "candidate": "eye_11",
+        "candidate_path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_11.png",
+        "eye_roi_bbox": [
+          619,
+          251,
+          754,
+          340
+        ],
+        "target_center": [
+          686.75,
+          300.84
+        ],
+        "target_width": 116.1,
+        "placed_bbox": [
+          631,
+          294,
+          752,
+          315
+        ],
+        "placement_error_px": 0.611,
+        "scale": 0.5451,
+        "inside_eye_roi_with_margin": true
+      },
+      "right": {
+        "candidate": "eye_12",
+        "candidate_path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_12.png",
+        "eye_roi_bbox": [
+          735,
+          250,
+          870,
+          339
+        ],
+        "target_center": [
+          802.77,
+          299.84
+        ],
+        "target_width": 116.1,
+        "placed_bbox": [
+          737,
+          293,
+          858,
+          313
+        ],
+        "placement_error_px": 0.165,
+        "scale": 0.535,
+        "inside_eye_roi_with_margin": true
+      }
+    }
+  },
+  "result": {
+    "closed_lid_inside_roi": "PASS",
+    "no_full_eye_replacement": "PASS",
+    "visual_alignment": "FAIL"
+  },
+  "human_review": {
+    "required": true,
+    "verdict": "FAIL",
+    "notes": "Closed-lid sheet candidate lands inside ROI but does not follow the canonical eye shape; it reads as a bad horizontal overlay."
+  },
+  "decision": "discard",
+  "next_action": "Stop using sheet closed-lid candidates. Use canonical edit/inpaint or manual layer split for blink."
+}

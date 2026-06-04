@@ -1,0 +1,21 @@
+{
+  "cubism_import_success": true,
+  "layers_flattened": false,
+  "reviewer": "codex",
+  "tested_at": "2026-06-03T01:36:22+09:00",
+  "cubism_editor": "/Applications/Live2D Cubism 5.3/Live2D Cubism Editor 5.3.app",
+  "candidate_psd": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/import_ready_candidate.psd",
+  "observed_windows": [
+    "Live2D Cubism Editor 5.3.01    [무료 버전]  - import_ready_candidate"
+  ],
+  "log_path": "/Users/family/Library/Live2D/Cubism5.3_Editor/logs/log.txt",
+  "error_excerpt": [
+    "Read Header:26",
+    "Read ColorModeData:4",
+    "Read ImageResources:98",
+    "Read LayerAndMaskInfo:18001296",
+    "Read ImageData:12582914",
+    "load @PSDDocument : 480.468 msec"
+  ],
+  "notes": "The initial raw-minimal Python PSD failed with error signature @ 0x00000026. After switching to psd-tools writer, Cubism Editor loaded import_ready_candidate.psd and the window title changed to import_ready_candidate. The PSD contains 27 production layers and reference layers remain outside the PSD."
+}

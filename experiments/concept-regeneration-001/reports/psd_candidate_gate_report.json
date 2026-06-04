@@ -1,0 +1,337 @@
+{
+  "schema_version": 1,
+  "experiment_id": "concept-regeneration-001",
+  "generated_at": "2026-06-04T02:11:49.720750+00:00",
+  "status": "PASS_WITH_CUBISM_IMPORT",
+  "source_manifest": "experiments/concept-regeneration-001/layer_manifest.json",
+  "source_review": "experiments/concept-regeneration-001/reports/part_visual_review.json",
+  "gate": {
+    "accepted_verdict": "O",
+    "excluded_verdicts": [
+      "X",
+      "REVISE",
+      "REFERENCE_ONLY",
+      "UNREVIEWED"
+    ],
+    "require_include_in_import_psd": true
+  },
+  "accepted_layer_count": 6,
+  "excluded_layer_count": 29,
+  "accepted_layers": [
+    {
+      "part_id": "face_underpaint",
+      "original_part_id": "face_underpaint",
+      "ko_name": "얼굴 언더페인트",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/psd_candidate_layers/face_underpaint.png",
+      "draw_order": 100
+    },
+    {
+      "part_id": "neck",
+      "original_part_id": "neck",
+      "ko_name": "목",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/psd_candidate_layers/neck.png",
+      "draw_order": 104
+    },
+    {
+      "part_id": "L_highlight",
+      "original_part_id": "L_highlight",
+      "ko_name": "왼쪽 눈 하이라이트",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/psd_candidate_layers/L_highlight.png",
+      "draw_order": 112
+    },
+    {
+      "part_id": "R_highlight",
+      "original_part_id": "R_highlight",
+      "ko_name": "오른쪽 눈 하이라이트",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/psd_candidate_layers/R_highlight.png",
+      "draw_order": 113
+    },
+    {
+      "part_id": "mouth_line",
+      "original_part_id": "mouth_line",
+      "ko_name": "입 라인",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/psd_candidate_layers/mouth_line.png",
+      "draw_order": 120
+    },
+    {
+      "part_id": "choker",
+      "original_part_id": "choker",
+      "ko_name": "초커",
+      "output_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/psd_candidate_layers/choker.png",
+      "draw_order": 133
+    }
+  ],
+  "excluded_layers": [
+    {
+      "part_id": "concept__back_hair",
+      "original_part_id": "back_hair",
+      "ko_name": "뒷머리",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/back_hair.png"
+    },
+    {
+      "part_id": "concept__body",
+      "original_part_id": "body",
+      "ko_name": "몸통",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/body.png"
+    },
+    {
+      "part_id": "concept__clothes",
+      "original_part_id": "clothes",
+      "ko_name": "의상",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/clothes.png"
+    },
+    {
+      "part_id": "concept__face_base",
+      "original_part_id": "face_base",
+      "ko_name": "얼굴 베이스",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/face_base.png"
+    },
+    {
+      "part_id": "concept__L_eye_white",
+      "original_part_id": "L_eye_white",
+      "ko_name": "왼쪽 흰자",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/L_eye_white.png"
+    },
+    {
+      "part_id": "concept__R_eye_white",
+      "original_part_id": "R_eye_white",
+      "ko_name": "오른쪽 흰자",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/R_eye_white.png"
+    },
+    {
+      "part_id": "concept__L_iris",
+      "original_part_id": "L_iris",
+      "ko_name": "왼쪽 홍채",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/L_iris.png"
+    },
+    {
+      "part_id": "concept__R_iris",
+      "original_part_id": "R_iris",
+      "ko_name": "오른쪽 홍채",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/R_iris.png"
+    },
+    {
+      "part_id": "concept__L_pupil",
+      "original_part_id": "L_pupil",
+      "ko_name": "왼쪽 동공",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/L_pupil.png"
+    },
+    {
+      "part_id": "concept__R_pupil",
+      "original_part_id": "R_pupil",
+      "ko_name": "오른쪽 동공",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/R_pupil.png"
+    },
+    {
+      "part_id": "concept__L_upper_lash",
+      "original_part_id": "L_upper_lash",
+      "ko_name": "왼쪽 윗속눈썹",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/L_upper_lash.png"
+    },
+    {
+      "part_id": "concept__R_upper_lash",
+      "original_part_id": "R_upper_lash",
+      "ko_name": "오른쪽 윗속눈썹",
+      "verdict": "X",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/R_upper_lash.png"
+    },
+    {
+      "part_id": "concept__L_lower_lash",
+      "original_part_id": "L_lower_lash",
+      "ko_name": "왼쪽 아랫속눈썹",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/L_lower_lash.png"
+    },
+    {
+      "part_id": "concept__R_lower_lash",
+      "original_part_id": "R_lower_lash",
+      "ko_name": "오른쪽 아랫속눈썹",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/R_lower_lash.png"
+    },
+    {
+      "part_id": "concept__L_brow",
+      "original_part_id": "L_brow",
+      "ko_name": "왼쪽 눈썹",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/L_brow.png"
+    },
+    {
+      "part_id": "concept__R_brow",
+      "original_part_id": "R_brow",
+      "ko_name": "오른쪽 눈썹",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/R_brow.png"
+    },
+    {
+      "part_id": "concept__mouth_inner",
+      "original_part_id": "mouth_inner",
+      "ko_name": "입 안쪽",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/mouth_inner.png"
+    },
+    {
+      "part_id": "concept__teeth",
+      "original_part_id": "teeth",
+      "ko_name": "치아",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/teeth.png"
+    },
+    {
+      "part_id": "concept__tongue",
+      "original_part_id": "tongue",
+      "ko_name": "혀",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/tongue.png"
+    },
+    {
+      "part_id": "concept__L_side_hair",
+      "original_part_id": "L_side_hair",
+      "ko_name": "왼쪽 옆머리",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/L_side_hair.png"
+    },
+    {
+      "part_id": "concept__R_side_hair",
+      "original_part_id": "R_side_hair",
+      "ko_name": "오른쪽 옆머리",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/R_side_hair.png"
+    },
+    {
+      "part_id": "concept__front_hair",
+      "original_part_id": "front_hair",
+      "ko_name": "앞머리",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/front_hair.png"
+    },
+    {
+      "part_id": "concept__L_ear_outer",
+      "original_part_id": "L_ear_outer",
+      "ko_name": "왼쪽 귀 바깥",
+      "verdict": "REVISE",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/L_ear_outer.png"
+    },
+    {
+      "part_id": "concept__R_ear_outer",
+      "original_part_id": "R_ear_outer",
+      "ko_name": "오른쪽 귀 바깥",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/R_ear_outer.png"
+    },
+    {
+      "part_id": "concept__L_ear_inner",
+      "original_part_id": "L_ear_inner",
+      "ko_name": "왼쪽 귀 안쪽",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/L_ear_inner.png"
+    },
+    {
+      "part_id": "concept__R_ear_inner",
+      "original_part_id": "R_ear_inner",
+      "ko_name": "오른쪽 귀 안쪽",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/R_ear_inner.png"
+    },
+    {
+      "part_id": "concept__L_fur_shoulder",
+      "original_part_id": "L_fur_shoulder",
+      "ko_name": "왼쪽 어깨 털",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/L_fur_shoulder.png"
+    },
+    {
+      "part_id": "concept__R_fur_shoulder",
+      "original_part_id": "R_fur_shoulder",
+      "ko_name": "오른쪽 어깨 털",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/R_fur_shoulder.png"
+    },
+    {
+      "part_id": "concept__gold_ornaments",
+      "original_part_id": "gold_ornaments",
+      "ko_name": "금색 장식",
+      "verdict": "UNREVIEWED",
+      "include_in_import_psd": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/production_layers_candidate/gold_ornaments.png"
+    }
+  ],
+  "psd_writer": "psd-tools",
+  "psd_candidate": "experiments/concept-regeneration-001/import_ready_candidate.psd",
+  "import_ready_psd": "experiments/concept-regeneration-001/import_ready.psd",
+  "psd_metadata": {
+    "exists": true,
+    "valid_header": true,
+    "channels": 3,
+    "width": 2048,
+    "height": 2048,
+    "depth": 8,
+    "color_mode": "RGB",
+    "layer_mask_section_length": 72668,
+    "layer_count": 6
+  },
+  "cubism_import_smoke": {
+    "schema_version": 1,
+    "experiment_id": "concept-regeneration-001",
+    "date": "2026-06-04T02:08:34Z",
+    "cubism_version": "Live2D Cubism Editor 5.3.01",
+    "input_psd": "experiments/concept-regeneration-001/import_ready_candidate.psd",
+    "cubism_import_success": true,
+    "layers_flattened": false,
+    "visible_layer_evidence": [
+      "choker",
+      "mouth_line",
+      "R_highlight",
+      "L_highlight",
+      "neck",
+      "face_underpaint"
+    ],
+    "evidence_screenshot": "experiments/concept-regeneration-001/reports/cubism_smoke_evidence/cubism_import_layers_visible.png",
+    "reviewer": "Codex visual smoke",
+    "notes": [
+      "Cubism Editor window title showed import_ready_candidate.",
+      "The left Parts panel showed individual layer entries, so the PSD was not flattened.",
+      "This is a technical smoke using AI-generated clean smoke layers, not final art-quality approval for all concept parts."
+    ]
+  },
+  "cubism_gate_note": "Cubism Editor actual import has passed and import_ready.psd may be trusted."
+}

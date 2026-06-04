@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "experiment_id": "see-through-layer-decomp-001",
+  "generated_at": "2026-06-04T04:16:37.327778+00:00",
+  "status": "FAIL_MPS_MEMORY_1280",
+  "settings": {
+    "resolution": 1280,
+    "steps": 30,
+    "depth_resolution": 720
+  },
+  "evidence": "ComfyUI aborted in SeeThrough_GenerateLayers with failed assertion: Failed to allocate private MTLBuffer for size 21299200000.",
+  "decision": "Retry same default models at lower resolution 1024, steps 20, depth 512 before considering NF4 or remote GPU."
+}

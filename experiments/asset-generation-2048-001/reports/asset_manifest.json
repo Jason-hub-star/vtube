@@ -1,0 +1,45 @@
+{
+  "experiment_id": "ASSET-GEN-2048-001",
+  "assets": [
+    {
+      "name": "clean_canonical_cyan_source.png",
+      "source": "/Users/family/.codex/generated_images/019e87f9-8067-7a11-a8c8-e248fd0002c7/ig_0e19dcbce3b0c064016a1eddb5244081918c639fcee8b107b7.png",
+      "path": "/Users/family/jason/Vtube/experiments/asset-generation-2048-001/raw/clean_canonical_cyan_source.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB"
+    },
+    {
+      "name": "blink_stage_sheet_source.png",
+      "source": "/Users/family/.codex/generated_images/019e87f9-8067-7a11-a8c8-e248fd0002c7/ig_0e19dcbce3b0c064016a1edd70c5748191b02ce4d9a6394620.png",
+      "path": "/Users/family/jason/Vtube/experiments/asset-generation-2048-001/raw/blink_stage_sheet_source.png",
+      "size": [
+        2103,
+        748
+      ],
+      "mode": "RGB"
+    },
+    {
+      "name": "mouth_set_b_simple_source.png",
+      "source": "/Users/family/.codex/generated_images/019e87f9-8067-7a11-a8c8-e248fd0002c7/ig_0e19dcbce3b0c064016a1edd2a83248191a547a5d5d188e8f1.png",
+      "path": "/Users/family/jason/Vtube/experiments/asset-generation-2048-001/raw/mouth_set_b_simple_source.png",
+      "size": [
+        1983,
+        793
+      ],
+      "mode": "RGB"
+    },
+    {
+      "name": "mouth_set_a_stylematch_source.png",
+      "source": "/Users/family/.codex/generated_images/019e87f9-8067-7a11-a8c8-e248fd0002c7/ig_0e19dcbce3b0c064016a1edce4c990819193eeaf26448a91b5.png",
+      "path": "/Users/family/jason/Vtube/experiments/asset-generation-2048-001/raw/mouth_set_a_stylematch_source.png",
+      "size": [
+        1983,
+        793
+      ],
+      "mode": "RGB"
+    }
+  ]
+}

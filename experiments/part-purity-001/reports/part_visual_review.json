@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "experiment_id": "part-purity-001",
+  "created_at": "2026-06-04T01:27:11.195839+00:00",
+  "updated_at": "2026-06-04T01:27:11.195891+00:00",
+  "source_manifest": "review_app/review_manifest.json",
+  "reviews": {
+    "R_upper_lash": {
+      "part_id": "R_upper_lash",
+      "verdict": "X",
+      "issue_tags": [
+        "hair_mixed"
+      ],
+      "human_note": "머리카락 픽셀이 윗속눈썹 파츠에 섞여 있음",
+      "updated_at": "2026-06-04T01:27:11.195880+00:00"
+    },
+    "mouth_inner": {
+      "part_id": "mouth_inner",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "bbox_too_tight",
+        "line_cut"
+      ],
+      "human_note": "열린 입 왼쪽 라인이 잘리고 bbox 여유가 부족함",
+      "updated_at": "2026-06-04T01:27:11.195886+00:00"
+    }
+  }
+}

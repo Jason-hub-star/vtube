@@ -1,0 +1,33 @@
+{
+  "experiment_id": "CREATURE-SCHEMA-001",
+  "date": "2026-06-02",
+  "status": "VERIFIED",
+  "inputs": [
+    "/Users/family/jason/Vtube/experiments/imagegen-limit-test-001/generated/canonical_front.png"
+  ],
+  "outputs": [
+    "/Users/family/jason/Vtube/experiments/creature-schema-001/reports/anchor_schema_plan.md"
+  ],
+  "metrics": {
+    "schema_types": [
+      "human_anime",
+      "dog_mascot",
+      "cat_mascot"
+    ],
+    "missing_anchor_rule_defined": true,
+    "non_human_uses_muzzle_or_nose_anchor": true
+  },
+  "result": {
+    "human_schema_defined": "PASS",
+    "dog_schema_defined": "PASS",
+    "cat_schema_defined": "PASS",
+    "missing_anchor_rule": "PASS"
+  },
+  "human_review": {
+    "required": true,
+    "verdict": "REVISE",
+    "notes": "Schema is defined, but dog/cat fixtures must be generated before non-human placement is verified."
+  },
+  "decision": "keep",
+  "next_action": "Create one dog/cat mascot canonical fixture before testing non-human placement."
+}

@@ -1,0 +1,926 @@
+{
+  "experiment_id": "cubism-material-pack-001",
+  "date": "2026-06-03",
+  "layers": [
+    {
+      "layer_name": "face_underpaint",
+      "role": "underpaint",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/face_underpaint.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        486,
+        178,
+        1063,
+        1155
+      ],
+      "alpha_coverage": 0.887978,
+      "draw_order": 5,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/face_underpaint.png"
+    },
+    {
+      "layer_name": "back_hair",
+      "role": "back_hair",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/back_hair.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        450,
+        91,
+        1141,
+        1017
+      ],
+      "alpha_coverage": 0.766817,
+      "draw_order": 10,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/back_hair.png"
+    },
+    {
+      "layer_name": "body",
+      "role": "body",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/body.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        235,
+        1283,
+        1567,
+        765
+      ],
+      "alpha_coverage": 0.892392,
+      "draw_order": 20,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/body.png"
+    },
+    {
+      "layer_name": "clothes",
+      "role": "clothes",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/clothes.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        235,
+        1186,
+        1567,
+        861
+      ],
+      "alpha_coverage": 0.877876,
+      "draw_order": 30,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/clothes.png"
+    },
+    {
+      "layer_name": "neck",
+      "role": "neck",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/neck.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        888,
+        1213,
+        260,
+        230
+      ],
+      "alpha_coverage": 1.0,
+      "draw_order": 40,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/neck.png"
+    },
+    {
+      "layer_name": "face_base",
+      "role": "face",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/face_base.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        476,
+        178,
+        1083,
+        1155
+      ],
+      "alpha_coverage": 0.875497,
+      "draw_order": 50,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/face_base.png"
+    },
+    {
+      "layer_name": "L_eye_white",
+      "role": "eye_white",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/L_eye_white.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        742,
+        626,
+        208,
+        138
+      ],
+      "alpha_coverage": 1.0,
+      "draw_order": 60,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/L_eye_white.png"
+    },
+    {
+      "layer_name": "R_eye_white",
+      "role": "eye_white",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/R_eye_white.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1083,
+        626,
+        208,
+        138
+      ],
+      "alpha_coverage": 1.0,
+      "draw_order": 61,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/R_eye_white.png"
+    },
+    {
+      "layer_name": "L_iris",
+      "role": "iris",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/L_iris.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        797,
+        654,
+        92,
+        88
+      ],
+      "alpha_coverage": 1.0,
+      "draw_order": 70,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/L_iris.png"
+    },
+    {
+      "layer_name": "R_iris",
+      "role": "iris",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/R_iris.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1138,
+        654,
+        92,
+        88
+      ],
+      "alpha_coverage": 1.0,
+      "draw_order": 71,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/R_iris.png"
+    },
+    {
+      "layer_name": "L_pupil",
+      "role": "pupil",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/L_pupil.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        820,
+        674,
+        46,
+        46
+      ],
+      "alpha_coverage": 1.0,
+      "draw_order": 80,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/L_pupil.png"
+    },
+    {
+      "layer_name": "R_pupil",
+      "role": "pupil",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/R_pupil.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1161,
+        674,
+        46,
+        46
+      ],
+      "alpha_coverage": 1.0,
+      "draw_order": 81,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/R_pupil.png"
+    },
+    {
+      "layer_name": "L_highlight",
+      "role": "highlight",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/L_highlight.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        837,
+        659,
+        36,
+        34
+      ],
+      "alpha_coverage": 1.0,
+      "draw_order": 90,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/L_highlight.png"
+    },
+    {
+      "layer_name": "R_highlight",
+      "role": "highlight",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/R_highlight.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1178,
+        659,
+        36,
+        34
+      ],
+      "alpha_coverage": 1.0,
+      "draw_order": 91,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/R_highlight.png"
+    },
+    {
+      "layer_name": "L_upper_lash",
+      "role": "upper_lash",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/L_upper_lash.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        742,
+        626,
+        208,
+        70
+      ],
+      "alpha_coverage": 1.0,
+      "draw_order": 100,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/L_upper_lash.png"
+    },
+    {
+      "layer_name": "R_upper_lash",
+      "role": "upper_lash",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/R_upper_lash.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1083,
+        626,
+        208,
+        70
+      ],
+      "alpha_coverage": 1.0,
+      "draw_order": 101,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/R_upper_lash.png"
+    },
+    {
+      "layer_name": "L_lower_lash",
+      "role": "lower_lash",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/L_lower_lash.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        742,
+        698,
+        208,
+        58
+      ],
+      "alpha_coverage": 1.0,
+      "draw_order": 110,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/L_lower_lash.png"
+    },
+    {
+      "layer_name": "R_lower_lash",
+      "role": "lower_lash",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/R_lower_lash.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1083,
+        698,
+        208,
+        58
+      ],
+      "alpha_coverage": 1.0,
+      "draw_order": 111,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/R_lower_lash.png"
+    },
+    {
+      "layer_name": "L_brow",
+      "role": "brow",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/L_brow.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        732,
+        536,
+        228,
+        70
+      ],
+      "alpha_coverage": 1.0,
+      "draw_order": 120,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/L_brow.png"
+    },
+    {
+      "layer_name": "R_brow",
+      "role": "brow",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/R_brow.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1073,
+        536,
+        228,
+        70
+      ],
+      "alpha_coverage": 1.0,
+      "draw_order": 121,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/R_brow.png"
+    },
+    {
+      "layer_name": "mouth_line",
+      "role": "mouth_line",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/mouth_line.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        947,
+        907,
+        206,
+        136
+      ],
+      "alpha_coverage": 1.0,
+      "draw_order": 130,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/mouth_line.png"
+    },
+    {
+      "layer_name": "mouth_inner",
+      "role": "mouth_inner",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_wide_open_corrected_full.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/mouth_inner.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        987,
+        943,
+        74,
+        76
+      ],
+      "alpha_coverage": 0.861309,
+      "draw_order": 131,
+      "status": "OBSERVED",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/mouth_inner.png"
+    },
+    {
+      "layer_name": "teeth",
+      "role": "teeth",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_wide_open_corrected_full.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/teeth.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        997,
+        943,
+        64,
+        18
+      ],
+      "alpha_coverage": 0.819444,
+      "draw_order": 132,
+      "status": "OBSERVED",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/teeth.png"
+    },
+    {
+      "layer_name": "tongue",
+      "role": "tongue",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_wide_open_corrected_full.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/tongue.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1001,
+        977,
+        57,
+        34
+      ],
+      "alpha_coverage": 0.881837,
+      "draw_order": 133,
+      "status": "OBSERVED",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/tongue.png"
+    },
+    {
+      "layer_name": "L_side_hair",
+      "role": "side_hair",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/L_side_hair.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        266,
+        392,
+        340,
+        1185
+      ],
+      "alpha_coverage": 0.415912,
+      "draw_order": 140,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/L_side_hair.png"
+    },
+    {
+      "layer_name": "R_side_hair",
+      "role": "side_hair",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/R_side_hair.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1429,
+        362,
+        353,
+        1215
+      ],
+      "alpha_coverage": 0.410786,
+      "draw_order": 141,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/R_side_hair.png"
+    },
+    {
+      "layer_name": "front_hair",
+      "role": "front_hair",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/production_layers/front_hair.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        555,
+        91,
+        938,
+        492
+      ],
+      "alpha_coverage": 0.768928,
+      "draw_order": 150,
+      "status": "REVISE",
+      "include_in_import_psd": true,
+      "notes": "Bootstrap production candidate; requires Cubism import and rigger visual review.",
+      "relative_output_path": "production_layers/front_hair.png"
+    },
+    {
+      "layer_name": "blink_closed_corrected_full",
+      "role": "blink_keypose_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/blink-apply-review-001/layers/blink_closed_corrected_full.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/blink/blink_closed_corrected_full.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        741,
+        739,
+        545,
+        57
+      ],
+      "alpha_coverage": 0.516787,
+      "draw_order": 0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "notes": "Reference for closed / ParamEyeLOpen and ParamEyeROpen, not production blink runtime.",
+      "relative_output_path": "reference_pack/blink/blink_closed_corrected_full.png"
+    },
+    {
+      "layer_name": "blink_half_corrected_full",
+      "role": "blink_keypose_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/blink-apply-review-001/layers/blink_half_corrected_full.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/blink/blink_half_corrected_full.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        741,
+        712,
+        545,
+        113
+      ],
+      "alpha_coverage": 0.485167,
+      "draw_order": 0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "notes": "Reference for half / ParamEyeLOpen and ParamEyeROpen, not production blink runtime.",
+      "relative_output_path": "reference_pack/blink/blink_half_corrected_full.png"
+    },
+    {
+      "layer_name": "blink_mostly_closed_corrected_full",
+      "role": "blink_keypose_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/blink-apply-review-001/layers/blink_mostly_closed_corrected_full.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/blink/blink_mostly_closed_corrected_full.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        741,
+        727,
+        545,
+        82
+      ],
+      "alpha_coverage": 0.520452,
+      "draw_order": 0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "notes": "Reference for mostly_closed / ParamEyeLOpen and ParamEyeROpen, not production blink runtime.",
+      "relative_output_path": "reference_pack/blink/blink_mostly_closed_corrected_full.png"
+    },
+    {
+      "layer_name": "set_a_stylematch_happy_open_corrected_full",
+      "role": "mouth_keypose_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_happy_open_corrected_full.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/mouth/set_a_stylematch_happy_open_corrected_full.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        947,
+        946,
+        132,
+        83
+      ],
+      "alpha_coverage": 0.712851,
+      "draw_order": 0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "notes": "Reference for happy_open / ParamMouthOpenY and ParamMouthForm, not a production frame layer.",
+      "relative_output_path": "reference_pack/mouth/set_a_stylematch_happy_open_corrected_full.png"
+    },
+    {
+      "layer_name": "set_a_stylematch_neutral_smile_corrected_full",
+      "role": "mouth_keypose_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_neutral_smile_corrected_full.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/mouth/set_a_stylematch_neutral_smile_corrected_full.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        947,
+        968,
+        131,
+        23
+      ],
+      "alpha_coverage": 0.303352,
+      "draw_order": 0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "notes": "Reference for neutral_smile / ParamMouthOpenY and ParamMouthForm, not a production frame layer.",
+      "relative_output_path": "reference_pack/mouth/set_a_stylematch_neutral_smile_corrected_full.png"
+    },
+    {
+      "layer_name": "set_a_stylematch_o_vowel_corrected_full",
+      "role": "mouth_keypose_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_o_vowel_corrected_full.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/mouth/set_a_stylematch_o_vowel_corrected_full.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        987,
+        939,
+        51,
+        87
+      ],
+      "alpha_coverage": 0.762001,
+      "draw_order": 0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "notes": "Reference for o_vowel / ParamMouthOpenY and ParamMouthForm, not a production frame layer.",
+      "relative_output_path": "reference_pack/mouth/set_a_stylematch_o_vowel_corrected_full.png"
+    },
+    {
+      "layer_name": "set_a_stylematch_small_open_corrected_full",
+      "role": "mouth_keypose_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_small_open_corrected_full.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/mouth/set_a_stylematch_small_open_corrected_full.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        947,
+        956,
+        132,
+        58
+      ],
+      "alpha_coverage": 0.70977,
+      "draw_order": 0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "notes": "Reference for small_open / ParamMouthOpenY and ParamMouthForm, not a production frame layer.",
+      "relative_output_path": "reference_pack/mouth/set_a_stylematch_small_open_corrected_full.png"
+    },
+    {
+      "layer_name": "set_a_stylematch_wide_open_corrected_full",
+      "role": "mouth_keypose_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_wide_open_corrected_full.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/mouth/set_a_stylematch_wide_open_corrected_full.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        964,
+        943,
+        97,
+        87
+      ],
+      "alpha_coverage": 0.73741,
+      "draw_order": 0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "notes": "Reference for wide_open / ParamMouthOpenY and ParamMouthForm, not a production frame layer.",
+      "relative_output_path": "reference_pack/mouth/set_a_stylematch_wide_open_corrected_full.png"
+    },
+    {
+      "layer_name": "set_b_simple_happy_open_corrected_full",
+      "role": "mouth_keypose_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_b_simple_happy_open_corrected_full.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/mouth/set_b_simple_happy_open_corrected_full.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        947,
+        946,
+        131,
+        83
+      ],
+      "alpha_coverage": 0.765934,
+      "draw_order": 0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "notes": "Reference for happy_open / ParamMouthOpenY and ParamMouthForm, not a production frame layer.",
+      "relative_output_path": "reference_pack/mouth/set_b_simple_happy_open_corrected_full.png"
+    },
+    {
+      "layer_name": "set_b_simple_neutral_smile_corrected_full",
+      "role": "mouth_keypose_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_b_simple_neutral_smile_corrected_full.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/mouth/set_b_simple_neutral_smile_corrected_full.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        947,
+        967,
+        131,
+        25
+      ],
+      "alpha_coverage": 0.414962,
+      "draw_order": 0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "notes": "Reference for neutral_smile / ParamMouthOpenY and ParamMouthForm, not a production frame layer.",
+      "relative_output_path": "reference_pack/mouth/set_b_simple_neutral_smile_corrected_full.png"
+    },
+    {
+      "layer_name": "set_b_simple_o_vowel_corrected_full",
+      "role": "mouth_keypose_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_b_simple_o_vowel_corrected_full.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/mouth/set_b_simple_o_vowel_corrected_full.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        983,
+        939,
+        60,
+        86
+      ],
+      "alpha_coverage": 0.800775,
+      "draw_order": 0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "notes": "Reference for o_vowel / ParamMouthOpenY and ParamMouthForm, not a production frame layer.",
+      "relative_output_path": "reference_pack/mouth/set_b_simple_o_vowel_corrected_full.png"
+    },
+    {
+      "layer_name": "set_b_simple_small_open_corrected_full",
+      "role": "mouth_keypose_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_b_simple_small_open_corrected_full.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/mouth/set_b_simple_small_open_corrected_full.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        947,
+        948,
+        132,
+        74
+      ],
+      "alpha_coverage": 0.752559,
+      "draw_order": 0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "notes": "Reference for small_open / ParamMouthOpenY and ParamMouthForm, not a production frame layer.",
+      "relative_output_path": "reference_pack/mouth/set_b_simple_small_open_corrected_full.png"
+    },
+    {
+      "layer_name": "set_b_simple_wide_open_corrected_full",
+      "role": "mouth_keypose_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_b_simple_wide_open_corrected_full.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-material-pack-001/reference_pack/mouth/set_b_simple_wide_open_corrected_full.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        968,
+        942,
+        90,
+        86
+      ],
+      "alpha_coverage": 0.814729,
+      "draw_order": 0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "notes": "Reference for wide_open / ParamMouthOpenY and ParamMouthForm, not a production frame layer.",
+      "relative_output_path": "reference_pack/mouth/set_b_simple_wide_open_corrected_full.png"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "experiment_id": "part-purity-001",
+  "generated_at": "2026-06-04T01:27:11.196843+00:00",
+  "source_review": "experiments/part-purity-001/reports/part_visual_review.json",
+  "items": [
+    {
+      "part_id": "R_upper_lash",
+      "ko_name": "오른쪽 윗속눈썹",
+      "section": "production_parts",
+      "group": "eyes",
+      "verdict": "X",
+      "failure_tags": [
+        "hair_mixed"
+      ],
+      "human_note": "머리카락 픽셀이 윗속눈썹 파츠에 섞여 있음",
+      "source_image": "/assets/experiments/cubism-material-pack-001/production_layers/R_upper_lash.png",
+      "canonical_image": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "overlay_image": null,
+      "include_in_import_psd": true,
+      "suggested_generation_mode": "regenerate_part",
+      "negative_prompt_hints": [
+        "no hair strands, no bangs, no side hair, no hair shadow"
+      ]
+    },
+    {
+      "part_id": "mouth_inner",
+      "ko_name": "입 안쪽",
+      "section": "production_parts",
+      "group": "mouth",
+      "verdict": "REVISE",
+      "failure_tags": [
+        "bbox_too_tight",
+        "line_cut"
+      ],
+      "human_note": "열린 입 왼쪽 라인이 잘리고 bbox 여유가 부족함",
+      "source_image": "/assets/experiments/cubism-material-pack-001/production_layers/mouth_inner.png",
+      "canonical_image": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+      "overlay_image": null,
+      "include_in_import_psd": true,
+      "suggested_generation_mode": "alpha_cleanup",
+      "negative_prompt_hints": [
+        "include safe transparent margin around the part",
+        "complete continuous line art, uncropped outline"
+      ]
+    }
+  ],
+  "counts": {
+    "queued": 2
+  }
+}

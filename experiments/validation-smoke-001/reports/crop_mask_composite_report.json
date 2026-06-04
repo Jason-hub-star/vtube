@@ -1,0 +1,617 @@
+{
+  "experiment_id": "validation-smoke-001",
+  "date": "2026-06-02",
+  "inputs": [
+    {
+      "path": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-001/generated/canonical_front.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "sha256": "d820b7537e066de0749067c7d4a07f256fde07ee925956e07f871206bf08ae7c"
+    },
+    {
+      "path": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_mouth_parts.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "sha256": "46e418da43a211dd0bdd593f551f39315fcdab07b74d1af1148a19450ea82a53"
+    },
+    {
+      "path": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_eye_parts.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "sha256": "1671a6c855399c1f736431ac7161dc7f54fc3fa6dd52e1769681bbd05f0acac5"
+    }
+  ],
+  "mouth_crops": [
+    {
+      "id": "mouth_01",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_mouth_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/mouth/mouth_01.png",
+      "bbox": [
+        1148,
+        85,
+        1372,
+        278
+      ],
+      "width": 224,
+      "height": 193,
+      "alpha_pixels": 29058,
+      "alpha_coverage": 0.6721,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "mouth_02",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_mouth_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/mouth/mouth_02.png",
+      "bbox": [
+        487,
+        530,
+        704,
+        677
+      ],
+      "width": 217,
+      "height": 147,
+      "alpha_pixels": 21215,
+      "alpha_coverage": 0.6651,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "mouth_03",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_mouth_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/mouth/mouth_03.png",
+      "bbox": [
+        164,
+        527,
+        348,
+        685
+      ],
+      "width": 184,
+      "height": 158,
+      "alpha_pixels": 18772,
+      "alpha_coverage": 0.6457,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "mouth_04",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_mouth_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/mouth/mouth_04.png",
+      "bbox": [
+        870,
+        764,
+        1016,
+        939
+      ],
+      "width": 146,
+      "height": 175,
+      "alpha_pixels": 16644,
+      "alpha_coverage": 0.6514,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "mouth_05",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_mouth_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/mouth/mouth_05.png",
+      "bbox": [
+        816,
+        375,
+        1040,
+        443
+      ],
+      "width": 224,
+      "height": 68,
+      "alpha_pixels": 3224,
+      "alpha_coverage": 0.2117,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "mouth_06",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_mouth_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/mouth/mouth_06.png",
+      "bbox": [
+        1157,
+        377,
+        1373,
+        445
+      ],
+      "width": 216,
+      "height": 68,
+      "alpha_pixels": 3506,
+      "alpha_coverage": 0.2387,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "mouth_07",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_mouth_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/mouth/mouth_07.png",
+      "bbox": [
+        851,
+        153,
+        1002,
+        239
+      ],
+      "width": 151,
+      "height": 86,
+      "alpha_pixels": 6632,
+      "alpha_coverage": 0.5107,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "mouth_08",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_mouth_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/mouth/mouth_08.png",
+      "bbox": [
+        500,
+        802,
+        592,
+        917
+      ],
+      "width": 92,
+      "height": 115,
+      "alpha_pixels": 5531,
+      "alpha_coverage": 0.5228,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "mouth_09",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_mouth_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/mouth/mouth_09.png",
+      "bbox": [
+        498,
+        166,
+        699,
+        215
+      ],
+      "width": 201,
+      "height": 49,
+      "alpha_pixels": 1633,
+      "alpha_coverage": 0.1658,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "mouth_10",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_mouth_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/mouth/mouth_10.png",
+      "bbox": [
+        508,
+        396,
+        666,
+        437
+      ],
+      "width": 158,
+      "height": 41,
+      "alpha_pixels": 1654,
+      "alpha_coverage": 0.2553,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "mouth_11",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_mouth_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/mouth/mouth_11.png",
+      "bbox": [
+        169,
+        176,
+        348,
+        206
+      ],
+      "width": 179,
+      "height": 30,
+      "alpha_pixels": 1226,
+      "alpha_coverage": 0.2283,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "mouth_12",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_mouth_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/mouth/mouth_12.png",
+      "bbox": [
+        1251,
+        591,
+        1288,
+        652
+      ],
+      "width": 37,
+      "height": 61,
+      "alpha_pixels": 326,
+      "alpha_coverage": 0.1444,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "mouth_13",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_mouth_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/mouth/mouth_13.png",
+      "bbox": [
+        864,
+        591,
+        901,
+        652
+      ],
+      "width": 37,
+      "height": 61,
+      "alpha_pixels": 322,
+      "alpha_coverage": 0.1427,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "mouth_14",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_mouth_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/mouth/mouth_14.png",
+      "bbox": [
+        212,
+        381,
+        306,
+        410
+      ],
+      "width": 94,
+      "height": 29,
+      "alpha_pixels": 423,
+      "alpha_coverage": 0.1552,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    }
+  ],
+  "eye_crops": [
+    {
+      "id": "eye_01",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_eye_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_01.png",
+      "bbox": [
+        855,
+        569,
+        1236,
+        705
+      ],
+      "width": 381,
+      "height": 136,
+      "alpha_pixels": 14551,
+      "alpha_coverage": 0.2808,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "eye_02",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_eye_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_02.png",
+      "bbox": [
+        895,
+        21,
+        1173,
+        203
+      ],
+      "width": 278,
+      "height": 182,
+      "alpha_pixels": 4374,
+      "alpha_coverage": 0.0864,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "eye_03",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_eye_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_03.png",
+      "bbox": [
+        362,
+        21,
+        640,
+        203
+      ],
+      "width": 278,
+      "height": 182,
+      "alpha_pixels": 4336,
+      "alpha_coverage": 0.0857,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "eye_04",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_eye_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_04.png",
+      "bbox": [
+        294,
+        569,
+        667,
+        705
+      ],
+      "width": 373,
+      "height": 136,
+      "alpha_pixels": 14033,
+      "alpha_coverage": 0.2766,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "eye_05",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_eye_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_05.png",
+      "bbox": [
+        423,
+        207,
+        593,
+        392
+      ],
+      "width": 170,
+      "height": 185,
+      "alpha_pixels": 19696,
+      "alpha_coverage": 0.6263,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "eye_06",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_eye_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_06.png",
+      "bbox": [
+        940,
+        207,
+        1109,
+        392
+      ],
+      "width": 169,
+      "height": 185,
+      "alpha_pixels": 19688,
+      "alpha_coverage": 0.6297,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "eye_07",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_eye_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_07.png",
+      "bbox": [
+        842,
+        794,
+        1193,
+        865
+      ],
+      "width": 351,
+      "height": 71,
+      "alpha_pixels": 7440,
+      "alpha_coverage": 0.2985,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "eye_08",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_eye_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_08.png",
+      "bbox": [
+        333,
+        794,
+        679,
+        865
+      ],
+      "width": 346,
+      "height": 71,
+      "alpha_pixels": 7238,
+      "alpha_coverage": 0.2946,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "eye_09",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_eye_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_09.png",
+      "bbox": [
+        855,
+        926,
+        1153,
+        993
+      ],
+      "width": 298,
+      "height": 67,
+      "alpha_pixels": 7692,
+      "alpha_coverage": 0.3853,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "eye_10",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_eye_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_10.png",
+      "bbox": [
+        371,
+        926,
+        665,
+        993
+      ],
+      "width": 294,
+      "height": 67,
+      "alpha_pixels": 7539,
+      "alpha_coverage": 0.3827,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "eye_11",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_eye_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_11.png",
+      "bbox": [
+        414,
+        726,
+        646,
+        775
+      ],
+      "width": 232,
+      "height": 49,
+      "alpha_pixels": 2596,
+      "alpha_coverage": 0.2284,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "eye_12",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_eye_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_12.png",
+      "bbox": [
+        873,
+        726,
+        1109,
+        774
+      ],
+      "width": 236,
+      "height": 48,
+      "alpha_pixels": 2662,
+      "alpha_coverage": 0.235,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "eye_13",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_eye_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_13.png",
+      "bbox": [
+        991,
+        394,
+        1060,
+        487
+      ],
+      "width": 69,
+      "height": 93,
+      "alpha_pixels": 2962,
+      "alpha_coverage": 0.4616,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "eye_14",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_eye_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_14.png",
+      "bbox": [
+        477,
+        395,
+        544,
+        486
+      ],
+      "width": 67,
+      "height": 91,
+      "alpha_pixels": 2841,
+      "alpha_coverage": 0.466,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "eye_15",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_eye_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_15.png",
+      "bbox": [
+        866,
+        479,
+        944,
+        555
+      ],
+      "width": 78,
+      "height": 76,
+      "alpha_pixels": 911,
+      "alpha_coverage": 0.1537,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "eye_16",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_eye_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_16.png",
+      "bbox": [
+        376,
+        479,
+        453,
+        555
+      ],
+      "width": 77,
+      "height": 76,
+      "alpha_pixels": 891,
+      "alpha_coverage": 0.1523,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "eye_17",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_eye_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_17.png",
+      "bbox": [
+        1083,
+        507,
+        1161,
+        553
+      ],
+      "width": 78,
+      "height": 46,
+      "alpha_pixels": 744,
+      "alpha_coverage": 0.2074,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    },
+    {
+      "id": "eye_18",
+      "source": "/Users/family/jason/Vtube/experiments/imagegen-limit-test-002/generated/individual_eye_parts.png",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_18.png",
+      "bbox": [
+        583,
+        506,
+        660,
+        552
+      ],
+      "width": 77,
+      "height": 46,
+      "alpha_pixels": 740,
+      "alpha_coverage": 0.2089,
+      "accepted_for_smoke": true,
+      "note": "auto component crop"
+    }
+  ],
+  "composites": [
+    {
+      "kind": "mouth",
+      "crop": "mouth_01",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/composites/mouth_composite_01.png"
+    },
+    {
+      "kind": "mouth",
+      "crop": "mouth_02",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/composites/mouth_composite_02.png"
+    },
+    {
+      "kind": "mouth",
+      "crop": "mouth_03",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/composites/mouth_composite_03.png"
+    },
+    {
+      "kind": "mouth",
+      "crop": "mouth_04",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/composites/mouth_composite_04.png"
+    },
+    {
+      "kind": "eye_pair",
+      "crop": [
+        "eye_01",
+        "eye_02"
+      ],
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/composites/eye_pair_composite_01.png"
+    }
+  ],
+  "pass_conditions": {
+    "mouth_crops_at_least": 3,
+    "eye_crops_at_least": 2,
+    "mouth_composites_at_least": 1,
+    "eye_pair_composites_at_least": 1
+  },
+  "result": {
+    "mouth_crop_mask": "PASS",
+    "eye_crop_mask": "PASS",
+    "canonical_composite_smoke": "PASS",
+    "decision": "keep-testing"
+  }
+}

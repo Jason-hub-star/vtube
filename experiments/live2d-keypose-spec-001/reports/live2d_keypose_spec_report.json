@@ -1,0 +1,28 @@
+{
+  "experiment_id": "LIVE2D-KEYPOSE-SPEC-001",
+  "date": "2026-06-03",
+  "status": "VERIFIED",
+  "inputs": [
+    "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/reports/mouth_apply_delta_report.json",
+    "/Users/family/jason/Vtube/experiments/blink-apply-review-001/reports/blink_apply_review_report.json"
+  ],
+  "outputs": [
+    "/Users/family/jason/Vtube/experiments/live2d-keypose-spec-001/reports/live2d_keypose_spec.md"
+  ],
+  "metrics": {
+    "production_runtime_method": "Live2D parameter/deformer rigging",
+    "png_frame_swapping_role": "reference/key-pose evidence only"
+  },
+  "result": {
+    "live2d_production_direction": "PASS",
+    "current_tests_reclassified_as_keypose_evidence": "PASS",
+    "png_frame_swap_as_production": "FAIL"
+  },
+  "human_review": {
+    "required": false,
+    "verdict": "PASS",
+    "notes": "주인님 clarified Live2D production path; current tests are part placement/key-pose evidence."
+  },
+  "decision": "keep",
+  "next_action": "Run PSD-LAYER-SCHEMA-001 and LIVE2D-PARAM-MAP-001."
+}

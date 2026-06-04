@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "experiment_id": "concept-regeneration-001",
+  "generated_at": "2026-06-04T01:56:45.878012+00:00",
+  "source_review": "experiments/concept-regeneration-001/reports/part_visual_review.json",
+  "items": [
+    {
+      "part_id": "concept__L_ear_outer",
+      "original_part_id": "L_ear_outer",
+      "experiment_id": "concept-regeneration-001",
+      "ko_name": "왼쪽 귀 바깥",
+      "section": "concept_parts",
+      "group": "ears",
+      "verdict": "REVISE",
+      "failure_tags": [
+        "alpha_dirty",
+        "hair_mixed"
+      ],
+      "human_note": "귀 바깥 후보에 머리카락/배경 가장자리가 섞여 있어 재마스크 필요",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/L_ear_outer.png",
+      "canonical_image": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "overlay_image": null,
+      "include_in_import_psd": true,
+      "suggested_generation_mode": "alpha_cleanup",
+      "negative_prompt_hints": [
+        "clean alpha, transparent background, no stray residue",
+        "no hair strands, no bangs, no side hair, no hair shadow"
+      ]
+    },
+    {
+      "part_id": "concept__R_upper_lash",
+      "original_part_id": "R_upper_lash",
+      "experiment_id": "concept-regeneration-001",
+      "ko_name": "오른쪽 윗속눈썹",
+      "section": "concept_parts",
+      "group": "eyes",
+      "verdict": "X",
+      "failure_tags": [
+        "hair_mixed"
+      ],
+      "human_note": "은발 앞머리와 윗속눈썹 영역이 bootstrap 후보에서 섞여 있음",
+      "source_image": "/assets/experiments/concept-regeneration-001/production_layers_candidate/R_upper_lash.png",
+      "canonical_image": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "overlay_image": null,
+      "include_in_import_psd": true,
+      "suggested_generation_mode": "regenerate_part",
+      "negative_prompt_hints": [
+        "no hair strands, no bangs, no side hair, no hair shadow"
+      ]
+    }
+  ],
+  "counts": {
+    "queued": 2
+  }
+}

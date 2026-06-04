@@ -1,0 +1,117 @@
+{
+  "experiment_id": "MOUTH-SHORTLIST-001",
+  "date": "2026-06-02",
+  "status": "VERIFIED",
+  "inputs": [
+    "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/reports/mouth_apply_delta_report.json"
+  ],
+  "outputs": [
+    "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/reports/mouth_shortlist_report.json"
+  ],
+  "metrics": {
+    "candidate_count": 10,
+    "kept_by_user_review": 10,
+    "numeric_roi_pass_count": 4,
+    "applied_canvas_delta": {
+      "dx": -37.842,
+      "dy": 6.307,
+      "scale": 1.0,
+      "opacity": 1.0
+    }
+  },
+  "result": {
+    "all_mouth_candidates_selected": "PASS_BY_USER_REVIEW",
+    "numeric_roi_all_pass": "NO_4_OF_10",
+    "global_delta_good_enough": "PASS_BY_USER_REVIEW",
+    "needs_more_mouth_tuning_now": "NO"
+  },
+  "candidates": [
+    {
+      "set": "set_a_stylematch",
+      "expression": "neutral_smile",
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_neutral_smile_corrected_full.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_a_stylematch_neutral_smile_corrected_overlay.png",
+      "numeric_roi_inside": false,
+      "human_verdict": "KEEP"
+    },
+    {
+      "set": "set_a_stylematch",
+      "expression": "small_open",
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_small_open_corrected_full.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_a_stylematch_small_open_corrected_overlay.png",
+      "numeric_roi_inside": false,
+      "human_verdict": "KEEP"
+    },
+    {
+      "set": "set_a_stylematch",
+      "expression": "wide_open",
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_wide_open_corrected_full.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_a_stylematch_wide_open_corrected_overlay.png",
+      "numeric_roi_inside": true,
+      "human_verdict": "KEEP"
+    },
+    {
+      "set": "set_a_stylematch",
+      "expression": "o_vowel",
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_o_vowel_corrected_full.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_a_stylematch_o_vowel_corrected_overlay.png",
+      "numeric_roi_inside": true,
+      "human_verdict": "KEEP"
+    },
+    {
+      "set": "set_a_stylematch",
+      "expression": "happy_open",
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_a_stylematch_happy_open_corrected_full.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_a_stylematch_happy_open_corrected_overlay.png",
+      "numeric_roi_inside": false,
+      "human_verdict": "KEEP"
+    },
+    {
+      "set": "set_b_simple",
+      "expression": "neutral_smile",
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_b_simple_neutral_smile_corrected_full.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_b_simple_neutral_smile_corrected_overlay.png",
+      "numeric_roi_inside": false,
+      "human_verdict": "KEEP"
+    },
+    {
+      "set": "set_b_simple",
+      "expression": "small_open",
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_b_simple_small_open_corrected_full.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_b_simple_small_open_corrected_overlay.png",
+      "numeric_roi_inside": false,
+      "human_verdict": "KEEP"
+    },
+    {
+      "set": "set_b_simple",
+      "expression": "wide_open",
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_b_simple_wide_open_corrected_full.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_b_simple_wide_open_corrected_overlay.png",
+      "numeric_roi_inside": true,
+      "human_verdict": "KEEP"
+    },
+    {
+      "set": "set_b_simple",
+      "expression": "o_vowel",
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_b_simple_o_vowel_corrected_full.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_b_simple_o_vowel_corrected_overlay.png",
+      "numeric_roi_inside": true,
+      "human_verdict": "KEEP"
+    },
+    {
+      "set": "set_b_simple",
+      "expression": "happy_open",
+      "corrected_layer": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/set_b_simple_happy_open_corrected_full.png",
+      "corrected_overlay": "/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/overlays/set_b_simple_happy_open_corrected_overlay.png",
+      "numeric_roi_inside": false,
+      "human_verdict": "KEEP"
+    }
+  ],
+  "human_review": {
+    "required": true,
+    "verdict": "PASS",
+    "notes": "주인님: 입은 다 사용. Other part tests should proceed before further mouth tuning."
+  },
+  "decision": "keep",
+  "next_action": "Run BLINK-STAGE-001, then alpha cleanup or eye ROI tests. Keep mouth per-expression offset tuning as fallback only."
+}

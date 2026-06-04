@@ -1,0 +1,41 @@
+{
+  "experiment_id": "CANON-MASTER-001",
+  "date": "2026-06-02",
+  "status": "OBSERVED",
+  "inputs": [
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/assets/canonical_source.png"
+  ],
+  "outputs": [
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png"
+  ],
+  "metrics": {
+    "source": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/assets/canonical_source.png",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "normalized_size": [
+      2048,
+      2048
+    ],
+    "resized_to_2048": true,
+    "subject_alpha_bbox": [
+      234,
+      91,
+      1568,
+      1957
+    ]
+  },
+  "result": {
+    "canonical_master_size_2048": "PASS",
+    "background_alpha_created": "PASS",
+    "human_visual_review": "REVISE"
+  },
+  "human_review": {
+    "required": true,
+    "verdict": "REVISE",
+    "notes": "Confirm character quality, unobstructed eyes/mouth, and production suitability."
+  },
+  "decision": "revise",
+  "next_action": "Run anchor extraction, then manually approve or regenerate canonical if face quality is insufficient."
+}

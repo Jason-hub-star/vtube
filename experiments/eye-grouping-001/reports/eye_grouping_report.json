@@ -1,0 +1,564 @@
+{
+  "experiment_id": "eye-grouping-001",
+  "date": "2026-06-02",
+  "anchor_report": {
+    "left_iris_center": [
+      686.75,
+      300.02
+    ],
+    "right_iris_center": [
+      802.77,
+      299.32
+    ],
+    "eye_distance_px": 116.03,
+    "face_center_x": 744.76,
+    "mouth_target_center": [
+      744.76,
+      373.93
+    ],
+    "mouth_target_width_px": 48.73,
+    "eye_target_width_px": 53.37,
+    "confidence": "medium",
+    "method": "HSV iris detection + eye-distance face proportion"
+  },
+  "class_counts": {
+    "lash_or_lid": 8,
+    "eye_white": 4,
+    "iris": 2,
+    "other_eye_part": 4
+  },
+  "parts": [
+    {
+      "id": "eye_01",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_01.png",
+      "source_bbox": [
+        855,
+        569,
+        1236,
+        705
+      ],
+      "side": "right",
+      "cls": "lash_or_lid",
+      "alpha_bbox": [
+        10,
+        10,
+        372,
+        127
+      ],
+      "alpha_center": [
+        208.53,
+        49.92
+      ],
+      "alpha_pixels": 14551,
+      "source_size": [
+        381,
+        136
+      ]
+    },
+    {
+      "id": "eye_02",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_02.png",
+      "source_bbox": [
+        895,
+        21,
+        1173,
+        203
+      ],
+      "side": "right",
+      "cls": "eye_white",
+      "alpha_bbox": [
+        10,
+        10,
+        269,
+        173
+      ],
+      "alpha_center": [
+        139.13,
+        79.76
+      ],
+      "alpha_pixels": 4374,
+      "source_size": [
+        278,
+        182
+      ]
+    },
+    {
+      "id": "eye_03",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_03.png",
+      "source_bbox": [
+        362,
+        21,
+        640,
+        203
+      ],
+      "side": "left",
+      "cls": "eye_white",
+      "alpha_bbox": [
+        10,
+        10,
+        269,
+        173
+      ],
+      "alpha_center": [
+        140.27,
+        79.77
+      ],
+      "alpha_pixels": 4336,
+      "source_size": [
+        278,
+        182
+      ]
+    },
+    {
+      "id": "eye_04",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_04.png",
+      "source_bbox": [
+        294,
+        569,
+        667,
+        705
+      ],
+      "side": "left",
+      "cls": "lash_or_lid",
+      "alpha_bbox": [
+        10,
+        10,
+        364,
+        127
+      ],
+      "alpha_center": [
+        170.31,
+        50.3
+      ],
+      "alpha_pixels": 14033,
+      "source_size": [
+        373,
+        136
+      ]
+    },
+    {
+      "id": "eye_05",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_05.png",
+      "source_bbox": [
+        423,
+        207,
+        593,
+        392
+      ],
+      "side": "left",
+      "cls": "iris",
+      "alpha_bbox": [
+        10,
+        10,
+        161,
+        176
+      ],
+      "alpha_center": [
+        85.8,
+        91.38
+      ],
+      "alpha_pixels": 19696,
+      "source_size": [
+        170,
+        185
+      ]
+    },
+    {
+      "id": "eye_06",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_06.png",
+      "source_bbox": [
+        940,
+        207,
+        1109,
+        392
+      ],
+      "side": "right",
+      "cls": "iris",
+      "alpha_bbox": [
+        10,
+        10,
+        160,
+        176
+      ],
+      "alpha_center": [
+        83.8,
+        91.44
+      ],
+      "alpha_pixels": 19688,
+      "source_size": [
+        169,
+        185
+      ]
+    },
+    {
+      "id": "eye_07",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_07.png",
+      "source_bbox": [
+        842,
+        794,
+        1193,
+        865
+      ],
+      "side": "right",
+      "cls": "lash_or_lid",
+      "alpha_bbox": [
+        10,
+        10,
+        342,
+        62
+      ],
+      "alpha_center": [
+        170.22,
+        29.94
+      ],
+      "alpha_pixels": 7440,
+      "source_size": [
+        351,
+        71
+      ]
+    },
+    {
+      "id": "eye_08",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_08.png",
+      "source_bbox": [
+        333,
+        794,
+        679,
+        865
+      ],
+      "side": "left",
+      "cls": "lash_or_lid",
+      "alpha_bbox": [
+        10,
+        10,
+        337,
+        62
+      ],
+      "alpha_center": [
+        177.24,
+        30.06
+      ],
+      "alpha_pixels": 7238,
+      "source_size": [
+        346,
+        71
+      ]
+    },
+    {
+      "id": "eye_09",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_09.png",
+      "source_bbox": [
+        855,
+        926,
+        1153,
+        993
+      ],
+      "side": "right",
+      "cls": "lash_or_lid",
+      "alpha_bbox": [
+        10,
+        10,
+        289,
+        58
+      ],
+      "alpha_center": [
+        153.54,
+        35.12
+      ],
+      "alpha_pixels": 7692,
+      "source_size": [
+        298,
+        67
+      ]
+    },
+    {
+      "id": "eye_10",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_10.png",
+      "source_bbox": [
+        371,
+        926,
+        665,
+        993
+      ],
+      "side": "left",
+      "cls": "lash_or_lid",
+      "alpha_bbox": [
+        10,
+        10,
+        285,
+        58
+      ],
+      "alpha_center": [
+        142.36,
+        34.09
+      ],
+      "alpha_pixels": 7539,
+      "source_size": [
+        294,
+        67
+      ]
+    },
+    {
+      "id": "eye_11",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_11.png",
+      "source_bbox": [
+        414,
+        726,
+        646,
+        775
+      ],
+      "side": "left",
+      "cls": "lash_or_lid",
+      "alpha_bbox": [
+        10,
+        10,
+        223,
+        40
+      ],
+      "alpha_center": [
+        104.53,
+        20.0
+      ],
+      "alpha_pixels": 2596,
+      "source_size": [
+        232,
+        49
+      ]
+    },
+    {
+      "id": "eye_12",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_12.png",
+      "source_bbox": [
+        873,
+        726,
+        1109,
+        774
+      ],
+      "side": "right",
+      "cls": "lash_or_lid",
+      "alpha_bbox": [
+        10,
+        10,
+        227,
+        39
+      ],
+      "alpha_center": [
+        129.23,
+        19.24
+      ],
+      "alpha_pixels": 2662,
+      "source_size": [
+        236,
+        48
+      ]
+    },
+    {
+      "id": "eye_13",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_13.png",
+      "source_bbox": [
+        991,
+        394,
+        1060,
+        487
+      ],
+      "side": "right",
+      "cls": "other_eye_part",
+      "alpha_bbox": [
+        10,
+        10,
+        60,
+        84
+      ],
+      "alpha_center": [
+        34.55,
+        46.64
+      ],
+      "alpha_pixels": 2962,
+      "source_size": [
+        69,
+        93
+      ]
+    },
+    {
+      "id": "eye_14",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_14.png",
+      "source_bbox": [
+        477,
+        395,
+        544,
+        486
+      ],
+      "side": "left",
+      "cls": "other_eye_part",
+      "alpha_bbox": [
+        10,
+        10,
+        58,
+        82
+      ],
+      "alpha_center": [
+        33.34,
+        45.31
+      ],
+      "alpha_pixels": 2841,
+      "source_size": [
+        67,
+        91
+      ]
+    },
+    {
+      "id": "eye_15",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_15.png",
+      "source_bbox": [
+        866,
+        479,
+        944,
+        555
+      ],
+      "side": "right",
+      "cls": "other_eye_part",
+      "alpha_bbox": [
+        10,
+        10,
+        69,
+        67
+      ],
+      "alpha_center": [
+        38.83,
+        37.93
+      ],
+      "alpha_pixels": 911,
+      "source_size": [
+        78,
+        76
+      ]
+    },
+    {
+      "id": "eye_16",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_16.png",
+      "source_bbox": [
+        376,
+        479,
+        453,
+        555
+      ],
+      "side": "left",
+      "cls": "other_eye_part",
+      "alpha_bbox": [
+        10,
+        10,
+        68,
+        67
+      ],
+      "alpha_center": [
+        38.75,
+        38.22
+      ],
+      "alpha_pixels": 891,
+      "source_size": [
+        77,
+        76
+      ]
+    },
+    {
+      "id": "eye_17",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_17.png",
+      "source_bbox": [
+        1083,
+        507,
+        1161,
+        553
+      ],
+      "side": "right",
+      "cls": "eye_white",
+      "alpha_bbox": [
+        10,
+        10,
+        69,
+        37
+      ],
+      "alpha_center": [
+        39.08,
+        21.94
+      ],
+      "alpha_pixels": 744,
+      "source_size": [
+        78,
+        46
+      ]
+    },
+    {
+      "id": "eye_18",
+      "path": "/Users/family/jason/Vtube/experiments/validation-smoke-001/crops/eye/eye_18.png",
+      "source_bbox": [
+        583,
+        506,
+        660,
+        552
+      ],
+      "side": "left",
+      "cls": "eye_white",
+      "alpha_bbox": [
+        10,
+        10,
+        68,
+        37
+      ],
+      "alpha_center": [
+        38.49,
+        22.29
+      ],
+      "alpha_pixels": 740,
+      "source_size": [
+        77,
+        46
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "side": "left",
+      "target_iris_center": [
+        686.75,
+        300.02
+      ],
+      "eye_white": "eye_03",
+      "iris": "eye_05",
+      "lash": "eye_04",
+      "group_path": "/Users/family/jason/Vtube/experiments/eye-grouping-001/groups/left_eye_group.png",
+      "composite_path": "/Users/family/jason/Vtube/experiments/eye-grouping-001/composites/left_full_eye_composite.png",
+      "placement_error_px": 0.588,
+      "accepted": true,
+      "note": "semantic group full-eye composite smoke"
+    },
+    {
+      "side": "right",
+      "target_iris_center": [
+        802.77,
+        299.32
+      ],
+      "eye_white": "eye_02",
+      "iris": "eye_06",
+      "lash": "eye_01",
+      "group_path": "/Users/family/jason/Vtube/experiments/eye-grouping-001/groups/right_eye_group.png",
+      "composite_path": "/Users/family/jason/Vtube/experiments/eye-grouping-001/composites/right_full_eye_composite.png",
+      "placement_error_px": 0.607,
+      "accepted": true,
+      "note": "semantic group full-eye composite smoke"
+    }
+  ],
+  "both_composite": "/Users/family/jason/Vtube/experiments/eye-grouping-001/composites/both_full_eye_composite.png",
+  "result": {
+    "technical_grouping": "PASS",
+    "coordinate_overlay": "PASS",
+    "visual_alignment": "FAIL",
+    "art_quality": "FAIL",
+    "full_eye_composite": "FAIL"
+  },
+  "decision": "revise",
+  "human_review": {
+    "reviewer": "user",
+    "verdict": "FAIL",
+    "notes": "위치도 안 맞고 미술 품질도 한참 부족함. Numeric grouping alone is not sufficient evidence for a usable eye composite."
+  }
+}

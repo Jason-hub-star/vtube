@@ -1,0 +1,72 @@
+{
+  "experiment_id": "ANCHOR-2048-001",
+  "date": "2026-06-02",
+  "status": "OBSERVED",
+  "inputs": [
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png"
+  ],
+  "outputs": [
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/overlays/anchor_2048_overlay.png",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/masks/left_eye_roi.png",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/masks/right_eye_roi.png",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/masks/mouth_roi.png"
+  ],
+  "metrics": {
+    "subject_bbox": [
+      234,
+      91,
+      1568,
+      1957
+    ],
+    "face_roi": [
+      516,
+      208,
+      1003,
+      1095
+    ],
+    "left_iris_center_proxy": [
+      846.0,
+      695.0
+    ],
+    "right_iris_center_proxy": [
+      1187.0,
+      695.0
+    ],
+    "mouth_center": [
+      1050.0,
+      975.0
+    ],
+    "left_eye_roi": [
+      742,
+      626,
+      208,
+      138
+    ],
+    "right_eye_roi": [
+      1083,
+      626,
+      208,
+      138
+    ],
+    "mouth_roi": [
+      959,
+      915,
+      182,
+      120
+    ]
+  },
+  "result": {
+    "left_right_eye_roi": "PASS",
+    "mouth_target": "PASS",
+    "previous_1536_coordinates_reused": "FAIL",
+    "eye_detection_status": "FALLBACK",
+    "mouth_detection_status": "PASS"
+  },
+  "human_review": {
+    "required": true,
+    "verdict": "REVISE",
+    "notes": "Auto ROI only; verify overlay visually."
+  },
+  "decision": "revise",
+  "next_action": "Use these 2048 ROIs for mouth full-canvas and blink-mask tests; do not reuse 1536 coordinates."
+}

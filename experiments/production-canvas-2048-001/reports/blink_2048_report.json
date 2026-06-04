@@ -1,0 +1,66 @@
+{
+  "experiment_id": "BLINK-2048-001",
+  "date": "2026-06-02",
+  "status": "OBSERVED",
+  "inputs": [
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/masks/left_eye_roi.png",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/masks/right_eye_roi.png"
+  ],
+  "outputs": [
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/layers/blink_closed_lids_full.png",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/overlays/blink_closed_lids_overlay.png",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/layers/left_closed_lid_full.png",
+    "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/layers/right_closed_lid_full.png"
+  ],
+  "metrics": {
+    "layers": [
+      {
+        "side": "left",
+        "layer": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/layers/left_closed_lid_full.png",
+        "eye_roi": [
+          742,
+          626,
+          208,
+          138
+        ],
+        "alpha_bbox": [
+          752,
+          701,
+          188,
+          41
+        ],
+        "inside_eye_roi": true
+      },
+      {
+        "side": "right",
+        "layer": "/Users/family/jason/Vtube/experiments/production-canvas-2048-001/layers/right_closed_lid_full.png",
+        "eye_roi": [
+          1083,
+          626,
+          208,
+          138
+        ],
+        "alpha_bbox": [
+          1093,
+          701,
+          188,
+          41
+        ],
+        "inside_eye_roi": true
+      }
+    ]
+  },
+  "result": {
+    "closed_lid_inside_roi": "PASS",
+    "no_full_eye_replacement": "PASS",
+    "visual_alignment": "REVISE"
+  },
+  "human_review": {
+    "required": true,
+    "verdict": "REVISE",
+    "notes": "Generated as canonical ROI stroke layer; human alignment review required."
+  },
+  "decision": "revise",
+  "next_action": "If human review fails, switch blink to canonical edit/inpaint or manual layer split."
+}
