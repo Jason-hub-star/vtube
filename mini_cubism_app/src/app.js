@@ -14,7 +14,10 @@ const state = {
   physics: new Map(),
   rig: null,
   rigStatus: "",
+  rigTool: "mesh",
+  selectedCoverSide: "L",
   draggedVertex: null,
+  draggedCover: null,
 };
 
 const PARAM_LABELS = {
@@ -138,6 +141,7 @@ function Stage(project) {
     ToggleButton("Rig", state.activePanel === "rig", () => {
       state.activePanel = "rig";
       state.overlays.mesh = true;
+      state.rigTool = state.rigTool || "mesh";
       ensureRigEyeSelection(project);
       render();
       draw();
@@ -238,6 +242,25 @@ function RigPanel(project) {
     SmallButton("눈 검증", runEyeValidation),
   );
   header.append(actions);
+  const modeRow = document.createElement("div");
+  modeRow.className = "segmented-row";
+  modeRow.append(
+    SegmentButton("Mesh", state.rigTool === "mesh", () => {
+      state.rigTool = "mesh";
+      state.overlays.mesh = true;
+      state.draggedCover = null;
+      render();
+      draw();
+    }),
+    SegmentButton("눈 영역", state.rigTool === "cover", () => {
+      state.rigTool = "cover";
+      state.overlays.mesh = false;
+      state.draggedVertex = null;
+      render();
+      draw();
+    }),
+  );
+  header.append(modeRow);
   if (state.rigStatus) {
     const status = document.createElement("p");
     status.className = "status-line";
@@ -246,43 +269,47 @@ function RigPanel(project) {
   }
   fragment.append(header);
 
-  const partCard = document.createElement("section");
-  partCard.className = "control-card";
-  const select = document.createElement("select");
-  select.className = "rig-select";
-  for (const part of eyeParts) {
-    const option = document.createElement("option");
-    option.value = part.id;
-    option.textContent = `${part.display_name} (${part.id})`;
-    option.selected = part.id === state.selectedPartId;
-    select.append(option);
+  if (state.rigTool === "mesh") {
+    const partCard = document.createElement("section");
+    partCard.className = "control-card";
+    const select = document.createElement("select");
+    select.className = "rig-select";
+    for (const part of eyeParts) {
+      const option = document.createElement("option");
+      option.value = part.id;
+      option.textContent = `${part.display_name} (${part.id})`;
+      option.selected = part.id === state.selectedPartId;
+      select.append(option);
+    }
+    select.addEventListener("change", () => {
+      state.selectedPartId = select.value;
+      render();
+      draw();
+    });
+    partCard.innerHTML = `<h2>Eye ArtMesh</h2>`;
+    partCard.append(select);
+    if (selected) {
+      const mesh = editableMeshForPart(project, selected.id);
+      const selectedVertex = state.draggedVertex?.partId === selected.id ? state.draggedVertex.vertexIndex : "-";
+      const meta = document.createElement("dl");
+      meta.innerHTML = `
+        <dt>Part</dt><dd>${escapeHtml(selected.id)}</dd>
+        <dt>Vertices</dt><dd>${mesh?.vertices.length || 0}</dd>
+        <dt>Selected</dt><dd>${selectedVertex}</dd>
+      `;
+      partCard.append(meta);
+    }
+    const meshActions = document.createElement("div");
+    meshActions.className = "button-row";
+    meshActions.append(
+      SmallButton("현재 Mesh 저장", () => saveMeshOverride(selected?.id)),
+      SmallButton("Mesh 초기화", () => resetMeshOverride(selected?.id)),
+    );
+    partCard.append(meshActions);
+    fragment.append(partCard);
+  } else {
+    fragment.append(EyeCoverPanel(project));
   }
-  select.addEventListener("change", () => {
-    state.selectedPartId = select.value;
-    render();
-    draw();
-  });
-  partCard.innerHTML = `<h2>Eye ArtMesh</h2>`;
-  partCard.append(select);
-  if (selected) {
-    const mesh = editableMeshForPart(project, selected.id);
-    const selectedVertex = state.draggedVertex?.partId === selected.id ? state.draggedVertex.vertexIndex : "-";
-    const meta = document.createElement("dl");
-    meta.innerHTML = `
-      <dt>Part</dt><dd>${escapeHtml(selected.id)}</dd>
-      <dt>Vertices</dt><dd>${mesh?.vertices.length || 0}</dd>
-      <dt>Selected</dt><dd>${selectedVertex}</dd>
-    `;
-    partCard.append(meta);
-  }
-  const meshActions = document.createElement("div");
-  meshActions.className = "button-row";
-  meshActions.append(
-    SmallButton("현재 Mesh 저장", () => saveMeshOverride(selected?.id)),
-    SmallButton("Mesh 초기화", () => resetMeshOverride(selected?.id)),
-  );
-  partCard.append(meshActions);
-  fragment.append(partCard);
 
   const keyCard = document.createElement("section");
   keyCard.className = "control-card";
@@ -324,6 +351,89 @@ function RigPanel(project) {
   clipCard.append(clipToggle);
   fragment.append(clipCard);
   return fragment;
+}
+
+function EyeCoverPanel(project) {
+  const card = document.createElement("section");
+  card.className = "control-card";
+  const covers = ensureEyeSocketCovers(project);
+  const side = state.selectedCoverSide === "R" ? "R" : "L";
+  const config = ensureEyeSocketCoverConfig(project, side);
+  card.innerHTML = `
+    <h2>눈 닫힘 영역</h2>
+    <p class="note">파란/노란 박스를 눈 안쪽으로 맞추면 닫힘 때 눈 밖 피부가 덜 같이 움직입니다.</p>
+  `;
+
+  const sideRow = document.createElement("div");
+  sideRow.className = "segmented-row";
+  sideRow.append(
+    SegmentButton("왼눈 L", side === "L", () => {
+      state.selectedCoverSide = "L";
+      render();
+      draw();
+    }),
+    SegmentButton("오른눈 R", side === "R", () => {
+      state.selectedCoverSide = "R";
+      render();
+      draw();
+    }),
+  );
+  card.append(sideRow);
+
+  const enabled = document.createElement("label");
+  enabled.className = "toggle-row";
+  enabled.innerHTML = `<span>cover 사용</span>`;
+  const enabledInput = document.createElement("input");
+  enabledInput.type = "checkbox";
+  enabledInput.checked = covers.enabled !== false;
+  enabledInput.addEventListener("change", () => {
+    covers.enabled = enabledInput.checked;
+    draw();
+  });
+  enabled.append(enabledInput);
+  card.append(enabled);
+
+  const bboxGrid = document.createElement("div");
+  bboxGrid.className = "field-grid";
+  ["x", "y", "w", "h"].forEach((label, index) => {
+    bboxGrid.append(NumberField(label, config.bbox[index], 1, (value) => {
+      const next = [...config.bbox];
+      next[index] = Math.round(value);
+      if (index >= 2) next[index] = Math.max(index === 2 ? 30 : 20, next[index]);
+      config.bbox = next;
+      draw();
+    }));
+  });
+  card.append(bboxGrid);
+
+  card.append(
+    RangeField("불투명도", config.max_opacity ?? 0.9, 0, 1, 0.01, (value) => {
+      config.max_opacity = Number(value.toFixed(2));
+      draw();
+    }),
+    RangeField("가로 축소", config.scale_x ?? 0.8, 0.45, 1.2, 0.01, (value) => {
+      config.scale_x = Number(value.toFixed(2));
+      draw();
+    }),
+    RangeField("세로 축소", config.scale_y ?? 0.52, 0.25, 1.0, 0.01, (value) => {
+      config.scale_y = Number(value.toFixed(2));
+      draw();
+    }),
+    RangeField("blur", config.blur ?? 1, 0, 8, 0.25, (value) => {
+      config.blur = Number(value.toFixed(2));
+      draw();
+    }),
+  );
+
+  const actions = document.createElement("div");
+  actions.className = "button-row";
+  actions.append(
+    SmallButton("선택눈 닫힘 보기", () => previewSelectedEyeClosed(side)),
+    SmallButton("양눈 닫힘 보기", previewBothEyesClosed),
+    SmallButton("자동영역 복구", () => resetEyeCoverConfig(project, side)),
+  );
+  card.append(actions);
+  return card;
 }
 
 function ParameterControl(param) {
@@ -375,6 +485,47 @@ function SmallButton(label, onClick) {
   return button;
 }
 
+function SegmentButton(label, active, onClick) {
+  const button = document.createElement("button");
+  button.className = `segment-button ${active ? "active" : ""}`;
+  button.type = "button";
+  button.textContent = label;
+  button.addEventListener("click", onClick);
+  return button;
+}
+
+function NumberField(label, value, step, onInput) {
+  const wrap = document.createElement("label");
+  wrap.className = "number-field";
+  wrap.innerHTML = `<span>${escapeHtml(label)}</span>`;
+  const input = document.createElement("input");
+  input.type = "number";
+  input.step = step;
+  input.value = value;
+  input.addEventListener("input", () => onInput(Number(input.value)));
+  wrap.append(input);
+  return wrap;
+}
+
+function RangeField(label, value, min, max, step, onInput) {
+  const row = document.createElement("label");
+  row.className = "param-row compact";
+  row.innerHTML = `<span>${escapeHtml(label)}</span><output>${formatValue(value)}</output>`;
+  const input = document.createElement("input");
+  input.type = "range";
+  input.min = min;
+  input.max = max;
+  input.step = step;
+  input.value = value;
+  input.addEventListener("input", () => {
+    const next = Number(input.value);
+    row.querySelector("output").textContent = formatValue(next);
+    onInput(next);
+  });
+  row.append(input);
+  return row;
+}
+
 function draw() {
   const canvas = document.querySelector("#preview-canvas");
   if (!canvas || !state.project) return;
@@ -385,9 +536,13 @@ function draw() {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   const parts = [...project.parts].sort((a, b) => a.draw_order - b.draw_order);
-  for (const part of parts) drawPart(ctx, project, part);
+  for (const part of parts) {
+    drawPart(ctx, project, part);
+    if (part.id === "face_base") drawEyeSocketCovers(ctx, project);
+  }
   if (state.overlays.deformers) drawDeformers(ctx, project);
   if (state.overlays.mesh) drawMeshes(ctx, project);
+  if (state.activePanel === "rig" && state.rigTool === "cover") drawEyeCoverEditor(ctx, project);
 }
 
 function drawPart(ctx, project, part) {
@@ -435,6 +590,87 @@ function drawClippedEyePart(ctx, project, part, image, transform, opacity) {
   tempCtx.globalCompositeOperation = "destination-in";
   tempCtx.drawImage(maskImage, 0, 0, project.canvas_size[0], project.canvas_size[1]);
   ctx.drawImage(temp, 0, 0);
+}
+
+function drawEyeSocketCovers(ctx, project) {
+  const covers = state.rig?.eye_socket_covers;
+  if (!covers?.enabled) return;
+  for (const side of ["L", "R"]) {
+    const config = covers[side];
+    if (!config) continue;
+    const parameterId = side === "L" ? "ParamEyeLOpen" : "ParamEyeROpen";
+    const openValue = state.parameters[parameterId] ?? 1;
+    const start = config.fade_start ?? 0.96;
+    const full = config.fade_full ?? 0.08;
+    const opacity = clamp(((start - openValue) / Math.max(start - full, 0.001)) * (config.max_opacity ?? 0.98), 0, config.max_opacity ?? 0.98);
+    if (opacity <= 0.01) continue;
+    const bbox = config.bbox || inferredEyeSocketCoverBbox(project, side);
+    drawSocketCoverShape(ctx, bbox, config, opacity);
+  }
+}
+
+function drawSocketCoverShape(ctx, bbox, config, opacity) {
+  const [x, y, w, h] = bbox;
+  const cx = x + w / 2;
+  const cy = y + h / 2;
+  const rx = (w / 2) * (config.scale_x ?? 0.92);
+  const ry = (h / 2) * (config.scale_y ?? 0.66);
+  ctx.save();
+  ctx.globalAlpha = opacity;
+  ctx.filter = `blur(${config.blur ?? 2}px)`;
+  const gradient = ctx.createLinearGradient(cx, y, cx, y + h);
+  gradient.addColorStop(0, config.upper_color || "#f8ded2");
+  gradient.addColorStop(0.55, config.mid_color || "#f4cfc3");
+  gradient.addColorStop(1, config.lower_color || "#e7b6aa");
+  ctx.fillStyle = gradient;
+  ctx.beginPath();
+  ctx.ellipse(cx, cy, rx, ry, 0, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.filter = "none";
+  ctx.globalAlpha = Math.min(1, opacity * 0.42);
+  ctx.fillStyle = config.lower_color || "#e7b6aa";
+  ctx.beginPath();
+  ctx.ellipse(cx, cy + ry * 0.32, rx * 0.74, ry * 0.24, 0, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.restore();
+}
+
+function drawEyeCoverEditor(ctx, project) {
+  const covers = ensureEyeSocketCovers(project);
+  ctx.save();
+  ctx.lineWidth = 4;
+  ctx.font = "28px system-ui";
+  for (const side of ["L", "R"]) {
+    const config = ensureEyeSocketCoverConfig(project, side);
+    const [x, y, w, h] = config.bbox;
+    const selected = side === state.selectedCoverSide;
+    ctx.strokeStyle = selected ? "rgba(255, 204, 51, 0.98)" : "rgba(66, 170, 255, 0.72)";
+    ctx.fillStyle = selected ? "rgba(255, 204, 51, 0.12)" : "rgba(66, 170, 255, 0.08)";
+    ctx.fillRect(x, y, w, h);
+    ctx.strokeRect(x, y, w, h);
+    ctx.fillStyle = selected ? "rgba(255, 204, 51, 0.98)" : "rgba(66, 170, 255, 0.9)";
+    for (const point of coverHandlePoints(config.bbox)) {
+      ctx.fillRect(point.x - 8, point.y - 8, 16, 16);
+    }
+    ctx.fillText(`${side} eye cover`, x, Math.max(34, y - 12));
+  }
+  if (covers.enabled === false) {
+    ctx.fillStyle = "rgba(255, 80, 48, 0.9)";
+    ctx.fillText("eye cover disabled", 34, 54);
+  }
+  ctx.restore();
+}
+
+function inferredEyeSocketCoverBbox(project, side) {
+  const prefix = side === "L" ? "eye_L_" : "eye_R_";
+  const ids = ["white", "upper_lash", "lower_lash", "closed_lid"].map((suffix) => `${prefix}${suffix}`);
+  const boxes = ids.map((id) => project.parts.find((part) => part.id === id)?.bbox).filter(Boolean);
+  if (!boxes.length) return [0, 0, 0, 0];
+  const left = Math.min(...boxes.map((bbox) => bbox[0])) - 8;
+  const top = Math.min(...boxes.map((bbox) => bbox[1])) - 6;
+  const right = Math.max(...boxes.map((bbox) => bbox[0] + bbox[2])) + 8;
+  const bottom = Math.max(...boxes.map((bbox) => bbox[1] + bbox[3])) + 8;
+  return [left, top, right - left, bottom - top];
 }
 
 function clippedByEyeWhite(partId) {
@@ -635,7 +871,24 @@ function partOpacity(project, part) {
     opacity *= sampleOpacityKeyframes(keyform.keyframes || [], current, keyform.mode || "linear");
   }
   if (hasNeutralSuppression && shouldSuppressNeutralPart(project, part)) opacity *= 0;
+  opacity *= eyeOpenDetailOpacity(project, part);
   return clamp(opacity, 0, 1);
+}
+
+function eyeOpenDetailOpacity(project, part) {
+  if (!part.id.startsWith("eye_L_") && !part.id.startsWith("eye_R_")) return 1;
+  if (part.id.endsWith("_closed_lid")) return 1;
+  const side = part.id.startsWith("eye_L_") ? "L" : "R";
+  const covers = state.rig?.eye_socket_covers;
+  if (!covers?.enabled) return 1;
+  const config = covers[side] || {};
+  const parameterId = side === "L" ? "ParamEyeLOpen" : "ParamEyeROpen";
+  const param = project.parameters.find((item) => item.id === parameterId);
+  if (!param) return 1;
+  const openValue = state.parameters[parameterId] ?? param.default;
+  const hideAt = config.hide_open_parts_at ?? 0.22;
+  const fullAt = config.show_open_parts_at ?? 0.82;
+  return clamp((openValue - hideAt) / Math.max(fullAt - hideAt, 0.001), 0, 1);
 }
 
 function isNeutralVisualRepairKeyform(keyform) {
@@ -815,6 +1068,37 @@ function normalizeRig(rig) {
         eye_R_white: ["eye_R_iris", "eye_R_pupil", "eye_R_highlight"],
       },
     },
+    eye_socket_covers: {
+      enabled: true,
+      L: {
+        bbox: [814, 674, 190, 92],
+        fade_start: 0.96,
+        fade_full: 0.08,
+        max_opacity: 0.9,
+        hide_open_parts_at: 0.22,
+        show_open_parts_at: 0.82,
+        upper_color: "#fae7dd",
+        mid_color: "#f4d7cc",
+        lower_color: "#e9bfb4",
+        blur: 1,
+        scale_x: 0.8,
+        scale_y: 0.52,
+      },
+      R: {
+        bbox: [1066, 676, 190, 92],
+        fade_start: 0.96,
+        fade_full: 0.08,
+        max_opacity: 0.9,
+        hide_open_parts_at: 0.22,
+        show_open_parts_at: 0.82,
+        upper_color: "#fae7dd",
+        mid_color: "#f4d5ca",
+        lower_color: "#e8bbb0",
+        blur: 1,
+        scale_x: 0.8,
+        scale_y: 0.52,
+      },
+    },
     notes: [],
   };
   return {
@@ -826,6 +1110,12 @@ function normalizeRig(rig) {
       ...base.clipping,
       ...(rig?.clipping || {}),
       pairs: { ...base.clipping.pairs, ...(rig?.clipping?.pairs || {}) },
+    },
+    eye_socket_covers: {
+      ...base.eye_socket_covers,
+      ...(rig?.eye_socket_covers || {}),
+      L: { ...base.eye_socket_covers.L, ...(rig?.eye_socket_covers?.L || {}) },
+      R: { ...base.eye_socket_covers.R, ...(rig?.eye_socket_covers?.R || {}) },
     },
   };
 }
@@ -869,6 +1159,48 @@ function ensureMeshOverride(partId) {
   return state.rig.mesh_overrides[partId];
 }
 
+function ensureEyeSocketCovers(project) {
+  if (!state.rig) state.rig = normalizeRig(project?._mini_rig);
+  if (!state.rig.eye_socket_covers) state.rig.eye_socket_covers = normalizeRig(null).eye_socket_covers;
+  for (const side of ["L", "R"]) ensureEyeSocketCoverConfig(project, side);
+  return state.rig.eye_socket_covers;
+}
+
+function ensureEyeSocketCoverConfig(project, side) {
+  const covers = state.rig.eye_socket_covers;
+  const base = normalizeRig(null).eye_socket_covers[side];
+  if (!covers[side]) covers[side] = { ...base };
+  covers[side] = {
+    ...base,
+    ...covers[side],
+    bbox: covers[side].bbox || inferredEyeSocketCoverBbox(project, side),
+  };
+  return covers[side];
+}
+
+function resetEyeCoverConfig(project, side) {
+  const config = ensureEyeSocketCoverConfig(project, side);
+  config.bbox = inferredEyeSocketCoverBbox(project, side);
+  state.rigStatus = `${side} 눈 영역 자동값으로 복구`;
+  render();
+  draw();
+}
+
+function previewSelectedEyeClosed(side) {
+  resetOtherPreviewParameterGroups(side === "L" ? "ParamEyeLOpen" : "ParamEyeROpen");
+  setParameterValue(side === "L" ? "ParamEyeLOpen" : "ParamEyeROpen", 0);
+  syncParameterControls();
+  draw();
+}
+
+function previewBothEyesClosed() {
+  resetOtherPreviewParameterGroups("ParamEyeLOpen");
+  setParameterValue("ParamEyeLOpen", 0);
+  setParameterValue("ParamEyeROpen", 0);
+  syncParameterControls();
+  draw();
+}
+
 function saveMeshOverride(partId) {
   if (!partId) return;
   ensureMeshOverride(partId);
@@ -897,7 +1229,12 @@ function canvasPoint(event) {
 }
 
 function onCanvasPointerDown(event) {
-  if (state.activePanel !== "rig" || !state.project || !state.selectedPartId) return;
+  if (state.activePanel !== "rig" || !state.project) return;
+  if (state.rigTool === "cover") {
+    onEyeCoverPointerDown(event);
+    return;
+  }
+  if (!state.selectedPartId) return;
   const part = state.project.parts.find((item) => item.id === state.selectedPartId);
   if (!part || !part.id.startsWith("eye_")) return;
   const mesh = editableMeshForPart(state.project, part.id);
@@ -921,6 +1258,10 @@ function onCanvasPointerDown(event) {
 }
 
 function onCanvasPointerMove(event) {
+  if (state.draggedCover) {
+    onEyeCoverPointerMove(event);
+    return;
+  }
   if (!state.draggedVertex || !state.rig) return;
   const override = ensureMeshOverride(state.draggedVertex.partId);
   if (!override) return;
@@ -931,11 +1272,111 @@ function onCanvasPointerMove(event) {
 }
 
 function onCanvasPointerUp() {
+  if (state.draggedCover) {
+    state.rigStatus = `${state.draggedCover.side} 눈 영역 편집됨`;
+    state.draggedCover = null;
+    render();
+    draw();
+    return;
+  }
   if (!state.draggedVertex) return;
   state.rigStatus = `${state.draggedVertex.partId} 정점 ${state.draggedVertex.vertexIndex} 편집됨`;
   state.draggedVertex = null;
   render();
   draw();
+}
+
+function onEyeCoverPointerDown(event) {
+  if (!state.rig || !state.project) return;
+  const point = canvasPoint(event);
+  const hit = hitEyeCover(point);
+  if (!hit) return;
+  state.selectedCoverSide = hit.side;
+  const config = ensureEyeSocketCoverConfig(state.project, hit.side);
+  state.draggedCover = {
+    side: hit.side,
+    handle: hit.handle,
+    startPoint: point,
+    startBbox: [...config.bbox],
+  };
+  try {
+    event.currentTarget.setPointerCapture(event.pointerId);
+  } catch {
+    // Synthetic browser tests do not always create an active pointer first.
+  }
+  render();
+  draw();
+}
+
+function onEyeCoverPointerMove(event) {
+  const drag = state.draggedCover;
+  if (!drag || !state.project) return;
+  const point = canvasPoint(event);
+  const dx = Math.round(point[0] - drag.startPoint[0]);
+  const dy = Math.round(point[1] - drag.startPoint[1]);
+  const config = ensureEyeSocketCoverConfig(state.project, drag.side);
+  config.bbox = resizedCoverBbox(drag.startBbox, drag.handle, dx, dy, state.project.canvas_size);
+  draw();
+}
+
+function hitEyeCover(point) {
+  for (const side of [state.selectedCoverSide, state.selectedCoverSide === "L" ? "R" : "L"]) {
+    const config = ensureEyeSocketCoverConfig(state.project, side);
+    for (const handle of coverHandlePoints(config.bbox)) {
+      if (Math.abs(point[0] - handle.x) <= 24 && Math.abs(point[1] - handle.y) <= 24) {
+        return { side, handle: handle.id };
+      }
+    }
+    const [x, y, w, h] = config.bbox;
+    if (point[0] >= x && point[0] <= x + w && point[1] >= y && point[1] <= y + h) {
+      return { side, handle: "move" };
+    }
+  }
+  return null;
+}
+
+function coverHandlePoints(bbox) {
+  const [x, y, w, h] = bbox;
+  return [
+    { id: "nw", x, y },
+    { id: "ne", x: x + w, y },
+    { id: "sw", x, y: y + h },
+    { id: "se", x: x + w, y: y + h },
+  ];
+}
+
+function resizedCoverBbox(bbox, handle, dx, dy, canvasSize) {
+  let [x, y, w, h] = bbox;
+  if (handle === "move") {
+    x += dx;
+    y += dy;
+  } else {
+    if (handle.includes("w")) {
+      x += dx;
+      w -= dx;
+    }
+    if (handle.includes("e")) w += dx;
+    if (handle.includes("n")) {
+      y += dy;
+      h -= dy;
+    }
+    if (handle.includes("s")) h += dy;
+  }
+  const minW = 30;
+  const minH = 20;
+  if (w < minW) {
+    if (handle.includes("w")) x -= minW - w;
+    w = minW;
+  }
+  if (h < minH) {
+    if (handle.includes("n")) y -= minH - h;
+    h = minH;
+  }
+  x = clamp(Math.round(x), 0, canvasSize[0] - minW);
+  y = clamp(Math.round(y), 0, canvasSize[1] - minH);
+  w = clamp(Math.round(w), minW, canvasSize[0] - x);
+  h = clamp(Math.round(h), minH, canvasSize[1] - y);
+  return [x, y, w, h];
 }
 
 function captureEyeBallKeyform() {

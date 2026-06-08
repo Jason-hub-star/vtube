@@ -89,6 +89,7 @@ dt,
 .part-row,
 .tool-button,
 .small-button,
+.segment-button,
 .rig-select {
   border: 1px solid #34413e;
   background: #1d2426;
@@ -114,7 +115,8 @@ dt,
 }
 
 .part-row.active,
-.tool-button.active {
+.tool-button.active,
+.segment-button.active {
   border-color: #ffcc33;
   background: #2d2817;
 }
@@ -157,8 +159,49 @@ dt,
 
 .small-button:hover,
 .tool-button:hover,
+.segment-button:hover,
 .part-row:hover {
   border-color: #20d0aa;
+}
+
+.segmented-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.segment-button {
+  min-height: 32px;
+  padding: 0 8px;
+  border-radius: 6px;
+}
+
+.field-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.number-field {
+  display: grid;
+  gap: 5px;
+}
+
+.number-field span {
+  color: #79a79a;
+  font-size: 11px;
+}
+
+.number-field input {
+  width: 100%;
+  min-height: 32px;
+  padding: 0 7px;
+  border: 1px solid #34413e;
+  border-radius: 6px;
+  background: #111719;
+  color: #eef3f0;
 }
 
 .rig-select {
@@ -244,6 +287,10 @@ dt,
   grid-column: 1 / -1;
   width: 100%;
   accent-color: #20d0aa;
+}
+
+.param-row.compact {
+  margin-bottom: 10px;
 }
 
 dl {

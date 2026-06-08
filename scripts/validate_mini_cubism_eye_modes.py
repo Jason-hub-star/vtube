@@ -293,7 +293,28 @@ def part_opacity(project: dict[str, Any], parameters: dict[str, float], part_id:
         activators = neutral_activation_parameters(part_id)
         if not activators or not any(parameter_moved(project, parameters, parameter_id) for parameter_id in activators):
             opacity *= 0
+    opacity *= eye_open_detail_opacity(project, parameters, part_id)
     return clamp(opacity, 0, 1)
+
+
+def eye_open_detail_opacity(project: dict[str, Any], parameters: dict[str, float], part_id: str) -> float:
+    if not (part_id.startswith("eye_L_") or part_id.startswith("eye_R_")):
+        return 1.0
+    if part_id.endswith("_closed_lid"):
+        return 1.0
+    covers = (project.get("_mini_rig") or {}).get("eye_socket_covers") or {}
+    if not covers.get("enabled"):
+        return 1.0
+    side = "L" if part_id.startswith("eye_L_") else "R"
+    config = covers.get(side) or {}
+    parameter_id = "ParamEyeLOpen" if side == "L" else "ParamEyeROpen"
+    param = parameter_map(project).get(parameter_id)
+    if not param:
+        return 1.0
+    open_value = parameters.get(parameter_id, float(param["default"]))
+    hide_at = float(config.get("hide_open_parts_at", 0.22))
+    full_at = float(config.get("show_open_parts_at", 0.82))
+    return clamp((open_value - hide_at) / max(full_at - hide_at, 0.001), 0, 1)
 
 
 def part_transform(project: dict[str, Any], parameters: dict[str, float], part: dict[str, Any]) -> Transform:
@@ -336,7 +357,62 @@ def composite_project(project: dict[str, Any], project_dir: Path, parameters: di
         alpha = Image.fromarray(np.clip(np.asarray(alpha, dtype=np.float32) * opacity * transform.opacity, 0, 255).astype(np.uint8))
         transformed.putalpha(alpha)
         canvas.alpha_composite(transformed)
+        if part["id"] == "face_base":
+            draw_eye_socket_covers(canvas, project, parameters)
     return canvas
+
+
+def eye_socket_cover_opacity(config: dict[str, Any], open_value: float) -> float:
+    start = float(config.get("fade_start", 0.96))
+    full = float(config.get("fade_full", 0.08))
+    max_opacity = float(config.get("max_opacity", 0.98))
+    return clamp(((start - open_value) / max(start - full, 0.001)) * max_opacity, 0, max_opacity)
+
+
+def draw_eye_socket_covers(canvas: Image.Image, project: dict[str, Any], parameters: dict[str, float]) -> None:
+    covers = (project.get("_mini_rig") or {}).get("eye_socket_covers") or {}
+    if not covers.get("enabled"):
+        return
+    overlay = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
+    draw = ImageDraw.Draw(overlay)
+    for side, parameter_id in [("L", "ParamEyeLOpen"), ("R", "ParamEyeROpen")]:
+        config = covers.get(side) or {}
+        if not config:
+            continue
+        open_value = parameters.get(parameter_id, 1)
+        opacity = eye_socket_cover_opacity(config, open_value)
+        if opacity <= 0.01:
+            continue
+        bbox = list(config.get("bbox") or inferred_eye_socket_cover_bbox(project, side))
+        draw_socket_cover_shape(draw, bbox, config, opacity)
+    canvas.alpha_composite(overlay)
+
+
+def draw_socket_cover_shape(draw: ImageDraw.ImageDraw, bbox: list[int], config: dict[str, Any], opacity: float) -> None:
+    x, y, w, h = bbox
+    cx = x + w / 2
+    cy = y + h / 2
+    rx = (w / 2) * float(config.get("scale_x", 0.92))
+    ry = (h / 2) * float(config.get("scale_y", 0.66))
+    upper = hex_to_rgb(config.get("upper_color", "#f8ded2"))
+    mid = hex_to_rgb(config.get("mid_color", "#f4cfc3"))
+    lower = hex_to_rgb(config.get("lower_color", "#e7b6aa"))
+    alpha = int(255 * opacity)
+    draw.ellipse([cx - rx, cy - ry, cx + rx, cy + ry], fill=(*mid, alpha))
+    draw.ellipse([cx - rx * 0.94, cy - ry * 0.94, cx + rx * 0.94, cy + ry * 0.18], fill=(*upper, int(alpha * 0.8)))
+    draw.ellipse([cx - rx * 0.74, cy + ry * 0.1, cx + rx * 0.74, cy + ry * 0.56], fill=(*lower, int(alpha * 0.42)))
+
+
+def hex_to_rgb(value: str) -> tuple[int, int, int]:
+    value = value.lstrip("#")
+    return tuple(int(value[index : index + 2], 16) for index in (0, 2, 4))
+
+
+def inferred_eye_socket_cover_bbox(project: dict[str, Any], side: str) -> list[int]:
+    prefix = "eye_L_" if side == "L" else "eye_R_"
+    part_ids = [f"{prefix}{suffix}" for suffix in ["white", "upper_lash", "lower_lash", "closed_lid"]]
+    parts = [part for part in project["parts"] if part["id"] in part_ids]
+    return union_bbox(parts, 8) if parts else [0, 0, 0, 0]
 
 
 def changed_mask(a: Image.Image, b: Image.Image, threshold: int) -> np.ndarray:
@@ -377,6 +453,17 @@ def contract_checks(project: dict[str, Any]) -> dict[str, Any]:
             if item["target_id"] not in {"eye_L_warp", "eye_R_warp"}
         }
     )
+    covers = (project.get("_mini_rig") or {}).get("eye_socket_covers") or {}
+    cover_errors = []
+    if not covers.get("enabled"):
+        cover_errors.append("eye_socket_covers disabled")
+    for side in ["L", "R"]:
+        config = covers.get(side) or {}
+        bbox = config.get("bbox")
+        if not (isinstance(bbox, list) and len(bbox) == 4 and bbox[2] > 0 and bbox[3] > 0):
+            cover_errors.append(f"{side} cover bbox invalid")
+        if eye_socket_cover_opacity(config, 0) < 0.5:
+            cover_errors.append(f"{side} cover too transparent at EyeOpen=0")
     return {
         "eye_ball_allowed_target_status": "PASS" if not bad_eye_ball_targets and not missing_eye_ball_targets else "FAIL",
         "eye_ball_binding_count": len(eye_ball_bindings),
@@ -384,6 +471,8 @@ def contract_checks(project: dict[str, Any]) -> dict[str, Any]:
         "missing_eye_ball_targets": missing_eye_ball_targets,
         "eye_open_target_status": "PASS" if not bad_eye_open_targets else "FAIL",
         "bad_eye_open_targets": bad_eye_open_targets,
+        "eye_socket_cover_status": "PASS" if not cover_errors else "FAIL",
+        "eye_socket_cover_errors": cover_errors,
     }
 
 
@@ -483,6 +572,7 @@ def validate(project_dir: Path, out_dir: Path, threshold: int, pad: int, warn_pi
     contract_ok = (
         report["contract_checks"]["eye_ball_allowed_target_status"] == "PASS"
         and report["contract_checks"]["eye_open_target_status"] == "PASS"
+        and report["contract_checks"]["eye_socket_cover_status"] == "PASS"
     )
     mode_ok = all(row["status"] == "PASS" for row in results)
     report["status"] = "PASS" if contract_ok and mode_ok else "REVISE"
@@ -507,6 +597,7 @@ def markdown_report(report: dict[str, Any]) -> str:
         f"- EyeBallX/Y target whitelist: `{report['contract_checks']['eye_ball_allowed_target_status']}`",
         f"- EyeBallX/Y binding count: `{report['contract_checks']['eye_ball_binding_count']}`",
         f"- EyeOpen target check: `{report['contract_checks']['eye_open_target_status']}`",
+        f"- Eye socket cover check: `{report['contract_checks']['eye_socket_cover_status']}`",
         "",
         "## Mode Leakage",
         "",

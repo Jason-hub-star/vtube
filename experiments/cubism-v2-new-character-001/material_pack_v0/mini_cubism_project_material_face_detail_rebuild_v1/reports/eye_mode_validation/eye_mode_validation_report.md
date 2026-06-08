@@ -12,6 +12,7 @@
 - EyeBallX/Y target whitelist: `PASS`
 - EyeBallX/Y binding count: `24`
 - EyeOpen target check: `PASS`
+- Eye socket cover check: `PASS`
 
 ## Mode Leakage
 
@@ -22,6 +23,6 @@
 | 눈동자 오른쪽 (`eye_ball_x_right`) | `PASS` | 0 | 5941 |
 | 눈동자 위 (`eye_ball_y_up`) | `PASS` | 0 | 6069 |
 | 눈동자 아래 (`eye_ball_y_down`) | `PASS` | 0 | 5782 |
-| 왼눈 닫힘 (`eye_l_closed`) | `PASS` | 0 | 3230 |
-| 오른눈 닫힘 (`eye_r_closed`) | `PASS` | 0 | 3018 |
-| 양눈 닫힘 (`both_eyes_closed`) | `PASS` | 0 | 6248 |
+| 왼눈 닫힘 (`eye_l_closed`) | `PASS` | 0 | 5578 |
+| 오른눈 닫힘 (`eye_r_closed`) | `PASS` | 0 | 5676 |
+| 양눈 닫힘 (`both_eyes_closed`) | `PASS` | 0 | 11254 |

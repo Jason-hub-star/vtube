@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "validated_at": "2026-06-08T14:03:08.061356+00:00",
+  "validated_at": "2026-06-08T14:22:46.256382+00:00",
   "project": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_face_detail_rebuild_v1",
   "mini_rig_present": true,
   "mini_rig_keyform_overrides": 7,
@@ -14,7 +14,9 @@
     "bad_eye_ball_targets": [],
     "missing_eye_ball_targets": [],
     "eye_open_target_status": "PASS",
-    "bad_eye_open_targets": []
+    "bad_eye_open_targets": [],
+    "eye_socket_cover_status": "PASS",
+    "eye_socket_cover_errors": []
   },
   "modes": [
     {
@@ -70,7 +72,7 @@
       "label_ko": "왼눈 닫힘",
       "status": "PASS",
       "outside_changed_pixels": 0,
-      "allowed_changed_pixels": 3230,
+      "allowed_changed_pixels": 5578,
       "parameters": {
         "ParamEyeLOpen": 0
       }
@@ -80,7 +82,7 @@
       "label_ko": "오른눈 닫힘",
       "status": "PASS",
       "outside_changed_pixels": 0,
-      "allowed_changed_pixels": 3018,
+      "allowed_changed_pixels": 5676,
       "parameters": {
         "ParamEyeROpen": 0
       }
@@ -90,7 +92,7 @@
       "label_ko": "양눈 닫힘",
       "status": "PASS",
       "outside_changed_pixels": 0,
-      "allowed_changed_pixels": 6248,
+      "allowed_changed_pixels": 11254,
       "parameters": {
         "ParamEyeLOpen": 0,
         "ParamEyeROpen": 0

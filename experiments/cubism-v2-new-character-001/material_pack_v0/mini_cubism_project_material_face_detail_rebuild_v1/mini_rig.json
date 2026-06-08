@@ -145,6 +145,47 @@
       ]
     }
   },
+  "eye_socket_covers": {
+    "enabled": true,
+    "L": {
+      "bbox": [
+        885,
+        696,
+        96,
+        58
+      ],
+      "fade_start": 0.96,
+      "fade_full": 0.08,
+      "max_opacity": 0.9,
+      "hide_open_parts_at": 0.22,
+      "show_open_parts_at": 0.82,
+      "upper_color": "#fae7dd",
+      "mid_color": "#f4d7cc",
+      "lower_color": "#e9bfb4",
+      "blur": 1,
+      "scale_x": 0.8,
+      "scale_y": 0.52
+    },
+    "R": {
+      "bbox": [
+        1089,
+        699,
+        88,
+        62
+      ],
+      "fade_start": 0.96,
+      "fade_full": 0.08,
+      "max_opacity": 0.9,
+      "hide_open_parts_at": 0.22,
+      "show_open_parts_at": 0.82,
+      "upper_color": "#fae7dd",
+      "mid_color": "#f4d5ca",
+      "lower_color": "#e8bbb0",
+      "blur": 1,
+      "scale_x": 0.8,
+      "scale_y": 0.52
+    }
+  },
   "notes": [],
-  "updated_at": "2026-06-08T14:02:38.127Z"
+  "updated_at": "2026-06-08T14:23:05.018Z"
 }
