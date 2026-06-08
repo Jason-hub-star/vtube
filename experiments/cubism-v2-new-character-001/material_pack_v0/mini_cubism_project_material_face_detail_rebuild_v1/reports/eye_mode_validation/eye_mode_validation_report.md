@@ -2,6 +2,8 @@
 
 - Status: `PASS`
 - Project: `/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_face_detail_rebuild_v1`
+- Mini rig present: `True`
+- Mini rig keyform overrides: `7`
 - Pixel threshold: `12`
 - Eye ROI padding: `28`
 

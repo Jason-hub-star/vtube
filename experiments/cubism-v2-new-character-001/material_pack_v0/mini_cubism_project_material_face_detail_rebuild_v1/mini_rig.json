@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "project_kind": "mini_cubism_rig_v0",
+  "mesh_overrides": {},
+  "keyform_overrides": [
+    {
+      "parameter_id": "ParamEyeBallX",
+      "key_value": 1,
+      "target_id": "eye_L_highlight",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          7.5,
+          0
+        ],
+        "scale": [
+          1,
+          1
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamEyeBallX",
+      "key_value": 1,
+      "target_id": "eye_L_iris",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          10,
+          0
+        ],
+        "scale": [
+          1,
+          1
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamEyeBallX",
+      "key_value": 1,
+      "target_id": "eye_L_pupil",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          11.5,
+          0
+        ],
+        "scale": [
+          1,
+          1
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamEyeBallX",
+      "key_value": 1,
+      "target_id": "eye_R_highlight",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          7.5,
+          0
+        ],
+        "scale": [
+          1,
+          1
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamEyeBallX",
+      "key_value": 1,
+      "target_id": "eye_R_iris",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          10,
+          0
+        ],
+        "scale": [
+          1,
+          1
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamEyeBallX",
+      "key_value": 1,
+      "target_id": "eye_R_pupil",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          11.5,
+          0
+        ],
+        "scale": [
+          1,
+          1
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamEyeLOpen",
+      "key_value": 0,
+      "target_id": "eye_L_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          0.12
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    }
+  ],
+  "clipping": {
+    "enabled": true,
+    "pairs": {
+      "eye_L_white": [
+        "eye_L_iris",
+        "eye_L_pupil",
+        "eye_L_highlight"
+      ],
+      "eye_R_white": [
+        "eye_R_iris",
+        "eye_R_pupil",
+        "eye_R_highlight"
+      ]
+    }
+  },
+  "notes": [],
+  "updated_at": "2026-06-08T14:02:38.127Z"
+}

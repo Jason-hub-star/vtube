@@ -1,7 +1,9 @@
 {
   "schema_version": 1,
-  "validated_at": "2026-06-08T13:35:50.014299+00:00",
+  "validated_at": "2026-06-08T14:03:08.061356+00:00",
   "project": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_face_detail_rebuild_v1",
+  "mini_rig_present": true,
+  "mini_rig_keyform_overrides": 7,
   "threshold": 12,
   "eye_roi_padding": 28,
   "warn_pixels": 0,

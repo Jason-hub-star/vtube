@@ -61,6 +61,13 @@ def load_json(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text())
 
 
+def load_project(project_dir: Path) -> dict[str, Any]:
+    project = load_json(project_dir / "character.json")
+    rig_path = project_dir / "mini_rig.json"
+    project["_mini_rig"] = load_json(rig_path) if rig_path.exists() else None
+    return project
+
+
 def clamp(value: float, lo: float, hi: float) -> float:
     return max(lo, min(hi, value))
 
@@ -174,7 +181,7 @@ def default_parameters(project: dict[str, Any]) -> dict[str, float]:
 def binding_transform(project: dict[str, Any], parameters: dict[str, float], target_id: str) -> Transform:
     params = parameter_map(project)
     transform = Transform()
-    bindings = [item for item in project.get("keyform_bindings", []) if item["target_id"] == target_id]
+    bindings = [item for item in effective_keyform_bindings(project) if item["target_id"] == target_id]
     for parameter_id, rows in group_by(bindings, "parameter_id").items():
         param = params.get(parameter_id)
         if not param:
@@ -183,6 +190,18 @@ def binding_transform(project: dict[str, Any], parameters: dict[str, float], tar
         keyframes = [{"key_value": float(param["default"]), "deltas": {}}] + rows
         transform = merge_transform(transform, sample_transform(keyframes, value))
     return transform
+
+
+def binding_key(binding: dict[str, Any]) -> tuple[Any, Any, Any]:
+    return (binding.get("parameter_id"), binding.get("target_id"), binding.get("key_value"))
+
+
+def effective_keyform_bindings(project: dict[str, Any]) -> list[dict[str, Any]]:
+    overrides = (project.get("_mini_rig") or {}).get("keyform_overrides") or []
+    if not overrides:
+        return list(project.get("keyform_bindings", []))
+    override_keys = {binding_key(binding) for binding in overrides}
+    return [binding for binding in project.get("keyform_bindings", []) if binding_key(binding) not in override_keys] + list(overrides)
 
 
 def primary_deformer(project: dict[str, Any], part_id: str) -> dict[str, Any] | None:
@@ -347,14 +366,10 @@ def mode_definitions(project: dict[str, Any]) -> list[dict[str, Any]]:
 
 
 def contract_checks(project: dict[str, Any]) -> dict[str, Any]:
-    eye_ball_bindings = [
-        item for item in project.get("keyform_bindings", []) if item["parameter_id"] in {"ParamEyeBallX", "ParamEyeBallY"}
-    ]
+    eye_ball_bindings = [item for item in effective_keyform_bindings(project) if item["parameter_id"] in {"ParamEyeBallX", "ParamEyeBallY"}]
     bad_eye_ball_targets = sorted({item["target_id"] for item in eye_ball_bindings if item["target_id"] not in EYE_BALL_ALLOWED_TARGETS})
     missing_eye_ball_targets = sorted(EYE_BALL_ALLOWED_TARGETS - {item["target_id"] for item in eye_ball_bindings})
-    eye_open_bindings = [
-        item for item in project.get("keyform_bindings", []) if item["parameter_id"] in {"ParamEyeLOpen", "ParamEyeROpen"}
-    ]
+    eye_open_bindings = [item for item in effective_keyform_bindings(project) if item["parameter_id"] in {"ParamEyeLOpen", "ParamEyeROpen"}]
     bad_eye_open_targets = sorted(
         {
             item["target_id"]
@@ -407,7 +422,7 @@ def mode_allowed_mask(project: dict[str, Any], mode_id: str, pad: int) -> np.nda
 
 
 def validate(project_dir: Path, out_dir: Path, threshold: int, pad: int, warn_pixels: int, fail_pixels: int) -> dict[str, Any]:
-    project = load_json(project_dir / "character.json")
+    project = load_project(project_dir)
     modes = mode_definitions(project)
     rendered: dict[str, Image.Image] = {}
     for mode in modes:
@@ -456,6 +471,8 @@ def validate(project_dir: Path, out_dir: Path, threshold: int, pad: int, warn_pi
         "schema_version": 1,
         "validated_at": datetime.now(timezone.utc).isoformat(),
         "project": str(project_dir),
+        "mini_rig_present": project.get("_mini_rig") is not None,
+        "mini_rig_keyform_overrides": len((project.get("_mini_rig") or {}).get("keyform_overrides") or []),
         "threshold": threshold,
         "eye_roi_padding": pad,
         "warn_pixels": warn_pixels,
@@ -480,6 +497,8 @@ def markdown_report(report: dict[str, Any]) -> str:
         "",
         f"- Status: `{report['status']}`",
         f"- Project: `{report['project']}`",
+        f"- Mini rig present: `{report['mini_rig_present']}`",
+        f"- Mini rig keyform overrides: `{report['mini_rig_keyform_overrides']}`",
         f"- Pixel threshold: `{report['threshold']}`",
         f"- Eye ROI padding: `{report['eye_roi_padding']}`",
         "",

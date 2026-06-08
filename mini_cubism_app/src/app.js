@@ -8,8 +8,13 @@ const state = {
     mesh: false,
     deformers: false,
   },
+  activePanel: "preview",
+  clippingPreview: true,
   parameters: {},
   physics: new Map(),
+  rig: null,
+  rigStatus: "",
+  draggedVertex: null,
 };
 
 const PARAM_LABELS = {
@@ -41,6 +46,7 @@ async function init() {
   try {
     const project = await fetchJson("/api/project");
     state.project = project;
+    state.rig = normalizeRig(project._mini_rig);
     state.parameters = Object.fromEntries(project.parameters.map((param) => [param.id, param.default]));
     initPhysicsState(project);
     state.selectedPartId = project.parts[0]?.id || null;
@@ -124,6 +130,18 @@ function Stage(project) {
   const toolbar = document.createElement("div");
   toolbar.className = "toolbar";
   toolbar.append(
+    ToggleButton("Preview", state.activePanel === "preview", () => {
+      state.activePanel = "preview";
+      render();
+      draw();
+    }),
+    ToggleButton("Rig", state.activePanel === "rig", () => {
+      state.activePanel = "rig";
+      state.overlays.mesh = true;
+      ensureRigEyeSelection(project);
+      render();
+      draw();
+    }),
     ToggleButton("Mesh", state.overlays.mesh, () => {
       state.overlays.mesh = !state.overlays.mesh;
       render();
@@ -131,6 +149,11 @@ function Stage(project) {
     }),
     ToggleButton("Deformers", state.overlays.deformers, () => {
       state.overlays.deformers = !state.overlays.deformers;
+      render();
+      draw();
+    }),
+    ToggleButton("Clip", state.clippingPreview, () => {
+      state.clippingPreview = !state.clippingPreview;
       render();
       draw();
     }),
@@ -145,6 +168,10 @@ function Stage(project) {
   canvas.id = "preview-canvas";
   canvas.width = project.canvas_size[0];
   canvas.height = project.canvas_size[1];
+  canvas.addEventListener("pointerdown", onCanvasPointerDown);
+  canvas.addEventListener("pointermove", onCanvasPointerMove);
+  canvas.addEventListener("pointerup", onCanvasPointerUp);
+  canvas.addEventListener("pointerleave", onCanvasPointerUp);
   wrap.append(canvas);
   stage.append(toolbar, wrap);
   return stage;
@@ -153,6 +180,11 @@ function Stage(project) {
 function Inspector(project) {
   const aside = document.createElement("aside");
   aside.className = "inspector";
+
+  if (state.activePanel === "rig") {
+    aside.append(RigPanel(project));
+    return aside;
+  }
 
   const section = document.createElement("section");
   section.className = "control-card";
@@ -185,6 +217,113 @@ function Inspector(project) {
   note.textContent = "v0 validates local mesh/deformer/keyform preview only. Glue remains an empty fixture-backed placeholder.";
   aside.append(note);
   return aside;
+}
+
+function RigPanel(project) {
+  const fragment = document.createDocumentFragment();
+  ensureRigEyeSelection(project);
+  const selected = selectedPart(project);
+  const eyeParts = project.parts.filter((part) => part.id.startsWith("eye_"));
+
+  const header = document.createElement("section");
+  header.className = "control-card";
+  header.innerHTML = `
+    <h2>Rig</h2>
+    <p class="note">눈 ArtMesh와 keyform을 Mini Cubism 전용 rig JSON으로 저장합니다.</p>
+  `;
+  const actions = document.createElement("div");
+  actions.className = "button-row";
+  actions.append(
+    SmallButton("저장", saveRig),
+    SmallButton("눈 검증", runEyeValidation),
+  );
+  header.append(actions);
+  if (state.rigStatus) {
+    const status = document.createElement("p");
+    status.className = "status-line";
+    status.textContent = state.rigStatus;
+    header.append(status);
+  }
+  fragment.append(header);
+
+  const partCard = document.createElement("section");
+  partCard.className = "control-card";
+  const select = document.createElement("select");
+  select.className = "rig-select";
+  for (const part of eyeParts) {
+    const option = document.createElement("option");
+    option.value = part.id;
+    option.textContent = `${part.display_name} (${part.id})`;
+    option.selected = part.id === state.selectedPartId;
+    select.append(option);
+  }
+  select.addEventListener("change", () => {
+    state.selectedPartId = select.value;
+    render();
+    draw();
+  });
+  partCard.innerHTML = `<h2>Eye ArtMesh</h2>`;
+  partCard.append(select);
+  if (selected) {
+    const mesh = editableMeshForPart(project, selected.id);
+    const selectedVertex = state.draggedVertex?.partId === selected.id ? state.draggedVertex.vertexIndex : "-";
+    const meta = document.createElement("dl");
+    meta.innerHTML = `
+      <dt>Part</dt><dd>${escapeHtml(selected.id)}</dd>
+      <dt>Vertices</dt><dd>${mesh?.vertices.length || 0}</dd>
+      <dt>Selected</dt><dd>${selectedVertex}</dd>
+    `;
+    partCard.append(meta);
+  }
+  const meshActions = document.createElement("div");
+  meshActions.className = "button-row";
+  meshActions.append(
+    SmallButton("현재 Mesh 저장", () => saveMeshOverride(selected?.id)),
+    SmallButton("Mesh 초기화", () => resetMeshOverride(selected?.id)),
+  );
+  partCard.append(meshActions);
+  fragment.append(partCard);
+
+  const keyCard = document.createElement("section");
+  keyCard.className = "control-card";
+  keyCard.innerHTML = `<h2>Eye Keyform</h2>`;
+  for (const paramId of ["ParamEyeLOpen", "ParamEyeROpen", "ParamEyeBallX", "ParamEyeBallY"]) {
+    const param = project.parameters.find((item) => item.id === paramId);
+    if (param) keyCard.append(ParameterControl(param));
+  }
+  const keyActions = document.createElement("div");
+  keyActions.className = "button-row";
+  keyActions.append(
+    SmallButton("EyeBall 키폼 저장", captureEyeBallKeyform),
+    SmallButton("EyeOpen 키폼 저장", captureEyeOpenKeyform),
+  );
+  keyCard.append(keyActions);
+  const saved = document.createElement("p");
+  saved.className = "note";
+  saved.textContent = `저장된 keyform overrides: ${state.rig.keyform_overrides.length}`;
+  keyCard.append(saved);
+  fragment.append(keyCard);
+
+  const clipCard = document.createElement("section");
+  clipCard.className = "control-card";
+  clipCard.innerHTML = `
+    <h2>Clipping Preview</h2>
+    <p class="note">eye white 알파를 기준으로 iris/pupil/highlight를 잘라 봅니다.</p>
+  `;
+  const clipToggle = document.createElement("label");
+  clipToggle.className = "toggle-row";
+  clipToggle.innerHTML = `<span>눈동자 clipping</span>`;
+  const input = document.createElement("input");
+  input.type = "checkbox";
+  input.checked = state.clippingPreview;
+  input.addEventListener("change", () => {
+    state.clippingPreview = input.checked;
+    draw();
+  });
+  clipToggle.append(input);
+  clipCard.append(clipToggle);
+  fragment.append(clipCard);
+  return fragment;
 }
 
 function ParameterControl(param) {
@@ -227,6 +366,15 @@ function Chip(text) {
   return chip;
 }
 
+function SmallButton(label, onClick) {
+  const button = document.createElement("button");
+  button.className = "small-button";
+  button.type = "button";
+  button.textContent = label;
+  button.addEventListener("click", onClick);
+  return button;
+}
+
 function draw() {
   const canvas = document.querySelector("#preview-canvas");
   if (!canvas || !state.project) return;
@@ -248,6 +396,10 @@ function drawPart(ctx, project, part) {
   const transform = partTransform(project, part);
   const opacity = partOpacity(project, part);
   if (opacity <= 0.01 || transform.opacity <= 0.01) return;
+  if (state.clippingPreview && clippedByEyeWhite(part.id)) {
+    drawClippedEyePart(ctx, project, part, image, transform, opacity);
+    return;
+  }
   const center = bboxCenter(part.bbox);
   ctx.save();
   ctx.translate(center[0] + transform.translate[0], center[1] + transform.translate[1]);
@@ -264,12 +416,40 @@ function drawPart(ctx, project, part) {
   ctx.restore();
 }
 
+function drawClippedEyePart(ctx, project, part, image, transform, opacity) {
+  const maskPartId = part.id.startsWith("eye_L_") ? "eye_L_white" : "eye_R_white";
+  const maskImage = state.images.get(maskPartId);
+  if (!maskImage) return;
+  const temp = document.createElement("canvas");
+  temp.width = project.canvas_size[0];
+  temp.height = project.canvas_size[1];
+  const tempCtx = temp.getContext("2d");
+  const center = bboxCenter(part.bbox);
+  tempCtx.save();
+  tempCtx.translate(center[0] + transform.translate[0], center[1] + transform.translate[1]);
+  tempCtx.rotate((transform.rotate * Math.PI) / 180);
+  tempCtx.scale(transform.scale[0], transform.scale[1]);
+  tempCtx.globalAlpha = opacity * transform.opacity;
+  tempCtx.drawImage(image, -center[0], -center[1], project.canvas_size[0], project.canvas_size[1]);
+  tempCtx.restore();
+  tempCtx.globalCompositeOperation = "destination-in";
+  tempCtx.drawImage(maskImage, 0, 0, project.canvas_size[0], project.canvas_size[1]);
+  ctx.drawImage(temp, 0, 0);
+}
+
+function clippedByEyeWhite(partId) {
+  if (!state.rig?.clipping?.enabled) return false;
+  const pairs = state.rig.clipping.pairs || {};
+  return Object.values(pairs).some((partIds) => partIds.includes(partId));
+}
+
 function drawMeshes(ctx, project) {
   ctx.save();
   ctx.lineWidth = 2;
   for (const mesh of project.meshes) {
     const part = project.parts.find((candidate) => candidate.id === mesh.part_id);
     if (!part) continue;
+    const editableMesh = editableMeshForPart(project, part.id) || mesh;
     const transform = partTransform(project, part);
     const center = bboxCenter(part.bbox);
     ctx.save();
@@ -279,20 +459,28 @@ function drawMeshes(ctx, project) {
     ctx.translate(-center[0], -center[1]);
     ctx.strokeStyle = part.id === state.selectedPartId ? "rgba(255, 204, 51, 0.95)" : "rgba(0, 235, 190, 0.45)";
     ctx.fillStyle = part.id === state.selectedPartId ? "rgba(255, 91, 51, 0.95)" : "rgba(255,255,255,0.7)";
-    for (const triangle of mesh.triangles) {
+    for (const triangle of editableMesh.triangles) {
       ctx.beginPath();
-      const a = mesh.vertices[triangle[0]];
+      const a = editableMesh.vertices[triangle[0]];
       ctx.moveTo(a[0], a[1]);
       for (const index of triangle.slice(1)) {
-        const v = mesh.vertices[index];
+        const v = editableMesh.vertices[index];
         ctx.lineTo(v[0], v[1]);
       }
       ctx.closePath();
       ctx.stroke();
     }
     if (part.id === state.selectedPartId) {
-      for (const vertex of mesh.vertices) {
-        ctx.fillRect(vertex[0] - 4, vertex[1] - 4, 8, 8);
+      editableMesh.vertices.forEach((vertex, index) => {
+        const isDragged = state.draggedVertex?.partId === part.id && state.draggedVertex.vertexIndex === index;
+        ctx.fillStyle = isDragged ? "rgba(255, 80, 48, 1)" : "rgba(255, 204, 51, 0.95)";
+        ctx.fillRect(vertex[0] - 5, vertex[1] - 5, 10, 10);
+      });
+      if (state.clippingPreview && (part.id === "eye_L_white" || part.id === "eye_R_white")) {
+        ctx.strokeStyle = "rgba(66, 170, 255, 0.95)";
+        ctx.lineWidth = 4;
+        const [x, y, w, h] = part.bbox;
+        ctx.strokeRect(x, y, w, h);
       }
     }
     ctx.restore();
@@ -355,7 +543,7 @@ function deformerTransform(project, deformer) {
 
 function bindingTransform(project, targetId) {
   let transform = identityTransform();
-  const groups = groupBy(project.keyform_bindings.filter((item) => item.target_id === targetId), (binding) => binding.parameter_id);
+  const groups = groupBy(effectiveKeyformBindings(project).filter((item) => item.target_id === targetId), (binding) => binding.parameter_id);
   for (const [parameterId, bindings] of Object.entries(groups)) {
     const param = project.parameters.find((item) => item.id === parameterId);
     if (!param) continue;
@@ -419,6 +607,17 @@ function mergeTransform(a, b) {
     rotate: a.rotate + b.rotate,
     opacity: a.opacity * b.opacity,
   };
+}
+
+function effectiveKeyformBindings(project) {
+  const overrides = state.rig?.keyform_overrides || [];
+  if (!overrides.length) return project.keyform_bindings;
+  const overrideKeys = new Set(overrides.map(bindingKey));
+  return [...project.keyform_bindings.filter((binding) => !overrideKeys.has(bindingKey(binding))), ...overrides];
+}
+
+function bindingKey(binding) {
+  return `${binding.parameter_id}::${binding.target_id}::${binding.key_value}`;
 }
 
 function partOpacity(project, part) {
@@ -603,6 +802,252 @@ function syncParameterControls() {
   }
 }
 
+function normalizeRig(rig) {
+  const base = {
+    schema_version: 1,
+    project_kind: "mini_cubism_rig_v0",
+    mesh_overrides: {},
+    keyform_overrides: [],
+    clipping: {
+      enabled: true,
+      pairs: {
+        eye_L_white: ["eye_L_iris", "eye_L_pupil", "eye_L_highlight"],
+        eye_R_white: ["eye_R_iris", "eye_R_pupil", "eye_R_highlight"],
+      },
+    },
+    notes: [],
+  };
+  return {
+    ...base,
+    ...(rig || {}),
+    mesh_overrides: { ...base.mesh_overrides, ...(rig?.mesh_overrides || {}) },
+    keyform_overrides: rig?.keyform_overrides || [],
+    clipping: {
+      ...base.clipping,
+      ...(rig?.clipping || {}),
+      pairs: { ...base.clipping.pairs, ...(rig?.clipping?.pairs || {}) },
+    },
+  };
+}
+
+function selectedPart(project) {
+  const selected = project.parts.find((part) => part.id === state.selectedPartId);
+  if (state.activePanel !== "rig") return selected;
+  return selected?.id.startsWith("eye_") ? selected : project.parts.find((part) => part.id.startsWith("eye_"));
+}
+
+function ensureRigEyeSelection(project) {
+  const selected = project.parts.find((part) => part.id === state.selectedPartId);
+  if (!selected || !selected.id.startsWith("eye_")) {
+    state.selectedPartId = project.parts.find((part) => part.id.startsWith("eye_"))?.id || state.selectedPartId;
+  }
+}
+
+function editableMeshForPart(project, partId) {
+  const source = project.meshes.find((mesh) => mesh.part_id === partId);
+  if (!source) return null;
+  const override = state.rig?.mesh_overrides?.[partId];
+  if (!override) return source;
+  return {
+    ...source,
+    vertices: override.vertices || source.vertices,
+    triangles: override.triangles || source.triangles,
+  };
+}
+
+function ensureMeshOverride(partId) {
+  if (!partId || !state.project || !state.rig) return null;
+  const source = state.project.meshes.find((mesh) => mesh.part_id === partId);
+  if (!source) return null;
+  if (!state.rig.mesh_overrides[partId]) {
+    state.rig.mesh_overrides[partId] = {
+      vertices: source.vertices.map((vertex) => [...vertex]),
+      triangles: source.triangles.map((triangle) => [...triangle]),
+      updated_at: new Date().toISOString(),
+    };
+  }
+  return state.rig.mesh_overrides[partId];
+}
+
+function saveMeshOverride(partId) {
+  if (!partId) return;
+  ensureMeshOverride(partId);
+  state.rig.mesh_overrides[partId].updated_at = new Date().toISOString();
+  state.rigStatus = `${partId} mesh override 저장 대기`;
+  render();
+  draw();
+}
+
+function resetMeshOverride(partId) {
+  if (!partId || !state.rig) return;
+  delete state.rig.mesh_overrides[partId];
+  state.draggedVertex = null;
+  state.rigStatus = `${partId} mesh override 초기화`;
+  render();
+  draw();
+}
+
+function canvasPoint(event) {
+  const canvas = document.querySelector("#preview-canvas");
+  const rect = canvas.getBoundingClientRect();
+  return [
+    ((event.clientX - rect.left) / rect.width) * canvas.width,
+    ((event.clientY - rect.top) / rect.height) * canvas.height,
+  ];
+}
+
+function onCanvasPointerDown(event) {
+  if (state.activePanel !== "rig" || !state.project || !state.selectedPartId) return;
+  const part = state.project.parts.find((item) => item.id === state.selectedPartId);
+  if (!part || !part.id.startsWith("eye_")) return;
+  const mesh = editableMeshForPart(state.project, part.id);
+  if (!mesh) return;
+  const point = canvasPoint(event);
+  let best = null;
+  mesh.vertices.forEach((vertex, index) => {
+    const distance = Math.hypot(vertex[0] - point[0], vertex[1] - point[1]);
+    if (distance <= 28 && (!best || distance < best.distance)) best = { vertexIndex: index, distance };
+  });
+  if (!best) return;
+  ensureMeshOverride(part.id);
+  state.draggedVertex = { partId: part.id, vertexIndex: best.vertexIndex };
+  try {
+    event.currentTarget.setPointerCapture(event.pointerId);
+  } catch {
+    // Synthetic browser tests do not always create an active pointer first.
+  }
+  render();
+  draw();
+}
+
+function onCanvasPointerMove(event) {
+  if (!state.draggedVertex || !state.rig) return;
+  const override = ensureMeshOverride(state.draggedVertex.partId);
+  if (!override) return;
+  const point = canvasPoint(event);
+  override.vertices[state.draggedVertex.vertexIndex] = [Math.round(point[0]), Math.round(point[1])];
+  override.updated_at = new Date().toISOString();
+  draw();
+}
+
+function onCanvasPointerUp() {
+  if (!state.draggedVertex) return;
+  state.rigStatus = `${state.draggedVertex.partId} 정점 ${state.draggedVertex.vertexIndex} 편집됨`;
+  state.draggedVertex = null;
+  render();
+  draw();
+}
+
+function captureEyeBallKeyform() {
+  const rows = [];
+  const x = state.parameters.ParamEyeBallX || 0;
+  const y = state.parameters.ParamEyeBallY || 0;
+  if (Math.abs(x) > 0.001) {
+    for (const partId of ["eye_L_iris", "eye_L_pupil", "eye_L_highlight", "eye_R_iris", "eye_R_pupil", "eye_R_highlight"]) {
+      rows.push({
+        parameter_id: "ParamEyeBallX",
+        key_value: Number(x.toFixed(2)),
+        target_id: partId,
+        delta_type: "deformer_transform",
+        deltas: bindingTransformFromProjectOnly(state.project, partId, "ParamEyeBallX", x),
+      });
+    }
+  }
+  if (Math.abs(y) > 0.001) {
+    for (const partId of ["eye_L_iris", "eye_L_pupil", "eye_L_highlight", "eye_R_iris", "eye_R_pupil", "eye_R_highlight"]) {
+      rows.push({
+        parameter_id: "ParamEyeBallY",
+        key_value: Number(y.toFixed(2)),
+        target_id: partId,
+        delta_type: "deformer_transform",
+        deltas: bindingTransformFromProjectOnly(state.project, partId, "ParamEyeBallY", y),
+      });
+    }
+  }
+  upsertKeyformOverrides(rows);
+  state.rigStatus = rows.length ? `EyeBall keyform ${rows.length}개 저장 대기` : "EyeBall 값을 먼저 움직여주세요";
+  render();
+  draw();
+}
+
+function captureEyeOpenKeyform() {
+  const rows = [];
+  const pairs = [
+    ["ParamEyeLOpen", "eye_L_warp"],
+    ["ParamEyeROpen", "eye_R_warp"],
+  ];
+  for (const [parameterId, targetId] of pairs) {
+    const value = state.parameters[parameterId];
+    const param = state.project.parameters.find((item) => item.id === parameterId);
+    if (!param || Math.abs(value - param.default) <= 0.001) continue;
+    rows.push({
+      parameter_id: parameterId,
+      key_value: Number(value.toFixed(2)),
+      target_id: targetId,
+      delta_type: "deformer_transform",
+      deltas: bindingTransformFromProjectOnly(state.project, targetId, parameterId, value),
+    });
+  }
+  upsertKeyformOverrides(rows);
+  state.rigStatus = rows.length ? `EyeOpen keyform ${rows.length}개 저장 대기` : "EyeOpen 값을 먼저 움직여주세요";
+  render();
+  draw();
+}
+
+function bindingTransformFromProjectOnly(project, targetId, parameterId, value) {
+  const param = project.parameters.find((item) => item.id === parameterId);
+  const bindings = project.keyform_bindings.filter((item) => item.target_id === targetId && item.parameter_id === parameterId);
+  const keyframes = [
+    { key_value: param.default, deltas: identityDeltas() },
+    ...bindings.map((binding) => ({ key_value: binding.key_value, deltas: binding.deltas || identityDeltas() })),
+  ].sort((a, b) => a.key_value - b.key_value);
+  return sampleTransformKeyframes(keyframes, value);
+}
+
+function upsertKeyformOverrides(rows) {
+  if (!rows.length) return;
+  const byKey = new Map(state.rig.keyform_overrides.map((row) => [bindingKey(row), row]));
+  for (const row of rows) byKey.set(bindingKey(row), row);
+  state.rig.keyform_overrides = [...byKey.values()].sort((a, b) => bindingKey(a).localeCompare(bindingKey(b)));
+}
+
+async function postJson(url, payload) {
+  const response = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+  const data = await response.json();
+  if (!response.ok) throw new Error(data.message || data.stderr || `${url} ${response.status}`);
+  return data;
+}
+
+async function saveRig() {
+  try {
+    state.rig.updated_at = new Date().toISOString();
+    const result = await postJson("/api/mini-rig", { rig: state.rig });
+    state.rigStatus = `저장됨: ${result.path}`;
+  } catch (error) {
+    state.rigStatus = `저장 실패: ${error.message}`;
+  }
+  render();
+}
+
+async function runEyeValidation() {
+  state.rigStatus = "눈 검증 실행 중...";
+  render();
+  try {
+    await saveRig();
+    const result = await postJson("/api/validate-eye-modes", {});
+    const report = result.report;
+    const outside = (report?.modes || []).reduce((sum, row) => sum + (row.outside_changed_pixels || 0), 0);
+    state.rigStatus = `눈 검증 ${report?.status || "UNKNOWN"} / ROI 밖 변화 ${outside}px`;
+  } catch (error) {
+    state.rigStatus = `눈 검증 실패: ${error.message}`;
+  }
+  render();
+}
+
 function exposeAutomationApi() {
   window.__miniSetParameters = (values = {}) => {
     for (const [parameterId, value] of Object.entries(values)) {
@@ -628,6 +1073,7 @@ function exposeAutomationApi() {
     ),
     part_opacity: Object.fromEntries((state.project?.parts || []).map((part) => [part.id, partOpacity(state.project, part)])),
   });
+  window.__miniRig = () => state.rig;
   window.__miniProject = state.project;
 }
 

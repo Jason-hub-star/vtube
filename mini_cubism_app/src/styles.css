@@ -16,7 +16,8 @@ body {
 }
 
 button,
-input {
+input,
+select {
   font: inherit;
 }
 
@@ -86,7 +87,9 @@ dt,
 }
 
 .part-row,
-.tool-button {
+.tool-button,
+.small-button,
+.rig-select {
   border: 1px solid #34413e;
   background: #1d2426;
   color: #eef3f0;
@@ -137,6 +140,56 @@ dt,
   min-height: 34px;
   padding: 0 12px;
   border-radius: 6px;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.small-button {
+  min-height: 32px;
+  padding: 0 10px;
+  border-radius: 6px;
+}
+
+.small-button:hover,
+.tool-button:hover,
+.part-row:hover {
+  border-color: #20d0aa;
+}
+
+.rig-select {
+  width: 100%;
+  min-height: 36px;
+  margin-bottom: 12px;
+  padding: 0 9px;
+  border-radius: 6px;
+}
+
+.toggle-row {
+  display: flex;
+  min-height: 34px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #eef3f0;
+  font-size: 13px;
+}
+
+.toggle-row input {
+  width: 18px;
+  height: 18px;
+  accent-color: #20d0aa;
+}
+
+.status-line {
+  margin-top: 10px;
+  color: #ffcc33;
+  font-size: 12px;
+  overflow-wrap: anywhere;
 }
 
 .chip {
