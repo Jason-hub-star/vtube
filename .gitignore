@@ -22,6 +22,9 @@ experiments/**/external_repos/
 *.swp
 *.swo
 
+# Generated image artifacts and review screenshots
+*.png
+
 # ComfyUI temporary runtime output that is not curated evidence
 experiments/**/temp/
 experiments/**/cache/

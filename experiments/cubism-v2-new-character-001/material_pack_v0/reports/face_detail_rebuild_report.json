@@ -1,0 +1,1118 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-08T13:06:36.449507+00:00",
+  "status": "PASS_FACE_DETAIL_REBUILD_V1",
+  "promoted_to_active_manifest": false,
+  "source_manifest": "experiments/cubism-v2-new-character-001/material_pack_v0/layer_manifest.json",
+  "snapshot_manifest": "experiments/cubism-v2-new-character-001/material_pack_v0/layer_manifest.face_detail_rebuild_v1.json",
+  "output_dir": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1",
+  "preview_pack": "experiments/cubism-v2-new-character-001/material_pack_v0/face_detail_rebuild_pack_v1",
+  "counts": {
+    "copied_layers": 28,
+    "rebuilt_layers": 34,
+    "changed_rows": 34,
+    "qa_problem_rows": 9
+  },
+  "skin_color_median": [
+    223,
+    166,
+    154
+  ],
+  "neutral_scores": {
+    "after": {
+      "visible_pixels": 829101,
+      "bad_pixels": 0,
+      "bad_ratio_visible": 0.0,
+      "missing_pixels": 0,
+      "extra_pixels": 0
+    }
+  },
+  "underpaint_leakage": {
+    "after": {
+      "stage": "face_detail_rebuild_after",
+      "total_underpaint_top_owner_pixels": 0,
+      "rows": [
+        {
+          "part_id": "body_underpaint",
+          "stage": "face_detail_rebuild_after",
+          "alpha_pixels": 56151,
+          "neutral_top_owner_pixels": 0,
+          "top_owner_ratio_of_alpha": 0.0,
+          "target_part": "torso_base",
+          "status": "PASS"
+        },
+        {
+          "part_id": "neck_shadow_underpaint",
+          "stage": "face_detail_rebuild_after",
+          "alpha_pixels": 1863,
+          "neutral_top_owner_pixels": 0,
+          "top_owner_ratio_of_alpha": 0.0,
+          "target_part": "neck",
+          "status": "PASS"
+        },
+        {
+          "part_id": "arm_L_underpaint",
+          "stage": "face_detail_rebuild_after",
+          "alpha_pixels": 52682,
+          "neutral_top_owner_pixels": 0,
+          "top_owner_ratio_of_alpha": 0.0,
+          "target_part": "arm_L_upper_simple",
+          "status": "PASS"
+        },
+        {
+          "part_id": "arm_R_underpaint",
+          "stage": "face_detail_rebuild_after",
+          "alpha_pixels": 29589,
+          "neutral_top_owner_pixels": 0,
+          "top_owner_ratio_of_alpha": 0.0,
+          "target_part": "arm_R_upper_simple",
+          "status": "PASS"
+        },
+        {
+          "part_id": "hair_back_underpaint",
+          "stage": "face_detail_rebuild_after",
+          "alpha_pixels": 315103,
+          "neutral_top_owner_pixels": 0,
+          "top_owner_ratio_of_alpha": 0.0,
+          "target_part": "hair_back_base",
+          "status": "PASS"
+        },
+        {
+          "part_id": "face_underpaint_L",
+          "stage": "face_detail_rebuild_after",
+          "alpha_pixels": 70144,
+          "neutral_top_owner_pixels": 0,
+          "top_owner_ratio_of_alpha": 0.0,
+          "target_part": "face_base",
+          "status": "PASS"
+        },
+        {
+          "part_id": "face_underpaint_R",
+          "stage": "face_detail_rebuild_after",
+          "alpha_pixels": 70144,
+          "neutral_top_owner_pixels": 0,
+          "top_owner_ratio_of_alpha": 0.0,
+          "target_part": "face_base",
+          "status": "PASS"
+        },
+        {
+          "part_id": "eye_L_underpaint",
+          "stage": "face_detail_rebuild_after",
+          "alpha_pixels": 15858,
+          "neutral_top_owner_pixels": 0,
+          "top_owner_ratio_of_alpha": 0.0,
+          "target_part": "eye_L_white",
+          "status": "PASS"
+        },
+        {
+          "part_id": "eye_R_underpaint",
+          "stage": "face_detail_rebuild_after",
+          "alpha_pixels": 16110,
+          "neutral_top_owner_pixels": 0,
+          "top_owner_ratio_of_alpha": 0.0,
+          "target_part": "eye_R_white",
+          "status": "PASS"
+        }
+      ]
+    }
+  },
+  "eye_mouth_alignment": {
+    "after": {
+      "status": "PASS",
+      "rois": {
+        "eye_L": [
+          804,
+          653,
+          225,
+          239
+        ],
+        "eye_R": [
+          1056,
+          656,
+          212,
+          236
+        ],
+        "mouth": [
+          949,
+          821,
+          156,
+          254
+        ]
+      },
+      "checks": [
+        {
+          "part_id": "eye_L_white",
+          "status": "PASS",
+          "bbox": [
+            818,
+            676,
+            169,
+            113
+          ],
+          "center": [
+            902.5,
+            732.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 15994
+        },
+        {
+          "part_id": "eye_L_iris",
+          "status": "PASS",
+          "bbox": [
+            900,
+            703,
+            72,
+            48
+          ],
+          "center": [
+            936.0,
+            727.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 2956
+        },
+        {
+          "part_id": "eye_L_pupil",
+          "status": "PASS",
+          "bbox": [
+            924,
+            716,
+            36,
+            22
+          ],
+          "center": [
+            942.0,
+            727.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 473
+        },
+        {
+          "part_id": "eye_L_highlight",
+          "status": "PASS",
+          "bbox": [
+            935,
+            709,
+            10,
+            12
+          ],
+          "center": [
+            940.0,
+            715.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 49
+        },
+        {
+          "part_id": "eye_L_upper_lash",
+          "status": "PASS",
+          "bbox": [
+            820,
+            669,
+            180,
+            62
+          ],
+          "center": [
+            910.0,
+            700.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 5406
+        },
+        {
+          "part_id": "eye_L_lower_lash",
+          "status": "PASS",
+          "bbox": [
+            831,
+            726,
+            137,
+            45
+          ],
+          "center": [
+            899.5,
+            748.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 1701
+        },
+        {
+          "part_id": "eye_L_closed_lid",
+          "status": "PASS",
+          "bbox": [
+            818,
+            687,
+            184,
+            54
+          ],
+          "center": [
+            910.0,
+            714.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 2984
+        },
+        {
+          "part_id": "eye_L_iris",
+          "relation": "inside_eye_white_with_margin",
+          "status": "PASS"
+        },
+        {
+          "part_id": "eye_L_pupil",
+          "relation": "inside_eye_white_with_margin",
+          "status": "PASS"
+        },
+        {
+          "part_id": "eye_R_white",
+          "status": "PASS",
+          "bbox": [
+            1074,
+            678,
+            145,
+            116
+          ],
+          "center": [
+            1146.5,
+            736.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 13732
+        },
+        {
+          "part_id": "eye_R_iris",
+          "status": "PASS",
+          "bbox": [
+            1084,
+            698,
+            72,
+            74
+          ],
+          "center": [
+            1120.0,
+            735.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 4250
+        },
+        {
+          "part_id": "eye_R_pupil",
+          "status": "PASS",
+          "bbox": [
+            1104,
+            715,
+            36,
+            40
+          ],
+          "center": [
+            1122.0,
+            735.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 508
+        },
+        {
+          "part_id": "eye_R_highlight",
+          "status": "PASS",
+          "bbox": [
+            1116,
+            714,
+            14,
+            10
+          ],
+          "center": [
+            1123.0,
+            719.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 39
+        },
+        {
+          "part_id": "eye_R_upper_lash",
+          "status": "PASS",
+          "bbox": [
+            1072,
+            672,
+            180,
+            62
+          ],
+          "center": [
+            1162.0,
+            703.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 6426
+        },
+        {
+          "part_id": "eye_R_lower_lash",
+          "status": "PASS",
+          "bbox": [
+            1095,
+            726,
+            134,
+            45
+          ],
+          "center": [
+            1162.0,
+            748.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 2489
+        },
+        {
+          "part_id": "eye_R_closed_lid",
+          "status": "PASS",
+          "bbox": [
+            1070,
+            690,
+            185,
+            55
+          ],
+          "center": [
+            1162.5,
+            717.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 3189
+        },
+        {
+          "part_id": "eye_R_iris",
+          "relation": "inside_eye_white_with_margin",
+          "status": "PASS"
+        },
+        {
+          "part_id": "eye_R_pupil",
+          "relation": "inside_eye_white_with_margin",
+          "status": "PASS"
+        },
+        {
+          "part_id": "mouth_line",
+          "status": "PASS",
+          "bbox": [
+            999,
+            855,
+            63,
+            17
+          ],
+          "center": [
+            1030.5,
+            863.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 568
+        },
+        {
+          "part_id": "mouth_inner",
+          "status": "PASS",
+          "bbox": [
+            982,
+            838,
+            101,
+            59
+          ],
+          "center": [
+            1032.5,
+            867.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 4701
+        },
+        {
+          "part_id": "mouth_teeth",
+          "status": "PASS",
+          "bbox": [
+            985,
+            857,
+            85,
+            20
+          ],
+          "center": [
+            1027.5,
+            867.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 1662
+        },
+        {
+          "part_id": "mouth_tongue",
+          "status": "PASS",
+          "bbox": [
+            1003,
+            850,
+            59,
+            31
+          ],
+          "center": [
+            1032.5,
+            865.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 1449
+        },
+        {
+          "part_id": "mouth_upper_lip_mask",
+          "status": "PASS",
+          "bbox": [
+            973,
+            971,
+            118,
+            30
+          ],
+          "center": [
+            1032.0,
+            986.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 3352
+        },
+        {
+          "part_id": "mouth_lower_lip_mask",
+          "status": "PASS",
+          "bbox": [
+            976,
+            1034,
+            111,
+            30
+          ],
+          "center": [
+            1031.5,
+            1049.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 3142
+        },
+        {
+          "part_id": "mouth_corner_L",
+          "status": "PASS",
+          "bbox": [
+            989,
+            848,
+            13,
+            11
+          ],
+          "center": [
+            995.5,
+            853.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 45
+        },
+        {
+          "part_id": "mouth_corner_R",
+          "status": "PASS",
+          "bbox": [
+            1059,
+            850,
+            10,
+            7
+          ],
+          "center": [
+            1064.0,
+            853.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 33
+        }
+      ]
+    }
+  },
+  "layer_qa": {
+    "total": 62,
+    "problem_count": 9,
+    "problem_rows": [
+      {
+        "part_id": "body_underpaint",
+        "label_ko": "몸 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          815,
+          1200,
+          413,
+          384
+        ],
+        "alpha_pixels": 56151,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "neck_shadow_underpaint",
+        "label_ko": "목 그림자 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          939,
+          1171,
+          164,
+          66
+        ],
+        "alpha_pixels": 1863,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "arm_L_underpaint",
+        "label_ko": "왼팔 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          662,
+          1232,
+          139,
+          423
+        ],
+        "alpha_pixels": 52682,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "arm_R_underpaint",
+        "label_ko": "오른팔 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          1330,
+          1232,
+          84,
+          423
+        ],
+        "alpha_pixels": 29589,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "hair_back_underpaint",
+        "label_ko": "뒷머리 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          719,
+          400,
+          624,
+          849
+        ],
+        "alpha_pixels": 315103,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "face_underpaint_L",
+        "label_ko": "왼쪽 얼굴 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          801,
+          690,
+          235,
+          380
+        ],
+        "alpha_pixels": 70144,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "face_underpaint_R",
+        "label_ko": "오른쪽 얼굴 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          1027,
+          690,
+          235,
+          380
+        ],
+        "alpha_pixels": 70144,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "eye_L_underpaint",
+        "label_ko": "왼쪽 눈 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          823,
+          666,
+          174,
+          115
+        ],
+        "alpha_pixels": 15858,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "eye_R_underpaint",
+        "label_ko": "오른쪽 눈 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          1075,
+          669,
+          174,
+          117
+        ],
+        "alpha_pixels": 16110,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      }
+    ]
+  },
+  "changed_rows": [
+    {
+      "part_id": "face_underpaint_L",
+      "method": "face_eye_underpaint_soft_skin_fill",
+      "bbox_actual": [
+        801,
+        690,
+        235,
+        380
+      ],
+      "alpha_coverage": 0.01672363,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/14_face_underpaint_L.png"
+    },
+    {
+      "part_id": "face_underpaint_R",
+      "method": "face_eye_underpaint_soft_skin_fill",
+      "bbox_actual": [
+        1027,
+        690,
+        235,
+        380
+      ],
+      "alpha_coverage": 0.01672363,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/15_face_underpaint_R.png"
+    },
+    {
+      "part_id": "face_base",
+      "method": "face_base_canonical_neutral_underlay",
+      "bbox_actual": [
+        609,
+        337,
+        816,
+        1411
+      ],
+      "alpha_coverage": 0.19767308,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/11_face_base.png"
+    },
+    {
+      "part_id": "face_shadow_L",
+      "method": "face_shadow_soft_skin_roi",
+      "bbox_actual": [
+        816,
+        745,
+        205,
+        300
+      ],
+      "alpha_coverage": 0.00874734,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/12_face_shadow_L.png"
+    },
+    {
+      "part_id": "face_shadow_R",
+      "method": "face_shadow_soft_skin_roi",
+      "bbox_actual": [
+        1041,
+        745,
+        205,
+        300
+      ],
+      "alpha_coverage": 0.00881338,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/13_face_shadow_R.png"
+    },
+    {
+      "part_id": "nose",
+      "method": "nose_soft_detail_roi",
+      "bbox_actual": [
+        999,
+        774,
+        56,
+        64
+      ],
+      "alpha_coverage": 0.0005672,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/16_nose.png"
+    },
+    {
+      "part_id": "cheek_L",
+      "method": "cheek_soft_blush_roi",
+      "bbox_actual": [
+        897,
+        818,
+        58,
+        47
+      ],
+      "alpha_coverage": 0.00048661,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/17_cheek_L.png"
+    },
+    {
+      "part_id": "cheek_R",
+      "method": "cheek_soft_blush_roi",
+      "bbox_actual": [
+        1094,
+        831,
+        57,
+        47
+      ],
+      "alpha_coverage": 0.00050426,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/18_cheek_R.png"
+    },
+    {
+      "part_id": "eye_L_white",
+      "method": "eye_white_luminance_roi",
+      "bbox_actual": [
+        818,
+        676,
+        169,
+        113
+      ],
+      "alpha_coverage": 0.00381327,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/19_eye_L_white.png"
+    },
+    {
+      "part_id": "eye_L_underpaint",
+      "method": "eye_underpaint_soft_fill_from_eye_core_roi",
+      "bbox_actual": [
+        823,
+        666,
+        174,
+        115
+      ],
+      "alpha_coverage": 0.00378084,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/26_eye_L_underpaint.png"
+    },
+    {
+      "part_id": "eye_R_white",
+      "method": "eye_white_luminance_roi",
+      "bbox_actual": [
+        1074,
+        678,
+        145,
+        116
+      ],
+      "alpha_coverage": 0.00327396,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/27_eye_R_white.png"
+    },
+    {
+      "part_id": "eye_R_underpaint",
+      "method": "eye_underpaint_soft_fill_from_eye_core_roi",
+      "bbox_actual": [
+        1075,
+        669,
+        174,
+        117
+      ],
+      "alpha_coverage": 0.00384092,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/34_eye_R_underpaint.png"
+    },
+    {
+      "part_id": "eye_L_iris",
+      "method": "eye_iris_color_roi",
+      "bbox_actual": [
+        900,
+        703,
+        72,
+        48
+      ],
+      "alpha_coverage": 0.00070477,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/20_eye_L_iris.png"
+    },
+    {
+      "part_id": "eye_L_pupil",
+      "method": "eye_pupil_dark_roi",
+      "bbox_actual": [
+        924,
+        716,
+        36,
+        22
+      ],
+      "alpha_coverage": 0.00011277,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/21_eye_L_pupil.png"
+    },
+    {
+      "part_id": "eye_R_iris",
+      "method": "eye_iris_color_roi",
+      "bbox_actual": [
+        1084,
+        698,
+        72,
+        74
+      ],
+      "alpha_coverage": 0.00101328,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/28_eye_R_iris.png"
+    },
+    {
+      "part_id": "eye_R_pupil",
+      "method": "eye_pupil_dark_roi",
+      "bbox_actual": [
+        1104,
+        715,
+        36,
+        40
+      ],
+      "alpha_coverage": 0.00012112,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/29_eye_R_pupil.png"
+    },
+    {
+      "part_id": "eye_L_highlight",
+      "method": "eye_highlight_bright_roi",
+      "bbox_actual": [
+        935,
+        709,
+        10,
+        12
+      ],
+      "alpha_coverage": 1.168e-05,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/22_eye_L_highlight.png"
+    },
+    {
+      "part_id": "eye_L_upper_lash",
+      "method": "eye_lash_dark_roi",
+      "bbox_actual": [
+        820,
+        669,
+        180,
+        62
+      ],
+      "alpha_coverage": 0.00128889,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/23_eye_L_upper_lash.png"
+    },
+    {
+      "part_id": "eye_L_lower_lash",
+      "method": "eye_lash_dark_roi",
+      "bbox_actual": [
+        831,
+        726,
+        137,
+        45
+      ],
+      "alpha_coverage": 0.00040555,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/24_eye_L_lower_lash.png"
+    },
+    {
+      "part_id": "eye_L_closed_lid",
+      "method": "eye_closed_lid_drawn_from_roi",
+      "bbox_actual": [
+        818,
+        687,
+        184,
+        54
+      ],
+      "alpha_coverage": 0.00071144,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/25_eye_L_closed_lid.png"
+    },
+    {
+      "part_id": "eye_R_highlight",
+      "method": "eye_highlight_bright_roi",
+      "bbox_actual": [
+        1116,
+        714,
+        14,
+        10
+      ],
+      "alpha_coverage": 9.3e-06,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/30_eye_R_highlight.png"
+    },
+    {
+      "part_id": "eye_R_upper_lash",
+      "method": "eye_lash_dark_roi",
+      "bbox_actual": [
+        1072,
+        672,
+        180,
+        62
+      ],
+      "alpha_coverage": 0.00153208,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/31_eye_R_upper_lash.png"
+    },
+    {
+      "part_id": "eye_R_lower_lash",
+      "method": "eye_lash_dark_roi",
+      "bbox_actual": [
+        1095,
+        726,
+        134,
+        45
+      ],
+      "alpha_coverage": 0.00059342,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/32_eye_R_lower_lash.png"
+    },
+    {
+      "part_id": "eye_R_closed_lid",
+      "method": "eye_closed_lid_drawn_from_roi",
+      "bbox_actual": [
+        1070,
+        690,
+        185,
+        55
+      ],
+      "alpha_coverage": 0.00076032,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/33_eye_R_closed_lid.png"
+    },
+    {
+      "part_id": "brow_L",
+      "method": "brow_dark_roi",
+      "bbox_actual": [
+        839,
+        618,
+        200,
+        58
+      ],
+      "alpha_coverage": 0.00137663,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/35_brow_L.png"
+    },
+    {
+      "part_id": "brow_R",
+      "method": "brow_dark_roi",
+      "bbox_actual": [
+        1025,
+        624,
+        200,
+        58
+      ],
+      "alpha_coverage": 0.00151157,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/36_brow_R.png"
+    },
+    {
+      "part_id": "mouth_inner",
+      "method": "mouth_inner_dark_soft_roi",
+      "bbox_actual": [
+        982,
+        838,
+        101,
+        59
+      ],
+      "alpha_coverage": 0.00112081,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/38_mouth_inner.png"
+    },
+    {
+      "part_id": "mouth_teeth",
+      "method": "mouth_teeth_bright_roi",
+      "bbox_actual": [
+        985,
+        857,
+        85,
+        20
+      ],
+      "alpha_coverage": 0.00039625,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/41_mouth_teeth.png"
+    },
+    {
+      "part_id": "mouth_tongue",
+      "method": "mouth_tongue_soft_roi",
+      "bbox_actual": [
+        1003,
+        850,
+        59,
+        31
+      ],
+      "alpha_coverage": 0.00034547,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/42_mouth_tongue.png"
+    },
+    {
+      "part_id": "mouth_line",
+      "method": "mouth_line_dark_red_roi",
+      "bbox_actual": [
+        999,
+        855,
+        63,
+        17
+      ],
+      "alpha_coverage": 0.00013542,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/37_mouth_line.png"
+    },
+    {
+      "part_id": "mouth_upper_lip_mask",
+      "method": "mouth_lip_mask_soft_roi",
+      "bbox_actual": [
+        973,
+        971,
+        118,
+        30
+      ],
+      "alpha_coverage": 0.00079918,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/39_mouth_upper_lip_mask.png"
+    },
+    {
+      "part_id": "mouth_lower_lip_mask",
+      "method": "mouth_lip_mask_soft_roi",
+      "bbox_actual": [
+        976,
+        1034,
+        111,
+        30
+      ],
+      "alpha_coverage": 0.00074911,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/40_mouth_lower_lip_mask.png"
+    },
+    {
+      "part_id": "mouth_corner_L",
+      "method": "mouth_corner_roi",
+      "bbox_actual": [
+        989,
+        848,
+        13,
+        11
+      ],
+      "alpha_coverage": 1.073e-05,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/43_mouth_corner_L.png"
+    },
+    {
+      "part_id": "mouth_corner_R",
+      "method": "mouth_corner_roi",
+      "bbox_actual": [
+        1059,
+        850,
+        10,
+        7
+      ],
+      "alpha_coverage": 7.87e-06,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_face_detail_rebuild_v1/44_mouth_corner_R.png"
+    }
+  ],
+  "empty_rebuilt_parts": [],
+  "pass_conditions": {
+    "import_layer_count_62": true,
+    "rebuilt_parts_nonempty": true,
+    "neutral_after_lte_5pct": true,
+    "eye_mouth_after_pass": true,
+    "snapshot_manifest_written": true,
+    "preview_pack_manifest_written": true
+  },
+  "artifacts": {
+    "contact_sheet": "experiments/cubism-v2-new-character-001/material_pack_v0/reports/face_detail_rebuild_contact_sheet.png",
+    "problem_sheet": "experiments/cubism-v2-new-character-001/material_pack_v0/reports/face_detail_rebuild_problem_sheet.png",
+    "changed_layers": "experiments/cubism-v2-new-character-001/material_pack_v0/reports/face_detail_rebuild_changed_layers.png",
+    "eye_mouth_closeup": "experiments/cubism-v2-new-character-001/material_pack_v0/reports/face_detail_rebuild_eye_mouth_closeup.png",
+    "neutral_composite_after": "experiments/cubism-v2-new-character-001/material_pack_v0/reports/face_detail_rebuild_neutral_composite_after.png",
+    "preview_pack": "experiments/cubism-v2-new-character-001/material_pack_v0/face_detail_rebuild_pack_v1"
+  },
+  "interpretation": [
+    "Manual ROI coordinates were reused as semantic seeds, not production rectangular crops.",
+    "This pass rebuilds face detail layers from clean canonical pixels and preserves non-face material layers.",
+    "PASS is a material/preview gate only; 주인님 human visual QA is still required before Cubism authoring."
+  ]
+}
