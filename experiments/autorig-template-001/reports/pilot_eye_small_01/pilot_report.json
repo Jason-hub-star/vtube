@@ -1,0 +1,346 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-10T06:26:39.276761+00:00",
+  "test_id": "autorig_sheet_pilot_eye_small_01",
+  "status": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+  "sheet_id": "eye_small_01",
+  "raw_sheet": "experiments/autorig-template-001/raw_sheets/eye_small_01.png",
+  "style_ref": "experiments/cubism-v2-new-character-002/reports/source_inpaint_v1/source_front_2048_inpaint_clean.png",
+  "occupancy": [
+    {
+      "part_id": "eye_L_white",
+      "content_ratio": 0.19078,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "eye_L_iris",
+      "content_ratio": 0.16991,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "eye_L_pupil",
+      "content_ratio": 0.00977,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "eye_L_highlight",
+      "content_ratio": 0.00674,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "eye_L_upper_lash",
+      "content_ratio": 0.05365,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "eye_L_lower_lash",
+      "content_ratio": 0.00806,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "eye_L_closed_lid",
+      "content_ratio": 0.11284,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "eye_L_underpaint",
+      "content_ratio": 0.18242,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "eye_R_white",
+      "content_ratio": 0.19753,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "eye_R_iris",
+      "content_ratio": 0.17138,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "eye_R_pupil",
+      "content_ratio": 0.00984,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "eye_R_highlight",
+      "content_ratio": 0.00687,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "eye_R_upper_lash",
+      "content_ratio": 0.05365,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "eye_R_lower_lash",
+      "content_ratio": 0.00809,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "eye_R_closed_lid",
+      "content_ratio": 0.11155,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "eye_R_underpaint",
+      "content_ratio": 0.18819,
+      "issues": [],
+      "ok": true
+    }
+  ],
+  "occupancy_pass": true,
+  "placements": [
+    {
+      "part_id": "eye_L_white",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/eye_small_01/eye_L_white.png",
+      "source_px": [
+        356,
+        199
+      ],
+      "placed_px": [
+        157,
+        88
+      ],
+      "scale": 0.4422
+    },
+    {
+      "part_id": "eye_L_iris",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/eye_small_01/eye_L_iris.png",
+      "source_px": [
+        224,
+        247
+      ],
+      "placed_px": [
+        83,
+        91
+      ],
+      "scale": 0.3684
+    },
+    {
+      "part_id": "eye_L_pupil",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/eye_small_01/eye_L_pupil.png",
+      "source_px": [
+        43,
+        77
+      ],
+      "placed_px": [
+        65,
+        117
+      ],
+      "scale": 1.5195
+    },
+    {
+      "part_id": "eye_L_highlight",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/eye_small_01/eye_L_highlight.png",
+      "source_px": [
+        80,
+        104
+      ],
+      "placed_px": [
+        108,
+        140
+      ],
+      "scale": 1.3462
+    },
+    {
+      "part_id": "eye_L_upper_lash",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/eye_small_01/eye_L_upper_lash.png",
+      "source_px": [
+        359,
+        199
+      ],
+      "placed_px": [
+        193,
+        107
+      ],
+      "scale": 0.5377
+    },
+    {
+      "part_id": "eye_L_lower_lash",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/eye_small_01/eye_L_lower_lash.png",
+      "source_px": [
+        279,
+        43
+      ],
+      "placed_px": [
+        198,
+        31
+      ],
+      "scale": 0.7097
+    },
+    {
+      "part_id": "eye_L_closed_lid",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/eye_small_01/eye_L_closed_lid.png",
+      "source_px": [
+        340,
+        132
+      ],
+      "placed_px": [
+        82,
+        32
+      ],
+      "scale": 0.2424
+    },
+    {
+      "part_id": "eye_L_underpaint",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/eye_small_01/eye_L_underpaint.png",
+      "source_px": [
+        365,
+        185
+      ],
+      "placed_px": [
+        266,
+        135
+      ],
+      "scale": 0.7288
+    },
+    {
+      "part_id": "eye_R_white",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/eye_small_01/eye_R_white.png",
+      "source_px": [
+        358,
+        205
+      ],
+      "placed_px": [
+        154,
+        88
+      ],
+      "scale": 0.4293
+    },
+    {
+      "part_id": "eye_R_iris",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/eye_small_01/eye_R_iris.png",
+      "source_px": [
+        223,
+        249
+      ],
+      "placed_px": [
+        81,
+        90
+      ],
+      "scale": 0.3614
+    },
+    {
+      "part_id": "eye_R_pupil",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/eye_small_01/eye_R_pupil.png",
+      "source_px": [
+        42,
+        78
+      ],
+      "placed_px": [
+        62,
+        116
+      ],
+      "scale": 1.4872
+    },
+    {
+      "part_id": "eye_R_highlight",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/eye_small_01/eye_R_highlight.png",
+      "source_px": [
+        81,
+        106
+      ],
+      "placed_px": [
+        107,
+        140
+      ],
+      "scale": 1.3208
+    },
+    {
+      "part_id": "eye_R_upper_lash",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/eye_small_01/eye_R_upper_lash.png",
+      "source_px": [
+        359,
+        200
+      ],
+      "placed_px": [
+        153,
+        85
+      ],
+      "scale": 0.425
+    },
+    {
+      "part_id": "eye_R_lower_lash",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/eye_small_01/eye_R_lower_lash.png",
+      "source_px": [
+        281,
+        44
+      ],
+      "placed_px": [
+        225,
+        35
+      ],
+      "scale": 0.8007
+    },
+    {
+      "part_id": "eye_R_closed_lid",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/eye_small_01/eye_R_closed_lid.png",
+      "source_px": [
+        337,
+        130
+      ],
+      "placed_px": [
+        80,
+        31
+      ],
+      "scale": 0.2385
+    },
+    {
+      "part_id": "eye_R_underpaint",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/eye_small_01/eye_R_underpaint.png",
+      "source_px": [
+        367,
+        189
+      ],
+      "placed_px": [
+        266,
+        137
+      ],
+      "scale": 0.7248
+    }
+  ],
+  "composites": {
+    "assembly_eye_L": "experiments/autorig-template-001/reports/pilot_eye_small_01/assembly_eye_L.png",
+    "assembly_eye_R": "experiments/autorig-template-001/reports/pilot_eye_small_01/assembly_eye_R.png",
+    "assembly_all": "experiments/autorig-template-001/reports/pilot_eye_small_01/assembly_all.png"
+  },
+  "self_review": {
+    "slots": 16,
+    "occupancy_ok": 16,
+    "placed": 16,
+    "fallback_needed": false
+  },
+  "interpretation_ko": "이미지 모델이 슬롯 레이아웃을 준수했습니다. 조립 합성을 보고 스타일/품질을 판정하세요."
+}

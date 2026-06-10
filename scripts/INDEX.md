@@ -1,6 +1,6 @@
 # scripts/ 인덱스
 
-Updated: 2026-06-10 · 총 267개 · `python3 scripts/build_scripts_index.py`로 재생성
+Updated: 2026-06-10 · 총 269개 · `python3 scripts/build_scripts_index.py`로 재생성
 
 새 스크립트를 만들기 전에 이 인덱스에서 기존 것을 먼저 찾는다.
 코드 규칙: `docs/ref/AUTORIG-PIPELINE-V1.md`의 '코드 규칙' 절 (lib 사용 의무, 캐릭터 하드코딩 금지, 500줄 상한).
@@ -10,20 +10,22 @@ Updated: 2026-06-10 · 총 267개 · `python3 scripts/build_scripts_index.py`로
 | 파일 | LOC | 설명 |
 |---|---:|---|
 | `lib/__init__.py` | 13 | Vtube 공유 라이브러리. |
-| `lib/vtube_image.py` | 92 | 이미지 공통 유틸: 알파크롭 썸네일, 컨택트시트, 픽셀 diff. (build_contact_sheet 26벌 복붙의 단일 원본) |
+| `lib/vtube_image.py` | 113 | 이미지 공통 유틸: 알파크롭 썸네일, 컨택트시트, 픽셀 diff. (build_contact_sheet 26벌 복붙의 단일 원본) |
 | `lib/vtube_io.py` | 41 | 경로/JSON 입출력 공통 유틸. (기존 258개 스크립트에 rel 151벌, load_json 145벌이 복붙되어 있던 것의 단일 원본) |
 | `lib/vtube_proc.py` | 29 | 프로세스/포트 공통 유틸. (wait_for_server 17벌 복붙의 단일 원본) |
 | `lib/vtube_server.py` | 60 | 로컬 HTTP 서버 공통 베이스. (ThreadingHTTPServer 보일러플레이트 13벌 복붙의 단일 원본) |
 
-## autorig — AUTORIG 파이프라인·관제탑·자산 인덱스 (현행) (6)
+## autorig — AUTORIG 파이프라인·관제탑·자산 인덱스 (현행) (8)
 
 | 파일 | LOC | 설명 |
 |---|---:|---|
 | `autorig_events.py` | 228 | AUTORIG 이벤트 로그(JSONL) 공유 라이브러리. |
 | `build_asset_dashboard.py` | 237 | Vtube 자산 대시보드 생성기. |
 | `build_autorig_current_candidates_002.py` | 119 | AUTORIG current-candidates manifest for cubism-v2-new-character-002. |
+| `build_autorig_template_spec.py` | 159 | AUTORIG-TEMPLATE-SPEC-001: 64-part를 고정 슬롯 시트에 매핑하는 템플릿 스펙 생성. |
 | `build_scripts_index.py` | 94 | scripts/INDEX.md 자동 생성 — 258개 스크립트를 카테고리·설명·LOC로 색인한다. |
 | `run_autorig_control_tower.py` | 262 | AUTORIG 관제탑 서버 — runs/<run_id>/events.jsonl을 읽어 대시보드에 공급한다. |
+| `run_autorig_sheet_pilot.py` | 249 | AUTORIG 슬롯 시트 파일럿: 시트 1장을 생성→점유율 QA→결정론적 추출→배치→조립 합성. |
 | `simulate_autorig_run.py` | 153 | AUTORIG 가짜 런 시뮬레이터 — 관제탑 개발/스모크용. |
 
 ## webcam-drive — 트래킹·웹캠 드라이브 (T0–T3) (6)

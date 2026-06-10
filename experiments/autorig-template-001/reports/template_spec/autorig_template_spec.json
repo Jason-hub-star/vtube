@@ -1,0 +1,1849 @@
+{
+  "schema_version": 1,
+  "spec_id": "autorig_template_spec_v1",
+  "generated_at": "2026-06-10T06:20:02.889709+00:00",
+  "source_manifest": "experiments/cubism-v2-new-character-002/reports/v22_64part_candidate_manifest/v22_64part_candidate_manifest.json",
+  "canvas": 2048,
+  "chroma": "#FF00FF",
+  "rules": {
+    "no_labels": "evidence log: 라벨 시트는 오타/불균형 유발 — 텍스트 전면 금지",
+    "slot_margin": "셀 경계 접촉 금지, 점유율 검사로 강제",
+    "anchor_reuse": "동일 캐릭터 디자인이므로 기존 매니페스트 bbox를 타깃 앵커로 재사용"
+  },
+  "sheet_count": 12,
+  "part_count": 64,
+  "sheets": [
+    {
+      "sheet_id": "eye_small_01",
+      "family": "eye",
+      "grid": {
+        "rows": 4,
+        "cols": 4,
+        "cell": 512
+      },
+      "canvas": 2048,
+      "chroma": "#FF00FF",
+      "slots": [
+        {
+          "index": 0,
+          "row": 1,
+          "col": 1,
+          "cell_px": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "part_id": "eye_L_white",
+          "label_ko": "왼쪽 눈 흰자",
+          "group": "eye_L",
+          "draw_order_band": "eye_back",
+          "target_bbox": [
+            669,
+            637,
+            903,
+            725
+          ],
+          "target_center": [
+            786,
+            681
+          ],
+          "description": "left eye white sclera shape only (eyeball base, no iris)"
+        },
+        {
+          "index": 1,
+          "row": 1,
+          "col": 2,
+          "cell_px": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "part_id": "eye_L_iris",
+          "label_ko": "왼쪽 홍채",
+          "group": "eye_L",
+          "draw_order_band": "eye_mid",
+          "target_bbox": [
+            746,
+            640,
+            845,
+            731
+          ],
+          "target_center": [
+            796,
+            686
+          ],
+          "description": "left eye iris disc only, with the character's iris color and shading"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 3,
+          "cell_px": [
+            1024,
+            0,
+            1536,
+            512
+          ],
+          "part_id": "eye_L_pupil",
+          "label_ko": "왼쪽 동공",
+          "group": "eye_L",
+          "draw_order_band": "eye_mid",
+          "target_bbox": [
+            729,
+            633,
+            848,
+            750
+          ],
+          "target_center": [
+            788,
+            692
+          ],
+          "description": "left eye pupil only, small dark ellipse"
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "col": 4,
+          "cell_px": [
+            1536,
+            0,
+            2048,
+            512
+          ],
+          "part_id": "eye_L_highlight",
+          "label_ko": "왼쪽 눈 하이라이트",
+          "group": "eye_L",
+          "draw_order_band": "eye_front",
+          "target_bbox": [
+            726,
+            610,
+            850,
+            750
+          ],
+          "target_center": [
+            788,
+            680
+          ],
+          "description": "left eye light highlights only, small white sparkle shapes"
+        },
+        {
+          "index": 4,
+          "row": 2,
+          "col": 1,
+          "cell_px": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "part_id": "eye_L_upper_lash",
+          "label_ko": "왼쪽 위 속눈썹",
+          "group": "eye_L",
+          "draw_order_band": "eye_front",
+          "target_bbox": [
+            661,
+            627,
+            925,
+            734
+          ],
+          "target_center": [
+            793,
+            680
+          ],
+          "description": "left eye upper eyelash line with lash details"
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "col": 2,
+          "cell_px": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "part_id": "eye_L_lower_lash",
+          "label_ko": "왼쪽 아래 속눈썹",
+          "group": "eye_L",
+          "draw_order_band": "eye_front",
+          "target_bbox": [
+            704,
+            692,
+            902,
+            762
+          ],
+          "target_center": [
+            803,
+            727
+          ],
+          "description": "left eye lower eyelash line, thin and subtle"
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "col": 3,
+          "cell_px": [
+            1024,
+            512,
+            1536,
+            1024
+          ],
+          "part_id": "eye_L_closed_lid",
+          "label_ko": "왼쪽 감은 눈꺼풀",
+          "group": "eye_L",
+          "draw_order_band": "eye_front",
+          "target_bbox": [
+            706,
+            713,
+            912,
+            745
+          ],
+          "target_center": [
+            809,
+            729
+          ],
+          "description": "left eye fully closed eyelid line on skin-tone lid shape"
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "col": 4,
+          "cell_px": [
+            1536,
+            512,
+            2048,
+            1024
+          ],
+          "part_id": "eye_L_underpaint",
+          "label_ko": "왼쪽 눈 밑색",
+          "group": "eye_L",
+          "draw_order_band": "eye_back",
+          "target_bbox": [
+            710,
+            580,
+            976,
+            776
+          ],
+          "target_center": [
+            843,
+            678
+          ],
+          "description": "left eye socket underpaint, flat skin-tone filler shape"
+        },
+        {
+          "index": 8,
+          "row": 3,
+          "col": 1,
+          "cell_px": [
+            0,
+            1024,
+            512,
+            1536
+          ],
+          "part_id": "eye_R_white",
+          "label_ko": "오른쪽 눈 흰자",
+          "group": "eye_R",
+          "draw_order_band": "eye_back",
+          "target_bbox": [
+            1099,
+            637,
+            1333,
+            725
+          ],
+          "target_center": [
+            1216,
+            681
+          ],
+          "description": "right eye white sclera shape only (eyeball base, no iris)"
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "col": 2,
+          "cell_px": [
+            512,
+            1024,
+            1024,
+            1536
+          ],
+          "part_id": "eye_R_iris",
+          "label_ko": "오른쪽 홍채",
+          "group": "eye_R",
+          "draw_order_band": "eye_mid",
+          "target_bbox": [
+            1162,
+            641,
+            1256,
+            731
+          ],
+          "target_center": [
+            1209,
+            686
+          ],
+          "description": "right eye iris disc only, with the character's iris color and shading"
+        },
+        {
+          "index": 10,
+          "row": 3,
+          "col": 3,
+          "cell_px": [
+            1024,
+            1024,
+            1536,
+            1536
+          ],
+          "part_id": "eye_R_pupil",
+          "label_ko": "오른쪽 동공",
+          "group": "eye_R",
+          "draw_order_band": "eye_mid",
+          "target_bbox": [
+            1157,
+            634,
+            1280,
+            750
+          ],
+          "target_center": [
+            1218,
+            692
+          ],
+          "description": "right eye pupil only, small dark ellipse"
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "col": 4,
+          "cell_px": [
+            1536,
+            1024,
+            2048,
+            1536
+          ],
+          "part_id": "eye_R_highlight",
+          "label_ko": "오른쪽 눈 하이라이트",
+          "group": "eye_R",
+          "draw_order_band": "eye_front",
+          "target_bbox": [
+            1150,
+            610,
+            1280,
+            750
+          ],
+          "target_center": [
+            1215,
+            680
+          ],
+          "description": "right eye light highlights only, small white sparkle shapes"
+        },
+        {
+          "index": 12,
+          "row": 4,
+          "col": 1,
+          "cell_px": [
+            0,
+            1536,
+            512,
+            2048
+          ],
+          "part_id": "eye_R_upper_lash",
+          "label_ko": "오른쪽 위 속눈썹",
+          "group": "eye_R",
+          "draw_order_band": "eye_front",
+          "target_bbox": [
+            1092,
+            630,
+            1355,
+            715
+          ],
+          "target_center": [
+            1224,
+            672
+          ],
+          "description": "right eye upper eyelash line with lash details"
+        },
+        {
+          "index": 13,
+          "row": 4,
+          "col": 2,
+          "cell_px": [
+            512,
+            1536,
+            1024,
+            2048
+          ],
+          "part_id": "eye_R_lower_lash",
+          "label_ko": "오른쪽 아래 속눈썹",
+          "group": "eye_R",
+          "draw_order_band": "eye_front",
+          "target_bbox": [
+            1107,
+            692,
+            1332,
+            764
+          ],
+          "target_center": [
+            1220,
+            728
+          ],
+          "description": "right eye lower eyelash line, thin and subtle"
+        },
+        {
+          "index": 14,
+          "row": 4,
+          "col": 3,
+          "cell_px": [
+            1024,
+            1536,
+            1536,
+            2048
+          ],
+          "part_id": "eye_R_closed_lid",
+          "label_ko": "오른쪽 감은 눈꺼풀",
+          "group": "eye_R",
+          "draw_order_band": "eye_front",
+          "target_bbox": [
+            1087,
+            716,
+            1288,
+            747
+          ],
+          "target_center": [
+            1188,
+            732
+          ],
+          "description": "right eye fully closed eyelid line on skin-tone lid shape"
+        },
+        {
+          "index": 15,
+          "row": 4,
+          "col": 4,
+          "cell_px": [
+            1536,
+            1536,
+            2048,
+            2048
+          ],
+          "part_id": "eye_R_underpaint",
+          "label_ko": "오른쪽 눈 밑색",
+          "group": "eye_R",
+          "draw_order_band": "eye_back",
+          "target_bbox": [
+            1073,
+            580,
+            1339,
+            776
+          ],
+          "target_center": [
+            1206,
+            678
+          ],
+          "description": "right eye socket underpaint, flat skin-tone filler shape"
+        }
+      ],
+      "prompt": "Anime character PART SHEET for Live2D-style rigging. Square 2048x2048 image.\nThe ENTIRE background must be one flat solid magenta color #FF00FF with no gradient.\nImagine an invisible 4x4 grid of 512px cells.\nDraw EXACTLY ONE isolated element per cell, centered in its cell, fully inside the cell\nwith generous margin; nothing may touch or cross cell boundaries.\nSTRICT: no text, no labels, no numbers, no grid lines, no boxes, no full character,\nno extra elements, no drop shadows on the background.\nEvery element must match the art style, line weight, colors and facial design of the\nattached reference character EXACTLY (same character).\nElements by cell (row, column), top-left is (1,1):\n- (1,1): left eye white sclera shape only (eyeball base, no iris)\n- (1,2): left eye iris disc only, with the character's iris color and shading\n- (1,3): left eye pupil only, small dark ellipse\n- (1,4): left eye light highlights only, small white sparkle shapes\n- (2,1): left eye upper eyelash line with lash details\n- (2,2): left eye lower eyelash line, thin and subtle\n- (2,3): left eye fully closed eyelid line on skin-tone lid shape\n- (2,4): left eye socket underpaint, flat skin-tone filler shape\n- (3,1): right eye white sclera shape only (eyeball base, no iris)\n- (3,2): right eye iris disc only, with the character's iris color and shading\n- (3,3): right eye pupil only, small dark ellipse\n- (3,4): right eye light highlights only, small white sparkle shapes\n- (4,1): right eye upper eyelash line with lash details\n- (4,2): right eye lower eyelash line, thin and subtle\n- (4,3): right eye fully closed eyelid line on skin-tone lid shape\n- (4,4): right eye socket underpaint, flat skin-tone filler shape"
+    },
+    {
+      "sheet_id": "mouth_small_01",
+      "family": "mouth",
+      "grid": {
+        "rows": 4,
+        "cols": 4,
+        "cell": 512
+      },
+      "canvas": 2048,
+      "chroma": "#FF00FF",
+      "slots": [
+        {
+          "index": 0,
+          "row": 1,
+          "col": 1,
+          "cell_px": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "part_id": "mouth_line",
+          "label_ko": "입 선",
+          "group": "mouth",
+          "draw_order_band": "mouth_front",
+          "target_bbox": [
+            932,
+            868,
+            1107,
+            887
+          ],
+          "target_center": [
+            1020,
+            878
+          ],
+          "description": "mouth line — isolated part of the character (입 선), drawn alone"
+        },
+        {
+          "index": 1,
+          "row": 1,
+          "col": 2,
+          "cell_px": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "part_id": "mouth_inner",
+          "label_ko": "입 안쪽",
+          "group": "mouth",
+          "draw_order_band": "mouth_back",
+          "target_bbox": [
+            859,
+            818,
+            1189,
+            1003
+          ],
+          "target_center": [
+            1024,
+            910
+          ],
+          "description": "mouth inner — isolated part of the character (입 안쪽), drawn alone"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 3,
+          "cell_px": [
+            1024,
+            0,
+            1536,
+            512
+          ],
+          "part_id": "mouth_upper_lip_mask",
+          "label_ko": "윗입술 마스크",
+          "group": "mouth",
+          "draw_order_band": "mouth_front",
+          "target_bbox": [
+            928,
+            855,
+            1087,
+            895
+          ],
+          "target_center": [
+            1008,
+            875
+          ],
+          "description": "mouth upper lip mask — isolated part of the character (윗입술 마스크), drawn alone"
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "col": 4,
+          "cell_px": [
+            1536,
+            0,
+            2048,
+            512
+          ],
+          "part_id": "mouth_lower_lip_mask",
+          "label_ko": "아랫입술 마스크",
+          "group": "mouth",
+          "draw_order_band": "mouth_front",
+          "target_bbox": [
+            925,
+            858,
+            1106,
+            946
+          ],
+          "target_center": [
+            1016,
+            902
+          ],
+          "description": "mouth lower lip mask — isolated part of the character (아랫입술 마스크), drawn alone"
+        },
+        {
+          "index": 4,
+          "row": 2,
+          "col": 1,
+          "cell_px": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "part_id": "mouth_teeth",
+          "label_ko": "치아",
+          "group": "mouth",
+          "draw_order_band": "mouth_mid",
+          "target_bbox": [
+            924,
+            819,
+            1119,
+            888
+          ],
+          "target_center": [
+            1022,
+            854
+          ],
+          "description": "mouth teeth — isolated part of the character (치아), drawn alone"
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "col": 2,
+          "cell_px": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "part_id": "mouth_tongue",
+          "label_ko": "혀",
+          "group": "mouth",
+          "draw_order_band": "mouth_mid",
+          "target_bbox": [
+            859,
+            864,
+            1189,
+            1003
+          ],
+          "target_center": [
+            1024,
+            934
+          ],
+          "description": "mouth tongue — isolated part of the character (혀), drawn alone"
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "col": 3,
+          "cell_px": [
+            1024,
+            512,
+            1536,
+            1024
+          ],
+          "part_id": "mouth_corner_L",
+          "label_ko": "왼쪽 입꼬리",
+          "group": "mouth",
+          "draw_order_band": "mouth_front",
+          "target_bbox": [
+            871,
+            880,
+            922,
+            893
+          ],
+          "target_center": [
+            896,
+            886
+          ],
+          "description": "mouth corner L — isolated part of the character (왼쪽 입꼬리), drawn alone"
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "col": 4,
+          "cell_px": [
+            1536,
+            512,
+            2048,
+            1024
+          ],
+          "part_id": "mouth_corner_R",
+          "label_ko": "오른쪽 입꼬리",
+          "group": "mouth",
+          "draw_order_band": "mouth_front",
+          "target_bbox": [
+            1118,
+            879,
+            1169,
+            893
+          ],
+          "target_center": [
+            1144,
+            886
+          ],
+          "description": "mouth corner R — isolated part of the character (오른쪽 입꼬리), drawn alone"
+        }
+      ],
+      "prompt": "Anime character PART SHEET for Live2D-style rigging. Square 2048x2048 image.\nThe ENTIRE background must be one flat solid magenta color #FF00FF with no gradient.\nImagine an invisible 4x4 grid of 512px cells.\nDraw EXACTLY ONE isolated element per cell, centered in its cell, fully inside the cell\nwith generous margin; nothing may touch or cross cell boundaries.\nSTRICT: no text, no labels, no numbers, no grid lines, no boxes, no full character,\nno extra elements, no drop shadows on the background.\nEvery element must match the art style, line weight, colors and facial design of the\nattached reference character EXACTLY (same character).\nElements by cell (row, column), top-left is (1,1):\n- (1,1): mouth line — isolated part of the character (입 선), drawn alone\n- (1,2): mouth inner — isolated part of the character (입 안쪽), drawn alone\n- (1,3): mouth upper lip mask — isolated part of the character (윗입술 마스크), drawn alone\n- (1,4): mouth lower lip mask — isolated part of the character (아랫입술 마스크), drawn alone\n- (2,1): mouth teeth — isolated part of the character (치아), drawn alone\n- (2,2): mouth tongue — isolated part of the character (혀), drawn alone\n- (2,3): mouth corner L — isolated part of the character (왼쪽 입꼬리), drawn alone\n- (2,4): mouth corner R — isolated part of the character (오른쪽 입꼬리), drawn alone"
+    },
+    {
+      "sheet_id": "face_brow_small_01",
+      "family": "face_brow",
+      "grid": {
+        "rows": 4,
+        "cols": 4,
+        "cell": 512
+      },
+      "canvas": 2048,
+      "chroma": "#FF00FF",
+      "slots": [
+        {
+          "index": 0,
+          "row": 1,
+          "col": 1,
+          "cell_px": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "part_id": "face_shadow_L",
+          "label_ko": "왼쪽 얼굴 그림자",
+          "group": "face_base",
+          "draw_order_band": "face_front",
+          "target_bbox": [
+            694,
+            650,
+            806,
+            899
+          ],
+          "target_center": [
+            750,
+            774
+          ],
+          "description": "face shadow L — isolated part of the character (왼쪽 얼굴 그림자), drawn alone"
+        },
+        {
+          "index": 1,
+          "row": 1,
+          "col": 2,
+          "cell_px": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "part_id": "face_shadow_R",
+          "label_ko": "오른쪽 얼굴 그림자",
+          "group": "face_base",
+          "draw_order_band": "face_front",
+          "target_bbox": [
+            1165,
+            650,
+            1255,
+            896
+          ],
+          "target_center": [
+            1210,
+            773
+          ],
+          "description": "face shadow R — isolated part of the character (오른쪽 얼굴 그림자), drawn alone"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 3,
+          "cell_px": [
+            1024,
+            0,
+            1536,
+            512
+          ],
+          "part_id": "nose",
+          "label_ko": "코",
+          "group": "face_base",
+          "draw_order_band": "face_front",
+          "target_bbox": [
+            991,
+            739,
+            1061,
+            841
+          ],
+          "target_center": [
+            1026,
+            790
+          ],
+          "description": "nose — isolated part of the character (코), drawn alone"
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "col": 4,
+          "cell_px": [
+            1536,
+            0,
+            2048,
+            512
+          ],
+          "part_id": "cheek_L",
+          "label_ko": "왼쪽 볼",
+          "group": "face_base",
+          "draw_order_band": "face_front",
+          "target_bbox": [
+            725,
+            731,
+            935,
+            857
+          ],
+          "target_center": [
+            830,
+            794
+          ],
+          "description": "cheek L — isolated part of the character (왼쪽 볼), drawn alone"
+        },
+        {
+          "index": 4,
+          "row": 2,
+          "col": 1,
+          "cell_px": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "part_id": "cheek_R",
+          "label_ko": "오른쪽 볼",
+          "group": "face_base",
+          "draw_order_band": "face_front",
+          "target_bbox": [
+            1110,
+            731,
+            1320,
+            857
+          ],
+          "target_center": [
+            1215,
+            794
+          ],
+          "description": "cheek R — isolated part of the character (오른쪽 볼), drawn alone"
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "col": 2,
+          "cell_px": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "part_id": "brow_L",
+          "label_ko": "왼쪽 눈썹",
+          "group": "brow",
+          "draw_order_band": "brow_front",
+          "target_bbox": [
+            764,
+            628,
+            925,
+            661
+          ],
+          "target_center": [
+            844,
+            644
+          ],
+          "description": "brow L — isolated part of the character (왼쪽 눈썹), drawn alone"
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "col": 3,
+          "cell_px": [
+            1024,
+            512,
+            1536,
+            1024
+          ],
+          "part_id": "brow_R",
+          "label_ko": "오른쪽 눈썹",
+          "group": "brow",
+          "draw_order_band": "brow_front",
+          "target_bbox": [
+            1105,
+            628,
+            1262,
+            660
+          ],
+          "target_center": [
+            1184,
+            644
+          ],
+          "description": "brow R — isolated part of the character (오른쪽 눈썹), drawn alone"
+        }
+      ],
+      "prompt": "Anime character PART SHEET for Live2D-style rigging. Square 2048x2048 image.\nThe ENTIRE background must be one flat solid magenta color #FF00FF with no gradient.\nImagine an invisible 4x4 grid of 512px cells.\nDraw EXACTLY ONE isolated element per cell, centered in its cell, fully inside the cell\nwith generous margin; nothing may touch or cross cell boundaries.\nSTRICT: no text, no labels, no numbers, no grid lines, no boxes, no full character,\nno extra elements, no drop shadows on the background.\nEvery element must match the art style, line weight, colors and facial design of the\nattached reference character EXACTLY (same character).\nElements by cell (row, column), top-left is (1,1):\n- (1,1): face shadow L — isolated part of the character (왼쪽 얼굴 그림자), drawn alone\n- (1,2): face shadow R — isolated part of the character (오른쪽 얼굴 그림자), drawn alone\n- (1,3): nose — isolated part of the character (코), drawn alone\n- (1,4): cheek L — isolated part of the character (왼쪽 볼), drawn alone\n- (2,1): cheek R — isolated part of the character (오른쪽 볼), drawn alone\n- (2,2): brow L — isolated part of the character (왼쪽 눈썹), drawn alone\n- (2,3): brow R — isolated part of the character (오른쪽 눈썹), drawn alone"
+    },
+    {
+      "sheet_id": "face_brow_large_01",
+      "family": "face_brow",
+      "grid": {
+        "rows": 2,
+        "cols": 2,
+        "cell": 1024
+      },
+      "canvas": 2048,
+      "chroma": "#FF00FF",
+      "slots": [
+        {
+          "index": 0,
+          "row": 1,
+          "col": 1,
+          "cell_px": [
+            0,
+            0,
+            1024,
+            1024
+          ],
+          "part_id": "face_base",
+          "label_ko": "얼굴 기본",
+          "group": "face_base",
+          "draw_order_band": "face_mid",
+          "target_bbox": [
+            640,
+            350,
+            1381,
+            1239
+          ],
+          "target_center": [
+            1010,
+            794
+          ],
+          "description": "face base — isolated part of the character (얼굴 기본), drawn alone"
+        },
+        {
+          "index": 1,
+          "row": 1,
+          "col": 2,
+          "cell_px": [
+            1024,
+            0,
+            2048,
+            1024
+          ],
+          "part_id": "face_underpaint_L",
+          "label_ko": "왼쪽 얼굴 밑색",
+          "group": "face_base",
+          "draw_order_band": "face_back",
+          "target_bbox": [
+            640,
+            497,
+            975,
+            1078
+          ],
+          "target_center": [
+            808,
+            788
+          ],
+          "description": "face underpaint L — isolated part of the character (왼쪽 얼굴 밑색), drawn alone"
+        },
+        {
+          "index": 2,
+          "row": 2,
+          "col": 1,
+          "cell_px": [
+            0,
+            1024,
+            1024,
+            2048
+          ],
+          "part_id": "face_underpaint_R",
+          "label_ko": "오른쪽 얼굴 밑색",
+          "group": "face_base",
+          "draw_order_band": "face_back",
+          "target_bbox": [
+            1074,
+            497,
+            1381,
+            1078
+          ],
+          "target_center": [
+            1228,
+            788
+          ],
+          "description": "face underpaint R — isolated part of the character (오른쪽 얼굴 밑색), drawn alone"
+        }
+      ],
+      "prompt": "Anime character PART SHEET for Live2D-style rigging. Square 2048x2048 image.\nThe ENTIRE background must be one flat solid magenta color #FF00FF with no gradient.\nImagine an invisible 2x2 grid of 1024px cells.\nDraw EXACTLY ONE isolated element per cell, centered in its cell, fully inside the cell\nwith generous margin; nothing may touch or cross cell boundaries.\nSTRICT: no text, no labels, no numbers, no grid lines, no boxes, no full character,\nno extra elements, no drop shadows on the background.\nEvery element must match the art style, line weight, colors and facial design of the\nattached reference character EXACTLY (same character).\nElements by cell (row, column), top-left is (1,1):\n- (1,1): face base — isolated part of the character (얼굴 기본), drawn alone\n- (1,2): face underpaint L — isolated part of the character (왼쪽 얼굴 밑색), drawn alone\n- (2,1): face underpaint R — isolated part of the character (오른쪽 얼굴 밑색), drawn alone"
+    },
+    {
+      "sheet_id": "hair_small_01",
+      "family": "hair",
+      "grid": {
+        "rows": 4,
+        "cols": 4,
+        "cell": 512
+      },
+      "canvas": 2048,
+      "chroma": "#FF00FF",
+      "slots": [
+        {
+          "index": 0,
+          "row": 1,
+          "col": 1,
+          "cell_px": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "part_id": "hair_front_center",
+          "label_ko": "가운데 앞머리",
+          "group": "hair",
+          "draw_order_band": "hair_front",
+          "target_bbox": [
+            814,
+            222,
+            1234,
+            636
+          ],
+          "target_center": [
+            1024,
+            429
+          ],
+          "description": "hair front center — isolated part of the character (가운데 앞머리), drawn alone"
+        },
+        {
+          "index": 1,
+          "row": 1,
+          "col": 2,
+          "cell_px": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "part_id": "hair_front_L",
+          "label_ko": "왼쪽 앞머리",
+          "group": "hair",
+          "draw_order_band": "hair_front",
+          "target_bbox": [
+            753,
+            279,
+            1010,
+            611
+          ],
+          "target_center": [
+            882,
+            445
+          ],
+          "description": "hair front L — isolated part of the character (왼쪽 앞머리), drawn alone"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 3,
+          "cell_px": [
+            1024,
+            0,
+            1536,
+            512
+          ],
+          "part_id": "hair_front_R",
+          "label_ko": "오른쪽 앞머리",
+          "group": "hair",
+          "draw_order_band": "hair_front",
+          "target_bbox": [
+            1010,
+            275,
+            1310,
+            635
+          ],
+          "target_center": [
+            1160,
+            455
+          ],
+          "description": "hair front R — isolated part of the character (오른쪽 앞머리), drawn alone"
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "col": 4,
+          "cell_px": [
+            1536,
+            0,
+            2048,
+            512
+          ],
+          "part_id": "hair_front_tip_L",
+          "label_ko": "왼쪽 앞머리 끝",
+          "group": "hair",
+          "draw_order_band": "hair_front",
+          "target_bbox": [
+            696,
+            690,
+            824,
+            1055
+          ],
+          "target_center": [
+            760,
+            872
+          ],
+          "description": "hair front tip L — isolated part of the character (왼쪽 앞머리 끝), drawn alone"
+        },
+        {
+          "index": 4,
+          "row": 2,
+          "col": 1,
+          "cell_px": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "part_id": "hair_front_tip_R",
+          "label_ko": "오른쪽 앞머리 끝",
+          "group": "hair",
+          "draw_order_band": "hair_front",
+          "target_bbox": [
+            1155,
+            690,
+            1263,
+            1080
+          ],
+          "target_center": [
+            1209,
+            885
+          ],
+          "description": "hair front tip R — isolated part of the character (오른쪽 앞머리 끝), drawn alone"
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "col": 2,
+          "cell_px": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "part_id": "hair_side_L_inner",
+          "label_ko": "왼쪽 안쪽 옆머리",
+          "group": "hair",
+          "draw_order_band": "hair_side",
+          "target_bbox": [
+            670,
+            712,
+            807,
+            1133
+          ],
+          "target_center": [
+            738,
+            922
+          ],
+          "description": "hair side L inner — isolated part of the character (왼쪽 안쪽 옆머리), drawn alone"
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "col": 3,
+          "cell_px": [
+            1024,
+            512,
+            1536,
+            1024
+          ],
+          "part_id": "hair_side_R_inner",
+          "label_ko": "오른쪽 안쪽 옆머리",
+          "group": "hair",
+          "draw_order_band": "hair_side",
+          "target_bbox": [
+            1187,
+            712,
+            1319,
+            1159
+          ],
+          "target_center": [
+            1253,
+            936
+          ],
+          "description": "hair side R inner — isolated part of the character (오른쪽 안쪽 옆머리), drawn alone"
+        }
+      ],
+      "prompt": "Anime character PART SHEET for Live2D-style rigging. Square 2048x2048 image.\nThe ENTIRE background must be one flat solid magenta color #FF00FF with no gradient.\nImagine an invisible 4x4 grid of 512px cells.\nDraw EXACTLY ONE isolated element per cell, centered in its cell, fully inside the cell\nwith generous margin; nothing may touch or cross cell boundaries.\nSTRICT: no text, no labels, no numbers, no grid lines, no boxes, no full character,\nno extra elements, no drop shadows on the background.\nEvery element must match the art style, line weight, colors and facial design of the\nattached reference character EXACTLY (same character).\nElements by cell (row, column), top-left is (1,1):\n- (1,1): hair front center — isolated part of the character (가운데 앞머리), drawn alone\n- (1,2): hair front L — isolated part of the character (왼쪽 앞머리), drawn alone\n- (1,3): hair front R — isolated part of the character (오른쪽 앞머리), drawn alone\n- (1,4): hair front tip L — isolated part of the character (왼쪽 앞머리 끝), drawn alone\n- (2,1): hair front tip R — isolated part of the character (오른쪽 앞머리 끝), drawn alone\n- (2,2): hair side L inner — isolated part of the character (왼쪽 안쪽 옆머리), drawn alone\n- (2,3): hair side R inner — isolated part of the character (오른쪽 안쪽 옆머리), drawn alone"
+    },
+    {
+      "sheet_id": "hair_large_01",
+      "family": "hair",
+      "grid": {
+        "rows": 2,
+        "cols": 2,
+        "cell": 1024
+      },
+      "canvas": 2048,
+      "chroma": "#FF00FF",
+      "slots": [
+        {
+          "index": 0,
+          "row": 1,
+          "col": 1,
+          "cell_px": [
+            0,
+            0,
+            1024,
+            1024
+          ],
+          "part_id": "hair_back_base",
+          "label_ko": "뒷머리 기본",
+          "group": "hair",
+          "draw_order_band": "hair_back",
+          "target_bbox": [
+            644,
+            190,
+            1404,
+            1250
+          ],
+          "target_center": [
+            1024,
+            720
+          ],
+          "description": "hair back base — isolated part of the character (뒷머리 기본), drawn alone"
+        },
+        {
+          "index": 1,
+          "row": 1,
+          "col": 2,
+          "cell_px": [
+            1024,
+            0,
+            2048,
+            1024
+          ],
+          "part_id": "hair_back_underpaint",
+          "label_ko": "뒷머리 밑색",
+          "group": "hair",
+          "draw_order_band": "hair_back",
+          "target_bbox": [
+            734,
+            585,
+            1145,
+            1175
+          ],
+          "target_center": [
+            940,
+            880
+          ],
+          "description": "hair back underpaint — isolated part of the character (뒷머리 밑색), drawn alone"
+        },
+        {
+          "index": 2,
+          "row": 2,
+          "col": 1,
+          "cell_px": [
+            0,
+            1024,
+            1024,
+            2048
+          ],
+          "part_id": "hair_back_strand_L",
+          "label_ko": "왼쪽 뒷머리 가닥",
+          "group": "hair",
+          "draw_order_band": "hair_back",
+          "target_bbox": [
+            595,
+            440,
+            855,
+            1200
+          ],
+          "target_center": [
+            725,
+            820
+          ],
+          "description": "hair back strand L — isolated part of the character (왼쪽 뒷머리 가닥), drawn alone"
+        },
+        {
+          "index": 3,
+          "row": 2,
+          "col": 2,
+          "cell_px": [
+            1024,
+            1024,
+            2048,
+            2048
+          ],
+          "part_id": "hair_back_strand_R",
+          "label_ko": "오른쪽 뒷머리 가닥",
+          "group": "hair",
+          "draw_order_band": "hair_back",
+          "target_bbox": [
+            1223,
+            450,
+            1445,
+            1210
+          ],
+          "target_center": [
+            1334,
+            830
+          ],
+          "description": "hair back strand R — isolated part of the character (오른쪽 뒷머리 가닥), drawn alone"
+        }
+      ],
+      "prompt": "Anime character PART SHEET for Live2D-style rigging. Square 2048x2048 image.\nThe ENTIRE background must be one flat solid magenta color #FF00FF with no gradient.\nImagine an invisible 2x2 grid of 1024px cells.\nDraw EXACTLY ONE isolated element per cell, centered in its cell, fully inside the cell\nwith generous margin; nothing may touch or cross cell boundaries.\nSTRICT: no text, no labels, no numbers, no grid lines, no boxes, no full character,\nno extra elements, no drop shadows on the background.\nEvery element must match the art style, line weight, colors and facial design of the\nattached reference character EXACTLY (same character).\nElements by cell (row, column), top-left is (1,1):\n- (1,1): hair back base — isolated part of the character (뒷머리 기본), drawn alone\n- (1,2): hair back underpaint — isolated part of the character (뒷머리 밑색), drawn alone\n- (2,1): hair back strand L — isolated part of the character (왼쪽 뒷머리 가닥), drawn alone\n- (2,2): hair back strand R — isolated part of the character (오른쪽 뒷머리 가닥), drawn alone"
+    },
+    {
+      "sheet_id": "hair_large_02",
+      "family": "hair",
+      "grid": {
+        "rows": 2,
+        "cols": 2,
+        "cell": 1024
+      },
+      "canvas": 2048,
+      "chroma": "#FF00FF",
+      "slots": [
+        {
+          "index": 0,
+          "row": 1,
+          "col": 1,
+          "cell_px": [
+            0,
+            0,
+            1024,
+            1024
+          ],
+          "part_id": "hair_back_center",
+          "label_ko": "가운데 뒷머리",
+          "group": "hair",
+          "draw_order_band": "hair_back",
+          "target_bbox": [
+            839,
+            435,
+            1213,
+            1210
+          ],
+          "target_center": [
+            1026,
+            822
+          ],
+          "description": "hair back center — isolated part of the character (가운데 뒷머리), drawn alone"
+        },
+        {
+          "index": 1,
+          "row": 1,
+          "col": 2,
+          "cell_px": [
+            1024,
+            0,
+            2048,
+            1024
+          ],
+          "part_id": "hair_front_side_L",
+          "label_ko": "왼쪽 앞 옆머리",
+          "group": "hair",
+          "draw_order_band": "hair_front",
+          "target_bbox": [
+            712,
+            375,
+            912,
+            895
+          ],
+          "target_center": [
+            812,
+            635
+          ],
+          "description": "hair front side L — isolated part of the character (왼쪽 앞 옆머리), drawn alone"
+        },
+        {
+          "index": 2,
+          "row": 2,
+          "col": 1,
+          "cell_px": [
+            0,
+            1024,
+            1024,
+            2048
+          ],
+          "part_id": "hair_front_side_R",
+          "label_ko": "오른쪽 앞 옆머리",
+          "group": "hair",
+          "draw_order_band": "hair_front",
+          "target_bbox": [
+            1223,
+            375,
+            1351,
+            895
+          ],
+          "target_center": [
+            1287,
+            635
+          ],
+          "description": "hair front side R — isolated part of the character (오른쪽 앞 옆머리), drawn alone"
+        },
+        {
+          "index": 3,
+          "row": 2,
+          "col": 2,
+          "cell_px": [
+            1024,
+            1024,
+            2048,
+            2048
+          ],
+          "part_id": "hair_side_L_outer",
+          "label_ko": "왼쪽 바깥 옆머리",
+          "group": "hair",
+          "draw_order_band": "hair_side",
+          "target_bbox": [
+            696,
+            670,
+            737,
+            1151
+          ],
+          "target_center": [
+            716,
+            910
+          ],
+          "description": "hair side L outer — isolated part of the character (왼쪽 바깥 옆머리), drawn alone"
+        }
+      ],
+      "prompt": "Anime character PART SHEET for Live2D-style rigging. Square 2048x2048 image.\nThe ENTIRE background must be one flat solid magenta color #FF00FF with no gradient.\nImagine an invisible 2x2 grid of 1024px cells.\nDraw EXACTLY ONE isolated element per cell, centered in its cell, fully inside the cell\nwith generous margin; nothing may touch or cross cell boundaries.\nSTRICT: no text, no labels, no numbers, no grid lines, no boxes, no full character,\nno extra elements, no drop shadows on the background.\nEvery element must match the art style, line weight, colors and facial design of the\nattached reference character EXACTLY (same character).\nElements by cell (row, column), top-left is (1,1):\n- (1,1): hair back center — isolated part of the character (가운데 뒷머리), drawn alone\n- (1,2): hair front side L — isolated part of the character (왼쪽 앞 옆머리), drawn alone\n- (2,1): hair front side R — isolated part of the character (오른쪽 앞 옆머리), drawn alone\n- (2,2): hair side L outer — isolated part of the character (왼쪽 바깥 옆머리), drawn alone"
+    },
+    {
+      "sheet_id": "hair_large_03",
+      "family": "hair",
+      "grid": {
+        "rows": 2,
+        "cols": 2,
+        "cell": 1024
+      },
+      "canvas": 2048,
+      "chroma": "#FF00FF",
+      "slots": [
+        {
+          "index": 0,
+          "row": 1,
+          "col": 1,
+          "cell_px": [
+            0,
+            0,
+            1024,
+            1024
+          ],
+          "part_id": "hair_side_R_outer",
+          "label_ko": "오른쪽 바깥 옆머리",
+          "group": "hair",
+          "draw_order_band": "hair_side",
+          "target_bbox": [
+            1328,
+            675,
+            1509,
+            1190
+          ],
+          "target_center": [
+            1418,
+            932
+          ],
+          "description": "hair side R outer — isolated part of the character (오른쪽 바깥 옆머리), drawn alone"
+        }
+      ],
+      "prompt": "Anime character PART SHEET for Live2D-style rigging. Square 2048x2048 image.\nThe ENTIRE background must be one flat solid magenta color #FF00FF with no gradient.\nImagine an invisible 2x2 grid of 1024px cells.\nDraw EXACTLY ONE isolated element per cell, centered in its cell, fully inside the cell\nwith generous margin; nothing may touch or cross cell boundaries.\nSTRICT: no text, no labels, no numbers, no grid lines, no boxes, no full character,\nno extra elements, no drop shadows on the background.\nEvery element must match the art style, line weight, colors and facial design of the\nattached reference character EXACTLY (same character).\nElements by cell (row, column), top-left is (1,1):\n- (1,1): hair side R outer — isolated part of the character (오른쪽 바깥 옆머리), drawn alone"
+    },
+    {
+      "sheet_id": "body_small_01",
+      "family": "body",
+      "grid": {
+        "rows": 4,
+        "cols": 4,
+        "cell": 512
+      },
+      "canvas": 2048,
+      "chroma": "#FF00FF",
+      "slots": [
+        {
+          "index": 0,
+          "row": 1,
+          "col": 1,
+          "cell_px": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "part_id": "neck",
+          "label_ko": "목",
+          "group": "body",
+          "draw_order_band": "body_mid",
+          "target_bbox": [
+            894,
+            701,
+            1179,
+            1090
+          ],
+          "target_center": [
+            1036,
+            896
+          ],
+          "description": "neck — isolated part of the character (목), drawn alone"
+        },
+        {
+          "index": 1,
+          "row": 1,
+          "col": 2,
+          "cell_px": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "part_id": "neck_shadow_underpaint",
+          "label_ko": "목 그림자 밑색",
+          "group": "body",
+          "draw_order_band": "body_back",
+          "target_bbox": [
+            802,
+            910,
+            1248,
+            1331
+          ],
+          "target_center": [
+            1025,
+            1120
+          ],
+          "description": "neck shadow underpaint — isolated part of the character (목 그림자 밑색), drawn alone"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 3,
+          "cell_px": [
+            1024,
+            0,
+            1536,
+            512
+          ],
+          "part_id": "shoulder_L",
+          "label_ko": "왼쪽 어깨",
+          "group": "body",
+          "draw_order_band": "body_mid",
+          "target_bbox": [
+            565,
+            993,
+            870,
+            1226
+          ],
+          "target_center": [
+            718,
+            1110
+          ],
+          "description": "shoulder L — isolated part of the character (왼쪽 어깨), drawn alone"
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "col": 4,
+          "cell_px": [
+            1536,
+            0,
+            2048,
+            512
+          ],
+          "part_id": "shoulder_R",
+          "label_ko": "오른쪽 어깨",
+          "group": "body",
+          "draw_order_band": "body_mid",
+          "target_bbox": [
+            1197,
+            996,
+            1456,
+            1229
+          ],
+          "target_center": [
+            1326,
+            1112
+          ],
+          "description": "shoulder R — isolated part of the character (오른쪽 어깨), drawn alone"
+        }
+      ],
+      "prompt": "Anime character PART SHEET for Live2D-style rigging. Square 2048x2048 image.\nThe ENTIRE background must be one flat solid magenta color #FF00FF with no gradient.\nImagine an invisible 4x4 grid of 512px cells.\nDraw EXACTLY ONE isolated element per cell, centered in its cell, fully inside the cell\nwith generous margin; nothing may touch or cross cell boundaries.\nSTRICT: no text, no labels, no numbers, no grid lines, no boxes, no full character,\nno extra elements, no drop shadows on the background.\nEvery element must match the art style, line weight, colors and facial design of the\nattached reference character EXACTLY (same character).\nElements by cell (row, column), top-left is (1,1):\n- (1,1): neck — isolated part of the character (목), drawn alone\n- (1,2): neck shadow underpaint — isolated part of the character (목 그림자 밑색), drawn alone\n- (1,3): shoulder L — isolated part of the character (왼쪽 어깨), drawn alone\n- (1,4): shoulder R — isolated part of the character (오른쪽 어깨), drawn alone"
+    },
+    {
+      "sheet_id": "body_large_01",
+      "family": "body",
+      "grid": {
+        "rows": 2,
+        "cols": 2,
+        "cell": 1024
+      },
+      "canvas": 2048,
+      "chroma": "#FF00FF",
+      "slots": [
+        {
+          "index": 0,
+          "row": 1,
+          "col": 1,
+          "cell_px": [
+            0,
+            0,
+            1024,
+            1024
+          ],
+          "part_id": "body_underpaint",
+          "label_ko": "몸 밑색",
+          "group": "body",
+          "draw_order_band": "body_back",
+          "target_bbox": [
+            355,
+            1136,
+            1694,
+            2048
+          ],
+          "target_center": [
+            1024,
+            1592
+          ],
+          "description": "body underpaint — isolated part of the character (몸 밑색), drawn alone"
+        },
+        {
+          "index": 1,
+          "row": 1,
+          "col": 2,
+          "cell_px": [
+            1024,
+            0,
+            2048,
+            1024
+          ],
+          "part_id": "torso_base",
+          "label_ko": "상체 기본",
+          "group": "body",
+          "draw_order_band": "body_mid",
+          "target_bbox": [
+            604,
+            884,
+            1474,
+            1865
+          ],
+          "target_center": [
+            1039,
+            1374
+          ],
+          "description": "torso base — isolated part of the character (상체 기본), drawn alone"
+        },
+        {
+          "index": 2,
+          "row": 2,
+          "col": 1,
+          "cell_px": [
+            0,
+            1024,
+            1024,
+            2048
+          ],
+          "part_id": "arm_L_upper_simple",
+          "label_ko": "왼쪽 간단 팔",
+          "group": "body",
+          "draw_order_band": "body_front",
+          "target_bbox": [
+            485,
+            1112,
+            696,
+            1785
+          ],
+          "target_center": [
+            590,
+            1448
+          ],
+          "description": "arm L upper simple — isolated part of the character (왼쪽 간단 팔), drawn alone"
+        },
+        {
+          "index": 3,
+          "row": 2,
+          "col": 2,
+          "cell_px": [
+            1024,
+            1024,
+            2048,
+            2048
+          ],
+          "part_id": "arm_R_upper_simple",
+          "label_ko": "오른쪽 간단 팔",
+          "group": "body",
+          "draw_order_band": "body_front",
+          "target_bbox": [
+            1335,
+            1115,
+            1521,
+            1786
+          ],
+          "target_center": [
+            1428,
+            1450
+          ],
+          "description": "arm R upper simple — isolated part of the character (오른쪽 간단 팔), drawn alone"
+        }
+      ],
+      "prompt": "Anime character PART SHEET for Live2D-style rigging. Square 2048x2048 image.\nThe ENTIRE background must be one flat solid magenta color #FF00FF with no gradient.\nImagine an invisible 2x2 grid of 1024px cells.\nDraw EXACTLY ONE isolated element per cell, centered in its cell, fully inside the cell\nwith generous margin; nothing may touch or cross cell boundaries.\nSTRICT: no text, no labels, no numbers, no grid lines, no boxes, no full character,\nno extra elements, no drop shadows on the background.\nEvery element must match the art style, line weight, colors and facial design of the\nattached reference character EXACTLY (same character).\nElements by cell (row, column), top-left is (1,1):\n- (1,1): body underpaint — isolated part of the character (몸 밑색), drawn alone\n- (1,2): torso base — isolated part of the character (상체 기본), drawn alone\n- (2,1): arm L upper simple — isolated part of the character (왼쪽 간단 팔), drawn alone\n- (2,2): arm R upper simple — isolated part of the character (오른쪽 간단 팔), drawn alone"
+    },
+    {
+      "sheet_id": "body_large_02",
+      "family": "body",
+      "grid": {
+        "rows": 2,
+        "cols": 2,
+        "cell": 1024
+      },
+      "canvas": 2048,
+      "chroma": "#FF00FF",
+      "slots": [
+        {
+          "index": 0,
+          "row": 1,
+          "col": 1,
+          "cell_px": [
+            0,
+            0,
+            1024,
+            1024
+          ],
+          "part_id": "arm_L_underpaint",
+          "label_ko": "왼팔 밑색",
+          "group": "body",
+          "draw_order_band": "body_back",
+          "target_bbox": [
+            352,
+            1182,
+            709,
+            2048
+          ],
+          "target_center": [
+            530,
+            1615
+          ],
+          "description": "arm L underpaint — isolated part of the character (왼팔 밑색), drawn alone"
+        },
+        {
+          "index": 1,
+          "row": 1,
+          "col": 2,
+          "cell_px": [
+            1024,
+            0,
+            2048,
+            1024
+          ],
+          "part_id": "arm_R_underpaint",
+          "label_ko": "오른팔 밑색",
+          "group": "body",
+          "draw_order_band": "body_back",
+          "target_bbox": [
+            1340,
+            1182,
+            1697,
+            2048
+          ],
+          "target_center": [
+            1518,
+            1615
+          ],
+          "description": "arm R underpaint — isolated part of the character (오른팔 밑색), drawn alone"
+        }
+      ],
+      "prompt": "Anime character PART SHEET for Live2D-style rigging. Square 2048x2048 image.\nThe ENTIRE background must be one flat solid magenta color #FF00FF with no gradient.\nImagine an invisible 2x2 grid of 1024px cells.\nDraw EXACTLY ONE isolated element per cell, centered in its cell, fully inside the cell\nwith generous margin; nothing may touch or cross cell boundaries.\nSTRICT: no text, no labels, no numbers, no grid lines, no boxes, no full character,\nno extra elements, no drop shadows on the background.\nEvery element must match the art style, line weight, colors and facial design of the\nattached reference character EXACTLY (same character).\nElements by cell (row, column), top-left is (1,1):\n- (1,1): arm L underpaint — isolated part of the character (왼팔 밑색), drawn alone\n- (1,2): arm R underpaint — isolated part of the character (오른팔 밑색), drawn alone"
+    },
+    {
+      "sheet_id": "clothing_large_01",
+      "family": "clothing",
+      "grid": {
+        "rows": 2,
+        "cols": 2,
+        "cell": 1024
+      },
+      "canvas": 2048,
+      "chroma": "#FF00FF",
+      "slots": [
+        {
+          "index": 0,
+          "row": 1,
+          "col": 1,
+          "cell_px": [
+            0,
+            0,
+            1024,
+            1024
+          ],
+          "part_id": "collar_front",
+          "label_ko": "앞깃",
+          "group": "clothing",
+          "draw_order_band": "clothing_front",
+          "target_bbox": [
+            752,
+            1078,
+            1304,
+            1198
+          ],
+          "target_center": [
+            1028,
+            1138
+          ],
+          "description": "collar front — isolated part of the character (앞깃), drawn alone"
+        },
+        {
+          "index": 1,
+          "row": 1,
+          "col": 2,
+          "cell_px": [
+            1024,
+            0,
+            2048,
+            1024
+          ],
+          "part_id": "collar_shadow",
+          "label_ko": "깃 그림자",
+          "group": "clothing",
+          "draw_order_band": "clothing_mid",
+          "target_bbox": [
+            745,
+            1177,
+            1288,
+            1270
+          ],
+          "target_center": [
+            1016,
+            1224
+          ],
+          "description": "collar shadow — isolated part of the character (깃 그림자), drawn alone"
+        },
+        {
+          "index": 2,
+          "row": 2,
+          "col": 1,
+          "cell_px": [
+            0,
+            1024,
+            1024,
+            2048
+          ],
+          "part_id": "chest_cloth_base",
+          "label_ko": "가슴 의상 기본",
+          "group": "clothing",
+          "draw_order_band": "clothing_mid",
+          "target_bbox": [
+            721,
+            1245,
+            1374,
+            1545
+          ],
+          "target_center": [
+            1048,
+            1395
+          ],
+          "description": "chest cloth base — isolated part of the character (가슴 의상 기본), drawn alone"
+        },
+        {
+          "index": 3,
+          "row": 2,
+          "col": 2,
+          "cell_px": [
+            1024,
+            1024,
+            2048,
+            2048
+          ],
+          "part_id": "chest_cloth_shadow",
+          "label_ko": "가슴 의상 그림자",
+          "group": "clothing",
+          "draw_order_band": "clothing_front",
+          "target_bbox": [
+            697,
+            1482,
+            1372,
+            1648
+          ],
+          "target_center": [
+            1034,
+            1565
+          ],
+          "description": "chest cloth shadow — isolated part of the character (가슴 의상 그림자), drawn alone"
+        }
+      ],
+      "prompt": "Anime character PART SHEET for Live2D-style rigging. Square 2048x2048 image.\nThe ENTIRE background must be one flat solid magenta color #FF00FF with no gradient.\nImagine an invisible 2x2 grid of 1024px cells.\nDraw EXACTLY ONE isolated element per cell, centered in its cell, fully inside the cell\nwith generous margin; nothing may touch or cross cell boundaries.\nSTRICT: no text, no labels, no numbers, no grid lines, no boxes, no full character,\nno extra elements, no drop shadows on the background.\nEvery element must match the art style, line weight, colors and facial design of the\nattached reference character EXACTLY (same character).\nElements by cell (row, column), top-left is (1,1):\n- (1,1): collar front — isolated part of the character (앞깃), drawn alone\n- (1,2): collar shadow — isolated part of the character (깃 그림자), drawn alone\n- (2,1): chest cloth base — isolated part of the character (가슴 의상 기본), drawn alone\n- (2,2): chest cloth shadow — isolated part of the character (가슴 의상 그림자), drawn alone"
+    }
+  ]
+}

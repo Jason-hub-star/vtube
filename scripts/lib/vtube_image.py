@@ -63,6 +63,27 @@ def build_contact_sheet(
     return out_path
 
 
+def compose_layers(layer_paths: list[Path], out_path: Path) -> Path | None:
+    """풀캔버스 RGBA 레이어들을 주어진 순서대로 알파 합성한다 (아래가 먼저).
+
+    검수 단위 규칙: 휴먼 시각 검수는 낱장이 아니라 이 합성 결과로 한다.
+    """
+    canvas = None
+    for path in layer_paths:
+        try:
+            layer = Image.open(path).convert("RGBA")
+        except Exception:
+            continue
+        if canvas is None:
+            canvas = Image.new("RGBA", layer.size, (0, 0, 0, 0))
+        canvas.alpha_composite(layer)
+    if canvas is None:
+        return None
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    canvas.save(out_path)
+    return out_path
+
+
 def image_diff_metrics(base_path: Path, target_path: Path, threshold: int = 18) -> dict[str, Any]:
     """두 이미지의 변화량 수치 (changed_ratio/bbox 등). 모션·배치 검증용."""
     with Image.open(base_path) as base_raw, Image.open(target_path) as target_raw:
