@@ -122,6 +122,39 @@ def main() -> int:
         sources.append((pid, path, order))
     sources.sort(key=lambda s: s[2])
 
+    # v0.1: 생성 입 내부를 "원본 mouth_line bbox"에서 파생한 위치/크기로 재정합한다.
+    # (옛 v22 좌표 그대로 쓰면 과대 — 픽셀-가이드 원칙: 위치·크기는 원본에서)
+    mouth_line_src = next((s for s in sources if s[0] == "mouth_line"), None)
+    mouth_ref_bbox = None
+    if mouth_line_src is not None:
+        mouth_ref_bbox, _ = alpha_stats(mouth_line_src[1])
+
+    def realign_mouth_internal(src: Path, width_factor: float, top_offset_factor: float) -> Path:
+        """입 내부 레이어를 원본 입라인 기준으로 재배치한 새 PNG를 만든다."""
+        mx, my, mw, mh = mouth_ref_bbox
+        img = Image.open(src).convert("RGBA")
+        arr = np.asarray(img)
+        mask = arr[..., 3] > 8
+        ys, xs = np.where(mask)
+        crop = img.crop((int(xs.min()), int(ys.min()), int(xs.max()) + 1, int(ys.max()) + 1))
+        target_w = max(8, round(mw * width_factor))
+        scale = target_w / crop.width
+        crop = crop.resize((target_w, max(4, round(crop.height * scale))), Image.LANCZOS)
+        canvas = Image.new("RGBA", (CANVAS, CANVAS), (0, 0, 0, 0))
+        cx = mx + mw / 2
+        top = my + round(mh * top_offset_factor)
+        canvas.alpha_composite(crop, (round(cx - crop.width / 2), top))
+        out_path = src.parent / f"realigned_{src.name}"
+        canvas.save(out_path)
+        return out_path
+
+    if mouth_ref_bbox is not None:
+        factors = {"mouth_inner": (1.0, 0.0), "mouth_teeth": (0.8, 0.05), "mouth_tongue": (0.7, 0.35)}
+        sources = [
+            (pid, realign_mouth_internal(path, *factors[pid]) if pid in factors else path, order)
+            for pid, path, order in sources
+        ]
+
     parts, meshes = [], []
     bbox_by_id: dict[str, list[int]] = {}
     for pid, src, order in sources:
