@@ -24,7 +24,8 @@ from run_mouth_open_experiment import bbox_of  # noqa: E402
 STATES = [("closed", 0, 0), ("small", 0, 1), ("mid", 1, 0), ("wide", 1, 1)]
 LIP_WIDTH_IN_PATCH = 0.65   # (트림 후) 패치 폭 대비 입술 폭 추정
 LIP_Y_IN_PATCH = 0.17       # (트림 후) 패치 높이 대비 입라인 위치 추정
-SCALE_MARGIN = 1.06
+SCALE_MARGIN = 0.97         # v21 교훈: wide-open 절제 — 활짝 입이 턱선을 침범하지 않게
+CHIN_GUARD_PX = 6           # 턱선 위 보호 마진 (이 아래로는 패치 알파 강제 0)
 FEATHER_PX = 18
 TRIM_TOP = 0.30             # 패치 상단 피부(코 근처) 잘라내기 — 경계 띠가 얼굴을 가로지르지 않게
 TRIM_SIDE = 0.10
@@ -53,6 +54,12 @@ def main() -> int:
     )
     skin_band = assembly[int(my1 + 8) : int(my1 + 30), int(mx0) : int(mx1)].reshape(-1, 3)
     face_skin = np.median(skin_band, axis=0)
+
+    # 원본 턱선(검은 스트로크) y 측정: 입 아래 중앙 컬럼들에서 가장 어두운 행
+    search = assembly[int(my1 + 12) : int(my1 + mouth_w), int(mouth_cx - mouth_w * 0.25) : int(mouth_cx + mouth_w * 0.25)]
+    lum = search.mean(axis=(1, 2))
+    chin_line_y = int(my1 + 12 + int(np.argmin(lum)))
+    print(f"chin line y = {chin_line_y} (입라인 {int(lip_y)}, 보호 컷 {chin_line_y - CHIN_GUARD_PX})")
 
     written = []
     shared = None  # 첫 상태(closed)의 변환을 전 상태에 공유 — 상태 간 정합
@@ -116,6 +123,14 @@ def main() -> int:
         px = round(mouth_cx - patch.width / 2)
         py = round(lip_y - patch.height * LIP_Y_IN_PATCH)
         canvas.alpha_composite(patch, (px, py))
+        # 턱선 보호: 턱선 위 가드라인 아래는 어떤 상태든 알파 강제 0 (10px 페더)
+        arr = np.asarray(canvas).copy()
+        guard = chin_line_y - CHIN_GUARD_PX
+        fade = np.ones(2048, dtype=np.float64)
+        fade[max(0, guard - 10) : guard] = np.linspace(1.0, 0.0, guard - max(0, guard - 10))
+        fade[guard:] = 0.0
+        arr[..., 3] = (arr[..., 3].astype(np.float64) * fade[:, None]).astype(np.uint8)
+        canvas = Image.fromarray(arr, "RGBA")
         path = out / f"mouth_state_{name}.png"
         canvas.save(path)
         written.append(path.name)
