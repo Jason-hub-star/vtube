@@ -64,6 +64,19 @@ def deformer_of(pid: str) -> str:
     return "body_warp"  # 몸/의상: BodyAngle·Breath 담당
 
 
+def build_vertex_weights(meshes: list[dict], bbox_by_id: dict) -> list[dict]:
+    """물리 정점 가중 (v0-3 검증 포맷) — 머리 덩어리: 뿌리(상단) 0 → 끝(하단) 1."""
+    out = []
+    for pid in ("hair_front_L", "hair_front_C", "hair_front_R", "hair_back_L", "hair_back_R"):
+        if pid not in bbox_by_id:
+            continue
+        x, y, w, h = bbox_by_id[pid]
+        mesh = next(m for m in meshes if m["part_id"] == pid)
+        weights = [round(max(0.0, min(1.0, (vy - y) / max(h, 1))), 4) for _, vy in mesh["vertices"]]
+        out.append({"part_id": pid, "weight_kind": "root_to_tip_vertical", "weights": weights})
+    return out
+
+
 def grid_mesh(part_id: str, bbox: list[int], cols: int, rows: int) -> dict:
     x0, y0 = bbox[0], bbox[1]
     x1, y1 = bbox[0] + bbox[2], bbox[1] + bbox[3]
@@ -222,8 +235,25 @@ def main() -> int:
                 "deformer_node": deformer_of(pid),
             }
         )
-        big = pid in ("face_base", "back_hair", "front_hair", "clothes")
-        mesh = grid_mesh(pid, bbox, 6 if big else 5, 6 if big else 4)
+        big = pid in ("face_base", "back_hair", "front_hair", "clothes") or pid.startswith(("hair_front_", "hair_back_"))
+        mesh = grid_mesh(pid, bbox, 6 if big else 5, 6 if big else 4)  # MESH-DEFORM: 휨 밀도 vs 렌더 비용 균형
+        # 렌더 비용 절감: 알파가 완전히 빈 삼각형 제거 (bbox 모서리 투명 영역)
+        part_alpha = np.asarray(Image.open(dest).convert("RGBA"))[..., 3]
+        def tri_active(tri):
+            pts = [mesh["vertices"][i] for i in tri]
+            cx = sum(p[0] for p in pts) / 3
+            cy = sum(p[1] for p in pts) / 3
+            for sx, sy in pts + [[cx, cy]]:
+                xi = min(int(sx), part_alpha.shape[1] - 1)
+                yi = min(int(sy), part_alpha.shape[0] - 1)
+                y0s, y1s = max(0, yi - 40), min(part_alpha.shape[0], yi + 40)
+                x0s, x1s = max(0, xi - 40), min(part_alpha.shape[1], xi + 40)
+                if (part_alpha[y0s:y1s, x0s:x1s] > 8).any():
+                    return True
+            return False
+        culled = [tri for tri in mesh["triangles"] if tri_active(tri)]
+        if culled:  # 전멸 시(완전 빈 파트) 원본 유지 — validator 요구
+            mesh["triangles"] = culled
         meshes.append(mesh)
         write_json(out / mesh["mesh_path"], mesh)
 
@@ -236,10 +266,14 @@ def main() -> int:
         return [x0, y0, x1 - x0, y1 - y0]
 
     body_bounds = pad_bounds(union_bbox("neck", "clothes", "L_arm", "R_arm", "choker", "raw_bottomwear"), 40)
+    # MESH-DEFORM: head 격자가 턱·목 상단을 덮어야 edge-pin 연속이 목으로 이어진다
+    def extend_down(b: list[int], px: int) -> list[int]:
+        return [b[0], b[1], b[2], min(CANVAS - b[1], b[3] + px)]
+
     eye_l_bounds = pad_bounds(union_bbox("L_eye_white", "L_iris", "L_upper_lash", "eye_L_closed_lid"), 30)
     eye_r_bounds = pad_bounds(union_bbox("R_eye_white", "R_iris", "R_upper_lash", "eye_R_closed_lid"), 30)
     mouth_bounds = pad_bounds(union_bbox("mouth_line", "mouth_inner", "mouth_teeth"), 40)
-    head_bounds = pad_bounds(union_bbox("face_base", "front_hair", "L_brow", "R_brow", "mouth_line"), 60)
+    head_bounds = extend_down(pad_bounds(union_bbox("face_base", "front_hair", "L_brow", "R_brow", "mouth_line"), 60), 160)
     if use_hair_chunks:
         hair_bounds = pad_bounds(union_bbox("hair_front_L", "hair_front_C", "hair_front_R"), 30)
         back_hair_bounds = pad_bounds(union_bbox("hair_back_L", "hair_back_R"), 30)
@@ -255,16 +289,18 @@ def main() -> int:
     for part in parts:
         children.setdefault(part["deformer_node"], []).append(part["id"])
 
+    neck_bounds = pad_bounds(union_bbox("neck", "choker", "neck_under") if "neck_under" in bbox_by_id else union_bbox("neck", "choker"), 30)
     deformers = [
-        {"id": "root_warp", "type": "warp", "parent_id": None, "child_ids": children.get("root_warp", []), "bounds": [0, 0, CANVAS, CANVAS], "pivot": [1024, 1024]},
-        {"id": "body_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("body_warp", []), "bounds": body_bounds, "pivot": center(body_bounds)},
-        {"id": "neck_warp", "type": "warp", "parent_id": "body_warp", "child_ids": children.get("neck_warp", []), "bounds": pad_bounds(union_bbox("neck", "choker"), 30), "pivot": center(pad_bounds(union_bbox("neck", "choker"), 30))},
-        {"id": "head_angle_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("head_angle_warp", []), "bounds": head_bounds, "pivot": center(head_bounds)},
-        {"id": "eye_L_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("eye_L_warp", []), "bounds": eye_l_bounds, "pivot": center(eye_l_bounds)},
-        {"id": "eye_R_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("eye_R_warp", []), "bounds": eye_r_bounds, "pivot": center(eye_r_bounds)},
-        {"id": "mouth_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("mouth_warp", []), "bounds": mouth_bounds, "pivot": center(mouth_bounds)},
-        {"id": "front_hair_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("front_hair_warp", []), "bounds": hair_bounds, "pivot": center(hair_bounds)},
-        {"id": "back_hair_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("back_hair_warp", []), "bounds": back_hair_bounds, "pivot": center(back_hair_bounds)},
+        # lattice/edge_pinned: FFD 격자 (공식 워프 메커니즘). edge_pinned=경계 연결, false=전역 이동.
+        {"id": "root_warp", "type": "warp", "parent_id": None, "child_ids": children.get("root_warp", []), "bounds": [0, 0, CANVAS, CANVAS], "pivot": [1024, 1024], "lattice": {"cols": 3, "rows": 3}, "edge_pinned": False},
+        {"id": "body_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("body_warp", []), "bounds": body_bounds, "pivot": center(body_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": False},
+        {"id": "head_angle_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("head_angle_warp", []), "bounds": head_bounds, "pivot": center(head_bounds), "lattice": {"cols": 7, "rows": 7}, "edge_pinned": True},
+        {"id": "neck_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("neck_warp", []), "bounds": neck_bounds, "pivot": center(neck_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
+        {"id": "eye_L_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("eye_L_warp", []), "bounds": eye_l_bounds, "pivot": center(eye_l_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
+        {"id": "eye_R_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("eye_R_warp", []), "bounds": eye_r_bounds, "pivot": center(eye_r_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
+        {"id": "mouth_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("mouth_warp", []), "bounds": mouth_bounds, "pivot": center(mouth_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
+        {"id": "front_hair_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("front_hair_warp", []), "bounds": hair_bounds, "pivot": center(hair_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
+        {"id": "back_hair_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("back_hair_warp", []), "bounds": back_hair_bounds, "pivot": center(back_hair_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
     ]
 
     parameters = [
@@ -298,10 +334,7 @@ def main() -> int:
         binding("ParamAngleX", 30, "head_angle_warp", tx=22),
         binding("ParamAngleY", -30, "head_angle_warp", ty=-12),
         binding("ParamAngleY", 30, "head_angle_warp", ty=12),
-        binding("ParamAngleX", -30, "neck_warp", tx=-8),
-        binding("ParamAngleX", 30, "neck_warp", tx=8),
-        binding("ParamAngleY", -30, "neck_warp", ty=-4),
-        binding("ParamAngleY", 30, "neck_warp", ty=4),
+        # 목 추종은 FFD 체인(head 격자 edge-pin 페이드)이 자동 처리 — 수동 바인딩 제거
         binding_r("ParamAngleZ", -30, "head_angle_warp", rotate=-10),
         binding_r("ParamAngleZ", 30, "head_angle_warp", rotate=10),
         binding_r("ParamBodyAngleX", -10, "body_warp", tx=-8, rotate=-1.2),
@@ -427,6 +460,7 @@ def main() -> int:
         "parameters": parameters,
         "keyform_bindings": keyform_bindings,
         "physics_profiles": physics_profiles,
+        "vertex_weights": build_vertex_weights(meshes, bbox_by_id),
         "part_opacity_keyframes": part_opacity_keyframes,
         "glue": [],
         "notes": ["AUTORIG P3 v0 — 자동 생성 리그"],
@@ -440,6 +474,7 @@ def main() -> int:
         "keyform_overrides": [],
         "clipping": {"enabled": True, "pairs": {"L_eye_white": ["L_iris"], "R_eye_white": ["R_iris"]}},
         "eye_socket_covers": {"enabled": False},
+        "render_mode": "mesh",  # MESH-DEFORM-001 (sprite로 바꾸면 폴백)
         "notes": ["autorig v0"],
     }
     write_json(out / "mini_rig.json", mini_rig)

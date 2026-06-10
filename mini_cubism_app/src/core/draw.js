@@ -1,6 +1,6 @@
 // 캔버스 렌더러. #preview-canvas에 그린다 — 서비스 플레이어가 그대로 쓴다.
 
-import { deformerTransform, ensureEyeSocketCoverConfig, ensureEyeSocketCovers, inferredEyeSocketCoverBbox, partOpacity, partTransform } from "../core/rig.js";
+import { beginLatticeFrame, deformedVertices, deformerTransform, ensureEyeSocketCoverConfig, ensureEyeSocketCovers, inferredEyeSocketCoverBbox, partOpacity, partTransform } from "../core/rig.js";
 import { state } from "../core/state.js";
 import { bboxCenter, clamp } from "../core/utils.js";
 import { coverHandlePoints } from "../ui/pointer.js";
@@ -15,9 +15,12 @@ function draw() {
   ctx.fillStyle = "#f4f0e8";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
+  beginLatticeFrame();
+  const meshMode = state.rig?.render_mode === "mesh";
   const parts = [...project.parts].sort((a, b) => a.draw_order - b.draw_order);
   for (const part of parts) {
-    drawPart(ctx, project, part);
+    if (meshMode && !clippedByEyeWhite(part.id)) drawPartMesh(ctx, project, part);
+    else drawPart(ctx, project, part);
     if (part.id === "face_base") drawEyeSocketCovers(ctx, project);
   }
   if (state.overlays.deformers) drawDeformers(ctx, project);
@@ -49,6 +52,120 @@ function drawPart(ctx, project, part) {
     ctx.strokeRect(x - center[0], y - center[1], w, h);
   }
   ctx.restore();
+}
+
+// MESH-DEFORM-001: 삼각형 텍스처 매핑 렌더 — FFD 격자로 변형된 정점을 따라 파트가 "휜다"
+function drawPartMesh(ctx, project, part) {
+  const image = state.images.get(part.id);
+  if (!image) return;
+  const mesh = project.meshes.find((item) => item.part_id === part.id);
+  if (!mesh || !mesh.triangles?.length) {
+    drawPart(ctx, project, part);
+    return;
+  }
+  const opacity = partOpacity(project, part);
+  if (opacity <= 0.01) return;
+  const verts = deformedVertices(project, part, mesh);
+  // 고속 경로: 변위가 사실상 0이면 통짜 드로우 (중립 = 스프라이트와 픽셀 동일 보장)
+  let maxDisp = 0;
+  for (let i = 0; i < verts.length; i += 1) {
+    const dx = Math.abs(verts[i][0] - mesh.vertices[i][0]);
+    const dy = Math.abs(verts[i][1] - mesh.vertices[i][1]);
+    if (dx > maxDisp) maxDisp = dx;
+    if (dy > maxDisp) maxDisp = dy;
+  }
+  const drawSelection = () => {
+    if (part.id !== state.selectedPartId) return;
+    ctx.save();
+    ctx.strokeStyle = "#ffcc33";
+    ctx.lineWidth = 5;
+    const [x, y, w, h] = part.bbox;
+    ctx.strokeRect(x, y, w, h);
+    ctx.restore();
+  };
+  if (maxDisp < 0.05) {
+    ctx.save();
+    ctx.globalAlpha = opacity;
+    ctx.drawImage(image, 0, 0, project.canvas_size[0], project.canvas_size[1]);
+    ctx.restore();
+    drawSelection();
+    return;
+  }
+  // 어파인 고속 경로: 파트 전체 변위가 하나의 어파인으로 근사되면 (소형 파트 대부분)
+  // 삼각형 클립 없이 단일 변환 드로우 — 격자 위치는 그대로 따른다
+  const src = mesh.vertices;
+  {
+    const n = src.length;
+    const p0 = 0;
+    const p1 = Math.min(n - 1, Math.max(1, Math.round(Math.sqrt(n)) - 1)); // 첫 행 끝
+    const p2 = n - 1;
+    const s0 = src[p0]; const s1 = src[p1]; const s2 = src[p2];
+    const d0 = verts[p0]; const d1 = verts[p1]; const d2 = verts[p2];
+    const denom = (s1[0] - s0[0]) * (s2[1] - s0[1]) - (s2[0] - s0[0]) * (s1[1] - s0[1]);
+    if (Math.abs(denom) > 1e-6) {
+      const a = ((d1[0] - d0[0]) * (s2[1] - s0[1]) - (d2[0] - d0[0]) * (s1[1] - s0[1])) / denom;
+      const b = ((d1[1] - d0[1]) * (s2[1] - s0[1]) - (d2[1] - d0[1]) * (s1[1] - s0[1])) / denom;
+      const c = ((d2[0] - d0[0]) * (s1[0] - s0[0]) - (d1[0] - d0[0]) * (s2[0] - s0[0])) / denom;
+      const d = ((d2[1] - d0[1]) * (s1[0] - s0[0]) - (d1[1] - d0[1]) * (s2[0] - s0[0])) / denom;
+      const e = d0[0] - a * s0[0] - c * s0[1];
+      const f = d0[1] - b * s0[0] - d * s0[1];
+      let residual = 0;
+      for (let i = 0; i < n; i += 1) {
+        const px = a * src[i][0] + c * src[i][1] + e;
+        const py = b * src[i][0] + d * src[i][1] + f;
+        residual = Math.max(residual, Math.abs(px - verts[i][0]), Math.abs(py - verts[i][1]));
+        if (residual > 0.75) break;
+      }
+      if (residual <= 0.75) {
+        ctx.save();
+        ctx.globalAlpha = opacity;
+        ctx.transform(a, b, c, d, e, f);
+        const [bx, by, bw, bh] = part.bbox;
+        ctx.drawImage(image, bx, by, bw, bh, bx, by, bw, bh);
+        ctx.restore();
+        drawSelection();
+        return;
+      }
+    }
+  }
+  ctx.save();
+  ctx.globalAlpha = opacity;
+  for (const [i0, i1, i2] of mesh.triangles) {
+    const s0 = src[i0]; const s1 = src[i1]; const s2 = src[i2];
+    const d0 = verts[i0]; const d1 = verts[i1]; const d2 = verts[i2];
+    // 어파인 행렬: src 삼각형 → dst 삼각형
+    const denom = (s1[0] - s0[0]) * (s2[1] - s0[1]) - (s2[0] - s0[0]) * (s1[1] - s0[1]);
+    if (Math.abs(denom) < 1e-6) continue;
+    const a = ((d1[0] - d0[0]) * (s2[1] - s0[1]) - (d2[0] - d0[0]) * (s1[1] - s0[1])) / denom;
+    const b = ((d1[1] - d0[1]) * (s2[1] - s0[1]) - (d2[1] - d0[1]) * (s1[1] - s0[1])) / denom;
+    const c = ((d2[0] - d0[0]) * (s1[0] - s0[0]) - (d1[0] - d0[0]) * (s2[0] - s0[0])) / denom;
+    const d = ((d2[1] - d0[1]) * (s1[0] - s0[0]) - (d1[1] - d0[1]) * (s2[0] - s0[0])) / denom;
+    const e = d0[0] - a * s0[0] - c * s0[1];
+    const f = d0[1] - b * s0[0] - d * s0[1];
+    // 이음새 방지: 삼각형을 무게중심 기준 1.5% 확장해 클립
+    const cx = (d0[0] + d1[0] + d2[0]) / 3;
+    const cy = (d0[1] + d1[1] + d2[1]) / 3;
+    const grow = (p) => [cx + (p[0] - cx) * 1.015, cy + (p[1] - cy) * 1.015];
+    const g0 = grow(d0); const g1 = grow(d1); const g2 = grow(d2);
+    ctx.save();
+    ctx.beginPath();
+    ctx.moveTo(g0[0], g0[1]);
+    ctx.lineTo(g1[0], g1[1]);
+    ctx.lineTo(g2[0], g2[1]);
+    ctx.closePath();
+    ctx.clip();
+    ctx.transform(a, b, c, d, e, f);
+    // 성능: 삼각형 소스 bbox 부분만 blit (풀캔버스 blit이 렌더 시간의 주범)
+    const pad = 2;
+    const sbx = Math.max(0, Math.min(s0[0], s1[0], s2[0]) - pad);
+    const sby = Math.max(0, Math.min(s0[1], s1[1], s2[1]) - pad);
+    const sbw = Math.min(project.canvas_size[0], Math.max(s0[0], s1[0], s2[0]) + pad) - sbx;
+    const sbh = Math.min(project.canvas_size[1], Math.max(s0[1], s1[1], s2[1]) + pad) - sby;
+    if (sbw > 0 && sbh > 0) ctx.drawImage(image, sbx, sby, sbw, sbh, sbx, sby, sbw, sbh);
+    ctx.restore();
+  }
+  ctx.restore();
+  drawSelection();
 }
 
 let clipTempCanvas = null; // 클리핑용 임시캔버스 캐시 (매 호출 신규 할당이 프레임 끊김의 주범이었다)

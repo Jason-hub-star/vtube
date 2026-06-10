@@ -346,4 +346,124 @@ function inferredEyeSocketCoverBbox(project, side) {
 }
 
 
-export { normalizeRig, partTransform, primaryDeformerForPart, deformerTransform, bindingTransform, sampleTransformKeyframes, identityDeltas, transformFromDeltas, interpolateTransform, identityTransform, mergeTransform, effectiveKeyformBindings, bindingKey, partOpacity, eyeOpenDetailOpacity, isNeutralVisualRepairKeyform, shouldSuppressNeutralPart, neutralActivationParametersForPart, isEyeBallDetailPart, parameterMoved, sampleOpacityKeyframes, setParameterValue, resetOtherPreviewParameterGroups, previewParameterGroup, bindingTransformFromProjectOnly, ensureEyeSocketCovers, ensureEyeSocketCoverConfig, inferredEyeSocketCoverBbox };
+// ---------------------------------------------------------------------------
+// MESH-DEFORM-001: FFD 격자 변형 (공식 Cubism 워프 메커니즘 이식)
+// 디포머 = bounds 위 제어점 격자. 바인딩 트랜스폼이 내부 제어점을 움직이고,
+// edge_pinned면 가장자리 링은 고정 (리거들의 공식 경계 연결 기법).
+// 정점 변위 = 격자 이중선형 보간, 부모→자식 체인 누적.
+// ---------------------------------------------------------------------------
+
+const latticeBaseCache = new Map(); // deformer.id → 기준 제어점들
+let latticeFrame = { id: 0, displaced: new Map() }; // draw 프레임당 변위 격자 캐시
+
+function beginLatticeFrame() {
+  latticeFrame = { id: latticeFrame.id + 1, displaced: new Map() };
+}
+
+function latticeBase(deformer) {
+  let entry = latticeBaseCache.get(deformer.id);
+  const cols = deformer.lattice?.cols ?? 5;
+  const rows = deformer.lattice?.rows ?? 5;
+  if (!entry) {
+    const [bx, by, bw, bh] = deformer.bounds;
+    const points = [];
+    for (let r = 0; r < rows; r += 1) {
+      for (let c = 0; c < cols; c += 1) {
+        points.push([bx + (bw * c) / (cols - 1), by + (bh * r) / (rows - 1)]);
+      }
+    }
+    entry = { points, cols, rows };
+    latticeBaseCache.set(deformer.id, entry);
+  }
+  return entry;
+}
+
+function latticeDisplaced(project, deformer) {
+  let displaced = latticeFrame.displaced.get(deformer.id);
+  if (displaced) return displaced;
+  const { points, cols, rows } = latticeBase(deformer);
+  const t = bindingTransform(project, deformer.id);
+  const pivot = deformer.pivot || [1024, 1024];
+  const rad = (t.rotate * Math.PI) / 180;
+  const cos = Math.cos(rad);
+  const sin = Math.sin(rad);
+  displaced = points.map(([x, y], i) => {
+    if (deformer.edge_pinned) {
+      const r = Math.floor(i / cols);
+      const c = i % cols;
+      if (r === 0 || c === 0 || r === rows - 1 || c === cols - 1) return [0, 0]; // 가장자리 고정
+    }
+    const dx = x - pivot[0];
+    const dy = y - pivot[1];
+    const nx = pivot[0] + (dx * cos - dy * sin) * t.scale[0] + t.translate[0];
+    const ny = pivot[1] + (dx * sin + dy * cos) * t.scale[1] + t.translate[1];
+    return [nx - x, ny - y];
+  });
+  latticeFrame.displaced.set(deformer.id, displaced);
+  return displaced;
+}
+
+function latticeDisplacementAt(project, deformer, vx, vy) {
+  const [bx, by, bw, bh] = deformer.bounds;
+  if (vx < bx || vy < by || vx > bx + bw || vy > by + bh) return [0, 0]; // 격자 밖 = 영향 없음
+  const { cols, rows } = latticeBase(deformer);
+  const displaced = latticeDisplaced(project, deformer);
+  const u = clamp(((vx - bx) / Math.max(bw, 1e-6)) * (cols - 1), 0, cols - 1 - 1e-6);
+  const v = clamp(((vy - by) / Math.max(bh, 1e-6)) * (rows - 1), 0, rows - 1 - 1e-6);
+  const c0 = Math.floor(u);
+  const r0 = Math.floor(v);
+  const fu = u - c0;
+  const fv = v - r0;
+  const idx = (r, c) => displaced[r * cols + c];
+  const d00 = idx(r0, c0);
+  const d01 = idx(r0, c0 + 1);
+  const d10 = idx(r0 + 1, c0);
+  const d11 = idx(r0 + 1, c0 + 1);
+  return [
+    lerp(lerp(d00[0], d01[0], fu), lerp(d10[0], d11[0], fu), fv),
+    lerp(lerp(d00[1], d01[1], fu), lerp(d10[1], d11[1], fu), fv),
+  ];
+}
+
+function deformerChain(project, partId) {
+  const leaf = primaryDeformerForPart(project, partId);
+  const chain = [];
+  let current = leaf;
+  while (current) {
+    chain.unshift(current);
+    current = project.deformers.find((candidate) => candidate.id === current.parent_id);
+  }
+  return chain;
+}
+
+function physicsVertexOffsets(partId, vertexCount) {
+  const project = state.project;
+  const weights = project?.vertex_weights?.find((item) => item.part_id === partId)?.weights || null;
+  const rigid = physicsTransformForPart(partId);
+  const offsets = new Array(vertexCount);
+  for (let i = 0; i < vertexCount; i += 1) {
+    const w = weights ? weights[i] ?? 1 : 1;
+    offsets[i] = [rigid.translate[0] * w, rigid.translate[1] * w];
+  }
+  return offsets;
+}
+
+function deformedVertices(project, part, mesh) {
+  const chain = deformerChain(project, part.id).filter((d) => d.parent_id !== undefined); // 전체 체인 (root 포함 — root는 바인딩 없으면 항등)
+  const partRigid = bindingTransform(project, part.id); // 파트 직접 바인딩(눈썹/홍채류)은 강체 적용
+  const physics = physicsVertexOffsets(part.id, mesh.vertices.length);
+  return mesh.vertices.map(([vx, vy], i) => {
+    let dx = 0;
+    let dy = 0;
+    for (const deformer of chain) {
+      const [ddx, ddy] = latticeDisplacementAt(project, deformer, vx, vy);
+      dx += ddx;
+      dy += ddy;
+    }
+    dx += partRigid.translate[0] + physics[i][0];
+    dy += partRigid.translate[1] + physics[i][1];
+    return [vx + dx, vy + dy];
+  });
+}
+
+export { normalizeRig, partTransform, primaryDeformerForPart, deformerTransform, bindingTransform, sampleTransformKeyframes, identityDeltas, transformFromDeltas, interpolateTransform, identityTransform, mergeTransform, effectiveKeyformBindings, bindingKey, partOpacity, eyeOpenDetailOpacity, isNeutralVisualRepairKeyform, shouldSuppressNeutralPart, neutralActivationParametersForPart, isEyeBallDetailPart, parameterMoved, sampleOpacityKeyframes, setParameterValue, resetOtherPreviewParameterGroups, previewParameterGroup, bindingTransformFromProjectOnly, ensureEyeSocketCovers, ensureEyeSocketCoverConfig, inferredEyeSocketCoverBbox, beginLatticeFrame, deformedVertices };

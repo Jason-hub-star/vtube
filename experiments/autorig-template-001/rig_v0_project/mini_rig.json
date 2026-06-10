@@ -17,6 +17,7 @@
   "eye_socket_covers": {
     "enabled": false
   },
+  "render_mode": "mesh",
   "notes": [
     "autorig v0"
   ]
