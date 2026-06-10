@@ -11,15 +11,18 @@ function draw() {
   if (!canvas || !state.project) return;
   const ctx = canvas.getContext("2d");
   const project = state.project;
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  const renderScale = state.renderScale || 1;
+  ctx.setTransform(renderScale, 0, 0, renderScale, 0, 0); // 좌표계는 2048 유지, 픽셀만 축소
+  ctx.clearRect(0, 0, project.canvas_size[0], project.canvas_size[1]);
   ctx.fillStyle = "#f4f0e8";
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillRect(0, 0, project.canvas_size[0], project.canvas_size[1]);
 
   beginLatticeFrame();
   const meshMode = state.rig?.render_mode === "mesh";
   const parts = [...project.parts].sort((a, b) => a.draw_order - b.draw_order);
   for (const part of parts) {
-    if (meshMode && !clippedByEyeWhite(part.id)) drawPartMesh(ctx, project, part);
+    if (meshMode && clippedByEyeWhite(part.id)) drawClippedEyePartMeshMode(ctx, project, part);
+    else if (meshMode) drawPartMesh(ctx, project, part);
     else drawPart(ctx, project, part);
     if (part.id === "face_base") drawEyeSocketCovers(ctx, project);
   }
@@ -166,6 +169,49 @@ function drawPartMesh(ctx, project, part) {
   }
   ctx.restore();
   drawSelection();
+}
+
+// 메시 모드 클리핑: 홍채와 마스크(흰자) 모두 격자 변형으로 그린다 — 강체 경로를 쓰면
+// AngleZ에서 홍채가 자기 중심 자전으로 눈에서 이탈한다 (주인님 H2 발견)
+let clipMeshCanvasA = null;
+let clipMeshCanvasB = null;
+
+function drawClippedEyePartMeshMode(ctx, project, part) {
+  const pairs = state.rig?.clipping?.pairs || {};
+  const maskPartId = Object.keys(pairs).find((key) => (pairs[key] || []).includes(part.id));
+  const maskPart = maskPartId ? project.parts.find((item) => item.id === maskPartId) : null;
+  if (!maskPart) {
+    drawPartMesh(ctx, project, part);
+    return;
+  }
+  const W = project.canvas_size[0];
+  const H = project.canvas_size[1];
+  if (!clipMeshCanvasA || clipMeshCanvasA.width !== W) {
+    clipMeshCanvasA = document.createElement("canvas");
+    clipMeshCanvasA.width = W;
+    clipMeshCanvasA.height = H;
+    clipMeshCanvasB = document.createElement("canvas");
+    clipMeshCanvasB.width = W;
+    clipMeshCanvasB.height = H;
+  }
+  const a = clipMeshCanvasA.getContext("2d");
+  a.globalCompositeOperation = "source-over";
+  a.globalAlpha = 1;
+  a.setTransform(1, 0, 0, 1, 0, 0);
+  a.clearRect(0, 0, W, H);
+  drawPartMesh(a, project, part); // 홍채: 격자 변형 + EyeBall 파트 바인딩 포함
+  const b = clipMeshCanvasB.getContext("2d");
+  b.globalCompositeOperation = "source-over";
+  b.globalAlpha = 1;
+  b.setTransform(1, 0, 0, 1, 0, 0);
+  b.clearRect(0, 0, W, H);
+  const prevSelected = state.selectedPartId;
+  state.selectedPartId = null; // 마스크 렌더에 선택 박스 금지
+  drawPartMesh(b, project, maskPart); // 흰자: 같은 격자 변형 → 마스크가 함께 움직인다
+  state.selectedPartId = prevSelected;
+  a.globalCompositeOperation = "destination-in";
+  a.drawImage(clipMeshCanvasB, 0, 0);
+  ctx.drawImage(clipMeshCanvasA, 0, 0);
 }
 
 let clipTempCanvas = null; // 클리핑용 임시캔버스 캐시 (매 호출 신규 할당이 프레임 끊김의 주범이었다)

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project_kind": "mini_cubism_v0",
   "experiment_id": "autorig-rig-v0",
-  "generated_at": "2026-06-10T14:38:19.019789+00:00",
+  "generated_at": "2026-06-10T14:54:22.513361+00:00",
   "source_selection": {
     "visible_layers": "experiments/autorig-template-001/seethrough_true_reskinned/reskin_manifest.json",
     "hidden_layers": [
@@ -13983,7 +13983,7 @@
     {
       "id": "neck_warp",
       "type": "warp",
-      "parent_id": "head_angle_warp",
+      "parent_id": "body_warp",
       "child_ids": [
         "neck_under",
         "neck",
@@ -14358,6 +14358,78 @@
         "translate": [
           0.0,
           12
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleX",
+      "key_value": -30,
+      "target_id": "neck_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          -8,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleX",
+      "key_value": 30,
+      "target_id": "neck_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          8,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleY",
+      "key_value": -30,
+      "target_id": "neck_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          -4
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleY",
+      "key_value": 30,
+      "target_id": "neck_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          4
         ],
         "scale": [
           1.0,

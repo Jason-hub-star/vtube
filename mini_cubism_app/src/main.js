@@ -13,6 +13,7 @@ async function init() {
   try {
     const project = await fetchJson("/api/project");
     state.project = project;
+    state.renderScale = parseFloat(new URLSearchParams(location.search).get("render_scale")) || 1; // 드라이브 성능용 저해상 렌더
     state.rig = normalizeRig(project._mini_rig);
     state.viewZoom = defaultViewZoom();
     state.parameters = Object.fromEntries(project.parameters.map((param) => [param.id, param.default]));

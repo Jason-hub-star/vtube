@@ -83,7 +83,7 @@ DRIVE_HTML = """<!doctype html>
     <div class="params" id="paramGrid"></div>
     <div class="note">EyeOpen 0.27(자연 감김)·MouthOpenY 0.85 클램프는 리그 프로젝트 범위로 자동 적용돼요.</div>
   </section>
-  <section class="stage"><iframe id="model" src="/"></iframe></section>
+  <section class="stage"><iframe id="model" src="/?render_scale=0.55"></iframe></section>
 </div>
 <script type="module">
 const qs = new URLSearchParams(location.search);

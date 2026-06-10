@@ -94,8 +94,9 @@ function Stage(project) {
   wrap.className = "canvas-wrap";
   const canvas = document.createElement("canvas");
   canvas.id = "preview-canvas";
-  canvas.width = project.canvas_size[0];
-  canvas.height = project.canvas_size[1];
+  const renderScale = state.renderScale || 1;
+  canvas.width = Math.round(project.canvas_size[0] * renderScale);
+  canvas.height = Math.round(project.canvas_size[1] * renderScale);
   applyCanvasViewZoom(canvas);
   canvas.addEventListener("pointerdown", onCanvasPointerDown);
   canvas.addEventListener("pointermove", onCanvasPointerMove);
