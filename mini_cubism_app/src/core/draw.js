@@ -52,7 +52,10 @@ function drawPart(ctx, project, part) {
 }
 
 function drawClippedEyePart(ctx, project, part, image, transform, opacity) {
-  const maskPartId = part.id.startsWith("eye_L_") ? "eye_L_white" : "eye_R_white";
+  const pairs = state.rig?.clipping?.pairs || {};
+  const maskPartId =
+    Object.keys(pairs).find((key) => (pairs[key] || []).includes(part.id)) ||
+    (part.id.startsWith("eye_L_") ? "eye_L_white" : "eye_R_white");
   const maskImage = state.images.get(maskPartId);
   if (!maskImage) return;
   const temp = document.createElement("canvas");
