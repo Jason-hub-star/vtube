@@ -53,7 +53,9 @@ def deformer_of(pid: str) -> str:
         return "front_hair_warp"
     if "brow" in pid or "face" in pid or "nose" in pid or "ear" in pid:
         return "head_angle_warp"
-    return "root_warp"
+    if "hair" in pid:
+        return "root_warp"  # back_hair 등 — Phase B에서 덩어리별 워프로 승격
+    return "body_warp"  # 몸/의상: BodyAngle·Breath 담당
 
 
 def grid_mesh(part_id: str, bbox: list[int], cols: int, rows: int) -> dict:
@@ -216,6 +218,7 @@ def main() -> int:
         y1 = max(b[1] + b[3] for b in boxes)
         return [x0, y0, x1 - x0, y1 - y0]
 
+    body_bounds = pad_bounds(union_bbox("neck", "clothes", "L_arm", "R_arm", "choker", "raw_bottomwear"), 40)
     eye_l_bounds = pad_bounds(union_bbox("L_eye_white", "L_iris", "L_upper_lash", "eye_L_closed_lid"), 30)
     eye_r_bounds = pad_bounds(union_bbox("R_eye_white", "R_iris", "R_upper_lash", "eye_R_closed_lid"), 30)
     mouth_bounds = pad_bounds(union_bbox("mouth_line", "mouth_inner", "mouth_teeth"), 40)
@@ -232,6 +235,7 @@ def main() -> int:
 
     deformers = [
         {"id": "root_warp", "type": "warp", "parent_id": None, "child_ids": children.get("root_warp", []), "bounds": [0, 0, CANVAS, CANVAS], "pivot": [1024, 1024]},
+        {"id": "body_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("body_warp", []), "bounds": body_bounds, "pivot": center(body_bounds)},
         {"id": "head_angle_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("head_angle_warp", []), "bounds": head_bounds, "pivot": center(head_bounds)},
         {"id": "eye_L_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("eye_L_warp", []), "bounds": eye_l_bounds, "pivot": center(eye_l_bounds)},
         {"id": "eye_R_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("eye_R_warp", []), "bounds": eye_r_bounds, "pivot": center(eye_r_bounds)},
@@ -241,6 +245,9 @@ def main() -> int:
 
     parameters = [
         {"id": "ParamAngleX", "min": -30, "max": 30, "default": 0, "key_values": [-30, 0, 30]},
+        {"id": "ParamBodyAngleX", "min": -10, "max": 10, "default": 0, "key_values": [-10, 0, 10]},
+        {"id": "ParamBodyAngleY", "min": -10, "max": 10, "default": 0, "key_values": [-10, 0, 10]},
+        {"id": "ParamBreath", "min": 0, "max": 1, "default": 0, "key_values": [0, 1]},
         {"id": "ParamEyeBallX", "min": -1, "max": 1, "default": 0, "key_values": [-1, 0, 1]},
         {"id": "ParamEyeBallY", "min": -1, "max": 1, "default": 0, "key_values": [-1, 0, 1]},
         {"id": "ParamEyeLOpen", "min": 0.27, "max": 1, "default": 1, "key_values": [0.27, 0.5, 1]},
@@ -253,9 +260,19 @@ def main() -> int:
         return {"parameter_id": param, "key_value": key, "target_id": target, "delta_type": "deformer_transform",
                 "deltas": {"translate": [tx, ty], "scale": [sx, sy], "rotate": 0, "opacity": 1}}
 
+    def binding_r(param, key, target, tx=0.0, ty=0.0, sx=1.0, sy=1.0, rotate=0.0):
+        b = binding(param, key, target, tx=tx, ty=ty, sx=sx, sy=sy)
+        b["deltas"]["rotate"] = rotate
+        return b
+
     keyform_bindings = [
         binding("ParamAngleX", -30, "head_angle_warp", tx=-22),
         binding("ParamAngleX", 30, "head_angle_warp", tx=22),
+        binding_r("ParamBodyAngleX", -10, "body_warp", tx=-8, rotate=-1.2),
+        binding_r("ParamBodyAngleX", 10, "body_warp", tx=8, rotate=1.2),
+        binding("ParamBodyAngleY", -10, "body_warp", ty=-5),
+        binding("ParamBodyAngleY", 10, "body_warp", ty=5),
+        binding("ParamBreath", 1, "body_warp", ty=-2, sy=1.012),
         binding("ParamEyeBallX", -1, "L_iris", tx=-7.5),
         binding("ParamEyeBallX", 1, "L_iris", tx=7.5),
         binding("ParamEyeBallX", -1, "R_iris", tx=-7.5),

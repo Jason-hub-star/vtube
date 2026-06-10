@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project_kind": "mini_cubism_v0",
   "experiment_id": "autorig-rig-v0",
-  "generated_at": "2026-06-10T12:35:07.801668+00:00",
+  "generated_at": "2026-06-10T12:46:13.202171+00:00",
   "source_selection": {
     "visible_layers": "experiments/autorig-template-001/seethrough_true_reskinned/reskin_manifest.json",
     "hidden_layers": [
@@ -46,7 +46,7 @@
       "alpha_coverage": 0.0,
       "draw_order": 200,
       "folder": "Body",
-      "deformer_node": "root_warp"
+      "deformer_node": "body_warp"
     },
     {
       "id": "raw_footwear",
@@ -110,7 +110,7 @@
       "alpha_coverage": 0.187491,
       "draw_order": 210,
       "folder": "Body",
-      "deformer_node": "root_warp"
+      "deformer_node": "body_warp"
     },
     {
       "id": "L_arm",
@@ -126,7 +126,7 @@
       "alpha_coverage": 0.052563,
       "draw_order": 220,
       "folder": "Body",
-      "deformer_node": "root_warp"
+      "deformer_node": "body_warp"
     },
     {
       "id": "R_arm",
@@ -142,7 +142,7 @@
       "alpha_coverage": 0.052001,
       "draw_order": 220,
       "folder": "Body",
-      "deformer_node": "root_warp"
+      "deformer_node": "body_warp"
     },
     {
       "id": "choker",
@@ -158,7 +158,7 @@
       "alpha_coverage": 0.0,
       "draw_order": 230,
       "folder": "Body",
-      "deformer_node": "root_warp"
+      "deformer_node": "body_warp"
     },
     {
       "id": "R_ear_outer",
@@ -12073,12 +12073,7 @@
       "type": "warp",
       "parent_id": null,
       "child_ids": [
-        "back_hair",
-        "neck",
-        "clothes",
-        "L_arm",
-        "R_arm",
-        "choker"
+        "back_hair"
       ],
       "bounds": [
         0,
@@ -12088,6 +12083,28 @@
       ],
       "pivot": [
         1024,
+        1024
+      ]
+    },
+    {
+      "id": "body_warp",
+      "type": "warp",
+      "parent_id": "root_warp",
+      "child_ids": [
+        "neck",
+        "clothes",
+        "L_arm",
+        "R_arm",
+        "choker"
+      ],
+      "bounds": [
+        0,
+        0,
+        1694,
+        2048
+      ],
+      "pivot": [
+        847,
         1024
       ]
     },
@@ -12220,6 +12237,38 @@
       ]
     },
     {
+      "id": "ParamBodyAngleX",
+      "min": -10,
+      "max": 10,
+      "default": 0,
+      "key_values": [
+        -10,
+        0,
+        10
+      ]
+    },
+    {
+      "id": "ParamBodyAngleY",
+      "min": -10,
+      "max": 10,
+      "default": 0,
+      "key_values": [
+        -10,
+        0,
+        10
+      ]
+    },
+    {
+      "id": "ParamBreath",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "key_values": [
+        0,
+        1
+      ]
+    },
+    {
       "id": "ParamEyeBallX",
       "min": -1,
       "max": 1,
@@ -12318,6 +12367,96 @@
         "scale": [
           1.0,
           1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBodyAngleX",
+      "key_value": -10,
+      "target_id": "body_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          -8,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": -1.2,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBodyAngleX",
+      "key_value": 10,
+      "target_id": "body_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          8,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 1.2,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBodyAngleY",
+      "key_value": -10,
+      "target_id": "body_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          -5
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBodyAngleY",
+      "key_value": 10,
+      "target_id": "body_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          5
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBreath",
+      "key_value": 1,
+      "target_id": "body_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          -2
+        ],
+        "scale": [
+          1.0,
+          1.012
         ],
         "rotate": 0,
         "opacity": 1
