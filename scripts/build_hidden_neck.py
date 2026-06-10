@@ -59,9 +59,9 @@ def main() -> int:
     _, cy0, _, _ = bbox_of(args.clothes)
     # 목 피부 사각형: 턱선 "아래"에서 시작 (위로 올리면 턱/입을 덮는 기둥 — 003 사건),
     # 폭은 보수적으로. 가장자리는 전부 페더라 모서리가 절대 노출되지 않는다.
-    y0 = max(0, chin_line_y + 4)
+    y0 = max(0, chin_line_y + 14)  # 턱 하이라이트·그늘 경계 배제 (밝은 막대 사건)
     # 높이 제한: 틈은 턱 밑에서만 생긴다 — 가슴까지 내리면 맨살 위에 유령 목이 보인다 (003 사건)
-    y1 = min(master.shape[0], cy0 + 40, y0 + 110)
+    y1 = min(master.shape[0], cy0 + 40, y0 + 96)
     half_w = round(mouth_w * 0.55)
     x0 = int(mouth_cx - half_w)
     x1 = int(mouth_cx + half_w)

@@ -59,8 +59,10 @@ def deformer_of(pid: str) -> str:
         return "back_hair_warp"
     if "hair" in pid:
         return "root_warp"  # 통짜 hair (덩어리 미사용 시)
-    if pid in ("neck", "neck_under", "choker"):
-        return "neck_warp"  # 목 부분 추종 (머리 이동의 ~35%)
+    if pid == "neck_under":
+        return "body_warp"  # 숨은 목 = 몸 고정 배경판 (머리를 따라가면 어긋남이 노출된다)
+    if pid in ("neck", "choker"):
+        return "neck_warp"  # 목 부분 추종 (머리 격자 페이드 + 몸 바인딩)
     return "body_warp"  # 몸/의상: BodyAngle·Breath 담당
 
 
