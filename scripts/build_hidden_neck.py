@@ -23,7 +23,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from lib.vtube_io import ROOT, now_iso, rel, write_json  # noqa: E402
 
 WIDEN = 1.3
-EXTEND_UP_PX = 140
+EXTEND_UP_RATIO = 0.14  # face_base 높이 대비 위 연장 (002 실측 140px/얼굴 ~1000px — 캐릭터 무관 비율)
+EXTEND_UP_FALLBACK_PX = 140
 
 
 def bbox_of(path: Path) -> tuple[int, int, int, int]:
@@ -37,8 +38,14 @@ def main() -> int:
     parser.add_argument("--master", type=Path, required=True, help="진짜 마스터 2048 — 목 피부의 픽셀 원천")
     parser.add_argument("--mouth-line", type=Path, required=True, help="턱선 y 측정 기준")
     parser.add_argument("--clothes", type=Path, required=True, help="옷깃 상단 y 기준")
+    parser.add_argument("--face", type=Path, default=None, help="face_base.png — 위 연장량을 얼굴 높이 비율로 산출")
     parser.add_argument("--out-dir", type=Path, required=True)
     args = parser.parse_args()
+    if args.face is not None and args.face.exists():
+        _, fy0, _, fy1 = bbox_of(args.face)
+        extend_up = round((fy1 - fy0) * EXTEND_UP_RATIO)
+    else:
+        extend_up = EXTEND_UP_FALLBACK_PX
     out = args.out_dir if args.out_dir.is_absolute() else ROOT / args.out_dir
     out.mkdir(parents=True, exist_ok=True)
 
@@ -67,12 +74,12 @@ def main() -> int:
     # 위 연장: 상단 8행을 평균낸 띠를 위로 스트레치 (원본 피부색 보존)
     arr = np.asarray(widened)
     top_band = arr[: min(8, arr.shape[0])].astype(np.float64).mean(axis=0).astype(np.uint8)
-    extension = np.tile(top_band[None, :, :], (EXTEND_UP_PX, 1, 1))
+    extension = np.tile(top_band[None, :, :], (extend_up, 1, 1))
     extended = np.vstack([extension, arr])
 
     canvas = Image.new("RGBA", (master.shape[1], master.shape[0]), (0, 0, 0, 0))
     cx = (x0 + x1) / 2
-    canvas.alpha_composite(Image.fromarray(extended, "RGBA"), (round(cx - new_w / 2), y0 - EXTEND_UP_PX))
+    canvas.alpha_composite(Image.fromarray(extended, "RGBA"), (round(cx - new_w / 2), max(0, y0 - extend_up)))
     out_path = out / "neck_under.png"
     canvas.save(out_path)
 
@@ -80,10 +87,10 @@ def main() -> int:
         "generated_at": now_iso(),
         "source": rel(args.master),
         "widen": WIDEN,
-        "extend_up_px": EXTEND_UP_PX,
+        "extend_up_px": extend_up,
         "output": rel(out_path),
     })
-    print(f"hidden neck: {rel(out_path)} (w x{WIDEN}, up +{EXTEND_UP_PX}px)")
+    print(f"hidden neck: {rel(out_path)} (w x{WIDEN}, up +{extend_up}px)")
     return 0
 
 

@@ -1,13 +1,9 @@
 {
-  "generated_at": "2026-06-10T13:16:55.487352+00:00",
+  "generated_at": "2026-06-10T16:14:55.323675+00:00",
   "sheet": "experiments/autorig-template-001/raw_sheets/mouth_states_true.png",
-  "cell": [
-    1024,
-    2048,
-    1024,
-    2048
-  ],
+  "cell": "1024,2048,1024,2048",
   "width_factor": 0.98,
-  "top_offset_px": -16,
+  "top_offset_ratio": -0.33,
+  "top_offset_px": -32,
   "output": "experiments/autorig-template-001/mouth_interior_true/mouth_interior.png"
 }

@@ -289,6 +289,16 @@ def main() -> int:
     for part in parts:
         children.setdefault(part["deformer_node"], []).append(part["id"])
 
+    # 이식성 검사: 명명 규칙에 안 걸려 body_warp 폴백에 떨어진 미지의 파트 경고 (LOCK-001)
+    KNOWN_BODY = {"neck", "neck_under", "choker", "clothes", "L_arm", "R_arm",
+                  "raw_bottomwear", "raw_legwear", "raw_footwear", "body", "torso"}
+    unmatched_parts = sorted(
+        p["id"] for p in parts
+        if p["deformer_node"] == "body_warp" and p["id"] not in KNOWN_BODY
+    )
+    if unmatched_parts:
+        print(f"[경고] 명명 규칙 미매칭 → body_warp 폴백: {unmatched_parts} (deformer_of 패턴 확인 필요)")
+
     neck_bounds = pad_bounds(union_bbox("neck", "choker", "neck_under") if "neck_under" in bbox_by_id else union_bbox("neck", "choker"), 30)
     deformers = [
         # lattice/edge_pinned: FFD 격자 (공식 워프 메커니즘). edge_pinned=경계 연결, false=전역 이동.

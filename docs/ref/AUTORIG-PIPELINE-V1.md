@@ -1,6 +1,12 @@
 # AUTORIG Pipeline v1 — 자체 에디터 + AI 자동리깅 방향 문서
 
-Updated: 2026-06-10
+Updated: 2026-06-11
+
+## 생성 목록 확정 (2026-06-11, LOCK-001)
+
+- 캐릭터당 AI 생성물 = **마스터 1장 + 입 4상태 시트 1장 (interior 셀 포함). 끝.**
+- 눈 감김 = ARAP 워프(원본 변형, 생성 불필요) / 가시 레이어 = 분해+재스킨. 구 12시트 템플릿 스펙은 입 시트 셀 규격 참고용으로 축소 (P1 "슬롯 시트 생성"은 이 2장으로 대체됨).
+- 마스터 생성 조건·프롬프트 템플릿·P0 검증: `docs/ref/AUTORIG-MASTER-SPEC.md` + `scripts/validate_master_image.py`.
 Status: CURRENT DIRECTION (주인님 결정, 2026-06-10)
 
 ## 목표
