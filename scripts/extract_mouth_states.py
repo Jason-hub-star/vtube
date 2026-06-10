@@ -45,6 +45,13 @@ def main() -> int:
     mouth_cx = (mx0 + mx1) / 2
     lip_y = (my0 + my1) / 2
 
+    # 톤 매칭 기준: 원본 조립의 입 주변 피부색 (턱 위 좁은 밴드)
+    assembly = np.asarray(
+        Image.open(ROOT / "experiments/autorig-template-001/reports/full_assembly/hybrid_true_origeyes.png").convert("RGB")
+    )
+    skin_band = assembly[int(my1 + 8) : int(my1 + 30), int(mx0) : int(mx1)].reshape(-1, 3)
+    face_skin = np.median(skin_band, axis=0)
+
     written = []
     shared = None  # 첫 상태(closed)의 변환을 전 상태에 공유 — 상태 간 정합
     for name, row, col in STATES:
@@ -57,6 +64,12 @@ def main() -> int:
         # 입 중심으로 트림 (생성 피부가 얼굴을 넓게 덮지 않도록)
         ph, pw = rgba.shape[:2]
         rgba = rgba[int(ph * TRIM_TOP) :, int(pw * TRIM_SIDE) : int(pw * (1 - TRIM_SIDE))]
+        # 톤 매칭: 패치 피부색(상단 모서리 밴드 중앙값)을 원본 피부색에 정합 — 턱 이중톤 제거
+        corner = rgba[: max(6, rgba.shape[0] // 10), :, :3].reshape(-1, 3).astype(np.float64)
+        patch_skin = np.median(corner, axis=0)
+        gain = np.clip(face_skin / np.maximum(patch_skin, 1.0), 0.85, 1.18)
+        rgba = rgba.copy()
+        rgba[..., :3] = np.clip(rgba[..., :3].astype(np.float64) * gain, 0, 255).astype(np.uint8)
         patch = Image.fromarray(rgba, "RGBA")
         # 페더: 알파를 블러한 값과 min — 경계가 피부로 녹아든다
         a = patch.getchannel("A")

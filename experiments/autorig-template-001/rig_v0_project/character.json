@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project_kind": "mini_cubism_v0",
   "experiment_id": "autorig-rig-v0",
-  "generated_at": "2026-06-10T12:09:49.870458+00:00",
+  "generated_at": "2026-06-10T12:14:19.953427+00:00",
   "source_selection": {
     "visible_layers": "experiments/autorig-template-001/seethrough_true_reskinned/reskin_manifest.json",
     "hidden_layers": [
