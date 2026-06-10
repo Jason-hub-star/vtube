@@ -28,6 +28,8 @@ SCALE_MARGIN = 1.06
 FEATHER_PX = 18
 TRIM_TOP = 0.30             # 패치 상단 피부(코 근처) 잘라내기 — 경계 띠가 얼굴을 가로지르지 않게
 TRIM_SIDE = 0.10
+FADE_BOTTOM_START = 0.60    # (트림 후 높이 비율) 여기부터 알파 페이드 — 원본 턱선이 비치게
+FADE_BOTTOM_FULL = 0.82     # 여기서 완전 투명
 
 
 def main() -> int:
@@ -70,6 +72,14 @@ def main() -> int:
         gain = np.clip(face_skin / np.maximum(patch_skin, 1.0), 0.85, 1.18)
         rgba = rgba.copy()
         rgba[..., :3] = np.clip(rgba[..., :3].astype(np.float64) * gain, 0, 255).astype(np.uint8)
+        # 하단 페이드: 입술 아래 피부를 투명화 — 원본 턱선을 가리지 않는다
+        fh = rgba.shape[0]
+        ramp = np.ones(fh, dtype=np.float64)
+        f0, f1 = int(fh * FADE_BOTTOM_START), int(fh * FADE_BOTTOM_FULL)
+        if f1 > f0:
+            ramp[f0:f1] = np.linspace(1.0, 0.0, f1 - f0)
+            ramp[f1:] = 0.0
+        rgba[..., 3] = (rgba[..., 3].astype(np.float64) * ramp[:, None]).astype(np.uint8)
         patch = Image.fromarray(rgba, "RGBA")
         # 페더: 알파를 블러한 값과 min — 경계가 피부로 녹아든다
         a = patch.getchannel("A")
