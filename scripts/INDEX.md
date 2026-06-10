@@ -1,6 +1,6 @@
 # scripts/ 인덱스
 
-Updated: 2026-06-10 · 총 282개 · `python3 scripts/build_scripts_index.py`로 재생성
+Updated: 2026-06-10 · 총 286개 · `python3 scripts/build_scripts_index.py`로 재생성
 
 새 스크립트를 만들기 전에 이 인덱스에서 기존 것을 먼저 찾는다.
 코드 규칙: `docs/ref/AUTORIG-PIPELINE-V1.md`의 '코드 규칙' 절 (lib 사용 의무, 캐릭터 하드코딩 금지, 500줄 상한).
@@ -15,7 +15,7 @@ Updated: 2026-06-10 · 총 282개 · `python3 scripts/build_scripts_index.py`로
 | `lib/vtube_proc.py` | 29 | 프로세스/포트 공통 유틸. (wait_for_server 17벌 복붙의 단일 원본) |
 | `lib/vtube_server.py` | 60 | 로컬 HTTP 서버 공통 베이스. (ThreadingHTTPServer 보일러플레이트 13벌 복붙의 단일 원본) |
 
-## autorig — AUTORIG 파이프라인·관제탑·자산 인덱스 (현행) (10)
+## autorig — AUTORIG 파이프라인·관제탑·자산 인덱스 (현행) (11)
 
 | 파일 | LOC | 설명 |
 |---|---:|---|
@@ -23,10 +23,11 @@ Updated: 2026-06-10 · 총 282개 · `python3 scripts/build_scripts_index.py`로
 | `build_asset_dashboard.py` | 237 | Vtube 자산 대시보드 생성기. |
 | `build_autorig_current_candidates_002.py` | 119 | AUTORIG current-candidates manifest for cubism-v2-new-character-002. |
 | `build_autorig_full_assembly.py` | 127 | 모든 시트의 정규화 레이어를 모아 전신 조립 합성을 만든다 (검수 단위 규칙). |
-| `build_autorig_rig_v0.py` | 487 | P3 자동 리깅 v0: 하이브리드 레이어 → mini_cubism 리그(character.json) 자동 생성. |
+| `build_autorig_rig_v0.py` ⚠️ | 505 | P3 자동 리깅 v0: 하이브리드 레이어 → mini_cubism 리그(character.json) 자동 생성. |
 | `build_autorig_template_spec.py` | 200 | AUTORIG-TEMPLATE-SPEC-001: 64-part를 고정 슬롯 시트에 매핑하는 템플릿 스펙 생성. |
 | `build_scripts_index.py` | 94 | scripts/INDEX.md 자동 생성 — 258개 스크립트를 카테고리·설명·LOC로 색인한다. |
 | `run_autorig_control_tower.py` | 262 | AUTORIG 관제탑 서버 — runs/<run_id>/events.jsonl을 읽어 대시보드에 공급한다. |
+| `run_autorig_pipeline.py` | 230 | AUTORIG 원커맨드 파이프라인 — "자동화파이프라인 시작". |
 | `run_autorig_sheet_pilot.py` | 300 | AUTORIG 슬롯 시트 파일럿: 시트 1장을 생성→점유율 QA→결정론적 추출→배치→조립 합성. |
 | `simulate_autorig_run.py` | 153 | AUTORIG 가짜 런 시뮬레이터 — 관제탑 개발/스모크용. |
 
@@ -55,7 +56,7 @@ Updated: 2026-06-10 · 총 282개 · `python3 scripts/build_scripts_index.py`로
 | `run_v22_b4_b5_focused_owner_review_server_002.py` | 392 | Serve a focused owner-review UI for v22 B4/B5 primary decisions. |
 | `run_v22_g6_hairfront_anchor_editor_002.py` | 431 | Serve a G6 HairFront anchor editor for Character 002 v22. |
 
-## validators-qa — 검증·QA·스모크 (21)
+## validators-qa — 검증·QA·스모크 (22)
 
 | 파일 | LOC | 설명 |
 |---|---:|---|
@@ -73,6 +74,7 @@ Updated: 2026-06-10 · 총 282개 · `python3 scripts/build_scripts_index.py`로
 | `validate_cubism_psd_inputs.py` | 8 | CLI wrapper for validating the Cubism material pack. |
 | `validate_cubism_v2_keypose_pngs.py` | 189 | Validate clean-socket/keypose PNG outputs for the current Cubism v2 material pack. |
 | `validate_cubism_v2_material_assets.py` | 165 | Validate the Cubism v2 material asset draft. |
+| `validate_master_image.py` | 116 | P0 마스터 검증 — AUTORIG-MASTER-SPEC 조건의 결정론 검사. |
 | `validate_mini_cubism_dedicated_part_spec.py` | 97 | Validate the Mini Cubism dedicated model part spec manifest. |
 | `validate_mini_cubism_eye_modes.py` ⚠️ | 635 | Validate Mini Cubism eye controls with ROI leakage checks. |
 | `validate_mini_cubism_pack_splitter_v0.py` | 157 | Validate Mini Cubism pack-splitter-v0 bootstrap/probe outputs. |
@@ -303,7 +305,7 @@ Updated: 2026-06-10 · 총 282개 · `python3 scripts/build_scripts_index.py`로
 | `export_rigger_handoff.py` | 8 | CLI wrapper for exporting the Cubism rigger handoff. |
 | `prepare_concept_psd_smoke_parts.py` | 192 | Prepare clean technical-smoke parts for concept PSD import testing. |
 
-## legacy-misc — 기타·레거시 (34)
+## legacy-misc — 기타·레거시 (36)
 
 | 파일 | LOC | 설명 |
 |---|---:|---|
@@ -316,18 +318,19 @@ Updated: 2026-06-10 · 총 282개 · `python3 scripts/build_scripts_index.py`로
 | `bootstrap_mini_cubism_pack_splitter_v0.py` | 310 | Bootstrap Mini Cubism pack-splitter-v0 experiment inputs. |
 | `build_concept_bootstrap_parts.py` | 183 | Create rough full-canvas concept part candidates for visual review. |
 | `build_cubism_mvp_rig_smoke_pack.py` | 362 | Build Cubism FREE-limit audit and MVP rig smoke checklist. |
-| `build_hidden_neck.py` | 91 | 숨은 목 생성 — 목 분리(머리 이동 시 이음새) 해소의 업계 정석 1단계. |
+| `build_hidden_neck.py` | 98 | 숨은 목 생성 — 목 분리(머리 이동 시 이음새) 해소의 업계 정석 1단계. |
 | `build_mps_candidate_review_sheet.py` | 234 | Build a visual contact sheet and triage report for MPS See-through candidates. |
 | `build_mps_cleanup_candidates.py` | 244 | Build cleanup candidates for failed MPS See-through semantic layers. |
 | `build_pack_model_candidate_comparison.py` | 382 | Build a model-candidate comparison report for Mini Cubism pack splitter. |
 | `build_review_manifest.py` ⚠️ | 702 | Build the unified part-purity review manifest. |
 | `build_roi_cleanup_candidates.py` | 386 | Build ROI-focused cleanup candidates for MPS See-through parts. |
-| `extract_mouth_states.py` | 152 | v21 최종 입 성공패턴용 상태 스프라이트 추출: 4상태 시트 → 풀캔버스 레이어 4장. |
+| `compose_reskin_assembly.py` | 53 | 재스킨 레이어를 draw_order 순으로 합성해 어셈블리 PNG를 만든다. |
+| `extract_mouth_states.py` | 155 | v21 최종 입 성공패턴용 상태 스프라이트 추출: 4상태 시트 → 풀캔버스 레이어 4장. |
 | `force_imagen_front_hair_arms_pass.py` | 254 | Force-promote Imagen front hair and both arms for MVP PSD progression. |
 | `map_mini_cubism_dedicated_layers.py` | 161 | Gate See-through layers against the Mini Cubism dedicated v1 taxonomy. |
 | `mini_cubism_preview_server.py` | 229 | Serve the Mini Cubism v0 preview app and project files. |
 | `mouth_apply_delta_001.py` | 392 | Apply saved mouth manual delta to new generated mouth sheets. |
-| `place_mouth_interior.py` | 72 | 입 내부(동일세션 시트의 interior 셀)를 원본 입라인 기준으로 추출·배치한다. |
+| `place_mouth_interior.py` | 77 | 입 내부(동일세션 시트의 interior 셀)를 원본 입라인 기준으로 추출·배치한다. |
 | `production_canvas_2048_smoke.py` ⚠️ | 983 | 2048 production canvas smoke tests for Vtube layer candidates. |
 | `review_app_server.py` | 431 | Local server for the unified part-purity review UI. |
 | `review_server_2048.py` | 61 | Local review server that saves manual Vtube adjustment evidence. |
@@ -336,6 +339,7 @@ Updated: 2026-06-10 · 총 282개 · `python3 scripts/build_scripts_index.py`로
 | `run_mesh_deform_verify.py` | 106 | MESH-DEFORM 검증 스모크: 중립 항등성 / 변형 상태 상이 / 목 이음새 / 렌더 시간. |
 | `run_mouth_open_experiment.py` | 149 | MOUTH-EXP-001: 원본 픽셀 워프로 입 벌림을 단계화한다 (깜빡임 공식의 재적용). |
 | `run_mps_compat_matrix.py` | 226 | Run the See-through Apple Silicon MPS compatibility matrix. |
+| `run_rig_perf_test.py` | 147 | 리그 런타임 성능 테스트 — 상태별 렌더 시간(스케일 1.0/0.55, 중앙값), 물리 비용, 재생 FPS. |
 | `seed_imagen_live2d_technical_review.py` | 177 | Seed safe technical review verdicts for Imagen Live2D candidates. |
 | `setup_imagen_live2d_experiment.py` | 222 | Prepare an Imagen-generated Live2D front-canonical experiment. |
 | `split_hair_chunks.py` | 123 | HAIR-SPLIT-001: 머리카락 통짜 레이어를 물리용 덩어리로 분할한다. |

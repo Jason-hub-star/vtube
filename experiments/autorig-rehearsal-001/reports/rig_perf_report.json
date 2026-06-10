@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-06-10T16:23:30.032293+00:00",
+  "test_id": "rig_perf_test",
+  "render_ms_median": {
+    "1.0": {
+      "neutral": 114.3,
+      "head_turn": 99.8,
+      "nod": 103.4,
+      "tilt": 117.1,
+      "gaze_turn": 106,
+      "blink": 110.6,
+      "mouth": 126,
+      "combo": 119.1,
+      "physics_step": 107.8
+    },
+    "0.55": {
+      "neutral": 186.5,
+      "head_turn": 104.7,
+      "nod": 94.7,
+      "tilt": 116.7,
+      "gaze_turn": 93.1,
+      "blink": 139.8,
+      "mouth": 169.7,
+      "combo": 90.4,
+      "physics_step": 89.5
+    }
+  },
+  "replay": {
+    "frames": 175,
+    "wall_s": 10.22,
+    "effective_fps": 17
+  },
+  "errors": []
+}

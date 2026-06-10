@@ -115,8 +115,8 @@ def pad_bounds(bbox: list[int], pad: int) -> list[int]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--reskin-manifest", type=Path, required=True)
-    parser.add_argument("--hidden-eye-dir", type=Path, required=True)
-    parser.add_argument("--hidden-mouth-dir", type=Path, required=True)
+    parser.add_argument("--hidden-eye-dir", type=Path, default=None, help="레거시 생성 감은꺼풀 (ARAP 미사용 시에만 필수)")
+    parser.add_argument("--hidden-mouth-dir", type=Path, default=None, help="레거시 생성 입 내부 (mouth-states/warp 미사용 시에만 필수)")
     parser.add_argument("--arap-eye-dir", type=Path, default=None, help="ARAP 깜빡임 패치 디렉토리 (지정 시 생성 감은꺼풀 대신 원본 워프 5단계)")
     parser.add_argument("--warp-mouth-dir", type=Path, default=None, help="입 워프 패치 디렉토리 (지정 시 내부 3레이어 스왑 대신 원본 워프 5단계)")
     parser.add_argument("--mouth-states-dir", type=Path, default=None, help="v21 최종 패턴: 풀 입 상태 스프라이트 4장 (closed/small/mid/wide) — warp보다 우선")
@@ -159,6 +159,8 @@ def main() -> int:
             hidden.append((f"mouth_warp_{step}", args.warp_mouth_dir / f"mouth_warp_{step}.png", order))
             order += 1
     else:
+        if args.hidden_mouth_dir is None:
+            raise SystemExit("--mouth-states-dir/--warp-mouth-dir 없이는 --hidden-mouth-dir가 필요해요")
         hidden += [
             ("mouth_inner", args.hidden_mouth_dir / "mouth_inner.png", 405),
             ("mouth_teeth", args.hidden_mouth_dir / "mouth_teeth.png", 406),
@@ -172,6 +174,8 @@ def main() -> int:
                 hidden.append((f"eye_{side}_arap_{step}", args.arap_eye_dir / f"eye_{side}_arap_{step}.png", order))
                 order += 1
     else:
+        if args.hidden_eye_dir is None:
+            raise SystemExit("--arap-eye-dir 없이는 --hidden-eye-dir가 필요해요")
         hidden += [
             ("eye_L_closed_lid", args.hidden_eye_dir / "eye_L_closed_lid.png", 545),
             ("eye_R_closed_lid", args.hidden_eye_dir / "eye_R_closed_lid.png", 546),

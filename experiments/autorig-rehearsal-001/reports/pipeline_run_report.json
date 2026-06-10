@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-06-10T16:23:30.049546+00:00",
+  "run_id": "autorig-rehearsal-001_20260611_012151",
+  "elapsed_seconds": 98,
+  "elapsed_human": "1분 38초",
+  "stages": [
+    "P0",
+    "P1",
+    "P2",
+    "H1_5",
+    "P3",
+    "P4",
+    "P5",
+    "H2"
+  ],
+  "status": "PASS"
+}

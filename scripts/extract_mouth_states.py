@@ -38,6 +38,9 @@ def main() -> int:
     parser.add_argument("--sheet", type=Path, required=True)
     parser.add_argument("--mouth-line", type=Path, default=ROOT / "experiments/autorig-template-001/seethrough_true_reskinned/mouth_line.png")
     parser.add_argument("--out-dir", type=Path, required=True)
+    parser.add_argument("--assembly", type=Path,
+                        default=ROOT / "experiments/autorig-template-001/reports/full_assembly/hybrid_true_origeyes.png",
+                        help="중립 어셈블리 — 톤매칭 피부 샘플·턱선 측정 기준 (캐릭터별 교체)")
     args = parser.parse_args()
     out = args.out_dir if args.out_dir.is_absolute() else ROOT / args.out_dir
     out.mkdir(parents=True, exist_ok=True)
@@ -50,7 +53,7 @@ def main() -> int:
 
     # 톤 매칭 기준: 원본 조립의 입 주변 피부색 (턱 위 좁은 밴드)
     assembly = np.asarray(
-        Image.open(ROOT / "experiments/autorig-template-001/reports/full_assembly/hybrid_true_origeyes.png").convert("RGB")
+        Image.open(args.assembly).convert("RGB")
     )
     skin_band = assembly[int(my1 + 8) : int(my1 + 30), int(mx0) : int(mx1)].reshape(-1, 3)
     face_skin = np.median(skin_band, axis=0)
