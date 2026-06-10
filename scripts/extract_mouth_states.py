@@ -72,14 +72,35 @@ def main() -> int:
         gain = np.clip(face_skin / np.maximum(patch_skin, 1.0), 0.85, 1.18)
         rgba = rgba.copy()
         rgba[..., :3] = np.clip(rgba[..., :3].astype(np.float64) * gain, 0, 255).astype(np.uint8)
-        # 하단 페이드: 입술 아래 피부를 투명화 — 원본 턱선을 가리지 않는다
-        fh = rgba.shape[0]
-        ramp = np.ones(fh, dtype=np.float64)
-        f0, f1 = int(fh * FADE_BOTTOM_START), int(fh * FADE_BOTTOM_FULL)
-        if f1 > f0:
-            ramp[f0:f1] = np.linspace(1.0, 0.0, f1 - f0)
-            ramp[f1:] = 0.0
-        rgba[..., 3] = (rgba[..., 3].astype(np.float64) * ramp[:, None]).astype(np.uint8)
+        # 하단 페이드 (적응형): 이 상태의 입술/내부 콘텐츠 실제 하단을 측정해
+        # 그 바로 아래부터 투명화 — 피부는 최소만 남기고 원본 턱선을 살린다
+        fh, fw = rgba.shape[:2]
+        skin_med = np.median(rgba[: max(6, fh // 10), :, :3].reshape(-1, 3).astype(np.float64), axis=0)
+        dist = np.sqrt(((rgba[..., :3].astype(np.float64) - skin_med) ** 2).sum(axis=-1))
+        content = (dist > 48) & (rgba[..., 3] > 64)
+        mid = content[:, int(fw * 0.2) : int(fw * 0.8)]
+        rows = np.where(mid.any(axis=1))[0]
+        lip_top = int(rows.min()) if len(rows) else int(fh * 0.15)
+        lip_bottom = int(rows.max()) if len(rows) else int(fh * 0.55)
+        cols = np.where(content[lip_top : lip_bottom + 1].any(axis=0))[0]
+        lip_x0 = int(cols.min()) if len(cols) else int(fw * 0.2)
+        lip_x1 = int(cols.max()) if len(cols) else int(fw * 0.8)
+
+        def ramp_1d(size: int, keep0: int, keep1: int, soft: int) -> np.ndarray:
+            r = np.zeros(size, dtype=np.float64)
+            r[max(0, keep0) : min(size, keep1)] = 1.0
+            a0 = max(0, keep0 - soft)
+            if keep0 > a0:
+                r[a0:keep0] = np.linspace(0.0, 1.0, keep0 - a0)
+            b1 = min(size, keep1 + soft)
+            if b1 > keep1:
+                r[keep1:b1] = np.linspace(1.0, 0.0, b1 - keep1)
+            return r
+
+        # 사방 밀착: 입술 콘텐츠 + 최소 마진만 불투명, 그 밖은 짧은 페이드 (원본 턱선·뺨·인중 노출)
+        ry = ramp_1d(fh, lip_top - max(6, fh // 30), lip_bottom + 3, max(8, fh // 20))
+        rx = ramp_1d(fw, lip_x0 - 8, lip_x1 + 8, 16)
+        rgba[..., 3] = (rgba[..., 3].astype(np.float64) * ry[:, None] * rx[None, :]).astype(np.uint8)
         patch = Image.fromarray(rgba, "RGBA")
         # 페더: 알파를 블러한 값과 min — 경계가 피부로 녹아든다
         a = patch.getchannel("A")
