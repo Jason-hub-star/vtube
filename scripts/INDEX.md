@@ -1,6 +1,6 @@
 # scripts/ 인덱스
 
-Updated: 2026-06-10 · 총 266개 · `python3 scripts/build_scripts_index.py`로 재생성
+Updated: 2026-06-10 · 총 267개 · `python3 scripts/build_scripts_index.py`로 재생성
 
 새 스크립트를 만들기 전에 이 인덱스에서 기존 것을 먼저 찾는다.
 코드 규칙: `docs/ref/AUTORIG-PIPELINE-V1.md`의 '코드 규칙' 절 (lib 사용 의무, 캐릭터 하드코딩 금지, 500줄 상한).
@@ -297,7 +297,7 @@ Updated: 2026-06-10 · 총 266개 · `python3 scripts/build_scripts_index.py`로
 | `export_rigger_handoff.py` | 8 | CLI wrapper for exporting the Cubism rigger handoff. |
 | `prepare_concept_psd_smoke_parts.py` | 192 | Prepare clean technical-smoke parts for concept PSD import testing. |
 
-## legacy-misc — 기타·레거시 (24)
+## legacy-misc — 기타·레거시 (25)
 
 | 파일 | LOC | 설명 |
 |---|---:|---|
@@ -324,5 +324,6 @@ Updated: 2026-06-10 · 총 266개 · `python3 scripts/build_scripts_index.py`로
 | `run_mps_compat_matrix.py` | 226 | Run the See-through Apple Silicon MPS compatibility matrix. |
 | `seed_imagen_live2d_technical_review.py` | 177 | Seed safe technical review verdicts for Imagen Live2D candidates. |
 | `setup_imagen_live2d_experiment.py` | 222 | Prepare an Imagen-generated Live2D front-canonical experiment. |
+| `split_mini_cubism_app.py` | 149 | AUTORIG-RUNTIME-SPLIT-001: mini_cubism_app/src/app.js(1,673줄 모놀리스)를 ES 모듈로 분할한다. |
 | `tune_mini_cubism_keyforms.py` | 211 | Generate and rank conservative Mini Cubism keyform tuning candidates. |
 

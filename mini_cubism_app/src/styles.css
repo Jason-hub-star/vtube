@@ -157,6 +157,24 @@ dt,
   border-radius: 6px;
 }
 
+.view-zoom-control {
+  display: grid;
+  grid-template-columns: 32px 120px 32px 44px;
+  gap: 6px;
+  align-items: center;
+}
+
+.view-zoom-control input {
+  width: 100%;
+  accent-color: #20d0aa;
+}
+
+.view-zoom-control output {
+  color: #ffcc33;
+  font-size: 12px;
+  text-align: right;
+}
+
 .small-button:hover,
 .tool-button:hover,
 .segment-button:hover,
@@ -259,7 +277,6 @@ dt,
 #preview-canvas {
   width: min(100%, calc(100vh - 110px));
   height: auto;
-  max-height: calc(100vh - 110px);
   aspect-ratio: 1 / 1;
   border: 1px solid #394541;
   background: #202124;
@@ -329,6 +346,5 @@ dd {
 
   #preview-canvas {
     width: min(100%, 72vh);
-    max-height: 72vh;
   }
 }
