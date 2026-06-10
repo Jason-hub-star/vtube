@@ -198,6 +198,7 @@ async function probe() {
 function apply(outputs) {
   const win = frame.contentWindow;
   if (!win?.__miniProbe) return;
+  win.__miniStepPhysics?.(1 / 30); // 물리 스프링 라이브 스테핑 (머리카락 찰랑임)
   const result = win.__miniProbe.setParameterValues(outputs);
   const report = window.__driveReport;
   report.frames_applied += 1;
