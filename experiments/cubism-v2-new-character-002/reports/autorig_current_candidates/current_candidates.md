@@ -1,0 +1,71 @@
+# AUTORIG Current Candidates (character-002)
+
+Generated: 2026-06-10T04:22:53.438169+00:00
+Self-review: PASS — 64/64, missing 0, overridden 33
+
+| id | group | batch | provenance | path |
+|---|---|---|---|---|
+| body_underpaint | body | B1 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/body_underpaint.png` |
+| torso_base | body | B5 | v22_g4_torso_base_regen_candidate | `experiments/cubism-v2-new-character-002/v22_g4_torso_base_regen_candidate/normalized_layers/torso_base.png` |
+| neck | body | B5 | v22_b5_p0_torso_minipass_v2_candidate | `experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/neck.png` |
+| neck_shadow_underpaint | body | B1 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/neck_shadow_underpaint.png` |
+| shoulder_L | body | B5 | v22_b5_p0_torso_minipass_v2_candidate | `experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/shoulder_L.png` |
+| shoulder_R | body | B5 | v22_b5_p0_torso_minipass_v2_candidate | `experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/shoulder_R.png` |
+| arm_L_upper_simple | body | B5 | v22_b5_p0_torso_minipass_v2_candidate | `experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/arm_L_upper_simple.png` |
+| arm_R_upper_simple | body | B5 | v22_b5_p0_torso_minipass_v2_candidate | `experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/arm_R_upper_simple.png` |
+| arm_L_underpaint | body | B1 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/arm_L_underpaint.png` |
+| arm_R_underpaint | body | B1 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/arm_R_underpaint.png` |
+| face_base | face_base | B1 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/face_base.png` |
+| face_shadow_L | face_base | B5 | v22_b5_p0_torso_minipass_v2_candidate | `experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/face_shadow_L.png` |
+| face_shadow_R | face_base | B5 | v22_b5_p0_torso_minipass_v2_candidate | `experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/face_shadow_R.png` |
+| face_underpaint_L | face_base | B1 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/face_underpaint_L.png` |
+| face_underpaint_R | face_base | B1 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/face_underpaint_R.png` |
+| nose | face_base | B5 | v22_b5_p0_torso_minipass_v2_candidate | `experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/nose.png` |
+| cheek_L | face_base | B5 | v22_b5_p0_torso_minipass_v2_candidate | `experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/cheek_L.png` |
+| cheek_R | face_base | B5 | v22_b5_p0_torso_minipass_v2_candidate | `experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/cheek_R.png` |
+| eye_L_white | eye_L | B2 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_white.png` |
+| eye_L_iris | eye_L | B2 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_iris.png` |
+| eye_L_pupil | eye_L | B2 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_pupil.png` |
+| eye_L_highlight | eye_L | B2 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_highlight.png` |
+| eye_L_upper_lash | eye_L | B2 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_upper_lash.png` |
+| eye_L_lower_lash | eye_L | B2 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_lower_lash.png` |
+| eye_L_closed_lid | eye_L | B2 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_closed_lid.png` |
+| eye_L_underpaint | eye_L | B1 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/eye_L_underpaint.png` |
+| eye_R_white | eye_R | B2 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_white.png` |
+| eye_R_iris | eye_R | B2 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_iris.png` |
+| eye_R_pupil | eye_R | B2 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_pupil.png` |
+| eye_R_highlight | eye_R | B2 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_highlight.png` |
+| eye_R_upper_lash | eye_R | B2 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_upper_lash.png` |
+| eye_R_lower_lash | eye_R | B2 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_lower_lash.png` |
+| eye_R_closed_lid | eye_R | B2 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_closed_lid.png` |
+| eye_R_underpaint | eye_R | B1 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/eye_R_underpaint.png` |
+| brow_L | brow | B5 | v22_b5_p0_torso_minipass_v2_candidate | `experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/brow_L.png` |
+| brow_R | brow | B5 | v22_b5_p0_torso_minipass_v2_candidate | `experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/brow_R.png` |
+| mouth_line | mouth | B3_REVISION_V1 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_line.png` |
+| mouth_inner | mouth | B3_REVISION_V1 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_inner.png` |
+| mouth_upper_lip_mask | mouth | B3_REVISION_V1 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_upper_lip_mask.png` |
+| mouth_lower_lip_mask | mouth | B3_REVISION_V1 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_lower_lip_mask.png` |
+| mouth_teeth | mouth | B3_REVISION_V1 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_teeth.png` |
+| mouth_tongue | mouth | B3_REVISION_V1 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_tongue.png` |
+| mouth_corner_L | mouth | B3_REVISION_V1 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_corner_L.png` |
+| mouth_corner_R | mouth | B3_REVISION_V1 | base_manifest | `experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_corner_R.png` |
+| hair_back_base | hair | B4 | v22_b4_b5_anchor_corrected_auto_draft | `experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_base.png` |
+| hair_back_underpaint | hair | B4 | v22_b4_b5_anchor_corrected_auto_draft | `experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_underpaint.png` |
+| hair_back_strand_L | hair | B4 | v22_b4_b5_anchor_corrected_auto_draft | `experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_strand_L.png` |
+| hair_back_strand_R | hair | B4 | v22_b4_b5_anchor_corrected_auto_draft | `experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_strand_R.png` |
+| hair_back_center | hair | B4 | v22_b4_b5_anchor_corrected_auto_draft | `experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_center.png` |
+| hair_front_center | hair | B4 | v22_b4_b5_anchor_corrected_auto_draft | `experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_center.png` |
+| hair_front_L | hair | B4 | v22_b4_b5_anchor_corrected_auto_draft | `experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_L.png` |
+| hair_front_R | hair | B4 | v22_b4_b5_anchor_corrected_auto_draft | `experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_R.png` |
+| hair_front_side_L | hair | B4 | v22_b4_b5_anchor_corrected_auto_draft | `experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_side_L.png` |
+| hair_front_side_R | hair | B4 | v22_b4_b5_anchor_corrected_auto_draft | `experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_side_R.png` |
+| hair_front_tip_L | hair | B4 | v22_b4_b5_anchor_corrected_auto_draft | `experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_tip_L.png` |
+| hair_front_tip_R | hair | B4 | v22_b4_b5_anchor_corrected_auto_draft | `experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_tip_R.png` |
+| hair_side_L_outer | hair | B4 | v22_b4_b5_anchor_corrected_auto_draft | `experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_L_outer.png` |
+| hair_side_L_inner | hair | B4 | v22_b4_b5_anchor_corrected_auto_draft | `experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_L_inner.png` |
+| hair_side_R_outer | hair | B4 | v22_b4_b5_anchor_corrected_auto_draft | `experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_R_outer.png` |
+| hair_side_R_inner | hair | B4 | v22_b4_b5_anchor_corrected_auto_draft | `experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_R_inner.png` |
+| collar_front | clothing | B5 | v22_b5_p0_torso_minipass_v2_candidate | `experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/collar_front.png` |
+| collar_shadow | clothing | B5 | v22_b5_p0_torso_minipass_v2_candidate | `experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/collar_shadow.png` |
+| chest_cloth_base | clothing | B5 | v22_b5_p0_torso_minipass_v2_candidate | `experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/chest_cloth_base.png` |
+| chest_cloth_shadow | clothing | B5 | v22_b5_p0_torso_minipass_v2_candidate | `experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/chest_cloth_shadow.png` |
