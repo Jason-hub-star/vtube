@@ -14,5 +14,11 @@
   "max_gap_ratio": 0.4,
   "chin_band_ratio": 0.95,
   "corner_pin": 0.92,
-  "generated_at": "2026-06-10T11:56:35.551769+00:00"
+  "generated_at": "2026-06-10T11:58:13.843223+00:00",
+  "baked": [
+    "mouth_warp_025.png",
+    "mouth_warp_050.png",
+    "mouth_warp_075.png",
+    "mouth_warp_100.png"
+  ]
 }

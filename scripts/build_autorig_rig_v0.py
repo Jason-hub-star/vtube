@@ -97,10 +97,12 @@ def main() -> int:
     parser.add_argument("--hidden-eye-dir", type=Path, required=True)
     parser.add_argument("--hidden-mouth-dir", type=Path, required=True)
     parser.add_argument("--arap-eye-dir", type=Path, default=None, help="ARAP 깜빡임 패치 디렉토리 (지정 시 생성 감은꺼풀 대신 원본 워프 5단계)")
+    parser.add_argument("--warp-mouth-dir", type=Path, default=None, help="입 워프 패치 디렉토리 (지정 시 내부 3레이어 스왑 대신 원본 워프 5단계)")
     parser.add_argument("--out-dir", type=Path, required=True)
     parser.add_argument("--experiment-id", default="autorig-rig-v0")
     args = parser.parse_args()
     use_arap = args.arap_eye_dir is not None and args.arap_eye_dir.exists()
+    use_mouth_warp = args.warp_mouth_dir is not None and args.warp_mouth_dir.exists()
 
     out = args.out_dir if args.out_dir.is_absolute() else ROOT / args.out_dir
     (out / "parts").mkdir(parents=True, exist_ok=True)
@@ -111,11 +113,18 @@ def main() -> int:
     for layer in sorted(reskin["layers"], key=lambda x: x["draw_order"]):
         sources.append((layer["part_id"], ROOT / layer["path"], layer["draw_order"]))
     # 숨은 레이어: 감은꺼풀은 눈 위(앞), 입 내부는 mouth_line 바로 아래
-    hidden = [
-        ("mouth_inner", args.hidden_mouth_dir / "mouth_inner.png", 405),
-        ("mouth_teeth", args.hidden_mouth_dir / "mouth_teeth.png", 406),
-        ("mouth_tongue", args.hidden_mouth_dir / "mouth_tongue.png", 407),
-    ]
+    hidden = []
+    if use_mouth_warp:
+        order = 408
+        for step in ("025", "050", "075", "100"):
+            hidden.append((f"mouth_warp_{step}", args.warp_mouth_dir / f"mouth_warp_{step}.png", order))
+            order += 1
+    else:
+        hidden += [
+            ("mouth_inner", args.hidden_mouth_dir / "mouth_inner.png", 405),
+            ("mouth_teeth", args.hidden_mouth_dir / "mouth_teeth.png", 406),
+            ("mouth_tongue", args.hidden_mouth_dir / "mouth_tongue.png", 407),
+        ]
     if use_arap:
         # 픽셀-가이드 원칙: 깜빡임은 원본 워프 패치 (생성 감은꺼풀 미사용)
         order = 536
@@ -281,12 +290,22 @@ def main() -> int:
                 if pid in bbox_by_id:
                     part_opacity_keyframes.append(curve(pid, param, open_curve))
             part_opacity_keyframes.append(curve(f"eye_{side}_closed_lid", param, closed_curve))
-    part_opacity_keyframes += [
-        curve("mouth_line", "ParamMouthOpenY", [(0.0, 1.0), (0.25, 0.85), (0.45, 0.0), (0.85, 0.0)]),
-        curve("mouth_inner", "ParamMouthOpenY", [(0.0, 0.0), (0.2, 0.15), (0.45, 0.9), (0.85, 1.0)]),
-        curve("mouth_teeth", "ParamMouthOpenY", [(0.0, 0.0), (0.3, 0.4), (0.85, 0.9)]),
-        curve("mouth_tongue", "ParamMouthOpenY", [(0.0, 0.0), (0.45, 0.3), (0.85, 0.8)]),
-    ]
+    if use_mouth_warp:
+        # 워프 패치 t ↔ MouthOpenY 매핑: v = t * 0.85
+        m25, m50, m75, m100 = 0.2125, 0.425, 0.6375, 0.85
+        part_opacity_keyframes += [
+            curve("mouth_warp_025", "ParamMouthOpenY", [(0.0, 0.0), (m25, 1.0), (m50, 0.0)]),
+            curve("mouth_warp_050", "ParamMouthOpenY", [(m25, 0.0), (m50, 1.0), (m75, 0.0)]),
+            curve("mouth_warp_075", "ParamMouthOpenY", [(m50, 0.0), (m75, 1.0), (m100, 0.0)]),
+            curve("mouth_warp_100", "ParamMouthOpenY", [(m75, 0.0), (m100, 1.0)]),
+        ]
+    else:
+        part_opacity_keyframes += [
+            curve("mouth_line", "ParamMouthOpenY", [(0.0, 1.0), (0.25, 0.85), (0.45, 0.0), (0.85, 0.0)]),
+            curve("mouth_inner", "ParamMouthOpenY", [(0.0, 0.0), (0.2, 0.15), (0.45, 0.9), (0.85, 1.0)]),
+            curve("mouth_teeth", "ParamMouthOpenY", [(0.0, 0.0), (0.3, 0.4), (0.85, 0.9)]),
+            curve("mouth_tongue", "ParamMouthOpenY", [(0.0, 0.0), (0.45, 0.3), (0.85, 0.8)]),
+        ]
 
     character = {
         "schema_version": 1,
