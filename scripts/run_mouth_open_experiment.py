@@ -80,9 +80,8 @@ def mouth_warp(base: np.ndarray, internals: np.ndarray, mouth_bbox, config, t: f
         hi = np.minimum(lo + 1, base.shape[0] - 1)
         frac = (idx - lo)[:, None]
         new_col[below] = column[lo] * (1 - frac) + column[hi] * frac
-        # 틈: 내부를 열림량에 비례해 세로 매핑 (알파 낮으면 어두운 내부색 폴백)
-        y_frac = (ys_out[in_gap] - gap_top) / max(gap, 1e-6)
-        src_in = np.clip(iy0 + y_frac * (iy1 - iy0), 0, internals.shape[0] - 1)
+        # 틈: 내부는 제 비율 그대로 두고 위에서부터 "드러내기" (마스크 노출 — 공식 방식, 이빨 비율 보존)
+        src_in = np.clip(iy0 + (ys_out[in_gap] - gap_top), 0, internals.shape[0] - 1)
         lo_i = np.floor(src_in).astype(int)
         sample = internals[lo_i, x, :].astype(np.float64)
         a = (sample[:, 3:4] / 255.0)
