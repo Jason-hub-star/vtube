@@ -242,7 +242,12 @@ def main() -> int:
             }
         )
         big = pid in ("face_base", "back_hair", "front_hair", "clothes") or pid.startswith(("hair_front_", "hair_back_"))
-        mesh = grid_mesh(pid, bbox, 6 if big else 5, 6 if big else 4)  # MESH-DEFORM: 휨 밀도 vs 렌더 비용 균형
+        if pid in ("face_base", "clothes"):
+            cols = rows = 9  # 목-어깨 접합부를 지나는 파트 — fade 보간이 고와야 분리가 안 보인다
+        else:
+            cols = rows = 6 if big else 5
+            rows = rows if big else 4
+        mesh = grid_mesh(pid, bbox, cols, rows)
         # 렌더 비용 절감: 알파가 완전히 빈 삼각형 제거 (bbox 모서리 투명 영역)
         part_alpha = np.asarray(Image.open(dest).convert("RGBA"))[..., 3]
         def tri_active(tri):
@@ -309,7 +314,7 @@ def main() -> int:
     deformers = [
         # lattice/edge_pinned: FFD 격자 (공식 워프 메커니즘). edge_pinned=경계 연결, false=전역 이동.
         {"id": "root_warp", "type": "warp", "parent_id": None, "child_ids": children.get("root_warp", []), "bounds": [0, 0, CANVAS, CANVAS], "pivot": [1024, 1024], "lattice": {"cols": 3, "rows": 3}, "edge_pinned": False},
-        {"id": "body_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("body_warp", []), "bounds": body_bounds, "pivot": center(body_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": False},
+        {"id": "body_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("body_warp", []), "bounds": body_bounds, "pivot": center(body_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
         {"id": "head_angle_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("head_angle_warp", []), "bounds": head_bounds, "pivot": center(head_bounds), "lattice": {"cols": 7, "rows": 7}, "edge_pinned": True},
         # 목 = head 자식 (머리 격자 페이드 → 위는 머리, 아래로 갈수록 감쇠하는 그라데이션)
         # + 몸 추종은 자체 바인딩으로 보충 (BodyAngle/Breath — body 체인에서 빠진 몫)
