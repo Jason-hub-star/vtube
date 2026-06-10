@@ -36,34 +36,40 @@ def eye_bbox_from_layer(path: Path) -> tuple[int, int, int, int]:
 
 
 def curtain_warp(image: np.ndarray, bbox: tuple[int, int, int, int], t: float, skin_band: float = 0.9) -> np.ndarray:
-    """눈 bbox에 컬럼별 커튼 워프를 적용한 사본을 돌려준다."""
+    """아몬드형 눈에 맞춘 커튼 워프 (공식 모델 관찰 반영, ARAP-EXP-001 v2).
+
+    - 윗눈꺼풀이 주도 (top-down), 눈꼬리 양끝은 고정점
+    - 닫힌 선은 바닥이 아니라 눈 높이 ~63% 지점의 "아래로 볼록한 아치"
+    - 컬럼별로 윗곡선 up_x → 닫힘 아치 closed_x 로 보간
+    """
     x0, lash_top, x1, y1 = bbox
     h = y1 - lash_top
-    y0 = max(0, lash_top - round(h * skin_band))  # 위쪽 피부 밴드 시작
+    y0 = max(0, lash_top - round(h * skin_band))
     out = image.copy()
-    width = x1 - x0
     cx = (x0 + x1) / 2
-    half = width / 2
-    rows_total = y1 - y0
+    half = max((x1 - x0) / 2, 1e-6)
     for x in range(x0, x1):
         ratio = (x - cx) / half
-        t_x = t * float(np.sqrt(max(0.0, 1.0 - ratio * ratio)))
-        if t_x <= 0.001:
+        arc = float(np.sqrt(max(0.0, 1.0 - ratio * ratio)))  # 중앙 1, 눈꼬리 0
+        up_x = lash_top + h * 0.45 * (1.0 - arc)             # 윗곡선 (중앙=top, 꼬리=45%)
+        low_x = lash_top + h * (0.45 + 0.55 * arc)           # 아랫곡선 (중앙=바닥, 꼬리=45%)
+        closed_x = lash_top + h * (0.45 + 0.28 * arc)        # 닫힘 아치 (중앙=73%, 꼬리=45%)
+        lid = up_x + t * (closed_x - up_x)
+        if lid - up_x < 0.5:
             continue
-        lid = lash_top + t_x * (y1 - lash_top)  # 이 컬럼의 눈꺼풀 위치
-        ys_out = np.arange(y0, y1, dtype=np.float64)
+        ys_out = np.arange(y0, int(round(low_x)), dtype=np.float64)
         src = np.empty_like(ys_out)
         upper = ys_out <= lid
         denom_u = max(lid - y0, 1e-6)
-        src[upper] = y0 + (ys_out[upper] - y0) * ((lash_top - y0) / denom_u)
-        denom_l = max(y1 - lid, 1e-6)
-        src[~upper] = lash_top + (ys_out[~upper] - lid) * ((y1 - lash_top) / denom_l)
+        src[upper] = y0 + (ys_out[upper] - y0) * ((up_x - y0) / denom_u)
+        denom_l = max(low_x - lid, 1e-6)
+        src[~upper] = up_x + (ys_out[~upper] - lid) * ((low_x - up_x) / denom_l)
         src_idx = np.clip(src, 0, image.shape[0] - 1)
         lo = np.floor(src_idx).astype(int)
         hi = np.minimum(lo + 1, image.shape[0] - 1)
         frac = (src_idx - lo)[:, None]
         column = image[:, x, :].astype(np.float64)
-        out[y0:y1, x, :] = (column[lo] * (1 - frac) + column[hi] * frac).astype(image.dtype)
+        out[y0 : int(round(low_x)), x, :] = (column[lo] * (1 - frac) + column[hi] * frac).astype(image.dtype)
     return out
 
 
