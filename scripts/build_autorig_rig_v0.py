@@ -61,8 +61,8 @@ def deformer_of(pid: str) -> str:
         return "root_warp"  # 통짜 hair (덩어리 미사용 시)
     if pid == "neck_under":
         return "body_warp"  # 숨은 목 = 몸 고정 배경판 (머리를 따라가면 어긋남이 노출된다)
-    if pid in ("neck", "choker"):
-        return "neck_warp"  # 목 부분 추종 (머리 격자 페이드 + 몸 바인딩)
+    if pid in ("neck", "neck_skin", "choker"):
+        return "neck_warp"  # 목 부분 추종 (머리 격자 페이드 + 몸 바인딩) — 턱→목→가슴 3단 그라데이션
     return "body_warp"  # 몸/의상: BodyAngle·Breath 담당
 
 
@@ -124,6 +124,7 @@ def main() -> int:
     parser.add_argument("--mouth-states-dir", type=Path, default=None, help="v21 최종 패턴: 풀 입 상태 스프라이트 4장 (closed/small/mid/wide) — warp보다 우선")
     parser.add_argument("--hair-chunks-dir", type=Path, default=None, help="머리 덩어리 5장 (front L/C/R + back L/R) — 통짜 hair 치환 + 물리 스프링 활성")
     parser.add_argument("--hidden-neck-dir", type=Path, default=None, help="숨은 목 (neck_under.png) — 목 분리 이음새 방지")
+    parser.add_argument("--neck-split-dir", type=Path, default=None, help="목 피부 분리 (neck_skin + clothes_trimmed) — 분해가 목을 clothes에 합친 경우")
     parser.add_argument("--out-dir", type=Path, required=True)
     parser.add_argument("--experiment-id", default="autorig-rig-v0")
     args = parser.parse_args()
@@ -136,12 +137,20 @@ def main() -> int:
     (out / "parts").mkdir(parents=True, exist_ok=True)
     (out / "meshes").mkdir(parents=True, exist_ok=True)
 
+    use_neck_split = args.neck_split_dir is not None and (args.neck_split_dir / "neck_skin.png").exists()
     reskin = load_json(args.reskin_manifest)
     sources: list[tuple[str, Path, int]] = []  # (part_id, path, draw_order)
+    clothes_order = 210
     for layer in sorted(reskin["layers"], key=lambda x: x["draw_order"]):
         if use_hair_chunks and layer["part_id"] in ("front_hair", "back_hair"):
             continue  # 덩어리로 치환
+        if use_neck_split and layer["part_id"] == "clothes":
+            clothes_order = layer["draw_order"]
+            sources.append(("clothes", args.neck_split_dir / "clothes_trimmed.png", clothes_order))
+            continue
         sources.append((layer["part_id"], ROOT / layer["path"], layer["draw_order"]))
+    if use_neck_split:
+        sources.append(("neck_skin", args.neck_split_dir / "neck_skin.png", clothes_order + 1))
     if use_hair_chunks:
         for name, order in (("hair_back_L", 100), ("hair_back_R", 101),
                             ("hair_front_L", 700), ("hair_front_C", 701), ("hair_front_R", 702)):
@@ -269,7 +278,10 @@ def main() -> int:
         write_json(out / mesh["mesh_path"], mesh)
 
     def union_bbox(*pids: str) -> list[int]:
-        boxes = [bbox_by_id[p] for p in pids if p in bbox_by_id]
+        # 빈 파트(알파 0 → [0,0,4,4])는 제외 — 원점으로 bounds가 끌려가는 것 방지
+        boxes = [bbox_by_id[p] for p in pids if p in bbox_by_id and bbox_by_id[p][2] > 4]
+        if not boxes:
+            boxes = [[0, 0, CANVAS, CANVAS]]
         x0 = min(b[0] for b in boxes)
         y0 = min(b[1] for b in boxes)
         x1 = max(b[0] + b[2] for b in boxes)
@@ -310,7 +322,7 @@ def main() -> int:
     if unmatched_parts:
         print(f"[경고] 명명 규칙 미매칭 → body_warp 폴백: {unmatched_parts} (deformer_of 패턴 확인 필요)")
 
-    neck_bounds = pad_bounds(union_bbox("neck", "choker", "neck_under") if "neck_under" in bbox_by_id else union_bbox("neck", "choker"), 30)
+    neck_bounds = pad_bounds(union_bbox("neck", "neck_skin", "choker", "neck_under"), 30)
     deformers = [
         # lattice/edge_pinned: FFD 격자 (공식 워프 메커니즘). edge_pinned=경계 연결, false=전역 이동.
         {"id": "root_warp", "type": "warp", "parent_id": None, "child_ids": children.get("root_warp", []), "bounds": [0, 0, CANVAS, CANVAS], "pivot": [1024, 1024], "lattice": {"cols": 3, "rows": 3}, "edge_pinned": False},
