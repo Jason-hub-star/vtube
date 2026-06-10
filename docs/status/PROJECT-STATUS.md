@@ -1,6 +1,6 @@
 # Vtube Project Status
 
-Updated: 2026-06-11 (rig v1.0)
+Updated: 2026-06-11 (rig v1.2 — FFD 메시 변형)
 
 ## Current Phase
 

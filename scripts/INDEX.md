@@ -1,6 +1,6 @@
 # scripts/ 인덱스
 
-Updated: 2026-06-10 · 총 280개 · `python3 scripts/build_scripts_index.py`로 재생성
+Updated: 2026-06-10 · 총 282개 · `python3 scripts/build_scripts_index.py`로 재생성
 
 새 스크립트를 만들기 전에 이 인덱스에서 기존 것을 먼저 찾는다.
 코드 규칙: `docs/ref/AUTORIG-PIPELINE-V1.md`의 '코드 규칙' 절 (lib 사용 의무, 캐릭터 하드코딩 금지, 500줄 상한).
@@ -23,7 +23,7 @@ Updated: 2026-06-10 · 총 280개 · `python3 scripts/build_scripts_index.py`로
 | `build_asset_dashboard.py` | 237 | Vtube 자산 대시보드 생성기. |
 | `build_autorig_current_candidates_002.py` | 119 | AUTORIG current-candidates manifest for cubism-v2-new-character-002. |
 | `build_autorig_full_assembly.py` | 127 | 모든 시트의 정규화 레이어를 모아 전신 조립 합성을 만든다 (검수 단위 규칙). |
-| `build_autorig_rig_v0.py` | 430 | P3 자동 리깅 v0: 하이브리드 레이어 → mini_cubism 리그(character.json) 자동 생성. |
+| `build_autorig_rig_v0.py` | 487 | P3 자동 리깅 v0: 하이브리드 레이어 → mini_cubism 리그(character.json) 자동 생성. |
 | `build_autorig_template_spec.py` | 200 | AUTORIG-TEMPLATE-SPEC-001: 64-part를 고정 슬롯 시트에 매핑하는 템플릿 스펙 생성. |
 | `build_scripts_index.py` | 94 | scripts/INDEX.md 자동 생성 — 258개 스크립트를 카테고리·설명·LOC로 색인한다. |
 | `run_autorig_control_tower.py` | 262 | AUTORIG 관제탑 서버 — runs/<run_id>/events.jsonl을 읽어 대시보드에 공급한다. |
@@ -38,7 +38,7 @@ Updated: 2026-06-10 · 총 280개 · `python3 scripts/build_scripts_index.py`로
 | `run_face_tracking_synthetic_parameter_smoke.py` | 354 | Run T0 synthetic face-tracking to Cubism parameter conversion smoke. |
 | `run_face_tracking_webcam_probe_server.py` | 333 | Serve a local MediaPipe webcam probe and save T1 face-tracking reports. |
 | `run_live2d_webcam_parameter_drive.py` | 411 | Drive a Live2D Web model with the saved T1 webcam Cubism parameter stream. |
-| `run_mini_cubism_webcam_drive.py` | 421 | T3: 웹캠/재생 트래킹 스트림으로 Mini Cubism 런타임을 구동하는 드라이브 서버. |
+| `run_mini_cubism_webcam_drive.py` | 434 | T3: 웹캠/재생 트래킹 스트림으로 Mini Cubism 런타임을 구동하는 드라이브 서버. |
 | `run_mini_cubism_webcam_drive_smoke.py` | 279 | T3-a/b 스모크: 합성 파라미터 + 저장된 T1 스트림 재생으로 Mini Cubism 드라이브를 검증한다. |
 
 ## servers-editors — 로컬 서버·에디터·플레이어 (9)
@@ -303,7 +303,7 @@ Updated: 2026-06-10 · 총 280개 · `python3 scripts/build_scripts_index.py`로
 | `export_rigger_handoff.py` | 8 | CLI wrapper for exporting the Cubism rigger handoff. |
 | `prepare_concept_psd_smoke_parts.py` | 192 | Prepare clean technical-smoke parts for concept PSD import testing. |
 
-## legacy-misc — 기타·레거시 (32)
+## legacy-misc — 기타·레거시 (34)
 
 | 파일 | LOC | 설명 |
 |---|---:|---|
@@ -316,6 +316,7 @@ Updated: 2026-06-10 · 총 280개 · `python3 scripts/build_scripts_index.py`로
 | `bootstrap_mini_cubism_pack_splitter_v0.py` | 310 | Bootstrap Mini Cubism pack-splitter-v0 experiment inputs. |
 | `build_concept_bootstrap_parts.py` | 183 | Create rough full-canvas concept part candidates for visual review. |
 | `build_cubism_mvp_rig_smoke_pack.py` | 362 | Build Cubism FREE-limit audit and MVP rig smoke checklist. |
+| `build_hidden_neck.py` | 91 | 숨은 목 생성 — 목 분리(머리 이동 시 이음새) 해소의 업계 정석 1단계. |
 | `build_mps_candidate_review_sheet.py` | 234 | Build a visual contact sheet and triage report for MPS See-through candidates. |
 | `build_mps_cleanup_candidates.py` | 244 | Build cleanup candidates for failed MPS See-through semantic layers. |
 | `build_pack_model_candidate_comparison.py` | 382 | Build a model-candidate comparison report for Mini Cubism pack splitter. |
@@ -332,6 +333,7 @@ Updated: 2026-06-10 · 총 280개 · `python3 scripts/build_scripts_index.py`로
 | `review_server_2048.py` | 61 | Local review server that saves manual Vtube adjustment evidence. |
 | `run_arap_blink_experiment.py` | 127 | ARAP-EXP-001: 원본 픽셀만으로 눈꺼풀 감김(깜빡임)을 만드는 메시 워프 실험. |
 | `run_live2d_core_api_extractor.py` | 320 | Extract Core-backed runtime structure from the Live2D strong model sandbox. |
+| `run_mesh_deform_verify.py` | 106 | MESH-DEFORM 검증 스모크: 중립 항등성 / 변형 상태 상이 / 목 이음새 / 렌더 시간. |
 | `run_mouth_open_experiment.py` | 149 | MOUTH-EXP-001: 원본 픽셀 워프로 입 벌림을 단계화한다 (깜빡임 공식의 재적용). |
 | `run_mps_compat_matrix.py` | 226 | Run the See-through Apple Silicon MPS compatibility matrix. |
 | `seed_imagen_live2d_technical_review.py` | 177 | Seed safe technical review verdicts for Imagen Live2D candidates. |

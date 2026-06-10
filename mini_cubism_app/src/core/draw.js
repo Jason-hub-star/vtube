@@ -1,6 +1,6 @@
 // 캔버스 렌더러. #preview-canvas에 그린다 — 서비스 플레이어가 그대로 쓴다.
 
-import { beginLatticeFrame, deformedVertices, deformerTransform, ensureEyeSocketCoverConfig, ensureEyeSocketCovers, inferredEyeSocketCoverBbox, partOpacity, partTransform } from "../core/rig.js";
+import { beginLatticeFrame, deformedVertices, deformerTransform, ensureEyeSocketCoverConfig, ensureEyeSocketCovers, identityTransform, inferredEyeSocketCoverBbox, partOpacity, partTransform } from "../core/rig.js";
 import { state } from "../core/state.js";
 import { bboxCenter, clamp } from "../core/utils.js";
 import { coverHandlePoints } from "../ui/pointer.js";
@@ -196,7 +196,17 @@ function drawClippedEyePart(ctx, project, part, image, transform, opacity) {
   tempCtx.drawImage(image, -center[0], -center[1], project.canvas_size[0], project.canvas_size[1]);
   tempCtx.restore();
   tempCtx.globalCompositeOperation = "destination-in";
-  tempCtx.drawImage(maskImage, 0, 0, project.canvas_size[0], project.canvas_size[1]);
+  // 자기리뷰 수정: 마스크(흰자)도 제 트랜스폼을 따라 이동해야 한다 — 원위치 고정이면
+  // 머리 이동 시 홍채가 옛 흰자 위치로 잘리는 잠복 버그 (v21 시절부터)
+  const maskPart = project.parts.find((item) => item.id === maskPartId);
+  const maskTransform = maskPart ? partTransform(project, maskPart) : identityTransform();
+  const maskCenter = maskPart ? bboxCenter(maskPart.bbox) : [0, 0];
+  tempCtx.save();
+  tempCtx.translate(maskCenter[0] + maskTransform.translate[0], maskCenter[1] + maskTransform.translate[1]);
+  tempCtx.rotate((maskTransform.rotate * Math.PI) / 180);
+  tempCtx.scale(maskTransform.scale[0], maskTransform.scale[1]);
+  tempCtx.drawImage(maskImage, -maskCenter[0], -maskCenter[1], project.canvas_size[0], project.canvas_size[1]);
+  tempCtx.restore();
   ctx.drawImage(temp, 0, 0);
 }
 
