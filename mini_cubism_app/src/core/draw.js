@@ -51,6 +51,8 @@ function drawPart(ctx, project, part) {
   ctx.restore();
 }
 
+let clipTempCanvas = null; // 클리핑용 임시캔버스 캐시 (매 호출 신규 할당이 프레임 끊김의 주범이었다)
+
 function drawClippedEyePart(ctx, project, part, image, transform, opacity) {
   const pairs = state.rig?.clipping?.pairs || {};
   const maskPartId =
@@ -58,10 +60,16 @@ function drawClippedEyePart(ctx, project, part, image, transform, opacity) {
     (part.id.startsWith("eye_L_") ? "eye_L_white" : "eye_R_white");
   const maskImage = state.images.get(maskPartId);
   if (!maskImage) return;
-  const temp = document.createElement("canvas");
-  temp.width = project.canvas_size[0];
-  temp.height = project.canvas_size[1];
+  if (!clipTempCanvas || clipTempCanvas.width !== project.canvas_size[0]) {
+    clipTempCanvas = document.createElement("canvas");
+    clipTempCanvas.width = project.canvas_size[0];
+    clipTempCanvas.height = project.canvas_size[1];
+  }
+  const temp = clipTempCanvas;
   const tempCtx = temp.getContext("2d");
+  tempCtx.globalCompositeOperation = "source-over"; // 이전 호출의 destination-in 잔류 해제
+  tempCtx.globalAlpha = 1;
+  tempCtx.clearRect(0, 0, temp.width, temp.height);
   const center = bboxCenter(part.bbox);
   tempCtx.save();
   tempCtx.translate(center[0] + transform.translate[0], center[1] + transform.translate[1]);

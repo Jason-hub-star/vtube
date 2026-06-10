@@ -263,15 +263,21 @@ async function runWebcam() {
   async function loadLandmarker() {
     if (landmarker) return landmarker;
     const fileset = await FilesetResolver.forVisionTasks("https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14/wasm");
-    landmarker = await FaceLandmarker.createFromOptions(fileset, {
+    const options = (delegate) => ({
       baseOptions: {
         modelAssetPath: "https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/latest/face_landmarker.task",
-        delegate: "CPU",
+        delegate,
       },
       outputFaceBlendshapes: true,
       runningMode: "VIDEO",
       numFaces: 1,
     });
+    try {
+      landmarker = await FaceLandmarker.createFromOptions(fileset, options("GPU")); // 프레임 끊김 개선
+    } catch (e) {
+      console.warn("GPU delegate 실패 — CPU 폴백:", e);
+      landmarker = await FaceLandmarker.createFromOptions(fileset, options("CPU"));
+    }
     return landmarker;
   }
 

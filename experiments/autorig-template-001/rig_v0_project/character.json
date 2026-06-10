@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project_kind": "mini_cubism_v0",
   "experiment_id": "autorig-rig-v0",
-  "generated_at": "2026-06-10T12:50:52.154020+00:00",
+  "generated_at": "2026-06-10T13:54:34.012823+00:00",
   "source_selection": {
     "visible_layers": "experiments/autorig-template-001/seethrough_true_reskinned/reskin_manifest.json",
     "hidden_layers": [
@@ -49,6 +49,22 @@
       "deformer_node": "back_hair_warp"
     },
     {
+      "id": "neck_under",
+      "display_name": "neck_under",
+      "source_path": "parts/neck_under.png",
+      "original_source_path": "experiments/autorig-template-001/hidden_neck/neck_under.png",
+      "bbox": [
+        882,
+        843,
+        281,
+        248
+      ],
+      "alpha_coverage": 0.016615,
+      "draw_order": 199,
+      "folder": "Body",
+      "deformer_node": "neck_warp"
+    },
+    {
       "id": "neck",
       "display_name": "neck",
       "source_path": "parts/neck.png",
@@ -62,7 +78,7 @@
       "alpha_coverage": 0.0,
       "draw_order": 200,
       "folder": "Body",
-      "deformer_node": "body_warp"
+      "deformer_node": "neck_warp"
     },
     {
       "id": "raw_footwear",
@@ -174,7 +190,7 @@
       "alpha_coverage": 0.0,
       "draw_order": 230,
       "folder": "Body",
-      "deformer_node": "body_warp"
+      "deformer_node": "neck_warp"
     },
     {
       "id": "R_ear_outer",
@@ -1221,6 +1237,296 @@
         ]
       ],
       "mesh_path": "meshes/hair_back_R.json"
+    },
+    {
+      "part_id": "neck_under",
+      "vertices": [
+        [
+          882.0,
+          843.0
+        ],
+        [
+          952.2,
+          843.0
+        ],
+        [
+          1022.5,
+          843.0
+        ],
+        [
+          1092.8,
+          843.0
+        ],
+        [
+          1163.0,
+          843.0
+        ],
+        [
+          882.0,
+          925.7
+        ],
+        [
+          952.2,
+          925.7
+        ],
+        [
+          1022.5,
+          925.7
+        ],
+        [
+          1092.8,
+          925.7
+        ],
+        [
+          1163.0,
+          925.7
+        ],
+        [
+          882.0,
+          1008.3
+        ],
+        [
+          952.2,
+          1008.3
+        ],
+        [
+          1022.5,
+          1008.3
+        ],
+        [
+          1092.8,
+          1008.3
+        ],
+        [
+          1163.0,
+          1008.3
+        ],
+        [
+          882.0,
+          1091.0
+        ],
+        [
+          952.2,
+          1091.0
+        ],
+        [
+          1022.5,
+          1091.0
+        ],
+        [
+          1092.8,
+          1091.0
+        ],
+        [
+          1163.0,
+          1091.0
+        ]
+      ],
+      "triangles": [
+        [
+          0,
+          5,
+          1
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          1,
+          6,
+          2
+        ],
+        [
+          2,
+          6,
+          7
+        ],
+        [
+          2,
+          7,
+          3
+        ],
+        [
+          3,
+          7,
+          8
+        ],
+        [
+          3,
+          8,
+          4
+        ],
+        [
+          4,
+          8,
+          9
+        ],
+        [
+          5,
+          10,
+          6
+        ],
+        [
+          6,
+          10,
+          11
+        ],
+        [
+          6,
+          11,
+          7
+        ],
+        [
+          7,
+          11,
+          12
+        ],
+        [
+          7,
+          12,
+          8
+        ],
+        [
+          8,
+          12,
+          13
+        ],
+        [
+          8,
+          13,
+          9
+        ],
+        [
+          9,
+          13,
+          14
+        ],
+        [
+          10,
+          15,
+          11
+        ],
+        [
+          11,
+          15,
+          16
+        ],
+        [
+          11,
+          16,
+          12
+        ],
+        [
+          12,
+          16,
+          17
+        ],
+        [
+          12,
+          17,
+          13
+        ],
+        [
+          13,
+          17,
+          18
+        ],
+        [
+          13,
+          18,
+          14
+        ],
+        [
+          14,
+          18,
+          19
+        ]
+      ],
+      "uvs": [
+        [
+          0.430664,
+          0.411621
+        ],
+        [
+          0.464941,
+          0.411621
+        ],
+        [
+          0.499268,
+          0.411621
+        ],
+        [
+          0.533594,
+          0.411621
+        ],
+        [
+          0.567871,
+          0.411621
+        ],
+        [
+          0.430664,
+          0.452002
+        ],
+        [
+          0.464941,
+          0.452002
+        ],
+        [
+          0.499268,
+          0.452002
+        ],
+        [
+          0.533594,
+          0.452002
+        ],
+        [
+          0.567871,
+          0.452002
+        ],
+        [
+          0.430664,
+          0.492334
+        ],
+        [
+          0.464941,
+          0.492334
+        ],
+        [
+          0.499268,
+          0.492334
+        ],
+        [
+          0.533594,
+          0.492334
+        ],
+        [
+          0.567871,
+          0.492334
+        ],
+        [
+          0.430664,
+          0.532715
+        ],
+        [
+          0.464941,
+          0.532715
+        ],
+        [
+          0.499268,
+          0.532715
+        ],
+        [
+          0.533594,
+          0.532715
+        ],
+        [
+          0.567871,
+          0.532715
+        ]
+      ],
+      "mesh_path": "meshes/neck_under.json"
     },
     {
       "part_id": "neck",
@@ -12491,11 +12797,9 @@
       "type": "warp",
       "parent_id": "root_warp",
       "child_ids": [
-        "neck",
         "clothes",
         "L_arm",
-        "R_arm",
-        "choker"
+        "R_arm"
       ],
       "bounds": [
         0,
@@ -12506,6 +12810,26 @@
       "pivot": [
         847,
         1024
+      ]
+    },
+    {
+      "id": "neck_warp",
+      "type": "warp",
+      "parent_id": "body_warp",
+      "child_ids": [
+        "neck_under",
+        "neck",
+        "choker"
+      ],
+      "bounds": [
+        0,
+        0,
+        34,
+        34
+      ],
+      "pivot": [
+        17,
+        17
       ]
     },
     {
@@ -12658,6 +12982,28 @@
       ]
     },
     {
+      "id": "ParamAngleY",
+      "min": -30,
+      "max": 30,
+      "default": 0,
+      "key_values": [
+        -30,
+        0,
+        30
+      ]
+    },
+    {
+      "id": "ParamAngleZ",
+      "min": -30,
+      "max": 30,
+      "default": 0,
+      "key_values": [
+        -30,
+        0,
+        30
+      ]
+    },
+    {
       "id": "ParamBodyAngleX",
       "min": -10,
       "max": 10,
@@ -12734,6 +13080,28 @@
       ]
     },
     {
+      "id": "ParamBrowLY",
+      "min": -1,
+      "max": 1,
+      "default": 0,
+      "key_values": [
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "ParamBrowRY",
+      "min": -1,
+      "max": 1,
+      "default": 0,
+      "key_values": [
+        -1,
+        0,
+        1
+      ]
+    },
+    {
       "id": "ParamHairFront",
       "min": -1,
       "max": 1,
@@ -12790,6 +13158,150 @@
           1.0
         ],
         "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleY",
+      "key_value": -30,
+      "target_id": "head_angle_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          -12
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleY",
+      "key_value": 30,
+      "target_id": "head_angle_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          12
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleX",
+      "key_value": -30,
+      "target_id": "neck_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          -8,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleX",
+      "key_value": 30,
+      "target_id": "neck_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          8,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleY",
+      "key_value": -30,
+      "target_id": "neck_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          -4
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleY",
+      "key_value": 30,
+      "target_id": "neck_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          4
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleZ",
+      "key_value": -30,
+      "target_id": "head_angle_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": -10,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleZ",
+      "key_value": 30,
+      "target_id": "head_angle_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 10,
         "opacity": 1
       }
     },
@@ -13028,6 +13540,78 @@
       }
     },
     {
+      "parameter_id": "ParamBrowLY",
+      "key_value": -1,
+      "target_id": "L_brow",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          8
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBrowLY",
+      "key_value": 1,
+      "target_id": "L_brow",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          -8
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBrowRY",
+      "key_value": -1,
+      "target_id": "R_brow",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          8
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBrowRY",
+      "key_value": 1,
+      "target_id": "R_brow",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          -8
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
       "parameter_id": "ParamEyeLOpen",
       "key_value": 0.27,
       "target_id": "eye_L_warp",
@@ -13141,6 +13725,10 @@
           -24,
           3
         ],
+        "ParamAngleY": [
+          0,
+          6
+        ],
         "ParamBodyAngleX": [
           -8,
           2
@@ -13175,6 +13763,10 @@
       "input_weights": {
         "ParamAngleX": [
           -18,
+          8
+        ],
+        "ParamAngleY": [
+          0,
           8
         ],
         "ParamBodyAngleX": [

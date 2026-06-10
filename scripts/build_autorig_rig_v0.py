@@ -59,6 +59,8 @@ def deformer_of(pid: str) -> str:
         return "back_hair_warp"
     if "hair" in pid:
         return "root_warp"  # 통짜 hair (덩어리 미사용 시)
+    if pid in ("neck", "neck_under", "choker"):
+        return "neck_warp"  # 목 부분 추종 (머리 이동의 ~35%)
     return "body_warp"  # 몸/의상: BodyAngle·Breath 담당
 
 
@@ -106,6 +108,7 @@ def main() -> int:
     parser.add_argument("--warp-mouth-dir", type=Path, default=None, help="입 워프 패치 디렉토리 (지정 시 내부 3레이어 스왑 대신 원본 워프 5단계)")
     parser.add_argument("--mouth-states-dir", type=Path, default=None, help="v21 최종 패턴: 풀 입 상태 스프라이트 4장 (closed/small/mid/wide) — warp보다 우선")
     parser.add_argument("--hair-chunks-dir", type=Path, default=None, help="머리 덩어리 5장 (front L/C/R + back L/R) — 통짜 hair 치환 + 물리 스프링 활성")
+    parser.add_argument("--hidden-neck-dir", type=Path, default=None, help="숨은 목 (neck_under.png) — 목 분리 이음새 방지")
     parser.add_argument("--out-dir", type=Path, required=True)
     parser.add_argument("--experiment-id", default="autorig-rig-v0")
     args = parser.parse_args()
@@ -130,6 +133,8 @@ def main() -> int:
             sources.append((name, args.hair_chunks_dir / f"{name}.png", order))
     # 숨은 레이어: 감은꺼풀은 눈 위(앞), 입 내부는 mouth_line 바로 아래
     hidden = []
+    if args.hidden_neck_dir is not None and (args.hidden_neck_dir / "neck_under.png").exists():
+        hidden.append(("neck_under", args.hidden_neck_dir / "neck_under.png", 199))  # 원본 목(200) 바로 뒤
     if use_mouth_states:
         # v21 최종 입 성공패턴: 풀 상태 스프라이트 크로스페이드 (분리 내부 레이어 폐기)
         # closed 상태는 원본 mouth_line이 담당 (픽셀-가이드 원칙: 중립은 100% 원본)
@@ -253,6 +258,7 @@ def main() -> int:
     deformers = [
         {"id": "root_warp", "type": "warp", "parent_id": None, "child_ids": children.get("root_warp", []), "bounds": [0, 0, CANVAS, CANVAS], "pivot": [1024, 1024]},
         {"id": "body_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("body_warp", []), "bounds": body_bounds, "pivot": center(body_bounds)},
+        {"id": "neck_warp", "type": "warp", "parent_id": "body_warp", "child_ids": children.get("neck_warp", []), "bounds": pad_bounds(union_bbox("neck", "choker"), 30), "pivot": center(pad_bounds(union_bbox("neck", "choker"), 30))},
         {"id": "head_angle_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("head_angle_warp", []), "bounds": head_bounds, "pivot": center(head_bounds)},
         {"id": "eye_L_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("eye_L_warp", []), "bounds": eye_l_bounds, "pivot": center(eye_l_bounds)},
         {"id": "eye_R_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("eye_R_warp", []), "bounds": eye_r_bounds, "pivot": center(eye_r_bounds)},
@@ -263,6 +269,8 @@ def main() -> int:
 
     parameters = [
         {"id": "ParamAngleX", "min": -30, "max": 30, "default": 0, "key_values": [-30, 0, 30]},
+        {"id": "ParamAngleY", "min": -30, "max": 30, "default": 0, "key_values": [-30, 0, 30]},
+        {"id": "ParamAngleZ", "min": -30, "max": 30, "default": 0, "key_values": [-30, 0, 30]},
         {"id": "ParamBodyAngleX", "min": -10, "max": 10, "default": 0, "key_values": [-10, 0, 10]},
         {"id": "ParamBodyAngleY", "min": -10, "max": 10, "default": 0, "key_values": [-10, 0, 10]},
         {"id": "ParamBreath", "min": 0, "max": 1, "default": 0, "key_values": [0, 1]},
@@ -270,6 +278,8 @@ def main() -> int:
         {"id": "ParamEyeBallY", "min": -1, "max": 1, "default": 0, "key_values": [-1, 0, 1]},
         {"id": "ParamEyeLOpen", "min": 0.27, "max": 1, "default": 1, "key_values": [0.27, 0.5, 1]},
         {"id": "ParamEyeROpen", "min": 0.27, "max": 1, "default": 1, "key_values": [0.27, 0.5, 1]},
+        {"id": "ParamBrowLY", "min": -1, "max": 1, "default": 0, "key_values": [-1, 0, 1]},
+        {"id": "ParamBrowRY", "min": -1, "max": 1, "default": 0, "key_values": [-1, 0, 1]},
         {"id": "ParamHairFront", "min": -1, "max": 1, "default": 0, "key_values": [-1, 0, 1]},
         {"id": "ParamMouthOpenY", "min": 0, "max": 0.85, "default": 0.0, "key_values": [0, 0.5, 0.85]},
     ]
@@ -286,6 +296,14 @@ def main() -> int:
     keyform_bindings = [
         binding("ParamAngleX", -30, "head_angle_warp", tx=-22),
         binding("ParamAngleX", 30, "head_angle_warp", tx=22),
+        binding("ParamAngleY", -30, "head_angle_warp", ty=-12),
+        binding("ParamAngleY", 30, "head_angle_warp", ty=12),
+        binding("ParamAngleX", -30, "neck_warp", tx=-8),
+        binding("ParamAngleX", 30, "neck_warp", tx=8),
+        binding("ParamAngleY", -30, "neck_warp", ty=-4),
+        binding("ParamAngleY", 30, "neck_warp", ty=4),
+        binding_r("ParamAngleZ", -30, "head_angle_warp", rotate=-10),
+        binding_r("ParamAngleZ", 30, "head_angle_warp", rotate=10),
         binding_r("ParamBodyAngleX", -10, "body_warp", tx=-8, rotate=-1.2),
         binding_r("ParamBodyAngleX", 10, "body_warp", tx=8, rotate=1.2),
         binding("ParamBodyAngleY", -10, "body_warp", ty=-5),
@@ -299,6 +317,10 @@ def main() -> int:
         binding("ParamEyeBallY", 1, "L_iris", ty=4.5),
         binding("ParamEyeBallY", -1, "R_iris", ty=-4.5),
         binding("ParamEyeBallY", 1, "R_iris", ty=4.5),
+        binding("ParamBrowLY", -1, "L_brow", ty=8),
+        binding("ParamBrowLY", 1, "L_brow", ty=-8),
+        binding("ParamBrowRY", -1, "R_brow", ty=8),
+        binding("ParamBrowRY", 1, "R_brow", ty=-8),
         # 깜빡임 형태는 ARAP 패치가 담당, 워프는 미세 눌림만 (validator: 파라미터당 바인딩 필수)
         binding("ParamEyeLOpen", 0.27, "eye_L_warp", sy=0.97),
         binding("ParamEyeROpen", 0.27, "eye_R_warp", sy=0.97),
@@ -366,7 +388,7 @@ def main() -> int:
                 "targets": ["hair_front_L", "hair_front_C", "hair_front_R"],
                 "anchor": "top_center", "mass": 0.8, "stiffness": 0.13, "damping": 0.82, "drag": 0.03,
                 "max_offset": [34, 28], "rotate_factor": 0.055,
-                "input_weights": {"ParamAngleX": [-24, 3], "ParamBodyAngleX": [-8, 2], "ParamHairFront": [24, 0]},
+                "input_weights": {"ParamAngleX": [-24, 3], "ParamAngleY": [0, 6], "ParamBodyAngleX": [-8, 2], "ParamHairFront": [24, 0]},
                 "part_weights": {"hair_front_L": 1.0, "hair_front_C": 0.7, "hair_front_R": 1.0},
             },
             {
@@ -374,7 +396,7 @@ def main() -> int:
                 "targets": ["hair_back_L", "hair_back_R"],
                 "anchor": "top_center", "mass": 1.4, "stiffness": 0.08, "damping": 0.88, "drag": 0.04,
                 "max_offset": [24, 34], "rotate_factor": 0.03,
-                "input_weights": {"ParamAngleX": [-18, 8], "ParamBodyAngleX": [-6, 3]},
+                "input_weights": {"ParamAngleX": [-18, 8], "ParamAngleY": [0, 8], "ParamBodyAngleX": [-6, 3]},
                 "part_weights": {"hair_back_L": 1.0, "hair_back_R": 1.0},
             },
             {
