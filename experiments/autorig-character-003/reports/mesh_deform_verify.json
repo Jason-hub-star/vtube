@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T17:42:34.876111+00:00",
+  "generated_at": "2026-06-10T17:49:42.903489+00:00",
   "status": "PASS",
   "checks": {
     "neutral_identity": true,
@@ -8,11 +8,11 @@
     "no_errors": true
   },
   "timing_ms": {
-    "head_turn": 174.8,
-    "nod": 122.8,
-    "tilt": 75.8,
-    "gaze_turn": 76.3,
-    "combo": 84.4
+    "head_turn": 174.7,
+    "nod": 164.2,
+    "tilt": 177.8,
+    "gaze_turn": 165.9,
+    "combo": 167.8
   },
   "raw": "experiments/autorig-character-003/reports/mesh_deform_verify_raw.json"
 }

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project_kind": "mini_cubism_v0",
   "experiment_id": "autorig-rig-v0",
-  "generated_at": "2026-06-10T17:45:12.289370+00:00",
+  "generated_at": "2026-06-10T17:48:34.085319+00:00",
   "source_selection": {
     "visible_layers": "experiments/autorig-character-003/seethrough_true_reskinned/reskin_manifest.json",
     "hidden_layers": [
@@ -16818,11 +16818,11 @@
         661,
         203,
         723,
-        1012
+        852
       ],
       "pivot": [
         1022,
-        709
+        629
       ],
       "lattice": {
         "cols": 7,
@@ -17228,7 +17228,7 @@
       "delta_type": "deformer_transform",
       "deltas": {
         "translate": [
-          -8,
+          -3,
           0.0
         ],
         "scale": [
@@ -17246,7 +17246,7 @@
       "delta_type": "deformer_transform",
       "deltas": {
         "translate": [
-          8,
+          3,
           0.0
         ],
         "scale": [
@@ -17265,7 +17265,7 @@
       "deltas": {
         "translate": [
           0.0,
-          -4
+          -2
         ],
         "scale": [
           1.0,
@@ -17283,7 +17283,7 @@
       "deltas": {
         "translate": [
           0.0,
-          4
+          2
         ],
         "scale": [
           1.0,

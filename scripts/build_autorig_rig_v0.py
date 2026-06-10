@@ -296,7 +296,7 @@ def main() -> int:
     eye_l_bounds = pad_bounds(union_bbox("L_eye_white", "L_iris", "L_upper_lash", "eye_L_closed_lid"), 30)
     eye_r_bounds = pad_bounds(union_bbox("R_eye_white", "R_iris", "R_upper_lash", "eye_R_closed_lid"), 30)
     mouth_bounds = pad_bounds(union_bbox("mouth_line", "mouth_inner", "mouth_teeth"), 40)
-    head_bounds = extend_down(pad_bounds(union_bbox("face_base", "front_hair", "L_brow", "R_brow", "mouth_line"), 60), 160)
+    head_bounds = pad_bounds(union_bbox("face_base", "front_hair", "L_brow", "R_brow", "mouth_line"), 60)  # 하향 연장 금지: 턱은 가장자리 핀 근처라 적게 움직여야 목이 따라갈 수 있다 (공식 의사3D)
     if use_hair_chunks:
         hair_bounds = pad_bounds(union_bbox("hair_front_L", "hair_front_C", "hair_front_R"), 30)
         back_hair_bounds = pad_bounds(union_bbox("hair_back_L", "hair_back_R"), 30)
@@ -370,10 +370,10 @@ def main() -> int:
         binding("ParamAngleY", -30, "head_angle_warp", ty=-12),
         binding("ParamAngleY", 30, "head_angle_warp", ty=12),
         # 목 자체 바인딩: 머리 35% 기본 추종 + 몸 추종 복제 (head 체인이라 body 몫을 직접 받는다)
-        binding("ParamAngleX", -30, "neck_warp", tx=-8),
-        binding("ParamAngleX", 30, "neck_warp", tx=8),
-        binding("ParamAngleY", -30, "neck_warp", ty=-4),
-        binding("ParamAngleY", 30, "neck_warp", ty=4),
+        binding("ParamAngleX", -30, "neck_warp", tx=-3),
+        binding("ParamAngleX", 30, "neck_warp", tx=3),
+        binding("ParamAngleY", -30, "neck_warp", ty=-2),
+        binding("ParamAngleY", 30, "neck_warp", ty=2),
         binding("ParamBodyAngleX", -10, "neck_warp", tx=-8),
         binding("ParamBodyAngleX", 10, "neck_warp", tx=8),
         binding("ParamBodyAngleY", -10, "neck_warp", ty=-5),
