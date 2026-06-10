@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-10T07:55:10.619151+00:00",
+  "test_id": "autorig_sheet_pilot_hair_large_01",
+  "status": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+  "sheet_id": "hair_large_01",
+  "raw_sheet": "experiments/autorig-template-001/raw_sheets/hair_large_01.png",
+  "style_ref": "experiments/cubism-v2-new-character-002/reports/source_inpaint_v1/source_front_2048_inpaint_clean.png",
+  "occupancy": [
+    {
+      "part_id": "hair_back_base",
+      "content_ratio": 0.38536,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "hair_back_underpaint",
+      "content_ratio": 0.3763,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "hair_back_strand_L",
+      "content_ratio": 0.10039,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "hair_back_strand_R",
+      "content_ratio": 0.10099,
+      "issues": [],
+      "ok": true
+    }
+  ],
+  "occupancy_pass": true,
+  "placements": [
+    {
+      "part_id": "hair_back_base",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/hair_large_01/hair_back_base.png",
+      "source_px": [
+        670,
+        928
+      ],
+      "placed_px": [
+        760,
+        1053
+      ],
+      "scale": 1.1343
+    },
+    {
+      "part_id": "hair_back_underpaint",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/hair_large_01/hair_back_underpaint.png",
+      "source_px": [
+        653,
+        918
+      ],
+      "placed_px": [
+        362,
+        508
+      ],
+      "scale": 0.5539
+    },
+    {
+      "part_id": "hair_back_strand_L",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/hair_large_01/hair_back_strand_L.png",
+      "source_px": [
+        272,
+        886
+      ],
+      "placed_px": [
+        233,
+        760
+      ],
+      "scale": 0.8578
+    },
+    {
+      "part_id": "hair_back_strand_R",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/hair_large_01/hair_back_strand_R.png",
+      "source_px": [
+        264,
+        886
+      ],
+      "placed_px": [
+        222,
+        745
+      ],
+      "scale": 0.8409
+    }
+  ],
+  "composites": {
+    "assembly_hair": "experiments/autorig-template-001/reports/pilot_hair_large_01/assembly_hair.png",
+    "assembly_all": "experiments/autorig-template-001/reports/pilot_hair_large_01/assembly_all.png"
+  },
+  "self_review": {
+    "slots": 4,
+    "occupancy_ok": 4,
+    "placed": 4,
+    "fallback_needed": false
+  },
+  "interpretation_ko": "이미지 모델이 슬롯 레이아웃을 준수했습니다. 조립 합성을 보고 스타일/품질을 판정하세요."
+}

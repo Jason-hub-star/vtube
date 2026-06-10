@@ -55,7 +55,48 @@ SHEET_FAMILIES = {
 }
 
 
+EXTRA_DESCRIPTIONS = {
+    "mouth_line": "closed mouth line only, the character's lip line stroke",
+    "mouth_inner": "open mouth inner cavity shape, dark red interior only",
+    "mouth_upper_lip_mask": "upper lip shape only, soft skin-tone lip form",
+    "mouth_lower_lip_mask": "lower lip shape only, soft skin-tone lip form",
+    "mouth_teeth": "upper teeth row only, small white teeth arc",
+    "mouth_tongue": "tongue shape only, soft pink rounded form",
+    "mouth_corner_L": "left mouth corner accent stroke only, tiny",
+    "mouth_corner_R": "right mouth corner accent stroke only, tiny",
+    "face_base": "the character's full face base WITHOUT eyes, eyebrows and mouth (smooth blank skin where they would be), including ears and face outline",
+    "face_underpaint_L": "left face-edge underpaint, flat skin-tone filler shape",
+    "face_underpaint_R": "right face-edge underpaint, flat skin-tone filler shape",
+    "face_shadow_L": "soft left face shadow shape only, subtle skin shading",
+    "face_shadow_R": "soft right face shadow shape only, subtle skin shading",
+    "nose": "tiny nose dot/line accent only",
+    "cheek_L": "left cheek blush only, soft pink oval",
+    "cheek_R": "right cheek blush only, soft pink oval",
+    "brow_L": "left eyebrow only, single brow stroke",
+    "brow_R": "right eyebrow only, single brow stroke",
+    "torso_base": "the character's torso with clothing as one piece, neck to waist, no head, no arms",
+    "neck": "neck shape only, skin-tone column",
+    "shoulder_L": "left shoulder with sleeve top only",
+    "shoulder_R": "right shoulder with sleeve top only",
+    "arm_L_upper_simple": "left upper arm with sleeve, simple shape",
+    "arm_R_upper_simple": "right upper arm with sleeve, simple shape",
+    "collar_front": "front collar piece of the outfit only",
+    "collar_shadow": "collar shadow shape only, subtle",
+    "chest_cloth_base": "chest clothing panel only",
+    "chest_cloth_shadow": "chest clothing shadow shape only, subtle",
+}
+
+
 def generic_description(part_id: str, label_ko: str) -> str:
+    if part_id in EXTRA_DESCRIPTIONS:
+        return EXTRA_DESCRIPTIONS[part_id]
+    if "hair" in part_id:
+        side = "left" if "_L" in part_id else "right" if "_R" in part_id else "center"
+        zone = "front bangs" if "front" in part_id else "side lock" if "side" in part_id else "back hair"
+        kind = "underpaint filler shape" if "underpaint" in part_id else "strand lock" if "strand" in part_id else "hair mass"
+        return f"{side} {zone} {kind} only, matching the reference hair color and flow"
+    if "underpaint" in part_id:
+        return f"{part_id.replace('_', ' ')} — flat filler shape behind other parts ({label_ko})"
     words = part_id.replace("_", " ")
     return f"{words} — isolated part of the character ({label_ko}), drawn alone"
 

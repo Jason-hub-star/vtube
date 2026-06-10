@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-10T07:34:04.620988+00:00",
+  "test_id": "autorig_sheet_pilot_mouth_small_01",
+  "status": "SLOT_COMPLIANCE_FAIL",
+  "sheet_id": "mouth_small_01",
+  "raw_sheet": "experiments/autorig-template-001/raw_sheets/mouth_small_01.png",
+  "style_ref": "experiments/cubism-v2-new-character-002/reports/source_inpaint_v1/source_front_2048_inpaint_clean.png",
+  "occupancy": [
+    {
+      "part_id": "mouth_line",
+      "content_ratio": 0.00337,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "mouth_inner",
+      "content_ratio": 0.19537,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "mouth_upper_lip_mask",
+      "content_ratio": 0.04521,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "mouth_lower_lip_mask",
+      "content_ratio": 0.03238,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "mouth_teeth",
+      "content_ratio": 0.03297,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "mouth_tongue",
+      "content_ratio": 0.11932,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "mouth_corner_L",
+      "content_ratio": 0.00064,
+      "issues": [
+        "EMPTY_SLOT"
+      ],
+      "ok": false
+    },
+    {
+      "part_id": "mouth_corner_R",
+      "content_ratio": 0.00065,
+      "issues": [
+        "EMPTY_SLOT"
+      ],
+      "ok": false
+    }
+  ],
+  "occupancy_pass": false,
+  "placements": [
+    {
+      "part_id": "mouth_line",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/mouth_small_01/mouth_line.png",
+      "source_px": [
+        253,
+        12
+      ],
+      "placed_px": [
+        175,
+        8
+      ],
+      "scale": 0.6917
+    },
+    {
+      "part_id": "mouth_inner",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/mouth_small_01/mouth_inner.png",
+      "source_px": [
+        304,
+        197
+      ],
+      "placed_px": [
+        285,
+        185
+      ],
+      "scale": 0.9391
+    },
+    {
+      "part_id": "mouth_upper_lip_mask",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/mouth_small_01/mouth_upper_lip_mask.png",
+      "source_px": [
+        308,
+        61
+      ],
+      "placed_px": [
+        159,
+        31
+      ],
+      "scale": 0.5162
+    },
+    {
+      "part_id": "mouth_lower_lip_mask",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/mouth_small_01/mouth_lower_lip_mask.png",
+      "source_px": [
+        283,
+        61
+      ],
+      "placed_px": [
+        181,
+        39
+      ],
+      "scale": 0.6396
+    },
+    {
+      "part_id": "mouth_teeth",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/mouth_small_01/mouth_teeth.png",
+      "source_px": [
+        303,
+        56
+      ],
+      "placed_px": [
+        195,
+        36
+      ],
+      "scale": 0.6436
+    },
+    {
+      "part_id": "mouth_tongue",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/mouth_small_01/mouth_tongue.png",
+      "source_px": [
+        199,
+        186
+      ],
+      "placed_px": [
+        149,
+        139
+      ],
+      "scale": 0.7473
+    },
+    {
+      "part_id": "mouth_corner_L",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/mouth_small_01/mouth_corner_L.png",
+      "source_px": [
+        31,
+        20
+      ],
+      "placed_px": [
+        20,
+        13
+      ],
+      "scale": 0.65
+    },
+    {
+      "part_id": "mouth_corner_R",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/mouth_small_01/mouth_corner_R.png",
+      "source_px": [
+        31,
+        20
+      ],
+      "placed_px": [
+        22,
+        14
+      ],
+      "scale": 0.7
+    }
+  ],
+  "composites": {
+    "assembly_mouth": "experiments/autorig-template-001/reports/pilot_mouth_small_01/assembly_mouth.png",
+    "assembly_all": "experiments/autorig-template-001/reports/pilot_mouth_small_01/assembly_all.png"
+  },
+  "self_review": {
+    "slots": 8,
+    "occupancy_ok": 6,
+    "placed": 8,
+    "fallback_needed": true
+  },
+  "interpretation_ko": "슬롯 위반이 있습니다. 위반 슬롯만 재생성하거나 슬롯당 1회 생성 폴백을 검토하세요."
+}

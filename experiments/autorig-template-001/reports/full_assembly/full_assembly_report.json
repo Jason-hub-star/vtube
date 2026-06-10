@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-06-10T08:26:49.470231+00:00",
+  "full_assembly": "experiments/autorig-template-001/reports/full_assembly/full_assembly.png",
+  "side_by_side": "experiments/autorig-template-001/reports/full_assembly/side_by_side_ref_vs_assembly.png",
+  "groups": {
+    "body": "experiments/autorig-template-001/reports/full_assembly/assembly_body.png",
+    "brow": "experiments/autorig-template-001/reports/full_assembly/assembly_brow.png",
+    "clothing": "experiments/autorig-template-001/reports/full_assembly/assembly_clothing.png",
+    "eye_L": "experiments/autorig-template-001/reports/full_assembly/assembly_eye_L.png",
+    "eye_R": "experiments/autorig-template-001/reports/full_assembly/assembly_eye_R.png",
+    "face_base": "experiments/autorig-template-001/reports/full_assembly/assembly_face_base.png",
+    "hair": "experiments/autorig-template-001/reports/full_assembly/assembly_hair.png",
+    "mouth": "experiments/autorig-template-001/reports/full_assembly/assembly_mouth.png"
+  },
+  "total_slots": 64,
+  "missing_layers": [],
+  "missing_count": 0
+}

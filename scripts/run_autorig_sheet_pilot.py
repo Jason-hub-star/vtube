@@ -42,6 +42,15 @@ def chroma_alpha(rgb: np.ndarray, chroma: tuple[int, int, int]) -> np.ndarray:
     return np.clip((dist - ALPHA_D0) / (ALPHA_D1 - ALPHA_D0), 0.0, 1.0)
 
 
+def despill(rgb: np.ndarray) -> np.ndarray:
+    """마젠타 스필 제거: R/B가 G보다 함께 높은 만큼(마젠타 캐스트)을 깎는다."""
+    out = rgb.astype(np.float32)
+    spill = np.clip(np.minimum(out[..., 0], out[..., 2]) - out[..., 1], 0, None)
+    out[..., 0] -= spill * 0.7
+    out[..., 2] -= spill * 0.7
+    return np.clip(out, 0, 255).astype(np.uint8)
+
+
 def generate_sheet(prompt: str, style_ref: Path, out_path: Path, timeout: int = 600) -> None:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     full_prompt = (
@@ -95,11 +104,13 @@ def extract_and_place(sheet_img: Image.Image, slot: dict, chroma: tuple[int, int
         return {"part_id": slot["part_id"], "status": "EMPTY"}
     ys, xs = np.where(mask)
     cx0, cy0, cx1, cy1 = xs.min(), ys.min(), xs.max() + 1, ys.max() + 1
-    rgba = np.dstack([cell_rgb, (alpha * 255).astype(np.uint8)])[cy0:cy1, cx0:cx1]
+    rgba = np.dstack([despill(cell_rgb), (alpha * 255).astype(np.uint8)])[cy0:cy1, cx0:cx1]
     part = Image.fromarray(rgba, "RGBA")
     tx0, ty0, tx1, ty1 = slot["target_bbox"]
     tw, th = max(tx1 - tx0, 4), max(ty1 - ty0, 4)
     scale = min(tw / part.width, th / part.height)
+    if "underpaint" in slot["part_id"]:
+        scale *= 0.88  # 밑색은 소켓보다 살짝 작게 — 패치 경계 비침 방지 (H1 피드백)
     new_size = (max(1, round(part.width * scale)), max(1, round(part.height * scale)))
     part = part.resize(new_size, Image.LANCZOS)
     canvas = Image.new("RGBA", (canvas_size, canvas_size), (0, 0, 0, 0))
@@ -119,7 +130,48 @@ def extract_and_place(sheet_img: Image.Image, slot: dict, chroma: tuple[int, int
 
 def assembly_order(slots: list[dict]) -> list[dict]:
     usable = [s for s in slots if not any(t in s["part_id"] for t in NEUTRAL_EXCLUDE_TOKENS)]
-    return sorted(usable, key=lambda s: BAND_SUFFIX_ORDER.get(s["draw_order_band"].rsplit("_", 1)[-1], 1))
+    # 밴드(back→mid→front) 순, 같은 밴드에선 underpaint(밑색)가 항상 먼저 깔린다
+    return sorted(
+        usable,
+        key=lambda s: (
+            BAND_SUFFIX_ORDER.get(s["draw_order_band"].rsplit("_", 1)[-1], 1),
+            0 if "underpaint" in s["part_id"] else 1,
+        ),
+    )
+
+
+CLIP_SUFFIXES = ("_iris", "_pupil", "_highlight")
+
+
+def compose_with_clipping(slots_ordered: list[dict], layers_dir: Path, out_path: Path) -> Path | None:
+    """런타임의 clipping pairs를 모사한 조립: 홍채/동공/하이라이트는 같은 눈의 흰자 알파로 클리핑."""
+    whites: dict[str, np.ndarray] = {}
+    for slot in slots_ordered:
+        if slot["part_id"].endswith("_white"):
+            path = layers_dir / f"{slot['part_id']}.png"
+            if path.exists():
+                alpha = np.asarray(Image.open(path).convert("RGBA"))[..., 3].astype(np.float32) / 255.0
+                whites[slot["part_id"].removesuffix("_white")] = alpha
+    canvas = None
+    for slot in slots_ordered:
+        path = layers_dir / f"{slot['part_id']}.png"
+        if not path.exists():
+            continue
+        layer = np.asarray(Image.open(path).convert("RGBA")).copy()
+        if slot["part_id"].endswith(CLIP_SUFFIXES):
+            prefix = slot["part_id"].rsplit("_", 1)[0]
+            mask = whites.get(prefix)
+            if mask is not None:
+                layer[..., 3] = (layer[..., 3].astype(np.float32) * mask).astype(np.uint8)
+        img = Image.fromarray(layer, "RGBA")
+        if canvas is None:
+            canvas = Image.new("RGBA", img.size, (0, 0, 0, 0))
+        canvas.alpha_composite(img)
+    if canvas is None:
+        return None
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    canvas.save(out_path)
+    return out_path
 
 
 def main() -> int:
@@ -197,9 +249,8 @@ def main() -> int:
     for group in groups + ["__all__"]:
         slots = sheet["slots"] if group == "__all__" else [s for s in sheet["slots"] if s["group"] == group]
         ordered = assembly_order(slots)
-        paths = [layers_dir / f"{s['part_id']}.png" for s in ordered if (layers_dir / f"{s['part_id']}.png").exists()]
         name = "assembly_all" if group == "__all__" else f"assembly_{group}"
-        out = compose_layers(paths, reports_dir / f"{name}.png")
+        out = compose_with_clipping(ordered, layers_dir, reports_dir / f"{name}.png")
         if out:
             composites[name] = rel(out)
             art = ev.run_dir / "artifacts" / out.name

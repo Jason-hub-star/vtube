@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-10T07:44:10.114316+00:00",
+  "test_id": "autorig_sheet_pilot_face_brow_large_01",
+  "status": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+  "sheet_id": "face_brow_large_01",
+  "raw_sheet": "experiments/autorig-template-001/raw_sheets/face_brow_large_01.png",
+  "style_ref": "experiments/cubism-v2-new-character-002/reports/source_inpaint_v1/source_front_2048_inpaint_clean.png",
+  "occupancy": [
+    {
+      "part_id": "face_base",
+      "content_ratio": 0.37088,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "face_underpaint_L",
+      "content_ratio": 0.06018,
+      "issues": [],
+      "ok": true
+    },
+    {
+      "part_id": "face_underpaint_R",
+      "content_ratio": 0.05864,
+      "issues": [],
+      "ok": true
+    }
+  ],
+  "occupancy_pass": true,
+  "placements": [
+    {
+      "part_id": "face_base",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/face_brow_large_01/face_base.png",
+      "source_px": [
+        757,
+        739
+      ],
+      "placed_px": [
+        741,
+        723
+      ],
+      "scale": 0.9789
+    },
+    {
+      "part_id": "face_underpaint_L",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/face_brow_large_01/face_underpaint_L.png",
+      "source_px": [
+        152,
+        729
+      ],
+      "placed_px": [
+        107,
+        511
+      ],
+      "scale": 0.7013
+    },
+    {
+      "part_id": "face_underpaint_R",
+      "status": "PLACED",
+      "path": "experiments/autorig-template-001/normalized_layers/face_brow_large_01/face_underpaint_R.png",
+      "source_px": [
+        151,
+        719
+      ],
+      "placed_px": [
+        107,
+        511
+      ],
+      "scale": 0.7111
+    }
+  ],
+  "composites": {
+    "assembly_face_base": "experiments/autorig-template-001/reports/pilot_face_brow_large_01/assembly_face_base.png",
+    "assembly_all": "experiments/autorig-template-001/reports/pilot_face_brow_large_01/assembly_all.png"
+  },
+  "self_review": {
+    "slots": 3,
+    "occupancy_ok": 3,
+    "placed": 3,
+    "fallback_needed": false
+  },
+  "interpretation_ko": "이미지 모델이 슬롯 레이아웃을 준수했습니다. 조립 합성을 보고 스타일/품질을 판정하세요."
+}
