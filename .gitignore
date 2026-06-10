@@ -28,3 +28,6 @@ experiments/**/external_repos/
 # ComfyUI temporary runtime output that is not curated evidence
 experiments/**/temp/
 experiments/**/cache/
+
+# AUTORIG run logs/artifacts
+runs/

@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-10T05:12:41.195886+00:00",
+  "test_id": "control_tower_python_smoke",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "이벤트 100개 기록",
+      "ok": true,
+      "detail": "got 100"
+    },
+    {
+      "name": "derive == run_state.json",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "상태 PASS",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "손상 라인 스킵 생존",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "런 목록에 등장",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "자동 게이트 런 완주(PASS)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "스테이지 9개 완료",
+      "ok": true,
+      "detail": "stages=7 gates=3"
+    },
+    {
+      "name": "아티팩트 존재",
+      "ok": true,
+      "detail": "{'events': 80, 'artifacts': 12, 'qa': 6, 'logs': 12}"
+    },
+    {
+      "name": "QA 결과 존재",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "이벤트 tail 증분",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "아티팩트 서빙 200",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "썸네일 생성 200",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "앱 서빙 200",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "notified.json 기록",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "게이트 3개 수동 해결",
+      "ok": true,
+      "detail": "resolved=3"
+    },
+    {
+      "name": "수동 게이트 런 완주(PASS)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "H1.5 오버라이드 JSONL 기록",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "서버 재시작 후 상태 동일",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "self_review": {
+    "library_unit_pass": true,
+    "api_pass": true,
+    "gate_roundtrip_pass": true,
+    "crash_recovery_pass": true,
+    "status": "PASS"
+  }
+}

@@ -1,76 +1,60 @@
 # Vtube Project Status
 
-Updated: 2026-06-04
+Updated: 2026-06-11
 
 ## Current Phase
 
-- Live2D part-purity review and cleanup queue after Cubism PSD import validation.
+- **AUTORIG 피벗 (2026-06-10, 주인님 결정)**: Cubism Editor 수동 저작 경로를 폐기하고, 자체 에디터/런타임 + AI 자동리깅으로 전환.
+- 방향 상세: `docs/ref/AUTORIG-PIPELINE-V1.md` (P0–P6, "자동화파이프라인 시작" 원커맨드, 1시간 목표).
+- 문서 내비게이션: `docs/INDEX.md`.
+
+## What Changed / What Stays
+
+| 항목 | 결정 |
+|---|---|
+| Cubism Editor 저작 (구 G7/G8) | 폐기 — 자체 rig JSON + 자체 런타임으로 대체 |
+| Cubism 파라미터 ID 표준 | 유지 — 57모델 분석·MediaPipe 맵 재사용 위해 |
+| 64-part `v2_standard` 스펙 | 유지 — 템플릿 슬롯 매핑의 기반 |
+| B4/B5 수동 앵커 미세조정 루프 | 중단 — 템플릿 슬롯 생성이 앵커 문제를 제거 |
+| character-002 64-part 후보 | 보존 — AUTORIG P3 자동 리깅의 첫 입력 후보 |
+| 트래킹 체인 (T0–T2 PASS) | 유지 — P6에 그대로 연결 |
+
+## Progress Snapshot
+
+| Stage | Progress | Status |
+|---|---:|---|
+| 레퍼런스 분석·성공 패턴 (57모델) | 100% | 완료, AUTORIG 품질 사다리 기준치로 사용 |
+| character-002 64-part 후보 | 기술 PASS | 주인님 시각 판정: 오염 多 → 템플릿 방식으로 재생성 예정 (소재만 폐기, 스펙·증거 유지) |
+| 트래킹 (MediaPipe→Cubism 파라미터) | **T3 PASS (2026-06-11)** | **체인 끝단 최초 연결**: T1 스트림 → `__miniProbe` → 자체 Mini Cubism 런타임(v21). 합성 12샘플 + 175프레임 재생 스모크 PASS. `scripts/run_mini_cubism_webcam_drive.py` (실웹캠 /drive 페이지 포함) |
+| 자체 런타임 (mini_cubism 계보) | 주입 API 완비 | `__miniProbe` (waitReady/setParameterValues/canvasHash) 추가 |
+| **관제탑 대시보드** | **완성 (2026-06-11)** | 이벤트 JSONL 컨벤션(`scripts/autorig_events.py`) + 서버(8095, macOS 알림) + 토스스타일 UI(타임라인/피드/게이트 드래그 수정/QA/로그) + 시뮬레이터. 스모크: 파이썬 18/18, 브라우저 8/8 PASS |
+| AUTORIG-TEMPLATE-SPEC-001 | 0% | 다음 작업 1순위 |
+| AUTORIG-RIG-SCHEMA-001 | 0% | mini_rig.json 확장 |
+| AUTORIG-PIPELINE-CLI-001 | 관제 인프라 완료 | 파이프라인 본체가 autorig_events 컨벤션으로 이벤트만 쓰면 즉시 관제됨 |
+| AUTORIG-EDITOR-001 | 씨앗 확보 | 관제탑 게이트 패널에 드래그 배치 수정 v0 동작 |
 
 ## Production Direction
 
-- Target: Live2D/Cubism rigging.
-- Required production path: PSD-separated parts, ArtMesh, Deformer, standard parameters, Cubism keyforms.
-- Current PNG tests are reference/key-pose evidence, not production frame-swap runtime.
+- Target: 템플릿 이미지 생성 → 결정론적 추출 → 자동 리깅(rig JSON) → 자체 런타임 → 웹캠 실시간 버튜버 서비스.
+- 픽셀 좌표는 결정론적 도구만 사용한다. LLM 비전 좌표 추측 금지 (evidence log DISCARDED 결론).
+- PNG 풀캔버스 실험은 배치/키포즈 증거이며 프레임 스왑 런타임이 아니다.
 
-## Current Evidence
+## Evidence
 
-| Track | Status | Evidence | Decision |
-|---|---:|---|---|
-| 2048 production canvas | VERIFIED | `production-canvas-2048-001/reports/resolution_spec_report.json` | Keep 2048 master canvas |
-| Mouth placement workflow | VERIFIED | `mouth-apply-delta-001/reports/mouth_apply_delta_report.json` | Keep all current mouth candidates by 주인님 review |
-| Blink staged candidates | OBSERVED/REVISE | `blink-stage-001/reports/blink_stage_report.json` | Use as Live2D key-pose reference only |
-| Blink saved placement | OBSERVED/REVISE | `blink-apply-review-001/reports/blink_apply_review_report.json` | Do not promote to production success |
-| Live2D direction | VERIFIED | `live2d-keypose-spec-001/reports/live2d_keypose_spec.md` | Current production SSOT |
-| Cubism material pack v1 | VERIFIED | `cubism-material-pack-001/reports/validation_report.json` | psd-tools PSD imported in Cubism Editor 5.3; `import_ready.psd` promoted |
-| Part purity review UI | VERIFIED | `part-purity-001/reports/part_visual_review.json` | Unified local UI saves human verdicts and AI cleanup queue |
-| White Wolf Goth concept | PASS_WITH_CUBISM_IMPORT | `concept-regeneration-001/reports/cubism_import_smoke.json` | 2048 canonical, 35 review candidates, O-only PSD gate, and Cubism Editor import smoke passed for 6 AI technical-smoke layers |
-| Full eye replacement | DISCARDED | `eye-grouping-001/reports/eye_grouping_report.json` | Do not retry sheet grouping by default |
-| See-through local Mac path | BLOCKED | `validation-smoke-001/reports/see_through_environment_report.md` | Direct script path is blocked by deps/CUDA assumptions |
-| Mac ComfyUI See-through path | FAIL_MPS_MEMORY | `see-through-layer-decomp-001/reports/comfyui_setup_report.json`, `reports/comfyui_mps_crash_report.json` | MPS runtime and nodes load, but GenerateLayers fails before layer output |
-| Ubuntu CUDA See-through path | READY_TO_RUN | `docs/ref/UBUNTU-CUDA-SEETHROUGH-RUNBOOK.md` | Use CUDA for actual decomposition, then bring `*_layers.json` back to Mac review pipeline |
-
-## Active Assets
-
-- Canonical: `/Users/family/jason/Vtube/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png`
-- Mouth references: `/Users/family/jason/Vtube/experiments/mouth-apply-delta-001/layers/`
-- Blink references: `/Users/family/jason/Vtube/experiments/blink-apply-review-001/layers/`
-- Manual mouth evidence: `/Users/family/jason/Vtube/experiments/production-canvas-2048-001/reports/manual_adjustments_2048.json`
-- Blink review evidence: `/Users/family/jason/Vtube/experiments/blink-stage-001/reports/blink_stage_review.json`
-- Part purity UI: `/Users/family/jason/Vtube/review_app/index.html`
-- AI fix queue: `/Users/family/jason/Vtube/experiments/part-purity-001/reports/ai_fix_queue.json`
-- Part purity pipeline plan: `/Users/family/jason/Vtube/docs/ref/LIVE2D-PART-PURITY-PIPELINE.md`
-- White Wolf Goth canonical: `/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png`
-- White Wolf Goth AI fix queue: `/Users/family/jason/Vtube/experiments/concept-regeneration-001/reports/ai_fix_queue.json`
-- See-through Mac experiment: `/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001`
-- Ubuntu CUDA See-through runbook: `/Users/family/jason/Vtube/docs/ref/UBUNTU-CUDA-SEETHROUGH-RUNBOOK.md`
+- 전체 증거 테이블(169행)과 검증 명령 모음은 `docs/archive/2026-06-10-PROJECT-STATUS-pre-autorig-pivot.md`에 보존.
+- 시행착오 이력과 상태 관리(VERIFIED/DISCARDED 등)는 `vtube-validation-evidence-log.md`.
+- 실험별 증거는 각 `experiments/<id>/reports/`.
 
 ## Next Actions
 
-1. Finish production part review in `review_app` and save every `O`, `X`, or `REVISE`.
-2. Use `docs/ref/LIVE2D-PART-PURITY-PIPELINE.md` as the operating plan.
-3. Start `part-purity-002` from `ai_fix_queue.json`, prioritizing `R_upper_lash` and `mouth_inner`.
-4. For `concept-regeneration-001`, replace remaining bootstrap rough masks with AI-cleaned/generated part PNGs from its own `ai_fix_queue.json`.
-5. Continue human visual review until all required concept production parts are either `O` or explicitly queued for regeneration.
-6. Re-run `python3 scripts/build_concept_psd_candidate.py --promote` after each accepted batch.
-7. Start minimal Cubism rigging only after critical face/eye/mouth/hair contamination is cleared.
-8. Run See-through on Ubuntu CUDA using `docs/ref/UBUNTU-CUDA-SEETHROUGH-RUNBOOK.md`, then normalize ComfyUI `*_layers.json` into the review app before trusting any See-through layer.
-
-## Verification Commands
-
-- `bash /Users/family/jason/jason-agent-harness-template/scripts/check-harness.sh`
-- `python3 scripts/build_review_manifest.py`
-- `python3 scripts/build_concept_bootstrap_parts.py`
-- `python3 scripts/build_concept_psd_candidate.py`
-- `python3 scripts/setup_comfyui_seethrough_mac.py`
-- `python3 scripts/run_comfyui_seethrough_prompt.py --resolution 1280 --steps 30 --depth-resolution 720`
-- `python3 scripts/normalize_seethrough_outputs.py --layers-json <ComfyUI output *_layers.json>`
-- `python3 scripts/build_seethrough_psd_candidate.py`
-- `python3 scripts/validate_review_app.py`
-- `find /Users/family/jason/Vtube -path '*/external_repos/*' -prune -o \( -name '*.md' -o -name '*.json' \) -type f -print | wc -l`
+1. `AUTORIG-TEMPLATE-SPEC-001` — 고정 슬롯 시트 레이아웃 + 생성 프롬프트 템플릿.
+2. `AUTORIG-RIG-SCHEMA-001` — rig JSON 스키마 (메시/디포머/키폼/물리).
+3. `AUTORIG-PIPELINE-CLI-001` — character-agnostic 원커맨드 파이프라인.
+4. `AUTORIG-EDITOR-001` — 자체 에디터 통합 (수동 보정은 에디터 10초 > LLM 추측).
 
 ## Rules
 
-- Do not delete evidence JSON, QA reports, or manual review JSON.
-- Archive superseded plan documents instead of leaving them as current guidance.
-- Keep this status short; detailed history belongs in `vtube-validation-evidence-log.md` or experiment reports.
-- Human review FAIL is never promoted to keep.
+- 증거 JSON, QA 리포트, 수동 리뷰 JSON 삭제 금지.
+- 이 문서는 짧게 유지. 상세 이력은 evidence log나 실험 reports로.
+- 대체된 플랜은 `docs/archive/`로 이동하고 `ARCHIVE-INDEX.md`에 기록.
+- Human review FAIL은 keep으로 승격하지 않는다.

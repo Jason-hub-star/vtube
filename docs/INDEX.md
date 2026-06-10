@@ -1,0 +1,65 @@
+# Vtube 문서 인덱스 (AI 컨텍스트 내비게이션)
+
+Updated: 2026-06-10
+
+AI 에이전트는 이 파일을 먼저 읽고, 필요한 문서만 골라 연다. 전부 읽지 않는다.
+
+## 읽기 순서 (새 세션)
+
+1. `docs/status/PROJECT-STATUS.md` — 현재 방향·진행률·다음 작업 (짧음, 항상 최신)
+2. `docs/ref/AUTORIG-PIPELINE-V1.md` — 현재 생산 방향 상세 (자체 에디터 + AI 자동리깅)
+3. 작업과 관련된 항목만 아래 지도에서 선택
+
+## 문서 지도
+
+### 현재 SSOT (항상 신뢰)
+
+| 문서 | 내용 |
+|---|---|
+| `docs/status/PROJECT-STATUS.md` | 현재 단계, 블로커, 다음 작업 ID |
+| `docs/ref/AUTORIG-PIPELINE-V1.md` | AUTORIG 파이프라인 P0–P6 스펙, 재사용 자산, 폐기 항목 |
+| `vtube-validation-evidence-log.md` | 전체 시행착오 기록 (VERIFIED/OBSERVED/DISCARDED 상태 관리, 5000줄+ — grep으로 검색해서 읽기) |
+
+### 레퍼런스 (필요할 때만)
+
+| 문서 | 내용 |
+|---|---|
+| `docs/ref/CUBISM-V2-SUCCESS-PATTERN-PLAN.md` | 공식 57모델 분석 기반 성공 패턴·티어 스펙 (파라미터 표준의 근거, 여전히 유효) |
+| `docs/ref/CUBISM-V2-REVIEW-GATE-SPEC.md` | 시각/시맨틱 QA 게이트 체크리스트 (P4 게이트에 재사용) |
+| `docs/ref/CUBISM-V2-MATERIAL-PACK-FIRST-GENERATION.md` | v1 캐릭터 소재 생성 교훈 (템플릿 스펙 설계 시 참고) |
+| `docs/ref/VTUBE-HARNESS-SKILL-ROUTING-AUDIT.md` | 공유 스킬/하니스 라우팅 감사 |
+| `experiments/live2d-keypose-spec-001/reports/live2d_keypose_spec.md` | 키포즈 스펙 (PNG=증거, 리그=생산 원칙) |
+
+### 핵심 실험 증거 (경로만 기억, 본문은 grep)
+
+| 실험 | 내용 |
+|---|---|
+| `experiments/reference-model-structure-001/` | 57모델 구조 분석, 64-part 스펙, MediaPipe→Cubism 파라미터 맵, T0/T1 트래킹 스모크 |
+| `experiments/live2d-strong-model-pattern-001/` | strong20/all57 런타임 베이스라인, 디포머 계층 테이블, T2 파라미터 드라이브 |
+| `experiments/cubism-v2-new-character-002/` | 현재 캐릭터 (64-part 후보 완료, B1–B5 candidate) |
+| `experiments/see-through-mps-compat-002/` | 레이어 분해 Mac MPS 경로 (512/640 PASS) |
+| `experiments/imagen-live2d-001/` | 얕은 리그 실패 fixture (반복 금지 증거) |
+| `experiments/cmo3-structure-fixture-001/` | 리그 구조 검증기 양성 fixture |
+
+### 앱/도구
+
+| 경로 | 내용 |
+|---|---|
+| `mini_cubism_app/` | 자체 런타임 씨앗 (Canvas 렌더, rig JSON, 파라미터 슬라이더) — AUTORIG 런타임으로 승격 예정 |
+| `review_app/` | 파트 순도 휴먼 리뷰 UI (KEEP/REVISE/REGENERATE) |
+| `scripts/` | 290+ 스크립트. 새 스크립트 작성 전 `find scripts -name "*키워드*"`로 기존 것 먼저 확인 |
+| `asset_dashboard/index.html` | 썸네일 자산 대시보드 (`scripts/build_asset_dashboard.py`로 재생성) |
+| `control_tower/` + `scripts/run_autorig_control_tower.py` | **관제탑** — 런 실시간 대시보드 (포트 8095, 게이트 알림/드래그 수정). 이벤트 컨벤션: `scripts/autorig_events.py`, 데모: `scripts/simulate_autorig_run.py` |
+| `scripts/run_mini_cubism_webcam_drive.py` | **T3 웹캠 드라이브** — /drive에서 실웹캠·재생 모드로 자체 런타임 구동 (T3 스모크 PASS) |
+| `experiments/cubism-v2-new-character-002/reports/autorig_current_candidates/current_candidates.json` | **64-part 현재 후보 단일 매니페스트** — AUTORIG P3 입력 (`scripts/build_autorig_current_candidates_002.py`) |
+
+### 아카이브 (현재 방향 아님)
+
+- `docs/archive/ARCHIVE-INDEX.md` — 아카이브 목록과 대체 문서
+- `docs/archive/2026-06-10-PROJECT-STATUS-pre-autorig-pivot.md` — 피벗 전 전체 상태 (증거 테이블 169행 + 검증 명령 보존)
+
+## 규칙
+
+- 증거 JSON/QA 리포트/수동 리뷰 JSON은 삭제 금지.
+- 이 인덱스는 문서가 추가·아카이브될 때마다 함께 갱신한다.
+- 상세 이력은 evidence log나 실험 reports에 쓰고, PROJECT-STATUS는 짧게 유지한다.
