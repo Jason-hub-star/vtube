@@ -41,7 +41,9 @@ def main() -> int:
     parser.add_argument("--manifest", type=Path, required=True)
     parser.add_argument("--original", type=Path, required=True)
     parser.add_argument("--out-dir", type=Path, required=True)
+    parser.add_argument("--haze-alpha", type=int, default=28, help="이 미만 알파는 안개로 제거 (얼룩 시 90 권장)")
     args = parser.parse_args()
+    globals()["HAZE_ALPHA"] = args.haze_alpha
 
     manifest = load_json(args.manifest)
     layers = [l for l in manifest["layers"] if l["original_part_id"] not in EXCLUDE]
