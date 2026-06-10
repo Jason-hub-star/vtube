@@ -1,0 +1,20 @@
+{
+  "assembly": "experiments/autorig-template-001/reports/full_assembly/hybrid_true_origeyes.png",
+  "mouth_line": "experiments/autorig-template-001/seethrough_true_reskinned/mouth_line.png",
+  "internals": [
+    "experiments/autorig-template-001/rig_v0_project/parts/mouth_inner.png",
+    "experiments/autorig-template-001/rig_v0_project/parts/mouth_teeth.png",
+    "experiments/autorig-template-001/rig_v0_project/parts/mouth_tongue.png"
+  ],
+  "t_steps": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "max_gap_ratio": 0.4,
+  "chin_band_ratio": 0.95,
+  "corner_pin": 0.92,
+  "generated_at": "2026-06-10T11:32:52.325934+00:00"
+}
