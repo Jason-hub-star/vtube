@@ -309,7 +309,9 @@ def main() -> int:
         {"id": "root_warp", "type": "warp", "parent_id": None, "child_ids": children.get("root_warp", []), "bounds": [0, 0, CANVAS, CANVAS], "pivot": [1024, 1024], "lattice": {"cols": 3, "rows": 3}, "edge_pinned": False},
         {"id": "body_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("body_warp", []), "bounds": body_bounds, "pivot": center(body_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": False},
         {"id": "head_angle_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("head_angle_warp", []), "bounds": head_bounds, "pivot": center(head_bounds), "lattice": {"cols": 7, "rows": 7}, "edge_pinned": True},
-        {"id": "neck_warp", "type": "warp", "parent_id": "body_warp", "child_ids": children.get("neck_warp", []), "bounds": neck_bounds, "pivot": center(neck_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
+        # 목 = head 자식 (머리 격자 페이드 → 위는 머리, 아래로 갈수록 감쇠하는 그라데이션)
+        # + 몸 추종은 자체 바인딩으로 보충 (BodyAngle/Breath — body 체인에서 빠진 몫)
+        {"id": "neck_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("neck_warp", []), "bounds": neck_bounds, "pivot": center(neck_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
         {"id": "eye_L_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("eye_L_warp", []), "bounds": eye_l_bounds, "pivot": center(eye_l_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
         {"id": "eye_R_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("eye_R_warp", []), "bounds": eye_r_bounds, "pivot": center(eye_r_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
         {"id": "mouth_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("mouth_warp", []), "bounds": mouth_bounds, "pivot": center(mouth_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
@@ -348,11 +350,16 @@ def main() -> int:
         binding("ParamAngleX", 30, "head_angle_warp", tx=22),
         binding("ParamAngleY", -30, "head_angle_warp", ty=-12),
         binding("ParamAngleY", 30, "head_angle_warp", ty=12),
-        # 목 = body 체인(몸 추종) + 머리 35% 수동 추종 (head 자식으로 두면 BodyAngle에서 몸과 분리됨)
+        # 목 자체 바인딩: 머리 35% 기본 추종 + 몸 추종 복제 (head 체인이라 body 몫을 직접 받는다)
         binding("ParamAngleX", -30, "neck_warp", tx=-8),
         binding("ParamAngleX", 30, "neck_warp", tx=8),
         binding("ParamAngleY", -30, "neck_warp", ty=-4),
         binding("ParamAngleY", 30, "neck_warp", ty=4),
+        binding("ParamBodyAngleX", -10, "neck_warp", tx=-8),
+        binding("ParamBodyAngleX", 10, "neck_warp", tx=8),
+        binding("ParamBodyAngleY", -10, "neck_warp", ty=-5),
+        binding("ParamBodyAngleY", 10, "neck_warp", ty=5),
+        binding("ParamBreath", 1, "neck_warp", ty=-2),
         binding_r("ParamAngleZ", -30, "head_angle_warp", rotate=-10),
         binding_r("ParamAngleZ", 30, "head_angle_warp", rotate=10),
         binding_r("ParamBodyAngleX", -10, "body_warp", tx=-8, rotate=-1.2),

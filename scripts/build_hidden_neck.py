@@ -57,10 +57,11 @@ def main() -> int:
     search = master[int(my1 + 12) : int(my1 + mouth_w), int(mouth_cx - mouth_w * 0.25) : int(mouth_cx + mouth_w * 0.25), :3]
     chin_line_y = int(my1 + 12 + int(np.argmin(search.mean(axis=(1, 2)))))
     _, cy0, _, _ = bbox_of(args.clothes)
-    # 목 피부 사각형: 턱선 약간 위 ~ 옷깃 살짝 아래, 폭 = 입폭 × 1.3 (분해에서 목 레이어가 비어 마스터에서 직접 채취)
-    y0 = max(0, chin_line_y - 12)
+    # 목 피부 사각형: 턱선 "아래"에서 시작 (위로 올리면 턱/입을 덮는 기둥 — 003 사건),
+    # 폭은 보수적으로. 가장자리는 전부 페더라 모서리가 절대 노출되지 않는다.
+    y0 = max(0, chin_line_y + 4)
     y1 = min(master.shape[0], cy0 + 40)
-    half_w = round(mouth_w * 0.65)
+    half_w = round(mouth_w * 0.55)
     x0 = int(mouth_cx - half_w)
     x1 = int(mouth_cx + half_w)
     region = master[y0:y1, x0:x1].copy()
@@ -71,15 +72,23 @@ def main() -> int:
     new_w = round(crop.width * WIDEN)
     widened = crop.resize((new_w, crop.height), Image.LANCZOS)
 
-    # 위 연장: 상단 8행을 평균낸 띠를 위로 스트레치 (원본 피부색 보존)
-    arr = np.asarray(widened)
-    top_band = arr[: min(8, arr.shape[0])].astype(np.float64).mean(axis=0).astype(np.uint8)
-    extension = np.tile(top_band[None, :, :], (extend_up, 1, 1))
-    extended = np.vstack([extension, arr])
+    # 4면 페더 (상단은 짧게 — 턱 밑에 살짝 깔리는 정도, 모서리 노출 방지)
+    arr = np.asarray(widened).astype(np.float64)
+    fh, fw = arr.shape[:2]
+    def ramp(n, soft):
+        r = np.ones(n)
+        s = min(soft, n // 2)
+        if s > 0:
+            r[:s] = np.linspace(0.0, 1.0, s)
+            r[-s:] = np.linspace(1.0, 0.0, s)
+        return r
+    arr[..., 3] *= ramp(fh, 26)[:, None]
+    arr[..., 3] *= ramp(fw, 30)[None, :]
+    extended = arr.astype(np.uint8)
 
     canvas = Image.new("RGBA", (master.shape[1], master.shape[0]), (0, 0, 0, 0))
     cx = (x0 + x1) / 2
-    canvas.alpha_composite(Image.fromarray(extended, "RGBA"), (round(cx - new_w / 2), max(0, y0 - extend_up)))
+    canvas.alpha_composite(Image.fromarray(extended, "RGBA"), (round(cx - new_w / 2), y0))
     out_path = out / "neck_under.png"
     canvas.save(out_path)
 
@@ -90,7 +99,7 @@ def main() -> int:
         "extend_up_px": extend_up,
         "output": rel(out_path),
     })
-    print(f"hidden neck: {rel(out_path)} (w x{WIDEN}, up +{extend_up}px)")
+    print(f"hidden neck: {rel(out_path)} (w x{WIDEN}, feathered, below-chin)")
     return 0
 
 
