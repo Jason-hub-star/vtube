@@ -3,6 +3,20 @@
 작성일: 2026-06-02
 최신 정리일: 2026-06-10
 
+## 2026-06-11 전체 슬롯 생성 전신 조립 — DISCARDED_GEOMETRIC_INCOHERENCE (주인님 판정: 괴물)
+
+- 64파트 전부를 독립 슬롯 생성 후 bbox-fit 배치한 전신 조립은 시각 FAIL. 원인: 각 파트가 독립된 암묵적 비례/원근으로 생성되어 전역 기하 정합이 불가능 (bbox는 위치+크기 2자유도뿐). 음영류 파트는 기댈 형태가 없어 색 덩어리화.
+- 결론: **`single_master_png_first` 원칙은 유효하다.** 슬롯 생성은 "마스터에 없는 숨은 레이어"(감은꺼풀/홍채 전체/입 내부/밑색 ~18개) 전용으로 한정하고, 가시 파트 ~46개는 마스터에서 분리한다 (See-through 경로). 오염(국소·수리가능)과 기하 비정합(전역·수리불가) 중 후자가 치명적.
+- 보존 가치: 슬롯 준수 63/64·크로마 추출·despill·조립 합성 파이프와 "숨은 레이어 생성" 경로는 검증됨. 전신 슬롯 생성만 폐기.
+
+## 2026-06-11 템플릿 슬롯 생성 — 전체 12시트 (VERIFIED_TECHNICAL / H1.5 대기)
+
+- 64-part 전부를 고정 슬롯 시트 12장으로 분리 생성 (gpt-image-2, 스타일 레퍼런스 = source_front). 슬롯 준수 63/64 (입꼬리 2개는 초소형 임계값 오판, 추출은 64/64 성공). **사후 추출이 없으므로 이웃 오염 0** — v22 오염 클래스의 구조적 해소를 실증.
+- 전신 조립 합성 성공 (캐릭터로 인식됨). 중립 조립 규칙 확장: closed 외에 mouth_inner/teeth/tongue도 키포즈 전용으로 제외.
+- 교훈: ① codex exec는 분리된 백그라운드 컨텍스트에서 세션 생성 전에 멈춘다 — 생성은 포그라운드 셸에서. ② 타임아웃이 codex 자식 바이너리를 고아로 남긴다 — pkill 정리 필요. ③ 초소형 파트(입꼬리·코)는 점유율 임계값을 별도로.
+- 증거: `experiments/autorig-template-001/reports/` (시트별 pilot_report + full_assembly_report), 뷰어 `review_viewer.html`.
+- 다음: 주인님 H1.5 검수 (배치/크기 드래그 보정 — 볼터치 과대, 오른눈 속눈썹, 가슴 의류 패널이 1차 후보).
+
 ## 2026-06-11 T3 + 관제탑 (VERIFIED)
 
 - **T3 PASS — 체인 끝단 최초 연결**: 저장된 T1 웹캠 스트림(175프레임)과 합성 12샘플을 `__miniProbe.setParameterValues`로 자체 Mini Cubism 런타임(v21 supported rig)에 주입. 적용 파라미터 중앙값 6, EyeOpen 0.27/MouthOpenY 0.85 클램프 왕복 검증, 캔버스 해시 모션 확인. 증거: `experiments/mini-cubism-webcam-drive-001/reports/t3_smoke_report.json`. 실웹캠 데모: `python3 scripts/run_mini_cubism_webcam_drive.py` → /drive.
