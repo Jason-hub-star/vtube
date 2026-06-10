@@ -33,6 +33,9 @@ DEFAULT_CONFIG = {
     "max_gap_ratio": 0.40,
     "chin_band_ratio": 0.95,
     "corner_pin": 0.92,
+    "upper_share": 0.25,   # 벌어짐 중 윗입술 상승 비중
+    "upper_band_ratio": 0.55,  # 윗입술 변형이 감쇠하는 범위 (입 폭 대비)
+    "ease_exp": 0.55,      # 아랫밴드 압축 집중도 (작을수록 입술 밑에 접힘 집중, 턱끝 고정)
 }
 
 
@@ -57,6 +60,10 @@ def mouth_warp(base: np.ndarray, internals: np.ndarray, mouth_bbox, config, t: f
     iys, ixs = np.where(in_alpha > 8)
     iy0, iy1 = int(iys.min()), int(iys.max()) + 1
 
+    upper_share = float(config.get("upper_share", 0.25))
+    upper_band = mouth_w * float(config.get("upper_band_ratio", 0.55))
+    ease_exp = float(config.get("ease_exp", 0.55))
+
     out = base.copy()
     for x in range(mx0, mx1):
         ratio = (x - cx) / half
@@ -64,30 +71,38 @@ def mouth_warp(base: np.ndarray, internals: np.ndarray, mouth_bbox, config, t: f
         gap = t * max_gap * arc
         if gap < 0.5:
             continue
-        gap_top = lip_y
-        gap_bottom = lip_y + gap
-        ys_out = np.arange(int(gap_top), chin_end, dtype=np.float64)
+        up = gap * upper_share          # 윗입술 상승량
+        down = gap - up                 # 아랫입술 하강량
+        gap_top = lip_y - up
+        gap_bottom = lip_y + down
+        band_top = int(max(0, lip_y - upper_band))
+        ys_out = np.arange(band_top, chin_end, dtype=np.float64)
         column = base[:, x, :].astype(np.float64)
         new_col = column[np.clip(ys_out.astype(int), 0, base.shape[0] - 1)].copy()
 
-        in_gap = ys_out < gap_bottom
-        below = ~in_gap
-        # 틈 아래: 원본 [lip_y, chin_end] 밴드를 [gap_bottom, chin_end]로 압축 (아랫입술+턱 하강)
-        denom = max(chin_end - gap_bottom, 1e-6)
-        src_below = lip_y + (ys_out[below] - gap_bottom) * ((chin_end - lip_y) / denom)
-        idx = np.clip(src_below, 0, base.shape[0] - 1)
-        lo = np.floor(idx).astype(int)
-        hi = np.minimum(lo + 1, base.shape[0] - 1)
-        frac = (idx - lo)[:, None]
-        new_col[below] = column[lo] * (1 - frac) + column[hi] * frac
-        # 틈: 내부는 제 비율 그대로 두고 위에서부터 "드러내기" (마스크 노출 — 공식 방식, 이빨 비율 보존)
+        in_gap = (ys_out >= gap_top) & (ys_out < gap_bottom)
+        above = ys_out < gap_top
+        below = ys_out >= gap_bottom
+        # 윗밴드: [band_top, lip_y] → [band_top, gap_top] 으로 부드럽게 스트레치 (윗입술 상승, 코쪽 감쇠)
+        denom_u = max(gap_top - band_top, 1e-6)
+        src_above = band_top + (ys_out[above] - band_top) * ((lip_y - band_top) / denom_u)
+        # 아랫밴드: 감쇠 변위장 — 입술 밑은 down만큼, 턱끝(chin_end)은 0 (ease로 입술 밑에 압축 집중)
+        s = np.clip((ys_out[below] - gap_bottom) / max(chin_end - gap_bottom, 1e-6), 0, 1)
+        src_below = lip_y + np.power(s, ease_exp) * (chin_end - lip_y)
+        for sel, src in ((above, src_above), (below, src_below)):
+            idx = np.clip(src, 0, base.shape[0] - 1)
+            lo = np.floor(idx).astype(int)
+            hi = np.minimum(lo + 1, base.shape[0] - 1)
+            frac = (idx - lo)[:, None]
+            new_col[sel] = column[lo] * (1 - frac) + column[hi] * frac
+        # 틈: 내부 마스크 노출 (비율 보존)
         src_in = np.clip(iy0 + (ys_out[in_gap] - gap_top), 0, internals.shape[0] - 1)
         lo_i = np.floor(src_in).astype(int)
         sample = internals[lo_i, x, :].astype(np.float64)
         a = (sample[:, 3:4] / 255.0)
-        dark = np.array([70.0, 28.0, 32.0, 255.0])  # 입 안 어두운 폴백
+        dark = np.array([70.0, 28.0, 32.0, 255.0])
         new_col[in_gap] = sample * a + dark * (1 - a)
-        out[int(gap_top):chin_end, x, :] = new_col.astype(base.dtype)
+        out[band_top:chin_end, x, :] = new_col.astype(base.dtype)
     return out
 
 
