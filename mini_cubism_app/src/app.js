@@ -18,6 +18,7 @@ const state = {
   selectedCoverSide: "L",
   draggedVertex: null,
   draggedCover: null,
+  viewZoom: 0.42,
 };
 
 const PARAM_LABELS = {
@@ -50,6 +51,7 @@ async function init() {
     const project = await fetchJson("/api/project");
     state.project = project;
     state.rig = normalizeRig(project._mini_rig);
+    state.viewZoom = defaultViewZoom();
     state.parameters = Object.fromEntries(project.parameters.map((param) => [param.id, param.default]));
     initPhysicsState(project);
     state.selectedPartId = project.parts[0]?.id || null;
@@ -161,6 +163,7 @@ function Stage(project) {
       render();
       draw();
     }),
+    ViewZoomControl(),
     Chip(`${project.parts.length} parts`),
     Chip(`${project.deformers.length} deformers`),
     Chip(`${project.keyform_bindings.length} bindings`),
@@ -172,10 +175,12 @@ function Stage(project) {
   canvas.id = "preview-canvas";
   canvas.width = project.canvas_size[0];
   canvas.height = project.canvas_size[1];
+  applyCanvasViewZoom(canvas);
   canvas.addEventListener("pointerdown", onCanvasPointerDown);
   canvas.addEventListener("pointermove", onCanvasPointerMove);
   canvas.addEventListener("pointerup", onCanvasPointerUp);
   canvas.addEventListener("pointerleave", onCanvasPointerUp);
+  canvas.addEventListener("wheel", onCanvasWheel, { passive: false });
   wrap.append(canvas);
   stage.append(toolbar, wrap);
   return stage;
@@ -195,10 +200,18 @@ function Inspector(project) {
   const h2 = document.createElement("h2");
   h2.textContent = "Parameters";
   section.append(h2);
-  for (const param of project.parameters) {
+  for (const param of project.parameters.filter((item) => !isPreviewParameterHidden(project, item.id))) {
     section.append(ParameterControl(param));
   }
   aside.append(section);
+
+  const hidden = hiddenPreviewParameters(project);
+  if (hidden.length) {
+    const hiddenSection = document.createElement("section");
+    hiddenSection.className = "control-card note";
+    hiddenSection.textContent = `Hidden unsupported controls: ${hidden.join(", ")}`;
+    aside.append(hiddenSection);
+  }
 
   const selected = project.parts.find((part) => part.id === state.selectedPartId);
   if (selected) {
@@ -461,6 +474,16 @@ function ParameterControl(param) {
   return row;
 }
 
+function hiddenPreviewParameters(project) {
+  return project.parameters
+    .filter((param) => isPreviewParameterHidden(project, param.id))
+    .map((param) => param.id);
+}
+
+function isPreviewParameterHidden(project, parameterId) {
+  return Boolean(project.unsupported_parameters?.[parameterId]?.hide_in_preview);
+}
+
 function ToggleButton(label, active, onClick) {
   const button = document.createElement("button");
   button.className = `tool-button ${active ? "active" : ""}`;
@@ -483,6 +506,45 @@ function SmallButton(label, onClick) {
   button.textContent = label;
   button.addEventListener("click", onClick);
   return button;
+}
+
+function ViewZoomControl() {
+  const wrap = document.createElement("div");
+  wrap.className = "view-zoom-control";
+  const out = document.createElement("output");
+  out.textContent = `${Math.round(state.viewZoom * 100)}%`;
+  const minus = SmallButton("-", () => setViewZoom(state.viewZoom - 0.05));
+  const input = document.createElement("input");
+  input.type = "range";
+  input.min = "0.22";
+  input.max = "1.1";
+  input.step = "0.01";
+  input.value = state.viewZoom;
+  input.title = "model view zoom";
+  input.addEventListener("input", () => {
+    setViewZoom(Number(input.value), false);
+    out.textContent = `${Math.round(state.viewZoom * 100)}%`;
+  });
+  const plus = SmallButton("+", () => setViewZoom(state.viewZoom + 0.05));
+  wrap.append(minus, input, plus, out);
+  return wrap;
+}
+
+function setViewZoom(value, rerender = true) {
+  state.viewZoom = clamp(Number(value) || 0.42, 0.22, 1.1);
+  const canvas = document.querySelector("#preview-canvas");
+  if (canvas) applyCanvasViewZoom(canvas);
+  if (rerender) render();
+  draw();
+}
+
+function applyCanvasViewZoom(canvas) {
+  if (!state.project) return;
+  canvas.style.width = `${Math.round(state.project.canvas_size[0] * state.viewZoom)}px`;
+}
+
+function defaultViewZoom() {
+  return window.innerWidth <= 980 ? 0.18 : 0.42;
 }
 
 function SegmentButton(label, active, onClick) {
@@ -877,7 +939,7 @@ function partOpacity(project, part) {
 
 function eyeOpenDetailOpacity(project, part) {
   if (!part.id.startsWith("eye_L_") && !part.id.startsWith("eye_R_")) return 1;
-  if (part.id.endsWith("_closed_lid")) return 1;
+  if (part.id.endsWith("_closed_lid") || part.id.endsWith("_closed_underpaint")) return 1;
   const side = part.id.startsWith("eye_L_") ? "L" : "R";
   const covers = state.rig?.eye_socket_covers;
   if (!covers?.enabled) return 1;
@@ -1022,7 +1084,9 @@ function physicsTransformForPart(partId) {
 }
 
 function setParameterValue(parameterId, value) {
-  state.parameters[parameterId] = Number(value);
+  const param = state.project?.parameters?.find((item) => item.id === parameterId);
+  const numeric = Number(value);
+  state.parameters[parameterId] = param ? clamp(numeric, param.min, param.max) : numeric;
 }
 
 function resetOtherPreviewParameterGroups(activeParameterId) {
@@ -1226,6 +1290,11 @@ function canvasPoint(event) {
     ((event.clientX - rect.left) / rect.width) * canvas.width,
     ((event.clientY - rect.top) / rect.height) * canvas.height,
   ];
+}
+
+function onCanvasWheel(event) {
+  event.preventDefault();
+  setViewZoom(state.viewZoom + (event.deltaY < 0 ? 0.04 : -0.04));
 }
 
 function onCanvasPointerDown(event) {
@@ -1516,6 +1585,56 @@ function exposeAutomationApi() {
   });
   window.__miniRig = () => state.rig;
   window.__miniProject = state.project;
+  // T2 __vtubeProbe와 동일 계약의 주입 인터페이스 (T3 웹캠 드라이브용)
+  window.__miniProbe = {
+    waitReady(timeoutMs = 10000) {
+      return new Promise((resolve) => {
+        const started = performance.now();
+        const tick = () => {
+          if (state.project) return resolve(true);
+          if (performance.now() - started > timeoutMs) return resolve(false);
+          setTimeout(tick, 50);
+        };
+        tick();
+      });
+    },
+    parameters() {
+      return (state.project?.parameters || []).map((param) => ({
+        id: param.id,
+        min: param.min,
+        max: param.max,
+        defaultValue: param.default,
+      }));
+    },
+    setParameterValues(values = {}) {
+      const applied = [];
+      const missing = [];
+      for (const [parameterId, value] of Object.entries(values)) {
+        if (state.project?.parameters?.some((item) => item.id === parameterId)) {
+          setParameterValue(parameterId, value);
+          applied.push(parameterId);
+        } else {
+          missing.push(parameterId);
+        }
+      }
+      syncParameterControls();
+      draw();
+      return { applied, missing };
+    },
+    snapshot: () => window.__miniSnapshot(),
+    canvasHash() {
+      const canvas = document.querySelector("#preview-canvas");
+      if (!canvas) return null;
+      const ctx2d = canvas.getContext("2d");
+      const { data } = ctx2d.getImageData(0, 0, canvas.width, canvas.height);
+      let hash = 2166136261;
+      for (let i = 0; i < data.length; i += 64) {
+        hash ^= data[i];
+        hash = Math.imul(hash, 16777619) >>> 0;
+      }
+      return hash >>> 0;
+    },
+  };
 }
 
 function bboxCenter(bbox) {

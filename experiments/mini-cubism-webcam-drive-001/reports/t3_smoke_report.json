@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-10T05:05:15.021634+00:00",
+  "test_id": "T3_mini_cubism_webcam_drive_smoke",
+  "status": "PASS",
+  "method": "synthetic samples + saved T1 stream replay injected through __miniProbe into the Mini Cubism runtime (v21 rig)",
+  "t3a_synthetic": {
+    "ready": true,
+    "parameter_count": 7,
+    "sample_count": 12,
+    "checks": [
+      {
+        "label": "neutral",
+        "applied_count": 6,
+        "canvas_changed": false,
+        "ok": true,
+        "notes": []
+      },
+      {
+        "label": "blink_L_full",
+        "applied_count": 2,
+        "canvas_changed": true,
+        "ok": true,
+        "notes": []
+      },
+      {
+        "label": "blink_R_full",
+        "applied_count": 2,
+        "canvas_changed": true,
+        "ok": true,
+        "notes": []
+      },
+      {
+        "label": "blink_both_half",
+        "applied_count": 2,
+        "canvas_changed": true,
+        "ok": true,
+        "notes": []
+      },
+      {
+        "label": "mouth_open_full",
+        "applied_count": 1,
+        "canvas_changed": true,
+        "ok": true,
+        "notes": []
+      },
+      {
+        "label": "mouth_open_mid",
+        "applied_count": 1,
+        "canvas_changed": true,
+        "ok": true,
+        "notes": []
+      },
+      {
+        "label": "gaze_left_up",
+        "applied_count": 2,
+        "canvas_changed": true,
+        "ok": true,
+        "notes": []
+      },
+      {
+        "label": "gaze_right_down",
+        "applied_count": 2,
+        "canvas_changed": true,
+        "ok": true,
+        "notes": []
+      },
+      {
+        "label": "head_left",
+        "applied_count": 1,
+        "canvas_changed": true,
+        "ok": true,
+        "notes": []
+      },
+      {
+        "label": "head_right_over",
+        "applied_count": 1,
+        "canvas_changed": true,
+        "ok": true,
+        "notes": []
+      },
+      {
+        "label": "combo_talk",
+        "applied_count": 5,
+        "canvas_changed": true,
+        "ok": true,
+        "notes": []
+      },
+      {
+        "label": "back_to_neutral",
+        "applied_count": 6,
+        "canvas_changed": false,
+        "ok": true,
+        "notes": []
+      }
+    ]
+  },
+  "t3b_replay": {
+    "frames_applied": 175,
+    "applied_median": 6,
+    "applied_min": 6,
+    "missing_union": [
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamMouthForm",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBodyAngleZ",
+      "ParamBreath"
+    ],
+    "done": true,
+    "replay_screenshot_diff_mid_vs_done": 0.0
+  },
+  "failures": [],
+  "self_review": {
+    "probe_ready": true,
+    "clamp_roundtrip_pass": true,
+    "canvas_motion_pass": true,
+    "replay_complete": true,
+    "status": "PASS"
+  },
+  "interpretation": {
+    "ko": "T1 웹캠 파라미터 체계가 자체 Mini Cubism 런타임을 움직였습니다. 체인 끝단(트래킹→자체 런타임) 최초 연결 성공입니다."
+  }
+}
