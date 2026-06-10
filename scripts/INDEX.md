@@ -1,6 +1,6 @@
 # scripts/ 인덱스
 
-Updated: 2026-06-10 · 총 272개 · `python3 scripts/build_scripts_index.py`로 재생성
+Updated: 2026-06-10 · 총 280개 · `python3 scripts/build_scripts_index.py`로 재생성
 
 새 스크립트를 만들기 전에 이 인덱스에서 기존 것을 먼저 찾는다.
 코드 규칙: `docs/ref/AUTORIG-PIPELINE-V1.md`의 '코드 규칙' 절 (lib 사용 의무, 캐릭터 하드코딩 금지, 500줄 상한).
@@ -15,7 +15,7 @@ Updated: 2026-06-10 · 총 272개 · `python3 scripts/build_scripts_index.py`로
 | `lib/vtube_proc.py` | 29 | 프로세스/포트 공통 유틸. (wait_for_server 17벌 복붙의 단일 원본) |
 | `lib/vtube_server.py` | 60 | 로컬 HTTP 서버 공통 베이스. (ThreadingHTTPServer 보일러플레이트 13벌 복붙의 단일 원본) |
 
-## autorig — AUTORIG 파이프라인·관제탑·자산 인덱스 (현행) (9)
+## autorig — AUTORIG 파이프라인·관제탑·자산 인덱스 (현행) (10)
 
 | 파일 | LOC | 설명 |
 |---|---:|---|
@@ -23,6 +23,7 @@ Updated: 2026-06-10 · 총 272개 · `python3 scripts/build_scripts_index.py`로
 | `build_asset_dashboard.py` | 237 | Vtube 자산 대시보드 생성기. |
 | `build_autorig_current_candidates_002.py` | 119 | AUTORIG current-candidates manifest for cubism-v2-new-character-002. |
 | `build_autorig_full_assembly.py` | 127 | 모든 시트의 정규화 레이어를 모아 전신 조립 합성을 만든다 (검수 단위 규칙). |
+| `build_autorig_rig_v0.py` | 430 | P3 자동 리깅 v0: 하이브리드 레이어 → mini_cubism 리그(character.json) 자동 생성. |
 | `build_autorig_template_spec.py` | 200 | AUTORIG-TEMPLATE-SPEC-001: 64-part를 고정 슬롯 시트에 매핑하는 템플릿 스펙 생성. |
 | `build_scripts_index.py` | 94 | scripts/INDEX.md 자동 생성 — 258개 스크립트를 카테고리·설명·LOC로 색인한다. |
 | `run_autorig_control_tower.py` | 262 | AUTORIG 관제탑 서버 — runs/<run_id>/events.jsonl을 읽어 대시보드에 공급한다. |
@@ -37,7 +38,7 @@ Updated: 2026-06-10 · 총 272개 · `python3 scripts/build_scripts_index.py`로
 | `run_face_tracking_synthetic_parameter_smoke.py` | 354 | Run T0 synthetic face-tracking to Cubism parameter conversion smoke. |
 | `run_face_tracking_webcam_probe_server.py` | 333 | Serve a local MediaPipe webcam probe and save T1 face-tracking reports. |
 | `run_live2d_webcam_parameter_drive.py` | 411 | Drive a Live2D Web model with the saved T1 webcam Cubism parameter stream. |
-| `run_mini_cubism_webcam_drive.py` | 420 | T3: 웹캠/재생 트래킹 스트림으로 Mini Cubism 런타임을 구동하는 드라이브 서버. |
+| `run_mini_cubism_webcam_drive.py` | 421 | T3: 웹캠/재생 트래킹 스트림으로 Mini Cubism 런타임을 구동하는 드라이브 서버. |
 | `run_mini_cubism_webcam_drive_smoke.py` | 279 | T3-a/b 스모크: 합성 파라미터 + 저장된 T1 스트림 재생으로 Mini Cubism 드라이브를 검증한다. |
 
 ## servers-editors — 로컬 서버·에디터·플레이어 (9)
@@ -302,11 +303,13 @@ Updated: 2026-06-10 · 총 272개 · `python3 scripts/build_scripts_index.py`로
 | `export_rigger_handoff.py` | 8 | CLI wrapper for exporting the Cubism rigger handoff. |
 | `prepare_concept_psd_smoke_parts.py` | 192 | Prepare clean technical-smoke parts for concept PSD import testing. |
 
-## legacy-misc — 기타·레거시 (25)
+## legacy-misc — 기타·레거시 (32)
 
 | 파일 | LOC | 설명 |
 |---|---:|---|
 | `apply_mps_manual_mask.py` | 193 | Apply a human-painted review mask to a Mac MPS See-through candidate. |
+| `bake_arap_blink_layers.py` | 78 | ARAP 깜빡임 프레임을 리그용 inbetween 레이어로 굽는다 (런타임 무수정 통합). |
+| `bake_mouth_open_layers.py` | 68 | 입 벌림 워프 프레임을 리그용 레이어로 굽는다 (깜빡임 베이크와 동일 구조). |
 | `blink_apply_review_001.py` | 295 | Apply saved blink review placement to staged blink layers. |
 | `blink_stage_001.py` ⚠️ | 662 | Create and validate staged blink full-canvas layers. |
 | `blink_stage_review_server.py` | 70 | Serve Blink Stage 001 preview and save label/review evidence. |
@@ -318,17 +321,22 @@ Updated: 2026-06-10 · 총 272개 · `python3 scripts/build_scripts_index.py`로
 | `build_pack_model_candidate_comparison.py` | 382 | Build a model-candidate comparison report for Mini Cubism pack splitter. |
 | `build_review_manifest.py` ⚠️ | 702 | Build the unified part-purity review manifest. |
 | `build_roi_cleanup_candidates.py` | 386 | Build ROI-focused cleanup candidates for MPS See-through parts. |
+| `extract_mouth_states.py` | 152 | v21 최종 입 성공패턴용 상태 스프라이트 추출: 4상태 시트 → 풀캔버스 레이어 4장. |
 | `force_imagen_front_hair_arms_pass.py` | 254 | Force-promote Imagen front hair and both arms for MVP PSD progression. |
 | `map_mini_cubism_dedicated_layers.py` | 161 | Gate See-through layers against the Mini Cubism dedicated v1 taxonomy. |
 | `mini_cubism_preview_server.py` | 229 | Serve the Mini Cubism v0 preview app and project files. |
 | `mouth_apply_delta_001.py` | 392 | Apply saved mouth manual delta to new generated mouth sheets. |
+| `place_mouth_interior.py` | 72 | 입 내부(동일세션 시트의 interior 셀)를 원본 입라인 기준으로 추출·배치한다. |
 | `production_canvas_2048_smoke.py` ⚠️ | 983 | 2048 production canvas smoke tests for Vtube layer candidates. |
 | `review_app_server.py` | 431 | Local server for the unified part-purity review UI. |
 | `review_server_2048.py` | 61 | Local review server that saves manual Vtube adjustment evidence. |
+| `run_arap_blink_experiment.py` | 127 | ARAP-EXP-001: 원본 픽셀만으로 눈꺼풀 감김(깜빡임)을 만드는 메시 워프 실험. |
 | `run_live2d_core_api_extractor.py` | 320 | Extract Core-backed runtime structure from the Live2D strong model sandbox. |
+| `run_mouth_open_experiment.py` | 149 | MOUTH-EXP-001: 원본 픽셀 워프로 입 벌림을 단계화한다 (깜빡임 공식의 재적용). |
 | `run_mps_compat_matrix.py` | 226 | Run the See-through Apple Silicon MPS compatibility matrix. |
 | `seed_imagen_live2d_technical_review.py` | 177 | Seed safe technical review verdicts for Imagen Live2D candidates. |
 | `setup_imagen_live2d_experiment.py` | 222 | Prepare an Imagen-generated Live2D front-canonical experiment. |
+| `split_hair_chunks.py` | 123 | HAIR-SPLIT-001: 머리카락 통짜 레이어를 물리용 덩어리로 분할한다. |
 | `split_mini_cubism_app.py` | 149 | AUTORIG-RUNTIME-SPLIT-001: mini_cubism_app/src/app.js(1,673줄 모놀리스)를 ES 모듈로 분할한다. |
 | `tune_mini_cubism_keyforms.py` | 211 | Generate and rank conservative Mini Cubism keyform tuning candidates. |
 

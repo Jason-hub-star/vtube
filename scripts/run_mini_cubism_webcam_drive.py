@@ -198,7 +198,7 @@ async function probe() {
 function apply(outputs) {
   const win = frame.contentWindow;
   if (!win?.__miniProbe) return;
-  win.__miniStepPhysics?.(1 / 30); // 물리 스프링 라이브 스테핑 (머리카락 찰랑임)
+  if (win.__miniProject?.physics_profiles?.length) win.__miniStepPhysics?.(1 / 30); // 물리 스프링 라이브 스테핑 (프로파일 있을 때만 — 불필요한 리드로 방지)
   const result = win.__miniProbe.setParameterValues(outputs);
   const report = window.__driveReport;
   report.frames_applied += 1;
@@ -231,9 +231,16 @@ async function runReplay() {
     let i = 0;
     const tick = () => {
       const elapsed = (performance.now() - begin) * SPEED;
-      while (i < frames.length && (frames[i].t_ms - t0) <= elapsed) {
-        apply(frames[i].outputs);
-        i += 1;
+      // 밀린 프레임 중 마지막 것만 그린다 (중간 프레임 풀 리드로 방지 — 60fps 소스라 시각 동일)
+      let last = -1;
+      while (i < frames.length && (frames[i].t_ms - t0) <= elapsed) { last = i; i += 1; }
+      if (last >= 0) {
+        const skipped = Math.max(0, i - 1 - (window.__lastApplied ?? -1) - 1);
+        apply(frames[last].outputs);
+        const report = window.__driveReport;
+        for (let s = 0; s < skipped; s++) { report.frames_applied += 1; report.applied_counts.push(report.applied_counts[report.applied_counts.length - 1] ?? 0); }
+        window.__lastApplied = i - 1;
+        els.frameState.textContent = String(report.frames_applied);
       }
       els.faceState.textContent = `${i}/${frames.length}`;
       if (i < frames.length) requestAnimationFrame(tick);

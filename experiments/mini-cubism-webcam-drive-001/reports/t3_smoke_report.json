@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-10T05:05:15.021634+00:00",
+  "generated_at": "2026-06-10T13:24:35.714645+00:00",
   "test_id": "T3_mini_cubism_webcam_drive_smoke",
   "status": "PASS",
   "method": "synthetic samples + saved T1 stream replay injected through __miniProbe into the Mini Cubism runtime (v21 rig)",

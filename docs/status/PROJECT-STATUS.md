@@ -1,6 +1,6 @@
 # Vtube Project Status
 
-Updated: 2026-06-11
+Updated: 2026-06-11 (rig v1.0)
 
 ## Current Phase
 
@@ -28,10 +28,11 @@ Updated: 2026-06-11
 | 트래킹 (MediaPipe→Cubism 파라미터) | **T3 PASS (2026-06-11)** | **체인 끝단 최초 연결**: T1 스트림 → `__miniProbe` → 자체 Mini Cubism 런타임(v21). 합성 12샘플 + 175프레임 재생 스모크 PASS. `scripts/run_mini_cubism_webcam_drive.py` (실웹캠 /drive 페이지 포함) |
 | 자체 런타임 (mini_cubism 계보) | 주입 API 완비 | `__miniProbe` (waitReady/setParameterValues/canvasHash) 추가 |
 | **관제탑 대시보드** | **완성 (2026-06-11)** | 이벤트 JSONL 컨벤션(`scripts/autorig_events.py`) + 서버(8095, macOS 알림) + 토스스타일 UI(타임라인/피드/게이트 드래그 수정/QA/로그) + 시뮬레이터. 스모크: 파이썬 18/18, 브라우저 8/8 PASS |
-| AUTORIG-TEMPLATE-SPEC-001 | 0% | 다음 작업 1순위 |
-| AUTORIG-RIG-SCHEMA-001 | 0% | mini_rig.json 확장 |
-| AUTORIG-PIPELINE-CLI-001 | 관제 인프라 완료 | 파이프라인 본체가 autorig_events 컨벤션으로 이벤트만 쓰면 즉시 관제됨 |
-| AUTORIG-EDITOR-001 | 씨앗 확보 | 관제탑 게이트 패널에 드래그 배치 수정 v0 동작 |
+| **소재 (하이브리드 레시피)** | **VERIFIED** | 진짜 마스터 분해+원본 재스킨(가시) + 동일세션 시트(숨은) — `vtube-hybrid-material-recipe` 하니스화. 전체 슬롯 생성은 기하 비정합으로 DISCARDED |
+| **자동 리깅 (rig v1.0)** | **완성, H2 대기** | `build_autorig_rig_v0.py` — 39파트·8워프·10파라미터·물리 3그룹. 표정 성공패턴: 눈=ARAP 워프, 입=밀착 4상태 스프라이트+턱선가드 (주인님 합격). 몸 BodyAngle±10+Breath, 머리 5덩어리(무손실 분할)+v0-3 스프링. T3 재생 applied 9/프레임 |
+| AUTORIG-TEMPLATE-SPEC-001 | 완료 | 12시트 스펙 (숨은 레이어 생성 전용으로 용도 확정) |
+| AUTORIG-PIPELINE-CLI-001 | 관제 인프라 완료 | 단계 스크립트들은 검증됨 — 원커맨드 묶기가 남은 작업 |
+| AUTORIG-ANCHOR-DETECT-001 | 0% | 프로덕션 갭 (임의 업로드 PNG 앵커 검출) |
 
 ## Production Direction
 
@@ -47,10 +48,10 @@ Updated: 2026-06-11
 
 ## Next Actions
 
-1. `AUTORIG-TEMPLATE-SPEC-001` — 고정 슬롯 시트 레이아웃 + 생성 프롬프트 템플릿.
-2. `AUTORIG-RIG-SCHEMA-001` — rig JSON 스키마 (메시/디포머/키폼/물리).
-3. `AUTORIG-PIPELINE-CLI-001` — character-agnostic 원커맨드 파이프라인.
-4. `AUTORIG-EDITOR-001` — 자체 에디터 통합 (수동 보정은 에디터 10초 > LLM 추측).
+1. **주인님 H2 검수** — 웹캠 드라이브(8063)에서 rig v1.0 전신 확인 (머리 찰랑임·호흡·상체).
+2. `AUTORIG-PIPELINE-CLI-001` — 검증된 단계 스크립트들을 "자동화파이프라인 시작" 원커맨드로 묶기 (+P0 마스터 검증 게이트).
+3. `AUTORIG-ANCHOR-DETECT-001` — 임의 업로드 PNG 앵커 자동 검출 (프로덕션 갭).
+4. 분해 풀해상도화 (Ubuntu CUDA 런북) + ARAP 메시변형 고도화 (v2 품질 사다리).
 
 ## Rules
 

@@ -1,7 +1,7 @@
 // 엔트리포인트.
 
 import { defaultViewZoom, draw } from "./core/draw.js";
-import { initPhysicsState } from "./core/physics.js";
+import { initPhysicsState, stepPhysics } from "./core/physics.js";
 import { normalizeRig } from "./core/rig.js";
 import { state } from "./core/state.js";
 import { escapeHtml, fetchJson, loadImages } from "./core/utils.js";
@@ -22,6 +22,10 @@ async function init() {
     exposeAutomationApi();
     render();
     draw();
+    if (project.physics_profiles?.length) {
+      // 물리 프로파일이 있으면 30fps 상시 스테핑 — 슬라이더 조작만으로 찰랑임이 보인다
+      setInterval(() => stepPhysics(1 / 30), 33);
+    }
   } catch (error) {
     app.innerHTML = `<div class="fatal">Mini Cubism preview failed: ${escapeHtml(error.message)}</div>`;
   }
