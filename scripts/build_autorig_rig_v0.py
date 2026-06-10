@@ -43,9 +43,9 @@ def folder_of(pid: str) -> str:
 
 
 def deformer_of(pid: str) -> str:
-    if pid.startswith("L_") and ("eye" in pid or "iris" in pid or "lash" in pid) or pid == "eye_L_closed_lid":
+    if pid.startswith("L_") and ("eye" in pid or "iris" in pid or "lash" in pid) or pid.startswith("eye_L_"):
         return "eye_L_warp"
-    if pid.startswith("R_") and ("eye" in pid or "iris" in pid or "lash" in pid) or pid == "eye_R_closed_lid":
+    if pid.startswith("R_") and ("eye" in pid or "iris" in pid or "lash" in pid) or pid.startswith("eye_R_"):
         return "eye_R_warp"
     if "mouth" in pid:
         return "mouth_warp"
@@ -96,9 +96,11 @@ def main() -> int:
     parser.add_argument("--reskin-manifest", type=Path, required=True)
     parser.add_argument("--hidden-eye-dir", type=Path, required=True)
     parser.add_argument("--hidden-mouth-dir", type=Path, required=True)
+    parser.add_argument("--arap-eye-dir", type=Path, default=None, help="ARAP 깜빡임 패치 디렉토리 (지정 시 생성 감은꺼풀 대신 원본 워프 5단계)")
     parser.add_argument("--out-dir", type=Path, required=True)
     parser.add_argument("--experiment-id", default="autorig-rig-v0")
     args = parser.parse_args()
+    use_arap = args.arap_eye_dir is not None and args.arap_eye_dir.exists()
 
     out = args.out_dir if args.out_dir.is_absolute() else ROOT / args.out_dir
     (out / "parts").mkdir(parents=True, exist_ok=True)
@@ -110,12 +112,22 @@ def main() -> int:
         sources.append((layer["part_id"], ROOT / layer["path"], layer["draw_order"]))
     # 숨은 레이어: 감은꺼풀은 눈 위(앞), 입 내부는 mouth_line 바로 아래
     hidden = [
-        ("eye_L_closed_lid", args.hidden_eye_dir / "eye_L_closed_lid.png", 545),
-        ("eye_R_closed_lid", args.hidden_eye_dir / "eye_R_closed_lid.png", 546),
         ("mouth_inner", args.hidden_mouth_dir / "mouth_inner.png", 405),
         ("mouth_teeth", args.hidden_mouth_dir / "mouth_teeth.png", 406),
         ("mouth_tongue", args.hidden_mouth_dir / "mouth_tongue.png", 407),
     ]
+    if use_arap:
+        # 픽셀-가이드 원칙: 깜빡임은 원본 워프 패치 (생성 감은꺼풀 미사용)
+        order = 536
+        for side in ("L", "R"):
+            for step in ("025", "050", "075", "100"):
+                hidden.append((f"eye_{side}_arap_{step}", args.arap_eye_dir / f"eye_{side}_arap_{step}.png", order))
+                order += 1
+    else:
+        hidden += [
+            ("eye_L_closed_lid", args.hidden_eye_dir / "eye_L_closed_lid.png", 545),
+            ("eye_R_closed_lid", args.hidden_eye_dir / "eye_R_closed_lid.png", 546),
+        ]
     for pid, path, order in hidden:
         if not path.exists():
             raise SystemExit(f"숨은 레이어 없음: {path}")
@@ -236,8 +248,9 @@ def main() -> int:
         binding("ParamEyeBallY", 1, "L_iris", ty=4.5),
         binding("ParamEyeBallY", -1, "R_iris", ty=-4.5),
         binding("ParamEyeBallY", 1, "R_iris", ty=4.5),
-        binding("ParamEyeLOpen", 0.27, "eye_L_warp", sy=0.5),
-        binding("ParamEyeROpen", 0.27, "eye_R_warp", sy=0.5),
+        # 깜빡임 형태는 ARAP 패치가 담당, 워프는 미세 눌림만 (validator: 파라미터당 바인딩 필수)
+        binding("ParamEyeLOpen", 0.27, "eye_L_warp", sy=0.97),
+        binding("ParamEyeROpen", 0.27, "eye_R_warp", sy=0.97),
         binding("ParamHairFront", 1, "front_hair_warp", tx=10),
         binding("ParamMouthOpenY", 0.5, "mouth_warp", ty=0.8, sy=1.01),
         binding("ParamMouthOpenY", 0.85, "mouth_warp", ty=1.6, sy=1.02),
@@ -247,15 +260,27 @@ def main() -> int:
         return {"part_id": part, "parameter_id": param, "mode": "linear",
                 "keyframes": [{"value": v, "opacity": o} for v, o in points]}
 
-    open_curve = [(0.27, 0.0), (0.5, 0.55), (0.8, 0.95), (1.0, 1.0)]
-    closed_curve = [(0.27, 1.0), (0.5, 0.35), (0.65, 0.0), (1.0, 0.0)]
     part_opacity_keyframes = []
-    for side in ("L", "R"):
-        param = f"ParamEye{side}Open"
-        for pid in (f"{side}_eye_white", f"{side}_iris", f"{side}_upper_lash", f"{side}_lower_lash"):
-            if pid in bbox_by_id:
-                part_opacity_keyframes.append(curve(pid, param, open_curve))
-        part_opacity_keyframes.append(curve(f"eye_{side}_closed_lid", param, closed_curve))
+    if use_arap:
+        # 워프 패치 t ↔ EyeOpen 값 매핑: v = 1 - t·(1-0.27)
+        v25, v50, v75, v100 = 0.8175, 0.635, 0.4525, 0.27
+        for side in ("L", "R"):
+            param = f"ParamEye{side}Open"
+            part_opacity_keyframes += [
+                curve(f"eye_{side}_arap_025", param, [(v50, 0.0), (v25, 1.0), (1.0, 0.0)]),
+                curve(f"eye_{side}_arap_050", param, [(v75, 0.0), (v50, 1.0), (v25, 0.0)]),
+                curve(f"eye_{side}_arap_075", param, [(v100, 0.0), (v75, 1.0), (v50, 0.0)]),
+                curve(f"eye_{side}_arap_100", param, [(v100, 1.0), (v75, 0.0), (1.0, 0.0)]),
+            ]
+    else:
+        open_curve = [(0.27, 0.0), (0.5, 0.55), (0.8, 0.95), (1.0, 1.0)]
+        closed_curve = [(0.27, 1.0), (0.5, 0.35), (0.65, 0.0), (1.0, 0.0)]
+        for side in ("L", "R"):
+            param = f"ParamEye{side}Open"
+            for pid in (f"{side}_eye_white", f"{side}_iris", f"{side}_upper_lash", f"{side}_lower_lash"):
+                if pid in bbox_by_id:
+                    part_opacity_keyframes.append(curve(pid, param, open_curve))
+            part_opacity_keyframes.append(curve(f"eye_{side}_closed_lid", param, closed_curve))
     part_opacity_keyframes += [
         curve("mouth_line", "ParamMouthOpenY", [(0.0, 1.0), (0.25, 0.85), (0.45, 0.0), (0.85, 0.0)]),
         curve("mouth_inner", "ParamMouthOpenY", [(0.0, 0.0), (0.2, 0.15), (0.45, 0.9), (0.85, 1.0)]),
