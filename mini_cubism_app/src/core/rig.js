@@ -387,11 +387,16 @@ function latticeDisplaced(project, deformer) {
   const rad = (t.rotate * Math.PI) / 180;
   const cos = Math.cos(rad);
   const sin = Math.sin(rad);
+  // pin_edges: 방향별 가장자리 고정 (예: 목 = 아래·양옆만 고정, 위는 턱을 따라 자유)
+  const pins = Array.isArray(deformer.pin_edges)
+    ? deformer.pin_edges
+    : (deformer.edge_pinned ? ["top", "bottom", "left", "right"] : []);
   displaced = points.map(([x, y], i) => {
-    if (deformer.edge_pinned) {
+    if (pins.length) {
       const r = Math.floor(i / cols);
       const c = i % cols;
-      if (r === 0 || c === 0 || r === rows - 1 || c === cols - 1) return [0, 0]; // 가장자리 고정
+      if ((pins.includes("top") && r === 0) || (pins.includes("bottom") && r === rows - 1) ||
+          (pins.includes("left") && c === 0) || (pins.includes("right") && c === cols - 1)) return [0, 0];
     }
     const dx = x - pivot[0];
     const dy = y - pivot[1];

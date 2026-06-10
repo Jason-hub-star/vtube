@@ -251,7 +251,7 @@ def main() -> int:
             }
         )
         big = pid in ("face_base", "back_hair", "front_hair", "clothes") or pid.startswith(("hair_front_", "hair_back_"))
-        if pid in ("face_base", "clothes"):
+        if pid in ("face_base", "clothes", "neck_skin"):
             cols = rows = 9  # 목-어깨 접합부를 지나는 파트 — fade 보간이 고와야 분리가 안 보인다
         else:
             cols = rows = 6 if big else 5
@@ -330,7 +330,7 @@ def main() -> int:
         {"id": "head_angle_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("head_angle_warp", []), "bounds": head_bounds, "pivot": center(head_bounds), "lattice": {"cols": 7, "rows": 7}, "edge_pinned": True},
         # 목 = head 자식 (머리 격자 페이드 → 위는 머리, 아래로 갈수록 감쇠하는 그라데이션)
         # + 몸 추종은 자체 바인딩으로 보충 (BodyAngle/Breath — body 체인에서 빠진 몫)
-        {"id": "neck_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("neck_warp", []), "bounds": neck_bounds, "pivot": center(neck_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
+        {"id": "neck_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("neck_warp", []), "bounds": neck_bounds, "pivot": center(neck_bounds), "lattice": {"cols": 5, "rows": 6}, "pin_edges": ["bottom", "left", "right"]},
         {"id": "eye_L_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("eye_L_warp", []), "bounds": eye_l_bounds, "pivot": center(eye_l_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
         {"id": "eye_R_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("eye_R_warp", []), "bounds": eye_r_bounds, "pivot": center(eye_r_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
         {"id": "mouth_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("mouth_warp", []), "bounds": mouth_bounds, "pivot": center(mouth_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
