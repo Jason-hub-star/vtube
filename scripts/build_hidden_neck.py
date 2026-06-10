@@ -22,7 +22,7 @@ from PIL import Image
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from lib.vtube_io import ROOT, now_iso, rel, write_json  # noqa: E402
 
-WIDEN = 1.3
+WIDEN = 1.15
 EXTEND_UP_RATIO = 0.14  # face_base 높이 대비 위 연장 (002 실측 140px/얼굴 ~1000px — 캐릭터 무관 비율)
 EXTEND_UP_FALLBACK_PX = 140
 
@@ -60,7 +60,8 @@ def main() -> int:
     # 목 피부 사각형: 턱선 "아래"에서 시작 (위로 올리면 턱/입을 덮는 기둥 — 003 사건),
     # 폭은 보수적으로. 가장자리는 전부 페더라 모서리가 절대 노출되지 않는다.
     y0 = max(0, chin_line_y + 4)
-    y1 = min(master.shape[0], cy0 + 40)
+    # 높이 제한: 틈은 턱 밑에서만 생긴다 — 가슴까지 내리면 맨살 위에 유령 목이 보인다 (003 사건)
+    y1 = min(master.shape[0], cy0 + 40, y0 + 110)
     half_w = round(mouth_w * 0.55)
     x0 = int(mouth_cx - half_w)
     x1 = int(mouth_cx + half_w)
@@ -68,9 +69,10 @@ def main() -> int:
     region[..., 3] = 255
     crop = Image.fromarray(region, "RGBA")
 
-    # 가로 확장
+    # 가로 확장 + 윤곽 블러 (목 음영선이 복제되면 유령 목이 보인다 — 배경판이라 흐려도 무방)
+    from PIL import ImageFilter
     new_w = round(crop.width * WIDEN)
-    widened = crop.resize((new_w, crop.height), Image.LANCZOS)
+    widened = crop.resize((new_w, crop.height), Image.LANCZOS).filter(ImageFilter.GaussianBlur(6))
 
     # 4면 페더 (상단은 짧게 — 턱 밑에 살짝 깔리는 정도, 모서리 노출 방지)
     arr = np.asarray(widened).astype(np.float64)
