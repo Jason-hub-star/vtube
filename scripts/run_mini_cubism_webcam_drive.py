@@ -211,8 +211,10 @@ function convert(ch) {
     ParamAngleX: clamp(normalizeCentered(headYaw, -25, 25) * 30, -30, 30),
     ParamAngleY: clamp(normalizeCentered(headPitch, -20, 20) * 30, -30, 30),
     ParamAngleZ: clamp(normalizeCentered(headRoll, -25, 25) * 30, -30, 30),
-    ParamEyeLOpen: clamp(1 - ch.eyeBlinkLeft, 0, 1),
-    ParamEyeROpen: clamp(1 - ch.eyeBlinkRight, 0, 1),
+    // 열림 데드존: eyeBlink는 눈을 떠도 0이 안 된다 (실측 0.06~0.15) — 그대로 쓰면
+    // EyeOpen이 1.0에 못 닿아 깜빡임 패치가 상시 걸치고 노이즈가 꺼풀을 떨게 한다
+    ParamEyeLOpen: clamp(1 - remapDeadzone(ch.eyeBlinkLeft, 0.12, 0.75), 0, 1),
+    ParamEyeROpen: clamp(1 - remapDeadzone(ch.eyeBlinkRight, 0.12, 0.75), 0, 1),
     ParamEyeBallX: clamp(ch.eye_gaze_x, -1, 1),
     ParamEyeBallY: clamp(ch.eye_gaze_y, -1, 1),
     ParamMouthOpenY: clamp(remapDeadzone(ch.jawOpen, 0.08, 0.85), 0, 1),
@@ -239,8 +241,39 @@ async function probe() {
   return null;
 }
 
+// ---------- 안정화 (TREMBLE-001) ----------
+// 눈: 3상태 히스테리시스 — open(1.0 고정: 노이즈 0.8~0.95가 꺼풀을 못 흔든다) →
+// v<0.7에 blink(즉각 추적: 깜빡임 지연 금지) → v>0.8에 opening(이징 복귀: 스냅 팝 방지).
+// 표정: 느린 신호라 강평활 — 데드존 경계의 깜빡거림 제거.
+const eyeStab = { ParamEyeLOpen: { mode: "open", val: 1 }, ParamEyeROpen: { mode: "open", val: 1 } };
+const exprStab = { ParamEyeSmile: 0, ParamCheek: 0, ParamMouthForm: 0 };
+function stabilize(outputs) {
+  for (const [id, s] of Object.entries(eyeStab)) {
+    const v = outputs[id];
+    if (v === undefined) continue;
+    if (s.mode === "open") {
+      s.val = 1;
+      if (v < 0.7) { s.mode = "blink"; s.val = v; }
+    } else if (s.mode === "blink") {
+      s.val = v < s.val ? v : s.val * 0.5 + v * 0.5;
+      if (v > 0.8) s.mode = "opening";
+    } else { // opening
+      s.val += (1 - s.val) * 0.45;
+      if (v < 0.7) s.mode = "blink";
+      else if (s.val > 0.96) { s.mode = "open"; s.val = 1; }
+    }
+    outputs[id] = s.val;
+  }
+  for (const id of Object.keys(exprStab)) {
+    if (outputs[id] === undefined) continue;
+    exprStab[id] = exprStab[id] * 0.85 + outputs[id] * 0.15;
+    outputs[id] = Math.abs(exprStab[id]) < 0.04 ? 0 : exprStab[id];
+  }
+  return outputs;
+}
+
 function apply(outputs) {
-  outputs = blendExpressions({ ...outputs });
+  outputs = blendExpressions(stabilize({ ...outputs }));
   const win = frame.contentWindow;
   if (!win?.__miniProbe) return;
   if (win.__miniProject?.physics_profiles?.length) win.__miniStepPhysics?.(1 / 30); // 물리 스프링 라이브 스테핑 (프로파일 있을 때만 — 불필요한 리드로 방지)
