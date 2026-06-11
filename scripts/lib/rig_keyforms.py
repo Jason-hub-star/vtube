@@ -105,6 +105,36 @@ def build_keyform_bindings() -> list[dict]:
     ]
 
 
+def attach_mouth_height_keyforms(meshes: list[dict], bbox_by_id: dict) -> list[str]:
+    """입 상태 스프라이트에 연속 입높이 정점 키폼 부착 (MOUTH-KEYFORM-001 — 눈 패턴 이식).
+
+    크로스페이드 잔상의 원인은 겹치는 두 상태의 기하 불일치 — 모든 상태를 공통
+    입높이 함수 H(v)에 맞춰 세로 워프시키면, 어느 v에서든 겹치는 쌍의 높이가 같아
+    교차 지점 윤곽이 일치한다 (입은 외형 변화라 스프라이트 유지 — 기하만 정렬).
+    H(v) = 각 상태의 가시 피크에서 자기 실측 높이를 지나는 구간별 선형.
+    앵커 = 자기 bbox 상단 (윗입술 고정, 개방은 턱이 아래로 떨어지는 방향).
+    """
+    peaks = [("mouth_state_small", 0.35), ("mouth_state_mid", 0.58), ("mouth_state_wide", 0.85)]
+    if any(pid not in bbox_by_id for pid, _ in peaks):
+        return []
+    heights = {pid: max(bbox_by_id[pid][3], 1) for pid, _ in peaks}
+    # 등장 직전(0.18)의 타깃 = small의 55% — 닫힌 입선에서 자라나는 연출
+    breakpoints = [(0.18, heights["mouth_state_small"] * 0.55)] + [(v, heights[pid]) for pid, v in peaks]
+    attached = []
+    for pid, _peak in peaks:
+        mesh = next((m for m in meshes if m["part_id"] == pid), None)
+        if mesh is None:
+            continue
+        top = bbox_by_id[pid][1]
+        keys = []
+        for v, target in breakpoints:
+            s = target / heights[pid]
+            keys.append({"value": v, "vertices": [[x, round(top + (y - top) * s, 1)] for x, y in mesh["vertices"]]})
+        mesh["vertex_keyforms"] = {"parameter_id": "ParamMouthOpenY", "keys": keys}
+        attached.append(pid)
+    return attached
+
+
 def curve(part, param, points):
     return {"part_id": part, "parameter_id": param, "mode": "linear",
             "keyframes": [{"value": v, "opacity": o} for v, o in points]}

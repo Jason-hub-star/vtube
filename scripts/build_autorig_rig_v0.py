@@ -25,7 +25,7 @@ import numpy as np
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from lib.rig_keyforms import build_keyform_bindings, build_opacity_curves, build_parameters, build_physics_profiles  # noqa: E402
+from lib.rig_keyforms import attach_mouth_height_keyforms, build_keyform_bindings, build_opacity_curves, build_parameters, build_physics_profiles  # noqa: E402
 from lib.vtube_io import ROOT, load_json, now_iso, rel, write_json  # noqa: E402
 from run_arap_blink_experiment import blink_mesh, eye_bbox_from_layer  # noqa: E402
 
@@ -307,6 +307,12 @@ def main() -> int:
             mesh["triangles"] = culled
         meshes.append(mesh)
         write_json(out / mesh["mesh_path"], mesh)
+
+    if use_mouth_states:
+        # MOUTH-KEYFORM-001: 상태 스프라이트를 공통 입높이로 워프 — 크로스페이드 교차점 윤곽 정렬
+        for pid in attach_mouth_height_keyforms(meshes, bbox_by_id):
+            mesh = next(m for m in meshes if m["part_id"] == pid)
+            write_json(out / mesh["mesh_path"], mesh)
 
     def union_bbox(*pids: str) -> list[int]:
         # 빈 파트(알파 0 → [0,0,4,4])는 제외 — 원점으로 bounds가 끌려가는 것 방지
