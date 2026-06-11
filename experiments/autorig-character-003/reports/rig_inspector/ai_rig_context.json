@@ -1,12 +1,12 @@
 {
   "project": "experiments/autorig-character-003/rig_v0_project",
-  "generated_at": "2026-06-11T15:02:58.962284+00:00",
+  "generated_at": "2026-06-11T15:45:05.433736+00:00",
   "counts": {
     "parts": 38,
     "meshes": 38,
     "deformers": 10,
-    "parameters": 19,
-    "keyform_bindings": 59,
+    "parameters": 20,
+    "keyform_bindings": 61,
     "physics_profiles": 6
   },
   "parameters": [
@@ -199,12 +199,23 @@
     {
       "id": "ParamMouthOpenY",
       "min": 0,
-      "max": 0.85,
+      "max": 1,
       "default": 0.0,
       "key_values": [
         0,
         0.5,
-        0.85
+        1
+      ]
+    },
+    {
+      "id": "ParamMouthForm",
+      "min": -1,
+      "max": 1,
+      "default": 0.0,
+      "key_values": [
+        -1,
+        0,
+        1
       ]
     },
     {
@@ -1186,9 +1197,22 @@
       "parts": "hair_front_C|hair_front_L|hair_front_R"
     },
     {
+      "parameter_id": "ParamMouthForm",
+      "min": -1,
+      "max": 1,
+      "default": 0.0,
+      "target_count": 1,
+      "part_influence_count": 4,
+      "deformer_influence_count": 1,
+      "physics_influence_count": 0,
+      "direct_delta_magnitude": 12.0,
+      "targets": "mouth_warp",
+      "parts": "mouth_line|mouth_state_mid|mouth_state_small|mouth_state_wide"
+    },
+    {
       "parameter_id": "ParamMouthOpenY",
       "min": 0,
-      "max": 0.85,
+      "max": 1,
       "default": 0.0,
       "target_count": 1,
       "part_influence_count": 4,
@@ -1931,7 +1955,7 @@
     {
       "part_a": "neck_under",
       "part_b": "mouth_state_wide",
-      "score": 60.473,
+      "score": 59.69,
       "bbox_gap": 77.0,
       "contact_length": 0,
       "draw_order_gap": 217.0,
@@ -2761,6 +2785,19 @@
       "physics_b": 0
     },
     {
+      "part_a": "mouth_line",
+      "part_b": "eye_R_smile",
+      "score": 26.22,
+      "bbox_gap": 40.0,
+      "contact_length": 0,
+      "draw_order_gap": 129.0,
+      "shared_chain_depth": 3,
+      "chain_a": "root_warp>upper_warp>head_angle_warp>mouth_warp",
+      "chain_b": "root_warp>upper_warp>head_angle_warp>eye_R_warp",
+      "physics_a": 0,
+      "physics_b": 0
+    },
+    {
       "part_a": "L_ear_outer",
       "part_b": "eye_L_blink",
       "score": 26.2,
@@ -2769,6 +2806,45 @@
       "draw_order_gap": 220.0,
       "shared_chain_depth": 3,
       "chain_a": "root_warp>upper_warp>head_angle_warp",
+      "chain_b": "root_warp>upper_warp>head_angle_warp>eye_L_warp",
+      "physics_a": 0,
+      "physics_b": 0
+    },
+    {
+      "part_a": "mouth_line",
+      "part_b": "eye_L_smile",
+      "score": 26.18,
+      "bbox_gap": 41.0,
+      "contact_length": 0,
+      "draw_order_gap": 128.0,
+      "shared_chain_depth": 3,
+      "chain_a": "root_warp>upper_warp>head_angle_warp>mouth_warp",
+      "chain_b": "root_warp>upper_warp>head_angle_warp>eye_L_warp",
+      "physics_a": 0,
+      "physics_b": 0
+    },
+    {
+      "part_a": "mouth_line",
+      "part_b": "eye_R_blink",
+      "score": 26.14,
+      "bbox_gap": 40.0,
+      "contact_length": 0,
+      "draw_order_gap": 127.0,
+      "shared_chain_depth": 3,
+      "chain_a": "root_warp>upper_warp>head_angle_warp>mouth_warp",
+      "chain_b": "root_warp>upper_warp>head_angle_warp>eye_R_warp",
+      "physics_a": 0,
+      "physics_b": 0
+    },
+    {
+      "part_a": "mouth_line",
+      "part_b": "eye_L_blink",
+      "score": 26.1,
+      "bbox_gap": 41.0,
+      "contact_length": 0,
+      "draw_order_gap": 126.0,
+      "shared_chain_depth": 3,
+      "chain_a": "root_warp>upper_warp>head_angle_warp>mouth_warp",
       "chain_b": "root_warp>upper_warp>head_angle_warp>eye_L_warp",
       "physics_a": 0,
       "physics_b": 0
@@ -2800,74 +2876,9 @@
       "physics_b": 0
     },
     {
-      "part_a": "L_ear_outer",
-      "part_b": "L_upper_lash",
-      "score": 25.81,
-      "bbox_gap": 0.0,
-      "contact_length": 56,
-      "draw_order_gap": 214.0,
-      "shared_chain_depth": 3,
-      "chain_a": "root_warp>upper_warp>head_angle_warp",
-      "chain_b": "root_warp>upper_warp>head_angle_warp>eye_L_warp",
-      "physics_a": 0,
-      "physics_b": 0
-    },
-    {
-      "part_a": "mouth_line",
-      "part_b": "eye_R_smile",
-      "score": 25.532,
-      "bbox_gap": 40.0,
-      "contact_length": 0,
-      "draw_order_gap": 129.0,
-      "shared_chain_depth": 3,
-      "chain_a": "root_warp>upper_warp>head_angle_warp>mouth_warp",
-      "chain_b": "root_warp>upper_warp>head_angle_warp>eye_R_warp",
-      "physics_a": 0,
-      "physics_b": 0
-    },
-    {
-      "part_a": "mouth_line",
-      "part_b": "eye_L_smile",
-      "score": 25.492,
-      "bbox_gap": 41.0,
-      "contact_length": 0,
-      "draw_order_gap": 128.0,
-      "shared_chain_depth": 3,
-      "chain_a": "root_warp>upper_warp>head_angle_warp>mouth_warp",
-      "chain_b": "root_warp>upper_warp>head_angle_warp>eye_L_warp",
-      "physics_a": 0,
-      "physics_b": 0
-    },
-    {
-      "part_a": "mouth_line",
-      "part_b": "eye_R_blink",
-      "score": 25.452,
-      "bbox_gap": 40.0,
-      "contact_length": 0,
-      "draw_order_gap": 127.0,
-      "shared_chain_depth": 3,
-      "chain_a": "root_warp>upper_warp>head_angle_warp>mouth_warp",
-      "chain_b": "root_warp>upper_warp>head_angle_warp>eye_R_warp",
-      "physics_a": 0,
-      "physics_b": 0
-    },
-    {
-      "part_a": "mouth_line",
-      "part_b": "eye_L_blink",
-      "score": 25.412,
-      "bbox_gap": 41.0,
-      "contact_length": 0,
-      "draw_order_gap": 126.0,
-      "shared_chain_depth": 3,
-      "chain_a": "root_warp>upper_warp>head_angle_warp>mouth_warp",
-      "chain_b": "root_warp>upper_warp>head_angle_warp>eye_L_warp",
-      "physics_a": 0,
-      "physics_b": 0
-    },
-    {
       "part_a": "mouth_state_wide",
       "part_b": "eye_R_smile",
-      "score": 25.292,
+      "score": 25.98,
       "bbox_gap": 71.386,
       "contact_length": 0,
       "draw_order_gap": 123.0,
@@ -2876,13 +2887,28 @@
       "chain_b": "root_warp>upper_warp>head_angle_warp>eye_R_warp",
       "physics_a": 0,
       "physics_b": 0
+    },
+    {
+      "part_a": "mouth_state_wide",
+      "part_b": "eye_L_smile",
+      "score": 25.94,
+      "bbox_gap": 72.78,
+      "contact_length": 0,
+      "draw_order_gap": 122.0,
+      "shared_chain_depth": 3,
+      "chain_a": "root_warp>upper_warp>head_angle_warp>mouth_warp",
+      "chain_b": "root_warp>upper_warp>head_angle_warp>eye_L_warp",
+      "physics_a": 0,
+      "physics_b": 0
     }
   ],
   "dynamic_available": true,
   "dynamic_summary": {
-    "backend": "pixi",
-    "states": 29,
-    "errors": []
+    "backend": null,
+    "states": 0,
+    "errors": [
+      "Command '['node', '/Users/family/jason/Vtube/experiments/autorig-character-003/reports/rig_inspector/dynamic_runner.js', '/Users/family/jason/Vtube/experiments/autorig-character-003/reports/rig_inspector/dynamic_config.json']' timed out after 300 seconds"
+    ]
   },
   "focus_parts": [],
   "dynamic_sample_limit": null

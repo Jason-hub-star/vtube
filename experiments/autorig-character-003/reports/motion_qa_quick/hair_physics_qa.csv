@@ -1,0 +1,13 @@
+state,profile_id,offset,velocity
+hair_kick_x,front_hair_soft_spring,0.33777,0.04025
+hair_kick_x,back_hair_heavy_spring,0.33777,0.04025
+hair_kick_x,clothes_drape_spring,0.33777,0.04025
+hair_kick_x,accessory_quick_spring,0.33777,0.04025
+hair_kick_x,body_sway_spring,0.33777,0.04025
+hair_kick_x,body_tilt_spring,0.33777,0.04025
+hair_settle,front_hair_soft_spring,0.0,0.0
+hair_settle,back_hair_heavy_spring,0.0,0.0
+hair_settle,clothes_drape_spring,0.0,0.0
+hair_settle,accessory_quick_spring,0.0,0.0
+hair_settle,body_sway_spring,0.0,0.0
+hair_settle,body_tilt_spring,0.0,0.0

@@ -1,0 +1,132 @@
+{
+  "generated_at": "2026-06-11T15:59:51.687Z",
+  "renderer_requested": "pixi",
+  "backend": "pixi",
+  "frames": [
+    {
+      "name": "neutral",
+      "group": "neutral",
+      "parameters": {},
+      "canvas_hash": 1235896456,
+      "screenshot": "/Users/family/jason/Vtube/experiments/autorig-character-003/reports/motion_qa_quick/frames/000_neutral.png",
+      "pixel_delta_mean_abs": 0,
+      "changed_sample_ratio": 0
+    },
+    {
+      "name": "neck_angle_x_left",
+      "group": "neck_seam",
+      "parameters": {
+        "ParamAngleX": -30
+      },
+      "canvas_hash": 1353325451,
+      "screenshot": "/Users/family/jason/Vtube/experiments/autorig-character-003/reports/motion_qa_quick/frames/001_neck_angle_x_left.png",
+      "pixel_delta_mean_abs": 10.378067016601562,
+      "changed_sample_ratio": 0.31890869140625
+    },
+    {
+      "name": "neck_angle_x_right",
+      "group": "neck_seam",
+      "parameters": {
+        "ParamAngleX": 30
+      },
+      "canvas_hash": 1984128312,
+      "screenshot": "/Users/family/jason/Vtube/experiments/autorig-character-003/reports/motion_qa_quick/frames/002_neck_angle_x_right.png",
+      "pixel_delta_mean_abs": 9.98919677734375,
+      "changed_sample_ratio": 0.31158447265625
+    },
+    {
+      "name": "blink_1",
+      "group": "blink",
+      "parameters": {
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1
+      },
+      "canvas_hash": 1777124902,
+      "screenshot": "/Users/family/jason/Vtube/experiments/autorig-character-003/reports/motion_qa_quick/frames/003_blink_1.png",
+      "pixel_delta_mean_abs": 1.2454681396484375,
+      "changed_sample_ratio": 0.10321044921875
+    },
+    {
+      "name": "blink_0_5",
+      "group": "blink",
+      "parameters": {
+        "ParamEyeLOpen": 0.5,
+        "ParamEyeROpen": 0.5
+      },
+      "canvas_hash": 1937495569,
+      "screenshot": "/Users/family/jason/Vtube/experiments/autorig-character-003/reports/motion_qa_quick/frames/004_blink_0_5.png",
+      "pixel_delta_mean_abs": 3.7939300537109375,
+      "changed_sample_ratio": 0.09735107421875
+    },
+    {
+      "name": "blink_0",
+      "group": "blink",
+      "parameters": {
+        "ParamEyeLOpen": 0,
+        "ParamEyeROpen": 0
+      },
+      "canvas_hash": 3052778381,
+      "screenshot": "/Users/family/jason/Vtube/experiments/autorig-character-003/reports/motion_qa_quick/frames/005_blink_0.png",
+      "pixel_delta_mean_abs": 3.691253662109375,
+      "changed_sample_ratio": 0.0762939453125
+    },
+    {
+      "name": "mouth_open_0",
+      "group": "mouth",
+      "parameters": {
+        "ParamMouthOpenY": 0
+      },
+      "canvas_hash": 1235896456,
+      "screenshot": "/Users/family/jason/Vtube/experiments/autorig-character-003/reports/motion_qa_quick/frames/006_mouth_open_0.png",
+      "pixel_delta_mean_abs": 0,
+      "changed_sample_ratio": 0
+    },
+    {
+      "name": "mouth_open_0_5",
+      "group": "mouth",
+      "parameters": {
+        "ParamMouthOpenY": 0.5
+      },
+      "canvas_hash": 1240214631,
+      "screenshot": "/Users/family/jason/Vtube/experiments/autorig-character-003/reports/motion_qa_quick/frames/007_mouth_open_0_5.png",
+      "pixel_delta_mean_abs": 0,
+      "changed_sample_ratio": 0
+    },
+    {
+      "name": "mouth_open_1",
+      "group": "mouth",
+      "parameters": {
+        "ParamMouthOpenY": 1
+      },
+      "canvas_hash": 3924322193,
+      "screenshot": "/Users/family/jason/Vtube/experiments/autorig-character-003/reports/motion_qa_quick/frames/008_mouth_open_1.png",
+      "pixel_delta_mean_abs": 0,
+      "changed_sample_ratio": 0
+    },
+    {
+      "name": "hair_kick_x",
+      "group": "hair_physics",
+      "parameters": {
+        "ParamAngleX": 30,
+        "ParamHairFront": 1
+      },
+      "canvas_hash": 3848435604,
+      "screenshot": "/Users/family/jason/Vtube/experiments/autorig-character-003/reports/motion_qa_quick/frames/009_hair_kick_x.png",
+      "pixel_delta_mean_abs": 10.264785766601562,
+      "changed_sample_ratio": 0.3377685546875
+    },
+    {
+      "name": "hair_settle",
+      "group": "hair_physics",
+      "parameters": {
+        "ParamAngleX": 0,
+        "ParamHairFront": 0
+      },
+      "canvas_hash": 3893453295,
+      "screenshot": "/Users/family/jason/Vtube/experiments/autorig-character-003/reports/motion_qa_quick/frames/010_hair_settle.png",
+      "pixel_delta_mean_abs": 0,
+      "changed_sample_ratio": 0
+    }
+  ],
+  "errors": []
+}

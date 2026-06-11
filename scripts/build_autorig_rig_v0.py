@@ -4,7 +4,7 @@
 입력: 재스킨 가시 레이어(reskin_manifest) + 슬롯 생성 숨은 레이어(감은꺼풀/입 내부)
 구조: v21 supported-rig 성공패턴의 스키마·수치를 그대로 이식
   - 디포머 트리: root → head_angle → (eye_L/eye_R/mouth/front_hair)
-  - 파라미터 7종 (EyeOpen 0.27 클램프, MouthOpenY 0.85 클램프)
+  - Cubism 표준 파라미터 ID 유지 (EyeOpen 0.27 클램프, MouthOpenY 0..1)
   - 눈 깜빡임/입 열기 = 불투명도 키프레임 스왑, 머리/눈동자 = 디포머 트랜스폼
 
 사용: python3 scripts/build_autorig_rig_v0.py \

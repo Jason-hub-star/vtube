@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-11T17:02:21.040324+00:00",
+  "status": "PASS",
+  "quick": true,
+  "project": "experiments/autorig-character-003/rig_v0_project",
+  "renderer_requested": "pixi",
+  "renderer_backend": "pixi",
+  "focus_parts": [
+    "neck"
+  ],
+  "checks": [
+    {
+      "check": "blank_frames",
+      "status": "PASS",
+      "value": 0,
+      "details": []
+    },
+    {
+      "check": "neck_seam_score",
+      "status": "PASS",
+      "value": 31.891,
+      "threshold": 65
+    },
+    {
+      "check": "blink_states",
+      "status": "PASS",
+      "value": 3,
+      "hidden_closed": 0.0
+    },
+    {
+      "check": "mouth_states",
+      "status": "PASS",
+      "value": 3,
+      "overlap": 0
+    },
+    {
+      "check": "hair_physics",
+      "status": "PASS",
+      "value": 6,
+      "settle_residue": 0.0,
+      "active_profiles": [
+        "front_hair_soft_spring",
+        "back_hair_heavy_spring",
+        "clothes_drape_spring",
+        "accessory_quick_spring",
+        "body_sway_spring",
+        "body_tilt_spring"
+      ]
+    }
+  ],
+  "scores": {
+    "neck_seam": 31.891,
+    "blink_distinct_hashes": 3,
+    "mouth_distinct_hashes": 3,
+    "hair_active_profiles": 6,
+    "hair_settle_residue": 0.0
+  },
+  "outputs": {
+    "motion_score_report": "experiments/autorig-character-003/reports/motion_qa_quick/motion_score_report.json",
+    "parameter_sweep": "experiments/autorig-character-003/reports/motion_qa_quick/parameter_sweep.csv",
+    "seam_motion_delta": "experiments/autorig-character-003/reports/motion_qa_quick/seam_motion_delta.csv",
+    "blink_qa": "experiments/autorig-character-003/reports/motion_qa_quick/blink_qa.csv",
+    "mouth_qa": "experiments/autorig-character-003/reports/motion_qa_quick/mouth_qa.csv",
+    "hair_physics_qa": "experiments/autorig-character-003/reports/motion_qa_quick/hair_physics_qa.csv",
+    "motion_contact_sheet": "experiments/autorig-character-003/reports/motion_qa_quick/motion_contact_sheet.png",
+    "gifs": {
+      "neck_seam": "experiments/autorig-character-003/reports/motion_qa_quick/gifs/neck_seam.gif",
+      "blink": "experiments/autorig-character-003/reports/motion_qa_quick/gifs/blink.gif",
+      "mouth": "experiments/autorig-character-003/reports/motion_qa_quick/gifs/mouth.gif",
+      "hair_physics": "experiments/autorig-character-003/reports/motion_qa_quick/gifs/hair_physics.gif"
+    }
+  },
+  "errors": []
+}

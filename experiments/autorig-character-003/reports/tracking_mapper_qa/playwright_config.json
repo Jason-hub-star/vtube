@@ -1,0 +1,27 @@
+{
+  "playwright": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/TypeScript/Demo/node_modules/playwright",
+  "url": "http://127.0.0.1:63628/drive?replay=1&auto=1&speed=8",
+  "captures_dir": "/Users/family/jason/Vtube/experiments/autorig-character-003/reports/tracking_mapper_qa/captures",
+  "out": "/Users/family/jason/Vtube/experiments/autorig-character-003/reports/tracking_mapper_qa/playwright_raw.json",
+  "renderer": "pixi",
+  "launch_args": [
+    "--use-angle=swiftshader"
+  ],
+  "samples": [
+    {
+      "name": "early",
+      "min_frames": 1,
+      "timeout_ms": 40000
+    },
+    {
+      "name": "mid",
+      "min_frames": 60,
+      "timeout_ms": 80000
+    },
+    {
+      "name": "done",
+      "min_frames": 120,
+      "timeout_ms": 140000
+    }
+  ]
+}

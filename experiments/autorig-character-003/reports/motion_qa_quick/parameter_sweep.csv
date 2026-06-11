@@ -1,0 +1,12 @@
+state,group,parameters,canvas_hash,bbox_delta
+neutral,neutral,{},1235896456,0.0
+neck_angle_x_left,neck_seam,"{""ParamAngleX"": -30}",1353325451,0.0
+neck_angle_x_right,neck_seam,"{""ParamAngleX"": 30}",1984128312,0.0
+blink_1,blink,"{""ParamEyeLOpen"": 1, ""ParamEyeROpen"": 1}",1777124902,0.0
+blink_0_5,blink,"{""ParamEyeLOpen"": 0.5, ""ParamEyeROpen"": 0.5}",1937495569,0.0
+blink_0,blink,"{""ParamEyeLOpen"": 0, ""ParamEyeROpen"": 0}",3052778381,0.0
+mouth_open_0,mouth,"{""ParamMouthOpenY"": 0}",1235896456,0.0
+mouth_open_0_5,mouth,"{""ParamMouthOpenY"": 0.5}",1240214631,0.0
+mouth_open_1,mouth,"{""ParamMouthOpenY"": 1}",3924322193,0.0
+hair_kick_x,hair_physics,"{""ParamAngleX"": 30, ""ParamHairFront"": 1}",3848435604,0.0
+hair_settle,hair_physics,"{""ParamAngleX"": 0, ""ParamHairFront"": 0}",3893453295,0.0

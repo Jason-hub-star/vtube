@@ -3,6 +3,13 @@
 작성일: 2026-06-02
 최신 정리일: 2026-06-10
 
+## 2026-06-12 TRACKING-MAPPER-QA-001 — MouthForm 파라미터 + 트래킹 매퍼 재생 QA (P5 7종째)
+
+- 출발: Codex 병렬 WIP 인계 ("이어서 만들어줘") — rig_keyforms의 MouthForm 파라미터/바인딩(MouthOpenY 0..1 개편 포함)과 `run_autorig_tracking_mapper_qa.py`(저장 트래킹 스트림 재생 QA)는 이미 있었고, 드라이브 템플릿도 replay+__driveReport+MouthForm 변환(mouthSmile−mouthFrown 블렌드셰이프)을 갖춘 상태. 빠진 고리 = **리그 자체(19파라미터, MouthForm 부재)와 FAIL이어도 exit 0인 게이트 결함**.
+- 이어서 한 것: ① 003 리빌드 (20파라미터·61바인딩 — MouthForm mouth_warp 워프 근사: -1 ty+0.5/sx0.96, +1 ty-0.3/sx1.08) ② P5 6종 재검증 전부 PASS (validator·mesh 6/6·blink·인스펙터 무반응 0·옷 물리 A/B) ③ QA 툴 exit 코드 수정 (status FAIL → 1) ④ 파이프라인 P5에 `tracking_mapper` 스테이지(--quick) 편입.
+- **풀런 PASS (pixi)**: 175프레임 전부 주입(applied_median 13), 범위 위반 0, 누락 파라미터 0, 리얼리즘 스팬 AngleX 31.4°/MouthOpenY 1.0/눈 0.54, 지터 위반 0, 시각 상태 3종 구분. quick 모드(48프레임)도 PASS.
+- 의미: 트래킹→리그 계약(스키마/범위/주입/리얼리즘/지터/렌더)이 재생 가능한 자동 게이트가 됨 — 004 리그가 자동 생성될 때 트래킹 체인 회귀를 코드로 잡는다. MouthForm은 입꼬리의 **워프 근사**(폭/높이 미세 변형)일 뿐 — 형태 변형 본격화는 004 부품형 입(MOUTH-PARTS-001)에서.
+
 ## 2026-06-12 CLOTH-PHYS-001 — 옷 드레이프 스프링 (공식 스커트 그룹 정박 + A/B 픽셀 증명)
 
 - 주인님 질문 "근거가 있는 플랜인가"로 플랜을 근거 장부로 재검증 후 진행 — 구조는 코드 실측, 상수는 공식 데이터 정박으로 격상.

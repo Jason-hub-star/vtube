@@ -145,6 +145,8 @@ digraph rig {
   "param:ParamHairBack" -> "d:back_hair_warp" [color="#f59f00"];
   "param:ParamHairFront" [label="ParamHairFront", fillcolor="#fff3bf"];
   "param:ParamHairFront" -> "d:front_hair_warp" [color="#f59f00"];
+  "param:ParamMouthForm" [label="ParamMouthForm", fillcolor="#fff3bf"];
+  "param:ParamMouthForm" -> "d:mouth_warp" [color="#f59f00"];
   "param:ParamMouthOpenY" [label="ParamMouthOpenY", fillcolor="#fff3bf"];
   "param:ParamMouthOpenY" -> "d:mouth_warp" [color="#f59f00"];
   "phys:front_hair_soft_spring" [label="front_hair_soft_spring", fillcolor="#e6fcf5"];

@@ -29,7 +29,8 @@ def build_parameters() -> list[dict]:
         {"id": "ParamBrowRY", "min": -1, "max": 1, "default": 0, "key_values": [-1, 0, 1]},
         {"id": "ParamHairFront", "min": -1, "max": 1, "default": 0, "key_values": [-1, 0, 1]},
         {"id": "ParamHairBack", "min": -1, "max": 1, "default": 0, "key_values": [-1, 0, 1]},
-        {"id": "ParamMouthOpenY", "min": 0, "max": 0.85, "default": 0.0, "key_values": [0, 0.5, 0.85]},
+        {"id": "ParamMouthOpenY", "min": 0, "max": 1, "default": 0.0, "key_values": [0, 0.5, 1]},
+        {"id": "ParamMouthForm", "min": -1, "max": 1, "default": 0.0, "key_values": [-1, 0, 1]},
         # EXPR-002 눈웃음 (곡선 A — 주인님 후보 선택 2026-06-11, smile_candidates 리포트)
         {"id": "ParamEyeSmile", "min": 0, "max": 1, "default": 0, "key_values": [0, 1]},
     ]
@@ -103,7 +104,9 @@ def build_keyform_bindings() -> list[dict]:
         binding("ParamHairFront", -1, "front_hair_warp", tx=-10),  # 음수 키 부재 시 -1쪽이 무동작이었다 (CHAIN-001 정비)
         binding("ParamHairFront", 1, "front_hair_warp", tx=10),
         binding("ParamMouthOpenY", 0.5, "mouth_warp", ty=0.8, sy=1.01),
-        binding("ParamMouthOpenY", 0.85, "mouth_warp", ty=1.6, sy=1.02),
+        binding("ParamMouthOpenY", 1, "mouth_warp", ty=1.6, sy=1.02),
+        binding("ParamMouthForm", -1, "mouth_warp", ty=0.5, sx=0.96, sy=0.99),
+        binding("ParamMouthForm", 1, "mouth_warp", ty=-0.3, sx=1.08, sy=1.01),
     ]
 
 

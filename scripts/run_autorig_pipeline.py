@@ -221,6 +221,9 @@ def main() -> int:
         sh(writer, "P5", "clothes_physics", [
             "python3", "scripts/validate_clothes_physics.py", "--project", str(exp / "rig_v0_project"),
             "--out-dir", str(exp / "reports" / "clothes_physics")])
+        sh(writer, "P5", "tracking_mapper", [
+            "python3", "scripts/run_autorig_tracking_mapper_qa.py", "--project", str(exp / "rig_v0_project"),
+            "--out-dir", str(exp / "reports" / "tracking_mapper_qa"), "--quick"])
         sh(writer, "P5", "perf", [
             "python3", "scripts/run_rig_perf_test.py", "--project", str(exp / "rig_v0_project"),
             "--out-dir", str(exp / "reports")])

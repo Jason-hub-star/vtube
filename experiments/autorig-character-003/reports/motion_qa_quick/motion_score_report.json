@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-11T17:02:21.040131+00:00",
+  "status": "PASS",
+  "neck_seam": 31.891,
+  "blink_distinct_hashes": 3,
+  "mouth_distinct_hashes": 3,
+  "hair_active_profiles": 6,
+  "hair_settle_residue": 0.0
+}
