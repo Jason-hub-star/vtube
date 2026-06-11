@@ -280,6 +280,18 @@ dt,
   aspect-ratio: 1 / 1;
   border: 1px solid #394541;
   background: #202124;
+  grid-area: 1 / 1;
+}
+
+/* pixi 백엔드 에디터 오버레이 — 본 캔버스와 같은 그리드 셀에 겹친다 */
+#overlay-canvas {
+  width: min(100%, calc(100vh - 110px));
+  height: auto;
+  aspect-ratio: 1 / 1;
+  grid-area: 1 / 1;
+  border: 1px solid transparent; /* preview-canvas와 박스 크기 일치 */
+  pointer-events: none;
+  z-index: 2;
 }
 
 .param-row {

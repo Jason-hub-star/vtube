@@ -13,13 +13,24 @@ async function init() {
   try {
     const project = await fetchJson("/api/project");
     state.project = project;
-    state.renderScale = parseFloat(new URLSearchParams(location.search).get("render_scale")) || 1; // 드라이브 성능용 저해상 렌더
+    const search = new URLSearchParams(location.search);
+    state.renderScale = parseFloat(search.get("render_scale")) || 1; // 드라이브 성능용 저해상 렌더 (canvas 백엔드 전용)
+    state.rendererBackend = search.get("renderer") === "pixi" ? "pixi" : "canvas";
     state.rig = normalizeRig(project._mini_rig);
     state.viewZoom = defaultViewZoom();
     state.parameters = Object.fromEntries(project.parameters.map((param) => [param.id, param.default]));
     initPhysicsState(project);
     state.selectedPartId = project.parts[0]?.id || null;
     await loadImages(project);
+    if (state.rendererBackend === "pixi") {
+      try {
+        const pixi = await import("./core/draw_pixi.js"); // 켤 때만 로드 — canvas 모드는 의존성 0
+        await pixi.initPixi(project);
+      } catch (error) {
+        console.warn("pixi 백엔드 초기화 실패 — canvas 폴백:", error);
+        state.rendererBackend = "canvas";
+      }
+    }
     exposeAutomationApi();
     render();
     draw();

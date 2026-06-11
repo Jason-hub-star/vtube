@@ -20,6 +20,16 @@ Status: CURRENT DIRECTION (주인님 결정, 2026-06-10)
 Cubism Editor는 사용하지 않는다. 리깅 결과물은 자체 오픈 포맷(rig JSON)이고,
 렌더는 자체 런타임(mini_cubism_app 계보)이 담당한다.
 
+### 렌더 백엔드 (PIXI-RENDER-001, 2026-06-11 확정)
+
+- **기본 = PixiJS v8 WebGL** (`?renderer=pixi`, 드라이브·프로덕션 기본): 풀해상도 2048에서
+  상태 전환 ~1ms·실효 60fps (canvas2d 대비 ~100×). 벤더링 `mini_cubism_app/vendor/pixi.min.mjs`(8.19.0).
+- canvas2d는 폴백 (WebGL 불가 환경, `--renderer canvas` / 쿼리 무지정). render_scale 저해상 경로 보존.
+- 변형 수학은 `src/core/rig.js` 단일 소스 — 백엔드는 그리기만 담당한다 (`src/core/draw_pixi.js`).
+- WebGPU는 Pixi 설정 스위치로 예약 (공식 권고가 "프로덕션은 WebGL"인 동안 보류).
+- 검증: `run_mesh_deform_verify.py --renderer pixi` (backend_match 체크가 silent 폴백 검출),
+  `run_rig_perf_test.py --renderer pixi` (rAF 실효 FPS — headless는 실 GPU 인자 필수).
+
 ## 핵심 원칙
 
 1. **Cubism Editor 비사용, 파라미터 표준은 유지.**

@@ -37,13 +37,15 @@ const STATES = {
 };
 const RESET = { ParamAngleX:0, ParamAngleY:0, ParamAngleZ:0, ParamEyeBallX:0, ParamEyeLOpen:1, ParamEyeROpen:1, ParamMouthOpenY:0, ParamBodyAngleX:0 };
 
-async function measureScale(browser, base, scale) {
+async function measureScale(browser, base, scale, renderer) {
   const page = await browser.newPage({ viewport: { width: 1500, height: 1000 } });
-  await page.goto(base + '/?render_scale=' + scale, { waitUntil: 'load', timeout: 30000 });
+  const query = '/?render_scale=' + scale + (renderer === 'pixi' ? '&renderer=pixi' : '');
+  await page.goto(base + query, { waitUntil: 'load', timeout: 30000 });
   await page.waitForFunction(() => window.__miniProbe, null, { timeout: 20000 });
   await page.evaluate(() => window.__miniProbe.waitReady(20000));
   await page.evaluate(() => window.__miniClearSelection());
   const result = {};
+  result.backend = await page.evaluate(() => (window.__miniBackend ? window.__miniBackend() : 'canvas'));
   for (const [name, vals] of Object.entries(STATES)) {
     const times = await page.evaluate(async ({ reset, vals }) => {
       const samples = [];
@@ -66,16 +68,39 @@ async function measureScale(browser, base, scale) {
     for (let i = 0; i < 10; i += 1) window.__miniStepPhysics(1 / 30);
     return Math.round(((performance.now() - t0) / 10) * 10) / 10;
   });
+  // 실효 FPS: rAF 루프에서 머리·입 진동 — GPU 백엔드는 setParameters 타이밍이 CPU 제출만
+  // 재므로 (GPU 비동기), 프레임 카운트가 정직한 처리량이다
+  result.raf_fps = await page.evaluate(async () => {
+    const t0 = performance.now();
+    let frames = 0;
+    await new Promise((resolve) => {
+      const tick = (now) => {
+        const t = (now - t0) / 1000;
+        window.__miniSetParameters({
+          ParamAngleX: Math.sin(t * 6.28) * 30,
+          ParamAngleZ: Math.cos(t * 6.28) * 10,
+          ParamMouthOpenY: (Math.sin(t * 12.6) + 1) / 2,
+        });
+        frames += 1;
+        if (now - t0 < 2000) requestAnimationFrame(tick); else resolve();
+      };
+      requestAnimationFrame(tick);
+    });
+    return Math.round(frames / ((performance.now() - t0) / 1000));
+  });
   await page.close();
   return result;
 }
 
 (async () => {
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({ headless: true, args: config.launch_args || [] });
   const out = { scales: {}, replay: {}, errors: [] };
   try {
-    out.scales['1.0'] = await measureScale(browser, config.preview, 1);
-    out.scales['0.55'] = await measureScale(browser, config.preview, 0.55);
+    // pixi는 좌표계가 항상 풀해상도 — render_scale 축이 무의미하므로 1.0만
+    const scaleList = config.renderer === 'pixi' ? [1] : [1, 0.55];
+    for (const scale of scaleList) {
+      out.scales[scale.toFixed(scale === 1 ? 1 : 2)] = await measureScale(browser, config.preview, scale, config.renderer);
+    }
     // 재생 실효 FPS (드라이브, 0.55 내장)
     const drive = await browser.newPage({ viewport: { width: 1500, height: 1000 } });
     await drive.goto(config.drive + '/drive?replay=1&auto=1&speed=1', { waitUntil: 'load', timeout: 30000 });
@@ -97,9 +122,11 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--project", type=Path, default=ROOT / "experiments/autorig-template-001/rig_v0_project")
     parser.add_argument("--out-dir", type=Path, default=ROOT / "experiments/autorig-template-001/reports")
+    parser.add_argument("--renderer", choices=["canvas", "pixi"], default="canvas", help="렌더 백엔드 (PIXI-RENDER-001)")
     args = parser.parse_args()
     args.out_dir.mkdir(parents=True, exist_ok=True)
-    raw_out = args.out_dir / "rig_perf_raw.json"
+    suffix = "" if args.renderer == "canvas" else f"_{args.renderer}"
+    raw_out = args.out_dir / f"rig_perf{suffix}_raw.json"
     runner = args.out_dir / "rig_perf_runner.js"
     runner.write_text(NODE, encoding="utf-8")
     config_path = args.out_dir / "rig_perf_config.json"
@@ -107,6 +134,9 @@ def main() -> int:
         "pw": str(PLAYWRIGHT),
         "preview": f"http://127.0.0.1:{PREVIEW_PORT}",
         "drive": f"http://127.0.0.1:{DRIVE_PORT}",
+        "renderer": args.renderer,
+        # 실 GPU(ANGLE Metal) 우선 — SwiftShader는 2048² 소프트웨어 합성이 ~1s/frame이라 FPS가 허수
+        "launch_args": ["--enable-gpu", "--use-angle=metal"] if args.renderer == "pixi" else [],
         "out": str(raw_out),
     })
 
@@ -128,17 +158,20 @@ def main() -> int:
     report = {
         "generated_at": now_iso(),
         "test_id": "rig_perf_test",
+        "renderer": args.renderer,
         "render_ms_median": raw["scales"],
         "replay": raw["replay"],
         "errors": raw["errors"],
     }
-    write_json(args.out_dir / "rig_perf_report.json", report)
-    lines = ["# Rig Performance Report", "", f"Generated: {report['generated_at']}", "",
-             "| 상태 | scale 1.0 (ms) | scale 0.55 (ms) |", "|---|---:|---:|"]
-    for name in raw["scales"]["1.0"]:
-        lines.append(f"| {name} | {raw['scales']['1.0'][name]} | {raw['scales']['0.55'][name]} |")
+    write_json(args.out_dir / f"rig_perf{suffix}_report.json", report)
+    scale_keys = list(raw["scales"].keys())
+    lines = ["# Rig Performance Report", "", f"Generated: {report['generated_at']}", f"Renderer: {args.renderer}", "",
+             "| 상태 | " + " | ".join(f"scale {key} (ms)" for key in scale_keys) + " |",
+             "|---|" + "---:|" * len(scale_keys)]
+    for name in raw["scales"][scale_keys[0]]:
+        lines.append(f"| {name} | " + " | ".join(str(raw["scales"][key].get(name, "-")) for key in scale_keys) + " |")
     lines += ["", f"재생: {raw['replay']}"]
-    (args.out_dir / "rig_perf_report.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (args.out_dir / f"rig_perf{suffix}_report.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2))
     return 0 if not raw["errors"] else 1
 

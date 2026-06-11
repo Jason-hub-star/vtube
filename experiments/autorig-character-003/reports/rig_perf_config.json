@@ -1,0 +1,11 @@
+{
+  "pw": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/TypeScript/Demo/node_modules/playwright",
+  "preview": "http://127.0.0.1:8067",
+  "drive": "http://127.0.0.1:8068",
+  "renderer": "pixi",
+  "launch_args": [
+    "--enable-gpu",
+    "--use-angle=metal"
+  ],
+  "out": "experiments/autorig-character-003/reports/rig_perf_pixi_raw.json"
+}

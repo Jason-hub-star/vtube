@@ -1,6 +1,6 @@
 # Vtube Project Status
 
-Updated: 2026-06-11 (rig v1.2 — FFD 메시 변형)
+Updated: 2026-06-11 (PIXI-RENDER-001 — WebGL 렌더 백엔드, 풀해상도 60fps)
 
 ## Current Phase
 
@@ -29,9 +29,10 @@ Updated: 2026-06-11 (rig v1.2 — FFD 메시 변형)
 | 자체 런타임 (mini_cubism 계보) | 주입 API 완비 | `__miniProbe` (waitReady/setParameterValues/canvasHash) 추가 |
 | **관제탑 대시보드** | **완성 (2026-06-11)** | 이벤트 JSONL 컨벤션(`scripts/autorig_events.py`) + 서버(8095, macOS 알림) + 토스스타일 UI(타임라인/피드/게이트 드래그 수정/QA/로그) + 시뮬레이터. 스모크: 파이썬 18/18, 브라우저 8/8 PASS |
 | **소재 (하이브리드 레시피)** | **VERIFIED** | 진짜 마스터 분해+원본 재스킨(가시) + 동일세션 시트(숨은) — `vtube-hybrid-material-recipe` 하니스화. 전체 슬롯 생성은 기하 비정합으로 DISCARDED |
-| **자동 리깅 (rig v1.0)** | **완성, H2 대기** | `build_autorig_rig_v0.py` — 39파트·8워프·10파라미터·물리 3그룹. 표정 성공패턴: 눈=ARAP 워프, 입=밀착 4상태 스프라이트+턱선가드 (주인님 합격). 몸 BodyAngle±10+Breath, 머리 5덩어리(무손실 분할)+v0-3 스프링. T3 재생 applied 9/프레임 |
-| AUTORIG-TEMPLATE-SPEC-001 | 완료 | 12시트 스펙 (숨은 레이어 생성 전용으로 용도 확정) |
-| AUTORIG-PIPELINE-CLI-001 | 관제 인프라 완료 | 단계 스크립트들은 검증됨 — 원커맨드 묶기가 남은 작업 |
+| **자동 리깅 (rig v1.3)** | **003 풀런 H2 조건부 합격 (2026-06-11)** | FFD 격자 메시 변형(공식 메커니즘 이식) + 목 스택 v4(숨은 목·neck_skin 분리·방향핀·의사3D). 알려진 한계: 트인 목 미세 접합 → MASTER-SPEC 9번(초커 권장, 다음 캐릭터부터) |
+| **렌더 백엔드 (PIXI-RENDER-001)** | **완료 (2026-06-11)** | PixiJS v8 WebGL 기본(`?renderer=pixi`) — 풀해상도 상태 전환 ~1ms·실효 60fps (canvas2d 대비 ~100×). canvas 폴백 유지. verify 5/5 양 백엔드 PASS |
+| AUTORIG-TEMPLATE-SPEC-001 | 완료 | 생성 목록 확정: 마스터 1장 + 입 4상태 시트 1장 (`docs/ref/AUTORIG-MASTER-SPEC.md`) |
+| AUTORIG-PIPELINE-CLI-001 | **완료 (2026-06-11)** | `run_autorig_pipeline.py` 원커맨드 — 003 풀런 76분(순수 연산 ~22분), H1/H1.5/H2 관제탑 게이트, 캐릭터-무관성 실증 |
 | AUTORIG-ANCHOR-DETECT-001 | 0% | 프로덕션 갭 (임의 업로드 PNG 앵커 검출) |
 
 ## Production Direction
@@ -48,10 +49,10 @@ Updated: 2026-06-11 (rig v1.2 — FFD 메시 변형)
 
 ## Next Actions
 
-1. **주인님 H2 검수** — 웹캠 드라이브(8063)에서 rig v1.0 전신 확인 (머리 찰랑임·호흡·상체).
-2. `AUTORIG-PIPELINE-CLI-001` — 검증된 단계 스크립트들을 "자동화파이프라인 시작" 원커맨드로 묶기 (+P0 마스터 검증 게이트).
-3. `AUTORIG-ANCHOR-DETECT-001` — 임의 업로드 PNG 앵커 자동 검출 (프로덕션 갭).
-4. 분해 풀해상도화 (Ubuntu CUDA 런북) + ARAP 메시변형 고도화 (v2 품질 사다리).
+1. **주인님 pixi 육안 판정** — 프리뷰(8062 `?renderer=pixi`)·드라이브(8063, 기본 pixi)에서 끊김/눈 클리핑/목 확인.
+2. `AUTORIG-PLAYER-001` — 사용자 산출물(웹 링크·OBS 브라우저 소스·투명 모드 `?transparent=1`·오픈 ZIP).
+3. `AUTORIG-ANCHOR-DETECT-001` — 임의 업로드 PNG 앵커 자동 검출 + rembg 입력 전처리 (프로덕션 갭).
+4. 분해 풀해상도화 (Ubuntu CUDA 런북) + 키폼 사다리 (목 접합 근본 개선).
 
 ## Rules
 

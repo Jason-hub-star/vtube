@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-06-11T03:25:59.656217+00:00",
+  "test_id": "rig_perf_test",
+  "renderer": "pixi",
+  "render_ms_median": {
+    "1.0": {
+      "backend": "pixi",
+      "neutral": 1.2,
+      "head_turn": 0.9,
+      "nod": 0.9,
+      "tilt": 0.7,
+      "gaze_turn": 1,
+      "blink": 0.9,
+      "mouth": 0.8,
+      "combo": 0.7,
+      "physics_step": 0.5,
+      "raf_fps": 60
+    }
+  },
+  "replay": {
+    "frames": 175,
+    "wall_s": 10.05,
+    "effective_fps": 17
+  },
+  "errors": []
+}

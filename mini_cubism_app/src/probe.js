@@ -32,6 +32,7 @@ function exposeAutomationApi() {
     part_opacity: Object.fromEntries((state.project?.parts || []).map((part) => [part.id, partOpacity(state.project, part)])),
   });
   window.__miniRig = () => state.rig;
+  window.__miniBackend = () => state.rendererBackend; // 검증 스크립트가 pixi silent 폴백을 잡는다
   window.__miniProject = state.project;
   // T2 __vtubeProbe와 동일 계약의 주입 인터페이스 (T3 웹캠 드라이브용)
   window.__miniProbe = {
@@ -71,10 +72,8 @@ function exposeAutomationApi() {
     },
     snapshot: () => window.__miniSnapshot(),
     canvasHash() {
-      const canvas = document.querySelector("#preview-canvas");
-      if (!canvas) return null;
-      const ctx2d = canvas.getContext("2d");
-      const { data } = ctx2d.getImageData(0, 0, canvas.width, canvas.height);
+      const data = probePixels();
+      if (!data) return null;
       let hash = 2166136261;
       for (let i = 0; i < data.length; i += 64) {
         hash ^= data[i];
@@ -82,7 +81,27 @@ function exposeAutomationApi() {
       }
       return hash >>> 0;
     },
+    // 영역 투명 픽셀 카운트 (목 이음새 검사 등) — 백엔드 무관 계약
+    regionAlphaCount(x, y, w, h, threshold = 30) {
+      const data = probePixels([x, y, w, h]);
+      if (!data) return null;
+      let count = 0;
+      for (let i = 3; i < data.length; i += 4) if (data[i] < threshold) count += 1;
+      return count;
+    },
   };
+}
+
+// 백엔드별 픽셀 획득: canvas=getImageData, pixi=renderer.extract (WebGL은 2d 컨텍스트 불가)
+function probePixels(frame) {
+  if (state.rendererBackend === "pixi" && state.pixiExtract) {
+    return state.pixiExtract(frame)?.pixels || null;
+  }
+  const canvas = document.querySelector("#preview-canvas");
+  if (!canvas) return null;
+  const ctx2d = canvas.getContext("2d");
+  const [x, y, w, h] = frame || [0, 0, canvas.width, canvas.height];
+  return ctx2d.getImageData(x, y, w, h).data;
 }
 
 

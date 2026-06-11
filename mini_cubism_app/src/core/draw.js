@@ -7,6 +7,12 @@ import { coverHandlePoints } from "../ui/pointer.js";
 import { editableMeshForPart } from "../ui/rig_panel.js";
 
 function draw() {
+  if (state.rendererBackend === "pixi" && state.pixiDraw) {
+    // PIXI-RENDER-001: GPU 백엔드에 위임, 에디터 오버레이만 별도 2d 캔버스에
+    state.pixiDraw();
+    drawPixiOverlay();
+    return;
+  }
   const canvas = document.querySelector("#preview-canvas");
   if (!canvas || !state.project) return;
   const ctx = canvas.getContext("2d");
@@ -25,6 +31,28 @@ function draw() {
     else if (meshMode) drawPartMesh(ctx, project, part);
     else drawPart(ctx, project, part);
     if (part.id === "face_base") drawEyeSocketCovers(ctx, project);
+  }
+  if (state.overlays.deformers) drawDeformers(ctx, project);
+  if (state.overlays.mesh) drawMeshes(ctx, project);
+  if (state.activePanel === "rig" && state.rigTool === "cover") drawEyeCoverEditor(ctx, project);
+}
+
+// pixi 모드 에디터 오버레이: WebGL 캔버스 위에 겹친 #overlay-canvas(2d)에 기존 함수 재사용
+function drawPixiOverlay() {
+  const overlay = document.querySelector("#overlay-canvas");
+  if (!overlay || !state.project) return;
+  const project = state.project;
+  const ctx = overlay.getContext("2d");
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  ctx.clearRect(0, 0, project.canvas_size[0], project.canvas_size[1]);
+  const selected = project.parts.find((part) => part.id === state.selectedPartId);
+  if (selected) {
+    ctx.save();
+    ctx.strokeStyle = "#ffcc33";
+    ctx.lineWidth = 5;
+    const [x, y, w, h] = selected.bbox;
+    ctx.strokeRect(x, y, w, h);
+    ctx.restore();
   }
   if (state.overlays.deformers) drawDeformers(ctx, project);
   if (state.overlays.mesh) drawMeshes(ctx, project);
@@ -401,6 +429,8 @@ function drawDeformers(ctx, project) {
 function applyCanvasViewZoom(canvas) {
   if (!state.project) return;
   canvas.style.width = `${Math.round(state.project.canvas_size[0] * state.viewZoom)}px`;
+  const overlay = document.querySelector("#overlay-canvas");
+  if (overlay) overlay.style.width = canvas.style.width; // pixi 오버레이는 본 캔버스와 동일 표시 폭
 }
 
 function defaultViewZoom() {
@@ -408,4 +438,4 @@ function defaultViewZoom() {
 }
 
 
-export { draw, drawPart, drawClippedEyePart, drawEyeSocketCovers, drawSocketCoverShape, drawEyeCoverEditor, clippedByEyeWhite, drawMeshes, drawDeformers, applyCanvasViewZoom, defaultViewZoom };
+export { draw, drawPart, drawClippedEyePart, drawEyeSocketCovers, drawSocketCoverShape, drawEyeCoverEditor, clippedByEyeWhite, drawMeshes, drawDeformers, drawPixiOverlay, applyCanvasViewZoom, defaultViewZoom };

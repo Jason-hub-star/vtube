@@ -3,6 +3,15 @@
 작성일: 2026-06-02
 최신 정리일: 2026-06-10
 
+## 2026-06-11 PIXI-RENDER-001 — PixiJS v8 WebGL 백엔드 (렌더 병목 해소, 풀해상도 60fps)
+
+- 배경: canvas2d 병목 = 삼각형당 클립/블릿 CPU 오버헤드 (해상도 무관 — render_scale 0.55 무효과 실측). 웹검색: PixiJS v8이 웹 버튜버 생태계 표준(pixi-live2d-display), MeshSimple(vertices/uvs/indices)이 우리 메시 JSON과 1:1.
+- 구현: `mini_cubism_app/vendor/pixi.min.mjs`(8.19.0 벤더링, MIT) + `src/core/draw_pixi.js`(~250줄). **rig.js 변형 수학 무수정** — 그리기만 교체. ?renderer=pixi 동적 임포트(canvas 모드는 의존성 0), draw() 디스패처, 에디터 오버레이는 #overlay-canvas(2d) 겹침, probe 백엔드 분기(extract.pixels + regionAlphaCount), 텍스처는 bbox 크롭(풀캔버스 41장=690MB GPU 방지), 눈 클리핑=흰자 클론 메시 스텐실 마스크(둘 다 격자 변형 — AngleZ 이탈 회귀 방지), 눈꺼풀 커버=오프스크린 1회 렌더 스프라이트.
+- 실측 (003 리그, 2048 풀해상도): 상태 전환 75~130ms → **0.7~1.8ms (~100×)**, rAF 실효 FPS 4~6 → **60 (상한)**. mesh verify 5/5 PASS 양 백엔드(중립 항등·상태 상이·목 투명 0·backend_match — silent 폴백 검출 체크 신설). canvas 무회귀 5/5.
+- 함정 3종 (기록): ① components render()가 캔버스 DOM 재생성 — pixi 영속 캔버스 재부착 + 리스너 중복 가드 ② headless WebGL은 SwiftShader라 2048² 합성 ~1s/frame — rAF가 1fps 허수, `--enable-gpu --use-angle=metal`로 실 GPU 측정 ③ 재생 17fps는 녹화 스트림 케이던스(트래킹 한계)지 렌더러 한계 아님.
+- 드라이브 기본 pixi 전환(`--renderer canvas` 폴백 유지, render_scale 0.55 경로 보존). `?transparent=1`은 backgroundAlpha 0 + 배경 스프라이트 숨김으로 이미 배선.
+- 다음 레버: WebGPU는 Pixi 설정 스위치(코드 무수정) — 공식 권고가 "프로덕션은 WebGL"인 동안 보류.
+
 ## 2026-06-11 캐릭터 003 풀런 — 원커맨드 파이프라인 실증, H2 조건부 합격
 
 - **run_autorig_pipeline.py 원커맨드**: P0 검증→분해→재스킨→어셈블리→H1.5→추출→리깅→검증3종→H2, 관제탑 이벤트+스톱워치. 총 76분(게이트 검수·개선 반복 포함, 순수 연산 ~22분 — 1시간 목표 내).

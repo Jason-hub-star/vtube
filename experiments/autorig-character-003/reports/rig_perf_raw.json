@@ -1,0 +1,36 @@
+{
+  "scales": {
+    "1.0": {
+      "backend": "canvas",
+      "neutral": 128.6,
+      "head_turn": 72.3,
+      "nod": 75.4,
+      "tilt": 82.7,
+      "gaze_turn": 80.8,
+      "blink": 75.3,
+      "mouth": 124.7,
+      "combo": 99.8,
+      "physics_step": 96.5,
+      "raf_fps": 4
+    },
+    "0.55": {
+      "backend": "canvas",
+      "neutral": 145.3,
+      "head_turn": 79.6,
+      "nod": 81,
+      "tilt": 85.8,
+      "gaze_turn": 83.1,
+      "blink": 103.7,
+      "mouth": 130.2,
+      "combo": 79.2,
+      "physics_step": 88.2,
+      "raf_fps": 6
+    }
+  },
+  "replay": {
+    "frames": 175,
+    "wall_s": 10.58,
+    "effective_fps": 17
+  },
+  "errors": []
+}

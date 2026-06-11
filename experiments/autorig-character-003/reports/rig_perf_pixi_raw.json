@@ -1,0 +1,23 @@
+{
+  "scales": {
+    "1.0": {
+      "backend": "pixi",
+      "neutral": 1.2,
+      "head_turn": 0.9,
+      "nod": 0.9,
+      "tilt": 0.7,
+      "gaze_turn": 1,
+      "blink": 0.9,
+      "mouth": 0.8,
+      "combo": 0.7,
+      "physics_step": 0.5,
+      "raf_fps": 60
+    }
+  },
+  "replay": {
+    "frames": 175,
+    "wall_s": 10.05,
+    "effective_fps": 17
+  },
+  "errors": []
+}

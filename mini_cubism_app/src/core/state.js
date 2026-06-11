@@ -13,6 +13,10 @@ const state = {
   parameters: {},
   physics: new Map(),
   rig: null,
+  rendererBackend: "canvas", // 'canvas' | 'pixi' (?renderer=pixi — PIXI-RENDER-001)
+  pixiCanvas: null, // pixi 백엔드의 영속 캔버스 — render()가 DOM을 재구성해도 재부착
+  pixiDraw: null, // draw_pixi.js가 주입 (draw.js ← draw_pixi 순환 임포트 방지)
+  pixiExtract: null, // probe 픽셀 추출 훅 (WebGL 캔버스는 getContext('2d') 불가)
   rigStatus: "",
   rigTool: "mesh",
   selectedCoverSide: "L",

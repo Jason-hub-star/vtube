@@ -25,14 +25,15 @@ const fs = require('fs');
 const config = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
 const { chromium } = require(config.pw);
 (async () => {
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({ headless: true, args: config.launch_args || [] });
   const page = await browser.newPage({ viewport: { width: 1500, height: 1000 } });
   const out = { neutral: {}, hashes: {}, neck: {}, timing: {}, errors: [] };
   try {
-    await page.goto(config.base, { waitUntil: 'load', timeout: 30000 });
+    await page.goto(config.base + (config.query || ''), { waitUntil: 'load', timeout: 30000 });
     await page.waitForFunction(() => window.__miniProbe, null, { timeout: 20000 });
     await page.evaluate(() => window.__miniProbe.waitReady(20000));
     await page.evaluate(() => window.__miniClearSelection());
+    out.backend = await page.evaluate(() => (window.__miniBackend ? window.__miniBackend() : 'canvas'));
     out.neutral.mesh = await page.evaluate(() => { window.__miniRig().render_mode='mesh'; window.__miniSetParameters({}); return window.__miniProbe.canvasHash(); });
     out.neutral.sprite = await page.evaluate(() => { window.__miniRig().render_mode='sprite'; window.__miniSetParameters({}); return window.__miniProbe.canvasHash(); });
     await page.evaluate(() => { window.__miniRig().render_mode='mesh'; window.__miniSetParameters({}); });
@@ -46,12 +47,7 @@ const { chromium } = require(config.pw);
       await page.screenshot({ path: config.captures + '/verify_' + name + '.png' });
     }
     await page.evaluate((v) => window.__miniSetParameters(v), { ...reset, ParamAngleX: 30, ParamAngleY: 30 });
-    out.neck.head_max = await page.evaluate(() => {
-      const c = document.querySelector('#preview-canvas');
-      const d = c.getContext('2d').getImageData(880, 980, 290, 130).data;
-      let n = 0; for (let i = 3; i < d.length; i += 4) if (d[i] < 30) n++;
-      return n;
-    });
+    out.neck.head_max = await page.evaluate(() => window.__miniProbe.regionAlphaCount(880, 980, 290, 130, 30));
   } catch (e) { out.errors.push(String(e)); }
   await browser.close();
   fs.writeFileSync(config.out, JSON.stringify(out, null, 2));
@@ -63,15 +59,25 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--project", type=Path, default=ROOT / "experiments/autorig-template-001/rig_v0_project")
     parser.add_argument("--out-dir", type=Path, default=ROOT / "experiments/autorig-template-001/reports")
+    parser.add_argument("--renderer", choices=["canvas", "pixi"], default="canvas", help="렌더 백엔드 (PIXI-RENDER-001)")
     args = parser.parse_args()
-    captures = args.out_dir / "mesh_deform_verify"
+    suffix = "" if args.renderer == "canvas" else f"_{args.renderer}"
+    captures = args.out_dir / f"mesh_deform_verify{suffix}"
     captures.mkdir(parents=True, exist_ok=True)
-    raw_out = args.out_dir / "mesh_deform_verify_raw.json"
+    raw_out = args.out_dir / f"mesh_deform_verify{suffix}_raw.json"
 
     runner = captures / "verify_runner.js"
     runner.write_text(NODE, encoding="utf-8")
     config_path = captures / "verify_config.json"
-    write_json(config_path, {"pw": str(PLAYWRIGHT), "base": f"http://127.0.0.1:{PORT}/", "captures": str(captures), "out": str(raw_out)})
+    write_json(config_path, {
+        "pw": str(PLAYWRIGHT),
+        "base": f"http://127.0.0.1:{PORT}/",
+        "query": "?renderer=pixi" if args.renderer == "pixi" else "",
+        # headless에서 하드웨어 GL이 없으면 WebGL 초기화 실패 — SwiftShader 강제
+        "launch_args": ["--use-angle=swiftshader"] if args.renderer == "pixi" else [],
+        "captures": str(captures),
+        "out": str(raw_out),
+    })
 
     server = subprocess.Popen(
         ["python3", str(ROOT / "scripts/mini_cubism_preview_server.py"), "--project", str(args.project), "--port", str(PORT)],
@@ -85,15 +91,17 @@ def main() -> int:
 
     raw = json.loads(raw_out.read_text())
     checks = {
+        "backend_match": raw.get("backend", "canvas") == args.renderer,  # pixi silent 폴백 검출
         "neutral_identity": raw["neutral"]["mesh"] == raw["neutral"]["sprite"],
         "states_distinct": len(set(raw["hashes"].values())) == len(raw["hashes"]),
         "neck_transparent_zero": raw["neck"].get("head_max") == 0,
         "no_errors": not raw["errors"],
     }
     status = "PASS" if all(checks.values()) else "FAIL"
-    write_json(args.out_dir / "mesh_deform_verify.json", {
+    write_json(args.out_dir / f"mesh_deform_verify{suffix}.json", {
         "generated_at": now_iso(),
         "status": status,
+        "renderer": args.renderer,
         "checks": checks,
         "timing_ms": raw["timing"],
         "raw": rel(raw_out),

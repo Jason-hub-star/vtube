@@ -83,7 +83,7 @@ DRIVE_HTML = """<!doctype html>
     <div class="params" id="paramGrid"></div>
     <div class="note">EyeOpen 0.27(자연 감김)·MouthOpenY 0.85 클램프는 리그 프로젝트 범위로 자동 적용돼요.</div>
   </section>
-  <section class="stage"><iframe id="model" src="/?render_scale=0.55"></iframe></section>
+  <section class="stage"><iframe id="model" src="__MODEL_SRC__"></iframe></section>
 </div>
 <script type="module">
 const qs = new URLSearchParams(location.search);
@@ -378,7 +378,8 @@ class DriveHandler(mcps.MiniCubismHandler):
         parsed = urlparse(self.path)
         path = unquote(parsed.path)
         if path == "/drive":
-            data = DRIVE_HTML.encode("utf-8")
+            model_src = self.server.model_src  # type: ignore[attr-defined]
+            data = DRIVE_HTML.replace("__MODEL_SRC__", model_src).encode("utf-8")
             self.send_response(HTTPStatus.OK)
             self.send_header("Content-Type", "text/html; charset=utf-8")
             self.send_header("Content-Length", str(len(data)))
@@ -397,9 +398,10 @@ class DriveHandler(mcps.MiniCubismHandler):
 
 
 class DriveServer(mcps.MiniCubismServer):
-    def __init__(self, address: tuple[str, int], handler, project: Path, stream_path: Path):
+    def __init__(self, address: tuple[str, int], handler, project: Path, stream_path: Path, model_src: str):
         super().__init__(address, handler, project)
         self.stream_path = stream_path.resolve()
+        self.model_src = model_src
 
 
 def main() -> int:
@@ -410,7 +412,10 @@ def main() -> int:
     parser.add_argument("--port", type=int, default=8060)
     parser.add_argument("--no-open", action="store_true")
     parser.add_argument("--init-only", action="store_true", help="설정 검증만 하고 종료")
+    # PIXI-RENDER-001: 기본 pixi(WebGL, 풀해상도). canvas는 폴백 — 구 저해상 경로 유지
+    parser.add_argument("--renderer", choices=["pixi", "canvas"], default="pixi")
     args = parser.parse_args()
+    model_src = "/?renderer=pixi" if args.renderer == "pixi" else "/?render_scale=0.55"
 
     project = args.project if args.project.is_absolute() else ROOT / args.project
     if not (project / "character.json").exists():
@@ -420,7 +425,7 @@ def main() -> int:
         print(json.dumps({"ok": True, "project": str(project), "stream": str(args.stream)}, ensure_ascii=False))
         return 0
 
-    server = DriveServer((args.host, args.port), DriveHandler, project, args.stream)
+    server = DriveServer((args.host, args.port), DriveHandler, project, args.stream, model_src)
     url = f"http://{args.host}:{args.port}/drive"
     print(f"T3 webcam drive: {url}")
     print(f"Project: {project}")

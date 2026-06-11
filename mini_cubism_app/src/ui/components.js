@@ -92,18 +92,33 @@ function Stage(project) {
 
   const wrap = document.createElement("div");
   wrap.className = "canvas-wrap";
-  const canvas = document.createElement("canvas");
+  // pixi 백엔드: WebGL 컨텍스트가 붙은 영속 캔버스를 재부착 — 새로 만들면 씬이 날아간다
+  const usePixi = state.rendererBackend === "pixi" && state.pixiCanvas;
+  const canvas = usePixi ? state.pixiCanvas : document.createElement("canvas");
   canvas.id = "preview-canvas";
-  const renderScale = state.renderScale || 1;
-  canvas.width = Math.round(project.canvas_size[0] * renderScale);
-  canvas.height = Math.round(project.canvas_size[1] * renderScale);
+  if (!usePixi) {
+    const renderScale = state.renderScale || 1;
+    canvas.width = Math.round(project.canvas_size[0] * renderScale);
+    canvas.height = Math.round(project.canvas_size[1] * renderScale);
+  }
   applyCanvasViewZoom(canvas);
-  canvas.addEventListener("pointerdown", onCanvasPointerDown);
-  canvas.addEventListener("pointermove", onCanvasPointerMove);
-  canvas.addEventListener("pointerup", onCanvasPointerUp);
-  canvas.addEventListener("pointerleave", onCanvasPointerUp);
-  canvas.addEventListener("wheel", onCanvasWheel, { passive: false });
+  if (!canvas.__wired) {
+    canvas.addEventListener("pointerdown", onCanvasPointerDown);
+    canvas.addEventListener("pointermove", onCanvasPointerMove);
+    canvas.addEventListener("pointerup", onCanvasPointerUp);
+    canvas.addEventListener("pointerleave", onCanvasPointerUp);
+    canvas.addEventListener("wheel", onCanvasWheel, { passive: false });
+    canvas.__wired = true; // 영속 캔버스 재부착 시 리스너 중복 방지
+  }
   wrap.append(canvas);
+  if (usePixi) {
+    const overlay = document.createElement("canvas");
+    overlay.id = "overlay-canvas";
+    overlay.width = project.canvas_size[0];
+    overlay.height = project.canvas_size[1];
+    overlay.style.width = canvas.style.width;
+    wrap.append(overlay);
+  }
   stage.append(toolbar, wrap);
   return stage;
 }
