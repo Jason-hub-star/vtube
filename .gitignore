@@ -47,3 +47,10 @@ experiments/**/node_modules/
 experiments/archive/legacy-review-previews-*/
 # 테스트 러너 상태
 test-results/
+# 외부 공식 샘플 다운로드 (분석 리포트만 추적, 원본 모델/SDK는 제외)
+experiments/**/official_samples/
+experiments/**/official_github_samples/
+*.can3
+*.zip
+# 모션 증거 GIF (디스크 보존, 추적 제외 — png와 동일 정책)
+*.gif
