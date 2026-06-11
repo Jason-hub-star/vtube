@@ -332,12 +332,14 @@ def main() -> int:
         y1 = max(b[1] + b[3] for b in bs)
         return [x0, y0, x1 - x0, y1 - y0]
 
-    upper_bounds = pad_bounds(union_bounds(head_bounds, neck_bounds, back_hair_bounds), 40)
+    # bounds 하단 = 목-가슴 접합부: bottom 핀 + 세로 5행 격자로 "머리 100% → 접합부 0" 점감.
+    # (균일 운반은 접합부에서 가슴(edge-pin 페이드)과 어긋나 분리를 키운다 — 목은 늘어나야 한다)
+    upper_bounds = pad_bounds(union_bounds(head_bounds, neck_bounds), 40)
     deformers = [
         # lattice/edge_pinned: FFD 격자 (공식 워프 메커니즘). edge_pinned=경계 연결, false=전역 이동.
         {"id": "root_warp", "type": "warp", "parent_id": None, "child_ids": children.get("root_warp", []), "bounds": [0, 0, CANVAS, CANVAS], "pivot": [1024, 1024], "lattice": {"cols": 3, "rows": 3}, "edge_pinned": False},
         {"id": "body_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("body_warp", []), "bounds": body_bounds, "pivot": center(body_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
-        {"id": "upper_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("upper_warp", []), "bounds": upper_bounds, "pivot": center(upper_bounds), "lattice": {"cols": 3, "rows": 3}, "edge_pinned": False},
+        {"id": "upper_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("upper_warp", []), "bounds": upper_bounds, "pivot": center(upper_bounds), "lattice": {"cols": 3, "rows": 5}, "pin_edges": ["bottom"]},
         {"id": "head_angle_warp", "type": "warp", "parent_id": "upper_warp", "child_ids": children.get("head_angle_warp", []), "bounds": head_bounds, "pivot": center(head_bounds), "lattice": {"cols": 7, "rows": 7}, "edge_pinned": True},
         # 목 = head 자식 (머리 격자 페이드 → 위는 머리, 아래로 갈수록 감쇠하는 그라데이션)
         # 몸 추종은 upper_warp 상속 (자체 BodyAngle 바인딩은 이중 적용이라 제거 — CHAIN-001)

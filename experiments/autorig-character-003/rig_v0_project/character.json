@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project_kind": "mini_cubism_v0",
   "experiment_id": "autorig-rig-v0",
-  "generated_at": "2026-06-11T05:23:47.837807+00:00",
+  "generated_at": "2026-06-11T05:37:28.760204+00:00",
   "source_selection": {
     "visible_layers": "experiments/autorig-character-003/seethrough_true_reskinned/reskin_manifest.json",
     "hidden_layers": [
@@ -16803,20 +16803,22 @@
       "parent_id": "root_warp",
       "child_ids": [],
       "bounds": [
-        237,
-        0,
-        1567,
-        2032
+        621,
+        163,
+        803,
+        1056
       ],
       "pivot": [
-        1020,
-        1016
+        1022,
+        691
       ],
       "lattice": {
         "cols": 3,
-        "rows": 3
+        "rows": 5
       },
-      "edge_pinned": false
+      "pin_edges": [
+        "bottom"
+      ]
     },
     {
       "id": "head_angle_warp",

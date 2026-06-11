@@ -10,6 +10,7 @@
 - 이식 (`build_autorig_rig_v0.py`): **upper_warp 신설**(首の位置 등가 — 비고정 3x3, head∪neck∪back_hair 경계; head_angle_warp가 edge-pin 의사3D라 몸 추종 직접 바인딩 불가 → 상위 워프로 통째 탑승) + head/back_hair 부모를 upper로, neck의 BodyAngle/Breath 바인딩 제거(이중 적용 방지) + neck AngleZ ±3 + back_hair 감쇠 추종(AngleX ±13=60%·AngleY ±7·AngleZ ±5, 핀 해제 — 하단 스윕은 몸 뒤 draw order라 안전, pivot=head) + ParamHairBack ±10 신설 + HairFront 음수 키 보강.
 - 파이프라인 갭 봉합: 원커맨드 P3에 split_neck_skin 스테이지 + P4 --neck-split-dir (H2 수동 추가분이 파이프라인에 없어 003 최종 상태 재현 불가였음).
 - 검증: validator PASS, mesh verify canvas·pixi 5/5, 수치 스모크 — AngleX=30 뒷머리 실루엣 변화 0→27.7, BodyAngleX=10 얼굴 변화 0→9.75(탑승), HairBack=1 뒷머리 43.6/얼굴 2.1. eye cover 설정 리빌드 보존 확인.
+- **v2 보정 (주인님 H 피드백 "목-어깨 분리 악화")**: upper_warp 균일 운반이 접합부에서 가슴(edge-pin 페이드 ~0)과 어긋남 (8 vs ~3). bounds를 head∪neck로 축소 + `pin_edges:["bottom"]` + 세로 5행 — **머리 100% → 목 점감 → 접합부 0** 그라데이션 ("목이 늘어난다"의 구현). 접합부 시각 확인 매끈, 얼굴 탑승 18.1 유지, verify 5/5. 교훈: **운반 워프는 고정된 이웃과 만나는 변에서 0으로 점감해야 한다 — 균일 운반은 경계마다 슬립을 만든다.**
 - 교훈: **부위가 안 움직이면 디포머 "부모 체인"부터 본다 — 바인딩이 아니라 소속이 끊긴 것일 수 있다.** edge-pin 워프엔 전역 이동 바인딩을 직접 넣지 말고 비고정 상위 워프를 끼운다.
 
 ## 2026-06-11 입 패치 V선 사건 — 생성 셀의 얼굴 윤곽 스트로크, 연결성분 분리로 해결
