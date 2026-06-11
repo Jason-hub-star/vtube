@@ -29,9 +29,10 @@ mouth closed with a clearly drawn dark smile line, \
 hair in distinct left/center/right masses, anime illustration, clean lineart"
 ```
 
-## 3. 입 4상태 시트 (마스터와 **동일 세션** — 유일한 추가 생성물)
+## 3. 입 4상태 시트 (마스터와 **동일 세션**)
 
-생성 목록 확정 (2026-06-11): **마스터 1장 + 입 시트 1장. 끝.** 눈 감김=ARAP 워프, 가시 레이어=분해+재스킨. (구 12시트 스펙은 입 시트 규격 참고용으로만 축소.)
+생성 목록 확정 (2026-06-11 개정): **마스터 1장 + 입 시트 1장 + 눈 표정 시트 1장 + 액센트 시트 1장.**
+눈 깜빡임=ARAP 워프(가림 동작), **표정=동일세션 생성 시트(외형 변화 — 워프 눈웃음 "그저그렇" 판정으로 재분류)**, 가시 레이어=분해+재스킨. (구 12시트 스펙은 시트 규격 참고용으로만 축소.)
 
 ```bash
 codex exec ... -i <true_master.png> -- "Using this exact character, generate a 2048x2048 \
@@ -46,6 +47,48 @@ Mouth region only — do not draw the chin or the face outline."
 - 시트 셀 규약: 2×2 @ 1024px, interior는 (2,2) 셀 — `place_mouth_interior.py --cell` 기본값.
 - 알려진 생성 특성: 셀에 입만 아니라 **얼굴 윤곽선(턱 V)이 통째로 딸려온다** — 추출기가 연결성분 분리로 자동 제거하므로 재생성 사유 아님. 프롬프트에 "mouth region only, do not draw the chin or face outline"을 넣으면 줄어들지만 보장은 안 됨.
 - 검수: 추출 후 4상태의 입꼬리 x좌표 편차 < 입폭 5% (extract가 공유 배치로 흡수하지만 생성 단계에서 맞을수록 좋음).
+
+## 3.2 눈 표정 시트 (마스터와 **동일 세션** — EXPR-003, 2026-06-11 주인님 확정)
+
+워프는 픽셀 재배치만 가능 — 눈웃음 같은 표정은 속눈썹 스트로크 작화가 달라지는 **외형 변화**라
+생성 상태가 정답이다 (입 4상태와 같은 원리). 셀 = **두 눈 영역(눈썹 포함)** 한 쌍 — 윙크처럼
+좌우 비대칭 표정과 정렬 일관성 때문에 눈 하나가 아니라 쌍으로 받는다.
+
+```bash
+codex exec ... -i <true_master.png> -- "Using this exact character, generate a 2048x2048 \
+sheet on pure magenta #FF00FF background, 2x3 grid (2 rows, 3 columns) of the character's \
+both-eyes region including eyebrows, identical eye positions, sizes and spacing in every cell: \
+row1-col1 both eyes closed in happy smiling arcs (^^), \
+row1-col2 left eye closed in a smiling arc and right eye open exactly as the reference, \
+row1-col3 both eyes wide open in surprise with small pupils, \
+row2-col1 both eyes half-lidded and unimpressed (jito-me), \
+row2-col2 both eyes squeezed tightly shut (><), \
+row2-col3 both eyes open with heart-shaped pupils. \
+Same art style, same colors. Eyes region only — do not draw the nose, hair or face outline."
+```
+
+- 셀 규약: 2행×3열 @ 682×1024px. 셀 → 표정: smile/wink_L/surprise + jito/squeeze/heart.
+- 윙크 R은 wink_L 좌우 반전이 아니라 **wink_L 셀의 감은 눈 + 놀람 아닌 기준 뜬 눈 조합**으로 합성 (반전은 비대칭 작화를 깨뜨림).
+- 알려진 생성 특성(입 시트와 동일): 주변 윤곽·콧대가 딸려올 수 있음 — 추출기 연결성분 분리 대상, 재생성 사유 아님.
+
+## 3.3 액센트 시트 (마스터와 **동일 세션**)
+
+```bash
+codex exec ... -i <true_master.png> -- "Using this exact character's art style, generate a \
+2048x2048 sheet on pure magenta #FF00FF background, 2x2 grid: \
+top-left a pair of soft pink anime blush patches matching the character's skin tone, \
+top-right a vertical dark-blue gloom shading patch (forehead shadow), \
+bottom-left a single large anime tear drop, bottom-right a single anime sweat drop. \
+Flat painterly style matching the reference, each item centered in its cell."
+```
+
+- 셀 규약: 2×2 @ 1024px — blush/gloom/tear/sweat. 오버레이 파트라 정렬 기준은 부착 시점에 결정론(눈 bbox 파생).
+- 1차 리그 배선은 blush(ParamCheek)·gloom만 — tear/sweat는 자산 확보만 (배선은 차기).
+
+## 3.4 표정 시트 P0 검증 (004 풀런 시 `validate_master_image.py` 확장 구현)
+
+- 시트 공통: 마젠타 배경 비율, 그리드 셀별 콘텐츠 존재.
+- 눈 표정 시트: 셀별 눈 콘텐츠 bbox **폭 편차 < 기준 눈 폭 ±10%**, 좌우 눈 간격 편차 < 5% — 동일성(같은 캐릭터의 같은 눈)이 생성 품질의 관건.
 
 ## 3.5 파이프라인 자동 방어 (생성 조건 아님 — 재생성 판단 오염 금지)
 
