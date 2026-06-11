@@ -53,6 +53,28 @@ def lid_lines(bbox: tuple[int, int, int, int], x: float, lower_rise: float = 0.2
     return up, low, closed, lid_low_closed
 
 
+def smile_lines(
+    bbox: tuple[int, int, int, int],
+    x: float,
+    lid_center: float = 0.28,
+    low_center: float = 0.35,
+) -> tuple[float, float]:
+    """눈웃음 닫힘 경계 — 눈꼬리(45%) 고정, 중앙 높이는 매개변수 (EXPR-002 후보 비교).
+
+    lid_center < 0.45 = ∩(^^, 중앙이 높음) / > 0.45 = ∪(니코니코, 중앙이 낮음).
+    반환: (smile_lid, smile_lid_low).
+    """
+    x0, lash_top, x1, y1 = bbox
+    h = y1 - lash_top
+    cx = (x0 + x1) / 2
+    half = max((x1 - x0) / 2, 1e-6)
+    ratio = min(1.0, abs((x - cx) / half))
+    arc = float(np.sqrt(max(0.0, 1.0 - ratio * ratio)))
+    lid = lash_top + h * (0.45 + (lid_center - 0.45) * arc)
+    lid_low = lash_top + h * (0.45 + (low_center - 0.45) * arc)
+    return lid, lid_low
+
+
 def blink_mesh(
     part_id: str,
     parameter_id: str,
@@ -65,12 +87,15 @@ def blink_mesh(
     pad: int = 26,
     x_step: int = 4,  # 컬럼 샘플 간격 — 타원 곡선의 선형 근사 오차 (10px는 눈꼬리에서 1~3px 어긋남)
     closed_value: float = 0.27,
+    smile: tuple[float, float] | None = None,  # (lid_center, low_center) — 눈웃음 모드 (EXPR-002)
 ) -> dict:
-    """깜빡임 정점 키폼 메시 (EYE-NATURAL-002) — 크로스페이드 잔상 해소.
+    """깜빡임/눈웃음 정점 키폼 메시 (EYE-NATURAL-002 / EXPR-002) — 크로스페이드 잔상 해소.
 
     워프가 세로 구간별 선형이므로 경계 곡선 4줄(위 피부 시작/윗꺼풀/아랫꺼풀/아래 피부 끝)에
     정점 행을 두면 메시 선형 보간이 워프를 그대로 재현한다. 꺼풀선이 t에 선형이라
-    키폼은 열림(EyeOpen=1)/닫힘(=closed_value) 2개로 전 구간이 정확하다 (공식 키폼 등가).
+    키폼은 열림/닫힘 2개로 전 구간이 정확하다 (공식 키폼 등가).
+    smile 지정 시: 닫힘 타깃이 smile_lines(주인님 선택 수치)로 바뀌고
+    키 방향이 정방향(EyeSmile 0=열림, 1=감김)이 된다.
     """
     x0, lash_top, x1, y1 = bbox
     h = y1 - lash_top
@@ -86,6 +111,8 @@ def blink_mesh(
     for x in xs:
         if x0 <= x <= x1:
             up, low, closed, lid_lowc = lid_lines(bbox, x, lower_rise)
+            if smile is not None:
+                closed, lid_lowc = smile_lines(bbox, x, *smile)
         else:  # 패드 영역 — 워프 무영향 (항등)
             up = low = closed = lid_lowc = lash_top + h * 0.45
         open_cols.append([py0, y0, up, max(low, up + eps), yb, py1])
@@ -106,10 +133,12 @@ def blink_mesh(
         "mesh_path": f"meshes/{part_id}.json",
         "vertex_keyforms": {
             "parameter_id": parameter_id,
-            "keys": [
-                {"value": closed_value, "vertices": verts_closed},
-                {"value": 1.0, "vertices": verts_open},
-            ],
+            # blink: EyeOpen 역방향 (1=열림), smile: EyeSmile 정방향 (1=감김)
+            "keys": (
+                [{"value": 0.0, "vertices": verts_open}, {"value": 1.0, "vertices": verts_closed}]
+                if smile is not None else
+                [{"value": closed_value, "vertices": verts_closed}, {"value": 1.0, "vertices": verts_open}]
+            ),
         },
     }
 
@@ -121,6 +150,7 @@ def curtain_warp(
     skin_band: float = 0.9,
     lower_rise: float = 0.2,
     lower_band: float = 0.35,
+    smile: tuple[float, float] | None = None,  # (lid_center, low_center) — 눈웃음 타깃으로 전환
 ) -> np.ndarray:
     """아몬드형 눈에 맞춘 커튼 워프 (공식 모델 관찰 반영, EYE-NATURAL-001 v3).
 
@@ -139,6 +169,8 @@ def curtain_warp(
     out = image.copy()
     for x in range(x0, x1):
         up_x, low_x, closed_x, lid_lowc = lid_lines(bbox, x, lower_rise)
+        if smile is not None:
+            closed_x, lid_lowc = smile_lines(bbox, x, *smile)
         lid = up_x + t * (closed_x - up_x)
         # 아랫꺼풀: lower_rise 비율만큼 상승 — 항상 closed_x 아래에 머묾 (lid_lines SSOT)
         lid_low = low_x + t * (lid_lowc - low_x)

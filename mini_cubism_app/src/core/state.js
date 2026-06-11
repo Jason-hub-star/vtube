@@ -34,6 +34,7 @@ const PARAM_LABELS = {
   ParamEyeBallY: "Eye Ball Y",
   ParamBrowLY: "Brow L",
   ParamBrowRY: "Brow R",
+  ParamEyeSmile: "Eye Smile",
   ParamCheek: "Cheek",
   ParamMouthOpenY: "Mouth",
   ParamMouthForm: "Mouth Form",
@@ -45,7 +46,7 @@ const PARAM_LABELS = {
 const PREVIEW_PARAMETER_GROUPS = {
   head: ["ParamAngleX", "ParamAngleY", "ParamAngleZ"],
   body: ["ParamBodyAngleX", "ParamBodyAngleY", "ParamBreath"],
-  eye: ["ParamEyeLOpen", "ParamEyeROpen", "ParamEyeBallX", "ParamEyeBallY"],
+  eye: ["ParamEyeLOpen", "ParamEyeROpen", "ParamEyeBallX", "ParamEyeBallY", "ParamEyeSmile"],
   mouth: ["ParamMouthOpenY", "ParamMouthForm"],
   hair: ["ParamHairFront", "ParamHairSide", "ParamHairBack"],
 };

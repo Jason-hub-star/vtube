@@ -32,6 +32,9 @@ DEFAULT_CONFIG = {
     "skin_band": 0.9,
     "lower_rise": 0.2,
     "lower_band": 0.35,
+    # EXPR-002 눈웃음 곡선 (주인님 선택 A — smile_candidates 리포트)
+    "smile_lid_center": 0.34,
+    "smile_low_center": 0.42,
     "notes": "워프 형태(아치 깊이 등)는 run_arap_blink_experiment.curtain_warp의 0.45/0.28/0.55 상수 — 조정 후 본 스크립트 재실행. lower_rise=아랫꺼풀 상승 비율(EYE-NATURAL-001, 0이면 구형 셔터식)",
 }
 

@@ -1,0 +1,37 @@
+{
+  "test_id": "EXPR-002-smile-candidates",
+  "generated_at": "2026-06-11T10:22:07.628890+00:00",
+  "candidates": [
+    {
+      "label": "A",
+      "lid_center": 0.34,
+      "low_center": 0.42,
+      "desc": "얕은 ^^ (선이 높고 완만)"
+    },
+    {
+      "label": "B",
+      "lid_center": 0.28,
+      "low_center": 0.35,
+      "desc": "깊은 ^^ (지난 1차 수치)"
+    },
+    {
+      "label": "C",
+      "lid_center": 0.4,
+      "low_center": 0.48,
+      "desc": "중간 높이 (살짝만 ^)"
+    },
+    {
+      "label": "D",
+      "lid_center": 0.58,
+      "low_center": 0.66,
+      "desc": "니코니코 ∪ (선이 낮고 아래로 볼록)"
+    }
+  ],
+  "strip": "experiments/autorig-character-003/reports/eye_smile_candidates/smile_candidates.png",
+  "verdict": "OWNER_SELECTED_A",
+  "selected": {
+    "label": "A",
+    "lid_center": 0.34,
+    "low_center": 0.42
+  }
+}

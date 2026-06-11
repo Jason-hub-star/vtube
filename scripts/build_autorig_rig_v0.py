@@ -196,6 +196,9 @@ def main() -> int:
         blink_cfg = load_json(args.arap_eye_dir / "arap_blink_config.json")
         for order, side in ((536, "L"), (537, "R")):
             hidden.append((f"eye_{side}_blink", args.arap_eye_dir / f"eye_{side}_arap_000.png", order))
+        # EXPR-002 눈웃음: 같은 항등 패치, 곡선 A 키폼 — 깜빡임 위에 그림
+        for order, side in ((538, "L"), (539, "R")):
+            hidden.append((f"eye_{side}_smile", args.arap_eye_dir / f"eye_{side}_arap_000.png", order))
     else:
         if args.hidden_eye_dir is None:
             raise SystemExit("--arap-eye-dir 없이는 --hidden-eye-dir가 필요해요")
@@ -262,16 +265,19 @@ def main() -> int:
                 "deformer_node": deformer_of(pid),
             }
         )
-        if use_arap and pid.endswith("_blink"):
-            # EYE-NATURAL-002: 경계 곡선 행 정점 키폼 메시 — 일반 격자/컬링 비적용
-            side = "L" if pid == "eye_L_blink" else "R"
+        if use_arap and (pid.endswith("_blink") or pid.endswith("_smile")):
+            # EYE-NATURAL-002/EXPR-002: 경계 곡선 행 정점 키폼 메시 — 일반 격자/컬링 비적용
+            side = "L" if pid.startswith("eye_L") else "R"
+            is_smile = pid.endswith("_smile")
             eye_bbox = eye_bbox_from_layer(ROOT / blink_cfg[f"eye_white_{side}"])
             mesh = blink_mesh(
-                pid, f"ParamEye{side}Open", eye_bbox,
+                pid, "ParamEyeSmile" if is_smile else f"ParamEye{side}Open", eye_bbox,
                 skin_band=float(blink_cfg.get("skin_band", 0.9)),
                 lower_rise=float(blink_cfg.get("lower_rise", 0.2)),
                 lower_band=float(blink_cfg.get("lower_band", 0.35)),
-                canvas=CANVAS, pad=int(blink_cfg.get("patch_pad", 26)))
+                canvas=CANVAS, pad=int(blink_cfg.get("patch_pad", 26)),
+                smile=(float(blink_cfg.get("smile_lid_center", 0.34)),
+                       float(blink_cfg.get("smile_low_center", 0.42))) if is_smile else None)
             meshes.append(mesh)
             write_json(out / mesh["mesh_path"], mesh)
             continue

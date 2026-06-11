@@ -12,8 +12,10 @@
   "skin_band": 0.9,
   "lower_rise": 0.2,
   "lower_band": 0.35,
+  "smile_lid_center": 0.34,
+  "smile_low_center": 0.42,
   "notes": "워프 형태(아치 깊이 등)는 run_arap_blink_experiment.curtain_warp의 0.45/0.28/0.55 상수 — 조정 후 본 스크립트 재실행",
-  "generated_at": "2026-06-11T09:14:20.054237+00:00",
+  "generated_at": "2026-06-11T10:25:53.261153+00:00",
   "baked": [
     "eye_L_arap_000.png",
     "eye_L_arap_025.png",
