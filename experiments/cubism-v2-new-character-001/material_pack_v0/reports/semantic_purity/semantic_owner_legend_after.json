@@ -1,0 +1,117 @@
+{
+  "semantic_colors": {
+    "body": [
+      67,
+      133,
+      255,
+      230
+    ],
+    "hair": [
+      151,
+      93,
+      74,
+      230
+    ],
+    "face": [
+      255,
+      184,
+      162,
+      230
+    ],
+    "eye": [
+      120,
+      92,
+      255,
+      230
+    ],
+    "brow": [
+      99,
+      69,
+      55,
+      230
+    ],
+    "mouth": [
+      230,
+      66,
+      110,
+      230
+    ],
+    "clothing": [
+      255,
+      204,
+      71,
+      230
+    ],
+    "underpaint": [
+      96,
+      201,
+      145,
+      230
+    ],
+    "metadata": [
+      130,
+      130,
+      130,
+      230
+    ],
+    "unknown": [
+      220,
+      220,
+      220,
+      230
+    ]
+  },
+  "top_owner_pixels_by_group": {
+    "body": 217406,
+    "brow": 13181,
+    "face": 113642,
+    "clothing": 130941,
+    "eye": 9679,
+    "hair": 343123,
+    "mouth": 1040
+  },
+  "top_owner_pixels_by_part": {
+    "chest_cloth_base": 118711,
+    "arm_L_upper_simple": 88619,
+    "face_base": 88529,
+    "hair_back_base": 71299,
+    "hair_front_side_R": 66113,
+    "arm_R_upper_simple": 62400,
+    "hair_front_side_L": 62273,
+    "torso_base": 32819,
+    "hair_front_R": 31435,
+    "hair_front_L": 25582,
+    "hair_front_tip_R": 20635,
+    "hair_front_tip_L": 20457,
+    "hair_front_center": 17460,
+    "neck": 13405,
+    "hair_back_center": 12643,
+    "collar_front": 12230,
+    "shoulder_R": 12172,
+    "face_shadow_R": 11695,
+    "face_shadow_L": 10245,
+    "shoulder_L": 7991,
+    "brow_R": 6625,
+    "brow_L": 6556,
+    "hair_side_L_outer": 5845,
+    "hair_side_R_outer": 5110,
+    "eye_R_upper_lash": 3325,
+    "nose": 3154,
+    "eye_L_upper_lash": 2934,
+    "hair_side_L_inner": 2186,
+    "hair_side_R_inner": 2085,
+    "eye_L_lower_lash": 1330,
+    "mouth_line": 1040,
+    "eye_L_white": 731,
+    "eye_R_lower_lash": 566,
+    "eye_R_white": 282,
+    "eye_L_iris": 212,
+    "eye_R_iris": 169,
+    "eye_L_pupil": 70,
+    "eye_R_pupil": 36,
+    "cheek_R": 18,
+    "eye_L_highlight": 18,
+    "eye_R_highlight": 6,
+    "cheek_L": 1
+  }
+}

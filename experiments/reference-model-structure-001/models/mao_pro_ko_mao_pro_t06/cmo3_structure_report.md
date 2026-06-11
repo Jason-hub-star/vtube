@@ -1,0 +1,665 @@
+# CMO3 Structure Report
+
+Generated: 2026-06-05T14:48:31.221Z
+
+Status: **WARN**
+
+Input:
+
+- CMO3: `experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/mao_pro_t06.cmo3`
+- Size: 70523521 bytes
+- SHA256: `209c8f056b7fa3757c29f49c8db633fbc9943ad210e10b7716e3c834244d0d3c`
+
+## Checks
+
+| Check | Status | Message |
+|---|---:|---|
+| main_xml_extracted | PASS | main.xml was extracted from the CAFF archive. |
+| artmesh_present | PASS | 262 CArtMeshSource definition(s) found. |
+| part_sources_present | PASS | 33 CPartSource definition(s) found. |
+| parameters_present | PASS | 128 CParameterSource definition(s) found. |
+| required_parameters_present | WARN | Missing configured parameter(s): ParamMouthForm, ParamMouthOpenY, ParamHairSide |
+| warp_deformers_present | PASS | 116 CWarpDeformerSource definition(s) found. |
+| rotation_deformers_present | PASS | 59 CRotationDeformerSource definition(s) found. |
+| keyform_bindings_present | PASS | 497 KeyformBindingSource definition(s) found. |
+
+## Structure Counts
+
+| XML Source | Definitions | References |
+|---|---:|---:|
+| CArtMeshSource | 262 | 3956 |
+| CPartSource | 33 | 69 |
+| CWarpDeformerSource | 116 | 1074 |
+| CRotationDeformerSource | 59 | 308 |
+| KeyformGridSource | 479 | 853 |
+| KeyformBindingSource | 497 | 4359 |
+| CParameterSource | 128 | 0 |
+| CPhysicsSettingsSource | 16 | 0 |
+| CGlueSource | 7 | 14 |
+| CClippingMaskSource | 0 | 0 |
+| CClippingMaskGuid | 0 | 0 |
+| CInvertedMaskSource | 0 | 0 |
+| CLayer | 186 | 558 |
+| CLayerGroup | 41 | 306 |
+| CLayeredImage | 3 | 233 |
+| CImageResource | 363 | 743 |
+| GEditableMesh2 | 264 | 0 |
+
+## Parameters
+
+- `ParamAngleX`
+- `ParamAngleY`
+- `ParamAngleZ`
+- `ParamEyeLOpen`
+- `ParamEyeLSmile`
+- `ParamEyeROpen`
+- `ParamEyeRSmile`
+- `ParamEyeBallX`
+- `ParamEyeBallY`
+- `ParamBrowLY`
+- `ParamBrowRY`
+- `ParamBrowLX`
+- `ParamBrowRX`
+- `ParamBrowLAngle`
+- `ParamBrowRAngle`
+- `ParamBrowLForm`
+- `ParamBrowRForm`
+- `ParamCheek`
+- `ParamBodyAngleX`
+- `ParamBodyAngleY`
+- `ParamBodyAngleZ`
+- `ParamBreath`
+- `ParamHairFront`
+- `ParamHairSideR`
+- `ParamHairBack`
+- `ParamEyeBallForm`
+- `ParamEyeEffect`
+- `ParamHairFrontFuwa`
+- `ParamHairSideFuwa`
+- `ParamHairBackFuwa`
+- `ParamWing`
+- `ParamAccessory1`
+- `ParamString`
+- `ParamRobeR`
+- `ParamAllX`
+- `ParamAllY`
+- `ParamAllRotate`
+- `ParamAccessory2`
+- `ParamRobeFuwa`
+- `ParamHatBrim`
+- `ParamArmRA01`
+- `ParamArmRA02`
+- `ParamArmRA03`
+- `ParamHandRA`
+- `ParamArmLA01`
+- `ParamArmLA02`
+- `ParamArmLA03`
+- `ParamHandLA`
+- `ParamArmLB01`
+- `ParamArmLB02`
+- `ParamArmLB03`
+- `ParamHandLB`
+- `ParamArmRB01`
+- `ParamArmRB02`
+- `ParamArmRB03`
+- `ParamHandRB`
+- `ParamWandRotate`
+- `ParamHairSideL`
+- `ParamRobeL`
+- `ParamAura`
+- `ParamAuraColor1`
+- `ParamHealLight`
+- `ParamHealLightOn`
+- `ParamSmoke`
+- `ParamInkDrop`
+- `ParamInkDropOn`
+- `ParamFaceInkOn`
+- `ParamWandInk`
+- `ParamHeartColorRainbow`
+- `ParamHeartColorLight`
+- `ParamHeartColorHeal`
+- `ParamHeartBackHealOn`
+- `ParamHeartHealOn`
+- `ParamHeartDrow`
+- `ParamHeartLight`
+- `ParamHeartMissOn`
+- `ParamHeartBackMissOn`
+- `ParamAuraOn`
+- `ParamA`
+- `ParamI`
+- `ParamU`
+- `ParamE`
+- `ParamO`
+- `ParamMouthDown`
+- `ParamMouthAngry`
+- `ParamMouthAngryLine`
+- `ParamMouthUp`
+- `ParamHatForm`
+- `ParamInkDropRotate`
+- `ParamHeartLightColor`
+- `ParamExplosionLightCharge`
+- `ParamExplosionChargeOn`
+- `ParamMagicPositionX`
+- `ParamMagicPositionY`
+- `ParamExplosion`
+- `ParamLeftShoulderUp`
+- `ParamRightShoulderUp`
+- `ParamHeartLightOn`
+- `ParamSmokeOn`
+- `ParamWandInkColorRainbow`
+- `ParamWandInkColorHeal`
+- `ParamHeartSize`
+- `ParamAllColor1`
+- `ParamoHairMesh`
+- `ParamRibbon`
+- `ParamHairBackL`
+- `ParamHatTop`
+- `ParamHairBackR`
+- `ParamEyeRForm`
+- `ParamEyeLForm`
+- `ParamArmRB02Y`
+- `ParamExplosionOn`
+- `ParamRabbitAppearance`
+- `ParamRabbitY`
+- `ParamRabbitX`
+- `ParamRabbitDirection`
+- `ParamRabbitLight`
+- `ParamRabbitLightSize`
+- `ParamRabbitDraworder`
+- `ParamAllColor2`
+- `ParamRabbitSize`
+- `ParamRabbitEar`
+- `ParamRabbitRotate`
+- `ParamRabbitElimination`
+- `ParamAuraColor2`
+- `ParamStrengthenLight`
+- `ParamStrengthenLightOn`
+- `ParamStrengthenLightMove`
+
+## Parts
+
+- `Root Part`
+- `다리`
+- `[밑그림]`
+- `오른팔 B`
+- `왼팔 B`
+- `오른팔 A`
+- `지팡이 B`
+- `로브`
+- `파커`
+- `코어`
+- `왼팔 A`
+- `눈알`
+- `목`
+- `귀`
+- `얼굴`
+- `입`
+- `코`
+- `뺨`
+- `눈`
+- `뒷머리`
+- `앞머리`
+- `옆머리`
+- `모자`
+- `잉크`
+- `연기`
+- `폭발광`
+- `아우라`
+- `빛`
+- `하트`
+- `눈썹`
+- `지팡이 A`
+- `토끼`
+- `이펙트`
+
+## ArtMeshes
+
+- `왼쪽 로브`
+- `오른쪽 로브`
+- `왼쪽 끈`
+- `오른쪽 끈`
+- `가방`
+- `시험관 넣기1`
+- `시험관 넣기2`
+- `시험관 넣기3`
+- `빨간 시험관`
+- `파란 시험관`
+- `녹색 시험관`
+- `벨트`
+- `파커 동체`
+- `파커 오른팔`
+- `후드 뒷면`
+- `오른쪽 구두`
+- `오른쪽 바지`
+- `오른쪽 다리`
+- `왼쪽 팔`
+- `왼쪽 위 어깨`
+- `왼손`
+- `왼손 집게손가락`
+- `지팡이 끝`
+- `지팡이`
+- `잉크 마스크`
+- `유리병 잉크`
+- `유리병`
+- `오른쪽약지 새끼 손가락`
+- `오른쪽 중지`
+- `오른쪽 검지`
+- `오른쪽 엄지손가락`
+- `오른쪽 검지 뒷면`
+- `오른손`
+- `오른쪽 소매 뒷면`
+- `오른쪽 윗팔`
+- `오른쪽 팔 뒤`
+- `오른쪽 윗팔`
+- `밑그림`
+- `오른쪽 옷깃`
+- `오른쪽로브 그림자 승산`
+- `후드`
+- `오른쪽 엄지손가락`
+- `오른쪽 손끝`
+- `오른쪽 손가락`
+- `오른손`
+- `오른쪽 팔 뒤`
+- `로브 뒷면`
+- `오른쪽 옷깃 뒷면`
+- `몸`
+- `왼쪽 구두`
+- `파커 왼팔`
+- `왼쪽 옷깃`
+- `왼쪽로브 그림자 승산`
+- `왼쪽 옷깃 뒷면`
+- `왼손`
+- `왼쪽지`
+- `왼쪽 엄지`
+- `왼쪽 위 어깨`
+- `왼쪽 팔`
+- `목`
+- `초커`
+- `초커 장식`
+- `초커 체인`
+- `오른쪽 귀`
+- `턱선 마스크`
+- `얼굴`
+- `얼굴 그림자 마스크`
+- `얼굴 그림자`
+- `얼굴선`
+- `얼굴 잉크 2 곱하기`
+- `얼굴 잉크 1 곱하기`
+- `머리카락 곱하기`
+- `입안`
+- `혀`
+- `아래 치아`
+- `위 치아`
+- `아랫 입술`
+- `윗입술`
+- `입술`
+- `입 하이라이트`
+- `화난 입`
+- `코`
+- `코 잉크 곱셈`
+- `오른쪽 뺨`
+- `왼쪽 뺨`
+- `오른쪽 홍조`
+- `왼쪽 홍조`
+- `뺨의선`
+- `오른쪽 눈알`
+- `오른쪽 하이라이트3`
+- `오른쪽 하이라이트2`
+- `오른쪽 하이라이트1`
+- `오른쪽 반짝임`
+- `왼쪽 눈알`
+- `왼쪽 하이라이트3`
+- `왼쪽 하이라이트2`
+- `왼쪽 하이라이트1`
+- `왼쪽 반짝임`
+- `오른쪽 흰자`
+- `오른쪽 쌍커플`
+- `오른쪽 아래 속눈썹`
+- `오른쪽 속눈썹 가닥 2`
+- `오른쪽 속눈썹 가닥 1`
+- `오른쪽 속눈썹 눈꼬리`
+- `오른쪽 속눈썹1`
+- `왼쪽 흰자`
+- `왼쪽 쌍커플`
+- `왼쪽 아래 속눈썹`
+- `왼쪽 속눈썹 가닥 2`
+- `왼쪽 속눈썹 가닥 1`
+- `왼쪽 속눈썹 눈꼬리`
+- `왼쪽 속눈썹 1`
+- `뒷머리 중앙`
+- `뒷머리 오른쪽`
+- `뒷머리 왼쪽`
+- `앞머리`
+- `앞머리 메쉬`
+- `오른쪽 옆머리`
+- `오른쪽 메쉬`
+- `머리핀`
+- `왼쪽 옆머리`
+- `왼쪽 메쉬`
+- `오른쪽 눈썹`
+- `왼쪽 눈썹_비침`
+- `모자 뒷면`
+- `모자 그림자 곱하기`
+- `모자창`
+- `모자 위`
+- `깃털2`
+- `깃털1`
+- `리본 끈`
+- `리본 오른쪽`
+- `리본 왼쪽`
+- `리본 매듭`
+- `왼쪽 귀`
+- `HIT_HEAD`
+- `HIT_BODY`
+- `왼쪽 바지`
+- `왼쪽 다리`
+- `右脚`
+- `하트 뒤 실패`
+- `하트 왼쪽 실패`
+- `하트 오른쪽 실패`
+- `하트 뒤 회복`
+- `하트 왼쪽 회복`
+- `하트 오른쪽 회복`
+- `마스크 왼쪽`
+- `마스크 오른쪽`
+- `빛실패`
+- `빛회복`
+- `하트 반짝임 1`
+- `하트 반짝임 2`
+- `하트 반짝임 3`
+- `하트 반짝임 4`
+- `하트 반짝임 5`
+- `하트 반짝임 6`
+- `하트 반짝임 7`
+- `별1`
+- `별2`
+- `별3`
+- `별4`
+- `하트 원1`
+- `하트 원2`
+- `하트 원3`
+- `하트 원4`
+- `빛1`
+- `빛2`
+- `빛3`
+- `빛4`
+- `빛5`
+- `빛6`
+- `빛7`
+- `빛8`
+- `빛9`
+- `빛10`
+- `빛11`
+- `빛12`
+- `원 뒤1`
+- `원 뒤2`
+- `아우라1`
+- `아우라2`
+- `아우라3`
+- `아우라4`
+- `아우라5`
+- `아우라6`
+- `원1`
+- `원2`
+- `원3`
+- `원4`
+- `원5`
+- `원6`
+- `원7`
+- `원8`
+- `원9`
+- `원10`
+- `원11`
+- `원12`
+- `선1`
+- `선2`
+- `선3`
+- `선4`
+- `선5`
+- `선6`
+- `연기 1`
+- `연기 2`
+- `연기 3`
+- `잉크 1`
+- `잉크 2`
+- `잉크 3`
+- `잉크 4`
+- `잉크5`
+- `잉크 6`
+- `왼쪽 눈썹`
+- `오른쪽 눈썹_비침`
+- `왼쪽 속눈썹 1_비침`
+- `왼쪽 속눈썹 눈꼬리_비침`
+- `왼쪽 속눈썹 가닥 2_비침`
+- `오른쪽 속눈썹1_비침`
+- `오른쪽 속눈썹 눈꼬리_비침`
+- `오른쪽 속눈썹 가닥 2_비침`
+- `잉크흘림`
+- `지팡이 끝`
+- `지팡이`
+- `유리병 잉크`
+- `유리병`
+- `토끼 그림자 곱하기`
+- `토끼 오른쪽 귀`
+- `토끼 왼쪽 귀`
+- `토끼 오른쪽 눈`
+- `토끼 왼쪽 눈`
+- `토끼 그림자`
+- `토끼`
+- `토끼 입`
+- `토끼`
+- `토끼 입`
+- `토끼 왼쪽 눈`
+- `토끼 오른쪽 눈`
+- `토끼 왼쪽 귀`
+- `토끼 오른쪽 귀`
+- `토끼 빛`
+- `토끼 원 8`
+- `토끼 원 7`
+- `토끼 원 6`
+- `토끼 원 5`
+- `토끼 별4`
+- `토끼 별3`
+- `토끼 별2`
+- `토끼 원 1`
+- `토끼 원 2`
+- `토끼 원 3`
+- `토끼 원 4`
+- `토끼 별1`
+- `반짝임 8`
+- `반짝임 7`
+- `반짝임 6`
+- `반짝임 5`
+- `반짝임 4`
+- `반짝임 3`
+- `반짝임 2`
+- `반짝임 1`
+- `원 뒤4`
+- `원 뒤3`
+
+## Warp Deformers
+
+- `파커의 곡면`
+- `후드 뒷면의 곡면`
+- `오른쪽 로브의 볼륨`
+- `오른쪽 옷깃 뒷면의 곡면`
+- `로브 뒷면의 곡면`
+- `오른쪽 다리의 곡면`
+- `오른쪽 구두 곡면`
+- `몸의 곡면Z`
+- `몸의 곡면Y`
+- `오른쪽로브의 흔들림`
+- `오른쪽로브 그림자의 흔들림`
+- `오른쪽로브 그림자의 볼륨`
+- `오른쪽 로브의 곡면`
+- `오른쪽로브 그림자의 곡면`
+- `로브 뒷면의 볼륨`
+- `오른쪽 팔 뒤 A의 곡면`
+- `오른쪽 옷깃의 곡면`
+- `오른쪽 옷깃의 볼륨`
+- `오른쪽 옷깃의 흔들림`
+- `몸의 곡면`
+- `왼쪽 구두 곡면`
+- `가방의 곡면`
+- `왼쪽 옷깃 뒷면의 곡면`
+- `왼쪽로브 그림자의 흔들림`
+- `왼쪽로브 그림자의 볼륨`
+- `왼쪽로브 그림자의 곡면`
+- `왼쪽로브의 흔들림`
+- `왼쪽로브의 볼륨`
+- `왼쪽로브의 곡면`
+- `왼쪽 옷깃의 흔들림`
+- `왼쪽 옷깃의 볼륨`
+- `왼쪽 옷깃의 곡면`
+- `왼쪽 앞 어깨 A의 곡면`
+- `하반신의 곡면 Z`
+- `호흡`
+- `어깨의 위아래`
+- `후드의 곡면 Z`
+- `후드의 곡면`
+- `목의 곡면`
+- `오른쪽 귀의 곡면`
+- `왼쪽 귀의 곡면`
+- `머리카락의 흔들림`
+- `머리카락의 볼륨`
+- `머리카락의 곡면 Z`
+- `머리카락의 곡면`
+- `얼굴의 곡면`
+- `입의 곡면`
+- `코의 곡면`
+- `뺨의선의 곡면`
+- `오른쪽 눈알의 축소`
+- `오른쪽 눈의 위치`
+- `오른쪽 하이라이트의 위치3`
+- `오른쪽 하이라이트의 위치2`
+- `오른쪽 하이라이트의 위치1`
+- `오른쪽 반짝임의 표시`
+- `왼쪽 눈알의 축소`
+- `왼쪽 눈의 위치`
+- `왼쪽 하이라이트의 위치3`
+- `왼쪽 하이라이트의 위치2`
+- `왼쪽 하이라이트의 위치1`
+- `왼쪽 반짝임의 표시`
+- `오른쪽 눈의 곡면`
+- `왼쪽 눈의 곡면`
+- `뒷머리의 흔들림`
+- `뒷머리의 볼륨`
+- `뒷머리 곡면 Z`
+- `뒷머리의 곡면`
+- `뒷머리 오른쪽의 흔들림`
+- `뒷머리 오른쪽의 볼륨`
+- `뒷머리 오른쪽의 Z`
+- `뒷머리 오른쪽의 곡면`
+- `뒷머리 왼쪽의 흔들림`
+- `뒷머리 왼쪽의 볼륨`
+- `뒷머리 왼쪽의 Z`
+- `뒷머리 왼쪽의 곡면`
+- `앞머리 메쉬 Z 조정`
+- `앞머리 흔들림`
+- `앞머리 볼륨`
+- `앞머리 곡면 Z`
+- `앞머리 곡면`
+- `오른쪽 옆머리의 흔들림`
+- `오른쪽 옆머리의 볼륨`
+- `오른쪽 옆머리 곡면 Z`
+- `오른쪽 옆머리 곡면`
+- `왼쪽 옆머리의 흔들림`
+- `왼쪽 옆머리의 볼륨`
+- `왼쪽 옆머리 곡면 Z`
+- `왼쪽 옆머리의 곡면`
+- `오른쪽 눈썹 위치`
+- `오른쪽 눈썹 곡면`
+- `왼쪽 눈썹 위치`
+- `왼쪽 눈썹 곡면`
+- `모자 뒷면의 흔들림`
+- `모자 뒷면의 곡면`
+- `모자 뒷면의 변형`
+- `모자 그림자의 흔들림`
+- `모자 그림자의 곡면`
+- `모자 그림자의 변형`
+- `모자창의 흔들림`
+- `모자창의 곡면`
+- `모자창의 변형`
+- `모자 위의 곡면`
+- `깃털2의 곡면`
+- `깃털1의 곡면`
+- `모자 리본 곡면`
+- `얼굴 잉크의 곡면`
+- `왼쪽 다리의 곡면`
+- `하트 뒤 실패의 표시`
+- `하트 뒤 회복의 표시`
+- `하트 실패의 색광`
+- `하트 회복의 색광`
+- `하트 실패의 표시`
+- `하트 회복의 표시`
+- `오른팔 B 곡면`
+- `토끼의 곡면 2`
+- `토끼의 곡면`
+
+## Rotation Deformers
+
+- `오른팔 A의 위치`
+- `오른쪽 팔 위 A의 회전`
+- `오른쪽 팔 뒤 A의 회전`
+- `오른손 A의 회전`
+- `파커 오른팔의 회전`
+- `오른팔 B의 위치`
+- `오른쪽 윗 어깨 B의 회전`
+- `오른쪽 어깨 뒷면 B의 회전`
+- `오른손 B의 회전`
+- `왼팔 B의 위치`
+- `왼팔 윗면B의 회전`
+- `왼팔 뒷면B의 회전`
+- `왼손 B의 회전`
+- `왼손 집게손가락 B의 회전`
+- `전체 회전`
+- `전체의 XY`
+- `오른쪽 어깨 움츠림`
+- `파커 오른팔의 위치`
+- `파커 왼팔의 회전`
+- `파커 왼팔의 위치`
+- `왼손 A의 회전`
+- `왼쪽 앞 어깨 A의 회전`
+- `왼쪽 위 어깨 A의 회전`
+- `왼팔 A의 위치`
+- `왼쪽 어깨 움츠림`
+- `유리병 잉크의 색 회복`
+- `지팡이끝의 색 회복`
+- `유리병 잉크의 색 실패`
+- `지팡이끝의 색 실패`
+- `전체 색`
+- `장식의 회전`
+- `체인의 회전`
+- `장식의 위치`
+- `목의 위치`
+- `모자 깃털2의 위치`
+- `모자 깃털1의 위치`
+- `모자 토끼의 위치`
+- `모자 리본의 위치`
+- `얼굴의 회전`
+- `하트의 확축`
+- `마스크 왼쪽의 회전`
+- `마스크 오른쪽의 회전`
+- `하트 빛의 색`
+- `하트 빛의 표시`
+- `하트원의 표시`
+- `빛의 표시`
+- `아우라 색`
+- `아우라의 표시`
+- `폭발 빛의 불투명도`
+- `폭발광의 표시`
+- `연기 표시`
+- `마법의 위치`
+- `지팡이 A의 회전`
+- `잉크흘림의 회전`
+- `잉크흘림의 표시`
+- `폭발 표시`
+- `토끼 회전`
+- `토끼 원 회전`
+- `토끼 이펙트 회전`
+
+## Interpretation
+
+- This proves CMO3 structure presence, not final visual rig quality.
+- It does not replace runtime render checks for keyform motion, draw order under motion, or overhang.
+- Part and layer names are extracted dynamically from this CMO3; they are not image-specific hardcoded expectations.

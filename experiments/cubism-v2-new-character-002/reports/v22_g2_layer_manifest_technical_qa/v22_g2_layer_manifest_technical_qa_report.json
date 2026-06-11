@@ -1,0 +1,1443 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T15:34:08.813568+00:00",
+  "status": "G2_LAYER_MANIFEST_TECHNICAL_QA_PASS_MATERIAL_STILL_BLOCKED",
+  "corrected_manifest": "experiments/cubism-v2-new-character-002/reports/v22_64part_corrected_b4_b5_manifest/v22_64part_corrected_b4_b5_manifest.json",
+  "g2_g5_prep_packet": "experiments/cubism-v2-new-character-002/reports/v22_g2_g5_material_qa_prep/v22_g2_g5_material_qa_prep_packet.json",
+  "spec": "experiments/cubism-v2-new-character-002/reports/v22_64part_generation_spec/v22_64part_generation_spec.json",
+  "checked_entries": [
+    {
+      "id": "body_underpaint",
+      "group": "body",
+      "source_batch": "B1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/body_underpaint.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        355,
+        1136,
+        1694,
+        2048
+      ],
+      "alpha_coverage": 0.26666117,
+      "sha256": "f878fccea04e1b1b117b85d068fe190d2b0956c499a68540a7565ff34c94d074",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "torso_base",
+      "group": "body",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/torso_base.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        534,
+        915,
+        1547,
+        1927
+      ],
+      "alpha_coverage": 0.20855403,
+      "sha256": "46cf72a7108996555bc08fdb340e6b2085995720a87247cb6b500125396f75c9",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "neck",
+      "group": "body",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/neck.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        882,
+        701,
+        1167,
+        1090
+      ],
+      "alpha_coverage": 0.01887441,
+      "sha256": "11a245a40b8e071bf2b1a0ac6fbf17d1457a302dd4e41e90dd919ce91b9d269d",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "neck_shadow_underpaint",
+      "group": "body",
+      "source_batch": "B1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/neck_shadow_underpaint.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        802,
+        910,
+        1248,
+        1331
+      ],
+      "alpha_coverage": 0.03904438,
+      "sha256": "8c249766348d1e48528b19049a533a688b50624becc025dd917fb83ff4f4938c",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "shoulder_L",
+      "group": "body",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/shoulder_L.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        588,
+        1020,
+        861,
+        1214
+      ],
+      "alpha_coverage": 0.00211596,
+      "sha256": "5ead53e1b42e51bbf773fcd5b615e9ba9e7b5f25a750d39b98f464a3f1ee5fae",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "shoulder_R",
+      "group": "body",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/shoulder_R.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1209,
+        1104,
+        1454,
+        1216
+      ],
+      "alpha_coverage": 0.00183344,
+      "sha256": "73d3fc6264956e0c15ac305ed03c0365d5d523fb52b49b7b7e1aa5d507fc085d",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "arm_L_upper_simple",
+      "group": "body",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/arm_L_upper_simple.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        485,
+        1115,
+        695,
+        1786
+      ],
+      "alpha_coverage": 0.01823521,
+      "sha256": "7f8f4d8e13904b49f4bdd25a70db70c8b67e9997d7eccfdd9ee135740efe4db5",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "arm_R_upper_simple",
+      "group": "body",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/arm_R_upper_simple.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1334,
+        1116,
+        1521,
+        1786
+      ],
+      "alpha_coverage": 0.01637411,
+      "sha256": "cb8bf97a1fd89a3b838a482c3b1ca9905b38736de5444785c220def916d677ce",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "arm_L_underpaint",
+      "group": "body",
+      "source_batch": "B1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/arm_L_underpaint.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        352,
+        1182,
+        709,
+        2048
+      ],
+      "alpha_coverage": 0.06500292,
+      "sha256": "b4a5de688b1d388fef8918979f883345f1a16bf9a0ab6c8664fa5e807f27273d",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "arm_R_underpaint",
+      "group": "body",
+      "source_batch": "B1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/arm_R_underpaint.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1340,
+        1182,
+        1697,
+        2048
+      ],
+      "alpha_coverage": 0.06564283,
+      "sha256": "14fc76ee72cae3f17d1f9a7281038d710e992a27d1d64c79f5151c4efe31a9a1",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "face_base",
+      "group": "face_base",
+      "source_batch": "B1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/face_base.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        640,
+        350,
+        1381,
+        1239
+      ],
+      "alpha_coverage": 0.1112411,
+      "sha256": "591aff98ec41d09b6a7add92462ddf0d23e92978db1a2b042b639c2b737fbd0c",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "face_shadow_L",
+      "group": "face_base",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/face_shadow_L.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        721,
+        678,
+        809,
+        883
+      ],
+      "alpha_coverage": 0.00281453,
+      "sha256": "7069e43c96ed5e7bc1c2bf423d6d88945b673a1d3b4bde93520c09e74bf310e9",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "face_shadow_R",
+      "group": "face_base",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/face_shadow_R.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1211,
+        680,
+        1291,
+        881
+      ],
+      "alpha_coverage": 0.00274563,
+      "sha256": "a08549ca8c9d1526632d603abfdf37fd4aba9c4e372fc9ad1f487e37bda4ab9d",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "face_underpaint_L",
+      "group": "face_base",
+      "source_batch": "B1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/face_underpaint_L.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        640,
+        497,
+        975,
+        1078
+      ],
+      "alpha_coverage": 0.03236151,
+      "sha256": "0814fc563f44383641bf73fe4cf636b2f9e2bdef68716a6d6cfebf041ddeb54d",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "face_underpaint_R",
+      "group": "face_base",
+      "source_batch": "B1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/face_underpaint_R.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1074,
+        497,
+        1381,
+        1078
+      ],
+      "alpha_coverage": 0.02925658,
+      "sha256": "9fb4c45264b86cc45d5546d29eac9909f9326d4cbd15ffab3f64cee3793c6cf4",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "nose",
+      "group": "face_base",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/nose.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1003,
+        757,
+        1046,
+        823
+      ],
+      "alpha_coverage": 0.00052786,
+      "sha256": "47d25f807fb0ac7f7bbd897b2d7b63ecfaeaff38be2c8cd4428c39d1f80adf48",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "cheek_L",
+      "group": "face_base",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/cheek_L.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        752,
+        744,
+        917,
+        844
+      ],
+      "alpha_coverage": 0.0030582,
+      "sha256": "26033b6bc6f1fa342bcec8dcf3ae58472ddfc7cedc94cd96324cec00e7077aff",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "cheek_R",
+      "group": "face_base",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/cheek_R.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1129,
+        744,
+        1294,
+        844
+      ],
+      "alpha_coverage": 0.00305676,
+      "sha256": "9cebb6135e0aedcde585d17ef316620a543dfb7c519ee3c84ca981439a7244ad",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "eye_L_white",
+      "group": "eye_L",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_white.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        669,
+        637,
+        903,
+        725
+      ],
+      "alpha_coverage": 0.00388455,
+      "sha256": "e63b24354c5abc11d9520e488a52bf4dc8762bedec5936078fc5020591efc9b9",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "eye_L_iris",
+      "group": "eye_L",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_iris.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        746,
+        640,
+        845,
+        731
+      ],
+      "alpha_coverage": 0.00101423,
+      "sha256": "05b77dc5fbb1bda873174b819b60bda40789c9236f8a349fc4ba9a95b2963338",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "eye_L_pupil",
+      "group": "eye_L",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_pupil.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        729,
+        633,
+        848,
+        750
+      ],
+      "alpha_coverage": 0.00119209,
+      "sha256": "220d0eea536581e7fd08d0bcf90db1bd875685898327be54d7925fa46f5cfc2f",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "eye_L_highlight",
+      "group": "eye_L",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_highlight.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        726,
+        610,
+        850,
+        750
+      ],
+      "alpha_coverage": 0.00082493,
+      "sha256": "1cb7d864ee4f0f279ae2ad21e8758d8544f49332a889b2983f15a8f6d8d8514e",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "eye_L_upper_lash",
+      "group": "eye_L",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_upper_lash.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        661,
+        627,
+        925,
+        734
+      ],
+      "alpha_coverage": 0.00190282,
+      "sha256": "8150726da0273f61a631cb5b4a03ba29dd0317fa77396c7f10b889ec8d4414a4",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "eye_L_lower_lash",
+      "group": "eye_L",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_lower_lash.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        704,
+        692,
+        902,
+        762
+      ],
+      "alpha_coverage": 0.00045633,
+      "sha256": "6e26fefb74f2ad66385ddfe1dd4b15a8cca2bf34b17b971594598f9a3e069244",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "eye_L_closed_lid",
+      "group": "eye_L",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_closed_lid.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        706,
+        713,
+        912,
+        745
+      ],
+      "alpha_coverage": 0.00076079,
+      "sha256": "76e1cf43d5654974470c3e354898aff9683b3f31747893d6978acf4b2e8e9129",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "eye_L_underpaint",
+      "group": "eye_L",
+      "source_batch": "B1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/eye_L_underpaint.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        710,
+        580,
+        976,
+        776
+      ],
+      "alpha_coverage": 0.00975227,
+      "sha256": "5f78f58746ac2462085132afa5556722f985a3a0145a7c600ca134d4e1fa4c85",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "eye_R_white",
+      "group": "eye_R",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_white.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1099,
+        637,
+        1333,
+        725
+      ],
+      "alpha_coverage": 0.00388455,
+      "sha256": "94fda371fcf4016a234b75d1aae54a1e32b5f36d7b818f48998100e864e16ac8",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "eye_R_iris",
+      "group": "eye_R",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_iris.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1162,
+        641,
+        1256,
+        731
+      ],
+      "alpha_coverage": 0.00094867,
+      "sha256": "43ee42895acf80fa4fc203dc90733d2eabd79f6b6f26a843020a5bcaee555da3",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "eye_R_pupil",
+      "group": "eye_R",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_pupil.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1157,
+        634,
+        1280,
+        750
+      ],
+      "alpha_coverage": 0.00109196,
+      "sha256": "d45d3de0be7ca128606c8bd451fab8424c85a6c0614b3175ee4d264525e94360",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "eye_R_highlight",
+      "group": "eye_R",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_highlight.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1150,
+        610,
+        1280,
+        750
+      ],
+      "alpha_coverage": 0.00081873,
+      "sha256": "0a02903655774358946011b46620c087c25cf43adb7de3c42700ecd6fe55e5f5",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "eye_R_upper_lash",
+      "group": "eye_R",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_upper_lash.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1092,
+        630,
+        1355,
+        715
+      ],
+      "alpha_coverage": 0.00197911,
+      "sha256": "e5e2acfe58c0394e2d211bd052c2c354c535f19798083950d569d3611e87b225",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "eye_R_lower_lash",
+      "group": "eye_R",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_lower_lash.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1107,
+        692,
+        1332,
+        764
+      ],
+      "alpha_coverage": 0.00049138,
+      "sha256": "984422769587a8d755cb591f131dd5391c029171b708bb2019619b4a9f9382e9",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "eye_R_closed_lid",
+      "group": "eye_R",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_closed_lid.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1087,
+        716,
+        1288,
+        747
+      ],
+      "alpha_coverage": 0.00076008,
+      "sha256": "9b0583957b7c4f971dd26730cbd04e7896327c1128d410efb4cca716de781a84",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "eye_R_underpaint",
+      "group": "eye_R",
+      "source_batch": "B1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/eye_R_underpaint.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1073,
+        580,
+        1339,
+        776
+      ],
+      "alpha_coverage": 0.00975227,
+      "sha256": "baba829caa4f3d82122535d4e17926f522d4bad0628719d7b9081f3129ebf7b0",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "brow_L",
+      "group": "brow",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/brow_L.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        779,
+        631,
+        924,
+        659
+      ],
+      "alpha_coverage": 0.00030065,
+      "sha256": "fac96ad0e24b2e1b23da2ab7451122f1e6d22d70fac17188adb5599c582238d1",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "brow_R",
+      "group": "brow",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/brow_R.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1103,
+        631,
+        1247,
+        659
+      ],
+      "alpha_coverage": 0.00030589,
+      "sha256": "20a27bbacaa79097020b1bc9fa51d7e67bbf007bc24482c03ee92b47a094abe1",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "mouth_line",
+      "group": "mouth",
+      "source_batch": "B3_REVISION_V1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_line.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        932,
+        868,
+        1107,
+        887
+      ],
+      "alpha_coverage": 0.00014353,
+      "sha256": "0e68295494c7cad7f66aa64ef1a552d8add046157d5d637ae72bc8aedafe5280",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "mouth_inner",
+      "group": "mouth",
+      "source_batch": "B3_REVISION_V1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_inner.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        859,
+        818,
+        1189,
+        1003
+      ],
+      "alpha_coverage": 0.00243425,
+      "sha256": "346fb001923aebfe25dad27652d4cfc0f3d1fdd80db8c208e0cf316bfab70272",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "mouth_upper_lip_mask",
+      "group": "mouth",
+      "source_batch": "B3_REVISION_V1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_upper_lip_mask.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        928,
+        855,
+        1087,
+        895
+      ],
+      "alpha_coverage": 0.00099826,
+      "sha256": "2ee25da89a4da78c12da40423472072ccae89adb3fcc5f0919ac52e60e0af70d",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "mouth_lower_lip_mask",
+      "group": "mouth",
+      "source_batch": "B3_REVISION_V1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_lower_lip_mask.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        925,
+        858,
+        1106,
+        946
+      ],
+      "alpha_coverage": 0.00189757,
+      "sha256": "b8006f39c6681fed63969cb20bc6378c092628b549f05eb10cd5c4830e39c5bc",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "mouth_teeth",
+      "group": "mouth",
+      "source_batch": "B3_REVISION_V1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_teeth.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        924,
+        819,
+        1119,
+        888
+      ],
+      "alpha_coverage": 0.00061798,
+      "sha256": "e0ec526823fa2eca64eb522033b762148f7522768431a266117f007e9376b2e8",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "mouth_tongue",
+      "group": "mouth",
+      "source_batch": "B3_REVISION_V1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_tongue.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        859,
+        864,
+        1189,
+        1003
+      ],
+      "alpha_coverage": 0.0033257,
+      "sha256": "798333ced6f42effe33f104ff4054be256b7ba81b6a4e1f4f45ed818af2bd4ff",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "mouth_corner_L",
+      "group": "mouth",
+      "source_batch": "B3_REVISION_V1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_corner_L.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        871,
+        880,
+        922,
+        893
+      ],
+      "alpha_coverage": 5.293e-05,
+      "sha256": "ab6154ccf71d29f46e1ae64c1b79cd159bc08d44b937d4b2e1839371b4aebd33",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "mouth_corner_R",
+      "group": "mouth",
+      "source_batch": "B3_REVISION_V1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_corner_R.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1118,
+        879,
+        1169,
+        893
+      ],
+      "alpha_coverage": 5.269e-05,
+      "sha256": "633bd3ff4eb3caeee4358cdc4ed210ae39aac1258eb109a7222d09f6b592a375",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "hair_back_base",
+      "group": "hair",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_base.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        644,
+        190,
+        1404,
+        1250
+      ],
+      "alpha_coverage": 0.14233398,
+      "sha256": "19e294e7b0b12be62779b8d1295c74a6a6ecd7dd33887dbbc2f9e15f16266f7c",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "hair_back_underpaint",
+      "group": "hair",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_underpaint.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        818,
+        585,
+        1229,
+        1175
+      ],
+      "alpha_coverage": 0.04447603,
+      "sha256": "d2ac13f3a9c8c31caae426afa1983a8b4ce221724921edccd3c247293f49bad9",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "hair_back_strand_L",
+      "group": "hair",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_strand_L.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        595,
+        440,
+        855,
+        1200
+      ],
+      "alpha_coverage": 0.02609921,
+      "sha256": "761d5750de3f7c4c5c92d9e87f915d1ec5c7fc96c033942241f2884d9c836895",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "hair_back_strand_R",
+      "group": "hair",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_strand_R.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1224,
+        450,
+        1446,
+        1210
+      ],
+      "alpha_coverage": 0.02190447,
+      "sha256": "6db970446e62057969163e060bfaca5442a5027697204a31be0c8e943fb0f392",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "hair_back_center",
+      "group": "hair",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_center.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        837,
+        435,
+        1211,
+        1210
+      ],
+      "alpha_coverage": 0.0482862,
+      "sha256": "8e9757c61146a68e4f65d4b0020bb5226b7578f4a1b254ccd40e8ca301ae5302",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "hair_front_center",
+      "group": "hair",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_center.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        820,
+        231,
+        1228,
+        629
+      ],
+      "alpha_coverage": 0.02321458,
+      "sha256": "06cb739927978d84c9d81750c7ba69fabc0acc62a9a3f91af67b364604173f65",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "hair_front_L",
+      "group": "hair",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_L.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        759,
+        286,
+        1008,
+        605
+      ],
+      "alpha_coverage": 0.01171589,
+      "sha256": "962c52ddc29f7651989e43369d32c305cdf9ff104fa0f773c1a990aa40158e98",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "hair_front_R",
+      "group": "hair",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_R.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1015,
+        282,
+        1306,
+        630
+      ],
+      "alpha_coverage": 0.01713395,
+      "sha256": "03d973881c2267b4893c7f6bcd4c5649cdf785c13a70a055a8e02511a050c211",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "hair_front_side_L",
+      "group": "hair",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_side_L.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        715,
+        385,
+        907,
+        885
+      ],
+      "alpha_coverage": 0.01118851,
+      "sha256": "6a2b6d6a7ecbfb79a053e0d6ed86b9d4256e5b08f4964c8ef22c9f92f5d16e0f",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "hair_front_side_R",
+      "group": "hair",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_side_R.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1225,
+        385,
+        1348,
+        885
+      ],
+      "alpha_coverage": 0.0070703,
+      "sha256": "423ce5e73afacfd2179c479d986475f6593557309ee5520d427b106ef34ccbee",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "hair_front_tip_L",
+      "group": "hair",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_tip_L.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        698,
+        695,
+        821,
+        1047
+      ],
+      "alpha_coverage": 0.00541162,
+      "sha256": "5da8da803062b10b4a6bd4eb0257d685dee25a82d8267d692c1c2d450ff7cafb",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "hair_front_tip_R",
+      "group": "hair",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_tip_R.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1156,
+        695,
+        1261,
+        1074
+      ],
+      "alpha_coverage": 0.00642014,
+      "sha256": "2a1fcf9eb11a3ef529520e0db5a2a8b046745b5128014091e3810cd999fb21fb",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "hair_side_L_outer",
+      "group": "hair",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_L_outer.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        696,
+        670,
+        737,
+        1151
+      ],
+      "alpha_coverage": 0.00231504,
+      "sha256": "391c462c12e409f92729ad502092b7429205ba1cdea0ab92599049b1648c53fc",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "hair_side_L_inner",
+      "group": "hair",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_L_inner.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        670,
+        712,
+        807,
+        1133
+      ],
+      "alpha_coverage": 0.00722432,
+      "sha256": "b1335eb1d10b43f2413a5ce9206715b6364d2598e741254b9f0e90a92952aebd",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "hair_side_R_outer",
+      "group": "hair",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_R_outer.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1328,
+        675,
+        1509,
+        1190
+      ],
+      "alpha_coverage": 0.01454306,
+      "sha256": "5ad2b89ac21c3cf585b9535a378d7baee0bda46093880b2211b2962822c42f34",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "hair_side_R_inner",
+      "group": "hair",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_R_inner.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1187,
+        712,
+        1319,
+        1159
+      ],
+      "alpha_coverage": 0.01035833,
+      "sha256": "d9db0d578c403b6cb06e699adf92b13169dff6ac45bd64e24a9f762996b48b4a",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "collar_front",
+      "group": "clothing",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/collar_front.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        748,
+        1078,
+        1300,
+        1198
+      ],
+      "alpha_coverage": 0.00627613,
+      "sha256": "e8bee9e83296cddd430e9a7e6182c9ba8f5b86b2e57b20eb178472e12370da17",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "collar_shadow",
+      "group": "clothing",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/collar_shadow.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        753,
+        1178,
+        1295,
+        1269
+      ],
+      "alpha_coverage": 0.00243759,
+      "sha256": "d454cc5e77cc663926d8ba3891b9a1e5888fad2883f420e77967f83303251d05",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "chest_cloth_base",
+      "group": "clothing",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/chest_cloth_base.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        698,
+        1246,
+        1350,
+        1546
+      ],
+      "alpha_coverage": 0.01802492,
+      "sha256": "a85dc5d3c162d6e1ef690f338903117b2eb762f8443708f704577d78beb35729",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "id": "chest_cloth_shadow",
+      "group": "clothing",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/chest_cloth_shadow.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        733,
+        1481,
+        1288,
+        1641
+      ],
+      "alpha_coverage": 0.00590897,
+      "sha256": "4fc1a7999b1563f07dd613fdc268f4b31bed06d7a57f63e6559a7ef9840374f3",
+      "status": "PASS",
+      "issues": []
+    }
+  ],
+  "summary": {
+    "manifest_status": "G1_64PART_CORRECTED_B4_B5_MANIFEST_TECHNICAL_PASS_REVIEW_REQUIRED",
+    "prep_status": "G2_G5_MATERIAL_QA_PREP_PACKET_READY_BLOCKED_BY_CODEX_TRIAGE",
+    "spec_status": "PASS_SPEC_READY_FOR_IMAGE_GENERATION_PLANNING",
+    "required_part_count": 64,
+    "manifest_entry_count": 64,
+    "unique_manifest_part_count": 64,
+    "missing_part_count": 0,
+    "extra_part_count": 0,
+    "duplicate_part_count": 0,
+    "failed_entry_count": 0,
+    "group_counts": {
+      "body": 10,
+      "brow": 2,
+      "clothing": 4,
+      "eye_L": 8,
+      "eye_R": 8,
+      "face_base": 8,
+      "hair": 16,
+      "mouth": 8
+    },
+    "source_batch_counts": {
+      "B1": 9,
+      "B2": 14,
+      "B3_REVISION_V1": 8,
+      "B4": 16,
+      "B5": 17
+    },
+    "draw_order_band_counts": {
+      "body_back": 4,
+      "body_front": 2,
+      "body_mid": 4,
+      "brow_front": 2,
+      "clothing_front": 2,
+      "clothing_mid": 2,
+      "eye_back": 4,
+      "eye_front": 8,
+      "eye_mid": 4,
+      "face_back": 2,
+      "face_front": 5,
+      "face_mid": 1,
+      "hair_back": 5,
+      "hair_front": 7,
+      "hair_side": 4,
+      "mouth_back": 1,
+      "mouth_front": 5,
+      "mouth_mid": 2
+    },
+    "forbidden_reuse_path_hit_count": 0,
+    "sha256_recorded_count": 64,
+    "material_pass_status": "BLOCKED",
+    "param_hair_front_status": "HIDDEN_CONTRACT_ONLY",
+    "g3_visual_overlay_status": "BLOCKED_REVIEW_REQUIRED",
+    "g4_psd_import_prep_status": "PREP_ONLY_BLOCKED",
+    "g5_material_acceptance_status": "BLOCKED",
+    "g7_mini_cubism_status": "BLOCKED",
+    "g8_real_cubism_status": "BLOCKED"
+  },
+  "lock_checks": {
+    "active_controls_match_v21_supported_subset": true,
+    "param_hair_front_hidden": true,
+    "eye_open_027_policy_present": true,
+    "mouth_open_085_policy_present": true,
+    "mini_cubism_not_real_cubism": true
+  },
+  "errors": [],
+  "warnings": [],
+  "decision": "G2 layer-manifest technical QA passes for the corrected 64-part manifest, but this is technical evidence only. It does not promote visual QA, material acceptance, Mini Cubism, or real Cubism.",
+  "next_action": [
+    "Keep G3 visual overlay QA blocked until B4/B5 hard and hold review rows are resolved.",
+    "Do not build/promote import_ready.psd from this QA alone.",
+    "Keep ParamHairFront hidden and G7/G8 blocked."
+  ],
+  "self_review": {
+    "all_required_parts_present": true,
+    "no_extra_parts": true,
+    "no_duplicate_ids": true,
+    "all_entries_pass": true,
+    "group_counts_match_spec": true,
+    "forbidden_reuse_path_hit_count": 0,
+    "sha256_recorded_count": 64,
+    "lock_checks_all_pass": true,
+    "material_pass_blocked": true,
+    "visual_promotion_blocked": true,
+    "param_hair_front_hidden": true,
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true,
+    "status": "PASS"
+  }
+}

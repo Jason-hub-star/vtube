@@ -1,0 +1,314 @@
+{
+  "schema_version": 1,
+  "experiment_id": "imagen-live2d-001",
+  "generated_at": "2026-06-04T08:46:26.316463+00:00",
+  "status": "PASS_WITH_CUBISM_IMPORT",
+  "source_manifest": "experiments/imagen-live2d-001/layer_manifest.json",
+  "source_review": "experiments/imagen-live2d-001/reports/part_visual_review.json",
+  "gate": {
+    "accepted_verdict": "O",
+    "require_production_candidate": true,
+    "excluded_verdicts": [
+      "X",
+      "REVISE",
+      "REFERENCE_ONLY",
+      "UNREVIEWED"
+    ]
+  },
+  "accepted_layer_count": 19,
+  "excluded_layer_count": 13,
+  "accepted_layers": [
+    {
+      "part_id": "back_hair",
+      "raw_tag": "back hair",
+      "output_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/psd_candidate_layers/back_hair.png",
+      "draw_order": 100
+    },
+    {
+      "part_id": "neck",
+      "raw_tag": "neck",
+      "output_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/psd_candidate_layers/neck.png",
+      "draw_order": 200
+    },
+    {
+      "part_id": "clothes",
+      "raw_tag": "topwear",
+      "output_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/psd_candidate_layers/clothes.png",
+      "draw_order": 210
+    },
+    {
+      "part_id": "R_arm",
+      "raw_tag": "manual_mask:forced_R_arm_from_handwear_r",
+      "output_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/psd_candidate_layers/R_arm.png",
+      "draw_order": 220
+    },
+    {
+      "part_id": "L_arm",
+      "raw_tag": "manual_mask:forced_L_arm_from_handwear_l",
+      "output_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/psd_candidate_layers/L_arm.png",
+      "draw_order": 220
+    },
+    {
+      "part_id": "choker",
+      "raw_tag": "neckwear",
+      "output_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/psd_candidate_layers/choker.png",
+      "draw_order": 314
+    },
+    {
+      "part_id": "R_ear_outer",
+      "raw_tag": "ears-r",
+      "output_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/psd_candidate_layers/R_ear_outer.png",
+      "draw_order": 315
+    },
+    {
+      "part_id": "L_ear_outer",
+      "raw_tag": "ears-l",
+      "output_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/psd_candidate_layers/L_ear_outer.png",
+      "draw_order": 316
+    },
+    {
+      "part_id": "face_base",
+      "raw_tag": "face",
+      "output_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/psd_candidate_layers/face_base.png",
+      "draw_order": 318
+    },
+    {
+      "part_id": "mouth_line",
+      "raw_tag": "mouth",
+      "output_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/psd_candidate_layers/mouth_line.png",
+      "draw_order": 410
+    },
+    {
+      "part_id": "R_eye_white",
+      "raw_tag": "eyewhite-r",
+      "output_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/psd_candidate_layers/R_eye_white.png",
+      "draw_order": 500
+    },
+    {
+      "part_id": "L_eye_white",
+      "raw_tag": "eyewhite-l",
+      "output_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/psd_candidate_layers/L_eye_white.png",
+      "draw_order": 500
+    },
+    {
+      "part_id": "R_iris",
+      "raw_tag": "irides-r",
+      "output_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/psd_candidate_layers/R_iris.png",
+      "draw_order": 510
+    },
+    {
+      "part_id": "L_iris",
+      "raw_tag": "irides-l",
+      "output_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/psd_candidate_layers/L_iris.png",
+      "draw_order": 510
+    },
+    {
+      "part_id": "R_upper_lash",
+      "raw_tag": "eyelash-r",
+      "output_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/psd_candidate_layers/R_upper_lash.png",
+      "draw_order": 530
+    },
+    {
+      "part_id": "L_upper_lash",
+      "raw_tag": "eyelash-l",
+      "output_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/psd_candidate_layers/L_upper_lash.png",
+      "draw_order": 530
+    },
+    {
+      "part_id": "R_brow",
+      "raw_tag": "eyebrow-r",
+      "output_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/psd_candidate_layers/R_brow.png",
+      "draw_order": 540
+    },
+    {
+      "part_id": "L_brow",
+      "raw_tag": "eyebrow-l",
+      "output_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/psd_candidate_layers/L_brow.png",
+      "draw_order": 540
+    },
+    {
+      "part_id": "front_hair",
+      "raw_tag": "manual_mask:forced_front_hair_from_canonical",
+      "output_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/psd_candidate_layers/front_hair.png",
+      "draw_order": 700
+    }
+  ],
+  "excluded_layers": [
+    {
+      "part_id": "imagen_live2d_001__raw_bottomwear",
+      "original_part_id": "raw_bottomwear",
+      "raw_tag": "bottomwear",
+      "verdict": "O",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__raw_bottomwear.png"
+    },
+    {
+      "part_id": "imagen_live2d_001__raw_legwear",
+      "original_part_id": "raw_legwear",
+      "raw_tag": "legwear",
+      "verdict": "O",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__raw_legwear.png"
+    },
+    {
+      "part_id": "imagen_live2d_001__raw_footwear",
+      "original_part_id": "raw_footwear",
+      "raw_tag": "footwear",
+      "verdict": "O",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__raw_footwear.png"
+    },
+    {
+      "part_id": "imagen_live2d_001__tail_reference",
+      "original_part_id": "tail_reference",
+      "raw_tag": "tail",
+      "verdict": "O",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__tail_reference.png"
+    },
+    {
+      "part_id": "imagen_live2d_001__wings_reference",
+      "original_part_id": "wings_reference",
+      "raw_tag": "wings",
+      "verdict": "O",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__wings_reference.png"
+    },
+    {
+      "part_id": "imagen_live2d_001__object_reference",
+      "original_part_id": "object_reference",
+      "raw_tag": "objects",
+      "verdict": "O",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__object_reference.png"
+    },
+    {
+      "part_id": "imagen_live2d_001__raw_eyewear",
+      "original_part_id": "raw_eyewear",
+      "raw_tag": "eyewear",
+      "verdict": "O",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__raw_eyewear.png"
+    },
+    {
+      "part_id": "imagen_live2d_001__raw_handwear",
+      "original_part_id": "raw_handwear",
+      "raw_tag": "handwear-r",
+      "verdict": "O",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__raw_handwear.png"
+    },
+    {
+      "part_id": "imagen_live2d_001__raw_handwear_11",
+      "original_part_id": "raw_handwear",
+      "raw_tag": "handwear-l",
+      "verdict": "O",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__raw_handwear_11.png"
+    },
+    {
+      "part_id": "imagen_live2d_001__ear_inner",
+      "original_part_id": "ear_inner",
+      "raw_tag": "earwear",
+      "verdict": "O",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__ear_inner.png"
+    },
+    {
+      "part_id": "imagen_live2d_001__nose_reference",
+      "original_part_id": "nose_reference",
+      "raw_tag": "nose",
+      "verdict": "O",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__nose_reference.png"
+    },
+    {
+      "part_id": "imagen_live2d_001__headwear_reference",
+      "original_part_id": "headwear_reference",
+      "raw_tag": "headwear",
+      "verdict": "O",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__headwear_reference.png"
+    },
+    {
+      "part_id": "imagen_live2d_001__front_hair",
+      "original_part_id": "front_hair",
+      "raw_tag": "front hair",
+      "verdict": "O",
+      "production_candidate": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__front_hair.png",
+      "exclude_reason": "duplicate_lower_priority_candidate"
+    }
+  ],
+  "psd_writer": "psd-tools",
+  "psd_candidate": "experiments/imagen-live2d-001/import_ready_candidate.psd",
+  "import_ready_psd": "experiments/imagen-live2d-001/import_ready.psd",
+  "psd_metadata": {
+    "exists": true,
+    "valid_header": true,
+    "channels": 3,
+    "width": 2048,
+    "height": 2048,
+    "depth": 8,
+    "color_mode": "RGB",
+    "layer_mask_section_length": 10561556,
+    "layer_count": 19
+  },
+  "cubism_import_smoke": {
+    "schema_version": 1,
+    "experiment_id": "imagen-live2d-001",
+    "date": "2026-06-04T08:45:30Z",
+    "cubism_version": "Live2D Cubism Editor 5.3.01",
+    "input_psd": "experiments/imagen-live2d-001/import_ready_candidate.psd",
+    "cubism_import_success": true,
+    "layers_flattened": false,
+    "forced_all_o_review": true,
+    "forced_front_hair_arms": true,
+    "review_gate_note": "주인님 지시로 모든 후보를 임시 O 처리했고, 추가로 앞머리와 양팔도 강제 production 후보로 승격했다. 이 결과는 Cubism import 기술 smoke PASS이며, 파츠 품질 최종 승인이나 리깅 품질 PASS는 아니다.",
+    "psd_gate_accepted_layer_count": 19,
+    "psd_actual_layer_count": 19,
+    "cubism_visible_layer_count": 19,
+    "forced_layers_included": [
+      "front_hair",
+      "R_arm",
+      "L_arm"
+    ],
+    "visible_layer_evidence": [
+      "front_hair",
+      "L_brow",
+      "R_brow",
+      "L_upper_lash",
+      "R_upper_lash",
+      "L_iris",
+      "R_iris",
+      "L_eye_white",
+      "R_eye_white",
+      "mouth_line",
+      "face_base",
+      "L_ear_outer",
+      "R_ear_outer",
+      "choker",
+      "L_arm",
+      "R_arm",
+      "clothes",
+      "neck",
+      "back_hair"
+    ],
+    "known_quality_risks": [
+      "front_hair is a forced extraction from the canonical image because the original See-through front hair layer was zero-alpha.",
+      "L_arm and R_arm are forced from See-through handwear-r/l outputs and may represent sleeves/arm-side silhouette rather than clean anatomical arms.",
+      "mouth_line is accepted only by forced-all-O pipeline progress, not by final visual quality review.",
+      "clothes, neck, hair, and face boundaries still need quality review before serious ArtMesh/Deformer work.",
+      "This smoke only proves that the PSD can be opened by Cubism as separate parts."
+    ],
+    "evidence_screenshot": "experiments/imagen-live2d-001/reports/cubism_smoke_evidence/cubism_import_candidate_forced_front_hair_arms_19_layer_attempt.png",
+    "reviewer": "Codex screenshot smoke",
+    "notes": [
+      "Cubism Editor 5.3.01 opened the rebuilt import_ready_candidate.psd.",
+      "The left Parts panel shows individual layer entries including front_hair, L_arm, and R_arm, so the PSD was not flattened.",
+      "PSD metadata check found RGB 8-bit canvas and 19 concrete PSD child layers.",
+      "This is a forced MVP pass for pipeline progression, not a final art-quality pass."
+    ]
+  },
+  "cubism_gate_note": "Cubism Editor actual import has passed and import_ready.psd may be trusted."
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS_G1_6_SEMANTIC_ANCHOR_EDITOR_SMOKE",
+  "items": 62,
+  "saved_then_deleted_part": "eye_L_pupil",
+  "save_path": "experiments/cubism-v2-new-character-001/material_pack_v0/reports/manual_semantic_overrides.json",
+  "summary_path": "experiments/cubism-v2-new-character-001/material_pack_v0/reports/manual_semantic_overrides_summary.md",
+  "checks": {
+    "api_state": true,
+    "api_save": true,
+    "api_delete": true
+  },
+  "artifacts": {
+    "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/g1_6_semantic_anchor_editor.png"
+  }
+}

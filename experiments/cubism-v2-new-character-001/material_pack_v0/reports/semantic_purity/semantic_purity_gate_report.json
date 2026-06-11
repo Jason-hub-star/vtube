@@ -1,0 +1,1657 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-08T08:06:15.711792+00:00",
+  "status": "PASS_G1_5_SEMANTIC_PURITY_GATE",
+  "apply_remask": true,
+  "source_manifest": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/layer_manifest.before_semantic_repair_v1.json",
+  "active_manifest": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/layer_manifest.json",
+  "rois": {
+    "eye_L": [
+      833,
+      767,
+      216,
+      166
+    ],
+    "eye_R": [
+      1063,
+      767,
+      216,
+      166
+    ],
+    "mouth": [
+      918,
+      955,
+      227,
+      124
+    ]
+  },
+  "neutral_scores": {
+    "before_semantic_repair": {
+      "visible_pixels": 829101,
+      "bad_pixels": 0,
+      "bad_ratio_visible": 0.0,
+      "missing_pixels": 0,
+      "extra_pixels": 0
+    },
+    "after_semantic_repair": {
+      "visible_pixels": 829101,
+      "bad_pixels": 18,
+      "bad_ratio_visible": 2.2e-05,
+      "missing_pixels": 0,
+      "extra_pixels": 0
+    }
+  },
+  "semantic_owner": {
+    "before": {
+      "semantic_colors": {
+        "body": [
+          67,
+          133,
+          255,
+          230
+        ],
+        "hair": [
+          151,
+          93,
+          74,
+          230
+        ],
+        "face": [
+          255,
+          184,
+          162,
+          230
+        ],
+        "eye": [
+          120,
+          92,
+          255,
+          230
+        ],
+        "brow": [
+          99,
+          69,
+          55,
+          230
+        ],
+        "mouth": [
+          230,
+          66,
+          110,
+          230
+        ],
+        "clothing": [
+          255,
+          204,
+          71,
+          230
+        ],
+        "underpaint": [
+          96,
+          201,
+          145,
+          230
+        ],
+        "metadata": [
+          130,
+          130,
+          130,
+          230
+        ],
+        "unknown": [
+          220,
+          220,
+          220,
+          230
+        ]
+      },
+      "top_owner_pixels_by_group": {
+        "underpaint": 76826,
+        "body": 213355,
+        "brow": 13181,
+        "face": 109924,
+        "clothing": 130941,
+        "eye": 9351,
+        "hair": 274394,
+        "mouth": 1040
+      },
+      "top_owner_pixels_by_part": {
+        "chest_cloth_base": 118711,
+        "arm_L_upper_simple": 86657,
+        "face_base": 84811,
+        "hair_back_underpaint": 68729,
+        "hair_front_side_R": 66113,
+        "hair_front_side_L": 62273,
+        "arm_R_upper_simple": 61997,
+        "hair_front_R": 31435,
+        "torso_base": 31133,
+        "hair_front_L": 25582,
+        "hair_front_tip_R": 20635,
+        "hair_front_tip_L": 20457,
+        "hair_front_center": 17460,
+        "neck": 13405,
+        "hair_back_center": 12643,
+        "collar_front": 12230,
+        "shoulder_R": 12172,
+        "face_shadow_R": 11695,
+        "face_shadow_L": 10245,
+        "shoulder_L": 7991,
+        "brow_R": 6625,
+        "brow_L": 6556,
+        "hair_side_L_outer": 5845,
+        "hair_side_R_outer": 5110,
+        "eye_R_upper_lash": 3325,
+        "nose": 3154,
+        "eye_L_upper_lash": 2934,
+        "hair_back_base": 2570,
+        "hair_side_L_inner": 2186,
+        "hair_side_R_inner": 2085,
+        "arm_L_underpaint": 1962,
+        "face_underpaint_R": 1954,
+        "face_underpaint_L": 1764,
+        "body_underpaint": 1686,
+        "eye_L_lower_lash": 1330,
+        "mouth_line": 1040,
+        "eye_R_lower_lash": 566,
+        "eye_L_white": 511,
+        "arm_R_underpaint": 403,
+        "eye_L_underpaint": 220,
+        "eye_L_iris": 212,
+        "eye_R_white": 174,
+        "eye_R_iris": 169,
+        "eye_R_underpaint": 108,
+        "eye_L_pupil": 70,
+        "eye_R_pupil": 36,
+        "cheek_R": 18,
+        "eye_L_highlight": 18,
+        "eye_R_highlight": 6,
+        "cheek_L": 1
+      }
+    },
+    "after": {
+      "semantic_colors": {
+        "body": [
+          67,
+          133,
+          255,
+          230
+        ],
+        "hair": [
+          151,
+          93,
+          74,
+          230
+        ],
+        "face": [
+          255,
+          184,
+          162,
+          230
+        ],
+        "eye": [
+          120,
+          92,
+          255,
+          230
+        ],
+        "brow": [
+          99,
+          69,
+          55,
+          230
+        ],
+        "mouth": [
+          230,
+          66,
+          110,
+          230
+        ],
+        "clothing": [
+          255,
+          204,
+          71,
+          230
+        ],
+        "underpaint": [
+          96,
+          201,
+          145,
+          230
+        ],
+        "metadata": [
+          130,
+          130,
+          130,
+          230
+        ],
+        "unknown": [
+          220,
+          220,
+          220,
+          230
+        ]
+      },
+      "top_owner_pixels_by_group": {
+        "body": 217406,
+        "brow": 13181,
+        "face": 113642,
+        "clothing": 130941,
+        "eye": 9679,
+        "hair": 343123,
+        "mouth": 1040
+      },
+      "top_owner_pixels_by_part": {
+        "chest_cloth_base": 118711,
+        "arm_L_upper_simple": 88619,
+        "face_base": 88529,
+        "hair_back_base": 71299,
+        "hair_front_side_R": 66113,
+        "arm_R_upper_simple": 62400,
+        "hair_front_side_L": 62273,
+        "torso_base": 32819,
+        "hair_front_R": 31435,
+        "hair_front_L": 25582,
+        "hair_front_tip_R": 20635,
+        "hair_front_tip_L": 20457,
+        "hair_front_center": 17460,
+        "neck": 13405,
+        "hair_back_center": 12643,
+        "collar_front": 12230,
+        "shoulder_R": 12172,
+        "face_shadow_R": 11695,
+        "face_shadow_L": 10245,
+        "shoulder_L": 7991,
+        "brow_R": 6625,
+        "brow_L": 6556,
+        "hair_side_L_outer": 5845,
+        "hair_side_R_outer": 5110,
+        "eye_R_upper_lash": 3325,
+        "nose": 3154,
+        "eye_L_upper_lash": 2934,
+        "hair_side_L_inner": 2186,
+        "hair_side_R_inner": 2085,
+        "eye_L_lower_lash": 1330,
+        "mouth_line": 1040,
+        "eye_L_white": 731,
+        "eye_R_lower_lash": 566,
+        "eye_R_white": 282,
+        "eye_L_iris": 212,
+        "eye_R_iris": 169,
+        "eye_L_pupil": 70,
+        "eye_R_pupil": 36,
+        "cheek_R": 18,
+        "eye_L_highlight": 18,
+        "eye_R_highlight": 6,
+        "cheek_L": 1
+      }
+    }
+  },
+  "underpaint_leakage": {
+    "before": {
+      "stage": "before",
+      "total_underpaint_top_owner_pixels": 76826,
+      "rows": [
+        {
+          "part_id": "hair_back_underpaint",
+          "stage": "before",
+          "alpha_pixels": 383832,
+          "neutral_top_owner_pixels": 68729,
+          "top_owner_ratio_of_alpha": 0.17906,
+          "target_part": "hair_back_base",
+          "status": "REPAIR_UNDERPAINT"
+        },
+        {
+          "part_id": "arm_L_underpaint",
+          "stage": "before",
+          "alpha_pixels": 54644,
+          "neutral_top_owner_pixels": 1962,
+          "top_owner_ratio_of_alpha": 0.035905,
+          "target_part": "arm_L_upper_simple",
+          "status": "REPAIR_UNDERPAINT"
+        },
+        {
+          "part_id": "face_underpaint_R",
+          "stage": "before",
+          "alpha_pixels": 41887,
+          "neutral_top_owner_pixels": 1954,
+          "top_owner_ratio_of_alpha": 0.046649,
+          "target_part": "face_base",
+          "status": "REPAIR_UNDERPAINT"
+        },
+        {
+          "part_id": "face_underpaint_L",
+          "stage": "before",
+          "alpha_pixels": 41291,
+          "neutral_top_owner_pixels": 1764,
+          "top_owner_ratio_of_alpha": 0.042721,
+          "target_part": "face_base",
+          "status": "REPAIR_UNDERPAINT"
+        },
+        {
+          "part_id": "body_underpaint",
+          "stage": "before",
+          "alpha_pixels": 57837,
+          "neutral_top_owner_pixels": 1686,
+          "top_owner_ratio_of_alpha": 0.029151,
+          "target_part": "torso_base",
+          "status": "REPAIR_UNDERPAINT"
+        },
+        {
+          "part_id": "arm_R_underpaint",
+          "stage": "before",
+          "alpha_pixels": 29992,
+          "neutral_top_owner_pixels": 403,
+          "top_owner_ratio_of_alpha": 0.013437,
+          "target_part": "arm_R_upper_simple",
+          "status": "REPAIR_UNDERPAINT"
+        },
+        {
+          "part_id": "eye_L_underpaint",
+          "stage": "before",
+          "alpha_pixels": 2074,
+          "neutral_top_owner_pixels": 220,
+          "top_owner_ratio_of_alpha": 0.106075,
+          "target_part": "eye_L_white",
+          "status": "REPAIR_UNDERPAINT"
+        },
+        {
+          "part_id": "eye_R_underpaint",
+          "stage": "before",
+          "alpha_pixels": 5313,
+          "neutral_top_owner_pixels": 108,
+          "top_owner_ratio_of_alpha": 0.020327,
+          "target_part": "eye_R_white",
+          "status": "REPAIR_UNDERPAINT"
+        },
+        {
+          "part_id": "neck_shadow_underpaint",
+          "stage": "before",
+          "alpha_pixels": 1863,
+          "neutral_top_owner_pixels": 0,
+          "top_owner_ratio_of_alpha": 0.0,
+          "target_part": "neck",
+          "status": "PASS"
+        }
+      ]
+    },
+    "after": {
+      "stage": "after",
+      "total_underpaint_top_owner_pixels": 0,
+      "rows": [
+        {
+          "part_id": "body_underpaint",
+          "stage": "after",
+          "alpha_pixels": 56151,
+          "neutral_top_owner_pixels": 0,
+          "top_owner_ratio_of_alpha": 0.0,
+          "target_part": "torso_base",
+          "status": "PASS"
+        },
+        {
+          "part_id": "neck_shadow_underpaint",
+          "stage": "after",
+          "alpha_pixels": 1863,
+          "neutral_top_owner_pixels": 0,
+          "top_owner_ratio_of_alpha": 0.0,
+          "target_part": "neck",
+          "status": "PASS"
+        },
+        {
+          "part_id": "arm_L_underpaint",
+          "stage": "after",
+          "alpha_pixels": 52682,
+          "neutral_top_owner_pixels": 0,
+          "top_owner_ratio_of_alpha": 0.0,
+          "target_part": "arm_L_upper_simple",
+          "status": "PASS"
+        },
+        {
+          "part_id": "arm_R_underpaint",
+          "stage": "after",
+          "alpha_pixels": 29589,
+          "neutral_top_owner_pixels": 0,
+          "top_owner_ratio_of_alpha": 0.0,
+          "target_part": "arm_R_upper_simple",
+          "status": "PASS"
+        },
+        {
+          "part_id": "hair_back_underpaint",
+          "stage": "after",
+          "alpha_pixels": 315103,
+          "neutral_top_owner_pixels": 0,
+          "top_owner_ratio_of_alpha": 0.0,
+          "target_part": "hair_back_base",
+          "status": "PASS"
+        },
+        {
+          "part_id": "face_underpaint_L",
+          "stage": "after",
+          "alpha_pixels": 39527,
+          "neutral_top_owner_pixels": 0,
+          "top_owner_ratio_of_alpha": 0.0,
+          "target_part": "face_base",
+          "status": "PASS"
+        },
+        {
+          "part_id": "face_underpaint_R",
+          "stage": "after",
+          "alpha_pixels": 39933,
+          "neutral_top_owner_pixels": 0,
+          "top_owner_ratio_of_alpha": 0.0,
+          "target_part": "face_base",
+          "status": "PASS"
+        },
+        {
+          "part_id": "eye_L_underpaint",
+          "stage": "after",
+          "alpha_pixels": 1854,
+          "neutral_top_owner_pixels": 0,
+          "top_owner_ratio_of_alpha": 0.0,
+          "target_part": "eye_L_white",
+          "status": "PASS"
+        },
+        {
+          "part_id": "eye_R_underpaint",
+          "stage": "after",
+          "alpha_pixels": 5205,
+          "neutral_top_owner_pixels": 0,
+          "top_owner_ratio_of_alpha": 0.0,
+          "target_part": "eye_R_white",
+          "status": "PASS"
+        }
+      ]
+    }
+  },
+  "eye_mouth_alignment": {
+    "before": {
+      "status": "PASS",
+      "rois": {
+        "eye_L": [
+          833,
+          767,
+          216,
+          166
+        ],
+        "eye_R": [
+          1063,
+          767,
+          216,
+          166
+        ],
+        "mouth": [
+          918,
+          955,
+          227,
+          124
+        ]
+      },
+      "checks": [
+        {
+          "part_id": "eye_L_white",
+          "status": "PASS",
+          "bbox": [
+            878,
+            805,
+            148,
+            92
+          ],
+          "center": [
+            952.0,
+            851.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 811
+        },
+        {
+          "part_id": "eye_L_iris",
+          "status": "PASS",
+          "bbox": [
+            916,
+            847,
+            72,
+            48
+          ],
+          "center": [
+            952.0,
+            871.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 564
+        },
+        {
+          "part_id": "eye_L_pupil",
+          "status": "PASS",
+          "bbox": [
+            936,
+            847,
+            36,
+            23
+          ],
+          "center": [
+            954.0,
+            858.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 70
+        },
+        {
+          "part_id": "eye_L_highlight",
+          "status": "PASS",
+          "bbox": [
+            965,
+            847,
+            8,
+            15
+          ],
+          "center": [
+            969.0,
+            854.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 18
+        },
+        {
+          "part_id": "eye_L_upper_lash",
+          "status": "PASS",
+          "bbox": [
+            851,
+            785,
+            180,
+            62
+          ],
+          "center": [
+            941.0,
+            816.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 6744
+        },
+        {
+          "part_id": "eye_L_lower_lash",
+          "status": "PASS",
+          "bbox": [
+            871,
+            870,
+            140,
+            45
+          ],
+          "center": [
+            941.0,
+            892.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 4415
+        },
+        {
+          "part_id": "eye_L_closed_lid",
+          "status": "PASS",
+          "bbox": [
+            870,
+            823,
+            143,
+            53
+          ],
+          "center": [
+            941.5,
+            849.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 1748
+        },
+        {
+          "part_id": "eye_L_iris",
+          "relation": "inside_eye_white_with_margin",
+          "status": "PASS"
+        },
+        {
+          "part_id": "eye_L_pupil",
+          "relation": "inside_eye_white_with_margin",
+          "status": "PASS"
+        },
+        {
+          "part_id": "eye_R_white",
+          "status": "PASS",
+          "bbox": [
+            1091,
+            805,
+            91,
+            95
+          ],
+          "center": [
+            1136.5,
+            852.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 589
+        },
+        {
+          "part_id": "eye_R_iris",
+          "status": "PASS",
+          "bbox": [
+            1131,
+            820,
+            72,
+            75
+          ],
+          "center": [
+            1167.0,
+            857.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 3732
+        },
+        {
+          "part_id": "eye_R_pupil",
+          "status": "PASS",
+          "bbox": [
+            1151,
+            840,
+            36,
+            40
+          ],
+          "center": [
+            1169.0,
+            860.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 1206
+        },
+        {
+          "part_id": "eye_R_highlight",
+          "status": "PASS",
+          "bbox": [
+            1161,
+            835,
+            25,
+            27
+          ],
+          "center": [
+            1173.5,
+            848.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 364
+        },
+        {
+          "part_id": "eye_R_upper_lash",
+          "status": "PASS",
+          "bbox": [
+            1081,
+            785,
+            180,
+            62
+          ],
+          "center": [
+            1171.0,
+            816.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 10286
+        },
+        {
+          "part_id": "eye_R_lower_lash",
+          "status": "PASS",
+          "bbox": [
+            1101,
+            870,
+            140,
+            45
+          ],
+          "center": [
+            1171.0,
+            892.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 5863
+        },
+        {
+          "part_id": "eye_R_closed_lid",
+          "status": "PASS",
+          "bbox": [
+            1100,
+            823,
+            143,
+            53
+          ],
+          "center": [
+            1171.5,
+            849.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 1758
+        },
+        {
+          "part_id": "eye_R_iris",
+          "relation": "inside_eye_white_with_margin",
+          "status": "PASS"
+        },
+        {
+          "part_id": "eye_R_pupil",
+          "relation": "inside_eye_white_with_margin",
+          "status": "PASS"
+        },
+        {
+          "part_id": "mouth_line",
+          "status": "PASS",
+          "bbox": [
+            970,
+            1019,
+            124,
+            25
+          ],
+          "center": [
+            1032.0,
+            1031.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 1040
+        },
+        {
+          "part_id": "mouth_inner",
+          "status": "PASS",
+          "bbox": [
+            976,
+            997,
+            111,
+            61
+          ],
+          "center": [
+            1031.5,
+            1027.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 5287
+        },
+        {
+          "part_id": "mouth_teeth",
+          "status": "PASS",
+          "bbox": [
+            990,
+            1000,
+            85,
+            15
+          ],
+          "center": [
+            1032.5,
+            1007.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 1215
+        },
+        {
+          "part_id": "mouth_tongue",
+          "status": "PASS",
+          "bbox": [
+            1000,
+            1029,
+            65,
+            27
+          ],
+          "center": [
+            1032.5,
+            1042.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 1371
+        },
+        {
+          "part_id": "mouth_upper_lip_mask",
+          "status": "PASS",
+          "bbox": [
+            976,
+            975,
+            111,
+            21
+          ],
+          "center": [
+            1031.5,
+            985.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 661
+        },
+        {
+          "part_id": "mouth_lower_lip_mask",
+          "status": "PASS",
+          "bbox": [
+            979,
+            1038,
+            104,
+            21
+          ],
+          "center": [
+            1031.0,
+            1048.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 621
+        },
+        {
+          "part_id": "mouth_corner_L",
+          "status": "PASS",
+          "bbox": [
+            938,
+            1001,
+            12,
+            30
+          ],
+          "center": [
+            944.0,
+            1016.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 170
+        },
+        {
+          "part_id": "mouth_corner_R",
+          "status": "PASS",
+          "bbox": [
+            1113,
+            1001,
+            12,
+            30
+          ],
+          "center": [
+            1119.0,
+            1016.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 173
+        }
+      ]
+    },
+    "after": {
+      "status": "PASS",
+      "rois": {
+        "eye_L": [
+          833,
+          767,
+          216,
+          166
+        ],
+        "eye_R": [
+          1063,
+          767,
+          216,
+          166
+        ],
+        "mouth": [
+          918,
+          955,
+          227,
+          124
+        ]
+      },
+      "checks": [
+        {
+          "part_id": "eye_L_white",
+          "status": "PASS",
+          "bbox": [
+            878,
+            805,
+            148,
+            92
+          ],
+          "center": [
+            952.0,
+            851.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 1028
+        },
+        {
+          "part_id": "eye_L_iris",
+          "status": "PASS",
+          "bbox": [
+            916,
+            847,
+            72,
+            48
+          ],
+          "center": [
+            952.0,
+            871.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 564
+        },
+        {
+          "part_id": "eye_L_pupil",
+          "status": "PASS",
+          "bbox": [
+            936,
+            847,
+            36,
+            23
+          ],
+          "center": [
+            954.0,
+            858.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 70
+        },
+        {
+          "part_id": "eye_L_highlight",
+          "status": "PASS",
+          "bbox": [
+            965,
+            847,
+            8,
+            15
+          ],
+          "center": [
+            969.0,
+            854.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 18
+        },
+        {
+          "part_id": "eye_L_upper_lash",
+          "status": "PASS",
+          "bbox": [
+            851,
+            785,
+            180,
+            62
+          ],
+          "center": [
+            941.0,
+            816.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 6744
+        },
+        {
+          "part_id": "eye_L_lower_lash",
+          "status": "PASS",
+          "bbox": [
+            871,
+            870,
+            140,
+            45
+          ],
+          "center": [
+            941.0,
+            892.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 4415
+        },
+        {
+          "part_id": "eye_L_closed_lid",
+          "status": "PASS",
+          "bbox": [
+            870,
+            823,
+            143,
+            53
+          ],
+          "center": [
+            941.5,
+            849.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 1748
+        },
+        {
+          "part_id": "eye_L_iris",
+          "relation": "inside_eye_white_with_margin",
+          "status": "PASS"
+        },
+        {
+          "part_id": "eye_L_pupil",
+          "relation": "inside_eye_white_with_margin",
+          "status": "PASS"
+        },
+        {
+          "part_id": "eye_R_white",
+          "status": "PASS",
+          "bbox": [
+            1091,
+            805,
+            91,
+            95
+          ],
+          "center": [
+            1136.5,
+            852.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 697
+        },
+        {
+          "part_id": "eye_R_iris",
+          "status": "PASS",
+          "bbox": [
+            1131,
+            820,
+            72,
+            75
+          ],
+          "center": [
+            1167.0,
+            857.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 3732
+        },
+        {
+          "part_id": "eye_R_pupil",
+          "status": "PASS",
+          "bbox": [
+            1151,
+            840,
+            36,
+            40
+          ],
+          "center": [
+            1169.0,
+            860.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 1206
+        },
+        {
+          "part_id": "eye_R_highlight",
+          "status": "PASS",
+          "bbox": [
+            1161,
+            835,
+            25,
+            27
+          ],
+          "center": [
+            1173.5,
+            848.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 364
+        },
+        {
+          "part_id": "eye_R_upper_lash",
+          "status": "PASS",
+          "bbox": [
+            1081,
+            785,
+            180,
+            62
+          ],
+          "center": [
+            1171.0,
+            816.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 10286
+        },
+        {
+          "part_id": "eye_R_lower_lash",
+          "status": "PASS",
+          "bbox": [
+            1101,
+            870,
+            140,
+            45
+          ],
+          "center": [
+            1171.0,
+            892.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 5863
+        },
+        {
+          "part_id": "eye_R_closed_lid",
+          "status": "PASS",
+          "bbox": [
+            1100,
+            823,
+            143,
+            53
+          ],
+          "center": [
+            1171.5,
+            849.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 1758
+        },
+        {
+          "part_id": "eye_R_iris",
+          "relation": "inside_eye_white_with_margin",
+          "status": "PASS"
+        },
+        {
+          "part_id": "eye_R_pupil",
+          "relation": "inside_eye_white_with_margin",
+          "status": "PASS"
+        },
+        {
+          "part_id": "mouth_line",
+          "status": "PASS",
+          "bbox": [
+            970,
+            1019,
+            124,
+            25
+          ],
+          "center": [
+            1032.0,
+            1031.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 1040
+        },
+        {
+          "part_id": "mouth_inner",
+          "status": "PASS",
+          "bbox": [
+            976,
+            997,
+            111,
+            61
+          ],
+          "center": [
+            1031.5,
+            1027.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 5287
+        },
+        {
+          "part_id": "mouth_teeth",
+          "status": "PASS",
+          "bbox": [
+            990,
+            1000,
+            85,
+            15
+          ],
+          "center": [
+            1032.5,
+            1007.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 1215
+        },
+        {
+          "part_id": "mouth_tongue",
+          "status": "PASS",
+          "bbox": [
+            1000,
+            1029,
+            65,
+            27
+          ],
+          "center": [
+            1032.5,
+            1042.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 1371
+        },
+        {
+          "part_id": "mouth_upper_lip_mask",
+          "status": "PASS",
+          "bbox": [
+            976,
+            975,
+            111,
+            21
+          ],
+          "center": [
+            1031.5,
+            985.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 661
+        },
+        {
+          "part_id": "mouth_lower_lip_mask",
+          "status": "PASS",
+          "bbox": [
+            979,
+            1038,
+            104,
+            21
+          ],
+          "center": [
+            1031.0,
+            1048.5
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 621
+        },
+        {
+          "part_id": "mouth_corner_L",
+          "status": "PASS",
+          "bbox": [
+            938,
+            1001,
+            12,
+            30
+          ],
+          "center": [
+            944.0,
+            1016.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 170
+        },
+        {
+          "part_id": "mouth_corner_R",
+          "status": "PASS",
+          "bbox": [
+            1113,
+            1001,
+            12,
+            30
+          ],
+          "center": [
+            1119.0,
+            1016.0
+          ],
+          "outside_roi_ratio": 0.0,
+          "alpha_pixels": 173
+        }
+      ]
+    }
+  },
+  "layer_alone_qa": {
+    "total": 62,
+    "before_problem_count": 10,
+    "after_problem_count": 10,
+    "before_problem_rows": [
+      {
+        "part_id": "body_underpaint",
+        "label_ko": "몸 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          803,
+          1200,
+          437,
+          396
+        ],
+        "alpha_pixels": 57837,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "neck_shadow_underpaint",
+        "label_ko": "목 그림자 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          935,
+          1171,
+          172,
+          70
+        ],
+        "alpha_pixels": 1863,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "arm_L_underpaint",
+        "label_ko": "왼팔 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          656,
+          1225,
+          151,
+          436
+        ],
+        "alpha_pixels": 54644,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "arm_R_underpaint",
+        "label_ko": "오른팔 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          1325,
+          1227,
+          92,
+          433
+        ],
+        "alpha_pixels": 29992,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "hair_back_underpaint",
+        "label_ko": "뒷머리 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          699,
+          400,
+          664,
+          860
+        ],
+        "alpha_pixels": 383832,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "face_underpaint_L",
+        "label_ko": "왼쪽 얼굴 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          816,
+          705,
+          205,
+          355
+        ],
+        "alpha_pixels": 41291,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "face_underpaint_R",
+        "label_ko": "오른쪽 얼굴 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          1041,
+          705,
+          205,
+          355
+        ],
+        "alpha_pixels": 41887,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "eye_L_underpaint",
+        "label_ko": "왼쪽 눈 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          871,
+          819,
+          139,
+          70
+        ],
+        "alpha_pixels": 2074,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "eye_R_underpaint",
+        "label_ko": "오른쪽 눈 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          1101,
+          816,
+          139,
+          73
+        ],
+        "alpha_pixels": 5313,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "eye_L_highlight",
+        "label_ko": "왼쪽 눈 하이라이트",
+        "semantic_group": "eye",
+        "source_type": "DERIVED_KEYPOSE",
+        "bbox_actual": [
+          965,
+          847,
+          8,
+          15
+        ],
+        "alpha_pixels": 18,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "tiny_alpha"
+        ],
+        "verdict": "REVIEW"
+      }
+    ],
+    "after_problem_rows": [
+      {
+        "part_id": "body_underpaint",
+        "label_ko": "몸 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          815,
+          1200,
+          413,
+          384
+        ],
+        "alpha_pixels": 56151,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "neck_shadow_underpaint",
+        "label_ko": "목 그림자 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          939,
+          1171,
+          164,
+          66
+        ],
+        "alpha_pixels": 1863,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "arm_L_underpaint",
+        "label_ko": "왼팔 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          662,
+          1232,
+          139,
+          423
+        ],
+        "alpha_pixels": 52682,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "arm_R_underpaint",
+        "label_ko": "오른팔 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          1330,
+          1232,
+          84,
+          423
+        ],
+        "alpha_pixels": 29589,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "hair_back_underpaint",
+        "label_ko": "뒷머리 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          719,
+          400,
+          624,
+          849
+        ],
+        "alpha_pixels": 315103,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "face_underpaint_L",
+        "label_ko": "왼쪽 얼굴 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          817,
+          705,
+          202,
+          349
+        ],
+        "alpha_pixels": 39527,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "face_underpaint_R",
+        "label_ko": "오른쪽 얼굴 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          1043,
+          705,
+          202,
+          349
+        ],
+        "alpha_pixels": 39933,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "eye_L_underpaint",
+        "label_ko": "왼쪽 눈 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          873,
+          821,
+          132,
+          66
+        ],
+        "alpha_pixels": 1854,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "eye_R_underpaint",
+        "label_ko": "오른쪽 눈 밑색",
+        "semantic_group": "underpaint",
+        "source_type": "UNDERPAINT",
+        "bbox_actual": [
+          1127,
+          818,
+          111,
+          69
+        ],
+        "alpha_pixels": 5205,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "check_underpaint_leakage"
+        ],
+        "verdict": "CHECK_UNDERPAINT"
+      },
+      {
+        "part_id": "eye_L_highlight",
+        "label_ko": "왼쪽 눈 하이라이트",
+        "semantic_group": "eye",
+        "source_type": "DERIVED_KEYPOSE",
+        "bbox_actual": [
+          965,
+          847,
+          8,
+          15
+        ],
+        "alpha_pixels": 18,
+        "outside_expected_roi_ratio": 0.0,
+        "issues": [
+          "tiny_alpha"
+        ],
+        "verdict": "REVIEW"
+      }
+    ]
+  },
+  "pass_conditions": {
+    "neutral_after_lte_5pct": true,
+    "underpaint_leakage_reduced": true,
+    "eye_mouth_after_pass": true,
+    "layer_alone_generated": true,
+    "owner_maps_generated": true,
+    "manifest_applied": true
+  },
+  "artifacts": {
+    "semantic_owner_map_before": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/semantic_purity/semantic_owner_map_before.png",
+    "semantic_owner_map_after": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/semantic_purity/semantic_owner_map_after.png",
+    "semantic_owner_legend_before": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/semantic_purity/semantic_owner_legend_before.json",
+    "semantic_owner_legend_after": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/semantic_purity/semantic_owner_legend_after.json",
+    "layer_alone_contact_sheet_before": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/semantic_purity/layer_alone_contact_sheet_before.png",
+    "layer_alone_contact_sheet_after": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/semantic_purity/layer_alone_contact_sheet_after.png",
+    "layer_alone_problem_sheet_before": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/semantic_purity/layer_alone_problem_sheet_before.png",
+    "layer_alone_problem_sheet_after": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/semantic_purity/layer_alone_problem_sheet_after.png",
+    "eye_mouth_roi_closeup_before": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/semantic_purity/eye_mouth_roi_closeup_before.png",
+    "eye_mouth_roi_closeup_after": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/semantic_purity/eye_mouth_roi_closeup_after.png",
+    "underpaint_leakage_map_before": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/semantic_purity/underpaint_leakage_map_before.png",
+    "underpaint_leakage_map_after": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/semantic_purity/underpaint_leakage_map_after.png",
+    "semantic_repair_neutral_composite_after": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/semantic_purity/semantic_repair_neutral_composite_after.png"
+  },
+  "interpretation": [
+    "This gate checks role ownership after neutral composite repair.",
+    "A PASS means the current material pack is safer to take into real Cubism ArtMesh/deformer authoring, but still does not prove CMO3 runtime quality."
+  ]
+}

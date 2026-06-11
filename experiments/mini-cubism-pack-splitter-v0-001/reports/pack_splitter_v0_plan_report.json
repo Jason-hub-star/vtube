@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "experiment_id": "mini-cubism-pack-splitter-v0-001",
+  "status": "PLANNED_PENDING_PROBE",
+  "plan": "docs/ref/MINI-CUBISM-PACK-SPLITTER-v0-PLAN.md",
+  "created_at": "2026-06-05",
+  "objective": "Use clean base mannequin plus pack-level splitting to replace the failed single-image 70+ decomposition strategy.",
+  "packs": [
+    "base_mannequin",
+    "hair_pack",
+    "outfit_pack",
+    "accessory_pack",
+    "keypose_asset_pack"
+  ],
+  "probe_candidates": [
+    "cyberagent/layerd-birefnet",
+    "ZhengPeng7/BiRefNet",
+    "ZhengPeng7/BiRefNet_HR",
+    "ZhengPeng7/BiRefNet-matting",
+    "facebook/sam2.1-hiera-large",
+    "Itbanque/fashion_segformer",
+    "dreMaz/AnimeInstanceSegmentation"
+  ],
+  "promotion_rule": "Do not create mini_cubism_project_pack_v0 until pack QA status is PASS.",
+  "negative_gate": "See-through 70+ custom split v2 remains structural PASS / visual FAIL evidence and must not be promoted."
+}

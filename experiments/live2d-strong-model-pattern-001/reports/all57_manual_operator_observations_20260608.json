@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-06-08T10:12:00+09:00",
+  "source": "주인님 manual pass while using all57 carousel player",
+  "player_url": "http://127.0.0.1:5120/all57_model_carousel.html",
+  "interpretation_note": "The all57 carousel previously cleared representative motions after model switch, so eye-only movement can mean neutral/blink state rather than broken rig. Recheck eye-only/no-motion items with the new '모션 재생' button.",
+  "observations": [
+    {
+      "rank": 1,
+      "model_name": "chitose_t01",
+      "manifest_status": "PASS",
+      "manual_status": "EYE_ONLY",
+      "note_ko": "눈만 움직임. 모션 재생 버튼으로 재확인 필요."
+    },
+    {
+      "rank": 2,
+      "model_name": "Epsilon_t02",
+      "manifest_status": "PASS",
+      "manual_status": "EYE_ONLY",
+      "note_ko": "눈만 움직임. 모션 재생 버튼으로 재확인 필요."
+    },
+    {
+      "rank": 3,
+      "model_name": "haru_greeter_t05",
+      "manifest_status": "PASS",
+      "manual_status": "WORKS_WELL",
+      "note_ko": "작동 잘함."
+    },
+    {
+      "rank": 4,
+      "model_name": "haru_t01",
+      "manifest_status": "PASS",
+      "manual_status": "EYE_ONLY",
+      "note_ko": "눈만 움직임. 모션 재생 버튼으로 재확인 필요."
+    },
+    {
+      "rank": 5,
+      "model_name": "hiyori_movie_pro_t02",
+      "manifest_status": "NO_RUNTIME",
+      "manual_status": "RENDER_NOT_AVAILABLE_EXPECTED",
+      "note_ko": "렌더링 안 됨. model3.json 없는 CMO3-only 항목이라 현재 Web Player에서는 정상적인 no-runtime 상태."
+    },
+    {
+      "rank": 6,
+      "model_name": "kei_basic_free_t02",
+      "manifest_status": "PASS",
+      "manual_status": "MOVES",
+      "note_ko": "움직임 확인."
+    },
+    {
+      "rank": 8,
+      "model_name": "haruto_t01",
+      "manifest_status": "PASS",
+      "manual_status": "NO_MOTION_OBSERVED",
+      "note_ko": "안 움직임. 모션 재생 버튼으로 재확인 필요."
+    },
+    {
+      "rank": 9,
+      "model_name": "koharu_t01",
+      "manifest_status": "PASS",
+      "manual_status": "NO_MOTION_OBSERVED",
+      "note_ko": "안 움직임. 모션 재생 버튼으로 재확인 필요."
+    },
+    {
+      "rank": 11,
+      "model_name": "mark_movie_pro_t02",
+      "manifest_status": "NO_RUNTIME",
+      "manual_status": "RENDER_NOT_AVAILABLE_EXPECTED",
+      "note_ko": "렌더링 안 됨. model3.json 없는 CMO3-only 항목이라 현재 Web Player에서는 정상적인 no-runtime 상태."
+    },
+    {
+      "rank": 14,
+      "model_name": "haruto_pc_pro_t02",
+      "manifest_status": "NO_RUNTIME",
+      "manual_status": "RENDER_NOT_AVAILABLE_EXPECTED",
+      "note_ko": "렌더링 안 됨. model3.json 없는 CMO3-only 항목이라 현재 Web Player에서는 정상적인 no-runtime 상태."
+    },
+    {
+      "rank": 22,
+      "model_name": "tsumiki_t01",
+      "manifest_status": "PASS",
+      "manual_status": "EYE_ONLY",
+      "note_ko": "눈만 움직임. 모션 재생 버튼으로 재확인 필요."
+    },
+    {
+      "rank": 23,
+      "model_name": "unitychan_t01",
+      "manifest_status": "PASS",
+      "manual_status": "EYE_ONLY",
+      "note_ko": "눈만 움직임. 모션 재생 버튼으로 재확인 필요."
+    },
+    {
+      "rank": 24,
+      "model_name": "wanko_touch_t01",
+      "manifest_status": "PASS",
+      "manual_status": "EYE_MOVEMENT",
+      "note_ko": "눈 움직임 확인. 모션 재생 버튼으로 touch/representative motion 재확인 필요."
+    },
+    {
+      "rank": 25,
+      "model_name": "hiyori_pro_t11",
+      "manifest_status": "PASS",
+      "manual_status": "PENDING_INCOMPLETE_NOTE",
+      "note_ko": "주인님 메시지가 25에서 끊겨서 상태 확인 필요."
+    }
+  ],
+  "summary": {
+    "observed_count": 14,
+    "works_or_moves": 2,
+    "eye_only_or_eye_movement": 6,
+    "no_motion_observed": 2,
+    "render_not_available_expected": 3,
+    "pending_incomplete": 1
+  },
+  "next_review_instruction_ko": "EYE_ONLY/NO_MOTION_OBSERVED 항목은 새 '모션 재생' 버튼을 눌러 실제 representative motion이 있는지 다시 확인한다."
+}

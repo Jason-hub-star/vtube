@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "experiment_id": "imagen-live2d-001",
+  "generated_at": "2026-06-04T08:44:41.218881+00:00",
+  "forced_pass_layers": [
+    {
+      "layer_name": "imagen_live2d_001_forced__front_hair",
+      "original_part_id": "front_hair",
+      "output_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/forced_layers/front_hair_forced_from_canonical.png",
+      "bbox": [
+        560,
+        65,
+        931,
+        776
+      ],
+      "alpha_coverage": 0.752529,
+      "verdict": "O"
+    },
+    {
+      "layer_name": "imagen_live2d_001_forced__R_arm",
+      "original_part_id": "R_arm",
+      "output_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/forced_layers/R_arm_forced_from_handwear_r.png",
+      "bbox": [
+        192,
+        1327,
+        605,
+        721
+      ],
+      "alpha_coverage": 0.696881,
+      "verdict": "O"
+    },
+    {
+      "layer_name": "imagen_live2d_001_forced__L_arm",
+      "original_part_id": "L_arm",
+      "output_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/forced_layers/L_arm_forced_from_handwear_l.png",
+      "bbox": [
+        1250,
+        1327,
+        601,
+        721
+      ],
+      "alpha_coverage": 0.704889,
+      "verdict": "O"
+    }
+  ],
+  "note": "주인님 지시로 앞머리와 양팔을 forced O 처리했다. MVP 진행용이며 최종 파츠 순도 승인은 아니다."
+}

@@ -1,0 +1,384 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T15:27:25.919359+00:00",
+  "id": "github_live2d_cubism_native_samples_samples_resources_rice_rice.model3",
+  "name": "Rice",
+  "source_url": "https://github.com/Live2D/CubismNativeSamples",
+  "source_type": "OFFICIAL_GITHUB_SAMPLE",
+  "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+  "analysis_mode": "RUNTIME_ONLY",
+  "official_profile_key": "rice",
+  "analysis_safety_notes": [],
+  "has_cmo3": false,
+  "has_moc3": true,
+  "has_model3_json": true,
+  "has_physics3_json": true,
+  "has_psd": false,
+  "local_paths": {
+    "motion3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/motions/idle.motion3.json",
+        "exists": true,
+        "size_bytes": 10165
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/motions/mtn_01.motion3.json",
+        "exists": true,
+        "size_bytes": 22819
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/motions/mtn_02.motion3.json",
+        "exists": true,
+        "size_bytes": 13541
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/motions/mtn_03.motion3.json",
+        "exists": true,
+        "size_bytes": 21062
+      }
+    ],
+    "cdi3_json": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/Rice.cdi3.json",
+      "exists": true,
+      "size_bytes": 12974
+    },
+    "model3_json": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/Rice.model3.json",
+      "exists": true,
+      "size_bytes": 767
+    },
+    "moc3": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/Rice.moc3",
+      "exists": true,
+      "size_bytes": 479104
+    },
+    "physics3_json": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/Rice.physics3.json",
+      "exists": true,
+      "size_bytes": 25513
+    }
+  },
+  "cmo3": {
+    "status": "NOT_REQUESTED"
+  },
+  "moc3": {
+    "present": true,
+    "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/Rice.moc3",
+    "size_bytes": 479104,
+    "sha256": "be56f2d656d279d8db9fe302ec744fa5992ff884b2ebb233f202772d5dd7e4dc",
+    "py_moc3_status": "PASS",
+    "parameter_count": 96,
+    "art_mesh_count": 178,
+    "parameter_ids": [
+      "ParamAngleX",
+      "ParamAngleZ",
+      "ParamEyeLOpen",
+      "ParamEyeROpen",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBodyAngleZ",
+      "ParamShoulderR",
+      "ParamShoulderL",
+      "ParamLegKnee",
+      "ParamLegR",
+      "ParamLegRUpDw",
+      "ParamAllZ",
+      "ParamArmR01",
+      "ParamArmR01Y",
+      "ParamArmR02",
+      "ParamArmR02Y",
+      "ParamArmR03",
+      "ParamArmL01",
+      "ParamArmL02",
+      "ParamArmL03",
+      "ParamArmChange",
+      "ParamBookPage",
+      "ParamFlameOn",
+      "ParamFlame",
+      "ParamFlameShaking",
+      "ParamFlameX",
+      "ParamFlameY",
+      "ParamCharge01On",
+      "ParamCharge01",
+      "ParamHandLightAOn",
+      "ParamHandLightASize",
+      "ParamMagicPowersA",
+      "ParamMagicAOn",
+      "ParamMagicARotation",
+      "ParamMagicALight",
+      "ParamEffectAX",
+      "ParamEffectAY",
+      "ParamHandLightBOn",
+      "ParamHandLightBSize",
+      "ParamMagicBOn",
+      "ParamMagicBRotation",
+      "ParamMagicBMove",
+      "ParamMagicBX",
+      "ParamMagicPowersBOn",
+      "ParamMagicPowersBSize",
+      "ParamMagicPowersBThicknesses",
+      "ParamEffectBX",
+      "ParamEffectBY",
+      "ParamHeadRibbon",
+      "ParamBustRibbon01",
+      "ParamBustRibbon02",
+      "ParamWaistRibbon01",
+      "ParamWaistRibbon02",
+      "ParamSkirt",
+      "ParamSkirtX",
+      "ParamSkirtY",
+      "ParamHairFront01",
+      "ParamHairFront02",
+      "Param_Angle_Rotation_1_ArtMesh67",
+      "Param_Angle_Rotation_2_ArtMesh67",
+      "Param_Angle_Rotation_3_ArtMesh67",
+      "Param_Angle_Rotation_4_ArtMesh67",
+      "Param_Angle_Rotation_5_ArtMesh67",
+      "Param_Angle_Rotation_1_ArtMesh20",
+      "Param_Angle_Rotation_2_ArtMesh20",
+      "Param_Angle_Rotation_3_ArtMesh20",
+      "Param_Angle_Rotation_4_ArtMesh20",
+      "Param_Angle_Rotation_5_ArtMesh20",
+      "Param_Angle_Rotation_1_ArtMesh82",
+      "Param_Angle_Rotation_2_ArtMesh82",
+      "Param_Angle_Rotation_3_ArtMesh82",
+      "Param_Angle_Rotation_4_ArtMesh82",
+      "Param_Angle_Rotation_5_ArtMesh82",
+      "Param_Angle_Rotation_6_ArtMesh82",
+      "Param_Angle_Rotation_7_ArtMesh82",
+      "Param_Angle_Rotation_1_ArtMesh81",
+      "Param_Angle_Rotation_2_ArtMesh81",
+      "Param_Angle_Rotation_3_ArtMesh81",
+      "Param_Angle_Rotation_4_ArtMesh81",
+      "Param_Angle_Rotation_5_ArtMesh81",
+      "Param_Angle_Rotation_6_ArtMesh81",
+      "Param_Angle_Rotation_7_ArtMesh81",
+      "Param_Angle_Rotation_8_ArtMesh81",
+      "Param_Angle_Rotation_9_ArtMesh81",
+      "Param_Angle_Rotation_1_ArtMesh80",
+      "Param_Angle_Rotation_2_ArtMesh80",
+      "Param_Angle_Rotation_3_ArtMesh80",
+      "Param_Angle_Rotation_4_ArtMesh80",
+      "Param_Angle_Rotation_5_ArtMesh80",
+      "Param_Angle_Rotation_6_ArtMesh80",
+      "Param_Angle_Rotation_7_ArtMesh80",
+      "Param_Angle_Rotation_8_ArtMesh80",
+      "Param_Angle_Rotation_9_ArtMesh80"
+    ],
+    "art_mesh_ids_sample": [
+      "ArtMesh38",
+      "ArtMesh39",
+      "ArtMesh40",
+      "ArtMesh41",
+      "ArtMesh42",
+      "ArtMesh43",
+      "ArtMesh44",
+      "ArtMesh45",
+      "ArtMesh46",
+      "ArtMesh47",
+      "ArtMesh48",
+      "ArtMesh49",
+      "ArtMesh50",
+      "ArtMesh52",
+      "ArtMesh58",
+      "ArtMesh59",
+      "ArtMesh60",
+      "ArtMesh61",
+      "ArtMesh62",
+      "ArtMesh64",
+      "ArtMesh65",
+      "ArtMesh66",
+      "ArtMesh72",
+      "ArtMesh73",
+      "ArtMesh74",
+      "ArtMesh75",
+      "ArtMesh76",
+      "ArtMesh77",
+      "ArtMesh78",
+      "ArtMesh79",
+      "ArtMesh70",
+      "ArtMesh71",
+      "ArtMesh69",
+      "ArtMesh68",
+      "ArtMesh18",
+      "ArtMesh19",
+      "ArtMesh21",
+      "ArtMesh30",
+      "ArtMesh31",
+      "ArtMesh32",
+      "ArtMesh33",
+      "ArtMesh34",
+      "ArtMesh35",
+      "ArtMesh36",
+      "ArtMesh37",
+      "ArtMesh22",
+      "ArtMesh23",
+      "ArtMesh24",
+      "ArtMesh25",
+      "ArtMesh26"
+    ]
+  },
+  "runtime_json": {
+    "model3": {
+      "present": true,
+      "version": 3,
+      "moc": "Rice.moc3",
+      "texture_count": 2,
+      "has_physics": true,
+      "has_pose": false,
+      "has_display_info": true,
+      "has_user_data": false,
+      "expression_count": 0,
+      "motion_group_count": 2,
+      "motion_count": 4,
+      "group_count": 2,
+      "parameter_ids": [
+        "ParamEyeLOpen",
+        "ParamEyeROpen"
+      ],
+      "file_references": {
+        "Moc": "Rice.moc3",
+        "Textures": [
+          "Rice.2048/texture_00.png",
+          "Rice.2048/texture_01.png"
+        ],
+        "Physics": "Rice.physics3.json",
+        "DisplayInfo": "Rice.cdi3.json",
+        "Motions": {
+          "Idle": [
+            {
+              "File": "motions/idle.motion3.json"
+            }
+          ],
+          "TapBody": [
+            {
+              "File": "motions/mtn_01.motion3.json"
+            },
+            {
+              "File": "motions/mtn_02.motion3.json"
+            },
+            {
+              "File": "motions/mtn_03.motion3.json"
+            }
+          ]
+        }
+      }
+    },
+    "physics3": {
+      "present": true,
+      "version": 3,
+      "physics_group_count": 9,
+      "physics_input_count": 32,
+      "physics_output_count": 42,
+      "physics_vertex_count": 51,
+      "groups": [
+        {
+          "index": 0,
+          "id": "PhysicsSetting1",
+          "input_count": 4,
+          "output_count": 7,
+          "vertex_count": 8
+        },
+        {
+          "index": 1,
+          "id": "PhysicsSetting2",
+          "input_count": 4,
+          "output_count": 9,
+          "vertex_count": 10
+        },
+        {
+          "index": 2,
+          "id": "PhysicsSetting3",
+          "input_count": 4,
+          "output_count": 9,
+          "vertex_count": 10
+        },
+        {
+          "index": 3,
+          "id": "PhysicsSetting4",
+          "input_count": 4,
+          "output_count": 5,
+          "vertex_count": 6
+        },
+        {
+          "index": 4,
+          "id": "PhysicsSetting5",
+          "input_count": 4,
+          "output_count": 5,
+          "vertex_count": 6
+        },
+        {
+          "index": 5,
+          "id": "PhysicsSetting6",
+          "input_count": 4,
+          "output_count": 2,
+          "vertex_count": 3
+        },
+        {
+          "index": 6,
+          "id": "PhysicsSetting7",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 7,
+          "id": "PhysicsSetting8",
+          "input_count": 2,
+          "output_count": 2,
+          "vertex_count": 3
+        },
+        {
+          "index": 8,
+          "id": "PhysicsSetting9",
+          "input_count": 2,
+          "output_count": 2,
+          "vertex_count": 3
+        }
+      ]
+    },
+    "cdi3": {
+      "present": true,
+      "parameter_display_count": 96,
+      "part_display_count": 30
+    },
+    "motion3_count": 4,
+    "exp3_count": 0,
+    "pose3_present": false,
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 178,
+    "parts": 0,
+    "parameters": 96,
+    "warp_deformers": 0,
+    "rotation_deformers": 0,
+    "keyform_bindings": 0,
+    "keyform_grids": 0,
+    "glue": 0,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": false,
+    "pose": false,
+    "expression": false,
+    "motion": true,
+    "physics": true
+  },
+  "structure_hints": {
+    "hair": 1,
+    "eye": 1,
+    "mouth": 0,
+    "body": 2,
+    "arm": 2
+  },
+  "reuse_decision": "REFERENCE_ONLY",
+  "notes": [
+    "Official Live2D Cubism Native SDK samples. Runtime resources only.",
+    "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+  ],
+  "structure_report_path": null
+}

@@ -1,0 +1,686 @@
+{
+  "schema_version": 1,
+  "experiment_id": "cubism-v2-new-character-001",
+  "pack_id": "material_pack_v0",
+  "generated_at": "2026-06-08T05:23:59.099341+00:00",
+  "manifest": "experiments/cubism-v2-new-character-001/material_pack_v0/material_asset_manifest.json",
+  "contact_sheet": "experiments/cubism-v2-new-character-001/material_pack_v0/reports/material_contact_sheet.png",
+  "reviews": {
+    "body_underpaint": {
+      "part_id": "body_underpaint",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse",
+        "underpaint_missing"
+      ],
+      "human_note": "Codex first-pass: 밑색 역할은 맞지만 현재는 단순 블록/타원이라 실제 움직임에서 튀어나오지 않게 다듬기 필요.",
+      "updated_at": "2026-06-08T05:46:56.464665+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "neck_shadow_underpaint": {
+      "part_id": "neck_shadow_underpaint",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse",
+        "underpaint_missing"
+      ],
+      "human_note": "Codex first-pass: 밑색 역할은 맞지만 현재는 단순 블록/타원이라 실제 움직임에서 튀어나오지 않게 다듬기 필요.",
+      "updated_at": "2026-06-08T05:46:56.464670+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "arm_L_underpaint": {
+      "part_id": "arm_L_underpaint",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse",
+        "underpaint_missing"
+      ],
+      "human_note": "Codex first-pass: 밑색 역할은 맞지만 현재는 단순 블록/타원이라 실제 움직임에서 튀어나오지 않게 다듬기 필요.",
+      "updated_at": "2026-06-08T05:46:56.464673+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "arm_R_underpaint": {
+      "part_id": "arm_R_underpaint",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse",
+        "underpaint_missing"
+      ],
+      "human_note": "Codex first-pass: 밑색 역할은 맞지만 현재는 단순 블록/타원이라 실제 움직임에서 튀어나오지 않게 다듬기 필요.",
+      "updated_at": "2026-06-08T05:46:56.464675+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "hair_back_base": {
+      "part_id": "hair_back_base",
+      "verdict": "REVISE",
+      "issue_tags": [],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464676+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "hair_back_underpaint": {
+      "part_id": "hair_back_underpaint",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse",
+        "underpaint_missing"
+      ],
+      "human_note": "Codex first-pass: 밑색 역할은 맞지만 현재는 단순 블록/타원이라 실제 움직임에서 튀어나오지 않게 다듬기 필요.",
+      "updated_at": "2026-06-08T05:46:56.464678+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "hair_back_strand_L": {
+      "part_id": "hair_back_strand_L",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "draw_order_issue",
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464679+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "hair_back_strand_R": {
+      "part_id": "hair_back_strand_R",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "draw_order_issue",
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464681+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "hair_back_center": {
+      "part_id": "hair_back_center",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "draw_order_issue",
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464682+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "torso_base": {
+      "part_id": "torso_base",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 원본에서 잘렸지만 파츠 범위가 넓거나 주변 요소가 섞여 있어 semantic mask 정리 필요.",
+      "updated_at": "2026-06-08T05:46:56.464684+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "neck": {
+      "part_id": "neck",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 원본에서 잘렸지만 파츠 범위가 넓거나 주변 요소가 섞여 있어 semantic mask 정리 필요.",
+      "updated_at": "2026-06-08T05:46:56.464685+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "shoulder_L": {
+      "part_id": "shoulder_L",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 원본에서 잘렸지만 파츠 범위가 넓거나 주변 요소가 섞여 있어 semantic mask 정리 필요.",
+      "updated_at": "2026-06-08T05:46:56.464686+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "shoulder_R": {
+      "part_id": "shoulder_R",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 원본에서 잘렸지만 파츠 범위가 넓거나 주변 요소가 섞여 있어 semantic mask 정리 필요.",
+      "updated_at": "2026-06-08T05:46:56.464688+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "arm_L_upper_simple": {
+      "part_id": "arm_L_upper_simple",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned",
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464689+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "arm_R_upper_simple": {
+      "part_id": "arm_R_upper_simple",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned",
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464691+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "collar_shadow": {
+      "part_id": "collar_shadow",
+      "verdict": "MERGE",
+      "issue_tags": [],
+      "human_note": "Codex first-pass: collar_front에 병합하는 현재 정책 유지.",
+      "updated_at": "2026-06-08T05:46:56.464692+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "chest_cloth_base": {
+      "part_id": "chest_cloth_base",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 원본에서 잘렸지만 파츠 범위가 넓거나 주변 요소가 섞여 있어 semantic mask 정리 필요.",
+      "updated_at": "2026-06-08T05:46:56.464693+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "face_underpaint_L": {
+      "part_id": "face_underpaint_L",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse",
+        "underpaint_missing"
+      ],
+      "human_note": "Codex first-pass: 밑색 역할은 맞지만 현재는 단순 블록/타원이라 실제 움직임에서 튀어나오지 않게 다듬기 필요.",
+      "updated_at": "2026-06-08T05:46:56.464695+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "face_underpaint_R": {
+      "part_id": "face_underpaint_R",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse",
+        "underpaint_missing"
+      ],
+      "human_note": "Codex first-pass: 밑색 역할은 맞지만 현재는 단순 블록/타원이라 실제 움직임에서 튀어나오지 않게 다듬기 필요.",
+      "updated_at": "2026-06-08T05:46:56.464696+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "face_base": {
+      "part_id": "face_base",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 원본에서 잘렸지만 파츠 범위가 넓거나 주변 요소가 섞여 있어 semantic mask 정리 필요.",
+      "updated_at": "2026-06-08T05:46:56.464697+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "face_shadow_L": {
+      "part_id": "face_shadow_L",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464699+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "face_shadow_R": {
+      "part_id": "face_shadow_R",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464700+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "nose": {
+      "part_id": "nose",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 원본에서 잘렸지만 파츠 범위가 넓거나 주변 요소가 섞여 있어 semantic mask 정리 필요.",
+      "updated_at": "2026-06-08T05:46:56.464701+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "cheek_L": {
+      "part_id": "cheek_L",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464703+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "cheek_R": {
+      "part_id": "cheek_R",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464704+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "eye_L_white": {
+      "part_id": "eye_L_white",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "bad_alpha",
+        "misaligned"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464705+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "eye_L_underpaint": {
+      "part_id": "eye_L_underpaint",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned",
+        "too_coarse",
+        "underpaint_missing"
+      ],
+      "human_note": "Codex first-pass: 밑색 역할은 맞지만 현재는 단순 블록/타원이라 실제 움직임에서 튀어나오지 않게 다듬기 필요.",
+      "updated_at": "2026-06-08T05:46:56.464707+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "eye_R_white": {
+      "part_id": "eye_R_white",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "bad_alpha",
+        "misaligned"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464708+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "eye_R_underpaint": {
+      "part_id": "eye_R_underpaint",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned",
+        "too_coarse",
+        "underpaint_missing"
+      ],
+      "human_note": "Codex first-pass: 밑색 역할은 맞지만 현재는 단순 블록/타원이라 실제 움직임에서 튀어나오지 않게 다듬기 필요.",
+      "updated_at": "2026-06-08T05:46:56.464710+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "eye_L_iris": {
+      "part_id": "eye_L_iris",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464711+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "eye_L_pupil": {
+      "part_id": "eye_L_pupil",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464712+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "eye_R_iris": {
+      "part_id": "eye_R_iris",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464714+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "eye_R_pupil": {
+      "part_id": "eye_R_pupil",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464715+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "eye_L_highlight": {
+      "part_id": "eye_L_highlight",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned",
+        "too_tiny"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "updated_at": "2026-06-08T05:46:56.464716+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "eye_L_upper_lash": {
+      "part_id": "eye_L_upper_lash",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "draw_order_issue",
+        "misaligned"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464718+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "eye_L_lower_lash": {
+      "part_id": "eye_L_lower_lash",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464719+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "eye_L_closed_lid": {
+      "part_id": "eye_L_closed_lid",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "clipping_risk",
+        "misaligned",
+        "style_mismatch"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "updated_at": "2026-06-08T05:46:56.464721+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "eye_R_highlight": {
+      "part_id": "eye_R_highlight",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned",
+        "too_tiny"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "updated_at": "2026-06-08T05:46:56.464722+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "eye_R_upper_lash": {
+      "part_id": "eye_R_upper_lash",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "draw_order_issue",
+        "misaligned"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464724+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "eye_R_lower_lash": {
+      "part_id": "eye_R_lower_lash",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464725+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "eye_R_closed_lid": {
+      "part_id": "eye_R_closed_lid",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "clipping_risk",
+        "misaligned",
+        "style_mismatch"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "updated_at": "2026-06-08T05:46:56.464726+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "brow_L": {
+      "part_id": "brow_L",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "clipping_risk",
+        "misaligned",
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464728+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "brow_R": {
+      "part_id": "brow_R",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "clipping_risk",
+        "misaligned",
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464729+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "mouth_inner": {
+      "part_id": "mouth_inner",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "bad_alpha",
+        "clipping_risk",
+        "misaligned",
+        "style_mismatch"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "updated_at": "2026-06-08T05:46:56.464731+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "mouth_teeth": {
+      "part_id": "mouth_teeth",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "bad_alpha",
+        "clipping_risk",
+        "misaligned",
+        "style_mismatch"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "updated_at": "2026-06-08T05:46:56.464732+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "mouth_tongue": {
+      "part_id": "mouth_tongue",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "bad_alpha",
+        "clipping_risk",
+        "misaligned",
+        "style_mismatch"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "updated_at": "2026-06-08T05:46:56.464734+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "mouth_line": {
+      "part_id": "mouth_line",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned",
+        "too_coarse"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "updated_at": "2026-06-08T05:46:56.464735+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "mouth_upper_lip_mask": {
+      "part_id": "mouth_upper_lip_mask",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "bad_alpha",
+        "clipping_risk",
+        "misaligned",
+        "style_mismatch"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "updated_at": "2026-06-08T05:46:56.464736+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "mouth_lower_lip_mask": {
+      "part_id": "mouth_lower_lip_mask",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "bad_alpha",
+        "clipping_risk",
+        "misaligned",
+        "style_mismatch"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "updated_at": "2026-06-08T05:46:56.464737+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "mouth_corner_L": {
+      "part_id": "mouth_corner_L",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned",
+        "too_coarse"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "updated_at": "2026-06-08T05:46:56.464739+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "mouth_corner_R": {
+      "part_id": "mouth_corner_R",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned",
+        "too_coarse"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "updated_at": "2026-06-08T05:46:56.464740+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "hair_side_L_outer": {
+      "part_id": "hair_side_L_outer",
+      "verdict": "KEEP",
+      "issue_tags": [],
+      "human_note": "Codex first-pass: 큰 머리카락 파츠로는 현재 초안 사용 가능. 실제 움직임 전 draw order만 다시 확인.",
+      "updated_at": "2026-06-08T05:46:56.464741+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "hair_side_L_inner": {
+      "part_id": "hair_side_L_inner",
+      "verdict": "KEEP",
+      "issue_tags": [],
+      "human_note": "Codex first-pass: 큰 머리카락 파츠로는 현재 초안 사용 가능. 실제 움직임 전 draw order만 다시 확인.",
+      "updated_at": "2026-06-08T05:46:56.464743+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "hair_side_R_outer": {
+      "part_id": "hair_side_R_outer",
+      "verdict": "KEEP",
+      "issue_tags": [],
+      "human_note": "Codex first-pass: 큰 머리카락 파츠로는 현재 초안 사용 가능. 실제 움직임 전 draw order만 다시 확인.",
+      "updated_at": "2026-06-08T05:46:56.464744+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "hair_side_R_inner": {
+      "part_id": "hair_side_R_inner",
+      "verdict": "KEEP",
+      "issue_tags": [],
+      "human_note": "Codex first-pass: 큰 머리카락 파츠로는 현재 초안 사용 가능. 실제 움직임 전 draw order만 다시 확인.",
+      "updated_at": "2026-06-08T05:46:56.464745+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "hair_front_center": {
+      "part_id": "hair_front_center",
+      "verdict": "KEEP",
+      "issue_tags": [
+        "draw_order_issue"
+      ],
+      "human_note": "Codex first-pass: 큰 머리카락 파츠로는 현재 초안 사용 가능. 실제 움직임 전 draw order만 다시 확인.",
+      "updated_at": "2026-06-08T05:46:56.464746+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "hair_front_L": {
+      "part_id": "hair_front_L",
+      "verdict": "KEEP",
+      "issue_tags": [],
+      "human_note": "Codex first-pass: 큰 머리카락 파츠로는 현재 초안 사용 가능. 실제 움직임 전 draw order만 다시 확인.",
+      "updated_at": "2026-06-08T05:46:56.464747+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "hair_front_R": {
+      "part_id": "hair_front_R",
+      "verdict": "KEEP",
+      "issue_tags": [],
+      "human_note": "Codex first-pass: 큰 머리카락 파츠로는 현재 초안 사용 가능. 실제 움직임 전 draw order만 다시 확인.",
+      "updated_at": "2026-06-08T05:46:56.464748+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "hair_front_side_L": {
+      "part_id": "hair_front_side_L",
+      "verdict": "KEEP",
+      "issue_tags": [],
+      "human_note": "Codex first-pass: 큰 머리카락 파츠로는 현재 초안 사용 가능. 실제 움직임 전 draw order만 다시 확인.",
+      "updated_at": "2026-06-08T05:46:56.464749+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "hair_front_side_R": {
+      "part_id": "hair_front_side_R",
+      "verdict": "KEEP",
+      "issue_tags": [],
+      "human_note": "Codex first-pass: 큰 머리카락 파츠로는 현재 초안 사용 가능. 실제 움직임 전 draw order만 다시 확인.",
+      "updated_at": "2026-06-08T05:46:56.464750+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "hair_front_tip_L": {
+      "part_id": "hair_front_tip_L",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "overhang_issue",
+        "too_coarse",
+        "too_tiny"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464752+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "hair_front_tip_R": {
+      "part_id": "hair_front_tip_R",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "overhang_issue",
+        "too_coarse",
+        "too_tiny"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "updated_at": "2026-06-08T05:46:56.464753+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "collar_front": {
+      "part_id": "collar_front",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 원본에서 잘렸지만 파츠 범위가 넓거나 주변 요소가 섞여 있어 semantic mask 정리 필요.",
+      "updated_at": "2026-06-08T05:46:56.464755+00:00",
+      "reviewer": "codex_first_pass"
+    },
+    "chest_cloth_shadow": {
+      "part_id": "chest_cloth_shadow",
+      "verdict": "MERGE",
+      "issue_tags": [],
+      "human_note": "Codex first-pass: chest_cloth_base에 병합하는 현재 정책 유지.",
+      "updated_at": "2026-06-08T05:46:56.464756+00:00",
+      "reviewer": "codex_first_pass"
+    }
+  },
+  "updated_at": "2026-06-08T05:46:56.464757+00:00",
+  "review_mode": "codex_first_pass_conservative_seed",
+  "notes": [
+    "This is not the user's final visual approval.",
+    "Use it as a conservative first pass to create a fix queue before Cubism import smoke."
+  ]
+}

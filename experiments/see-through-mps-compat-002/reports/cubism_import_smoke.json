@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "experiment_id": "see-through-mps-compat-002",
+  "date": "2026-06-04T07:42:08+00:00",
+  "cubism_version": "Live2D Cubism Editor 5.3.01",
+  "input_psd": "experiments/see-through-mps-compat-002/import_ready.psd",
+  "cubism_import_success": true,
+  "layers_flattened": false,
+  "psd_candidate_layer_count": 16,
+  "manual_mask_layers_included": [],
+  "roi_layers_included": [
+    "neck",
+    "neck_underpaint",
+    "mouth_inner"
+  ],
+  "reference_only_layers_excluded": [
+    "seethrough_mps_manual__neck"
+  ],
+  "rejected_layers_excluded": [
+    "seethrough_mps__mouth_line"
+  ],
+  "automatic_cleanup": [
+    "PSD candidate builder removes alpha values <= 10 from accepted layers before writing import_ready_candidate.psd.",
+    "raw mouth_line is excluded because the current human review verdict is X.",
+    "manual neck is excluded because the current human review verdict is REFERENCE_ONLY.",
+    "ROI neck, ROI neck_underpaint, and ROI mouth_inner are included because their current review verdict is O."
+  ],
+  "visible_layer_evidence": [
+    "front_hair",
+    "R_brow",
+    "L_brow",
+    "L_upper_lash",
+    "R_upper_lash",
+    "L_iris",
+    "R_iris",
+    "L_eye_white",
+    "R_eye_white",
+    "mouth_inner",
+    "R_ear_outer",
+    "L_ear_outer",
+    "face_base",
+    "neck",
+    "neck_underpaint",
+    "back_hair"
+  ],
+  "technical_log_import_success": true,
+  "log_path": "/Users/family/Library/Live2D/Cubism5.3_Editor/logs/log.txt",
+  "log_excerpt_path": "experiments/see-through-mps-compat-002/reports/cubism_import_smoke_log_excerpt.txt",
+  "reviewer": "Codex screenshot smoke",
+  "notes": [
+    "Cubism Editor 5.3.01 launched and read the rebuilt import_ready.psd after ROI neck, ROI neck underpaint, ROI mouth_inner, and alpha-floor cleanup were applied.",
+    "Screenshot shows individual layer entries/thumbnails in the Cubism Parts panel, so the PSD was not flattened.",
+    "This confirms technical Cubism import only; art-quality cleanup remains gated by part review. Raw mouth_line is not included in this candidate because 주인님 rejected it."
+  ],
+  "evidence_screenshot": "experiments/see-through-mps-compat-002/reports/cubism_smoke_evidence/cubism_import_ready_16_layer_roi_neck_no_raw_mouth_line_screen.png"
+}

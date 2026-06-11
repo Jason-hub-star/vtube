@@ -1,0 +1,127 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-10T01:49:50.010007+00:00",
+  "status": "G4_P0_TORSO_SHOULDER_DECISION_READY_G5_PREP_UNBLOCKED_MATERIAL_BLOCKED",
+  "torso_selected_review_reduction": "experiments/cubism-v2-new-character-002/reports/v22_g4_torso_selected_review_reduction/v22_g4_torso_selected_review_reduction_packet.json",
+  "torso_route_report": "experiments/cubism-v2-new-character-002/reports/v22_g4_torso_base_regen_overlay_qa/v22_g4_torso_base_regen_overlay_qa_report.json",
+  "b5_provisional_overlay_qa": "experiments/cubism-v2-new-character-002/reports/v22_b5_provisional_minipass_candidate/v22_b5_provisional_minipass_overlay_qa_report.json",
+  "decision_sheet": "experiments/cubism-v2-new-character-002/reports/v22_g4_p0_torso_shoulder_decision/v22_g4_p0_torso_shoulder_decision_sheet.png",
+  "decision_rows": [
+    {
+      "part_id": "torso_base",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_g4_torso_base_regen_candidate/normalized_layers/torso_base.png",
+      "bbox": [
+        520,
+        880,
+        1539,
+        1688
+      ],
+      "alpha_coverage": 0.1204493,
+      "previous_review_lane": "P0_B5_TORSO_SELECTED_OVERLAY_REVIEW",
+      "decision": "KEEP_GENERATED_TORSO_AS_G5_PREP_CANDIDATE_NOT_MATERIAL_PASS",
+      "route_class": "P0_RESOLVED_TO_G5_PREP_CANDIDATE",
+      "reason": "Generated torso is selected, extends lower than P0, and stays below old broad v2 coverage; use it for G5 prep review only.",
+      "supporting_metrics": {
+        "generated_alpha_coverage": 0.1204493,
+        "p0_v2_alpha_coverage": 0.05906725,
+        "old_v2_alpha_coverage": 0.13814282,
+        "generated_vs_p0_bottom_extension_px": 346,
+        "generated_alpha_ratio_to_old": 0.87191864
+      },
+      "g5_effect": "UNBLOCKS_G5_PREP_ONLY_NOT_ACCEPTANCE",
+      "material_promotion": "BLOCKED",
+      "param_hair_front_status": "HIDDEN_CONTRACT_ONLY"
+    },
+    {
+      "part_id": "shoulder_L",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/shoulder_L.png",
+      "bbox": [
+        588,
+        1020,
+        861,
+        1214
+      ],
+      "alpha_coverage": 0.00211596,
+      "previous_review_lane": "P0_B5_SHOULDER_DRAW_ORDER_MASK_CANDIDATE_REVIEW",
+      "decision": "KEEP_SHOULDER_DRAW_ORDER_MASK_AS_G5_PREP_CANDIDATE_NOT_MATERIAL_PASS",
+      "route_class": "P0_RESOLVED_TO_G5_PREP_CANDIDATE",
+      "reason": "Shoulder draw-order/mask improvement candidate can move into G5 prep review; material acceptance remains blocked.",
+      "supporting_metrics": {
+        "old_hair_occlusion_overlap_ratio": 0.870193,
+        "new_hair_occlusion_overlap_ratio": 0.0,
+        "alpha_coverage": 0.00211596
+      },
+      "g5_effect": "UNBLOCKS_G5_PREP_ONLY_NOT_ACCEPTANCE",
+      "material_promotion": "BLOCKED",
+      "param_hair_front_status": "HIDDEN_CONTRACT_ONLY"
+    },
+    {
+      "part_id": "shoulder_R",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/shoulder_R.png",
+      "bbox": [
+        1209,
+        1104,
+        1454,
+        1216
+      ],
+      "alpha_coverage": 0.00183344,
+      "previous_review_lane": "P0_B5_SHOULDER_DRAW_ORDER_MASK_CANDIDATE_REVIEW",
+      "decision": "KEEP_SHOULDER_DRAW_ORDER_MASK_AS_G5_PREP_CANDIDATE_NOT_MATERIAL_PASS",
+      "route_class": "P0_RESOLVED_TO_G5_PREP_CANDIDATE",
+      "reason": "Shoulder draw-order/mask improvement candidate can move into G5 prep review; material acceptance remains blocked.",
+      "supporting_metrics": {
+        "old_hair_occlusion_overlap_ratio": 0.868247,
+        "new_hair_occlusion_overlap_ratio": 0.0,
+        "alpha_coverage": 0.00183344
+      },
+      "g5_effect": "UNBLOCKS_G5_PREP_ONLY_NOT_ACCEPTANCE",
+      "material_promotion": "BLOCKED",
+      "param_hair_front_status": "HIDDEN_CONTRACT_ONLY"
+    }
+  ],
+  "summary": {
+    "input_p0_blocking_row_count": 3,
+    "decision_row_count": 3,
+    "resolved_to_g5_prep_candidate_count": 3,
+    "remaining_p0_pre_g5_blocker_count": 0,
+    "torso_g5_prep_candidate_count": 1,
+    "shoulder_g5_prep_candidate_count": 2,
+    "g5_prep_status": "UNBLOCKED_FOR_PREP_PACKET_ONLY",
+    "g5_material_acceptance_status": "BLOCKED_PENDING_SEPARATE_G5_ACCEPTANCE_PACKET",
+    "material_pass_status": "BLOCKED",
+    "param_hair_front_status": "HIDDEN_CONTRACT_ONLY",
+    "g7_mini_cubism_status": "BLOCKED",
+    "g8_real_cubism_status": "BLOCKED"
+  },
+  "decision": "The three P0 torso/shoulder rows are resolved only as G5 prep candidates. This permits building a later G5 readiness/prep packet, but does not approve material PASS.",
+  "next_action": [
+    "Build a G5 prep packet from the torso-selected manifest using these P0 candidate decisions.",
+    "Carry HairFront as hidden/contract-only and keep B4/B5 context rows review-required.",
+    "Do not promote Mini Cubism or real Cubism from this packet."
+  ],
+  "self_review": {
+    "reduction_status": "G4_TORSO_SELECTED_REVIEW_REDUCTION_PACKET_READY_MATERIAL_BLOCKED",
+    "torso_route_status": "G4_TORSO_BASE_REGEN_OVERLAY_QA_ROUTE_READY_MATERIAL_BLOCKED",
+    "b5_provisional_qa_status": "B5_PROVISIONAL_MINIPASS_OVERLAY_QA_REVIEW_REQUIRED",
+    "input_p0_blocking_row_count": 3,
+    "decision_row_count": 3,
+    "resolved_to_g5_prep_candidate_count": 3,
+    "remaining_p0_pre_g5_blocker_count": 0,
+    "all_p0_rows_resolved_for_g5_prep": true,
+    "torso_g5_prep_candidate_count": 1,
+    "shoulder_g5_prep_candidate_count": 2,
+    "decision_sheet_exists": true,
+    "g5_prep_unblocked_only": true,
+    "g5_material_acceptance_blocked": true,
+    "not_owner_approval": true,
+    "material_pass_blocked": true,
+    "validator_only_promotion_blocked": true,
+    "param_hair_front_hidden": true,
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true,
+    "status": "PASS"
+  }
+}

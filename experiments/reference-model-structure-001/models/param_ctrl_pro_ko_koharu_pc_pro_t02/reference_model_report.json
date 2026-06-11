@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T14:48:39.335990+00:00",
+  "id": "param_ctrl_pro_ko_koharu_pc_pro_t02",
+  "name": "koharu_pc_pro_t02",
+  "source_url": "https://www.live2d.com/ko/learn/sample/",
+  "source_type": "OFFICIAL_SAMPLE_ZIP",
+  "license_status": "OFFICIAL_TERMS_ACCEPTED_BY_USER",
+  "analysis_mode": "FULL_STRUCTURE",
+  "official_profile_key": "koharu",
+  "analysis_safety_notes": [],
+  "has_cmo3": true,
+  "has_moc3": false,
+  "has_model3_json": false,
+  "has_physics3_json": false,
+  "has_psd": false,
+  "local_paths": {
+    "cmo3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/param_ctrl_pro_ko/param_ctrl_pro_ko/koharu_haruto_pc_pro/koharu_pc_pro_t02.cmo3",
+      "exists": true,
+      "size_bytes": 4570869
+    }
+  },
+  "cmo3": {
+    "status": "PASS",
+    "returncode": 0,
+    "json": "experiments/reference-model-structure-001/models/param_ctrl_pro_ko_koharu_pc_pro_t02/cmo3_structure_report.json",
+    "markdown": "experiments/reference-model-structure-001/models/param_ctrl_pro_ko_koharu_pc_pro_t02/cmo3_structure_report.md",
+    "stdout": "[cmo3-structure] WARN\n[cmo3-structure] json: /Users/family/jason/Vtube/experiments/reference-model-structure-001/models/param_ctrl_pro_ko_koharu_pc_pro_t02/cmo3_structure_report.json\n[cmo3-structure] md:   /Users/family/jason/Vtube/experiments/reference-model-structure-001/models/param_ctrl_pro_ko_koharu_pc_pro_t02/cmo3_structure_report.md",
+    "stderr": "",
+    "cmo3_status": "WARN",
+    "counts": {
+      "art_meshes": 79,
+      "parts": 17,
+      "parameters": 52,
+      "warp_deformers": 51,
+      "rotation_deformers": 20,
+      "keyform_bindings": 181,
+      "keyform_grids": 167,
+      "glue": 0,
+      "masks": 0
+    },
+    "parameter_ids": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamEyeLOpen",
+      "ParamEyeLSmile",
+      "ParamEyeROpen",
+      "ParamEyeRSmile",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamEyeSize",
+      "ParamEyeHi",
+      "ParamEye01",
+      "ParamTearL",
+      "ParamTearR",
+      "ParamBrowLY",
+      "ParamBrowRY",
+      "ParamBrowLX",
+      "ParamBrowRX",
+      "ParamBrowLAngle",
+      "ParamBrowRAngle",
+      "ParamBrowLForm",
+      "ParamBrowRForm",
+      "ParamMouthForm",
+      "ParamMouthOpenY",
+      "ParamMouthForm02",
+      "ParamCheek",
+      "ParamBodyAngleX",
+      "ParamBodyAngleZ",
+      "ParamBreath",
+      "ParamHairFront",
+      "ParamHairSide",
+      "ParamHairBack",
+      "ParamHairFluffy",
+      "ParamHairFluffy02",
+      "ParamSkirt",
+      "ParamNecktie",
+      "ParamArmL01",
+      "ParamArmL02",
+      "ParamArmL03",
+      "ParamArmL",
+      "ParamArmR01",
+      "ParamArmR02",
+      "ParamArmR03",
+      "ParamArmR",
+      "ParamHandSwitchL",
+      "ParamHandL",
+      "ParamAllX",
+      "ParamAllY",
+      "ParamLegR01",
+      "ParamLegL01",
+      "ParamLegR02",
+      "ParamLegL02"
+    ],
+    "part_names": [
+      "Root Part",
+      "몸",
+      "아이템",
+      "팔뚝",
+      "목",
+      "뒷머리",
+      "옆머리",
+      "앞머리",
+      "귀",
+      "코",
+      "입",
+      "눈썹",
+      "눈알",
+      "눈",
+      "얼굴",
+      "코어",
+      "다리"
+    ]
+  },
+  "moc3": {
+    "present": false
+  },
+  "runtime_json": {
+    "model3": {
+      "present": false
+    },
+    "physics3": {
+      "present": false
+    },
+    "cdi3": {
+      "present": false
+    },
+    "motion3_count": 0,
+    "exp3_count": 0,
+    "pose3_present": false,
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 79,
+    "parts": 17,
+    "parameters": 52,
+    "warp_deformers": 51,
+    "rotation_deformers": 20,
+    "keyform_bindings": 181,
+    "keyform_grids": 167,
+    "glue": 0,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": false,
+    "pose": false,
+    "expression": false,
+    "motion": false,
+    "physics": false
+  },
+  "structure_hints": {
+    "hair": 1,
+    "eye": 1,
+    "mouth": 1,
+    "body": 2,
+    "arm": 2
+  },
+  "reuse_decision": "REFERENCE_ONLY",
+  "notes": [
+    "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+    "Source zip: param_ctrl_pro_ko.zip"
+  ],
+  "structure_report_path": "experiments/reference-model-structure-001/models/param_ctrl_pro_ko_koharu_pc_pro_t02/cmo3_structure_report.json"
+}

@@ -1,0 +1,342 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T12:34:20.485613+00:00",
+  "report_id": "cubism-v2-new-character-002-v22-b3-mouth-layer-pack-001",
+  "status": "B3_LAYER_PACK_CANDIDATE_READY_FOR_OVERLAY_QA_HUMAN_REVIEW_REQUIRED",
+  "raw_review_report": "experiments/cubism-v2-new-character-002/reports/v22_b3_mouth_pack/v22_b3_mouth_pack_review.json",
+  "b3_raw_image": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack/raw_outputs/b3_mouth_pack_reference_001.png",
+  "normalized_layers_dir": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack/normalized_layers",
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b3_mouth_pack/v22_b3_layer_pack_contact_sheet.png",
+  "overlay_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b3_mouth_pack/v22_b3_layer_pack_overlay_qa.png",
+  "expected_outputs": [
+    "mouth_line",
+    "mouth_inner",
+    "mouth_upper_lip_mask",
+    "mouth_lower_lip_mask",
+    "mouth_teeth",
+    "mouth_tongue",
+    "mouth_corner_L",
+    "mouth_corner_R",
+    "mouth_closed_smile_reference",
+    "mouth_small_open_reference",
+    "mouth_mid_teeth_reference",
+    "mouth_wide_teeth_tongue_reference"
+  ],
+  "metrics": {
+    "mouth_line": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack/normalized_layers/mouth_line.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        911,
+        923,
+        1122,
+        953
+      ],
+      "alpha_coverage": 0.00032067,
+      "anchor_center": [
+        1016.5,
+        938.0
+      ]
+    },
+    "mouth_inner": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack/normalized_layers/mouth_inner.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        933,
+        812,
+        1127,
+        977
+      ],
+      "alpha_coverage": 0.00322175,
+      "anchor_center": [
+        1030.0,
+        894.5
+      ]
+    },
+    "mouth_upper_lip_mask": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack/normalized_layers/mouth_upper_lip_mask.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        897,
+        807,
+        1174,
+        930
+      ],
+      "alpha_coverage": 0.00054216,
+      "anchor_center": [
+        1035.5,
+        868.5
+      ]
+    },
+    "mouth_lower_lip_mask": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack/normalized_layers/mouth_lower_lip_mask.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        920,
+        843,
+        1159,
+        976
+      ],
+      "alpha_coverage": 0.00048423,
+      "anchor_center": [
+        1039.5,
+        909.5
+      ]
+    },
+    "mouth_teeth": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack/normalized_layers/mouth_teeth.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        909,
+        891,
+        1125,
+        916
+      ],
+      "alpha_coverage": 0.00100398,
+      "anchor_center": [
+        1017.0,
+        903.5
+      ]
+    },
+    "mouth_tongue": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack/normalized_layers/mouth_tongue.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        919,
+        947,
+        1040,
+        1012
+      ],
+      "alpha_coverage": 0.00144172,
+      "anchor_center": [
+        979.5,
+        979.5
+      ]
+    },
+    "mouth_corner_L": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack/normalized_layers/mouth_corner_L.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        846,
+        903,
+        894,
+        960
+      ],
+      "alpha_coverage": 0.00018191,
+      "anchor_center": [
+        870.0,
+        931.5
+      ]
+    },
+    "mouth_corner_R": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack/normalized_layers/mouth_corner_R.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1133,
+        903,
+        1179,
+        960
+      ],
+      "alpha_coverage": 0.00017595,
+      "anchor_center": [
+        1156.0,
+        931.5
+      ]
+    },
+    "mouth_closed_smile_reference": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack/normalized_layers/mouth_closed_smile_reference.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        764,
+        715,
+        1284,
+        1075
+      ],
+      "alpha_coverage": 0.04463196,
+      "anchor_center": [
+        1024.0,
+        895.0
+      ]
+    },
+    "mouth_small_open_reference": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack/normalized_layers/mouth_small_open_reference.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        764,
+        715,
+        1284,
+        1075
+      ],
+      "alpha_coverage": 0.04463196,
+      "anchor_center": [
+        1024.0,
+        895.0
+      ]
+    },
+    "mouth_mid_teeth_reference": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack/normalized_layers/mouth_mid_teeth_reference.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        764,
+        715,
+        1284,
+        1075
+      ],
+      "alpha_coverage": 0.04463005,
+      "anchor_center": [
+        1024.0,
+        895.0
+      ]
+    },
+    "mouth_wide_teeth_tongue_reference": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack/normalized_layers/mouth_wide_teeth_tongue_reference.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        764,
+        715,
+        1284,
+        1075
+      ],
+      "alpha_coverage": 0.04462838,
+      "anchor_center": [
+        1024.0,
+        895.0
+      ]
+    }
+  },
+  "forbidden_existing_mouth_assets": [
+    {
+      "path": "experiments/cubism-v2-new-character-002/generated_mouth_v10",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B3_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-002/generated_mouth_v11",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B3_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-002/generated_mouth_v12",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B3_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v4_mouth_alpha",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B3_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v4_strict_mouth",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B3_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v7_smooth_mouth_preview",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B3_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v8_existing_mouth_tuned_preview",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B3_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v9_all_mouth_enabled_preview",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B3_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v10_generated_mouth_eye_clamp_preview",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B3_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v11_generated_mouth_eye_clamp_preview",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B3_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v12_generated_mouth_eye_clamp_preview",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B3_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v13_scaled_eye_mouth_preview",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B3_INPUT"
+    }
+  ],
+  "decision": "Keep this B3 extraction as a full-canvas RGBA candidate only. It preserves the new generated mouth sheet, but wide-mouth restraint, internals coherence, overlay QA, and 주인님 review are required before B3 material PASS.",
+  "limits": [
+    "RGB white-background extraction can leave soft matte halos around lips, teeth, and tongue.",
+    "Reference states include face-crop context and are QA/keypose references, not final separated mouth internals by themselves.",
+    "This does not activate Mini Cubism diagnostic and does not prove real Cubism rig success."
+  ],
+  "next_action": [
+    "Run B3 overlay QA against the B1 clean mouth base.",
+    "If visual QA accepts B3, continue to B4 hair-pack generation without using existing hair assets unless 주인님 explicitly allows them.",
+    "If wide mouth is too large or internals look pasted, regenerate a new B3 sheet instead of importing v10/v12/v13 mouth PNGs."
+  ],
+  "self_review": {
+    "raw_review_status": "B3_RAW_MOUTH_PACK_CANDIDATE_READY_FOR_EXTRACTION_HUMAN_REVIEW_REQUIRED",
+    "expected_output_count": 12,
+    "generated_output_count": 12,
+    "missing_output_count": 0,
+    "empty_output_count": 0,
+    "all_layers_rgba": true,
+    "all_layers_2048": true,
+    "forbidden_existing_mouth_asset_count": 12,
+    "forbidden_assets_not_output_path": true,
+    "has_human_required_gate": true,
+    "has_wide_mouth_review_gate": true,
+    "status": "PASS"
+  }
+}

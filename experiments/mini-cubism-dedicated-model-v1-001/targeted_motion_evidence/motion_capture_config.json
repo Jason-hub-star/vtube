@@ -1,0 +1,503 @@
+{
+  "url": "http://127.0.0.1:55659/",
+  "framesDir": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/frames",
+  "resultPath": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/motion_capture_result.json",
+  "scenarios": [
+    {
+      "name": "angle_swing",
+      "frames": [
+        {
+          "ParamAngleX": 0.0,
+          "ParamHairFront": 0.0
+        },
+        {
+          "ParamAngleX": 2.597,
+          "ParamHairFront": 0.087
+        },
+        {
+          "ParamAngleX": 5.195,
+          "ParamHairFront": 0.173
+        },
+        {
+          "ParamAngleX": 7.792,
+          "ParamHairFront": 0.26
+        },
+        {
+          "ParamAngleX": 10.39,
+          "ParamHairFront": 0.346
+        },
+        {
+          "ParamAngleX": 12.987,
+          "ParamHairFront": 0.433
+        },
+        {
+          "ParamAngleX": 15.584,
+          "ParamHairFront": 0.519
+        },
+        {
+          "ParamAngleX": 18.182,
+          "ParamHairFront": 0.606
+        },
+        {
+          "ParamAngleX": 20.779,
+          "ParamHairFront": 0.693
+        },
+        {
+          "ParamAngleX": 23.377,
+          "ParamHairFront": 0.779
+        },
+        {
+          "ParamAngleX": 25.974,
+          "ParamHairFront": 0.866
+        },
+        {
+          "ParamAngleX": 28.571,
+          "ParamHairFront": 0.952
+        },
+        {
+          "ParamAngleX": 27.662,
+          "ParamHairFront": 0.922
+        },
+        {
+          "ParamAngleX": 22.468,
+          "ParamHairFront": 0.749
+        },
+        {
+          "ParamAngleX": 17.273,
+          "ParamHairFront": 0.576
+        },
+        {
+          "ParamAngleX": 12.078,
+          "ParamHairFront": 0.403
+        },
+        {
+          "ParamAngleX": 6.883,
+          "ParamHairFront": 0.229
+        },
+        {
+          "ParamAngleX": 1.688,
+          "ParamHairFront": 0.056
+        },
+        {
+          "ParamAngleX": -3.506,
+          "ParamHairFront": -0.117
+        },
+        {
+          "ParamAngleX": -8.701,
+          "ParamHairFront": -0.29
+        },
+        {
+          "ParamAngleX": -13.896,
+          "ParamHairFront": -0.463
+        },
+        {
+          "ParamAngleX": -19.091,
+          "ParamHairFront": -0.636
+        },
+        {
+          "ParamAngleX": -24.286,
+          "ParamHairFront": -0.81
+        },
+        {
+          "ParamAngleX": -29.481,
+          "ParamHairFront": -0.983
+        },
+        {
+          "ParamAngleX": -27.731,
+          "ParamHairFront": -0.924
+        },
+        {
+          "ParamAngleX": -25.21,
+          "ParamHairFront": -0.84
+        },
+        {
+          "ParamAngleX": -22.689,
+          "ParamHairFront": -0.756
+        },
+        {
+          "ParamAngleX": -20.168,
+          "ParamHairFront": -0.672
+        },
+        {
+          "ParamAngleX": -17.647,
+          "ParamHairFront": -0.588
+        },
+        {
+          "ParamAngleX": -15.126,
+          "ParamHairFront": -0.504
+        },
+        {
+          "ParamAngleX": -12.605,
+          "ParamHairFront": -0.42
+        },
+        {
+          "ParamAngleX": -10.084,
+          "ParamHairFront": -0.336
+        },
+        {
+          "ParamAngleX": -7.563,
+          "ParamHairFront": -0.252
+        },
+        {
+          "ParamAngleX": -5.042,
+          "ParamHairFront": -0.168
+        },
+        {
+          "ParamAngleX": -2.521,
+          "ParamHairFront": -0.084
+        },
+        {
+          "ParamAngleX": -0.0,
+          "ParamHairFront": -0.0
+        }
+      ]
+    },
+    {
+      "name": "hair_settle",
+      "frames": [
+        {
+          "ParamAngleX": 30,
+          "ParamHairFront": 1
+        },
+        {
+          "ParamAngleX": 30,
+          "ParamHairFront": 1
+        },
+        {
+          "ParamAngleX": 30,
+          "ParamHairFront": 1
+        },
+        {
+          "ParamAngleX": 30,
+          "ParamHairFront": 1
+        },
+        {
+          "ParamAngleX": 30,
+          "ParamHairFront": 1
+        },
+        {
+          "ParamAngleX": 30,
+          "ParamHairFront": 1
+        },
+        {
+          "ParamAngleX": 30,
+          "ParamHairFront": 1
+        },
+        {
+          "ParamAngleX": 30,
+          "ParamHairFront": 1
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        },
+        {
+          "ParamAngleX": 0,
+          "ParamHairFront": 0
+        }
+      ]
+    },
+    {
+      "name": "mouth_talk",
+      "frames": [
+        {
+          "ParamMouthOpenY": 0
+        },
+        {
+          "ParamMouthOpenY": 0.5
+        },
+        {
+          "ParamMouthOpenY": 1
+        },
+        {
+          "ParamMouthOpenY": 0.5
+        },
+        {
+          "ParamMouthOpenY": 0
+        },
+        {
+          "ParamMouthOpenY": 0
+        },
+        {
+          "ParamMouthOpenY": 0.5
+        },
+        {
+          "ParamMouthOpenY": 1
+        },
+        {
+          "ParamMouthOpenY": 0.5
+        },
+        {
+          "ParamMouthOpenY": 0
+        },
+        {
+          "ParamMouthOpenY": 0
+        },
+        {
+          "ParamMouthOpenY": 0.5
+        },
+        {
+          "ParamMouthOpenY": 1
+        },
+        {
+          "ParamMouthOpenY": 0.5
+        },
+        {
+          "ParamMouthOpenY": 0
+        },
+        {
+          "ParamMouthOpenY": 0
+        },
+        {
+          "ParamMouthOpenY": 0.5
+        },
+        {
+          "ParamMouthOpenY": 1
+        },
+        {
+          "ParamMouthOpenY": 0.5
+        },
+        {
+          "ParamMouthOpenY": 0
+        }
+      ]
+    },
+    {
+      "name": "eye_blink",
+      "frames": [
+        {
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1
+        },
+        {
+          "ParamEyeLOpen": 0.5,
+          "ParamEyeROpen": 0.5
+        },
+        {
+          "ParamEyeLOpen": 0,
+          "ParamEyeROpen": 0
+        },
+        {
+          "ParamEyeLOpen": 0.5,
+          "ParamEyeROpen": 0.5
+        },
+        {
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1
+        },
+        {
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1
+        },
+        {
+          "ParamEyeLOpen": 0.5,
+          "ParamEyeROpen": 0.5
+        },
+        {
+          "ParamEyeLOpen": 0,
+          "ParamEyeROpen": 0
+        },
+        {
+          "ParamEyeLOpen": 0.5,
+          "ParamEyeROpen": 0.5
+        },
+        {
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1
+        },
+        {
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1
+        },
+        {
+          "ParamEyeLOpen": 0.5,
+          "ParamEyeROpen": 0.5
+        },
+        {
+          "ParamEyeLOpen": 0,
+          "ParamEyeROpen": 0
+        },
+        {
+          "ParamEyeLOpen": 0.5,
+          "ParamEyeROpen": 0.5
+        },
+        {
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1
+        },
+        {
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1
+        },
+        {
+          "ParamEyeLOpen": 0.5,
+          "ParamEyeROpen": 0.5
+        },
+        {
+          "ParamEyeLOpen": 0,
+          "ParamEyeROpen": 0
+        },
+        {
+          "ParamEyeLOpen": 0.5,
+          "ParamEyeROpen": 0.5
+        },
+        {
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1
+        }
+      ]
+    }
+  ]
+}

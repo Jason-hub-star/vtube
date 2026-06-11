@@ -1,0 +1,369 @@
+{
+  "ok": true,
+  "results": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      "poses": [
+        {
+          "pose": "neutral",
+          "parameters": {},
+          "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_001/evidence/screenshots/desktop_neutral.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "3cc1fb92",
+            "nonBackground": 2191011,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              193,
+              52,
+              1851,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "angle_left",
+          "parameters": {
+            "ParamAngleX": -30
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_001/evidence/screenshots/desktop_angle_left.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "cefd70ec",
+            "nonBackground": 2196417,
+            "alphaPixels": 4194304,
+            "diffPixels": 329508,
+            "totalAbsDiff": 49712190,
+            "changedRatio": 0.07856082916259766,
+            "contentBounds": [
+              193,
+              52,
+              1851,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "angle_right",
+          "parameters": {
+            "ParamAngleX": 30
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_001/evidence/screenshots/desktop_angle_right.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "f44b38f0",
+            "nonBackground": 2196979,
+            "alphaPixels": 4194304,
+            "diffPixels": 329631,
+            "totalAbsDiff": 49848101,
+            "changedRatio": 0.07859015464782715,
+            "contentBounds": [
+              193,
+              52,
+              1851,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "eye_l_close",
+          "parameters": {
+            "ParamEyeLOpen": 0
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_001/evidence/screenshots/desktop_eye_l_close.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "8fae12d4",
+            "nonBackground": 2191011,
+            "alphaPixels": 4194304,
+            "diffPixels": 9467,
+            "totalAbsDiff": 1722942,
+            "changedRatio": 0.002257108688354492,
+            "contentBounds": [
+              193,
+              52,
+              1851,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "eye_r_close",
+          "parameters": {
+            "ParamEyeROpen": 0
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_001/evidence/screenshots/desktop_eye_r_close.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "6eed534a",
+            "nonBackground": 2191011,
+            "alphaPixels": 4194304,
+            "diffPixels": 10100,
+            "totalAbsDiff": 1682959,
+            "changedRatio": 0.0024080276489257812,
+            "contentBounds": [
+              193,
+              52,
+              1851,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "mouth_open",
+          "parameters": {
+            "ParamMouthOpenY": 1
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_001/evidence/screenshots/desktop_mouth_open.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "a44060b2",
+            "nonBackground": 2191011,
+            "alphaPixels": 4194304,
+            "diffPixels": 9550,
+            "totalAbsDiff": 1205570,
+            "changedRatio": 0.002276897430419922,
+            "contentBounds": [
+              193,
+              52,
+              1851,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "hair_swing",
+          "parameters": {
+            "ParamHairFront": 1
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_001/evidence/screenshots/desktop_hair_swing.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "ebced156",
+            "nonBackground": 2194518,
+            "alphaPixels": 4194304,
+            "diffPixels": 231099,
+            "totalAbsDiff": 29365591,
+            "changedRatio": 0.05509829521179199,
+            "contentBounds": [
+              193,
+              52,
+              1851,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "poses": [
+        {
+          "pose": "neutral",
+          "parameters": {},
+          "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_001/evidence/screenshots/mobile_neutral.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "3cc1fb92",
+            "nonBackground": 2191011,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              193,
+              52,
+              1851,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "angle_left",
+          "parameters": {
+            "ParamAngleX": -30
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_001/evidence/screenshots/mobile_angle_left.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "cefd70ec",
+            "nonBackground": 2196417,
+            "alphaPixels": 4194304,
+            "diffPixels": 329508,
+            "totalAbsDiff": 49712190,
+            "changedRatio": 0.07856082916259766,
+            "contentBounds": [
+              193,
+              52,
+              1851,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "angle_right",
+          "parameters": {
+            "ParamAngleX": 30
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_001/evidence/screenshots/mobile_angle_right.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "f44b38f0",
+            "nonBackground": 2196979,
+            "alphaPixels": 4194304,
+            "diffPixels": 329631,
+            "totalAbsDiff": 49848101,
+            "changedRatio": 0.07859015464782715,
+            "contentBounds": [
+              193,
+              52,
+              1851,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "eye_l_close",
+          "parameters": {
+            "ParamEyeLOpen": 0
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_001/evidence/screenshots/mobile_eye_l_close.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "8fae12d4",
+            "nonBackground": 2191011,
+            "alphaPixels": 4194304,
+            "diffPixels": 9467,
+            "totalAbsDiff": 1722942,
+            "changedRatio": 0.002257108688354492,
+            "contentBounds": [
+              193,
+              52,
+              1851,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "eye_r_close",
+          "parameters": {
+            "ParamEyeROpen": 0
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_001/evidence/screenshots/mobile_eye_r_close.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "6eed534a",
+            "nonBackground": 2191011,
+            "alphaPixels": 4194304,
+            "diffPixels": 10100,
+            "totalAbsDiff": 1682959,
+            "changedRatio": 0.0024080276489257812,
+            "contentBounds": [
+              193,
+              52,
+              1851,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "mouth_open",
+          "parameters": {
+            "ParamMouthOpenY": 1
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_001/evidence/screenshots/mobile_mouth_open.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "a44060b2",
+            "nonBackground": 2191011,
+            "alphaPixels": 4194304,
+            "diffPixels": 9550,
+            "totalAbsDiff": 1205570,
+            "changedRatio": 0.002276897430419922,
+            "contentBounds": [
+              193,
+              52,
+              1851,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "hair_swing",
+          "parameters": {
+            "ParamHairFront": 1
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_001/evidence/screenshots/mobile_hair_swing.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "ebced156",
+            "nonBackground": 2194518,
+            "alphaPixels": 4194304,
+            "diffPixels": 231099,
+            "totalAbsDiff": 29365591,
+            "changedRatio": 0.05509829521179199,
+            "contentBounds": [
+              193,
+              52,
+              1851,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T01:45:38.450504+00:00",
+  "status": "PASS",
+  "run": "/Users/family/jason/Vtube/experiments/mini-cubism-physics-v0-3-001",
+  "motion_evidence": "/Users/family/jason/Vtube/experiments/mini-cubism-physics-v0-3-001/motion_evidence",
+  "best_project": "/Users/family/jason/Vtube/experiments/mini-cubism-physics-v0-3-001/best/mini_cubism_project",
+  "contact_sheet": "/Users/family/jason/Vtube/experiments/mini-cubism-physics-v0-3-001/review_packet/contact_sheet.png",
+  "best_motion": "/Users/family/jason/Vtube/experiments/mini-cubism-physics-v0-3-001/review_packet/best_motion.gif",
+  "review_summary": "/Users/family/jason/Vtube/experiments/mini-cubism-physics-v0-3-001/review_packet/review_summary.md"
+}

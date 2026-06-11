@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "experiment_id": "see-through-mps-compat-002",
+  "case_id": "mps_512_safe",
+  "status": "FAIL_MPS_UNSUPPORTED_SORT_AXIS_512",
+  "generated_at": "2026-06-04T04:59:58Z",
+  "input_image": "experiments/see-through-mps-compat-002/input/canonical_front_mps_512.png",
+  "settings": {
+    "resolution": 512,
+    "steps": 8,
+    "depth_resolution": 384,
+    "PYTORCH_ENABLE_MPS_FALLBACK": "1",
+    "PYTORCH_MPS_LOW_WATERMARK_RATIO": "0.85",
+    "PYTORCH_MPS_HIGH_WATERMARK_RATIO": "1.20"
+  },
+  "observed_progress": [
+    "ComfyUI server started on MPS",
+    "ComfyUI-See-through loaded 6 nodes",
+    "Marigold depth model loaded",
+    "LayerDiff model loaded",
+    "GenerateLayers started with resolution=512 and steps=8"
+  ],
+  "failure": {
+    "type": "MPS unsupported operation abort",
+    "message": "MPSNDArraySort failed assertion: Axis = 4. This class only supports axis = 0, 1, 2, 3",
+    "stack_focus": "ComfyUI-See-through/see-through/common/modules/layerdiffuse/vae.py:232",
+    "failing_code": "median = torch.median(result, dim=0).values",
+    "output_layers_json": null
+  },
+  "decision": "Pre-patch 512 smoke did not produce *_layers.json. This was not a pure memory failure; it needed an MPS compatibility patch around augmented VAE median/sort.",
+  "superseded_by": [
+    "experiments/see-through-mps-compat-002/reports/mps_patch_report.json",
+    "experiments/see-through-mps-compat-002/reports/mps_512_safe_inference_report.json",
+    "experiments/see-through-mps-compat-002/reports/normalize_report.json"
+  ],
+  "next_patch_candidates": [
+    "If result has only one augmentation tensor, return result[0] instead of torch.median.",
+    "Move torch.median(result, dim=0) to CPU, then move the median tensor back to the original device.",
+    "Disable augmented median path on MPS for the first smoke run.",
+    "Retry mps_512_safe after patch before attempting 640 or 768."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": "v1",
+  "status": "PENDING_REBUILD_FROM_SAVED_ANCHORS",
+  "source_readiness_report": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_anchor_correction_readiness/v22_b4_b5_anchor_correction_readiness.json",
+  "project": "cubism-v2-new-character-002",
+  "canvas": [
+    2048,
+    2048
+  ],
+  "overrides": {
+    "torso_base": {
+      "part_id": "torso_base",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/torso_base.png",
+      "current_center": [
+        1039.0,
+        1374.5
+      ],
+      "current_bbox": [
+        604,
+        884,
+        1474,
+        1865
+      ],
+      "target_anchor": [
+        1039.0,
+        1374.5
+      ],
+      "target_scale": 1.0,
+      "preview_opacity": 0.72,
+      "notes": "smoke test only; uses current center",
+      "status": "SAVED_TARGET_ANCHOR_PENDING_REBUILD",
+      "updated_at": "2026-06-09T13:37:54.210215+00:00"
+    }
+  },
+  "updated_at": "2026-06-09T13:37:54.210731+00:00",
+  "saved_count": 1
+}

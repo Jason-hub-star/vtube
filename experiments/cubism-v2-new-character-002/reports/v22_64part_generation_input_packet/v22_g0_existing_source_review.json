@@ -1,0 +1,95 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T09:40:38.596071+00:00",
+  "review_id": "cubism-v2-new-character-002-v22-g0-existing-source-review",
+  "status": "PASS_READY_FOR_64PART_GENERATION",
+  "allowed_verdicts": [
+    "PASS_READY_FOR_64PART_GENERATION",
+    "REVISE_SOURCE_STYLE",
+    "FAIL_REGENERATE_SOURCE"
+  ],
+  "source_image": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/new_character_002_source_front.raw.png",
+  "source_image_abs": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/new_character_002_source_front.raw.png",
+  "source_image_size": {
+    "width": 1254,
+    "height": 1254
+  },
+  "source_packet": "experiments/cubism-v2-new-character-002/reports/v22_64part_generation_input_packet/v22_64part_generation_input_packet.json",
+  "review_basis": [
+    "existing source/front selected for G0 review instead of B0 regeneration",
+    "Codex visual review against the v22 G0 checklist",
+    "no new image generation was performed"
+  ],
+  "review_items": [
+    {
+      "item": "same adult cute female character identity is appealing enough for production expansion",
+      "status": "pass",
+      "evidence": "Adult cute female identity is coherent and consistent with the current character-002 source direction."
+    },
+    {
+      "item": "front/near-front upper-body pose is centered and not cropped",
+      "status": "pass",
+      "evidence": "Face, hair, shoulders, neck, and torso are centered; lower sleeves/body are not the production boundary for G0 and should be completed by B5."
+    },
+    {
+      "item": "both eyes are visible and eye size is not too large",
+      "status": "pass",
+      "evidence": "Both eyes are fully visible, readable, symmetrical enough for the existing v21/v22 eye-anchor baseline, and not oversized."
+    },
+    {
+      "item": "mouth is visible, small enough, and placed naturally",
+      "status": "pass",
+      "evidence": "Mouth is visible, subtle, naturally placed, and small enough for a controlled B3 mouth packet."
+    },
+    {
+      "item": "nose is visible as subtle face detail",
+      "status": "pass",
+      "evidence": "Nose is visible as a subtle highlight/detail and should be preserved in B5 face-detail generation."
+    },
+    {
+      "item": "front/side/back hair groups are readable and not fused into one mass",
+      "status": "pass",
+      "evidence": "Bangs, side hair, long side locks, and back hair silhouette are readable enough to guide B4 hair children."
+    },
+    {
+      "item": "neck, shoulders, torso, collar, and simple upper arms are visible",
+      "status": "pass",
+      "evidence": "Neck, shoulders, torso, collar/strap area, and simple upper arms are visible; B5 must create complete clothing/arm underpaint rather than relying on the cropped source bottom."
+    },
+    {
+      "item": "no props, hands, hair, or accessories cover eyes or mouth",
+      "status": "pass",
+      "evidence": "No hands, props, labels, or accessories obscure the eyes or mouth; hair occlusion is limited to normal bangs."
+    },
+    {
+      "item": "design appears splittable into 64 v2_standard parts",
+      "status": "pass",
+      "evidence": "The simple outfit, readable hair groups, visible face features, and uncluttered silhouette are compatible with the confirmed 64-part v2_standard split."
+    },
+    {
+      "item": "no labels, part names, guide marks, or diagram layout",
+      "status": "pass",
+      "evidence": "The source is a coherent character image with no labels, guide marks, UI, text, or part-sheet layout."
+    }
+  ],
+  "limitations": [
+    "This is G0 source/style acceptance, not G1 64-part completeness.",
+    "Lower body/sleeve completion, clean bases, underpaints, eyes, mouth, and hair children still require B1-B5 generation.",
+    "Mini Cubism diagnostic PASS and real Cubism CMO3/deformer/keyform PASS remain separate later gates."
+  ],
+  "next_action": [
+    "unlock B1-B5 image-generation preparation from the v22 input packet",
+    "generate clean bases/underpaint first so baked eye or mouth pixels are not patched late",
+    "build technical validators and contact sheets before Mini Cubism diagnostic preview"
+  ],
+  "self_review": {
+    "source_exists": true,
+    "source_is_png": true,
+    "allowed_verdict": true,
+    "checklist_count": 10,
+    "review_item_count": 10,
+    "all_items_have_valid_status": true,
+    "has_next_action": true,
+    "status": "PASS"
+  }
+}

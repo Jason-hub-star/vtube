@@ -1,0 +1,1346 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-08T08:48:39.333329+00:00",
+  "status": "BUILT_GROUP_POSITION_CLEAN_CANDIDATE_V1",
+  "snapshot_manifest": "experiments/cubism-v2-new-character-001/material_pack_v0/layer_manifest.group_position_clean_candidate_v1.json",
+  "output_dir": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_group_position_clean_candidate_v1",
+  "group_deltas": {
+    "eye_L": {
+      "dx": -31.0,
+      "dy": -131.0,
+      "source_rows": [
+        {
+          "part_id": "eye_L_closed_lid",
+          "dx": -10.0,
+          "dy": -122.0,
+          "clean_bbox": [
+            870,
+            823,
+            143,
+            53
+          ],
+          "anchor_bbox": [
+            860,
+            701,
+            143,
+            53
+          ]
+        },
+        {
+          "part_id": "eye_L_highlight",
+          "dx": -33.0,
+          "dy": -135.5,
+          "clean_bbox": [
+            965,
+            847,
+            8,
+            15
+          ],
+          "anchor_bbox": [
+            926,
+            709,
+            20,
+            20
+          ]
+        },
+        {
+          "part_id": "eye_L_iris",
+          "dx": -16.0,
+          "dy": -144.0,
+          "clean_bbox": [
+            916,
+            847,
+            72,
+            48
+          ],
+          "anchor_bbox": [
+            900,
+            703,
+            72,
+            48
+          ]
+        },
+        {
+          "part_id": "eye_L_lower_lash",
+          "dx": -42.0,
+          "dy": -144.0,
+          "clean_bbox": [
+            871,
+            870,
+            140,
+            45
+          ],
+          "anchor_bbox": [
+            829,
+            726,
+            140,
+            45
+          ]
+        },
+        {
+          "part_id": "eye_L_pupil",
+          "dx": -12.0,
+          "dy": -131.0,
+          "clean_bbox": [
+            936,
+            847,
+            36,
+            23
+          ],
+          "anchor_bbox": [
+            924,
+            716,
+            36,
+            23
+          ]
+        },
+        {
+          "part_id": "eye_L_upper_lash",
+          "dx": -31.0,
+          "dy": -116.0,
+          "clean_bbox": [
+            851,
+            785,
+            180,
+            62
+          ],
+          "anchor_bbox": [
+            820,
+            669,
+            180,
+            62
+          ]
+        },
+        {
+          "part_id": "eye_L_white",
+          "dx": -50.0,
+          "dy": -119.0,
+          "clean_bbox": [
+            878,
+            805,
+            148,
+            92
+          ],
+          "anchor_bbox": [
+            828,
+            686,
+            148,
+            92
+          ]
+        }
+      ]
+    },
+    "eye_R": {
+      "dx": -28.0,
+      "dy": -122.0,
+      "source_rows": [
+        {
+          "part_id": "eye_R_closed_lid",
+          "dx": -28.0,
+          "dy": -128.0,
+          "clean_bbox": [
+            1100,
+            823,
+            143,
+            53
+          ],
+          "anchor_bbox": [
+            1072,
+            695,
+            143,
+            53
+          ]
+        },
+        {
+          "part_id": "eye_R_highlight",
+          "dx": -47.0,
+          "dy": -121.0,
+          "clean_bbox": [
+            1161,
+            835,
+            25,
+            27
+          ],
+          "anchor_bbox": [
+            1114,
+            714,
+            25,
+            27
+          ]
+        },
+        {
+          "part_id": "eye_R_iris",
+          "dx": -47.0,
+          "dy": -122.0,
+          "clean_bbox": [
+            1131,
+            820,
+            72,
+            75
+          ],
+          "anchor_bbox": [
+            1084,
+            698,
+            72,
+            75
+          ]
+        },
+        {
+          "part_id": "eye_R_lower_lash",
+          "dx": -9.0,
+          "dy": -144.0,
+          "clean_bbox": [
+            1101,
+            870,
+            140,
+            45
+          ],
+          "anchor_bbox": [
+            1092,
+            726,
+            140,
+            45
+          ]
+        },
+        {
+          "part_id": "eye_R_pupil",
+          "dx": -47.0,
+          "dy": -125.0,
+          "clean_bbox": [
+            1151,
+            840,
+            36,
+            40
+          ],
+          "anchor_bbox": [
+            1104,
+            715,
+            36,
+            40
+          ]
+        },
+        {
+          "part_id": "eye_R_upper_lash",
+          "dx": -9.0,
+          "dy": -113.0,
+          "clean_bbox": [
+            1081,
+            785,
+            180,
+            62
+          ],
+          "anchor_bbox": [
+            1072,
+            672,
+            180,
+            62
+          ]
+        },
+        {
+          "part_id": "eye_R_white",
+          "dx": 25.0,
+          "dy": -117.0,
+          "clean_bbox": [
+            1091,
+            805,
+            91,
+            95
+          ],
+          "anchor_bbox": [
+            1116,
+            688,
+            91,
+            95
+          ]
+        }
+      ]
+    },
+    "mouth": {
+      "dx": -1.0,
+      "dy": -162.0,
+      "source_rows": [
+        {
+          "part_id": "mouth_corner_L",
+          "dx": 48.0,
+          "dy": -162.0,
+          "clean_bbox": [
+            938,
+            1001,
+            12,
+            30
+          ],
+          "anchor_bbox": [
+            986,
+            839,
+            12,
+            30
+          ]
+        },
+        {
+          "part_id": "mouth_corner_R",
+          "dx": -50.0,
+          "dy": -162.0,
+          "clean_bbox": [
+            1113,
+            1001,
+            12,
+            30
+          ],
+          "anchor_bbox": [
+            1063,
+            839,
+            12,
+            30
+          ]
+        },
+        {
+          "part_id": "mouth_inner",
+          "dx": 0.0,
+          "dy": -160.0,
+          "clean_bbox": [
+            976,
+            997,
+            111,
+            61
+          ],
+          "anchor_bbox": [
+            976,
+            837,
+            111,
+            61
+          ]
+        },
+        {
+          "part_id": "mouth_line",
+          "dx": -5.0,
+          "dy": -165.0,
+          "clean_bbox": [
+            970,
+            1019,
+            124,
+            25
+          ],
+          "anchor_bbox": [
+            965,
+            854,
+            124,
+            25
+          ]
+        },
+        {
+          "part_id": "mouth_lower_lip_mask",
+          "dx": 1.0,
+          "dy": -174.0,
+          "clean_bbox": [
+            979,
+            1038,
+            104,
+            21
+          ],
+          "anchor_bbox": [
+            980,
+            864,
+            104,
+            21
+          ]
+        },
+        {
+          "part_id": "mouth_teeth",
+          "dx": -6.0,
+          "dy": -140.0,
+          "clean_bbox": [
+            990,
+            1000,
+            85,
+            15
+          ],
+          "anchor_bbox": [
+            984,
+            860,
+            85,
+            15
+          ]
+        },
+        {
+          "part_id": "mouth_tongue",
+          "dx": 0.0,
+          "dy": -178.0,
+          "clean_bbox": [
+            1000,
+            1029,
+            65,
+            27
+          ],
+          "anchor_bbox": [
+            1000,
+            851,
+            65,
+            27
+          ]
+        },
+        {
+          "part_id": "mouth_upper_lip_mask",
+          "dx": -2.0,
+          "dy": -132.0,
+          "clean_bbox": [
+            976,
+            975,
+            111,
+            21
+          ],
+          "anchor_bbox": [
+            974,
+            843,
+            111,
+            21
+          ]
+        }
+      ]
+    }
+  },
+  "counts": {
+    "group_delta_layers": 22,
+    "individual_delta_layers": 5,
+    "helper_kept": 6,
+    "kept_clean": 29,
+    "part_opacity_keyframes": 20,
+    "png_layers": 62
+  },
+  "rows": [
+    {
+      "part_id": "body_underpaint",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        815,
+        1200,
+        413,
+        384
+      ],
+      "alpha_coverage": 0.01338744
+    },
+    {
+      "part_id": "neck_shadow_underpaint",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        939,
+        1171,
+        164,
+        66
+      ],
+      "alpha_coverage": 0.00044417
+    },
+    {
+      "part_id": "arm_L_underpaint",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        662,
+        1232,
+        139,
+        423
+      ],
+      "alpha_coverage": 0.01256037
+    },
+    {
+      "part_id": "arm_R_underpaint",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        1330,
+        1232,
+        84,
+        423
+      ],
+      "alpha_coverage": 0.00705457
+    },
+    {
+      "part_id": "hair_back_base",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        653,
+        343,
+        747,
+        937
+      ],
+      "alpha_coverage": 0.07610965
+    },
+    {
+      "part_id": "hair_back_underpaint",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        719,
+        400,
+        624,
+        849
+      ],
+      "alpha_coverage": 0.07512641
+    },
+    {
+      "part_id": "hair_back_strand_L",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        656,
+        710,
+        230,
+        590
+      ],
+      "alpha_coverage": 0.0116241
+    },
+    {
+      "part_id": "hair_back_strand_R",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        1181,
+        710,
+        220,
+        590
+      ],
+      "alpha_coverage": 0.0108552
+    },
+    {
+      "part_id": "hair_back_center",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        870,
+        348,
+        331,
+        821
+      ],
+      "alpha_coverage": 0.03091979
+    },
+    {
+      "part_id": "torso_base",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        766,
+        1200,
+        540,
+        492
+      ],
+      "alpha_coverage": 0.03280902
+    },
+    {
+      "part_id": "neck",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        911,
+        1060,
+        230,
+        185
+      ],
+      "alpha_coverage": 0.0039022
+    },
+    {
+      "part_id": "shoulder_L",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        650,
+        1185,
+        361,
+        250
+      ],
+      "alpha_coverage": 0.01055646
+    },
+    {
+      "part_id": "shoulder_R",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        1066,
+        1185,
+        335,
+        250
+      ],
+      "alpha_coverage": 0.01075482
+    },
+    {
+      "part_id": "arm_L_upper_simple",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        609,
+        1200,
+        259,
+        548
+      ],
+      "alpha_coverage": 0.0248065
+    },
+    {
+      "part_id": "arm_R_upper_simple",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        1279,
+        1200,
+        146,
+        548
+      ],
+      "alpha_coverage": 0.01511359
+    },
+    {
+      "part_id": "chest_cloth_base",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        766,
+        1285,
+        542,
+        347
+      ],
+      "alpha_coverage": 0.02895737
+    },
+    {
+      "part_id": "face_underpaint_L",
+      "method": "KEEP_HELPER_NEUTRAL_HIDDEN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        817,
+        705,
+        202,
+        349
+      ],
+      "alpha_coverage": 0.00942397
+    },
+    {
+      "part_id": "face_underpaint_R",
+      "method": "KEEP_HELPER_NEUTRAL_HIDDEN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        1043,
+        705,
+        202,
+        349
+      ],
+      "alpha_coverage": 0.00952077
+    },
+    {
+      "part_id": "face_base",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        652,
+        337,
+        761,
+        1411
+      ],
+      "alpha_coverage": 0.02879095
+    },
+    {
+      "part_id": "face_shadow_L",
+      "method": "KEEP_HELPER_NEUTRAL_HIDDEN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        816,
+        745,
+        205,
+        300
+      ],
+      "alpha_coverage": 0.00383759
+    },
+    {
+      "part_id": "face_shadow_R",
+      "method": "KEEP_HELPER_NEUTRAL_HIDDEN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        1041,
+        745,
+        205,
+        300
+      ],
+      "alpha_coverage": 0.00432634
+    },
+    {
+      "part_id": "nose",
+      "method": "INDIVIDUAL_8065_DELTA",
+      "delta": [
+        -2.0,
+        -129.5
+      ],
+      "bbox_actual": [
+        999,
+        775,
+        60,
+        70
+      ],
+      "alpha_coverage": 0.00075197
+    },
+    {
+      "part_id": "cheek_L",
+      "method": "INDIVIDUAL_8065_DELTA",
+      "delta": [
+        48.0,
+        -82.0
+      ],
+      "bbox_actual": [
+        884,
+        808,
+        84,
+        65
+      ],
+      "alpha_coverage": 0.00015092
+    },
+    {
+      "part_id": "cheek_R",
+      "method": "INDIVIDUAL_8065_DELTA",
+      "delta": [
+        -61.0,
+        -68.0
+      ],
+      "bbox_actual": [
+        1080,
+        822,
+        85,
+        65
+      ],
+      "alpha_coverage": 0.00018716
+    },
+    {
+      "part_id": "eye_L_white",
+      "method": "GROUP_DELTA_eye_L",
+      "delta": [
+        -31.0,
+        -131.0
+      ],
+      "bbox_actual": [
+        847,
+        674,
+        148,
+        92
+      ],
+      "alpha_coverage": 0.00024509
+    },
+    {
+      "part_id": "eye_L_underpaint",
+      "method": "KEEP_HELPER_NEUTRAL_HIDDEN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        873,
+        821,
+        132,
+        66
+      ],
+      "alpha_coverage": 0.00044203
+    },
+    {
+      "part_id": "eye_R_white",
+      "method": "GROUP_DELTA_eye_R",
+      "delta": [
+        -28.0,
+        -122.0
+      ],
+      "bbox_actual": [
+        1063,
+        683,
+        91,
+        95
+      ],
+      "alpha_coverage": 0.00016618
+    },
+    {
+      "part_id": "eye_R_underpaint",
+      "method": "KEEP_HELPER_NEUTRAL_HIDDEN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        1127,
+        818,
+        111,
+        69
+      ],
+      "alpha_coverage": 0.00124097
+    },
+    {
+      "part_id": "eye_L_iris",
+      "method": "GROUP_DELTA_eye_L",
+      "delta": [
+        -31.0,
+        -131.0
+      ],
+      "bbox_actual": [
+        885,
+        716,
+        72,
+        48
+      ],
+      "alpha_coverage": 0.00013447
+    },
+    {
+      "part_id": "eye_L_pupil",
+      "method": "GROUP_DELTA_eye_L",
+      "delta": [
+        -31.0,
+        -131.0
+      ],
+      "bbox_actual": [
+        905,
+        716,
+        36,
+        23
+      ],
+      "alpha_coverage": 1.669e-05
+    },
+    {
+      "part_id": "eye_R_iris",
+      "method": "GROUP_DELTA_eye_R",
+      "delta": [
+        -28.0,
+        -122.0
+      ],
+      "bbox_actual": [
+        1103,
+        698,
+        72,
+        75
+      ],
+      "alpha_coverage": 0.00088978
+    },
+    {
+      "part_id": "eye_R_pupil",
+      "method": "GROUP_DELTA_eye_R",
+      "delta": [
+        -28.0,
+        -122.0
+      ],
+      "bbox_actual": [
+        1123,
+        718,
+        36,
+        40
+      ],
+      "alpha_coverage": 0.00028753
+    },
+    {
+      "part_id": "eye_L_highlight",
+      "method": "GROUP_DELTA_eye_L",
+      "delta": [
+        -31.0,
+        -131.0
+      ],
+      "bbox_actual": [
+        934,
+        716,
+        8,
+        15
+      ],
+      "alpha_coverage": 4.29e-06
+    },
+    {
+      "part_id": "eye_L_upper_lash",
+      "method": "GROUP_DELTA_eye_L",
+      "delta": [
+        -31.0,
+        -131.0
+      ],
+      "bbox_actual": [
+        820,
+        654,
+        180,
+        62
+      ],
+      "alpha_coverage": 0.00160789
+    },
+    {
+      "part_id": "eye_L_lower_lash",
+      "method": "GROUP_DELTA_eye_L",
+      "delta": [
+        -31.0,
+        -131.0
+      ],
+      "bbox_actual": [
+        840,
+        739,
+        140,
+        45
+      ],
+      "alpha_coverage": 0.00105262
+    },
+    {
+      "part_id": "eye_L_closed_lid",
+      "method": "GROUP_DELTA_eye_L",
+      "delta": [
+        -31.0,
+        -131.0
+      ],
+      "bbox_actual": [
+        839,
+        692,
+        143,
+        53
+      ],
+      "alpha_coverage": 0.00041676
+    },
+    {
+      "part_id": "eye_R_highlight",
+      "method": "GROUP_DELTA_eye_R",
+      "delta": [
+        -28.0,
+        -122.0
+      ],
+      "bbox_actual": [
+        1133,
+        713,
+        25,
+        27
+      ],
+      "alpha_coverage": 8.678e-05
+    },
+    {
+      "part_id": "eye_R_upper_lash",
+      "method": "GROUP_DELTA_eye_R",
+      "delta": [
+        -28.0,
+        -122.0
+      ],
+      "bbox_actual": [
+        1053,
+        663,
+        180,
+        62
+      ],
+      "alpha_coverage": 0.00245237
+    },
+    {
+      "part_id": "eye_R_lower_lash",
+      "method": "GROUP_DELTA_eye_R",
+      "delta": [
+        -28.0,
+        -122.0
+      ],
+      "bbox_actual": [
+        1073,
+        748,
+        140,
+        45
+      ],
+      "alpha_coverage": 0.00139785
+    },
+    {
+      "part_id": "eye_R_closed_lid",
+      "method": "GROUP_DELTA_eye_R",
+      "delta": [
+        -28.0,
+        -122.0
+      ],
+      "bbox_actual": [
+        1072,
+        701,
+        143,
+        53
+      ],
+      "alpha_coverage": 0.00041914
+    },
+    {
+      "part_id": "brow_L",
+      "method": "INDIVIDUAL_8065_DELTA",
+      "delta": [
+        -2.0,
+        -132.0
+      ],
+      "bbox_actual": [
+        839,
+        618,
+        200,
+        58
+      ],
+      "alpha_coverage": 0.00212836
+    },
+    {
+      "part_id": "brow_R",
+      "method": "INDIVIDUAL_8065_DELTA",
+      "delta": [
+        -46.0,
+        -126.0
+      ],
+      "bbox_actual": [
+        1025,
+        624,
+        200,
+        58
+      ],
+      "alpha_coverage": 0.00271511
+    },
+    {
+      "part_id": "mouth_inner",
+      "method": "GROUP_DELTA_mouth",
+      "delta": [
+        -1.0,
+        -162.0
+      ],
+      "bbox_actual": [
+        975,
+        835,
+        111,
+        61
+      ],
+      "alpha_coverage": 0.00126052
+    },
+    {
+      "part_id": "mouth_teeth",
+      "method": "GROUP_DELTA_mouth",
+      "delta": [
+        -1.0,
+        -162.0
+      ],
+      "bbox_actual": [
+        989,
+        838,
+        85,
+        15
+      ],
+      "alpha_coverage": 0.00028968
+    },
+    {
+      "part_id": "mouth_tongue",
+      "method": "GROUP_DELTA_mouth",
+      "delta": [
+        -1.0,
+        -162.0
+      ],
+      "bbox_actual": [
+        999,
+        867,
+        65,
+        27
+      ],
+      "alpha_coverage": 0.00032687
+    },
+    {
+      "part_id": "mouth_line",
+      "method": "GROUP_DELTA_mouth",
+      "delta": [
+        -1.0,
+        -162.0
+      ],
+      "bbox_actual": [
+        969,
+        857,
+        124,
+        25
+      ],
+      "alpha_coverage": 0.00024796
+    },
+    {
+      "part_id": "mouth_upper_lip_mask",
+      "method": "GROUP_DELTA_mouth",
+      "delta": [
+        -1.0,
+        -162.0
+      ],
+      "bbox_actual": [
+        975,
+        813,
+        111,
+        21
+      ],
+      "alpha_coverage": 0.00015759
+    },
+    {
+      "part_id": "mouth_lower_lip_mask",
+      "method": "GROUP_DELTA_mouth",
+      "delta": [
+        -1.0,
+        -162.0
+      ],
+      "bbox_actual": [
+        978,
+        876,
+        104,
+        21
+      ],
+      "alpha_coverage": 0.00014806
+    },
+    {
+      "part_id": "mouth_corner_L",
+      "method": "GROUP_DELTA_mouth",
+      "delta": [
+        -1.0,
+        -162.0
+      ],
+      "bbox_actual": [
+        937,
+        839,
+        12,
+        30
+      ],
+      "alpha_coverage": 4.053e-05
+    },
+    {
+      "part_id": "mouth_corner_R",
+      "method": "GROUP_DELTA_mouth",
+      "delta": [
+        -1.0,
+        -162.0
+      ],
+      "bbox_actual": [
+        1112,
+        839,
+        12,
+        30
+      ],
+      "alpha_coverage": 4.125e-05
+    },
+    {
+      "part_id": "hair_side_L_outer",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        648,
+        550,
+        243,
+        792
+      ],
+      "alpha_coverage": 0.01719689
+    },
+    {
+      "part_id": "hair_side_L_inner",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        781,
+        630,
+        165,
+        600
+      ],
+      "alpha_coverage": 0.01393533
+    },
+    {
+      "part_id": "hair_side_R_outer",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        1181,
+        550,
+        221,
+        788
+      ],
+      "alpha_coverage": 0.01604104
+    },
+    {
+      "part_id": "hair_side_R_inner",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        1111,
+        630,
+        165,
+        600
+      ],
+      "alpha_coverage": 0.01426482
+    },
+    {
+      "part_id": "hair_front_center",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        874,
+        383,
+        299,
+        412
+      ],
+      "alpha_coverage": 0.01522589
+    },
+    {
+      "part_id": "hair_front_L",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        786,
+        440,
+        230,
+        420
+      ],
+      "alpha_coverage": 0.01418829
+    },
+    {
+      "part_id": "hair_front_R",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        1041,
+        440,
+        230,
+        420
+      ],
+      "alpha_coverage": 0.01573324
+    },
+    {
+      "part_id": "hair_front_side_L",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        731,
+        540,
+        190,
+        560
+      ],
+      "alpha_coverage": 0.01851392
+    },
+    {
+      "part_id": "hair_front_side_R",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        1136,
+        540,
+        190,
+        560
+      ],
+      "alpha_coverage": 0.01930237
+    },
+    {
+      "part_id": "hair_front_tip_L",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        766,
+        965,
+        180,
+        292
+      ],
+      "alpha_coverage": 0.00487733
+    },
+    {
+      "part_id": "hair_front_tip_R",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        1106,
+        965,
+        180,
+        280
+      ],
+      "alpha_coverage": 0.00491977
+    },
+    {
+      "part_id": "collar_front",
+      "method": "KEEP_8066_CLEAN",
+      "delta": [
+        0.0,
+        0.0
+      ],
+      "bbox_actual": [
+        846,
+        1220,
+        356,
+        150
+      ],
+      "alpha_coverage": 0.00291586
+    }
+  ],
+  "interpretation": [
+    "This is the direct interpretation of 주인님's request: combine 8065 position success with 8066 clean-neutral success.",
+    "It uses group-level deltas to avoid the 8068 individual-part face breakage.",
+    "It keeps helper layers neutral-hidden to avoid 8064/8067 blotches."
+  ]
+}

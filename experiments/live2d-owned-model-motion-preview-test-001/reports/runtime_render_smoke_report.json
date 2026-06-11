@@ -1,0 +1,197 @@
+{
+  "status": "PASS",
+  "tested_models": 8,
+  "pass_count": 8,
+  "warn_count": 0,
+  "fail_count": 0,
+  "core_source": "CubismSdkForWeb-5-r.5.zip official SDK Core",
+  "detection_method": "median background difference across 8 runtime screenshots",
+  "screenshot_contact_sheet": "/Users/family/jason/Vtube/experiments/live2d-owned-model-motion-preview-test-001/reports/runtime_render_sequence_contact_sheet.png",
+  "median_background": "/Users/family/jason/Vtube/experiments/live2d-owned-model-motion-preview-test-001/reports/runtime_render_sequence_median_background.png",
+  "items": [
+    {
+      "model": "Haru",
+      "screenshot": "/Users/family/jason/Vtube/experiments/live2d-owned-model-motion-preview-test-001/reports/runtime_render_sequence/01_Haru.png",
+      "image_size": [
+        1280,
+        900
+      ],
+      "model_median_diff_bbox": [
+        563,
+        61,
+        718,
+        828
+      ],
+      "changed_pixels": 71268,
+      "edge_hits": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "clip_edges": [],
+      "runtime_view_status": "PASS"
+    },
+    {
+      "model": "Hiyori",
+      "screenshot": "/Users/family/jason/Vtube/experiments/live2d-owned-model-motion-preview-test-001/reports/runtime_render_sequence/02_Hiyori.png",
+      "image_size": [
+        1280,
+        900
+      ],
+      "model_median_diff_bbox": [
+        548,
+        88,
+        715,
+        863
+      ],
+      "changed_pixels": 64709,
+      "edge_hits": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "clip_edges": [],
+      "runtime_view_status": "PASS"
+    },
+    {
+      "model": "Mark",
+      "screenshot": "/Users/family/jason/Vtube/experiments/live2d-owned-model-motion-preview-test-001/reports/runtime_render_sequence/03_Mark.png",
+      "image_size": [
+        1280,
+        900
+      ],
+      "model_median_diff_bbox": [
+        529,
+        89,
+        782,
+        782
+      ],
+      "changed_pixels": 79892,
+      "edge_hits": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "clip_edges": [],
+      "runtime_view_status": "PASS"
+    },
+    {
+      "model": "Natori",
+      "screenshot": "/Users/family/jason/Vtube/experiments/live2d-owned-model-motion-preview-test-001/reports/runtime_render_sequence/04_Natori.png",
+      "image_size": [
+        1280,
+        900
+      ],
+      "model_median_diff_bbox": [
+        550,
+        77,
+        791,
+        841
+      ],
+      "changed_pixels": 91281,
+      "edge_hits": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "clip_edges": [],
+      "runtime_view_status": "PASS"
+    },
+    {
+      "model": "Rice",
+      "screenshot": "/Users/family/jason/Vtube/experiments/live2d-owned-model-motion-preview-test-001/reports/runtime_render_sequence/05_Rice.png",
+      "image_size": [
+        1280,
+        900
+      ],
+      "model_median_diff_bbox": [
+        574,
+        94,
+        963,
+        828
+      ],
+      "changed_pixels": 109765,
+      "edge_hits": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "clip_edges": [],
+      "runtime_view_status": "PASS"
+    },
+    {
+      "model": "Mao",
+      "screenshot": "/Users/family/jason/Vtube/experiments/live2d-owned-model-motion-preview-test-001/reports/runtime_render_sequence/06_Mao.png",
+      "image_size": [
+        1280,
+        900
+      ],
+      "model_median_diff_bbox": [
+        396,
+        91,
+        803,
+        858
+      ],
+      "changed_pixels": 113828,
+      "edge_hits": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "clip_edges": [],
+      "runtime_view_status": "PASS"
+    },
+    {
+      "model": "Wanko",
+      "screenshot": "/Users/family/jason/Vtube/experiments/live2d-owned-model-motion-preview-test-001/reports/runtime_render_sequence/07_Wanko.png",
+      "image_size": [
+        1280,
+        900
+      ],
+      "model_median_diff_bbox": [
+        493,
+        94,
+        809,
+        766
+      ],
+      "changed_pixels": 109104,
+      "edge_hits": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "clip_edges": [],
+      "runtime_view_status": "PASS"
+    },
+    {
+      "model": "Ren",
+      "screenshot": "/Users/family/jason/Vtube/experiments/live2d-owned-model-motion-preview-test-001/reports/runtime_render_sequence/08_Ren.png",
+      "image_size": [
+        1280,
+        900
+      ],
+      "model_median_diff_bbox": [
+        543,
+        58,
+        758,
+        843
+      ],
+      "changed_pixels": 99615,
+      "edge_hits": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "clip_edges": [],
+      "runtime_view_status": "PASS"
+    }
+  ]
+}

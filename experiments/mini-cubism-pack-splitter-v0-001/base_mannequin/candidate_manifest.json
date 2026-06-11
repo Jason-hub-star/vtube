@@ -1,0 +1,3429 @@
+{
+  "schema_version": 1,
+  "pack_id": "base_mannequin",
+  "generated_at": "2026-06-05T05:35:35.713379+00:00",
+  "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+  "status": "PROBED_WITH_LOCAL_ADAPTERS",
+  "candidates": [
+    {
+      "candidate_id": "layerd__base_mannequin__head_base",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "base_mannequin",
+      "part_id": "head_base",
+      "roi": [
+        760,
+        45,
+        530,
+        470
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/base_mannequin/head_base.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          820,
+          45,
+          409,
+          471
+        ],
+        "nonzero_alpha": 105737,
+        "alpha_coverage": 0.02520967,
+        "roi_coverage": 0.414954,
+        "edge_score": 0.1327,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__base_mannequin__head_base",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "base_mannequin",
+      "part_id": "head_base",
+      "roi": [
+        760,
+        45,
+        530,
+        470
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/base_mannequin/head_base.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          820,
+          42,
+          409,
+          477
+        ],
+        "nonzero_alpha": 108881,
+        "alpha_coverage": 0.02595925,
+        "roi_coverage": 0.420566,
+        "edge_score": 0.126,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__base_mannequin__head_base",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "base_mannequin",
+      "part_id": "head_base",
+      "roi": [
+        760,
+        45,
+        530,
+        470
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/base_mannequin/head_base.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          818,
+          40,
+          412,
+          481
+        ],
+        "nonzero_alpha": 112383,
+        "alpha_coverage": 0.0267942,
+        "roi_coverage": 0.429141,
+        "edge_score": 0.1255,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__base_mannequin__head_base",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "base_mannequin",
+      "part_id": "head_base",
+      "roi": [
+        760,
+        45,
+        530,
+        470
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/base_mannequin/head_base.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          822,
+          42,
+          405,
+          477
+        ],
+        "nonzero_alpha": 107748,
+        "alpha_coverage": 0.02568913,
+        "roi_coverage": 0.425773,
+        "edge_score": 0.1263,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__base_mannequin__head_base",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "base_mannequin",
+      "part_id": "head_base",
+      "roi": [
+        760,
+        45,
+        530,
+        470
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/base_mannequin/head_base.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          818,
+          43,
+          413,
+          475
+        ],
+        "nonzero_alpha": 111461,
+        "alpha_coverage": 0.02657437,
+        "roi_coverage": 0.428165,
+        "edge_score": 0.1267,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__base_mannequin__head_base",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "base_mannequin",
+      "part_id": "head_base",
+      "roi": [
+        760,
+        45,
+        530,
+        470
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/base_mannequin/head_base.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__base_mannequin__head_base",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "base_mannequin",
+      "part_id": "head_base",
+      "roi": [
+        760,
+        45,
+        530,
+        470
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/base_mannequin/head_base.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          654,
+          44,
+          740,
+          1980
+        ],
+        "nonzero_alpha": 524858,
+        "alpha_coverage": 0.1251359,
+        "roi_coverage": 0.414954,
+        "edge_score": 0.7007,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__base_mannequin__ear_L",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "base_mannequin",
+      "part_id": "ear_L",
+      "roi": [
+        1120,
+        145,
+        250,
+        285
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/base_mannequin/ear_L.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1120,
+          145,
+          92,
+          286
+        ],
+        "nonzero_alpha": 5664,
+        "alpha_coverage": 0.0013504,
+        "roi_coverage": 0.07294,
+        "edge_score": 0.0328,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__base_mannequin__ear_L",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "base_mannequin",
+      "part_id": "ear_L",
+      "roi": [
+        1120,
+        145,
+        250,
+        285
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/base_mannequin/ear_L.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1117,
+          142,
+          95,
+          292
+        ],
+        "nonzero_alpha": 6762,
+        "alpha_coverage": 0.00161219,
+        "roi_coverage": 0.076491,
+        "edge_score": 0.0305,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__base_mannequin__ear_L",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "base_mannequin",
+      "part_id": "ear_L",
+      "roi": [
+        1120,
+        145,
+        250,
+        285
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/base_mannequin/ear_L.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1115,
+          140,
+          99,
+          296
+        ],
+        "nonzero_alpha": 7809,
+        "alpha_coverage": 0.00186181,
+        "roi_coverage": 0.081979,
+        "edge_score": 0.0288,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__base_mannequin__ear_L",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "base_mannequin",
+      "part_id": "ear_L",
+      "roi": [
+        1120,
+        145,
+        250,
+        285
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/base_mannequin/ear_L.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1117,
+          144,
+          93,
+          290
+        ],
+        "nonzero_alpha": 6381,
+        "alpha_coverage": 0.00152135,
+        "roi_coverage": 0.078863,
+        "edge_score": 0.0343,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__base_mannequin__ear_L",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "base_mannequin",
+      "part_id": "ear_L",
+      "roi": [
+        1120,
+        145,
+        250,
+        285
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/base_mannequin/ear_L.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1118,
+          143,
+          96,
+          290
+        ],
+        "nonzero_alpha": 7101,
+        "alpha_coverage": 0.00169301,
+        "roi_coverage": 0.081137,
+        "edge_score": 0.0344,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__base_mannequin__ear_L",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "base_mannequin",
+      "part_id": "ear_L",
+      "roi": [
+        1120,
+        145,
+        250,
+        285
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/base_mannequin/ear_L.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__base_mannequin__ear_L",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "base_mannequin",
+      "part_id": "ear_L",
+      "roi": [
+        1120,
+        145,
+        250,
+        285
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/base_mannequin/ear_L.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          654,
+          44,
+          740,
+          1980
+        ],
+        "nonzero_alpha": 524858,
+        "alpha_coverage": 0.1251359,
+        "roi_coverage": 0.07294,
+        "edge_score": 0.7007,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__base_mannequin__ear_R",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "base_mannequin",
+      "part_id": "ear_R",
+      "roi": [
+        680,
+        145,
+        250,
+        285
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/base_mannequin/ear_R.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          836,
+          145,
+          95,
+          286
+        ],
+        "nonzero_alpha": 5889,
+        "alpha_coverage": 0.00140405,
+        "roi_coverage": 0.074119,
+        "edge_score": 0.034,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__base_mannequin__ear_R",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "base_mannequin",
+      "part_id": "ear_R",
+      "roi": [
+        680,
+        145,
+        250,
+        285
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/base_mannequin/ear_R.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          835,
+          142,
+          99,
+          292
+        ],
+        "nonzero_alpha": 7013,
+        "alpha_coverage": 0.00167203,
+        "roi_coverage": 0.077544,
+        "edge_score": 0.0318,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__base_mannequin__ear_R",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "base_mannequin",
+      "part_id": "ear_R",
+      "roi": [
+        680,
+        145,
+        250,
+        285
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/base_mannequin/ear_R.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          834,
+          140,
+          102,
+          296
+        ],
+        "nonzero_alpha": 8090,
+        "alpha_coverage": 0.00192881,
+        "roi_coverage": 0.083004,
+        "edge_score": 0.0301,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__base_mannequin__ear_R",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "base_mannequin",
+      "part_id": "ear_R",
+      "roi": [
+        680,
+        145,
+        250,
+        285
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/base_mannequin/ear_R.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          838,
+          143,
+          96,
+          291
+        ],
+        "nonzero_alpha": 6681,
+        "alpha_coverage": 0.00159287,
+        "roi_coverage": 0.080365,
+        "edge_score": 0.0354,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__base_mannequin__ear_R",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "base_mannequin",
+      "part_id": "ear_R",
+      "roi": [
+        680,
+        145,
+        250,
+        285
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/base_mannequin/ear_R.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          834,
+          143,
+          99,
+          290
+        ],
+        "nonzero_alpha": 7333,
+        "alpha_coverage": 0.00174832,
+        "roi_coverage": 0.082695,
+        "edge_score": 0.0351,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__base_mannequin__ear_R",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "base_mannequin",
+      "part_id": "ear_R",
+      "roi": [
+        680,
+        145,
+        250,
+        285
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/base_mannequin/ear_R.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__base_mannequin__ear_R",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "base_mannequin",
+      "part_id": "ear_R",
+      "roi": [
+        680,
+        145,
+        250,
+        285
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/base_mannequin/ear_R.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          654,
+          44,
+          740,
+          1980
+        ],
+        "nonzero_alpha": 524858,
+        "alpha_coverage": 0.1251359,
+        "roi_coverage": 0.074119,
+        "edge_score": 0.7007,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__base_mannequin__neck",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "base_mannequin",
+      "part_id": "neck",
+      "roi": [
+        895,
+        390,
+        260,
+        210
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/base_mannequin/neck.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          895,
+          390,
+          261,
+          211
+        ],
+        "nonzero_alpha": 54650,
+        "alpha_coverage": 0.01302958,
+        "roi_coverage": 0.991392,
+        "edge_score": 0.0578,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__base_mannequin__neck",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "base_mannequin",
+      "part_id": "neck",
+      "roi": [
+        895,
+        390,
+        260,
+        210
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/base_mannequin/neck.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          892,
+          387,
+          267,
+          217
+        ],
+        "nonzero_alpha": 57286,
+        "alpha_coverage": 0.01365805,
+        "roi_coverage": 0.992766,
+        "edge_score": 0.0574,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__base_mannequin__neck",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "base_mannequin",
+      "part_id": "neck",
+      "roi": [
+        895,
+        390,
+        260,
+        210
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/base_mannequin/neck.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          890,
+          385,
+          271,
+          221
+        ],
+        "nonzero_alpha": 59187,
+        "alpha_coverage": 0.01411128,
+        "roi_coverage": 0.994945,
+        "edge_score": 0.0574,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__base_mannequin__neck",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "base_mannequin",
+      "part_id": "neck",
+      "roi": [
+        895,
+        390,
+        260,
+        210
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/base_mannequin/neck.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          892,
+          387,
+          267,
+          217
+        ],
+        "nonzero_alpha": 57184,
+        "alpha_coverage": 0.01363373,
+        "roi_coverage": 0.994121,
+        "edge_score": 0.0589,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__base_mannequin__neck",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "base_mannequin",
+      "part_id": "neck",
+      "roi": [
+        895,
+        390,
+        260,
+        210
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/base_mannequin/neck.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          893,
+          388,
+          265,
+          215
+        ],
+        "nonzero_alpha": 56660,
+        "alpha_coverage": 0.0135088,
+        "roi_coverage": 0.994762,
+        "edge_score": 0.0584,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__base_mannequin__neck",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "base_mannequin",
+      "part_id": "neck",
+      "roi": [
+        895,
+        390,
+        260,
+        210
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/base_mannequin/neck.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__base_mannequin__neck",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "base_mannequin",
+      "part_id": "neck",
+      "roi": [
+        895,
+        390,
+        260,
+        210
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/base_mannequin/neck.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          654,
+          44,
+          740,
+          1980
+        ],
+        "nonzero_alpha": 524858,
+        "alpha_coverage": 0.1251359,
+        "roi_coverage": 0.991392,
+        "edge_score": 0.7007,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__base_mannequin__torso_skin_abdomen",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "base_mannequin",
+      "part_id": "torso_skin_abdomen",
+      "roi": [
+        760,
+        610,
+        530,
+        430
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/base_mannequin/torso_skin_abdomen.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          760,
+          610,
+          531,
+          431
+        ],
+        "nonzero_alpha": 158980,
+        "alpha_coverage": 0.03790379,
+        "roi_coverage": 0.681913,
+        "edge_score": 0.2102,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__base_mannequin__torso_skin_abdomen",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "base_mannequin",
+      "part_id": "torso_skin_abdomen",
+      "roi": [
+        760,
+        610,
+        530,
+        430
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/base_mannequin/torso_skin_abdomen.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          757,
+          607,
+          537,
+          437
+        ],
+        "nonzero_alpha": 164691,
+        "alpha_coverage": 0.03926539,
+        "roi_coverage": 0.690663,
+        "edge_score": 0.2016,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__base_mannequin__torso_skin_abdomen",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "base_mannequin",
+      "part_id": "torso_skin_abdomen",
+      "roi": [
+        760,
+        610,
+        530,
+        430
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/base_mannequin/torso_skin_abdomen.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          755,
+          605,
+          541,
+          441
+        ],
+        "nonzero_alpha": 170126,
+        "alpha_coverage": 0.0405612,
+        "roi_coverage": 0.704199,
+        "edge_score": 0.2005,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__base_mannequin__torso_skin_abdomen",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "base_mannequin",
+      "part_id": "torso_skin_abdomen",
+      "roi": [
+        760,
+        610,
+        530,
+        430
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/base_mannequin/torso_skin_abdomen.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          757,
+          607,
+          537,
+          437
+        ],
+        "nonzero_alpha": 162748,
+        "alpha_coverage": 0.03880215,
+        "roi_coverage": 0.699061,
+        "edge_score": 0.205,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__base_mannequin__torso_skin_abdomen",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "base_mannequin",
+      "part_id": "torso_skin_abdomen",
+      "roi": [
+        760,
+        610,
+        530,
+        430
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/base_mannequin/torso_skin_abdomen.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          758,
+          608,
+          535,
+          435
+        ],
+        "nonzero_alpha": 168058,
+        "alpha_coverage": 0.04006815,
+        "roi_coverage": 0.702317,
+        "edge_score": 0.2055,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__base_mannequin__torso_skin_abdomen",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "base_mannequin",
+      "part_id": "torso_skin_abdomen",
+      "roi": [
+        760,
+        610,
+        530,
+        430
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/base_mannequin/torso_skin_abdomen.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__base_mannequin__torso_skin_abdomen",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "base_mannequin",
+      "part_id": "torso_skin_abdomen",
+      "roi": [
+        760,
+        610,
+        530,
+        430
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/base_mannequin/torso_skin_abdomen.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          654,
+          44,
+          740,
+          1980
+        ],
+        "nonzero_alpha": 524858,
+        "alpha_coverage": 0.1251359,
+        "roi_coverage": 0.681913,
+        "edge_score": 0.7007,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__base_mannequin__underlayer_chest_cover",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "base_mannequin",
+      "part_id": "underlayer_chest_cover",
+      "roi": [
+        735,
+        500,
+        580,
+        300
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/base_mannequin/underlayer_chest_cover.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          737,
+          500,
+          574,
+          301
+        ],
+        "nonzero_alpha": 116963,
+        "alpha_coverage": 0.02788615,
+        "roi_coverage": 0.654115,
+        "edge_score": 0.186,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__base_mannequin__underlayer_chest_cover",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "base_mannequin",
+      "part_id": "underlayer_chest_cover",
+      "roi": [
+        735,
+        500,
+        580,
+        300
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/base_mannequin/underlayer_chest_cover.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          736,
+          497,
+          575,
+          307
+        ],
+        "nonzero_alpha": 121830,
+        "alpha_coverage": 0.02904654,
+        "roi_coverage": 0.664489,
+        "edge_score": 0.1781,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__base_mannequin__underlayer_chest_cover",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "base_mannequin",
+      "part_id": "underlayer_chest_cover",
+      "roi": [
+        735,
+        500,
+        580,
+        300
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/base_mannequin/underlayer_chest_cover.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          735,
+          495,
+          578,
+          311
+        ],
+        "nonzero_alpha": 126384,
+        "alpha_coverage": 0.03013229,
+        "roi_coverage": 0.680402,
+        "edge_score": 0.1774,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__base_mannequin__underlayer_chest_cover",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "base_mannequin",
+      "part_id": "underlayer_chest_cover",
+      "roi": [
+        735,
+        500,
+        580,
+        300
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/base_mannequin/underlayer_chest_cover.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          739,
+          497,
+          570,
+          307
+        ],
+        "nonzero_alpha": 120216,
+        "alpha_coverage": 0.02866173,
+        "roi_coverage": 0.674552,
+        "edge_score": 0.1771,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__base_mannequin__underlayer_chest_cover",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "base_mannequin",
+      "part_id": "underlayer_chest_cover",
+      "roi": [
+        735,
+        500,
+        580,
+        300
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/base_mannequin/underlayer_chest_cover.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          735,
+          498,
+          578,
+          305
+        ],
+        "nonzero_alpha": 124745,
+        "alpha_coverage": 0.02974153,
+        "roi_coverage": 0.678178,
+        "edge_score": 0.1789,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__base_mannequin__underlayer_chest_cover",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "base_mannequin",
+      "part_id": "underlayer_chest_cover",
+      "roi": [
+        735,
+        500,
+        580,
+        300
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/base_mannequin/underlayer_chest_cover.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__base_mannequin__underlayer_chest_cover",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "base_mannequin",
+      "part_id": "underlayer_chest_cover",
+      "roi": [
+        735,
+        500,
+        580,
+        300
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/base_mannequin/underlayer_chest_cover.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          654,
+          44,
+          740,
+          1980
+        ],
+        "nonzero_alpha": 524858,
+        "alpha_coverage": 0.1251359,
+        "roi_coverage": 0.654115,
+        "edge_score": 0.7007,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__base_mannequin__underlayer_pelvis_cover",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "base_mannequin",
+      "part_id": "underlayer_pelvis_cover",
+      "roi": [
+        760,
+        900,
+        540,
+        310
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/base_mannequin/underlayer_pelvis_cover.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          831,
+          900,
+          470,
+          311
+        ],
+        "nonzero_alpha": 101219,
+        "alpha_coverage": 0.02413249,
+        "roi_coverage": 0.592401,
+        "edge_score": 0.1193,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__base_mannequin__underlayer_pelvis_cover",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "base_mannequin",
+      "part_id": "underlayer_pelvis_cover",
+      "roi": [
+        760,
+        900,
+        540,
+        310
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/base_mannequin/underlayer_pelvis_cover.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          831,
+          897,
+          473,
+          317
+        ],
+        "nonzero_alpha": 104965,
+        "alpha_coverage": 0.02502561,
+        "roi_coverage": 0.599636,
+        "edge_score": 0.1143,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__base_mannequin__underlayer_pelvis_cover",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "base_mannequin",
+      "part_id": "underlayer_pelvis_cover",
+      "roi": [
+        760,
+        900,
+        540,
+        310
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/base_mannequin/underlayer_pelvis_cover.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          829,
+          895,
+          477,
+          321
+        ],
+        "nonzero_alpha": 108199,
+        "alpha_coverage": 0.02579665,
+        "roi_coverage": 0.610896,
+        "edge_score": 0.1139,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__base_mannequin__underlayer_pelvis_cover",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "base_mannequin",
+      "part_id": "underlayer_pelvis_cover",
+      "roi": [
+        760,
+        900,
+        540,
+        310
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/base_mannequin/underlayer_pelvis_cover.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          832,
+          897,
+          382,
+          317
+        ],
+        "nonzero_alpha": 103560,
+        "alpha_coverage": 0.02469063,
+        "roi_coverage": 0.606601,
+        "edge_score": 0.1148,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__base_mannequin__underlayer_pelvis_cover",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "base_mannequin",
+      "part_id": "underlayer_pelvis_cover",
+      "roi": [
+        760,
+        900,
+        540,
+        310
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/base_mannequin/underlayer_pelvis_cover.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          829,
+          898,
+          474,
+          315
+        ],
+        "nonzero_alpha": 106690,
+        "alpha_coverage": 0.02543688,
+        "roi_coverage": 0.607694,
+        "edge_score": 0.1167,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__base_mannequin__underlayer_pelvis_cover",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "base_mannequin",
+      "part_id": "underlayer_pelvis_cover",
+      "roi": [
+        760,
+        900,
+        540,
+        310
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/base_mannequin/underlayer_pelvis_cover.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__base_mannequin__underlayer_pelvis_cover",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "base_mannequin",
+      "part_id": "underlayer_pelvis_cover",
+      "roi": [
+        760,
+        900,
+        540,
+        310
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/base_mannequin/underlayer_pelvis_cover.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          654,
+          44,
+          740,
+          1980
+        ],
+        "nonzero_alpha": 524858,
+        "alpha_coverage": 0.1251359,
+        "roi_coverage": 0.592401,
+        "edge_score": 0.7007,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__base_mannequin__arm_L",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "base_mannequin",
+      "part_id": "arm_L",
+      "roi": [
+        1190,
+        500,
+        380,
+        770
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/base_mannequin/arm_L.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1190,
+          500,
+          204,
+          651
+        ],
+        "nonzero_alpha": 36772,
+        "alpha_coverage": 0.00876713,
+        "roi_coverage": 0.117922,
+        "edge_score": 0.1422,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__base_mannequin__arm_L",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "base_mannequin",
+      "part_id": "arm_L",
+      "roi": [
+        1190,
+        500,
+        380,
+        770
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/base_mannequin/arm_L.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1187,
+          497,
+          209,
+          654
+        ],
+        "nonzero_alpha": 40260,
+        "alpha_coverage": 0.00959873,
+        "roi_coverage": 0.123209,
+        "edge_score": 0.1339,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__base_mannequin__arm_L",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "base_mannequin",
+      "part_id": "arm_L",
+      "roi": [
+        1190,
+        500,
+        380,
+        770
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/base_mannequin/arm_L.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1185,
+          495,
+          213,
+          655
+        ],
+        "nonzero_alpha": 43726,
+        "alpha_coverage": 0.01042509,
+        "roi_coverage": 0.131227,
+        "edge_score": 0.1308,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__base_mannequin__arm_L",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "base_mannequin",
+      "part_id": "arm_L",
+      "roi": [
+        1190,
+        500,
+        380,
+        770
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/base_mannequin/arm_L.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1187,
+          497,
+          208,
+          632
+        ],
+        "nonzero_alpha": 38715,
+        "alpha_coverage": 0.00923038,
+        "roi_coverage": 0.127912,
+        "edge_score": 0.1335,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__base_mannequin__arm_L",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "base_mannequin",
+      "part_id": "arm_L",
+      "roi": [
+        1190,
+        500,
+        380,
+        770
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/base_mannequin/arm_L.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1188,
+          498,
+          208,
+          655
+        ],
+        "nonzero_alpha": 43088,
+        "alpha_coverage": 0.01027298,
+        "roi_coverage": 0.130161,
+        "edge_score": 0.1363,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__base_mannequin__arm_L",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "base_mannequin",
+      "part_id": "arm_L",
+      "roi": [
+        1190,
+        500,
+        380,
+        770
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/base_mannequin/arm_L.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__base_mannequin__arm_L",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "base_mannequin",
+      "part_id": "arm_L",
+      "roi": [
+        1190,
+        500,
+        380,
+        770
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/base_mannequin/arm_L.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          654,
+          44,
+          740,
+          1980
+        ],
+        "nonzero_alpha": 524858,
+        "alpha_coverage": 0.1251359,
+        "roi_coverage": 0.117922,
+        "edge_score": 0.7007,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__base_mannequin__arm_R",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "base_mannequin",
+      "part_id": "arm_R",
+      "roi": [
+        480,
+        500,
+        380,
+        770
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/base_mannequin/arm_R.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          654,
+          500,
+          207,
+          670
+        ],
+        "nonzero_alpha": 38756,
+        "alpha_coverage": 0.00924015,
+        "roi_coverage": 0.12283,
+        "edge_score": 0.1491,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__base_mannequin__arm_R",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "base_mannequin",
+      "part_id": "arm_R",
+      "roi": [
+        480,
+        500,
+        380,
+        770
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/base_mannequin/arm_R.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          652,
+          497,
+          212,
+          673
+        ],
+        "nonzero_alpha": 42382,
+        "alpha_coverage": 0.01010466,
+        "roi_coverage": 0.128332,
+        "edge_score": 0.14,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__base_mannequin__arm_R",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "base_mannequin",
+      "part_id": "arm_R",
+      "roi": [
+        480,
+        500,
+        380,
+        770
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/base_mannequin/arm_R.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          650,
+          495,
+          216,
+          672
+        ],
+        "nonzero_alpha": 46022,
+        "alpha_coverage": 0.0109725,
+        "roi_coverage": 0.136582,
+        "edge_score": 0.1371,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__base_mannequin__arm_R",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "base_mannequin",
+      "part_id": "arm_R",
+      "roi": [
+        480,
+        500,
+        380,
+        770
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/base_mannequin/arm_R.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          653,
+          497,
+          211,
+          651
+        ],
+        "nonzero_alpha": 40855,
+        "alpha_coverage": 0.00974059,
+        "roi_coverage": 0.133336,
+        "edge_score": 0.1394,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__base_mannequin__arm_R",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "base_mannequin",
+      "part_id": "arm_R",
+      "roi": [
+        480,
+        500,
+        380,
+        770
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/base_mannequin/arm_R.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          652,
+          498,
+          211,
+          674
+        ],
+        "nonzero_alpha": 45217,
+        "alpha_coverage": 0.01078057,
+        "roi_coverage": 0.135424,
+        "edge_score": 0.1423,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__base_mannequin__arm_R",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "base_mannequin",
+      "part_id": "arm_R",
+      "roi": [
+        480,
+        500,
+        380,
+        770
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/base_mannequin/arm_R.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__base_mannequin__arm_R",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "base_mannequin",
+      "part_id": "arm_R",
+      "roi": [
+        480,
+        500,
+        380,
+        770
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/base_mannequin/arm_R.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          654,
+          44,
+          740,
+          1980
+        ],
+        "nonzero_alpha": 524858,
+        "alpha_coverage": 0.1251359,
+        "roi_coverage": 0.12283,
+        "edge_score": 0.7007,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__base_mannequin__hand_L",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "base_mannequin",
+      "part_id": "hand_L",
+      "roi": [
+        1245,
+        910,
+        360,
+        390
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/base_mannequin/hand_L.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1298,
+          910,
+          96,
+          181
+        ],
+        "nonzero_alpha": 8363,
+        "alpha_coverage": 0.00199389,
+        "roi_coverage": 0.055264,
+        "edge_score": 0.0385,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__base_mannequin__hand_L",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "base_mannequin",
+      "part_id": "hand_L",
+      "roi": [
+        1245,
+        910,
+        360,
+        390
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/base_mannequin/hand_L.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1298,
+          907,
+          98,
+          184
+        ],
+        "nonzero_alpha": 9120,
+        "alpha_coverage": 0.00217438,
+        "roi_coverage": 0.058718,
+        "edge_score": 0.0353,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__base_mannequin__hand_L",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "base_mannequin",
+      "part_id": "hand_L",
+      "roi": [
+        1245,
+        910,
+        360,
+        390
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/base_mannequin/hand_L.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1297,
+          905,
+          101,
+          188
+        ],
+        "nonzero_alpha": 10031,
+        "alpha_coverage": 0.00239158,
+        "roi_coverage": 0.063711,
+        "edge_score": 0.0337,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__base_mannequin__hand_L",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "base_mannequin",
+      "part_id": "hand_L",
+      "roi": [
+        1245,
+        910,
+        360,
+        390
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/base_mannequin/hand_L.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1301,
+          907,
+          94,
+          181
+        ],
+        "nonzero_alpha": 8743,
+        "alpha_coverage": 0.00208449,
+        "roi_coverage": 0.061467,
+        "edge_score": 0.0336,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__base_mannequin__hand_L",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "base_mannequin",
+      "part_id": "hand_L",
+      "roi": [
+        1245,
+        910,
+        360,
+        390
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/base_mannequin/hand_L.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1296,
+          908,
+          100,
+          185
+        ],
+        "nonzero_alpha": 9976,
+        "alpha_coverage": 0.00237846,
+        "roi_coverage": 0.063034,
+        "edge_score": 0.0355,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__base_mannequin__hand_L",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "base_mannequin",
+      "part_id": "hand_L",
+      "roi": [
+        1245,
+        910,
+        360,
+        390
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/base_mannequin/hand_L.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__base_mannequin__hand_L",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "base_mannequin",
+      "part_id": "hand_L",
+      "roi": [
+        1245,
+        910,
+        360,
+        390
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/base_mannequin/hand_L.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          654,
+          44,
+          740,
+          1980
+        ],
+        "nonzero_alpha": 524858,
+        "alpha_coverage": 0.1251359,
+        "roi_coverage": 0.055264,
+        "edge_score": 0.7007,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__base_mannequin__hand_R",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "base_mannequin",
+      "part_id": "hand_R",
+      "roi": [
+        445,
+        910,
+        360,
+        390
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/base_mannequin/hand_R.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          654,
+          910,
+          96,
+          181
+        ],
+        "nonzero_alpha": 8396,
+        "alpha_coverage": 0.00200176,
+        "roi_coverage": 0.055356,
+        "edge_score": 0.0391,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__base_mannequin__hand_R",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "base_mannequin",
+      "part_id": "hand_R",
+      "roi": [
+        445,
+        910,
+        360,
+        390
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/base_mannequin/hand_R.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          652,
+          907,
+          98,
+          184
+        ],
+        "nonzero_alpha": 9153,
+        "alpha_coverage": 0.00218225,
+        "roi_coverage": 0.058875,
+        "edge_score": 0.0354,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__base_mannequin__hand_R",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "base_mannequin",
+      "part_id": "hand_R",
+      "roi": [
+        445,
+        910,
+        360,
+        390
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/base_mannequin/hand_R.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          650,
+          905,
+          101,
+          188
+        ],
+        "nonzero_alpha": 10040,
+        "alpha_coverage": 0.00239372,
+        "roi_coverage": 0.063675,
+        "edge_score": 0.0339,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__base_mannequin__hand_R",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "base_mannequin",
+      "part_id": "hand_R",
+      "roi": [
+        445,
+        910,
+        360,
+        390
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/base_mannequin/hand_R.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          653,
+          907,
+          94,
+          181
+        ],
+        "nonzero_alpha": 8768,
+        "alpha_coverage": 0.00209045,
+        "roi_coverage": 0.061645,
+        "edge_score": 0.0336,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__base_mannequin__hand_R",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "base_mannequin",
+      "part_id": "hand_R",
+      "roi": [
+        445,
+        910,
+        360,
+        390
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/base_mannequin/hand_R.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          652,
+          908,
+          100,
+          185
+        ],
+        "nonzero_alpha": 10007,
+        "alpha_coverage": 0.00238585,
+        "roi_coverage": 0.063077,
+        "edge_score": 0.0356,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__base_mannequin__hand_R",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "base_mannequin",
+      "part_id": "hand_R",
+      "roi": [
+        445,
+        910,
+        360,
+        390
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/base_mannequin/hand_R.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__base_mannequin__hand_R",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "base_mannequin",
+      "part_id": "hand_R",
+      "roi": [
+        445,
+        910,
+        360,
+        390
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/base_mannequin/hand_R.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          654,
+          44,
+          740,
+          1980
+        ],
+        "nonzero_alpha": 524858,
+        "alpha_coverage": 0.1251359,
+        "roi_coverage": 0.055356,
+        "edge_score": 0.7007,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__base_mannequin__leg_L",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "base_mannequin",
+      "part_id": "leg_L",
+      "roi": [
+        1010,
+        1030,
+        360,
+        930
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/base_mannequin/leg_L.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1038,
+          1030,
+          333,
+          931
+        ],
+        "nonzero_alpha": 95580,
+        "alpha_coverage": 0.02278805,
+        "roi_coverage": 0.276117,
+        "edge_score": 0.1595,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__base_mannequin__leg_L",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "base_mannequin",
+      "part_id": "leg_L",
+      "roi": [
+        1010,
+        1030,
+        360,
+        930
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/base_mannequin/leg_L.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1038,
+          1027,
+          336,
+          937
+        ],
+        "nonzero_alpha": 99868,
+        "alpha_coverage": 0.02381039,
+        "roi_coverage": 0.282252,
+        "edge_score": 0.1508,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__base_mannequin__leg_L",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "base_mannequin",
+      "part_id": "leg_L",
+      "roi": [
+        1010,
+        1030,
+        360,
+        930
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/base_mannequin/leg_L.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1036,
+          1025,
+          340,
+          941
+        ],
+        "nonzero_alpha": 103875,
+        "alpha_coverage": 0.02476573,
+        "roi_coverage": 0.292049,
+        "edge_score": 0.1495,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__base_mannequin__leg_L",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "base_mannequin",
+      "part_id": "leg_L",
+      "roi": [
+        1010,
+        1030,
+        360,
+        930
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/base_mannequin/leg_L.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1039,
+          1027,
+          335,
+          937
+        ],
+        "nonzero_alpha": 97621,
+        "alpha_coverage": 0.02327466,
+        "roi_coverage": 0.288357,
+        "edge_score": 0.1516,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__base_mannequin__leg_L",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "base_mannequin",
+      "part_id": "leg_L",
+      "roi": [
+        1010,
+        1030,
+        360,
+        930
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/base_mannequin/leg_L.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1036,
+          1028,
+          337,
+          935
+        ],
+        "nonzero_alpha": 103312,
+        "alpha_coverage": 0.0246315,
+        "roi_coverage": 0.289029,
+        "edge_score": 0.1528,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__base_mannequin__leg_L",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "base_mannequin",
+      "part_id": "leg_L",
+      "roi": [
+        1010,
+        1030,
+        360,
+        930
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/base_mannequin/leg_L.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__base_mannequin__leg_L",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "base_mannequin",
+      "part_id": "leg_L",
+      "roi": [
+        1010,
+        1030,
+        360,
+        930
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/base_mannequin/leg_L.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          654,
+          44,
+          740,
+          1980
+        ],
+        "nonzero_alpha": 524858,
+        "alpha_coverage": 0.1251359,
+        "roi_coverage": 0.276117,
+        "edge_score": 0.7007,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__base_mannequin__leg_R",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "base_mannequin",
+      "part_id": "leg_R",
+      "roi": [
+        675,
+        1030,
+        360,
+        930
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/base_mannequin/leg_R.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          675,
+          1030,
+          334,
+          931
+        ],
+        "nonzero_alpha": 96007,
+        "alpha_coverage": 0.02288985,
+        "roi_coverage": 0.277428,
+        "edge_score": 0.161,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__base_mannequin__leg_R",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "base_mannequin",
+      "part_id": "leg_R",
+      "roi": [
+        675,
+        1030,
+        360,
+        930
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/base_mannequin/leg_R.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          672,
+          1027,
+          337,
+          937
+        ],
+        "nonzero_alpha": 100277,
+        "alpha_coverage": 0.0239079,
+        "roi_coverage": 0.283701,
+        "edge_score": 0.1515,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__base_mannequin__leg_R",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "base_mannequin",
+      "part_id": "leg_R",
+      "roi": [
+        675,
+        1030,
+        360,
+        930
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/base_mannequin/leg_R.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          670,
+          1025,
+          340,
+          941
+        ],
+        "nonzero_alpha": 104260,
+        "alpha_coverage": 0.02485752,
+        "roi_coverage": 0.293357,
+        "edge_score": 0.15,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__base_mannequin__leg_R",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "base_mannequin",
+      "part_id": "leg_R",
+      "roi": [
+        675,
+        1030,
+        360,
+        930
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/base_mannequin/leg_R.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          672,
+          1027,
+          335,
+          937
+        ],
+        "nonzero_alpha": 98074,
+        "alpha_coverage": 0.02338266,
+        "roi_coverage": 0.289809,
+        "edge_score": 0.1522,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__base_mannequin__leg_R",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "base_mannequin",
+      "part_id": "leg_R",
+      "roi": [
+        675,
+        1030,
+        360,
+        930
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/base_mannequin/leg_R.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          673,
+          1028,
+          338,
+          935
+        ],
+        "nonzero_alpha": 103793,
+        "alpha_coverage": 0.02474618,
+        "roi_coverage": 0.290448,
+        "edge_score": 0.1537,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__base_mannequin__leg_R",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "base_mannequin",
+      "part_id": "leg_R",
+      "roi": [
+        675,
+        1030,
+        360,
+        930
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/base_mannequin/leg_R.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__base_mannequin__leg_R",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "base_mannequin",
+      "part_id": "leg_R",
+      "roi": [
+        675,
+        1030,
+        360,
+        930
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/base_mannequin/leg_R.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          654,
+          44,
+          740,
+          1980
+        ],
+        "nonzero_alpha": 524858,
+        "alpha_coverage": 0.1251359,
+        "roi_coverage": 0.277428,
+        "edge_score": 0.7007,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__base_mannequin__foot_L",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "base_mannequin",
+      "part_id": "foot_L",
+      "roi": [
+        1010,
+        1810,
+        360,
+        210
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/base_mannequin/foot_L.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1063,
+          1810,
+          97,
+          211
+        ],
+        "nonzero_alpha": 15752,
+        "alpha_coverage": 0.00375557,
+        "roi_coverage": 0.198624,
+        "edge_score": 0.0427,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__base_mannequin__foot_L",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "base_mannequin",
+      "part_id": "foot_L",
+      "roi": [
+        1010,
+        1810,
+        360,
+        210
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/base_mannequin/foot_L.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1063,
+          1807,
+          97,
+          217
+        ],
+        "nonzero_alpha": 16789,
+        "alpha_coverage": 0.00400281,
+        "roi_coverage": 0.205159,
+        "edge_score": 0.0394,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__base_mannequin__foot_L",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "base_mannequin",
+      "part_id": "foot_L",
+      "roi": [
+        1010,
+        1810,
+        360,
+        210
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/base_mannequin/foot_L.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1062,
+          1805,
+          99,
+          221
+        ],
+        "nonzero_alpha": 17829,
+        "alpha_coverage": 0.00425076,
+        "roi_coverage": 0.215159,
+        "edge_score": 0.0388,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__base_mannequin__foot_L",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "base_mannequin",
+      "part_id": "foot_L",
+      "roi": [
+        1010,
+        1810,
+        360,
+        210
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/base_mannequin/foot_L.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1065,
+          1807,
+          94,
+          217
+        ],
+        "nonzero_alpha": 16265,
+        "alpha_coverage": 0.00387788,
+        "roi_coverage": 0.211534,
+        "edge_score": 0.0389,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__base_mannequin__foot_L",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "base_mannequin",
+      "part_id": "foot_L",
+      "roi": [
+        1010,
+        1810,
+        360,
+        210
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/base_mannequin/foot_L.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1061,
+          1808,
+          101,
+          215
+        ],
+        "nonzero_alpha": 17680,
+        "alpha_coverage": 0.00421524,
+        "roi_coverage": 0.212421,
+        "edge_score": 0.039,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__base_mannequin__foot_L",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "base_mannequin",
+      "part_id": "foot_L",
+      "roi": [
+        1010,
+        1810,
+        360,
+        210
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/base_mannequin/foot_L.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__base_mannequin__foot_L",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "base_mannequin",
+      "part_id": "foot_L",
+      "roi": [
+        1010,
+        1810,
+        360,
+        210
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/base_mannequin/foot_L.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          654,
+          44,
+          740,
+          1980
+        ],
+        "nonzero_alpha": 524858,
+        "alpha_coverage": 0.1251359,
+        "roi_coverage": 0.198624,
+        "edge_score": 0.7007,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__base_mannequin__foot_R",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "base_mannequin",
+      "part_id": "foot_R",
+      "roi": [
+        675,
+        1810,
+        360,
+        210
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/base_mannequin/foot_R.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          888,
+          1810,
+          96,
+          211
+        ],
+        "nonzero_alpha": 15762,
+        "alpha_coverage": 0.00375795,
+        "roi_coverage": 0.198519,
+        "edge_score": 0.0426,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__base_mannequin__foot_R",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "base_mannequin",
+      "part_id": "foot_R",
+      "roi": [
+        675,
+        1810,
+        360,
+        210
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/base_mannequin/foot_R.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          888,
+          1807,
+          96,
+          217
+        ],
+        "nonzero_alpha": 16778,
+        "alpha_coverage": 0.00400019,
+        "roi_coverage": 0.205185,
+        "edge_score": 0.0393,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__base_mannequin__foot_R",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "base_mannequin",
+      "part_id": "foot_R",
+      "roi": [
+        675,
+        1810,
+        360,
+        210
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/base_mannequin/foot_R.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          887,
+          1805,
+          99,
+          221
+        ],
+        "nonzero_alpha": 17817,
+        "alpha_coverage": 0.0042479,
+        "roi_coverage": 0.215198,
+        "edge_score": 0.0388,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__base_mannequin__foot_R",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "base_mannequin",
+      "part_id": "foot_R",
+      "roi": [
+        675,
+        1810,
+        360,
+        210
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/base_mannequin/foot_R.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          889,
+          1807,
+          94,
+          217
+        ],
+        "nonzero_alpha": 16262,
+        "alpha_coverage": 0.00387716,
+        "roi_coverage": 0.211481,
+        "edge_score": 0.0389,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__base_mannequin__foot_R",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "base_mannequin",
+      "part_id": "foot_R",
+      "roi": [
+        675,
+        1810,
+        360,
+        210
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/base_mannequin/foot_R.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          886,
+          1808,
+          100,
+          215
+        ],
+        "nonzero_alpha": 17697,
+        "alpha_coverage": 0.00421929,
+        "roi_coverage": 0.212513,
+        "edge_score": 0.0389,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__base_mannequin__foot_R",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "base_mannequin",
+      "part_id": "foot_R",
+      "roi": [
+        675,
+        1810,
+        360,
+        210
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/base_mannequin/foot_R.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__base_mannequin__foot_R",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "base_mannequin",
+      "part_id": "foot_R",
+      "roi": [
+        675,
+        1810,
+        360,
+        210
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/base_mannequin/foot_R.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          654,
+          44,
+          740,
+          1980
+        ],
+        "nonzero_alpha": 524858,
+        "alpha_coverage": 0.1251359,
+        "roi_coverage": 0.198519,
+        "edge_score": 0.7007,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    }
+  ]
+}

@@ -1,0 +1,2444 @@
+{
+  "ok": true,
+  "results": [
+    {
+      "name": "neutral",
+      "parameters": {},
+      "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_qa_v1/frames/neutral.png",
+      "metrics": {
+        "hash": "8d2dcd5b",
+        "nonBackground": 1492593
+      },
+      "snapshot": {
+        "parameters": {
+          "ParamAngleX": 0,
+          "ParamAngleY": 0,
+          "ParamAngleZ": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamMouthOpenY": 0,
+          "ParamMouthForm": 0,
+          "ParamHairFront": 0,
+          "ParamHairBack": 0,
+          "ParamAccessory": 0,
+          "ParamEyeBallX": 0,
+          "ParamEyeBallY": 0,
+          "ParamBrowLY": 0,
+          "ParamBrowRY": 0,
+          "ParamCheek": 0
+        },
+        "physics": {
+          "front_bang_light": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "front_side_lock_medium": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "side_hair_lower_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_heavy": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_tip_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ribbon_tail_spring": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "choker_gem_fast": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "sleeve_frill_flutter": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ear_small_secondary": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          }
+        },
+        "part_opacity": {
+          "front_bang_L": 1,
+          "front_bang_CL": 1,
+          "front_bang_C": 1,
+          "front_bang_CR": 1,
+          "front_bang_R": 1,
+          "front_side_lock_L": 1,
+          "front_side_lock_R": 1,
+          "side_hair_L_upper": 1,
+          "side_hair_L_lower": 1,
+          "side_hair_R_upper": 1,
+          "side_hair_R_lower": 1,
+          "back_hair_base": 1,
+          "back_hair_L": 1,
+          "back_hair_C": 1,
+          "back_hair_R": 1,
+          "back_hair_tip_L": 1,
+          "back_hair_tip_C": 1,
+          "back_hair_tip_R": 1,
+          "body_base": 1,
+          "neck": 1,
+          "neck_shadow": 1,
+          "chest": 1,
+          "chest_shadow": 1,
+          "shoulder_L": 1,
+          "shoulder_R": 1,
+          "arm_L": 1,
+          "arm_R": 1,
+          "sleeve_L": 1,
+          "sleeve_R": 1,
+          "face_base": 1,
+          "face_shadow_L": 1,
+          "face_shadow_R": 1,
+          "ear_L": 1,
+          "ear_R": 1,
+          "ear_inner_L": 1,
+          "ear_inner_R": 1,
+          "eye_white_L": 1,
+          "eye_white_R": 1,
+          "iris_L": 1,
+          "iris_R": 1,
+          "pupil_L": 1,
+          "pupil_R": 1,
+          "catchlight_L": 1,
+          "catchlight_R": 1,
+          "upper_lash_L": 1,
+          "upper_lash_R": 1,
+          "mouth_closed_line": 1,
+          "choker_base": 1,
+          "choker_gem": 1,
+          "ribbon_center": 1,
+          "ribbon_loop_L": 1,
+          "ribbon_loop_R": 1,
+          "ribbon_tail_L": 1,
+          "ribbon_tail_R": 1,
+          "shoulder_frill_L": 1,
+          "shoulder_frill_R": 1,
+          "sleeve_frill_L": 1,
+          "sleeve_frill_R": 1,
+          "brow_L": 1,
+          "brow_R": 1,
+          "cheek_blush_L": 0.45,
+          "cheek_blush_R": 0.45,
+          "eye_shadow_L": 1,
+          "eye_shadow_R": 1,
+          "lower_lid_L": 1,
+          "lower_lid_R": 1,
+          "mouth_corner_L": 1,
+          "mouth_corner_R": 1,
+          "mouth_half_inner": 0,
+          "mouth_half_outer": 0,
+          "mouth_open_inner": 0,
+          "mouth_open_outer": 0,
+          "mouth_shadow": 0,
+          "mouth_teeth_upper": 0,
+          "mouth_tongue": 0,
+          "nose_bridge": 1,
+          "nose_tip": 1,
+          "upper_lid_L": 1,
+          "upper_lid_R": 1
+        }
+      }
+    },
+    {
+      "name": "angle_left",
+      "parameters": {
+        "ParamAngleX": -30
+      },
+      "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_qa_v1/frames/angle_left.png",
+      "metrics": {
+        "hash": "cfd37305",
+        "nonBackground": 1492590
+      },
+      "snapshot": {
+        "parameters": {
+          "ParamAngleX": -30,
+          "ParamAngleY": 0,
+          "ParamAngleZ": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamMouthOpenY": 0,
+          "ParamMouthForm": 0,
+          "ParamHairFront": 0,
+          "ParamHairBack": 0,
+          "ParamAccessory": 0,
+          "ParamEyeBallX": 0,
+          "ParamEyeBallY": 0,
+          "ParamBrowLY": 0,
+          "ParamBrowRY": 0,
+          "ParamCheek": 0
+        },
+        "physics": {
+          "front_bang_light": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "front_side_lock_medium": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "side_hair_lower_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_heavy": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_tip_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ribbon_tail_spring": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "choker_gem_fast": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "sleeve_frill_flutter": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ear_small_secondary": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          }
+        },
+        "part_opacity": {
+          "front_bang_L": 1,
+          "front_bang_CL": 1,
+          "front_bang_C": 1,
+          "front_bang_CR": 1,
+          "front_bang_R": 1,
+          "front_side_lock_L": 1,
+          "front_side_lock_R": 1,
+          "side_hair_L_upper": 1,
+          "side_hair_L_lower": 1,
+          "side_hair_R_upper": 1,
+          "side_hair_R_lower": 1,
+          "back_hair_base": 1,
+          "back_hair_L": 1,
+          "back_hair_C": 1,
+          "back_hair_R": 1,
+          "back_hair_tip_L": 1,
+          "back_hair_tip_C": 1,
+          "back_hair_tip_R": 1,
+          "body_base": 1,
+          "neck": 1,
+          "neck_shadow": 1,
+          "chest": 1,
+          "chest_shadow": 1,
+          "shoulder_L": 1,
+          "shoulder_R": 1,
+          "arm_L": 1,
+          "arm_R": 1,
+          "sleeve_L": 1,
+          "sleeve_R": 1,
+          "face_base": 1,
+          "face_shadow_L": 1,
+          "face_shadow_R": 1,
+          "ear_L": 1,
+          "ear_R": 1,
+          "ear_inner_L": 1,
+          "ear_inner_R": 1,
+          "eye_white_L": 1,
+          "eye_white_R": 1,
+          "iris_L": 1,
+          "iris_R": 1,
+          "pupil_L": 1,
+          "pupil_R": 1,
+          "catchlight_L": 1,
+          "catchlight_R": 1,
+          "upper_lash_L": 1,
+          "upper_lash_R": 1,
+          "mouth_closed_line": 1,
+          "choker_base": 1,
+          "choker_gem": 1,
+          "ribbon_center": 1,
+          "ribbon_loop_L": 1,
+          "ribbon_loop_R": 1,
+          "ribbon_tail_L": 1,
+          "ribbon_tail_R": 1,
+          "shoulder_frill_L": 1,
+          "shoulder_frill_R": 1,
+          "sleeve_frill_L": 1,
+          "sleeve_frill_R": 1,
+          "brow_L": 1,
+          "brow_R": 1,
+          "cheek_blush_L": 0.45,
+          "cheek_blush_R": 0.45,
+          "eye_shadow_L": 1,
+          "eye_shadow_R": 1,
+          "lower_lid_L": 1,
+          "lower_lid_R": 1,
+          "mouth_corner_L": 1,
+          "mouth_corner_R": 1,
+          "mouth_half_inner": 0,
+          "mouth_half_outer": 0,
+          "mouth_open_inner": 0,
+          "mouth_open_outer": 0,
+          "mouth_shadow": 0,
+          "mouth_teeth_upper": 0,
+          "mouth_tongue": 0,
+          "nose_bridge": 1,
+          "nose_tip": 1,
+          "upper_lid_L": 1,
+          "upper_lid_R": 1
+        }
+      }
+    },
+    {
+      "name": "angle_right",
+      "parameters": {
+        "ParamAngleX": 30
+      },
+      "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_qa_v1/frames/angle_right.png",
+      "metrics": {
+        "hash": "18222f07",
+        "nonBackground": 1490708
+      },
+      "snapshot": {
+        "parameters": {
+          "ParamAngleX": 30,
+          "ParamAngleY": 0,
+          "ParamAngleZ": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamMouthOpenY": 0,
+          "ParamMouthForm": 0,
+          "ParamHairFront": 0,
+          "ParamHairBack": 0,
+          "ParamAccessory": 0,
+          "ParamEyeBallX": 0,
+          "ParamEyeBallY": 0,
+          "ParamBrowLY": 0,
+          "ParamBrowRY": 0,
+          "ParamCheek": 0
+        },
+        "physics": {
+          "front_bang_light": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "front_side_lock_medium": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "side_hair_lower_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_heavy": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_tip_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ribbon_tail_spring": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "choker_gem_fast": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "sleeve_frill_flutter": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ear_small_secondary": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          }
+        },
+        "part_opacity": {
+          "front_bang_L": 1,
+          "front_bang_CL": 1,
+          "front_bang_C": 1,
+          "front_bang_CR": 1,
+          "front_bang_R": 1,
+          "front_side_lock_L": 1,
+          "front_side_lock_R": 1,
+          "side_hair_L_upper": 1,
+          "side_hair_L_lower": 1,
+          "side_hair_R_upper": 1,
+          "side_hair_R_lower": 1,
+          "back_hair_base": 1,
+          "back_hair_L": 1,
+          "back_hair_C": 1,
+          "back_hair_R": 1,
+          "back_hair_tip_L": 1,
+          "back_hair_tip_C": 1,
+          "back_hair_tip_R": 1,
+          "body_base": 1,
+          "neck": 1,
+          "neck_shadow": 1,
+          "chest": 1,
+          "chest_shadow": 1,
+          "shoulder_L": 1,
+          "shoulder_R": 1,
+          "arm_L": 1,
+          "arm_R": 1,
+          "sleeve_L": 1,
+          "sleeve_R": 1,
+          "face_base": 1,
+          "face_shadow_L": 1,
+          "face_shadow_R": 1,
+          "ear_L": 1,
+          "ear_R": 1,
+          "ear_inner_L": 1,
+          "ear_inner_R": 1,
+          "eye_white_L": 1,
+          "eye_white_R": 1,
+          "iris_L": 1,
+          "iris_R": 1,
+          "pupil_L": 1,
+          "pupil_R": 1,
+          "catchlight_L": 1,
+          "catchlight_R": 1,
+          "upper_lash_L": 1,
+          "upper_lash_R": 1,
+          "mouth_closed_line": 1,
+          "choker_base": 1,
+          "choker_gem": 1,
+          "ribbon_center": 1,
+          "ribbon_loop_L": 1,
+          "ribbon_loop_R": 1,
+          "ribbon_tail_L": 1,
+          "ribbon_tail_R": 1,
+          "shoulder_frill_L": 1,
+          "shoulder_frill_R": 1,
+          "sleeve_frill_L": 1,
+          "sleeve_frill_R": 1,
+          "brow_L": 1,
+          "brow_R": 1,
+          "cheek_blush_L": 0.45,
+          "cheek_blush_R": 0.45,
+          "eye_shadow_L": 1,
+          "eye_shadow_R": 1,
+          "lower_lid_L": 1,
+          "lower_lid_R": 1,
+          "mouth_corner_L": 1,
+          "mouth_corner_R": 1,
+          "mouth_half_inner": 0,
+          "mouth_half_outer": 0,
+          "mouth_open_inner": 0,
+          "mouth_open_outer": 0,
+          "mouth_shadow": 0,
+          "mouth_teeth_upper": 0,
+          "mouth_tongue": 0,
+          "nose_bridge": 1,
+          "nose_tip": 1,
+          "upper_lid_L": 1,
+          "upper_lid_R": 1
+        }
+      }
+    },
+    {
+      "name": "eye_look_left",
+      "parameters": {
+        "ParamEyeBallX": -1
+      },
+      "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_qa_v1/frames/eye_look_left.png",
+      "metrics": {
+        "hash": "2df20567",
+        "nonBackground": 1490704
+      },
+      "snapshot": {
+        "parameters": {
+          "ParamAngleX": 30,
+          "ParamAngleY": 0,
+          "ParamAngleZ": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamMouthOpenY": 0,
+          "ParamMouthForm": 0,
+          "ParamHairFront": 0,
+          "ParamHairBack": 0,
+          "ParamAccessory": 0,
+          "ParamEyeBallX": -1,
+          "ParamEyeBallY": 0,
+          "ParamBrowLY": 0,
+          "ParamBrowRY": 0,
+          "ParamCheek": 0
+        },
+        "physics": {
+          "front_bang_light": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "front_side_lock_medium": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "side_hair_lower_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_heavy": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_tip_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ribbon_tail_spring": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "choker_gem_fast": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "sleeve_frill_flutter": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ear_small_secondary": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          }
+        },
+        "part_opacity": {
+          "front_bang_L": 1,
+          "front_bang_CL": 1,
+          "front_bang_C": 1,
+          "front_bang_CR": 1,
+          "front_bang_R": 1,
+          "front_side_lock_L": 1,
+          "front_side_lock_R": 1,
+          "side_hair_L_upper": 1,
+          "side_hair_L_lower": 1,
+          "side_hair_R_upper": 1,
+          "side_hair_R_lower": 1,
+          "back_hair_base": 1,
+          "back_hair_L": 1,
+          "back_hair_C": 1,
+          "back_hair_R": 1,
+          "back_hair_tip_L": 1,
+          "back_hair_tip_C": 1,
+          "back_hair_tip_R": 1,
+          "body_base": 1,
+          "neck": 1,
+          "neck_shadow": 1,
+          "chest": 1,
+          "chest_shadow": 1,
+          "shoulder_L": 1,
+          "shoulder_R": 1,
+          "arm_L": 1,
+          "arm_R": 1,
+          "sleeve_L": 1,
+          "sleeve_R": 1,
+          "face_base": 1,
+          "face_shadow_L": 1,
+          "face_shadow_R": 1,
+          "ear_L": 1,
+          "ear_R": 1,
+          "ear_inner_L": 1,
+          "ear_inner_R": 1,
+          "eye_white_L": 1,
+          "eye_white_R": 1,
+          "iris_L": 1,
+          "iris_R": 1,
+          "pupil_L": 1,
+          "pupil_R": 1,
+          "catchlight_L": 1,
+          "catchlight_R": 1,
+          "upper_lash_L": 1,
+          "upper_lash_R": 1,
+          "mouth_closed_line": 1,
+          "choker_base": 1,
+          "choker_gem": 1,
+          "ribbon_center": 1,
+          "ribbon_loop_L": 1,
+          "ribbon_loop_R": 1,
+          "ribbon_tail_L": 1,
+          "ribbon_tail_R": 1,
+          "shoulder_frill_L": 1,
+          "shoulder_frill_R": 1,
+          "sleeve_frill_L": 1,
+          "sleeve_frill_R": 1,
+          "brow_L": 1,
+          "brow_R": 1,
+          "cheek_blush_L": 0.45,
+          "cheek_blush_R": 0.45,
+          "eye_shadow_L": 1,
+          "eye_shadow_R": 1,
+          "lower_lid_L": 1,
+          "lower_lid_R": 1,
+          "mouth_corner_L": 1,
+          "mouth_corner_R": 1,
+          "mouth_half_inner": 0,
+          "mouth_half_outer": 0,
+          "mouth_open_inner": 0,
+          "mouth_open_outer": 0,
+          "mouth_shadow": 0,
+          "mouth_teeth_upper": 0,
+          "mouth_tongue": 0,
+          "nose_bridge": 1,
+          "nose_tip": 1,
+          "upper_lid_L": 1,
+          "upper_lid_R": 1
+        }
+      }
+    },
+    {
+      "name": "eye_look_right",
+      "parameters": {
+        "ParamEyeBallX": 1
+      },
+      "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_qa_v1/frames/eye_look_right.png",
+      "metrics": {
+        "hash": "200c9aac",
+        "nonBackground": 1490705
+      },
+      "snapshot": {
+        "parameters": {
+          "ParamAngleX": 30,
+          "ParamAngleY": 0,
+          "ParamAngleZ": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamMouthOpenY": 0,
+          "ParamMouthForm": 0,
+          "ParamHairFront": 0,
+          "ParamHairBack": 0,
+          "ParamAccessory": 0,
+          "ParamEyeBallX": 1,
+          "ParamEyeBallY": 0,
+          "ParamBrowLY": 0,
+          "ParamBrowRY": 0,
+          "ParamCheek": 0
+        },
+        "physics": {
+          "front_bang_light": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "front_side_lock_medium": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "side_hair_lower_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_heavy": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_tip_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ribbon_tail_spring": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "choker_gem_fast": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "sleeve_frill_flutter": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ear_small_secondary": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          }
+        },
+        "part_opacity": {
+          "front_bang_L": 1,
+          "front_bang_CL": 1,
+          "front_bang_C": 1,
+          "front_bang_CR": 1,
+          "front_bang_R": 1,
+          "front_side_lock_L": 1,
+          "front_side_lock_R": 1,
+          "side_hair_L_upper": 1,
+          "side_hair_L_lower": 1,
+          "side_hair_R_upper": 1,
+          "side_hair_R_lower": 1,
+          "back_hair_base": 1,
+          "back_hair_L": 1,
+          "back_hair_C": 1,
+          "back_hair_R": 1,
+          "back_hair_tip_L": 1,
+          "back_hair_tip_C": 1,
+          "back_hair_tip_R": 1,
+          "body_base": 1,
+          "neck": 1,
+          "neck_shadow": 1,
+          "chest": 1,
+          "chest_shadow": 1,
+          "shoulder_L": 1,
+          "shoulder_R": 1,
+          "arm_L": 1,
+          "arm_R": 1,
+          "sleeve_L": 1,
+          "sleeve_R": 1,
+          "face_base": 1,
+          "face_shadow_L": 1,
+          "face_shadow_R": 1,
+          "ear_L": 1,
+          "ear_R": 1,
+          "ear_inner_L": 1,
+          "ear_inner_R": 1,
+          "eye_white_L": 1,
+          "eye_white_R": 1,
+          "iris_L": 1,
+          "iris_R": 1,
+          "pupil_L": 1,
+          "pupil_R": 1,
+          "catchlight_L": 1,
+          "catchlight_R": 1,
+          "upper_lash_L": 1,
+          "upper_lash_R": 1,
+          "mouth_closed_line": 1,
+          "choker_base": 1,
+          "choker_gem": 1,
+          "ribbon_center": 1,
+          "ribbon_loop_L": 1,
+          "ribbon_loop_R": 1,
+          "ribbon_tail_L": 1,
+          "ribbon_tail_R": 1,
+          "shoulder_frill_L": 1,
+          "shoulder_frill_R": 1,
+          "sleeve_frill_L": 1,
+          "sleeve_frill_R": 1,
+          "brow_L": 1,
+          "brow_R": 1,
+          "cheek_blush_L": 0.45,
+          "cheek_blush_R": 0.45,
+          "eye_shadow_L": 1,
+          "eye_shadow_R": 1,
+          "lower_lid_L": 1,
+          "lower_lid_R": 1,
+          "mouth_corner_L": 1,
+          "mouth_corner_R": 1,
+          "mouth_half_inner": 0,
+          "mouth_half_outer": 0,
+          "mouth_open_inner": 0,
+          "mouth_open_outer": 0,
+          "mouth_shadow": 0,
+          "mouth_teeth_upper": 0,
+          "mouth_tongue": 0,
+          "nose_bridge": 1,
+          "nose_tip": 1,
+          "upper_lid_L": 1,
+          "upper_lid_R": 1
+        }
+      }
+    },
+    {
+      "name": "eye_look_up",
+      "parameters": {
+        "ParamEyeBallY": 1
+      },
+      "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_qa_v1/frames/eye_look_up.png",
+      "metrics": {
+        "hash": "018259a3",
+        "nonBackground": 1490704
+      },
+      "snapshot": {
+        "parameters": {
+          "ParamAngleX": 30,
+          "ParamAngleY": 0,
+          "ParamAngleZ": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamMouthOpenY": 0,
+          "ParamMouthForm": 0,
+          "ParamHairFront": 0,
+          "ParamHairBack": 0,
+          "ParamAccessory": 0,
+          "ParamEyeBallX": 1,
+          "ParamEyeBallY": 1,
+          "ParamBrowLY": 0,
+          "ParamBrowRY": 0,
+          "ParamCheek": 0
+        },
+        "physics": {
+          "front_bang_light": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "front_side_lock_medium": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "side_hair_lower_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_heavy": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_tip_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ribbon_tail_spring": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "choker_gem_fast": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "sleeve_frill_flutter": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ear_small_secondary": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          }
+        },
+        "part_opacity": {
+          "front_bang_L": 1,
+          "front_bang_CL": 1,
+          "front_bang_C": 1,
+          "front_bang_CR": 1,
+          "front_bang_R": 1,
+          "front_side_lock_L": 1,
+          "front_side_lock_R": 1,
+          "side_hair_L_upper": 1,
+          "side_hair_L_lower": 1,
+          "side_hair_R_upper": 1,
+          "side_hair_R_lower": 1,
+          "back_hair_base": 1,
+          "back_hair_L": 1,
+          "back_hair_C": 1,
+          "back_hair_R": 1,
+          "back_hair_tip_L": 1,
+          "back_hair_tip_C": 1,
+          "back_hair_tip_R": 1,
+          "body_base": 1,
+          "neck": 1,
+          "neck_shadow": 1,
+          "chest": 1,
+          "chest_shadow": 1,
+          "shoulder_L": 1,
+          "shoulder_R": 1,
+          "arm_L": 1,
+          "arm_R": 1,
+          "sleeve_L": 1,
+          "sleeve_R": 1,
+          "face_base": 1,
+          "face_shadow_L": 1,
+          "face_shadow_R": 1,
+          "ear_L": 1,
+          "ear_R": 1,
+          "ear_inner_L": 1,
+          "ear_inner_R": 1,
+          "eye_white_L": 1,
+          "eye_white_R": 1,
+          "iris_L": 1,
+          "iris_R": 1,
+          "pupil_L": 1,
+          "pupil_R": 1,
+          "catchlight_L": 1,
+          "catchlight_R": 1,
+          "upper_lash_L": 1,
+          "upper_lash_R": 1,
+          "mouth_closed_line": 1,
+          "choker_base": 1,
+          "choker_gem": 1,
+          "ribbon_center": 1,
+          "ribbon_loop_L": 1,
+          "ribbon_loop_R": 1,
+          "ribbon_tail_L": 1,
+          "ribbon_tail_R": 1,
+          "shoulder_frill_L": 1,
+          "shoulder_frill_R": 1,
+          "sleeve_frill_L": 1,
+          "sleeve_frill_R": 1,
+          "brow_L": 1,
+          "brow_R": 1,
+          "cheek_blush_L": 0.45,
+          "cheek_blush_R": 0.45,
+          "eye_shadow_L": 1,
+          "eye_shadow_R": 1,
+          "lower_lid_L": 1,
+          "lower_lid_R": 1,
+          "mouth_corner_L": 1,
+          "mouth_corner_R": 1,
+          "mouth_half_inner": 0,
+          "mouth_half_outer": 0,
+          "mouth_open_inner": 0,
+          "mouth_open_outer": 0,
+          "mouth_shadow": 0,
+          "mouth_teeth_upper": 0,
+          "mouth_tongue": 0,
+          "nose_bridge": 1,
+          "nose_tip": 1,
+          "upper_lid_L": 1,
+          "upper_lid_R": 1
+        }
+      }
+    },
+    {
+      "name": "brow_raise",
+      "parameters": {
+        "ParamBrowLY": 1,
+        "ParamBrowRY": 1
+      },
+      "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_qa_v1/frames/brow_raise.png",
+      "metrics": {
+        "hash": "0f82bb47",
+        "nonBackground": 1490713
+      },
+      "snapshot": {
+        "parameters": {
+          "ParamAngleX": 30,
+          "ParamAngleY": 0,
+          "ParamAngleZ": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamMouthOpenY": 0,
+          "ParamMouthForm": 0,
+          "ParamHairFront": 0,
+          "ParamHairBack": 0,
+          "ParamAccessory": 0,
+          "ParamEyeBallX": 1,
+          "ParamEyeBallY": 1,
+          "ParamBrowLY": 1,
+          "ParamBrowRY": 1,
+          "ParamCheek": 0
+        },
+        "physics": {
+          "front_bang_light": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "front_side_lock_medium": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "side_hair_lower_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_heavy": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_tip_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ribbon_tail_spring": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "choker_gem_fast": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "sleeve_frill_flutter": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ear_small_secondary": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          }
+        },
+        "part_opacity": {
+          "front_bang_L": 1,
+          "front_bang_CL": 1,
+          "front_bang_C": 1,
+          "front_bang_CR": 1,
+          "front_bang_R": 1,
+          "front_side_lock_L": 1,
+          "front_side_lock_R": 1,
+          "side_hair_L_upper": 1,
+          "side_hair_L_lower": 1,
+          "side_hair_R_upper": 1,
+          "side_hair_R_lower": 1,
+          "back_hair_base": 1,
+          "back_hair_L": 1,
+          "back_hair_C": 1,
+          "back_hair_R": 1,
+          "back_hair_tip_L": 1,
+          "back_hair_tip_C": 1,
+          "back_hair_tip_R": 1,
+          "body_base": 1,
+          "neck": 1,
+          "neck_shadow": 1,
+          "chest": 1,
+          "chest_shadow": 1,
+          "shoulder_L": 1,
+          "shoulder_R": 1,
+          "arm_L": 1,
+          "arm_R": 1,
+          "sleeve_L": 1,
+          "sleeve_R": 1,
+          "face_base": 1,
+          "face_shadow_L": 1,
+          "face_shadow_R": 1,
+          "ear_L": 1,
+          "ear_R": 1,
+          "ear_inner_L": 1,
+          "ear_inner_R": 1,
+          "eye_white_L": 1,
+          "eye_white_R": 1,
+          "iris_L": 1,
+          "iris_R": 1,
+          "pupil_L": 1,
+          "pupil_R": 1,
+          "catchlight_L": 1,
+          "catchlight_R": 1,
+          "upper_lash_L": 1,
+          "upper_lash_R": 1,
+          "mouth_closed_line": 1,
+          "choker_base": 1,
+          "choker_gem": 1,
+          "ribbon_center": 1,
+          "ribbon_loop_L": 1,
+          "ribbon_loop_R": 1,
+          "ribbon_tail_L": 1,
+          "ribbon_tail_R": 1,
+          "shoulder_frill_L": 1,
+          "shoulder_frill_R": 1,
+          "sleeve_frill_L": 1,
+          "sleeve_frill_R": 1,
+          "brow_L": 1,
+          "brow_R": 1,
+          "cheek_blush_L": 0.45,
+          "cheek_blush_R": 0.45,
+          "eye_shadow_L": 1,
+          "eye_shadow_R": 1,
+          "lower_lid_L": 1,
+          "lower_lid_R": 1,
+          "mouth_corner_L": 1,
+          "mouth_corner_R": 1,
+          "mouth_half_inner": 0,
+          "mouth_half_outer": 0,
+          "mouth_open_inner": 0,
+          "mouth_open_outer": 0,
+          "mouth_shadow": 0,
+          "mouth_teeth_upper": 0,
+          "mouth_tongue": 0,
+          "nose_bridge": 1,
+          "nose_tip": 1,
+          "upper_lid_L": 1,
+          "upper_lid_R": 1
+        }
+      }
+    },
+    {
+      "name": "brow_down",
+      "parameters": {
+        "ParamBrowLY": -1,
+        "ParamBrowRY": -1
+      },
+      "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_qa_v1/frames/brow_down.png",
+      "metrics": {
+        "hash": "7bace6af",
+        "nonBackground": 1490716
+      },
+      "snapshot": {
+        "parameters": {
+          "ParamAngleX": 30,
+          "ParamAngleY": 0,
+          "ParamAngleZ": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamMouthOpenY": 0,
+          "ParamMouthForm": 0,
+          "ParamHairFront": 0,
+          "ParamHairBack": 0,
+          "ParamAccessory": 0,
+          "ParamEyeBallX": 1,
+          "ParamEyeBallY": 1,
+          "ParamBrowLY": -1,
+          "ParamBrowRY": -1,
+          "ParamCheek": 0
+        },
+        "physics": {
+          "front_bang_light": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "front_side_lock_medium": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "side_hair_lower_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_heavy": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_tip_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ribbon_tail_spring": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "choker_gem_fast": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "sleeve_frill_flutter": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ear_small_secondary": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          }
+        },
+        "part_opacity": {
+          "front_bang_L": 1,
+          "front_bang_CL": 1,
+          "front_bang_C": 1,
+          "front_bang_CR": 1,
+          "front_bang_R": 1,
+          "front_side_lock_L": 1,
+          "front_side_lock_R": 1,
+          "side_hair_L_upper": 1,
+          "side_hair_L_lower": 1,
+          "side_hair_R_upper": 1,
+          "side_hair_R_lower": 1,
+          "back_hair_base": 1,
+          "back_hair_L": 1,
+          "back_hair_C": 1,
+          "back_hair_R": 1,
+          "back_hair_tip_L": 1,
+          "back_hair_tip_C": 1,
+          "back_hair_tip_R": 1,
+          "body_base": 1,
+          "neck": 1,
+          "neck_shadow": 1,
+          "chest": 1,
+          "chest_shadow": 1,
+          "shoulder_L": 1,
+          "shoulder_R": 1,
+          "arm_L": 1,
+          "arm_R": 1,
+          "sleeve_L": 1,
+          "sleeve_R": 1,
+          "face_base": 1,
+          "face_shadow_L": 1,
+          "face_shadow_R": 1,
+          "ear_L": 1,
+          "ear_R": 1,
+          "ear_inner_L": 1,
+          "ear_inner_R": 1,
+          "eye_white_L": 1,
+          "eye_white_R": 1,
+          "iris_L": 1,
+          "iris_R": 1,
+          "pupil_L": 1,
+          "pupil_R": 1,
+          "catchlight_L": 1,
+          "catchlight_R": 1,
+          "upper_lash_L": 1,
+          "upper_lash_R": 1,
+          "mouth_closed_line": 1,
+          "choker_base": 1,
+          "choker_gem": 1,
+          "ribbon_center": 1,
+          "ribbon_loop_L": 1,
+          "ribbon_loop_R": 1,
+          "ribbon_tail_L": 1,
+          "ribbon_tail_R": 1,
+          "shoulder_frill_L": 1,
+          "shoulder_frill_R": 1,
+          "sleeve_frill_L": 1,
+          "sleeve_frill_R": 1,
+          "brow_L": 1,
+          "brow_R": 1,
+          "cheek_blush_L": 0.45,
+          "cheek_blush_R": 0.45,
+          "eye_shadow_L": 1,
+          "eye_shadow_R": 1,
+          "lower_lid_L": 1,
+          "lower_lid_R": 1,
+          "mouth_corner_L": 1,
+          "mouth_corner_R": 1,
+          "mouth_half_inner": 0,
+          "mouth_half_outer": 0,
+          "mouth_open_inner": 0,
+          "mouth_open_outer": 0,
+          "mouth_shadow": 0,
+          "mouth_teeth_upper": 0,
+          "mouth_tongue": 0,
+          "nose_bridge": 1,
+          "nose_tip": 1,
+          "upper_lid_L": 1,
+          "upper_lid_R": 1
+        }
+      }
+    },
+    {
+      "name": "smile",
+      "parameters": {
+        "ParamMouthForm": 1,
+        "ParamCheek": 1
+      },
+      "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_qa_v1/frames/smile.png",
+      "metrics": {
+        "hash": "4f6a065e",
+        "nonBackground": 1490716
+      },
+      "snapshot": {
+        "parameters": {
+          "ParamAngleX": 30,
+          "ParamAngleY": 0,
+          "ParamAngleZ": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamMouthOpenY": 0,
+          "ParamMouthForm": 1,
+          "ParamHairFront": 0,
+          "ParamHairBack": 0,
+          "ParamAccessory": 0,
+          "ParamEyeBallX": 1,
+          "ParamEyeBallY": 1,
+          "ParamBrowLY": -1,
+          "ParamBrowRY": -1,
+          "ParamCheek": 1
+        },
+        "physics": {
+          "front_bang_light": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "front_side_lock_medium": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "side_hair_lower_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_heavy": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_tip_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ribbon_tail_spring": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "choker_gem_fast": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "sleeve_frill_flutter": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ear_small_secondary": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          }
+        },
+        "part_opacity": {
+          "front_bang_L": 1,
+          "front_bang_CL": 1,
+          "front_bang_C": 1,
+          "front_bang_CR": 1,
+          "front_bang_R": 1,
+          "front_side_lock_L": 1,
+          "front_side_lock_R": 1,
+          "side_hair_L_upper": 1,
+          "side_hair_L_lower": 1,
+          "side_hair_R_upper": 1,
+          "side_hair_R_lower": 1,
+          "back_hair_base": 1,
+          "back_hair_L": 1,
+          "back_hair_C": 1,
+          "back_hair_R": 1,
+          "back_hair_tip_L": 1,
+          "back_hair_tip_C": 1,
+          "back_hair_tip_R": 1,
+          "body_base": 1,
+          "neck": 1,
+          "neck_shadow": 1,
+          "chest": 1,
+          "chest_shadow": 1,
+          "shoulder_L": 1,
+          "shoulder_R": 1,
+          "arm_L": 1,
+          "arm_R": 1,
+          "sleeve_L": 1,
+          "sleeve_R": 1,
+          "face_base": 1,
+          "face_shadow_L": 1,
+          "face_shadow_R": 1,
+          "ear_L": 1,
+          "ear_R": 1,
+          "ear_inner_L": 1,
+          "ear_inner_R": 1,
+          "eye_white_L": 1,
+          "eye_white_R": 1,
+          "iris_L": 1,
+          "iris_R": 1,
+          "pupil_L": 1,
+          "pupil_R": 1,
+          "catchlight_L": 1,
+          "catchlight_R": 1,
+          "upper_lash_L": 1,
+          "upper_lash_R": 1,
+          "mouth_closed_line": 1,
+          "choker_base": 1,
+          "choker_gem": 1,
+          "ribbon_center": 1,
+          "ribbon_loop_L": 1,
+          "ribbon_loop_R": 1,
+          "ribbon_tail_L": 1,
+          "ribbon_tail_R": 1,
+          "shoulder_frill_L": 1,
+          "shoulder_frill_R": 1,
+          "sleeve_frill_L": 1,
+          "sleeve_frill_R": 1,
+          "brow_L": 1,
+          "brow_R": 1,
+          "cheek_blush_L": 1,
+          "cheek_blush_R": 1,
+          "eye_shadow_L": 1,
+          "eye_shadow_R": 1,
+          "lower_lid_L": 1,
+          "lower_lid_R": 1,
+          "mouth_corner_L": 1,
+          "mouth_corner_R": 1,
+          "mouth_half_inner": 0,
+          "mouth_half_outer": 0,
+          "mouth_open_inner": 0,
+          "mouth_open_outer": 0,
+          "mouth_shadow": 0,
+          "mouth_teeth_upper": 0,
+          "mouth_tongue": 0,
+          "nose_bridge": 1,
+          "nose_tip": 1,
+          "upper_lid_L": 1,
+          "upper_lid_R": 1
+        }
+      }
+    },
+    {
+      "name": "frown",
+      "parameters": {
+        "ParamMouthForm": -1
+      },
+      "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_qa_v1/frames/frown.png",
+      "metrics": {
+        "hash": "0f624657",
+        "nonBackground": 1490716
+      },
+      "snapshot": {
+        "parameters": {
+          "ParamAngleX": 30,
+          "ParamAngleY": 0,
+          "ParamAngleZ": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamMouthOpenY": 0,
+          "ParamMouthForm": -1,
+          "ParamHairFront": 0,
+          "ParamHairBack": 0,
+          "ParamAccessory": 0,
+          "ParamEyeBallX": 1,
+          "ParamEyeBallY": 1,
+          "ParamBrowLY": -1,
+          "ParamBrowRY": -1,
+          "ParamCheek": 1
+        },
+        "physics": {
+          "front_bang_light": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "front_side_lock_medium": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "side_hair_lower_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_heavy": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_tip_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ribbon_tail_spring": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "choker_gem_fast": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "sleeve_frill_flutter": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ear_small_secondary": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          }
+        },
+        "part_opacity": {
+          "front_bang_L": 1,
+          "front_bang_CL": 1,
+          "front_bang_C": 1,
+          "front_bang_CR": 1,
+          "front_bang_R": 1,
+          "front_side_lock_L": 1,
+          "front_side_lock_R": 1,
+          "side_hair_L_upper": 1,
+          "side_hair_L_lower": 1,
+          "side_hair_R_upper": 1,
+          "side_hair_R_lower": 1,
+          "back_hair_base": 1,
+          "back_hair_L": 1,
+          "back_hair_C": 1,
+          "back_hair_R": 1,
+          "back_hair_tip_L": 1,
+          "back_hair_tip_C": 1,
+          "back_hair_tip_R": 1,
+          "body_base": 1,
+          "neck": 1,
+          "neck_shadow": 1,
+          "chest": 1,
+          "chest_shadow": 1,
+          "shoulder_L": 1,
+          "shoulder_R": 1,
+          "arm_L": 1,
+          "arm_R": 1,
+          "sleeve_L": 1,
+          "sleeve_R": 1,
+          "face_base": 1,
+          "face_shadow_L": 1,
+          "face_shadow_R": 1,
+          "ear_L": 1,
+          "ear_R": 1,
+          "ear_inner_L": 1,
+          "ear_inner_R": 1,
+          "eye_white_L": 1,
+          "eye_white_R": 1,
+          "iris_L": 1,
+          "iris_R": 1,
+          "pupil_L": 1,
+          "pupil_R": 1,
+          "catchlight_L": 1,
+          "catchlight_R": 1,
+          "upper_lash_L": 1,
+          "upper_lash_R": 1,
+          "mouth_closed_line": 1,
+          "choker_base": 1,
+          "choker_gem": 1,
+          "ribbon_center": 1,
+          "ribbon_loop_L": 1,
+          "ribbon_loop_R": 1,
+          "ribbon_tail_L": 1,
+          "ribbon_tail_R": 1,
+          "shoulder_frill_L": 1,
+          "shoulder_frill_R": 1,
+          "sleeve_frill_L": 1,
+          "sleeve_frill_R": 1,
+          "brow_L": 1,
+          "brow_R": 1,
+          "cheek_blush_L": 1,
+          "cheek_blush_R": 1,
+          "eye_shadow_L": 1,
+          "eye_shadow_R": 1,
+          "lower_lid_L": 1,
+          "lower_lid_R": 1,
+          "mouth_corner_L": 1,
+          "mouth_corner_R": 1,
+          "mouth_half_inner": 0,
+          "mouth_half_outer": 0,
+          "mouth_open_inner": 0,
+          "mouth_open_outer": 0,
+          "mouth_shadow": 0,
+          "mouth_teeth_upper": 0,
+          "mouth_tongue": 0,
+          "nose_bridge": 1,
+          "nose_tip": 1,
+          "upper_lid_L": 1,
+          "upper_lid_R": 1
+        }
+      }
+    },
+    {
+      "name": "mouth_open",
+      "parameters": {
+        "ParamMouthOpenY": 1,
+        "ParamCheek": 0.4
+      },
+      "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_qa_v1/frames/mouth_open.png",
+      "metrics": {
+        "hash": "ada29693",
+        "nonBackground": 1490716
+      },
+      "snapshot": {
+        "parameters": {
+          "ParamAngleX": 30,
+          "ParamAngleY": 0,
+          "ParamAngleZ": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamMouthOpenY": 1,
+          "ParamMouthForm": -1,
+          "ParamHairFront": 0,
+          "ParamHairBack": 0,
+          "ParamAccessory": 0,
+          "ParamEyeBallX": 1,
+          "ParamEyeBallY": 1,
+          "ParamBrowLY": -1,
+          "ParamBrowRY": -1,
+          "ParamCheek": 0.4
+        },
+        "physics": {
+          "front_bang_light": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "front_side_lock_medium": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "side_hair_lower_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_heavy": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_tip_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ribbon_tail_spring": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "choker_gem_fast": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "sleeve_frill_flutter": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ear_small_secondary": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          }
+        },
+        "part_opacity": {
+          "front_bang_L": 1,
+          "front_bang_CL": 1,
+          "front_bang_C": 1,
+          "front_bang_CR": 1,
+          "front_bang_R": 1,
+          "front_side_lock_L": 1,
+          "front_side_lock_R": 1,
+          "side_hair_L_upper": 1,
+          "side_hair_L_lower": 1,
+          "side_hair_R_upper": 1,
+          "side_hair_R_lower": 1,
+          "back_hair_base": 1,
+          "back_hair_L": 1,
+          "back_hair_C": 1,
+          "back_hair_R": 1,
+          "back_hair_tip_L": 1,
+          "back_hair_tip_C": 1,
+          "back_hair_tip_R": 1,
+          "body_base": 1,
+          "neck": 1,
+          "neck_shadow": 1,
+          "chest": 1,
+          "chest_shadow": 1,
+          "shoulder_L": 1,
+          "shoulder_R": 1,
+          "arm_L": 1,
+          "arm_R": 1,
+          "sleeve_L": 1,
+          "sleeve_R": 1,
+          "face_base": 1,
+          "face_shadow_L": 1,
+          "face_shadow_R": 1,
+          "ear_L": 1,
+          "ear_R": 1,
+          "ear_inner_L": 1,
+          "ear_inner_R": 1,
+          "eye_white_L": 1,
+          "eye_white_R": 1,
+          "iris_L": 1,
+          "iris_R": 1,
+          "pupil_L": 1,
+          "pupil_R": 1,
+          "catchlight_L": 1,
+          "catchlight_R": 1,
+          "upper_lash_L": 1,
+          "upper_lash_R": 1,
+          "mouth_closed_line": 0,
+          "choker_base": 1,
+          "choker_gem": 1,
+          "ribbon_center": 1,
+          "ribbon_loop_L": 1,
+          "ribbon_loop_R": 1,
+          "ribbon_tail_L": 1,
+          "ribbon_tail_R": 1,
+          "shoulder_frill_L": 1,
+          "shoulder_frill_R": 1,
+          "sleeve_frill_L": 1,
+          "sleeve_frill_R": 1,
+          "brow_L": 1,
+          "brow_R": 1,
+          "cheek_blush_L": 0.67,
+          "cheek_blush_R": 0.67,
+          "eye_shadow_L": 1,
+          "eye_shadow_R": 1,
+          "lower_lid_L": 1,
+          "lower_lid_R": 1,
+          "mouth_corner_L": 1,
+          "mouth_corner_R": 1,
+          "mouth_half_inner": 0,
+          "mouth_half_outer": 0,
+          "mouth_open_inner": 1,
+          "mouth_open_outer": 1,
+          "mouth_shadow": 1,
+          "mouth_teeth_upper": 1,
+          "mouth_tongue": 1,
+          "nose_bridge": 1,
+          "nose_tip": 1,
+          "upper_lid_L": 1,
+          "upper_lid_R": 1
+        }
+      }
+    },
+    {
+      "name": "blink",
+      "parameters": {
+        "ParamEyeLOpen": 0,
+        "ParamEyeROpen": 0
+      },
+      "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_qa_v1/frames/blink.png",
+      "metrics": {
+        "hash": "f461a1c5",
+        "nonBackground": 1490689
+      },
+      "snapshot": {
+        "parameters": {
+          "ParamAngleX": 30,
+          "ParamAngleY": 0,
+          "ParamAngleZ": 0,
+          "ParamEyeLOpen": 0,
+          "ParamEyeROpen": 0,
+          "ParamMouthOpenY": 1,
+          "ParamMouthForm": -1,
+          "ParamHairFront": 0,
+          "ParamHairBack": 0,
+          "ParamAccessory": 0,
+          "ParamEyeBallX": 1,
+          "ParamEyeBallY": 1,
+          "ParamBrowLY": -1,
+          "ParamBrowRY": -1,
+          "ParamCheek": 0.4
+        },
+        "physics": {
+          "front_bang_light": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "front_side_lock_medium": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "side_hair_lower_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_heavy": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "back_hair_tip_slow": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ribbon_tail_spring": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "choker_gem_fast": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "sleeve_frill_flutter": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          },
+          "ear_small_secondary": {
+            "offset": [
+              0,
+              0
+            ],
+            "velocity": [
+              0,
+              0
+            ]
+          }
+        },
+        "part_opacity": {
+          "front_bang_L": 1,
+          "front_bang_CL": 1,
+          "front_bang_C": 1,
+          "front_bang_CR": 1,
+          "front_bang_R": 1,
+          "front_side_lock_L": 1,
+          "front_side_lock_R": 1,
+          "side_hair_L_upper": 1,
+          "side_hair_L_lower": 1,
+          "side_hair_R_upper": 1,
+          "side_hair_R_lower": 1,
+          "back_hair_base": 1,
+          "back_hair_L": 1,
+          "back_hair_C": 1,
+          "back_hair_R": 1,
+          "back_hair_tip_L": 1,
+          "back_hair_tip_C": 1,
+          "back_hair_tip_R": 1,
+          "body_base": 1,
+          "neck": 1,
+          "neck_shadow": 1,
+          "chest": 1,
+          "chest_shadow": 1,
+          "shoulder_L": 1,
+          "shoulder_R": 1,
+          "arm_L": 1,
+          "arm_R": 1,
+          "sleeve_L": 1,
+          "sleeve_R": 1,
+          "face_base": 1,
+          "face_shadow_L": 1,
+          "face_shadow_R": 1,
+          "ear_L": 1,
+          "ear_R": 1,
+          "ear_inner_L": 1,
+          "ear_inner_R": 1,
+          "eye_white_L": 1,
+          "eye_white_R": 1,
+          "iris_L": 0,
+          "iris_R": 0,
+          "pupil_L": 0,
+          "pupil_R": 0,
+          "catchlight_L": 0,
+          "catchlight_R": 0,
+          "upper_lash_L": 1,
+          "upper_lash_R": 1,
+          "mouth_closed_line": 0,
+          "choker_base": 1,
+          "choker_gem": 1,
+          "ribbon_center": 1,
+          "ribbon_loop_L": 1,
+          "ribbon_loop_R": 1,
+          "ribbon_tail_L": 1,
+          "ribbon_tail_R": 1,
+          "shoulder_frill_L": 1,
+          "shoulder_frill_R": 1,
+          "sleeve_frill_L": 1,
+          "sleeve_frill_R": 1,
+          "brow_L": 1,
+          "brow_R": 1,
+          "cheek_blush_L": 0.67,
+          "cheek_blush_R": 0.67,
+          "eye_shadow_L": 1,
+          "eye_shadow_R": 1,
+          "lower_lid_L": 1,
+          "lower_lid_R": 1,
+          "mouth_corner_L": 1,
+          "mouth_corner_R": 1,
+          "mouth_half_inner": 0,
+          "mouth_half_outer": 0,
+          "mouth_open_inner": 1,
+          "mouth_open_outer": 1,
+          "mouth_shadow": 1,
+          "mouth_teeth_upper": 1,
+          "mouth_tongue": 1,
+          "nose_bridge": 1,
+          "nose_tip": 1,
+          "upper_lid_L": 1,
+          "upper_lid_R": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-06-10T16:22:09.044553+00:00",
+  "sheet": "experiments/autorig-template-001/raw_sheets/mouth_states_v21.png",
+  "lip_width_in_patch": 0.65,
+  "lip_y_in_patch": 0.17,
+  "scale_margin": 0.97,
+  "feather_px": 18,
+  "written": [
+    "mouth_state_closed.png",
+    "mouth_state_small.png",
+    "mouth_state_mid.png",
+    "mouth_state_wide.png"
+  ]
+}

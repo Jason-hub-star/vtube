@@ -1,0 +1,416 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T14:48:46.014771+00:00",
+  "id": "shizuku_shizuku_t02",
+  "name": "shizuku_t02",
+  "source_url": "https://www.live2d.com/ko/learn/sample/",
+  "source_type": "OFFICIAL_SAMPLE_ZIP",
+  "license_status": "OFFICIAL_TERMS_ACCEPTED_BY_USER",
+  "analysis_mode": "FULL_STRUCTURE",
+  "official_profile_key": "shizuku",
+  "analysis_safety_notes": [],
+  "has_cmo3": true,
+  "has_moc3": true,
+  "has_model3_json": true,
+  "has_physics3_json": true,
+  "has_psd": false,
+  "local_paths": {
+    "pose3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/shizuku/shizuku/runtime/shizuku.pose3.json",
+      "exists": true,
+      "size_bytes": 286
+    },
+    "cmo3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/shizuku/shizuku/shizuku_t02.cmo3",
+      "exists": true,
+      "size_bytes": 41055649
+    },
+    "physics3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/shizuku/shizuku/runtime/shizuku.physics3.json",
+      "exists": true,
+      "size_bytes": 4267
+    },
+    "moc3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/shizuku/shizuku/runtime/shizuku.moc3",
+      "exists": true,
+      "size_bytes": 761472
+    },
+    "cdi3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/shizuku/shizuku/runtime/shizuku.cdi3.json",
+      "exists": true,
+      "size_bytes": 6329
+    },
+    "model3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/shizuku/shizuku/runtime/shizuku.model3.json",
+      "exists": true,
+      "size_bytes": 917
+    },
+    "motion3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/shizuku/shizuku/runtime/motion/01.motion3.json",
+        "exists": true,
+        "size_bytes": 6081
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/shizuku/shizuku/runtime/motion/02.motion3.json",
+        "exists": true,
+        "size_bytes": 11099
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/shizuku/shizuku/runtime/motion/03.motion3.json",
+        "exists": true,
+        "size_bytes": 6587
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/shizuku/shizuku/runtime/motion/04.motion3.json",
+        "exists": true,
+        "size_bytes": 6233
+      }
+    ]
+  },
+  "cmo3": {
+    "status": "PASS",
+    "returncode": 0,
+    "json": "experiments/reference-model-structure-001/models/shizuku_shizuku_t02/cmo3_structure_report.json",
+    "markdown": "experiments/reference-model-structure-001/models/shizuku_shizuku_t02/cmo3_structure_report.md",
+    "stdout": "[cmo3-structure] WARN\n[cmo3-structure] json: /Users/family/jason/Vtube/experiments/reference-model-structure-001/models/shizuku_shizuku_t02/cmo3_structure_report.json\n[cmo3-structure] md:   /Users/family/jason/Vtube/experiments/reference-model-structure-001/models/shizuku_shizuku_t02/cmo3_structure_report.md",
+    "stderr": "",
+    "cmo3_status": "WARN",
+    "counts": {
+      "art_meshes": 187,
+      "parts": 40,
+      "parameters": 45,
+      "warp_deformers": 156,
+      "rotation_deformers": 27,
+      "keyform_bindings": 358,
+      "keyform_grids": 410,
+      "glue": 0,
+      "masks": 0
+    },
+    "parameter_ids": [
+      "PARAM_ANGLE_X",
+      "PARAM_ANGLE_Y",
+      "PARAM_ANGLE_Z",
+      "PARAM_EYE_L_OPEN",
+      "PARAM_EYE_R_OPEN",
+      "PARAM_EYE_BALL_X",
+      "PARAM_EYE_BALL_Y",
+      "PARAM_EYE_BALL_FORM",
+      "PARAM_EYE_BALL_KIRAKIRA",
+      "PARAM_BROW_L_Y",
+      "PARAM_BROW_R_Y",
+      "PARAM_BROW_L_X",
+      "PARAM_BROW_R_X",
+      "PARAM_BROW_L_ANGLE",
+      "PARAM_BROW_R_ANGLE",
+      "PARAM_BROW_L_FORM",
+      "PARAM_BROW_R_FORM",
+      "PARAM_MOUTH_OPEN_Y",
+      "PARAM_MOUTH_FORM",
+      "PARAM_MOUTH_SIZE",
+      "PARAM_TERE",
+      "PARAM_BODY_X",
+      "PARAM_BODY_Z",
+      "PARAM_BODY_Y",
+      "PARAM_BREATH",
+      "PARAM_ARM_L",
+      "PARAM_ARM_L_02",
+      "PARAM_HAND_L",
+      "PARAM_ARM_R",
+      "PARAM_ARM_R_02",
+      "PARAM_HAND_R",
+      "PARAM_ARM_02_L_01",
+      "PARAM_ARM_02_L_02",
+      "PARAM_HAND_02_L",
+      "PARAM_ARM_02_R_01",
+      "PARAM_ARM_02_R_02",
+      "PARAM_HAND_02_R",
+      "PARAM_KAMIYURE_FRONT",
+      "PARAM_KAMIYURE_BACK",
+      "PARAM_KAMIYURE_SIDE_L",
+      "PARAM_KAMIYURE_SIDE_R",
+      "PARAM_KAMIYURE_TWIN_L",
+      "PARAM_KAMIYURE_TWIN_R",
+      "PARAM_DONYORI",
+      "PARAM_DESK"
+    ],
+    "part_names": [
+      "Root Part",
+      "[ 下絵 ]",
+      "マグカップ・クッキー",
+      "背景　家",
+      "背景　学校",
+      "背景",
+      "キラキラ",
+      "汗",
+      "イライラ",
+      "体",
+      "首",
+      "パジャマ",
+      "制服※座標系はコアに移動",
+      "右腕２ パジャマ",
+      "左腕２ パジャマ",
+      "右腕１ パジャマ",
+      "左腕１ パジャマ",
+      "右腕２",
+      "左腕２",
+      "右腕１",
+      "左腕１",
+      "ツインテール　後ろ",
+      "ツインテール　右",
+      "ツインテール　左",
+      "下ろし髪　後ろ",
+      "横髪",
+      "前髪",
+      "耳",
+      "鼻",
+      "口",
+      "まゆ毛",
+      "目玉",
+      "目玉 ぐるぐる",
+      "目玉 キラキラ",
+      "目",
+      "顔",
+      "頬",
+      "顔影",
+      "コアパーツ",
+      "ラフ"
+    ]
+  },
+  "moc3": {
+    "present": true,
+    "path": "experiments/reference-model-structure-001/official_samples/extracted/shizuku/shizuku/runtime/shizuku.moc3",
+    "size_bytes": 761472,
+    "sha256": "c61cfd02474386a4f2ee19d82cc4a873472b226ad725118f772f15088e74556c",
+    "py_moc3_status": "PASS",
+    "parameter_count": 45,
+    "art_mesh_count": 131,
+    "parameter_ids": [
+      "PARAM_ANGLE_X",
+      "PARAM_ANGLE_Y",
+      "PARAM_ANGLE_Z",
+      "PARAM_EYE_L_OPEN",
+      "PARAM_EYE_R_OPEN",
+      "PARAM_EYE_BALL_X",
+      "PARAM_EYE_BALL_Y",
+      "PARAM_EYE_BALL_FORM",
+      "PARAM_EYE_BALL_KIRAKIRA",
+      "PARAM_BROW_L_Y",
+      "PARAM_BROW_R_Y",
+      "PARAM_BROW_L_X",
+      "PARAM_BROW_R_X",
+      "PARAM_BROW_L_ANGLE",
+      "PARAM_BROW_R_ANGLE",
+      "PARAM_BROW_L_FORM",
+      "PARAM_BROW_R_FORM",
+      "PARAM_MOUTH_OPEN_Y",
+      "PARAM_MOUTH_FORM",
+      "PARAM_MOUTH_SIZE",
+      "PARAM_TERE",
+      "PARAM_BODY_X",
+      "PARAM_BODY_Z",
+      "PARAM_BODY_Y",
+      "PARAM_BREATH",
+      "PARAM_ARM_L",
+      "PARAM_ARM_L_02",
+      "PARAM_HAND_L",
+      "PARAM_ARM_R",
+      "PARAM_ARM_R_02",
+      "PARAM_HAND_R",
+      "PARAM_ARM_02_L_01",
+      "PARAM_ARM_02_L_02",
+      "PARAM_HAND_02_L",
+      "PARAM_ARM_02_R_01",
+      "PARAM_ARM_02_R_02",
+      "PARAM_HAND_02_R",
+      "PARAM_KAMIYURE_FRONT",
+      "PARAM_KAMIYURE_BACK",
+      "PARAM_KAMIYURE_SIDE_L",
+      "PARAM_KAMIYURE_SIDE_R",
+      "PARAM_KAMIYURE_TWIN_L",
+      "PARAM_KAMIYURE_TWIN_R",
+      "PARAM_DONYORI",
+      "PARAM_DESK"
+    ],
+    "art_mesh_ids_sample": [
+      "D_BACKGROUND_08",
+      "D_BACKGROUND_07",
+      "D_BACKGROUND_06",
+      "D_BACKGROUND_05",
+      "D_BACKGROUND_04",
+      "D_BACKGROUND_03",
+      "D_BACKGROUND_02",
+      "D_BACKGROUND_01",
+      "D_BODY_00",
+      "D_NECK_01",
+      "D_NECK_00",
+      "D_CLOTHES_00",
+      "D_CLOTHES_06",
+      "D_CLOTHES_05",
+      "D_CLOTHES_04",
+      "D_CLOTHES_03",
+      "D_CLOTHES_02",
+      "D_CLOTHES_01",
+      "D_CLOTHES_09",
+      "D_CLOTHES_08",
+      "D_CLOTHES_07",
+      "D_HAND_17",
+      "D_HAND_16",
+      "D_HAND_15",
+      "D_HAND_14",
+      "D_HAND_13",
+      "D_HAND_12",
+      "D_CLOTHES_17",
+      "D_CLOTHES_16",
+      "D_HAND_23",
+      "D_HAND_22",
+      "D_HAND_21",
+      "D_HAND_20",
+      "D_HAND_19",
+      "D_HAND_18",
+      "D_CLOTHES_19",
+      "D_CLOTHES_18",
+      "D_HAND_05",
+      "D_HAND_04",
+      "D_HAND_03",
+      "D_HAND_02",
+      "D_HAND_00",
+      "D_HAND_01",
+      "D_CLOTHES_12",
+      "D_CLOTHES_11",
+      "D_HAIR_TWIN_29",
+      "D_CLOTHES_10",
+      "D_HAND_11",
+      "D_HAND_10",
+      "D_HAND_09"
+    ]
+  },
+  "runtime_json": {
+    "model3": {
+      "present": true,
+      "version": 3,
+      "moc": "shizuku.moc3",
+      "texture_count": 5,
+      "has_physics": true,
+      "has_pose": true,
+      "has_display_info": true,
+      "has_user_data": false,
+      "expression_count": 0,
+      "motion_group_count": 4,
+      "motion_count": 4,
+      "group_count": 2,
+      "parameter_ids": [
+        "PARAM_EYE_L_OPEN",
+        "PARAM_EYE_R_OPEN",
+        "PARAM_MOUTH_OPEN_Y"
+      ],
+      "file_references": {
+        "Moc": "shizuku.moc3",
+        "Textures": [
+          "shizuku.1024/texture_00.png",
+          "shizuku.1024/texture_01.png",
+          "shizuku.1024/texture_02.png",
+          "shizuku.1024/texture_03.png",
+          "shizuku.1024/texture_04.png"
+        ],
+        "Physics": "shizuku.physics3.json",
+        "Pose": "shizuku.pose3.json",
+        "DisplayInfo": "shizuku.cdi3.json",
+        "Motions": {
+          "FlickUp": [
+            {
+              "File": "motion/01.motion3.json"
+            }
+          ],
+          "Tap": [
+            {
+              "File": "motion/02.motion3.json"
+            }
+          ],
+          "Flick3": [
+            {
+              "File": "motion/03.motion3.json"
+            }
+          ],
+          "Idle": [
+            {
+              "File": "motion/04.motion3.json"
+            }
+          ]
+        }
+      }
+    },
+    "physics3": {
+      "present": true,
+      "version": 3,
+      "physics_group_count": 3,
+      "physics_input_count": 6,
+      "physics_output_count": 5,
+      "physics_vertex_count": 6,
+      "groups": [
+        {
+          "index": 0,
+          "id": "PhysicsSetting1",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 1,
+          "id": "PhysicsSetting2",
+          "input_count": 2,
+          "output_count": 2,
+          "vertex_count": 2
+        },
+        {
+          "index": 2,
+          "id": "PhysicsSetting3",
+          "input_count": 2,
+          "output_count": 2,
+          "vertex_count": 2
+        }
+      ]
+    },
+    "cdi3": {
+      "present": true,
+      "parameter_display_count": 45,
+      "part_display_count": 39
+    },
+    "motion3_count": 4,
+    "exp3_count": 0,
+    "pose3_present": true,
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 187,
+    "parts": 40,
+    "parameters": 45,
+    "warp_deformers": 156,
+    "rotation_deformers": 27,
+    "keyform_bindings": 358,
+    "keyform_grids": 410,
+    "glue": 0,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": false,
+    "pose": true,
+    "expression": false,
+    "motion": true,
+    "physics": true
+  },
+  "structure_hints": {
+    "hair": 1,
+    "eye": 1,
+    "mouth": 2,
+    "body": 1,
+    "arm": 2
+  },
+  "reuse_decision": "REFERENCE_ONLY",
+  "notes": [
+    "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+    "Source zip: shizuku.zip"
+  ],
+  "structure_report_path": "experiments/reference-model-structure-001/models/shizuku_shizuku_t02/cmo3_structure_report.json"
+}

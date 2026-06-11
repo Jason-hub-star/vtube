@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "experiment_id": "mini-cubism-dedicated-model-v1-001",
+  "status": "SPEC_READY_PENDING_CANONICAL_IMAGE",
+  "source_spec": "docs/ref/MINI-CUBISM-DEDICATED-PART-SPEC-v1.md",
+  "target_part_count": 68,
+  "minimum_part_count": 60,
+  "full_expressive_part_count": 86,
+  "required_counts": {
+    "hair_parts": 18,
+    "eye_parts": 16,
+    "mouth_parts": 8,
+    "physics_targets": 12
+  },
+  "part_groups": {
+    "body_anchor": [
+      "body_base",
+      "neck",
+      "neck_shadow",
+      "chest",
+      "chest_shadow",
+      "shoulder_L",
+      "shoulder_R",
+      "arm_L",
+      "arm_R",
+      "sleeve_L",
+      "sleeve_R"
+    ],
+    "face_ear": [
+      "face_base",
+      "face_shadow_L",
+      "face_shadow_R",
+      "ear_L",
+      "ear_R",
+      "ear_inner_L",
+      "ear_inner_R",
+      "cheek_blush_L",
+      "cheek_blush_R"
+    ],
+    "hair_physics": [
+      "front_bang_L",
+      "front_bang_CL",
+      "front_bang_C",
+      "front_bang_CR",
+      "front_bang_R",
+      "front_side_lock_L",
+      "front_side_lock_R",
+      "side_hair_L_upper",
+      "side_hair_L_lower",
+      "side_hair_R_upper",
+      "side_hair_R_lower",
+      "back_hair_base",
+      "back_hair_L",
+      "back_hair_C",
+      "back_hair_R",
+      "back_hair_tip_L",
+      "back_hair_tip_C",
+      "back_hair_tip_R"
+    ],
+    "eyes_keypose": [
+      "eye_white_L",
+      "eye_white_R",
+      "iris_L",
+      "iris_R",
+      "pupil_L",
+      "pupil_R",
+      "catchlight_L",
+      "catchlight_R",
+      "upper_lid_L",
+      "upper_lid_R",
+      "lower_lid_L",
+      "lower_lid_R",
+      "upper_lash_L",
+      "upper_lash_R",
+      "brow_L",
+      "brow_R"
+    ],
+    "mouth_keypose": [
+      "mouth_closed_line",
+      "mouth_half_outer",
+      "mouth_half_inner",
+      "mouth_open_outer",
+      "mouth_open_inner",
+      "mouth_teeth_upper",
+      "mouth_tongue",
+      "mouth_shadow"
+    ],
+    "clothes_accessory_physics": [
+      "choker_base",
+      "choker_gem",
+      "ribbon_center",
+      "ribbon_loop_L",
+      "ribbon_loop_R",
+      "ribbon_tail_L",
+      "ribbon_tail_R",
+      "shoulder_frill_L",
+      "shoulder_frill_R",
+      "sleeve_frill_L",
+      "sleeve_frill_R"
+    ]
+  },
+  "physics_profiles": [
+    "front_bang_light",
+    "front_side_lock_medium",
+    "side_hair_lower_slow",
+    "back_hair_heavy",
+    "back_hair_tip_slow",
+    "ribbon_tail_spring",
+    "choker_gem_fast",
+    "sleeve_frill_flutter",
+    "ear_small_secondary"
+  ],
+  "parameters": [
+    "ParamAngleX",
+    "ParamAngleY",
+    "ParamAngleZ",
+    "ParamEyeLOpen",
+    "ParamEyeROpen",
+    "ParamMouthOpenY",
+    "ParamMouthForm",
+    "ParamHairFront",
+    "ParamHairBack",
+    "ParamAccessory"
+  ],
+  "success_criteria": [
+    "part_count >= 60",
+    "hair_parts >= 18",
+    "eye_parts >= 16",
+    "mouth_parts >= 8",
+    "physics_targets >= 12",
+    "mouth closed/half/open exclusive visibility",
+    "eye closed hides iris/pupil/catchlight",
+    "spring profiles settle within 40 frames",
+    "motion GIFs and review packet generated"
+  ],
+  "notes": [
+    "This is a dedicated model spec, not current decomposed part evidence.",
+    "The current v0.3 engine validation model remains preserved.",
+    "Glue is out of scope until fixture-backed CGlueSource evidence exists."
+  ]
+}

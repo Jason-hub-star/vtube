@@ -1,0 +1,10 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "import_ready_candidate.moc3",
+		"Textures": [
+			"import_ready_candidate.1024/texture_00.png"
+		],
+		"DisplayInfo": "import_ready_candidate.cdi3.json"
+	}
+}

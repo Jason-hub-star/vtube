@@ -1,0 +1,688 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T01:30:05.582234+00:00",
+  "experiment_id": "cubism-v2-new-character-002",
+  "status": "TECHNICAL_CANDIDATES_READY_FOR_VALIDATOR",
+  "note": "Generated material candidates are not visual PASS. They need contact-sheet review before Mini Cubism.",
+  "raw_outputs": [
+    "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/new_character_002_source_front.raw.png",
+    "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_closeups.raw.png",
+    "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_fullface.raw.png"
+  ],
+  "normalized_layers": 21,
+  "assets": [
+    {
+      "asset_id": "face_base_clean",
+      "source_raw": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_fullface.raw.png",
+      "source_box": [
+        512,
+        930,
+        760,
+        1220
+      ],
+      "crop_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_crops/face_base_clean.crop.png",
+      "normalized_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers/face_base_clean.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "placement_center": [
+        1024,
+        980
+      ],
+      "max_size": [
+        980,
+        1160
+      ],
+      "alpha_bbox": [
+        534,
+        407,
+        1514,
+        1553
+      ],
+      "alpha_coverage": 0.22199583,
+      "evidence_status": "TECHNICAL_CANDIDATE_VISUAL_QA_REQUIRED"
+    },
+    {
+      "asset_id": "eye_L_open",
+      "source_raw": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_closeups.raw.png",
+      "source_box": [
+        40,
+        60,
+        290,
+        190
+      ],
+      "crop_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_crops/eye_L_open.crop.png",
+      "normalized_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers/eye_L_open.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "placement_center": [
+        880,
+        687
+      ],
+      "max_size": [
+        260,
+        140
+      ],
+      "alpha_bbox": [
+        750,
+        618,
+        1010,
+        755
+      ],
+      "alpha_coverage": 0.00703692,
+      "evidence_status": "TECHNICAL_CANDIDATE_VISUAL_QA_REQUIRED"
+    },
+    {
+      "asset_id": "eye_R_open",
+      "source_raw": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_closeups.raw.png",
+      "source_box": [
+        390,
+        60,
+        640,
+        190
+      ],
+      "crop_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_crops/eye_R_open.crop.png",
+      "normalized_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers/eye_R_open.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "placement_center": [
+        1170,
+        687
+      ],
+      "max_size": [
+        260,
+        140
+      ],
+      "alpha_bbox": [
+        1040,
+        619,
+        1300,
+        755
+      ],
+      "alpha_coverage": 0.00710487,
+      "evidence_status": "TECHNICAL_CANDIDATE_VISUAL_QA_REQUIRED"
+    },
+    {
+      "asset_id": "eye_L_clean_socket",
+      "source_raw": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_closeups.raw.png",
+      "source_box": [
+        690,
+        45,
+        910,
+        170
+      ],
+      "crop_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_crops/eye_L_clean_socket.crop.png",
+      "normalized_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers/eye_L_clean_socket.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "placement_center": [
+        880,
+        687
+      ],
+      "max_size": [
+        220,
+        120
+      ],
+      "alpha_bbox": [
+        770,
+        646,
+        990,
+        729
+      ],
+      "alpha_coverage": 0.00373435,
+      "evidence_status": "TECHNICAL_CANDIDATE_VISUAL_QA_REQUIRED"
+    },
+    {
+      "asset_id": "eye_R_clean_socket",
+      "source_raw": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_closeups.raw.png",
+      "source_box": [
+        990,
+        45,
+        1220,
+        170
+      ],
+      "crop_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_crops/eye_R_clean_socket.crop.png",
+      "normalized_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers/eye_R_clean_socket.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "placement_center": [
+        1170,
+        687
+      ],
+      "max_size": [
+        220,
+        120
+      ],
+      "alpha_bbox": [
+        1060,
+        646,
+        1280,
+        728
+      ],
+      "alpha_coverage": 0.00366354,
+      "evidence_status": "TECHNICAL_CANDIDATE_VISUAL_QA_REQUIRED"
+    },
+    {
+      "asset_id": "eye_L_half_closed_lid",
+      "source_raw": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_closeups.raw.png",
+      "source_box": [
+        40,
+        250,
+        285,
+        380
+      ],
+      "crop_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_crops/eye_L_half_closed_lid.crop.png",
+      "normalized_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers/eye_L_half_closed_lid.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "placement_center": [
+        880,
+        687
+      ],
+      "max_size": [
+        260,
+        135
+      ],
+      "alpha_bbox": [
+        762,
+        620,
+        997,
+        755
+      ],
+      "alpha_coverage": 0.00596905,
+      "evidence_status": "TECHNICAL_CANDIDATE_VISUAL_QA_REQUIRED"
+    },
+    {
+      "asset_id": "eye_R_half_closed_lid",
+      "source_raw": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_closeups.raw.png",
+      "source_box": [
+        390,
+        250,
+        640,
+        380
+      ],
+      "crop_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_crops/eye_R_half_closed_lid.crop.png",
+      "normalized_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers/eye_R_half_closed_lid.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "placement_center": [
+        1170,
+        687
+      ],
+      "max_size": [
+        260,
+        135
+      ],
+      "alpha_bbox": [
+        1052,
+        620,
+        1289,
+        755
+      ],
+      "alpha_coverage": 0.00599027,
+      "evidence_status": "TECHNICAL_CANDIDATE_VISUAL_QA_REQUIRED"
+    },
+    {
+      "asset_id": "eye_L_mostly_closed_lid",
+      "source_raw": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_closeups.raw.png",
+      "source_box": [
+        55,
+        420,
+        290,
+        535
+      ],
+      "crop_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_crops/eye_L_mostly_closed_lid.crop.png",
+      "normalized_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers/eye_L_mostly_closed_lid.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "placement_center": [
+        880,
+        687
+      ],
+      "max_size": [
+        250,
+        120
+      ],
+      "alpha_bbox": [
+        762,
+        627,
+        997,
+        747
+      ],
+      "alpha_coverage": 0.00550675,
+      "evidence_status": "TECHNICAL_CANDIDATE_VISUAL_QA_REQUIRED"
+    },
+    {
+      "asset_id": "eye_R_mostly_closed_lid",
+      "source_raw": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_closeups.raw.png",
+      "source_box": [
+        390,
+        420,
+        640,
+        535
+      ],
+      "crop_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_crops/eye_R_mostly_closed_lid.crop.png",
+      "normalized_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers/eye_R_mostly_closed_lid.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "placement_center": [
+        1170,
+        687
+      ],
+      "max_size": [
+        250,
+        120
+      ],
+      "alpha_bbox": [
+        1052,
+        627,
+        1288,
+        747
+      ],
+      "alpha_coverage": 0.0054872,
+      "evidence_status": "TECHNICAL_CANDIDATE_VISUAL_QA_REQUIRED"
+    },
+    {
+      "asset_id": "eye_L_closed_lid",
+      "source_raw": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_closeups.raw.png",
+      "source_box": [
+        70,
+        585,
+        290,
+        690
+      ],
+      "crop_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_crops/eye_L_closed_lid.crop.png",
+      "normalized_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers/eye_L_closed_lid.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "placement_center": [
+        880,
+        687
+      ],
+      "max_size": [
+        245,
+        115
+      ],
+      "alpha_bbox": [
+        758,
+        636,
+        1003,
+        737
+      ],
+      "alpha_coverage": 0.00500441,
+      "evidence_status": "TECHNICAL_CANDIDATE_VISUAL_QA_REQUIRED"
+    },
+    {
+      "asset_id": "eye_R_closed_lid",
+      "source_raw": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_closeups.raw.png",
+      "source_box": [
+        405,
+        585,
+        620,
+        690
+      ],
+      "crop_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_crops/eye_R_closed_lid.crop.png",
+      "normalized_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers/eye_R_closed_lid.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "placement_center": [
+        1170,
+        687
+      ],
+      "max_size": [
+        245,
+        115
+      ],
+      "alpha_bbox": [
+        1048,
+        636,
+        1293,
+        737
+      ],
+      "alpha_coverage": 0.00502777,
+      "evidence_status": "TECHNICAL_CANDIDATE_VISUAL_QA_REQUIRED"
+    },
+    {
+      "asset_id": "eye_L_closed_underpaint",
+      "source_raw": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_closeups.raw.png",
+      "source_box": [
+        710,
+        420,
+        900,
+        535
+      ],
+      "crop_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_crops/eye_L_closed_underpaint.crop.png",
+      "normalized_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers/eye_L_closed_underpaint.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "placement_center": [
+        880,
+        687
+      ],
+      "max_size": [
+        230,
+        130
+      ],
+      "alpha_bbox": [
+        768,
+        622,
+        992,
+        752
+      ],
+      "alpha_coverage": 0.00552988,
+      "evidence_status": "TECHNICAL_CANDIDATE_VISUAL_QA_REQUIRED"
+    },
+    {
+      "asset_id": "eye_R_closed_underpaint",
+      "source_raw": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_closeups.raw.png",
+      "source_box": [
+        995,
+        420,
+        1175,
+        535
+      ],
+      "crop_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_crops/eye_R_closed_underpaint.crop.png",
+      "normalized_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers/eye_R_closed_underpaint.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "placement_center": [
+        1170,
+        687
+      ],
+      "max_size": [
+        230,
+        130
+      ],
+      "alpha_bbox": [
+        1058,
+        622,
+        1281,
+        752
+      ],
+      "alpha_coverage": 0.0055263,
+      "evidence_status": "TECHNICAL_CANDIDATE_VISUAL_QA_REQUIRED"
+    },
+    {
+      "asset_id": "mouth_base_clean",
+      "source_raw": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_closeups.raw.png",
+      "source_box": [
+        55,
+        720,
+        300,
+        850
+      ],
+      "crop_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_crops/mouth_base_clean.crop.png",
+      "normalized_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers/mouth_base_clean.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "placement_center": [
+        1035,
+        845
+      ],
+      "max_size": [
+        250,
+        135
+      ],
+      "alpha_bbox": [
+        910,
+        778,
+        1160,
+        911
+      ],
+      "alpha_coverage": 0.00653696,
+      "evidence_status": "TECHNICAL_CANDIDATE_VISUAL_QA_REQUIRED"
+    },
+    {
+      "asset_id": "mouth_closed_smile",
+      "source_raw": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_closeups.raw.png",
+      "source_box": [
+        380,
+        720,
+        600,
+        850
+      ],
+      "crop_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_crops/mouth_closed_smile.crop.png",
+      "normalized_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers/mouth_closed_smile.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "placement_center": [
+        1035,
+        845
+      ],
+      "max_size": [
+        230,
+        120
+      ],
+      "alpha_bbox": [
+        921,
+        785,
+        1149,
+        905
+      ],
+      "alpha_coverage": 0.00529718,
+      "evidence_status": "TECHNICAL_CANDIDATE_VISUAL_QA_REQUIRED"
+    },
+    {
+      "asset_id": "mouth_small_open",
+      "source_raw": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_closeups.raw.png",
+      "source_box": [
+        655,
+        725,
+        875,
+        850
+      ],
+      "crop_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_crops/mouth_small_open.crop.png",
+      "normalized_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers/mouth_small_open.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "placement_center": [
+        1035,
+        845
+      ],
+      "max_size": [
+        230,
+        120
+      ],
+      "alpha_bbox": [
+        924,
+        785,
+        1147,
+        905
+      ],
+      "alpha_coverage": 0.00528765,
+      "evidence_status": "TECHNICAL_CANDIDATE_VISUAL_QA_REQUIRED"
+    },
+    {
+      "asset_id": "mouth_wide_open",
+      "source_raw": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_closeups.raw.png",
+      "source_box": [
+        930,
+        720,
+        1145,
+        865
+      ],
+      "crop_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_crops/mouth_wide_open.crop.png",
+      "normalized_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers/mouth_wide_open.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "placement_center": [
+        1035,
+        845
+      ],
+      "max_size": [
+        240,
+        145
+      ],
+      "alpha_bbox": [
+        915,
+        780,
+        1155,
+        909
+      ],
+      "alpha_coverage": 0.00601721,
+      "evidence_status": "TECHNICAL_CANDIDATE_VISUAL_QA_REQUIRED"
+    },
+    {
+      "asset_id": "mouth_o_vowel",
+      "source_raw": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_closeups.raw.png",
+      "source_box": [
+        1225,
+        720,
+        1455,
+        850
+      ],
+      "crop_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_crops/mouth_o_vowel.crop.png",
+      "normalized_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers/mouth_o_vowel.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "placement_center": [
+        1035,
+        845
+      ],
+      "max_size": [
+        230,
+        130
+      ],
+      "alpha_bbox": [
+        924,
+        780,
+        1145,
+        910
+      ],
+      "alpha_coverage": 0.00573254,
+      "evidence_status": "TECHNICAL_CANDIDATE_VISUAL_QA_REQUIRED"
+    },
+    {
+      "asset_id": "mouth_inner",
+      "source_raw": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_closeups.raw.png",
+      "source_box": [
+        410,
+        880,
+        600,
+        1005
+      ],
+      "crop_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_crops/mouth_inner.crop.png",
+      "normalized_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers/mouth_inner.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "placement_center": [
+        1035,
+        845
+      ],
+      "max_size": [
+        215,
+        125
+      ],
+      "alpha_bbox": [
+        928,
+        791,
+        1143,
+        899
+      ],
+      "alpha_coverage": 0.0045464,
+      "evidence_status": "TECHNICAL_CANDIDATE_VISUAL_QA_REQUIRED"
+    },
+    {
+      "asset_id": "mouth_teeth",
+      "source_raw": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_closeups.raw.png",
+      "source_box": [
+        665,
+        880,
+        895,
+        1005
+      ],
+      "crop_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_crops/mouth_teeth.crop.png",
+      "normalized_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers/mouth_teeth.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "placement_center": [
+        1035,
+        845
+      ],
+      "max_size": [
+        230,
+        120
+      ],
+      "alpha_bbox": [
+        920,
+        812,
+        1150,
+        877
+      ],
+      "alpha_coverage": 0.00297761,
+      "evidence_status": "TECHNICAL_CANDIDATE_VISUAL_QA_REQUIRED"
+    },
+    {
+      "asset_id": "mouth_tongue",
+      "source_raw": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_closeups.raw.png",
+      "source_box": [
+        970,
+        880,
+        1135,
+        1005
+      ],
+      "crop_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_crops/mouth_tongue.crop.png",
+      "normalized_path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers/mouth_tongue.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "placement_center": [
+        1035,
+        845
+      ],
+      "max_size": [
+        205,
+        120
+      ],
+      "alpha_bbox": [
+        932,
+        788,
+        1137,
+        902
+      ],
+      "alpha_coverage": 0.0042665,
+      "evidence_status": "TECHNICAL_CANDIDATE_VISUAL_QA_REQUIRED"
+    }
+  ],
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/material_pack_first_contact_sheet.png"
+}

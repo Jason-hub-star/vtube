@@ -1,0 +1,2931 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-08T02:41:42.838966+00:00",
+  "test_id": "T0_static_sample_json",
+  "status": "PASS",
+  "inputs": {
+    "mapping_spec": "experiments/reference-model-structure-001/reports/face_tracking_to_cubism_parameter_map.json"
+  },
+  "summary": {
+    "sample_count": 20,
+    "required_output_count": 12,
+    "failure_count": 0,
+    "all_required_covered": true,
+    "webcam_required": false
+  },
+  "interpretation": {
+    "ko": "웹캠 없이 synthetic tracking 값으로 Cubism parameter 변환 공식과 범위를 검증한다. 이 PASS는 live tracking 성공이 아니라 mapping smoke 성공이다.",
+    "next": "T1_webcam_tracking_probe에서 실제 MediaPipe webcam/recorded-video 입력을 저장해야 live tracking 경로로 진입한다."
+  },
+  "required_coverage": {
+    "ParamAngleX": true,
+    "ParamAngleY": true,
+    "ParamAngleZ": true,
+    "ParamBodyAngleX": true,
+    "ParamBodyAngleY": true,
+    "ParamEyeLOpen": true,
+    "ParamEyeROpen": true,
+    "ParamEyeBallX": true,
+    "ParamEyeBallY": true,
+    "ParamMouthOpenY": true,
+    "ParamMouthForm": true,
+    "ParamBreath": true
+  },
+  "parameter_extrema": {
+    "ParamAngleX": {
+      "min": -30,
+      "max": 30
+    },
+    "ParamAngleY": {
+      "min": -30,
+      "max": 30
+    },
+    "ParamAngleZ": {
+      "min": -30,
+      "max": 30
+    },
+    "ParamBodyAngleX": {
+      "min": -6.5,
+      "max": 6.5
+    },
+    "ParamBodyAngleY": {
+      "min": -4.5,
+      "max": 4.5
+    },
+    "ParamBodyAngleZ": {
+      "min": -5.0,
+      "max": 5.0
+    },
+    "ParamBreath": {
+      "min": 0,
+      "max": 1
+    },
+    "ParamEyeBallX": {
+      "min": -1,
+      "max": 1
+    },
+    "ParamEyeBallY": {
+      "min": -1,
+      "max": 1
+    },
+    "ParamEyeLOpen": {
+      "min": 0,
+      "max": 1
+    },
+    "ParamEyeROpen": {
+      "min": 0,
+      "max": 1
+    },
+    "ParamMouthForm": {
+      "min": -0.7,
+      "max": 0.8
+    },
+    "ParamMouthOpenY": {
+      "min": 0,
+      "max": 1
+    }
+  },
+  "failures": [],
+  "rows": [
+    {
+      "sample_id": "neutral",
+      "label_ko": "중립",
+      "inputs": {
+        "head_yaw": 0.0,
+        "head_pitch": 0.0,
+        "head_roll": 0.0,
+        "eyeBlinkLeft": 0.0,
+        "eyeBlinkRight": 0.0,
+        "eye_gaze_x": 0.0,
+        "eye_gaze_y": 0.0,
+        "jawOpen": 0.0,
+        "mouthSmileLeft": 0.0,
+        "mouthSmileRight": 0.0,
+        "mouthFrownLeft": 0.0,
+        "mouthFrownRight": 0.0,
+        "time": 0.0
+      },
+      "outputs": {
+        "ParamAngleX": 0.0,
+        "ParamAngleY": 0.0,
+        "ParamAngleZ": 0.0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamEyeBallX": 0.0,
+        "ParamEyeBallY": 0.0,
+        "ParamMouthOpenY": 0,
+        "ParamMouthForm": 0.0,
+        "ParamBodyAngleX": 0.0,
+        "ParamBodyAngleY": 0.0,
+        "ParamBodyAngleZ": 0.0,
+        "ParamBreath": 0.5
+      },
+      "checks": {
+        "ParamAngleX": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleY": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleZ": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeLOpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeROpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallX": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallY": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthOpenY": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthForm": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleX": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleY": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleZ": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBreath": {
+          "value": 0.5,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        }
+      },
+      "missing_required": [],
+      "status": "PASS"
+    },
+    {
+      "sample_id": "head_left",
+      "label_ko": "고개 왼쪽",
+      "inputs": {
+        "head_yaw": -25,
+        "head_pitch": 0.0,
+        "head_roll": 0.0,
+        "eyeBlinkLeft": 0.0,
+        "eyeBlinkRight": 0.0,
+        "eye_gaze_x": 0.0,
+        "eye_gaze_y": 0.0,
+        "jawOpen": 0.0,
+        "mouthSmileLeft": 0.0,
+        "mouthSmileRight": 0.0,
+        "mouthFrownLeft": 0.0,
+        "mouthFrownRight": 0.0,
+        "time": 0.0
+      },
+      "outputs": {
+        "ParamAngleX": -30,
+        "ParamAngleY": 0.0,
+        "ParamAngleZ": 0.0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamEyeBallX": 0.0,
+        "ParamEyeBallY": 0.0,
+        "ParamMouthOpenY": 0,
+        "ParamMouthForm": 0.0,
+        "ParamBodyAngleX": -6.5,
+        "ParamBodyAngleY": 0.0,
+        "ParamBodyAngleZ": 0.0,
+        "ParamBreath": 0.5
+      },
+      "checks": {
+        "ParamAngleX": {
+          "value": -30,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleY": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleZ": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeLOpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeROpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallX": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallY": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthOpenY": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthForm": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleX": {
+          "value": -6.5,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleY": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleZ": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBreath": {
+          "value": 0.5,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        }
+      },
+      "missing_required": [],
+      "status": "PASS"
+    },
+    {
+      "sample_id": "head_right",
+      "label_ko": "고개 오른쪽",
+      "inputs": {
+        "head_yaw": 25,
+        "head_pitch": 0.0,
+        "head_roll": 0.0,
+        "eyeBlinkLeft": 0.0,
+        "eyeBlinkRight": 0.0,
+        "eye_gaze_x": 0.0,
+        "eye_gaze_y": 0.0,
+        "jawOpen": 0.0,
+        "mouthSmileLeft": 0.0,
+        "mouthSmileRight": 0.0,
+        "mouthFrownLeft": 0.0,
+        "mouthFrownRight": 0.0,
+        "time": 0.0
+      },
+      "outputs": {
+        "ParamAngleX": 30,
+        "ParamAngleY": 0.0,
+        "ParamAngleZ": 0.0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamEyeBallX": 0.0,
+        "ParamEyeBallY": 0.0,
+        "ParamMouthOpenY": 0,
+        "ParamMouthForm": 0.0,
+        "ParamBodyAngleX": 6.5,
+        "ParamBodyAngleY": 0.0,
+        "ParamBodyAngleZ": 0.0,
+        "ParamBreath": 0.5
+      },
+      "checks": {
+        "ParamAngleX": {
+          "value": 30,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleY": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleZ": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeLOpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeROpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallX": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallY": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthOpenY": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthForm": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleX": {
+          "value": 6.5,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleY": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleZ": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBreath": {
+          "value": 0.5,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        }
+      },
+      "missing_required": [],
+      "status": "PASS"
+    },
+    {
+      "sample_id": "look_up",
+      "label_ko": "고개 위",
+      "inputs": {
+        "head_yaw": 0.0,
+        "head_pitch": 20,
+        "head_roll": 0.0,
+        "eyeBlinkLeft": 0.0,
+        "eyeBlinkRight": 0.0,
+        "eye_gaze_x": 0.0,
+        "eye_gaze_y": 0.0,
+        "jawOpen": 0.0,
+        "mouthSmileLeft": 0.0,
+        "mouthSmileRight": 0.0,
+        "mouthFrownLeft": 0.0,
+        "mouthFrownRight": 0.0,
+        "time": 0.0
+      },
+      "outputs": {
+        "ParamAngleX": 0.0,
+        "ParamAngleY": 30,
+        "ParamAngleZ": 0.0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamEyeBallX": 0.0,
+        "ParamEyeBallY": 0.0,
+        "ParamMouthOpenY": 0,
+        "ParamMouthForm": 0.0,
+        "ParamBodyAngleX": 0.0,
+        "ParamBodyAngleY": 4.5,
+        "ParamBodyAngleZ": 0.0,
+        "ParamBreath": 0.5
+      },
+      "checks": {
+        "ParamAngleX": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleY": {
+          "value": 30,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleZ": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeLOpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeROpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallX": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallY": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthOpenY": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthForm": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleX": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleY": {
+          "value": 4.5,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleZ": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBreath": {
+          "value": 0.5,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        }
+      },
+      "missing_required": [],
+      "status": "PASS"
+    },
+    {
+      "sample_id": "look_down",
+      "label_ko": "고개 아래",
+      "inputs": {
+        "head_yaw": 0.0,
+        "head_pitch": -20,
+        "head_roll": 0.0,
+        "eyeBlinkLeft": 0.0,
+        "eyeBlinkRight": 0.0,
+        "eye_gaze_x": 0.0,
+        "eye_gaze_y": 0.0,
+        "jawOpen": 0.0,
+        "mouthSmileLeft": 0.0,
+        "mouthSmileRight": 0.0,
+        "mouthFrownLeft": 0.0,
+        "mouthFrownRight": 0.0,
+        "time": 0.0
+      },
+      "outputs": {
+        "ParamAngleX": 0.0,
+        "ParamAngleY": -30,
+        "ParamAngleZ": 0.0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamEyeBallX": 0.0,
+        "ParamEyeBallY": 0.0,
+        "ParamMouthOpenY": 0,
+        "ParamMouthForm": 0.0,
+        "ParamBodyAngleX": 0.0,
+        "ParamBodyAngleY": -4.5,
+        "ParamBodyAngleZ": 0.0,
+        "ParamBreath": 0.5
+      },
+      "checks": {
+        "ParamAngleX": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleY": {
+          "value": -30,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleZ": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeLOpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeROpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallX": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallY": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthOpenY": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthForm": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleX": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleY": {
+          "value": -4.5,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleZ": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBreath": {
+          "value": 0.5,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        }
+      },
+      "missing_required": [],
+      "status": "PASS"
+    },
+    {
+      "sample_id": "tilt_left",
+      "label_ko": "고개 기울임 왼쪽",
+      "inputs": {
+        "head_yaw": 0.0,
+        "head_pitch": 0.0,
+        "head_roll": -25,
+        "eyeBlinkLeft": 0.0,
+        "eyeBlinkRight": 0.0,
+        "eye_gaze_x": 0.0,
+        "eye_gaze_y": 0.0,
+        "jawOpen": 0.0,
+        "mouthSmileLeft": 0.0,
+        "mouthSmileRight": 0.0,
+        "mouthFrownLeft": 0.0,
+        "mouthFrownRight": 0.0,
+        "time": 0.0
+      },
+      "outputs": {
+        "ParamAngleX": 0.0,
+        "ParamAngleY": 0.0,
+        "ParamAngleZ": -30,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamEyeBallX": 0.0,
+        "ParamEyeBallY": 0.0,
+        "ParamMouthOpenY": 0,
+        "ParamMouthForm": 0.0,
+        "ParamBodyAngleX": 0.0,
+        "ParamBodyAngleY": 0.0,
+        "ParamBodyAngleZ": -5.0,
+        "ParamBreath": 0.5
+      },
+      "checks": {
+        "ParamAngleX": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleY": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleZ": {
+          "value": -30,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeLOpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeROpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallX": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallY": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthOpenY": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthForm": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleX": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleY": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleZ": {
+          "value": -5.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBreath": {
+          "value": 0.5,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        }
+      },
+      "missing_required": [],
+      "status": "PASS"
+    },
+    {
+      "sample_id": "tilt_right",
+      "label_ko": "고개 기울임 오른쪽",
+      "inputs": {
+        "head_yaw": 0.0,
+        "head_pitch": 0.0,
+        "head_roll": 25,
+        "eyeBlinkLeft": 0.0,
+        "eyeBlinkRight": 0.0,
+        "eye_gaze_x": 0.0,
+        "eye_gaze_y": 0.0,
+        "jawOpen": 0.0,
+        "mouthSmileLeft": 0.0,
+        "mouthSmileRight": 0.0,
+        "mouthFrownLeft": 0.0,
+        "mouthFrownRight": 0.0,
+        "time": 0.0
+      },
+      "outputs": {
+        "ParamAngleX": 0.0,
+        "ParamAngleY": 0.0,
+        "ParamAngleZ": 30,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamEyeBallX": 0.0,
+        "ParamEyeBallY": 0.0,
+        "ParamMouthOpenY": 0,
+        "ParamMouthForm": 0.0,
+        "ParamBodyAngleX": 0.0,
+        "ParamBodyAngleY": 0.0,
+        "ParamBodyAngleZ": 5.0,
+        "ParamBreath": 0.5
+      },
+      "checks": {
+        "ParamAngleX": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleY": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleZ": {
+          "value": 30,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeLOpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeROpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallX": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallY": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthOpenY": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthForm": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleX": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleY": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleZ": {
+          "value": 5.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBreath": {
+          "value": 0.5,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        }
+      },
+      "missing_required": [],
+      "status": "PASS"
+    },
+    {
+      "sample_id": "blink_left",
+      "label_ko": "왼눈 감기",
+      "inputs": {
+        "head_yaw": 0.0,
+        "head_pitch": 0.0,
+        "head_roll": 0.0,
+        "eyeBlinkLeft": 1,
+        "eyeBlinkRight": 0.0,
+        "eye_gaze_x": 0.0,
+        "eye_gaze_y": 0.0,
+        "jawOpen": 0.0,
+        "mouthSmileLeft": 0.0,
+        "mouthSmileRight": 0.0,
+        "mouthFrownLeft": 0.0,
+        "mouthFrownRight": 0.0,
+        "time": 0.0
+      },
+      "outputs": {
+        "ParamAngleX": 0.0,
+        "ParamAngleY": 0.0,
+        "ParamAngleZ": 0.0,
+        "ParamEyeLOpen": 0,
+        "ParamEyeROpen": 1,
+        "ParamEyeBallX": 0.0,
+        "ParamEyeBallY": 0.0,
+        "ParamMouthOpenY": 0,
+        "ParamMouthForm": 0.0,
+        "ParamBodyAngleX": 0.0,
+        "ParamBodyAngleY": 0.0,
+        "ParamBodyAngleZ": 0.0,
+        "ParamBreath": 0.5
+      },
+      "checks": {
+        "ParamAngleX": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleY": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleZ": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeLOpen": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeROpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallX": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallY": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthOpenY": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthForm": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleX": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleY": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleZ": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBreath": {
+          "value": 0.5,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        }
+      },
+      "missing_required": [],
+      "status": "PASS"
+    },
+    {
+      "sample_id": "blink_right",
+      "label_ko": "오른눈 감기",
+      "inputs": {
+        "head_yaw": 0.0,
+        "head_pitch": 0.0,
+        "head_roll": 0.0,
+        "eyeBlinkLeft": 0.0,
+        "eyeBlinkRight": 1,
+        "eye_gaze_x": 0.0,
+        "eye_gaze_y": 0.0,
+        "jawOpen": 0.0,
+        "mouthSmileLeft": 0.0,
+        "mouthSmileRight": 0.0,
+        "mouthFrownLeft": 0.0,
+        "mouthFrownRight": 0.0,
+        "time": 0.0
+      },
+      "outputs": {
+        "ParamAngleX": 0.0,
+        "ParamAngleY": 0.0,
+        "ParamAngleZ": 0.0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 0,
+        "ParamEyeBallX": 0.0,
+        "ParamEyeBallY": 0.0,
+        "ParamMouthOpenY": 0,
+        "ParamMouthForm": 0.0,
+        "ParamBodyAngleX": 0.0,
+        "ParamBodyAngleY": 0.0,
+        "ParamBodyAngleZ": 0.0,
+        "ParamBreath": 0.5
+      },
+      "checks": {
+        "ParamAngleX": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleY": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleZ": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeLOpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeROpen": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallX": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallY": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthOpenY": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthForm": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleX": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleY": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleZ": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBreath": {
+          "value": 0.5,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        }
+      },
+      "missing_required": [],
+      "status": "PASS"
+    },
+    {
+      "sample_id": "blink_both",
+      "label_ko": "양눈 감기",
+      "inputs": {
+        "head_yaw": 0.0,
+        "head_pitch": 0.0,
+        "head_roll": 0.0,
+        "eyeBlinkLeft": 1,
+        "eyeBlinkRight": 1,
+        "eye_gaze_x": 0.0,
+        "eye_gaze_y": 0.0,
+        "jawOpen": 0.0,
+        "mouthSmileLeft": 0.0,
+        "mouthSmileRight": 0.0,
+        "mouthFrownLeft": 0.0,
+        "mouthFrownRight": 0.0,
+        "time": 0.0
+      },
+      "outputs": {
+        "ParamAngleX": 0.0,
+        "ParamAngleY": 0.0,
+        "ParamAngleZ": 0.0,
+        "ParamEyeLOpen": 0,
+        "ParamEyeROpen": 0,
+        "ParamEyeBallX": 0.0,
+        "ParamEyeBallY": 0.0,
+        "ParamMouthOpenY": 0,
+        "ParamMouthForm": 0.0,
+        "ParamBodyAngleX": 0.0,
+        "ParamBodyAngleY": 0.0,
+        "ParamBodyAngleZ": 0.0,
+        "ParamBreath": 0.5
+      },
+      "checks": {
+        "ParamAngleX": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleY": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleZ": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeLOpen": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeROpen": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallX": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallY": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthOpenY": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthForm": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleX": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleY": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleZ": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBreath": {
+          "value": 0.5,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        }
+      },
+      "missing_required": [],
+      "status": "PASS"
+    },
+    {
+      "sample_id": "gaze_left",
+      "label_ko": "시선 왼쪽",
+      "inputs": {
+        "head_yaw": 0.0,
+        "head_pitch": 0.0,
+        "head_roll": 0.0,
+        "eyeBlinkLeft": 0.0,
+        "eyeBlinkRight": 0.0,
+        "eye_gaze_x": -1,
+        "eye_gaze_y": 0.0,
+        "jawOpen": 0.0,
+        "mouthSmileLeft": 0.0,
+        "mouthSmileRight": 0.0,
+        "mouthFrownLeft": 0.0,
+        "mouthFrownRight": 0.0,
+        "time": 0.0
+      },
+      "outputs": {
+        "ParamAngleX": 0.0,
+        "ParamAngleY": 0.0,
+        "ParamAngleZ": 0.0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamEyeBallX": -1,
+        "ParamEyeBallY": 0.0,
+        "ParamMouthOpenY": 0,
+        "ParamMouthForm": 0.0,
+        "ParamBodyAngleX": 0.0,
+        "ParamBodyAngleY": 0.0,
+        "ParamBodyAngleZ": 0.0,
+        "ParamBreath": 0.5
+      },
+      "checks": {
+        "ParamAngleX": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleY": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleZ": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeLOpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeROpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallX": {
+          "value": -1,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallY": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthOpenY": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthForm": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleX": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleY": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleZ": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBreath": {
+          "value": 0.5,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        }
+      },
+      "missing_required": [],
+      "status": "PASS"
+    },
+    {
+      "sample_id": "gaze_right",
+      "label_ko": "시선 오른쪽",
+      "inputs": {
+        "head_yaw": 0.0,
+        "head_pitch": 0.0,
+        "head_roll": 0.0,
+        "eyeBlinkLeft": 0.0,
+        "eyeBlinkRight": 0.0,
+        "eye_gaze_x": 1,
+        "eye_gaze_y": 0.0,
+        "jawOpen": 0.0,
+        "mouthSmileLeft": 0.0,
+        "mouthSmileRight": 0.0,
+        "mouthFrownLeft": 0.0,
+        "mouthFrownRight": 0.0,
+        "time": 0.0
+      },
+      "outputs": {
+        "ParamAngleX": 0.0,
+        "ParamAngleY": 0.0,
+        "ParamAngleZ": 0.0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamEyeBallX": 1,
+        "ParamEyeBallY": 0.0,
+        "ParamMouthOpenY": 0,
+        "ParamMouthForm": 0.0,
+        "ParamBodyAngleX": 0.0,
+        "ParamBodyAngleY": 0.0,
+        "ParamBodyAngleZ": 0.0,
+        "ParamBreath": 0.5
+      },
+      "checks": {
+        "ParamAngleX": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleY": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleZ": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeLOpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeROpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallX": {
+          "value": 1,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallY": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthOpenY": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthForm": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleX": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleY": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleZ": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBreath": {
+          "value": 0.5,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        }
+      },
+      "missing_required": [],
+      "status": "PASS"
+    },
+    {
+      "sample_id": "gaze_up",
+      "label_ko": "시선 위",
+      "inputs": {
+        "head_yaw": 0.0,
+        "head_pitch": 0.0,
+        "head_roll": 0.0,
+        "eyeBlinkLeft": 0.0,
+        "eyeBlinkRight": 0.0,
+        "eye_gaze_x": 0.0,
+        "eye_gaze_y": 1,
+        "jawOpen": 0.0,
+        "mouthSmileLeft": 0.0,
+        "mouthSmileRight": 0.0,
+        "mouthFrownLeft": 0.0,
+        "mouthFrownRight": 0.0,
+        "time": 0.0
+      },
+      "outputs": {
+        "ParamAngleX": 0.0,
+        "ParamAngleY": 0.0,
+        "ParamAngleZ": 0.0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamEyeBallX": 0.0,
+        "ParamEyeBallY": 1,
+        "ParamMouthOpenY": 0,
+        "ParamMouthForm": 0.0,
+        "ParamBodyAngleX": 0.0,
+        "ParamBodyAngleY": 0.0,
+        "ParamBodyAngleZ": 0.0,
+        "ParamBreath": 0.5
+      },
+      "checks": {
+        "ParamAngleX": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleY": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleZ": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeLOpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeROpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallX": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallY": {
+          "value": 1,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthOpenY": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthForm": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleX": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleY": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleZ": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBreath": {
+          "value": 0.5,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        }
+      },
+      "missing_required": [],
+      "status": "PASS"
+    },
+    {
+      "sample_id": "gaze_down",
+      "label_ko": "시선 아래",
+      "inputs": {
+        "head_yaw": 0.0,
+        "head_pitch": 0.0,
+        "head_roll": 0.0,
+        "eyeBlinkLeft": 0.0,
+        "eyeBlinkRight": 0.0,
+        "eye_gaze_x": 0.0,
+        "eye_gaze_y": -1,
+        "jawOpen": 0.0,
+        "mouthSmileLeft": 0.0,
+        "mouthSmileRight": 0.0,
+        "mouthFrownLeft": 0.0,
+        "mouthFrownRight": 0.0,
+        "time": 0.0
+      },
+      "outputs": {
+        "ParamAngleX": 0.0,
+        "ParamAngleY": 0.0,
+        "ParamAngleZ": 0.0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamEyeBallX": 0.0,
+        "ParamEyeBallY": -1,
+        "ParamMouthOpenY": 0,
+        "ParamMouthForm": 0.0,
+        "ParamBodyAngleX": 0.0,
+        "ParamBodyAngleY": 0.0,
+        "ParamBodyAngleZ": 0.0,
+        "ParamBreath": 0.5
+      },
+      "checks": {
+        "ParamAngleX": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleY": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleZ": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeLOpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeROpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallX": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallY": {
+          "value": -1,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthOpenY": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthForm": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleX": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleY": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleZ": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBreath": {
+          "value": 0.5,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        }
+      },
+      "missing_required": [],
+      "status": "PASS"
+    },
+    {
+      "sample_id": "mouth_deadzone",
+      "label_ko": "입 닫힘 deadzone",
+      "inputs": {
+        "head_yaw": 0.0,
+        "head_pitch": 0.0,
+        "head_roll": 0.0,
+        "eyeBlinkLeft": 0.0,
+        "eyeBlinkRight": 0.0,
+        "eye_gaze_x": 0.0,
+        "eye_gaze_y": 0.0,
+        "jawOpen": 0.05,
+        "mouthSmileLeft": 0.0,
+        "mouthSmileRight": 0.0,
+        "mouthFrownLeft": 0.0,
+        "mouthFrownRight": 0.0,
+        "time": 0.0
+      },
+      "outputs": {
+        "ParamAngleX": 0.0,
+        "ParamAngleY": 0.0,
+        "ParamAngleZ": 0.0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamEyeBallX": 0.0,
+        "ParamEyeBallY": 0.0,
+        "ParamMouthOpenY": 0,
+        "ParamMouthForm": 0.0,
+        "ParamBodyAngleX": 0.0,
+        "ParamBodyAngleY": 0.0,
+        "ParamBodyAngleZ": 0.0,
+        "ParamBreath": 0.5
+      },
+      "checks": {
+        "ParamAngleX": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleY": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleZ": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeLOpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeROpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallX": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallY": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthOpenY": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthForm": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleX": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleY": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleZ": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBreath": {
+          "value": 0.5,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        }
+      },
+      "missing_required": [],
+      "status": "PASS"
+    },
+    {
+      "sample_id": "mouth_open",
+      "label_ko": "입 열기",
+      "inputs": {
+        "head_yaw": 0.0,
+        "head_pitch": 0.0,
+        "head_roll": 0.0,
+        "eyeBlinkLeft": 0.0,
+        "eyeBlinkRight": 0.0,
+        "eye_gaze_x": 0.0,
+        "eye_gaze_y": 0.0,
+        "jawOpen": 0.85,
+        "mouthSmileLeft": 0.0,
+        "mouthSmileRight": 0.0,
+        "mouthFrownLeft": 0.0,
+        "mouthFrownRight": 0.0,
+        "time": 0.0
+      },
+      "outputs": {
+        "ParamAngleX": 0.0,
+        "ParamAngleY": 0.0,
+        "ParamAngleZ": 0.0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamEyeBallX": 0.0,
+        "ParamEyeBallY": 0.0,
+        "ParamMouthOpenY": 1,
+        "ParamMouthForm": 0.0,
+        "ParamBodyAngleX": 0.0,
+        "ParamBodyAngleY": 0.0,
+        "ParamBodyAngleZ": 0.0,
+        "ParamBreath": 0.5
+      },
+      "checks": {
+        "ParamAngleX": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleY": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleZ": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeLOpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeROpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallX": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallY": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthOpenY": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthForm": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleX": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleY": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleZ": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBreath": {
+          "value": 0.5,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        }
+      },
+      "missing_required": [],
+      "status": "PASS"
+    },
+    {
+      "sample_id": "smile",
+      "label_ko": "웃음",
+      "inputs": {
+        "head_yaw": 0.0,
+        "head_pitch": 0.0,
+        "head_roll": 0.0,
+        "eyeBlinkLeft": 0.0,
+        "eyeBlinkRight": 0.0,
+        "eye_gaze_x": 0.0,
+        "eye_gaze_y": 0.0,
+        "jawOpen": 0.0,
+        "mouthSmileLeft": 0.8,
+        "mouthSmileRight": 0.8,
+        "mouthFrownLeft": 0.0,
+        "mouthFrownRight": 0.0,
+        "time": 0.0
+      },
+      "outputs": {
+        "ParamAngleX": 0.0,
+        "ParamAngleY": 0.0,
+        "ParamAngleZ": 0.0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamEyeBallX": 0.0,
+        "ParamEyeBallY": 0.0,
+        "ParamMouthOpenY": 0,
+        "ParamMouthForm": 0.8,
+        "ParamBodyAngleX": 0.0,
+        "ParamBodyAngleY": 0.0,
+        "ParamBodyAngleZ": 0.0,
+        "ParamBreath": 0.5
+      },
+      "checks": {
+        "ParamAngleX": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleY": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleZ": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeLOpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeROpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallX": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallY": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthOpenY": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthForm": {
+          "value": 0.8,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleX": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleY": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleZ": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBreath": {
+          "value": 0.5,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        }
+      },
+      "missing_required": [],
+      "status": "PASS"
+    },
+    {
+      "sample_id": "frown",
+      "label_ko": "찡그림",
+      "inputs": {
+        "head_yaw": 0.0,
+        "head_pitch": 0.0,
+        "head_roll": 0.0,
+        "eyeBlinkLeft": 0.0,
+        "eyeBlinkRight": 0.0,
+        "eye_gaze_x": 0.0,
+        "eye_gaze_y": 0.0,
+        "jawOpen": 0.0,
+        "mouthSmileLeft": 0.0,
+        "mouthSmileRight": 0.0,
+        "mouthFrownLeft": 0.7,
+        "mouthFrownRight": 0.7,
+        "time": 0.0
+      },
+      "outputs": {
+        "ParamAngleX": 0.0,
+        "ParamAngleY": 0.0,
+        "ParamAngleZ": 0.0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamEyeBallX": 0.0,
+        "ParamEyeBallY": 0.0,
+        "ParamMouthOpenY": 0,
+        "ParamMouthForm": -0.7,
+        "ParamBodyAngleX": 0.0,
+        "ParamBodyAngleY": 0.0,
+        "ParamBodyAngleZ": 0.0,
+        "ParamBreath": 0.5
+      },
+      "checks": {
+        "ParamAngleX": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleY": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleZ": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeLOpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeROpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallX": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallY": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthOpenY": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthForm": {
+          "value": -0.7,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleX": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleY": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleZ": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBreath": {
+          "value": 0.5,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        }
+      },
+      "missing_required": [],
+      "status": "PASS"
+    },
+    {
+      "sample_id": "combined_stress",
+      "label_ko": "복합 스트레스",
+      "inputs": {
+        "head_yaw": 18,
+        "head_pitch": -12,
+        "head_roll": 11,
+        "eyeBlinkLeft": 0.25,
+        "eyeBlinkRight": 0.1,
+        "eye_gaze_x": 0.55,
+        "eye_gaze_y": -0.45,
+        "jawOpen": 0.62,
+        "mouthSmileLeft": 0.55,
+        "mouthSmileRight": 0.35,
+        "mouthFrownLeft": 0.05,
+        "mouthFrownRight": 0.1,
+        "time": 0.75
+      },
+      "outputs": {
+        "ParamAngleX": 21.6,
+        "ParamAngleY": -18.0,
+        "ParamAngleZ": 13.2,
+        "ParamEyeLOpen": 0.75,
+        "ParamEyeROpen": 0.9,
+        "ParamEyeBallX": 0.55,
+        "ParamEyeBallY": -0.45,
+        "ParamMouthOpenY": 0.701299,
+        "ParamMouthForm": 0.375,
+        "ParamBodyAngleX": 4.68,
+        "ParamBodyAngleY": -2.7,
+        "ParamBodyAngleZ": 2.2,
+        "ParamBreath": 0
+      },
+      "checks": {
+        "ParamAngleX": {
+          "value": 21.6,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleY": {
+          "value": -18.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleZ": {
+          "value": 13.2,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeLOpen": {
+          "value": 0.75,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeROpen": {
+          "value": 0.9,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallX": {
+          "value": 0.55,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallY": {
+          "value": -0.45,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthOpenY": {
+          "value": 0.701299,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthForm": {
+          "value": 0.375,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleX": {
+          "value": 4.68,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleY": {
+          "value": -2.7,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleZ": {
+          "value": 2.2,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBreath": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        }
+      },
+      "missing_required": [],
+      "status": "PASS"
+    },
+    {
+      "sample_id": "breath_peak",
+      "label_ko": "숨 최대",
+      "inputs": {
+        "head_yaw": 0.0,
+        "head_pitch": 0.0,
+        "head_roll": 0.0,
+        "eyeBlinkLeft": 0.0,
+        "eyeBlinkRight": 0.0,
+        "eye_gaze_x": 0.0,
+        "eye_gaze_y": 0.0,
+        "jawOpen": 0.0,
+        "mouthSmileLeft": 0.0,
+        "mouthSmileRight": 0.0,
+        "mouthFrownLeft": 0.0,
+        "mouthFrownRight": 0.0,
+        "time": 0.25
+      },
+      "outputs": {
+        "ParamAngleX": 0.0,
+        "ParamAngleY": 0.0,
+        "ParamAngleZ": 0.0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamEyeBallX": 0.0,
+        "ParamEyeBallY": 0.0,
+        "ParamMouthOpenY": 0,
+        "ParamMouthForm": 0.0,
+        "ParamBodyAngleX": 0.0,
+        "ParamBodyAngleY": 0.0,
+        "ParamBodyAngleZ": 0.0,
+        "ParamBreath": 1
+      },
+      "checks": {
+        "ParamAngleX": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleY": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamAngleZ": {
+          "value": 0.0,
+          "range": [
+            -30.0,
+            30.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeLOpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeROpen": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallX": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamEyeBallY": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthOpenY": {
+          "value": 0,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamMouthForm": {
+          "value": 0.0,
+          "range": [
+            -1.0,
+            1.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleX": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleY": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBodyAngleZ": {
+          "value": 0.0,
+          "range": [
+            -10.0,
+            10.0
+          ],
+          "in_range": true
+        },
+        "ParamBreath": {
+          "value": 1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "in_range": true
+        }
+      },
+      "missing_required": [],
+      "status": "PASS"
+    }
+  ]
+}

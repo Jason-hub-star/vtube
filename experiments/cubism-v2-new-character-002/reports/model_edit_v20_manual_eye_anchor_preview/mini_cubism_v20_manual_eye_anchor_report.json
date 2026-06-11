@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T09:12:31.383382+00:00",
+  "status": "V20_MANUAL_EYE_ANCHOR_READY_FOR_VALIDATION",
+  "source_project": "experiments/cubism-v2-new-character-002/model_edit_v19_generated_eye_preview/mini_cubism_diagnostic_project",
+  "project": "experiments/cubism-v2-new-character-002/model_edit_v20_manual_eye_anchor_preview/mini_cubism_diagnostic_project",
+  "manual_overrides": "experiments/cubism-v2-new-character-002/reports/model_edit_v19_generated_eye_preview/manual_eye_detail_anchor_v1/manual_eye_detail_anchor_overrides.json",
+  "shifts": {
+    "L": {
+      "part_id": "eye_L_iris",
+      "current_center": [
+        884.14,
+        665.24
+      ],
+      "target_anchor": [
+        898,
+        679
+      ],
+      "raw_delta_xy": [
+        13.86,
+        13.76
+      ],
+      "applied_integer_delta_xy": [
+        14,
+        14
+      ],
+      "result_bbox_xywh": [
+        860,
+        638,
+        77,
+        84
+      ],
+      "alpha_nonzero": 5285,
+      "alpha_coverage": 0.00126004
+    },
+    "R": {
+      "part_id": "eye_R_iris",
+      "current_center": [
+        1166.05,
+        665.25
+      ],
+      "target_anchor": [
+        1153,
+        679
+      ],
+      "raw_delta_xy": [
+        -13.05,
+        13.75
+      ],
+      "applied_integer_delta_xy": [
+        -13,
+        14
+      ],
+      "result_bbox_xywh": [
+        1115,
+        638,
+        77,
+        84
+      ],
+      "alpha_nonzero": 5303,
+      "alpha_coverage": 0.00126433
+    }
+  },
+  "policy": {
+    "white_parts_stay_fixed": [
+      "eye_L_white",
+      "eye_R_white"
+    ],
+    "moving_parts": [
+      "eye_L_iris",
+      "eye_R_iris"
+    ],
+    "full_canvas_rgba": [
+      2048,
+      2048
+    ],
+    "human_anchor_editor": "scripts/run_v19_eye_detail_anchor_editor_002.py"
+  }
+}

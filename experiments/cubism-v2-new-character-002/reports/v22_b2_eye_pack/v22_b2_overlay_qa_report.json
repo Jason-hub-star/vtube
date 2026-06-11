@@ -1,0 +1,57 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T12:27:21.553781+00:00",
+  "report_id": "cubism-v2-new-character-002-v22-b2-overlay-qa-001",
+  "status": "B2_CODEX_OVERLAY_QA_PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+  "b2_layer_pack_report": "experiments/cubism-v2-new-character-002/reports/v22_b2_eye_pack/v22_b2_layer_pack_report.json",
+  "overlay_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b2_eye_pack/v22_b2_overlay_qa_on_b1_clean_base.png",
+  "source_image": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/new_character_002_source_front.raw.png",
+  "b1_clean_base_reference": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/raw_outputs/b1_clean_base_underpaint_reference_001.png",
+  "checks": [
+    {
+      "id": "open_eye_socket_alignment",
+      "status": "PASS_CANDIDATE",
+      "evidence": "Open eye components land in the B1 clean socket region with left/right spacing consistent enough for extraction-candidate QA."
+    },
+    {
+      "id": "fixed_white_policy_visible",
+      "status": "PASS_CANDIDATE",
+      "evidence": "Sclera layers are socket-bound full-canvas layers; iris/pupil/highlight can move independently while whites remain fixed."
+    },
+    {
+      "id": "iris_pupil_highlight_anchor_lock",
+      "status": "PASS_CANDIDATE",
+      "evidence": "B2 layer-pack anchor checks record same-target placement for iris, pupil, and highlight clusters on both eyes."
+    },
+    {
+      "id": "closed_lid_overlay",
+      "status": "PASS_CANDIDATE",
+      "evidence": "Closed lid lines sit in the expected eye region on the B1 clean base; detailed blink keyform QA remains future Mini Cubism work."
+    },
+    {
+      "id": "matte_and_style_risk",
+      "status": "REVISE_BEFORE_FINAL_MATERIAL_PASS",
+      "evidence": "White-background extraction can leave soft matte halos and the generated component scale may need manual anchor tuning."
+    },
+    {
+      "id": "human_visual_review",
+      "status": "REQUIRED",
+      "evidence": "주인님 human visual review is required before promoting B2 beyond candidate."
+    }
+  ],
+  "decision": "B2 is acceptable as a candidate input for continuing B3 generation, but it is not final material PASS. Keep visual/human QA, Mini Cubism diagnostics, and real Cubism authoring separate.",
+  "next_action": [
+    "Generate a new B3 mouth-pack raw candidate without using existing v10/v12/v13 mouth assets.",
+    "Keep B2 layer-pack available for later manual anchor correction if 주인님 rejects the overlay scale or socket feel."
+  ],
+  "self_review": {
+    "has_b2_layer_pack_report": true,
+    "b2_layer_pack_status": "B2_LAYER_PACK_CANDIDATE_READY_FOR_OVERLAY_QA_HUMAN_REVIEW_REQUIRED",
+    "b2_layer_self_review_status": "PASS",
+    "overlay_sheet_exists": true,
+    "check_count": 6,
+    "has_human_required_gate": true,
+    "has_revise_before_final_gate": true,
+    "status": "PASS"
+  }
+}

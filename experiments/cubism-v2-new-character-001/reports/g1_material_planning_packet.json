@@ -1,0 +1,1878 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-08T04:39:03.883974+00:00",
+  "gate": "G1_PART_TAXONOMY_TO_MATERIAL_PLAN",
+  "status": "PASS_MATERIAL_PLAN_READY",
+  "source_candidate": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/concepts/g0_adult_cute_female_candidate_002.png",
+  "inputs": {
+    "g1_taxonomy_review": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/g1_part_taxonomy_review.json",
+    "part_spec": "/Users/family/jason/Vtube/experiments/reference-model-structure-001/reports/cubism_v2_new_model_v2_standard_part_spec.json"
+  },
+  "summary": {
+    "taxonomy_parts_accounted": 64,
+    "direct_extraction_safe": 30,
+    "direct_extraction_risk": 16,
+    "direct_extraction_total": 46,
+    "auxiliary_generated_total": 7,
+    "underpaint_total": 9,
+    "simplify_or_merge_total": 2,
+    "initial_psd_layer_target_ko": "62개 독립 레이어 + 2개 병합/metadata 추적. 필요하면 shadow 2개를 별도 레이어로 되돌려 64개까지 확장.",
+    "cubism_taxonomy_target_parts": 64
+  },
+  "sections": {
+    "direct_extraction_parts": {
+      "safe": [
+        {
+          "index": 2,
+          "part_id": "torso_base",
+          "group": "body",
+          "label_ko": "상체 기본",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "body_mid",
+          "deformer_node": "body_root_warp",
+          "parameters": [
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBreath"
+          ],
+          "physics_groups": [
+            "body_breath_physics"
+          ],
+          "risk_tags": [],
+          "note_ko": "목/어깨/상체는 보이며 v2_standard 단순 몸 구조에 적합",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 3,
+          "part_id": "neck",
+          "group": "body",
+          "label_ko": "목",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "body_mid",
+          "deformer_node": "body_root_warp",
+          "parameters": [
+            "ParamAngleX",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY"
+          ],
+          "physics_groups": [
+            "body_breath_physics"
+          ],
+          "risk_tags": [],
+          "note_ko": "목/어깨/상체는 보이며 v2_standard 단순 몸 구조에 적합",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 5,
+          "part_id": "shoulder_L",
+          "group": "body",
+          "label_ko": "왼쪽 어깨",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "body_mid",
+          "deformer_node": "body_root_warp",
+          "parameters": [
+            "ParamBodyAngleX",
+            "ParamBreath"
+          ],
+          "physics_groups": [
+            "body_breath_physics"
+          ],
+          "risk_tags": [],
+          "note_ko": "목/어깨/상체는 보이며 v2_standard 단순 몸 구조에 적합",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 6,
+          "part_id": "shoulder_R",
+          "group": "body",
+          "label_ko": "오른쪽 어깨",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "body_mid",
+          "deformer_node": "body_root_warp",
+          "parameters": [
+            "ParamBodyAngleX",
+            "ParamBreath"
+          ],
+          "physics_groups": [
+            "body_breath_physics"
+          ],
+          "risk_tags": [],
+          "note_ko": "목/어깨/상체는 보이며 v2_standard 단순 몸 구조에 적합",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 11,
+          "part_id": "face_base",
+          "group": "face_base",
+          "label_ko": "얼굴 기본",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "face_mid",
+          "deformer_node": "head_angle_warp",
+          "parameters": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ"
+          ],
+          "physics_groups": [],
+          "risk_tags": [],
+          "note_ko": "얼굴 기본형은 분리 가능",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 16,
+          "part_id": "nose",
+          "group": "face_base",
+          "label_ko": "코",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "face_front",
+          "deformer_node": "head_angle_warp",
+          "parameters": [
+            "ParamAngleX",
+            "ParamAngleY"
+          ],
+          "physics_groups": [],
+          "risk_tags": [],
+          "note_ko": "얼굴 기본형은 분리 가능",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 19,
+          "part_id": "eye_L_white",
+          "group": "eye_L",
+          "label_ko": "왼쪽 눈 흰자",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "eye_back",
+          "deformer_node": "eye_L_warp",
+          "parameters": [
+            "ParamEyeLOpen",
+            "ParamEyeBallX",
+            "ParamEyeBallY"
+          ],
+          "physics_groups": [],
+          "risk_tags": [
+            "bad_alpha"
+          ],
+          "note_ko": "눈 흰자/홍채/동공/하이라이트/속눈썹이 비교적 명확함",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 20,
+          "part_id": "eye_L_iris",
+          "group": "eye_L",
+          "label_ko": "왼쪽 홍채",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "eye_mid",
+          "deformer_node": "eye_L_warp",
+          "parameters": [
+            "ParamEyeLOpen",
+            "ParamEyeBallX",
+            "ParamEyeBallY"
+          ],
+          "physics_groups": [],
+          "risk_tags": [
+            "misaligned"
+          ],
+          "note_ko": "눈 흰자/홍채/동공/하이라이트/속눈썹이 비교적 명확함",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 21,
+          "part_id": "eye_L_pupil",
+          "group": "eye_L",
+          "label_ko": "왼쪽 동공",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "eye_mid",
+          "deformer_node": "eye_L_warp",
+          "parameters": [
+            "ParamEyeLOpen",
+            "ParamEyeBallX",
+            "ParamEyeBallY"
+          ],
+          "physics_groups": [],
+          "risk_tags": [
+            "misaligned"
+          ],
+          "note_ko": "눈 흰자/홍채/동공/하이라이트/속눈썹이 비교적 명확함",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 22,
+          "part_id": "eye_L_highlight",
+          "group": "eye_L",
+          "label_ko": "왼쪽 눈 하이라이트",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "eye_front",
+          "deformer_node": "eye_L_warp",
+          "parameters": [
+            "ParamEyeLOpen",
+            "ParamEyeBallX",
+            "ParamEyeBallY"
+          ],
+          "physics_groups": [],
+          "risk_tags": [],
+          "note_ko": "눈 흰자/홍채/동공/하이라이트/속눈썹이 비교적 명확함",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 23,
+          "part_id": "eye_L_upper_lash",
+          "group": "eye_L",
+          "label_ko": "왼쪽 위 속눈썹",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "eye_front",
+          "deformer_node": "eye_L_warp",
+          "parameters": [
+            "ParamEyeLOpen",
+            "ParamAngleY"
+          ],
+          "physics_groups": [],
+          "risk_tags": [
+            "draw_order_issue"
+          ],
+          "note_ko": "눈 흰자/홍채/동공/하이라이트/속눈썹이 비교적 명확함",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 24,
+          "part_id": "eye_L_lower_lash",
+          "group": "eye_L",
+          "label_ko": "왼쪽 아래 속눈썹",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "eye_front",
+          "deformer_node": "eye_L_warp",
+          "parameters": [
+            "ParamEyeLOpen",
+            "ParamAngleY"
+          ],
+          "physics_groups": [],
+          "risk_tags": [],
+          "note_ko": "눈 흰자/홍채/동공/하이라이트/속눈썹이 비교적 명확함",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 27,
+          "part_id": "eye_R_white",
+          "group": "eye_R",
+          "label_ko": "오른쪽 눈 흰자",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "eye_back",
+          "deformer_node": "eye_R_warp",
+          "parameters": [
+            "ParamEyeROpen",
+            "ParamEyeBallX",
+            "ParamEyeBallY"
+          ],
+          "physics_groups": [],
+          "risk_tags": [
+            "bad_alpha"
+          ],
+          "note_ko": "눈 흰자/홍채/동공/하이라이트/속눈썹이 비교적 명확함",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 28,
+          "part_id": "eye_R_iris",
+          "group": "eye_R",
+          "label_ko": "오른쪽 홍채",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "eye_mid",
+          "deformer_node": "eye_R_warp",
+          "parameters": [
+            "ParamEyeROpen",
+            "ParamEyeBallX",
+            "ParamEyeBallY"
+          ],
+          "physics_groups": [],
+          "risk_tags": [
+            "misaligned"
+          ],
+          "note_ko": "눈 흰자/홍채/동공/하이라이트/속눈썹이 비교적 명확함",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 29,
+          "part_id": "eye_R_pupil",
+          "group": "eye_R",
+          "label_ko": "오른쪽 동공",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "eye_mid",
+          "deformer_node": "eye_R_warp",
+          "parameters": [
+            "ParamEyeROpen",
+            "ParamEyeBallX",
+            "ParamEyeBallY"
+          ],
+          "physics_groups": [],
+          "risk_tags": [
+            "misaligned"
+          ],
+          "note_ko": "눈 흰자/홍채/동공/하이라이트/속눈썹이 비교적 명확함",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 30,
+          "part_id": "eye_R_highlight",
+          "group": "eye_R",
+          "label_ko": "오른쪽 눈 하이라이트",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "eye_front",
+          "deformer_node": "eye_R_warp",
+          "parameters": [
+            "ParamEyeROpen",
+            "ParamEyeBallX",
+            "ParamEyeBallY"
+          ],
+          "physics_groups": [],
+          "risk_tags": [],
+          "note_ko": "눈 흰자/홍채/동공/하이라이트/속눈썹이 비교적 명확함",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 31,
+          "part_id": "eye_R_upper_lash",
+          "group": "eye_R",
+          "label_ko": "오른쪽 위 속눈썹",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "eye_front",
+          "deformer_node": "eye_R_warp",
+          "parameters": [
+            "ParamEyeROpen",
+            "ParamAngleY"
+          ],
+          "physics_groups": [],
+          "risk_tags": [
+            "draw_order_issue"
+          ],
+          "note_ko": "눈 흰자/홍채/동공/하이라이트/속눈썹이 비교적 명확함",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 32,
+          "part_id": "eye_R_lower_lash",
+          "group": "eye_R",
+          "label_ko": "오른쪽 아래 속눈썹",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "eye_front",
+          "deformer_node": "eye_R_warp",
+          "parameters": [
+            "ParamEyeROpen",
+            "ParamAngleY"
+          ],
+          "physics_groups": [],
+          "risk_tags": [],
+          "note_ko": "눈 흰자/홍채/동공/하이라이트/속눈썹이 비교적 명확함",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 45,
+          "part_id": "hair_back_base",
+          "group": "hair",
+          "label_ko": "뒷머리 기본",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "hair_back",
+          "deformer_node": "back_hair_warp",
+          "parameters": [
+            "ParamAngleX",
+            "ParamAngleZ",
+            "ParamHairBack"
+          ],
+          "physics_groups": [
+            "back_hair_physics"
+          ],
+          "risk_tags": [],
+          "note_ko": "앞머리/옆머리/뒷머리 그룹 경계가 비교적 명확함",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 50,
+          "part_id": "hair_front_center",
+          "group": "hair",
+          "label_ko": "가운데 앞머리",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "hair_front",
+          "deformer_node": "front_hair_warp",
+          "parameters": [
+            "ParamAngleX",
+            "ParamAngleZ",
+            "ParamHairFront"
+          ],
+          "physics_groups": [
+            "front_hair_physics"
+          ],
+          "risk_tags": [
+            "draw_order_issue"
+          ],
+          "note_ko": "앞머리/옆머리/뒷머리 그룹 경계가 비교적 명확함",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 51,
+          "part_id": "hair_front_L",
+          "group": "hair",
+          "label_ko": "왼쪽 앞머리",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "hair_front",
+          "deformer_node": "front_hair_warp",
+          "parameters": [
+            "ParamAngleX",
+            "ParamAngleZ",
+            "ParamHairFront"
+          ],
+          "physics_groups": [
+            "front_hair_physics"
+          ],
+          "risk_tags": [],
+          "note_ko": "앞머리/옆머리/뒷머리 그룹 경계가 비교적 명확함",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 52,
+          "part_id": "hair_front_R",
+          "group": "hair",
+          "label_ko": "오른쪽 앞머리",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "hair_front",
+          "deformer_node": "front_hair_warp",
+          "parameters": [
+            "ParamAngleX",
+            "ParamAngleZ",
+            "ParamHairFront"
+          ],
+          "physics_groups": [
+            "front_hair_physics"
+          ],
+          "risk_tags": [],
+          "note_ko": "앞머리/옆머리/뒷머리 그룹 경계가 비교적 명확함",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 53,
+          "part_id": "hair_front_side_L",
+          "group": "hair",
+          "label_ko": "왼쪽 앞 옆머리",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "hair_front",
+          "deformer_node": "front_hair_warp",
+          "parameters": [
+            "ParamAngleX",
+            "ParamHairFront"
+          ],
+          "physics_groups": [
+            "front_hair_physics"
+          ],
+          "risk_tags": [],
+          "note_ko": "앞머리/옆머리/뒷머리 그룹 경계가 비교적 명확함",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 54,
+          "part_id": "hair_front_side_R",
+          "group": "hair",
+          "label_ko": "오른쪽 앞 옆머리",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "hair_front",
+          "deformer_node": "front_hair_warp",
+          "parameters": [
+            "ParamAngleX",
+            "ParamHairFront"
+          ],
+          "physics_groups": [
+            "front_hair_physics"
+          ],
+          "risk_tags": [],
+          "note_ko": "앞머리/옆머리/뒷머리 그룹 경계가 비교적 명확함",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 57,
+          "part_id": "hair_side_L_outer",
+          "group": "hair",
+          "label_ko": "왼쪽 바깥 옆머리",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "hair_side",
+          "deformer_node": "side_hair_L_R_warp",
+          "parameters": [
+            "ParamHairSide",
+            "ParamAngleX"
+          ],
+          "physics_groups": [
+            "side_hair_L_physics"
+          ],
+          "risk_tags": [],
+          "note_ko": "앞머리/옆머리/뒷머리 그룹 경계가 비교적 명확함",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 58,
+          "part_id": "hair_side_L_inner",
+          "group": "hair",
+          "label_ko": "왼쪽 안쪽 옆머리",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "hair_side",
+          "deformer_node": "side_hair_L_R_warp",
+          "parameters": [
+            "ParamHairSide",
+            "ParamAngleX"
+          ],
+          "physics_groups": [
+            "side_hair_L_physics"
+          ],
+          "risk_tags": [],
+          "note_ko": "앞머리/옆머리/뒷머리 그룹 경계가 비교적 명확함",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 59,
+          "part_id": "hair_side_R_outer",
+          "group": "hair",
+          "label_ko": "오른쪽 바깥 옆머리",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "hair_side",
+          "deformer_node": "side_hair_L_R_warp",
+          "parameters": [
+            "ParamHairSide",
+            "ParamAngleX"
+          ],
+          "physics_groups": [
+            "side_hair_R_physics"
+          ],
+          "risk_tags": [],
+          "note_ko": "앞머리/옆머리/뒷머리 그룹 경계가 비교적 명확함",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 60,
+          "part_id": "hair_side_R_inner",
+          "group": "hair",
+          "label_ko": "오른쪽 안쪽 옆머리",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "hair_side",
+          "deformer_node": "side_hair_L_R_warp",
+          "parameters": [
+            "ParamHairSide",
+            "ParamAngleX"
+          ],
+          "physics_groups": [
+            "side_hair_R_physics"
+          ],
+          "risk_tags": [],
+          "note_ko": "앞머리/옆머리/뒷머리 그룹 경계가 비교적 명확함",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 61,
+          "part_id": "collar_front",
+          "group": "clothing",
+          "label_ko": "앞깃",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "clothing_front",
+          "deformer_node": "body_root_warp",
+          "parameters": [
+            "ParamBodyAngleX",
+            "ParamBreath"
+          ],
+          "physics_groups": [
+            "body_breath_physics"
+          ],
+          "risk_tags": [],
+          "note_ko": "가디건/블라우스/리본은 보이나 v2_standard에서는 단순 의상 파츠로 제한",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        },
+        {
+          "index": 63,
+          "part_id": "chest_cloth_base",
+          "group": "clothing",
+          "label_ko": "가슴 의상 기본",
+          "feasibility": "DIRECT_VISIBLE",
+          "feasibility_label_ko": "원본에서 바로 뽑기",
+          "draw_order_band": "clothing_mid",
+          "deformer_node": "body_root_warp",
+          "parameters": [
+            "ParamBodyAngleX",
+            "ParamBreath"
+          ],
+          "physics_groups": [
+            "body_breath_physics"
+          ],
+          "risk_tags": [],
+          "note_ko": "가디건/블라우스/리본은 보이나 v2_standard에서는 단순 의상 파츠로 제한",
+          "material_action_ko": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다."
+        }
+      ],
+      "risk": [
+        {
+          "index": 7,
+          "part_id": "arm_L_upper_simple",
+          "group": "body",
+          "label_ko": "왼쪽 간단 팔",
+          "feasibility": "DIRECT_VISIBLE_RISK",
+          "feasibility_label_ko": "원본에서 뽑되 정리 필요",
+          "draw_order_band": "body_front",
+          "deformer_node": "shoulder_arm_rotation",
+          "parameters": [
+            "ParamArmL/R or ParamHandL/R",
+            "ParamBodyAngleX"
+          ],
+          "physics_groups": [],
+          "risk_tags": [
+            "misaligned"
+          ],
+          "note_ko": "팔은 보이나 가디건 소매와 torso 경계가 합쳐져 단순 팔로 유지 권장",
+          "material_action_ko": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다."
+        },
+        {
+          "index": 8,
+          "part_id": "arm_R_upper_simple",
+          "group": "body",
+          "label_ko": "오른쪽 간단 팔",
+          "feasibility": "DIRECT_VISIBLE_RISK",
+          "feasibility_label_ko": "원본에서 뽑되 정리 필요",
+          "draw_order_band": "body_front",
+          "deformer_node": "shoulder_arm_rotation",
+          "parameters": [
+            "ParamArmL/R or ParamHandL/R",
+            "ParamBodyAngleX"
+          ],
+          "physics_groups": [],
+          "risk_tags": [
+            "misaligned"
+          ],
+          "note_ko": "팔은 보이나 가디건 소매와 torso 경계가 합쳐져 단순 팔로 유지 권장",
+          "material_action_ko": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다."
+        },
+        {
+          "index": 12,
+          "part_id": "face_shadow_L",
+          "group": "face_base",
+          "label_ko": "왼쪽 얼굴 그림자",
+          "feasibility": "DIRECT_VISIBLE_RISK",
+          "feasibility_label_ko": "원본에서 뽑되 정리 필요",
+          "draw_order_band": "face_front",
+          "deformer_node": "head_angle_warp",
+          "parameters": [
+            "ParamAngleX",
+            "ParamAngleY"
+          ],
+          "physics_groups": [],
+          "risk_tags": [],
+          "note_ko": "얼굴/볼 shading은 보이나 별도 파츠로 과분리하면 스타일 mismatch 위험",
+          "material_action_ko": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다."
+        },
+        {
+          "index": 13,
+          "part_id": "face_shadow_R",
+          "group": "face_base",
+          "label_ko": "오른쪽 얼굴 그림자",
+          "feasibility": "DIRECT_VISIBLE_RISK",
+          "feasibility_label_ko": "원본에서 뽑되 정리 필요",
+          "draw_order_band": "face_front",
+          "deformer_node": "head_angle_warp",
+          "parameters": [
+            "ParamAngleX",
+            "ParamAngleY"
+          ],
+          "physics_groups": [],
+          "risk_tags": [],
+          "note_ko": "얼굴/볼 shading은 보이나 별도 파츠로 과분리하면 스타일 mismatch 위험",
+          "material_action_ko": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다."
+        },
+        {
+          "index": 17,
+          "part_id": "cheek_L",
+          "group": "face_base",
+          "label_ko": "왼쪽 볼",
+          "feasibility": "DIRECT_VISIBLE_RISK",
+          "feasibility_label_ko": "원본에서 뽑되 정리 필요",
+          "draw_order_band": "face_front",
+          "deformer_node": "head_angle_warp",
+          "parameters": [
+            "ParamAngleX",
+            "ParamMouthForm"
+          ],
+          "physics_groups": [],
+          "risk_tags": [],
+          "note_ko": "얼굴/볼 shading은 보이나 별도 파츠로 과분리하면 스타일 mismatch 위험",
+          "material_action_ko": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다."
+        },
+        {
+          "index": 18,
+          "part_id": "cheek_R",
+          "group": "face_base",
+          "label_ko": "오른쪽 볼",
+          "feasibility": "DIRECT_VISIBLE_RISK",
+          "feasibility_label_ko": "원본에서 뽑되 정리 필요",
+          "draw_order_band": "face_front",
+          "deformer_node": "head_angle_warp",
+          "parameters": [
+            "ParamAngleX",
+            "ParamMouthForm"
+          ],
+          "physics_groups": [],
+          "risk_tags": [],
+          "note_ko": "얼굴/볼 shading은 보이나 별도 파츠로 과분리하면 스타일 mismatch 위험",
+          "material_action_ko": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다."
+        },
+        {
+          "index": 35,
+          "part_id": "brow_L",
+          "group": "brow",
+          "label_ko": "왼쪽 눈썹",
+          "feasibility": "DIRECT_VISIBLE_RISK",
+          "feasibility_label_ko": "원본에서 뽑되 정리 필요",
+          "draw_order_band": "brow_front",
+          "deformer_node": "brow_L_R_warp",
+          "parameters": [
+            "ParamBrowL/R Angle/Form/Y",
+            "ParamAngleX"
+          ],
+          "physics_groups": [],
+          "risk_tags": [
+            "clipping_risk"
+          ],
+          "note_ko": "눈썹은 보이지만 앞머리와 가까워 draw order와 alpha 분리가 필요",
+          "material_action_ko": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다."
+        },
+        {
+          "index": 36,
+          "part_id": "brow_R",
+          "group": "brow",
+          "label_ko": "오른쪽 눈썹",
+          "feasibility": "DIRECT_VISIBLE_RISK",
+          "feasibility_label_ko": "원본에서 뽑되 정리 필요",
+          "draw_order_band": "brow_front",
+          "deformer_node": "brow_L_R_warp",
+          "parameters": [
+            "ParamBrowL/R Angle/Form/Y",
+            "ParamAngleX"
+          ],
+          "physics_groups": [],
+          "risk_tags": [
+            "clipping_risk"
+          ],
+          "note_ko": "눈썹은 보이지만 앞머리와 가까워 draw order와 alpha 분리가 필요",
+          "material_action_ko": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다."
+        },
+        {
+          "index": 37,
+          "part_id": "mouth_line",
+          "group": "mouth",
+          "label_ko": "입 선",
+          "feasibility": "DIRECT_VISIBLE_RISK",
+          "feasibility_label_ko": "원본에서 뽑되 정리 필요",
+          "draw_order_band": "mouth_front",
+          "deformer_node": "mouth_warp",
+          "parameters": [
+            "ParamMouthOpenY",
+            "ParamMouthForm",
+            "ParamAngleX"
+          ],
+          "physics_groups": [],
+          "risk_tags": [
+            "misaligned"
+          ],
+          "note_ko": "입 선은 보이나 작아 G1 crop과 G3 mouth form에서 위치 보정 필요",
+          "material_action_ko": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다."
+        },
+        {
+          "index": 43,
+          "part_id": "mouth_corner_L",
+          "group": "mouth",
+          "label_ko": "왼쪽 입꼬리",
+          "feasibility": "DIRECT_VISIBLE_RISK",
+          "feasibility_label_ko": "원본에서 뽑되 정리 필요",
+          "draw_order_band": "mouth_front",
+          "deformer_node": "mouth_warp",
+          "parameters": [
+            "ParamMouthOpenY",
+            "ParamMouthForm"
+          ],
+          "physics_groups": [],
+          "risk_tags": [
+            "misaligned"
+          ],
+          "note_ko": "입 선은 보이나 작아 G1 crop과 G3 mouth form에서 위치 보정 필요",
+          "material_action_ko": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다."
+        },
+        {
+          "index": 44,
+          "part_id": "mouth_corner_R",
+          "group": "mouth",
+          "label_ko": "오른쪽 입꼬리",
+          "feasibility": "DIRECT_VISIBLE_RISK",
+          "feasibility_label_ko": "원본에서 뽑되 정리 필요",
+          "draw_order_band": "mouth_front",
+          "deformer_node": "mouth_warp",
+          "parameters": [
+            "ParamMouthOpenY",
+            "ParamMouthForm"
+          ],
+          "physics_groups": [],
+          "risk_tags": [
+            "misaligned"
+          ],
+          "note_ko": "입 선은 보이나 작아 G1 crop과 G3 mouth form에서 위치 보정 필요",
+          "material_action_ko": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다."
+        },
+        {
+          "index": 47,
+          "part_id": "hair_back_strand_L",
+          "group": "hair",
+          "label_ko": "왼쪽 뒷머리 가닥",
+          "feasibility": "DIRECT_VISIBLE_RISK",
+          "feasibility_label_ko": "원본에서 뽑되 정리 필요",
+          "draw_order_band": "hair_back",
+          "deformer_node": "back_hair_warp",
+          "parameters": [
+            "ParamHairBack",
+            "ParamAngleZ"
+          ],
+          "physics_groups": [
+            "back_hair_physics"
+          ],
+          "risk_tags": [
+            "draw_order_issue"
+          ],
+          "note_ko": "뒷머리는 보이지만 옆머리/앞머리 뒤에 있어 underpaint와 draw order 확인 필요",
+          "material_action_ko": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다."
+        },
+        {
+          "index": 48,
+          "part_id": "hair_back_strand_R",
+          "group": "hair",
+          "label_ko": "오른쪽 뒷머리 가닥",
+          "feasibility": "DIRECT_VISIBLE_RISK",
+          "feasibility_label_ko": "원본에서 뽑되 정리 필요",
+          "draw_order_band": "hair_back",
+          "deformer_node": "back_hair_warp",
+          "parameters": [
+            "ParamHairBack",
+            "ParamAngleZ"
+          ],
+          "physics_groups": [
+            "back_hair_physics"
+          ],
+          "risk_tags": [
+            "draw_order_issue"
+          ],
+          "note_ko": "뒷머리는 보이지만 옆머리/앞머리 뒤에 있어 underpaint와 draw order 확인 필요",
+          "material_action_ko": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다."
+        },
+        {
+          "index": 49,
+          "part_id": "hair_back_center",
+          "group": "hair",
+          "label_ko": "가운데 뒷머리",
+          "feasibility": "DIRECT_VISIBLE_RISK",
+          "feasibility_label_ko": "원본에서 뽑되 정리 필요",
+          "draw_order_band": "hair_back",
+          "deformer_node": "back_hair_warp",
+          "parameters": [
+            "ParamHairBack",
+            "ParamBreath"
+          ],
+          "physics_groups": [
+            "back_hair_physics"
+          ],
+          "risk_tags": [
+            "draw_order_issue"
+          ],
+          "note_ko": "뒷머리는 보이지만 옆머리/앞머리 뒤에 있어 underpaint와 draw order 확인 필요",
+          "material_action_ko": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다."
+        },
+        {
+          "index": 55,
+          "part_id": "hair_front_tip_L",
+          "group": "hair",
+          "label_ko": "왼쪽 앞머리 끝",
+          "feasibility": "DIRECT_VISIBLE_RISK",
+          "feasibility_label_ko": "원본에서 뽑되 정리 필요",
+          "draw_order_band": "hair_front",
+          "deformer_node": "front_hair_warp",
+          "parameters": [
+            "ParamHairFront",
+            "ParamAngleZ"
+          ],
+          "physics_groups": [
+            "front_hair_physics"
+          ],
+          "risk_tags": [
+            "overhang_issue"
+          ],
+          "note_ko": "끝단은 보이나 어깨와 겹쳐 crop/alpha 리스크 있음",
+          "material_action_ko": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다."
+        },
+        {
+          "index": 56,
+          "part_id": "hair_front_tip_R",
+          "group": "hair",
+          "label_ko": "오른쪽 앞머리 끝",
+          "feasibility": "DIRECT_VISIBLE_RISK",
+          "feasibility_label_ko": "원본에서 뽑되 정리 필요",
+          "draw_order_band": "hair_front",
+          "deformer_node": "front_hair_warp",
+          "parameters": [
+            "ParamHairFront",
+            "ParamAngleZ"
+          ],
+          "physics_groups": [
+            "front_hair_physics"
+          ],
+          "risk_tags": [
+            "overhang_issue"
+          ],
+          "note_ko": "끝단은 보이나 어깨와 겹쳐 crop/alpha 리스크 있음",
+          "material_action_ko": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다."
+        }
+      ]
+    },
+    "auxiliary_generated_parts": [
+      {
+        "index": 25,
+        "part_id": "eye_L_closed_lid",
+        "group": "eye_L",
+        "label_ko": "왼쪽 감은 눈꺼풀",
+        "feasibility": "DERIVED_KEYPOSE_REQUIRED",
+        "feasibility_label_ko": "보조 생성 필요",
+        "draw_order_band": "eye_front",
+        "deformer_node": "eye_L_warp",
+        "parameters": [
+          "ParamEyeLOpen"
+        ],
+        "physics_groups": [],
+        "risk_tags": [
+          "clipping_risk"
+        ],
+        "note_ko": "정면 open-eye PNG에는 감은 눈꺼풀이 없으므로 blink keypose 생성 필요",
+        "material_action_ko": "눈 ROI 스타일을 유지해 감은 눈 keypose 파츠로 보조 생성한다."
+      },
+      {
+        "index": 33,
+        "part_id": "eye_R_closed_lid",
+        "group": "eye_R",
+        "label_ko": "오른쪽 감은 눈꺼풀",
+        "feasibility": "DERIVED_KEYPOSE_REQUIRED",
+        "feasibility_label_ko": "보조 생성 필요",
+        "draw_order_band": "eye_front",
+        "deformer_node": "eye_R_warp",
+        "parameters": [
+          "ParamEyeROpen"
+        ],
+        "physics_groups": [],
+        "risk_tags": [
+          "clipping_risk"
+        ],
+        "note_ko": "정면 open-eye PNG에는 감은 눈꺼풀이 없으므로 blink keypose 생성 필요",
+        "material_action_ko": "눈 ROI 스타일을 유지해 감은 눈 keypose 파츠로 보조 생성한다."
+      },
+      {
+        "index": 38,
+        "part_id": "mouth_inner",
+        "group": "mouth",
+        "label_ko": "입 안쪽",
+        "feasibility": "DERIVED_KEYPOSE_REQUIRED",
+        "feasibility_label_ko": "보조 생성 필요",
+        "draw_order_band": "mouth_back",
+        "deformer_node": "mouth_warp",
+        "parameters": [
+          "ParamMouthOpenY",
+          "ParamMouthForm"
+        ],
+        "physics_groups": [],
+        "risk_tags": [
+          "bad_alpha",
+          "clipping_risk"
+        ],
+        "note_ko": "현재 미소 입에서는 내부/치아/혀가 충분히 보이지 않아 mouth open keypose 생성 필요",
+        "material_action_ko": "입 ROI 기반으로 열린 입 내부 keypose 세트를 스타일 맞춰 보조 생성한다."
+      },
+      {
+        "index": 39,
+        "part_id": "mouth_upper_lip_mask",
+        "group": "mouth",
+        "label_ko": "윗입술 마스크",
+        "feasibility": "DERIVED_KEYPOSE_REQUIRED",
+        "feasibility_label_ko": "보조 생성 필요",
+        "draw_order_band": "mouth_front",
+        "deformer_node": "mouth_warp",
+        "parameters": [
+          "ParamMouthOpenY",
+          "ParamMouthForm"
+        ],
+        "physics_groups": [],
+        "risk_tags": [
+          "bad_alpha",
+          "clipping_risk"
+        ],
+        "note_ko": "현재 미소 입에서는 내부/치아/혀가 충분히 보이지 않아 mouth open keypose 생성 필요",
+        "material_action_ko": "입 열림용 마스크/입술 변형 보조 파츠로 생성한다."
+      },
+      {
+        "index": 40,
+        "part_id": "mouth_lower_lip_mask",
+        "group": "mouth",
+        "label_ko": "아랫입술 마스크",
+        "feasibility": "DERIVED_KEYPOSE_REQUIRED",
+        "feasibility_label_ko": "보조 생성 필요",
+        "draw_order_band": "mouth_front",
+        "deformer_node": "mouth_warp",
+        "parameters": [
+          "ParamMouthOpenY",
+          "ParamMouthForm"
+        ],
+        "physics_groups": [],
+        "risk_tags": [
+          "bad_alpha",
+          "clipping_risk"
+        ],
+        "note_ko": "현재 미소 입에서는 내부/치아/혀가 충분히 보이지 않아 mouth open keypose 생성 필요",
+        "material_action_ko": "입 열림용 마스크/입술 변형 보조 파츠로 생성한다."
+      },
+      {
+        "index": 41,
+        "part_id": "mouth_teeth",
+        "group": "mouth",
+        "label_ko": "치아",
+        "feasibility": "DERIVED_KEYPOSE_REQUIRED",
+        "feasibility_label_ko": "보조 생성 필요",
+        "draw_order_band": "mouth_mid",
+        "deformer_node": "mouth_warp",
+        "parameters": [
+          "ParamMouthOpenY"
+        ],
+        "physics_groups": [],
+        "risk_tags": [
+          "bad_alpha",
+          "clipping_risk"
+        ],
+        "note_ko": "현재 미소 입에서는 내부/치아/혀가 충분히 보이지 않아 mouth open keypose 생성 필요",
+        "material_action_ko": "입 ROI 기반으로 열린 입 내부 keypose 세트를 스타일 맞춰 보조 생성한다."
+      },
+      {
+        "index": 42,
+        "part_id": "mouth_tongue",
+        "group": "mouth",
+        "label_ko": "혀",
+        "feasibility": "DERIVED_KEYPOSE_REQUIRED",
+        "feasibility_label_ko": "보조 생성 필요",
+        "draw_order_band": "mouth_mid",
+        "deformer_node": "mouth_warp",
+        "parameters": [
+          "ParamMouthOpenY",
+          "ParamMouthForm"
+        ],
+        "physics_groups": [],
+        "risk_tags": [
+          "bad_alpha",
+          "clipping_risk"
+        ],
+        "note_ko": "현재 미소 입에서는 내부/치아/혀가 충분히 보이지 않아 mouth open keypose 생성 필요",
+        "material_action_ko": "입 ROI 기반으로 열린 입 내부 keypose 세트를 스타일 맞춰 보조 생성한다."
+      }
+    ],
+    "underpaint_parts": [
+      {
+        "index": 1,
+        "part_id": "body_underpaint",
+        "group": "body",
+        "label_ko": "몸 밑색",
+        "feasibility": "UNDERPAINT_REQUIRED",
+        "feasibility_label_ko": "밑색 필요",
+        "draw_order_band": "body_back",
+        "deformer_node": "body_root_warp",
+        "parameters": [
+          "ParamBodyAngleX",
+          "ParamBodyAngleY"
+        ],
+        "physics_groups": [],
+        "risk_tags": [
+          "underpaint_missing"
+        ],
+        "note_ko": "움직임에서 빈틈을 막기 위해 원본 기반 확장/수동 밑색이 필요함",
+        "material_action_ko": "움직임에서 빈틈이 보이지 않게 원본 주변색 확장, inpaint, 수동 채색으로 만든다."
+      },
+      {
+        "index": 4,
+        "part_id": "neck_shadow_underpaint",
+        "group": "body",
+        "label_ko": "목 그림자 밑색",
+        "feasibility": "UNDERPAINT_REQUIRED",
+        "feasibility_label_ko": "밑색 필요",
+        "draw_order_band": "body_back",
+        "deformer_node": "body_root_warp",
+        "parameters": [
+          "ParamAngleX",
+          "ParamBodyAngleX"
+        ],
+        "physics_groups": [],
+        "risk_tags": [
+          "underpaint_missing"
+        ],
+        "note_ko": "움직임에서 빈틈을 막기 위해 원본 기반 확장/수동 밑색이 필요함",
+        "material_action_ko": "움직임에서 빈틈이 보이지 않게 원본 주변색 확장, inpaint, 수동 채색으로 만든다."
+      },
+      {
+        "index": 9,
+        "part_id": "arm_L_underpaint",
+        "group": "body",
+        "label_ko": "왼팔 밑색",
+        "feasibility": "UNDERPAINT_REQUIRED",
+        "feasibility_label_ko": "밑색 필요",
+        "draw_order_band": "body_back",
+        "deformer_node": "shoulder_arm_rotation",
+        "parameters": [
+          "ParamBodyAngleX"
+        ],
+        "physics_groups": [],
+        "risk_tags": [
+          "underpaint_missing"
+        ],
+        "note_ko": "움직임에서 빈틈을 막기 위해 원본 기반 확장/수동 밑색이 필요함",
+        "material_action_ko": "움직임에서 빈틈이 보이지 않게 원본 주변색 확장, inpaint, 수동 채색으로 만든다."
+      },
+      {
+        "index": 10,
+        "part_id": "arm_R_underpaint",
+        "group": "body",
+        "label_ko": "오른팔 밑색",
+        "feasibility": "UNDERPAINT_REQUIRED",
+        "feasibility_label_ko": "밑색 필요",
+        "draw_order_band": "body_back",
+        "deformer_node": "shoulder_arm_rotation",
+        "parameters": [
+          "ParamBodyAngleX"
+        ],
+        "physics_groups": [],
+        "risk_tags": [
+          "underpaint_missing"
+        ],
+        "note_ko": "움직임에서 빈틈을 막기 위해 원본 기반 확장/수동 밑색이 필요함",
+        "material_action_ko": "움직임에서 빈틈이 보이지 않게 원본 주변색 확장, inpaint, 수동 채색으로 만든다."
+      },
+      {
+        "index": 14,
+        "part_id": "face_underpaint_L",
+        "group": "face_base",
+        "label_ko": "왼쪽 얼굴 밑색",
+        "feasibility": "UNDERPAINT_REQUIRED",
+        "feasibility_label_ko": "밑색 필요",
+        "draw_order_band": "face_back",
+        "deformer_node": "head_angle_warp",
+        "parameters": [
+          "ParamAngleX"
+        ],
+        "physics_groups": [],
+        "risk_tags": [
+          "underpaint_missing"
+        ],
+        "note_ko": "움직임에서 빈틈을 막기 위해 원본 기반 확장/수동 밑색이 필요함",
+        "material_action_ko": "움직임에서 빈틈이 보이지 않게 원본 주변색 확장, inpaint, 수동 채색으로 만든다."
+      },
+      {
+        "index": 15,
+        "part_id": "face_underpaint_R",
+        "group": "face_base",
+        "label_ko": "오른쪽 얼굴 밑색",
+        "feasibility": "UNDERPAINT_REQUIRED",
+        "feasibility_label_ko": "밑색 필요",
+        "draw_order_band": "face_back",
+        "deformer_node": "head_angle_warp",
+        "parameters": [
+          "ParamAngleX"
+        ],
+        "physics_groups": [],
+        "risk_tags": [
+          "underpaint_missing"
+        ],
+        "note_ko": "움직임에서 빈틈을 막기 위해 원본 기반 확장/수동 밑색이 필요함",
+        "material_action_ko": "움직임에서 빈틈이 보이지 않게 원본 주변색 확장, inpaint, 수동 채색으로 만든다."
+      },
+      {
+        "index": 26,
+        "part_id": "eye_L_underpaint",
+        "group": "eye_L",
+        "label_ko": "왼쪽 눈 밑색",
+        "feasibility": "UNDERPAINT_REQUIRED",
+        "feasibility_label_ko": "밑색 필요",
+        "draw_order_band": "eye_back",
+        "deformer_node": "eye_L_warp",
+        "parameters": [
+          "ParamEyeLOpen",
+          "ParamAngleX"
+        ],
+        "physics_groups": [],
+        "risk_tags": [
+          "underpaint_missing"
+        ],
+        "note_ko": "움직임에서 빈틈을 막기 위해 원본 기반 확장/수동 밑색이 필요함",
+        "material_action_ko": "움직임에서 빈틈이 보이지 않게 원본 주변색 확장, inpaint, 수동 채색으로 만든다."
+      },
+      {
+        "index": 34,
+        "part_id": "eye_R_underpaint",
+        "group": "eye_R",
+        "label_ko": "오른쪽 눈 밑색",
+        "feasibility": "UNDERPAINT_REQUIRED",
+        "feasibility_label_ko": "밑색 필요",
+        "draw_order_band": "eye_back",
+        "deformer_node": "eye_R_warp",
+        "parameters": [
+          "ParamEyeROpen",
+          "ParamAngleX"
+        ],
+        "physics_groups": [],
+        "risk_tags": [
+          "underpaint_missing"
+        ],
+        "note_ko": "움직임에서 빈틈을 막기 위해 원본 기반 확장/수동 밑색이 필요함",
+        "material_action_ko": "움직임에서 빈틈이 보이지 않게 원본 주변색 확장, inpaint, 수동 채색으로 만든다."
+      },
+      {
+        "index": 46,
+        "part_id": "hair_back_underpaint",
+        "group": "hair",
+        "label_ko": "뒷머리 밑색",
+        "feasibility": "UNDERPAINT_REQUIRED",
+        "feasibility_label_ko": "밑색 필요",
+        "draw_order_band": "hair_back",
+        "deformer_node": "back_hair_warp",
+        "parameters": [
+          "ParamAngleX",
+          "ParamHairBack"
+        ],
+        "physics_groups": [],
+        "risk_tags": [
+          "underpaint_missing"
+        ],
+        "note_ko": "움직임에서 빈틈을 막기 위해 원본 기반 확장/수동 밑색이 필요함",
+        "material_action_ko": "움직임에서 빈틈이 보이지 않게 원본 주변색 확장, inpaint, 수동 채색으로 만든다."
+      }
+    ],
+    "simplify_or_merge_parts": [
+      {
+        "index": 62,
+        "part_id": "collar_shadow",
+        "group": "clothing",
+        "label_ko": "깃 그림자",
+        "feasibility": "SIMPLIFY_OR_MERGE",
+        "feasibility_label_ko": "병합/단순화",
+        "draw_order_band": "clothing_mid",
+        "deformer_node": "body_root_warp",
+        "parameters": [
+          "ParamBodyAngleX"
+        ],
+        "physics_groups": [],
+        "risk_tags": [],
+        "note_ko": "그림자 전용 파츠는 첫 production에서 base에 병합하거나 최소화 권장",
+        "material_action_ko": "처음 PSD에서는 독립 파츠보다 기본 의상 레이어에 병합하고 metadata로만 추적한다."
+      },
+      {
+        "index": 64,
+        "part_id": "chest_cloth_shadow",
+        "group": "clothing",
+        "label_ko": "가슴 의상 그림자",
+        "feasibility": "SIMPLIFY_OR_MERGE",
+        "feasibility_label_ko": "병합/단순화",
+        "draw_order_band": "clothing_front",
+        "deformer_node": "body_root_warp",
+        "parameters": [
+          "ParamBodyAngleX"
+        ],
+        "physics_groups": [],
+        "risk_tags": [],
+        "note_ko": "그림자 전용 파츠는 첫 production에서 base에 병합하거나 최소화 권장",
+        "material_action_ko": "처음 PSD에서는 독립 파츠보다 기본 의상 레이어에 병합하고 metadata로만 추적한다."
+      }
+    ]
+  },
+  "psd_material_pack_order": [
+    {
+      "phase": "P0_source_normalization",
+      "goal_ko": "candidate_002를 2048 full-canvas master로 고정하고 해시/크기/파일명을 기록한다.",
+      "part_ids": [],
+      "exit_check_ko": "원본 PNG, bbox guide, G1 report 경로가 manifest에 연결되어야 한다."
+    },
+    {
+      "phase": "P1_roi_bbox_lock",
+      "goal_ko": "눈/입/얼굴/머리/몸 ROI와 guide box를 잠근다.",
+      "part_ids": [
+        "torso_base",
+        "neck",
+        "shoulder_L",
+        "shoulder_R",
+        "face_base",
+        "nose",
+        "eye_L_white",
+        "eye_L_iris",
+        "eye_L_pupil",
+        "eye_L_highlight",
+        "eye_L_upper_lash",
+        "eye_L_lower_lash",
+        "eye_R_white",
+        "eye_R_iris",
+        "eye_R_pupil",
+        "eye_R_highlight",
+        "eye_R_upper_lash",
+        "eye_R_lower_lash",
+        "hair_back_base",
+        "hair_front_center",
+        "hair_front_L",
+        "hair_front_R",
+        "hair_front_side_L",
+        "hair_front_side_R",
+        "hair_side_L_outer",
+        "hair_side_L_inner",
+        "hair_side_R_outer",
+        "hair_side_R_inner",
+        "collar_front",
+        "chest_cloth_base",
+        "arm_L_upper_simple",
+        "arm_R_upper_simple",
+        "face_shadow_L",
+        "face_shadow_R",
+        "cheek_L",
+        "cheek_R",
+        "brow_L",
+        "brow_R",
+        "mouth_line",
+        "mouth_corner_L",
+        "mouth_corner_R",
+        "hair_back_strand_L",
+        "hair_back_strand_R",
+        "hair_back_center",
+        "hair_front_tip_L",
+        "hair_front_tip_R"
+      ],
+      "exit_check_ko": "mouth corrected ROI를 포함해 주요 그룹 bbox가 비어 있지 않아야 한다."
+    },
+    {
+      "phase": "P2_direct_visible_extraction",
+      "goal_ko": "원본에서 보이는 안전 파츠를 full-canvas alpha layer로 분리한다.",
+      "part_ids": [
+        "torso_base",
+        "neck",
+        "shoulder_L",
+        "shoulder_R",
+        "face_base",
+        "nose",
+        "eye_L_white",
+        "eye_L_iris",
+        "eye_L_pupil",
+        "eye_L_highlight",
+        "eye_L_upper_lash",
+        "eye_L_lower_lash",
+        "eye_R_white",
+        "eye_R_iris",
+        "eye_R_pupil",
+        "eye_R_highlight",
+        "eye_R_upper_lash",
+        "eye_R_lower_lash",
+        "hair_back_base",
+        "hair_front_center",
+        "hair_front_L",
+        "hair_front_R",
+        "hair_front_side_L",
+        "hair_front_side_R",
+        "hair_side_L_outer",
+        "hair_side_L_inner",
+        "hair_side_R_outer",
+        "hair_side_R_inner",
+        "collar_front",
+        "chest_cloth_base"
+      ],
+      "exit_check_ko": "각 파츠 alpha bbox가 있고 canvas 크기가 2048x2048이어야 한다."
+    },
+    {
+      "phase": "P3_direct_risk_cleanup",
+      "goal_ko": "얇은 선, 머리끝, 팔, 볼/그림자처럼 리스크가 있는 직접 파츠를 정리한다.",
+      "part_ids": [
+        "arm_L_upper_simple",
+        "arm_R_upper_simple",
+        "face_shadow_L",
+        "face_shadow_R",
+        "cheek_L",
+        "cheek_R",
+        "brow_L",
+        "brow_R",
+        "mouth_line",
+        "mouth_corner_L",
+        "mouth_corner_R",
+        "hair_back_strand_L",
+        "hair_back_strand_R",
+        "hair_back_center",
+        "hair_front_tip_L",
+        "hair_front_tip_R"
+      ],
+      "exit_check_ko": "bad_alpha, crop, style_mismatch, misaligned 후보가 review packet에 표시되어야 한다."
+    },
+    {
+      "phase": "P4_derived_keypose_generation",
+      "goal_ko": "감은 눈과 열린 입 내부 keypose 파츠를 보조 생성한다.",
+      "part_ids": [
+        "eye_L_closed_lid",
+        "eye_R_closed_lid",
+        "mouth_inner",
+        "mouth_upper_lip_mask",
+        "mouth_lower_lip_mask",
+        "mouth_teeth",
+        "mouth_tongue"
+      ],
+      "exit_check_ko": "neutral vs derived 비교에서 위치가 맞고 입/눈 안쪽이 비어 있지 않아야 한다."
+    },
+    {
+      "phase": "P5_underpaint_generation",
+      "goal_ko": "움직일 때 구멍이 보이지 않도록 몸/얼굴/눈/머리 밑색을 만든다.",
+      "part_ids": [
+        "body_underpaint",
+        "neck_shadow_underpaint",
+        "arm_L_underpaint",
+        "arm_R_underpaint",
+        "face_underpaint_L",
+        "face_underpaint_R",
+        "eye_L_underpaint",
+        "eye_R_underpaint",
+        "hair_back_underpaint"
+      ],
+      "exit_check_ko": "layer alone vs composited 비교에서 underpaint가 밖으로 과하게 삐져나오지 않아야 한다."
+    },
+    {
+      "phase": "P6_clothing_simplify_merge",
+      "goal_ko": "작은 의상 그림자는 기본 의상 레이어에 병합하고 별도 리깅 대상에서 제외한다.",
+      "part_ids": [
+        "collar_shadow",
+        "chest_cloth_shadow"
+      ],
+      "exit_check_ko": "병합한 디테일은 metadata에 남고 독립 deformer/keyform 요구사항으로 올라가지 않아야 한다."
+    },
+    {
+      "phase": "P7_full_canvas_layer_normalization",
+      "goal_ko": "모든 결과를 full-canvas PNG/PSD layer 규격으로 맞춘다.",
+      "part_ids": [
+        "body_underpaint",
+        "torso_base",
+        "neck",
+        "neck_shadow_underpaint",
+        "shoulder_L",
+        "shoulder_R",
+        "arm_L_upper_simple",
+        "arm_R_upper_simple",
+        "arm_L_underpaint",
+        "arm_R_underpaint",
+        "face_base",
+        "face_shadow_L",
+        "face_shadow_R",
+        "face_underpaint_L",
+        "face_underpaint_R",
+        "nose",
+        "cheek_L",
+        "cheek_R",
+        "eye_L_white",
+        "eye_L_iris",
+        "eye_L_pupil",
+        "eye_L_highlight",
+        "eye_L_upper_lash",
+        "eye_L_lower_lash",
+        "eye_L_closed_lid",
+        "eye_L_underpaint",
+        "eye_R_white",
+        "eye_R_iris",
+        "eye_R_pupil",
+        "eye_R_highlight",
+        "eye_R_upper_lash",
+        "eye_R_lower_lash",
+        "eye_R_closed_lid",
+        "eye_R_underpaint",
+        "brow_L",
+        "brow_R",
+        "mouth_line",
+        "mouth_inner",
+        "mouth_upper_lip_mask",
+        "mouth_lower_lip_mask",
+        "mouth_teeth",
+        "mouth_tongue",
+        "mouth_corner_L",
+        "mouth_corner_R",
+        "hair_back_base",
+        "hair_back_underpaint",
+        "hair_back_strand_L",
+        "hair_back_strand_R",
+        "hair_back_center",
+        "hair_front_center",
+        "hair_front_L",
+        "hair_front_R",
+        "hair_front_side_L",
+        "hair_front_side_R",
+        "hair_front_tip_L",
+        "hair_front_tip_R",
+        "hair_side_L_outer",
+        "hair_side_L_inner",
+        "hair_side_R_outer",
+        "hair_side_R_inner",
+        "collar_front",
+        "collar_shadow",
+        "chest_cloth_base",
+        "chest_cloth_shadow"
+      ],
+      "exit_check_ko": "레이어 이름, alpha bbox, draw order band, source type이 manifest에 있어야 한다."
+    },
+    {
+      "phase": "P8_psd_layer_order_and_material_pack",
+      "goal_ko": "draw order band에 맞춰 PSD/material pack을 만든다.",
+      "part_ids": [
+        "body_underpaint",
+        "torso_base",
+        "neck",
+        "neck_shadow_underpaint",
+        "shoulder_L",
+        "shoulder_R",
+        "arm_L_upper_simple",
+        "arm_R_upper_simple",
+        "arm_L_underpaint",
+        "arm_R_underpaint",
+        "face_base",
+        "face_shadow_L",
+        "face_shadow_R",
+        "face_underpaint_L",
+        "face_underpaint_R",
+        "nose",
+        "cheek_L",
+        "cheek_R",
+        "eye_L_white",
+        "eye_L_iris",
+        "eye_L_pupil",
+        "eye_L_highlight",
+        "eye_L_upper_lash",
+        "eye_L_lower_lash",
+        "eye_L_closed_lid",
+        "eye_L_underpaint",
+        "eye_R_white",
+        "eye_R_iris",
+        "eye_R_pupil",
+        "eye_R_highlight",
+        "eye_R_upper_lash",
+        "eye_R_lower_lash",
+        "eye_R_closed_lid",
+        "eye_R_underpaint",
+        "brow_L",
+        "brow_R",
+        "mouth_line",
+        "mouth_inner",
+        "mouth_upper_lip_mask",
+        "mouth_lower_lip_mask",
+        "mouth_teeth",
+        "mouth_tongue",
+        "mouth_corner_L",
+        "mouth_corner_R",
+        "hair_back_base",
+        "hair_back_underpaint",
+        "hair_back_strand_L",
+        "hair_back_strand_R",
+        "hair_back_center",
+        "hair_front_center",
+        "hair_front_L",
+        "hair_front_R",
+        "hair_front_side_L",
+        "hair_front_side_R",
+        "hair_front_tip_L",
+        "hair_front_tip_R",
+        "hair_side_L_outer",
+        "hair_side_L_inner",
+        "hair_side_R_outer",
+        "hair_side_R_inner",
+        "collar_front",
+        "collar_shadow",
+        "chest_cloth_base",
+        "chest_cloth_shadow"
+      ],
+      "exit_check_ko": "Cubism import smoke 전에 PSD layer count와 이름이 spec과 맞아야 한다."
+    },
+    {
+      "phase": "P9_g1_exit_review_packet",
+      "goal_ko": "사람은 contact sheet 1장, 실패 후보, derived/underpaint 비교만 본다.",
+      "part_ids": [
+        "body_underpaint",
+        "torso_base",
+        "neck",
+        "neck_shadow_underpaint",
+        "shoulder_L",
+        "shoulder_R",
+        "arm_L_upper_simple",
+        "arm_R_upper_simple",
+        "arm_L_underpaint",
+        "arm_R_underpaint",
+        "face_base",
+        "face_shadow_L",
+        "face_shadow_R",
+        "face_underpaint_L",
+        "face_underpaint_R",
+        "nose",
+        "cheek_L",
+        "cheek_R",
+        "eye_L_white",
+        "eye_L_iris",
+        "eye_L_pupil",
+        "eye_L_highlight",
+        "eye_L_upper_lash",
+        "eye_L_lower_lash",
+        "eye_L_closed_lid",
+        "eye_L_underpaint",
+        "eye_R_white",
+        "eye_R_iris",
+        "eye_R_pupil",
+        "eye_R_highlight",
+        "eye_R_upper_lash",
+        "eye_R_lower_lash",
+        "eye_R_closed_lid",
+        "eye_R_underpaint",
+        "brow_L",
+        "brow_R",
+        "mouth_line",
+        "mouth_inner",
+        "mouth_upper_lip_mask",
+        "mouth_lower_lip_mask",
+        "mouth_teeth",
+        "mouth_tongue",
+        "mouth_corner_L",
+        "mouth_corner_R",
+        "hair_back_base",
+        "hair_back_underpaint",
+        "hair_back_strand_L",
+        "hair_back_strand_R",
+        "hair_back_center",
+        "hair_front_center",
+        "hair_front_L",
+        "hair_front_R",
+        "hair_front_side_L",
+        "hair_front_side_R",
+        "hair_front_tip_L",
+        "hair_front_tip_R",
+        "hair_side_L_outer",
+        "hair_side_L_inner",
+        "hair_side_R_outer",
+        "hair_side_R_inner",
+        "collar_front",
+        "collar_shadow",
+        "chest_cloth_base",
+        "chest_cloth_shadow"
+      ],
+      "exit_check_ko": "G1 material QA가 PASS해야 Cubism Editor authoring으로 넘어간다."
+    }
+  ],
+  "draw_order_plan": [
+    {
+      "draw_order_band": "body_back",
+      "part_ids": [
+        "body_underpaint",
+        "neck_shadow_underpaint",
+        "arm_L_underpaint",
+        "arm_R_underpaint"
+      ]
+    },
+    {
+      "draw_order_band": "hair_back",
+      "part_ids": [
+        "hair_back_base",
+        "hair_back_underpaint",
+        "hair_back_strand_L",
+        "hair_back_strand_R",
+        "hair_back_center"
+      ]
+    },
+    {
+      "draw_order_band": "body_mid",
+      "part_ids": [
+        "torso_base",
+        "neck",
+        "shoulder_L",
+        "shoulder_R"
+      ]
+    },
+    {
+      "draw_order_band": "body_front",
+      "part_ids": [
+        "arm_L_upper_simple",
+        "arm_R_upper_simple"
+      ]
+    },
+    {
+      "draw_order_band": "clothing_mid",
+      "part_ids": [
+        "collar_shadow",
+        "chest_cloth_base"
+      ]
+    },
+    {
+      "draw_order_band": "face_back",
+      "part_ids": [
+        "face_underpaint_L",
+        "face_underpaint_R"
+      ]
+    },
+    {
+      "draw_order_band": "face_mid",
+      "part_ids": [
+        "face_base"
+      ]
+    },
+    {
+      "draw_order_band": "face_front",
+      "part_ids": [
+        "face_shadow_L",
+        "face_shadow_R",
+        "nose",
+        "cheek_L",
+        "cheek_R"
+      ]
+    },
+    {
+      "draw_order_band": "eye_back",
+      "part_ids": [
+        "eye_L_white",
+        "eye_L_underpaint",
+        "eye_R_white",
+        "eye_R_underpaint"
+      ]
+    },
+    {
+      "draw_order_band": "eye_mid",
+      "part_ids": [
+        "eye_L_iris",
+        "eye_L_pupil",
+        "eye_R_iris",
+        "eye_R_pupil"
+      ]
+    },
+    {
+      "draw_order_band": "eye_front",
+      "part_ids": [
+        "eye_L_highlight",
+        "eye_L_upper_lash",
+        "eye_L_lower_lash",
+        "eye_L_closed_lid",
+        "eye_R_highlight",
+        "eye_R_upper_lash",
+        "eye_R_lower_lash",
+        "eye_R_closed_lid"
+      ]
+    },
+    {
+      "draw_order_band": "brow_front",
+      "part_ids": [
+        "brow_L",
+        "brow_R"
+      ]
+    },
+    {
+      "draw_order_band": "mouth_back",
+      "part_ids": [
+        "mouth_inner"
+      ]
+    },
+    {
+      "draw_order_band": "mouth_mid",
+      "part_ids": [
+        "mouth_teeth",
+        "mouth_tongue"
+      ]
+    },
+    {
+      "draw_order_band": "mouth_front",
+      "part_ids": [
+        "mouth_line",
+        "mouth_upper_lip_mask",
+        "mouth_lower_lip_mask",
+        "mouth_corner_L",
+        "mouth_corner_R"
+      ]
+    },
+    {
+      "draw_order_band": "hair_side",
+      "part_ids": [
+        "hair_side_L_outer",
+        "hair_side_L_inner",
+        "hair_side_R_outer",
+        "hair_side_R_inner"
+      ]
+    },
+    {
+      "draw_order_band": "hair_front",
+      "part_ids": [
+        "hair_front_center",
+        "hair_front_L",
+        "hair_front_R",
+        "hair_front_side_L",
+        "hair_front_side_R",
+        "hair_front_tip_L",
+        "hair_front_tip_R"
+      ]
+    },
+    {
+      "draw_order_band": "clothing_front",
+      "part_ids": [
+        "collar_front",
+        "chest_cloth_shadow"
+      ]
+    }
+  ],
+  "self_review": [
+    {
+      "item_ko": "원본에서 직접 뽑을 파츠 목록 확정",
+      "passed": true,
+      "evidence_ko": "직접/위험 직접 46개 = 안전 30개 + 정리 필요 16개"
+    },
+    {
+      "item_ko": "보조 생성할 파츠 목록 확정",
+      "passed": true,
+      "evidence_ko": "감은 눈/입 내부 keypose 7개"
+    },
+    {
+      "item_ko": "underpaint 필요한 파츠 목록 확정",
+      "passed": true,
+      "evidence_ko": "몸/목/팔/얼굴/눈/뒷머리 밑색 9개"
+    },
+    {
+      "item_ko": "병합/단순화할 의상 디테일 확정",
+      "passed": true,
+      "evidence_ko": "의상 그림자/작은 디테일 2개"
+    },
+    {
+      "item_ko": "이후 PSD/material pack 제작 순서 확정",
+      "passed": true,
+      "evidence_ko": "10단계 제작 순서와 draw order band를 생성함"
+    },
+    {
+      "item_ko": "64파트 taxonomy 전체 accounted",
+      "passed": true,
+      "evidence_ko": "46 + 7 + 9 + 2 = 64"
+    }
+  ],
+  "next_gate": "G1_MATERIAL_ASSET_GENERATION_THEN_CUBISM_IMPORT_SMOKE"
+}

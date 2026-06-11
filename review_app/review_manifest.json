@@ -1,3209 +1,2000 @@
 {
-  "schema_version": 1,
-  "experiment_id": "part-purity-001",
-  "generated_at": "2026-06-04T04:37:36.561309+00:00",
-  "source_layer_manifest": "experiments/cubism-material-pack-001/layer_manifest.json",
-  "source_schema_doc": "docs/ref/LIVE2D-PART-SCHEMA.md",
+  "schema_version": 2,
+  "experiment_id": "cubism-v2-review-001",
+  "mode": "cubism_v2",
+  "tier": "v2_min",
+  "generated_at": "2026-06-05T16:05:27.859332+00:00",
+  "source_review_manifest": "review_app/review_manifest.json",
+  "source_success_pattern_spec": "experiments/reference-model-structure-001/reports/cubism_success_pattern_spec.md",
   "review_outputs": {
-    "part_visual_review": "experiments/part-purity-001/reports/part_visual_review.json",
-    "ai_fix_queue": "experiments/part-purity-001/reports/ai_fix_queue.json"
+    "part_visual_review": "experiments/cubism-v2-review-001/reports/part_visual_review.json",
+    "ai_fix_queue": "experiments/cubism-v2-review-001/reports/ai_fix_queue.json",
+    "review_packet": "experiments/cubism-v2-review-001/review_packet"
+  },
+  "ui": {
+    "title": "Cubism v2 쉬운 검수",
+    "subtitle": "캐릭터, 파츠, 구조, 움직임을 차례대로 보고 실패 후보만 다시 모읍니다.",
+    "primary_section": "g0_concept",
+    "tier_labels": {
+      "v2_min": "최소형",
+      "v2_standard": "표준형",
+      "v2_rich": "풍부형"
+    }
   },
   "issue_tags": [
-    "hair_mixed",
-    "skin_mixed",
-    "eye_white_mixed",
-    "iris_mixed",
-    "line_cut",
-    "alpha_dirty",
-    "bbox_too_tight",
-    "missing_underpaint",
-    "wrong_shape",
-    "semantic_too_coarse",
-    "depth_order_wrong"
+    {
+      "code": "missing_part",
+      "label_ko": "파츠 없음",
+      "help_ko": "필수 파츠가 빠졌거나 거의 보이지 않아요."
+    },
+    {
+      "code": "bad_alpha",
+      "label_ko": "테두리 지저분함",
+      "help_ko": "투명 배경 가장자리에 찌꺼기나 잘림이 있어요."
+    },
+    {
+      "code": "misaligned",
+      "label_ko": "위치 안 맞음",
+      "help_ko": "파츠가 원래 자리에서 밀렸어요."
+    },
+    {
+      "code": "style_mismatch",
+      "label_ko": "그림체 다름",
+      "help_ko": "다른 파츠와 선, 색, 비율이 달라 보여요."
+    },
+    {
+      "code": "underpaint_missing",
+      "label_ko": "밑색 없음",
+      "help_ko": "움직이면 뒤가 비어 보일 수 있어요."
+    },
+    {
+      "code": "clipping_risk",
+      "label_ko": "마스크 위험",
+      "help_ko": "눈꺼풀, 앞머리, 장식처럼 마스크가 까다로운 부분이에요."
+    },
+    {
+      "code": "draw_order_issue",
+      "label_ko": "앞뒤 순서 문제",
+      "help_ko": "앞에 있어야 할 파츠와 뒤에 있어야 할 파츠가 헷갈려요."
+    },
+    {
+      "code": "overhang_issue",
+      "label_ko": "튀어나온 부분 문제",
+      "help_ko": "파츠 끝이 몸 밖으로 어색하게 튀어나와요."
+    }
   ],
   "sections": {
-    "production_parts": [
+    "g0_concept": [
       {
-        "part_id": "face_underpaint",
-        "original_part_id": "face_underpaint",
-        "experiment_id": "part-purity-001",
-        "ko_name": "얼굴 언더페인트",
-        "group": "face",
-        "section": "production_parts",
-        "role": "underpaint",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/face_underpaint.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          486,
-          178,
-          1063,
-          1155
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.887978,
-        "draw_order": 5,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "hidden skin fill behind face parts"
-        ],
-        "forbidden_contamination": [
-          "hair",
-          "eyes",
-          "mouth",
-          "clothes"
-        ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
-      },
-      {
-        "part_id": "back_hair",
-        "original_part_id": "back_hair",
-        "experiment_id": "part-purity-001",
-        "ko_name": "뒷머리",
-        "group": "hair",
-        "section": "production_parts",
-        "role": "back_hair",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/back_hair.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          450,
-          91,
-          1141,
-          1017
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.766817,
-        "draw_order": 10,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "rear hair mass only"
-        ],
-        "forbidden_contamination": [
-          "face",
-          "neck",
-          "front_hair",
-          "side_hair"
-        ],
-        "suggested_generation_mode": "part_mask_regeneration"
-      },
-      {
-        "part_id": "body",
-        "original_part_id": "body",
-        "experiment_id": "part-purity-001",
-        "ko_name": "몸통",
-        "group": "body",
-        "section": "production_parts",
-        "role": "body",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/body.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          235,
-          1283,
-          1567,
-          765
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.892392,
-        "draw_order": 20,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "body skin and torso base"
-        ],
-        "forbidden_contamination": [
-          "clothes",
-          "hair",
-          "face"
-        ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
-      },
-      {
-        "part_id": "clothes",
-        "original_part_id": "clothes",
-        "experiment_id": "part-purity-001",
-        "ko_name": "의상",
-        "group": "body",
-        "section": "production_parts",
-        "role": "clothes",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/clothes.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          235,
-          1186,
-          1567,
-          861
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.877876,
-        "draw_order": 30,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "clothing pixels only"
-        ],
-        "forbidden_contamination": [
-          "skin",
-          "hair",
-          "face"
-        ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
-      },
-      {
-        "part_id": "neck",
-        "original_part_id": "neck",
-        "experiment_id": "part-purity-001",
-        "ko_name": "목",
-        "group": "face",
-        "section": "production_parts",
-        "role": "neck",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/neck.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          888,
-          1213,
-          260,
-          230
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 1.0,
-        "draw_order": 40,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "neck skin only"
-        ],
-        "forbidden_contamination": [
-          "clothes",
-          "hair",
-          "face_outline"
-        ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
-      },
-      {
-        "part_id": "face_base",
-        "original_part_id": "face_base",
-        "experiment_id": "part-purity-001",
-        "ko_name": "얼굴 베이스",
-        "group": "face",
-        "section": "production_parts",
-        "role": "face",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/face_base.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          476,
-          178,
-          1083,
-          1155
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.875497,
-        "draw_order": 50,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "visible face skin and face outline"
-        ],
-        "forbidden_contamination": [
-          "hair",
-          "eyes",
-          "mouth"
-        ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
-      },
-      {
-        "part_id": "L_eye_white",
-        "original_part_id": "L_eye_white",
-        "experiment_id": "part-purity-001",
-        "ko_name": "왼쪽 흰자",
-        "group": "eyes",
-        "section": "production_parts",
-        "role": "eye_white",
-        "side": "L",
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/L_eye_white.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          742,
-          626,
-          208,
-          138
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 1.0,
-        "draw_order": 60,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "left sclera only"
-        ],
-        "forbidden_contamination": [
-          "iris",
-          "pupil",
-          "lash",
-          "hair",
-          "skin"
-        ],
-        "suggested_generation_mode": "mask_cleanup_or_regenerate"
-      },
-      {
-        "part_id": "R_eye_white",
-        "original_part_id": "R_eye_white",
-        "experiment_id": "part-purity-001",
-        "ko_name": "오른쪽 흰자",
-        "group": "eyes",
-        "section": "production_parts",
-        "role": "eye_white",
-        "side": "R",
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/R_eye_white.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          1083,
-          626,
-          208,
-          138
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 1.0,
-        "draw_order": 61,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "right sclera only"
-        ],
-        "forbidden_contamination": [
-          "iris",
-          "pupil",
-          "lash",
-          "hair",
-          "skin"
-        ],
-        "suggested_generation_mode": "mask_cleanup_or_regenerate"
-      },
-      {
-        "part_id": "L_iris",
-        "original_part_id": "L_iris",
-        "experiment_id": "part-purity-001",
-        "ko_name": "왼쪽 홍채",
-        "group": "eyes",
-        "section": "production_parts",
-        "role": "iris",
-        "side": "L",
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/L_iris.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          797,
-          654,
-          92,
-          88
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 1.0,
-        "draw_order": 70,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "left iris color only"
-        ],
-        "forbidden_contamination": [
-          "pupil",
-          "highlight",
-          "eye_white",
-          "lash"
-        ],
-        "suggested_generation_mode": "mask_cleanup_or_regenerate"
-      },
-      {
-        "part_id": "R_iris",
-        "original_part_id": "R_iris",
-        "experiment_id": "part-purity-001",
-        "ko_name": "오른쪽 홍채",
-        "group": "eyes",
-        "section": "production_parts",
-        "role": "iris",
-        "side": "R",
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/R_iris.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          1138,
-          654,
-          92,
-          88
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 1.0,
-        "draw_order": 71,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "right iris color only"
-        ],
-        "forbidden_contamination": [
-          "pupil",
-          "highlight",
-          "eye_white",
-          "lash"
-        ],
-        "suggested_generation_mode": "mask_cleanup_or_regenerate"
-      },
-      {
-        "part_id": "L_pupil",
-        "original_part_id": "L_pupil",
-        "experiment_id": "part-purity-001",
-        "ko_name": "왼쪽 동공",
-        "group": "eyes",
-        "section": "production_parts",
-        "role": "pupil",
-        "side": "L",
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/L_pupil.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          820,
-          674,
-          46,
-          46
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 1.0,
-        "draw_order": 80,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "left pupil only"
-        ],
-        "forbidden_contamination": [
-          "iris",
-          "highlight",
-          "eye_white"
-        ],
-        "suggested_generation_mode": "mask_cleanup_or_regenerate"
-      },
-      {
-        "part_id": "R_pupil",
-        "original_part_id": "R_pupil",
-        "experiment_id": "part-purity-001",
-        "ko_name": "오른쪽 동공",
-        "group": "eyes",
-        "section": "production_parts",
-        "role": "pupil",
-        "side": "R",
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/R_pupil.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          1161,
-          674,
-          46,
-          46
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 1.0,
-        "draw_order": 81,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "right pupil only"
-        ],
-        "forbidden_contamination": [
-          "iris",
-          "highlight",
-          "eye_white"
-        ],
-        "suggested_generation_mode": "mask_cleanup_or_regenerate"
-      },
-      {
-        "part_id": "L_highlight",
-        "original_part_id": "L_highlight",
-        "experiment_id": "part-purity-001",
-        "ko_name": "왼쪽 눈 하이라이트",
-        "group": "eyes",
-        "section": "production_parts",
-        "role": "highlight",
-        "side": "L",
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/L_highlight.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          837,
-          659,
-          36,
-          34
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 1.0,
-        "draw_order": 90,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "left eye catchlight only"
-        ],
-        "forbidden_contamination": [
-          "iris",
-          "pupil",
-          "eye_white"
-        ],
-        "suggested_generation_mode": "mask_cleanup_or_regenerate"
-      },
-      {
-        "part_id": "R_highlight",
-        "original_part_id": "R_highlight",
-        "experiment_id": "part-purity-001",
-        "ko_name": "오른쪽 눈 하이라이트",
-        "group": "eyes",
-        "section": "production_parts",
-        "role": "highlight",
-        "side": "R",
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/R_highlight.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          1178,
-          659,
-          36,
-          34
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 1.0,
-        "draw_order": 91,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "right eye catchlight only"
-        ],
-        "forbidden_contamination": [
-          "iris",
-          "pupil",
-          "eye_white"
-        ],
-        "suggested_generation_mode": "mask_cleanup_or_regenerate"
-      },
-      {
-        "part_id": "L_upper_lash",
-        "original_part_id": "L_upper_lash",
-        "experiment_id": "part-purity-001",
-        "ko_name": "왼쪽 윗속눈썹",
-        "group": "eyes",
-        "section": "production_parts",
-        "role": "upper_lash",
-        "side": "L",
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/L_upper_lash.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          742,
-          626,
-          208,
-          70
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 1.0,
-        "draw_order": 100,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "upper lash line only"
-        ],
-        "forbidden_contamination": [
-          "hair",
-          "skin",
-          "eye_white",
-          "iris"
-        ],
-        "suggested_generation_mode": "mask_cleanup_or_regenerate"
-      },
-      {
-        "part_id": "R_upper_lash",
-        "original_part_id": "R_upper_lash",
-        "experiment_id": "part-purity-001",
-        "ko_name": "오른쪽 윗속눈썹",
-        "group": "eyes",
-        "section": "production_parts",
-        "role": "upper_lash",
-        "side": "R",
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/R_upper_lash.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          1083,
-          626,
-          208,
-          70
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 1.0,
-        "draw_order": 101,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "upper lash line only"
-        ],
-        "forbidden_contamination": [
-          "hair",
-          "skin",
-          "eye_white",
-          "iris"
-        ],
-        "suggested_generation_mode": "mask_cleanup_or_regenerate"
-      },
-      {
-        "part_id": "L_lower_lash",
-        "original_part_id": "L_lower_lash",
-        "experiment_id": "part-purity-001",
-        "ko_name": "왼쪽 아랫속눈썹",
-        "group": "eyes",
-        "section": "production_parts",
-        "role": "lower_lash",
-        "side": "L",
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/L_lower_lash.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          742,
-          698,
-          208,
-          58
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 1.0,
-        "draw_order": 110,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "lower lash line only"
-        ],
-        "forbidden_contamination": [
-          "hair",
-          "skin",
-          "eye_white",
-          "iris"
-        ],
-        "suggested_generation_mode": "mask_cleanup_or_regenerate"
-      },
-      {
-        "part_id": "R_lower_lash",
-        "original_part_id": "R_lower_lash",
-        "experiment_id": "part-purity-001",
-        "ko_name": "오른쪽 아랫속눈썹",
-        "group": "eyes",
-        "section": "production_parts",
-        "role": "lower_lash",
-        "side": "R",
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/R_lower_lash.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          1083,
-          698,
-          208,
-          58
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 1.0,
-        "draw_order": 111,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "lower lash line only"
-        ],
-        "forbidden_contamination": [
-          "hair",
-          "skin",
-          "eye_white",
-          "iris"
-        ],
-        "suggested_generation_mode": "mask_cleanup_or_regenerate"
-      },
-      {
-        "part_id": "L_brow",
-        "original_part_id": "L_brow",
-        "experiment_id": "part-purity-001",
-        "ko_name": "왼쪽 눈썹",
-        "group": "brows",
-        "section": "production_parts",
-        "role": "brow",
-        "side": "L",
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/L_brow.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          732,
-          536,
-          228,
-          70
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 1.0,
-        "draw_order": 120,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "left brow only"
-        ],
-        "forbidden_contamination": [
-          "hair",
-          "skin",
-          "lash"
-        ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
-      },
-      {
-        "part_id": "R_brow",
-        "original_part_id": "R_brow",
-        "experiment_id": "part-purity-001",
-        "ko_name": "오른쪽 눈썹",
-        "group": "brows",
-        "section": "production_parts",
-        "role": "brow",
-        "side": "R",
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/R_brow.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          1073,
-          536,
-          228,
-          70
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 1.0,
-        "draw_order": 121,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "right brow only"
-        ],
-        "forbidden_contamination": [
-          "hair",
-          "skin",
-          "lash"
-        ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
-      },
-      {
-        "part_id": "mouth_line",
-        "original_part_id": "mouth_line",
-        "experiment_id": "part-purity-001",
-        "ko_name": "입 라인",
-        "group": "mouth",
-        "section": "production_parts",
-        "role": "mouth_line",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/mouth_line.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          947,
-          907,
-          206,
-          136
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 1.0,
-        "draw_order": 130,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "mouth outline and lip line only"
-        ],
-        "forbidden_contamination": [
-          "teeth",
-          "tongue",
-          "skin"
-        ],
-        "suggested_generation_mode": "mask_cleanup_or_regenerate"
-      },
-      {
-        "part_id": "mouth_inner",
-        "original_part_id": "mouth_inner",
-        "experiment_id": "part-purity-001",
-        "ko_name": "입 안쪽",
-        "group": "mouth",
-        "section": "production_parts",
-        "role": "mouth_inner",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/mouth_inner.png",
-        "source_path": "/assets/experiments/mouth-apply-delta-001/layers/set_a_stylematch_wide_open_corrected_full.png",
-        "canonical_path": "/assets/experiments/mouth-apply-delta-001/layers/set_a_stylematch_wide_open_corrected_full.png",
-        "overlay_path": null,
-        "bbox": [
-          987,
-          943,
-          74,
-          76
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.861309,
-        "draw_order": 131,
-        "status": "OBSERVED",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "dark mouth cavity only"
-        ],
-        "forbidden_contamination": [
-          "teeth",
-          "tongue",
-          "skin",
-          "cropped_line"
-        ],
-        "suggested_generation_mode": "mask_cleanup_or_regenerate"
-      },
-      {
-        "part_id": "teeth",
-        "original_part_id": "teeth",
-        "experiment_id": "part-purity-001",
-        "ko_name": "치아",
-        "group": "mouth",
-        "section": "production_parts",
-        "role": "teeth",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/teeth.png",
-        "source_path": "/assets/experiments/mouth-apply-delta-001/layers/set_a_stylematch_wide_open_corrected_full.png",
-        "canonical_path": "/assets/experiments/mouth-apply-delta-001/layers/set_a_stylematch_wide_open_corrected_full.png",
-        "overlay_path": null,
-        "bbox": [
-          997,
-          943,
-          64,
-          18
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.819444,
-        "draw_order": 132,
-        "status": "OBSERVED",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "teeth only"
-        ],
-        "forbidden_contamination": [
-          "tongue",
-          "mouth_line",
-          "skin"
-        ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
-      },
-      {
-        "part_id": "tongue",
-        "original_part_id": "tongue",
-        "experiment_id": "part-purity-001",
-        "ko_name": "혀",
-        "group": "mouth",
-        "section": "production_parts",
-        "role": "tongue",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/tongue.png",
-        "source_path": "/assets/experiments/mouth-apply-delta-001/layers/set_a_stylematch_wide_open_corrected_full.png",
-        "canonical_path": "/assets/experiments/mouth-apply-delta-001/layers/set_a_stylematch_wide_open_corrected_full.png",
-        "overlay_path": null,
-        "bbox": [
-          1001,
-          977,
-          57,
-          34
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.881837,
-        "draw_order": 133,
-        "status": "OBSERVED",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "tongue only"
-        ],
-        "forbidden_contamination": [
-          "teeth",
-          "mouth_line",
-          "skin"
-        ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
-      },
-      {
-        "part_id": "L_side_hair",
-        "original_part_id": "L_side_hair",
-        "experiment_id": "part-purity-001",
-        "ko_name": "왼쪽 옆머리",
-        "group": "hair",
-        "section": "production_parts",
-        "role": "side_hair",
-        "side": "L",
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/L_side_hair.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          266,
-          392,
-          340,
-          1185
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.415912,
-        "draw_order": 140,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "left side hair lock only"
-        ],
-        "forbidden_contamination": [
-          "face",
-          "eye",
-          "brow",
-          "back_hair"
-        ],
-        "suggested_generation_mode": "part_mask_regeneration"
-      },
-      {
-        "part_id": "R_side_hair",
-        "original_part_id": "R_side_hair",
-        "experiment_id": "part-purity-001",
-        "ko_name": "오른쪽 옆머리",
-        "group": "hair",
-        "section": "production_parts",
-        "role": "side_hair",
-        "side": "R",
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/R_side_hair.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          1429,
-          362,
-          353,
-          1215
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.410786,
-        "draw_order": 141,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "right side hair lock only"
-        ],
-        "forbidden_contamination": [
-          "face",
-          "eye",
-          "brow",
-          "back_hair"
-        ],
-        "suggested_generation_mode": "part_mask_regeneration"
-      },
-      {
-        "part_id": "front_hair",
+        "part_id": "g0__candidate_01",
         "original_part_id": "front_hair",
-        "experiment_id": "part-purity-001",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
         "ko_name": "앞머리",
         "group": "hair",
-        "section": "production_parts",
+        "section": "g0_concept",
         "role": "front_hair",
         "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/production_layers/front_hair.png",
-        "source_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__front_hair.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_front hair.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
         "overlay_path": null,
-        "bbox": [
-          555,
-          91,
-          938,
-          492
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.768928,
-        "draw_order": 150,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "front bangs only"
-        ],
-        "forbidden_contamination": [
-          "face",
-          "eye",
-          "brow",
-          "side_hair",
-          "back_hair"
-        ],
-        "suggested_generation_mode": "part_mask_regeneration"
-      }
-    ],
-    "reference_mouth": [
-      {
-        "part_id": "set_a_stylematch_happy_open_corrected_full",
-        "original_part_id": "set_a_stylematch_happy_open_corrected_full",
-        "experiment_id": "part-purity-001",
-        "ko_name": "웃는 열린 입 참고",
-        "group": "reference_mouth",
-        "section": "reference_mouth",
-        "role": "mouth_keypose_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/mouth/set_a_stylematch_happy_open_corrected_full.png",
-        "source_path": "/assets/experiments/mouth-apply-delta-001/layers/set_a_stylematch_happy_open_corrected_full.png",
-        "canonical_path": "/assets/experiments/mouth-apply-delta-001/layers/set_a_stylematch_happy_open_corrected_full.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_a_stylematch_happy_open_corrected_overlay.png",
-        "bbox": [
-          947,
-          946,
-          132,
-          83
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.712851,
-        "draw_order": 0,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "reference key-pose guide only"
-        ],
-        "forbidden_contamination": [
-          "production layer pixels",
-          "guide overlay pixels"
-        ],
-        "suggested_generation_mode": "reference_regeneration"
-      },
-      {
-        "part_id": "set_a_stylematch_neutral_smile_corrected_full",
-        "original_part_id": "set_a_stylematch_neutral_smile_corrected_full",
-        "experiment_id": "part-purity-001",
-        "ko_name": "기본 미소 입 참고",
-        "group": "reference_mouth",
-        "section": "reference_mouth",
-        "role": "mouth_keypose_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/mouth/set_a_stylematch_neutral_smile_corrected_full.png",
-        "source_path": "/assets/experiments/mouth-apply-delta-001/layers/set_a_stylematch_neutral_smile_corrected_full.png",
-        "canonical_path": "/assets/experiments/mouth-apply-delta-001/layers/set_a_stylematch_neutral_smile_corrected_full.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_a_stylematch_neutral_smile_corrected_overlay.png",
-        "bbox": [
-          947,
-          968,
-          131,
-          23
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.303352,
-        "draw_order": 0,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "reference key-pose guide only"
-        ],
-        "forbidden_contamination": [
-          "production layer pixels",
-          "guide overlay pixels"
-        ],
-        "suggested_generation_mode": "reference_regeneration"
-      },
-      {
-        "part_id": "set_a_stylematch_o_vowel_corrected_full",
-        "original_part_id": "set_a_stylematch_o_vowel_corrected_full",
-        "experiment_id": "part-purity-001",
-        "ko_name": "오 발음 입 참고",
-        "group": "reference_mouth",
-        "section": "reference_mouth",
-        "role": "mouth_keypose_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/mouth/set_a_stylematch_o_vowel_corrected_full.png",
-        "source_path": "/assets/experiments/mouth-apply-delta-001/layers/set_a_stylematch_o_vowel_corrected_full.png",
-        "canonical_path": "/assets/experiments/mouth-apply-delta-001/layers/set_a_stylematch_o_vowel_corrected_full.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_a_stylematch_o_vowel_corrected_overlay.png",
-        "bbox": [
-          987,
-          939,
-          51,
-          87
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.762001,
-        "draw_order": 0,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "reference key-pose guide only"
-        ],
-        "forbidden_contamination": [
-          "production layer pixels",
-          "guide overlay pixels"
-        ],
-        "suggested_generation_mode": "reference_regeneration"
-      },
-      {
-        "part_id": "set_a_stylematch_small_open_corrected_full",
-        "original_part_id": "set_a_stylematch_small_open_corrected_full",
-        "experiment_id": "part-purity-001",
-        "ko_name": "작게 열린 입 참고",
-        "group": "reference_mouth",
-        "section": "reference_mouth",
-        "role": "mouth_keypose_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/mouth/set_a_stylematch_small_open_corrected_full.png",
-        "source_path": "/assets/experiments/mouth-apply-delta-001/layers/set_a_stylematch_small_open_corrected_full.png",
-        "canonical_path": "/assets/experiments/mouth-apply-delta-001/layers/set_a_stylematch_small_open_corrected_full.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_a_stylematch_small_open_corrected_overlay.png",
-        "bbox": [
-          947,
-          956,
-          132,
-          58
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.70977,
-        "draw_order": 0,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "reference key-pose guide only"
-        ],
-        "forbidden_contamination": [
-          "production layer pixels",
-          "guide overlay pixels"
-        ],
-        "suggested_generation_mode": "reference_regeneration"
-      },
-      {
-        "part_id": "set_a_stylematch_wide_open_corrected_full",
-        "original_part_id": "set_a_stylematch_wide_open_corrected_full",
-        "experiment_id": "part-purity-001",
-        "ko_name": "크게 열린 입 참고",
-        "group": "reference_mouth",
-        "section": "reference_mouth",
-        "role": "mouth_keypose_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/mouth/set_a_stylematch_wide_open_corrected_full.png",
-        "source_path": "/assets/experiments/mouth-apply-delta-001/layers/set_a_stylematch_wide_open_corrected_full.png",
-        "canonical_path": "/assets/experiments/mouth-apply-delta-001/layers/set_a_stylematch_wide_open_corrected_full.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_a_stylematch_wide_open_corrected_overlay.png",
-        "bbox": [
-          964,
-          943,
-          97,
-          87
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.73741,
-        "draw_order": 0,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "reference key-pose guide only"
-        ],
-        "forbidden_contamination": [
-          "production layer pixels",
-          "guide overlay pixels"
-        ],
-        "suggested_generation_mode": "reference_regeneration"
-      },
-      {
-        "part_id": "set_b_simple_happy_open_corrected_full",
-        "original_part_id": "set_b_simple_happy_open_corrected_full",
-        "experiment_id": "part-purity-001",
-        "ko_name": "웃는 열린 입 참고",
-        "group": "reference_mouth",
-        "section": "reference_mouth",
-        "role": "mouth_keypose_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/mouth/set_b_simple_happy_open_corrected_full.png",
-        "source_path": "/assets/experiments/mouth-apply-delta-001/layers/set_b_simple_happy_open_corrected_full.png",
-        "canonical_path": "/assets/experiments/mouth-apply-delta-001/layers/set_b_simple_happy_open_corrected_full.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_b_simple_happy_open_corrected_overlay.png",
-        "bbox": [
-          947,
-          946,
-          131,
-          83
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.765934,
-        "draw_order": 0,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "reference key-pose guide only"
-        ],
-        "forbidden_contamination": [
-          "production layer pixels",
-          "guide overlay pixels"
-        ],
-        "suggested_generation_mode": "reference_regeneration"
-      },
-      {
-        "part_id": "set_b_simple_neutral_smile_corrected_full",
-        "original_part_id": "set_b_simple_neutral_smile_corrected_full",
-        "experiment_id": "part-purity-001",
-        "ko_name": "기본 미소 입 참고",
-        "group": "reference_mouth",
-        "section": "reference_mouth",
-        "role": "mouth_keypose_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/mouth/set_b_simple_neutral_smile_corrected_full.png",
-        "source_path": "/assets/experiments/mouth-apply-delta-001/layers/set_b_simple_neutral_smile_corrected_full.png",
-        "canonical_path": "/assets/experiments/mouth-apply-delta-001/layers/set_b_simple_neutral_smile_corrected_full.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_b_simple_neutral_smile_corrected_overlay.png",
-        "bbox": [
-          947,
-          967,
-          131,
-          25
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.414962,
-        "draw_order": 0,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "reference key-pose guide only"
-        ],
-        "forbidden_contamination": [
-          "production layer pixels",
-          "guide overlay pixels"
-        ],
-        "suggested_generation_mode": "reference_regeneration"
-      },
-      {
-        "part_id": "set_b_simple_o_vowel_corrected_full",
-        "original_part_id": "set_b_simple_o_vowel_corrected_full",
-        "experiment_id": "part-purity-001",
-        "ko_name": "오 발음 입 참고",
-        "group": "reference_mouth",
-        "section": "reference_mouth",
-        "role": "mouth_keypose_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/mouth/set_b_simple_o_vowel_corrected_full.png",
-        "source_path": "/assets/experiments/mouth-apply-delta-001/layers/set_b_simple_o_vowel_corrected_full.png",
-        "canonical_path": "/assets/experiments/mouth-apply-delta-001/layers/set_b_simple_o_vowel_corrected_full.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_b_simple_o_vowel_corrected_overlay.png",
-        "bbox": [
-          983,
-          939,
-          60,
-          86
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.800775,
-        "draw_order": 0,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "reference key-pose guide only"
-        ],
-        "forbidden_contamination": [
-          "production layer pixels",
-          "guide overlay pixels"
-        ],
-        "suggested_generation_mode": "reference_regeneration"
-      },
-      {
-        "part_id": "set_b_simple_small_open_corrected_full",
-        "original_part_id": "set_b_simple_small_open_corrected_full",
-        "experiment_id": "part-purity-001",
-        "ko_name": "작게 열린 입 참고",
-        "group": "reference_mouth",
-        "section": "reference_mouth",
-        "role": "mouth_keypose_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/mouth/set_b_simple_small_open_corrected_full.png",
-        "source_path": "/assets/experiments/mouth-apply-delta-001/layers/set_b_simple_small_open_corrected_full.png",
-        "canonical_path": "/assets/experiments/mouth-apply-delta-001/layers/set_b_simple_small_open_corrected_full.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_b_simple_small_open_corrected_overlay.png",
-        "bbox": [
-          947,
-          948,
-          132,
-          74
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.752559,
-        "draw_order": 0,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "reference key-pose guide only"
-        ],
-        "forbidden_contamination": [
-          "production layer pixels",
-          "guide overlay pixels"
-        ],
-        "suggested_generation_mode": "reference_regeneration"
-      },
-      {
-        "part_id": "set_b_simple_wide_open_corrected_full",
-        "original_part_id": "set_b_simple_wide_open_corrected_full",
-        "experiment_id": "part-purity-001",
-        "ko_name": "크게 열린 입 참고",
-        "group": "reference_mouth",
-        "section": "reference_mouth",
-        "role": "mouth_keypose_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/mouth/set_b_simple_wide_open_corrected_full.png",
-        "source_path": "/assets/experiments/mouth-apply-delta-001/layers/set_b_simple_wide_open_corrected_full.png",
-        "canonical_path": "/assets/experiments/mouth-apply-delta-001/layers/set_b_simple_wide_open_corrected_full.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_b_simple_wide_open_corrected_overlay.png",
-        "bbox": [
-          968,
-          942,
-          90,
-          86
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.814729,
-        "draw_order": 0,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "reference key-pose guide only"
-        ],
-        "forbidden_contamination": [
-          "production layer pixels",
-          "guide overlay pixels"
-        ],
-        "suggested_generation_mode": "reference_regeneration"
-      }
-    ],
-    "reference_blink": [
-      {
-        "part_id": "blink_closed_corrected_full",
-        "original_part_id": "blink_closed_corrected_full",
-        "experiment_id": "part-purity-001",
-        "ko_name": "눈감음 참고",
-        "group": "reference_blink",
-        "section": "reference_blink",
-        "role": "blink_keypose_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/blink/blink_closed_corrected_full.png",
-        "source_path": "/assets/experiments/blink-apply-review-001/layers/blink_closed_corrected_full.png",
-        "canonical_path": "/assets/experiments/blink-apply-review-001/layers/blink_closed_corrected_full.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/blink_closed_corrected_overlay.png",
-        "bbox": [
-          741,
-          739,
-          545,
-          57
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.516787,
-        "draw_order": 0,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "reference key-pose guide only"
-        ],
-        "forbidden_contamination": [
-          "production layer pixels",
-          "guide overlay pixels"
-        ],
-        "suggested_generation_mode": "reference_regeneration"
-      },
-      {
-        "part_id": "blink_half_corrected_full",
-        "original_part_id": "blink_half_corrected_full",
-        "experiment_id": "part-purity-001",
-        "ko_name": "반쯤 감은 눈 참고",
-        "group": "reference_blink",
-        "section": "reference_blink",
-        "role": "blink_keypose_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/blink/blink_half_corrected_full.png",
-        "source_path": "/assets/experiments/blink-apply-review-001/layers/blink_half_corrected_full.png",
-        "canonical_path": "/assets/experiments/blink-apply-review-001/layers/blink_half_corrected_full.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/blink_half_corrected_overlay.png",
-        "bbox": [
-          741,
-          712,
-          545,
-          113
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.485167,
-        "draw_order": 0,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "reference key-pose guide only"
-        ],
-        "forbidden_contamination": [
-          "production layer pixels",
-          "guide overlay pixels"
-        ],
-        "suggested_generation_mode": "reference_regeneration"
-      },
-      {
-        "part_id": "blink_mostly_closed_corrected_full",
-        "original_part_id": "blink_mostly_closed_corrected_full",
-        "experiment_id": "part-purity-001",
-        "ko_name": "거의 감은 눈 참고",
-        "group": "reference_blink",
-        "section": "reference_blink",
-        "role": "blink_keypose_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/blink/blink_mostly_closed_corrected_full.png",
-        "source_path": "/assets/experiments/blink-apply-review-001/layers/blink_mostly_closed_corrected_full.png",
-        "canonical_path": "/assets/experiments/blink-apply-review-001/layers/blink_mostly_closed_corrected_full.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/blink_mostly_closed_corrected_overlay.png",
-        "bbox": [
-          741,
-          727,
-          545,
-          82
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.520452,
-        "draw_order": 0,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "reference key-pose guide only"
-        ],
-        "forbidden_contamination": [
-          "production layer pixels",
-          "guide overlay pixels"
-        ],
-        "suggested_generation_mode": "reference_regeneration"
-      }
-    ],
-    "overlays": [
-      {
-        "part_id": "blink_closed_corrected_overlay",
-        "ko_name": "오버레이 비교",
-        "group": "overlays",
-        "section": "overlays",
-        "role": "overlay_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/blink_closed_corrected_overlay.png",
-        "source_path": null,
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/blink_closed_corrected_overlay.png",
         "bbox": null,
         "canvas_size": [
           2048,
           2048
         ],
-        "alpha_coverage": null,
-        "draw_order": null,
-        "status": "REFERENCE_ONLY",
+        "alpha_coverage": 0.0,
+        "draw_order": 300,
+        "status": "OBSERVED",
         "include_in_import_psd": false,
         "allowed_features": [
-          "visual comparison overlay only"
+          "앞머리만 있어야 함"
         ],
         "forbidden_contamination": [
-          "production import pixels"
+          "다른 파츠",
+          "배경",
+          "잘린 선"
         ],
-        "suggested_generation_mode": "overlay_review_only"
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REVIEW_PRIORITY",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": true,
+        "tier": "v2_min",
+        "review_gate": "G0_CONCEPT",
+        "simple_label": "캐릭터 후보 1",
+        "simple_description": "캐릭터가 버튜버로 만들기 좋은지 먼저 고릅니다.",
+        "checklist": [
+          "눈, 입, 머리카락, 몸이 한눈에 보이나요?",
+          "그림체와 비율이 마음에 드나요?",
+          "팔이나 머리카락이 너무 복잡하게 겹치지 않나요?"
+        ],
+        "compare_views": {
+          "neutral": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__front_hair.png",
+          "extreme": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__front_hair.png"
+        },
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "bad_alpha",
+          "clipping_risk",
+          "missing_part"
+        ]
       },
       {
-        "part_id": "blink_half_corrected_overlay",
-        "ko_name": "오버레이 비교",
-        "group": "overlays",
-        "section": "overlays",
-        "role": "overlay_reference",
+        "part_id": "g0__candidate_02",
+        "original_part_id": "raw_legwear",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "raw legwear",
+        "group": "ears",
+        "section": "g0_concept",
+        "role": "seethrough_reference",
         "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/blink_half_corrected_overlay.png",
-        "source_path": null,
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/blink_half_corrected_overlay.png",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__raw_legwear.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_legwear.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+        "overlay_path": null,
         "bbox": null,
         "canvas_size": [
           2048,
           2048
         ],
-        "alpha_coverage": null,
-        "draw_order": null,
+        "alpha_coverage": 0.0,
+        "draw_order": 301,
         "status": "REFERENCE_ONLY",
         "include_in_import_psd": false,
         "allowed_features": [
-          "visual comparison overlay only"
+          "raw legwear만 있어야 함"
         ],
         "forbidden_contamination": [
-          "production import pixels"
+          "다른 파츠",
+          "배경",
+          "잘린 선"
         ],
-        "suggested_generation_mode": "overlay_review_only"
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REFERENCE_REVIEW",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": false,
+        "tier": "v2_min",
+        "review_gate": "G0_CONCEPT",
+        "simple_label": "캐릭터 후보 2",
+        "simple_description": "캐릭터가 버튜버로 만들기 좋은지 먼저 고릅니다.",
+        "checklist": [
+          "눈, 입, 머리카락, 몸이 한눈에 보이나요?",
+          "그림체와 비율이 마음에 드나요?",
+          "팔이나 머리카락이 너무 복잡하게 겹치지 않나요?"
+        ],
+        "compare_views": {
+          "neutral": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__raw_legwear.png",
+          "extreme": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__raw_legwear.png"
+        },
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "bad_alpha",
+          "missing_part"
+        ]
       },
       {
-        "part_id": "blink_mostly_closed_corrected_overlay",
-        "ko_name": "오버레이 비교",
-        "group": "overlays",
-        "section": "overlays",
-        "role": "overlay_reference",
+        "part_id": "g0__candidate_03",
+        "original_part_id": "raw_footwear",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "raw footwear",
+        "group": "ears",
+        "section": "g0_concept",
+        "role": "seethrough_reference",
         "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/blink_mostly_closed_corrected_overlay.png",
-        "source_path": null,
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/blink_mostly_closed_corrected_overlay.png",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__raw_footwear.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_footwear.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+        "overlay_path": null,
         "bbox": null,
         "canvas_size": [
           2048,
           2048
         ],
-        "alpha_coverage": null,
-        "draw_order": null,
+        "alpha_coverage": 0.0,
+        "draw_order": 302,
         "status": "REFERENCE_ONLY",
         "include_in_import_psd": false,
         "allowed_features": [
-          "visual comparison overlay only"
+          "raw footwear만 있어야 함"
         ],
         "forbidden_contamination": [
-          "production import pixels"
+          "다른 파츠",
+          "배경",
+          "잘린 선"
         ],
-        "suggested_generation_mode": "overlay_review_only"
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REFERENCE_REVIEW",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": false,
+        "tier": "v2_min",
+        "review_gate": "G0_CONCEPT",
+        "simple_label": "캐릭터 후보 3",
+        "simple_description": "캐릭터가 버튜버로 만들기 좋은지 먼저 고릅니다.",
+        "checklist": [
+          "눈, 입, 머리카락, 몸이 한눈에 보이나요?",
+          "그림체와 비율이 마음에 드나요?",
+          "팔이나 머리카락이 너무 복잡하게 겹치지 않나요?"
+        ],
+        "compare_views": {
+          "neutral": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__raw_footwear.png",
+          "extreme": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__raw_footwear.png"
+        },
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "bad_alpha",
+          "missing_part"
+        ]
       },
       {
-        "part_id": "set_a_stylematch_happy_open_corrected_overlay",
-        "ko_name": "오버레이 비교",
-        "group": "overlays",
-        "section": "overlays",
-        "role": "overlay_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_a_stylematch_happy_open_corrected_overlay.png",
-        "source_path": null,
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_a_stylematch_happy_open_corrected_overlay.png",
-        "bbox": null,
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": null,
-        "draw_order": null,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "visual comparison overlay only"
-        ],
-        "forbidden_contamination": [
-          "production import pixels"
-        ],
-        "suggested_generation_mode": "overlay_review_only"
-      },
-      {
-        "part_id": "set_a_stylematch_neutral_smile_corrected_overlay",
-        "ko_name": "오버레이 비교",
-        "group": "overlays",
-        "section": "overlays",
-        "role": "overlay_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_a_stylematch_neutral_smile_corrected_overlay.png",
-        "source_path": null,
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_a_stylematch_neutral_smile_corrected_overlay.png",
-        "bbox": null,
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": null,
-        "draw_order": null,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "visual comparison overlay only"
-        ],
-        "forbidden_contamination": [
-          "production import pixels"
-        ],
-        "suggested_generation_mode": "overlay_review_only"
-      },
-      {
-        "part_id": "set_a_stylematch_o_vowel_corrected_overlay",
-        "ko_name": "오버레이 비교",
-        "group": "overlays",
-        "section": "overlays",
-        "role": "overlay_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_a_stylematch_o_vowel_corrected_overlay.png",
-        "source_path": null,
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_a_stylematch_o_vowel_corrected_overlay.png",
-        "bbox": null,
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": null,
-        "draw_order": null,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "visual comparison overlay only"
-        ],
-        "forbidden_contamination": [
-          "production import pixels"
-        ],
-        "suggested_generation_mode": "overlay_review_only"
-      },
-      {
-        "part_id": "set_a_stylematch_small_open_corrected_overlay",
-        "ko_name": "오버레이 비교",
-        "group": "overlays",
-        "section": "overlays",
-        "role": "overlay_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_a_stylematch_small_open_corrected_overlay.png",
-        "source_path": null,
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_a_stylematch_small_open_corrected_overlay.png",
-        "bbox": null,
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": null,
-        "draw_order": null,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "visual comparison overlay only"
-        ],
-        "forbidden_contamination": [
-          "production import pixels"
-        ],
-        "suggested_generation_mode": "overlay_review_only"
-      },
-      {
-        "part_id": "set_a_stylematch_wide_open_corrected_overlay",
-        "ko_name": "오버레이 비교",
-        "group": "overlays",
-        "section": "overlays",
-        "role": "overlay_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_a_stylematch_wide_open_corrected_overlay.png",
-        "source_path": null,
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_a_stylematch_wide_open_corrected_overlay.png",
-        "bbox": null,
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": null,
-        "draw_order": null,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "visual comparison overlay only"
-        ],
-        "forbidden_contamination": [
-          "production import pixels"
-        ],
-        "suggested_generation_mode": "overlay_review_only"
-      },
-      {
-        "part_id": "set_b_simple_happy_open_corrected_overlay",
-        "ko_name": "오버레이 비교",
-        "group": "overlays",
-        "section": "overlays",
-        "role": "overlay_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_b_simple_happy_open_corrected_overlay.png",
-        "source_path": null,
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_b_simple_happy_open_corrected_overlay.png",
-        "bbox": null,
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": null,
-        "draw_order": null,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "visual comparison overlay only"
-        ],
-        "forbidden_contamination": [
-          "production import pixels"
-        ],
-        "suggested_generation_mode": "overlay_review_only"
-      },
-      {
-        "part_id": "set_b_simple_neutral_smile_corrected_overlay",
-        "ko_name": "오버레이 비교",
-        "group": "overlays",
-        "section": "overlays",
-        "role": "overlay_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_b_simple_neutral_smile_corrected_overlay.png",
-        "source_path": null,
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_b_simple_neutral_smile_corrected_overlay.png",
-        "bbox": null,
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": null,
-        "draw_order": null,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "visual comparison overlay only"
-        ],
-        "forbidden_contamination": [
-          "production import pixels"
-        ],
-        "suggested_generation_mode": "overlay_review_only"
-      },
-      {
-        "part_id": "set_b_simple_o_vowel_corrected_overlay",
-        "ko_name": "오버레이 비교",
-        "group": "overlays",
-        "section": "overlays",
-        "role": "overlay_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_b_simple_o_vowel_corrected_overlay.png",
-        "source_path": null,
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_b_simple_o_vowel_corrected_overlay.png",
-        "bbox": null,
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": null,
-        "draw_order": null,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "visual comparison overlay only"
-        ],
-        "forbidden_contamination": [
-          "production import pixels"
-        ],
-        "suggested_generation_mode": "overlay_review_only"
-      },
-      {
-        "part_id": "set_b_simple_small_open_corrected_overlay",
-        "ko_name": "오버레이 비교",
-        "group": "overlays",
-        "section": "overlays",
-        "role": "overlay_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_b_simple_small_open_corrected_overlay.png",
-        "source_path": null,
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_b_simple_small_open_corrected_overlay.png",
-        "bbox": null,
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": null,
-        "draw_order": null,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "visual comparison overlay only"
-        ],
-        "forbidden_contamination": [
-          "production import pixels"
-        ],
-        "suggested_generation_mode": "overlay_review_only"
-      },
-      {
-        "part_id": "set_b_simple_wide_open_corrected_overlay",
-        "ko_name": "오버레이 비교",
-        "group": "overlays",
-        "section": "overlays",
-        "role": "overlay_reference",
-        "side": null,
-        "image_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_b_simple_wide_open_corrected_overlay.png",
-        "source_path": null,
-        "canonical_path": "/assets/experiments/production-canvas-2048-001/canonical/canonical_front_2048.png",
-        "overlay_path": "/assets/experiments/cubism-material-pack-001/reference_pack/overlays/set_b_simple_wide_open_corrected_overlay.png",
-        "bbox": null,
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": null,
-        "draw_order": null,
-        "status": "REFERENCE_ONLY",
-        "include_in_import_psd": false,
-        "allowed_features": [
-          "visual comparison overlay only"
-        ],
-        "forbidden_contamination": [
-          "production import pixels"
-        ],
-        "suggested_generation_mode": "overlay_review_only"
-      }
-    ],
-    "concept_parts": [
-      {
-        "part_id": "concept__face_underpaint",
-        "original_part_id": "face_underpaint",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "얼굴 언더페인트",
+        "part_id": "g0__candidate_04",
+        "original_part_id": "tail_reference",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "tail reference",
         "group": "face",
-        "section": "concept_parts",
-        "role": "face",
+        "section": "g0_concept",
+        "role": "seethrough_reference",
         "side": null,
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_smoke/face_underpaint.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__tail_reference.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_tail.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
         "overlay_path": null,
-        "bbox": [
-          700,
-          610,
-          682,
-          652
-        ],
+        "bbox": null,
         "canvas_size": [
           2048,
           2048
         ],
-        "alpha_coverage": 0.785258,
-        "draw_order": 100,
-        "status": "O",
-        "include_in_import_psd": true,
+        "alpha_coverage": 0.0,
+        "draw_order": 303,
+        "status": "REFERENCE_ONLY",
+        "include_in_import_psd": false,
         "allowed_features": [
-          "hidden skin fill behind face parts"
+          "tail reference만 있어야 함"
         ],
         "forbidden_contamination": [
-          "hair",
-          "eyes",
-          "mouth",
-          "clothes"
+          "다른 파츠",
+          "배경",
+          "잘린 선"
         ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REFERENCE_REVIEW",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": false,
+        "tier": "v2_min",
+        "review_gate": "G0_CONCEPT",
+        "simple_label": "캐릭터 후보 4",
+        "simple_description": "캐릭터가 버튜버로 만들기 좋은지 먼저 고릅니다.",
+        "checklist": [
+          "눈, 입, 머리카락, 몸이 한눈에 보이나요?",
+          "그림체와 비율이 마음에 드나요?",
+          "팔이나 머리카락이 너무 복잡하게 겹치지 않나요?"
+        ],
+        "compare_views": {
+          "neutral": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__tail_reference.png",
+          "extreme": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__tail_reference.png"
+        },
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "bad_alpha",
+          "missing_part"
+        ]
       },
       {
-        "part_id": "concept__back_hair",
-        "original_part_id": "back_hair",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "뒷머리",
-        "group": "hair",
-        "section": "concept_parts",
-        "role": "hair",
+        "part_id": "g0__candidate_05",
+        "original_part_id": "wings_reference",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "wings reference",
+        "group": "face",
+        "section": "g0_concept",
+        "role": "seethrough_reference",
         "side": null,
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/back_hair.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__wings_reference.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_wings.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
         "overlay_path": null,
-        "bbox": [
-          260,
-          120,
-          1531,
-          1581
-        ],
+        "bbox": null,
         "canvas_size": [
           2048,
           2048
         ],
-        "alpha_coverage": 0.999784,
-        "draw_order": 101,
-        "status": "REVISE",
-        "include_in_import_psd": true,
+        "alpha_coverage": 0.0,
+        "draw_order": 304,
+        "status": "REFERENCE_ONLY",
+        "include_in_import_psd": false,
         "allowed_features": [
-          "rear hair mass only"
+          "wings reference만 있어야 함"
         ],
         "forbidden_contamination": [
-          "face",
-          "neck",
-          "front_hair",
-          "side_hair"
+          "다른 파츠",
+          "배경",
+          "잘린 선"
         ],
-        "suggested_generation_mode": "part_mask_regeneration"
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REFERENCE_REVIEW",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": false,
+        "tier": "v2_min",
+        "review_gate": "G0_CONCEPT",
+        "simple_label": "캐릭터 후보 5",
+        "simple_description": "캐릭터가 버튜버로 만들기 좋은지 먼저 고릅니다.",
+        "checklist": [
+          "눈, 입, 머리카락, 몸이 한눈에 보이나요?",
+          "그림체와 비율이 마음에 드나요?",
+          "팔이나 머리카락이 너무 복잡하게 겹치지 않나요?"
+        ],
+        "compare_views": {
+          "neutral": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__wings_reference.png",
+          "extreme": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__wings_reference.png"
+        },
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "bad_alpha",
+          "missing_part"
+        ]
       },
       {
-        "part_id": "concept__body",
-        "original_part_id": "body",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "몸통",
-        "group": "body",
-        "section": "concept_parts",
-        "role": "body",
+        "part_id": "g0__candidate_06",
+        "original_part_id": "object_reference",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "object reference",
+        "group": "face",
+        "section": "g0_concept",
+        "role": "seethrough_reference",
         "side": null,
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/body.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__object_reference.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_objects.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
         "overlay_path": null,
-        "bbox": [
-          470,
-          1180,
-          1111,
-          851
-        ],
+        "bbox": null,
         "canvas_size": [
           2048,
           2048
         ],
-        "alpha_coverage": 0.999446,
-        "draw_order": 102,
-        "status": "REVISE",
-        "include_in_import_psd": true,
+        "alpha_coverage": 0.0,
+        "draw_order": 305,
+        "status": "REFERENCE_ONLY",
+        "include_in_import_psd": false,
         "allowed_features": [
-          "body skin and torso base"
+          "object reference만 있어야 함"
         ],
         "forbidden_contamination": [
-          "clothes",
-          "hair",
-          "face"
+          "다른 파츠",
+          "배경",
+          "잘린 선"
         ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
-      },
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REFERENCE_REVIEW",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": false,
+        "tier": "v2_min",
+        "review_gate": "G0_CONCEPT",
+        "simple_label": "캐릭터 후보 6",
+        "simple_description": "캐릭터가 버튜버로 만들기 좋은지 먼저 고릅니다.",
+        "checklist": [
+          "눈, 입, 머리카락, 몸이 한눈에 보이나요?",
+          "그림체와 비율이 마음에 드나요?",
+          "팔이나 머리카락이 너무 복잡하게 겹치지 않나요?"
+        ],
+        "compare_views": {
+          "neutral": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__object_reference.png",
+          "extreme": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__object_reference.png"
+        },
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "bad_alpha",
+          "missing_part"
+        ]
+      }
+    ],
+    "g1_part_taxonomy": [
       {
-        "part_id": "concept__clothes",
-        "original_part_id": "clothes",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "의상",
-        "group": "body",
-        "section": "concept_parts",
-        "role": "body",
+        "part_id": "mini_cubism_dedicated_model_v1_001__tail_reference",
+        "original_part_id": "tail_reference",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "tail reference",
+        "group": "face",
+        "section": "g1_part_taxonomy",
+        "role": "seethrough_reference",
         "side": null,
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/clothes.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__tail_reference.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_tail.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
         "overlay_path": null,
-        "bbox": [
-          620,
-          1180,
-          821,
-          851
-        ],
+        "bbox": null,
         "canvas_size": [
           2048,
           2048
         ],
-        "alpha_coverage": 0.99925,
-        "draw_order": 103,
-        "status": "REVISE",
-        "include_in_import_psd": true,
+        "alpha_coverage": 0.0,
+        "draw_order": 303,
+        "status": "REFERENCE_ONLY",
+        "include_in_import_psd": false,
         "allowed_features": [
-          "clothing pixels only"
+          "tail reference만 있어야 함"
         ],
         "forbidden_contamination": [
-          "skin",
-          "hair",
-          "face"
+          "다른 파츠",
+          "배경",
+          "잘린 선"
         ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REFERENCE_REVIEW",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": false,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "tail reference",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "bad_alpha",
+          "missing_part"
+        ]
       },
       {
-        "part_id": "concept__neck",
+        "part_id": "mini_cubism_dedicated_model_v1_001__wings_reference",
+        "original_part_id": "wings_reference",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "wings reference",
+        "group": "face",
+        "section": "g1_part_taxonomy",
+        "role": "seethrough_reference",
+        "side": null,
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__wings_reference.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_wings.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+        "overlay_path": null,
+        "bbox": null,
+        "canvas_size": [
+          2048,
+          2048
+        ],
+        "alpha_coverage": 0.0,
+        "draw_order": 304,
+        "status": "REFERENCE_ONLY",
+        "include_in_import_psd": false,
+        "allowed_features": [
+          "wings reference만 있어야 함"
+        ],
+        "forbidden_contamination": [
+          "다른 파츠",
+          "배경",
+          "잘린 선"
+        ],
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REFERENCE_REVIEW",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": false,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "wings reference",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "bad_alpha",
+          "missing_part"
+        ]
+      },
+      {
+        "part_id": "mini_cubism_dedicated_model_v1_001__object_reference",
+        "original_part_id": "object_reference",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "object reference",
+        "group": "face",
+        "section": "g1_part_taxonomy",
+        "role": "seethrough_reference",
+        "side": null,
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__object_reference.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_objects.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+        "overlay_path": null,
+        "bbox": null,
+        "canvas_size": [
+          2048,
+          2048
+        ],
+        "alpha_coverage": 0.0,
+        "draw_order": 305,
+        "status": "REFERENCE_ONLY",
+        "include_in_import_psd": false,
+        "allowed_features": [
+          "object reference만 있어야 함"
+        ],
+        "forbidden_contamination": [
+          "다른 파츠",
+          "배경",
+          "잘린 선"
+        ],
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REFERENCE_REVIEW",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": false,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "object reference",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "bad_alpha",
+          "missing_part"
+        ]
+      },
+      {
+        "part_id": "mini_cubism_dedicated_model_v1_001__neck",
         "original_part_id": "neck",
-        "experiment_id": "concept-regeneration-001",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
         "ko_name": "목",
         "group": "face",
-        "section": "concept_parts",
-        "role": "face",
+        "section": "g1_part_taxonomy",
+        "role": "neck",
         "side": null,
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_smoke/neck.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__neck.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_neck.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
         "overlay_path": null,
         "bbox": [
-          900,
-          1130,
-          282,
-          262
+          960,
+          665,
+          119,
+          219
         ],
         "canvas_size": [
           2048,
           2048
         ],
-        "alpha_coverage": 0.967787,
-        "draw_order": 104,
-        "status": "O",
-        "include_in_import_psd": true,
+        "alpha_coverage": 0.871379,
+        "draw_order": 312,
+        "status": "OBSERVED",
+        "include_in_import_psd": false,
         "allowed_features": [
-          "neck skin only"
+          "목만 있어야 함"
         ],
         "forbidden_contamination": [
-          "clothes",
-          "hair",
-          "face_outline"
+          "다른 파츠",
+          "배경",
+          "잘린 선"
         ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REVIEW_PRIORITY",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": true,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "목",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": []
       },
       {
-        "part_id": "concept__face_base",
+        "part_id": "mini_cubism_dedicated_model_v1_001__face_base",
         "original_part_id": "face_base",
-        "experiment_id": "concept-regeneration-001",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
         "ko_name": "얼굴 베이스",
         "group": "face",
-        "section": "concept_parts",
+        "section": "g1_part_taxonomy",
         "role": "face",
         "side": null,
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/face_base.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__face_base.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_face.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
         "overlay_path": null,
         "bbox": [
-          705,
-          600,
-          671,
-          621
+          843,
+          381,
+          351,
+          436
         ],
         "canvas_size": [
           2048,
           2048
         ],
-        "alpha_coverage": 0.785165,
-        "draw_order": 105,
-        "status": "REVISE",
-        "include_in_import_psd": true,
+        "alpha_coverage": 0.756717,
+        "draw_order": 317,
+        "status": "OBSERVED",
+        "include_in_import_psd": false,
         "allowed_features": [
-          "visible face skin and face outline"
+          "얼굴 베이스만 있어야 함"
         ],
         "forbidden_contamination": [
-          "hair",
-          "eyes",
-          "mouth"
+          "다른 파츠",
+          "배경",
+          "잘린 선"
         ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REVIEW_PRIORITY",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": true,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "얼굴 베이스",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": []
       },
       {
-        "part_id": "concept__L_eye_white",
-        "original_part_id": "L_eye_white",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "왼쪽 흰자",
+        "part_id": "mini_cubism_dedicated_model_v1_001__nose_reference",
+        "original_part_id": "nose_reference",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "nose reference",
+        "group": "face",
+        "section": "g1_part_taxonomy",
+        "role": "seethrough_reference",
+        "side": null,
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__nose_reference.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_nose.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+        "overlay_path": null,
+        "bbox": [
+          1000,
+          680,
+          22,
+          26
+        ],
+        "canvas_size": [
+          2048,
+          2048
+        ],
+        "alpha_coverage": 0.758741,
+        "draw_order": 318,
+        "status": "REFERENCE_ONLY",
+        "include_in_import_psd": false,
+        "allowed_features": [
+          "nose reference만 있어야 함"
+        ],
+        "forbidden_contamination": [
+          "다른 파츠",
+          "배경",
+          "잘린 선"
+        ],
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REFERENCE_REVIEW",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": false,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "nose reference",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": []
+      },
+      {
+        "part_id": "mini_cubism_dedicated_model_v1_001__raw_eyewear",
+        "original_part_id": "raw_eyewear",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "raw eyewear",
         "group": "eyes",
-        "section": "concept_parts",
-        "role": "eyes",
+        "section": "g1_part_taxonomy",
+        "role": "seethrough_reference",
+        "side": null,
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__raw_eyewear.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_eyewear.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+        "overlay_path": null,
+        "bbox": null,
+        "canvas_size": [
+          2048,
+          2048
+        ],
+        "alpha_coverage": 0.0,
+        "draw_order": 306,
+        "status": "REFERENCE_ONLY",
+        "include_in_import_psd": false,
+        "allowed_features": [
+          "raw eyewear만 있어야 함"
+        ],
+        "forbidden_contamination": [
+          "다른 파츠",
+          "배경",
+          "잘린 선"
+        ],
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REFERENCE_REVIEW",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": false,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "raw eyewear",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "bad_alpha",
+          "clipping_risk",
+          "missing_part"
+        ]
+      },
+      {
+        "part_id": "mini_cubism_dedicated_model_v1_001__L_upper_lash",
+        "original_part_id": "L_upper_lash",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "L upper lash",
+        "group": "eyes",
+        "section": "g1_part_taxonomy",
+        "role": "seethrough_reference",
         "side": "L",
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/L_eye_white.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_upper_lash.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_eyelash-l.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
         "overlay_path": null,
         "bbox": [
-          720,
-          745,
-          261,
-          141
+          1060,
+          609,
+          116,
+          71
         ],
         "canvas_size": [
           2048,
           2048
         ],
-        "alpha_coverage": 0.785223,
-        "draw_order": 106,
-        "status": "REVISE",
-        "include_in_import_psd": true,
+        "alpha_coverage": 0.318966,
+        "draw_order": 320,
+        "status": "OBSERVED",
+        "include_in_import_psd": false,
         "allowed_features": [
-          "left sclera only"
+          "L upper lash만 있어야 함"
         ],
         "forbidden_contamination": [
-          "iris",
-          "pupil",
-          "lash",
-          "hair",
-          "skin"
+          "다른 파츠",
+          "배경",
+          "잘린 선"
         ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REVIEW_PRIORITY",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": true,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "L upper lash",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "clipping_risk"
+        ]
       },
       {
-        "part_id": "concept__R_eye_white",
+        "part_id": "mini_cubism_dedicated_model_v1_001__R_upper_lash",
+        "original_part_id": "R_upper_lash",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "R upper lash",
+        "group": "eyes",
+        "section": "g1_part_taxonomy",
+        "role": "seethrough_reference",
+        "side": "R",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_upper_lash.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_eyelash-r.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+        "overlay_path": null,
+        "bbox": [
+          858,
+          607,
+          121,
+          73
+        ],
+        "canvas_size": [
+          2048,
+          2048
+        ],
+        "alpha_coverage": 0.305219,
+        "draw_order": 321,
+        "status": "OBSERVED",
+        "include_in_import_psd": false,
+        "allowed_features": [
+          "R upper lash만 있어야 함"
+        ],
+        "forbidden_contamination": [
+          "다른 파츠",
+          "배경",
+          "잘린 선"
+        ],
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REVIEW_PRIORITY",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": true,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "R upper lash",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "clipping_risk"
+        ]
+      },
+      {
+        "part_id": "mini_cubism_dedicated_model_v1_001__R_eye_white",
         "original_part_id": "R_eye_white",
-        "experiment_id": "concept-regeneration-001",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
         "ko_name": "오른쪽 흰자",
         "group": "eyes",
-        "section": "concept_parts",
-        "role": "eyes",
+        "section": "g1_part_taxonomy",
+        "role": "seethrough_reference",
         "side": "R",
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/R_eye_white.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_eye_white.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_eyewhite-r.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
         "overlay_path": null,
         "bbox": [
-          1070,
-          745,
-          261,
-          141
+          886,
+          632,
+          83,
+          49
         ],
         "canvas_size": [
           2048,
           2048
         ],
-        "alpha_coverage": 0.785223,
-        "draw_order": 107,
-        "status": "REVISE",
-        "include_in_import_psd": true,
+        "alpha_coverage": 0.72535,
+        "draw_order": 324,
+        "status": "OBSERVED",
+        "include_in_import_psd": false,
         "allowed_features": [
-          "right sclera only"
+          "오른쪽 흰자만 있어야 함"
         ],
         "forbidden_contamination": [
-          "iris",
-          "pupil",
-          "lash",
-          "hair",
-          "skin"
+          "다른 파츠",
+          "배경",
+          "잘린 선"
         ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REVIEW_PRIORITY",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": true,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "오른쪽 흰자",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "clipping_risk"
+        ]
       },
       {
-        "part_id": "concept__L_iris",
-        "original_part_id": "L_iris",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "왼쪽 홍채",
+        "part_id": "mini_cubism_dedicated_model_v1_001__L_eye_white",
+        "original_part_id": "L_eye_white",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "왼쪽 흰자",
         "group": "eyes",
-        "section": "concept_parts",
-        "role": "eyes",
+        "section": "g1_part_taxonomy",
+        "role": "seethrough_reference",
         "side": "L",
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/L_iris.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_eye_white.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_eyewhite-l.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
         "overlay_path": null,
         "bbox": [
-          800,
-          745,
-          101,
-          131
+          1061,
+          630,
+          86,
+          51
         ],
         "canvas_size": [
           2048,
           2048
         ],
-        "alpha_coverage": 0.78505,
-        "draw_order": 108,
-        "status": "REVISE",
-        "include_in_import_psd": true,
+        "alpha_coverage": 0.732786,
+        "draw_order": 325,
+        "status": "OBSERVED",
+        "include_in_import_psd": false,
         "allowed_features": [
-          "left iris color only"
+          "왼쪽 흰자만 있어야 함"
         ],
         "forbidden_contamination": [
-          "pupil",
-          "highlight",
-          "eye_white",
-          "lash"
+          "다른 파츠",
+          "배경",
+          "잘린 선"
         ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REVIEW_PRIORITY",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": true,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "왼쪽 흰자",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "clipping_risk"
+        ]
       },
       {
-        "part_id": "concept__R_iris",
+        "part_id": "mini_cubism_dedicated_model_v1_001__R_iris",
         "original_part_id": "R_iris",
-        "experiment_id": "concept-regeneration-001",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
         "ko_name": "오른쪽 홍채",
         "group": "eyes",
-        "section": "concept_parts",
-        "role": "eyes",
+        "section": "g1_part_taxonomy",
+        "role": "seethrough_reference",
         "side": "R",
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/R_iris.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_iris.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_irides-r.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
         "overlay_path": null,
         "bbox": [
-          1150,
-          745,
-          101,
-          131
+          906,
+          623,
+          56,
+          59
         ],
         "canvas_size": [
           2048,
           2048
         ],
-        "alpha_coverage": 0.78505,
-        "draw_order": 109,
-        "status": "REVISE",
-        "include_in_import_psd": true,
+        "alpha_coverage": 0.79207,
+        "draw_order": 326,
+        "status": "OBSERVED",
+        "include_in_import_psd": false,
         "allowed_features": [
-          "right iris color only"
+          "오른쪽 홍채만 있어야 함"
         ],
         "forbidden_contamination": [
-          "pupil",
-          "highlight",
-          "eye_white",
-          "lash"
+          "다른 파츠",
+          "배경",
+          "잘린 선"
         ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REVIEW_PRIORITY",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": true,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "오른쪽 홍채",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "clipping_risk"
+        ]
       },
       {
-        "part_id": "concept__L_pupil",
-        "original_part_id": "L_pupil",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "왼쪽 동공",
+        "part_id": "mini_cubism_dedicated_model_v1_001__L_iris",
+        "original_part_id": "L_iris",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "왼쪽 홍채",
         "group": "eyes",
-        "section": "concept_parts",
-        "role": "eyes",
+        "section": "g1_part_taxonomy",
+        "role": "seethrough_reference",
         "side": "L",
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/L_pupil.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_iris.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_irides-l.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
         "overlay_path": null,
         "bbox": [
-          835,
-          770,
-          46,
-          71
+          1072,
+          623,
+          56,
+          56
         ],
         "canvas_size": [
           2048,
           2048
         ],
-        "alpha_coverage": 0.784446,
-        "draw_order": 110,
-        "status": "REVISE",
-        "include_in_import_psd": true,
+        "alpha_coverage": 0.774235,
+        "draw_order": 327,
+        "status": "OBSERVED",
+        "include_in_import_psd": false,
         "allowed_features": [
-          "left pupil only"
+          "왼쪽 홍채만 있어야 함"
         ],
         "forbidden_contamination": [
-          "iris",
-          "highlight",
-          "eye_white"
+          "다른 파츠",
+          "배경",
+          "잘린 선"
         ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REVIEW_PRIORITY",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": true,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "왼쪽 홍채",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "clipping_risk"
+        ]
       },
       {
-        "part_id": "concept__R_pupil",
-        "original_part_id": "R_pupil",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "오른쪽 동공",
-        "group": "eyes",
-        "section": "concept_parts",
-        "role": "eyes",
-        "side": "R",
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/R_pupil.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          1185,
-          770,
-          46,
-          71
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.784446,
-        "draw_order": 111,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "right pupil only"
-        ],
-        "forbidden_contamination": [
-          "iris",
-          "highlight",
-          "eye_white"
-        ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
-      },
-      {
-        "part_id": "concept__L_highlight",
-        "original_part_id": "L_highlight",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "왼쪽 눈 하이라이트",
-        "group": "eyes",
-        "section": "concept_parts",
-        "role": "eyes",
-        "side": "L",
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_smoke/L_highlight.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          845,
-          730,
-          38,
-          47
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.787234,
-        "draw_order": 112,
-        "status": "O",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "left eye catchlight only"
-        ],
-        "forbidden_contamination": [
-          "iris",
-          "pupil",
-          "eye_white"
-        ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
-      },
-      {
-        "part_id": "concept__R_highlight",
-        "original_part_id": "R_highlight",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "오른쪽 눈 하이라이트",
-        "group": "eyes",
-        "section": "concept_parts",
-        "role": "eyes",
-        "side": "R",
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_smoke/R_highlight.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          1195,
-          730,
-          38,
-          47
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.787234,
-        "draw_order": 113,
-        "status": "O",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "right eye catchlight only"
-        ],
-        "forbidden_contamination": [
-          "iris",
-          "pupil",
-          "eye_white"
-        ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
-      },
-      {
-        "part_id": "concept__L_upper_lash",
-        "original_part_id": "L_upper_lash",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "왼쪽 윗속눈썹",
-        "group": "eyes",
-        "section": "concept_parts",
-        "role": "eyes",
-        "side": "L",
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/L_upper_lash.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          685,
-          710,
-          331,
-          116
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.986353,
-        "draw_order": 114,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "upper lash line only"
-        ],
-        "forbidden_contamination": [
-          "hair",
-          "skin",
-          "eye_white",
-          "iris"
-        ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
-      },
-      {
-        "part_id": "concept__R_upper_lash",
-        "original_part_id": "R_upper_lash",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "오른쪽 윗속눈썹",
-        "group": "eyes",
-        "section": "concept_parts",
-        "role": "eyes",
-        "side": "R",
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/R_upper_lash.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          1035,
-          710,
-          331,
-          116
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.986353,
-        "draw_order": 115,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "upper lash line only"
-        ],
-        "forbidden_contamination": [
-          "hair",
-          "skin",
-          "eye_white",
-          "iris"
-        ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
-      },
-      {
-        "part_id": "concept__L_lower_lash",
-        "original_part_id": "L_lower_lash",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "왼쪽 아랫속눈썹",
-        "group": "eyes",
-        "section": "concept_parts",
-        "role": "eyes",
-        "side": "L",
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/L_lower_lash.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          725,
-          850,
-          251,
-          81
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.974227,
-        "draw_order": 116,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "lower lash line only"
-        ],
-        "forbidden_contamination": [
-          "hair",
-          "skin",
-          "eye_white",
-          "iris"
-        ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
-      },
-      {
-        "part_id": "concept__R_lower_lash",
-        "original_part_id": "R_lower_lash",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "오른쪽 아랫속눈썹",
-        "group": "eyes",
-        "section": "concept_parts",
-        "role": "eyes",
-        "side": "R",
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/R_lower_lash.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          1075,
-          850,
-          251,
-          81
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.974227,
-        "draw_order": 117,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "lower lash line only"
-        ],
-        "forbidden_contamination": [
-          "hair",
-          "skin",
-          "eye_white",
-          "iris"
-        ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
-      },
-      {
-        "part_id": "concept__L_brow",
+        "part_id": "mini_cubism_dedicated_model_v1_001__L_brow",
         "original_part_id": "L_brow",
-        "experiment_id": "concept-regeneration-001",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
         "ko_name": "왼쪽 눈썹",
         "group": "brows",
-        "section": "concept_parts",
-        "role": "brows",
+        "section": "g1_part_taxonomy",
+        "role": "seethrough_reference",
         "side": "L",
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/L_brow.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_brow.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_eyebrow-l.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
         "overlay_path": null,
         "bbox": [
-          700,
-          650,
-          301,
-          91
+          1056,
+          583,
+          90,
+          12
         ],
         "canvas_size": [
           2048,
           2048
         ],
-        "alpha_coverage": 0.98087,
-        "draw_order": 118,
-        "status": "REVISE",
-        "include_in_import_psd": true,
+        "alpha_coverage": 0.506481,
+        "draw_order": 310,
+        "status": "OBSERVED",
+        "include_in_import_psd": false,
         "allowed_features": [
-          "left brow only"
+          "왼쪽 눈썹만 있어야 함"
         ],
         "forbidden_contamination": [
-          "hair",
-          "skin",
-          "lash"
+          "다른 파츠",
+          "배경",
+          "잘린 선"
         ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REVIEW_PRIORITY",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": true,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "왼쪽 눈썹",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": []
       },
       {
-        "part_id": "concept__R_brow",
+        "part_id": "mini_cubism_dedicated_model_v1_001__R_brow",
         "original_part_id": "R_brow",
-        "experiment_id": "concept-regeneration-001",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
         "ko_name": "오른쪽 눈썹",
         "group": "brows",
-        "section": "concept_parts",
-        "role": "brows",
+        "section": "g1_part_taxonomy",
+        "role": "seethrough_reference",
         "side": "R",
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/R_brow.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_brow.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_eyebrow-r.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
         "overlay_path": null,
         "bbox": [
-          1050,
-          650,
-          301,
-          91
+          882,
+          582,
+          96,
+          15
         ],
         "canvas_size": [
           2048,
           2048
         ],
-        "alpha_coverage": 0.98087,
-        "draw_order": 119,
-        "status": "REVISE",
-        "include_in_import_psd": true,
+        "alpha_coverage": 0.577778,
+        "draw_order": 311,
+        "status": "OBSERVED",
+        "include_in_import_psd": false,
         "allowed_features": [
-          "right brow only"
+          "오른쪽 눈썹만 있어야 함"
         ],
         "forbidden_contamination": [
-          "hair",
-          "skin",
-          "lash"
+          "다른 파츠",
+          "배경",
+          "잘린 선"
         ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REVIEW_PRIORITY",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": true,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "오른쪽 눈썹",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": []
       },
       {
-        "part_id": "concept__mouth_line",
+        "part_id": "mini_cubism_dedicated_model_v1_001__mouth_line",
         "original_part_id": "mouth_line",
-        "experiment_id": "concept-regeneration-001",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
         "ko_name": "입 라인",
         "group": "mouth",
-        "section": "concept_parts",
-        "role": "mouth",
+        "section": "g1_part_taxonomy",
+        "role": "mouth_line",
         "side": null,
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_smoke/mouth_line.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__mouth_line.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_mouth.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
         "overlay_path": null,
         "bbox": [
-          956,
-          1043,
-          160,
-          39
+          965,
+          729,
+          103,
+          80
         ],
         "canvas_size": [
           2048,
           2048
         ],
-        "alpha_coverage": 0.292628,
-        "draw_order": 120,
-        "status": "O",
-        "include_in_import_psd": true,
+        "alpha_coverage": 0.726214,
+        "draw_order": 319,
+        "status": "OBSERVED",
+        "include_in_import_psd": false,
         "allowed_features": [
-          "mouth outline and lip line only"
+          "입 라인만 있어야 함"
         ],
         "forbidden_contamination": [
-          "teeth",
-          "tongue",
-          "skin"
+          "다른 파츠",
+          "배경",
+          "잘린 선"
         ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REVIEW_PRIORITY",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": true,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "입 라인",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": []
       },
       {
-        "part_id": "concept__mouth_inner",
-        "original_part_id": "mouth_inner",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "입 안쪽",
-        "group": "mouth",
-        "section": "concept_parts",
-        "role": "mouth",
-        "side": null,
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/mouth_inner.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          970,
-          1025,
-          131,
-          66
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.784409,
-        "draw_order": 121,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "dark mouth cavity only"
-        ],
-        "forbidden_contamination": [
-          "teeth",
-          "tongue",
-          "skin",
-          "cropped_line"
-        ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
-      },
-      {
-        "part_id": "concept__teeth",
-        "original_part_id": "teeth",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "치아",
-        "group": "mouth",
-        "section": "concept_parts",
-        "role": "mouth",
-        "side": null,
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/teeth.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          980,
-          1018,
-          111,
-          29
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.788754,
-        "draw_order": 122,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "teeth only"
-        ],
-        "forbidden_contamination": [
-          "tongue",
-          "mouth_line",
-          "skin"
-        ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
-      },
-      {
-        "part_id": "concept__tongue",
-        "original_part_id": "tongue",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "혀",
-        "group": "mouth",
-        "section": "concept_parts",
-        "role": "mouth",
-        "side": null,
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/tongue.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          990,
-          1050,
-          91,
-          36
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.786325,
-        "draw_order": 123,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "tongue only"
-        ],
-        "forbidden_contamination": [
-          "teeth",
-          "mouth_line",
-          "skin"
-        ],
-        "suggested_generation_mode": "alpha_cleanup_or_inpaint"
-      },
-      {
-        "part_id": "concept__L_side_hair",
-        "original_part_id": "L_side_hair",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "왼쪽 옆머리",
-        "group": "hair",
-        "section": "concept_parts",
-        "role": "hair",
-        "side": "L",
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/L_side_hair.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          260,
-          360,
-          611,
-          1321
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.999351,
-        "draw_order": 124,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "left side hair lock only"
-        ],
-        "forbidden_contamination": [
-          "face",
-          "eye",
-          "brow",
-          "back_hair"
-        ],
-        "suggested_generation_mode": "part_mask_regeneration"
-      },
-      {
-        "part_id": "concept__R_side_hair",
-        "original_part_id": "R_side_hair",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "오른쪽 옆머리",
-        "group": "hair",
-        "section": "concept_parts",
-        "role": "hair",
-        "side": "R",
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/R_side_hair.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          1180,
-          360,
-          611,
-          1321
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.999351,
-        "draw_order": 125,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "right side hair lock only"
-        ],
-        "forbidden_contamination": [
-          "face",
-          "eye",
-          "brow",
-          "back_hair"
-        ],
-        "suggested_generation_mode": "part_mask_regeneration"
-      },
-      {
-        "part_id": "concept__front_hair",
+        "part_id": "mini_cubism_dedicated_model_v1_001__front_hair",
         "original_part_id": "front_hair",
-        "experiment_id": "concept-regeneration-001",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
         "ko_name": "앞머리",
         "group": "hair",
-        "section": "concept_parts",
-        "role": "hair",
+        "section": "g1_part_taxonomy",
+        "role": "front_hair",
         "side": null,
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/front_hair.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__front_hair.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_front hair.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
         "overlay_path": null,
-        "bbox": [
-          520,
-          150,
-          1011,
-          901
-        ],
+        "bbox": null,
         "canvas_size": [
           2048,
           2048
         ],
-        "alpha_coverage": 0.999425,
-        "draw_order": 126,
-        "status": "REVISE",
-        "include_in_import_psd": true,
+        "alpha_coverage": 0.0,
+        "draw_order": 300,
+        "status": "OBSERVED",
+        "include_in_import_psd": false,
         "allowed_features": [
-          "front bangs only"
+          "앞머리만 있어야 함"
         ],
         "forbidden_contamination": [
-          "face",
-          "eye",
-          "brow",
-          "side_hair",
-          "back_hair"
+          "다른 파츠",
+          "배경",
+          "잘린 선"
         ],
-        "suggested_generation_mode": "part_mask_regeneration"
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REVIEW_PRIORITY",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": true,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "앞머리",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "bad_alpha",
+          "clipping_risk",
+          "missing_part"
+        ]
       },
       {
-        "part_id": "concept__L_ear_outer",
-        "original_part_id": "L_ear_outer",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "왼쪽 귀 바깥",
-        "group": "ears",
-        "section": "concept_parts",
-        "role": "ears",
-        "side": "L",
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/L_ear_outer.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          560,
-          20,
-          421,
-          501
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.50114,
-        "draw_order": 127,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "left animal ear outer fur only"
-        ],
-        "forbidden_contamination": [
-          "hair",
-          "skin",
-          "ear_inner",
-          "accessory"
-        ],
-        "suggested_generation_mode": "part_mask_regeneration"
-      },
-      {
-        "part_id": "concept__R_ear_outer",
-        "original_part_id": "R_ear_outer",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "오른쪽 귀 바깥",
-        "group": "ears",
-        "section": "concept_parts",
-        "role": "ears",
-        "side": "R",
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/R_ear_outer.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          1120,
-          20,
-          421,
-          501
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.50114,
-        "draw_order": 128,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "right animal ear outer fur only"
-        ],
-        "forbidden_contamination": [
-          "hair",
-          "skin",
-          "ear_inner",
-          "accessory"
-        ],
-        "suggested_generation_mode": "part_mask_regeneration"
-      },
-      {
-        "part_id": "concept__L_ear_inner",
-        "original_part_id": "L_ear_inner",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "왼쪽 귀 안쪽",
-        "group": "ears",
-        "section": "concept_parts",
-        "role": "ears",
-        "side": "L",
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/L_ear_inner.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          650,
-          80,
-          241,
-          351
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.502075,
-        "draw_order": 129,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "left animal ear inner shadow and color only"
-        ],
-        "forbidden_contamination": [
-          "hair",
-          "skin",
-          "ear_outer"
-        ],
-        "suggested_generation_mode": "part_mask_regeneration"
-      },
-      {
-        "part_id": "concept__R_ear_inner",
-        "original_part_id": "R_ear_inner",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "오른쪽 귀 안쪽",
-        "group": "ears",
-        "section": "concept_parts",
-        "role": "ears",
-        "side": "R",
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/R_ear_inner.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          1210,
-          80,
-          241,
-          351
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.502075,
-        "draw_order": 130,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "right animal ear inner shadow and color only"
-        ],
-        "forbidden_contamination": [
-          "hair",
-          "skin",
-          "ear_outer"
-        ],
-        "suggested_generation_mode": "part_mask_regeneration"
-      },
-      {
-        "part_id": "concept__L_fur_shoulder",
-        "original_part_id": "L_fur_shoulder",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "왼쪽 어깨 털",
-        "group": "fur",
-        "section": "concept_parts",
-        "role": "fur",
-        "side": "L",
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/L_fur_shoulder.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          70,
-          1460,
-          781,
-          471
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.998576,
-        "draw_order": 131,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "left white shoulder fur only"
-        ],
-        "forbidden_contamination": [
-          "hair",
-          "skin",
-          "clothes",
-          "body"
-        ],
-        "suggested_generation_mode": "part_mask_regeneration"
-      },
-      {
-        "part_id": "concept__R_fur_shoulder",
-        "original_part_id": "R_fur_shoulder",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "오른쪽 어깨 털",
-        "group": "fur",
-        "section": "concept_parts",
-        "role": "fur",
-        "side": "R",
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/R_fur_shoulder.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "overlay_path": null,
-        "bbox": [
-          1200,
-          1460,
-          781,
-          471
-        ],
-        "canvas_size": [
-          2048,
-          2048
-        ],
-        "alpha_coverage": 0.998576,
-        "draw_order": 132,
-        "status": "REVISE",
-        "include_in_import_psd": true,
-        "allowed_features": [
-          "right white shoulder fur only"
-        ],
-        "forbidden_contamination": [
-          "hair",
-          "skin",
-          "clothes",
-          "body"
-        ],
-        "suggested_generation_mode": "part_mask_regeneration"
-      },
-      {
-        "part_id": "concept__choker",
-        "original_part_id": "choker",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "초커",
-        "group": "accessory",
-        "section": "concept_parts",
-        "role": "accessory",
+        "part_id": "mini_cubism_dedicated_model_v1_001__back_hair",
+        "original_part_id": "back_hair",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "뒷머리",
+        "group": "hair",
+        "section": "g1_part_taxonomy",
+        "role": "back_hair",
         "side": null,
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_smoke/choker.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__back_hair.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_back hair.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
         "overlay_path": null,
         "bbox": [
-          845,
-          1234,
-          362,
+          349,
+          280,
+          1348,
+          1303
+        ],
+        "canvas_size": [
+          2048,
+          2048
+        ],
+        "alpha_coverage": 0.496118,
+        "draw_order": 307,
+        "status": "OBSERVED",
+        "include_in_import_psd": false,
+        "allowed_features": [
+          "뒷머리만 있어야 함"
+        ],
+        "forbidden_contamination": [
+          "다른 파츠",
+          "배경",
+          "잘린 선"
+        ],
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REVIEW_PRIORITY",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": true,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "뒷머리",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "clipping_risk"
+        ]
+      },
+      {
+        "part_id": "mini_cubism_dedicated_model_v1_001__R_arm",
+        "original_part_id": "R_arm",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "오른쪽 팔",
+        "group": "body",
+        "section": "g1_part_taxonomy",
+        "role": "seethrough_reference",
+        "side": "R",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_arm.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_handwear-r.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+        "overlay_path": null,
+        "bbox": [
+          174,
+          900,
+          693,
+          949
+        ],
+        "canvas_size": [
+          2048,
+          2048
+        ],
+        "alpha_coverage": 0.332391,
+        "draw_order": 308,
+        "status": "OBSERVED",
+        "include_in_import_psd": false,
+        "allowed_features": [
+          "오른쪽 팔만 있어야 함"
+        ],
+        "forbidden_contamination": [
+          "다른 파츠",
+          "배경",
+          "잘린 선"
+        ],
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REVIEW_PRIORITY",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": true,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "오른쪽 팔",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": []
+      },
+      {
+        "part_id": "mini_cubism_dedicated_model_v1_001__L_arm",
+        "original_part_id": "L_arm",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "왼쪽 팔",
+        "group": "body",
+        "section": "g1_part_taxonomy",
+        "role": "seethrough_reference",
+        "side": "L",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_arm.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_handwear-l.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+        "overlay_path": null,
+        "bbox": [
+          1169,
+          901,
+          694,
+          952
+        ],
+        "canvas_size": [
+          2048,
+          2048
+        ],
+        "alpha_coverage": 0.330961,
+        "draw_order": 309,
+        "status": "OBSERVED",
+        "include_in_import_psd": false,
+        "allowed_features": [
+          "왼쪽 팔만 있어야 함"
+        ],
+        "forbidden_contamination": [
+          "다른 파츠",
+          "배경",
+          "잘린 선"
+        ],
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REVIEW_PRIORITY",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": true,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "왼쪽 팔",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": []
+      },
+      {
+        "part_id": "mini_cubism_dedicated_model_v1_001__clothes",
+        "original_part_id": "clothes",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "의상",
+        "group": "body",
+        "section": "g1_part_taxonomy",
+        "role": "clothes",
+        "side": null,
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__clothes.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_topwear.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+        "overlay_path": null,
+        "bbox": [
+          786,
+          867,
+          462,
+          705
+        ],
+        "canvas_size": [
+          2048,
+          2048
+        ],
+        "alpha_coverage": 0.770977,
+        "draw_order": 314,
+        "status": "OBSERVED",
+        "include_in_import_psd": false,
+        "allowed_features": [
+          "의상만 있어야 함"
+        ],
+        "forbidden_contamination": [
+          "다른 파츠",
+          "배경",
+          "잘린 선"
+        ],
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REVIEW_PRIORITY",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": true,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "의상",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": []
+      },
+      {
+        "part_id": "mini_cubism_dedicated_model_v1_001__raw_legwear",
+        "original_part_id": "raw_legwear",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "raw legwear",
+        "group": "ears",
+        "section": "g1_part_taxonomy",
+        "role": "seethrough_reference",
+        "side": null,
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__raw_legwear.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_legwear.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+        "overlay_path": null,
+        "bbox": null,
+        "canvas_size": [
+          2048,
+          2048
+        ],
+        "alpha_coverage": 0.0,
+        "draw_order": 301,
+        "status": "REFERENCE_ONLY",
+        "include_in_import_psd": false,
+        "allowed_features": [
+          "raw legwear만 있어야 함"
+        ],
+        "forbidden_contamination": [
+          "다른 파츠",
+          "배경",
+          "잘린 선"
+        ],
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REFERENCE_REVIEW",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": false,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "raw legwear",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "bad_alpha",
+          "missing_part"
+        ]
+      },
+      {
+        "part_id": "mini_cubism_dedicated_model_v1_001__raw_footwear",
+        "original_part_id": "raw_footwear",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "raw footwear",
+        "group": "ears",
+        "section": "g1_part_taxonomy",
+        "role": "seethrough_reference",
+        "side": null,
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__raw_footwear.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_footwear.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+        "overlay_path": null,
+        "bbox": null,
+        "canvas_size": [
+          2048,
+          2048
+        ],
+        "alpha_coverage": 0.0,
+        "draw_order": 302,
+        "status": "REFERENCE_ONLY",
+        "include_in_import_psd": false,
+        "allowed_features": [
+          "raw footwear만 있어야 함"
+        ],
+        "forbidden_contamination": [
+          "다른 파츠",
+          "배경",
+          "잘린 선"
+        ],
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REFERENCE_REVIEW",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": false,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "raw footwear",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "bad_alpha",
+          "missing_part"
+        ]
+      },
+      {
+        "part_id": "mini_cubism_dedicated_model_v1_001__raw_bottomwear",
+        "original_part_id": "raw_bottomwear",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "raw bottomwear",
+        "group": "ears",
+        "section": "g1_part_taxonomy",
+        "role": "seethrough_reference",
+        "side": null,
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__raw_bottomwear.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_bottomwear.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+        "overlay_path": null,
+        "bbox": [
+          519,
+          1469,
+          996,
+          386
+        ],
+        "canvas_size": [
+          2048,
+          2048
+        ],
+        "alpha_coverage": 0.7123,
+        "draw_order": 313,
+        "status": "REFERENCE_ONLY",
+        "include_in_import_psd": false,
+        "allowed_features": [
+          "raw bottomwear만 있어야 함"
+        ],
+        "forbidden_contamination": [
+          "다른 파츠",
+          "배경",
+          "잘린 선"
+        ],
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REFERENCE_REVIEW",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": false,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "raw bottomwear",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": []
+      },
+      {
+        "part_id": "mini_cubism_dedicated_model_v1_001__ear_inner",
+        "original_part_id": "ear_inner",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "ear inner",
+        "group": "ears",
+        "section": "g1_part_taxonomy",
+        "role": "ears",
+        "side": null,
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__ear_inner.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_earwear.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+        "overlay_path": null,
+        "bbox": [
+          871,
+          719,
+          295,
           78
         ],
         "canvas_size": [
           2048,
           2048
         ],
-        "alpha_coverage": 0.989517,
-        "draw_order": 133,
-        "status": "O",
-        "include_in_import_psd": true,
+        "alpha_coverage": 0.128205,
+        "draw_order": 316,
+        "status": "REFERENCE_ONLY",
+        "include_in_import_psd": false,
         "allowed_features": [
-          "black choker band only"
+          "ear inner만 있어야 함"
         ],
         "forbidden_contamination": [
-          "neck",
-          "clothes",
-          "gold_ornaments",
-          "hair"
+          "다른 파츠",
+          "배경",
+          "잘린 선"
         ],
-        "suggested_generation_mode": "part_mask_regeneration"
-      },
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REFERENCE_REVIEW",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": false,
+        "tier": "v2_min",
+        "review_gate": "G1_PART_TAXONOMY",
+        "simple_label": "ear inner",
+        "simple_description": "파츠가 빠지지 않고 깨끗하게 나뉘었는지 봅니다.",
+        "checklist": [
+          "필수 파츠가 빠지지 않았나요?",
+          "투명 테두리가 깨끗한가요?",
+          "파츠가 잘리거나 위치가 틀어지지 않았나요?"
+        ],
+        "compare_views": {},
+        "auto_check_summary": null,
+        "auto_issue_tags": []
+      }
+    ],
+    "g2_structure": [
       {
-        "part_id": "concept__gold_ornaments",
-        "original_part_id": "gold_ornaments",
-        "experiment_id": "concept-regeneration-001",
-        "ko_name": "금색 장식",
-        "group": "accessory",
-        "section": "concept_parts",
-        "role": "accessory",
+        "part_id": "g2__cubism_structure_auto_check",
+        "original_part_id": "front_hair",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "Cubism 구조 자동검사",
+        "group": "structure",
+        "section": "g2_structure",
+        "role": "auto_check",
         "side": null,
-        "image_path": "/assets/experiments/concept-regeneration-001/production_layers_candidate/gold_ornaments.png",
-        "source_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
-        "canonical_path": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_front hair.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
         "overlay_path": null,
-        "bbox": [
-          820,
-          1270,
-          421,
-          521
-        ],
+        "bbox": null,
         "canvas_size": [
           2048,
           2048
         ],
-        "alpha_coverage": 0.997611,
-        "draw_order": 134,
-        "status": "REVISE",
+        "alpha_coverage": 0.0,
+        "draw_order": 300,
+        "status": "OBSERVED",
         "include_in_import_psd": false,
         "allowed_features": [
-          "gold ornaments only"
+          "앞머리만 있어야 함"
         ],
         "forbidden_contamination": [
-          "choker",
-          "clothes",
-          "skin",
-          "hair"
+          "다른 파츠",
+          "배경",
+          "잘린 선"
         ],
-        "suggested_generation_mode": "part_mask_regeneration"
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REVIEW_PRIORITY",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": true,
+        "tier": "v2_min",
+        "review_gate": "G2_STRUCTURE",
+        "simple_label": "구조 자동검사",
+        "simple_description": "사람 눈검수가 아니라 Cubism 구조 숫자로 확인합니다.",
+        "checklist": [
+          "ArtMesh, Parameter가 충분한가요?",
+          "Warp/Rotation Deformer와 KeyformBinding이 있나요?",
+          "Physics group이 움직임 단계에 맞게 있나요?"
+        ],
+        "compare_views": {
+          "neutral": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+          "before": "/assets/experiments/imagen-live2d-001/reports/cmo3_structure_report.json",
+          "after": "/assets/experiments/mini-cubism-dedicated-model-v1-001/mini_cubism_project_targeted/reports/validation_report.json"
+        },
+        "auto_check_summary": {
+          "status": "REVISE",
+          "message": "그림 문제가 아니라 Cubism에서 deformer/keyform/physics 보강이 필요합니다.",
+          "checks": {
+            "required_part_count": "25/25",
+            "alpha_bbox_crop": "REVISE",
+            "artmesh_count": 19,
+            "parameter_count": 27,
+            "deformer_count": 10,
+            "keyform_binding_count": 18,
+            "physics_group_count": 9,
+            "physics_target_count": 26
+          },
+          "source_reports": {
+            "cmo3_report": "experiments/imagen-live2d-001/reports/cmo3_structure_report.json",
+            "mini_validation_report": "experiments/mini-cubism-dedicated-model-v1-001/mini_cubism_project_targeted/reports/validation_report.json",
+            "physics_report": "experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/reports/physics_score_report.json"
+          }
+        },
+        "auto_issue_tags": [
+          "bad_alpha",
+          "clipping_risk",
+          "missing_part"
+        ]
+      }
+    ],
+    "g3_motion_visual": [
+      {
+        "part_id": "g3__angle_swing",
+        "original_part_id": "front_hair",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "몸각도 흔들림",
+        "group": "motion",
+        "section": "g3_motion_visual",
+        "role": "motion_visual",
+        "side": null,
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/angle_swing.gif",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_front hair.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+        "overlay_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/angle_swing.gif",
+        "bbox": null,
+        "canvas_size": [
+          2048,
+          2048
+        ],
+        "alpha_coverage": 0.0,
+        "draw_order": 300,
+        "status": "OBSERVED",
+        "include_in_import_psd": false,
+        "allowed_features": [
+          "앞머리만 있어야 함"
+        ],
+        "forbidden_contamination": [
+          "다른 파츠",
+          "배경",
+          "잘린 선"
+        ],
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REVIEW_PRIORITY",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": true,
+        "tier": "v2_min",
+        "review_gate": "G3_MOTION_VISUAL",
+        "simple_label": "몸각도 흔들림",
+        "simple_description": "기본 포즈와 크게 움직인 포즈를 비교합니다.",
+        "checklist": [
+          "눈 깜빡임이 자연스럽나요?",
+          "입 모양이 말하는 것처럼 보이나요?",
+          "머리카락과 몸각도가 과하게 흔들리지 않나요?"
+        ],
+        "compare_views": {
+          "neutral": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+          "extreme": "/assets/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/angle_swing.gif",
+          "after": "/assets/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/angle_swing.gif",
+          "composited": "/assets/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/angle_swing.gif"
+        },
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "bad_alpha",
+          "clipping_risk",
+          "missing_part"
+        ]
+      },
+      {
+        "part_id": "g3__eye_blink",
+        "original_part_id": "front_hair",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "눈 깜빡임",
+        "group": "motion",
+        "section": "g3_motion_visual",
+        "role": "motion_visual",
+        "side": null,
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/eye_blink.gif",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_front hair.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+        "overlay_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/eye_blink.gif",
+        "bbox": null,
+        "canvas_size": [
+          2048,
+          2048
+        ],
+        "alpha_coverage": 0.0,
+        "draw_order": 300,
+        "status": "OBSERVED",
+        "include_in_import_psd": false,
+        "allowed_features": [
+          "앞머리만 있어야 함"
+        ],
+        "forbidden_contamination": [
+          "다른 파츠",
+          "배경",
+          "잘린 선"
+        ],
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REVIEW_PRIORITY",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": true,
+        "tier": "v2_min",
+        "review_gate": "G3_MOTION_VISUAL",
+        "simple_label": "눈 깜빡임",
+        "simple_description": "기본 포즈와 크게 움직인 포즈를 비교합니다.",
+        "checklist": [
+          "눈 깜빡임이 자연스럽나요?",
+          "입 모양이 말하는 것처럼 보이나요?",
+          "머리카락과 몸각도가 과하게 흔들리지 않나요?"
+        ],
+        "compare_views": {
+          "neutral": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+          "extreme": "/assets/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/eye_blink.gif",
+          "after": "/assets/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/eye_blink.gif",
+          "composited": "/assets/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/eye_blink.gif"
+        },
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "bad_alpha",
+          "clipping_risk",
+          "missing_part"
+        ]
+      },
+      {
+        "part_id": "g3__mouth_talk",
+        "original_part_id": "front_hair",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "입 말하기",
+        "group": "motion",
+        "section": "g3_motion_visual",
+        "role": "motion_visual",
+        "side": null,
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/mouth_talk.gif",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_front hair.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+        "overlay_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/mouth_talk.gif",
+        "bbox": null,
+        "canvas_size": [
+          2048,
+          2048
+        ],
+        "alpha_coverage": 0.0,
+        "draw_order": 300,
+        "status": "OBSERVED",
+        "include_in_import_psd": false,
+        "allowed_features": [
+          "앞머리만 있어야 함"
+        ],
+        "forbidden_contamination": [
+          "다른 파츠",
+          "배경",
+          "잘린 선"
+        ],
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REVIEW_PRIORITY",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": true,
+        "tier": "v2_min",
+        "review_gate": "G3_MOTION_VISUAL",
+        "simple_label": "입 말하기",
+        "simple_description": "기본 포즈와 크게 움직인 포즈를 비교합니다.",
+        "checklist": [
+          "눈 깜빡임이 자연스럽나요?",
+          "입 모양이 말하는 것처럼 보이나요?",
+          "머리카락과 몸각도가 과하게 흔들리지 않나요?"
+        ],
+        "compare_views": {
+          "neutral": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+          "extreme": "/assets/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/mouth_talk.gif",
+          "after": "/assets/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/mouth_talk.gif",
+          "composited": "/assets/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/mouth_talk.gif"
+        },
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "bad_alpha",
+          "clipping_risk",
+          "missing_part"
+        ]
+      },
+      {
+        "part_id": "g3__hair_settle",
+        "original_part_id": "front_hair",
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "ko_name": "머리카락 흔들림",
+        "group": "motion",
+        "section": "g3_motion_visual",
+        "role": "motion_visual",
+        "side": null,
+        "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/hair_settle.gif",
+        "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_front hair.png",
+        "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+        "overlay_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/hair_settle.gif",
+        "bbox": null,
+        "canvas_size": [
+          2048,
+          2048
+        ],
+        "alpha_coverage": 0.0,
+        "draw_order": 300,
+        "status": "OBSERVED",
+        "include_in_import_psd": false,
+        "allowed_features": [
+          "앞머리만 있어야 함"
+        ],
+        "forbidden_contamination": [
+          "다른 파츠",
+          "배경",
+          "잘린 선"
+        ],
+        "suggested_generation_mode": "cubism_v2_part_cleanup",
+        "triage_status": "REVIEW_PRIORITY",
+        "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+        "production_candidate": true,
+        "tier": "v2_min",
+        "review_gate": "G3_MOTION_VISUAL",
+        "simple_label": "머리카락 흔들림",
+        "simple_description": "기본 포즈와 크게 움직인 포즈를 비교합니다.",
+        "checklist": [
+          "눈 깜빡임이 자연스럽나요?",
+          "입 모양이 말하는 것처럼 보이나요?",
+          "머리카락과 몸각도가 과하게 흔들리지 않나요?"
+        ],
+        "compare_views": {
+          "neutral": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+          "extreme": "/assets/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/hair_settle.gif",
+          "after": "/assets/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/hair_settle.gif",
+          "composited": "/assets/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/hair_settle.gif"
+        },
+        "auto_check_summary": null,
+        "auto_issue_tags": [
+          "bad_alpha",
+          "clipping_risk",
+          "missing_part"
+        ]
       }
     ]
   },
   "counts": {
-    "production_parts": 27,
-    "reference_mouth": 10,
-    "reference_blink": 3,
-    "overlays": 13,
-    "concept_parts": 35
+    "g0_concept": 6,
+    "g1_part_taxonomy": 25,
+    "g2_structure": 1,
+    "g3_motion_visual": 4
   }
 }

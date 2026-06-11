@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "validated_at": "2026-06-05T03:24:36.134649+00:00",
+  "project": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/mini_cubism_project_face_v1",
+  "status": "PASS",
+  "counts": {
+    "parts": 79,
+    "meshes": 79,
+    "deformers": 10,
+    "parameters": 15,
+    "keyform_bindings": 78,
+    "glue": 0
+  }
+}

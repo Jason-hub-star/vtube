@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-04T11:05:04.723Z",
+  "url": "http://127.0.0.1:8050/",
+  "status": "PASS",
+  "results": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      "before": {
+        "hash": "4de3213267a7fb96",
+        "nonBackground": 147936,
+        "alphaPixels": 262144,
+        "width": 2048,
+        "height": 2048
+      },
+      "after": {
+        "hash": "c3e4aa20b103d420",
+        "nonBackground": 151754,
+        "alphaPixels": 262144,
+        "width": 2048,
+        "height": 2048
+      },
+      "pixel_hash_changed": true,
+      "nonblank": true,
+      "messages": [],
+      "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-v0-001/mini_cubism_project/reports/preview_evidence/desktop_preview_extreme.png"
+    },
+    {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "before": {
+        "hash": "4de3213267a7fb96",
+        "nonBackground": 147936,
+        "alphaPixels": 262144,
+        "width": 2048,
+        "height": 2048
+      },
+      "after": {
+        "hash": "c3e4aa20b103d420",
+        "nonBackground": 151754,
+        "alphaPixels": 262144,
+        "width": 2048,
+        "height": 2048
+      },
+      "pixel_hash_changed": true,
+      "nonblank": true,
+      "messages": [],
+      "screenshot": "/Users/family/jason/Vtube/experiments/mini-cubism-v0-001/mini_cubism_project/reports/preview_evidence/mobile_preview_extreme.png"
+    }
+  ]
+}

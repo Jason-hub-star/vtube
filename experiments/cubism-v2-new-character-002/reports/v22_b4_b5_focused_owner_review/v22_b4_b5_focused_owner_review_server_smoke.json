@@ -1,0 +1,21 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T14:45:56.654468+00:00",
+  "status": "PASS_V22_B4_B5_FOCUSED_OWNER_REVIEW_SERVER_SMOKE",
+  "packet": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_focused_owner_review/v22_b4_b5_focused_owner_review.json",
+  "smoke_decisions": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_focused_owner_review/v22_b4_b5_focused_owner_review_decisions_smoke.json",
+  "primary_decision_count": 10,
+  "asset_crop_count": 40,
+  "tmp_png_count": 0,
+  "self_review": {
+    "state_loads": true,
+    "save_api_noop_pending_pass": true,
+    "all_asset_crops_nonempty": true,
+    "no_temp_png_artifacts": true,
+    "material_pass_status": "BLOCKED",
+    "param_hair_front_hidden": true,
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true,
+    "status": "PASS"
+  }
+}

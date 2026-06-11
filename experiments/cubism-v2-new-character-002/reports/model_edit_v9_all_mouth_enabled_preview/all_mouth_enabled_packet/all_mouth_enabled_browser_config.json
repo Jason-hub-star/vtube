@@ -1,0 +1,43 @@
+{
+  "url": "http://127.0.0.1:52447/",
+  "framesDir": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v9_all_mouth_enabled_preview/all_mouth_enabled_packet/frames",
+  "resultPath": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v9_all_mouth_enabled_preview/all_mouth_enabled_packet/all_mouth_enabled_browser_result.json",
+  "frames": [
+    {
+      "id": "closed_smile",
+      "mouthOpen": 0.0,
+      "mouthForm": 0.0,
+      "label": "closed smile"
+    },
+    {
+      "id": "small_open",
+      "mouthOpen": 0.4,
+      "mouthForm": 0.0,
+      "label": "small open"
+    },
+    {
+      "id": "wide_helpers",
+      "mouthOpen": 1.0,
+      "mouthForm": 0.0,
+      "label": "wide + inner/teeth/tongue"
+    },
+    {
+      "id": "o_vowel_closed",
+      "mouthOpen": 0.0,
+      "mouthForm": -1.0,
+      "label": "O vowel"
+    },
+    {
+      "id": "o_vowel_open_mix",
+      "mouthOpen": 0.7,
+      "mouthForm": -1.0,
+      "label": "O + open mix"
+    },
+    {
+      "id": "form_positive_control",
+      "mouthOpen": 0.7,
+      "mouthForm": 1.0,
+      "label": "form positive control"
+    }
+  ]
+}

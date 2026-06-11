@@ -1,0 +1,2183 @@
+{
+  "schema_version": 1,
+  "pack_id": "keypose_asset_pack",
+  "generated_at": "2026-06-05T05:36:38.175060+00:00",
+  "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+  "status": "PROBED_WITH_LOCAL_ADAPTERS",
+  "candidates": [
+    {
+      "candidate_id": "layerd__keypose_asset_pack__eye_open_L",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_open_L",
+      "roi": [
+        1060,
+        470,
+        330,
+        190
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/keypose_asset_pack/eye_open_L.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1116,
+          470,
+          275,
+          183
+        ],
+        "nonzero_alpha": 38592,
+        "alpha_coverage": 0.00920105,
+        "roi_coverage": 0.59437,
+        "edge_score": 0.0809,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__keypose_asset_pack__eye_open_L",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_open_L",
+      "roi": [
+        1060,
+        470,
+        330,
+        190
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/keypose_asset_pack/eye_open_L.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1115,
+          467,
+          279,
+          187
+        ],
+        "nonzero_alpha": 40479,
+        "alpha_coverage": 0.00965095,
+        "roi_coverage": 0.610797,
+        "edge_score": 0.0695,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__keypose_asset_pack__eye_open_L",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_open_L",
+      "roi": [
+        1060,
+        470,
+        330,
+        190
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/keypose_asset_pack/eye_open_L.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1114,
+          465,
+          282,
+          191
+        ],
+        "nonzero_alpha": 42633,
+        "alpha_coverage": 0.0101645,
+        "roi_coverage": 0.63378,
+        "edge_score": 0.0622,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__keypose_asset_pack__eye_open_L",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_open_L",
+      "roi": [
+        1060,
+        470,
+        330,
+        190
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/keypose_asset_pack/eye_open_L.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1119,
+          469,
+          275,
+          184
+        ],
+        "nonzero_alpha": 39343,
+        "alpha_coverage": 0.0093801,
+        "roi_coverage": 0.621276,
+        "edge_score": 0.0691,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__keypose_asset_pack__eye_open_L",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_open_L",
+      "roi": [
+        1060,
+        470,
+        330,
+        190
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/keypose_asset_pack/eye_open_L.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1114,
+          468,
+          279,
+          187
+        ],
+        "nonzero_alpha": 42467,
+        "alpha_coverage": 0.01012492,
+        "roi_coverage": 0.631388,
+        "edge_score": 0.0758,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__keypose_asset_pack__eye_open_L",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_open_L",
+      "roi": [
+        1060,
+        470,
+        330,
+        190
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/keypose_asset_pack/eye_open_L.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT",
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__keypose_asset_pack__eye_open_L",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_open_L",
+      "roi": [
+        1060,
+        470,
+        330,
+        190
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/keypose_asset_pack/eye_open_L.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          174,
+          400,
+          1700,
+          1248
+        ],
+        "nonzero_alpha": 254349,
+        "alpha_coverage": 0.06064153,
+        "roi_coverage": 0.59437,
+        "edge_score": 1.0196,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__keypose_asset_pack__eye_open_R",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_open_R",
+      "roi": [
+        660,
+        470,
+        330,
+        190
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/keypose_asset_pack/eye_open_R.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          660,
+          470,
+          147,
+          183
+        ],
+        "nonzero_alpha": 19358,
+        "alpha_coverage": 0.00461531,
+        "roi_coverage": 0.296093,
+        "edge_score": 0.0563,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__keypose_asset_pack__eye_open_R",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_open_R",
+      "roi": [
+        660,
+        470,
+        330,
+        190
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/keypose_asset_pack/eye_open_R.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          657,
+          467,
+          151,
+          187
+        ],
+        "nonzero_alpha": 20854,
+        "alpha_coverage": 0.00497198,
+        "roi_coverage": 0.306539,
+        "edge_score": 0.0479,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__keypose_asset_pack__eye_open_R",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_open_R",
+      "roi": [
+        660,
+        470,
+        330,
+        190
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/keypose_asset_pack/eye_open_R.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          655,
+          465,
+          154,
+          191
+        ],
+        "nonzero_alpha": 22473,
+        "alpha_coverage": 0.00535798,
+        "roi_coverage": 0.320287,
+        "edge_score": 0.0428,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__keypose_asset_pack__eye_open_R",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_open_R",
+      "roi": [
+        660,
+        470,
+        330,
+        190
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/keypose_asset_pack/eye_open_R.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          657,
+          469,
+          147,
+          184
+        ],
+        "nonzero_alpha": 20011,
+        "alpha_coverage": 0.00477099,
+        "roi_coverage": 0.311244,
+        "edge_score": 0.0499,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__keypose_asset_pack__eye_open_R",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_open_R",
+      "roi": [
+        660,
+        470,
+        330,
+        190
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/keypose_asset_pack/eye_open_R.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          658,
+          468,
+          151,
+          187
+        ],
+        "nonzero_alpha": 22042,
+        "alpha_coverage": 0.00525522,
+        "roi_coverage": 0.319585,
+        "edge_score": 0.054,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__keypose_asset_pack__eye_open_R",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_open_R",
+      "roi": [
+        660,
+        470,
+        330,
+        190
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/keypose_asset_pack/eye_open_R.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT",
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__keypose_asset_pack__eye_open_R",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_open_R",
+      "roi": [
+        660,
+        470,
+        330,
+        190
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/keypose_asset_pack/eye_open_R.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          174,
+          400,
+          1700,
+          1248
+        ],
+        "nonzero_alpha": 254349,
+        "alpha_coverage": 0.06064153,
+        "roi_coverage": 0.296093,
+        "edge_score": 1.0196,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__keypose_asset_pack__eye_half_L",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_half_L",
+      "roi": [
+        1060,
+        710,
+        330,
+        170
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/keypose_asset_pack/eye_half_L.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1136,
+          758,
+          255,
+          112
+        ],
+        "nonzero_alpha": 5155,
+        "alpha_coverage": 0.00122905,
+        "roi_coverage": 0.068538,
+        "edge_score": 0.0617,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__keypose_asset_pack__eye_half_L",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_half_L",
+      "roi": [
+        1060,
+        710,
+        330,
+        170
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/keypose_asset_pack/eye_half_L.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1136,
+          758,
+          258,
+          113
+        ],
+        "nonzero_alpha": 6920,
+        "alpha_coverage": 0.00164986,
+        "roi_coverage": 0.087522,
+        "edge_score": 0.0508,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__keypose_asset_pack__eye_half_L",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_half_L",
+      "roi": [
+        1060,
+        710,
+        330,
+        170
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/keypose_asset_pack/eye_half_L.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1134,
+          756,
+          262,
+          117
+        ],
+        "nonzero_alpha": 8856,
+        "alpha_coverage": 0.00211143,
+        "roi_coverage": 0.114029,
+        "edge_score": 0.0432,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__keypose_asset_pack__eye_half_L",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_half_L",
+      "roi": [
+        1060,
+        710,
+        330,
+        170
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/keypose_asset_pack/eye_half_L.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1140,
+          759,
+          253,
+          107
+        ],
+        "nonzero_alpha": 5206,
+        "alpha_coverage": 0.00124121,
+        "roi_coverage": 0.092371,
+        "edge_score": 0.0592,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__keypose_asset_pack__eye_half_L",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_half_L",
+      "roi": [
+        1060,
+        710,
+        330,
+        170
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/keypose_asset_pack/eye_half_L.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1134,
+          756,
+          259,
+          116
+        ],
+        "nonzero_alpha": 8686,
+        "alpha_coverage": 0.0020709,
+        "roi_coverage": 0.107362,
+        "edge_score": 0.0613,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__keypose_asset_pack__eye_half_L",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_half_L",
+      "roi": [
+        1060,
+        710,
+        330,
+        170
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/keypose_asset_pack/eye_half_L.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT",
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__keypose_asset_pack__eye_half_L",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_half_L",
+      "roi": [
+        1060,
+        710,
+        330,
+        170
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/keypose_asset_pack/eye_half_L.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          174,
+          400,
+          1700,
+          1248
+        ],
+        "nonzero_alpha": 254349,
+        "alpha_coverage": 0.06064153,
+        "roi_coverage": 0.068538,
+        "edge_score": 1.0196,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__keypose_asset_pack__eye_half_R",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_half_R",
+      "roi": [
+        660,
+        710,
+        330,
+        170
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/keypose_asset_pack/eye_half_R.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          660,
+          758,
+          132,
+          112
+        ],
+        "nonzero_alpha": 2760,
+        "alpha_coverage": 0.00065804,
+        "roi_coverage": 0.036168,
+        "edge_score": 0.0362,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__keypose_asset_pack__eye_half_R",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_half_R",
+      "roi": [
+        660,
+        710,
+        330,
+        170
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/keypose_asset_pack/eye_half_R.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          657,
+          757,
+          136,
+          113
+        ],
+        "nonzero_alpha": 3731,
+        "alpha_coverage": 0.00088954,
+        "roi_coverage": 0.046916,
+        "edge_score": 0.0295,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__keypose_asset_pack__eye_half_R",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_half_R",
+      "roi": [
+        660,
+        710,
+        330,
+        170
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/keypose_asset_pack/eye_half_R.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          655,
+          756,
+          139,
+          116
+        ],
+        "nonzero_alpha": 4864,
+        "alpha_coverage": 0.00115967,
+        "roi_coverage": 0.061943,
+        "edge_score": 0.0244,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__keypose_asset_pack__eye_half_R",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_half_R",
+      "roi": [
+        660,
+        710,
+        330,
+        170
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/keypose_asset_pack/eye_half_R.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          657,
+          759,
+          131,
+          106
+        ],
+        "nonzero_alpha": 2895,
+        "alpha_coverage": 0.00069022,
+        "roi_coverage": 0.050963,
+        "edge_score": 0.0364,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__keypose_asset_pack__eye_half_R",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_half_R",
+      "roi": [
+        660,
+        710,
+        330,
+        170
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/keypose_asset_pack/eye_half_R.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          658,
+          756,
+          136,
+          116
+        ],
+        "nonzero_alpha": 4734,
+        "alpha_coverage": 0.00112867,
+        "roi_coverage": 0.057594,
+        "edge_score": 0.037,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__keypose_asset_pack__eye_half_R",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_half_R",
+      "roi": [
+        660,
+        710,
+        330,
+        170
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/keypose_asset_pack/eye_half_R.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT",
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__keypose_asset_pack__eye_half_R",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_half_R",
+      "roi": [
+        660,
+        710,
+        330,
+        170
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/keypose_asset_pack/eye_half_R.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          174,
+          400,
+          1700,
+          1248
+        ],
+        "nonzero_alpha": 254349,
+        "alpha_coverage": 0.06064153,
+        "roi_coverage": 0.036168,
+        "edge_score": 1.0196,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__keypose_asset_pack__eye_closed_L",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_closed_L",
+      "roi": [
+        1060,
+        930,
+        330,
+        160
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/keypose_asset_pack/eye_closed_L.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1143,
+          930,
+          248,
+          52
+        ],
+        "nonzero_alpha": 10180,
+        "alpha_coverage": 0.0024271,
+        "roi_coverage": 0.185133,
+        "edge_score": 0.0396,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__keypose_asset_pack__eye_closed_L",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_closed_L",
+      "roi": [
+        1060,
+        930,
+        330,
+        160
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/keypose_asset_pack/eye_closed_L.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1142,
+          927,
+          252,
+          55
+        ],
+        "nonzero_alpha": 11468,
+        "alpha_coverage": 0.00273418,
+        "roi_coverage": 0.191383,
+        "edge_score": 0.0372,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__keypose_asset_pack__eye_closed_L",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_closed_L",
+      "roi": [
+        1060,
+        930,
+        330,
+        160
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/keypose_asset_pack/eye_closed_L.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1141,
+          925,
+          255,
+          58
+        ],
+        "nonzero_alpha": 12656,
+        "alpha_coverage": 0.00301743,
+        "roi_coverage": 0.201117,
+        "edge_score": 0.0361,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__keypose_asset_pack__eye_closed_L",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_closed_L",
+      "roi": [
+        1060,
+        930,
+        330,
+        160
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/keypose_asset_pack/eye_closed_L.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1144,
+          927,
+          250,
+          53
+        ],
+        "nonzero_alpha": 11148,
+        "alpha_coverage": 0.00265789,
+        "roi_coverage": 0.196231,
+        "edge_score": 0.0373,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__keypose_asset_pack__eye_closed_L",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_closed_L",
+      "roi": [
+        1060,
+        930,
+        330,
+        160
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/keypose_asset_pack/eye_closed_L.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1141,
+          928,
+          252,
+          56
+        ],
+        "nonzero_alpha": 11850,
+        "alpha_coverage": 0.00282526,
+        "roi_coverage": 0.199527,
+        "edge_score": 0.0388,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__keypose_asset_pack__eye_closed_L",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_closed_L",
+      "roi": [
+        1060,
+        930,
+        330,
+        160
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/keypose_asset_pack/eye_closed_L.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT",
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__keypose_asset_pack__eye_closed_L",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_closed_L",
+      "roi": [
+        1060,
+        930,
+        330,
+        160
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/keypose_asset_pack/eye_closed_L.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          174,
+          400,
+          1700,
+          1248
+        ],
+        "nonzero_alpha": 254349,
+        "alpha_coverage": 0.06064153,
+        "roi_coverage": 0.185133,
+        "edge_score": 1.0196,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__keypose_asset_pack__eye_closed_R",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_closed_R",
+      "roi": [
+        660,
+        930,
+        330,
+        160
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/keypose_asset_pack/eye_closed_R.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          660,
+          930,
+          125,
+          50
+        ],
+        "nonzero_alpha": 5082,
+        "alpha_coverage": 0.00121164,
+        "roi_coverage": 0.092424,
+        "edge_score": 0.0213,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__keypose_asset_pack__eye_closed_R",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_closed_R",
+      "roi": [
+        660,
+        930,
+        330,
+        160
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/keypose_asset_pack/eye_closed_R.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          657,
+          927,
+          129,
+          54
+        ],
+        "nonzero_alpha": 5844,
+        "alpha_coverage": 0.00139332,
+        "roi_coverage": 0.095606,
+        "edge_score": 0.0205,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__keypose_asset_pack__eye_closed_R",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_closed_R",
+      "roi": [
+        660,
+        930,
+        330,
+        160
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/keypose_asset_pack/eye_closed_R.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          655,
+          925,
+          132,
+          58
+        ],
+        "nonzero_alpha": 6509,
+        "alpha_coverage": 0.00155187,
+        "roi_coverage": 0.100038,
+        "edge_score": 0.0204,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__keypose_asset_pack__eye_closed_R",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_closed_R",
+      "roi": [
+        660,
+        930,
+        330,
+        160
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/keypose_asset_pack/eye_closed_R.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          657,
+          927,
+          127,
+          53
+        ],
+        "nonzero_alpha": 5690,
+        "alpha_coverage": 0.0013566,
+        "roi_coverage": 0.098333,
+        "edge_score": 0.0219,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__keypose_asset_pack__eye_closed_R",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_closed_R",
+      "roi": [
+        660,
+        930,
+        330,
+        160
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/keypose_asset_pack/eye_closed_R.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          658,
+          928,
+          129,
+          54
+        ],
+        "nonzero_alpha": 5964,
+        "alpha_coverage": 0.00142193,
+        "roi_coverage": 0.099015,
+        "edge_score": 0.0216,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__keypose_asset_pack__eye_closed_R",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_closed_R",
+      "roi": [
+        660,
+        930,
+        330,
+        160
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/keypose_asset_pack/eye_closed_R.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT",
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__keypose_asset_pack__eye_closed_R",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "eye_closed_R",
+      "roi": [
+        660,
+        930,
+        330,
+        160
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/keypose_asset_pack/eye_closed_R.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          174,
+          400,
+          1700,
+          1248
+        ],
+        "nonzero_alpha": 254349,
+        "alpha_coverage": 0.06064153,
+        "roi_coverage": 0.092424,
+        "edge_score": 1.0196,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__keypose_asset_pack__mouth_closed",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "mouth_closed",
+      "roi": [
+        850,
+        1170,
+        350,
+        110
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/keypose_asset_pack/mouth_closed.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1142,
+          1205,
+          59,
+          76
+        ],
+        "nonzero_alpha": 1764,
+        "alpha_coverage": 0.00042057,
+        "roi_coverage": 0.036494,
+        "edge_score": 0.0239,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__keypose_asset_pack__mouth_closed",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "mouth_closed",
+      "roi": [
+        850,
+        1170,
+        350,
+        110
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/keypose_asset_pack/mouth_closed.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1141,
+          1204,
+          63,
+          80
+        ],
+        "nonzero_alpha": 2299,
+        "alpha_coverage": 0.00054812,
+        "roi_coverage": 0.044623,
+        "edge_score": 0.0192,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__keypose_asset_pack__mouth_closed",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "mouth_closed",
+      "roi": [
+        850,
+        1170,
+        350,
+        110
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/keypose_asset_pack/mouth_closed.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1140,
+          1203,
+          66,
+          83
+        ],
+        "nonzero_alpha": 3018,
+        "alpha_coverage": 0.00071955,
+        "roi_coverage": 0.054052,
+        "edge_score": 0.0156,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__keypose_asset_pack__mouth_closed",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "mouth_closed",
+      "roi": [
+        850,
+        1170,
+        350,
+        110
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/keypose_asset_pack/mouth_closed.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1145,
+          1207,
+          59,
+          76
+        ],
+        "nonzero_alpha": 1948,
+        "alpha_coverage": 0.00046444,
+        "roi_coverage": 0.047039,
+        "edge_score": 0.0214,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__keypose_asset_pack__mouth_closed",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "mouth_closed",
+      "roi": [
+        850,
+        1170,
+        350,
+        110
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/keypose_asset_pack/mouth_closed.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1140,
+          1203,
+          63,
+          80
+        ],
+        "nonzero_alpha": 2862,
+        "alpha_coverage": 0.00068235,
+        "roi_coverage": 0.05374,
+        "edge_score": 0.0235,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__keypose_asset_pack__mouth_closed",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "mouth_closed",
+      "roi": [
+        850,
+        1170,
+        350,
+        110
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/keypose_asset_pack/mouth_closed.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT",
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__keypose_asset_pack__mouth_closed",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "mouth_closed",
+      "roi": [
+        850,
+        1170,
+        350,
+        110
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/keypose_asset_pack/mouth_closed.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          174,
+          400,
+          1700,
+          1248
+        ],
+        "nonzero_alpha": 254349,
+        "alpha_coverage": 0.06064153,
+        "roi_coverage": 0.036494,
+        "edge_score": 1.0196,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__keypose_asset_pack__mouth_half",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "mouth_half",
+      "roi": [
+        820,
+        1320,
+        410,
+        160
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/keypose_asset_pack/mouth_half.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1207,
+          1472,
+          24,
+          9
+        ],
+        "nonzero_alpha": 101,
+        "alpha_coverage": 2.408e-05,
+        "roi_coverage": 0.000686,
+        "edge_score": 0.0027,
+        "issues": [
+          "LOW_ROI_COVERAGE",
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__keypose_asset_pack__mouth_half",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "mouth_half",
+      "roi": [
+        820,
+        1320,
+        410,
+        160
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/keypose_asset_pack/mouth_half.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1207,
+          1472,
+          27,
+          12
+        ],
+        "nonzero_alpha": 216,
+        "alpha_coverage": 5.15e-05,
+        "roi_coverage": 0.000991,
+        "edge_score": 0.0022,
+        "issues": [
+          "LOW_ROI_COVERAGE",
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__keypose_asset_pack__mouth_half",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "mouth_half",
+      "roi": [
+        820,
+        1320,
+        410,
+        160
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/keypose_asset_pack/mouth_half.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1208,
+          1470,
+          28,
+          16
+        ],
+        "nonzero_alpha": 346,
+        "alpha_coverage": 8.249e-05,
+        "roi_coverage": 0.001387,
+        "edge_score": 0.0016,
+        "issues": [
+          "LOW_ROI_COVERAGE",
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__keypose_asset_pack__mouth_half",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "mouth_half",
+      "roi": [
+        820,
+        1320,
+        410,
+        160
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/keypose_asset_pack/mouth_half.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1217,
+          1474,
+          16,
+          10
+        ],
+        "nonzero_alpha": 124,
+        "alpha_coverage": 2.956e-05,
+        "roi_coverage": 0.000976,
+        "edge_score": 0.0032,
+        "issues": [
+          "LOW_ROI_COVERAGE",
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__keypose_asset_pack__mouth_half",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "mouth_half",
+      "roi": [
+        820,
+        1320,
+        410,
+        160
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/keypose_asset_pack/mouth_half.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          1205,
+          1470,
+          28,
+          13
+        ],
+        "nonzero_alpha": 278,
+        "alpha_coverage": 6.628e-05,
+        "roi_coverage": 0.001448,
+        "edge_score": 0.0036,
+        "issues": [
+          "LOW_ROI_COVERAGE",
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__keypose_asset_pack__mouth_half",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "mouth_half",
+      "roi": [
+        820,
+        1320,
+        410,
+        160
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/keypose_asset_pack/mouth_half.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT",
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__keypose_asset_pack__mouth_half",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "mouth_half",
+      "roi": [
+        820,
+        1320,
+        410,
+        160
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/keypose_asset_pack/mouth_half.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          174,
+          400,
+          1700,
+          1248
+        ],
+        "nonzero_alpha": 254349,
+        "alpha_coverage": 0.06064153,
+        "roi_coverage": 0.000686,
+        "edge_score": 1.0196,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__keypose_asset_pack__mouth_open",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "mouth_open",
+      "roi": [
+        800,
+        1490,
+        450,
+        230
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/keypose_asset_pack/mouth_open.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          800,
+          1490,
+          451,
+          120
+        ],
+        "nonzero_alpha": 8792,
+        "alpha_coverage": 0.00209618,
+        "roi_coverage": 0.07857,
+        "edge_score": 0.0474,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__keypose_asset_pack__mouth_open",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "mouth_open",
+      "roi": [
+        800,
+        1490,
+        450,
+        230
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/keypose_asset_pack/mouth_open.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          797,
+          1487,
+          457,
+          123
+        ],
+        "nonzero_alpha": 9999,
+        "alpha_coverage": 0.00238395,
+        "roi_coverage": 0.082744,
+        "edge_score": 0.0445,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__keypose_asset_pack__mouth_open",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "mouth_open",
+      "roi": [
+        800,
+        1490,
+        450,
+        230
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/keypose_asset_pack/mouth_open.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          795,
+          1485,
+          461,
+          126
+        ],
+        "nonzero_alpha": 11438,
+        "alpha_coverage": 0.00272703,
+        "roi_coverage": 0.089101,
+        "edge_score": 0.0408,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__keypose_asset_pack__mouth_open",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "mouth_open",
+      "roi": [
+        800,
+        1490,
+        450,
+        230
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/keypose_asset_pack/mouth_open.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          797,
+          1487,
+          457,
+          120
+        ],
+        "nonzero_alpha": 9445,
+        "alpha_coverage": 0.00225186,
+        "roi_coverage": 0.084734,
+        "edge_score": 0.0481,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__keypose_asset_pack__mouth_open",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "mouth_open",
+      "roi": [
+        800,
+        1490,
+        450,
+        230
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/keypose_asset_pack/mouth_open.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          798,
+          1488,
+          455,
+          124
+        ],
+        "nonzero_alpha": 10883,
+        "alpha_coverage": 0.00259471,
+        "roi_coverage": 0.089633,
+        "edge_score": 0.0478,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__keypose_asset_pack__mouth_open",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "mouth_open",
+      "roi": [
+        800,
+        1490,
+        450,
+        230
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/keypose_asset_pack/mouth_open.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT",
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__keypose_asset_pack__mouth_open",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "keypose_asset_pack",
+      "part_id": "mouth_open",
+      "roi": [
+        800,
+        1490,
+        450,
+        230
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/keypose_asset_pack/mouth_open.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          174,
+          400,
+          1700,
+          1248
+        ],
+        "nonzero_alpha": 254349,
+        "alpha_coverage": 0.06064153,
+        "roi_coverage": 0.07857,
+        "edge_score": 1.0196,
+        "issues": [
+          "KEYPOSE_REFERENCE_NOT_PRODUCTION"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    }
+  ]
+}

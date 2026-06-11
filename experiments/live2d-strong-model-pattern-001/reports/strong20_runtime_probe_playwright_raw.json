@@ -1,0 +1,1752 @@
+{
+  "models": [
+    {
+      "id": "haru_greeter_pro_jp_haru_greeter_t05",
+      "safe_id": "haru_greeter_pro_jp_haru_greeter_t05",
+      "name": "haru_greeter_t05",
+      "expected_name": "haru_greeter_pro_jp_haru_greeter_t05",
+      "status": "PASS",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/motion_80.png",
+        "extreme_eye_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_eye_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_eye_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_mouth_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_mouth_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_hair_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_hair_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_body_angle_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_body_angle_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_arm_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_arm_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_arm_max.png"
+        ]
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile",
+            "ParamEyeForm",
+            "ParamEyeBallForm",
+            "ParamEyeBallX",
+            "ParamEyeBallY"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ]
+        },
+        "hair": {
+          "matched_parameters": [
+            "ParamHairFront",
+            "ParamHairSide",
+            "ParamHairBack"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ]
+        },
+        "arm": {
+          "matched_parameters": [
+            "ParamArmLA",
+            "ParamArmRA",
+            "ParamArmLB",
+            "ParamArmRB",
+            "ParamHandChangeR",
+            "ParamHandAngleR",
+            "ParamHandDhangeL",
+            "ParamHandAngleL"
+          ]
+        }
+      },
+      "errors": [],
+      "motion_group": null
+    },
+    {
+      "id": "koharu_haruto_haruto_t01",
+      "safe_id": "koharu_haruto_haruto_t01",
+      "name": "haruto_t01",
+      "expected_name": "koharu_haruto_haruto_t01",
+      "status": "PASS",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_haruto_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_haruto_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_haruto_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_haruto_t01/motion_80.png",
+        "extreme_eye_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_haruto_t01/extreme_eye_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_haruto_t01/extreme_eye_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_haruto_t01/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_haruto_t01/extreme_mouth_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_haruto_t01/extreme_mouth_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_haruto_t01/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_haruto_t01/extreme_hair_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_haruto_t01/extreme_hair_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_haruto_t01/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_haruto_t01/extreme_body_angle_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_haruto_t01/extreme_body_angle_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_haruto_t01/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_haruto_t01/extreme_arm_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_haruto_t01/extreme_arm_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_haruto_t01/extreme_arm_max.png"
+        ]
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_SIZE",
+            "PARAM_EYE_HI",
+            "PARAM_EYE_01"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y",
+            "PARAM_MOUTH_FORM_02"
+          ]
+        },
+        "hair": {
+          "matched_parameters": [
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE",
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FLUFFY",
+            "PARAM_HAIR_FLUFFY_02"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": []
+        },
+        "arm": {
+          "matched_parameters": [
+            "PARAM_ARM_L_01",
+            "PARAM_ARM_L_02",
+            "PARAM_ARM_L_03",
+            "PARAM_ARM_L",
+            "PARAM_ARM_R_01",
+            "PARAM_ARM_R_02",
+            "PARAM_ARM_R_03",
+            "PARAM_ARM_R",
+            "PARAM_HAND_SWITCH_L",
+            "PARAM_HAND_SWITCH_R",
+            "PARAM_HAND_L",
+            "PARAM_HAND_R"
+          ]
+        }
+      },
+      "errors": [],
+      "motion_group": "Idle"
+    },
+    {
+      "id": "hiyori_pro_ko_hiyori_pro_t11",
+      "safe_id": "hiyori_pro_ko_hiyori_pro_t11",
+      "name": "hiyori_pro_t11",
+      "expected_name": "hiyori_pro_ko_hiyori_pro_t11",
+      "status": "PASS",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/motion_80.png",
+        "extreme_eye_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_eye_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_eye_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_mouth_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_mouth_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_hair_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_hair_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_body_angle_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_body_angle_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_arm_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_arm_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_arm_max.png"
+        ]
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile",
+            "ParamEyeBallX",
+            "ParamEyeBallY"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ]
+        },
+        "hair": {
+          "matched_parameters": [
+            "ParamHairAhoge",
+            "ParamHairFront",
+            "ParamHairBack"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ]
+        },
+        "arm": {
+          "matched_parameters": [
+            "ParamShoulder",
+            "ParamArmLA",
+            "ParamArmRA",
+            "ParamArmLB",
+            "ParamArmRB",
+            "ParamHandLB",
+            "ParamHandRB",
+            "ParamHandL",
+            "ParamHandR"
+          ]
+        }
+      },
+      "errors": [],
+      "motion_group": "Idle"
+    },
+    {
+      "id": "kei_ko_kei_basic_free_t02",
+      "safe_id": "kei_ko_kei_basic_free_t02",
+      "name": "kei_basic_free_t02",
+      "expected_name": "kei_ko_kei_basic_free_t02",
+      "status": "PASS",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_basic_free_t02/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_basic_free_t02/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_basic_free_t02/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_basic_free_t02/motion_80.png",
+        "extreme_eye_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_basic_free_t02/extreme_eye_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_basic_free_t02/extreme_eye_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_basic_free_t02/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_basic_free_t02/extreme_mouth_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_basic_free_t02/extreme_mouth_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_basic_free_t02/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_basic_free_t02/extreme_hair_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_basic_free_t02/extreme_hair_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_basic_free_t02/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_basic_free_t02/extreme_body_angle_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_basic_free_t02/extreme_body_angle_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_basic_free_t02/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_basic_free_t02/extreme_arm_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_basic_free_t02/extreme_arm_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_basic_free_t02/extreme_arm_max.png"
+        ]
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile",
+            "ParamEyeBallX",
+            "ParamEyeBallY"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ]
+        },
+        "hair": {
+          "matched_parameters": [
+            "ParamHairFront",
+            "ParamHairSide",
+            "ParamHairSide2",
+            "ParamHairBack",
+            "ParamHairFrontFuwa",
+            "ParamHairSideFuwa",
+            "ParamHairBackFuwa"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ]
+        },
+        "arm": {
+          "matched_parameters": []
+        }
+      },
+      "errors": [],
+      "motion_group": null
+    },
+    {
+      "id": "kei_ko_kei_vowels_pro_t02",
+      "safe_id": "kei_ko_kei_vowels_pro_t02",
+      "name": "kei_vowels_pro_t02",
+      "expected_name": "kei_ko_kei_vowels_pro_t02",
+      "status": "PASS",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/motion_80.png",
+        "extreme_eye_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_eye_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_eye_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_mouth_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_mouth_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_hair_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_hair_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_body_angle_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_body_angle_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_arm_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_arm_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_arm_max.png"
+        ]
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile",
+            "ParamEyeBallX",
+            "ParamEyeBallY"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "ParamMouthOpenY",
+            "ParamA",
+            "ParamI",
+            "ParamU",
+            "ParamE",
+            "ParamO"
+          ]
+        },
+        "hair": {
+          "matched_parameters": [
+            "ParamHairFront",
+            "ParamHairSide",
+            "ParamHairSide2",
+            "ParamHairBack",
+            "ParamHairFrontFuwa",
+            "ParamHairSideFuwa",
+            "ParamHairBackFuwa"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ]
+        },
+        "arm": {
+          "matched_parameters": []
+        }
+      },
+      "errors": [],
+      "motion_group": null
+    },
+    {
+      "id": "koharu_haruto_koharu_t01",
+      "safe_id": "koharu_haruto_koharu_t01",
+      "name": "koharu_t01",
+      "expected_name": "koharu_haruto_koharu_t01",
+      "status": "PASS",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_koharu_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_koharu_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_koharu_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_koharu_t01/motion_80.png",
+        "extreme_eye_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_koharu_t01/extreme_eye_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_koharu_t01/extreme_eye_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_koharu_t01/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_koharu_t01/extreme_mouth_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_koharu_t01/extreme_mouth_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_koharu_t01/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_koharu_t01/extreme_hair_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_koharu_t01/extreme_hair_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_koharu_t01/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_koharu_t01/extreme_body_angle_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_koharu_t01/extreme_body_angle_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_koharu_t01/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_koharu_t01/extreme_arm_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_koharu_t01/extreme_arm_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_koharu_t01/extreme_arm_max.png"
+        ]
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_SIZE",
+            "PARAM_EYE_HI",
+            "PARAM_EYE_01"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y",
+            "PARAM_MOUTH_FORM_02"
+          ]
+        },
+        "hair": {
+          "matched_parameters": [
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE",
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FLUFFY",
+            "PARAM_HAIR_FLUFFY_02"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": []
+        },
+        "arm": {
+          "matched_parameters": [
+            "PARAM_ARM_L_01",
+            "PARAM_ARM_L_02",
+            "PARAM_ARM_L_03",
+            "PARAM_ARM_L",
+            "PARAM_ARM_R_01",
+            "PARAM_ARM_R_02",
+            "PARAM_ARM_R_03",
+            "PARAM_ARM_R",
+            "PARAM_HAND_SWITCH_L",
+            "PARAM_HAND_SWITCH_R",
+            "PARAM_HAND_L",
+            "PARAM_HAND_R"
+          ]
+        }
+      },
+      "errors": [],
+      "motion_group": "Idle"
+    },
+    {
+      "id": "mao_pro_ko_mao_pro_t06",
+      "safe_id": "mao_pro_ko_mao_pro_t06",
+      "name": "mao_pro_t06",
+      "expected_name": "mao_pro_ko_mao_pro_t06",
+      "status": "PASS",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/motion_80.png",
+        "extreme_eye_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_eye_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_eye_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_mouth_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_mouth_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_hair_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_hair_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_body_angle_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_body_angle_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_arm_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_arm_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_arm_max.png"
+        ]
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeLForm",
+            "ParamEyeROpen",
+            "ParamEyeRSmile",
+            "ParamEyeRForm",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeBallForm",
+            "ParamEyeEffect"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "ParamA",
+            "ParamI",
+            "ParamU",
+            "ParamE",
+            "ParamO",
+            "ParamMouthUp",
+            "ParamMouthDown",
+            "ParamMouthAngry",
+            "ParamMouthAngryLine"
+          ]
+        },
+        "hair": {
+          "matched_parameters": [
+            "ParamHairFront",
+            "ParamHairSideL",
+            "ParamHairSideR",
+            "ParamHairBack",
+            "ParamHairBackR",
+            "ParamHairBackL",
+            "ParamoHairMesh",
+            "ParamHairFrontFuwa",
+            "ParamHairSideFuwa",
+            "ParamHairBackFuwa"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ]
+        },
+        "arm": {
+          "matched_parameters": [
+            "ParamLeftShoulderUp",
+            "ParamRightShoulderUp",
+            "ParamArmLA01",
+            "ParamArmLA02",
+            "ParamArmLA03",
+            "ParamHandLA",
+            "ParamArmRA01",
+            "ParamArmRA02",
+            "ParamArmRA03",
+            "ParamHandRA",
+            "ParamArmLB01",
+            "ParamArmLB02",
+            "ParamArmLB03",
+            "ParamHandLB",
+            "ParamArmRB01",
+            "ParamArmRB02",
+            "ParamArmRB02Y",
+            "ParamArmRB03",
+            "ParamHandRB"
+          ]
+        }
+      },
+      "errors": [],
+      "motion_group": "Idle"
+    },
+    {
+      "id": "miara_pro_en_miara_pro_t04",
+      "safe_id": "miara_pro_en_miara_pro_t04",
+      "name": "miara_pro_t04",
+      "expected_name": "miara_pro_en_miara_pro_t04",
+      "status": "PASS",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miara_pro_en_miara_pro_t04/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miara_pro_en_miara_pro_t04/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miara_pro_en_miara_pro_t04/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miara_pro_en_miara_pro_t04/motion_80.png",
+        "extreme_eye_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miara_pro_en_miara_pro_t04/extreme_eye_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miara_pro_en_miara_pro_t04/extreme_eye_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miara_pro_en_miara_pro_t04/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miara_pro_en_miara_pro_t04/extreme_mouth_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miara_pro_en_miara_pro_t04/extreme_mouth_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miara_pro_en_miara_pro_t04/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miara_pro_en_miara_pro_t04/extreme_hair_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miara_pro_en_miara_pro_t04/extreme_hair_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miara_pro_en_miara_pro_t04/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miara_pro_en_miara_pro_t04/extreme_body_angle_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miara_pro_en_miara_pro_t04/extreme_body_angle_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miara_pro_en_miara_pro_t04/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miara_pro_en_miara_pro_t04/extreme_arm_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miara_pro_en_miara_pro_t04/extreme_arm_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miara_pro_en_miara_pro_t04/extreme_arm_max.png"
+        ]
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "ParamEyeLOpen",
+            "ParamEyeROpen",
+            "ParamEyeBallX",
+            "ParamEyeBallY"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ]
+        },
+        "hair": {
+          "matched_parameters": [
+            "ParamHairFront",
+            "ParamHairFront2",
+            "ParamHairSide",
+            "ParamHairSide2",
+            "ParamHairBack",
+            "ParamHairBack2",
+            "ParamHairTail",
+            "ParamHairTail2",
+            "ParamHairAho1",
+            "ParamHairAho2",
+            "ParamHairCloth",
+            "ParamHairCloth2"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": [
+            "ParamBodyAngleZ2",
+            "ParamBodyAngleX2",
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleZ"
+          ]
+        },
+        "arm": {
+          "matched_parameters": [
+            "ParamArmL1",
+            "ParamArmL2",
+            "ParamArmL3",
+            "ParamArmR1",
+            "ParamArmR2",
+            "ParamArmR3"
+          ]
+        }
+      },
+      "errors": [],
+      "motion_group": "Idle"
+    },
+    {
+      "id": "miku_pro_jp_miku_sample_t05",
+      "safe_id": "miku_pro_jp_miku_sample_t05",
+      "name": "miku_sample_t05",
+      "expected_name": "miku_pro_jp_miku_sample_t05",
+      "status": "PASS",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/motion_80.png",
+        "extreme_eye_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_eye_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_eye_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_mouth_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_mouth_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_hair_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_hair_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_body_angle_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_body_angle_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_arm_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_arm_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_arm_max.png"
+        ]
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile",
+            "ParamEyeBallX",
+            "ParamEyeBallY"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "ParamMouthOpenY",
+            "ParamMouthForm"
+          ]
+        },
+        "hair": {
+          "matched_parameters": [
+            "ParamHairFront",
+            "ParamHairFront2",
+            "ParamHairBack",
+            "ParamHairBackL8",
+            "ParamHairBackR6",
+            "Param_Angle_Rotation_1_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_2_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_3_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_4_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_5_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_6_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_7_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_8_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_9_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_1_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_2_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_3_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_4_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_5_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_6_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_7_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_8_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_9_D_HAIR_BACK_00"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ]
+        },
+        "arm": {
+          "matched_parameters": [
+            "ParamArmL",
+            "ParamArmR"
+          ]
+        }
+      },
+      "errors": [],
+      "motion_group": "Idle"
+    },
+    {
+      "id": "natori_pro_ko_natori_pro_t06",
+      "safe_id": "natori_pro_ko_natori_pro_t06",
+      "name": "natori_pro_t06",
+      "expected_name": "natori_pro_ko_natori_pro_t06",
+      "status": "PASS",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/natori_pro_ko_natori_pro_t06/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/natori_pro_ko_natori_pro_t06/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/natori_pro_ko_natori_pro_t06/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/natori_pro_ko_natori_pro_t06/motion_80.png",
+        "extreme_eye_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/natori_pro_ko_natori_pro_t06/extreme_eye_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/natori_pro_ko_natori_pro_t06/extreme_eye_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/natori_pro_ko_natori_pro_t06/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/natori_pro_ko_natori_pro_t06/extreme_mouth_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/natori_pro_ko_natori_pro_t06/extreme_mouth_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/natori_pro_ko_natori_pro_t06/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/natori_pro_ko_natori_pro_t06/extreme_hair_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/natori_pro_ko_natori_pro_t06/extreme_hair_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/natori_pro_ko_natori_pro_t06/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/natori_pro_ko_natori_pro_t06/extreme_body_angle_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/natori_pro_ko_natori_pro_t06/extreme_body_angle_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/natori_pro_ko_natori_pro_t06/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/natori_pro_ko_natori_pro_t06/extreme_arm_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/natori_pro_ko_natori_pro_t06/extreme_arm_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/natori_pro_ko_natori_pro_t06/extreme_arm_max.png"
+        ]
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeLForm",
+            "ParamEyeROpen",
+            "ParamEyeRSmile",
+            "ParamEyeRForm",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeBallForm"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "ParamMouthForm",
+            "ParamMouthOpenY",
+            "ParamMouthForm2"
+          ]
+        },
+        "hair": {
+          "matched_parameters": [
+            "ParamHairFront",
+            "ParamHairSide",
+            "ParamHairBack",
+            "ParamHairFrontFuwa",
+            "ParamHairSideFuwa",
+            "ParamHairBackFuwa"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ",
+            "ParamWaistAngleZ"
+          ]
+        },
+        "arm": {
+          "matched_parameters": [
+            "ParamLeftShoulderUp",
+            "ParamRightShoulderUp",
+            "ParamArmAL01",
+            "ParamArmAL02",
+            "ParamArmAL03",
+            "ParamArmAL04",
+            "ParamArmAR01",
+            "ParamArmAR02",
+            "ParamArmAR03",
+            "ParamArmAR04",
+            "ParamArmBR01",
+            "ParamArmBR02",
+            "ParamArmBR03",
+            "ParamArmBRHand01",
+            "ParamArmBRHand01Roll",
+            "ParamArmBRHand05",
+            "ParamArmBRHand05Roll1",
+            "ParamArmBRHand05Roll2",
+            "ParamArmBRHand05Roll3",
+            "ParamArmCR01",
+            "ParamArmCR02",
+            "ParamArmCR03",
+            "ParamArmCLHandRoll1",
+            "ParamArmDL01",
+            "ParamArmDL02",
+            "ParamArmDL03",
+            "ParamArmDLHand03Roll",
+            "ParamArmER01",
+            "ParamArmER02",
+            "ParamArmER03",
+            "ParamArmER04",
+            "ParamArmERHand04",
+            "ParamArmERHand04Roll1",
+            "ParamArmERHand04Roll2",
+            "ParamArmERHand06",
+            "ParamArmERHand06Roll1",
+            "ParamArmERHand06Roll2"
+          ]
+        }
+      },
+      "errors": [],
+      "motion_group": "Idle"
+    },
+    {
+      "id": "ren_pro_ko_ren_t01",
+      "safe_id": "ren_pro_ko_ren_t01",
+      "name": "ren_t01",
+      "expected_name": "ren_pro_ko_ren_t01",
+      "status": "PASS",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/ren_pro_ko_ren_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/ren_pro_ko_ren_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/ren_pro_ko_ren_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/ren_pro_ko_ren_t01/motion_80.png",
+        "extreme_eye_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/ren_pro_ko_ren_t01/extreme_eye_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/ren_pro_ko_ren_t01/extreme_eye_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/ren_pro_ko_ren_t01/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/ren_pro_ko_ren_t01/extreme_mouth_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/ren_pro_ko_ren_t01/extreme_mouth_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/ren_pro_ko_ren_t01/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/ren_pro_ko_ren_t01/extreme_hair_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/ren_pro_ko_ren_t01/extreme_hair_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/ren_pro_ko_ren_t01/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/ren_pro_ko_ren_t01/extreme_body_angle_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/ren_pro_ko_ren_t01/extreme_body_angle_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/ren_pro_ko_ren_t01/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/ren_pro_ko_ren_t01/extreme_arm_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/ren_pro_ko_ren_t01/extreme_arm_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/ren_pro_ko_ren_t01/extreme_arm_max.png"
+        ]
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeSize"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ]
+        },
+        "hair": {
+          "matched_parameters": [
+            "ParamHairFront",
+            "ParamHairSide",
+            "ParamHairBack",
+            "ParamHairFrontFuwa",
+            "ParamHairSideFuwa",
+            "ParamHairBackFuwa"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ",
+            "ParamWaistAngleZ",
+            "ParamBodyAngleX2",
+            "ParamBodyAngleY2"
+          ]
+        },
+        "arm": {
+          "matched_parameters": [
+            "ParamLeftShoulderUp",
+            "ParamRightShoulderUp",
+            "ParamLeftShoulderUp2",
+            "ParamRightShoulderUp2",
+            "ParamArmL01",
+            "ParamArmL02",
+            "ParamArmL03",
+            "ParamHandL",
+            "ParamHandLDrawOrder",
+            "ParamArmR01",
+            "ParamArmR02",
+            "ParamArmR03",
+            "ParamHandR",
+            "ParamHandRDrawOrder",
+            "ParamPullHandle"
+          ]
+        }
+      },
+      "errors": [],
+      "motion_group": "Idle"
+    },
+    {
+      "id": "rice_pro_ko_rice_pro_t03",
+      "safe_id": "rice_pro_ko_rice_pro_t03",
+      "name": "rice_pro_t03",
+      "expected_name": "rice_pro_ko_rice_pro_t03",
+      "status": "PASS",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/rice_pro_ko_rice_pro_t03/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/rice_pro_ko_rice_pro_t03/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/rice_pro_ko_rice_pro_t03/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/rice_pro_ko_rice_pro_t03/motion_80.png",
+        "extreme_eye_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/rice_pro_ko_rice_pro_t03/extreme_eye_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/rice_pro_ko_rice_pro_t03/extreme_eye_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/rice_pro_ko_rice_pro_t03/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/rice_pro_ko_rice_pro_t03/extreme_mouth_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/rice_pro_ko_rice_pro_t03/extreme_mouth_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/rice_pro_ko_rice_pro_t03/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/rice_pro_ko_rice_pro_t03/extreme_hair_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/rice_pro_ko_rice_pro_t03/extreme_hair_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/rice_pro_ko_rice_pro_t03/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/rice_pro_ko_rice_pro_t03/extreme_body_angle_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/rice_pro_ko_rice_pro_t03/extreme_body_angle_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/rice_pro_ko_rice_pro_t03/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/rice_pro_ko_rice_pro_t03/extreme_arm_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/rice_pro_ko_rice_pro_t03/extreme_arm_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/rice_pro_ko_rice_pro_t03/extreme_arm_max.png"
+        ]
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "ParamEyeLOpen",
+            "ParamEyeROpen",
+            "ParamEyeBallX",
+            "ParamEyeBallY"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": []
+        },
+        "hair": {
+          "matched_parameters": [
+            "ParamHairFront01",
+            "ParamHairFront02"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": [
+            "ParamAngleX",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ]
+        },
+        "arm": {
+          "matched_parameters": [
+            "ParamShoulderR",
+            "ParamShoulderL",
+            "ParamArmR01",
+            "ParamArmR01Y",
+            "ParamArmR02",
+            "ParamArmR02Y",
+            "ParamArmR03",
+            "ParamArmL01",
+            "ParamArmL02",
+            "ParamArmL03",
+            "ParamArmChange",
+            "ParamHandLightAOn",
+            "ParamHandLightASize",
+            "ParamHandLightBOn",
+            "ParamHandLightBSize"
+          ]
+        }
+      },
+      "errors": [],
+      "motion_group": "Idle"
+    },
+    {
+      "id": "tsumiki_tsumiki_t01",
+      "safe_id": "tsumiki_tsumiki_t01",
+      "name": "tsumiki_t01",
+      "expected_name": "tsumiki_tsumiki_t01",
+      "status": "PASS",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tsumiki_tsumiki_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tsumiki_tsumiki_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tsumiki_tsumiki_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tsumiki_tsumiki_t01/motion_80.png",
+        "extreme_eye_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tsumiki_tsumiki_t01/extreme_eye_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tsumiki_tsumiki_t01/extreme_eye_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tsumiki_tsumiki_t01/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tsumiki_tsumiki_t01/extreme_mouth_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tsumiki_tsumiki_t01/extreme_mouth_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tsumiki_tsumiki_t01/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tsumiki_tsumiki_t01/extreme_hair_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tsumiki_tsumiki_t01/extreme_hair_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tsumiki_tsumiki_t01/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tsumiki_tsumiki_t01/extreme_body_angle_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tsumiki_tsumiki_t01/extreme_body_angle_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tsumiki_tsumiki_t01/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tsumiki_tsumiki_t01/extreme_arm_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tsumiki_tsumiki_t01/extreme_arm_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tsumiki_tsumiki_t01/extreme_arm_max.png"
+        ]
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE",
+            "PARAM_EYE_FORM",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_BALL_FORM"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ]
+        },
+        "hair": {
+          "matched_parameters": [
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE",
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_AHO",
+            "PARAM_HAIR_TAIR"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": []
+        },
+        "arm": {
+          "matched_parameters": [
+            "PARAM_ARM",
+            "PARAM_ARM_L",
+            "PARAM_ARM_R"
+          ]
+        }
+      },
+      "errors": [],
+      "motion_group": "Idle"
+    },
+    {
+      "id": "wanko_wanko_touch_t01",
+      "safe_id": "wanko_wanko_touch_t01",
+      "name": "wanko_touch_t01",
+      "expected_name": "wanko_wanko_touch_t01",
+      "status": "PASS",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/wanko_wanko_touch_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/wanko_wanko_touch_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/wanko_wanko_touch_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/wanko_wanko_touch_t01/motion_80.png",
+        "extreme_eye_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/wanko_wanko_touch_t01/extreme_eye_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/wanko_wanko_touch_t01/extreme_eye_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/wanko_wanko_touch_t01/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/wanko_wanko_touch_t01/extreme_mouth_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/wanko_wanko_touch_t01/extreme_mouth_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/wanko_wanko_touch_t01/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/wanko_wanko_touch_t01/extreme_hair_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/wanko_wanko_touch_t01/extreme_hair_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/wanko_wanko_touch_t01/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/wanko_wanko_touch_t01/extreme_body_angle_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/wanko_wanko_touch_t01/extreme_body_angle_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/wanko_wanko_touch_t01/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/wanko_wanko_touch_t01/extreme_arm_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/wanko_wanko_touch_t01/extreme_arm_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/wanko_wanko_touch_t01/extreme_arm_max.png"
+        ]
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_R_OPEN"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ]
+        },
+        "hair": {
+          "matched_parameters": []
+        },
+        "body_angle": {
+          "matched_parameters": []
+        },
+        "arm": {
+          "matched_parameters": [
+            "PARAM_HAND_L",
+            "PARAM_HAND_R"
+          ]
+        }
+      },
+      "errors": [],
+      "motion_group": "Idle"
+    },
+    {
+      "id": "epsilon_epsilon_t02",
+      "safe_id": "epsilon_epsilon_t02",
+      "name": "Epsilon_t02",
+      "expected_name": "epsilon_epsilon_t02",
+      "status": "PASS",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/epsilon_epsilon_t02/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/epsilon_epsilon_t02/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/epsilon_epsilon_t02/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/epsilon_epsilon_t02/motion_80.png",
+        "extreme_eye_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/epsilon_epsilon_t02/extreme_eye_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/epsilon_epsilon_t02/extreme_eye_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/epsilon_epsilon_t02/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/epsilon_epsilon_t02/extreme_mouth_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/epsilon_epsilon_t02/extreme_mouth_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/epsilon_epsilon_t02/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/epsilon_epsilon_t02/extreme_hair_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/epsilon_epsilon_t02/extreme_hair_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/epsilon_epsilon_t02/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/epsilon_epsilon_t02/extreme_body_angle_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/epsilon_epsilon_t02/extreme_body_angle_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/epsilon_epsilon_t02/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/epsilon_epsilon_t02/extreme_arm_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/epsilon_epsilon_t02/extreme_arm_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/epsilon_epsilon_t02/extreme_arm_max.png"
+        ]
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE",
+            "PARAM_EYE_FORM",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ]
+        },
+        "hair": {
+          "matched_parameters": [
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE",
+            "PARAM_HAIR_SIDE_L",
+            "PARAM_HAIR_SIDE_R",
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_BACK_L",
+            "PARAM_HAIR_BACK_R"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": []
+        },
+        "arm": {
+          "matched_parameters": [
+            "PARAM_ARM_L",
+            "PARAM_ARM_R"
+          ]
+        }
+      },
+      "errors": [],
+      "motion_group": "Idle"
+    },
+    {
+      "id": "chitose_chitose_t01",
+      "safe_id": "chitose_chitose_t01",
+      "name": "chitose_t01",
+      "expected_name": "chitose_chitose_t01",
+      "status": "PASS",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/chitose_chitose_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/chitose_chitose_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/chitose_chitose_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/chitose_chitose_t01/motion_80.png",
+        "extreme_eye_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/chitose_chitose_t01/extreme_eye_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/chitose_chitose_t01/extreme_eye_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/chitose_chitose_t01/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/chitose_chitose_t01/extreme_mouth_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/chitose_chitose_t01/extreme_mouth_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/chitose_chitose_t01/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/chitose_chitose_t01/extreme_hair_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/chitose_chitose_t01/extreme_hair_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/chitose_chitose_t01/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/chitose_chitose_t01/extreme_body_angle_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/chitose_chitose_t01/extreme_body_angle_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/chitose_chitose_t01/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/chitose_chitose_t01/extreme_arm_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/chitose_chitose_t01/extreme_arm_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/chitose_chitose_t01/extreme_arm_max.png"
+        ]
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE",
+            "PARAM_EYE_FORM",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_BALL_FORM"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ]
+        },
+        "hair": {
+          "matched_parameters": [
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE",
+            "PARAM_HAIR_BACK"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": []
+        },
+        "arm": {
+          "matched_parameters": [
+            "PARAM_ARM_L_A",
+            "PARAM_ARM_R_A",
+            "PARAM_ARM_R_B"
+          ]
+        }
+      },
+      "errors": [],
+      "motion_group": "Idle"
+    },
+    {
+      "id": "haru_haru_t01",
+      "safe_id": "haru_haru_t01",
+      "name": "haru_t01",
+      "expected_name": "haru_haru_t01",
+      "status": "PASS",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_haru_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_haru_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_haru_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_haru_t01/motion_80.png",
+        "extreme_eye_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_haru_t01/extreme_eye_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_haru_t01/extreme_eye_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_haru_t01/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_haru_t01/extreme_mouth_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_haru_t01/extreme_mouth_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_haru_t01/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_haru_t01/extreme_hair_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_haru_t01/extreme_hair_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_haru_t01/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_haru_t01/extreme_body_angle_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_haru_t01/extreme_body_angle_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_haru_t01/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_haru_t01/extreme_arm_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_haru_t01/extreme_arm_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/haru_haru_t01/extreme_arm_max.png"
+        ]
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE",
+            "PARAM_EYE_FORM",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_BALL_FORM"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ]
+        },
+        "hair": {
+          "matched_parameters": [
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_BACK"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": []
+        },
+        "arm": {
+          "matched_parameters": [
+            "PARAM_ARM_L_A",
+            "PARAM_ARM_R_A",
+            "PARAM_ARM_L_B",
+            "PARAM_ARM_R_B"
+          ]
+        }
+      },
+      "errors": [],
+      "motion_group": "Idle"
+    },
+    {
+      "id": "tororo_hijiki_hijiki_t01",
+      "safe_id": "tororo_hijiki_hijiki_t01",
+      "name": "hijiki_t01",
+      "expected_name": "tororo_hijiki_hijiki_t01",
+      "status": "PASS",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tororo_hijiki_hijiki_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tororo_hijiki_hijiki_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tororo_hijiki_hijiki_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tororo_hijiki_hijiki_t01/motion_80.png",
+        "extreme_eye_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tororo_hijiki_hijiki_t01/extreme_eye_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tororo_hijiki_hijiki_t01/extreme_eye_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tororo_hijiki_hijiki_t01/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tororo_hijiki_hijiki_t01/extreme_mouth_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tororo_hijiki_hijiki_t01/extreme_mouth_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tororo_hijiki_hijiki_t01/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tororo_hijiki_hijiki_t01/extreme_hair_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tororo_hijiki_hijiki_t01/extreme_hair_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tororo_hijiki_hijiki_t01/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tororo_hijiki_hijiki_t01/extreme_body_angle_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tororo_hijiki_hijiki_t01/extreme_body_angle_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tororo_hijiki_hijiki_t01/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tororo_hijiki_hijiki_t01/extreme_arm_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tororo_hijiki_hijiki_t01/extreme_arm_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/tororo_hijiki_hijiki_t01/extreme_arm_max.png"
+        ]
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_FORM"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ]
+        },
+        "hair": {
+          "matched_parameters": []
+        },
+        "body_angle": {
+          "matched_parameters": []
+        },
+        "arm": {
+          "matched_parameters": [
+            "PARAM_HAND_R",
+            "PARAM_HAND_L",
+            "PARAM_ARM_L",
+            "PARAM_HAND_L_MOVE",
+            "PARAM_ARM_R_MOVE",
+            "ARM_R_MOVE_02"
+          ]
+        }
+      },
+      "errors": [],
+      "motion_group": "Idle"
+    },
+    {
+      "id": "izumi_izumi_anime_t01",
+      "safe_id": "izumi_izumi_anime_t01",
+      "name": "izumi_anime_t01",
+      "expected_name": "izumi_izumi_anime_t01",
+      "status": "PASS",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_anime_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_anime_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_anime_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_anime_t01/motion_80.png",
+        "extreme_eye_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_anime_t01/extreme_eye_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_anime_t01/extreme_eye_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_anime_t01/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_anime_t01/extreme_mouth_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_anime_t01/extreme_mouth_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_anime_t01/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_anime_t01/extreme_hair_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_anime_t01/extreme_hair_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_anime_t01/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_anime_t01/extreme_body_angle_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_anime_t01/extreme_body_angle_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_anime_t01/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_anime_t01/extreme_arm_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_anime_t01/extreme_arm_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_anime_t01/extreme_arm_max.png"
+        ]
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_BALL_FORM"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ]
+        },
+        "hair": {
+          "matched_parameters": [
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE",
+            "PARAM_HAIR_BACK"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": []
+        },
+        "arm": {
+          "matched_parameters": [
+            "PARAM_ARM_L",
+            "PARAM_ARM_R"
+          ]
+        }
+      },
+      "errors": [],
+      "motion_group": "Idle"
+    },
+    {
+      "id": "izumi_izumi_atsu_t01",
+      "safe_id": "izumi_izumi_atsu_t01",
+      "name": "izumi_atsu_t01",
+      "expected_name": "izumi_izumi_atsu_t01",
+      "status": "PASS",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_atsu_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_atsu_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_atsu_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_atsu_t01/motion_80.png",
+        "extreme_eye_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_atsu_t01/extreme_eye_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_atsu_t01/extreme_eye_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_atsu_t01/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_atsu_t01/extreme_mouth_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_atsu_t01/extreme_mouth_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_atsu_t01/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_atsu_t01/extreme_hair_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_atsu_t01/extreme_hair_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_atsu_t01/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_atsu_t01/extreme_body_angle_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_atsu_t01/extreme_body_angle_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_atsu_t01/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_atsu_t01/extreme_arm_min.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_atsu_t01/extreme_arm_default.png",
+          "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_atsu_t01/extreme_arm_max.png"
+        ]
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_BALL_FORM"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ]
+        },
+        "hair": {
+          "matched_parameters": [
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE",
+            "PARAM_HAIR_BACK"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": []
+        },
+        "arm": {
+          "matched_parameters": [
+            "PARAM_ARM_L",
+            "PARAM_ARM_R"
+          ]
+        }
+      },
+      "errors": [],
+      "motion_group": "Idle"
+    }
+  ]
+}

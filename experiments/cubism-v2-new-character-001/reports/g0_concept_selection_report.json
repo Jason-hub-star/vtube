@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "status": "PASS_WITH_CANDIDATE_002",
+  "concept": "adult cute female VTuber, front-facing upper-body, Cubism v2_standard friendly",
+  "generation_mode": "single_master_png_first",
+  "selected_candidate": {
+    "id": "candidate_002",
+    "path": "experiments/cubism-v2-new-character-001/concepts/g0_adult_cute_female_candidate_002.png",
+    "decision": "KEEP_FOR_G1",
+    "width": 1086,
+    "height": 1448,
+    "notes": "Cleaner adult cute design with fewer accessories and clearer face, mouth, hair, neck, shoulder, and torso boundaries."
+  },
+  "candidates": [
+    {
+      "id": "candidate_001",
+      "path": "experiments/cubism-v2-new-character-001/concepts/g0_adult_cute_female_candidate_001.png",
+      "decision": "REFERENCE_ONLY",
+      "notes": "Good character appeal but too many accessories and clothing details for the first production G1 split."
+    },
+    {
+      "id": "candidate_002",
+      "path": "experiments/cubism-v2-new-character-001/concepts/g0_adult_cute_female_candidate_002.png",
+      "decision": "KEEP_FOR_G1",
+      "notes": "Best current G0 candidate for v2_standard first production path."
+    }
+  ],
+  "g0_checklist": {
+    "adult_female": "PASS",
+    "cute_impression": "PASS",
+    "front_facing": "PASS",
+    "eyes_clear": "PASS",
+    "mouth_clear": "PASS",
+    "bangs_not_blocking_key_features": "PASS",
+    "hair_groups_visible": "PASS",
+    "neck_shoulders_torso_visible": "PASS",
+    "no_complex_hands_or_large_props": "PASS",
+    "g1_64_part_split_feasibility": "LIKELY_PASS"
+  },
+  "g1_risks": [
+    "front_bang_C will need underpaint because it overlaps the forehead",
+    "side hair tips overlap shoulders/cardigan and need draw-order review",
+    "chest ribbon and buttons should be kept simple in v2_standard material planning"
+  ],
+  "next_gate": "G1_PART_TAXONOMY"
+}

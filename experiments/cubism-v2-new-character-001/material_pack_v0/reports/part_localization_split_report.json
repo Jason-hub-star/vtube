@@ -1,0 +1,763 @@
+{
+  "schema_version": 1,
+  "status": "PASS_LOCALIZATION_TEMPLATE_SPLIT_APPLIED",
+  "generated_at": "2026-06-08T08:04:25.482781+00:00",
+  "template": "experiments/cubism-v2-new-character-001/material_pack_v0/reports/part_localization_template.json",
+  "manifest": "experiments/cubism-v2-new-character-001/material_pack_v0/layer_manifest.json",
+  "localized_manifest": "experiments/cubism-v2-new-character-001/material_pack_v0/layer_manifest.localization_template_split_v1.json",
+  "backup_manifest": "experiments/cubism-v2-new-character-001/material_pack_v0/layer_manifest.before_localization_template_split_v1.json",
+  "output_dir": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1",
+  "applied_parts": 37,
+  "kept_parts": 25,
+  "rows": [
+    {
+      "part_id": "body_underpaint",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        815,
+        1200,
+        413,
+        384
+      ],
+      "alpha_coverage": 0.01338744,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/01_body_underpaint.png"
+    },
+    {
+      "part_id": "neck_shadow_underpaint",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        939,
+        1171,
+        164,
+        66
+      ],
+      "alpha_coverage": 0.00044417,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/04_neck_shadow_underpaint.png"
+    },
+    {
+      "part_id": "arm_L_underpaint",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        662,
+        1232,
+        139,
+        423
+      ],
+      "alpha_coverage": 0.01256037,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/09_arm_L_underpaint.png"
+    },
+    {
+      "part_id": "arm_R_underpaint",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        1330,
+        1232,
+        84,
+        423
+      ],
+      "alpha_coverage": 0.00705457,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/10_arm_R_underpaint.png"
+    },
+    {
+      "part_id": "hair_back_base",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        653,
+        343,
+        747,
+        937
+      ],
+      "alpha_coverage": 0.07610965,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/45_hair_back_base.png"
+    },
+    {
+      "part_id": "hair_back_underpaint",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        719,
+        400,
+        624,
+        849
+      ],
+      "alpha_coverage": 0.07512641,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/46_hair_back_underpaint.png"
+    },
+    {
+      "part_id": "hair_back_strand_L",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        656,
+        710,
+        230,
+        590
+      ],
+      "alpha_coverage": 0.0116241,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/47_hair_back_strand_L.png"
+    },
+    {
+      "part_id": "hair_back_strand_R",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        1181,
+        710,
+        220,
+        590
+      ],
+      "alpha_coverage": 0.0108552,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/48_hair_back_strand_R.png"
+    },
+    {
+      "part_id": "hair_back_center",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        870,
+        348,
+        331,
+        821
+      ],
+      "alpha_coverage": 0.03091979,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/49_hair_back_center.png"
+    },
+    {
+      "part_id": "torso_base",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        766,
+        1200,
+        540,
+        492
+      ],
+      "alpha_coverage": 0.04710674,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/02_torso_base.png"
+    },
+    {
+      "part_id": "neck",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        911,
+        1060,
+        230,
+        185
+      ],
+      "alpha_coverage": 0.00822711,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/03_neck.png"
+    },
+    {
+      "part_id": "shoulder_L",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        650,
+        1185,
+        361,
+        250
+      ],
+      "alpha_coverage": 0.01310515,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/05_shoulder_L.png"
+    },
+    {
+      "part_id": "shoulder_R",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        1066,
+        1185,
+        335,
+        250
+      ],
+      "alpha_coverage": 0.01259255,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/06_shoulder_R.png"
+    },
+    {
+      "part_id": "arm_L_upper_simple",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        609,
+        1200,
+        259,
+        548
+      ],
+      "alpha_coverage": 0.0248065,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/07_arm_L_upper_simple.png"
+    },
+    {
+      "part_id": "arm_R_upper_simple",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        1279,
+        1200,
+        146,
+        548
+      ],
+      "alpha_coverage": 0.01511359,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/08_arm_R_upper_simple.png"
+    },
+    {
+      "part_id": "chest_cloth_base",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        766,
+        1285,
+        542,
+        347
+      ],
+      "alpha_coverage": 0.02895737,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/63_chest_cloth_base.png"
+    },
+    {
+      "part_id": "face_underpaint_L",
+      "action": "REPAIR_UNDERPAINT",
+      "bbox_actual": [
+        828,
+        721,
+        181,
+        304
+      ],
+      "alpha_coverage": 0.01278305,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/14_face_underpaint_L.png"
+    },
+    {
+      "part_id": "face_underpaint_R",
+      "action": "REPAIR_UNDERPAINT",
+      "bbox_actual": [
+        1054,
+        721,
+        181,
+        304
+      ],
+      "alpha_coverage": 0.01278305,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/15_face_underpaint_R.png"
+    },
+    {
+      "part_id": "face_base",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        652,
+        337,
+        761,
+        1411
+      ],
+      "alpha_coverage": 0.02879095,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/11_face_base.png"
+    },
+    {
+      "part_id": "face_shadow_L",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        816,
+        745,
+        205,
+        300
+      ],
+      "alpha_coverage": 0.0131588,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/12_face_shadow_L.png"
+    },
+    {
+      "part_id": "face_shadow_R",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        1041,
+        745,
+        205,
+        300
+      ],
+      "alpha_coverage": 0.01366735,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/13_face_shadow_R.png"
+    },
+    {
+      "part_id": "nose",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        1001,
+        905,
+        60,
+        70
+      ],
+      "alpha_coverage": 0.00083756,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/16_nose.png"
+    },
+    {
+      "part_id": "cheek_L",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        836,
+        890,
+        84,
+        65
+      ],
+      "alpha_coverage": 0.00130177,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/17_cheek_L.png"
+    },
+    {
+      "part_id": "cheek_R",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        1141,
+        890,
+        85,
+        65
+      ],
+      "alpha_coverage": 0.00131726,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/18_cheek_R.png"
+    },
+    {
+      "part_id": "eye_L_white",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        878,
+        805,
+        148,
+        92
+      ],
+      "alpha_coverage": 0.00226092,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/19_eye_L_white.png"
+    },
+    {
+      "part_id": "eye_L_underpaint",
+      "action": "REPAIR_UNDERPAINT",
+      "bbox_actual": [
+        882,
+        826,
+        114,
+        56
+      ],
+      "alpha_coverage": 0.00121403,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/26_eye_L_underpaint.png"
+    },
+    {
+      "part_id": "eye_R_white",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        1091,
+        805,
+        91,
+        95
+      ],
+      "alpha_coverage": 0.00177383,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/27_eye_R_white.png"
+    },
+    {
+      "part_id": "eye_R_underpaint",
+      "action": "REPAIR_UNDERPAINT",
+      "bbox_actual": [
+        1134,
+        823,
+        97,
+        59
+      ],
+      "alpha_coverage": 0.00108886,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/34_eye_R_underpaint.png"
+    },
+    {
+      "part_id": "eye_L_iris",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        916,
+        847,
+        72,
+        48
+      ],
+      "alpha_coverage": 0.00045204,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/20_eye_L_iris.png"
+    },
+    {
+      "part_id": "eye_L_pupil",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        936,
+        847,
+        36,
+        23
+      ],
+      "alpha_coverage": 5.865e-05,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/21_eye_L_pupil.png"
+    },
+    {
+      "part_id": "eye_R_iris",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        1131,
+        820,
+        72,
+        75
+      ],
+      "alpha_coverage": 0.00124478,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/28_eye_R_iris.png"
+    },
+    {
+      "part_id": "eye_R_pupil",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        1151,
+        840,
+        36,
+        40
+      ],
+      "alpha_coverage": 0.00034237,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/29_eye_R_pupil.png"
+    },
+    {
+      "part_id": "eye_L_highlight",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        965,
+        847,
+        20,
+        20
+      ],
+      "alpha_coverage": 6.437e-05,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/22_eye_L_highlight.png"
+    },
+    {
+      "part_id": "eye_L_upper_lash",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        851,
+        785,
+        180,
+        62
+      ],
+      "alpha_coverage": 0.00198054,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/23_eye_L_upper_lash.png"
+    },
+    {
+      "part_id": "eye_L_lower_lash",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        871,
+        870,
+        140,
+        45
+      ],
+      "alpha_coverage": 0.00121951,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/24_eye_L_lower_lash.png"
+    },
+    {
+      "part_id": "eye_L_closed_lid",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        870,
+        823,
+        143,
+        53
+      ],
+      "alpha_coverage": 0.00121665,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/25_eye_L_closed_lid.png"
+    },
+    {
+      "part_id": "eye_R_highlight",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        1161,
+        835,
+        25,
+        27
+      ],
+      "alpha_coverage": 0.00016093,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/30_eye_R_highlight.png"
+    },
+    {
+      "part_id": "eye_R_upper_lash",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        1081,
+        785,
+        180,
+        62
+      ],
+      "alpha_coverage": 0.00265694,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/31_eye_R_upper_lash.png"
+    },
+    {
+      "part_id": "eye_R_lower_lash",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        1101,
+        870,
+        140,
+        45
+      ],
+      "alpha_coverage": 0.00140762,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/32_eye_R_lower_lash.png"
+    },
+    {
+      "part_id": "eye_R_closed_lid",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        1100,
+        823,
+        143,
+        53
+      ],
+      "alpha_coverage": 0.00163198,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/33_eye_R_closed_lid.png"
+    },
+    {
+      "part_id": "brow_L",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        841,
+        750,
+        200,
+        58
+      ],
+      "alpha_coverage": 0.0021565,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/35_brow_L.png"
+    },
+    {
+      "part_id": "brow_R",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        1071,
+        750,
+        200,
+        58
+      ],
+      "alpha_coverage": 0.00273848,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/36_brow_R.png"
+    },
+    {
+      "part_id": "mouth_inner",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        976,
+        997,
+        111,
+        61
+      ],
+      "alpha_coverage": 0.00161433,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/38_mouth_inner.png"
+    },
+    {
+      "part_id": "mouth_teeth",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        990,
+        1000,
+        85,
+        20
+      ],
+      "alpha_coverage": 0.00040531,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/41_mouth_teeth.png"
+    },
+    {
+      "part_id": "mouth_tongue",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        1000,
+        1029,
+        65,
+        27
+      ],
+      "alpha_coverage": 0.00041842,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/42_mouth_tongue.png"
+    },
+    {
+      "part_id": "mouth_line",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        970,
+        1019,
+        124,
+        25
+      ],
+      "alpha_coverage": 0.0007391,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/37_mouth_line.png"
+    },
+    {
+      "part_id": "mouth_upper_lip_mask",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        976,
+        975,
+        111,
+        21
+      ],
+      "alpha_coverage": 0.00055575,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/39_mouth_upper_lip_mask.png"
+    },
+    {
+      "part_id": "mouth_lower_lip_mask",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        979,
+        1038,
+        104,
+        21
+      ],
+      "alpha_coverage": 0.00052071,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/40_mouth_lower_lip_mask.png"
+    },
+    {
+      "part_id": "mouth_corner_L",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        938,
+        1001,
+        20,
+        30
+      ],
+      "alpha_coverage": 0.00014305,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/43_mouth_corner_L.png"
+    },
+    {
+      "part_id": "mouth_corner_R",
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "bbox_actual": [
+        1113,
+        1001,
+        20,
+        30
+      ],
+      "alpha_coverage": 0.00014305,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/44_mouth_corner_R.png"
+    },
+    {
+      "part_id": "hair_side_L_outer",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        648,
+        550,
+        243,
+        792
+      ],
+      "alpha_coverage": 0.01719689,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/57_hair_side_L_outer.png"
+    },
+    {
+      "part_id": "hair_side_L_inner",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        781,
+        630,
+        165,
+        600
+      ],
+      "alpha_coverage": 0.01393533,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/58_hair_side_L_inner.png"
+    },
+    {
+      "part_id": "hair_side_R_outer",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        1181,
+        550,
+        221,
+        788
+      ],
+      "alpha_coverage": 0.01604104,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/59_hair_side_R_outer.png"
+    },
+    {
+      "part_id": "hair_side_R_inner",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        1111,
+        630,
+        165,
+        600
+      ],
+      "alpha_coverage": 0.01426482,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/60_hair_side_R_inner.png"
+    },
+    {
+      "part_id": "hair_front_center",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        874,
+        383,
+        299,
+        412
+      ],
+      "alpha_coverage": 0.01522589,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/50_hair_front_center.png"
+    },
+    {
+      "part_id": "hair_front_L",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        786,
+        440,
+        230,
+        420
+      ],
+      "alpha_coverage": 0.01418829,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/51_hair_front_L.png"
+    },
+    {
+      "part_id": "hair_front_R",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        1041,
+        440,
+        230,
+        420
+      ],
+      "alpha_coverage": 0.01573324,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/52_hair_front_R.png"
+    },
+    {
+      "part_id": "hair_front_side_L",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        731,
+        540,
+        190,
+        560
+      ],
+      "alpha_coverage": 0.01851392,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/53_hair_front_side_L.png"
+    },
+    {
+      "part_id": "hair_front_side_R",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        1136,
+        540,
+        190,
+        560
+      ],
+      "alpha_coverage": 0.01930237,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/54_hair_front_side_R.png"
+    },
+    {
+      "part_id": "hair_front_tip_L",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        766,
+        965,
+        180,
+        292
+      ],
+      "alpha_coverage": 0.00487733,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/55_hair_front_tip_L.png"
+    },
+    {
+      "part_id": "hair_front_tip_R",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        1106,
+        965,
+        180,
+        280
+      ],
+      "alpha_coverage": 0.00491977,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/56_hair_front_tip_R.png"
+    },
+    {
+      "part_id": "collar_front",
+      "action": "KEEP_EXISTING",
+      "bbox_actual": [
+        846,
+        1220,
+        356,
+        150
+      ],
+      "alpha_coverage": 0.00291586,
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_localized_v1/61_collar_front.png"
+    }
+  ],
+  "contact_sheet": "experiments/cubism-v2-new-character-001/material_pack_v0/reports/part_localization_split_contact_sheet.png",
+  "interpretation": [
+    "This is a current-candidate layer split from saved manual semantic ROI labels.",
+    "It proves manual locations can drive layer generation; visual quality still needs G1.5 and Mini Cubism checks."
+  ]
+}

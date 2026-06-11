@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-06-09T02:06:45Z",
+  "experiment_id": "cubism-v2-new-character-002",
+  "candidate_id": "material_pack_first_v5_layer_alpha_seed_strict_expr",
+  "status": "REVISE_MINI_CUBISM_BLOCKED",
+  "technical_validation": {
+    "keypose_png_validator": "PASS_READY_FOR_VISUAL_QA",
+    "validator_report": "experiments/cubism-v2-new-character-002/reports/layer_alpha_seed_v5/layer_alpha_seed_keypose_validation_report.json"
+  },
+  "visual_findings": [
+    {
+      "area": "mouth",
+      "status": "REVISE",
+      "finding": "The previous oval skin-patch boundary is greatly reduced, but mouth_base_clean still leaves the original source mouth line visible."
+    },
+    {
+      "area": "eye",
+      "status": "REVISE",
+      "finding": "Clean socket and underpaint overlays still look like smeared/inpainted patches around hair, eyelids, and skin, not clean Cubism-ready sockets."
+    },
+    {
+      "area": "mouth_expression",
+      "status": "OBSERVED",
+      "finding": "Strict mouth expression alpha filtering removes much of the round patch edge, but some expression detail quality remains rough."
+    }
+  ],
+  "decision": "Do not proceed to Mini Cubism diagnostic preview from this candidate. Keep source_front and character style, but regenerate clean-base assets with model-native/edit-based inpainting or manual repaint before another overlay QA gate.",
+  "evidence": {
+    "mouth_overlay_sheet": "experiments/cubism-v2-new-character-002/reports/layer_alpha_seed_v5/overlay_qa/mouth_overlay_qa_sheet.png",
+    "eye_overlay_sheet": "experiments/cubism-v2-new-character-002/reports/layer_alpha_seed_v5/overlay_qa/eye_overlay_qa_sheet.png",
+    "face_overlay_sheet": "experiments/cubism-v2-new-character-002/reports/layer_alpha_seed_v5/overlay_qa/face_overlay_qa_sheet.png",
+    "overlay_report": "experiments/cubism-v2-new-character-002/reports/layer_alpha_seed_v5/layer_alpha_seed_overlay_qa_report.json"
+  }
+}

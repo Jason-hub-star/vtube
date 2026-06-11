@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T01:44:04.067260+00:00",
+  "run": "/Users/family/jason/Vtube/experiments/mini-cubism-physics-v0-3-001/motion_evidence",
+  "project": "/Users/family/jason/Vtube/experiments/mini-cubism-physics-v0-3-001/best/mini_cubism_project",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "required_scenarios",
+      "status": "PASS",
+      "missing": []
+    },
+    {
+      "check": "hair_settle_gif_exists",
+      "status": "PASS",
+      "path": "/Users/family/jason/Vtube/experiments/mini-cubism-physics-v0-3-001/motion_evidence/gifs/hair_settle.gif"
+    },
+    {
+      "check": "angle_swing_gif_exists",
+      "status": "PASS",
+      "path": "/Users/family/jason/Vtube/experiments/mini-cubism-physics-v0-3-001/motion_evidence/gifs/angle_swing.gif"
+    },
+    {
+      "check": "mouth_talk_gif_exists",
+      "status": "PASS",
+      "path": "/Users/family/jason/Vtube/experiments/mini-cubism-physics-v0-3-001/motion_evidence/gifs/mouth_talk.gif"
+    },
+    {
+      "check": "eye_blink_gif_exists",
+      "status": "PASS",
+      "path": "/Users/family/jason/Vtube/experiments/mini-cubism-physics-v0-3-001/motion_evidence/gifs/eye_blink.gif"
+    },
+    {
+      "check": "mouth_keypose_exclusive_opacity",
+      "status": "PASS",
+      "messages": []
+    },
+    {
+      "check": "eye_open_half_closed_keyposes",
+      "status": "PASS",
+      "messages": []
+    },
+    {
+      "check": "spring_damper_profiles_active_and_settle",
+      "status": "PASS",
+      "active_profiles": [
+        "front_hair_soft_spring",
+        "back_hair_heavy_spring",
+        "ear_accessory_quick_spring"
+      ],
+      "target_stats": {
+        "front_hair_soft_spring": {
+          "max_offset": 4.029775337068782,
+          "max_velocity": 0.6765605118095086
+        },
+        "back_hair_heavy_spring": {
+          "max_offset": 26.51387917949375,
+          "max_velocity": 4.557780386298062
+        },
+        "ear_accessory_quick_spring": {
+          "max_offset": 15.549481664743185,
+          "max_velocity": 2.8316364987380678
+        }
+      },
+      "messages": []
+    },
+    {
+      "check": "nonblank_and_in_canvas",
+      "status": "PASS",
+      "messages": []
+    }
+  ]
+}

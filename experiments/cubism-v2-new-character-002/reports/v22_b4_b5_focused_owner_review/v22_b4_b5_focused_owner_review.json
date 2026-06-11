@@ -1,0 +1,348 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T14:45:55.494460+00:00",
+  "status": "B4_B5_FOCUSED_OWNER_REVIEW_PACKET_READY_PENDING_OWNER_DECISIONS",
+  "source_image": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/new_character_002_source_front.raw.png",
+  "b4_focused_review": "experiments/cubism-v2-new-character-002/reports/v22_b4_hair_focused_review/v22_b4_hair_focused_review.json",
+  "b5_body_blocker_review": "experiments/cubism-v2-new-character-002/reports/v22_b5_body_blocker_draw_order_review/v22_b5_body_blocker_draw_order_review.json",
+  "review_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_focused_owner_review/v22_b4_b5_focused_owner_review.png",
+  "decision_template": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_focused_owner_review/v22_b4_b5_focused_owner_review_decision_template.json",
+  "primary_decisions": [
+    {
+      "part_id": "hair_front_L",
+      "review_group": "B4_FRONT_HAIR",
+      "source_report": "experiments/cubism-v2-new-character-002/reports/v22_b4_hair_focused_review/v22_b4_hair_focused_review.json",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_L.png",
+      "crop_box": [
+        664,
+        191,
+        1103,
+        700
+      ],
+      "recommendation": "FRONT_HAIR_CHILD_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "owner_decision": "PENDING_OWNER_REVIEW",
+      "allowed_owner_decisions": [
+        "ACCEPT_FOR_MOTION_READINESS_CANDIDATE",
+        "REVISE_MASK_OR_ANCHOR",
+        "REGENERATE_B4_FRONT_HAIR_MINIPASS"
+      ],
+      "next_if_accept": "Prepare B4 front-hair motion-readiness check while keeping ParamHairFront hidden until that check passes.",
+      "next_if_revise": "Use mask/anchor refinement for this front-hair child.",
+      "next_if_regenerate": "Run a B4 front-hair mini-pass, not a full B1-B5 restart.",
+      "overlay_color": [
+        70,
+        135,
+        255
+      ]
+    },
+    {
+      "part_id": "hair_front_R",
+      "review_group": "B4_FRONT_HAIR",
+      "source_report": "experiments/cubism-v2-new-character-002/reports/v22_b4_hair_focused_review/v22_b4_hair_focused_review.json",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_R.png",
+      "crop_box": [
+        920,
+        187,
+        1401,
+        725
+      ],
+      "recommendation": "FRONT_HAIR_CHILD_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "owner_decision": "PENDING_OWNER_REVIEW",
+      "allowed_owner_decisions": [
+        "ACCEPT_FOR_MOTION_READINESS_CANDIDATE",
+        "REVISE_MASK_OR_ANCHOR",
+        "REGENERATE_B4_FRONT_HAIR_MINIPASS"
+      ],
+      "next_if_accept": "Prepare B4 front-hair motion-readiness check while keeping ParamHairFront hidden until that check passes.",
+      "next_if_revise": "Use mask/anchor refinement for this front-hair child.",
+      "next_if_regenerate": "Run a B4 front-hair mini-pass, not a full B1-B5 restart.",
+      "overlay_color": [
+        70,
+        135,
+        255
+      ]
+    },
+    {
+      "part_id": "hair_front_center",
+      "review_group": "B4_FRONT_HAIR",
+      "source_report": "experiments/cubism-v2-new-character-002/reports/v22_b4_hair_focused_review/v22_b4_hair_focused_review.json",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_center.png",
+      "crop_box": [
+        725,
+        136,
+        1323,
+        724
+      ],
+      "recommendation": "FRONT_HAIR_CHILD_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "owner_decision": "PENDING_OWNER_REVIEW",
+      "allowed_owner_decisions": [
+        "ACCEPT_FOR_MOTION_READINESS_CANDIDATE",
+        "REVISE_MASK_OR_ANCHOR",
+        "REGENERATE_B4_FRONT_HAIR_MINIPASS"
+      ],
+      "next_if_accept": "Prepare B4 front-hair motion-readiness check while keeping ParamHairFront hidden until that check passes.",
+      "next_if_revise": "Use mask/anchor refinement for this front-hair child.",
+      "next_if_regenerate": "Run a B4 front-hair mini-pass, not a full B1-B5 restart.",
+      "overlay_color": [
+        70,
+        135,
+        255
+      ]
+    },
+    {
+      "part_id": "hair_front_side_L",
+      "review_group": "B4_FRONT_HAIR",
+      "source_report": "experiments/cubism-v2-new-character-002/reports/v22_b4_hair_focused_review/v22_b4_hair_focused_review.json",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_side_L.png",
+      "crop_box": [
+        620,
+        290,
+        1002,
+        980
+      ],
+      "recommendation": "FRONT_HAIR_CHILD_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "owner_decision": "PENDING_OWNER_REVIEW",
+      "allowed_owner_decisions": [
+        "ACCEPT_FOR_MOTION_READINESS_CANDIDATE",
+        "REVISE_MASK_OR_ANCHOR",
+        "REGENERATE_B4_FRONT_HAIR_MINIPASS"
+      ],
+      "next_if_accept": "Prepare B4 front-hair motion-readiness check while keeping ParamHairFront hidden until that check passes.",
+      "next_if_revise": "Use mask/anchor refinement for this front-hair child.",
+      "next_if_regenerate": "Run a B4 front-hair mini-pass, not a full B1-B5 restart.",
+      "overlay_color": [
+        70,
+        135,
+        255
+      ]
+    },
+    {
+      "part_id": "hair_front_side_R",
+      "review_group": "B4_FRONT_HAIR",
+      "source_report": "experiments/cubism-v2-new-character-002/reports/v22_b4_hair_focused_review/v22_b4_hair_focused_review.json",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_side_R.png",
+      "crop_box": [
+        1130,
+        290,
+        1443,
+        980
+      ],
+      "recommendation": "FRONT_HAIR_CHILD_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "owner_decision": "PENDING_OWNER_REVIEW",
+      "allowed_owner_decisions": [
+        "ACCEPT_FOR_MOTION_READINESS_CANDIDATE",
+        "REVISE_MASK_OR_ANCHOR",
+        "REGENERATE_B4_FRONT_HAIR_MINIPASS"
+      ],
+      "next_if_accept": "Prepare B4 front-hair motion-readiness check while keeping ParamHairFront hidden until that check passes.",
+      "next_if_revise": "Use mask/anchor refinement for this front-hair child.",
+      "next_if_regenerate": "Run a B4 front-hair mini-pass, not a full B1-B5 restart.",
+      "overlay_color": [
+        70,
+        135,
+        255
+      ]
+    },
+    {
+      "part_id": "hair_front_tip_L",
+      "review_group": "B4_FRONT_HAIR",
+      "source_report": "experiments/cubism-v2-new-character-002/reports/v22_b4_hair_focused_review/v22_b4_hair_focused_review.json",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_tip_L.png",
+      "crop_box": [
+        603,
+        600,
+        916,
+        1142
+      ],
+      "recommendation": "FRONT_HAIR_CHILD_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "owner_decision": "PENDING_OWNER_REVIEW",
+      "allowed_owner_decisions": [
+        "ACCEPT_FOR_MOTION_READINESS_CANDIDATE",
+        "REVISE_MASK_OR_ANCHOR",
+        "REGENERATE_B4_FRONT_HAIR_MINIPASS"
+      ],
+      "next_if_accept": "Prepare B4 front-hair motion-readiness check while keeping ParamHairFront hidden until that check passes.",
+      "next_if_revise": "Use mask/anchor refinement for this front-hair child.",
+      "next_if_regenerate": "Run a B4 front-hair mini-pass, not a full B1-B5 restart.",
+      "overlay_color": [
+        70,
+        135,
+        255
+      ]
+    },
+    {
+      "part_id": "hair_front_tip_R",
+      "review_group": "B4_FRONT_HAIR",
+      "source_report": "experiments/cubism-v2-new-character-002/reports/v22_b4_hair_focused_review/v22_b4_hair_focused_review.json",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_tip_R.png",
+      "crop_box": [
+        1061,
+        600,
+        1356,
+        1169
+      ],
+      "recommendation": "FRONT_HAIR_CHILD_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "owner_decision": "PENDING_OWNER_REVIEW",
+      "allowed_owner_decisions": [
+        "ACCEPT_FOR_MOTION_READINESS_CANDIDATE",
+        "REVISE_MASK_OR_ANCHOR",
+        "REGENERATE_B4_FRONT_HAIR_MINIPASS"
+      ],
+      "next_if_accept": "Prepare B4 front-hair motion-readiness check while keeping ParamHairFront hidden until that check passes.",
+      "next_if_revise": "Use mask/anchor refinement for this front-hair child.",
+      "next_if_regenerate": "Run a B4 front-hair mini-pass, not a full B1-B5 restart.",
+      "overlay_color": [
+        70,
+        135,
+        255
+      ]
+    },
+    {
+      "part_id": "torso_base",
+      "review_group": "B5_BODY_BLOCKER",
+      "source_report": "experiments/cubism-v2-new-character-002/reports/v22_b5_body_blocker_draw_order_review/v22_b5_body_blocker_draw_order_review.json",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/torso_base.png",
+      "crop_box": [
+        520,
+        880,
+        1539,
+        1974
+      ],
+      "recommendation": "REGENERATE_OR_FOCUSED_HUMAN_ACCEPT_BROAD_UNDERPAINT",
+      "owner_decision": "PENDING_OWNER_REVIEW",
+      "allowed_owner_decisions": [
+        "ACCEPT_WITH_DRAW_ORDER_CONTEXT",
+        "REVISE_MASK_OR_DRAW_ORDER",
+        "REGENERATE_B5_BODY_MINIPASS"
+      ],
+      "next_if_accept": "Keep as focused accepted candidate but do not promote material PASS until full corrected B4/B5 overlay QA passes.",
+      "next_if_revise": "Adjust draw-order/mask for shoulders or refine torso underpaint.",
+      "next_if_regenerate": "Run the recorded B5 body mini-pass prompt, not a full B1-B5 restart.",
+      "overlay_color": [
+        61,
+        132,
+        255
+      ]
+    },
+    {
+      "part_id": "shoulder_L",
+      "review_group": "B5_BODY_BLOCKER",
+      "source_report": "experiments/cubism-v2-new-character-002/reports/v22_b5_body_blocker_draw_order_review/v22_b5_body_blocker_draw_order_review.json",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/shoulder_L.png",
+      "crop_box": [
+        467,
+        901,
+        973,
+        1326
+      ],
+      "recommendation": "REVIEW_DRAW_ORDER_BEFORE_REGENERATE",
+      "owner_decision": "PENDING_OWNER_REVIEW",
+      "allowed_owner_decisions": [
+        "ACCEPT_WITH_DRAW_ORDER_CONTEXT",
+        "REVISE_MASK_OR_DRAW_ORDER",
+        "REGENERATE_B5_BODY_MINIPASS"
+      ],
+      "next_if_accept": "Keep as focused accepted candidate but do not promote material PASS until full corrected B4/B5 overlay QA passes.",
+      "next_if_revise": "Adjust draw-order/mask for shoulders or refine torso underpaint.",
+      "next_if_regenerate": "Run the recorded B5 body mini-pass prompt, not a full B1-B5 restart.",
+      "overlay_color": [
+        61,
+        132,
+        255
+      ]
+    },
+    {
+      "part_id": "shoulder_R",
+      "review_group": "B5_BODY_BLOCKER",
+      "source_report": "experiments/cubism-v2-new-character-002/reports/v22_b5_body_blocker_draw_order_review/v22_b5_body_blocker_draw_order_review.json",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/shoulder_R.png",
+      "crop_box": [
+        1095,
+        903,
+        1565,
+        1328
+      ],
+      "recommendation": "REVIEW_DRAW_ORDER_BEFORE_REGENERATE",
+      "owner_decision": "PENDING_OWNER_REVIEW",
+      "allowed_owner_decisions": [
+        "ACCEPT_WITH_DRAW_ORDER_CONTEXT",
+        "REVISE_MASK_OR_DRAW_ORDER",
+        "REGENERATE_B5_BODY_MINIPASS"
+      ],
+      "next_if_accept": "Keep as focused accepted candidate but do not promote material PASS until full corrected B4/B5 overlay QA passes.",
+      "next_if_revise": "Adjust draw-order/mask for shoulders or refine torso underpaint.",
+      "next_if_regenerate": "Run the recorded B5 body mini-pass prompt, not a full B1-B5 restart.",
+      "overlay_color": [
+        61,
+        132,
+        255
+      ]
+    }
+  ],
+  "secondary_followups": [
+    {
+      "part_id": "hair_back_base",
+      "review_group": "B4_BACK_OR_STRAND_SECONDARY",
+      "recommendation": "KEEP_AS_BACK_OR_UNDERPAINT_REVIEW_DRAW_ORDER_MASK",
+      "reason": "Keep for follow-up draw-order, underpaint, anchor, or mask review after primary B4/B5 decisions."
+    },
+    {
+      "part_id": "hair_back_center",
+      "review_group": "B4_BACK_OR_STRAND_SECONDARY",
+      "recommendation": "KEEP_AS_BACK_OR_UNDERPAINT_REVIEW_DRAW_ORDER_MASK",
+      "reason": "Keep for follow-up draw-order, underpaint, anchor, or mask review after primary B4/B5 decisions."
+    },
+    {
+      "part_id": "hair_back_underpaint",
+      "review_group": "B4_BACK_OR_STRAND_SECONDARY",
+      "recommendation": "KEEP_AS_BACK_OR_UNDERPAINT_REVIEW_DRAW_ORDER_MASK",
+      "reason": "Keep for follow-up draw-order, underpaint, anchor, or mask review after primary B4/B5 decisions."
+    },
+    {
+      "part_id": "hair_back_strand_L",
+      "review_group": "B4_BACK_OR_STRAND_SECONDARY",
+      "recommendation": "REVIEW_ANCHOR_AND_MASK",
+      "reason": "Keep for follow-up draw-order, underpaint, anchor, or mask review after primary B4/B5 decisions."
+    },
+    {
+      "part_id": "hair_back_strand_R",
+      "review_group": "B4_BACK_OR_STRAND_SECONDARY",
+      "recommendation": "REVIEW_ANCHOR_AND_MASK",
+      "reason": "Keep for follow-up draw-order, underpaint, anchor, or mask review after primary B4/B5 decisions."
+    }
+  ],
+  "summary": {
+    "primary_decision_count": 10,
+    "b4_front_hair_primary_count": 7,
+    "b5_body_primary_count": 3,
+    "secondary_followup_count": 5,
+    "all_primary_pending_owner_review": true,
+    "material_pass_status": "BLOCKED",
+    "param_hair_front_status": "HIDDEN_CONTRACT_ONLY",
+    "g7_mini_cubism_status": "BLOCKED",
+    "g8_real_cubism_status": "BLOCKED"
+  },
+  "decision": "This is the focused owner-review handoff for B4/B5. It deliberately keeps all primary decisions pending and blocks material PASS, Mini Cubism, and real Cubism promotion.",
+  "next_action": [
+    "Collect owner decisions for the ten primary rows.",
+    "Apply accepted/revised/regenerated paths separately; do not restart B1-B5 unless the owner rejects the whole visual direction.",
+    "After accepted corrections exist, rebuild the corrected B4/B5 candidate and rerun overlay QA."
+  ],
+  "self_review": {
+    "b4_status": "B4_HAIR_FOCUSED_REVIEW_READY_PARAMHAIRFRONT_STILL_HIDDEN",
+    "b5_status": "B5_BODY_BLOCKER_DRAW_ORDER_REVIEW_READY_HUMAN_DECISION_REQUIRED",
+    "primary_decision_count": 10,
+    "b4_front_hair_primary_count": 7,
+    "b5_body_primary_count": 3,
+    "secondary_followup_count": 5,
+    "review_sheet_exists": true,
+    "decision_template_exists": true,
+    "all_primary_pending_owner_review": true,
+    "does_not_require_owner_review_all_33": true,
+    "validator_only_promotion_blocked": true,
+    "param_hair_front_hidden": true,
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true,
+    "status": "PASS"
+  }
+}

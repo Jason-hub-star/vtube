@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "experiment_id": "see-through-mps-compat-002",
+  "created_at": "2026-06-04T06:14:33.663228+00:00",
+  "updated_at": "2026-06-04T07:39:58.582680+00:00",
+  "source_manifest": "review_app/review_manifest.json",
+  "reviews": {
+    "seethrough_mps__L_brow": {
+      "part_id": "seethrough_mps__L_brow",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T06:19:43.343Z"
+    },
+    "seethrough_mps__R_brow": {
+      "part_id": "seethrough_mps__R_brow",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T06:19:45.110Z"
+    },
+    "seethrough_mps__L_eye_white": {
+      "part_id": "seethrough_mps__L_eye_white",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T06:19:46.077Z"
+    },
+    "seethrough_mps__L_iris": {
+      "part_id": "seethrough_mps__L_iris",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T06:19:46.977Z"
+    },
+    "seethrough_mps__L_upper_lash": {
+      "part_id": "seethrough_mps__L_upper_lash",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T06:19:47.677Z"
+    },
+    "seethrough_mps__R_eye_white": {
+      "part_id": "seethrough_mps__R_eye_white",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T06:19:50.543Z"
+    },
+    "seethrough_mps__R_iris": {
+      "part_id": "seethrough_mps__R_iris",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T06:19:57.043Z"
+    },
+    "seethrough_mps__R_upper_lash": {
+      "part_id": "seethrough_mps__R_upper_lash",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T06:20:01.860Z"
+    },
+    "seethrough_mps__face_base": {
+      "part_id": "seethrough_mps__face_base",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "hair_mixed"
+      ],
+      "human_note": "머리카락이 좀 섞여보임 ",
+      "updated_at": "2026-06-04T06:20:34.332Z"
+    },
+    "seethrough_mps__back_hair": {
+      "part_id": "seethrough_mps__back_hair",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T06:20:43.426Z"
+    },
+    "seethrough_mps__front_hair": {
+      "part_id": "seethrough_mps__front_hair",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T06:20:52.310Z"
+    },
+    "seethrough_mps__mouth_line": {
+      "part_id": "seethrough_mps__mouth_line",
+      "verdict": "X",
+      "issue_tags": [
+        "semantic_too_coarse",
+        "wrong_shape"
+      ],
+      "human_note": "주인님 지정: 이 raw mouth_line은 입 라인이 아니라 타원형 덩어리/피부 테두리가 섞여 PSD에 쓰면 안 된다.",
+      "updated_at": "2026-06-04T07:39:58.573971Z"
+    },
+    "seethrough_mps__L_ear_outer": {
+      "part_id": "seethrough_mps__L_ear_outer",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T06:21:01.960Z"
+    },
+    "seethrough_mps__R_ear_outer": {
+      "part_id": "seethrough_mps__R_ear_outer",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T06:21:09.960Z"
+    },
+    "seethrough_mps__neck": {
+      "part_id": "seethrough_mps__neck",
+      "verdict": "X",
+      "issue_tags": [],
+      "human_note": "입과 목과 복장영역이랑 곂침 . 얼굴과 의상과 따로 선택되야함",
+      "updated_at": "2026-06-04T06:22:01.413Z"
+    },
+    "seethrough_mps__clothes": {
+      "part_id": "seethrough_mps__clothes",
+      "verdict": "X",
+      "issue_tags": [
+        "skin_mixed"
+      ],
+      "human_note": "",
+      "updated_at": "2026-06-04T06:22:16.955Z"
+    },
+    "seethrough_mps_clean__face_base": {
+      "part_id": "seethrough_mps_clean__face_base",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T06:42:57.318Z"
+    },
+    "seethrough_mps_clean__clothes": {
+      "part_id": "seethrough_mps_clean__clothes",
+      "verdict": "X",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T06:44:08.201Z"
+    },
+    "seethrough_mps_manual__neck": {
+      "part_id": "seethrough_mps_manual__neck",
+      "verdict": "REFERENCE_ONLY",
+      "issue_tags": [],
+      "human_note": "ROI neck을 production으로 쓰기로 결정했으므로 manual neck은 참고용으로 보존한다.",
+      "updated_at": "2026-06-04T07:39:58.573971Z"
+    },
+    "seethrough_mps_clean__neck": {
+      "part_id": "seethrough_mps_clean__neck",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T07:27:01.104Z"
+    },
+    "seethrough_mps__raw_handwear": {
+      "part_id": "seethrough_mps__raw_handwear",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T07:39:39.912Z"
+    },
+    "seethrough_mps__choker": {
+      "part_id": "seethrough_mps__choker",
+      "verdict": "UNREVIEWED",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T06:22:22.989Z"
+    },
+    "seethrough_mps_roi__clothes": {
+      "part_id": "seethrough_mps_roi__clothes",
+      "verdict": "UNREVIEWED",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T07:27:09.087Z"
+    },
+    "seethrough_mps_roi__mouth_inner": {
+      "part_id": "seethrough_mps_roi__mouth_inner",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T07:28:41.103Z"
+    },
+    "seethrough_mps_clean__mouth_line": {
+      "part_id": "seethrough_mps_clean__mouth_line",
+      "verdict": "UNREVIEWED",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T07:27:20.437Z"
+    },
+    "seethrough_mps_roi__neck_underpaint": {
+      "part_id": "seethrough_mps_roi__neck_underpaint",
+      "verdict": "O",
+      "issue_tags": [
+        "missing_underpaint"
+      ],
+      "human_note": "목 변형 여유를 위한 underpaint 후보. 별도 neck_underpaint 파츠로 PSD 포함.",
+      "updated_at": "2026-06-04T07:31:23.473882+00:00"
+    },
+    "seethrough_mps_roi__neck": {
+      "part_id": "seethrough_mps_roi__neck",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지정: 목 production 후보는 ROI neck을 사용한다.",
+      "updated_at": "2026-06-04T07:39:58.573971Z"
+    },
+    "seethrough_mps_roi__mouth_line": {
+      "part_id": "seethrough_mps_roi__mouth_line",
+      "verdict": "UNREVIEWED",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T07:27:32.354Z"
+    },
+    "seethrough_mps__wings_reference": {
+      "part_id": "seethrough_mps__wings_reference",
+      "verdict": "UNREVIEWED",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T07:38:28.445Z"
+    },
+    "seethrough_mps__nose_reference": {
+      "part_id": "seethrough_mps__nose_reference",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T07:39:26.645Z"
+    },
+    "seethrough_mps__headwear_reference": {
+      "part_id": "seethrough_mps__headwear_reference",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T07:39:44.278Z"
+    },
+    "seethrough_mps__raw_handwear_13": {
+      "part_id": "seethrough_mps__raw_handwear_13",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T07:39:42.045Z"
+    },
+    "seethrough_mps__ear_inner": {
+      "part_id": "seethrough_mps__ear_inner",
+      "verdict": "UNREVIEWED",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T07:38:28.979Z"
+    },
+    "seethrough_mps__raw_bottomwear": {
+      "part_id": "seethrough_mps__raw_bottomwear",
+      "verdict": "UNREVIEWED",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T07:38:25.662Z"
+    },
+    "seethrough_mps__tail_reference": {
+      "part_id": "seethrough_mps__tail_reference",
+      "verdict": "UNREVIEWED",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T07:28:01.953Z"
+    },
+    "seethrough_mps__object_reference": {
+      "part_id": "seethrough_mps__object_reference",
+      "verdict": "UNREVIEWED",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T07:38:27.379Z"
+    },
+    "seethrough_mps__raw_eyewear": {
+      "part_id": "seethrough_mps__raw_eyewear",
+      "verdict": "UNREVIEWED",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T07:39:20.445Z"
+    },
+    "seethrough_mps__raw_footwear": {
+      "part_id": "seethrough_mps__raw_footwear",
+      "verdict": "UNREVIEWED",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T06:22:26.006Z"
+    },
+    "seethrough_mps__raw_legwear": {
+      "part_id": "seethrough_mps__raw_legwear",
+      "verdict": "UNREVIEWED",
+      "issue_tags": [],
+      "human_note": "",
+      "updated_at": "2026-06-04T07:28:55.203Z"
+    }
+  },
+  "review_session": "mps_640_safe",
+  "note": "Current review session for 640 MPS normalized outputs. 512 review was snapshotted before reset."
+}

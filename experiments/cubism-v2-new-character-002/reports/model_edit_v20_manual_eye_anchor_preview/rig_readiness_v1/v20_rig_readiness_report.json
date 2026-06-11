@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T09:09:20.737885+00:00",
+  "status": "READY_FOR_V21_SUPPORTED_CONTROL_RIG_SMOKE_WITH_HAIR_EXCLUDED",
+  "project": "experiments/cubism-v2-new-character-002/model_edit_v20_manual_eye_anchor_preview/mini_cubism_diagnostic_project",
+  "validation": {
+    "path": "experiments/cubism-v2-new-character-002/model_edit_v20_manual_eye_anchor_preview/mini_cubism_diagnostic_project/reports/validation_report.json",
+    "status": "PASS",
+    "counts": {
+      "parts": 36,
+      "meshes": 36,
+      "deformers": 6,
+      "parameters": 7,
+      "keyform_bindings": 15,
+      "glue": 0
+    }
+  },
+  "pose_sweep": {
+    "path": "experiments/cubism-v2-new-character-002/reports/model_edit_v20_manual_eye_anchor_preview/rig_readiness_pose_sweep_v2/reports/pose_sweep_report.json",
+    "status": "PASS",
+    "score": 201,
+    "summary": {
+      "status": "PASS",
+      "score": 201,
+      "counts": {
+        "PASS": 14,
+        "REVISE": 0,
+        "FAIL": 0
+      },
+      "changed_pose_count": 6,
+      "desktop_changed_poses": [
+        "angle_left",
+        "angle_right",
+        "eye_l_close",
+        "eye_r_close",
+        "hair_swing",
+        "mouth_open"
+      ]
+    },
+    "note": "UI-driven pose sweep may under-report eye close; use automation smoke for parameter support before final judgment."
+  },
+  "counts": {
+    "parts": 36,
+    "eye_parts": 26,
+    "mouth_parts": 8,
+    "front_hair_parts": 0,
+    "parameters": 7,
+    "deformers": 6,
+    "keyform_bindings": 15
+  },
+  "controls": {
+    "ParamAngleX": {
+      "range": [
+        -30,
+        30
+      ],
+      "default": 0,
+      "targets": [
+        "head_angle_warp"
+      ],
+      "status": "PARTIAL_DIAGNOSTIC",
+      "reason": "head_angle_warp exists, but Mini Cubism preview is still a local deformer approximation, not real Cubism hierarchy proof",
+      "v21_action": "include in v21 smoke, then validate through real Cubism deformer hierarchy later"
+    },
+    "ParamEyeBallX": {
+      "range": [
+        -1,
+        1
+      ],
+      "default": 0,
+      "targets": [
+        "eye_L_iris",
+        "eye_R_iris"
+      ],
+      "status": "SUPPORTED_DIAGNOSTIC",
+      "reason": "moves coherent generated iris+pupil+highlight detail layers while fixed whites stay still",
+      "v21_action": "keep and tune movement strength only if 주인님 sees drift"
+    },
+    "ParamEyeBallY": {
+      "range": [
+        -1,
+        1
+      ],
+      "default": 0,
+      "targets": [
+        "eye_L_iris",
+        "eye_R_iris"
+      ],
+      "status": "SUPPORTED_DIAGNOSTIC",
+      "reason": "moves coherent generated iris+pupil+highlight detail layers while fixed whites stay still",
+      "v21_action": "keep and tune movement strength only if 주인님 sees drift"
+    },
+    "ParamEyeLOpen": {
+      "range": [
+        0.27,
+        1
+      ],
+      "default": 1,
+      "targets": [
+        "eye_L_clean_socket",
+        "eye_L_closed_lid",
+        "eye_L_closed_underpaint",
+        "eye_L_half_closed_lid",
+        "eye_L_highlight",
+        "eye_L_iris",
+        "eye_L_lid_inbetween_038",
+        "eye_L_lid_inbetween_065",
+        "eye_L_lid_inbetween_080",
+        "eye_L_mostly_closed_lid",
+        "eye_L_open",
+        "eye_L_pupil",
+        "eye_L_warp",
+        "eye_L_white"
+      ],
+      "status": "SUPPORTED_DIAGNOSTIC_CLAMPED",
+      "reason": "keypose/opacity eye close is clamped at min 0.27; 0.0 is intentionally not exposed",
+      "v21_action": "keep; use automation/canvas proof because UI pose sweep can under-report eye close"
+    },
+    "ParamEyeROpen": {
+      "range": [
+        0.27,
+        1
+      ],
+      "default": 1,
+      "targets": [
+        "eye_R_clean_socket",
+        "eye_R_closed_lid",
+        "eye_R_closed_underpaint",
+        "eye_R_half_closed_lid",
+        "eye_R_highlight",
+        "eye_R_iris",
+        "eye_R_lid_inbetween_038",
+        "eye_R_lid_inbetween_065",
+        "eye_R_lid_inbetween_080",
+        "eye_R_mostly_closed_lid",
+        "eye_R_open",
+        "eye_R_pupil",
+        "eye_R_warp",
+        "eye_R_white"
+      ],
+      "status": "SUPPORTED_DIAGNOSTIC_CLAMPED",
+      "reason": "keypose/opacity eye close is clamped at min 0.27; 0.0 is intentionally not exposed",
+      "v21_action": "keep; use automation/canvas proof because UI pose sweep can under-report eye close"
+    },
+    "ParamHairFront": {
+      "range": [
+        -1,
+        1
+      ],
+      "default": 0,
+      "targets": [
+        "front_hair_warp"
+      ],
+      "status": "UNSUPPORTED_CONTRACT_ONLY",
+      "reason": "front_hair_warp has no child parts; slider cannot visibly move hair",
+      "v21_action": "remove from active v21 smoke or create/separate real front hair parts first"
+    },
+    "ParamMouthOpenY": {
+      "range": [
+        0,
+        0.85
+      ],
+      "default": 0.0,
+      "targets": [
+        "mouth_closed_smile",
+        "mouth_inner",
+        "mouth_mid_teeth_gen",
+        "mouth_small_open",
+        "mouth_teeth",
+        "mouth_tongue",
+        "mouth_warp",
+        "mouth_wide_teeth_tongue_gen"
+      ],
+      "status": "SUPPORTED_DIAGNOSTIC_KEYPOSE",
+      "reason": "mouth opens through diagnostic keypose opacity/mouth_warp, not final phoneme-ready Cubism mouth rig",
+      "v21_action": "keep for v21 smoke; production mouth still needs final visual acceptance"
+    }
+  },
+  "front_hair_parts": [],
+  "v21_scope": {
+    "include": [
+      "ParamAngleX local diagnostic motion",
+      "ParamEyeBallX/Y generated iris detail motion",
+      "ParamEyeLOpen/ROpen clamped keypose blink",
+      "ParamMouthOpenY diagnostic mouth open"
+    ],
+    "exclude_until_assets_exist": [
+      "ParamHairFront"
+    ],
+    "first_v21_task": "build a supported-controls-only Mini Cubism rig smoke/review packet from v20 and hide or clearly mark unsupported HairFront"
+  },
+  "real_cubism_blockers": [
+    "ParamHairFront is contract-only because no independent front hair parts are present",
+    "v20 has 36 diagnostic parts, below the confirmed v2_standard 64-part production target",
+    "Mini Cubism diagnostic PASS does not prove real Cubism ArtMesh/Deformer/Keyform authoring",
+    "mouth is still diagnostic keypose/crossfade and needs human visual acceptance before production mouth rigging"
+  ],
+  "decision": "Proceed to v21 Mini Cubism supported-control rig smoke, not final Cubism authoring, unless 주인님 first accepts v20 human visual QA."
+}

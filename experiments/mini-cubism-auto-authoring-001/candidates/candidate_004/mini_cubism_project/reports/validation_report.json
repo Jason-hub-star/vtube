@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "validated_at": "2026-06-04T11:24:01.242377+00:00",
+  "project": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_004/mini_cubism_project",
+  "status": "PASS",
+  "counts": {
+    "parts": 19,
+    "meshes": 19,
+    "deformers": 9,
+    "parameters": 5,
+    "keyform_bindings": 7,
+    "glue": 0
+  }
+}

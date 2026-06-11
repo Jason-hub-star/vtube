@@ -1,0 +1,1095 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-04T10:22:46.080Z",
+  "tool": {
+    "name": "inspect_cmo3_structure.mjs",
+    "repo_root": "/Users/family/jason/Vtube",
+    "note": "Generic CMO3 structure inspector. No image-specific part names are hardcoded."
+  },
+  "experiment_id": "cmo3-structure-fixture-001",
+  "input": {
+    "cmo3_path": "/Users/family/jason/Vtube/experiments/cmo3-structure-fixture-001/rigged_positive_fixture.cmo3",
+    "cmo3_path_relative": "experiments/cmo3-structure-fixture-001/rigged_positive_fixture.cmo3",
+    "size_bytes": 48819,
+    "sha256": "9440cab64abc0e549a517c991d8623d7582ba58120435e22110be1f36d124299"
+  },
+  "caff": {
+    "magic": "CAFF",
+    "obfKey": 42,
+    "fileCount": 11,
+    "mainXml": {
+      "path": "main.xml",
+      "tag": "main_xml",
+      "compressedLength": 26002,
+      "compression": 33,
+      "obfuscated": true,
+      "extractedBytes": 255274
+    }
+  },
+  "file_table": {
+    "count": 11,
+    "paths_sample": [
+      "cmo3_icon_64.png",
+      "cmo3_icon_32.png",
+      "cmo3_icon_16.png",
+      "imageFileBuf_0.png",
+      "imageFileBuf_1.png",
+      "imageFileBuf_2.png",
+      "imageFileBuf_3.png",
+      "imageFileBuf_4.png",
+      "imageFileBuf_5.png",
+      "imageFileBuf_6.png",
+      "main.xml"
+    ],
+    "main_xml_size_chars": 255262
+  },
+  "status": "PASS",
+  "counts": {
+    "CArtMeshSource": {
+      "definitions": 7,
+      "references": 37
+    },
+    "CPartSource": {
+      "definitions": 1,
+      "references": 3
+    },
+    "CWarpDeformerSource": {
+      "definitions": 13,
+      "references": 58
+    },
+    "CRotationDeformerSource": {
+      "definitions": 1,
+      "references": 4
+    },
+    "KeyformGridSource": {
+      "definitions": 22,
+      "references": 45
+    },
+    "KeyformBindingSource": {
+      "definitions": 23,
+      "references": 98
+    },
+    "CParameterSource": {
+      "definitions": 23,
+      "references": 0
+    },
+    "CPhysicsSettingsSource": {
+      "definitions": 5,
+      "references": 0
+    },
+    "CGlueSource": {
+      "definitions": 0,
+      "references": 0
+    },
+    "CLayer": {
+      "definitions": 7,
+      "references": 21
+    },
+    "CLayerGroup": {
+      "definitions": 1,
+      "references": 9
+    },
+    "CLayeredImage": {
+      "definitions": 1,
+      "references": 10
+    },
+    "CImageResource": {
+      "definitions": 7,
+      "references": 35
+    },
+    "GEditableMesh2": {
+      "definitions": 7,
+      "references": 0
+    }
+  },
+  "checks": [
+    {
+      "id": "main_xml_extracted",
+      "status": "PASS",
+      "message": "main.xml was extracted from the CAFF archive."
+    },
+    {
+      "id": "artmesh_present",
+      "status": "PASS",
+      "message": "7 CArtMeshSource definition(s) found."
+    },
+    {
+      "id": "part_sources_present",
+      "status": "PASS",
+      "message": "1 CPartSource definition(s) found."
+    },
+    {
+      "id": "parameters_present",
+      "status": "PASS",
+      "message": "23 CParameterSource definition(s) found."
+    },
+    {
+      "id": "required_parameters_present",
+      "status": "PASS",
+      "message": "16 configured parameter check(s) passed."
+    },
+    {
+      "id": "warp_deformers_present",
+      "status": "PASS",
+      "message": "13 CWarpDeformerSource definition(s) found."
+    },
+    {
+      "id": "rotation_deformers_present",
+      "status": "PASS",
+      "message": "1 CRotationDeformerSource definition(s) found."
+    },
+    {
+      "id": "keyform_bindings_present",
+      "status": "PASS",
+      "message": "23 KeyformBindingSource definition(s) found."
+    }
+  ],
+  "parameters": {
+    "count": 23,
+    "ids": [
+      "ParamOpacity",
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBodyAngleZ",
+      "ParamBreath",
+      "ParamEyeLOpen",
+      "ParamEyeROpen",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamBrowLY",
+      "ParamBrowRY",
+      "ParamMouthForm",
+      "ParamMouthOpenY",
+      "ParamHairFront",
+      "ParamHairSide",
+      "ParamHairBack",
+      "ParamSkirt",
+      "ParamShirt",
+      "ParamPants",
+      "ParamBust"
+    ],
+    "required_presence": {
+      "ParamAngleX": true,
+      "ParamAngleY": true,
+      "ParamAngleZ": true,
+      "ParamEyeLOpen": true,
+      "ParamEyeROpen": true,
+      "ParamEyeBallX": true,
+      "ParamEyeBallY": true,
+      "ParamMouthForm": true,
+      "ParamMouthOpenY": true,
+      "ParamBodyAngleX": true,
+      "ParamBodyAngleY": true,
+      "ParamBodyAngleZ": true,
+      "ParamBreath": true,
+      "ParamHairFront": true,
+      "ParamHairSide": true,
+      "ParamHairBack": true
+    },
+    "sources": [
+      {
+        "index": 0,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamOpacity",
+        "idRef": "#312",
+        "localName": "Opacity",
+        "min": 0,
+        "max": 1,
+        "default": 1,
+        "snippetHash": "eb1e9f2bb3c4"
+      },
+      {
+        "index": 1,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamAngleX",
+        "idRef": "#313",
+        "localName": "Angle X",
+        "min": -30,
+        "max": 30,
+        "default": 0,
+        "snippetHash": "cb6a5cc03f95"
+      },
+      {
+        "index": 2,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamAngleY",
+        "idRef": "#314",
+        "localName": "Angle Y",
+        "min": -30,
+        "max": 30,
+        "default": 0,
+        "snippetHash": "20d38dcc417b"
+      },
+      {
+        "index": 3,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamAngleZ",
+        "idRef": "#315",
+        "localName": "Angle Z",
+        "min": -30,
+        "max": 30,
+        "default": 0,
+        "snippetHash": "6306ab5848a8"
+      },
+      {
+        "index": 4,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamBodyAngleX",
+        "idRef": "#316",
+        "localName": "Body Angle X",
+        "min": -10,
+        "max": 10,
+        "default": 0,
+        "snippetHash": "953a0ccdc7b0"
+      },
+      {
+        "index": 5,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamBodyAngleY",
+        "idRef": "#317",
+        "localName": "Body Angle Y",
+        "min": -10,
+        "max": 10,
+        "default": 0,
+        "snippetHash": "3cf86ac048f3"
+      },
+      {
+        "index": 6,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamBodyAngleZ",
+        "idRef": "#318",
+        "localName": "Body Angle Z",
+        "min": -10,
+        "max": 10,
+        "default": 0,
+        "snippetHash": "b7bd39d8e77d"
+      },
+      {
+        "index": 7,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamBreath",
+        "idRef": "#319",
+        "localName": "Breath",
+        "min": 0,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "8b61d602ddf4"
+      },
+      {
+        "index": 8,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamEyeLOpen",
+        "idRef": "#320",
+        "localName": "Eye L Open",
+        "min": 0,
+        "max": 1,
+        "default": 1,
+        "snippetHash": "2507298ef869"
+      },
+      {
+        "index": 9,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamEyeROpen",
+        "idRef": "#321",
+        "localName": "Eye R Open",
+        "min": 0,
+        "max": 1,
+        "default": 1,
+        "snippetHash": "7e4d93c32a51"
+      },
+      {
+        "index": 10,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamEyeBallX",
+        "idRef": "#322",
+        "localName": "Eyeball X",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "cc341d36616b"
+      },
+      {
+        "index": 11,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamEyeBallY",
+        "idRef": "#323",
+        "localName": "Eyeball Y",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "2122b63b7282"
+      },
+      {
+        "index": 12,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamBrowLY",
+        "idRef": "#324",
+        "localName": "Brow L Y",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "3e44e9f3271f"
+      },
+      {
+        "index": 13,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamBrowRY",
+        "idRef": "#325",
+        "localName": "Brow R Y",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "6e47041de762"
+      },
+      {
+        "index": 14,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamMouthForm",
+        "idRef": "#326",
+        "localName": "Mouth Form",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "892dd982cbf9"
+      },
+      {
+        "index": 15,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamMouthOpenY",
+        "idRef": "#327",
+        "localName": "Mouth Open",
+        "min": 0,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "837281df0ed3"
+      },
+      {
+        "index": 16,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamHairFront",
+        "idRef": "#328",
+        "localName": "Hair Front",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "4348aed3f5fe"
+      },
+      {
+        "index": 17,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamHairSide",
+        "idRef": "#329",
+        "localName": "Hair Side",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "ff1e50bd6f92"
+      },
+      {
+        "index": 18,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamHairBack",
+        "idRef": "#330",
+        "localName": "Hair Back",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "79c47778116b"
+      },
+      {
+        "index": 19,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamSkirt",
+        "idRef": "#331",
+        "localName": "Skirt",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "2553de0c9180"
+      },
+      {
+        "index": 20,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamShirt",
+        "idRef": "#332",
+        "localName": "Shirt",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "0b6387c476f4"
+      },
+      {
+        "index": 21,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamPants",
+        "idRef": "#333",
+        "localName": "Pants",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "9312cfef4b46"
+      },
+      {
+        "index": 22,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamBust",
+        "idRef": "#334",
+        "localName": "Bust",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "91b4923c6146"
+      }
+    ]
+  },
+  "parts": {
+    "count": 1,
+    "names": [
+      "Root Part"
+    ],
+    "sources": [
+      {
+        "tag": "CPartSource",
+        "xsId": "#196",
+        "xsIdx": "196",
+        "localName": "Root Part",
+        "idstr": "__RootPart__",
+        "targetDeformerRef": "#28",
+        "parentPartRef": null,
+        "keyformGridRef": "#195",
+        "keyformCount": 0,
+        "snippetHash": "42e7e0c569eb",
+        "childRefCount": 21
+      }
+    ]
+  },
+  "art_meshes": {
+    "count": 7,
+    "names": [
+      "Face",
+      "FrontHair",
+      "BackHair",
+      "Mouth",
+      "Neck",
+      "Topwear",
+      "Bottomwear"
+    ],
+    "sources": [
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#304",
+        "xsIdx": "304",
+        "localName": "Face",
+        "idstr": null,
+        "targetDeformerRef": "#197",
+        "parentPartRef": "#25",
+        "keyformGridRef": "#71",
+        "keyformCount": 0,
+        "snippetHash": "1969147090bb",
+        "drawableIdstr": "ArtMesh0",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#305",
+        "xsIdx": "305",
+        "localName": "FrontHair",
+        "idstr": null,
+        "targetDeformerRef": "#202",
+        "parentPartRef": "#25",
+        "keyformGridRef": "#91",
+        "keyformCount": 0,
+        "snippetHash": "16e20d67a7ec",
+        "drawableIdstr": "ArtMesh1",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#306",
+        "xsIdx": "306",
+        "localName": "BackHair",
+        "idstr": null,
+        "targetDeformerRef": "#209",
+        "parentPartRef": "#25",
+        "keyformGridRef": "#111",
+        "keyformCount": 0,
+        "snippetHash": "3fa4e380591f",
+        "drawableIdstr": "ArtMesh2",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#307",
+        "xsIdx": "307",
+        "localName": "Mouth",
+        "idstr": null,
+        "targetDeformerRef": "#216",
+        "parentPartRef": "#25",
+        "keyformGridRef": "#131",
+        "keyformCount": 0,
+        "snippetHash": "a8c758dad25f",
+        "drawableIdstr": "ArtMesh3",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#308",
+        "xsIdx": "308",
+        "localName": "Neck",
+        "idstr": null,
+        "targetDeformerRef": "#222",
+        "parentPartRef": "#25",
+        "keyformGridRef": "#151",
+        "keyformCount": 0,
+        "snippetHash": "a3d3a22bfd3c",
+        "drawableIdstr": "ArtMesh4",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#309",
+        "xsIdx": "309",
+        "localName": "Topwear",
+        "idstr": null,
+        "targetDeformerRef": "#227",
+        "parentPartRef": "#25",
+        "keyformGridRef": "#173",
+        "keyformCount": 0,
+        "snippetHash": "9d89b5406e4a",
+        "drawableIdstr": "ArtMesh5",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#310",
+        "xsIdx": "310",
+        "localName": "Bottomwear",
+        "idstr": null,
+        "targetDeformerRef": "#241",
+        "parentPartRef": "#25",
+        "keyformGridRef": "#193",
+        "keyformCount": 0,
+        "snippetHash": "fd0cd955a481",
+        "drawableIdstr": "ArtMesh6",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      }
+    ]
+  },
+  "deformers": {
+    "warp_count": 13,
+    "rotation_count": 1,
+    "warp_names": [
+      "Face Warp",
+      "FrontHair Warp",
+      "BackHair Warp",
+      "Mouth Warp",
+      "Neck Warp",
+      "Topwear Warp",
+      "Bottomwear Warp",
+      "Body Warp Z",
+      "Body Warp Y",
+      "Breath",
+      "Body X Warp",
+      "Neck Warp",
+      "FaceParallax"
+    ],
+    "rotation_names": [
+      "Face Rotation"
+    ],
+    "warp_sources": [
+      {
+        "tag": "CWarpDeformerSource",
+        "xsId": "#201",
+        "xsIdx": "201",
+        "localName": "Face Warp",
+        "idstr": "RigWarp_Face",
+        "targetDeformerRef": "#299",
+        "parentPartRef": "#25",
+        "keyformGridRef": "#200",
+        "keyformCount": 1,
+        "snippetHash": "a6d977f6c246",
+        "col": 2,
+        "row": 3
+      },
+      {
+        "tag": "CWarpDeformerSource",
+        "xsId": "#208",
+        "xsIdx": "208",
+        "localName": "FrontHair Warp",
+        "idstr": "RigWarp_FrontHair",
+        "targetDeformerRef": "#299",
+        "parentPartRef": "#25",
+        "keyformGridRef": "#204",
+        "keyformCount": 3,
+        "snippetHash": "bc1948bb7539",
+        "col": 2,
+        "row": 2
+      },
+      {
+        "tag": "CWarpDeformerSource",
+        "xsId": "#215",
+        "xsIdx": "215",
+        "localName": "BackHair Warp",
+        "idstr": "RigWarp_BackHair",
+        "targetDeformerRef": "#299",
+        "parentPartRef": "#25",
+        "keyformGridRef": "#211",
+        "keyformCount": 3,
+        "snippetHash": "8e1e8e2f489b",
+        "col": 2,
+        "row": 3
+      },
+      {
+        "tag": "CWarpDeformerSource",
+        "xsId": "#221",
+        "xsIdx": "221",
+        "localName": "Mouth Warp",
+        "idstr": "RigWarp_Mouth",
+        "targetDeformerRef": "#299",
+        "parentPartRef": "#25",
+        "keyformGridRef": "#218",
+        "keyformCount": 2,
+        "snippetHash": "5e1d82a3df04",
+        "col": 3,
+        "row": 2
+      },
+      {
+        "tag": "CWarpDeformerSource",
+        "xsId": "#226",
+        "xsIdx": "226",
+        "localName": "Neck Warp",
+        "idstr": "RigWarp_Neck",
+        "targetDeformerRef": "#276",
+        "parentPartRef": "#25",
+        "keyformGridRef": "#225",
+        "keyformCount": 1,
+        "snippetHash": "14f8ab682cf4",
+        "col": 3,
+        "row": 3
+      },
+      {
+        "tag": "CWarpDeformerSource",
+        "xsId": "#240",
+        "xsIdx": "240",
+        "localName": "Topwear Warp",
+        "idstr": "RigWarp_Topwear",
+        "targetDeformerRef": "#269",
+        "parentPartRef": "#25",
+        "keyformGridRef": "#230",
+        "keyformCount": 9,
+        "snippetHash": "e282d6b67aa8",
+        "col": 3,
+        "row": 3
+      },
+      {
+        "tag": "CWarpDeformerSource",
+        "xsId": "#247",
+        "xsIdx": "247",
+        "localName": "Bottomwear Warp",
+        "idstr": "RigWarp_Bottomwear",
+        "targetDeformerRef": "#269",
+        "parentPartRef": "#25",
+        "keyformGridRef": "#243",
+        "keyformCount": 3,
+        "snippetHash": "4e99cc3fb611",
+        "col": 3,
+        "row": 3
+      },
+      {
+        "tag": "CWarpDeformerSource",
+        "xsId": "#255",
+        "xsIdx": "255",
+        "localName": "Body Warp Z",
+        "idstr": "BodyWarpZ",
+        "targetDeformerRef": "#27",
+        "parentPartRef": "#25",
+        "keyformGridRef": "#251",
+        "keyformCount": 3,
+        "snippetHash": "02322ad6aa87",
+        "col": 5,
+        "row": 5
+      },
+      {
+        "tag": "CWarpDeformerSource",
+        "xsId": "#262",
+        "xsIdx": "262",
+        "localName": "Body Warp Y",
+        "idstr": "BodyWarpY",
+        "targetDeformerRef": "#248",
+        "parentPartRef": "#25",
+        "keyformGridRef": "#258",
+        "keyformCount": 3,
+        "snippetHash": "c2935c480381",
+        "col": 5,
+        "row": 5
+      },
+      {
+        "tag": "CWarpDeformerSource",
+        "xsId": "#268",
+        "xsIdx": "268",
+        "localName": "Breath",
+        "idstr": "BreathWarp",
+        "targetDeformerRef": "#256",
+        "parentPartRef": "#25",
+        "keyformGridRef": "#265",
+        "keyformCount": 2,
+        "snippetHash": "676a0b1f7ca2",
+        "col": 5,
+        "row": 5
+      },
+      {
+        "tag": "CWarpDeformerSource",
+        "xsId": "#275",
+        "xsIdx": "275",
+        "localName": "Body X Warp",
+        "idstr": "BodyXWarp",
+        "targetDeformerRef": "#263",
+        "parentPartRef": "#25",
+        "keyformGridRef": "#271",
+        "keyformCount": 3,
+        "snippetHash": "7d5dff6d5a86",
+        "col": 5,
+        "row": 5
+      },
+      {
+        "tag": "CWarpDeformerSource",
+        "xsId": "#282",
+        "xsIdx": "282",
+        "localName": "Neck Warp",
+        "idstr": "NeckWarp",
+        "targetDeformerRef": "#269",
+        "parentPartRef": "#25",
+        "keyformGridRef": "#278",
+        "keyformCount": 3,
+        "snippetHash": "f860345fb147",
+        "col": 5,
+        "row": 5
+      },
+      {
+        "tag": "CWarpDeformerSource",
+        "xsId": "#303",
+        "xsIdx": "303",
+        "localName": "FaceParallax",
+        "idstr": "FaceParallax",
+        "targetDeformerRef": "#283",
+        "parentPartRef": "#25",
+        "keyformGridRef": "#302",
+        "keyformCount": 9,
+        "snippetHash": "b8676fd49f43",
+        "col": 5,
+        "row": 5
+      }
+    ],
+    "rotation_sources": [
+      {
+        "tag": "CRotationDeformerSource",
+        "xsId": "#289",
+        "xsIdx": "289",
+        "localName": "Face Rotation",
+        "idstr": "FaceRotation",
+        "targetDeformerRef": "#269",
+        "parentPartRef": "#25",
+        "keyformGridRef": "#285",
+        "keyformCount": 3,
+        "snippetHash": "54914570efce",
+        "col": null,
+        "row": null
+      }
+    ]
+  },
+  "keyforms": {
+    "grid_count": 22,
+    "binding_count": 23,
+    "bindings": [
+      {
+        "xsId": "#70",
+        "xsIdx": "70",
+        "description": "ParamOpacity",
+        "parameterRef": "#2",
+        "gridRef": "#71",
+        "keyCount": 1
+      },
+      {
+        "xsId": "#90",
+        "xsIdx": "90",
+        "description": "ParamOpacity",
+        "parameterRef": "#2",
+        "gridRef": "#91",
+        "keyCount": 1
+      },
+      {
+        "xsId": "#110",
+        "xsIdx": "110",
+        "description": "ParamOpacity",
+        "parameterRef": "#2",
+        "gridRef": "#111",
+        "keyCount": 1
+      },
+      {
+        "xsId": "#130",
+        "xsIdx": "130",
+        "description": "ParamOpacity",
+        "parameterRef": "#2",
+        "gridRef": "#131",
+        "keyCount": 1
+      },
+      {
+        "xsId": "#150",
+        "xsIdx": "150",
+        "description": "ParamAngleX",
+        "parameterRef": "#3",
+        "gridRef": "#151",
+        "keyCount": 3
+      },
+      {
+        "xsId": "#172",
+        "xsIdx": "172",
+        "description": "ParamOpacity",
+        "parameterRef": "#2",
+        "gridRef": "#173",
+        "keyCount": 1
+      },
+      {
+        "xsId": "#192",
+        "xsIdx": "192",
+        "description": "ParamOpacity",
+        "parameterRef": "#2",
+        "gridRef": "#193",
+        "keyCount": 1
+      },
+      {
+        "xsId": "#199",
+        "xsIdx": "199",
+        "description": "ParamOpacity",
+        "parameterRef": "#2",
+        "gridRef": "#200",
+        "keyCount": 1
+      },
+      {
+        "xsId": "#203",
+        "xsIdx": "203",
+        "description": "ParamHairFront",
+        "parameterRef": "#18",
+        "gridRef": "#204",
+        "keyCount": 3
+      },
+      {
+        "xsId": "#210",
+        "xsIdx": "210",
+        "description": "ParamHairBack",
+        "parameterRef": "#20",
+        "gridRef": "#211",
+        "keyCount": 3
+      },
+      {
+        "xsId": "#217",
+        "xsIdx": "217",
+        "description": "ParamMouthOpenY",
+        "parameterRef": "#17",
+        "gridRef": "#218",
+        "keyCount": 2
+      },
+      {
+        "xsId": "#224",
+        "xsIdx": "224",
+        "description": "ParamOpacity",
+        "parameterRef": "#2",
+        "gridRef": "#225",
+        "keyCount": 1
+      },
+      {
+        "xsId": "#228",
+        "xsIdx": "228",
+        "description": "ParamShirt",
+        "parameterRef": "#22",
+        "gridRef": "#230",
+        "keyCount": 3
+      },
+      {
+        "xsId": "#229",
+        "xsIdx": "229",
+        "description": "ParamBust",
+        "parameterRef": "#24",
+        "gridRef": "#230",
+        "keyCount": 3
+      },
+      {
+        "xsId": "#242",
+        "xsIdx": "242",
+        "description": "ParamSkirt",
+        "parameterRef": "#21",
+        "gridRef": "#243",
+        "keyCount": 3
+      },
+      {
+        "xsId": "#250",
+        "xsIdx": "250",
+        "description": "ParamBodyAngleZ",
+        "parameterRef": "#8",
+        "gridRef": "#251",
+        "keyCount": 3
+      },
+      {
+        "xsId": "#257",
+        "xsIdx": "257",
+        "description": "ParamBodyAngleY",
+        "parameterRef": "#7",
+        "gridRef": "#258",
+        "keyCount": 3
+      },
+      {
+        "xsId": "#264",
+        "xsIdx": "264",
+        "description": "ParamBreath",
+        "parameterRef": "#9",
+        "gridRef": "#265",
+        "keyCount": 2
+      },
+      {
+        "xsId": "#270",
+        "xsIdx": "270",
+        "description": "ParamBodyAngleX",
+        "parameterRef": "#6",
+        "gridRef": "#271",
+        "keyCount": 3
+      },
+      {
+        "xsId": "#277",
+        "xsIdx": "277",
+        "description": "ParamAngleZ_Neck",
+        "parameterRef": "#5",
+        "gridRef": "#278",
+        "keyCount": 3
+      },
+      {
+        "xsId": "#284",
+        "xsIdx": "284",
+        "description": "ParamAngleZ",
+        "parameterRef": "#5",
+        "gridRef": "#285",
+        "keyCount": 3
+      },
+      {
+        "xsId": "#300",
+        "xsIdx": "300",
+        "description": "ParamAngleY",
+        "parameterRef": "#4",
+        "gridRef": "#302",
+        "keyCount": 3
+      },
+      {
+        "xsId": "#301",
+        "xsIdx": "301",
+        "description": "ParamAngleX",
+        "parameterRef": "#3",
+        "gridRef": "#302",
+        "keyCount": 3
+      }
+    ]
+  },
+  "layers": {
+    "count": 7,
+    "names": [
+      "Face",
+      "FrontHair",
+      "BackHair",
+      "Mouth",
+      "Neck",
+      "Topwear",
+      "Bottomwear"
+    ],
+    "sources": [
+      {
+        "xsId": "#60",
+        "xsIdx": "60",
+        "name": "Face",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#80",
+        "xsIdx": "80",
+        "name": "FrontHair",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#100",
+        "xsIdx": "100",
+        "name": "BackHair",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#120",
+        "xsIdx": "120",
+        "name": "Mouth",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#140",
+        "xsIdx": "140",
+        "name": "Neck",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#162",
+        "xsIdx": "162",
+        "name": "Topwear",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#182",
+        "xsIdx": "182",
+        "name": "Bottomwear",
+        "visible": "true",
+        "opacity255": "255"
+      }
+    ]
+  },
+  "interpretation": [
+    "This report proves CMO3 structure presence, not visual motion quality.",
+    "Parameter/keyform/deformer presence does not prove that the rig deforms well under extreme values.",
+    "Use this as a stronger gate before runtime render and Cubism visual overhang validation."
+  ],
+  "outputs": {
+    "json": "/Users/family/jason/Vtube/experiments/cmo3-structure-fixture-001/reports/cmo3_structure_report.json",
+    "markdown": "/Users/family/jason/Vtube/experiments/cmo3-structure-fixture-001/reports/cmo3_structure_report.md"
+  }
+}

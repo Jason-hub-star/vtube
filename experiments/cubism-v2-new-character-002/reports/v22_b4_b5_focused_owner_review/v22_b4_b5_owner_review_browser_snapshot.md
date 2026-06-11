@@ -1,0 +1,61 @@
+- generic [ref=e2] [box=0,0,1454,820]:
+  - complementary [ref=e3] [box=0,0,360,820]:
+    - generic [ref=e4] [box=0,0,359,150]:
+      - heading "B4/B5 Focused Review" [level=1] [ref=e5] [box=16,16,327,22]
+      - generic [ref=e6] [box=16,44,327,38]: 10개 primary decision만 저장합니다. 저장해도 material PASS, ParamHairFront, G7/G8은 자동 승격되지 않습니다.
+      - generic [ref=e7] [box=16,81,327,52]:
+        - generic [ref=e8] [box=16,85,121,22]: material BLOCKED
+        - generic [ref=e9] [box=141,85,111,22]: HairFront hidden
+        - generic [ref=e10] [box=16,111,100,22]: G7/G8 blocked
+    - generic [ref=e11] [box=0,150,359,69]:
+      - button "현재 결정 저장" [ref=e12] [cursor=pointer] [box=16,166,101,36]
+      - button "다시 읽기" [ref=e13] [cursor=pointer] [box=121,166,74,36]
+    - generic [ref=e14] [box=0,219,359,911]:
+      - button "hair_front_L B4_FRONT_HAIR PENDING_OWNER_REVIEW" [ref=e15] [cursor=pointer] [box=12,231,335,82]:
+        - generic [ref=e16] [box=23,242,313,16]: hair_front_L
+        - generic [ref=e17] [box=23,262,313,14]: B4_FRONT_HAIR
+        - generic [ref=e18] [box=23,280,177,22]: PENDING_OWNER_REVIEW
+      - button "hair_front_R B4_FRONT_HAIR PENDING_OWNER_REVIEW" [ref=e19] [cursor=pointer] [box=12,321,335,82]:
+        - generic [ref=e20] [box=23,332,313,16]: hair_front_R
+        - generic [ref=e21] [box=23,351,313,14]: B4_FRONT_HAIR
+        - generic [ref=e22] [box=23,369,177,22]: PENDING_OWNER_REVIEW
+      - button "hair_front_center B4_FRONT_HAIR PENDING_OWNER_REVIEW" [ref=e23] [cursor=pointer] [box=12,410,335,82]:
+        - generic [ref=e24] [box=23,421,313,16]: hair_front_center
+        - generic [ref=e25] [box=23,441,313,14]: B4_FRONT_HAIR
+        - generic [ref=e26] [box=23,459,177,22]: PENDING_OWNER_REVIEW
+      - button "hair_front_side_L B4_FRONT_HAIR PENDING_OWNER_REVIEW" [ref=e27] [cursor=pointer] [box=12,500,335,82]:
+        - generic [ref=e28] [box=23,511,313,16]: hair_front_side_L
+        - generic [ref=e29] [box=23,530,313,14]: B4_FRONT_HAIR
+        - generic [ref=e30] [box=23,548,177,22]: PENDING_OWNER_REVIEW
+      - button "hair_front_side_R B4_FRONT_HAIR PENDING_OWNER_REVIEW" [ref=e31] [cursor=pointer] [box=12,589,335,82]:
+        - generic [ref=e32] [box=23,600,313,16]: hair_front_side_R
+        - generic [ref=e33] [box=23,620,313,14]: B4_FRONT_HAIR
+        - generic [ref=e34] [box=23,638,177,22]: PENDING_OWNER_REVIEW
+      - button "hair_front_tip_L B4_FRONT_HAIR PENDING_OWNER_REVIEW" [ref=e35] [cursor=pointer] [box=12,679,335,82]:
+        - generic [ref=e36] [box=23,690,313,16]: hair_front_tip_L
+        - generic [ref=e37] [box=23,709,313,14]: B4_FRONT_HAIR
+        - generic [ref=e38] [box=23,727,177,22]: PENDING_OWNER_REVIEW
+      - button "hair_front_tip_R B4_FRONT_HAIR PENDING_OWNER_REVIEW" [ref=e39] [cursor=pointer] [box=12,768,335,82]:
+        - generic [ref=e40] [box=23,779,313,16]: hair_front_tip_R
+        - generic [ref=e41] [box=23,799,313,14]: B4_FRONT_HAIR
+        - generic [ref=e42] [box=23,817,177,22]: PENDING_OWNER_REVIEW
+      - button "torso_base B5_BODY_BLOCKER PENDING_OWNER_REVIEW" [ref=e43] [cursor=pointer] [box=12,858,335,82]:
+        - generic [ref=e44] [box=23,869,313,16]: torso_base
+        - generic [ref=e45] [box=23,888,313,14]: B5_BODY_BLOCKER
+        - generic [ref=e46] [box=23,906,177,22]: PENDING_OWNER_REVIEW
+      - button "shoulder_L B5_BODY_BLOCKER PENDING_OWNER_REVIEW" [ref=e47] [cursor=pointer] [box=12,947,335,82]:
+        - generic [ref=e48] [box=23,958,313,16]: shoulder_L
+        - generic [ref=e49] [box=23,978,313,14]: B5_BODY_BLOCKER
+        - generic [ref=e50] [box=23,996,177,22]: PENDING_OWNER_REVIEW
+      - button "shoulder_R B5_BODY_BLOCKER PENDING_OWNER_REVIEW" [ref=e51] [cursor=pointer] [box=12,1037,335,82]:
+        - generic [ref=e52] [box=23,1048,313,16]: shoulder_R
+        - generic [ref=e53] [box=23,1067,313,14]: B5_BODY_BLOCKER
+        - generic [ref=e54] [box=23,1085,177,22]: PENDING_OWNER_REVIEW
+  - main [ref=e55] [box=360,0,1094,820]:
+    - generic [ref=e56] [box=378,18,1058,739]:
+      - generic [ref=e57] [box=378,18,522,739]:
+        - heading "hair_front_L · B4_FRONT_HAIR" [level=2] [ref=e58] [box=379,19,520,43]
+        - generic [ref=e60] [box=393,76,492,667]
+      - generic [ref=e73] [box=914,18,522,555]:
+        - heading "decision" [level=2] [ref=e74] [box=915,19,520,43]
+        - generic [ref=e75] [box=915,62,520,511]

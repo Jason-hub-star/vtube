@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T01:42:19.646269+00:00",
+  "status": "BUILT_PENDING_VALIDATION",
+  "source_project": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_009/mini_cubism_project",
+  "project": "/Users/family/jason/Vtube/experiments/mini-cubism-physics-v0-3-001/best/mini_cubism_project",
+  "counts": {
+    "parts": 21,
+    "meshes": 21,
+    "deformers": 9,
+    "parameters": 5,
+    "keyform_bindings": 10,
+    "part_opacity_keyframes": 5,
+    "vertex_weights": 5,
+    "physics_profiles": 3,
+    "glue": 0
+  }
+}

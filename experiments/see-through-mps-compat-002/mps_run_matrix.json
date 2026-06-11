@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "experiment_id": "see-through-mps-compat-002",
+  "generated_at": "2026-06-04T04:55:48.014894+00:00",
+  "host": {
+    "platform": "macOS-26.3.1-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "processor": "arm"
+  },
+  "source_experiment": "experiments/see-through-layer-decomp-001",
+  "input_outputs": [
+    {
+      "size": [
+        512,
+        512
+      ],
+      "path": "experiments/see-through-mps-compat-002/input/canonical_front_mps_512.png",
+      "source": "experiments/see-through-layer-decomp-001/input/canonical_front_1280.png"
+    },
+    {
+      "size": [
+        640,
+        640
+      ],
+      "path": "experiments/see-through-mps-compat-002/input/canonical_front_mps_640.png",
+      "source": "experiments/see-through-layer-decomp-001/input/canonical_front_1280.png"
+    },
+    {
+      "size": [
+        768,
+        768
+      ],
+      "path": "experiments/see-through-mps-compat-002/input/canonical_front_mps_768.png",
+      "source": "experiments/see-through-layer-decomp-001/input/canonical_front_1280.png"
+    }
+  ],
+  "matrix": [
+    {
+      "case_id": "mps_512_safe",
+      "input_image": "canonical_front_mps_512.png",
+      "resolution": 512,
+      "steps": 8,
+      "depth_resolution": 384,
+      "env": {
+        "PYTORCH_ENABLE_MPS_FALLBACK": "1",
+        "PYTORCH_MPS_LOW_WATERMARK_RATIO": "0.85",
+        "PYTORCH_MPS_HIGH_WATERMARK_RATIO": "1.20"
+      },
+      "status": "READY_TO_RUN",
+      "risk": "lowest quality, lowest memory; minimum success gate is *_layers.json"
+    },
+    {
+      "case_id": "mps_640_safe",
+      "input_image": "canonical_front_mps_640.png",
+      "resolution": 640,
+      "steps": 12,
+      "depth_resolution": 512,
+      "env": {
+        "PYTORCH_ENABLE_MPS_FALLBACK": "1",
+        "PYTORCH_MPS_LOW_WATERMARK_RATIO": "0.90",
+        "PYTORCH_MPS_HIGH_WATERMARK_RATIO": "1.30"
+      },
+      "status": "READY_TO_RUN",
+      "risk": "target practical smoke if 512 produces layers"
+    },
+    {
+      "case_id": "mps_768_safe",
+      "input_image": "canonical_front_mps_768.png",
+      "resolution": 768,
+      "steps": 16,
+      "depth_resolution": 512,
+      "env": {
+        "PYTORCH_ENABLE_MPS_FALLBACK": "1",
+        "PYTORCH_MPS_LOW_WATERMARK_RATIO": "0.95",
+        "PYTORCH_MPS_HIGH_WATERMARK_RATIO": "1.40"
+      },
+      "status": "READY_TO_RUN",
+      "risk": "quality probe; run only after 512 or 640 completes"
+    },
+    {
+      "case_id": "mps_512_high_watermark_manual",
+      "input_image": "canonical_front_mps_512.png",
+      "resolution": 512,
+      "steps": 8,
+      "depth_resolution": 384,
+      "env": {
+        "PYTORCH_ENABLE_MPS_FALLBACK": "1",
+        "PYTORCH_MPS_LOW_WATERMARK_RATIO": "0.00",
+        "PYTORCH_MPS_HIGH_WATERMARK_RATIO": "0.00"
+      },
+      "status": "MANUAL_ONLY",
+      "risk": "dangerous: disables allocator high watermark and may destabilize the Mac"
+    }
+  ],
+  "gates": {
+    "minimum_success": "512 or 640 creates *_layers.json",
+    "practical_success": "5 or more hair/face/eye/mouth candidates receive O or REVISE in review app",
+    "failure": "512 creates no layer output or all candidates are semantically contaminated"
+  }
+}

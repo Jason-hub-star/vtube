@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T04:42:22.126888+00:00",
+  "status": "V8_EXISTING_MOUTH_TUNED_PREVIEW_READY_FOR_VALIDATION",
+  "source_project": "experiments/cubism-v2-new-character-002/model_edit_v7_smooth_mouth_preview/mini_cubism_diagnostic_project",
+  "project": "experiments/cubism-v2-new-character-002/model_edit_v8_existing_mouth_tuned_preview/mini_cubism_diagnostic_project",
+  "active_mouth_parts": [
+    "mouth_closed_smile",
+    "mouth_small_open"
+  ],
+  "reference_only_mouth_parts": [
+    "mouth_inner",
+    "mouth_teeth",
+    "mouth_tongue"
+  ],
+  "excluded_mouth_parts": [
+    "mouth_o_vowel",
+    "mouth_wide_open"
+  ],
+  "mouth_policy": "Use existing generated mouth assets only; tune opacity and mouth_warp timing before generating new art.",
+  "mouth_warp_policy": {
+    "v7": {
+      "key_value": 1.0,
+      "translate": [
+        0,
+        8
+      ],
+      "scale": [
+        1,
+        1.15
+      ]
+    },
+    "v8": [
+      {
+        "key_value": 0.5,
+        "translate": [
+          0,
+          1.0
+        ],
+        "scale": [
+          1,
+          1.015
+        ]
+      },
+      {
+        "key_value": 1.0,
+        "translate": [
+          0,
+          2.0
+        ],
+        "scale": [
+          1,
+          1.03
+        ]
+      }
+    ]
+  }
+}

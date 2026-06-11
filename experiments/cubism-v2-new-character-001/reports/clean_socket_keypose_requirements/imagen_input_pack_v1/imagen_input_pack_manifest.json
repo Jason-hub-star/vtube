@@ -1,0 +1,344 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-08T15:35:21.541275+00:00",
+  "status": "PASS_INPUT_PACK_READY",
+  "output_dir": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1",
+  "source_project": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_face_detail_rebuild_v1",
+  "references": {
+    "source_2048_rgba": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/references/source_candidate_002_2048_rgba.png",
+    "source_on_beige": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/references/source_candidate_002_on_beige.png",
+    "source_on_white": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/references/source_candidate_002_on_white.png",
+    "current_eye_close_failure": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/references/current_eye_close_failure_crop.png",
+    "requirements": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/references/clean_socket_keypose_requirements.json"
+  },
+  "rois": {
+    "eye_L": [
+      761,
+      613,
+      297,
+      233
+    ],
+    "eye_R": [
+      1014,
+      616,
+      297,
+      235
+    ],
+    "mouth": [
+      907,
+      773,
+      250,
+      356
+    ],
+    "face": [
+      584,
+      312,
+      866,
+      1460
+    ],
+    "manual_eye_L_bbox": [
+      878,
+      689,
+      103,
+      73
+    ],
+    "manual_eye_R_bbox": [
+      1078,
+      691,
+      110,
+      73
+    ]
+  },
+  "assets": [
+    {
+      "asset_id": "face_base_clean",
+      "roi_name": "face",
+      "roi_bbox": [
+        584,
+        312,
+        866,
+        1460
+      ],
+      "prompt_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/face_base_clean.md",
+      "prompt_json_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/face_base_clean.json",
+      "roi_crop_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/roi_crops/face_source_crop.png",
+      "full_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/face_full_canvas_mask.png",
+      "crop_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/face_crop_mask.png"
+    },
+    {
+      "asset_id": "eye_L_clean_socket",
+      "roi_name": "eye_L",
+      "roi_bbox": [
+        761,
+        613,
+        297,
+        233
+      ],
+      "prompt_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/eye_L_clean_socket.md",
+      "prompt_json_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/eye_L_clean_socket.json",
+      "roi_crop_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/roi_crops/eye_L_source_crop.png",
+      "full_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_L_full_canvas_mask.png",
+      "crop_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_L_crop_mask.png"
+    },
+    {
+      "asset_id": "eye_R_clean_socket",
+      "roi_name": "eye_R",
+      "roi_bbox": [
+        1014,
+        616,
+        297,
+        235
+      ],
+      "prompt_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/eye_R_clean_socket.md",
+      "prompt_json_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/eye_R_clean_socket.json",
+      "roi_crop_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/roi_crops/eye_R_source_crop.png",
+      "full_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_R_full_canvas_mask.png",
+      "crop_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_R_crop_mask.png"
+    },
+    {
+      "asset_id": "eye_L_half_closed_lid",
+      "roi_name": "eye_L",
+      "roi_bbox": [
+        761,
+        613,
+        297,
+        233
+      ],
+      "prompt_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/eye_L_half_closed_lid.md",
+      "prompt_json_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/eye_L_half_closed_lid.json",
+      "roi_crop_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/roi_crops/eye_L_source_crop.png",
+      "full_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_L_full_canvas_mask.png",
+      "crop_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_L_crop_mask.png"
+    },
+    {
+      "asset_id": "eye_R_half_closed_lid",
+      "roi_name": "eye_R",
+      "roi_bbox": [
+        1014,
+        616,
+        297,
+        235
+      ],
+      "prompt_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/eye_R_half_closed_lid.md",
+      "prompt_json_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/eye_R_half_closed_lid.json",
+      "roi_crop_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/roi_crops/eye_R_source_crop.png",
+      "full_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_R_full_canvas_mask.png",
+      "crop_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_R_crop_mask.png"
+    },
+    {
+      "asset_id": "eye_L_mostly_closed_lid",
+      "roi_name": "eye_L",
+      "roi_bbox": [
+        761,
+        613,
+        297,
+        233
+      ],
+      "prompt_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/eye_L_mostly_closed_lid.md",
+      "prompt_json_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/eye_L_mostly_closed_lid.json",
+      "roi_crop_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/roi_crops/eye_L_source_crop.png",
+      "full_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_L_full_canvas_mask.png",
+      "crop_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_L_crop_mask.png"
+    },
+    {
+      "asset_id": "eye_R_mostly_closed_lid",
+      "roi_name": "eye_R",
+      "roi_bbox": [
+        1014,
+        616,
+        297,
+        235
+      ],
+      "prompt_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/eye_R_mostly_closed_lid.md",
+      "prompt_json_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/eye_R_mostly_closed_lid.json",
+      "roi_crop_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/roi_crops/eye_R_source_crop.png",
+      "full_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_R_full_canvas_mask.png",
+      "crop_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_R_crop_mask.png"
+    },
+    {
+      "asset_id": "eye_L_closed_lid",
+      "roi_name": "eye_L",
+      "roi_bbox": [
+        761,
+        613,
+        297,
+        233
+      ],
+      "prompt_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/eye_L_closed_lid.md",
+      "prompt_json_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/eye_L_closed_lid.json",
+      "roi_crop_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/roi_crops/eye_L_source_crop.png",
+      "full_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_L_full_canvas_mask.png",
+      "crop_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_L_crop_mask.png"
+    },
+    {
+      "asset_id": "eye_R_closed_lid",
+      "roi_name": "eye_R",
+      "roi_bbox": [
+        1014,
+        616,
+        297,
+        235
+      ],
+      "prompt_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/eye_R_closed_lid.md",
+      "prompt_json_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/eye_R_closed_lid.json",
+      "roi_crop_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/roi_crops/eye_R_source_crop.png",
+      "full_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_R_full_canvas_mask.png",
+      "crop_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_R_crop_mask.png"
+    },
+    {
+      "asset_id": "eye_L_closed_underpaint",
+      "roi_name": "eye_L",
+      "roi_bbox": [
+        761,
+        613,
+        297,
+        233
+      ],
+      "prompt_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/eye_L_closed_underpaint.md",
+      "prompt_json_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/eye_L_closed_underpaint.json",
+      "roi_crop_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/roi_crops/eye_L_source_crop.png",
+      "full_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_L_full_canvas_mask.png",
+      "crop_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_L_crop_mask.png"
+    },
+    {
+      "asset_id": "eye_R_closed_underpaint",
+      "roi_name": "eye_R",
+      "roi_bbox": [
+        1014,
+        616,
+        297,
+        235
+      ],
+      "prompt_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/eye_R_closed_underpaint.md",
+      "prompt_json_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/eye_R_closed_underpaint.json",
+      "roi_crop_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/roi_crops/eye_R_source_crop.png",
+      "full_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_R_full_canvas_mask.png",
+      "crop_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_R_crop_mask.png"
+    },
+    {
+      "asset_id": "mouth_base_clean",
+      "roi_name": "mouth",
+      "roi_bbox": [
+        907,
+        773,
+        250,
+        356
+      ],
+      "prompt_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/mouth_base_clean.md",
+      "prompt_json_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/mouth_base_clean.json",
+      "roi_crop_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/roi_crops/mouth_source_crop.png",
+      "full_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/mouth_full_canvas_mask.png",
+      "crop_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/mouth_crop_mask.png"
+    },
+    {
+      "asset_id": "mouth_closed_smile",
+      "roi_name": "mouth",
+      "roi_bbox": [
+        907,
+        773,
+        250,
+        356
+      ],
+      "prompt_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/mouth_closed_smile.md",
+      "prompt_json_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/mouth_closed_smile.json",
+      "roi_crop_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/roi_crops/mouth_source_crop.png",
+      "full_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/mouth_full_canvas_mask.png",
+      "crop_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/mouth_crop_mask.png"
+    },
+    {
+      "asset_id": "mouth_small_open",
+      "roi_name": "mouth",
+      "roi_bbox": [
+        907,
+        773,
+        250,
+        356
+      ],
+      "prompt_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/mouth_small_open.md",
+      "prompt_json_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/mouth_small_open.json",
+      "roi_crop_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/roi_crops/mouth_source_crop.png",
+      "full_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/mouth_full_canvas_mask.png",
+      "crop_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/mouth_crop_mask.png"
+    },
+    {
+      "asset_id": "mouth_wide_open",
+      "roi_name": "mouth",
+      "roi_bbox": [
+        907,
+        773,
+        250,
+        356
+      ],
+      "prompt_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/mouth_wide_open.md",
+      "prompt_json_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/mouth_wide_open.json",
+      "roi_crop_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/roi_crops/mouth_source_crop.png",
+      "full_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/mouth_full_canvas_mask.png",
+      "crop_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/mouth_crop_mask.png"
+    },
+    {
+      "asset_id": "mouth_o_vowel",
+      "roi_name": "mouth",
+      "roi_bbox": [
+        907,
+        773,
+        250,
+        356
+      ],
+      "prompt_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/mouth_o_vowel.md",
+      "prompt_json_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/mouth_o_vowel.json",
+      "roi_crop_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/roi_crops/mouth_source_crop.png",
+      "full_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/mouth_full_canvas_mask.png",
+      "crop_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/mouth_crop_mask.png"
+    },
+    {
+      "asset_id": "mouth_inner",
+      "roi_name": "mouth",
+      "roi_bbox": [
+        907,
+        773,
+        250,
+        356
+      ],
+      "prompt_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/mouth_inner.md",
+      "prompt_json_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/mouth_inner.json",
+      "roi_crop_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/roi_crops/mouth_source_crop.png",
+      "full_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/mouth_full_canvas_mask.png",
+      "crop_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/mouth_crop_mask.png"
+    },
+    {
+      "asset_id": "mouth_teeth",
+      "roi_name": "mouth",
+      "roi_bbox": [
+        907,
+        773,
+        250,
+        356
+      ],
+      "prompt_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/mouth_teeth.md",
+      "prompt_json_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/mouth_teeth.json",
+      "roi_crop_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/roi_crops/mouth_source_crop.png",
+      "full_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/mouth_full_canvas_mask.png",
+      "crop_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/mouth_crop_mask.png"
+    },
+    {
+      "asset_id": "mouth_tongue",
+      "roi_name": "mouth",
+      "roi_bbox": [
+        907,
+        773,
+        250,
+        356
+      ],
+      "prompt_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/mouth_tongue.md",
+      "prompt_json_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/prompts/mouth_tongue.json",
+      "roi_crop_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/roi_crops/mouth_source_crop.png",
+      "full_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/mouth_full_canvas_mask.png",
+      "crop_mask_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/mouth_crop_mask.png"
+    }
+  ],
+  "official_context": {
+    "live2d_material_separation": "https://docs.live2d.com/en/cubism-editor-manual/divide-the-material/",
+    "live2d_psd_import": "https://docs.live2d.com/en/cubism-editor-manual/psd-import/",
+    "imagen_edit_reference": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/model-reference/imagen-api-edit"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-04T11:25:01.681753+00:00",
+  "run_dir": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001",
+  "best_candidate_id": "candidate_009",
+  "contact_sheet": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/review_packet/contact_sheet.png",
+  "review_summary": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/review_packet/review_summary.md",
+  "status": "PASS"
+}

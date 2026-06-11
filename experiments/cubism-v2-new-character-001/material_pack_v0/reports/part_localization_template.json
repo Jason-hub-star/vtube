@@ -1,0 +1,1524 @@
+{
+  "schema_version": 1,
+  "status": "PASS_PART_LOCALIZATION_TEMPLATE_READY",
+  "generated_at": "2026-06-08T09:31:40.468074+00:00",
+  "source_overrides": "experiments/cubism-v2-new-character-001/material_pack_v0/reports/manual_semantic_overrides.json",
+  "source_manifest": "experiments/cubism-v2-new-character-001/material_pack_v0/layer_manifest.json",
+  "canvas_size": [
+    2048,
+    2048
+  ],
+  "reference_bboxes": {
+    "canvas": [
+      0,
+      0,
+      2048,
+      2048
+    ],
+    "eye_L": [
+      808,
+      657,
+      217,
+      242
+    ],
+    "eye_R": [
+      1060,
+      660,
+      204,
+      239
+    ],
+    "mouth": [
+      953,
+      825,
+      148,
+      246
+    ],
+    "brow": [
+      827,
+      606,
+      410,
+      88
+    ],
+    "face": [
+      796,
+      685,
+      470,
+      389
+    ],
+    "body": [
+      626,
+      1036,
+      799,
+      680
+    ],
+    "head": [
+      766,
+      576,
+      530,
+      528
+    ]
+  },
+  "parts": {
+    "brow_L": {
+      "part_id": "brow_L",
+      "semantic_role": "brow_L",
+      "expected_group": "brow",
+      "source_type": "SOURCE_CUT",
+      "draw_order": 1135,
+      "basis": "brow",
+      "roi_abs": [
+        839,
+        618,
+        200,
+        58
+      ],
+      "roi_rel": [
+        0.029268,
+        0.136364,
+        0.487805,
+        0.659091
+      ],
+      "anchor_abs_saved": [
+        939,
+        647
+      ],
+      "anchor_abs_roi_center": [
+        939,
+        647
+      ],
+      "anchor_rel_saved": [
+        0.273171,
+        0.465909
+      ],
+      "anchor_rel_roi_center": [
+        0.273171,
+        0.465909
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "brow_R": {
+      "part_id": "brow_R",
+      "semantic_role": "brow_R",
+      "expected_group": "brow",
+      "source_type": "SOURCE_CUT",
+      "draw_order": 1136,
+      "basis": "brow",
+      "roi_abs": [
+        1025,
+        624,
+        200,
+        58
+      ],
+      "roi_rel": [
+        0.482927,
+        0.204545,
+        0.487805,
+        0.659091
+      ],
+      "anchor_abs_saved": [
+        1125,
+        653
+      ],
+      "anchor_abs_roi_center": [
+        1125,
+        653
+      ],
+      "anchor_rel_saved": [
+        0.726829,
+        0.534091
+      ],
+      "anchor_rel_roi_center": [
+        0.726829,
+        0.534091
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "cheek_L": {
+      "part_id": "cheek_L",
+      "semantic_role": "cheek_L",
+      "expected_group": "face_base",
+      "source_type": "SOURCE_CUT",
+      "draw_order": 717,
+      "basis": "face",
+      "roi_abs": [
+        884,
+        809,
+        84,
+        65
+      ],
+      "roi_rel": [
+        0.187234,
+        0.318766,
+        0.178723,
+        0.167095
+      ],
+      "anchor_abs_saved": [
+        926,
+        841
+      ],
+      "anchor_abs_roi_center": [
+        926,
+        842
+      ],
+      "anchor_rel_saved": [
+        0.276596,
+        0.401028
+      ],
+      "anchor_rel_roi_center": [
+        0.276596,
+        0.403599
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "cheek_R": {
+      "part_id": "cheek_R",
+      "semantic_role": "cheek_R",
+      "expected_group": "face_base",
+      "source_type": "SOURCE_CUT",
+      "draw_order": 718,
+      "basis": "face",
+      "roi_abs": [
+        1080,
+        822,
+        85,
+        65
+      ],
+      "roi_rel": [
+        0.604255,
+        0.352185,
+        0.180851,
+        0.167095
+      ],
+      "anchor_abs_saved": [
+        1122,
+        854
+      ],
+      "anchor_abs_roi_center": [
+        1122,
+        854
+      ],
+      "anchor_rel_saved": [
+        0.693617,
+        0.434447
+      ],
+      "anchor_rel_roi_center": [
+        0.693617,
+        0.434447
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "eye_L_closed_lid": {
+      "part_id": "eye_L_closed_lid",
+      "semantic_role": "left_eye_closed_lid",
+      "expected_group": "eye_L",
+      "source_type": "DERIVED_KEYPOSE",
+      "draw_order": 1025,
+      "basis": "eye_L",
+      "roi_abs": [
+        870,
+        823,
+        143,
+        53
+      ],
+      "roi_rel": [
+        0.285714,
+        0.68595,
+        0.658986,
+        0.219008
+      ],
+      "anchor_abs_saved": [
+        931,
+        727
+      ],
+      "anchor_abs_roi_center": [
+        942,
+        850
+      ],
+      "anchor_rel_saved": [
+        0.56682,
+        0.289256
+      ],
+      "anchor_rel_roi_center": [
+        0.617512,
+        0.797521
+      ],
+      "anchor_inside_roi": false,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "eye_L_highlight": {
+      "part_id": "eye_L_highlight",
+      "semantic_role": "left_eye_highlight",
+      "expected_group": "eye_L",
+      "source_type": "DERIVED_KEYPOSE",
+      "draw_order": 1022,
+      "basis": "eye_L",
+      "roi_abs": [
+        926,
+        709,
+        20,
+        20
+      ],
+      "roi_rel": [
+        0.543779,
+        0.214876,
+        0.092166,
+        0.082645
+      ],
+      "anchor_abs_saved": [
+        936,
+        719
+      ],
+      "anchor_abs_roi_center": [
+        936,
+        719
+      ],
+      "anchor_rel_saved": [
+        0.589862,
+        0.256198
+      ],
+      "anchor_rel_roi_center": [
+        0.589862,
+        0.256198
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "eye_L_iris": {
+      "part_id": "eye_L_iris",
+      "semantic_role": "left_eye_iris",
+      "expected_group": "eye_L",
+      "source_type": "SOURCE_CUT",
+      "draw_order": 920,
+      "basis": "eye_L",
+      "roi_abs": [
+        900,
+        703,
+        72,
+        48
+      ],
+      "roi_rel": [
+        0.423963,
+        0.190083,
+        0.331797,
+        0.198347
+      ],
+      "anchor_abs_saved": [
+        936,
+        727
+      ],
+      "anchor_abs_roi_center": [
+        936,
+        727
+      ],
+      "anchor_rel_saved": [
+        0.589862,
+        0.289256
+      ],
+      "anchor_rel_roi_center": [
+        0.589862,
+        0.289256
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "eye_L_lower_lash": {
+      "part_id": "eye_L_lower_lash",
+      "semantic_role": "left_eye_lower_lash",
+      "expected_group": "eye_L",
+      "source_type": "SOURCE_CUT",
+      "draw_order": 1024,
+      "basis": "eye_L",
+      "roi_abs": [
+        829,
+        726,
+        140,
+        45
+      ],
+      "roi_rel": [
+        0.096774,
+        0.285124,
+        0.645161,
+        0.18595
+      ],
+      "anchor_abs_saved": [
+        899,
+        748
+      ],
+      "anchor_abs_roi_center": [
+        899,
+        748
+      ],
+      "anchor_rel_saved": [
+        0.419355,
+        0.376033
+      ],
+      "anchor_rel_roi_center": [
+        0.419355,
+        0.376033
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "eye_L_pupil": {
+      "part_id": "eye_L_pupil",
+      "semantic_role": "left_eye_pupil",
+      "expected_group": "eye_L",
+      "source_type": "SOURCE_CUT",
+      "draw_order": 921,
+      "basis": "eye_L",
+      "roi_abs": [
+        924,
+        716,
+        36,
+        23
+      ],
+      "roi_rel": [
+        0.534562,
+        0.243802,
+        0.165899,
+        0.095041
+      ],
+      "anchor_abs_saved": [
+        942,
+        727
+      ],
+      "anchor_abs_roi_center": [
+        942,
+        728
+      ],
+      "anchor_rel_saved": [
+        0.617512,
+        0.289256
+      ],
+      "anchor_rel_roi_center": [
+        0.617512,
+        0.293388
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "eye_L_underpaint": {
+      "part_id": "eye_L_underpaint",
+      "semantic_role": "eye_L_underpaint",
+      "expected_group": "eye_L",
+      "source_type": "UNDERPAINT",
+      "draw_order": 826,
+      "basis": "eye_L",
+      "roi_abs": [
+        873,
+        821,
+        132,
+        66
+      ],
+      "roi_rel": [
+        0.299539,
+        0.677686,
+        0.608295,
+        0.272727
+      ],
+      "anchor_abs_saved": [
+        926,
+        785
+      ],
+      "anchor_abs_roi_center": [
+        939,
+        854
+      ],
+      "anchor_rel_saved": [
+        0.543779,
+        0.528926
+      ],
+      "anchor_rel_roi_center": [
+        0.603687,
+        0.81405
+      ],
+      "anchor_inside_roi": false,
+      "action": "REPAIR_UNDERPAINT",
+      "note": ""
+    },
+    "eye_L_upper_lash": {
+      "part_id": "eye_L_upper_lash",
+      "semantic_role": "left_eye_upper_lash",
+      "expected_group": "eye_L",
+      "source_type": "SOURCE_CUT",
+      "draw_order": 1023,
+      "basis": "eye_L",
+      "roi_abs": [
+        820,
+        669,
+        180,
+        62
+      ],
+      "roi_rel": [
+        0.0553,
+        0.049587,
+        0.829493,
+        0.256198
+      ],
+      "anchor_abs_saved": [
+        910,
+        700
+      ],
+      "anchor_abs_roi_center": [
+        910,
+        700
+      ],
+      "anchor_rel_saved": [
+        0.470046,
+        0.177686
+      ],
+      "anchor_rel_roi_center": [
+        0.470046,
+        0.177686
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "eye_L_white": {
+      "part_id": "eye_L_white",
+      "semantic_role": "left_eye_white",
+      "expected_group": "eye_L",
+      "source_type": "SOURCE_CUT",
+      "draw_order": 819,
+      "basis": "eye_L",
+      "roi_abs": [
+        828,
+        686,
+        148,
+        92
+      ],
+      "roi_rel": [
+        0.092166,
+        0.119835,
+        0.682028,
+        0.380165
+      ],
+      "anchor_abs_saved": [
+        902,
+        732
+      ],
+      "anchor_abs_roi_center": [
+        902,
+        732
+      ],
+      "anchor_rel_saved": [
+        0.43318,
+        0.309917
+      ],
+      "anchor_rel_roi_center": [
+        0.43318,
+        0.309917
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "eye_R_closed_lid": {
+      "part_id": "eye_R_closed_lid",
+      "semantic_role": "right_eye_closed_lid",
+      "expected_group": "eye_R",
+      "source_type": "DERIVED_KEYPOSE",
+      "draw_order": 1033,
+      "basis": "eye_R",
+      "roi_abs": [
+        1100,
+        823,
+        143,
+        53
+      ],
+      "roi_rel": [
+        0.196078,
+        0.682008,
+        0.70098,
+        0.221757
+      ],
+      "anchor_abs_saved": [
+        1143,
+        722
+      ],
+      "anchor_abs_roi_center": [
+        1172,
+        850
+      ],
+      "anchor_rel_saved": [
+        0.406863,
+        0.259414
+      ],
+      "anchor_rel_roi_center": [
+        0.54902,
+        0.794979
+      ],
+      "anchor_inside_roi": false,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "eye_R_highlight": {
+      "part_id": "eye_R_highlight",
+      "semantic_role": "right_eye_highlight",
+      "expected_group": "eye_R",
+      "source_type": "DERIVED_KEYPOSE",
+      "draw_order": 1030,
+      "basis": "eye_R",
+      "roi_abs": [
+        1115,
+        714,
+        25,
+        27
+      ],
+      "roi_rel": [
+        0.269608,
+        0.225941,
+        0.122549,
+        0.112971
+      ],
+      "anchor_abs_saved": [
+        1127,
+        727
+      ],
+      "anchor_abs_roi_center": [
+        1128,
+        728
+      ],
+      "anchor_rel_saved": [
+        0.328431,
+        0.280335
+      ],
+      "anchor_rel_roi_center": [
+        0.333333,
+        0.284519
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "eye_R_iris": {
+      "part_id": "eye_R_iris",
+      "semantic_role": "right_eye_iris",
+      "expected_group": "eye_R",
+      "source_type": "SOURCE_CUT",
+      "draw_order": 928,
+      "basis": "eye_R",
+      "roi_abs": [
+        1084,
+        698,
+        72,
+        75
+      ],
+      "roi_rel": [
+        0.117647,
+        0.158996,
+        0.352941,
+        0.313808
+      ],
+      "anchor_abs_saved": [
+        1120,
+        735
+      ],
+      "anchor_abs_roi_center": [
+        1120,
+        736
+      ],
+      "anchor_rel_saved": [
+        0.294118,
+        0.313808
+      ],
+      "anchor_rel_roi_center": [
+        0.294118,
+        0.317992
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "eye_R_lower_lash": {
+      "part_id": "eye_R_lower_lash",
+      "semantic_role": "right_eye_lower_lash",
+      "expected_group": "eye_R",
+      "source_type": "SOURCE_CUT",
+      "draw_order": 1032,
+      "basis": "eye_R",
+      "roi_abs": [
+        1092,
+        726,
+        140,
+        45
+      ],
+      "roi_rel": [
+        0.156863,
+        0.276151,
+        0.686275,
+        0.188285
+      ],
+      "anchor_abs_saved": [
+        1162,
+        748
+      ],
+      "anchor_abs_roi_center": [
+        1162,
+        748
+      ],
+      "anchor_rel_saved": [
+        0.5,
+        0.368201
+      ],
+      "anchor_rel_roi_center": [
+        0.5,
+        0.368201
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "eye_R_pupil": {
+      "part_id": "eye_R_pupil",
+      "semantic_role": "right_eye_pupil",
+      "expected_group": "eye_R",
+      "source_type": "SOURCE_CUT",
+      "draw_order": 929,
+      "basis": "eye_R",
+      "roi_abs": [
+        1104,
+        715,
+        36,
+        40
+      ],
+      "roi_rel": [
+        0.215686,
+        0.230126,
+        0.176471,
+        0.167364
+      ],
+      "anchor_abs_saved": [
+        1122,
+        735
+      ],
+      "anchor_abs_roi_center": [
+        1122,
+        735
+      ],
+      "anchor_rel_saved": [
+        0.303922,
+        0.313808
+      ],
+      "anchor_rel_roi_center": [
+        0.303922,
+        0.313808
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "eye_R_underpaint": {
+      "part_id": "eye_R_underpaint",
+      "semantic_role": "eye_R_underpaint",
+      "expected_group": "eye_R",
+      "source_type": "UNDERPAINT",
+      "draw_order": 834,
+      "basis": "eye_R",
+      "roi_abs": [
+        1127,
+        818,
+        111,
+        69
+      ],
+      "roi_rel": [
+        0.328431,
+        0.661088,
+        0.544118,
+        0.288703
+      ],
+      "anchor_abs_saved": [
+        1127,
+        780
+      ],
+      "anchor_abs_roi_center": [
+        1182,
+        852
+      ],
+      "anchor_rel_saved": [
+        0.328431,
+        0.502092
+      ],
+      "anchor_rel_roi_center": [
+        0.598039,
+        0.803347
+      ],
+      "anchor_inside_roi": false,
+      "action": "REPAIR_UNDERPAINT",
+      "note": ""
+    },
+    "eye_R_upper_lash": {
+      "part_id": "eye_R_upper_lash",
+      "semantic_role": "right_eye_upper_lash",
+      "expected_group": "eye_R",
+      "source_type": "SOURCE_CUT",
+      "draw_order": 1031,
+      "basis": "eye_R",
+      "roi_abs": [
+        1072,
+        672,
+        180,
+        62
+      ],
+      "roi_rel": [
+        0.058824,
+        0.050209,
+        0.882353,
+        0.259414
+      ],
+      "anchor_abs_saved": [
+        1162,
+        703
+      ],
+      "anchor_abs_roi_center": [
+        1162,
+        703
+      ],
+      "anchor_rel_saved": [
+        0.5,
+        0.179916
+      ],
+      "anchor_rel_roi_center": [
+        0.5,
+        0.179916
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "eye_R_white": {
+      "part_id": "eye_R_white",
+      "semantic_role": "right_eye_white",
+      "expected_group": "eye_R",
+      "source_type": "SOURCE_CUT",
+      "draw_order": 827,
+      "basis": "eye_R",
+      "roi_abs": [
+        1117,
+        688,
+        91,
+        95
+      ],
+      "roi_rel": [
+        0.279412,
+        0.117155,
+        0.446078,
+        0.39749
+      ],
+      "anchor_abs_saved": [
+        1162,
+        735
+      ],
+      "anchor_abs_roi_center": [
+        1162,
+        736
+      ],
+      "anchor_rel_saved": [
+        0.5,
+        0.313808
+      ],
+      "anchor_rel_roi_center": [
+        0.5,
+        0.317992
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "face_shadow_L": {
+      "part_id": "face_shadow_L",
+      "semantic_role": "face_shadow_L",
+      "expected_group": "face_base",
+      "source_type": "SOURCE_CUT",
+      "draw_order": 712,
+      "basis": "face",
+      "roi_abs": [
+        816,
+        745,
+        205,
+        300
+      ],
+      "roi_rel": [
+        0.042553,
+        0.154242,
+        0.43617,
+        0.771208
+      ],
+      "anchor_abs_saved": [
+        947,
+        883
+      ],
+      "anchor_abs_roi_center": [
+        918,
+        895
+      ],
+      "anchor_rel_saved": [
+        0.321277,
+        0.508997
+      ],
+      "anchor_rel_roi_center": [
+        0.259574,
+        0.539846
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "face_shadow_R": {
+      "part_id": "face_shadow_R",
+      "semantic_role": "face_shadow_R",
+      "expected_group": "face_base",
+      "source_type": "SOURCE_CUT",
+      "draw_order": 713,
+      "basis": "face",
+      "roi_abs": [
+        1041,
+        745,
+        205,
+        300
+      ],
+      "roi_rel": [
+        0.521277,
+        0.154242,
+        0.43617,
+        0.771208
+      ],
+      "anchor_abs_saved": [
+        1096,
+        894
+      ],
+      "anchor_abs_roi_center": [
+        1144,
+        895
+      ],
+      "anchor_rel_saved": [
+        0.638298,
+        0.537275
+      ],
+      "anchor_rel_roi_center": [
+        0.740426,
+        0.539846
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "face_underpaint_L": {
+      "part_id": "face_underpaint_L",
+      "semantic_role": "face_L_underpaint",
+      "expected_group": "face_base",
+      "source_type": "UNDERPAINT",
+      "draw_order": 514,
+      "basis": "face",
+      "roi_abs": [
+        817,
+        705,
+        202,
+        349
+      ],
+      "roi_rel": [
+        0.044681,
+        0.051414,
+        0.429787,
+        0.897172
+      ],
+      "anchor_abs_saved": [
+        955,
+        870
+      ],
+      "anchor_abs_roi_center": [
+        918,
+        880
+      ],
+      "anchor_rel_saved": [
+        0.338298,
+        0.475578
+      ],
+      "anchor_rel_roi_center": [
+        0.259574,
+        0.501285
+      ],
+      "anchor_inside_roi": true,
+      "action": "REPAIR_UNDERPAINT",
+      "note": ""
+    },
+    "face_underpaint_R": {
+      "part_id": "face_underpaint_R",
+      "semantic_role": "face_R_underpaint",
+      "expected_group": "face_base",
+      "source_type": "UNDERPAINT",
+      "draw_order": 515,
+      "basis": "face",
+      "roi_abs": [
+        1043,
+        705,
+        202,
+        349
+      ],
+      "roi_rel": [
+        0.525532,
+        0.051414,
+        0.429787,
+        0.897172
+      ],
+      "anchor_abs_saved": [
+        1104,
+        865
+      ],
+      "anchor_abs_roi_center": [
+        1144,
+        880
+      ],
+      "anchor_rel_saved": [
+        0.655319,
+        0.462725
+      ],
+      "anchor_rel_roi_center": [
+        0.740426,
+        0.501285
+      ],
+      "anchor_inside_roi": true,
+      "action": "REPAIR_UNDERPAINT",
+      "note": ""
+    },
+    "mouth_corner_L": {
+      "part_id": "mouth_corner_L",
+      "semantic_role": "mouth_corner_L",
+      "expected_group": "mouth",
+      "source_type": "DERIVED_KEYPOSE",
+      "draw_order": 1443,
+      "basis": "mouth",
+      "roi_abs": [
+        982,
+        839,
+        20,
+        30
+      ],
+      "roi_rel": [
+        0.195946,
+        0.056911,
+        0.135135,
+        0.121951
+      ],
+      "anchor_abs_saved": [
+        992,
+        854
+      ],
+      "anchor_abs_roi_center": [
+        992,
+        854
+      ],
+      "anchor_rel_saved": [
+        0.263514,
+        0.117886
+      ],
+      "anchor_rel_roi_center": [
+        0.263514,
+        0.117886
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "mouth_corner_R": {
+      "part_id": "mouth_corner_R",
+      "semantic_role": "mouth_corner_R",
+      "expected_group": "mouth",
+      "source_type": "DERIVED_KEYPOSE",
+      "draw_order": 1444,
+      "basis": "mouth",
+      "roi_abs": [
+        1059,
+        839,
+        20,
+        30
+      ],
+      "roi_rel": [
+        0.716216,
+        0.056911,
+        0.135135,
+        0.121951
+      ],
+      "anchor_abs_saved": [
+        1069,
+        854
+      ],
+      "anchor_abs_roi_center": [
+        1069,
+        854
+      ],
+      "anchor_rel_saved": [
+        0.783784,
+        0.117886
+      ],
+      "anchor_rel_roi_center": [
+        0.783784,
+        0.117886
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "mouth_inner": {
+      "part_id": "mouth_inner",
+      "semantic_role": "mouth_inner",
+      "expected_group": "mouth",
+      "source_type": "DERIVED_KEYPOSE",
+      "draw_order": 1238,
+      "basis": "mouth",
+      "roi_abs": [
+        977,
+        837,
+        111,
+        61
+      ],
+      "roi_rel": [
+        0.162162,
+        0.04878,
+        0.75,
+        0.247967
+      ],
+      "anchor_abs_saved": [
+        1032,
+        867
+      ],
+      "anchor_abs_roi_center": [
+        1032,
+        868
+      ],
+      "anchor_rel_saved": [
+        0.533784,
+        0.170732
+      ],
+      "anchor_rel_roi_center": [
+        0.533784,
+        0.174797
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "mouth_line": {
+      "part_id": "mouth_line",
+      "semantic_role": "mouth_line",
+      "expected_group": "mouth",
+      "source_type": "DERIVED_KEYPOSE",
+      "draw_order": 1437,
+      "basis": "mouth",
+      "roi_abs": [
+        965,
+        855,
+        124,
+        25
+      ],
+      "roi_rel": [
+        0.081081,
+        0.121951,
+        0.837838,
+        0.101626
+      ],
+      "anchor_abs_saved": [
+        1027,
+        867
+      ],
+      "anchor_abs_roi_center": [
+        1027,
+        868
+      ],
+      "anchor_rel_saved": [
+        0.5,
+        0.170732
+      ],
+      "anchor_rel_roi_center": [
+        0.5,
+        0.174797
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "mouth_lower_lip_mask": {
+      "part_id": "mouth_lower_lip_mask",
+      "semantic_role": "mouth_lower_lip_mask",
+      "expected_group": "mouth",
+      "source_type": "DERIVED_KEYPOSE",
+      "draw_order": 1440,
+      "basis": "mouth",
+      "roi_abs": [
+        979,
+        1038,
+        104,
+        21
+      ],
+      "roi_rel": [
+        0.175676,
+        0.865854,
+        0.702703,
+        0.085366
+      ],
+      "anchor_abs_saved": [
+        1032,
+        875
+      ],
+      "anchor_abs_roi_center": [
+        1031,
+        1048
+      ],
+      "anchor_rel_saved": [
+        0.533784,
+        0.203252
+      ],
+      "anchor_rel_roi_center": [
+        0.527027,
+        0.906504
+      ],
+      "anchor_inside_roi": false,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "mouth_teeth": {
+      "part_id": "mouth_teeth",
+      "semantic_role": "mouth_teeth",
+      "expected_group": "mouth",
+      "source_type": "DERIVED_KEYPOSE",
+      "draw_order": 1341,
+      "basis": "mouth",
+      "roi_abs": [
+        985,
+        857,
+        85,
+        20
+      ],
+      "roi_rel": [
+        0.216216,
+        0.130081,
+        0.574324,
+        0.081301
+      ],
+      "anchor_abs_saved": [
+        1027,
+        867
+      ],
+      "anchor_abs_roi_center": [
+        1028,
+        867
+      ],
+      "anchor_rel_saved": [
+        0.5,
+        0.170732
+      ],
+      "anchor_rel_roi_center": [
+        0.506757,
+        0.170732
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "mouth_tongue": {
+      "part_id": "mouth_tongue",
+      "semantic_role": "mouth_tongue",
+      "expected_group": "mouth",
+      "source_type": "DERIVED_KEYPOSE",
+      "draw_order": 1342,
+      "basis": "mouth",
+      "roi_abs": [
+        1000,
+        852,
+        65,
+        27
+      ],
+      "roi_rel": [
+        0.317568,
+        0.109756,
+        0.439189,
+        0.109756
+      ],
+      "anchor_abs_saved": [
+        1032,
+        865
+      ],
+      "anchor_abs_roi_center": [
+        1032,
+        866
+      ],
+      "anchor_rel_saved": [
+        0.533784,
+        0.162602
+      ],
+      "anchor_rel_roi_center": [
+        0.533784,
+        0.166667
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "mouth_upper_lip_mask": {
+      "part_id": "mouth_upper_lip_mask",
+      "semantic_role": "mouth_upper_lip_mask",
+      "expected_group": "mouth",
+      "source_type": "DERIVED_KEYPOSE",
+      "draw_order": 1439,
+      "basis": "mouth",
+      "roi_abs": [
+        976,
+        975,
+        111,
+        21
+      ],
+      "roi_rel": [
+        0.155405,
+        0.609756,
+        0.75,
+        0.085366
+      ],
+      "anchor_abs_saved": [
+        1029,
+        854
+      ],
+      "anchor_abs_roi_center": [
+        1032,
+        986
+      ],
+      "anchor_rel_saved": [
+        0.513514,
+        0.117886
+      ],
+      "anchor_rel_roi_center": [
+        0.533784,
+        0.654472
+      ],
+      "anchor_inside_roi": false,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "neck": {
+      "part_id": "neck",
+      "semantic_role": "neck",
+      "expected_group": "body",
+      "source_type": "SOURCE_CUT",
+      "draw_order": 203,
+      "basis": "body",
+      "roi_abs": [
+        911,
+        1060,
+        230,
+        185
+      ],
+      "roi_rel": [
+        0.356696,
+        0.035294,
+        0.28786,
+        0.272059
+      ],
+      "anchor_abs_saved": [
+        1027,
+        990
+      ],
+      "anchor_abs_roi_center": [
+        1026,
+        1152
+      ],
+      "anchor_rel_saved": [
+        0.501877,
+        -0.067647
+      ],
+      "anchor_rel_roi_center": [
+        0.500626,
+        0.170588
+      ],
+      "anchor_inside_roi": false,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "nose": {
+      "part_id": "nose",
+      "semantic_role": "nose",
+      "expected_group": "face_base",
+      "source_type": "SOURCE_CUT",
+      "draw_order": 716,
+      "basis": "face",
+      "roi_abs": [
+        997,
+        771,
+        60,
+        70
+      ],
+      "roi_rel": [
+        0.42766,
+        0.22108,
+        0.12766,
+        0.179949
+      ],
+      "anchor_abs_saved": [
+        1027,
+        806
+      ],
+      "anchor_abs_roi_center": [
+        1027,
+        806
+      ],
+      "anchor_rel_saved": [
+        0.491489,
+        0.311054
+      ],
+      "anchor_rel_roi_center": [
+        0.491489,
+        0.311054
+      ],
+      "anchor_inside_roi": true,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "shoulder_L": {
+      "part_id": "shoulder_L",
+      "semantic_role": "shoulder_L",
+      "expected_group": "body",
+      "source_type": "SOURCE_CUT",
+      "draw_order": 205,
+      "basis": "body",
+      "roi_abs": [
+        650,
+        1185,
+        361,
+        250
+      ],
+      "roi_rel": [
+        0.030038,
+        0.219118,
+        0.451815,
+        0.367647
+      ],
+      "anchor_abs_saved": [
+        761,
+        1141
+      ],
+      "anchor_abs_roi_center": [
+        830,
+        1310
+      ],
+      "anchor_rel_saved": [
+        0.168961,
+        0.154412
+      ],
+      "anchor_rel_roi_center": [
+        0.255319,
+        0.402941
+      ],
+      "anchor_inside_roi": false,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "shoulder_R": {
+      "part_id": "shoulder_R",
+      "semantic_role": "shoulder_R",
+      "expected_group": "body",
+      "source_type": "SOURCE_CUT",
+      "draw_order": 206,
+      "basis": "body",
+      "roi_abs": [
+        1066,
+        1185,
+        335,
+        250
+      ],
+      "roi_rel": [
+        0.550688,
+        0.219118,
+        0.419274,
+        0.367647
+      ],
+      "anchor_abs_saved": [
+        1308,
+        1112
+      ],
+      "anchor_abs_roi_center": [
+        1234,
+        1310
+      ],
+      "anchor_rel_saved": [
+        0.853567,
+        0.111765
+      ],
+      "anchor_rel_roi_center": [
+        0.760951,
+        0.402941
+      ],
+      "anchor_inside_roi": false,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    },
+    "torso_base": {
+      "part_id": "torso_base",
+      "semantic_role": "torso_base",
+      "expected_group": "body",
+      "source_type": "SOURCE_CUT",
+      "draw_order": 202,
+      "basis": "body",
+      "roi_abs": [
+        766,
+        1200,
+        540,
+        492
+      ],
+      "roi_rel": [
+        0.175219,
+        0.241176,
+        0.675845,
+        0.723529
+      ],
+      "anchor_abs_saved": [
+        1024,
+        1167
+      ],
+      "anchor_abs_roi_center": [
+        1036,
+        1446
+      ],
+      "anchor_rel_saved": [
+        0.498123,
+        0.192647
+      ],
+      "anchor_rel_roi_center": [
+        0.513141,
+        0.602941
+      ],
+      "anchor_inside_roi": false,
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": ""
+    }
+  },
+  "quality_notes": {
+    "override_count": 37,
+    "anchor_outside_roi_count": 10,
+    "anchor_outside_roi_parts": [
+      "eye_L_closed_lid",
+      "eye_L_underpaint",
+      "eye_R_closed_lid",
+      "eye_R_underpaint",
+      "mouth_lower_lip_mask",
+      "mouth_upper_lip_mask",
+      "neck",
+      "shoulder_L",
+      "shoulder_R",
+      "torso_base"
+    ],
+    "anchor_policy": "Use roi center as extraction anchor by default; saved anchor is kept as human intent metadata because many saved anchors are outside ROI.",
+    "generalization_policy": "For new matched front-facing v2_standard characters, map reference_bboxes to detected face/eye/mouth/body anchors, then apply roi_rel per part."
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "status": "PASS_MINI_CUBISM_NEUTRAL_REPAIR_V1_SMOKE",
+  "server_url": "http://127.0.0.1:8063/",
+  "project_dir": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_v0",
+  "counts": {
+    "parts": 62,
+    "meshes": 62,
+    "deformers": 11,
+    "parameters": 15,
+    "keyform_bindings": 22,
+    "physics_profiles": 3,
+    "part_opacity_keyframes": 9
+  },
+  "neutral_hidden_opacity": {
+    "eye_L_closed_lid": 0,
+    "eye_R_closed_lid": 0,
+    "mouth_corner_L": 0,
+    "mouth_corner_R": 0,
+    "mouth_inner": 0,
+    "mouth_lower_lip_mask": 0,
+    "mouth_teeth": 0,
+    "mouth_tongue": 0,
+    "mouth_upper_lip_mask": 0
+  },
+  "mouth_open_opacity": {
+    "mouth_corner_L": 1,
+    "mouth_corner_R": 1,
+    "mouth_inner": 1,
+    "mouth_lower_lip_mask": 1,
+    "mouth_teeth": 1,
+    "mouth_tongue": 1,
+    "mouth_upper_lip_mask": 1
+  },
+  "eye_closed_opacity": {
+    "eye_L_closed_lid": 1,
+    "eye_R_closed_lid": 1
+  },
+  "browser_screenshot_probe": {
+    "exists": true,
+    "width": 1454,
+    "height": 820,
+    "non_whiteish_pixels": 1192279
+  },
+  "checks": {
+    "counts_ok": true,
+    "neutral_hides_required_parts": true,
+    "mouth_open_shows_mouth_parts": true,
+    "eye_closed_shows_closed_lids": true,
+    "browser_screenshot_exists": true,
+    "browser_screenshot_nonblank": true
+  },
+  "artifacts": {
+    "browser_screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_v0/reports/mini_cubism_neutral_repair_v1_browser.png",
+    "build_report": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_v0/reports/build_report.json",
+    "validation_report": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_v0/reports/validation_report.json",
+    "neutral_repair_report": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/neutral_repair_report.json"
+  },
+  "ok": true
+}

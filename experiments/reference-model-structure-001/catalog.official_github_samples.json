@@ -1,0 +1,740 @@
+{
+  "schema_version": 1,
+  "purpose": "Official Live2D GitHub SDK/Garage runtime sample catalog.",
+  "generated_at": "2026-06-05T15:26:48.753877+00:00",
+  "safety_note": "Runtime-only structure and pattern learning. Do not reuse official sample art, textures, or character designs.",
+  "models": [
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_haru_haru.model3",
+      "name": "Haru",
+      "source_url": "https://github.com/Live2D/CubismWebSamples",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+      "analysis_mode": "RUNTIME_ONLY",
+      "official_profile_key": "haru",
+      "has_cmo3": false,
+      "has_moc3": true,
+      "has_model3_json": true,
+      "has_physics3_json": true,
+      "has_psd": false,
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/Haru.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/Haru.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/Haru.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/Haru.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/Haru.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/motions/haru_g_idle.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/motions/haru_g_m15.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/motions/haru_g_m26.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/motions/haru_g_m06.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/motions/haru_g_m20.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/motions/haru_g_m09.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F01.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F02.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F03.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F04.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F05.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F06.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F07.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F08.exp3.json"
+        ]
+      },
+      "structure_report_path": null,
+      "notes": [
+        "Official Live2D Cubism Web SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ],
+      "reuse_decision": "REFERENCE_ONLY"
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori.model3",
+      "name": "Hiyori",
+      "source_url": "https://github.com/Live2D/CubismWebSamples",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+      "analysis_mode": "RUNTIME_ONLY",
+      "official_profile_key": "hiyori",
+      "has_cmo3": false,
+      "has_moc3": true,
+      "has_model3_json": true,
+      "has_physics3_json": true,
+      "has_psd": false,
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/Hiyori.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/Hiyori.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/Hiyori.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/Hiyori.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/Hiyori.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/motions/Hiyori_m01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/motions/Hiyori_m02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/motions/Hiyori_m03.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/motions/Hiyori_m05.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/motions/Hiyori_m06.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/motions/Hiyori_m07.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/motions/Hiyori_m08.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/motions/Hiyori_m09.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/motions/Hiyori_m10.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/motions/Hiyori_m04.motion3.json"
+        ]
+      },
+      "structure_report_path": null,
+      "notes": [
+        "Official Live2D Cubism Web SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ],
+      "reuse_decision": "REFERENCE_ONLY"
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_mao_mao.model3",
+      "name": "Mao",
+      "source_url": "https://github.com/Live2D/CubismWebSamples",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+      "analysis_mode": "RUNTIME_ONLY",
+      "official_profile_key": "mao",
+      "has_cmo3": false,
+      "has_moc3": true,
+      "has_model3_json": true,
+      "has_physics3_json": true,
+      "has_psd": false,
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/Mao.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/Mao.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/Mao.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/Mao.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/Mao.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/mtn_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/sample_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/mtn_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/mtn_03.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/mtn_04.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/special_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/special_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/special_03.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_01.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_02.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_03.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_04.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_05.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_06.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_07.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_08.exp3.json"
+        ]
+      },
+      "structure_report_path": null,
+      "notes": [
+        "Official Live2D Cubism Web SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ],
+      "reuse_decision": "REFERENCE_ONLY"
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_mark_mark.model3",
+      "name": "Mark",
+      "source_url": "https://github.com/Live2D/CubismWebSamples",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+      "analysis_mode": "RUNTIME_ONLY",
+      "official_profile_key": "mark",
+      "has_cmo3": false,
+      "has_moc3": true,
+      "has_model3_json": true,
+      "has_physics3_json": true,
+      "has_psd": false,
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mark/Mark.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mark/Mark.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mark/Mark.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mark/Mark.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mark/motions/mark_m01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mark/motions/mark_m02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mark/motions/mark_m03.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mark/motions/mark_m04.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mark/motions/mark_m05.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mark/motions/mark_m06.motion3.json"
+        ]
+      },
+      "structure_report_path": null,
+      "notes": [
+        "Official Live2D Cubism Web SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ],
+      "reuse_decision": "REFERENCE_ONLY"
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_natori_natori.model3",
+      "name": "Natori",
+      "source_url": "https://github.com/Live2D/CubismWebSamples",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+      "analysis_mode": "RUNTIME_ONLY",
+      "official_profile_key": "natori",
+      "has_cmo3": false,
+      "has_moc3": true,
+      "has_model3_json": true,
+      "has_physics3_json": true,
+      "has_psd": false,
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/Natori.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/Natori.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/Natori.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/Natori.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/Natori.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/motions/mtn_00.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/motions/mtn_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/motions/mtn_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/motions/mtn_03.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/motions/mtn_04.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/motions/mtn_05.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/motions/mtn_06.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/motions/mtn_07.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/exp/Angry.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/exp/Blushing.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/exp/Normal.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/exp/Sad.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/exp/Smile.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/exp/Surprised.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/exp/exp_01.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/exp/exp_02.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/exp/exp_03.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/exp/exp_04.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/exp/exp_05.exp3.json"
+        ]
+      },
+      "structure_report_path": null,
+      "notes": [
+        "Official Live2D Cubism Web SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ],
+      "reuse_decision": "REFERENCE_ONLY"
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_ren_ren.model3",
+      "name": "Ren",
+      "source_url": "https://github.com/Live2D/CubismWebSamples",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+      "analysis_mode": "RUNTIME_ONLY",
+      "official_profile_key": "ren",
+      "has_cmo3": false,
+      "has_moc3": true,
+      "has_model3_json": true,
+      "has_physics3_json": true,
+      "has_psd": false,
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/Ren.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/Ren.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/Ren.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/Ren.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/motions/mtn_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/motions/mtn_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/motions/mtn_03.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/expressions/exp_01.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/expressions/exp_02.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/expressions/exp_03.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/expressions/exp_04.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/expressions/exp_05.exp3.json"
+        ]
+      },
+      "structure_report_path": null,
+      "notes": [
+        "Official Live2D Cubism Web SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ],
+      "reuse_decision": "REFERENCE_ONLY"
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_rice_rice.model3",
+      "name": "Rice",
+      "source_url": "https://github.com/Live2D/CubismWebSamples",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+      "analysis_mode": "RUNTIME_ONLY",
+      "official_profile_key": "rice",
+      "has_cmo3": false,
+      "has_moc3": true,
+      "has_model3_json": true,
+      "has_physics3_json": true,
+      "has_psd": false,
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Rice/Rice.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Rice/Rice.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Rice/Rice.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Rice/Rice.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Rice/motions/idle.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Rice/motions/mtn_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Rice/motions/mtn_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Rice/motions/mtn_03.motion3.json"
+        ]
+      },
+      "structure_report_path": null,
+      "notes": [
+        "Official Live2D Cubism Web SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ],
+      "reuse_decision": "REFERENCE_ONLY"
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_wanko_wanko.model3",
+      "name": "Wanko",
+      "source_url": "https://github.com/Live2D/CubismWebSamples",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+      "analysis_mode": "RUNTIME_ONLY",
+      "official_profile_key": "wanko",
+      "has_cmo3": false,
+      "has_moc3": true,
+      "has_model3_json": true,
+      "has_physics3_json": true,
+      "has_psd": false,
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Wanko/Wanko.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Wanko/Wanko.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Wanko/Wanko.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Wanko/Wanko.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Wanko/motions/idle_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Wanko/motions/idle_03.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Wanko/motions/idle_04.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Wanko/motions/touch_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Wanko/motions/touch_04.motion3.json"
+        ]
+      },
+      "structure_report_path": null,
+      "notes": [
+        "Official Live2D Cubism Web SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ],
+      "reuse_decision": "REFERENCE_ONLY"
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_haru_haru.model3",
+      "name": "Haru",
+      "source_url": "https://github.com/Live2D/CubismNativeSamples",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+      "analysis_mode": "RUNTIME_ONLY",
+      "official_profile_key": "haru",
+      "has_cmo3": false,
+      "has_moc3": true,
+      "has_model3_json": true,
+      "has_physics3_json": true,
+      "has_psd": false,
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/Haru.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/Haru.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/Haru.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/Haru.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/Haru.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/motions/haru_g_idle.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/motions/haru_g_m15.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/motions/haru_g_m26.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/motions/haru_g_m06.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/motions/haru_g_m20.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/motions/haru_g_m09.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/expressions/F01.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/expressions/F02.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/expressions/F03.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/expressions/F04.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/expressions/F05.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/expressions/F06.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/expressions/F07.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/expressions/F08.exp3.json"
+        ]
+      },
+      "structure_report_path": null,
+      "notes": [
+        "Official Live2D Cubism Native SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ],
+      "reuse_decision": "REFERENCE_ONLY"
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori.model3",
+      "name": "Hiyori",
+      "source_url": "https://github.com/Live2D/CubismNativeSamples",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+      "analysis_mode": "RUNTIME_ONLY",
+      "official_profile_key": "hiyori",
+      "has_cmo3": false,
+      "has_moc3": true,
+      "has_model3_json": true,
+      "has_physics3_json": true,
+      "has_psd": false,
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/Hiyori.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/Hiyori.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/Hiyori.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/Hiyori.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/Hiyori.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m03.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m05.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m06.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m07.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m08.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m09.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m10.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m04.motion3.json"
+        ]
+      },
+      "structure_report_path": null,
+      "notes": [
+        "Official Live2D Cubism Native SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ],
+      "reuse_decision": "REFERENCE_ONLY"
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_mao_mao.model3",
+      "name": "Mao",
+      "source_url": "https://github.com/Live2D/CubismNativeSamples",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+      "analysis_mode": "RUNTIME_ONLY",
+      "official_profile_key": "mao",
+      "has_cmo3": false,
+      "has_moc3": true,
+      "has_model3_json": true,
+      "has_physics3_json": true,
+      "has_psd": false,
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/Mao.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/Mao.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/Mao.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/Mao.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/Mao.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/motions/mtn_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/motions/sample_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/motions/mtn_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/motions/mtn_03.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/motions/mtn_04.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/motions/special_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/motions/special_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/motions/special_03.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/expressions/exp_01.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/expressions/exp_02.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/expressions/exp_03.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/expressions/exp_04.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/expressions/exp_05.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/expressions/exp_06.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/expressions/exp_07.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/expressions/exp_08.exp3.json"
+        ]
+      },
+      "structure_report_path": null,
+      "notes": [
+        "Official Live2D Cubism Native SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ],
+      "reuse_decision": "REFERENCE_ONLY"
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_mark_mark.model3",
+      "name": "Mark",
+      "source_url": "https://github.com/Live2D/CubismNativeSamples",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+      "analysis_mode": "RUNTIME_ONLY",
+      "official_profile_key": "mark",
+      "has_cmo3": false,
+      "has_moc3": true,
+      "has_model3_json": true,
+      "has_physics3_json": true,
+      "has_psd": false,
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/Mark.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/Mark.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/Mark.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/Mark.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/motions/mark_m01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/motions/mark_m02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/motions/mark_m03.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/motions/mark_m04.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/motions/mark_m05.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/motions/mark_m06.motion3.json"
+        ]
+      },
+      "structure_report_path": null,
+      "notes": [
+        "Official Live2D Cubism Native SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ],
+      "reuse_decision": "REFERENCE_ONLY"
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_natori_natori.model3",
+      "name": "Natori",
+      "source_url": "https://github.com/Live2D/CubismNativeSamples",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+      "analysis_mode": "RUNTIME_ONLY",
+      "official_profile_key": "natori",
+      "has_cmo3": false,
+      "has_moc3": true,
+      "has_model3_json": true,
+      "has_physics3_json": true,
+      "has_psd": false,
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/Natori.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/Natori.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/Natori.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/Natori.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/Natori.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/motions/mtn_00.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/motions/mtn_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/motions/mtn_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/motions/mtn_03.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/motions/mtn_04.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/motions/mtn_05.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/motions/mtn_06.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/motions/mtn_07.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/exp/Angry.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/exp/Blushing.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/exp/Normal.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/exp/Sad.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/exp/Smile.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/exp/Surprised.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/exp/exp_01.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/exp/exp_02.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/exp/exp_03.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/exp/exp_04.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/exp/exp_05.exp3.json"
+        ]
+      },
+      "structure_report_path": null,
+      "notes": [
+        "Official Live2D Cubism Native SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ],
+      "reuse_decision": "REFERENCE_ONLY"
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_ren_ren.model3",
+      "name": "Ren",
+      "source_url": "https://github.com/Live2D/CubismNativeSamples",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+      "analysis_mode": "RUNTIME_ONLY",
+      "official_profile_key": "ren",
+      "has_cmo3": false,
+      "has_moc3": true,
+      "has_model3_json": true,
+      "has_physics3_json": true,
+      "has_psd": false,
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/Ren.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/Ren.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/Ren.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/Ren.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/motions/mtn_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/motions/mtn_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/motions/mtn_03.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/expressions/exp_01.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/expressions/exp_02.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/expressions/exp_03.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/expressions/exp_04.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/expressions/exp_05.exp3.json"
+        ]
+      },
+      "structure_report_path": null,
+      "notes": [
+        "Official Live2D Cubism Native SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ],
+      "reuse_decision": "REFERENCE_ONLY"
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_rice_rice.model3",
+      "name": "Rice",
+      "source_url": "https://github.com/Live2D/CubismNativeSamples",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+      "analysis_mode": "RUNTIME_ONLY",
+      "official_profile_key": "rice",
+      "has_cmo3": false,
+      "has_moc3": true,
+      "has_model3_json": true,
+      "has_physics3_json": true,
+      "has_psd": false,
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/Rice.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/Rice.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/Rice.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/Rice.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/motions/idle.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/motions/mtn_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/motions/mtn_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/motions/mtn_03.motion3.json"
+        ]
+      },
+      "structure_report_path": null,
+      "notes": [
+        "Official Live2D Cubism Native SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ],
+      "reuse_decision": "REFERENCE_ONLY"
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_wanko_wanko.model3",
+      "name": "Wanko",
+      "source_url": "https://github.com/Live2D/CubismNativeSamples",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+      "analysis_mode": "RUNTIME_ONLY",
+      "official_profile_key": "wanko",
+      "has_cmo3": false,
+      "has_moc3": true,
+      "has_model3_json": true,
+      "has_physics3_json": true,
+      "has_psd": false,
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Wanko/Wanko.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Wanko/Wanko.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Wanko/Wanko.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Wanko/Wanko.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Wanko/motions/idle_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Wanko/motions/idle_03.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Wanko/motions/idle_04.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Wanko/motions/touch_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Wanko/motions/touch_04.motion3.json"
+        ]
+      },
+      "structure_report_path": null,
+      "notes": [
+        "Official Live2D Cubism Native SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ],
+      "reuse_decision": "REFERENCE_ONLY"
+    },
+    {
+      "id": "github_live2d_cubism_web_motionsync_samples_resources_kei_basic_kei_basic.model3",
+      "name": "Kei_basic",
+      "source_url": "https://github.com/Live2D/CubismWebMotionSyncComponents",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+      "analysis_mode": "RUNTIME_ONLY",
+      "official_profile_key": "OFFICIAL_PROFILE_MISSING",
+      "has_cmo3": false,
+      "has_moc3": true,
+      "has_model3_json": true,
+      "has_physics3_json": true,
+      "has_psd": false,
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/Kei_basic.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/Kei_basic.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/Kei_basic.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/Kei_basic.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/motions/01_kei_en.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/motions/01_kei_jp.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/motions/01_kei_ko.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/motions/01_kei_zh.motion3.json"
+        ]
+      },
+      "structure_report_path": null,
+      "notes": [
+        "Official Live2D Web MotionSync sample resources. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ],
+      "reuse_decision": "REFERENCE_ONLY"
+    },
+    {
+      "id": "github_live2d_cubism_web_motionsync_samples_resources_kei_vowels_kei_vowels.model3",
+      "name": "Kei_vowels",
+      "source_url": "https://github.com/Live2D/CubismWebMotionSyncComponents",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+      "analysis_mode": "RUNTIME_ONLY",
+      "official_profile_key": "OFFICIAL_PROFILE_MISSING",
+      "has_cmo3": false,
+      "has_moc3": true,
+      "has_model3_json": true,
+      "has_physics3_json": true,
+      "has_psd": false,
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_vowels/Kei_vowels.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_vowels/Kei_vowels.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_vowels/Kei_vowels.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_vowels/Kei_vowels.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_vowels/motions/01_kei_en.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_vowels/motions/01_kei_jp.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_vowels/motions/01_kei_ko.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_vowels/motions/01_kei_zh.motion3.json"
+        ]
+      },
+      "structure_report_path": null,
+      "notes": [
+        "Official Live2D Web MotionSync sample resources. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ],
+      "reuse_decision": "REFERENCE_ONLY"
+    },
+    {
+      "id": "github_live2d_garage_cubism_web_ar_sample_assets_models_rice_rice.model3",
+      "name": "Rice",
+      "source_url": "https://github.com/Live2D-Garage/CubismWebARSample",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+      "analysis_mode": "RUNTIME_ONLY",
+      "official_profile_key": "rice",
+      "has_cmo3": false,
+      "has_moc3": true,
+      "has_model3_json": true,
+      "has_physics3_json": true,
+      "has_psd": false,
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_garage_cubism_web_ar_sample/assets/models/Rice/Rice.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_garage_cubism_web_ar_sample/assets/models/Rice/Rice.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_garage_cubism_web_ar_sample/assets/models/Rice/Rice.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_garage_cubism_web_ar_sample/assets/models/Rice/Rice.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_garage_cubism_web_ar_sample/assets/models/Rice/motions/mtn_00.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_garage_cubism_web_ar_sample/assets/models/Rice/motions/mtn_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_garage_cubism_web_ar_sample/assets/models/Rice/motions/mtn_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_garage_cubism_web_ar_sample/assets/models/Rice/motions/mtn_03.motion3.json"
+        ]
+      },
+      "structure_report_path": null,
+      "notes": [
+        "Live2D Garage Web AR sample resources. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ],
+      "reuse_decision": "REFERENCE_ONLY"
+    }
+  ]
+}

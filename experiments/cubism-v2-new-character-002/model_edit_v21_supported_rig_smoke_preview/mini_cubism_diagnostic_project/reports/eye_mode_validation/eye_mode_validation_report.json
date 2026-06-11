@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "validated_at": "2026-06-10T06:09:53.813969+00:00",
+  "project": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v21_supported_rig_smoke_preview/mini_cubism_diagnostic_project",
+  "mini_rig_present": false,
+  "mini_rig_keyform_overrides": 0,
+  "threshold": 12,
+  "eye_roi_padding": 28,
+  "warn_pixels": 0,
+  "fail_pixels": 250,
+  "contract_checks": {
+    "eye_ball_allowed_target_status": "FAIL",
+    "eye_ball_binding_count": 8,
+    "bad_eye_ball_targets": [],
+    "missing_eye_ball_targets": [
+      "eye_L_highlight",
+      "eye_L_pupil",
+      "eye_R_highlight",
+      "eye_R_pupil"
+    ],
+    "eye_open_target_status": "PASS",
+    "bad_eye_open_targets": [],
+    "eye_socket_cover_status": "FAIL",
+    "eye_socket_cover_errors": [
+      "eye_socket_covers disabled",
+      "L cover bbox invalid",
+      "R cover bbox invalid"
+    ]
+  },
+  "modes": [
+    {
+      "id": "neutral",
+      "label_ko": "중립",
+      "status": "PASS",
+      "outside_changed_pixels": 0,
+      "allowed_changed_pixels": 0,
+      "parameters": {}
+    },
+    {
+      "id": "eye_ball_x_left",
+      "label_ko": "눈동자 왼쪽",
+      "status": "PASS",
+      "outside_changed_pixels": 0,
+      "allowed_changed_pixels": 9136,
+      "parameters": {
+        "ParamEyeBallX": -1
+      }
+    },
+    {
+      "id": "eye_ball_x_right",
+      "label_ko": "눈동자 오른쪽",
+      "status": "PASS",
+      "outside_changed_pixels": 0,
+      "allowed_changed_pixels": 9152,
+      "parameters": {
+        "ParamEyeBallX": 1
+      }
+    },
+    {
+      "id": "eye_ball_y_up",
+      "label_ko": "눈동자 위",
+      "status": "PASS",
+      "outside_changed_pixels": 0,
+      "allowed_changed_pixels": 7001,
+      "parameters": {
+        "ParamEyeBallY": -1
+      }
+    },
+    {
+      "id": "eye_ball_y_down",
+      "label_ko": "눈동자 아래",
+      "status": "PASS",
+      "outside_changed_pixels": 0,
+      "allowed_changed_pixels": 7062,
+      "parameters": {
+        "ParamEyeBallY": 1
+      }
+    },
+    {
+      "id": "eye_l_closed",
+      "label_ko": "왼눈 닫힘",
+      "status": "PASS",
+      "outside_changed_pixels": 0,
+      "allowed_changed_pixels": 11897,
+      "parameters": {
+        "ParamEyeLOpen": 0
+      }
+    },
+    {
+      "id": "eye_r_closed",
+      "label_ko": "오른눈 닫힘",
+      "status": "PASS",
+      "outside_changed_pixels": 0,
+      "allowed_changed_pixels": 11686,
+      "parameters": {
+        "ParamEyeROpen": 0
+      }
+    },
+    {
+      "id": "both_eyes_closed",
+      "label_ko": "양눈 닫힘",
+      "status": "PASS",
+      "outside_changed_pixels": 0,
+      "allowed_changed_pixels": 23583,
+      "parameters": {
+        "ParamEyeLOpen": 0,
+        "ParamEyeROpen": 0
+      }
+    }
+  ],
+  "status": "REVISE"
+}

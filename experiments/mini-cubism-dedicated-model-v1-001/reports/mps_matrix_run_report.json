@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "experiment_id": "mini-cubism-dedicated-model-v1-001",
+  "generated_at": "2026-06-05T04:09:13.985902+00:00",
+  "selected_case": "mps_640_safe",
+  "dry_run": true,
+  "results": [
+    {
+      "case_id": "mps_640_safe",
+      "started_at": "2026-06-05T04:09:13.985546+00:00",
+      "settings": {
+        "case_id": "mps_640_safe",
+        "input_image": "canonical_front_mps_640.png",
+        "resolution": 640,
+        "steps": 12,
+        "depth_resolution": 512,
+        "env": {
+          "PYTORCH_ENABLE_MPS_FALLBACK": "1",
+          "PYTORCH_MPS_LOW_WATERMARK_RATIO": "0.90",
+          "PYTORCH_MPS_HIGH_WATERMARK_RATIO": "1.30"
+        },
+        "status": "READY_TO_RUN_AFTER_512",
+        "risk": "practical review candidate if 512 creates useful layers"
+      },
+      "copied_input": {
+        "source": "experiments/mini-cubism-dedicated-model-v1-001/input/canonical_front_mps_640.png",
+        "target": "experiments/see-through-layer-decomp-001/external_repos/ComfyUI/input/canonical_front_mps_640.png"
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Users/family/jason/Vtube/scripts/run_comfyui_seethrough_prompt.py",
+        "--experiment-id",
+        "mini-cubism-dedicated-model-v1-001",
+        "--experiment-dir",
+        "experiments/see-through-layer-decomp-001",
+        "--output-dir",
+        "experiments/see-through-layer-decomp-001/external_repos/ComfyUI/output",
+        "--report-path",
+        "experiments/mini-cubism-dedicated-model-v1-001/reports/mps_640_safe_inference_report.json",
+        "--client-id",
+        "vtube-mps_640_safe",
+        "--base-url",
+        "http://127.0.0.1:8188",
+        "--timeout",
+        "3600",
+        "--server-timeout",
+        "60",
+        "--poll-interval",
+        "10",
+        "--input-image",
+        "canonical_front_mps_640.png",
+        "--resolution",
+        "640",
+        "--steps",
+        "12",
+        "--depth-resolution",
+        "512",
+        "--filename-prefix",
+        "mini_cubism_dedicated_v1_mps_640_safe"
+      ],
+      "dry_run": true,
+      "status": "DRY_RUN_READY",
+      "env": {
+        "PYTORCH_ENABLE_MPS_FALLBACK": "1",
+        "PYTORCH_MPS_LOW_WATERMARK_RATIO": "0.90",
+        "PYTORCH_MPS_HIGH_WATERMARK_RATIO": "1.30"
+      }
+    }
+  ],
+  "counts": {
+    "selected": 1,
+    "ran": 1,
+    "passed": 1,
+    "failed": 0
+  }
+}

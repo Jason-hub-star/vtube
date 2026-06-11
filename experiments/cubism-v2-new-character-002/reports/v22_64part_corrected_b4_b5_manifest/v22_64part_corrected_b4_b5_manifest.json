@@ -1,0 +1,2211 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T15:20:28.652998+00:00",
+  "manifest_id": "cubism-v2-new-character-002-v22-64part-corrected-b4-b5-manifest-001",
+  "status": "G1_64PART_CORRECTED_B4_B5_MANIFEST_TECHNICAL_PASS_REVIEW_REQUIRED",
+  "spec": "experiments/cubism-v2-new-character-002/reports/v22_64part_generation_spec/v22_64part_generation_spec.json",
+  "g0_source_review": "experiments/cubism-v2-new-character-002/reports/v22_64part_generation_input_packet/v22_g0_existing_source_review.json",
+  "g0_status": "PASS_READY_FOR_64PART_GENERATION",
+  "canvas": [
+    2048,
+    2048
+  ],
+  "batch_status": {
+    "B1": {
+      "layer_report": "experiments/cubism-v2-new-character-002/reports/v22_b1_clean_base_underpaint/v22_b1_layer_pack_report.json",
+      "layer_dir": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers",
+      "visual_report": "experiments/cubism-v2-new-character-002/reports/v22_b1_clean_base_underpaint/v22_b1_visual_qa_report.json",
+      "source_note": "base_v22_candidate"
+    },
+    "B2": {
+      "layer_report": "experiments/cubism-v2-new-character-002/reports/v22_b2_eye_pack/v22_b2_layer_pack_report.json",
+      "layer_dir": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers",
+      "visual_report": "experiments/cubism-v2-new-character-002/reports/v22_b2_eye_pack/v22_b2_overlay_qa_report.json",
+      "source_note": "base_v22_candidate"
+    },
+    "B3_REVISION_V1": {
+      "layer_report": "experiments/cubism-v2-new-character-002/reports/v22_b3_mouth_pack_revision_v1/v22_b3_revision_v1_layer_pack_report.json",
+      "layer_dir": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers",
+      "visual_report": "experiments/cubism-v2-new-character-002/reports/v22_b3_mouth_pack_revision_v1/v22_b3_revision_v1_overlay_qa_report.json",
+      "source_note": "base_v22_candidate"
+    },
+    "B4": {
+      "layer_report": "experiments/cubism-v2-new-character-002/reports/v22_b4_hair_pack/v22_b4_layer_pack_report.json",
+      "layer_dir": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers",
+      "visual_report": "experiments/cubism-v2-new-character-002/reports/v22_b4_hair_pack/v22_b4_overlay_qa_report.json",
+      "source_note": "overridden_by_corrected_b4_b5_candidate",
+      "corrected_candidate_report": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_anchor_corrected_auto_draft/v22_b4_b5_anchor_corrected_auto_draft_report.json",
+      "focused_review": "experiments/cubism-v2-new-character-002/reports/v22_b4_hair_focused_review/v22_b4_hair_focused_review.json"
+    },
+    "B5": {
+      "layer_report": "experiments/cubism-v2-new-character-002/reports/v22_b5_body_clothing_pack/v22_b5_layer_pack_report.json",
+      "layer_dir": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers",
+      "visual_report": "experiments/cubism-v2-new-character-002/reports/v22_b5_body_clothing_pack/v22_b5_overlay_qa_report.json",
+      "source_note": "overridden_by_corrected_b4_b5_candidate",
+      "provisional_candidate_report": "experiments/cubism-v2-new-character-002/reports/v22_b5_provisional_minipass_candidate/v22_b5_provisional_minipass_candidate_report.json",
+      "provisional_overlay_qa_report": "experiments/cubism-v2-new-character-002/reports/v22_b5_provisional_minipass_candidate/v22_b5_provisional_minipass_overlay_qa_report.json"
+    }
+  },
+  "manifest_entries": [
+    {
+      "id": "body_underpaint",
+      "group": "body",
+      "label_ko": "몸 밑색",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBodyAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "body_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": "몸 각도에서 빈틈이 보이지 않게 받치는 밑색",
+      "source_batch": "B1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/body_underpaint.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        355,
+        1136,
+        1694,
+        2048
+      ],
+      "alpha_coverage": 0.26666117,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "torso_base",
+      "group": "body",
+      "label_ko": "상체 기본",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBodyAngleY",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "draw_order_band": "body_mid",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/torso_base.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        534,
+        915,
+        1547,
+        1927
+      ],
+      "alpha_coverage": 0.20855403,
+      "batch_visual_gate": "REVIEW_REGENERATED_TORSO_UNDERPAINT",
+      "manifest_status": "TECHNICAL_PRESENT_B5_TORSO_REVIEW_REQUIRED"
+    },
+    {
+      "id": "neck",
+      "group": "body",
+      "label_ko": "목",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamBodyAngleX",
+        "ParamBodyAngleY"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "draw_order_band": "body_mid",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/neck.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        882,
+        701,
+        1167,
+        1090
+      ],
+      "alpha_coverage": 0.01887441,
+      "batch_visual_gate": "B5_COPIED_FROM_REFINED_MASK_V2_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B5_COPIED_REVIEW_REQUIRED"
+    },
+    {
+      "id": "neck_shadow_underpaint",
+      "group": "body",
+      "label_ko": "목 그림자 밑색",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "body_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/neck_shadow_underpaint.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        802,
+        910,
+        1248,
+        1331
+      ],
+      "alpha_coverage": 0.03904438,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "shoulder_L",
+      "group": "body",
+      "label_ko": "왼쪽 어깨",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "draw_order_band": "body_mid",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/shoulder_L.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        588,
+        1020,
+        861,
+        1214
+      ],
+      "alpha_coverage": 0.00211596,
+      "batch_visual_gate": "PASS_DRAW_ORDER_MASK_IMPROVEMENT_CANDIDATE_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B5_DRAW_ORDER_MASK_IMPROVEMENT_REVIEW_REQUIRED"
+    },
+    {
+      "id": "shoulder_R",
+      "group": "body",
+      "label_ko": "오른쪽 어깨",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "draw_order_band": "body_mid",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/shoulder_R.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1209,
+        1104,
+        1454,
+        1216
+      ],
+      "alpha_coverage": 0.00183344,
+      "batch_visual_gate": "PASS_DRAW_ORDER_MASK_IMPROVEMENT_CANDIDATE_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B5_DRAW_ORDER_MASK_IMPROVEMENT_REVIEW_REQUIRED"
+    },
+    {
+      "id": "arm_L_upper_simple",
+      "group": "body",
+      "label_ko": "왼쪽 간단 팔",
+      "deformer_node": "shoulder_arm_rotation",
+      "parameters": [
+        "ParamArmL/R or ParamHandL/R",
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "body_front",
+      "qa_tags": [
+        "misaligned"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/arm_L_upper_simple.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        485,
+        1115,
+        695,
+        1786
+      ],
+      "alpha_coverage": 0.01823521,
+      "batch_visual_gate": "B5_COPIED_FROM_REFINED_MASK_V2_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B5_COPIED_REVIEW_REQUIRED"
+    },
+    {
+      "id": "arm_R_upper_simple",
+      "group": "body",
+      "label_ko": "오른쪽 간단 팔",
+      "deformer_node": "shoulder_arm_rotation",
+      "parameters": [
+        "ParamArmL/R or ParamHandL/R",
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "body_front",
+      "qa_tags": [
+        "misaligned"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/arm_R_upper_simple.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1334,
+        1116,
+        1521,
+        1786
+      ],
+      "alpha_coverage": 0.01637411,
+      "batch_visual_gate": "B5_COPIED_FROM_REFINED_MASK_V2_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B5_COPIED_REVIEW_REQUIRED"
+    },
+    {
+      "id": "arm_L_underpaint",
+      "group": "body",
+      "label_ko": "왼팔 밑색",
+      "deformer_node": "shoulder_arm_rotation",
+      "parameters": [
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "body_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/arm_L_underpaint.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        352,
+        1182,
+        709,
+        2048
+      ],
+      "alpha_coverage": 0.06500292,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "arm_R_underpaint",
+      "group": "body",
+      "label_ko": "오른팔 밑색",
+      "deformer_node": "shoulder_arm_rotation",
+      "parameters": [
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "body_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/arm_R_underpaint.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1340,
+        1182,
+        1697,
+        2048
+      ],
+      "alpha_coverage": 0.06564283,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "face_base",
+      "group": "face_base",
+      "label_ko": "얼굴 기본",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleY",
+        "ParamAngleZ"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_mid",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/face_base.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        640,
+        350,
+        1381,
+        1239
+      ],
+      "alpha_coverage": 0.1112411,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "face_shadow_L",
+      "group": "face_base",
+      "label_ko": "왼쪽 얼굴 그림자",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_front",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/face_shadow_L.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        721,
+        678,
+        809,
+        883
+      ],
+      "alpha_coverage": 0.00281453,
+      "batch_visual_gate": "B5_COPIED_FROM_REFINED_MASK_V2_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B5_COPIED_REVIEW_REQUIRED"
+    },
+    {
+      "id": "face_shadow_R",
+      "group": "face_base",
+      "label_ko": "오른쪽 얼굴 그림자",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_front",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/face_shadow_R.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1211,
+        680,
+        1291,
+        881
+      ],
+      "alpha_coverage": 0.00274563,
+      "batch_visual_gate": "B5_COPIED_FROM_REFINED_MASK_V2_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B5_COPIED_REVIEW_REQUIRED"
+    },
+    {
+      "id": "face_underpaint_L",
+      "group": "face_base",
+      "label_ko": "왼쪽 얼굴 밑색",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/face_underpaint_L.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        640,
+        497,
+        975,
+        1078
+      ],
+      "alpha_coverage": 0.03236151,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "face_underpaint_R",
+      "group": "face_base",
+      "label_ko": "오른쪽 얼굴 밑색",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/face_underpaint_R.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1074,
+        497,
+        1381,
+        1078
+      ],
+      "alpha_coverage": 0.02925658,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "nose",
+      "group": "face_base",
+      "label_ko": "코",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_front",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/nose.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1003,
+        757,
+        1046,
+        823
+      ],
+      "alpha_coverage": 0.00052786,
+      "batch_visual_gate": "B5_COPIED_FROM_REFINED_MASK_V2_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B5_COPIED_REVIEW_REQUIRED"
+    },
+    {
+      "id": "cheek_L",
+      "group": "face_base",
+      "label_ko": "왼쪽 볼",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_front",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/cheek_L.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        752,
+        744,
+        917,
+        844
+      ],
+      "alpha_coverage": 0.0030582,
+      "batch_visual_gate": "B5_COPIED_FROM_REFINED_MASK_V2_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B5_COPIED_REVIEW_REQUIRED"
+    },
+    {
+      "id": "cheek_R",
+      "group": "face_base",
+      "label_ko": "오른쪽 볼",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_front",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/cheek_R.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1129,
+        744,
+        1294,
+        844
+      ],
+      "alpha_coverage": 0.00305676,
+      "batch_visual_gate": "B5_COPIED_FROM_REFINED_MASK_V2_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B5_COPIED_REVIEW_REQUIRED"
+    },
+    {
+      "id": "eye_L_white",
+      "group": "eye_L",
+      "label_ko": "왼쪽 눈 흰자",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_back",
+      "qa_tags": [
+        "bad_alpha"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_white.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        669,
+        637,
+        903,
+        725
+      ],
+      "alpha_coverage": 0.00388455,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "eye_L_iris",
+      "group": "eye_L",
+      "label_ko": "왼쪽 홍채",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_mid",
+      "qa_tags": [
+        "misaligned"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_iris.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        746,
+        640,
+        845,
+        731
+      ],
+      "alpha_coverage": 0.00101423,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "eye_L_pupil",
+      "group": "eye_L",
+      "label_ko": "왼쪽 동공",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_mid",
+      "qa_tags": [
+        "misaligned"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_pupil.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        729,
+        633,
+        848,
+        750
+      ],
+      "alpha_coverage": 0.00119209,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "eye_L_highlight",
+      "group": "eye_L",
+      "label_ko": "왼쪽 눈 하이라이트",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_highlight.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        726,
+        610,
+        850,
+        750
+      ],
+      "alpha_coverage": 0.00082493,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "eye_L_upper_lash",
+      "group": "eye_L",
+      "label_ko": "왼쪽 위 속눈썹",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [
+        "draw_order_issue"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_upper_lash.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        661,
+        627,
+        925,
+        734
+      ],
+      "alpha_coverage": 0.00190282,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "eye_L_lower_lash",
+      "group": "eye_L",
+      "label_ko": "왼쪽 아래 속눈썹",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_lower_lash.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        704,
+        692,
+        902,
+        762
+      ],
+      "alpha_coverage": 0.00045633,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "eye_L_closed_lid",
+      "group": "eye_L",
+      "label_ko": "왼쪽 감은 눈꺼풀",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [
+        "clipping_risk"
+      ],
+      "purpose_ko": "눈 감김 extreme에서 흰자/홍채를 가리는 키폼용",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_closed_lid.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        706,
+        713,
+        912,
+        745
+      ],
+      "alpha_coverage": 0.00076079,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "eye_L_underpaint",
+      "group": "eye_L",
+      "label_ko": "왼쪽 눈 밑색",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/eye_L_underpaint.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        710,
+        580,
+        976,
+        776
+      ],
+      "alpha_coverage": 0.00975227,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "eye_R_white",
+      "group": "eye_R",
+      "label_ko": "오른쪽 눈 흰자",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_back",
+      "qa_tags": [
+        "bad_alpha"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_white.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1099,
+        637,
+        1333,
+        725
+      ],
+      "alpha_coverage": 0.00388455,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "eye_R_iris",
+      "group": "eye_R",
+      "label_ko": "오른쪽 홍채",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_mid",
+      "qa_tags": [
+        "misaligned"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_iris.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1162,
+        641,
+        1256,
+        731
+      ],
+      "alpha_coverage": 0.00094867,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "eye_R_pupil",
+      "group": "eye_R",
+      "label_ko": "오른쪽 동공",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_mid",
+      "qa_tags": [
+        "misaligned"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_pupil.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1157,
+        634,
+        1280,
+        750
+      ],
+      "alpha_coverage": 0.00109196,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "eye_R_highlight",
+      "group": "eye_R",
+      "label_ko": "오른쪽 눈 하이라이트",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_highlight.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1150,
+        610,
+        1280,
+        750
+      ],
+      "alpha_coverage": 0.00081873,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "eye_R_upper_lash",
+      "group": "eye_R",
+      "label_ko": "오른쪽 위 속눈썹",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [
+        "draw_order_issue"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_upper_lash.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1092,
+        630,
+        1355,
+        715
+      ],
+      "alpha_coverage": 0.00197911,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "eye_R_lower_lash",
+      "group": "eye_R",
+      "label_ko": "오른쪽 아래 속눈썹",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_lower_lash.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1107,
+        692,
+        1332,
+        764
+      ],
+      "alpha_coverage": 0.00049138,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "eye_R_closed_lid",
+      "group": "eye_R",
+      "label_ko": "오른쪽 감은 눈꺼풀",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [
+        "clipping_risk"
+      ],
+      "purpose_ko": "눈 감김 extreme에서 흰자/홍채를 가리는 키폼용",
+      "source_batch": "B2",
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_closed_lid.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1087,
+        716,
+        1288,
+        747
+      ],
+      "alpha_coverage": 0.00076008,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "eye_R_underpaint",
+      "group": "eye_R",
+      "label_ko": "오른쪽 눈 밑색",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/eye_R_underpaint.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1073,
+        580,
+        1339,
+        776
+      ],
+      "alpha_coverage": 0.00975227,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "brow_L",
+      "group": "brow",
+      "label_ko": "왼쪽 눈썹",
+      "deformer_node": "brow_L_R_warp",
+      "parameters": [
+        "ParamBrowL/R Angle/Form/Y",
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "brow_front",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/brow_L.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        779,
+        631,
+        924,
+        659
+      ],
+      "alpha_coverage": 0.00030065,
+      "batch_visual_gate": "B5_COPIED_FROM_REFINED_MASK_V2_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B5_COPIED_REVIEW_REQUIRED"
+    },
+    {
+      "id": "brow_R",
+      "group": "brow",
+      "label_ko": "오른쪽 눈썹",
+      "deformer_node": "brow_L_R_warp",
+      "parameters": [
+        "ParamBrowL/R Angle/Form/Y",
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "brow_front",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/brow_R.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1103,
+        631,
+        1247,
+        659
+      ],
+      "alpha_coverage": 0.00030589,
+      "batch_visual_gate": "B5_COPIED_FROM_REFINED_MASK_V2_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B5_COPIED_REVIEW_REQUIRED"
+    },
+    {
+      "id": "mouth_line",
+      "group": "mouth",
+      "label_ko": "입 선",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm",
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_front",
+      "qa_tags": [
+        "misaligned"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B3_REVISION_V1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_line.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        932,
+        868,
+        1107,
+        887
+      ],
+      "alpha_coverage": 0.00014353,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "mouth_inner",
+      "group": "mouth",
+      "label_ko": "입 안쪽",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_back",
+      "qa_tags": [
+        "bad_alpha"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B3_REVISION_V1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_inner.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        859,
+        818,
+        1189,
+        1003
+      ],
+      "alpha_coverage": 0.00243425,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "mouth_upper_lip_mask",
+      "group": "mouth",
+      "label_ko": "윗입술 마스크",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_front",
+      "qa_tags": [
+        "clipping_risk"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B3_REVISION_V1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_upper_lip_mask.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        928,
+        855,
+        1087,
+        895
+      ],
+      "alpha_coverage": 0.00099826,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "mouth_lower_lip_mask",
+      "group": "mouth",
+      "label_ko": "아랫입술 마스크",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_front",
+      "qa_tags": [
+        "clipping_risk"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B3_REVISION_V1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_lower_lip_mask.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        925,
+        858,
+        1106,
+        946
+      ],
+      "alpha_coverage": 0.00189757,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "mouth_teeth",
+      "group": "mouth",
+      "label_ko": "치아",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_mid",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B3_REVISION_V1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_teeth.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        924,
+        819,
+        1119,
+        888
+      ],
+      "alpha_coverage": 0.00061798,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "mouth_tongue",
+      "group": "mouth",
+      "label_ko": "혀",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_mid",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B3_REVISION_V1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_tongue.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        859,
+        864,
+        1189,
+        1003
+      ],
+      "alpha_coverage": 0.0033257,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "mouth_corner_L",
+      "group": "mouth",
+      "label_ko": "왼쪽 입꼬리",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_front",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B3_REVISION_V1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_corner_L.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        871,
+        880,
+        922,
+        893
+      ],
+      "alpha_coverage": 5.293e-05,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "mouth_corner_R",
+      "group": "mouth",
+      "label_ko": "오른쪽 입꼬리",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_front",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B3_REVISION_V1",
+      "path": "experiments/cubism-v2-new-character-002/v22_b3_mouth_pack_revision_v1/normalized_layers/mouth_corner_R.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1118,
+        879,
+        1169,
+        893
+      ],
+      "alpha_coverage": 5.269e-05,
+      "batch_visual_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED"
+    },
+    {
+      "id": "hair_back_base",
+      "group": "hair",
+      "label_ko": "뒷머리 기본",
+      "deformer_node": "back_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleZ",
+        "ParamHairBack"
+      ],
+      "physics_groups": [
+        "back_hair_physics"
+      ],
+      "draw_order_band": "hair_back",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_base.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        644,
+        190,
+        1404,
+        1250
+      ],
+      "alpha_coverage": 0.14233398,
+      "batch_visual_gate": "B4_SECONDARY_DRAW_ORDER_OR_MASK_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B4_SECONDARY_REVIEW_REQUIRED"
+    },
+    {
+      "id": "hair_back_underpaint",
+      "group": "hair",
+      "label_ko": "뒷머리 밑색",
+      "deformer_node": "back_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamHairBack"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "hair_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_underpaint.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        818,
+        585,
+        1229,
+        1175
+      ],
+      "alpha_coverage": 0.04447603,
+      "batch_visual_gate": "B4_SECONDARY_DRAW_ORDER_OR_MASK_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B4_SECONDARY_REVIEW_REQUIRED"
+    },
+    {
+      "id": "hair_back_strand_L",
+      "group": "hair",
+      "label_ko": "왼쪽 뒷머리 가닥",
+      "deformer_node": "back_hair_warp",
+      "parameters": [
+        "ParamHairBack",
+        "ParamAngleZ"
+      ],
+      "physics_groups": [
+        "back_hair_physics"
+      ],
+      "draw_order_band": "hair_back",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_strand_L.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        595,
+        440,
+        855,
+        1200
+      ],
+      "alpha_coverage": 0.02609921,
+      "batch_visual_gate": "B4_SECONDARY_DRAW_ORDER_OR_MASK_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B4_SECONDARY_REVIEW_REQUIRED"
+    },
+    {
+      "id": "hair_back_strand_R",
+      "group": "hair",
+      "label_ko": "오른쪽 뒷머리 가닥",
+      "deformer_node": "back_hair_warp",
+      "parameters": [
+        "ParamHairBack",
+        "ParamAngleZ"
+      ],
+      "physics_groups": [
+        "back_hair_physics"
+      ],
+      "draw_order_band": "hair_back",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_strand_R.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1224,
+        450,
+        1446,
+        1210
+      ],
+      "alpha_coverage": 0.02190447,
+      "batch_visual_gate": "B4_SECONDARY_DRAW_ORDER_OR_MASK_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B4_SECONDARY_REVIEW_REQUIRED"
+    },
+    {
+      "id": "hair_back_center",
+      "group": "hair",
+      "label_ko": "가운데 뒷머리",
+      "deformer_node": "back_hair_warp",
+      "parameters": [
+        "ParamHairBack",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "back_hair_physics"
+      ],
+      "draw_order_band": "hair_back",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_center.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        837,
+        435,
+        1211,
+        1210
+      ],
+      "alpha_coverage": 0.0482862,
+      "batch_visual_gate": "B4_SECONDARY_DRAW_ORDER_OR_MASK_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B4_SECONDARY_REVIEW_REQUIRED"
+    },
+    {
+      "id": "hair_front_center",
+      "group": "hair",
+      "label_ko": "가운데 앞머리",
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleZ",
+        "ParamHairFront"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "draw_order_band": "hair_front",
+      "qa_tags": [
+        "draw_order_issue"
+      ],
+      "purpose_ko": "",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_center.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        820,
+        231,
+        1228,
+        629
+      ],
+      "alpha_coverage": 0.02321458,
+      "batch_visual_gate": "B4_FRONT_HAIR_MOTION_READINESS_CANDIDATE_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B4_FRONT_HAIR_MOTION_CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "id": "hair_front_L",
+      "group": "hair",
+      "label_ko": "왼쪽 앞머리",
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleZ",
+        "ParamHairFront"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "draw_order_band": "hair_front",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_L.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        759,
+        286,
+        1008,
+        605
+      ],
+      "alpha_coverage": 0.01171589,
+      "batch_visual_gate": "B4_FRONT_HAIR_MOTION_READINESS_CANDIDATE_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B4_FRONT_HAIR_MOTION_CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "id": "hair_front_R",
+      "group": "hair",
+      "label_ko": "오른쪽 앞머리",
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleZ",
+        "ParamHairFront"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "draw_order_band": "hair_front",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_R.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1015,
+        282,
+        1306,
+        630
+      ],
+      "alpha_coverage": 0.01713395,
+      "batch_visual_gate": "B4_FRONT_HAIR_MOTION_READINESS_CANDIDATE_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B4_FRONT_HAIR_MOTION_CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "id": "hair_front_side_L",
+      "group": "hair",
+      "label_ko": "왼쪽 앞 옆머리",
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamHairFront"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "draw_order_band": "hair_front",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_side_L.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        715,
+        385,
+        907,
+        885
+      ],
+      "alpha_coverage": 0.01118851,
+      "batch_visual_gate": "B4_FRONT_HAIR_MOTION_READINESS_CANDIDATE_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B4_FRONT_HAIR_MOTION_CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "id": "hair_front_side_R",
+      "group": "hair",
+      "label_ko": "오른쪽 앞 옆머리",
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamHairFront"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "draw_order_band": "hair_front",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_side_R.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1225,
+        385,
+        1348,
+        885
+      ],
+      "alpha_coverage": 0.0070703,
+      "batch_visual_gate": "B4_FRONT_HAIR_MOTION_READINESS_CANDIDATE_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B4_FRONT_HAIR_MOTION_CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "id": "hair_front_tip_L",
+      "group": "hair",
+      "label_ko": "왼쪽 앞머리 끝",
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamHairFront",
+        "ParamAngleZ"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "draw_order_band": "hair_front",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_tip_L.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        698,
+        695,
+        821,
+        1047
+      ],
+      "alpha_coverage": 0.00541162,
+      "batch_visual_gate": "B4_FRONT_HAIR_MOTION_READINESS_CANDIDATE_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B4_FRONT_HAIR_MOTION_CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "id": "hair_front_tip_R",
+      "group": "hair",
+      "label_ko": "오른쪽 앞머리 끝",
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamHairFront",
+        "ParamAngleZ"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "draw_order_band": "hair_front",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_tip_R.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1156,
+        695,
+        1261,
+        1074
+      ],
+      "alpha_coverage": 0.00642014,
+      "batch_visual_gate": "B4_FRONT_HAIR_MOTION_READINESS_CANDIDATE_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B4_FRONT_HAIR_MOTION_CANDIDATE_REVIEW_REQUIRED"
+    },
+    {
+      "id": "hair_side_L_outer",
+      "group": "hair",
+      "label_ko": "왼쪽 바깥 옆머리",
+      "deformer_node": "side_hair_L_R_warp",
+      "parameters": [
+        "ParamHairSide",
+        "ParamAngleX"
+      ],
+      "physics_groups": [
+        "side_hair_L_physics"
+      ],
+      "draw_order_band": "hair_side",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_L_outer.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        696,
+        670,
+        737,
+        1151
+      ],
+      "alpha_coverage": 0.00231504,
+      "batch_visual_gate": "B4_SECONDARY_DRAW_ORDER_OR_MASK_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B4_SECONDARY_REVIEW_REQUIRED"
+    },
+    {
+      "id": "hair_side_L_inner",
+      "group": "hair",
+      "label_ko": "왼쪽 안쪽 옆머리",
+      "deformer_node": "side_hair_L_R_warp",
+      "parameters": [
+        "ParamHairSide",
+        "ParamAngleX"
+      ],
+      "physics_groups": [
+        "side_hair_L_physics"
+      ],
+      "draw_order_band": "hair_side",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_L_inner.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        670,
+        712,
+        807,
+        1133
+      ],
+      "alpha_coverage": 0.00722432,
+      "batch_visual_gate": "B4_SECONDARY_DRAW_ORDER_OR_MASK_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B4_SECONDARY_REVIEW_REQUIRED"
+    },
+    {
+      "id": "hair_side_R_outer",
+      "group": "hair",
+      "label_ko": "오른쪽 바깥 옆머리",
+      "deformer_node": "side_hair_L_R_warp",
+      "parameters": [
+        "ParamHairSide",
+        "ParamAngleX"
+      ],
+      "physics_groups": [
+        "side_hair_R_physics"
+      ],
+      "draw_order_band": "hair_side",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_R_outer.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1328,
+        675,
+        1509,
+        1190
+      ],
+      "alpha_coverage": 0.01454306,
+      "batch_visual_gate": "B4_SECONDARY_DRAW_ORDER_OR_MASK_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B4_SECONDARY_REVIEW_REQUIRED"
+    },
+    {
+      "id": "hair_side_R_inner",
+      "group": "hair",
+      "label_ko": "오른쪽 안쪽 옆머리",
+      "deformer_node": "side_hair_L_R_warp",
+      "parameters": [
+        "ParamHairSide",
+        "ParamAngleX"
+      ],
+      "physics_groups": [
+        "side_hair_R_physics"
+      ],
+      "draw_order_band": "hair_side",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B4",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_R_inner.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1187,
+        712,
+        1319,
+        1159
+      ],
+      "alpha_coverage": 0.01035833,
+      "batch_visual_gate": "B4_SECONDARY_DRAW_ORDER_OR_MASK_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B4_SECONDARY_REVIEW_REQUIRED"
+    },
+    {
+      "id": "collar_front",
+      "group": "clothing",
+      "label_ko": "앞깃",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "draw_order_band": "clothing_front",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/collar_front.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        748,
+        1078,
+        1300,
+        1198
+      ],
+      "alpha_coverage": 0.00627613,
+      "batch_visual_gate": "B5_COPIED_FROM_REFINED_MASK_V2_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B5_COPIED_REVIEW_REQUIRED"
+    },
+    {
+      "id": "collar_shadow",
+      "group": "clothing",
+      "label_ko": "깃 그림자",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "clothing_mid",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/collar_shadow.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        753,
+        1178,
+        1295,
+        1269
+      ],
+      "alpha_coverage": 0.00243759,
+      "batch_visual_gate": "B5_COPIED_FROM_REFINED_MASK_V2_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B5_COPIED_REVIEW_REQUIRED"
+    },
+    {
+      "id": "chest_cloth_base",
+      "group": "clothing",
+      "label_ko": "가슴 의상 기본",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "draw_order_band": "clothing_mid",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/chest_cloth_base.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        698,
+        1246,
+        1350,
+        1546
+      ],
+      "alpha_coverage": 0.01802492,
+      "batch_visual_gate": "B5_COPIED_FROM_REFINED_MASK_V2_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B5_COPIED_REVIEW_REQUIRED"
+    },
+    {
+      "id": "chest_cloth_shadow",
+      "group": "clothing",
+      "label_ko": "가슴 의상 그림자",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "clothing_front",
+      "qa_tags": [],
+      "purpose_ko": "",
+      "source_batch": "B5",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/chest_cloth_shadow.png",
+      "exists": true,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        733,
+        1481,
+        1288,
+        1641
+      ],
+      "alpha_coverage": 0.00590897,
+      "batch_visual_gate": "B5_COPIED_FROM_REFINED_MASK_V2_REVIEW_REQUIRED",
+      "manifest_status": "TECHNICAL_PRESENT_B5_COPIED_REVIEW_REQUIRED"
+    }
+  ],
+  "quality_gate_interpretation": {
+    "g1_64part_completeness": "PASS_TECHNICAL",
+    "g2_full_canvas_rgba": "PASS_TECHNICAL",
+    "g4_g5_visual_overlay": "REVIEW_REQUIRED_FOR_CORRECTED_B4_B5",
+    "g6_manual_anchor_correction": "PROVISIONAL_B4_B5_CORRECTED_CANDIDATE_READY_FOR_REVIEW",
+    "g7_mini_cubism_diagnostic": "BLOCKED_UNTIL_VISUAL_QA_ACCEPTS_B1_B5",
+    "g8_real_cubism_authoring": "BLOCKED_UNTIL_MATERIAL_QA_AND_VISUAL_REVIEW",
+    "param_hair_front": "HIDDEN_CONTRACT_ONLY"
+  },
+  "self_review": {
+    "required_part_count": 64,
+    "manifest_entry_count": 64,
+    "unique_manifest_part_count": 64,
+    "missing_part_count": 0,
+    "wrong_mode_count": 0,
+    "wrong_size_count": 0,
+    "empty_part_count": 0,
+    "duplicate_part_count": 0,
+    "group_counts": {
+      "body": 10,
+      "face_base": 8,
+      "eye_L": 8,
+      "eye_R": 8,
+      "brow": 2,
+      "mouth": 8,
+      "hair": 16,
+      "clothing": 4
+    },
+    "required_group_counts": {
+      "body": 10,
+      "face_base": 8,
+      "eye_L": 8,
+      "eye_R": 8,
+      "brow": 2,
+      "mouth": 8,
+      "hair": 16,
+      "clothing": 4
+    },
+    "group_counts_match_spec": true,
+    "visual_gate_counts": {
+      "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED": 31,
+      "REVIEW_REGENERATED_TORSO_UNDERPAINT": 1,
+      "B5_COPIED_FROM_REFINED_MASK_V2_REVIEW_REQUIRED": 14,
+      "PASS_DRAW_ORDER_MASK_IMPROVEMENT_CANDIDATE_REVIEW_REQUIRED": 2,
+      "B4_SECONDARY_DRAW_ORDER_OR_MASK_REVIEW_REQUIRED": 9,
+      "B4_FRONT_HAIR_MOTION_READINESS_CANDIDATE_REVIEW_REQUIRED": 7
+    },
+    "status_counts": {
+      "TECHNICAL_PRESENT_PASS_CANDIDATE_HUMAN_REQUIRED": 31,
+      "TECHNICAL_PRESENT_B5_TORSO_REVIEW_REQUIRED": 1,
+      "TECHNICAL_PRESENT_B5_COPIED_REVIEW_REQUIRED": 14,
+      "TECHNICAL_PRESENT_B5_DRAW_ORDER_MASK_IMPROVEMENT_REVIEW_REQUIRED": 2,
+      "TECHNICAL_PRESENT_B4_SECONDARY_REVIEW_REQUIRED": 9,
+      "TECHNICAL_PRESENT_B4_FRONT_HAIR_MOTION_CANDIDATE_REVIEW_REQUIRED": 7
+    },
+    "b4_entry_count": 16,
+    "b5_entry_count": 17,
+    "b4_front_hair_motion_candidate_count": 7,
+    "b5_provisional_target_count": 3,
+    "b5_shoulder_improvement_candidate_count": 2,
+    "b5_torso_review_candidate": true,
+    "material_pass_blocked": true,
+    "validator_only_promotion_blocked": true,
+    "param_hair_front_hidden": true,
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true,
+    "status": "PASS"
+  },
+  "decision": "This corrected B4/B5 manifest candidate is technically complete and uses improved B5 provisional layers, but it remains review-required. Do not promote to material PASS, Mini Cubism, or real Cubism.",
+  "next_action": [
+    "Run corrected B4/B5 overlay QA from this manifest.",
+    "Only after visual QA accepts corrected B4/B5 should G2-G5 material QA continue.",
+    "Keep ParamHairFront hidden until front hair motion-readiness passes."
+  ],
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/v22_64part_corrected_b4_b5_manifest/v22_64part_corrected_b4_b5_manifest_contact_sheet.png"
+}

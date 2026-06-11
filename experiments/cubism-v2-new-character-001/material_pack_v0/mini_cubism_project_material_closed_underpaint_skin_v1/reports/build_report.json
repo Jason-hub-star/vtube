@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "BUILT_PENDING_VALIDATION",
+  "generated_at": "2026-06-08T13:06:54.430316+00:00",
+  "pack_dir": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/face_detail_rebuild_pack_v1",
+  "project_dir": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_face_detail_rebuild_v1",
+  "character_json": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_face_detail_rebuild_v1/character.json",
+  "counts": {
+    "parts": 62,
+    "meshes": 62,
+    "deformers": 11,
+    "parameters": 15,
+    "keyform_bindings": 46,
+    "physics_profiles": 3,
+    "part_opacity_keyframes": 70,
+    "glue": 0
+  }
+}

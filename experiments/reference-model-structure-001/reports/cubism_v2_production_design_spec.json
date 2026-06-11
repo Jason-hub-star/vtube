@@ -1,0 +1,3125 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-06-07T22:40:44.432794+00:00",
+  "evidence_sources": {
+    "part_taxonomy_matrix": "all57_part_taxonomy_matrix.json",
+    "parameter_map": "all57_parameter_map.json",
+    "deformer_keyform_floor": "all57_deformer_keyform_floor.json",
+    "physics_group_design": "all57_physics_group_design.json",
+    "strong20_runtime_probe": "../../live2d-strong-model-pattern-001/reports/strong20_runtime_probe_report.json",
+    "strong20_part_success_patterns": "../../live2d-strong-model-pattern-001/reports/part_success_patterns.md"
+  },
+  "source": {
+    "all57_model_count": 57,
+    "full_structure_count": 34,
+    "runtime_only_count": 23,
+    "rig_floor_eligible_count": 32,
+    "strong20_role": "real Web runtime render validation baseline; all57 role is production structure/statistics expansion"
+  },
+  "observed_rig_floor_eligible_ranges": {
+    "art_meshes": {
+      "n": 32,
+      "min": 33,
+      "p25": 73.75,
+      "median": 86.5,
+      "p75": 155.75,
+      "max": 299,
+      "mean": 120.09
+    },
+    "parts": {
+      "n": 32,
+      "min": 17,
+      "p25": 21.0,
+      "median": 22.0,
+      "p75": 31.5,
+      "max": 54,
+      "mean": 26.56
+    },
+    "parameters": {
+      "n": 32,
+      "min": 25,
+      "p25": 31.0,
+      "median": 45.5,
+      "p75": 70.75,
+      "max": 138,
+      "mean": 54.47
+    },
+    "warp_deformers": {
+      "n": 32,
+      "min": 26,
+      "p25": 39.0,
+      "median": 51.0,
+      "p75": 63.75,
+      "max": 156,
+      "mean": 61.81
+    },
+    "rotation_deformers": {
+      "n": 32,
+      "min": 2,
+      "p25": 12.75,
+      "median": 20.0,
+      "p75": 41.5,
+      "max": 145,
+      "mean": 32.53
+    },
+    "keyform_bindings": {
+      "n": 32,
+      "min": 85,
+      "p25": 166.25,
+      "median": 217.5,
+      "p75": 349.0,
+      "max": 559,
+      "mean": 256.31
+    }
+  },
+  "physics_observed_ranges": {
+    "n": 44,
+    "min": 1,
+    "p25": 3.0,
+    "median": 6.0,
+    "p75": 11.0,
+    "max": 19,
+    "mean": 7.32
+  },
+  "production_tiers": {
+    "v2_min": {
+      "role": "technical gate only; proves real Cubism deformer/keyform/physics authoring, not final beauty",
+      "part_taxonomy": "20-25 source parts, grouped into face, eye L/R, mouth, front/side/back hair, neck, upper body, simple shoulder/arm",
+      "minimum_floor": {
+        "parameters": 12,
+        "warp_deformers": 8,
+        "rotation_deformers": 1,
+        "keyform_bindings": 20,
+        "physics_groups": 2
+      },
+      "verification": [
+        "CMO3 inspector detects warp increase",
+        "CMO3 inspector detects keyform increase",
+        "at least one hair/body physics group renders in runtime"
+      ]
+    },
+    "v2_standard": {
+      "role": "first production candidate default",
+      "part_taxonomy": "50-70 source parts with separated eyes/brows/mouth, front/side/back hair clusters, neck/torso/shoulder/optional arms, underpaint where overhang occurs",
+      "minimum_floor": {
+        "parameters": 25,
+        "warp_deformers": 35,
+        "rotation_deformers": 8,
+        "keyform_bindings": 120,
+        "physics_groups": 4
+      },
+      "recommended_target": {
+        "parameters": "35-55",
+        "warp_deformers": "40-65",
+        "rotation_deformers": "12-25",
+        "keyform_bindings": "160-260",
+        "physics_groups": "4-6"
+      },
+      "verification": [
+        "neutral/motion/extreme strip for eye, mouth, hair, body angle",
+        "G1 taxonomy contact sheet",
+        "G2 automatic CMO3 PASS/WARN with no zero deformer/keyform regression"
+      ]
+    },
+    "v2_rich": {
+      "role": "official-core-like expression richness after v2_standard passes",
+      "part_taxonomy": "90+ source parts with richer arm/hand, accessory, effect, mask/pose/expression, and split hair physics",
+      "minimum_floor": {
+        "parameters": 50,
+        "warp_deformers": 60,
+        "rotation_deformers": 20,
+        "keyform_bindings": 220,
+        "physics_groups": 8
+      },
+      "recommended_features": [
+        "at least two of mask, pose, expression, accessory physics, effect secondary motion"
+      ],
+      "verification": [
+        "same v2_standard gates plus expression/pose/mask runtime smoke"
+      ]
+    }
+  },
+  "v2_standard_production_part_taxonomy": {
+    "target_part_count": "50-70 source PSD/material parts",
+    "face_base": [
+      "face base",
+      "left/right cheek or face shadow optional",
+      "nose optional"
+    ],
+    "eye_L": [
+      "eye white L",
+      "iris/pupil L",
+      "upper eyelid/lash L",
+      "lower eyelid/shadow L"
+    ],
+    "eye_R": [
+      "eye white R",
+      "iris/pupil R",
+      "upper eyelid/lash R",
+      "lower eyelid/shadow R"
+    ],
+    "brow_L_R": [
+      "brow L",
+      "brow R"
+    ],
+    "mouth_group": [
+      "mouth line",
+      "mouth inner",
+      "upper/lower lip or mask",
+      "teeth/tongue optional"
+    ],
+    "hair": [
+      "front hair clusters 3-8",
+      "side hair L/R 2-6",
+      "back hair 2-8",
+      "long strand groups when present"
+    ],
+    "body": [
+      "neck",
+      "upper body/torso",
+      "shoulder L/R",
+      "simple arm L/R if visible"
+    ],
+    "underpaint": [
+      "face/neck/hair/shoulder underpaint where angle motion exposes gaps"
+    ],
+    "deferred_until_v2_rich": [
+      "complex hands",
+      "heavy props",
+      "effect layers",
+      "skirt/cloth secondary parts unless design requires them"
+    ]
+  },
+  "parameter_map_detail": [
+    {
+      "production_name": "ParamAngleX",
+      "section": "body_angle",
+      "required_level": "REQUIRED",
+      "standard_range": [
+        -30,
+        30
+      ],
+      "keyform_positions": [
+        -30,
+        0,
+        30
+      ],
+      "connected_parts": [
+        "face_base",
+        "eye_L",
+        "eye_R",
+        "brow_L_R",
+        "mouth_group",
+        "front_hair"
+      ],
+      "source_category": "head_angle",
+      "qa_probe": "G3에서 neutral 대비 좌/우 extreme strip을 확인한다.",
+      "notes_ko": "얼굴 좌우 회전의 핵심 파라미터다. 눈/입/앞머리 keyform이 같이 반응해야 한다.",
+      "evidence": {
+        "model_count_with_parameter": 54,
+        "model_count_with_motion_use": 46,
+        "parameter_count_stats": {
+          "n": 57,
+          "min": 0,
+          "p25": 3.0,
+          "median": 3,
+          "p75": 3.0,
+          "max": 3,
+          "mean": 2.67
+        },
+        "top_parameter_ids": [
+          [
+            "ParamAngleX",
+            31
+          ],
+          [
+            "ParamAngleZ",
+            31
+          ],
+          [
+            "ParamAngleY",
+            26
+          ],
+          [
+            "PARAM_ANGLE_Y",
+            23
+          ],
+          [
+            "PARAM_ANGLE_Z",
+            23
+          ],
+          [
+            "PARAM_ANGLE_X",
+            18
+          ]
+        ],
+        "top_motion_parameter_ids": [
+          [
+            "PARAM_ANGLE_Y",
+            23
+          ],
+          [
+            "PARAM_ANGLE_Z",
+            23
+          ],
+          [
+            "ParamAngleX",
+            23
+          ],
+          [
+            "ParamAngleZ",
+            23
+          ],
+          [
+            "ParamAngleY",
+            19
+          ],
+          [
+            "PARAM_ANGLE_X",
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "production_name": "ParamAngleY",
+      "section": "body_angle",
+      "required_level": "REQUIRED",
+      "standard_range": [
+        -30,
+        30
+      ],
+      "keyform_positions": [
+        -30,
+        0,
+        30
+      ],
+      "connected_parts": [
+        "face_base",
+        "eye_L",
+        "eye_R",
+        "mouth_group",
+        "front_hair",
+        "neck"
+      ],
+      "source_category": "head_angle",
+      "qa_probe": "G3에서 위/아래 extreme strip을 확인한다.",
+      "notes_ko": "고개 상하 움직임이다. 턱/목/앞머리 겹침과 underpaint 노출을 같이 본다.",
+      "evidence": {
+        "model_count_with_parameter": 54,
+        "model_count_with_motion_use": 46,
+        "parameter_count_stats": {
+          "n": 57,
+          "min": 0,
+          "p25": 3.0,
+          "median": 3,
+          "p75": 3.0,
+          "max": 3,
+          "mean": 2.67
+        },
+        "top_parameter_ids": [
+          [
+            "ParamAngleX",
+            31
+          ],
+          [
+            "ParamAngleZ",
+            31
+          ],
+          [
+            "ParamAngleY",
+            26
+          ],
+          [
+            "PARAM_ANGLE_Y",
+            23
+          ],
+          [
+            "PARAM_ANGLE_Z",
+            23
+          ],
+          [
+            "PARAM_ANGLE_X",
+            18
+          ]
+        ],
+        "top_motion_parameter_ids": [
+          [
+            "PARAM_ANGLE_Y",
+            23
+          ],
+          [
+            "PARAM_ANGLE_Z",
+            23
+          ],
+          [
+            "ParamAngleX",
+            23
+          ],
+          [
+            "ParamAngleZ",
+            23
+          ],
+          [
+            "ParamAngleY",
+            19
+          ],
+          [
+            "PARAM_ANGLE_X",
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "production_name": "ParamAngleZ",
+      "section": "body_angle",
+      "required_level": "REQUIRED",
+      "standard_range": [
+        -30,
+        30
+      ],
+      "keyform_positions": [
+        -30,
+        0,
+        30
+      ],
+      "connected_parts": [
+        "head_root",
+        "front_hair",
+        "side_hair_L",
+        "side_hair_R"
+      ],
+      "source_category": "head_angle",
+      "qa_probe": "G3에서 고개 기울임 extreme strip을 확인한다.",
+      "notes_ko": "고개 기울임이다. rotation deformer와 hair physics 입력으로 연결한다.",
+      "evidence": {
+        "model_count_with_parameter": 54,
+        "model_count_with_motion_use": 46,
+        "parameter_count_stats": {
+          "n": 57,
+          "min": 0,
+          "p25": 3.0,
+          "median": 3,
+          "p75": 3.0,
+          "max": 3,
+          "mean": 2.67
+        },
+        "top_parameter_ids": [
+          [
+            "ParamAngleX",
+            31
+          ],
+          [
+            "ParamAngleZ",
+            31
+          ],
+          [
+            "ParamAngleY",
+            26
+          ],
+          [
+            "PARAM_ANGLE_Y",
+            23
+          ],
+          [
+            "PARAM_ANGLE_Z",
+            23
+          ],
+          [
+            "PARAM_ANGLE_X",
+            18
+          ]
+        ],
+        "top_motion_parameter_ids": [
+          [
+            "PARAM_ANGLE_Y",
+            23
+          ],
+          [
+            "PARAM_ANGLE_Z",
+            23
+          ],
+          [
+            "ParamAngleX",
+            23
+          ],
+          [
+            "ParamAngleZ",
+            23
+          ],
+          [
+            "ParamAngleY",
+            19
+          ],
+          [
+            "PARAM_ANGLE_X",
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "production_name": "ParamBodyAngleX",
+      "section": "body_angle",
+      "required_level": "REQUIRED",
+      "standard_range": [
+        -10,
+        10
+      ],
+      "keyform_positions": [
+        -10,
+        0,
+        10
+      ],
+      "connected_parts": [
+        "neck",
+        "upper_body",
+        "shoulder_arm"
+      ],
+      "source_category": "body_angle",
+      "qa_probe": "G3에서 몸 좌/우 extreme strip을 확인한다.",
+      "notes_ko": "상체 좌우 회전이다. 얼굴 각도와 과하게 따로 놀면 실패다.",
+      "evidence": {
+        "model_count_with_parameter": 54,
+        "model_count_with_motion_use": 46,
+        "parameter_count_stats": {
+          "n": 57,
+          "min": 0,
+          "p25": 3.0,
+          "median": 3,
+          "p75": 4.0,
+          "max": 8,
+          "mean": 3.74
+        },
+        "top_parameter_ids": [
+          [
+            "ParamBodyAngleX",
+            31
+          ],
+          [
+            "ParamBodyAngleZ",
+            31
+          ],
+          [
+            "ParamBodyAngleY",
+            27
+          ],
+          [
+            "PARAM_BODY_ANGLE_Y",
+            22
+          ],
+          [
+            "PARAM_BODY_ANGLE_Z",
+            20
+          ],
+          [
+            "PARAM_BODY_ANGLE_X",
+            17
+          ],
+          [
+            "ParamAllX",
+            9
+          ],
+          [
+            "ParamAllY",
+            9
+          ],
+          [
+            "ParamAllRotate",
+            8
+          ],
+          [
+            "PARAM_BODY_UD",
+            5
+          ]
+        ],
+        "top_motion_parameter_ids": [
+          [
+            "ParamBodyAngleX",
+            23
+          ],
+          [
+            "ParamBodyAngleZ",
+            23
+          ],
+          [
+            "PARAM_BODY_ANGLE_Y",
+            22
+          ],
+          [
+            "ParamBodyAngleY",
+            22
+          ],
+          [
+            "PARAM_BODY_ANGLE_Z",
+            20
+          ],
+          [
+            "PARAM_BODY_ANGLE_X",
+            17
+          ],
+          [
+            "ParamAllRotate",
+            7
+          ],
+          [
+            "ParamAllX",
+            7
+          ],
+          [
+            "ParamAllY",
+            7
+          ],
+          [
+            "PARAM_BODY_UD",
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "production_name": "ParamBodyAngleY",
+      "section": "body_angle",
+      "required_level": "REQUIRED",
+      "standard_range": [
+        -10,
+        10
+      ],
+      "keyform_positions": [
+        -10,
+        0,
+        10
+      ],
+      "connected_parts": [
+        "neck",
+        "upper_body",
+        "shoulder_arm"
+      ],
+      "source_category": "body_angle",
+      "qa_probe": "G3에서 몸 상/하 움직임을 확인한다.",
+      "notes_ko": "상체 상하 움직임이다. v2_standard에서는 작고 자연스럽게 제한한다.",
+      "evidence": {
+        "model_count_with_parameter": 54,
+        "model_count_with_motion_use": 46,
+        "parameter_count_stats": {
+          "n": 57,
+          "min": 0,
+          "p25": 3.0,
+          "median": 3,
+          "p75": 4.0,
+          "max": 8,
+          "mean": 3.74
+        },
+        "top_parameter_ids": [
+          [
+            "ParamBodyAngleX",
+            31
+          ],
+          [
+            "ParamBodyAngleZ",
+            31
+          ],
+          [
+            "ParamBodyAngleY",
+            27
+          ],
+          [
+            "PARAM_BODY_ANGLE_Y",
+            22
+          ],
+          [
+            "PARAM_BODY_ANGLE_Z",
+            20
+          ],
+          [
+            "PARAM_BODY_ANGLE_X",
+            17
+          ],
+          [
+            "ParamAllX",
+            9
+          ],
+          [
+            "ParamAllY",
+            9
+          ],
+          [
+            "ParamAllRotate",
+            8
+          ],
+          [
+            "PARAM_BODY_UD",
+            5
+          ]
+        ],
+        "top_motion_parameter_ids": [
+          [
+            "ParamBodyAngleX",
+            23
+          ],
+          [
+            "ParamBodyAngleZ",
+            23
+          ],
+          [
+            "PARAM_BODY_ANGLE_Y",
+            22
+          ],
+          [
+            "ParamBodyAngleY",
+            22
+          ],
+          [
+            "PARAM_BODY_ANGLE_Z",
+            20
+          ],
+          [
+            "PARAM_BODY_ANGLE_X",
+            17
+          ],
+          [
+            "ParamAllRotate",
+            7
+          ],
+          [
+            "ParamAllX",
+            7
+          ],
+          [
+            "ParamAllY",
+            7
+          ],
+          [
+            "PARAM_BODY_UD",
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "production_name": "ParamBodyAngleZ",
+      "section": "body_angle",
+      "required_level": "RECOMMENDED",
+      "standard_range": [
+        -10,
+        10
+      ],
+      "keyform_positions": [
+        -10,
+        0,
+        10
+      ],
+      "connected_parts": [
+        "upper_body",
+        "shoulder_arm"
+      ],
+      "source_category": "body_angle",
+      "qa_probe": "G3에서 몸 기울임이 머리 기울임과 충돌하지 않는지 본다.",
+      "notes_ko": "첫 production에서는 있으면 좋고, 복잡하면 v2_rich로 미룬다.",
+      "evidence": {
+        "model_count_with_parameter": 54,
+        "model_count_with_motion_use": 46,
+        "parameter_count_stats": {
+          "n": 57,
+          "min": 0,
+          "p25": 3.0,
+          "median": 3,
+          "p75": 4.0,
+          "max": 8,
+          "mean": 3.74
+        },
+        "top_parameter_ids": [
+          [
+            "ParamBodyAngleX",
+            31
+          ],
+          [
+            "ParamBodyAngleZ",
+            31
+          ],
+          [
+            "ParamBodyAngleY",
+            27
+          ],
+          [
+            "PARAM_BODY_ANGLE_Y",
+            22
+          ],
+          [
+            "PARAM_BODY_ANGLE_Z",
+            20
+          ],
+          [
+            "PARAM_BODY_ANGLE_X",
+            17
+          ],
+          [
+            "ParamAllX",
+            9
+          ],
+          [
+            "ParamAllY",
+            9
+          ],
+          [
+            "ParamAllRotate",
+            8
+          ],
+          [
+            "PARAM_BODY_UD",
+            5
+          ]
+        ],
+        "top_motion_parameter_ids": [
+          [
+            "ParamBodyAngleX",
+            23
+          ],
+          [
+            "ParamBodyAngleZ",
+            23
+          ],
+          [
+            "PARAM_BODY_ANGLE_Y",
+            22
+          ],
+          [
+            "ParamBodyAngleY",
+            22
+          ],
+          [
+            "PARAM_BODY_ANGLE_Z",
+            20
+          ],
+          [
+            "PARAM_BODY_ANGLE_X",
+            17
+          ],
+          [
+            "ParamAllRotate",
+            7
+          ],
+          [
+            "ParamAllX",
+            7
+          ],
+          [
+            "ParamAllY",
+            7
+          ],
+          [
+            "PARAM_BODY_UD",
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "production_name": "ParamEyeLOpen",
+      "section": "eye",
+      "required_level": "REQUIRED",
+      "standard_range": [
+        0,
+        1
+      ],
+      "keyform_positions": [
+        0,
+        0.5,
+        1
+      ],
+      "connected_parts": [
+        "eye_L"
+      ],
+      "source_category": "eye_open",
+      "qa_probe": "G3에서 왼쪽 눈 닫힘/반쯤/열림 strip을 확인한다.",
+      "notes_ko": "왼쪽 눈 깜빡임 필수 파라미터다. 흰자/홍채가 뚫려 보이면 실패다.",
+      "evidence": {
+        "model_count_with_parameter": 56,
+        "model_count_with_motion_use": 48,
+        "parameter_count_stats": {
+          "n": 57,
+          "min": 0,
+          "p25": 2.0,
+          "median": 4,
+          "p75": 4.0,
+          "max": 5,
+          "mean": 3.49
+        },
+        "top_parameter_ids": [
+          [
+            "ParamEyeLOpen",
+            33
+          ],
+          [
+            "ParamEyeROpen",
+            33
+          ],
+          [
+            "PARAM_EYE_L_OPEN",
+            23
+          ],
+          [
+            "PARAM_EYE_R_OPEN",
+            23
+          ],
+          [
+            "ParamEyeLSmile",
+            22
+          ],
+          [
+            "ParamEyeRSmile",
+            22
+          ],
+          [
+            "PARAM_EYE_L_SMILE",
+            16
+          ],
+          [
+            "PARAM_EYE_R_SMILE",
+            16
+          ],
+          [
+            "PARAM_EYE_SIZE",
+            7
+          ],
+          [
+            "ParamEyeSize",
+            3
+          ]
+        ],
+        "top_motion_parameter_ids": [
+          [
+            "ParamEyeLOpen",
+            25
+          ],
+          [
+            "ParamEyeROpen",
+            25
+          ],
+          [
+            "PARAM_EYE_L_OPEN",
+            23
+          ],
+          [
+            "PARAM_EYE_R_OPEN",
+            23
+          ],
+          [
+            "ParamEyeLSmile",
+            20
+          ],
+          [
+            "ParamEyeRSmile",
+            20
+          ],
+          [
+            "PARAM_EYE_L_SMILE",
+            16
+          ],
+          [
+            "PARAM_EYE_R_SMILE",
+            16
+          ],
+          [
+            "PARAM_EYE_SIZE",
+            7
+          ],
+          [
+            "ParamEyeSize",
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "production_name": "ParamEyeROpen",
+      "section": "eye",
+      "required_level": "REQUIRED",
+      "standard_range": [
+        0,
+        1
+      ],
+      "keyform_positions": [
+        0,
+        0.5,
+        1
+      ],
+      "connected_parts": [
+        "eye_R"
+      ],
+      "source_category": "eye_open",
+      "qa_probe": "G3에서 오른쪽 눈 닫힘/반쯤/열림 strip을 확인한다.",
+      "notes_ko": "오른쪽 눈 깜빡임 필수 파라미터다. 좌우 타이밍은 독립 검수한다.",
+      "evidence": {
+        "model_count_with_parameter": 56,
+        "model_count_with_motion_use": 48,
+        "parameter_count_stats": {
+          "n": 57,
+          "min": 0,
+          "p25": 2.0,
+          "median": 4,
+          "p75": 4.0,
+          "max": 5,
+          "mean": 3.49
+        },
+        "top_parameter_ids": [
+          [
+            "ParamEyeLOpen",
+            33
+          ],
+          [
+            "ParamEyeROpen",
+            33
+          ],
+          [
+            "PARAM_EYE_L_OPEN",
+            23
+          ],
+          [
+            "PARAM_EYE_R_OPEN",
+            23
+          ],
+          [
+            "ParamEyeLSmile",
+            22
+          ],
+          [
+            "ParamEyeRSmile",
+            22
+          ],
+          [
+            "PARAM_EYE_L_SMILE",
+            16
+          ],
+          [
+            "PARAM_EYE_R_SMILE",
+            16
+          ],
+          [
+            "PARAM_EYE_SIZE",
+            7
+          ],
+          [
+            "ParamEyeSize",
+            3
+          ]
+        ],
+        "top_motion_parameter_ids": [
+          [
+            "ParamEyeLOpen",
+            25
+          ],
+          [
+            "ParamEyeROpen",
+            25
+          ],
+          [
+            "PARAM_EYE_L_OPEN",
+            23
+          ],
+          [
+            "PARAM_EYE_R_OPEN",
+            23
+          ],
+          [
+            "ParamEyeLSmile",
+            20
+          ],
+          [
+            "ParamEyeRSmile",
+            20
+          ],
+          [
+            "PARAM_EYE_L_SMILE",
+            16
+          ],
+          [
+            "PARAM_EYE_R_SMILE",
+            16
+          ],
+          [
+            "PARAM_EYE_SIZE",
+            7
+          ],
+          [
+            "ParamEyeSize",
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "production_name": "ParamEyeBallX",
+      "section": "eye",
+      "required_level": "REQUIRED",
+      "standard_range": [
+        -1,
+        1
+      ],
+      "keyform_positions": [
+        -1,
+        0,
+        1
+      ],
+      "connected_parts": [
+        "eye_L",
+        "eye_R"
+      ],
+      "source_category": "eye_ball",
+      "qa_probe": "G3에서 시선 좌/우가 눈 밖으로 나가지 않는지 본다.",
+      "notes_ko": "홍채/하이라이트가 같이 움직여야 한다.",
+      "evidence": {
+        "model_count_with_parameter": 51,
+        "model_count_with_motion_use": 47,
+        "parameter_count_stats": {
+          "n": 57,
+          "min": 0,
+          "p25": 2.0,
+          "median": 2,
+          "p75": 3.0,
+          "max": 4,
+          "mean": 2.21
+        },
+        "top_parameter_ids": [
+          [
+            "ParamEyeBallX",
+            31
+          ],
+          [
+            "ParamEyeBallY",
+            31
+          ],
+          [
+            "PARAM_EYE_BALL_Y",
+            20
+          ],
+          [
+            "PARAM_EYE_BALL_X",
+            15
+          ],
+          [
+            "PARAM_EYE_BALL_FORM",
+            9
+          ],
+          [
+            "ParamEyeBallForm",
+            9
+          ],
+          [
+            "PARAM_EYE_FORM",
+            7
+          ],
+          [
+            "ParamEyeForm",
+            3
+          ],
+          [
+            "PARAM_EYE_BALL_KIRAKIRA",
+            1
+          ]
+        ],
+        "top_motion_parameter_ids": [
+          [
+            "ParamEyeBallX",
+            27
+          ],
+          [
+            "ParamEyeBallY",
+            27
+          ],
+          [
+            "PARAM_EYE_BALL_Y",
+            20
+          ],
+          [
+            "PARAM_EYE_BALL_X",
+            15
+          ],
+          [
+            "PARAM_EYE_BALL_FORM",
+            9
+          ],
+          [
+            "ParamEyeBallForm",
+            9
+          ],
+          [
+            "PARAM_EYE_FORM",
+            7
+          ],
+          [
+            "ParamEyeForm",
+            3
+          ],
+          [
+            "ParamEyeBallScale",
+            2
+          ],
+          [
+            "PARAM_EYE_BALL_KIRAKIRA",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "production_name": "ParamEyeBallY",
+      "section": "eye",
+      "required_level": "REQUIRED",
+      "standard_range": [
+        -1,
+        1
+      ],
+      "keyform_positions": [
+        -1,
+        0,
+        1
+      ],
+      "connected_parts": [
+        "eye_L",
+        "eye_R"
+      ],
+      "source_category": "eye_ball",
+      "qa_probe": "G3에서 시선 위/아래가 눈꺼풀과 충돌하지 않는지 본다.",
+      "notes_ko": "눈 크기가 작은 디자인은 움직임 범위를 줄인다.",
+      "evidence": {
+        "model_count_with_parameter": 51,
+        "model_count_with_motion_use": 47,
+        "parameter_count_stats": {
+          "n": 57,
+          "min": 0,
+          "p25": 2.0,
+          "median": 2,
+          "p75": 3.0,
+          "max": 4,
+          "mean": 2.21
+        },
+        "top_parameter_ids": [
+          [
+            "ParamEyeBallX",
+            31
+          ],
+          [
+            "ParamEyeBallY",
+            31
+          ],
+          [
+            "PARAM_EYE_BALL_Y",
+            20
+          ],
+          [
+            "PARAM_EYE_BALL_X",
+            15
+          ],
+          [
+            "PARAM_EYE_BALL_FORM",
+            9
+          ],
+          [
+            "ParamEyeBallForm",
+            9
+          ],
+          [
+            "PARAM_EYE_FORM",
+            7
+          ],
+          [
+            "ParamEyeForm",
+            3
+          ],
+          [
+            "PARAM_EYE_BALL_KIRAKIRA",
+            1
+          ]
+        ],
+        "top_motion_parameter_ids": [
+          [
+            "ParamEyeBallX",
+            27
+          ],
+          [
+            "ParamEyeBallY",
+            27
+          ],
+          [
+            "PARAM_EYE_BALL_Y",
+            20
+          ],
+          [
+            "PARAM_EYE_BALL_X",
+            15
+          ],
+          [
+            "PARAM_EYE_BALL_FORM",
+            9
+          ],
+          [
+            "ParamEyeBallForm",
+            9
+          ],
+          [
+            "PARAM_EYE_FORM",
+            7
+          ],
+          [
+            "ParamEyeForm",
+            3
+          ],
+          [
+            "ParamEyeBallScale",
+            2
+          ],
+          [
+            "PARAM_EYE_BALL_KIRAKIRA",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "production_name": "ParamMouthOpenY",
+      "section": "mouth",
+      "required_level": "REQUIRED",
+      "standard_range": [
+        0,
+        1
+      ],
+      "keyform_positions": [
+        0,
+        0.5,
+        1
+      ],
+      "connected_parts": [
+        "mouth_group"
+      ],
+      "source_category": "mouth",
+      "qa_probe": "G3에서 닫힘/반쯤/열림 입 모양을 확인한다.",
+      "notes_ko": "입 안쪽, 치아/혀 optional, 입선이 같은 중심에 맞아야 한다.",
+      "evidence": {
+        "model_count_with_parameter": 51,
+        "model_count_with_motion_use": 42,
+        "parameter_count_stats": {
+          "n": 57,
+          "min": 0,
+          "p25": 2.0,
+          "median": 2,
+          "p75": 3.0,
+          "max": 4,
+          "mean": 2
+        },
+        "top_parameter_ids": [
+          [
+            "ParamMouthOpenY",
+            25
+          ],
+          [
+            "PARAM_MOUTH_FORM",
+            23
+          ],
+          [
+            "PARAM_MOUTH_OPEN_Y",
+            23
+          ],
+          [
+            "ParamMouthForm",
+            18
+          ],
+          [
+            "PARAM_INMOUTH",
+            5
+          ],
+          [
+            "ParamMouthAngry",
+            3
+          ],
+          [
+            "ParamMouthAngryLine",
+            3
+          ],
+          [
+            "ParamMouthDown",
+            3
+          ],
+          [
+            "ParamMouthUp",
+            3
+          ],
+          [
+            "ParamMouthForm2",
+            3
+          ]
+        ],
+        "top_motion_parameter_ids": [
+          [
+            "PARAM_MOUTH_OPEN_Y",
+            23
+          ],
+          [
+            "PARAM_MOUTH_FORM",
+            20
+          ],
+          [
+            "ParamMouthOpenY",
+            16
+          ],
+          [
+            "ParamMouthForm",
+            14
+          ],
+          [
+            "PARAM_INMOUTH",
+            5
+          ],
+          [
+            "ParamMouthAngry",
+            3
+          ],
+          [
+            "ParamMouthAngryLine",
+            3
+          ],
+          [
+            "ParamMouthDown",
+            3
+          ],
+          [
+            "ParamMouthUp",
+            3
+          ],
+          [
+            "ParamMouthForm2",
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "production_name": "ParamMouthForm",
+      "section": "mouth",
+      "required_level": "REQUIRED",
+      "standard_range": [
+        -1,
+        1
+      ],
+      "keyform_positions": [
+        -1,
+        0,
+        1
+      ],
+      "connected_parts": [
+        "mouth_group"
+      ],
+      "source_category": "mouth",
+      "qa_probe": "G3에서 웃음/중립/찡그림 형태를 확인한다.",
+      "notes_ko": "립싱크 전 기본 표정 폭을 잡는 파라미터다.",
+      "evidence": {
+        "model_count_with_parameter": 51,
+        "model_count_with_motion_use": 42,
+        "parameter_count_stats": {
+          "n": 57,
+          "min": 0,
+          "p25": 2.0,
+          "median": 2,
+          "p75": 3.0,
+          "max": 4,
+          "mean": 2
+        },
+        "top_parameter_ids": [
+          [
+            "ParamMouthOpenY",
+            25
+          ],
+          [
+            "PARAM_MOUTH_FORM",
+            23
+          ],
+          [
+            "PARAM_MOUTH_OPEN_Y",
+            23
+          ],
+          [
+            "ParamMouthForm",
+            18
+          ],
+          [
+            "PARAM_INMOUTH",
+            5
+          ],
+          [
+            "ParamMouthAngry",
+            3
+          ],
+          [
+            "ParamMouthAngryLine",
+            3
+          ],
+          [
+            "ParamMouthDown",
+            3
+          ],
+          [
+            "ParamMouthUp",
+            3
+          ],
+          [
+            "ParamMouthForm2",
+            3
+          ]
+        ],
+        "top_motion_parameter_ids": [
+          [
+            "PARAM_MOUTH_OPEN_Y",
+            23
+          ],
+          [
+            "PARAM_MOUTH_FORM",
+            20
+          ],
+          [
+            "ParamMouthOpenY",
+            16
+          ],
+          [
+            "ParamMouthForm",
+            14
+          ],
+          [
+            "PARAM_INMOUTH",
+            5
+          ],
+          [
+            "ParamMouthAngry",
+            3
+          ],
+          [
+            "ParamMouthAngryLine",
+            3
+          ],
+          [
+            "ParamMouthDown",
+            3
+          ],
+          [
+            "ParamMouthUp",
+            3
+          ],
+          [
+            "ParamMouthForm2",
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "production_name": "ParamBreath",
+      "section": "physics",
+      "required_level": "REQUIRED",
+      "standard_range": [
+        0,
+        1
+      ],
+      "keyform_positions": [
+        0,
+        0.5,
+        1
+      ],
+      "connected_parts": [
+        "upper_body",
+        "shoulder_arm",
+        "front_hair"
+      ],
+      "source_category": "breath",
+      "qa_probe": "G3 motion에서 너무 크게 출렁이지 않는지 본다.",
+      "notes_ko": "몸과 머리카락 physics 입력의 기본 리듬으로 쓴다.",
+      "evidence": {
+        "model_count_with_parameter": 49,
+        "model_count_with_motion_use": 41,
+        "parameter_count_stats": {
+          "n": 57,
+          "min": 0,
+          "p25": 1.0,
+          "median": 1,
+          "p75": 1.0,
+          "max": 1,
+          "mean": 0.86
+        },
+        "top_parameter_ids": [
+          [
+            "ParamBreath",
+            26
+          ],
+          [
+            "PARAM_BREATH",
+            23
+          ]
+        ],
+        "top_motion_parameter_ids": [
+          [
+            "PARAM_BREATH",
+            22
+          ],
+          [
+            "ParamBreath",
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "production_name": "ParamBrowL/R Angle/Form/Y",
+      "section": "eye",
+      "required_level": "RECOMMENDED",
+      "standard_range": [
+        -1,
+        1
+      ],
+      "keyform_positions": [
+        -1,
+        0,
+        1
+      ],
+      "connected_parts": [
+        "brow_L_R"
+      ],
+      "source_category": "brow",
+      "qa_probe": "G3 표정 strip에서 눈썹이 눈과 따로 뜨지 않는지 본다.",
+      "notes_ko": "v2_standard에서 표정 품질을 올리는 권장 파라미터다.",
+      "evidence": {
+        "model_count_with_parameter": 39,
+        "model_count_with_motion_use": 32,
+        "parameter_count_stats": {
+          "n": 57,
+          "min": 0,
+          "p25": 0.0,
+          "median": 8,
+          "p75": 8.0,
+          "max": 10,
+          "mean": 4.86
+        },
+        "top_parameter_ids": [
+          [
+            "ParamBrowLY",
+            26
+          ],
+          [
+            "ParamBrowRY",
+            26
+          ],
+          [
+            "ParamBrowLForm",
+            23
+          ],
+          [
+            "ParamBrowRForm",
+            23
+          ],
+          [
+            "ParamBrowLAngle",
+            19
+          ],
+          [
+            "ParamBrowLX",
+            19
+          ],
+          [
+            "ParamBrowRAngle",
+            19
+          ],
+          [
+            "ParamBrowRX",
+            19
+          ],
+          [
+            "PARAM_BROW_L_ANGLE",
+            12
+          ],
+          [
+            "PARAM_BROW_L_FORM",
+            12
+          ]
+        ],
+        "top_motion_parameter_ids": [
+          [
+            "ParamBrowLY",
+            19
+          ],
+          [
+            "ParamBrowRY",
+            19
+          ],
+          [
+            "ParamBrowLAngle",
+            17
+          ],
+          [
+            "ParamBrowLForm",
+            17
+          ],
+          [
+            "ParamBrowLX",
+            17
+          ],
+          [
+            "ParamBrowRAngle",
+            17
+          ],
+          [
+            "ParamBrowRForm",
+            17
+          ],
+          [
+            "ParamBrowRX",
+            17
+          ],
+          [
+            "PARAM_BROW_L_ANGLE",
+            12
+          ],
+          [
+            "PARAM_BROW_L_FORM",
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "production_name": "ParamHairFront / ParamHairSide / ParamHairBack",
+      "section": "hair",
+      "required_level": "RECOMMENDED",
+      "standard_range": [
+        -1,
+        1
+      ],
+      "keyform_positions": [
+        -1,
+        0,
+        1
+      ],
+      "connected_parts": [
+        "front_hair",
+        "side_hair_L",
+        "side_hair_R",
+        "back_hair"
+      ],
+      "source_category": "hair",
+      "qa_probe": "G3 hair extreme과 physics motion strip을 따로 확인한다.",
+      "notes_ko": "머리카락은 deformer keyform과 physics output을 분리해서 검수한다.",
+      "evidence": {
+        "model_count_with_parameter": 49,
+        "model_count_with_motion_use": 35,
+        "parameter_count_stats": {
+          "n": 57,
+          "min": 0,
+          "p25": 3.0,
+          "median": 3,
+          "p75": 6.0,
+          "max": 23,
+          "mean": 4.25
+        },
+        "top_parameter_ids": [
+          [
+            "ParamHairBack",
+            26
+          ],
+          [
+            "ParamHairFront",
+            26
+          ],
+          [
+            "ParamHairSide",
+            18
+          ],
+          [
+            "PARAM_HAIR_FRONT",
+            17
+          ],
+          [
+            "PARAM_HAIR_SIDE",
+            15
+          ],
+          [
+            "PARAM_HAIR_BACK",
+            12
+          ],
+          [
+            "ParamHairBackFuwa",
+            11
+          ],
+          [
+            "ParamHairFrontFuwa",
+            11
+          ],
+          [
+            "ParamHairSideFuwa",
+            11
+          ],
+          [
+            "ParamHairSide2",
+            5
+          ]
+        ],
+        "top_motion_parameter_ids": [
+          [
+            "PARAM_HAIR_FRONT",
+            17
+          ],
+          [
+            "PARAM_HAIR_SIDE",
+            14
+          ],
+          [
+            "ParamHairBack",
+            14
+          ],
+          [
+            "ParamHairFront",
+            14
+          ],
+          [
+            "PARAM_HAIR_BACK",
+            12
+          ],
+          [
+            "ParamHairSide",
+            11
+          ],
+          [
+            "ParamHairBackFuwa",
+            9
+          ],
+          [
+            "ParamHairFrontFuwa",
+            9
+          ],
+          [
+            "ParamHairSideFuwa",
+            9
+          ],
+          [
+            "PARAM_HAIR_ROLL",
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "production_name": "ParamArmL/R or ParamHandL/R",
+      "section": "arm",
+      "required_level": "OPTIONAL_FOR_V2_STANDARD",
+      "standard_range": [
+        -1,
+        1
+      ],
+      "keyform_positions": [
+        -1,
+        0,
+        1
+      ],
+      "connected_parts": [
+        "shoulder_arm",
+        "hand"
+      ],
+      "source_category": "arm_hand",
+      "qa_probe": "팔이 있는 디자인만 G3 arm strip을 확인한다.",
+      "notes_ko": "단순 어깨/팔은 v2_standard 가능, 손가락/복잡한 손은 v2_rich로 미룬다.",
+      "evidence": {
+        "model_count_with_parameter": 49,
+        "model_count_with_motion_use": 46,
+        "parameter_count_stats": {
+          "n": 57,
+          "min": 0,
+          "p25": 2.0,
+          "median": 7,
+          "p75": 12.0,
+          "max": 37,
+          "mean": 8.54
+        },
+        "top_parameter_ids": [
+          [
+            "PARAM_ARM_L",
+            16
+          ],
+          [
+            "PARAM_ARM_R",
+            14
+          ],
+          [
+            "PARAM_HAND_L",
+            10
+          ],
+          [
+            "PARAM_HAND_R",
+            10
+          ],
+          [
+            "ParamArmL01",
+            8
+          ],
+          [
+            "ParamArmL02",
+            8
+          ],
+          [
+            "ParamArmL03",
+            8
+          ],
+          [
+            "ParamArmR01",
+            8
+          ],
+          [
+            "ParamArmR02",
+            8
+          ],
+          [
+            "ParamArmR03",
+            8
+          ]
+        ],
+        "top_motion_parameter_ids": [
+          [
+            "PARAM_ARM_L",
+            15
+          ],
+          [
+            "PARAM_ARM_R",
+            14
+          ],
+          [
+            "PARAM_HAND_L",
+            9
+          ],
+          [
+            "PARAM_HAND_R",
+            9
+          ],
+          [
+            "ParamLeftShoulderUp",
+            9
+          ],
+          [
+            "ParamRightShoulderUp",
+            9
+          ],
+          [
+            "ParamArmL01",
+            7
+          ],
+          [
+            "ParamArmL02",
+            7
+          ],
+          [
+            "ParamArmL03",
+            7
+          ],
+          [
+            "ParamArmR01",
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "production_name": "ParamA/I/U/E/O",
+      "section": "mouth",
+      "required_level": "OPTIONAL_OR_V2_RICH",
+      "standard_range": [
+        0,
+        1
+      ],
+      "keyform_positions": [
+        0,
+        1
+      ],
+      "connected_parts": [
+        "mouth_group"
+      ],
+      "source_category": "vowel_lipsync",
+      "qa_probe": "립싱크 전용 모델을 만들 때만 모음 strip을 확인한다.",
+      "notes_ko": "공식 샘플 중 일부만 강하게 쓰므로 첫 production 필수는 아니다.",
+      "evidence": {
+        "model_count_with_parameter": 5,
+        "model_count_with_motion_use": 3,
+        "parameter_count_stats": {
+          "n": 57,
+          "min": 0,
+          "p25": 0.0,
+          "median": 0,
+          "p75": 0.0,
+          "max": 5,
+          "mean": 0.44
+        },
+        "top_parameter_ids": [
+          [
+            "ParamA",
+            5
+          ],
+          [
+            "ParamE",
+            5
+          ],
+          [
+            "ParamI",
+            5
+          ],
+          [
+            "ParamO",
+            5
+          ],
+          [
+            "ParamU",
+            5
+          ]
+        ],
+        "top_motion_parameter_ids": [
+          [
+            "ParamA",
+            3
+          ],
+          [
+            "ParamE",
+            3
+          ],
+          [
+            "ParamI",
+            3
+          ],
+          [
+            "ParamO",
+            3
+          ],
+          [
+            "ParamU",
+            3
+          ]
+        ]
+      }
+    }
+  ],
+  "deformer_hierarchy": [
+    {
+      "id": "root",
+      "parent": null,
+      "section": "global",
+      "deformer_type": "root/container",
+      "required_level": "REQUIRED",
+      "controlled_parts": [
+        "all visible parts"
+      ],
+      "input_parameters": [],
+      "v2_standard_floor": {
+        "warp_deformers": 0,
+        "rotation_deformers": 0,
+        "keyform_bindings": 0
+      },
+      "notes_ko": "전체 위치 기준점이다. 실제 움직임은 하위 deformer에서 만든다."
+    },
+    {
+      "id": "body_root_warp",
+      "parent": "root",
+      "section": "body_angle",
+      "deformer_type": "warp",
+      "required_level": "REQUIRED",
+      "controlled_parts": [
+        "neck",
+        "upper_body",
+        "shoulder_arm"
+      ],
+      "input_parameters": [
+        "ParamBodyAngleX",
+        "ParamBodyAngleY",
+        "ParamBodyAngleZ"
+      ],
+      "v2_standard_floor": {
+        "warp_deformers": 5,
+        "rotation_deformers": 2,
+        "keyform_bindings": 45
+      },
+      "notes_ko": "상체 각도와 목 연결을 담당한다. underpaint 노출 검수를 같이 한다.",
+      "evidence": {
+        "warp_named_deformer_stats": {
+          "n": 32,
+          "min": 3,
+          "p25": 5.0,
+          "median": 7.0,
+          "p75": 10.0,
+          "max": 18,
+          "mean": 7.78
+        },
+        "rotation_named_deformer_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 2.0,
+          "median": 2.0,
+          "p75": 4.0,
+          "max": 13,
+          "mean": 3.72
+        },
+        "keyform_binding_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 0.0,
+          "median": 63.0,
+          "p75": 78.0,
+          "max": 146,
+          "mean": 54.03
+        },
+        "models_with_named_deformers": 32,
+        "models_with_keyform_bindings": 23
+      }
+    },
+    {
+      "id": "head_angle_warp",
+      "parent": "body_root_warp",
+      "section": "body_angle",
+      "deformer_type": "warp",
+      "required_level": "REQUIRED",
+      "controlled_parts": [
+        "face_base",
+        "eye_L",
+        "eye_R",
+        "brow_L_R",
+        "mouth_group",
+        "front_hair"
+      ],
+      "input_parameters": [
+        "ParamAngleX",
+        "ParamAngleY",
+        "ParamAngleZ"
+      ],
+      "v2_standard_floor": {
+        "warp_deformers": 2,
+        "rotation_deformers": 1,
+        "keyform_bindings": 18
+      },
+      "notes_ko": "얼굴 전체 각도용이다. 눈/입 개별 deformer보다 상위에 둔다.",
+      "evidence": {
+        "warp_named_deformer_stats": {
+          "n": 32,
+          "min": 3,
+          "p25": 5.0,
+          "median": 7.0,
+          "p75": 10.0,
+          "max": 18,
+          "mean": 7.78
+        },
+        "rotation_named_deformer_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 2.0,
+          "median": 2.0,
+          "p75": 4.0,
+          "max": 13,
+          "mean": 3.72
+        },
+        "keyform_binding_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 0.0,
+          "median": 63.0,
+          "p75": 78.0,
+          "max": 146,
+          "mean": 54.03
+        },
+        "models_with_named_deformers": 32,
+        "models_with_keyform_bindings": 23
+      }
+    },
+    {
+      "id": "eye_L_warp",
+      "parent": "head_angle_warp",
+      "section": "eye",
+      "deformer_type": "warp",
+      "required_level": "REQUIRED",
+      "controlled_parts": [
+        "eye_L"
+      ],
+      "input_parameters": [
+        "ParamEyeLOpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "v2_standard_floor": {
+        "warp_deformers": 4,
+        "rotation_deformers": 0,
+        "keyform_bindings": 15
+      },
+      "notes_ko": "왼쪽 눈 깜빡임과 시선을 담당한다.",
+      "evidence": {
+        "warp_named_deformer_stats": {
+          "n": 32,
+          "min": 4,
+          "p25": 7.5,
+          "median": 12.0,
+          "p75": 13.25,
+          "max": 20,
+          "mean": 11.03
+        },
+        "rotation_named_deformer_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.0,
+          "max": 2,
+          "mean": 0.22
+        },
+        "keyform_binding_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 0.0,
+          "median": 42.0,
+          "p75": 60.25,
+          "max": 85,
+          "mean": 36.12
+        },
+        "models_with_named_deformers": 32,
+        "models_with_keyform_bindings": 23
+      }
+    },
+    {
+      "id": "eye_R_warp",
+      "parent": "head_angle_warp",
+      "section": "eye",
+      "deformer_type": "warp",
+      "required_level": "REQUIRED",
+      "controlled_parts": [
+        "eye_R"
+      ],
+      "input_parameters": [
+        "ParamEyeROpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "v2_standard_floor": {
+        "warp_deformers": 4,
+        "rotation_deformers": 0,
+        "keyform_bindings": 15
+      },
+      "notes_ko": "오른쪽 눈 깜빡임과 시선을 담당한다.",
+      "evidence": {
+        "warp_named_deformer_stats": {
+          "n": 32,
+          "min": 4,
+          "p25": 7.5,
+          "median": 12.0,
+          "p75": 13.25,
+          "max": 20,
+          "mean": 11.03
+        },
+        "rotation_named_deformer_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.0,
+          "max": 2,
+          "mean": 0.22
+        },
+        "keyform_binding_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 0.0,
+          "median": 42.0,
+          "p75": 60.25,
+          "max": 85,
+          "mean": 36.12
+        },
+        "models_with_named_deformers": 32,
+        "models_with_keyform_bindings": 23
+      }
+    },
+    {
+      "id": "brow_L_R_warp",
+      "parent": "head_angle_warp",
+      "section": "eye",
+      "deformer_type": "warp",
+      "required_level": "RECOMMENDED",
+      "controlled_parts": [
+        "brow_L_R"
+      ],
+      "input_parameters": [
+        "ParamBrowL/R Angle/Form/Y"
+      ],
+      "v2_standard_floor": {
+        "warp_deformers": 2,
+        "rotation_deformers": 0,
+        "keyform_bindings": 6
+      },
+      "notes_ko": "눈썹 표정용이다. 첫 production에서도 넣는 것을 권장한다.",
+      "evidence": {
+        "warp_named_deformer_stats": {
+          "n": 32,
+          "min": 4,
+          "p25": 7.5,
+          "median": 12.0,
+          "p75": 13.25,
+          "max": 20,
+          "mean": 11.03
+        },
+        "rotation_named_deformer_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.0,
+          "max": 2,
+          "mean": 0.22
+        },
+        "keyform_binding_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 0.0,
+          "median": 42.0,
+          "p75": 60.25,
+          "max": 85,
+          "mean": 36.12
+        },
+        "models_with_named_deformers": 32,
+        "models_with_keyform_bindings": 23
+      }
+    },
+    {
+      "id": "mouth_warp",
+      "parent": "head_angle_warp",
+      "section": "mouth",
+      "deformer_type": "warp",
+      "required_level": "REQUIRED",
+      "controlled_parts": [
+        "mouth_group"
+      ],
+      "input_parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "v2_standard_floor": {
+        "warp_deformers": 1,
+        "rotation_deformers": 0,
+        "keyform_bindings": 6
+      },
+      "notes_ko": "입 열림과 형태 변화를 담당한다. 입 안쪽 alpha와 중심 정렬이 중요하다.",
+      "evidence": {
+        "warp_named_deformer_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 1.0,
+          "median": 1.0,
+          "p75": 2.0,
+          "max": 5,
+          "mean": 1.47
+        },
+        "rotation_named_deformer_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.0,
+          "max": 3,
+          "mean": 0.09
+        },
+        "keyform_binding_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 0.0,
+          "median": 8.0,
+          "p75": 10.0,
+          "max": 35,
+          "mean": 7.12
+        },
+        "models_with_named_deformers": 31,
+        "models_with_keyform_bindings": 23
+      }
+    },
+    {
+      "id": "front_hair_warp",
+      "parent": "head_angle_warp",
+      "section": "hair",
+      "deformer_type": "warp",
+      "required_level": "REQUIRED",
+      "controlled_parts": [
+        "front_hair"
+      ],
+      "input_parameters": [
+        "ParamAngleX",
+        "ParamAngleZ",
+        "ParamHairFront"
+      ],
+      "v2_standard_floor": {
+        "warp_deformers": 4,
+        "rotation_deformers": 0,
+        "keyform_bindings": 3
+      },
+      "notes_ko": "앞머리는 얼굴 각도와 physics 양쪽 영향을 받는다.",
+      "evidence": {
+        "warp_named_deformer_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 8.75,
+          "median": 11.5,
+          "p75": 21.0,
+          "max": 63,
+          "mean": 16.56
+        },
+        "rotation_named_deformer_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.5,
+          "max": 40,
+          "mean": 4.31
+        },
+        "keyform_binding_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 0.0,
+          "median": 5.0,
+          "p75": 10.25,
+          "max": 26,
+          "mean": 6.22
+        },
+        "models_with_named_deformers": 29,
+        "models_with_keyform_bindings": 20
+      }
+    },
+    {
+      "id": "side_hair_L_R_warp",
+      "parent": "head_angle_warp",
+      "section": "hair",
+      "deformer_type": "warp",
+      "required_level": "REQUIRED",
+      "controlled_parts": [
+        "side_hair_L",
+        "side_hair_R"
+      ],
+      "input_parameters": [
+        "ParamAngleX",
+        "ParamAngleZ",
+        "ParamHairSide"
+      ],
+      "v2_standard_floor": {
+        "warp_deformers": 4,
+        "rotation_deformers": 1,
+        "keyform_bindings": 3
+      },
+      "notes_ko": "옆머리는 좌우 분리한다. 긴 머리면 L/R output도 분리한다.",
+      "evidence": {
+        "warp_named_deformer_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 8.75,
+          "median": 11.5,
+          "p75": 21.0,
+          "max": 63,
+          "mean": 16.56
+        },
+        "rotation_named_deformer_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.5,
+          "max": 40,
+          "mean": 4.31
+        },
+        "keyform_binding_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 0.0,
+          "median": 5.0,
+          "p75": 10.25,
+          "max": 26,
+          "mean": 6.22
+        },
+        "models_with_named_deformers": 29,
+        "models_with_keyform_bindings": 20
+      }
+    },
+    {
+      "id": "back_hair_warp",
+      "parent": "body_root_warp",
+      "section": "hair",
+      "deformer_type": "warp",
+      "required_level": "REQUIRED",
+      "controlled_parts": [
+        "back_hair"
+      ],
+      "input_parameters": [
+        "ParamBodyAngleX",
+        "ParamAngleZ",
+        "ParamHairBack"
+      ],
+      "v2_standard_floor": {
+        "warp_deformers": 2,
+        "rotation_deformers": 0,
+        "keyform_bindings": 2
+      },
+      "notes_ko": "뒷머리는 몸/머리 움직임 사이에서 너무 늦지 않게 따라오게 한다.",
+      "evidence": {
+        "warp_named_deformer_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 8.75,
+          "median": 11.5,
+          "p75": 21.0,
+          "max": 63,
+          "mean": 16.56
+        },
+        "rotation_named_deformer_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.5,
+          "max": 40,
+          "mean": 4.31
+        },
+        "keyform_binding_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 0.0,
+          "median": 5.0,
+          "p75": 10.25,
+          "max": 26,
+          "mean": 6.22
+        },
+        "models_with_named_deformers": 29,
+        "models_with_keyform_bindings": 20
+      }
+    },
+    {
+      "id": "shoulder_arm_rotation",
+      "parent": "body_root_warp",
+      "section": "arm",
+      "deformer_type": "rotation",
+      "required_level": "OPTIONAL_FOR_V2_STANDARD",
+      "controlled_parts": [
+        "shoulder_arm",
+        "hand"
+      ],
+      "input_parameters": [
+        "ParamArmL/R or ParamHandL/R"
+      ],
+      "v2_standard_floor": {
+        "warp_deformers": 2,
+        "rotation_deformers": 4,
+        "keyform_bindings": 8
+      },
+      "notes_ko": "팔이 보이는 디자인만 넣는다. 복잡한 손동작은 v2_rich 범위다.",
+      "evidence": {
+        "warp_named_deformer_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 0.0,
+          "median": 2.0,
+          "p75": 6.25,
+          "max": 30,
+          "mean": 4.41
+        },
+        "rotation_named_deformer_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 4.0,
+          "median": 6.0,
+          "p75": 14.25,
+          "max": 72,
+          "mean": 10.41
+        },
+        "keyform_binding_stats": {
+          "n": 32,
+          "min": 0,
+          "p25": 0.0,
+          "median": 10.0,
+          "p75": 36.0,
+          "max": 164,
+          "mean": 29.59
+        },
+        "models_with_named_deformers": 29,
+        "models_with_keyform_bindings": 23
+      }
+    }
+  ],
+  "physics_blueprint": {
+    "v2_standard_target_group_count": "4-6",
+    "evidence": {
+      "observed_group_count_stats": {
+        "n": 44,
+        "min": 1,
+        "p25": 3.0,
+        "median": 6.0,
+        "p75": 11.0,
+        "max": 19,
+        "mean": 7.32
+      },
+      "observed_input_count_stats": {
+        "n": 44,
+        "min": 3,
+        "p25": 12.0,
+        "median": 18.0,
+        "p75": 33.25,
+        "max": 82,
+        "mean": 22.52
+      },
+      "observed_output_count_stats": {
+        "n": 44,
+        "min": 2,
+        "p25": 3.75,
+        "median": 7.0,
+        "p75": 20.0,
+        "max": 63,
+        "mean": 14.8
+      },
+      "output_category_frequency": {
+        "hair": 196,
+        "other": 84,
+        "accessory": 64,
+        "effect_expression": 271,
+        "body_angle": 9,
+        "arm_hand": 9
+      },
+      "hair_parameter_evidence": {
+        "model_count_with_parameter": 49,
+        "model_count_with_motion_use": 35,
+        "parameter_count_stats": {
+          "n": 57,
+          "min": 0,
+          "p25": 3.0,
+          "median": 3,
+          "p75": 6.0,
+          "max": 23,
+          "mean": 4.25
+        },
+        "top_parameter_ids": [
+          [
+            "ParamHairBack",
+            26
+          ],
+          [
+            "ParamHairFront",
+            26
+          ],
+          [
+            "ParamHairSide",
+            18
+          ],
+          [
+            "PARAM_HAIR_FRONT",
+            17
+          ],
+          [
+            "PARAM_HAIR_SIDE",
+            15
+          ],
+          [
+            "PARAM_HAIR_BACK",
+            12
+          ],
+          [
+            "ParamHairBackFuwa",
+            11
+          ],
+          [
+            "ParamHairFrontFuwa",
+            11
+          ],
+          [
+            "ParamHairSideFuwa",
+            11
+          ],
+          [
+            "ParamHairSide2",
+            5
+          ]
+        ],
+        "top_motion_parameter_ids": [
+          [
+            "PARAM_HAIR_FRONT",
+            17
+          ],
+          [
+            "PARAM_HAIR_SIDE",
+            14
+          ],
+          [
+            "ParamHairBack",
+            14
+          ],
+          [
+            "ParamHairFront",
+            14
+          ],
+          [
+            "PARAM_HAIR_BACK",
+            12
+          ],
+          [
+            "ParamHairSide",
+            11
+          ],
+          [
+            "ParamHairBackFuwa",
+            9
+          ],
+          [
+            "ParamHairFrontFuwa",
+            9
+          ],
+          [
+            "ParamHairSideFuwa",
+            9
+          ],
+          [
+            "PARAM_HAIR_ROLL",
+            5
+          ]
+        ]
+      },
+      "body_parameter_evidence": {
+        "model_count_with_parameter": 54,
+        "model_count_with_motion_use": 46,
+        "parameter_count_stats": {
+          "n": 57,
+          "min": 0,
+          "p25": 3.0,
+          "median": 3,
+          "p75": 4.0,
+          "max": 8,
+          "mean": 3.74
+        },
+        "top_parameter_ids": [
+          [
+            "ParamBodyAngleX",
+            31
+          ],
+          [
+            "ParamBodyAngleZ",
+            31
+          ],
+          [
+            "ParamBodyAngleY",
+            27
+          ],
+          [
+            "PARAM_BODY_ANGLE_Y",
+            22
+          ],
+          [
+            "PARAM_BODY_ANGLE_Z",
+            20
+          ],
+          [
+            "PARAM_BODY_ANGLE_X",
+            17
+          ],
+          [
+            "ParamAllX",
+            9
+          ],
+          [
+            "ParamAllY",
+            9
+          ],
+          [
+            "ParamAllRotate",
+            8
+          ],
+          [
+            "PARAM_BODY_UD",
+            5
+          ]
+        ],
+        "top_motion_parameter_ids": [
+          [
+            "ParamBodyAngleX",
+            23
+          ],
+          [
+            "ParamBodyAngleZ",
+            23
+          ],
+          [
+            "PARAM_BODY_ANGLE_Y",
+            22
+          ],
+          [
+            "ParamBodyAngleY",
+            22
+          ],
+          [
+            "PARAM_BODY_ANGLE_Z",
+            20
+          ],
+          [
+            "PARAM_BODY_ANGLE_X",
+            17
+          ],
+          [
+            "ParamAllRotate",
+            7
+          ],
+          [
+            "ParamAllX",
+            7
+          ],
+          [
+            "ParamAllY",
+            7
+          ],
+          [
+            "PARAM_BODY_UD",
+            5
+          ]
+        ]
+      },
+      "breath_parameter_evidence": {
+        "model_count_with_parameter": 49,
+        "model_count_with_motion_use": 41,
+        "parameter_count_stats": {
+          "n": 57,
+          "min": 0,
+          "p25": 1.0,
+          "median": 1,
+          "p75": 1.0,
+          "max": 1,
+          "mean": 0.86
+        },
+        "top_parameter_ids": [
+          [
+            "ParamBreath",
+            26
+          ],
+          [
+            "PARAM_BREATH",
+            23
+          ]
+        ],
+        "top_motion_parameter_ids": [
+          [
+            "PARAM_BREATH",
+            22
+          ],
+          [
+            "ParamBreath",
+            19
+          ]
+        ]
+      },
+      "arm_parameter_evidence": {
+        "model_count_with_parameter": 49,
+        "model_count_with_motion_use": 46,
+        "parameter_count_stats": {
+          "n": 57,
+          "min": 0,
+          "p25": 2.0,
+          "median": 7,
+          "p75": 12.0,
+          "max": 37,
+          "mean": 8.54
+        },
+        "top_parameter_ids": [
+          [
+            "PARAM_ARM_L",
+            16
+          ],
+          [
+            "PARAM_ARM_R",
+            14
+          ],
+          [
+            "PARAM_HAND_L",
+            10
+          ],
+          [
+            "PARAM_HAND_R",
+            10
+          ],
+          [
+            "ParamArmL01",
+            8
+          ],
+          [
+            "ParamArmL02",
+            8
+          ],
+          [
+            "ParamArmL03",
+            8
+          ],
+          [
+            "ParamArmR01",
+            8
+          ],
+          [
+            "ParamArmR02",
+            8
+          ],
+          [
+            "ParamArmR03",
+            8
+          ]
+        ],
+        "top_motion_parameter_ids": [
+          [
+            "PARAM_ARM_L",
+            15
+          ],
+          [
+            "PARAM_ARM_R",
+            14
+          ],
+          [
+            "PARAM_HAND_L",
+            9
+          ],
+          [
+            "PARAM_HAND_R",
+            9
+          ],
+          [
+            "ParamLeftShoulderUp",
+            9
+          ],
+          [
+            "ParamRightShoulderUp",
+            9
+          ],
+          [
+            "ParamArmL01",
+            7
+          ],
+          [
+            "ParamArmL02",
+            7
+          ],
+          [
+            "ParamArmL03",
+            7
+          ],
+          [
+            "ParamArmR01",
+            7
+          ]
+        ]
+      }
+    },
+    "groups": [
+      {
+        "id": "front_hair_physics",
+        "required_level": "REQUIRED",
+        "controlled_parts": [
+          "front_hair"
+        ],
+        "input_parameters": [
+          "ParamAngleX",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBreath"
+        ],
+        "output_parameters": [
+          "ParamHairFront"
+        ],
+        "qa_probe": "G3 hair motion strip에서 앞머리가 얼굴을 뚫거나 눈을 과하게 덮지 않는지 본다."
+      },
+      {
+        "id": "side_hair_L_physics",
+        "required_level": "REQUIRED",
+        "controlled_parts": [
+          "side_hair_L"
+        ],
+        "input_parameters": [
+          "ParamAngleX",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBreath"
+        ],
+        "output_parameters": [
+          "ParamHairSideL 또는 ParamHairSide"
+        ],
+        "qa_probe": "왼쪽 옆머리의 흔들림과 draw order를 본다."
+      },
+      {
+        "id": "side_hair_R_physics",
+        "required_level": "REQUIRED",
+        "controlled_parts": [
+          "side_hair_R"
+        ],
+        "input_parameters": [
+          "ParamAngleX",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBreath"
+        ],
+        "output_parameters": [
+          "ParamHairSideR 또는 ParamHairSide"
+        ],
+        "qa_probe": "오른쪽 옆머리의 흔들림과 draw order를 본다."
+      },
+      {
+        "id": "back_hair_physics",
+        "required_level": "REQUIRED",
+        "controlled_parts": [
+          "back_hair"
+        ],
+        "input_parameters": [
+          "ParamBodyAngleX",
+          "ParamAngleZ",
+          "ParamBreath"
+        ],
+        "output_parameters": [
+          "ParamHairBack"
+        ],
+        "qa_probe": "뒷머리가 몸 움직임에 너무 늦거나 빠르게 따라오지 않는지 본다."
+      },
+      {
+        "id": "body_breath_physics",
+        "required_level": "RECOMMENDED",
+        "controlled_parts": [
+          "upper_body",
+          "shoulder_arm",
+          "neck"
+        ],
+        "input_parameters": [
+          "ParamBreath",
+          "ParamBodyAngleX",
+          "ParamBodyAngleY"
+        ],
+        "output_parameters": [
+          "ParamBodyAngleX/ParamBodyAngleY 보조 또는 전용 sway parameter"
+        ],
+        "qa_probe": "motion strip에서 몸이 과하게 출렁이지 않는지 본다."
+      },
+      {
+        "id": "accessory_or_arm_physics",
+        "required_level": "OPTIONAL_FOR_V2_STANDARD",
+        "controlled_parts": [
+          "accessory",
+          "shoulder_arm"
+        ],
+        "input_parameters": [
+          "ParamAngleX",
+          "ParamAngleZ",
+          "ParamBreath"
+        ],
+        "output_parameters": [
+          "ParamAccessory* 또는 ParamArm*"
+        ],
+        "qa_probe": "장식/팔이 있는 디자인만 확인한다. 없으면 PASS가 아니라 NOT_APPLICABLE로 둔다."
+      }
+    ]
+  },
+  "acceptance_checklist_g0_g3": [
+    {
+      "gate": "G0_CONCEPT",
+      "label_ko": "캐릭터 고르기",
+      "review_owner": "HUMAN",
+      "input_artifacts": [
+        "concept 후보 3-6개",
+        "neutral front preview"
+      ],
+      "pass_criteria": [
+        "눈, 입, 머리카락, 목/상체가 명확히 보인다.",
+        "팔/장식이 과하게 겹쳐서 필수 파츠 분리를 막지 않는다.",
+        "v2_standard 50-70 파츠로 나눌 수 있는 디자인이다."
+      ],
+      "fail_criteria": [
+        "정면성이 낮다.",
+        "머리/얼굴/몸 경계가 불명확하다.",
+        "스타일이 후보 간 섞여 있다."
+      ],
+      "issue_tags": [
+        "style_mismatch",
+        "clipping_risk",
+        "overhang_issue"
+      ],
+      "output": "selected_concept_id 또는 REJECT"
+    },
+    {
+      "gate": "G1_PART_TAXONOMY",
+      "label_ko": "파츠가 잘 나뉘었는지 보기",
+      "review_owner": "HUMAN_PLUS_AUTO",
+      "input_artifacts": [
+        "20-25 또는 50-70 파츠 contact sheet",
+        "part manifest",
+        "alpha bbox report"
+      ],
+      "pass_criteria": [
+        "v2_standard 필수 그룹(face/eye L/R/brow/mouth/hair/body/underpaint)이 존재한다.",
+        "각 파츠 alpha가 비어 있지 않고 crop/bbox가 화면 밖으로 잘리지 않는다.",
+        "눈/입/머리카락 파츠가 단독으로 봐도 어느 부위인지 알 수 있다."
+      ],
+      "fail_criteria": [
+        "필수 파츠 누락",
+        "alpha 테두리 오염",
+        "좌우 눈/팔 misalignment",
+        "underpaint 누락"
+      ],
+      "issue_tags": [
+        "missing_part",
+        "bad_alpha",
+        "misaligned",
+        "underpaint_missing",
+        "draw_order_issue"
+      ],
+      "output": "G1_PASS이면 Cubism import pack 작성, 아니면 part regeneration/fix queue"
+    },
+    {
+      "gate": "G2_STRUCTURE",
+      "label_ko": "구조 자동검사",
+      "review_owner": "AUTO",
+      "input_artifacts": [
+        "CMO3 inspector report",
+        "Cubism project/export smoke",
+        "physics3.json"
+      ],
+      "pass_criteria": [
+        "v2_standard minimum floor: parameters >=25, warp_deformers >=35, rotation_deformers >=8, keyform_bindings >=120, physics_groups >=4",
+        "eye/mouth/hair/body_angle section keyform evidence가 0으로 퇴행하지 않는다.",
+        "moc3/model3.json/physics3.json runtime bundle이 로드 가능하다."
+      ],
+      "fail_criteria": [
+        "warp/keyform이 0",
+        "physics group 없음",
+        "runtime 로드 실패",
+        "inspector report 없음"
+      ],
+      "issue_tags": [
+        "structure_missing",
+        "deformer_missing",
+        "keyform_missing",
+        "physics_missing"
+      ],
+      "output": "G2_PASS/WARN/FAIL 자동 판정. 사람이 그림을 고치는 단계가 아니라 Cubism 구조 작업 단계로 되돌린다."
+    },
+    {
+      "gate": "G3_MOTION_VISUAL",
+      "label_ko": "움직임 확인",
+      "review_owner": "HUMAN_PLUS_AUTO",
+      "input_artifacts": [
+        "neutral/motion/extreme strip",
+        "motion GIF",
+        "viewport clipping report"
+      ],
+      "pass_criteria": [
+        "neutral, motion, extreme 캡처가 모두 nonblank이다.",
+        "눈 닫힘, 입 열림, 머리카락 흔들림, 몸각도 extreme이 각각 보인다.",
+        "viewport edge clipping과 심한 draw order 깨짐이 없다."
+      ],
+      "fail_criteria": [
+        "모델 미표시",
+        "극단값에서 얼굴/머리카락이 잘림",
+        "눈/입/머리카락 움직임이 보이지 않음"
+      ],
+      "issue_tags": [
+        "render_blank",
+        "viewport_clipping",
+        "draw_order_issue",
+        "motion_too_small",
+        "motion_too_large"
+      ],
+      "output": "production candidate PASS/WARN/FAIL 및 수정 대상 파라미터 목록"
+    }
+  ],
+  "next_model_production_rule": "Write taxonomy, parameter map, deformer/keyform floor, and physics group plan before generating character art."
+}

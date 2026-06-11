@@ -1,0 +1,350 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T09:36:22.260189+00:00",
+  "packet_id": "cubism-v2-new-character-002-v22-64part-generation-input-packet",
+  "status": "PASS_READY_FOR_G0_SOURCE_STYLE_REVIEW",
+  "source_spec": "experiments/cubism-v2-new-character-002/reports/v22_64part_generation_spec/v22_64part_generation_spec.json",
+  "source_prompt_template": "experiments/reference-model-structure-001/reports/cubism_v2_character_prompt_template.json",
+  "goal": "Prepare image-generation inputs for the full 64-part material pack, then run G0 source/style review before layer production.",
+  "identity_lock": [
+    "same adult cute female character as the accepted source front",
+    "same face proportions, eye spacing, nose position, and mouth anchor",
+    "same hairstyle silhouette, bang occlusion, line thickness, and shading style",
+    "same outfit design, color palette, and simple upper-body composition",
+    "front-facing or near-front neutral upper-body Live2D/Cubism-ready view"
+  ],
+  "global_negative_prompt": [
+    "labels, guide marks, UI, watermark, text, part names, arrows, exploded diagram",
+    "different character, different outfit, new accessory, changed hairstyle",
+    "face-covering hair, covered eyes, covered mouth, crossed arms, complex hands, large props",
+    "cropped head, cropped shoulders, side view, extreme pose, perspective distortion",
+    "patch boundary, rectangular skin fill, oval mouth patch, visible erased-eye residue",
+    "moving eye whites, detached pupil, detached highlight, crossed-eye gaze",
+    "oversized round wide-open mouth, tiny centered mouth, pasted teeth, pasted tongue",
+    "heavy glow, motion blur, transparent effects, messy dense overlap"
+  ],
+  "global_output_rules": [
+    "Keep raw outputs as evidence before normalization.",
+    "Normalize accepted crops or sheets to shared full-canvas RGBA PNGs.",
+    "Default normalization canvas is 2048x2048 unless a later Cubism authoring decision explicitly changes it.",
+    "Every crop output must preserve ROI/anchor metadata for later full-canvas placement.",
+    "Do not delete rejected outputs; mark them REVISE, FAIL, DISCARDED, or BLOCKED."
+  ],
+  "part_groups": {
+    "body": [
+      "body_underpaint",
+      "torso_base",
+      "neck",
+      "neck_shadow_underpaint",
+      "shoulder_L",
+      "shoulder_R",
+      "arm_L_upper_simple",
+      "arm_R_upper_simple",
+      "arm_L_underpaint",
+      "arm_R_underpaint"
+    ],
+    "face_base": [
+      "face_base",
+      "face_shadow_L",
+      "face_shadow_R",
+      "face_underpaint_L",
+      "face_underpaint_R",
+      "nose",
+      "cheek_L",
+      "cheek_R"
+    ],
+    "eye_L": [
+      "eye_L_white",
+      "eye_L_iris",
+      "eye_L_pupil",
+      "eye_L_highlight",
+      "eye_L_upper_lash",
+      "eye_L_lower_lash",
+      "eye_L_closed_lid",
+      "eye_L_underpaint"
+    ],
+    "eye_R": [
+      "eye_R_white",
+      "eye_R_iris",
+      "eye_R_pupil",
+      "eye_R_highlight",
+      "eye_R_upper_lash",
+      "eye_R_lower_lash",
+      "eye_R_closed_lid",
+      "eye_R_underpaint"
+    ],
+    "brow": [
+      "brow_L",
+      "brow_R"
+    ],
+    "mouth": [
+      "mouth_line",
+      "mouth_inner",
+      "mouth_upper_lip_mask",
+      "mouth_lower_lip_mask",
+      "mouth_teeth",
+      "mouth_tongue",
+      "mouth_corner_L",
+      "mouth_corner_R"
+    ],
+    "hair": [
+      "hair_back_base",
+      "hair_back_underpaint",
+      "hair_back_strand_L",
+      "hair_back_strand_R",
+      "hair_back_center",
+      "hair_front_center",
+      "hair_front_L",
+      "hair_front_R",
+      "hair_front_side_L",
+      "hair_front_side_R",
+      "hair_front_tip_L",
+      "hair_front_tip_R",
+      "hair_side_L_outer",
+      "hair_side_L_inner",
+      "hair_side_R_outer",
+      "hair_side_R_inner"
+    ],
+    "clothing": [
+      "collar_front",
+      "collar_shadow",
+      "chest_cloth_base",
+      "chest_cloth_shadow"
+    ]
+  },
+  "generation_batches": [
+    {
+      "id": "B0_source_identity",
+      "purpose": "Lock one same-character source before any split asset is accepted.",
+      "expected_outputs": [
+        "new_character_002_source_front",
+        "source_palette_reference",
+        "source_identity_notes"
+      ],
+      "positive_prompt": "Live2D Cubism v2_standard material-pack generation.\nsame adult cute female character as the accepted source front\nsame face proportions, eye spacing, nose position, and mouth anchor\nsame hairstyle silhouette, bang occlusion, line thickness, and shading style\nsame outfit design, color palette, and simple upper-body composition\nfront-facing or near-front neutral upper-body Live2D/Cubism-ready view\n\nBase character source constraints:\nLive2D Cubism v2_standard VTuber character, front-facing upper-body, centered neutral pose.\nA single clean master PNG for later PSD part separation and Cubism rigging.\nClear face base, both eyes fully visible, separated left and right eye groups, readable eyebrows, clear mouth not covered by anything.\nLayer-friendly hair: separate front bangs, left side hair, right side hair, and back hair, clean strand groups for hair physics.\nVisible neck, simple upper body, clear shoulders, simple upper arms, no complex hands, no large props.\nClean silhouette, minimal overlap, low clipping risk, underpaint-friendly design, simple draw order.\nConsistent polished anime illustration style, clean line art, clean color separation.\n\nBatch: B0_source_identity\nLock one same-character source before any split asset is accepted.\nCreate the accepted source/front identity reference.\nPrioritize clean silhouette, readable hair groups, visible eyes/mouth/nose, visible neck/shoulders/torso.\nDo not make this a part sheet; make it the coherent source image for the material pack.\n\nRequired output IDs:\n- new_character_002_source_front\n- source_palette_reference\n- source_identity_notes\n\nBatch rules:\n- adult cute female character identity remains fixed across all following assets\n- front or near-front upper-body pose with visible neck, shoulders, torso, eyes, mouth, and readable hair groups\n- no labels, guides, text, props covering eyes/mouth/hair, or accessory changes between sheets",
+      "negative_prompt": "labels, guide marks, UI, watermark, text, part names, arrows, exploded diagram\ndifferent character, different outfit, new accessory, changed hairstyle\nface-covering hair, covered eyes, covered mouth, crossed arms, complex hands, large props\ncropped head, cropped shoulders, side view, extreme pose, perspective distortion\npatch boundary, rectangular skin fill, oval mouth patch, visible erased-eye residue\nmoving eye whites, detached pupil, detached highlight, crossed-eye gaze\noversized round wide-open mouth, tiny centered mouth, pasted teeth, pasted tongue\nheavy glow, motion blur, transparent effects, messy dense overlap",
+      "must_pass": [
+        "주인님 accepts the character style/outfit for production expansion",
+        "eyes, mouth, nose, hair groups, neck, shoulders, and torso are readable",
+        "design looks splittable into the confirmed 64-part taxonomy"
+      ],
+      "failure_patterns_to_watch": [
+        "late_patch_clean_base",
+        "moving_eye_white",
+        "split_eye_detail_drift",
+        "oversized_or_centered_mouth",
+        "pasted_mouth_internals",
+        "fake_hairfront_slider"
+      ]
+    },
+    {
+      "id": "B1_clean_base_underpaint",
+      "purpose": "Create clean bases at generation time instead of patching baked pixels later.",
+      "expected_outputs": [
+        "face_base",
+        "face_underpaint_L",
+        "face_underpaint_R",
+        "eye_L_underpaint",
+        "eye_R_underpaint",
+        "mouth_base_clean_reference",
+        "body_underpaint",
+        "neck_shadow_underpaint",
+        "arm_L_underpaint",
+        "arm_R_underpaint",
+        "hair_back_underpaint"
+      ],
+      "positive_prompt": "Live2D Cubism v2_standard material-pack generation.\nsame adult cute female character as the accepted source front\nsame face proportions, eye spacing, nose position, and mouth anchor\nsame hairstyle silhouette, bang occlusion, line thickness, and shading style\nsame outfit design, color palette, and simple upper-body composition\nfront-facing or near-front neutral upper-body Live2D/Cubism-ready view\n\nBase character source constraints:\nLive2D Cubism v2_standard VTuber character, front-facing upper-body, centered neutral pose.\nA single clean master PNG for later PSD part separation and Cubism rigging.\nClear face base, both eyes fully visible, separated left and right eye groups, readable eyebrows, clear mouth not covered by anything.\nLayer-friendly hair: separate front bangs, left side hair, right side hair, and back hair, clean strand groups for hair physics.\nVisible neck, simple upper body, clear shoulders, simple upper arms, no complex hands, no large props.\nClean silhouette, minimal overlap, low clipping risk, underpaint-friendly design, simple draw order.\nConsistent polished anime illustration style, clean line art, clean color separation.\n\nBatch: B1_clean_base_underpaint\nCreate clean bases at generation time instead of patching baked pixels later.\nGenerate clean base and underpaint material for the same character.\nFace and underpaint areas must be naturally painted, not erased or covered.\nClean sockets must preserve skin gradient, blush, eyelid fold, and hair occlusion.\n\nRequired output IDs:\n- face_base\n- face_underpaint_L\n- face_underpaint_R\n- eye_L_underpaint\n- eye_R_underpaint\n- mouth_base_clean_reference\n- body_underpaint\n- neck_shadow_underpaint\n- arm_L_underpaint\n- arm_R_underpaint\n- hair_back_underpaint\n\nBatch rules:\n- face_base has no open-eye, iris, pupil, eye-white, lash, mouth-line, teeth, or tongue remnants\n- underpaint preserves skin/hair gradients and occlusion, with no rectangular patch boundary\n- do not promote procedural cover patches or late mask surgery as production clean base",
+      "negative_prompt": "labels, guide marks, UI, watermark, text, part names, arrows, exploded diagram\ndifferent character, different outfit, new accessory, changed hairstyle\nface-covering hair, covered eyes, covered mouth, crossed arms, complex hands, large props\ncropped head, cropped shoulders, side view, extreme pose, perspective distortion\npatch boundary, rectangular skin fill, oval mouth patch, visible erased-eye residue\nmoving eye whites, detached pupil, detached highlight, crossed-eye gaze\noversized round wide-open mouth, tiny centered mouth, pasted teeth, pasted tongue\nheavy glow, motion blur, transparent effects, messy dense overlap",
+      "must_pass": [
+        "face_base has no open-eye, iris, pupil, white, lash, mouth line, teeth, or tongue residue",
+        "no rectangular or oval patch boundary around eyes or mouth",
+        "underpaints are suitable for head angle, blink, mouth open, body angle, and hair physics gaps"
+      ],
+      "failure_patterns_to_watch": [
+        "late_patch_clean_base",
+        "moving_eye_white",
+        "split_eye_detail_drift",
+        "oversized_or_centered_mouth",
+        "pasted_mouth_internals",
+        "fake_hairfront_slider"
+      ]
+    },
+    {
+      "id": "B2_eye_pack",
+      "purpose": "Generate production eye parts and blink in-betweens as one coordinated eye packet.",
+      "expected_outputs": [
+        "eye_L_white",
+        "eye_L_iris",
+        "eye_L_pupil",
+        "eye_L_highlight",
+        "eye_L_upper_lash",
+        "eye_L_lower_lash",
+        "eye_L_closed_lid",
+        "eye_R_white",
+        "eye_R_iris",
+        "eye_R_pupil",
+        "eye_R_highlight",
+        "eye_R_upper_lash",
+        "eye_R_lower_lash",
+        "eye_R_closed_lid",
+        "eye_open_reference",
+        "eye_half_closed_reference",
+        "eye_mostly_closed_reference",
+        "eye_closed_reference"
+      ],
+      "positive_prompt": "Live2D Cubism v2_standard material-pack generation.\nsame adult cute female character as the accepted source front\nsame face proportions, eye spacing, nose position, and mouth anchor\nsame hairstyle silhouette, bang occlusion, line thickness, and shading style\nsame outfit design, color palette, and simple upper-body composition\nfront-facing or near-front neutral upper-body Live2D/Cubism-ready view\n\nBase character source constraints:\nLive2D Cubism v2_standard VTuber character, front-facing upper-body, centered neutral pose.\nA single clean master PNG for later PSD part separation and Cubism rigging.\nClear face base, both eyes fully visible, separated left and right eye groups, readable eyebrows, clear mouth not covered by anything.\nLayer-friendly hair: separate front bangs, left side hair, right side hair, and back hair, clean strand groups for hair physics.\nVisible neck, simple upper body, clear shoulders, simple upper arms, no complex hands, no large props.\nClean silhouette, minimal overlap, low clipping risk, underpaint-friendly design, simple draw order.\nConsistent polished anime illustration style, clean line art, clean color separation.\n\nBatch: B2_eye_pack\nGenerate production eye parts and blink in-betweens as one coordinated eye packet.\nGenerate left/right eye production parts and blink references as one coherent eye packet.\nEye whites are socket-bound material; iris, pupil, and highlight must be mutually aligned.\nBlink in-betweens should follow the v21 natural close pattern, avoiding a harsh 0.0 default close.\n\nRequired output IDs:\n- eye_L_white\n- eye_L_iris\n- eye_L_pupil\n- eye_L_highlight\n- eye_L_upper_lash\n- eye_L_lower_lash\n- eye_L_closed_lid\n- eye_R_white\n- eye_R_iris\n- eye_R_pupil\n- eye_R_highlight\n- eye_R_upper_lash\n- eye_R_lower_lash\n- eye_R_closed_lid\n- eye_open_reference\n- eye_half_closed_reference\n- eye_mostly_closed_reference\n- eye_closed_reference\n\nBatch rules:\n- eye whites stay fixed for EyeBallX/Y; iris, pupil, and highlight move together from the same anchor\n- split iris/pupil/highlight may pass only if they are generated as a coherent packet and anchor-locked\n- if split details drift or create crossed eyes, fall back to a coherent iris-detail diagnostic asset and regenerate the production split\n- EyeOpen visual clamp target starts from v21 pattern: natural close is around 0.27, not hard 0.0",
+      "negative_prompt": "labels, guide marks, UI, watermark, text, part names, arrows, exploded diagram\ndifferent character, different outfit, new accessory, changed hairstyle\nface-covering hair, covered eyes, covered mouth, crossed arms, complex hands, large props\ncropped head, cropped shoulders, side view, extreme pose, perspective distortion\npatch boundary, rectangular skin fill, oval mouth patch, visible erased-eye residue\nmoving eye whites, detached pupil, detached highlight, crossed-eye gaze\noversized round wide-open mouth, tiny centered mouth, pasted teeth, pasted tongue\nheavy glow, motion blur, transparent effects, messy dense overlap",
+      "must_pass": [
+        "left and right gaze centers are natural and not crossed",
+        "iris/pupil/highlight can move together from one anchor",
+        "closed lids and underpaint reveal no original open-eye pixels"
+      ],
+      "failure_patterns_to_watch": [
+        "late_patch_clean_base",
+        "moving_eye_white",
+        "split_eye_detail_drift",
+        "oversized_or_centered_mouth",
+        "pasted_mouth_internals",
+        "fake_hairfront_slider"
+      ]
+    },
+    {
+      "id": "B3_mouth_pack",
+      "purpose": "Generate mouth rig parts as a coordinated smile-open material packet.",
+      "expected_outputs": [
+        "mouth_line",
+        "mouth_inner",
+        "mouth_upper_lip_mask",
+        "mouth_lower_lip_mask",
+        "mouth_teeth",
+        "mouth_tongue",
+        "mouth_corner_L",
+        "mouth_corner_R",
+        "mouth_closed_smile_reference",
+        "mouth_small_open_reference",
+        "mouth_mid_teeth_reference",
+        "mouth_wide_teeth_tongue_reference"
+      ],
+      "positive_prompt": "Live2D Cubism v2_standard material-pack generation.\nsame adult cute female character as the accepted source front\nsame face proportions, eye spacing, nose position, and mouth anchor\nsame hairstyle silhouette, bang occlusion, line thickness, and shading style\nsame outfit design, color palette, and simple upper-body composition\nfront-facing or near-front neutral upper-body Live2D/Cubism-ready view\n\nBase character source constraints:\nLive2D Cubism v2_standard VTuber character, front-facing upper-body, centered neutral pose.\nA single clean master PNG for later PSD part separation and Cubism rigging.\nClear face base, both eyes fully visible, separated left and right eye groups, readable eyebrows, clear mouth not covered by anything.\nLayer-friendly hair: separate front bangs, left side hair, right side hair, and back hair, clean strand groups for hair physics.\nVisible neck, simple upper body, clear shoulders, simple upper arms, no complex hands, no large props.\nClean silhouette, minimal overlap, low clipping risk, underpaint-friendly design, simple draw order.\nConsistent polished anime illustration style, clean line art, clean color separation.\n\nBatch: B3_mouth_pack\nGenerate mouth rig parts as a coordinated smile-open material packet.\nGenerate one coordinated smile-open mouth packet for production splitting.\nMouth internals must be drawn inside the same mouth opening, not pasted later.\nWide open should show teeth and tongue naturally but remain proportion-limited.\n\nRequired output IDs:\n- mouth_line\n- mouth_inner\n- mouth_upper_lip_mask\n- mouth_lower_lip_mask\n- mouth_teeth\n- mouth_tongue\n- mouth_corner_L\n- mouth_corner_R\n- mouth_closed_smile_reference\n- mouth_small_open_reference\n- mouth_mid_teeth_reference\n- mouth_wide_teeth_tongue_reference\n\nBatch rules:\n- teeth/tongue/inner must be drawn naturally inside the same mouth opening, not pasted as separate centered overlays\n- wide-open reference must be proportion-limited; reject oversized round mouth shapes\n- ParamMouthOpenY max remains visually clamped around 0.85 until a better mouth packet is approved\n- ParamMouthForm is not active in v21 diagnostic unless a real production mouth-form set is generated",
+      "negative_prompt": "labels, guide marks, UI, watermark, text, part names, arrows, exploded diagram\ndifferent character, different outfit, new accessory, changed hairstyle\nface-covering hair, covered eyes, covered mouth, crossed arms, complex hands, large props\ncropped head, cropped shoulders, side view, extreme pose, perspective distortion\npatch boundary, rectangular skin fill, oval mouth patch, visible erased-eye residue\nmoving eye whites, detached pupil, detached highlight, crossed-eye gaze\noversized round wide-open mouth, tiny centered mouth, pasted teeth, pasted tongue\nheavy glow, motion blur, transparent effects, messy dense overlap",
+      "must_pass": [
+        "mouth anchor stays consistent across closed, small, mid, and wide references",
+        "teeth/tongue/inner read naturally and follow the mouth shape",
+        "wide-open mouth is not oversized, circular, or patchy"
+      ],
+      "failure_patterns_to_watch": [
+        "late_patch_clean_base",
+        "moving_eye_white",
+        "split_eye_detail_drift",
+        "oversized_or_centered_mouth",
+        "pasted_mouth_internals",
+        "fake_hairfront_slider"
+      ]
+    },
+    {
+      "id": "B4_hair_pack",
+      "purpose": "Create independent front/back/side hair children so HairFront can become real.",
+      "expected_outputs": [
+        "hair_back_base",
+        "hair_back_strand_L",
+        "hair_back_strand_R",
+        "hair_back_center",
+        "hair_front_center",
+        "hair_front_L",
+        "hair_front_R",
+        "hair_front_side_L",
+        "hair_front_side_R",
+        "hair_front_tip_L",
+        "hair_front_tip_R",
+        "hair_side_L_outer",
+        "hair_side_L_inner",
+        "hair_side_R_outer",
+        "hair_side_R_inner"
+      ],
+      "positive_prompt": "Live2D Cubism v2_standard material-pack generation.\nsame adult cute female character as the accepted source front\nsame face proportions, eye spacing, nose position, and mouth anchor\nsame hairstyle silhouette, bang occlusion, line thickness, and shading style\nsame outfit design, color palette, and simple upper-body composition\nfront-facing or near-front neutral upper-body Live2D/Cubism-ready view\n\nBase character source constraints:\nLive2D Cubism v2_standard VTuber character, front-facing upper-body, centered neutral pose.\nA single clean master PNG for later PSD part separation and Cubism rigging.\nClear face base, both eyes fully visible, separated left and right eye groups, readable eyebrows, clear mouth not covered by anything.\nLayer-friendly hair: separate front bangs, left side hair, right side hair, and back hair, clean strand groups for hair physics.\nVisible neck, simple upper body, clear shoulders, simple upper arms, no complex hands, no large props.\nClean silhouette, minimal overlap, low clipping risk, underpaint-friendly design, simple draw order.\nConsistent polished anime illustration style, clean line art, clean color separation.\n\nBatch: B4_hair_pack\nCreate independent front/back/side hair children so HairFront can become real.\nGenerate independent front, side, and back hair children for real HairFront/HairSide/HairBack controls.\nFront bangs must remain consistent with face/eye occlusion from the source.\nHair underpaint must cover expected motion gaps.\n\nRequired output IDs:\n- hair_back_base\n- hair_back_strand_L\n- hair_back_strand_R\n- hair_back_center\n- hair_front_center\n- hair_front_L\n- hair_front_R\n- hair_front_side_L\n- hair_front_side_R\n- hair_front_tip_L\n- hair_front_tip_R\n- hair_side_L_outer\n- hair_side_L_inner\n- hair_side_R_outer\n- hair_side_R_inner\n\nBatch rules:\n- ParamHairFront stays unsupported until real hair_front_* child parts exist and move independently\n- front bangs must preserve face/eye occlusion consistency across clean base and eye packets\n- side/back hair parts must leave underpaint coverage for angle and physics motion",
+      "negative_prompt": "labels, guide marks, UI, watermark, text, part names, arrows, exploded diagram\ndifferent character, different outfit, new accessory, changed hairstyle\nface-covering hair, covered eyes, covered mouth, crossed arms, complex hands, large props\ncropped head, cropped shoulders, side view, extreme pose, perspective distortion\npatch boundary, rectangular skin fill, oval mouth patch, visible erased-eye residue\nmoving eye whites, detached pupil, detached highlight, crossed-eye gaze\noversized round wide-open mouth, tiny centered mouth, pasted teeth, pasted tongue\nheavy glow, motion blur, transparent effects, messy dense overlap",
+      "must_pass": [
+        "hair_front_* children are visible and separable",
+        "front hair can move independently without exposing holes",
+        "side/back hair groups have readable strand boundaries for physics"
+      ],
+      "failure_patterns_to_watch": [
+        "late_patch_clean_base",
+        "moving_eye_white",
+        "split_eye_detail_drift",
+        "oversized_or_centered_mouth",
+        "pasted_mouth_internals",
+        "fake_hairfront_slider"
+      ]
+    },
+    {
+      "id": "B5_body_clothing_pack",
+      "purpose": "Complete torso, neck, shoulder, arm, and clothing layers for standard body motion.",
+      "expected_outputs": [
+        "torso_base",
+        "neck",
+        "shoulder_L",
+        "shoulder_R",
+        "arm_L_upper_simple",
+        "arm_R_upper_simple",
+        "collar_front",
+        "collar_shadow",
+        "chest_cloth_base",
+        "chest_cloth_shadow",
+        "brow_L",
+        "brow_R",
+        "nose",
+        "cheek_L",
+        "cheek_R",
+        "face_shadow_L",
+        "face_shadow_R"
+      ],
+      "positive_prompt": "Live2D Cubism v2_standard material-pack generation.\nsame adult cute female character as the accepted source front\nsame face proportions, eye spacing, nose position, and mouth anchor\nsame hairstyle silhouette, bang occlusion, line thickness, and shading style\nsame outfit design, color palette, and simple upper-body composition\nfront-facing or near-front neutral upper-body Live2D/Cubism-ready view\n\nBase character source constraints:\nLive2D Cubism v2_standard VTuber character, front-facing upper-body, centered neutral pose.\nA single clean master PNG for later PSD part separation and Cubism rigging.\nClear face base, both eyes fully visible, separated left and right eye groups, readable eyebrows, clear mouth not covered by anything.\nLayer-friendly hair: separate front bangs, left side hair, right side hair, and back hair, clean strand groups for hair physics.\nVisible neck, simple upper body, clear shoulders, simple upper arms, no complex hands, no large props.\nClean silhouette, minimal overlap, low clipping risk, underpaint-friendly design, simple draw order.\nConsistent polished anime illustration style, clean line art, clean color separation.\n\nBatch: B5_body_clothing_pack\nComplete torso, neck, shoulder, arm, and clothing layers for standard body motion.\nGenerate body, clothing, brow, nose, cheek, and face shadow production parts.\nKeep the v2_standard scope simple and rig-friendly.\nNose and cheeks must stay subtle but visible as separate material.\n\nRequired output IDs:\n- torso_base\n- neck\n- shoulder_L\n- shoulder_R\n- arm_L_upper_simple\n- arm_R_upper_simple\n- collar_front\n- collar_shadow\n- chest_cloth_base\n- chest_cloth_shadow\n- brow_L\n- brow_R\n- nose\n- cheek_L\n- cheek_R\n- face_shadow_L\n- face_shadow_R\n\nBatch rules:\n- keep first v2_standard scope simple: no complex hands, large props, heavy effects, or rich vowel set\n- nose must remain visible as its own subtle part; do not lose it during face cleanup\n- body and clothing parts must support breath and body-angle motion without visible holes",
+      "negative_prompt": "labels, guide marks, UI, watermark, text, part names, arrows, exploded diagram\ndifferent character, different outfit, new accessory, changed hairstyle\nface-covering hair, covered eyes, covered mouth, crossed arms, complex hands, large props\ncropped head, cropped shoulders, side view, extreme pose, perspective distortion\npatch boundary, rectangular skin fill, oval mouth patch, visible erased-eye residue\nmoving eye whites, detached pupil, detached highlight, crossed-eye gaze\noversized round wide-open mouth, tiny centered mouth, pasted teeth, pasted tongue\nheavy glow, motion blur, transparent effects, messy dense overlap",
+      "must_pass": [
+        "neck, shoulders, torso, simple arms, collar, and chest cloth are readable",
+        "nose is not lost during clean face/base generation",
+        "body/clothing underpaint can support breath/body angle without visible holes"
+      ],
+      "failure_patterns_to_watch": [
+        "late_patch_clean_base",
+        "moving_eye_white",
+        "split_eye_detail_drift",
+        "oversized_or_centered_mouth",
+        "pasted_mouth_internals",
+        "fake_hairfront_slider"
+      ]
+    }
+  ],
+  "g0_review_checklist": [
+    "same adult cute female character identity is appealing enough for production expansion",
+    "front/near-front upper-body pose is centered and not cropped",
+    "both eyes are visible and eye size is not too large",
+    "mouth is visible, small enough, and placed naturally",
+    "nose is visible as subtle face detail",
+    "front/side/back hair groups are readable and not fused into one mass",
+    "neck, shoulders, torso, collar, and simple upper arms are visible",
+    "no props, hands, hair, or accessories cover eyes or mouth",
+    "design appears splittable into 64 v2_standard parts",
+    "no labels, part names, guide marks, or diagram layout"
+  ],
+  "next_after_g0_pass": [
+    "generate B1 clean base/underpaint packet",
+    "generate B2 eye packet",
+    "generate B3 mouth packet",
+    "generate B4 hair packet",
+    "generate B5 body/clothing packet",
+    "normalize raw outputs to full-canvas RGBA",
+    "run technical validators and build contact sheet before Mini Cubism diagnostic"
+  ],
+  "self_review": {
+    "batch_count": 6,
+    "has_b0_source_prompt": true,
+    "has_eye_prompt": true,
+    "has_mouth_prompt": true,
+    "has_hair_prompt": true,
+    "has_g0_checklist": true,
+    "part_count": 64,
+    "status": "PASS"
+  }
+}

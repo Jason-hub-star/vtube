@@ -1,0 +1,1443 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-10T02:11:26.729673+00:00",
+  "status": "G5_MATERIAL_ACCEPTANCE_REDUCTION_ROUTE_READY_PRIMARY6_MATERIAL_NOT_ACCEPTED",
+  "source_g5_material_acceptance": "experiments/cubism-v2-new-character-002/reports/v22_g5_material_acceptance_from_prep/v22_g5_material_acceptance_from_prep_packet.json",
+  "source_status": "G5_MATERIAL_ACCEPTANCE_PACKET_REVIEW_REQUIRED_MATERIAL_NOT_ACCEPTED",
+  "source_verdict": "REVIEW_REQUIRED_MATERIAL_NOT_ACCEPTED",
+  "route_rows": [
+    {
+      "row_id": "B1_CLEAN_BASE_UNDERPAINT",
+      "source": "B1",
+      "status": "B1_CODEX_VISUAL_QA_PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "candidate_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "material_acceptance": "BLOCKED_UNTIL_PRIMARY_ACCEPTANCE_DECISION",
+      "reason": "Clean base and underpaint are candidate-only; material PASS requires separate acceptance.",
+      "route_phase": "P0_PRIMARY_B1_CLEAN_BASE_ACCEPTANCE",
+      "route_priority": "PRIMARY_G5_ACCEPTANCE_SURFACE",
+      "next_action": "REVIEW_ACCEPT_OR_REVISE_CLEAN_BASE_UNDERPAINT",
+      "acceptance_criterion": "no eye/mouth residue, no rectangular/oval skin patch, natural underpaint continuity"
+    },
+    {
+      "row_id": "B2_EYE_PACK",
+      "source": "B2",
+      "status": "B2_CODEX_OVERLAY_QA_PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "candidate_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "material_acceptance": "BLOCKED_UNTIL_PRIMARY_ACCEPTANCE_DECISION",
+      "reason": "Eye whites/detail candidates preserve v21 locks, but are not material-approved yet.",
+      "route_phase": "P0_PRIMARY_B2_EYE_ACCEPTANCE",
+      "route_priority": "PRIMARY_G5_ACCEPTANCE_SURFACE",
+      "next_action": "REVIEW_ACCEPT_OR_REVISE_FIXED_WHITE_AND_COHERENT_EYE_DETAIL",
+      "acceptance_criterion": "fixed eye whites, iris/pupil/highlight move together, no crossed-eye, EyeOpen min 0.27"
+    },
+    {
+      "row_id": "B3_MOUTH_PACK_REVISION_V1",
+      "source": "B3",
+      "status": "B3_REVISION_V1_CODEX_OVERLAY_QA_PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "candidate_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "material_acceptance": "BLOCKED_UNTIL_PRIMARY_ACCEPTANCE_DECISION",
+      "reason": "Mouth revision v1 is the active candidate; MouthOpenY stays capped at 0.85.",
+      "route_phase": "P0_PRIMARY_B3_MOUTH_ACCEPTANCE",
+      "route_priority": "PRIMARY_G5_ACCEPTANCE_SURFACE",
+      "next_action": "REVIEW_ACCEPT_OR_REVISE_COORDINATED_MOUTH_PACKET",
+      "acceptance_criterion": "consistent mouth anchor, no oversized/round wide mouth, natural teeth/tongue, MouthOpenY max 0.85"
+    },
+    {
+      "row_id": "torso_base",
+      "source": "B5",
+      "status": "G4_P0_TORSO_SHOULDER_DECISION_READY_G5_PREP_UNBLOCKED_MATERIAL_BLOCKED",
+      "candidate_gate": "KEEP_GENERATED_TORSO_AS_G5_PREP_CANDIDATE_NOT_MATERIAL_PASS",
+      "material_acceptance": "BLOCKED_UNTIL_PRIMARY_ACCEPTANCE_DECISION",
+      "reason": "Generated torso is selected, extends lower than P0, and stays below old broad v2 coverage; use it for G5 prep review only.",
+      "route_phase": "P0_PRIMARY_B5_TORSO_ACCEPTANCE",
+      "route_priority": "PRIMARY_G5_ACCEPTANCE_SURFACE",
+      "next_action": "REVIEW_ACCEPT_OR_REVISE_GENERATED_TORSO_UNDERPAINT",
+      "acceptance_criterion": "complete torso underpaint independent of source lower crop; candidate remains not material PASS"
+    },
+    {
+      "row_id": "shoulder_L",
+      "source": "B5",
+      "status": "G4_P0_TORSO_SHOULDER_DECISION_READY_G5_PREP_UNBLOCKED_MATERIAL_BLOCKED",
+      "candidate_gate": "KEEP_SHOULDER_DRAW_ORDER_MASK_AS_G5_PREP_CANDIDATE_NOT_MATERIAL_PASS",
+      "material_acceptance": "BLOCKED_UNTIL_PRIMARY_ACCEPTANCE_DECISION",
+      "reason": "Shoulder draw-order/mask improvement candidate can move into G5 prep review; material acceptance remains blocked.",
+      "route_phase": "P0_PRIMARY_B5_SHOULDER_ACCEPTANCE",
+      "route_priority": "PRIMARY_G5_ACCEPTANCE_SURFACE",
+      "next_action": "REVIEW_ACCEPT_OR_REVISE_SHOULDER_DRAW_ORDER_MASK",
+      "acceptance_criterion": "shoulder mask/draw-order improvement does not create pasted edges or hair occlusion artifacts"
+    },
+    {
+      "row_id": "shoulder_R",
+      "source": "B5",
+      "status": "G4_P0_TORSO_SHOULDER_DECISION_READY_G5_PREP_UNBLOCKED_MATERIAL_BLOCKED",
+      "candidate_gate": "KEEP_SHOULDER_DRAW_ORDER_MASK_AS_G5_PREP_CANDIDATE_NOT_MATERIAL_PASS",
+      "material_acceptance": "BLOCKED_UNTIL_PRIMARY_ACCEPTANCE_DECISION",
+      "reason": "Shoulder draw-order/mask improvement candidate can move into G5 prep review; material acceptance remains blocked.",
+      "route_phase": "P0_PRIMARY_B5_SHOULDER_ACCEPTANCE",
+      "route_priority": "PRIMARY_G5_ACCEPTANCE_SURFACE",
+      "next_action": "REVIEW_ACCEPT_OR_REVISE_SHOULDER_DRAW_ORDER_MASK",
+      "acceptance_criterion": "shoulder mask/draw-order improvement does not create pasted edges or hair occlusion artifacts"
+    },
+    {
+      "row_id": "neck",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_BODY_CLOTHING_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/neck.png",
+      "bbox": [
+        882,
+        701,
+        1167,
+        1090
+      ],
+      "alpha_coverage": 0.01887441,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "arm_L_upper_simple",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_BODY_CLOTHING_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/arm_L_upper_simple.png",
+      "bbox": [
+        485,
+        1115,
+        695,
+        1786
+      ],
+      "alpha_coverage": 0.01823521,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "arm_R_upper_simple",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_BODY_CLOTHING_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/arm_R_upper_simple.png",
+      "bbox": [
+        1334,
+        1116,
+        1521,
+        1786
+      ],
+      "alpha_coverage": 0.01637411,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "face_shadow_L",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_FACE_MICRO_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/face_shadow_L.png",
+      "bbox": [
+        721,
+        678,
+        809,
+        883
+      ],
+      "alpha_coverage": 0.00281453,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "face_shadow_R",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_FACE_MICRO_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/face_shadow_R.png",
+      "bbox": [
+        1211,
+        680,
+        1291,
+        881
+      ],
+      "alpha_coverage": 0.00274563,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "nose",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_FACE_MICRO_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/nose.png",
+      "bbox": [
+        1003,
+        757,
+        1046,
+        823
+      ],
+      "alpha_coverage": 0.00052786,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "cheek_L",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_FACE_MICRO_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/cheek_L.png",
+      "bbox": [
+        752,
+        744,
+        917,
+        844
+      ],
+      "alpha_coverage": 0.0030582,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "cheek_R",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_FACE_MICRO_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/cheek_R.png",
+      "bbox": [
+        1129,
+        744,
+        1294,
+        844
+      ],
+      "alpha_coverage": 0.00305676,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "brow_L",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_FACE_MICRO_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/brow_L.png",
+      "bbox": [
+        779,
+        631,
+        924,
+        659
+      ],
+      "alpha_coverage": 0.00030065,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "brow_R",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_FACE_MICRO_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/brow_R.png",
+      "bbox": [
+        1103,
+        631,
+        1247,
+        659
+      ],
+      "alpha_coverage": 0.00030589,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "hair_back_base",
+      "source": "B4",
+      "review_class": "B4_SECONDARY_CONTEXT_REVIEW",
+      "review_lane": "P2_B4_SECONDARY_HAIR_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_base.png",
+      "bbox": [
+        644,
+        190,
+        1404,
+        1250
+      ],
+      "alpha_coverage": 0.14233398,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "hair_back_underpaint",
+      "source": "B4",
+      "review_class": "B4_SECONDARY_CONTEXT_REVIEW",
+      "review_lane": "P2_B4_SECONDARY_HAIR_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_underpaint.png",
+      "bbox": [
+        818,
+        585,
+        1229,
+        1175
+      ],
+      "alpha_coverage": 0.04447603,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "hair_back_strand_L",
+      "source": "B4",
+      "review_class": "B4_SECONDARY_CONTEXT_REVIEW",
+      "review_lane": "P2_B4_SECONDARY_HAIR_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_strand_L.png",
+      "bbox": [
+        595,
+        440,
+        855,
+        1200
+      ],
+      "alpha_coverage": 0.02609921,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "hair_back_strand_R",
+      "source": "B4",
+      "review_class": "B4_SECONDARY_CONTEXT_REVIEW",
+      "review_lane": "P2_B4_SECONDARY_HAIR_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_strand_R.png",
+      "bbox": [
+        1224,
+        450,
+        1446,
+        1210
+      ],
+      "alpha_coverage": 0.02190447,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "hair_back_center",
+      "source": "B4",
+      "review_class": "B4_SECONDARY_CONTEXT_REVIEW",
+      "review_lane": "P2_B4_SECONDARY_HAIR_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_center.png",
+      "bbox": [
+        837,
+        435,
+        1211,
+        1210
+      ],
+      "alpha_coverage": 0.0482862,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "hair_front_center",
+      "source": "B4",
+      "review_class": "HAIRFRONT_MOTION_READINESS_REVIEW",
+      "review_lane": "P1_B4_FRONT_HAIR_MOTION_CANDIDATE_KEEP_HAIRFRONT_HIDDEN",
+      "g5_effect": "DOES_NOT_UNLOCK_HAIRFRONT_YET",
+      "material_acceptance": "BLOCKED_HAIRFRONT_HIDDEN_CONTRACT_ONLY",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_center.png",
+      "bbox": [
+        820,
+        231,
+        1228,
+        629
+      ],
+      "alpha_coverage": 0.02321458,
+      "route_phase": "P2_HAIRFRONT_CONTRACT_ONLY_DEFERRED",
+      "route_priority": "DEFER_KEEP_HAIRFRONT_HIDDEN",
+      "next_action": "KEEP_HAIRFRONT_HIDDEN_UNTIL_INDEPENDENT_MOTION_READINESS_ACCEPTANCE",
+      "acceptance_criterion": "ParamHairFront remains hidden/contract-only; do not unlock from these rows."
+    },
+    {
+      "row_id": "hair_front_L",
+      "source": "B4",
+      "review_class": "HAIRFRONT_MOTION_READINESS_REVIEW",
+      "review_lane": "P1_B4_FRONT_HAIR_MOTION_CANDIDATE_KEEP_HAIRFRONT_HIDDEN",
+      "g5_effect": "DOES_NOT_UNLOCK_HAIRFRONT_YET",
+      "material_acceptance": "BLOCKED_HAIRFRONT_HIDDEN_CONTRACT_ONLY",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_L.png",
+      "bbox": [
+        759,
+        286,
+        1008,
+        605
+      ],
+      "alpha_coverage": 0.01171589,
+      "route_phase": "P2_HAIRFRONT_CONTRACT_ONLY_DEFERRED",
+      "route_priority": "DEFER_KEEP_HAIRFRONT_HIDDEN",
+      "next_action": "KEEP_HAIRFRONT_HIDDEN_UNTIL_INDEPENDENT_MOTION_READINESS_ACCEPTANCE",
+      "acceptance_criterion": "ParamHairFront remains hidden/contract-only; do not unlock from these rows."
+    },
+    {
+      "row_id": "hair_front_R",
+      "source": "B4",
+      "review_class": "HAIRFRONT_MOTION_READINESS_REVIEW",
+      "review_lane": "P1_B4_FRONT_HAIR_MOTION_CANDIDATE_KEEP_HAIRFRONT_HIDDEN",
+      "g5_effect": "DOES_NOT_UNLOCK_HAIRFRONT_YET",
+      "material_acceptance": "BLOCKED_HAIRFRONT_HIDDEN_CONTRACT_ONLY",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_R.png",
+      "bbox": [
+        1015,
+        282,
+        1306,
+        630
+      ],
+      "alpha_coverage": 0.01713395,
+      "route_phase": "P2_HAIRFRONT_CONTRACT_ONLY_DEFERRED",
+      "route_priority": "DEFER_KEEP_HAIRFRONT_HIDDEN",
+      "next_action": "KEEP_HAIRFRONT_HIDDEN_UNTIL_INDEPENDENT_MOTION_READINESS_ACCEPTANCE",
+      "acceptance_criterion": "ParamHairFront remains hidden/contract-only; do not unlock from these rows."
+    },
+    {
+      "row_id": "hair_front_side_L",
+      "source": "B4",
+      "review_class": "HAIRFRONT_MOTION_READINESS_REVIEW",
+      "review_lane": "P1_B4_FRONT_HAIR_MOTION_CANDIDATE_KEEP_HAIRFRONT_HIDDEN",
+      "g5_effect": "DOES_NOT_UNLOCK_HAIRFRONT_YET",
+      "material_acceptance": "BLOCKED_HAIRFRONT_HIDDEN_CONTRACT_ONLY",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_side_L.png",
+      "bbox": [
+        715,
+        385,
+        907,
+        885
+      ],
+      "alpha_coverage": 0.01118851,
+      "route_phase": "P2_HAIRFRONT_CONTRACT_ONLY_DEFERRED",
+      "route_priority": "DEFER_KEEP_HAIRFRONT_HIDDEN",
+      "next_action": "KEEP_HAIRFRONT_HIDDEN_UNTIL_INDEPENDENT_MOTION_READINESS_ACCEPTANCE",
+      "acceptance_criterion": "ParamHairFront remains hidden/contract-only; do not unlock from these rows."
+    },
+    {
+      "row_id": "hair_front_side_R",
+      "source": "B4",
+      "review_class": "HAIRFRONT_MOTION_READINESS_REVIEW",
+      "review_lane": "P1_B4_FRONT_HAIR_MOTION_CANDIDATE_KEEP_HAIRFRONT_HIDDEN",
+      "g5_effect": "DOES_NOT_UNLOCK_HAIRFRONT_YET",
+      "material_acceptance": "BLOCKED_HAIRFRONT_HIDDEN_CONTRACT_ONLY",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_side_R.png",
+      "bbox": [
+        1225,
+        385,
+        1348,
+        885
+      ],
+      "alpha_coverage": 0.0070703,
+      "route_phase": "P2_HAIRFRONT_CONTRACT_ONLY_DEFERRED",
+      "route_priority": "DEFER_KEEP_HAIRFRONT_HIDDEN",
+      "next_action": "KEEP_HAIRFRONT_HIDDEN_UNTIL_INDEPENDENT_MOTION_READINESS_ACCEPTANCE",
+      "acceptance_criterion": "ParamHairFront remains hidden/contract-only; do not unlock from these rows."
+    },
+    {
+      "row_id": "hair_front_tip_L",
+      "source": "B4",
+      "review_class": "HAIRFRONT_MOTION_READINESS_REVIEW",
+      "review_lane": "P1_B4_FRONT_HAIR_MOTION_CANDIDATE_KEEP_HAIRFRONT_HIDDEN",
+      "g5_effect": "DOES_NOT_UNLOCK_HAIRFRONT_YET",
+      "material_acceptance": "BLOCKED_HAIRFRONT_HIDDEN_CONTRACT_ONLY",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_tip_L.png",
+      "bbox": [
+        698,
+        695,
+        821,
+        1047
+      ],
+      "alpha_coverage": 0.00541162,
+      "route_phase": "P2_HAIRFRONT_CONTRACT_ONLY_DEFERRED",
+      "route_priority": "DEFER_KEEP_HAIRFRONT_HIDDEN",
+      "next_action": "KEEP_HAIRFRONT_HIDDEN_UNTIL_INDEPENDENT_MOTION_READINESS_ACCEPTANCE",
+      "acceptance_criterion": "ParamHairFront remains hidden/contract-only; do not unlock from these rows."
+    },
+    {
+      "row_id": "hair_front_tip_R",
+      "source": "B4",
+      "review_class": "HAIRFRONT_MOTION_READINESS_REVIEW",
+      "review_lane": "P1_B4_FRONT_HAIR_MOTION_CANDIDATE_KEEP_HAIRFRONT_HIDDEN",
+      "g5_effect": "DOES_NOT_UNLOCK_HAIRFRONT_YET",
+      "material_acceptance": "BLOCKED_HAIRFRONT_HIDDEN_CONTRACT_ONLY",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_tip_R.png",
+      "bbox": [
+        1156,
+        695,
+        1261,
+        1074
+      ],
+      "alpha_coverage": 0.00642014,
+      "route_phase": "P2_HAIRFRONT_CONTRACT_ONLY_DEFERRED",
+      "route_priority": "DEFER_KEEP_HAIRFRONT_HIDDEN",
+      "next_action": "KEEP_HAIRFRONT_HIDDEN_UNTIL_INDEPENDENT_MOTION_READINESS_ACCEPTANCE",
+      "acceptance_criterion": "ParamHairFront remains hidden/contract-only; do not unlock from these rows."
+    },
+    {
+      "row_id": "hair_side_L_outer",
+      "source": "B4",
+      "review_class": "B4_SECONDARY_CONTEXT_REVIEW",
+      "review_lane": "P2_B4_SECONDARY_HAIR_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_L_outer.png",
+      "bbox": [
+        696,
+        670,
+        737,
+        1151
+      ],
+      "alpha_coverage": 0.00231504,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "hair_side_L_inner",
+      "source": "B4",
+      "review_class": "B4_SECONDARY_CONTEXT_REVIEW",
+      "review_lane": "P2_B4_SECONDARY_HAIR_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_L_inner.png",
+      "bbox": [
+        670,
+        712,
+        807,
+        1133
+      ],
+      "alpha_coverage": 0.00722432,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "hair_side_R_outer",
+      "source": "B4",
+      "review_class": "B4_SECONDARY_CONTEXT_REVIEW",
+      "review_lane": "P2_B4_SECONDARY_HAIR_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_R_outer.png",
+      "bbox": [
+        1328,
+        675,
+        1509,
+        1190
+      ],
+      "alpha_coverage": 0.01454306,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "hair_side_R_inner",
+      "source": "B4",
+      "review_class": "B4_SECONDARY_CONTEXT_REVIEW",
+      "review_lane": "P2_B4_SECONDARY_HAIR_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_R_inner.png",
+      "bbox": [
+        1187,
+        712,
+        1319,
+        1159
+      ],
+      "alpha_coverage": 0.01035833,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "collar_front",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_BODY_CLOTHING_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/collar_front.png",
+      "bbox": [
+        748,
+        1078,
+        1300,
+        1198
+      ],
+      "alpha_coverage": 0.00627613,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "collar_shadow",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_BODY_CLOTHING_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/collar_shadow.png",
+      "bbox": [
+        753,
+        1178,
+        1295,
+        1269
+      ],
+      "alpha_coverage": 0.00243759,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "chest_cloth_base",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_BODY_CLOTHING_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/chest_cloth_base.png",
+      "bbox": [
+        698,
+        1246,
+        1350,
+        1546
+      ],
+      "alpha_coverage": 0.01802492,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "chest_cloth_shadow",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_BODY_CLOTHING_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/chest_cloth_shadow.png",
+      "bbox": [
+        733,
+        1481,
+        1288,
+        1641
+      ],
+      "alpha_coverage": 0.00590897,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    }
+  ],
+  "primary6_rows": [
+    {
+      "row_id": "B1_CLEAN_BASE_UNDERPAINT",
+      "source": "B1",
+      "status": "B1_CODEX_VISUAL_QA_PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "candidate_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "material_acceptance": "BLOCKED_UNTIL_PRIMARY_ACCEPTANCE_DECISION",
+      "reason": "Clean base and underpaint are candidate-only; material PASS requires separate acceptance.",
+      "route_phase": "P0_PRIMARY_B1_CLEAN_BASE_ACCEPTANCE",
+      "route_priority": "PRIMARY_G5_ACCEPTANCE_SURFACE",
+      "next_action": "REVIEW_ACCEPT_OR_REVISE_CLEAN_BASE_UNDERPAINT",
+      "acceptance_criterion": "no eye/mouth residue, no rectangular/oval skin patch, natural underpaint continuity"
+    },
+    {
+      "row_id": "B2_EYE_PACK",
+      "source": "B2",
+      "status": "B2_CODEX_OVERLAY_QA_PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "candidate_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "material_acceptance": "BLOCKED_UNTIL_PRIMARY_ACCEPTANCE_DECISION",
+      "reason": "Eye whites/detail candidates preserve v21 locks, but are not material-approved yet.",
+      "route_phase": "P0_PRIMARY_B2_EYE_ACCEPTANCE",
+      "route_priority": "PRIMARY_G5_ACCEPTANCE_SURFACE",
+      "next_action": "REVIEW_ACCEPT_OR_REVISE_FIXED_WHITE_AND_COHERENT_EYE_DETAIL",
+      "acceptance_criterion": "fixed eye whites, iris/pupil/highlight move together, no crossed-eye, EyeOpen min 0.27"
+    },
+    {
+      "row_id": "B3_MOUTH_PACK_REVISION_V1",
+      "source": "B3",
+      "status": "B3_REVISION_V1_CODEX_OVERLAY_QA_PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "candidate_gate": "PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "material_acceptance": "BLOCKED_UNTIL_PRIMARY_ACCEPTANCE_DECISION",
+      "reason": "Mouth revision v1 is the active candidate; MouthOpenY stays capped at 0.85.",
+      "route_phase": "P0_PRIMARY_B3_MOUTH_ACCEPTANCE",
+      "route_priority": "PRIMARY_G5_ACCEPTANCE_SURFACE",
+      "next_action": "REVIEW_ACCEPT_OR_REVISE_COORDINATED_MOUTH_PACKET",
+      "acceptance_criterion": "consistent mouth anchor, no oversized/round wide mouth, natural teeth/tongue, MouthOpenY max 0.85"
+    },
+    {
+      "row_id": "torso_base",
+      "source": "B5",
+      "status": "G4_P0_TORSO_SHOULDER_DECISION_READY_G5_PREP_UNBLOCKED_MATERIAL_BLOCKED",
+      "candidate_gate": "KEEP_GENERATED_TORSO_AS_G5_PREP_CANDIDATE_NOT_MATERIAL_PASS",
+      "material_acceptance": "BLOCKED_UNTIL_PRIMARY_ACCEPTANCE_DECISION",
+      "reason": "Generated torso is selected, extends lower than P0, and stays below old broad v2 coverage; use it for G5 prep review only.",
+      "route_phase": "P0_PRIMARY_B5_TORSO_ACCEPTANCE",
+      "route_priority": "PRIMARY_G5_ACCEPTANCE_SURFACE",
+      "next_action": "REVIEW_ACCEPT_OR_REVISE_GENERATED_TORSO_UNDERPAINT",
+      "acceptance_criterion": "complete torso underpaint independent of source lower crop; candidate remains not material PASS"
+    },
+    {
+      "row_id": "shoulder_L",
+      "source": "B5",
+      "status": "G4_P0_TORSO_SHOULDER_DECISION_READY_G5_PREP_UNBLOCKED_MATERIAL_BLOCKED",
+      "candidate_gate": "KEEP_SHOULDER_DRAW_ORDER_MASK_AS_G5_PREP_CANDIDATE_NOT_MATERIAL_PASS",
+      "material_acceptance": "BLOCKED_UNTIL_PRIMARY_ACCEPTANCE_DECISION",
+      "reason": "Shoulder draw-order/mask improvement candidate can move into G5 prep review; material acceptance remains blocked.",
+      "route_phase": "P0_PRIMARY_B5_SHOULDER_ACCEPTANCE",
+      "route_priority": "PRIMARY_G5_ACCEPTANCE_SURFACE",
+      "next_action": "REVIEW_ACCEPT_OR_REVISE_SHOULDER_DRAW_ORDER_MASK",
+      "acceptance_criterion": "shoulder mask/draw-order improvement does not create pasted edges or hair occlusion artifacts"
+    },
+    {
+      "row_id": "shoulder_R",
+      "source": "B5",
+      "status": "G4_P0_TORSO_SHOULDER_DECISION_READY_G5_PREP_UNBLOCKED_MATERIAL_BLOCKED",
+      "candidate_gate": "KEEP_SHOULDER_DRAW_ORDER_MASK_AS_G5_PREP_CANDIDATE_NOT_MATERIAL_PASS",
+      "material_acceptance": "BLOCKED_UNTIL_PRIMARY_ACCEPTANCE_DECISION",
+      "reason": "Shoulder draw-order/mask improvement candidate can move into G5 prep review; material acceptance remains blocked.",
+      "route_phase": "P0_PRIMARY_B5_SHOULDER_ACCEPTANCE",
+      "route_priority": "PRIMARY_G5_ACCEPTANCE_SURFACE",
+      "next_action": "REVIEW_ACCEPT_OR_REVISE_SHOULDER_DRAW_ORDER_MASK",
+      "acceptance_criterion": "shoulder mask/draw-order improvement does not create pasted edges or hair occlusion artifacts"
+    }
+  ],
+  "secondary_context_rows": [
+    {
+      "row_id": "neck",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_BODY_CLOTHING_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/neck.png",
+      "bbox": [
+        882,
+        701,
+        1167,
+        1090
+      ],
+      "alpha_coverage": 0.01887441,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "arm_L_upper_simple",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_BODY_CLOTHING_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/arm_L_upper_simple.png",
+      "bbox": [
+        485,
+        1115,
+        695,
+        1786
+      ],
+      "alpha_coverage": 0.01823521,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "arm_R_upper_simple",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_BODY_CLOTHING_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/arm_R_upper_simple.png",
+      "bbox": [
+        1334,
+        1116,
+        1521,
+        1786
+      ],
+      "alpha_coverage": 0.01637411,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "face_shadow_L",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_FACE_MICRO_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/face_shadow_L.png",
+      "bbox": [
+        721,
+        678,
+        809,
+        883
+      ],
+      "alpha_coverage": 0.00281453,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "face_shadow_R",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_FACE_MICRO_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/face_shadow_R.png",
+      "bbox": [
+        1211,
+        680,
+        1291,
+        881
+      ],
+      "alpha_coverage": 0.00274563,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "nose",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_FACE_MICRO_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/nose.png",
+      "bbox": [
+        1003,
+        757,
+        1046,
+        823
+      ],
+      "alpha_coverage": 0.00052786,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "cheek_L",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_FACE_MICRO_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/cheek_L.png",
+      "bbox": [
+        752,
+        744,
+        917,
+        844
+      ],
+      "alpha_coverage": 0.0030582,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "cheek_R",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_FACE_MICRO_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/cheek_R.png",
+      "bbox": [
+        1129,
+        744,
+        1294,
+        844
+      ],
+      "alpha_coverage": 0.00305676,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "brow_L",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_FACE_MICRO_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/brow_L.png",
+      "bbox": [
+        779,
+        631,
+        924,
+        659
+      ],
+      "alpha_coverage": 0.00030065,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "brow_R",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_FACE_MICRO_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/brow_R.png",
+      "bbox": [
+        1103,
+        631,
+        1247,
+        659
+      ],
+      "alpha_coverage": 0.00030589,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "hair_back_base",
+      "source": "B4",
+      "review_class": "B4_SECONDARY_CONTEXT_REVIEW",
+      "review_lane": "P2_B4_SECONDARY_HAIR_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_base.png",
+      "bbox": [
+        644,
+        190,
+        1404,
+        1250
+      ],
+      "alpha_coverage": 0.14233398,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "hair_back_underpaint",
+      "source": "B4",
+      "review_class": "B4_SECONDARY_CONTEXT_REVIEW",
+      "review_lane": "P2_B4_SECONDARY_HAIR_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_underpaint.png",
+      "bbox": [
+        818,
+        585,
+        1229,
+        1175
+      ],
+      "alpha_coverage": 0.04447603,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "hair_back_strand_L",
+      "source": "B4",
+      "review_class": "B4_SECONDARY_CONTEXT_REVIEW",
+      "review_lane": "P2_B4_SECONDARY_HAIR_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_strand_L.png",
+      "bbox": [
+        595,
+        440,
+        855,
+        1200
+      ],
+      "alpha_coverage": 0.02609921,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "hair_back_strand_R",
+      "source": "B4",
+      "review_class": "B4_SECONDARY_CONTEXT_REVIEW",
+      "review_lane": "P2_B4_SECONDARY_HAIR_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_strand_R.png",
+      "bbox": [
+        1224,
+        450,
+        1446,
+        1210
+      ],
+      "alpha_coverage": 0.02190447,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "hair_back_center",
+      "source": "B4",
+      "review_class": "B4_SECONDARY_CONTEXT_REVIEW",
+      "review_lane": "P2_B4_SECONDARY_HAIR_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_center.png",
+      "bbox": [
+        837,
+        435,
+        1211,
+        1210
+      ],
+      "alpha_coverage": 0.0482862,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "hair_side_L_outer",
+      "source": "B4",
+      "review_class": "B4_SECONDARY_CONTEXT_REVIEW",
+      "review_lane": "P2_B4_SECONDARY_HAIR_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_L_outer.png",
+      "bbox": [
+        696,
+        670,
+        737,
+        1151
+      ],
+      "alpha_coverage": 0.00231504,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "hair_side_L_inner",
+      "source": "B4",
+      "review_class": "B4_SECONDARY_CONTEXT_REVIEW",
+      "review_lane": "P2_B4_SECONDARY_HAIR_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_L_inner.png",
+      "bbox": [
+        670,
+        712,
+        807,
+        1133
+      ],
+      "alpha_coverage": 0.00722432,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "hair_side_R_outer",
+      "source": "B4",
+      "review_class": "B4_SECONDARY_CONTEXT_REVIEW",
+      "review_lane": "P2_B4_SECONDARY_HAIR_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_R_outer.png",
+      "bbox": [
+        1328,
+        675,
+        1509,
+        1190
+      ],
+      "alpha_coverage": 0.01454306,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "hair_side_R_inner",
+      "source": "B4",
+      "review_class": "B4_SECONDARY_CONTEXT_REVIEW",
+      "review_lane": "P2_B4_SECONDARY_HAIR_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_R_inner.png",
+      "bbox": [
+        1187,
+        712,
+        1319,
+        1159
+      ],
+      "alpha_coverage": 0.01035833,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "collar_front",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_BODY_CLOTHING_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/collar_front.png",
+      "bbox": [
+        748,
+        1078,
+        1300,
+        1198
+      ],
+      "alpha_coverage": 0.00627613,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "collar_shadow",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_BODY_CLOTHING_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/collar_shadow.png",
+      "bbox": [
+        753,
+        1178,
+        1295,
+        1269
+      ],
+      "alpha_coverage": 0.00243759,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "chest_cloth_base",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_BODY_CLOTHING_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/chest_cloth_base.png",
+      "bbox": [
+        698,
+        1246,
+        1350,
+        1546
+      ],
+      "alpha_coverage": 0.01802492,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    },
+    {
+      "row_id": "chest_cloth_shadow",
+      "source": "B5",
+      "review_class": "B5_COPIED_CONTEXT_REVIEW",
+      "review_lane": "P3_B5_BODY_CLOTHING_COPIED_CONTEXT_REVIEW",
+      "g5_effect": "CONTEXT_REVIEW_BEFORE_G5",
+      "material_acceptance": "BLOCKED_CONTEXT_REVIEW_REQUIRED",
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/chest_cloth_shadow.png",
+      "bbox": [
+        733,
+        1481,
+        1288,
+        1641
+      ],
+      "alpha_coverage": 0.00590897,
+      "route_phase": "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY",
+      "route_priority": "SECONDARY_CONTEXT_REVIEW",
+      "next_action": "REVIEW_AFTER_PRIMARY6_OR_WHEN_VISIBLE_ARTIFACTS_ARE_FOUND",
+      "acceptance_criterion": "context rows cannot become material PASS from validator evidence alone."
+    }
+  ],
+  "hairfront_contract_rows": [
+    {
+      "row_id": "hair_front_center",
+      "source": "B4",
+      "review_class": "HAIRFRONT_MOTION_READINESS_REVIEW",
+      "review_lane": "P1_B4_FRONT_HAIR_MOTION_CANDIDATE_KEEP_HAIRFRONT_HIDDEN",
+      "g5_effect": "DOES_NOT_UNLOCK_HAIRFRONT_YET",
+      "material_acceptance": "BLOCKED_HAIRFRONT_HIDDEN_CONTRACT_ONLY",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_center.png",
+      "bbox": [
+        820,
+        231,
+        1228,
+        629
+      ],
+      "alpha_coverage": 0.02321458,
+      "route_phase": "P2_HAIRFRONT_CONTRACT_ONLY_DEFERRED",
+      "route_priority": "DEFER_KEEP_HAIRFRONT_HIDDEN",
+      "next_action": "KEEP_HAIRFRONT_HIDDEN_UNTIL_INDEPENDENT_MOTION_READINESS_ACCEPTANCE",
+      "acceptance_criterion": "ParamHairFront remains hidden/contract-only; do not unlock from these rows."
+    },
+    {
+      "row_id": "hair_front_L",
+      "source": "B4",
+      "review_class": "HAIRFRONT_MOTION_READINESS_REVIEW",
+      "review_lane": "P1_B4_FRONT_HAIR_MOTION_CANDIDATE_KEEP_HAIRFRONT_HIDDEN",
+      "g5_effect": "DOES_NOT_UNLOCK_HAIRFRONT_YET",
+      "material_acceptance": "BLOCKED_HAIRFRONT_HIDDEN_CONTRACT_ONLY",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_L.png",
+      "bbox": [
+        759,
+        286,
+        1008,
+        605
+      ],
+      "alpha_coverage": 0.01171589,
+      "route_phase": "P2_HAIRFRONT_CONTRACT_ONLY_DEFERRED",
+      "route_priority": "DEFER_KEEP_HAIRFRONT_HIDDEN",
+      "next_action": "KEEP_HAIRFRONT_HIDDEN_UNTIL_INDEPENDENT_MOTION_READINESS_ACCEPTANCE",
+      "acceptance_criterion": "ParamHairFront remains hidden/contract-only; do not unlock from these rows."
+    },
+    {
+      "row_id": "hair_front_R",
+      "source": "B4",
+      "review_class": "HAIRFRONT_MOTION_READINESS_REVIEW",
+      "review_lane": "P1_B4_FRONT_HAIR_MOTION_CANDIDATE_KEEP_HAIRFRONT_HIDDEN",
+      "g5_effect": "DOES_NOT_UNLOCK_HAIRFRONT_YET",
+      "material_acceptance": "BLOCKED_HAIRFRONT_HIDDEN_CONTRACT_ONLY",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_R.png",
+      "bbox": [
+        1015,
+        282,
+        1306,
+        630
+      ],
+      "alpha_coverage": 0.01713395,
+      "route_phase": "P2_HAIRFRONT_CONTRACT_ONLY_DEFERRED",
+      "route_priority": "DEFER_KEEP_HAIRFRONT_HIDDEN",
+      "next_action": "KEEP_HAIRFRONT_HIDDEN_UNTIL_INDEPENDENT_MOTION_READINESS_ACCEPTANCE",
+      "acceptance_criterion": "ParamHairFront remains hidden/contract-only; do not unlock from these rows."
+    },
+    {
+      "row_id": "hair_front_side_L",
+      "source": "B4",
+      "review_class": "HAIRFRONT_MOTION_READINESS_REVIEW",
+      "review_lane": "P1_B4_FRONT_HAIR_MOTION_CANDIDATE_KEEP_HAIRFRONT_HIDDEN",
+      "g5_effect": "DOES_NOT_UNLOCK_HAIRFRONT_YET",
+      "material_acceptance": "BLOCKED_HAIRFRONT_HIDDEN_CONTRACT_ONLY",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_side_L.png",
+      "bbox": [
+        715,
+        385,
+        907,
+        885
+      ],
+      "alpha_coverage": 0.01118851,
+      "route_phase": "P2_HAIRFRONT_CONTRACT_ONLY_DEFERRED",
+      "route_priority": "DEFER_KEEP_HAIRFRONT_HIDDEN",
+      "next_action": "KEEP_HAIRFRONT_HIDDEN_UNTIL_INDEPENDENT_MOTION_READINESS_ACCEPTANCE",
+      "acceptance_criterion": "ParamHairFront remains hidden/contract-only; do not unlock from these rows."
+    },
+    {
+      "row_id": "hair_front_side_R",
+      "source": "B4",
+      "review_class": "HAIRFRONT_MOTION_READINESS_REVIEW",
+      "review_lane": "P1_B4_FRONT_HAIR_MOTION_CANDIDATE_KEEP_HAIRFRONT_HIDDEN",
+      "g5_effect": "DOES_NOT_UNLOCK_HAIRFRONT_YET",
+      "material_acceptance": "BLOCKED_HAIRFRONT_HIDDEN_CONTRACT_ONLY",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_side_R.png",
+      "bbox": [
+        1225,
+        385,
+        1348,
+        885
+      ],
+      "alpha_coverage": 0.0070703,
+      "route_phase": "P2_HAIRFRONT_CONTRACT_ONLY_DEFERRED",
+      "route_priority": "DEFER_KEEP_HAIRFRONT_HIDDEN",
+      "next_action": "KEEP_HAIRFRONT_HIDDEN_UNTIL_INDEPENDENT_MOTION_READINESS_ACCEPTANCE",
+      "acceptance_criterion": "ParamHairFront remains hidden/contract-only; do not unlock from these rows."
+    },
+    {
+      "row_id": "hair_front_tip_L",
+      "source": "B4",
+      "review_class": "HAIRFRONT_MOTION_READINESS_REVIEW",
+      "review_lane": "P1_B4_FRONT_HAIR_MOTION_CANDIDATE_KEEP_HAIRFRONT_HIDDEN",
+      "g5_effect": "DOES_NOT_UNLOCK_HAIRFRONT_YET",
+      "material_acceptance": "BLOCKED_HAIRFRONT_HIDDEN_CONTRACT_ONLY",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_tip_L.png",
+      "bbox": [
+        698,
+        695,
+        821,
+        1047
+      ],
+      "alpha_coverage": 0.00541162,
+      "route_phase": "P2_HAIRFRONT_CONTRACT_ONLY_DEFERRED",
+      "route_priority": "DEFER_KEEP_HAIRFRONT_HIDDEN",
+      "next_action": "KEEP_HAIRFRONT_HIDDEN_UNTIL_INDEPENDENT_MOTION_READINESS_ACCEPTANCE",
+      "acceptance_criterion": "ParamHairFront remains hidden/contract-only; do not unlock from these rows."
+    },
+    {
+      "row_id": "hair_front_tip_R",
+      "source": "B4",
+      "review_class": "HAIRFRONT_MOTION_READINESS_REVIEW",
+      "review_lane": "P1_B4_FRONT_HAIR_MOTION_CANDIDATE_KEEP_HAIRFRONT_HIDDEN",
+      "g5_effect": "DOES_NOT_UNLOCK_HAIRFRONT_YET",
+      "material_acceptance": "BLOCKED_HAIRFRONT_HIDDEN_CONTRACT_ONLY",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_tip_R.png",
+      "bbox": [
+        1156,
+        695,
+        1261,
+        1074
+      ],
+      "alpha_coverage": 0.00642014,
+      "route_phase": "P2_HAIRFRONT_CONTRACT_ONLY_DEFERRED",
+      "route_priority": "DEFER_KEEP_HAIRFRONT_HIDDEN",
+      "next_action": "KEEP_HAIRFRONT_HIDDEN_UNTIL_INDEPENDENT_MOTION_READINESS_ACCEPTANCE",
+      "acceptance_criterion": "ParamHairFront remains hidden/contract-only; do not unlock from these rows."
+    }
+  ],
+  "summary": {
+    "source_material_acceptance_pass_count": 0,
+    "total_route_row_count": 36,
+    "primary6_row_count": 6,
+    "secondary_context_row_count": 23,
+    "hairfront_contract_row_count": 7,
+    "primary6_ids": [
+      "B1_CLEAN_BASE_UNDERPAINT",
+      "B2_EYE_PACK",
+      "B3_MOUTH_PACK_REVISION_V1",
+      "torso_base",
+      "shoulder_L",
+      "shoulder_R"
+    ],
+    "primary6_unresolved_count": 6,
+    "total_unresolved_material_acceptance_count": 36,
+    "priority_counts": {
+      "DEFER_KEEP_HAIRFRONT_HIDDEN": 7,
+      "PRIMARY_G5_ACCEPTANCE_SURFACE": 6,
+      "SECONDARY_CONTEXT_REVIEW": 23
+    },
+    "phase_counts": {
+      "P0_PRIMARY_B1_CLEAN_BASE_ACCEPTANCE": 1,
+      "P0_PRIMARY_B2_EYE_ACCEPTANCE": 1,
+      "P0_PRIMARY_B3_MOUTH_ACCEPTANCE": 1,
+      "P0_PRIMARY_B5_SHOULDER_ACCEPTANCE": 2,
+      "P0_PRIMARY_B5_TORSO_ACCEPTANCE": 1,
+      "P1_SECONDARY_CONTEXT_REVIEW_AFTER_PRIMARY": 23,
+      "P2_HAIRFRONT_CONTRACT_ONLY_DEFERRED": 7
+    },
+    "material_acceptance_counts": {
+      "BLOCKED_CONTEXT_REVIEW_REQUIRED": 23,
+      "BLOCKED_HAIRFRONT_HIDDEN_CONTRACT_ONLY": 7,
+      "BLOCKED_UNTIL_PRIMARY_ACCEPTANCE_DECISION": 6
+    },
+    "g5_material_acceptance_status": "BLOCKED_PRIMARY6_REDUCTION_READY_MATERIAL_NOT_ACCEPTED",
+    "material_pass_status": "BLOCKED",
+    "param_hair_front_status": "HIDDEN_CONTRACT_ONLY",
+    "g7_mini_cubism_status": "BLOCKED_UNTIL_G5_MATERIAL_ACCEPTANCE",
+    "g8_real_cubism_status": "BLOCKED_UNTIL_MATERIAL_ACCEPTANCE_AND_EDITOR_GATE"
+  },
+  "gate_matrix": {
+    "G5_MATERIAL_ACCEPTANCE": "PRIMARY6_REDUCTION_READY_MATERIAL_NOT_ACCEPTED",
+    "G6_MANUAL_ANCHOR_CORRECTION": "AVAILABLE_FOR_PRIMARY_OR_CONTEXT_REVISE_ROWS",
+    "G7_MINI_CUBISM_DIAGNOSTIC": "BLOCKED_UNTIL_G5_MATERIAL_ACCEPTANCE",
+    "G8_REAL_CUBISM_AUTHORING": "BLOCKED_UNTIL_MATERIAL_ACCEPTANCE_AND_EDITOR_GATE"
+  },
+  "locks": {
+    "v21_eye_open_lower_bound": 0.27,
+    "v21_mouth_open_y_max": 0.85,
+    "param_hair_front_status": "HIDDEN_CONTRACT_ONLY",
+    "validator_only_promotion_blocked": true,
+    "material_pass_status": "BLOCKED",
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true,
+    "not_owner_approval": true
+  },
+  "decision": "The G5 material acceptance surface is reduced to six primary rows for the next accept/revise pass, while 23 context rows and seven HairFront-contract rows remain blocked and preserved. No material PASS is granted.",
+  "next_action": [
+    "Build or apply a G5 primary6 accept/revise packet for B1, B2, B3, torso_base, shoulder_L, and shoulder_R.",
+    "Use manual anchor correction only for rows that are visually misaligned after the primary6 pass.",
+    "Keep HairFront hidden and keep G7/G8 blocked until material acceptance is explicitly passed."
+  ],
+  "self_review": {
+    "source_status": "G5_MATERIAL_ACCEPTANCE_PACKET_REVIEW_REQUIRED_MATERIAL_NOT_ACCEPTED",
+    "source_verdict": "REVIEW_REQUIRED_MATERIAL_NOT_ACCEPTED",
+    "source_material_acceptance_pass_count": 0,
+    "total_route_row_count": 36,
+    "primary6_row_count": 6,
+    "secondary_context_row_count": 23,
+    "hairfront_contract_row_count": 7,
+    "primary6_unresolved_count": 6,
+    "total_unresolved_material_acceptance_count": 36,
+    "primary6_ids_match_expected": true,
+    "g5_material_not_accepted": true,
+    "validator_only_promotion_blocked": true,
+    "material_pass_blocked": true,
+    "param_hair_front_hidden": true,
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true,
+    "not_owner_approval": true,
+    "status": "PASS"
+  }
+}

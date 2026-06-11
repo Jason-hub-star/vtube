@@ -1,0 +1,177 @@
+[
+  {
+    "id": "Root",
+    "type": "warp",
+    "parent_id": null,
+    "child_ids": [],
+    "bounds": [
+      0,
+      0,
+      2048,
+      2048
+    ],
+    "pivot": [
+      1024.0,
+      1024.0
+    ]
+  },
+  {
+    "id": "Body",
+    "type": "warp",
+    "parent_id": "Root",
+    "child_ids": [
+      "neck",
+      "clothes",
+      "R_arm",
+      "L_arm",
+      "choker"
+    ],
+    "bounds": [
+      168,
+      899,
+      1875,
+      2048
+    ],
+    "pivot": [
+      1021.5,
+      1473.5
+    ]
+  },
+  {
+    "id": "Head_X",
+    "type": "warp",
+    "parent_id": "Root",
+    "child_ids": [
+      "back_hair",
+      "R_ear_outer",
+      "L_ear_outer",
+      "face_base",
+      "front_hair"
+    ],
+    "bounds": [
+      175,
+      31,
+      1868,
+      2048
+    ],
+    "pivot": [
+      1021.5,
+      1039.5
+    ]
+  },
+  {
+    "id": "Face_Base",
+    "type": "warp",
+    "parent_id": "Head_X",
+    "child_ids": [
+      "neck",
+      "face_base",
+      "R_brow",
+      "L_brow"
+    ],
+    "bounds": [
+      621,
+      90,
+      1423,
+      1313
+    ],
+    "pivot": [
+      1022.0,
+      701.5
+    ]
+  },
+  {
+    "id": "Eye_L",
+    "type": "warp",
+    "parent_id": "Head_X",
+    "child_ids": [
+      "L_eye_white",
+      "L_iris",
+      "L_upper_lash"
+    ],
+    "bounds": [
+      1084,
+      661,
+      1367,
+      859
+    ],
+    "pivot": [
+      1225.5,
+      760.0
+    ]
+  },
+  {
+    "id": "Eye_R",
+    "type": "warp",
+    "parent_id": "Head_X",
+    "child_ids": [
+      "R_eye_white",
+      "R_iris",
+      "R_upper_lash"
+    ],
+    "bounds": [
+      683,
+      660,
+      968,
+      859
+    ],
+    "pivot": [
+      825.5,
+      759.5
+    ]
+  },
+  {
+    "id": "Mouth",
+    "type": "warp",
+    "parent_id": "Head_X",
+    "child_ids": [
+      "mouth_line"
+    ],
+    "bounds": [
+      940,
+      934,
+      1113,
+      1077
+    ],
+    "pivot": [
+      1026.5,
+      1005.5
+    ]
+  },
+  {
+    "id": "Hair_Front",
+    "type": "rotation",
+    "parent_id": "Head_X",
+    "child_ids": [
+      "front_hair"
+    ],
+    "bounds": [
+      536,
+      41,
+      1515,
+      865
+    ],
+    "pivot": [
+      1025.5,
+      453.0
+    ]
+  },
+  {
+    "id": "Hair_Back",
+    "type": "warp",
+    "parent_id": "Root",
+    "child_ids": [
+      "back_hair"
+    ],
+    "bounds": [
+      175,
+      31,
+      1868,
+      2048
+    ],
+    "pivot": [
+      1021.5,
+      1039.5
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T08:06:27.767921+00:00",
+  "status": "V16_WHOLE_EYEBALL_READY_FOR_VALIDATION",
+  "source_project": "experiments/cubism-v2-new-character-002/model_edit_v15_eye_nose_position_preview/mini_cubism_diagnostic_project",
+  "project": "experiments/cubism-v2-new-character-002/model_edit_v16_whole_eyeball_preview/mini_cubism_diagnostic_project",
+  "eye_ball_binding_strength": {
+    "x": 7.5,
+    "y": 4.5
+  },
+  "eye_ball_parts": [
+    "eye_L_white",
+    "eye_L_iris",
+    "eye_L_pupil",
+    "eye_L_highlight",
+    "eye_R_white",
+    "eye_R_iris",
+    "eye_R_pupil",
+    "eye_R_highlight"
+  ],
+  "policy": {
+    "preserve_v15_eye_height": true,
+    "preserve_nose_detail": true,
+    "preserve_v13_mouth_pattern": true,
+    "eye_open_min": 0.27,
+    "mouth_open_y_max": 0.85,
+    "production_claim": "diagnostic only; full eyeball motion requires human visual QA before promotion"
+  }
+}

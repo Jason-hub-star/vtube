@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "experiment_id": "mini-cubism-v0-001",
+  "generated_at": "2026-06-04T11:06:03.849344+00:00",
+  "source_experiment_id": "imagen-live2d-001",
+  "source_selection": "experiments/imagen-live2d-001/reports/psd_candidate_gate_report.json",
+  "project_dir": "/Users/family/jason/Vtube/experiments/mini-cubism-v0-001/mini_cubism_project",
+  "character_json": "/Users/family/jason/Vtube/experiments/mini-cubism-v0-001/mini_cubism_project/character.json",
+  "counts": {
+    "parts": 19,
+    "meshes": 19,
+    "deformers": 9,
+    "parameters": 5,
+    "keyform_bindings": 7,
+    "glue": 0
+  },
+  "status": "BUILT_PENDING_VALIDATION"
+}

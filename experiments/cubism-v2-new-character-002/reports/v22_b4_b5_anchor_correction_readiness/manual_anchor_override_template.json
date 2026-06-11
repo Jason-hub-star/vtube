@@ -1,0 +1,414 @@
+{
+  "schema_version": "v1",
+  "status": "PENDING_MANUAL_ANCHOR_INPUT",
+  "source_report": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_anchor_correction_readiness/v22_b4_b5_anchor_correction_readiness.json",
+  "project": "cubism-v2-new-character-002",
+  "canvas": [
+    2048,
+    2048
+  ],
+  "rules": [
+    "Keep full-canvas RGBA layers at 2048x2048.",
+    "Shift only intended B4/B5 target parts.",
+    "Keep ParamHairFront hidden until corrected front hair passes overlay QA.",
+    "Do not use this template as approval evidence until target_anchor values are filled and rebuilt."
+  ],
+  "overrides": [
+    {
+      "part_id": "torso_base",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/torso_base.png",
+      "current_center": [
+        1039.0,
+        1374.5
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "neck",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/neck.png",
+      "current_center": [
+        1036.5,
+        895.5
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "shoulder_L",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/shoulder_L.png",
+      "current_center": [
+        717.5,
+        1109.5
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "shoulder_R",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/shoulder_R.png",
+      "current_center": [
+        1326.5,
+        1112.5
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "arm_L_upper_simple",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/arm_L_upper_simple.png",
+      "current_center": [
+        590.5,
+        1448.5
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "arm_R_upper_simple",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/arm_R_upper_simple.png",
+      "current_center": [
+        1428.0,
+        1450.5
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "face_shadow_L",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/face_shadow_L.png",
+      "current_center": [
+        750.0,
+        774.5
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "face_shadow_R",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/face_shadow_R.png",
+      "current_center": [
+        1210.0,
+        773.0
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "nose",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/nose.png",
+      "current_center": [
+        1026.0,
+        790.0
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "cheek_L",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/cheek_L.png",
+      "current_center": [
+        830.0,
+        794.0
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "cheek_R",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/cheek_R.png",
+      "current_center": [
+        1215.0,
+        794.0
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "brow_L",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/brow_L.png",
+      "current_center": [
+        844.5,
+        644.5
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "brow_R",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/brow_R.png",
+      "current_center": [
+        1183.5,
+        644.0
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "hair_back_base",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_back_base.png",
+      "current_center": [
+        1024.0,
+        720.0
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "hair_back_underpaint",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_back_underpaint.png",
+      "current_center": [
+        939.5,
+        880.0
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "hair_back_strand_L",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_back_strand_L.png",
+      "current_center": [
+        725.0,
+        820.0
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "hair_back_strand_R",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_back_strand_R.png",
+      "current_center": [
+        1334.0,
+        830.0
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "hair_back_center",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_back_center.png",
+      "current_center": [
+        1026.0,
+        822.5
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "hair_front_center",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_front_center.png",
+      "current_center": [
+        1024.0,
+        429.0
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "hair_front_L",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_front_L.png",
+      "current_center": [
+        881.5,
+        445.0
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "hair_front_R",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_front_R.png",
+      "current_center": [
+        1160.0,
+        455.0
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "hair_front_side_L",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_front_side_L.png",
+      "current_center": [
+        812.0,
+        635.0
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "hair_front_side_R",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_front_side_R.png",
+      "current_center": [
+        1287.0,
+        635.0
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "hair_front_tip_L",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_front_tip_L.png",
+      "current_center": [
+        760.0,
+        872.5
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "hair_front_tip_R",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_front_tip_R.png",
+      "current_center": [
+        1209.0,
+        885.0
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "hair_side_L_outer",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_side_L_outer.png",
+      "current_center": [
+        716.5,
+        910.5
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "hair_side_L_inner",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_side_L_inner.png",
+      "current_center": [
+        738.5,
+        922.5
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "hair_side_R_outer",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_side_R_outer.png",
+      "current_center": [
+        1418.5,
+        932.5
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "hair_side_R_inner",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_side_R_inner.png",
+      "current_center": [
+        1253.0,
+        935.5
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "collar_front",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/collar_front.png",
+      "current_center": [
+        1028.0,
+        1138.0
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "collar_shadow",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/collar_shadow.png",
+      "current_center": [
+        1016.5,
+        1223.5
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "chest_cloth_base",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/chest_cloth_base.png",
+      "current_center": [
+        1047.5,
+        1395.0
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    },
+    {
+      "part_id": "chest_cloth_shadow",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/chest_cloth_shadow.png",
+      "current_center": [
+        1034.5,
+        1565.0
+      ],
+      "target_anchor": null,
+      "target_scale": 1.0,
+      "notes": ""
+    }
+  ]
+}

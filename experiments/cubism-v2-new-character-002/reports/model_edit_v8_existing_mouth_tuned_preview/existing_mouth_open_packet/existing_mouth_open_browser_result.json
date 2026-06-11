@@ -1,0 +1,299 @@
+{
+  "ok": true,
+  "frames": [
+    {
+      "id": "mouthopen_0_00_closed",
+      "mouthOpen": 0,
+      "label": "closed smile",
+      "parameters": {
+        "ParamAngleX": 0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamMouthOpenY": 0,
+        "ParamHairFront": 0
+      },
+      "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v8_existing_mouth_tuned_preview/existing_mouth_open_packet/frames/mouthopen_0_00_closed.png",
+      "metrics": {
+        "width": 2048,
+        "height": 2048,
+        "hash": "b833507a"
+      },
+      "snapshot": {
+        "parameters": {
+          "ParamAngleX": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamMouthOpenY": 0,
+          "ParamHairFront": 0
+        },
+        "physics": {},
+        "part_opacity": {
+          "face_base_clean": 1,
+          "eye_L_clean_socket": 0,
+          "eye_R_clean_socket": 0,
+          "eye_L_closed_underpaint": 0,
+          "eye_R_closed_underpaint": 0,
+          "eye_L_open": 1,
+          "eye_R_open": 1,
+          "eye_L_half_closed_lid": 0,
+          "eye_R_half_closed_lid": 0,
+          "eye_L_mostly_closed_lid": 0,
+          "eye_R_mostly_closed_lid": 0,
+          "eye_L_closed_lid": 0,
+          "eye_R_closed_lid": 0,
+          "mouth_base_clean": 1,
+          "mouth_closed_smile": 1,
+          "mouth_small_open": 0,
+          "mouth_inner": 0,
+          "mouth_teeth": 0,
+          "mouth_tongue": 0
+        }
+      }
+    },
+    {
+      "id": "mouthopen_0_20_tiny",
+      "mouthOpen": 0.2,
+      "label": "tiny opening",
+      "parameters": {
+        "ParamAngleX": 0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamMouthOpenY": 0.2,
+        "ParamHairFront": 0
+      },
+      "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v8_existing_mouth_tuned_preview/existing_mouth_open_packet/frames/mouthopen_0_20_tiny.png",
+      "metrics": {
+        "width": 2048,
+        "height": 2048,
+        "hash": "f396b12a"
+      },
+      "snapshot": {
+        "parameters": {
+          "ParamAngleX": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamMouthOpenY": 0.2,
+          "ParamHairFront": 0
+        },
+        "physics": {},
+        "part_opacity": {
+          "face_base_clean": 1,
+          "eye_L_clean_socket": 0,
+          "eye_R_clean_socket": 0,
+          "eye_L_closed_underpaint": 0,
+          "eye_R_closed_underpaint": 0,
+          "eye_L_open": 1,
+          "eye_R_open": 1,
+          "eye_L_half_closed_lid": 0,
+          "eye_R_half_closed_lid": 0,
+          "eye_L_mostly_closed_lid": 0,
+          "eye_R_mostly_closed_lid": 0,
+          "eye_L_closed_lid": 0,
+          "eye_R_closed_lid": 0,
+          "mouth_base_clean": 1,
+          "mouth_closed_smile": 0.936,
+          "mouth_small_open": 0.1,
+          "mouth_inner": 0,
+          "mouth_teeth": 0,
+          "mouth_tongue": 0
+        }
+      }
+    },
+    {
+      "id": "mouthopen_0_40_soft",
+      "mouthOpen": 0.4,
+      "label": "soft transition",
+      "parameters": {
+        "ParamAngleX": 0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamMouthOpenY": 0.4,
+        "ParamHairFront": 0
+      },
+      "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v8_existing_mouth_tuned_preview/existing_mouth_open_packet/frames/mouthopen_0_40_soft.png",
+      "metrics": {
+        "width": 2048,
+        "height": 2048,
+        "hash": "3df0fbcc"
+      },
+      "snapshot": {
+        "parameters": {
+          "ParamAngleX": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamMouthOpenY": 0.4,
+          "ParamHairFront": 0
+        },
+        "physics": {},
+        "part_opacity": {
+          "face_base_clean": 1,
+          "eye_L_clean_socket": 0,
+          "eye_R_clean_socket": 0,
+          "eye_L_closed_underpaint": 0,
+          "eye_R_closed_underpaint": 0,
+          "eye_L_open": 1,
+          "eye_R_open": 1,
+          "eye_L_half_closed_lid": 0,
+          "eye_R_half_closed_lid": 0,
+          "eye_L_mostly_closed_lid": 0,
+          "eye_R_mostly_closed_lid": 0,
+          "eye_L_closed_lid": 0,
+          "eye_R_closed_lid": 0,
+          "mouth_base_clean": 1,
+          "mouth_closed_smile": 0.698,
+          "mouth_small_open": 0.31333333333333335,
+          "mouth_inner": 0,
+          "mouth_teeth": 0,
+          "mouth_tongue": 0
+        }
+      }
+    },
+    {
+      "id": "mouthopen_0_60_mid",
+      "mouthOpen": 0.6,
+      "label": "mid transition",
+      "parameters": {
+        "ParamAngleX": 0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamMouthOpenY": 0.6,
+        "ParamHairFront": 0
+      },
+      "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v8_existing_mouth_tuned_preview/existing_mouth_open_packet/frames/mouthopen_0_60_mid.png",
+      "metrics": {
+        "width": 2048,
+        "height": 2048,
+        "hash": "471015ca"
+      },
+      "snapshot": {
+        "parameters": {
+          "ParamAngleX": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamMouthOpenY": 0.6,
+          "ParamHairFront": 0
+        },
+        "physics": {},
+        "part_opacity": {
+          "face_base_clean": 1,
+          "eye_L_clean_socket": 0,
+          "eye_R_clean_socket": 0,
+          "eye_L_closed_underpaint": 0,
+          "eye_R_closed_underpaint": 0,
+          "eye_L_open": 1,
+          "eye_R_open": 1,
+          "eye_L_half_closed_lid": 0,
+          "eye_R_half_closed_lid": 0,
+          "eye_L_mostly_closed_lid": 0,
+          "eye_R_mostly_closed_lid": 0,
+          "eye_L_closed_lid": 0,
+          "eye_R_closed_lid": 0,
+          "mouth_base_clean": 1,
+          "mouth_closed_smile": 0.41800000000000004,
+          "mouth_small_open": 0.5479999999999999,
+          "mouth_inner": 0,
+          "mouth_teeth": 0,
+          "mouth_tongue": 0
+        }
+      }
+    },
+    {
+      "id": "mouthopen_0_80_open",
+      "mouthOpen": 0.8,
+      "label": "open",
+      "parameters": {
+        "ParamAngleX": 0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamMouthOpenY": 0.8,
+        "ParamHairFront": 0
+      },
+      "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v8_existing_mouth_tuned_preview/existing_mouth_open_packet/frames/mouthopen_0_80_open.png",
+      "metrics": {
+        "width": 2048,
+        "height": 2048,
+        "hash": "1b7fa9c7"
+      },
+      "snapshot": {
+        "parameters": {
+          "ParamAngleX": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamMouthOpenY": 0.8,
+          "ParamHairFront": 0
+        },
+        "physics": {},
+        "part_opacity": {
+          "face_base_clean": 1,
+          "eye_L_clean_socket": 0,
+          "eye_R_clean_socket": 0,
+          "eye_L_closed_underpaint": 0,
+          "eye_R_closed_underpaint": 0,
+          "eye_L_open": 1,
+          "eye_R_open": 1,
+          "eye_L_half_closed_lid": 0,
+          "eye_R_half_closed_lid": 0,
+          "eye_L_mostly_closed_lid": 0,
+          "eye_R_mostly_closed_lid": 0,
+          "eye_L_closed_lid": 0,
+          "eye_R_closed_lid": 0,
+          "mouth_base_clean": 1,
+          "mouth_closed_smile": 0.17599999999999996,
+          "mouth_small_open": 0.792,
+          "mouth_inner": 0,
+          "mouth_teeth": 0,
+          "mouth_tongue": 0
+        }
+      }
+    },
+    {
+      "id": "mouthopen_1_00_full",
+      "mouthOpen": 1,
+      "label": "full existing small open",
+      "parameters": {
+        "ParamAngleX": 0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamMouthOpenY": 1,
+        "ParamHairFront": 0
+      },
+      "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v8_existing_mouth_tuned_preview/existing_mouth_open_packet/frames/mouthopen_1_00_full.png",
+      "metrics": {
+        "width": 2048,
+        "height": 2048,
+        "hash": "fdddf69f"
+      },
+      "snapshot": {
+        "parameters": {
+          "ParamAngleX": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamMouthOpenY": 1,
+          "ParamHairFront": 0
+        },
+        "physics": {},
+        "part_opacity": {
+          "face_base_clean": 1,
+          "eye_L_clean_socket": 0,
+          "eye_R_clean_socket": 0,
+          "eye_L_closed_underpaint": 0,
+          "eye_R_closed_underpaint": 0,
+          "eye_L_open": 1,
+          "eye_R_open": 1,
+          "eye_L_half_closed_lid": 0,
+          "eye_R_half_closed_lid": 0,
+          "eye_L_mostly_closed_lid": 0,
+          "eye_R_mostly_closed_lid": 0,
+          "eye_L_closed_lid": 0,
+          "eye_R_closed_lid": 0,
+          "mouth_base_clean": 1,
+          "mouth_closed_smile": 0,
+          "mouth_small_open": 1,
+          "mouth_inner": 0,
+          "mouth_teeth": 0,
+          "mouth_tongue": 0
+        }
+      }
+    }
+  ]
+}

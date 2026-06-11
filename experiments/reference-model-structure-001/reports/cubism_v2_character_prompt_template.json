@@ -1,0 +1,306 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-08T01:48:49.384287+00:00",
+  "template_id": "cubism_v2_character_prompt_template",
+  "status": "PASS",
+  "inputs": {
+    "production_spec": "experiments/reference-model-structure-001/reports/cubism_v2_production_design_spec.json",
+    "part_spec": "experiments/reference-model-structure-001/reports/cubism_v2_new_model_v2_standard_part_spec.json",
+    "pre_generation_readiness": "experiments/reference-model-structure-001/reports/cubism_v2_new_model_pre_generation_readiness.json"
+  },
+  "target": {
+    "tier": "v2_standard",
+    "source_image_mode": "single_master_png_first",
+    "part_count": 64,
+    "purpose": "Generate one Cubism-friendly master character image before part splitting, PSD material pack, and real Cubism authoring."
+  },
+  "evidence_links": {
+    "part_taxonomy": {
+      "total_part_count": 64,
+      "group_counts": {
+        "body": 10,
+        "brow": 2,
+        "clothing": 4,
+        "eye_L": 8,
+        "eye_R": 8,
+        "face_base": 8,
+        "hair": 16,
+        "mouth": 8
+      },
+      "required_groups": [
+        "body",
+        "brow",
+        "clothing",
+        "eye_L",
+        "eye_R",
+        "face_base",
+        "hair",
+        "mouth"
+      ],
+      "part_ids_by_group": {
+        "body": [
+          "body_underpaint",
+          "torso_base",
+          "neck",
+          "neck_shadow_underpaint",
+          "shoulder_L",
+          "shoulder_R",
+          "arm_L_upper_simple",
+          "arm_R_upper_simple",
+          "arm_L_underpaint",
+          "arm_R_underpaint"
+        ],
+        "brow": [
+          "brow_L",
+          "brow_R"
+        ],
+        "clothing": [
+          "collar_front",
+          "collar_shadow",
+          "chest_cloth_base",
+          "chest_cloth_shadow"
+        ],
+        "eye_L": [
+          "eye_L_white",
+          "eye_L_iris",
+          "eye_L_pupil",
+          "eye_L_highlight",
+          "eye_L_upper_lash",
+          "eye_L_lower_lash",
+          "eye_L_closed_lid",
+          "eye_L_underpaint"
+        ],
+        "eye_R": [
+          "eye_R_white",
+          "eye_R_iris",
+          "eye_R_pupil",
+          "eye_R_highlight",
+          "eye_R_upper_lash",
+          "eye_R_lower_lash",
+          "eye_R_closed_lid",
+          "eye_R_underpaint"
+        ],
+        "face_base": [
+          "face_base",
+          "face_shadow_L",
+          "face_shadow_R",
+          "face_underpaint_L",
+          "face_underpaint_R",
+          "nose",
+          "cheek_L",
+          "cheek_R"
+        ],
+        "hair": [
+          "hair_back_base",
+          "hair_back_underpaint",
+          "hair_back_strand_L",
+          "hair_back_strand_R",
+          "hair_back_center",
+          "hair_front_center",
+          "hair_front_L",
+          "hair_front_R",
+          "hair_front_side_L",
+          "hair_front_side_R",
+          "hair_front_tip_L",
+          "hair_front_tip_R",
+          "hair_side_L_outer",
+          "hair_side_L_inner",
+          "hair_side_R_outer",
+          "hair_side_R_inner"
+        ],
+        "mouth": [
+          "mouth_line",
+          "mouth_inner",
+          "mouth_upper_lip_mask",
+          "mouth_lower_lip_mask",
+          "mouth_teeth",
+          "mouth_tongue",
+          "mouth_corner_L",
+          "mouth_corner_R"
+        ]
+      }
+    },
+    "required_parameters": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamEyeLOpen",
+      "ParamEyeROpen",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamMouthOpenY",
+      "ParamMouthForm",
+      "ParamBreath"
+    ],
+    "required_deformer_hierarchy_nodes": [
+      "root",
+      "body_root_warp",
+      "head_angle_warp",
+      "eye_L_warp",
+      "eye_R_warp",
+      "mouth_warp",
+      "front_hair_warp",
+      "side_hair_L_R_warp",
+      "back_hair_warp"
+    ],
+    "physics_target": "4-6",
+    "gates": [
+      {
+        "gate": "G0_CONCEPT",
+        "label_ko": "캐릭터 고르기",
+        "prompt_relevance": "이미지 생성 전 컨셉/구도 조건",
+        "pass_conditions": [
+          "정면 또는 거의 정면의 상반신 캐릭터다.",
+          "눈, 입, 앞머리, 옆머리, 뒷머리, 목, 어깨/팔 경계가 한눈에 보인다.",
+          "큰 소품, 복잡한 손가락, 얼굴을 가리는 장식, 강한 투명 이펙트를 넣지 않는다.",
+          "1024/1536/2048 중 하나를 쓸 수 있지만 해상도보다 파츠 분리 가능성이 우선이다."
+        ],
+        "fail_if": [
+          "옆얼굴/극단 포즈라 반대 방향 회전 keyform을 만들기 어렵다.",
+          "머리카락이 얼굴/눈/입을 과하게 덮어 mask가 필수다.",
+          "팔이 몸통과 복잡하게 겹쳐 shoulder/arm simple 범위를 넘는다."
+        ]
+      },
+      {
+        "gate": "G1_PART_TAXONOMY",
+        "label_ko": "파츠 나누기",
+        "prompt_relevance": "64파트로 분리 가능한 시각 구조 조건",
+        "pass_conditions": [
+          "64파트 v2_standard taxonomy를 기준으로 face/eye/mouth/hair/body/clothing 후보가 모두 있다.",
+          "눈 L/R 각각 white/iris/pupil/highlight/lash/lid/underpaint가 있다.",
+          "입은 line/inner/lip masks/teeth/tongue/corners가 분리된다.",
+          "머리는 front/side/back이 분리되고 최소 5개 physics group에 연결 가능하다.",
+          "underpaint 후보가 face/eye/hair/body에서 누락되지 않는다."
+        ],
+        "fail_if": [
+          "한 파츠가 여러 기능을 합쳐서 ParamEyeOpen/MouthOpenY/HairFront keyform을 분리하기 어렵다.",
+          "alpha 테두리가 지저분하거나 bbox crop이 너무 빡빡하다."
+        ]
+      },
+      {
+        "gate": "G2_STRUCTURE",
+        "label_ko": "구조 자동검사",
+        "prompt_relevance": "리깅 구조를 만들 수 있게 겹침과 파츠 경계를 제한하는 조건",
+        "pass_conditions": [
+          "v2_standard floor: parameters >=25, warp >=35, rotation >=8, keyform >=120, physics_groups >=4.",
+          "CMO3 inspector before/after 비교에서 warp/keyform 증가가 검출된다.",
+          "Core/runtime export 후 Parameters/Parts/Drawables snapshot이 생성된다."
+        ],
+        "fail_if": [
+          "ArtMesh/Parameter만 있고 Warp/Rotation Deformer나 KeyformBinding이 0에 가깝다.",
+          "runtime은 보이지만 CMO3 구조가 shallow import 수준이다."
+        ]
+      },
+      {
+        "gate": "G3_MOTION_VISUAL",
+        "label_ko": "움직임 보기",
+        "prompt_relevance": "눈/입/머리카락/몸각도 움직임이 보일 수 있는 형태 조건",
+        "pass_conditions": [
+          "단일 파라미터 sweep에서 ParamAngleX/Y, ParamEyeLOpen/ROpen, ParamMouthOpenY/Form, ParamHairFront/Side가 nonblank 변화를 만든다.",
+          "neutral vs extreme strip에서 눈/입/머리/몸각도 변화가 잘리고 겹치지 않는다.",
+          "mask/draw-order risk가 높은 파츠는 onion-skin 또는 before/after strip으로 사람이 확인한다."
+        ],
+        "fail_if": [
+          "파라미터를 움직여도 화면 변화가 거의 없다.",
+          "움직임은 생기지만 눈/입/머리/팔이 서로 앞뒤 순서를 깨뜨린다."
+        ]
+      }
+    ]
+  },
+  "positive_prompt_sections": {
+    "goal": [
+      "Live2D Cubism v2_standard용 정면 상반신 VTuber 캐릭터",
+      "single-source matched character design, one clean master PNG",
+      "designed for later PSD part separation and Cubism rigging"
+    ],
+    "composition": [
+      "front-facing or near-front upper-body portrait",
+      "centered composition, neutral pose, head and shoulders fully visible",
+      "clean silhouette with clear head, neck, torso, shoulders, and simple upper arms",
+      "symmetrical but natural design, no extreme pose"
+    ],
+    "face_and_eyes": [
+      "clear face base with both eyes fully visible",
+      "left and right eye groups are visually separable",
+      "distinct eye whites, iris, pupils, highlights, upper eyelids, lower eyelids, and lashes",
+      "simple readable eyebrows separated from hair",
+      "no hair or accessory covering the eyes"
+    ],
+    "mouth": [
+      "clearly readable mouth centered on the face",
+      "mouth not covered by hair, hands, scarf, microphone, or accessories",
+      "mouth shape suitable for open/close and form keyforms",
+      "visible mouth line and inner mouth area"
+    ],
+    "hair": [
+      "layer-friendly hair design with clear front bangs, left side hair, right side hair, and back hair",
+      "front hair clusters are cleanly grouped and do not heavily cover eyes or mouth",
+      "side hair and back hair have separated strand groups suitable for physics",
+      "no messy dense overlap around face edges"
+    ],
+    "body_and_arms": [
+      "visible neck, simple upper body, clear shoulders",
+      "simple left and right upper arms visible without complex hand pose",
+      "arms do not cross over the face, mouth, eyes, or center torso",
+      "clothing has clean color regions and simple draw order"
+    ],
+    "rigging_friendly_constraints": [
+      "clean separated visual regions for face, eye groups, mouth, hair, neck, torso, shoulders, and arms",
+      "minimal overlap between face, hair, mouth, eyes, and body",
+      "low clipping risk, simple draw order, underpaint-friendly gaps",
+      "consistent anime illustration style, clean line art, clean color separation"
+    ]
+  },
+  "positive_prompt_compact": "Live2D Cubism v2_standard VTuber character, front-facing upper-body, centered neutral pose.\nA single clean master PNG for later PSD part separation and Cubism rigging.\nClear face base, both eyes fully visible, separated left and right eye groups, readable eyebrows, clear mouth not covered by anything.\nLayer-friendly hair: separate front bangs, left side hair, right side hair, and back hair, clean strand groups for hair physics.\nVisible neck, simple upper body, clear shoulders, simple upper arms, no complex hands, no large props.\nClean silhouette, minimal overlap, low clipping risk, underpaint-friendly design, simple draw order.\nConsistent polished anime illustration style, clean line art, clean color separation.",
+  "negative_prompt": [
+    "side view",
+    "extreme pose",
+    "crossed arms",
+    "complex hands",
+    "weapon",
+    "large props",
+    "microphone covering mouth",
+    "face-covering bangs",
+    "eyes covered",
+    "mouth covered",
+    "messy hair overlap",
+    "transparent effects",
+    "heavy glow",
+    "motion blur",
+    "multiple characters",
+    "cropped head",
+    "cropped shoulders",
+    "text",
+    "labels",
+    "UI",
+    "watermark",
+    "logo",
+    "part diagram",
+    "exploded layer sheet"
+  ],
+  "generation_variants": [
+    {
+      "id": "v2_standard_safe_default",
+      "label_ko": "표준 안전형",
+      "use_when": "첫 캐릭터 컨셉 후보 3-6개를 만들 때",
+      "positive_prompt": "Live2D Cubism v2_standard VTuber character, front-facing upper-body, centered neutral pose.\nA single clean master PNG for later PSD part separation and Cubism rigging.\nClear face base, both eyes fully visible, separated left and right eye groups, readable eyebrows, clear mouth not covered by anything.\nLayer-friendly hair: separate front bangs, left side hair, right side hair, and back hair, clean strand groups for hair physics.\nVisible neck, simple upper body, clear shoulders, simple upper arms, no complex hands, no large props.\nClean silhouette, minimal overlap, low clipping risk, underpaint-friendly design, simple draw order.\nConsistent polished anime illustration style, clean line art, clean color separation.",
+      "negative_prompt": "side view, extreme pose, crossed arms, complex hands, weapon, large props, microphone covering mouth, face-covering bangs, eyes covered, mouth covered, messy hair overlap, transparent effects, heavy glow, motion blur, multiple characters, cropped head, cropped shoulders, text, labels, UI, watermark, logo, part diagram, exploded layer sheet"
+    },
+    {
+      "id": "v2_standard_extra_clean_split",
+      "label_ko": "파츠 분리 우선형",
+      "use_when": "머리카락/눈/입 분리가 실패했을 때",
+      "positive_prompt": "Live2D Cubism v2_standard VTuber character, front-facing upper-body, centered neutral pose.\nA single clean master PNG for later PSD part separation and Cubism rigging.\nClear face base, both eyes fully visible, separated left and right eye groups, readable eyebrows, clear mouth not covered by anything.\nLayer-friendly hair: separate front bangs, left side hair, right side hair, and back hair, clean strand groups for hair physics.\nVisible neck, simple upper body, clear shoulders, simple upper arms, no complex hands, no large props.\nClean silhouette, minimal overlap, low clipping risk, underpaint-friendly design, simple draw order.\nConsistent polished anime illustration style, clean line art, clean color separation.\nExtra clean separation between bangs, side hair, eyes, mouth, neck, shoulders, and torso. Fewer accessories, simpler clothing.",
+      "negative_prompt": "side view, extreme pose, crossed arms, complex hands, weapon, large props, microphone covering mouth, face-covering bangs, eyes covered, mouth covered, messy hair overlap, transparent effects, heavy glow, motion blur, multiple characters, cropped head, cropped shoulders, text, labels, UI, watermark, logo, part diagram, exploded layer sheet, busy costume, tiny accessories, dense ornaments"
+    }
+  ],
+  "operator_checklist_ko": [
+    "단일 PNG 1장을 먼저 만든다. 64개 파츠를 한 번에 그리라고 시키지 않는다.",
+    "G0에서 정면 상반신, 눈/입/머리/몸 경계가 보이는지 본다.",
+    "G1에서 64파트 taxonomy로 나눌 수 없는 디자인이면 이미지를 버리거나 재생성한다.",
+    "G2/G3는 이미지가 아니라 이후 Cubism 구조/움직임 검증이다.",
+    "공식 샘플의 구조 패턴만 참고하고, 그림/텍스처/캐릭터 디자인은 복사하지 않는다."
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "manifest": "experiments/live2d-strong-model-pattern-001/reports/strong20_render_manifest.json",
+  "kind": "strong20",
+  "sandbox_root": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20",
+  "demo_dir": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/TypeScript/Demo",
+  "model_ids": [
+    "haru_greeter_pro_jp_haru_greeter_t05",
+    "koharu_haruto_haruto_t01",
+    "hiyori_pro_ko_hiyori_pro_t11",
+    "kei_ko_kei_basic_free_t02",
+    "kei_ko_kei_vowels_pro_t02",
+    "koharu_haruto_koharu_t01",
+    "mao_pro_ko_mao_pro_t06",
+    "miara_pro_en_miara_pro_t04",
+    "miku_pro_jp_miku_sample_t05",
+    "natori_pro_ko_natori_pro_t06",
+    "ren_pro_ko_ren_t01",
+    "rice_pro_ko_rice_pro_t03",
+    "tsumiki_tsumiki_t01",
+    "wanko_wanko_touch_t01",
+    "epsilon_epsilon_t02",
+    "chitose_chitose_t01",
+    "haru_haru_t01",
+    "tororo_hijiki_hijiki_t01",
+    "izumi_izumi_anime_t01",
+    "izumi_izumi_atsu_t01"
+  ],
+  "resource_root_files": [
+    "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/back_class_normal.png",
+    "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/icon_gear.png"
+  ],
+  "resources": [
+    {
+      "safe_id": "haru_greeter_pro_jp_haru_greeter_t05",
+      "name": "haru_greeter_t05",
+      "status": "PASS",
+      "source_runtime_dir": "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime",
+      "sandbox_runtime_dir": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/haru_greeter_pro_jp_haru_greeter_t05",
+      "sandbox_model3_json": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/haru_greeter_pro_jp_haru_greeter_t05/haru_greeter_pro_jp_haru_greeter_t05.model3.json"
+    },
+    {
+      "safe_id": "koharu_haruto_haruto_t01",
+      "name": "haruto_t01",
+      "status": "PASS",
+      "source_runtime_dir": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/runtime",
+      "sandbox_runtime_dir": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/koharu_haruto_haruto_t01",
+      "sandbox_model3_json": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/koharu_haruto_haruto_t01/koharu_haruto_haruto_t01.model3.json"
+    },
+    {
+      "safe_id": "hiyori_pro_ko_hiyori_pro_t11",
+      "name": "hiyori_pro_t11",
+      "status": "PASS",
+      "source_runtime_dir": "experiments/reference-model-structure-001/official_samples/extracted/hiyori_pro_ko/hiyori_pro_ko/runtime",
+      "sandbox_runtime_dir": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/hiyori_pro_ko_hiyori_pro_t11",
+      "sandbox_model3_json": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/hiyori_pro_ko_hiyori_pro_t11/hiyori_pro_ko_hiyori_pro_t11.model3.json"
+    },
+    {
+      "safe_id": "kei_ko_kei_basic_free_t02",
+      "name": "kei_basic_free_t02",
+      "status": "PASS",
+      "source_runtime_dir": "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_basic_free/runtime",
+      "sandbox_runtime_dir": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/kei_ko_kei_basic_free_t02",
+      "sandbox_model3_json": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/kei_ko_kei_basic_free_t02/kei_ko_kei_basic_free_t02.model3.json"
+    },
+    {
+      "safe_id": "kei_ko_kei_vowels_pro_t02",
+      "name": "kei_vowels_pro_t02",
+      "status": "PASS",
+      "source_runtime_dir": "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_vowels_pro/runtime",
+      "sandbox_runtime_dir": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/kei_ko_kei_vowels_pro_t02",
+      "sandbox_model3_json": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/kei_ko_kei_vowels_pro_t02/kei_ko_kei_vowels_pro_t02.model3.json"
+    },
+    {
+      "safe_id": "koharu_haruto_koharu_t01",
+      "name": "koharu_t01",
+      "status": "PASS",
+      "source_runtime_dir": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime",
+      "sandbox_runtime_dir": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/koharu_haruto_koharu_t01",
+      "sandbox_model3_json": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/koharu_haruto_koharu_t01/koharu_haruto_koharu_t01.model3.json"
+    },
+    {
+      "safe_id": "mao_pro_ko_mao_pro_t06",
+      "name": "mao_pro_t06",
+      "status": "PASS",
+      "source_runtime_dir": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime",
+      "sandbox_runtime_dir": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/mao_pro_ko_mao_pro_t06",
+      "sandbox_model3_json": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/mao_pro_ko_mao_pro_t06/mao_pro_ko_mao_pro_t06.model3.json"
+    },
+    {
+      "safe_id": "miara_pro_en_miara_pro_t04",
+      "name": "miara_pro_t04",
+      "status": "PASS",
+      "source_runtime_dir": "experiments/reference-model-structure-001/official_samples/extracted/miara_pro_en/miara_pro_en/runtime",
+      "sandbox_runtime_dir": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/miara_pro_en_miara_pro_t04",
+      "sandbox_model3_json": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/miara_pro_en_miara_pro_t04/miara_pro_en_miara_pro_t04.model3.json"
+    },
+    {
+      "safe_id": "miku_pro_jp_miku_sample_t05",
+      "name": "miku_sample_t05",
+      "status": "PASS",
+      "source_runtime_dir": "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime",
+      "sandbox_runtime_dir": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/miku_pro_jp_miku_sample_t05",
+      "sandbox_model3_json": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/miku_pro_jp_miku_sample_t05/miku_pro_jp_miku_sample_t05.model3.json"
+    },
+    {
+      "safe_id": "natori_pro_ko_natori_pro_t06",
+      "name": "natori_pro_t06",
+      "status": "PASS",
+      "source_runtime_dir": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime",
+      "sandbox_runtime_dir": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/natori_pro_ko_natori_pro_t06",
+      "sandbox_model3_json": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/natori_pro_ko_natori_pro_t06/natori_pro_ko_natori_pro_t06.model3.json"
+    },
+    {
+      "safe_id": "ren_pro_ko_ren_t01",
+      "name": "ren_t01",
+      "status": "PASS",
+      "source_runtime_dir": "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime",
+      "sandbox_runtime_dir": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/ren_pro_ko_ren_t01",
+      "sandbox_model3_json": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/ren_pro_ko_ren_t01/ren_pro_ko_ren_t01.model3.json"
+    },
+    {
+      "safe_id": "rice_pro_ko_rice_pro_t03",
+      "name": "rice_pro_t03",
+      "status": "PASS",
+      "source_runtime_dir": "experiments/reference-model-structure-001/official_samples/extracted/rice_pro_ko/rice_pro_ko/runtime",
+      "sandbox_runtime_dir": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/rice_pro_ko_rice_pro_t03",
+      "sandbox_model3_json": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/rice_pro_ko_rice_pro_t03/rice_pro_ko_rice_pro_t03.model3.json"
+    },
+    {
+      "safe_id": "tsumiki_tsumiki_t01",
+      "name": "tsumiki_t01",
+      "status": "PASS",
+      "source_runtime_dir": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime",
+      "sandbox_runtime_dir": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/tsumiki_tsumiki_t01",
+      "sandbox_model3_json": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/tsumiki_tsumiki_t01/tsumiki_tsumiki_t01.model3.json"
+    },
+    {
+      "safe_id": "wanko_wanko_touch_t01",
+      "name": "wanko_touch_t01",
+      "status": "PASS",
+      "source_runtime_dir": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime",
+      "sandbox_runtime_dir": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/wanko_wanko_touch_t01",
+      "sandbox_model3_json": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/wanko_wanko_touch_t01/wanko_wanko_touch_t01.model3.json"
+    },
+    {
+      "safe_id": "epsilon_epsilon_t02",
+      "name": "Epsilon_t02",
+      "status": "PASS",
+      "source_runtime_dir": "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime",
+      "sandbox_runtime_dir": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/epsilon_epsilon_t02",
+      "sandbox_model3_json": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/epsilon_epsilon_t02/epsilon_epsilon_t02.model3.json"
+    },
+    {
+      "safe_id": "chitose_chitose_t01",
+      "name": "chitose_t01",
+      "status": "PASS",
+      "source_runtime_dir": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime",
+      "sandbox_runtime_dir": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/chitose_chitose_t01",
+      "sandbox_model3_json": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/chitose_chitose_t01/chitose_chitose_t01.model3.json"
+    },
+    {
+      "safe_id": "haru_haru_t01",
+      "name": "haru_t01",
+      "status": "PASS",
+      "source_runtime_dir": "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime",
+      "sandbox_runtime_dir": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/haru_haru_t01",
+      "sandbox_model3_json": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/haru_haru_t01/haru_haru_t01.model3.json"
+    },
+    {
+      "safe_id": "tororo_hijiki_hijiki_t01",
+      "name": "hijiki_t01",
+      "status": "PASS",
+      "source_runtime_dir": "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/hijiki/runtime",
+      "sandbox_runtime_dir": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/tororo_hijiki_hijiki_t01",
+      "sandbox_model3_json": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/tororo_hijiki_hijiki_t01/tororo_hijiki_hijiki_t01.model3.json"
+    },
+    {
+      "safe_id": "izumi_izumi_anime_t01",
+      "name": "izumi_anime_t01",
+      "status": "PASS",
+      "source_runtime_dir": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime",
+      "sandbox_runtime_dir": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/izumi_izumi_anime_t01",
+      "sandbox_model3_json": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/izumi_izumi_anime_t01/izumi_izumi_anime_t01.model3.json"
+    },
+    {
+      "safe_id": "izumi_izumi_atsu_t01",
+      "name": "izumi_atsu_t01",
+      "status": "PASS",
+      "source_runtime_dir": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime",
+      "sandbox_runtime_dir": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/izumi_izumi_atsu_t01",
+      "sandbox_model3_json": "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/Resources/izumi_izumi_atsu_t01/izumi_izumi_atsu_t01.model3.json"
+    }
+  ],
+  "status": "PASS"
+}

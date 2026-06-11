@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T03:08:57.280145+00:00",
+  "experiment_id": "cubism-v2-new-character-002",
+  "candidate_id": "model_edit_v6_no_wide_open",
+  "status": "NO_WIDE_OPEN_CANDIDATE_READY_FOR_QA",
+  "source_layers": "experiments/cubism-v2-new-character-002/model_edit_v5_manual_aligned/normalized_layers",
+  "output_layers": "experiments/cubism-v2-new-character-002/model_edit_v6_no_wide_open/normalized_layers",
+  "excluded_visual_parts": [
+    "mouth_wide_open"
+  ],
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/model_edit_v6_no_wide_open/model_edit_v6_no_wide_open_contact_sheet.png",
+  "policy": "mouth_wide_open is preserved as evidence in normalized_layers but excluded from visual QA sheets and Mini Cubism diagnostic preview because 주인님 judged the generated image itself visually wrong."
+}

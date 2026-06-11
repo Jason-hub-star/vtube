@@ -1,0 +1,27 @@
+{
+  "ok": false,
+  "status": "HUMAN_REVIEW_FAIL_HAIR_BODY_RATIO",
+  "date": "2026-06-05",
+  "reviewer": "user",
+  "experiment_id": "mini-cubism-hair-face-motion-v1-001",
+  "review_target": "http://127.0.0.1:8054/",
+  "evidence": {
+    "project": "experiments/mini-cubism-hair-face-motion-v1-001/mini_cubism_project",
+    "preview_screenshot": "mini-cubism-hair-fit-8054.png",
+    "review_packet_contact_sheet": "experiments/mini-cubism-hair-face-motion-v1-001/review_packet/contact_sheet.png",
+    "best_motion_gif": "experiments/mini-cubism-hair-face-motion-v1-001/review_packet/best_motion.gif"
+  },
+  "technical_result": {
+    "project_validation": "PASS",
+    "physics_score": "PASS",
+    "hair_fit_scale": 0.5859,
+    "fitted_hair_bbox": [602, 18, 845, 1050]
+  },
+  "visual_result": {
+    "verdict": "FAIL",
+    "failure_class": "HAIR_BODY_STYLE_AND_RATIO_MISMATCH",
+    "reason": "Even after hair_fit_v1 scaling, the hair pack and full-body clean base still look like mismatched sources. The pipeline proves local motion mechanics only and must not be promoted as a current visual baseline."
+  },
+  "decision": "Do not continue refining this exact composite as the production candidate.",
+  "next_action": "Switch to a single-source character generation approach or generate base and hair as a matched pair before running BiRefNet_HR, local hair split, keypose generation, and Mini Cubism physics again."
+}

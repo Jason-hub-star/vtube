@@ -1,0 +1,3940 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-08T05:46:49.718957+00:00",
+  "experiment_id": "cubism-v2-new-character-001",
+  "pack_id": "material_pack_v0",
+  "status": "SEMANTIC_REPAIR_V1_APPLIED",
+  "source": {
+    "candidate": "experiments/cubism-v2-new-character-001/concepts/g0_adult_cute_female_candidate_002.png",
+    "source_sha256": "588647bd13a4c82fba4f83997e031116c346df3145deadc02fbcc22d3d9de64a",
+    "source_size": [
+      1086,
+      1448
+    ],
+    "canvas_size": [
+      2048,
+      2048
+    ],
+    "paste_offset": [
+      481,
+      300
+    ],
+    "canonical_2048": "experiments/cubism-v2-new-character-001/material_pack_v0/canonical/candidate_002_2048_rgba.png"
+  },
+  "inputs": {
+    "g1_material_plan": "experiments/cubism-v2-new-character-001/reports/g1_material_planning_packet.json"
+  },
+  "summary": {
+    "taxonomy_parts": 64,
+    "generated_layer_target": 62,
+    "merged_metadata_target": 2,
+    "expected_direct_or_risk": 46,
+    "expected_auxiliary": 7,
+    "expected_underpaint": 9,
+    "expected_merge": 2,
+    "generated_layers": 62,
+    "merged_metadata": 2,
+    "generation_failures": 0
+  },
+  "layers": [
+    {
+      "part_id": "body_underpaint",
+      "layer_name": "01_body_underpaint",
+      "label_ko": "몸 밑색",
+      "group": "body",
+      "feasibility": "UNDERPAINT_REQUIRED",
+      "source_type": "UNDERPAINT",
+      "source_bbox": [
+        300,
+        900,
+        480,
+        420
+      ],
+      "bbox": [
+        781,
+        1200,
+        480,
+        420
+      ],
+      "draw_order_band": "body_back",
+      "draw_order": 1,
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBodyAngleY"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "underpaint_missing"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/01_body_underpaint.png",
+      "merged_into": null,
+      "notes": "움직임에서 빈틈이 보이지 않게 원본 주변색 확장, inpaint, 수동 채색으로 만든다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": null,
+      "fallback_color": [
+        239,
+        190,
+        170
+      ],
+      "generated": true,
+      "bbox_actual": [
+        815,
+        1200,
+        413,
+        384
+      ],
+      "alpha_coverage": 0.01338744,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/01_body_underpaint.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/01_body_underpaint.png",
+      "semantic_group": "underpaint"
+    },
+    {
+      "part_id": "neck_shadow_underpaint",
+      "layer_name": "04_neck_shadow_underpaint",
+      "label_ko": "목 그림자 밑색",
+      "group": "body",
+      "feasibility": "UNDERPAINT_REQUIRED",
+      "source_type": "UNDERPAINT",
+      "source_bbox": [
+        420,
+        800,
+        240,
+        160
+      ],
+      "bbox": [
+        901,
+        1100,
+        240,
+        160
+      ],
+      "draw_order_band": "body_back",
+      "draw_order": 4,
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "underpaint_missing"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/04_neck_shadow_underpaint.png",
+      "merged_into": null,
+      "notes": "움직임에서 빈틈이 보이지 않게 원본 주변색 확장, inpaint, 수동 채색으로 만든다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": null,
+      "fallback_color": [
+        239,
+        190,
+        170
+      ],
+      "generated": true,
+      "bbox_actual": [
+        939,
+        1171,
+        164,
+        66
+      ],
+      "alpha_coverage": 0.00044417,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/04_neck_shadow_underpaint.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/04_neck_shadow_underpaint.png",
+      "semantic_group": "underpaint"
+    },
+    {
+      "part_id": "arm_L_underpaint",
+      "layer_name": "09_arm_L_underpaint",
+      "label_ko": "왼팔 밑색",
+      "group": "body",
+      "feasibility": "UNDERPAINT_REQUIRED",
+      "source_type": "UNDERPAINT",
+      "source_bbox": [
+        145,
+        925,
+        210,
+        460
+      ],
+      "bbox": [
+        626,
+        1225,
+        210,
+        460
+      ],
+      "draw_order_band": "body_back",
+      "draw_order": 9,
+      "deformer_node": "shoulder_arm_rotation",
+      "parameters": [
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "underpaint_missing"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/09_arm_L_underpaint.png",
+      "merged_into": null,
+      "notes": "움직임에서 빈틈이 보이지 않게 원본 주변색 확장, inpaint, 수동 채색으로 만든다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": null,
+      "fallback_color": [
+        239,
+        190,
+        170
+      ],
+      "generated": true,
+      "bbox_actual": [
+        662,
+        1232,
+        139,
+        423
+      ],
+      "alpha_coverage": 0.01256037,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/09_arm_L_underpaint.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/09_arm_L_underpaint.png",
+      "semantic_group": "underpaint"
+    },
+    {
+      "part_id": "arm_R_underpaint",
+      "layer_name": "10_arm_R_underpaint",
+      "label_ko": "오른팔 밑색",
+      "group": "body",
+      "feasibility": "UNDERPAINT_REQUIRED",
+      "source_type": "UNDERPAINT",
+      "source_bbox": [
+        820,
+        925,
+        175,
+        460
+      ],
+      "bbox": [
+        1301,
+        1225,
+        175,
+        460
+      ],
+      "draw_order_band": "body_back",
+      "draw_order": 10,
+      "deformer_node": "shoulder_arm_rotation",
+      "parameters": [
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "underpaint_missing"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/10_arm_R_underpaint.png",
+      "merged_into": null,
+      "notes": "움직임에서 빈틈이 보이지 않게 원본 주변색 확장, inpaint, 수동 채색으로 만든다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": null,
+      "fallback_color": [
+        239,
+        190,
+        170
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1330,
+        1232,
+        84,
+        423
+      ],
+      "alpha_coverage": 0.00705457,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/10_arm_R_underpaint.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/10_arm_R_underpaint.png",
+      "semantic_group": "underpaint"
+    },
+    {
+      "part_id": "hair_back_base",
+      "layer_name": "45_hair_back_base",
+      "label_ko": "뒷머리 기본",
+      "group": "hair",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        170,
+        55,
+        760,
+        925
+      ],
+      "bbox": [
+        651,
+        355,
+        760,
+        925
+      ],
+      "draw_order_band": "hair_back",
+      "draw_order": 145,
+      "deformer_node": "back_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleZ",
+        "ParamHairBack"
+      ],
+      "physics_groups": [
+        "back_hair_physics"
+      ],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/45_hair_back_base.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "hair",
+      "fallback_color": [
+        125,
+        82,
+        82
+      ],
+      "generated": true,
+      "bbox_actual": [
+        653,
+        343,
+        747,
+        937
+      ],
+      "alpha_coverage": 0.07610965,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/45_hair_back_base.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/45_hair_back_base.png",
+      "semantic_group": "hair"
+    },
+    {
+      "part_id": "hair_back_underpaint",
+      "layer_name": "46_hair_back_underpaint",
+      "label_ko": "뒷머리 밑색",
+      "group": "hair",
+      "feasibility": "UNDERPAINT_REQUIRED",
+      "source_type": "UNDERPAINT",
+      "source_bbox": [
+        205,
+        100,
+        690,
+        860
+      ],
+      "bbox": [
+        686,
+        400,
+        690,
+        860
+      ],
+      "draw_order_band": "hair_back",
+      "draw_order": 146,
+      "deformer_node": "back_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamHairBack"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "underpaint_missing"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/46_hair_back_underpaint.png",
+      "merged_into": null,
+      "notes": "움직임에서 빈틈이 보이지 않게 원본 주변색 확장, inpaint, 수동 채색으로 만든다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": null,
+      "fallback_color": [
+        125,
+        82,
+        82
+      ],
+      "generated": true,
+      "bbox_actual": [
+        719,
+        400,
+        624,
+        849
+      ],
+      "alpha_coverage": 0.07512641,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/46_hair_back_underpaint.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/46_hair_back_underpaint.png",
+      "semantic_group": "underpaint"
+    },
+    {
+      "part_id": "hair_back_strand_L",
+      "layer_name": "47_hair_back_strand_L",
+      "label_ko": "왼쪽 뒷머리 가닥",
+      "group": "hair",
+      "feasibility": "DIRECT_VISIBLE_RISK",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        175,
+        410,
+        230,
+        590
+      ],
+      "bbox": [
+        656,
+        710,
+        230,
+        590
+      ],
+      "draw_order_band": "hair_back",
+      "draw_order": 147,
+      "deformer_node": "back_hair_warp",
+      "parameters": [
+        "ParamHairBack",
+        "ParamAngleZ"
+      ],
+      "physics_groups": [
+        "back_hair_physics"
+      ],
+      "risk_tags": [
+        "draw_order_issue"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/47_hair_back_strand_L.png",
+      "merged_into": null,
+      "notes": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "hair",
+      "fallback_color": [
+        125,
+        82,
+        82
+      ],
+      "generated": true,
+      "bbox_actual": [
+        656,
+        710,
+        230,
+        590
+      ],
+      "alpha_coverage": 0.0116241,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/47_hair_back_strand_L.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/47_hair_back_strand_L.png",
+      "semantic_group": "hair"
+    },
+    {
+      "part_id": "hair_back_strand_R",
+      "layer_name": "48_hair_back_strand_R",
+      "label_ko": "오른쪽 뒷머리 가닥",
+      "group": "hair",
+      "feasibility": "DIRECT_VISIBLE_RISK",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        700,
+        410,
+        230,
+        590
+      ],
+      "bbox": [
+        1181,
+        710,
+        230,
+        590
+      ],
+      "draw_order_band": "hair_back",
+      "draw_order": 148,
+      "deformer_node": "back_hair_warp",
+      "parameters": [
+        "ParamHairBack",
+        "ParamAngleZ"
+      ],
+      "physics_groups": [
+        "back_hair_physics"
+      ],
+      "risk_tags": [
+        "draw_order_issue"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/48_hair_back_strand_R.png",
+      "merged_into": null,
+      "notes": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "hair",
+      "fallback_color": [
+        125,
+        82,
+        82
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1181,
+        710,
+        220,
+        590
+      ],
+      "alpha_coverage": 0.0108552,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/48_hair_back_strand_R.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/48_hair_back_strand_R.png",
+      "semantic_group": "hair"
+    },
+    {
+      "part_id": "hair_back_center",
+      "layer_name": "49_hair_back_center",
+      "label_ko": "가운데 뒷머리",
+      "group": "hair",
+      "feasibility": "DIRECT_VISIBLE_RISK",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        390,
+        60,
+        330,
+        830
+      ],
+      "bbox": [
+        871,
+        360,
+        330,
+        830
+      ],
+      "draw_order_band": "hair_back",
+      "draw_order": 149,
+      "deformer_node": "back_hair_warp",
+      "parameters": [
+        "ParamHairBack",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "back_hair_physics"
+      ],
+      "risk_tags": [
+        "draw_order_issue"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/49_hair_back_center.png",
+      "merged_into": null,
+      "notes": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "hair",
+      "fallback_color": [
+        125,
+        82,
+        82
+      ],
+      "generated": true,
+      "bbox_actual": [
+        870,
+        348,
+        331,
+        821
+      ],
+      "alpha_coverage": 0.03091979,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/49_hair_back_center.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/49_hair_back_center.png",
+      "semantic_group": "hair"
+    },
+    {
+      "part_id": "torso_base",
+      "layer_name": "02_torso_base",
+      "label_ko": "상체 기본",
+      "group": "body",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        285,
+        900,
+        540,
+        480
+      ],
+      "bbox": [
+        766,
+        1200,
+        540,
+        480
+      ],
+      "draw_order_band": "body_mid",
+      "draw_order": 202,
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBodyAngleY",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/02_torso_base.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "skin",
+      "fallback_color": [
+        239,
+        190,
+        170
+      ],
+      "generated": true,
+      "bbox_actual": [
+        766,
+        1200,
+        540,
+        492
+      ],
+      "alpha_coverage": 0.03280902,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/02_torso_base.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/02_torso_base.png",
+      "semantic_group": "body"
+    },
+    {
+      "part_id": "neck",
+      "layer_name": "03_neck",
+      "label_ko": "목",
+      "group": "body",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        430,
+        760,
+        230,
+        185
+      ],
+      "bbox": [
+        911,
+        1060,
+        230,
+        185
+      ],
+      "draw_order_band": "body_mid",
+      "draw_order": 203,
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamBodyAngleX",
+        "ParamBodyAngleY"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/03_neck.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "skin",
+      "fallback_color": [
+        239,
+        190,
+        170
+      ],
+      "generated": true,
+      "bbox_actual": [
+        911,
+        1060,
+        230,
+        185
+      ],
+      "alpha_coverage": 0.0039022,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/03_neck.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/03_neck.png",
+      "semantic_group": "body"
+    },
+    {
+      "part_id": "shoulder_L",
+      "layer_name": "05_shoulder_L",
+      "label_ko": "왼쪽 어깨",
+      "group": "body",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        140,
+        885,
+        390,
+        250
+      ],
+      "bbox": [
+        621,
+        1185,
+        390,
+        250
+      ],
+      "draw_order_band": "body_mid",
+      "draw_order": 205,
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/05_shoulder_L.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "skin",
+      "fallback_color": [
+        239,
+        190,
+        170
+      ],
+      "generated": true,
+      "bbox_actual": [
+        650,
+        1185,
+        361,
+        250
+      ],
+      "alpha_coverage": 0.01055646,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/05_shoulder_L.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/05_shoulder_L.png",
+      "semantic_group": "body"
+    },
+    {
+      "part_id": "shoulder_R",
+      "layer_name": "06_shoulder_R",
+      "label_ko": "오른쪽 어깨",
+      "group": "body",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        585,
+        885,
+        390,
+        250
+      ],
+      "bbox": [
+        1066,
+        1185,
+        390,
+        250
+      ],
+      "draw_order_band": "body_mid",
+      "draw_order": 206,
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/06_shoulder_R.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "skin",
+      "fallback_color": [
+        239,
+        190,
+        170
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1066,
+        1185,
+        335,
+        250
+      ],
+      "alpha_coverage": 0.01075482,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/06_shoulder_R.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/06_shoulder_R.png",
+      "semantic_group": "body"
+    },
+    {
+      "part_id": "arm_L_upper_simple",
+      "layer_name": "07_arm_L_upper_simple",
+      "label_ko": "왼쪽 간단 팔",
+      "group": "body",
+      "feasibility": "DIRECT_VISIBLE_RISK",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        115,
+        900,
+        260,
+        548
+      ],
+      "bbox": [
+        596,
+        1200,
+        260,
+        548
+      ],
+      "draw_order_band": "body_front",
+      "draw_order": 307,
+      "deformer_node": "shoulder_arm_rotation",
+      "parameters": [
+        "ParamArmL/R or ParamHandL/R",
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "misaligned"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/07_arm_L_upper_simple.png",
+      "merged_into": null,
+      "notes": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "skin",
+      "fallback_color": [
+        239,
+        190,
+        170
+      ],
+      "generated": true,
+      "bbox_actual": [
+        609,
+        1200,
+        259,
+        548
+      ],
+      "alpha_coverage": 0.0248065,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/07_arm_L_upper_simple.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/07_arm_L_upper_simple.png",
+      "semantic_group": "body"
+    },
+    {
+      "part_id": "arm_R_upper_simple",
+      "layer_name": "08_arm_R_upper_simple",
+      "label_ko": "오른쪽 간단 팔",
+      "group": "body",
+      "feasibility": "DIRECT_VISIBLE_RISK",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        810,
+        900,
+        220,
+        548
+      ],
+      "bbox": [
+        1291,
+        1200,
+        220,
+        548
+      ],
+      "draw_order_band": "body_front",
+      "draw_order": 308,
+      "deformer_node": "shoulder_arm_rotation",
+      "parameters": [
+        "ParamArmL/R or ParamHandL/R",
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "misaligned"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/08_arm_R_upper_simple.png",
+      "merged_into": null,
+      "notes": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "skin",
+      "fallback_color": [
+        239,
+        190,
+        170
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1279,
+        1200,
+        146,
+        548
+      ],
+      "alpha_coverage": 0.01511359,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/08_arm_R_upper_simple.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/08_arm_R_upper_simple.png",
+      "semantic_group": "body"
+    },
+    {
+      "part_id": "collar_shadow",
+      "layer_name": "62_collar_shadow",
+      "label_ko": "깃 그림자",
+      "group": "clothing",
+      "feasibility": "SIMPLIFY_OR_MERGE",
+      "source_type": "MERGED_METADATA",
+      "source_bbox": [
+        350,
+        900,
+        390,
+        90
+      ],
+      "bbox": [
+        831,
+        1200,
+        390,
+        90
+      ],
+      "draw_order_band": "clothing_mid",
+      "draw_order": 462,
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "risk_tags": [],
+      "status": "MERGED_METADATA_ONLY",
+      "include_in_import_psd": false,
+      "output_path": null,
+      "merged_into": "collar_front",
+      "notes": "처음 PSD에서는 독립 파츠보다 기본 의상 레이어에 병합하고 metadata로만 추적한다.",
+      "mask_shape": "rounded",
+      "color_condition": "light",
+      "fallback_color": [
+        247,
+        229,
+        218
+      ],
+      "metadata_path": "experiments/cubism-v2-new-character-001/material_pack_v0/merged_metadata/collar_shadow.json"
+    },
+    {
+      "part_id": "chest_cloth_base",
+      "layer_name": "63_chest_cloth_base",
+      "label_ko": "가슴 의상 기본",
+      "group": "clothing",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        285,
+        985,
+        530,
+        335
+      ],
+      "bbox": [
+        766,
+        1285,
+        530,
+        335
+      ],
+      "draw_order_band": "clothing_mid",
+      "draw_order": 463,
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/63_chest_cloth_base.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "light",
+      "fallback_color": [
+        247,
+        229,
+        218
+      ],
+      "generated": true,
+      "bbox_actual": [
+        766,
+        1285,
+        542,
+        347
+      ],
+      "alpha_coverage": 0.02895737,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/63_chest_cloth_base.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/63_chest_cloth_base.png",
+      "semantic_group": "clothing"
+    },
+    {
+      "part_id": "face_underpaint_L",
+      "layer_name": "14_face_underpaint_L",
+      "label_ko": "왼쪽 얼굴 밑색",
+      "group": "face_base",
+      "feasibility": "UNDERPAINT_REQUIRED",
+      "source_type": "UNDERPAINT",
+      "source_bbox": [
+        335,
+        405,
+        205,
+        365
+      ],
+      "bbox": [
+        816,
+        705,
+        205,
+        365
+      ],
+      "draw_order_band": "face_back",
+      "draw_order": 514,
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "underpaint_missing"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/14_face_underpaint_L.png",
+      "merged_into": null,
+      "notes": "움직임에서 빈틈이 보이지 않게 원본 주변색 확장, inpaint, 수동 채색으로 만든다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": null,
+      "fallback_color": [
+        239,
+        190,
+        170
+      ],
+      "generated": true,
+      "bbox_actual": [
+        817,
+        705,
+        202,
+        349
+      ],
+      "alpha_coverage": 0.00942397,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/14_face_underpaint_L.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/14_face_underpaint_L.png",
+      "semantic_group": "underpaint"
+    },
+    {
+      "part_id": "face_underpaint_R",
+      "layer_name": "15_face_underpaint_R",
+      "label_ko": "오른쪽 얼굴 밑색",
+      "group": "face_base",
+      "feasibility": "UNDERPAINT_REQUIRED",
+      "source_type": "UNDERPAINT",
+      "source_bbox": [
+        560,
+        405,
+        205,
+        365
+      ],
+      "bbox": [
+        1041,
+        705,
+        205,
+        365
+      ],
+      "draw_order_band": "face_back",
+      "draw_order": 515,
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "underpaint_missing"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/15_face_underpaint_R.png",
+      "merged_into": null,
+      "notes": "움직임에서 빈틈이 보이지 않게 원본 주변색 확장, inpaint, 수동 채색으로 만든다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": null,
+      "fallback_color": [
+        239,
+        190,
+        170
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1043,
+        705,
+        202,
+        349
+      ],
+      "alpha_coverage": 0.00952077,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/15_face_underpaint_R.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/15_face_underpaint_R.png",
+      "semantic_group": "underpaint"
+    },
+    {
+      "part_id": "face_base",
+      "layer_name": "11_face_base",
+      "label_ko": "얼굴 기본",
+      "group": "face_base",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        335,
+        365,
+        430,
+        455
+      ],
+      "bbox": [
+        816,
+        665,
+        430,
+        455
+      ],
+      "draw_order_band": "face_mid",
+      "draw_order": 611,
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleY",
+        "ParamAngleZ"
+      ],
+      "physics_groups": [],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/11_face_base.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": "skin",
+      "fallback_color": [
+        239,
+        190,
+        170
+      ],
+      "generated": true,
+      "bbox_actual": [
+        652,
+        337,
+        761,
+        1411
+      ],
+      "alpha_coverage": 0.02879095,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/11_face_base.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/11_face_base.png",
+      "semantic_group": "face"
+    },
+    {
+      "part_id": "face_shadow_L",
+      "layer_name": "12_face_shadow_L",
+      "label_ko": "왼쪽 얼굴 그림자",
+      "group": "face_base",
+      "feasibility": "DIRECT_VISIBLE_RISK",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        335,
+        445,
+        205,
+        300
+      ],
+      "bbox": [
+        816,
+        745,
+        205,
+        300
+      ],
+      "draw_order_band": "face_front",
+      "draw_order": 712,
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/12_face_shadow_L.png",
+      "merged_into": null,
+      "notes": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": "skin",
+      "fallback_color": [
+        239,
+        190,
+        170
+      ],
+      "generated": true,
+      "bbox_actual": [
+        816,
+        745,
+        205,
+        300
+      ],
+      "alpha_coverage": 0.00383759,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/12_face_shadow_L.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/12_face_shadow_L.png",
+      "semantic_group": "face"
+    },
+    {
+      "part_id": "face_shadow_R",
+      "layer_name": "13_face_shadow_R",
+      "label_ko": "오른쪽 얼굴 그림자",
+      "group": "face_base",
+      "feasibility": "DIRECT_VISIBLE_RISK",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        560,
+        445,
+        205,
+        300
+      ],
+      "bbox": [
+        1041,
+        745,
+        205,
+        300
+      ],
+      "draw_order_band": "face_front",
+      "draw_order": 713,
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/13_face_shadow_R.png",
+      "merged_into": null,
+      "notes": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": "skin",
+      "fallback_color": [
+        239,
+        190,
+        170
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1041,
+        745,
+        205,
+        300
+      ],
+      "alpha_coverage": 0.00432634,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/13_face_shadow_R.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/13_face_shadow_R.png",
+      "semantic_group": "face"
+    },
+    {
+      "part_id": "nose",
+      "layer_name": "16_nose",
+      "label_ko": "코",
+      "group": "face_base",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        520,
+        605,
+        60,
+        70
+      ],
+      "bbox": [
+        1001,
+        905,
+        60,
+        70
+      ],
+      "draw_order_band": "face_front",
+      "draw_order": 716,
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/16_nose.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "skin",
+      "fallback_color": [
+        239,
+        190,
+        170
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1001,
+        905,
+        60,
+        70
+      ],
+      "alpha_coverage": 0.00075197,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/16_nose.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/16_nose.png",
+      "semantic_group": "face"
+    },
+    {
+      "part_id": "cheek_L",
+      "layer_name": "17_cheek_L",
+      "label_ko": "왼쪽 볼",
+      "group": "face_base",
+      "feasibility": "DIRECT_VISIBLE_RISK",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        355,
+        590,
+        95,
+        65
+      ],
+      "bbox": [
+        836,
+        890,
+        95,
+        65
+      ],
+      "draw_order_band": "face_front",
+      "draw_order": 717,
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/17_cheek_L.png",
+      "merged_into": null,
+      "notes": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": "pink",
+      "fallback_color": [
+        235,
+        153,
+        151
+      ],
+      "generated": true,
+      "bbox_actual": [
+        836,
+        890,
+        84,
+        65
+      ],
+      "alpha_coverage": 0.00015092,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/17_cheek_L.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/17_cheek_L.png",
+      "semantic_group": "face"
+    },
+    {
+      "part_id": "cheek_R",
+      "layer_name": "18_cheek_R",
+      "label_ko": "오른쪽 볼",
+      "group": "face_base",
+      "feasibility": "DIRECT_VISIBLE_RISK",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        650,
+        590,
+        95,
+        65
+      ],
+      "bbox": [
+        1131,
+        890,
+        95,
+        65
+      ],
+      "draw_order_band": "face_front",
+      "draw_order": 718,
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/18_cheek_R.png",
+      "merged_into": null,
+      "notes": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": "pink",
+      "fallback_color": [
+        235,
+        153,
+        151
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1141,
+        890,
+        85,
+        65
+      ],
+      "alpha_coverage": 0.00018716,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/18_cheek_R.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/18_cheek_R.png",
+      "semantic_group": "face"
+    },
+    {
+      "part_id": "eye_L_white",
+      "layer_name": "19_eye_L_white",
+      "label_ko": "왼쪽 눈 흰자",
+      "group": "eye_L",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        380,
+        505,
+        165,
+        95
+      ],
+      "bbox": [
+        861,
+        805,
+        165,
+        95
+      ],
+      "draw_order_band": "eye_back",
+      "draw_order": 819,
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "bad_alpha"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/19_eye_L_white.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": "light",
+      "fallback_color": [
+        246,
+        218,
+        210
+      ],
+      "generated": true,
+      "bbox_actual": [
+        878,
+        805,
+        148,
+        92
+      ],
+      "alpha_coverage": 0.00024509,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/19_eye_L_white.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/19_eye_L_white.png",
+      "semantic_group": "eye"
+    },
+    {
+      "part_id": "eye_L_underpaint",
+      "layer_name": "26_eye_L_underpaint",
+      "label_ko": "왼쪽 눈 밑색",
+      "group": "eye_L",
+      "feasibility": "UNDERPAINT_REQUIRED",
+      "source_type": "UNDERPAINT",
+      "source_bbox": [
+        382,
+        505,
+        155,
+        95
+      ],
+      "bbox": [
+        863,
+        805,
+        155,
+        95
+      ],
+      "draw_order_band": "eye_back",
+      "draw_order": 826,
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "underpaint_missing"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/26_eye_L_underpaint.png",
+      "merged_into": null,
+      "notes": "움직임에서 빈틈이 보이지 않게 원본 주변색 확장, inpaint, 수동 채색으로 만든다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": null,
+      "fallback_color": [
+        246,
+        218,
+        210
+      ],
+      "generated": true,
+      "bbox_actual": [
+        873,
+        821,
+        132,
+        66
+      ],
+      "alpha_coverage": 0.00044203,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/26_eye_L_underpaint.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/26_eye_L_underpaint.png",
+      "semantic_group": "underpaint"
+    },
+    {
+      "part_id": "eye_R_white",
+      "layer_name": "27_eye_R_white",
+      "label_ko": "오른쪽 눈 흰자",
+      "group": "eye_R",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        610,
+        505,
+        165,
+        95
+      ],
+      "bbox": [
+        1091,
+        805,
+        165,
+        95
+      ],
+      "draw_order_band": "eye_back",
+      "draw_order": 827,
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "bad_alpha"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/27_eye_R_white.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": "light",
+      "fallback_color": [
+        246,
+        218,
+        210
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1091,
+        805,
+        91,
+        95
+      ],
+      "alpha_coverage": 0.00016618,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/27_eye_R_white.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/27_eye_R_white.png",
+      "semantic_group": "eye"
+    },
+    {
+      "part_id": "eye_R_underpaint",
+      "layer_name": "34_eye_R_underpaint",
+      "label_ko": "오른쪽 눈 밑색",
+      "group": "eye_R",
+      "feasibility": "UNDERPAINT_REQUIRED",
+      "source_type": "UNDERPAINT",
+      "source_bbox": [
+        612,
+        505,
+        155,
+        95
+      ],
+      "bbox": [
+        1093,
+        805,
+        155,
+        95
+      ],
+      "draw_order_band": "eye_back",
+      "draw_order": 834,
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "underpaint_missing"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/34_eye_R_underpaint.png",
+      "merged_into": null,
+      "notes": "움직임에서 빈틈이 보이지 않게 원본 주변색 확장, inpaint, 수동 채색으로 만든다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": null,
+      "fallback_color": [
+        246,
+        218,
+        210
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1127,
+        818,
+        111,
+        69
+      ],
+      "alpha_coverage": 0.00124097,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/34_eye_R_underpaint.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/34_eye_R_underpaint.png",
+      "semantic_group": "underpaint"
+    },
+    {
+      "part_id": "eye_L_iris",
+      "layer_name": "20_eye_L_iris",
+      "label_ko": "왼쪽 홍채",
+      "group": "eye_L",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        435,
+        520,
+        72,
+        75
+      ],
+      "bbox": [
+        916,
+        820,
+        72,
+        75
+      ],
+      "draw_order_band": "eye_mid",
+      "draw_order": 920,
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "misaligned"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/20_eye_L_iris.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": null,
+      "fallback_color": [
+        246,
+        218,
+        210
+      ],
+      "generated": true,
+      "bbox_actual": [
+        916,
+        847,
+        72,
+        48
+      ],
+      "alpha_coverage": 0.00013447,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/20_eye_L_iris.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/20_eye_L_iris.png",
+      "semantic_group": "eye"
+    },
+    {
+      "part_id": "eye_L_pupil",
+      "layer_name": "21_eye_L_pupil",
+      "label_ko": "왼쪽 동공",
+      "group": "eye_L",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        455,
+        540,
+        36,
+        40
+      ],
+      "bbox": [
+        936,
+        840,
+        36,
+        40
+      ],
+      "draw_order_band": "eye_mid",
+      "draw_order": 921,
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "misaligned"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/21_eye_L_pupil.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": null,
+      "fallback_color": [
+        246,
+        218,
+        210
+      ],
+      "generated": true,
+      "bbox_actual": [
+        936,
+        847,
+        36,
+        23
+      ],
+      "alpha_coverage": 1.669e-05,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/21_eye_L_pupil.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/21_eye_L_pupil.png",
+      "semantic_group": "eye"
+    },
+    {
+      "part_id": "eye_R_iris",
+      "layer_name": "28_eye_R_iris",
+      "label_ko": "오른쪽 홍채",
+      "group": "eye_R",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        650,
+        520,
+        72,
+        75
+      ],
+      "bbox": [
+        1131,
+        820,
+        72,
+        75
+      ],
+      "draw_order_band": "eye_mid",
+      "draw_order": 928,
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "misaligned"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/28_eye_R_iris.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": null,
+      "fallback_color": [
+        246,
+        218,
+        210
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1131,
+        820,
+        72,
+        75
+      ],
+      "alpha_coverage": 0.00088978,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/28_eye_R_iris.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/28_eye_R_iris.png",
+      "semantic_group": "eye"
+    },
+    {
+      "part_id": "eye_R_pupil",
+      "layer_name": "29_eye_R_pupil",
+      "label_ko": "오른쪽 동공",
+      "group": "eye_R",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        670,
+        540,
+        36,
+        40
+      ],
+      "bbox": [
+        1151,
+        840,
+        36,
+        40
+      ],
+      "draw_order_band": "eye_mid",
+      "draw_order": 929,
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "misaligned"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/29_eye_R_pupil.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": null,
+      "fallback_color": [
+        246,
+        218,
+        210
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1151,
+        840,
+        36,
+        40
+      ],
+      "alpha_coverage": 0.00028753,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/29_eye_R_pupil.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/29_eye_R_pupil.png",
+      "semantic_group": "eye"
+    },
+    {
+      "part_id": "eye_L_highlight",
+      "layer_name": "22_eye_L_highlight",
+      "label_ko": "왼쪽 눈 하이라이트",
+      "group": "eye_L",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "DERIVED_KEYPOSE",
+      "source_bbox": [
+        455,
+        525,
+        42,
+        42
+      ],
+      "bbox": [
+        936,
+        825,
+        42,
+        42
+      ],
+      "draw_order_band": "eye_front",
+      "draw_order": 1022,
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/22_eye_L_highlight.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": "light",
+      "fallback_color": [
+        246,
+        218,
+        210
+      ],
+      "generated": true,
+      "bbox_actual": [
+        965,
+        847,
+        8,
+        15
+      ],
+      "alpha_coverage": 4.29e-06,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/22_eye_L_highlight.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/22_eye_L_highlight.png",
+      "semantic_group": "eye"
+    },
+    {
+      "part_id": "eye_L_upper_lash",
+      "layer_name": "23_eye_L_upper_lash",
+      "label_ko": "왼쪽 위 속눈썹",
+      "group": "eye_L",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        370,
+        485,
+        180,
+        62
+      ],
+      "bbox": [
+        851,
+        785,
+        180,
+        62
+      ],
+      "draw_order_band": "eye_front",
+      "draw_order": 1023,
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "draw_order_issue"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/23_eye_L_upper_lash.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": "dark",
+      "fallback_color": [
+        246,
+        218,
+        210
+      ],
+      "generated": true,
+      "bbox_actual": [
+        851,
+        785,
+        180,
+        62
+      ],
+      "alpha_coverage": 0.00160789,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/23_eye_L_upper_lash.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/23_eye_L_upper_lash.png",
+      "semantic_group": "eye"
+    },
+    {
+      "part_id": "eye_L_lower_lash",
+      "layer_name": "24_eye_L_lower_lash",
+      "label_ko": "왼쪽 아래 속눈썹",
+      "group": "eye_L",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        390,
+        570,
+        140,
+        45
+      ],
+      "bbox": [
+        871,
+        870,
+        140,
+        45
+      ],
+      "draw_order_band": "eye_front",
+      "draw_order": 1024,
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/24_eye_L_lower_lash.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": "dark",
+      "fallback_color": [
+        246,
+        218,
+        210
+      ],
+      "generated": true,
+      "bbox_actual": [
+        871,
+        870,
+        140,
+        45
+      ],
+      "alpha_coverage": 0.00105262,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/24_eye_L_lower_lash.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/24_eye_L_lower_lash.png",
+      "semantic_group": "eye"
+    },
+    {
+      "part_id": "eye_L_closed_lid",
+      "layer_name": "25_eye_L_closed_lid",
+      "label_ko": "왼쪽 감은 눈꺼풀",
+      "group": "eye_L",
+      "feasibility": "DERIVED_KEYPOSE_REQUIRED",
+      "source_type": "DERIVED_KEYPOSE",
+      "source_bbox": [
+        375,
+        505,
+        170,
+        95
+      ],
+      "bbox": [
+        856,
+        805,
+        170,
+        95
+      ],
+      "draw_order_band": "eye_front",
+      "draw_order": 1025,
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "clipping_risk"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/25_eye_L_closed_lid.png",
+      "merged_into": null,
+      "notes": "눈 ROI 스타일을 유지해 감은 눈 keypose 파츠로 보조 생성한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": null,
+      "fallback_color": [
+        246,
+        218,
+        210
+      ],
+      "generated": true,
+      "bbox_actual": [
+        870,
+        823,
+        143,
+        53
+      ],
+      "alpha_coverage": 0.00041676,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/25_eye_L_closed_lid.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/25_eye_L_closed_lid.png",
+      "semantic_group": "eye"
+    },
+    {
+      "part_id": "eye_R_highlight",
+      "layer_name": "30_eye_R_highlight",
+      "label_ko": "오른쪽 눈 하이라이트",
+      "group": "eye_R",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "DERIVED_KEYPOSE",
+      "source_bbox": [
+        668,
+        525,
+        42,
+        42
+      ],
+      "bbox": [
+        1149,
+        825,
+        42,
+        42
+      ],
+      "draw_order_band": "eye_front",
+      "draw_order": 1030,
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/30_eye_R_highlight.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": "light",
+      "fallback_color": [
+        246,
+        218,
+        210
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1161,
+        835,
+        25,
+        27
+      ],
+      "alpha_coverage": 8.678e-05,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/30_eye_R_highlight.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/30_eye_R_highlight.png",
+      "semantic_group": "eye"
+    },
+    {
+      "part_id": "eye_R_upper_lash",
+      "layer_name": "31_eye_R_upper_lash",
+      "label_ko": "오른쪽 위 속눈썹",
+      "group": "eye_R",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        600,
+        485,
+        180,
+        62
+      ],
+      "bbox": [
+        1081,
+        785,
+        180,
+        62
+      ],
+      "draw_order_band": "eye_front",
+      "draw_order": 1031,
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "draw_order_issue"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/31_eye_R_upper_lash.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": "dark",
+      "fallback_color": [
+        246,
+        218,
+        210
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1081,
+        785,
+        180,
+        62
+      ],
+      "alpha_coverage": 0.00245237,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/31_eye_R_upper_lash.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/31_eye_R_upper_lash.png",
+      "semantic_group": "eye"
+    },
+    {
+      "part_id": "eye_R_lower_lash",
+      "layer_name": "32_eye_R_lower_lash",
+      "label_ko": "오른쪽 아래 속눈썹",
+      "group": "eye_R",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        620,
+        570,
+        140,
+        45
+      ],
+      "bbox": [
+        1101,
+        870,
+        140,
+        45
+      ],
+      "draw_order_band": "eye_front",
+      "draw_order": 1032,
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/32_eye_R_lower_lash.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": "dark",
+      "fallback_color": [
+        246,
+        218,
+        210
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1101,
+        870,
+        140,
+        45
+      ],
+      "alpha_coverage": 0.00139785,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/32_eye_R_lower_lash.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/32_eye_R_lower_lash.png",
+      "semantic_group": "eye"
+    },
+    {
+      "part_id": "eye_R_closed_lid",
+      "layer_name": "33_eye_R_closed_lid",
+      "label_ko": "오른쪽 감은 눈꺼풀",
+      "group": "eye_R",
+      "feasibility": "DERIVED_KEYPOSE_REQUIRED",
+      "source_type": "DERIVED_KEYPOSE",
+      "source_bbox": [
+        605,
+        505,
+        170,
+        95
+      ],
+      "bbox": [
+        1086,
+        805,
+        170,
+        95
+      ],
+      "draw_order_band": "eye_front",
+      "draw_order": 1033,
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "clipping_risk"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/33_eye_R_closed_lid.png",
+      "merged_into": null,
+      "notes": "눈 ROI 스타일을 유지해 감은 눈 keypose 파츠로 보조 생성한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "ellipse",
+      "color_condition": null,
+      "fallback_color": [
+        246,
+        218,
+        210
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1100,
+        823,
+        143,
+        53
+      ],
+      "alpha_coverage": 0.00041914,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/33_eye_R_closed_lid.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/33_eye_R_closed_lid.png",
+      "semantic_group": "eye"
+    },
+    {
+      "part_id": "brow_L",
+      "layer_name": "35_brow_L",
+      "label_ko": "왼쪽 눈썹",
+      "group": "brow",
+      "feasibility": "DIRECT_VISIBLE_RISK",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        360,
+        450,
+        200,
+        58
+      ],
+      "bbox": [
+        841,
+        750,
+        200,
+        58
+      ],
+      "draw_order_band": "brow_front",
+      "draw_order": 1135,
+      "deformer_node": "brow_L_R_warp",
+      "parameters": [
+        "ParamBrowL/R Angle/Form/Y",
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "clipping_risk"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/35_brow_L.png",
+      "merged_into": null,
+      "notes": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "dark",
+      "fallback_color": [
+        70,
+        39,
+        43
+      ],
+      "generated": true,
+      "bbox_actual": [
+        841,
+        750,
+        200,
+        58
+      ],
+      "alpha_coverage": 0.00212836,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/35_brow_L.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/35_brow_L.png",
+      "semantic_group": "brow"
+    },
+    {
+      "part_id": "brow_R",
+      "layer_name": "36_brow_R",
+      "label_ko": "오른쪽 눈썹",
+      "group": "brow",
+      "feasibility": "DIRECT_VISIBLE_RISK",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        590,
+        450,
+        200,
+        58
+      ],
+      "bbox": [
+        1071,
+        750,
+        200,
+        58
+      ],
+      "draw_order_band": "brow_front",
+      "draw_order": 1136,
+      "deformer_node": "brow_L_R_warp",
+      "parameters": [
+        "ParamBrowL/R Angle/Form/Y",
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "clipping_risk"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/36_brow_R.png",
+      "merged_into": null,
+      "notes": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "dark",
+      "fallback_color": [
+        70,
+        39,
+        43
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1071,
+        750,
+        200,
+        58
+      ],
+      "alpha_coverage": 0.00271511,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/36_brow_R.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/36_brow_R.png",
+      "semantic_group": "brow"
+    },
+    {
+      "part_id": "mouth_inner",
+      "layer_name": "38_mouth_inner",
+      "label_ko": "입 안쪽",
+      "group": "mouth",
+      "feasibility": "DERIVED_KEYPOSE_REQUIRED",
+      "source_type": "DERIVED_KEYPOSE",
+      "source_bbox": [
+        470,
+        680,
+        160,
+        88
+      ],
+      "bbox": [
+        951,
+        980,
+        160,
+        88
+      ],
+      "draw_order_band": "mouth_back",
+      "draw_order": 1238,
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "bad_alpha",
+        "clipping_risk"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/38_mouth_inner.png",
+      "merged_into": null,
+      "notes": "입 ROI 기반으로 열린 입 내부 keypose 세트를 스타일 맞춰 보조 생성한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "dark",
+      "fallback_color": [
+        120,
+        52,
+        61
+      ],
+      "generated": true,
+      "bbox_actual": [
+        976,
+        997,
+        111,
+        61
+      ],
+      "alpha_coverage": 0.00126052,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/38_mouth_inner.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/38_mouth_inner.png",
+      "semantic_group": "mouth"
+    },
+    {
+      "part_id": "mouth_teeth",
+      "layer_name": "41_mouth_teeth",
+      "label_ko": "치아",
+      "group": "mouth",
+      "feasibility": "DERIVED_KEYPOSE_REQUIRED",
+      "source_type": "DERIVED_KEYPOSE",
+      "source_bbox": [
+        486,
+        692,
+        130,
+        36
+      ],
+      "bbox": [
+        967,
+        992,
+        130,
+        36
+      ],
+      "draw_order_band": "mouth_mid",
+      "draw_order": 1341,
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "bad_alpha",
+        "clipping_risk"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/41_mouth_teeth.png",
+      "merged_into": null,
+      "notes": "입 ROI 기반으로 열린 입 내부 keypose 세트를 스타일 맞춰 보조 생성한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "dark",
+      "fallback_color": [
+        120,
+        52,
+        61
+      ],
+      "generated": true,
+      "bbox_actual": [
+        990,
+        1000,
+        85,
+        15
+      ],
+      "alpha_coverage": 0.00028968,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/41_mouth_teeth.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/41_mouth_teeth.png",
+      "semantic_group": "mouth"
+    },
+    {
+      "part_id": "mouth_tongue",
+      "layer_name": "42_mouth_tongue",
+      "label_ko": "혀",
+      "group": "mouth",
+      "feasibility": "DERIVED_KEYPOSE_REQUIRED",
+      "source_type": "DERIVED_KEYPOSE",
+      "source_bbox": [
+        492,
+        716,
+        118,
+        44
+      ],
+      "bbox": [
+        973,
+        1016,
+        118,
+        44
+      ],
+      "draw_order_band": "mouth_mid",
+      "draw_order": 1342,
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "bad_alpha",
+        "clipping_risk"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/42_mouth_tongue.png",
+      "merged_into": null,
+      "notes": "입 ROI 기반으로 열린 입 내부 keypose 세트를 스타일 맞춰 보조 생성한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "dark",
+      "fallback_color": [
+        120,
+        52,
+        61
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1000,
+        1029,
+        65,
+        27
+      ],
+      "alpha_coverage": 0.00032687,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/42_mouth_tongue.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/42_mouth_tongue.png",
+      "semantic_group": "mouth"
+    },
+    {
+      "part_id": "mouth_line",
+      "layer_name": "37_mouth_line",
+      "label_ko": "입 선",
+      "group": "mouth",
+      "feasibility": "DIRECT_VISIBLE_RISK",
+      "source_type": "DERIVED_KEYPOSE",
+      "source_bbox": [
+        458,
+        670,
+        185,
+        85
+      ],
+      "bbox": [
+        939,
+        970,
+        185,
+        85
+      ],
+      "draw_order_band": "mouth_front",
+      "draw_order": 1437,
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm",
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "misaligned"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/37_mouth_line.png",
+      "merged_into": null,
+      "notes": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "dark",
+      "fallback_color": [
+        120,
+        52,
+        61
+      ],
+      "generated": true,
+      "bbox_actual": [
+        970,
+        1019,
+        124,
+        25
+      ],
+      "alpha_coverage": 0.00024796,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/37_mouth_line.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/37_mouth_line.png",
+      "semantic_group": "mouth"
+    },
+    {
+      "part_id": "mouth_upper_lip_mask",
+      "layer_name": "39_mouth_upper_lip_mask",
+      "label_ko": "윗입술 마스크",
+      "group": "mouth",
+      "feasibility": "DERIVED_KEYPOSE_REQUIRED",
+      "source_type": "DERIVED_KEYPOSE",
+      "source_bbox": [
+        466,
+        668,
+        168,
+        72
+      ],
+      "bbox": [
+        947,
+        968,
+        168,
+        72
+      ],
+      "draw_order_band": "mouth_front",
+      "draw_order": 1439,
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "bad_alpha",
+        "clipping_risk"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/39_mouth_upper_lip_mask.png",
+      "merged_into": null,
+      "notes": "입 열림용 마스크/입술 변형 보조 파츠로 생성한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "dark",
+      "fallback_color": [
+        120,
+        52,
+        61
+      ],
+      "generated": true,
+      "bbox_actual": [
+        976,
+        975,
+        111,
+        21
+      ],
+      "alpha_coverage": 0.00015759,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/39_mouth_upper_lip_mask.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/39_mouth_upper_lip_mask.png",
+      "semantic_group": "mouth"
+    },
+    {
+      "part_id": "mouth_lower_lip_mask",
+      "layer_name": "40_mouth_lower_lip_mask",
+      "label_ko": "아랫입술 마스크",
+      "group": "mouth",
+      "feasibility": "DERIVED_KEYPOSE_REQUIRED",
+      "source_type": "DERIVED_KEYPOSE",
+      "source_bbox": [
+        466,
+        695,
+        168,
+        70
+      ],
+      "bbox": [
+        947,
+        995,
+        168,
+        70
+      ],
+      "draw_order_band": "mouth_front",
+      "draw_order": 1440,
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "bad_alpha",
+        "clipping_risk"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/40_mouth_lower_lip_mask.png",
+      "merged_into": null,
+      "notes": "입 열림용 마스크/입술 변형 보조 파츠로 생성한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "dark",
+      "fallback_color": [
+        120,
+        52,
+        61
+      ],
+      "generated": true,
+      "bbox_actual": [
+        979,
+        1038,
+        104,
+        21
+      ],
+      "alpha_coverage": 0.00014806,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/40_mouth_lower_lip_mask.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/40_mouth_lower_lip_mask.png",
+      "semantic_group": "mouth"
+    },
+    {
+      "part_id": "mouth_corner_L",
+      "layer_name": "43_mouth_corner_L",
+      "label_ko": "왼쪽 입꼬리",
+      "group": "mouth",
+      "feasibility": "DIRECT_VISIBLE_RISK",
+      "source_type": "DERIVED_KEYPOSE",
+      "source_bbox": [
+        438,
+        673,
+        80,
+        76
+      ],
+      "bbox": [
+        919,
+        973,
+        80,
+        76
+      ],
+      "draw_order_band": "mouth_front",
+      "draw_order": 1443,
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "misaligned"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/43_mouth_corner_L.png",
+      "merged_into": null,
+      "notes": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "dark",
+      "fallback_color": [
+        120,
+        52,
+        61
+      ],
+      "generated": true,
+      "bbox_actual": [
+        938,
+        1001,
+        12,
+        30
+      ],
+      "alpha_coverage": 4.053e-05,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/43_mouth_corner_L.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/43_mouth_corner_L.png",
+      "semantic_group": "mouth"
+    },
+    {
+      "part_id": "mouth_corner_R",
+      "layer_name": "44_mouth_corner_R",
+      "label_ko": "오른쪽 입꼬리",
+      "group": "mouth",
+      "feasibility": "DIRECT_VISIBLE_RISK",
+      "source_type": "DERIVED_KEYPOSE",
+      "source_bbox": [
+        582,
+        673,
+        80,
+        76
+      ],
+      "bbox": [
+        1063,
+        973,
+        80,
+        76
+      ],
+      "draw_order_band": "mouth_front",
+      "draw_order": 1444,
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "risk_tags": [
+        "misaligned"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/44_mouth_corner_R.png",
+      "merged_into": null,
+      "notes": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "dark",
+      "fallback_color": [
+        120,
+        52,
+        61
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1113,
+        1001,
+        12,
+        30
+      ],
+      "alpha_coverage": 4.125e-05,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/44_mouth_corner_R.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/44_mouth_corner_R.png",
+      "semantic_group": "mouth"
+    },
+    {
+      "part_id": "hair_side_L_outer",
+      "layer_name": "57_hair_side_L_outer",
+      "label_ko": "왼쪽 바깥 옆머리",
+      "group": "hair",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        175,
+        250,
+        235,
+        780
+      ],
+      "bbox": [
+        656,
+        550,
+        235,
+        780
+      ],
+      "draw_order_band": "hair_side",
+      "draw_order": 1557,
+      "deformer_node": "side_hair_L_R_warp",
+      "parameters": [
+        "ParamHairSide",
+        "ParamAngleX"
+      ],
+      "physics_groups": [
+        "side_hair_L_physics"
+      ],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/57_hair_side_L_outer.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "hair",
+      "fallback_color": [
+        125,
+        82,
+        82
+      ],
+      "generated": true,
+      "bbox_actual": [
+        648,
+        550,
+        243,
+        792
+      ],
+      "alpha_coverage": 0.01719689,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/57_hair_side_L_outer.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/57_hair_side_L_outer.png",
+      "semantic_group": "hair"
+    },
+    {
+      "part_id": "hair_side_L_inner",
+      "layer_name": "58_hair_side_L_inner",
+      "label_ko": "왼쪽 안쪽 옆머리",
+      "group": "hair",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        300,
+        330,
+        165,
+        600
+      ],
+      "bbox": [
+        781,
+        630,
+        165,
+        600
+      ],
+      "draw_order_band": "hair_side",
+      "draw_order": 1558,
+      "deformer_node": "side_hair_L_R_warp",
+      "parameters": [
+        "ParamHairSide",
+        "ParamAngleX"
+      ],
+      "physics_groups": [
+        "side_hair_L_physics"
+      ],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/58_hair_side_L_inner.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "hair",
+      "fallback_color": [
+        125,
+        82,
+        82
+      ],
+      "generated": true,
+      "bbox_actual": [
+        781,
+        630,
+        165,
+        600
+      ],
+      "alpha_coverage": 0.01393533,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/58_hair_side_L_inner.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/58_hair_side_L_inner.png",
+      "semantic_group": "hair"
+    },
+    {
+      "part_id": "hair_side_R_outer",
+      "layer_name": "59_hair_side_R_outer",
+      "label_ko": "오른쪽 바깥 옆머리",
+      "group": "hair",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        700,
+        250,
+        235,
+        780
+      ],
+      "bbox": [
+        1181,
+        550,
+        235,
+        780
+      ],
+      "draw_order_band": "hair_side",
+      "draw_order": 1559,
+      "deformer_node": "side_hair_L_R_warp",
+      "parameters": [
+        "ParamHairSide",
+        "ParamAngleX"
+      ],
+      "physics_groups": [
+        "side_hair_R_physics"
+      ],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/59_hair_side_R_outer.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "hair",
+      "fallback_color": [
+        125,
+        82,
+        82
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1181,
+        550,
+        221,
+        788
+      ],
+      "alpha_coverage": 0.01604104,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/59_hair_side_R_outer.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/59_hair_side_R_outer.png",
+      "semantic_group": "hair"
+    },
+    {
+      "part_id": "hair_side_R_inner",
+      "layer_name": "60_hair_side_R_inner",
+      "label_ko": "오른쪽 안쪽 옆머리",
+      "group": "hair",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        630,
+        330,
+        165,
+        600
+      ],
+      "bbox": [
+        1111,
+        630,
+        165,
+        600
+      ],
+      "draw_order_band": "hair_side",
+      "draw_order": 1560,
+      "deformer_node": "side_hair_L_R_warp",
+      "parameters": [
+        "ParamHairSide",
+        "ParamAngleX"
+      ],
+      "physics_groups": [
+        "side_hair_R_physics"
+      ],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/60_hair_side_R_inner.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "hair",
+      "fallback_color": [
+        125,
+        82,
+        82
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1111,
+        630,
+        165,
+        600
+      ],
+      "alpha_coverage": 0.01426482,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/60_hair_side_R_inner.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/60_hair_side_R_inner.png",
+      "semantic_group": "hair"
+    },
+    {
+      "part_id": "hair_front_center",
+      "layer_name": "50_hair_front_center",
+      "label_ko": "가운데 앞머리",
+      "group": "hair",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        405,
+        95,
+        275,
+        400
+      ],
+      "bbox": [
+        886,
+        395,
+        275,
+        400
+      ],
+      "draw_order_band": "hair_front",
+      "draw_order": 1650,
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleZ",
+        "ParamHairFront"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "risk_tags": [
+        "draw_order_issue"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/50_hair_front_center.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "hair",
+      "fallback_color": [
+        125,
+        82,
+        82
+      ],
+      "generated": true,
+      "bbox_actual": [
+        874,
+        383,
+        299,
+        412
+      ],
+      "alpha_coverage": 0.01522589,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/50_hair_front_center.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/50_hair_front_center.png",
+      "semantic_group": "hair"
+    },
+    {
+      "part_id": "hair_front_L",
+      "layer_name": "51_hair_front_L",
+      "label_ko": "왼쪽 앞머리",
+      "group": "hair",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        305,
+        140,
+        230,
+        420
+      ],
+      "bbox": [
+        786,
+        440,
+        230,
+        420
+      ],
+      "draw_order_band": "hair_front",
+      "draw_order": 1651,
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleZ",
+        "ParamHairFront"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/51_hair_front_L.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "hair",
+      "fallback_color": [
+        125,
+        82,
+        82
+      ],
+      "generated": true,
+      "bbox_actual": [
+        786,
+        440,
+        230,
+        420
+      ],
+      "alpha_coverage": 0.01418829,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/51_hair_front_L.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/51_hair_front_L.png",
+      "semantic_group": "hair"
+    },
+    {
+      "part_id": "hair_front_R",
+      "layer_name": "52_hair_front_R",
+      "label_ko": "오른쪽 앞머리",
+      "group": "hair",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        560,
+        140,
+        230,
+        420
+      ],
+      "bbox": [
+        1041,
+        440,
+        230,
+        420
+      ],
+      "draw_order_band": "hair_front",
+      "draw_order": 1652,
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleZ",
+        "ParamHairFront"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/52_hair_front_R.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "hair",
+      "fallback_color": [
+        125,
+        82,
+        82
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1041,
+        440,
+        230,
+        420
+      ],
+      "alpha_coverage": 0.01573324,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/52_hair_front_R.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/52_hair_front_R.png",
+      "semantic_group": "hair"
+    },
+    {
+      "part_id": "hair_front_side_L",
+      "layer_name": "53_hair_front_side_L",
+      "label_ko": "왼쪽 앞 옆머리",
+      "group": "hair",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        250,
+        240,
+        190,
+        560
+      ],
+      "bbox": [
+        731,
+        540,
+        190,
+        560
+      ],
+      "draw_order_band": "hair_front",
+      "draw_order": 1653,
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamHairFront"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/53_hair_front_side_L.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "hair",
+      "fallback_color": [
+        125,
+        82,
+        82
+      ],
+      "generated": true,
+      "bbox_actual": [
+        731,
+        540,
+        190,
+        560
+      ],
+      "alpha_coverage": 0.01851392,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/53_hair_front_side_L.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/53_hair_front_side_L.png",
+      "semantic_group": "hair"
+    },
+    {
+      "part_id": "hair_front_side_R",
+      "layer_name": "54_hair_front_side_R",
+      "label_ko": "오른쪽 앞 옆머리",
+      "group": "hair",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        655,
+        240,
+        190,
+        560
+      ],
+      "bbox": [
+        1136,
+        540,
+        190,
+        560
+      ],
+      "draw_order_band": "hair_front",
+      "draw_order": 1654,
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamHairFront"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/54_hair_front_side_R.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "hair",
+      "fallback_color": [
+        125,
+        82,
+        82
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1136,
+        540,
+        190,
+        560
+      ],
+      "alpha_coverage": 0.01930237,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/54_hair_front_side_R.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/54_hair_front_side_R.png",
+      "semantic_group": "hair"
+    },
+    {
+      "part_id": "hair_front_tip_L",
+      "layer_name": "55_hair_front_tip_L",
+      "label_ko": "왼쪽 앞머리 끝",
+      "group": "hair",
+      "feasibility": "DIRECT_VISIBLE_RISK",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        285,
+        665,
+        180,
+        280
+      ],
+      "bbox": [
+        766,
+        965,
+        180,
+        280
+      ],
+      "draw_order_band": "hair_front",
+      "draw_order": 1655,
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamHairFront",
+        "ParamAngleZ"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "risk_tags": [
+        "overhang_issue"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/55_hair_front_tip_L.png",
+      "merged_into": null,
+      "notes": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "hair",
+      "fallback_color": [
+        125,
+        82,
+        82
+      ],
+      "generated": true,
+      "bbox_actual": [
+        766,
+        965,
+        180,
+        292
+      ],
+      "alpha_coverage": 0.00487733,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/55_hair_front_tip_L.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/55_hair_front_tip_L.png",
+      "semantic_group": "hair"
+    },
+    {
+      "part_id": "hair_front_tip_R",
+      "layer_name": "56_hair_front_tip_R",
+      "label_ko": "오른쪽 앞머리 끝",
+      "group": "hair",
+      "feasibility": "DIRECT_VISIBLE_RISK",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        625,
+        665,
+        180,
+        280
+      ],
+      "bbox": [
+        1106,
+        965,
+        180,
+        280
+      ],
+      "draw_order_band": "hair_front",
+      "draw_order": 1656,
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamHairFront",
+        "ParamAngleZ"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "risk_tags": [
+        "overhang_issue"
+      ],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/56_hair_front_tip_R.png",
+      "merged_into": null,
+      "notes": "원본에서 분리하되 bbox/alpha/경계 정리 후 G1 contact sheet에서 재검수한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "hair",
+      "fallback_color": [
+        125,
+        82,
+        82
+      ],
+      "generated": true,
+      "bbox_actual": [
+        1106,
+        965,
+        180,
+        280
+      ],
+      "alpha_coverage": 0.00491977,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/56_hair_front_tip_R.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/56_hair_front_tip_R.png",
+      "semantic_group": "hair"
+    },
+    {
+      "part_id": "collar_front",
+      "layer_name": "61_collar_front",
+      "label_ko": "앞깃",
+      "group": "clothing",
+      "feasibility": "DIRECT_VISIBLE",
+      "source_type": "SOURCE_CUT",
+      "source_bbox": [
+        365,
+        920,
+        360,
+        150
+      ],
+      "bbox": [
+        846,
+        1220,
+        360,
+        150
+      ],
+      "draw_order_band": "clothing_front",
+      "draw_order": 1761,
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "risk_tags": [],
+      "status": "DRAFT_PENDING_QA",
+      "include_in_import_psd": true,
+      "output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1/61_collar_front.png",
+      "merged_into": null,
+      "notes": "candidate_002 원본 PNG에서 alpha layer로 직접 분리한다. Neutral repair v1 adjusted alpha/RGB for canonical neutral composite. Semantic repair v1 checked owner role and clamped role-specific alpha.",
+      "mask_shape": "rounded",
+      "color_condition": "light",
+      "fallback_color": [
+        247,
+        229,
+        218
+      ],
+      "generated": true,
+      "bbox_actual": [
+        846,
+        1220,
+        356,
+        150
+      ],
+      "alpha_coverage": 0.00291586,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "pre_neutral_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/61_collar_front.png",
+      "pre_semantic_repair_output_path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1/61_collar_front.png",
+      "semantic_group": "clothing"
+    },
+    {
+      "part_id": "chest_cloth_shadow",
+      "layer_name": "64_chest_cloth_shadow",
+      "label_ko": "가슴 의상 그림자",
+      "group": "clothing",
+      "feasibility": "SIMPLIFY_OR_MERGE",
+      "source_type": "MERGED_METADATA",
+      "source_bbox": [
+        255,
+        965,
+        585,
+        190
+      ],
+      "bbox": [
+        736,
+        1265,
+        585,
+        190
+      ],
+      "draw_order_band": "clothing_front",
+      "draw_order": 1764,
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "risk_tags": [],
+      "status": "MERGED_METADATA_ONLY",
+      "include_in_import_psd": false,
+      "output_path": null,
+      "merged_into": "chest_cloth_base",
+      "notes": "처음 PSD에서는 독립 파츠보다 기본 의상 레이어에 병합하고 metadata로만 추적한다.",
+      "mask_shape": "rounded",
+      "color_condition": "light",
+      "fallback_color": [
+        247,
+        229,
+        218
+      ],
+      "metadata_path": "experiments/cubism-v2-new-character-001/material_pack_v0/merged_metadata/chest_cloth_shadow.json"
+    }
+  ],
+  "psd_candidate": {
+    "status": "PASS_PSD_CANDIDATE_WRITTEN",
+    "writer": "psd-tools",
+    "psd_path": "experiments/cubism-v2-new-character-001/material_pack_v0/import_ready_candidate.psd",
+    "psd_metadata": {
+      "exists": true,
+      "valid_header": true,
+      "channels": 3,
+      "width": 2048,
+      "height": 2048,
+      "depth": 8,
+      "color_mode": "RGB",
+      "layer_count": 62
+    }
+  },
+  "neutral_visibility": {
+    "hidden_at_neutral": [
+      "eye_L_closed_lid",
+      "eye_R_closed_lid",
+      "mouth_corner_L",
+      "mouth_corner_R",
+      "mouth_inner",
+      "mouth_lower_lip_mask",
+      "mouth_teeth",
+      "mouth_tongue",
+      "mouth_upper_lip_mask"
+    ],
+    "policy": "Auxiliary blink/open-mouth parts are hidden at neutral through Mini Cubism part_opacity_keyframes."
+  },
+  "part_opacity_keyframes": [
+    {
+      "part_id": "eye_L_closed_lid",
+      "parameter_id": "ParamEyeLOpen",
+      "mode": "linear",
+      "keyframes": [
+        {
+          "value": 0,
+          "opacity": 1
+        },
+        {
+          "value": 0.2,
+          "opacity": 1
+        },
+        {
+          "value": 1,
+          "opacity": 0
+        }
+      ]
+    },
+    {
+      "part_id": "eye_R_closed_lid",
+      "parameter_id": "ParamEyeROpen",
+      "mode": "linear",
+      "keyframes": [
+        {
+          "value": 0,
+          "opacity": 1
+        },
+        {
+          "value": 0.2,
+          "opacity": 1
+        },
+        {
+          "value": 1,
+          "opacity": 0
+        }
+      ]
+    },
+    {
+      "part_id": "mouth_corner_L",
+      "parameter_id": "ParamMouthOpenY",
+      "mode": "linear",
+      "keyframes": [
+        {
+          "value": 0,
+          "opacity": 0
+        },
+        {
+          "value": 0.25,
+          "opacity": 0
+        },
+        {
+          "value": 1,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "part_id": "mouth_corner_R",
+      "parameter_id": "ParamMouthOpenY",
+      "mode": "linear",
+      "keyframes": [
+        {
+          "value": 0,
+          "opacity": 0
+        },
+        {
+          "value": 0.25,
+          "opacity": 0
+        },
+        {
+          "value": 1,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "part_id": "mouth_inner",
+      "parameter_id": "ParamMouthOpenY",
+      "mode": "linear",
+      "keyframes": [
+        {
+          "value": 0,
+          "opacity": 0
+        },
+        {
+          "value": 0.25,
+          "opacity": 0
+        },
+        {
+          "value": 1,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "part_id": "mouth_lower_lip_mask",
+      "parameter_id": "ParamMouthOpenY",
+      "mode": "linear",
+      "keyframes": [
+        {
+          "value": 0,
+          "opacity": 0
+        },
+        {
+          "value": 0.25,
+          "opacity": 0
+        },
+        {
+          "value": 1,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "part_id": "mouth_teeth",
+      "parameter_id": "ParamMouthOpenY",
+      "mode": "linear",
+      "keyframes": [
+        {
+          "value": 0,
+          "opacity": 0
+        },
+        {
+          "value": 0.25,
+          "opacity": 0
+        },
+        {
+          "value": 1,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "part_id": "mouth_tongue",
+      "parameter_id": "ParamMouthOpenY",
+      "mode": "linear",
+      "keyframes": [
+        {
+          "value": 0,
+          "opacity": 0
+        },
+        {
+          "value": 0.25,
+          "opacity": 0
+        },
+        {
+          "value": 1,
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "part_id": "mouth_upper_lip_mask",
+      "parameter_id": "ParamMouthOpenY",
+      "mode": "linear",
+      "keyframes": [
+        {
+          "value": 0,
+          "opacity": 0
+        },
+        {
+          "value": 0.25,
+          "opacity": 0
+        },
+        {
+          "value": 1,
+          "opacity": 1
+        }
+      ]
+    }
+  ],
+  "neutral_repair": {
+    "schema_version": 1,
+    "applied_at": "2026-06-08T06:49:10.592903+00:00",
+    "repaired_layer_dir": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1",
+    "method": "clip outside canonical alpha, recolor visible pixels to canonical RGB, patch missing neutral pixels into existing semantic source layers"
+  },
+  "semantic_purity": {
+    "schema_version": 1,
+    "applied_at": "2026-06-08T07:09:00.823077+00:00",
+    "gate": "G1.5_SEMANTIC_PURITY",
+    "repaired_layer_dir": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_semantic_repair_v1",
+    "method": "move neutral-visible underpaint ownership into semantic visible parts and clamp eye/mouth alpha to ROIs"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "experiment_id": "cubism-v2-new-character-002",
+  "status": "PLANNED_NEXT_SESSION",
+  "updated_at": "2026-06-09",
+  "strategy": "material_pack_first",
+  "production_target": "Live2D/Cubism PSD material, ArtMesh, Deformer, Keyform",
+  "not_target": "PNG frame-swap runtime",
+  "reference_docs": [
+    "docs/ref/CUBISM-V2-MATERIAL-PACK-FIRST-GENERATION.md",
+    "docs/ref/CUBISM-V2-SUCCESS-PATTERN-PLAN.md",
+    "docs/status/NEXT-AGENT-HANDOFF.md",
+    "experiments/reference-model-structure-001/reports/cubism_v2_new_model_v2_standard_part_spec.md",
+    "experiments/reference-model-structure-001/reports/cubism_v2_character_prompt_template.md"
+  ],
+  "required_assets": [
+    "new_character_002_source_front",
+    "face_base_clean",
+    "eye_L_open",
+    "eye_R_open",
+    "eye_L_clean_socket",
+    "eye_R_clean_socket",
+    "eye_L_half_closed",
+    "eye_R_half_closed",
+    "eye_L_mostly_closed",
+    "eye_R_mostly_closed",
+    "eye_L_closed",
+    "eye_R_closed",
+    "eye_L_closed_underpaint",
+    "eye_R_closed_underpaint",
+    "mouth_base_clean",
+    "mouth_closed",
+    "mouth_small_open",
+    "mouth_wide_open",
+    "mouth_o_vowel",
+    "mouth_inner",
+    "mouth_teeth",
+    "mouth_tongue"
+  ],
+  "output_layout": {
+    "raw_outputs": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs",
+    "normalized_layers": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers",
+    "reports": "experiments/cubism-v2-new-character-002/reports"
+  },
+  "technical_gate": {
+    "validator": "scripts/validate_cubism_v2_keypose_pngs.py",
+    "expected_status": "PASS_READY_FOR_VISUAL_QA",
+    "required_size": [2048, 2048],
+    "required_mode": "RGBA",
+    "missing": 0,
+    "normalize_required": 0,
+    "alpha_or_mode_required": 0
+  },
+  "visual_gate_fail_conditions": [
+    "open-eye pixels visible inside closed-eye states",
+    "rectangular clean-socket patch",
+    "skin-tone stain around eyes or mouth",
+    "eye size mismatch between open, half, mostly, and closed states",
+    "mouth anchor moves between expressions",
+    "new character details appear in only some keyposes"
+  ],
+  "next_session_first_action": "Generate or define new_character_002_source_front, then generate the coordinated material/keypose set before Mini Cubism diagnostics."
+}

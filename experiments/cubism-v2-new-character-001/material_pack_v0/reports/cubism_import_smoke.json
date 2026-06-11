@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "status": "PASS_CUBISM_IMPORT_SMOKE",
+  "cubism_import_success": true,
+  "layers_flattened": false,
+  "reviewer": "codex",
+  "tested_at": "2026-06-08T15:03:15+09:00",
+  "cubism_editor": "/Applications/Live2D Cubism 5.3/Live2D Cubism Editor 5.3.app",
+  "candidate_psd": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/import_ready_candidate.psd",
+  "source_validation_report": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/material_asset_validation_report.json",
+  "psd_metadata": {
+    "width": 2048,
+    "height": 2048,
+    "channels": 3,
+    "depth": 8,
+    "color_mode": "RGB",
+    "layer_count": 62
+  },
+  "observed_windows": [
+    "Live2D Cubism Editor 5.3.01    [무료 버전]  - import_ready_candidate"
+  ],
+  "observed_layer_list_examples": [
+    "61_collar_front",
+    "56_hair_front_tip_R",
+    "55_hair_front_tip_L",
+    "54_hair_front_side_R",
+    "53_hair_front_side_L",
+    "52_hair_front_R",
+    "51_hair_front_L",
+    "50_hair_front_center",
+    "44_mouth_corner_R",
+    "43_mouth_corner_L",
+    "40_mouth_lower_lip_mask",
+    "39_mouth_upper_lip_mask"
+  ],
+  "screenshots": {
+    "startup_modal": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/cubism_import_smoke_current_window.png",
+    "free_version_confirmation": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/cubism_import_smoke_after_free.png",
+    "imported_layers": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/cubism_import_smoke_imported_layers.png"
+  },
+  "log_path": "/Users/family/Library/Live2D/Cubism5.3_Editor/logs/log.txt",
+  "log_excerpt": [
+    "2026.06.08 at 15:01:49 KST INFO  java.io.PrintStream -1 write - Read Header:26",
+    "2026.06.08 at 15:01:49 KST INFO  java.io.PrintStream -1 write - Read ColorModeData:4",
+    "2026.06.08 at 15:01:49 KST INFO  java.io.PrintStream -1 write - Read ImageResources:98",
+    "2026.06.08 at 15:01:50 KST INFO  java.io.PrintStream -1 write - Read LayerAndMaskInfo:8737760",
+    "2026.06.08 at 15:01:50 KST INFO  java.io.PrintStream -1 write - Read ImageData:12582914",
+    "2026.06.08 at 15:01:50 KST INFO  java.io.PrintStream -1 write - load @PSDDocument : 86.45 msec",
+    "2026.06.08 at 15:01:50 KST INFO  java.io.PrintStream -1 write - load @PSDDocument : 92.062 msec"
+  ],
+  "notes": [
+    "Cubism Editor does not register PSD as a macOS document type, so the smoke used Cubism's internal model setup flow rather than plain open -a.",
+    "The editor window title changed to import_ready_candidate and the imported project displayed individual layer entries in the Parts panel.",
+    "This validates PSD import and non-flattened layer visibility only. It does not validate final visual quality, semantic mask correctness, ArtMesh/deformer/keyform authoring, or runtime export."
+  ],
+  "promotion_decision": {
+    "can_promote_to_import_ready_psd": true,
+    "recommended_next_file": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/import_ready.psd",
+    "promoted_to_import_ready_psd": true,
+    "promoted_at": "2026-06-08T15:04:00+09:00",
+    "promotion_scope": "PSD import gate only; remaining 53 REVISE items stay in visual/semantic polish queue."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "validated_at": "2026-06-05T05:37:12.925273+00:00",
+  "experiment": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001",
+  "status": "PASS_WITH_LOCAL_ADAPTER_PROBE",
+  "checks": {
+    "required_packs_present": true,
+    "required_models_present": true,
+    "candidate_outputs_present": true,
+    "contact_sheets_present": true,
+    "project_promotion_blocked": true,
+    "actual_hf_inference_present": false
+  },
+  "counts": {
+    "packs": 5,
+    "candidates": 336,
+    "actual_hf_inference": 0,
+    "candidate_status": {
+      "CANDIDATE": 238,
+      "REFERENCE_ONLY": 98
+    }
+  },
+  "failures": {},
+  "outputs": {
+    "hf_probe_report": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/hf_probe_report.json",
+    "model_comparison_contact_sheet": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/model_comparison_contact_sheet.png",
+    "pack_problem_contact_sheet": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/pack_problem_contact_sheet.png"
+  },
+  "interpretation": [
+    "PASS_WITH_LOCAL_ADAPTER_PROBE means the pack pipeline is operational but real HF inference has not run.",
+    "Do not promote to final Mini Cubism project until actual model probes and visual QA pass."
+  ]
+}

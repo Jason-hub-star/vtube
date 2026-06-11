@@ -1,0 +1,59 @@
+{
+  "url": "http://127.0.0.1:51192/",
+  "outDir": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v7_smooth_mouth_preview/mini_cubism_diagnostic_project/pose_sweep_v1/screenshots",
+  "resultPath": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v7_smooth_mouth_preview/mini_cubism_diagnostic_project/pose_sweep_v1/screenshots/playwright_result.json",
+  "poses": [
+    {
+      "name": "neutral",
+      "parameters": {}
+    },
+    {
+      "name": "angle_left",
+      "parameters": {
+        "ParamAngleX": -30
+      }
+    },
+    {
+      "name": "angle_right",
+      "parameters": {
+        "ParamAngleX": 30
+      }
+    },
+    {
+      "name": "eye_l_close",
+      "parameters": {
+        "ParamEyeLOpen": 0
+      }
+    },
+    {
+      "name": "eye_r_close",
+      "parameters": {
+        "ParamEyeROpen": 0
+      }
+    },
+    {
+      "name": "mouth_open",
+      "parameters": {
+        "ParamMouthOpenY": 1
+      }
+    },
+    {
+      "name": "hair_swing",
+      "parameters": {
+        "ParamHairFront": 1
+      }
+    }
+  ],
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ]
+}

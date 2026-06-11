@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "experiment_id": "imagen-live2d-001",
+  "created_at": "2026-06-04T08:20:01.254918+00:00",
+  "updated_at": "2026-06-04T08:44:41.217900+00:00",
+  "source_manifest": "review_app/review_manifest.json",
+  "reviews": {
+    "imagen_live2d_001__raw_bottomwear": {
+      "part_id": "imagen_live2d_001__raw_bottomwear",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__raw_legwear": {
+      "part_id": "imagen_live2d_001__raw_legwear",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__raw_footwear": {
+      "part_id": "imagen_live2d_001__raw_footwear",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__tail_reference": {
+      "part_id": "imagen_live2d_001__tail_reference",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__wings_reference": {
+      "part_id": "imagen_live2d_001__wings_reference",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__object_reference": {
+      "part_id": "imagen_live2d_001__object_reference",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__raw_eyewear": {
+      "part_id": "imagen_live2d_001__raw_eyewear",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__front_hair": {
+      "part_id": "imagen_live2d_001__front_hair",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__raw_handwear": {
+      "part_id": "imagen_live2d_001__raw_handwear",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__raw_handwear_11": {
+      "part_id": "imagen_live2d_001__raw_handwear_11",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__ear_inner": {
+      "part_id": "imagen_live2d_001__ear_inner",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__nose_reference": {
+      "part_id": "imagen_live2d_001__nose_reference",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__headwear_reference": {
+      "part_id": "imagen_live2d_001__headwear_reference",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__back_hair": {
+      "part_id": "imagen_live2d_001__back_hair",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__neck": {
+      "part_id": "imagen_live2d_001__neck",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__clothes": {
+      "part_id": "imagen_live2d_001__clothes",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__choker": {
+      "part_id": "imagen_live2d_001__choker",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__R_ear_outer": {
+      "part_id": "imagen_live2d_001__R_ear_outer",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__L_ear_outer": {
+      "part_id": "imagen_live2d_001__L_ear_outer",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__R_brow": {
+      "part_id": "imagen_live2d_001__R_brow",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__face_base": {
+      "part_id": "imagen_live2d_001__face_base",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__mouth_line": {
+      "part_id": "imagen_live2d_001__mouth_line",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__L_brow": {
+      "part_id": "imagen_live2d_001__L_brow",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__R_eye_white": {
+      "part_id": "imagen_live2d_001__R_eye_white",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__L_eye_white": {
+      "part_id": "imagen_live2d_001__L_eye_white",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__R_iris": {
+      "part_id": "imagen_live2d_001__R_iris",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__R_upper_lash": {
+      "part_id": "imagen_live2d_001__R_upper_lash",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__L_iris": {
+      "part_id": "imagen_live2d_001__L_iris",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001__L_upper_lash": {
+      "part_id": "imagen_live2d_001__L_upper_lash",
+      "verdict": "O",
+      "issue_tags": [],
+      "human_note": "주인님 지시: 일단 전체 통과로 표시하고 PSD/Cubism 진행. 품질 최종 승인은 후속 Cubism/리깅 검증에서 재판정.",
+      "updated_at": "2026-06-04T08:23:00.036600Z"
+    },
+    "imagen_live2d_001_forced__front_hair": {
+      "part_id": "imagen_live2d_001_forced__front_hair",
+      "ko_name": "앞머리 forced 후보",
+      "verdict": "O",
+      "issue_tags": [],
+      "notes": "주인님 지시: 앞머리/양팔도 강제 통과 처리. MVP PSD 진행용이며 최종 품질 승인은 아님.",
+      "updated_at": "2026-06-04T08:44:41.217739+00:00",
+      "reviewer": "Codex forced pass"
+    },
+    "imagen_live2d_001_forced__R_arm": {
+      "part_id": "imagen_live2d_001_forced__R_arm",
+      "ko_name": "오른쪽 팔 forced 후보",
+      "verdict": "O",
+      "issue_tags": [],
+      "notes": "주인님 지시: 앞머리/양팔도 강제 통과 처리. MVP PSD 진행용이며 최종 품질 승인은 아님.",
+      "updated_at": "2026-06-04T08:44:41.217897+00:00",
+      "reviewer": "Codex forced pass"
+    },
+    "imagen_live2d_001_forced__L_arm": {
+      "part_id": "imagen_live2d_001_forced__L_arm",
+      "ko_name": "왼쪽 팔 forced 후보",
+      "verdict": "O",
+      "issue_tags": [],
+      "notes": "주인님 지시: 앞머리/양팔도 강제 통과 처리. MVP PSD 진행용이며 최종 품질 승인은 아님.",
+      "updated_at": "2026-06-04T08:44:41.217899+00:00",
+      "reviewer": "Codex forced pass"
+    }
+  },
+  "note": "Technical seed only. No O verdicts are written by this script."
+}

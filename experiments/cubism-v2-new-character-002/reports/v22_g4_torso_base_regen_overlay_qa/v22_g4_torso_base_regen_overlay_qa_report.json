@@ -1,0 +1,130 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-10T01:24:10.104365+00:00",
+  "status": "G4_TORSO_BASE_REGEN_OVERLAY_QA_ROUTE_READY_MATERIAL_BLOCKED",
+  "source_image": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/new_character_002_source_front.raw.png",
+  "generated_candidate_report": "experiments/cubism-v2-new-character-002/reports/v22_g4_torso_base_regen_candidate/v22_g4_torso_base_regen_candidate_report.json",
+  "regen_review_packet": "experiments/cubism-v2-new-character-002/reports/v22_g4_torso_base_regen_review_packet/v22_g4_torso_base_regen_review_packet.json",
+  "qa_sheet": "experiments/cubism-v2-new-character-002/reports/v22_g4_torso_base_regen_overlay_qa/v22_g4_torso_base_regen_overlay_qa.png",
+  "candidate_metrics": {
+    "generated": {
+      "path": "experiments/cubism-v2-new-character-002/v22_g4_torso_base_regen_candidate/normalized_layers/torso_base.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        520,
+        880,
+        1539,
+        1688
+      ],
+      "alpha_pixels": 505201,
+      "partial_alpha_pixels": 9526,
+      "alpha_coverage": 0.1204493,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "p0_v2": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/torso_base.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        504,
+        874,
+        1500,
+        1342
+      ],
+      "alpha_pixels": 247746,
+      "partial_alpha_pixels": 247746,
+      "alpha_coverage": 0.05906725,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "old_v2": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/torso_base.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        633,
+        995,
+        1426,
+        1863
+      ],
+      "alpha_pixels": 579413,
+      "partial_alpha_pixels": 614047,
+      "alpha_coverage": 0.13814282,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "generated_vs_p0_bottom_extension_px": 346,
+    "generated_vs_p0_top_delta_px": 6,
+    "generated_alpha_ratio_to_p0": 2.03918923,
+    "generated_alpha_ratio_to_old": 0.87191864,
+    "coverage_between_p0_and_old": true,
+    "generated_under_old_coverage": true,
+    "crop_contains_generated_bbox": true
+  },
+  "qa": {
+    "technical_verdict": "PASS_FOCUSED_OVERLAY_ROUTE_CANDIDATE",
+    "visual_verdict": "ROUTE_GENERATED_TORSO_TO_NEXT_REBUILD_REVIEW_REQUIRED",
+    "route": "USE_GENERATED_TORSO_FOR_NEXT_MANIFEST_REBUILD_KEEP_G5_BLOCKED",
+    "material_promotion": "BLOCKED",
+    "reason": "Generated torso_base restores lower neck/chest underpaint coverage missing from P0 v2 while staying below old v2 coverage. It is the best next manifest rebuild input, but overlay QA is not material acceptance."
+  },
+  "locks": {
+    "not_owner_approval": true,
+    "validator_only_promotion_blocked": true,
+    "material_pass_status": "BLOCKED",
+    "g5_status": "BLOCKED_PENDING_NEXT_MANIFEST_REBUILD_AND_SEPARATE_G5_ACCEPTANCE",
+    "param_hair_front_status": "HIDDEN_CONTRACT_ONLY",
+    "g7_mini_cubism_status": "BLOCKED",
+    "g8_real_cubism_status": "BLOCKED"
+  },
+  "next_action": [
+    "Build a G4 torso-selected 64-part manifest variant that replaces only B5 torso_base with the generated candidate.",
+    "Rerun corrected B4/B5 overlay QA against that manifest before any G5 material acceptance packet.",
+    "Keep ParamHairFront hidden and keep G7/G8 blocked."
+  ],
+  "self_review": {
+    "status": true,
+    "generated_candidate_status": true,
+    "generated_full_canvas_exists": true,
+    "generated_full_canvas_rgba_2048": true,
+    "generated_non_empty": true,
+    "transparent_corners": true,
+    "crop_contains_generated_bbox": true,
+    "generated_extends_lower_than_p0": true,
+    "generated_top_close_to_p0": true,
+    "coverage_between_p0_and_old": true,
+    "generated_under_old_coverage": true,
+    "route_selected": true,
+    "qa_sheet_exists": true,
+    "not_owner_approval": true,
+    "validator_only_promotion_blocked": true,
+    "material_pass_blocked": true,
+    "g5_blocked": true,
+    "param_hair_front_hidden": true,
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true
+  }
+}

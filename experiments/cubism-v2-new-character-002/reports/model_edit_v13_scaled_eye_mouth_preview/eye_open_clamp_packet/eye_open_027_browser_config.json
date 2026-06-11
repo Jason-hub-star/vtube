@@ -1,0 +1,27 @@
+{
+  "url": "http://127.0.0.1:55050/",
+  "framesDir": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v13_scaled_eye_mouth_preview/eye_open_clamp_packet/frames",
+  "resultPath": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v13_scaled_eye_mouth_preview/eye_open_clamp_packet/eye_open_027_browser_result.json",
+  "frames": [
+    {
+      "id": "eyeopen_1_00_open",
+      "eyeOpen": 1.0,
+      "label": "Open reference"
+    },
+    {
+      "id": "eyeopen_0_50_half",
+      "eyeOpen": 0.5,
+      "label": "Half keypose"
+    },
+    {
+      "id": "eyeopen_0_27_natural_close",
+      "eyeOpen": 0.27,
+      "label": "Natural close threshold"
+    },
+    {
+      "id": "eyeopen_0_00_full_close",
+      "eyeOpen": 0.0,
+      "label": "Technical full-close"
+    }
+  ]
+}

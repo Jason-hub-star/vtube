@@ -1,0 +1,416 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T14:08:44.410520+00:00",
+  "status": "B5_REFINED_MASK_V2_CANDIDATE_READY_FOR_OVERLAY_REVIEW",
+  "v1_report": "experiments/cubism-v2-new-character-002/reports/v22_b5_refined_mask_v1/v22_b5_refined_mask_v1_report.json",
+  "v1_overlay_qa_report": "experiments/cubism-v2-new-character-002/reports/v22_b5_refined_mask_v1/v22_b5_refined_mask_v1_overlay_qa_report.json",
+  "v1_focused_revise_parts": [
+    "torso_base",
+    "shoulder_L",
+    "shoulder_R",
+    "face_shadow_L",
+    "face_shadow_R",
+    "nose"
+  ],
+  "output_dir": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers",
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b5_refined_mask_v2/v22_b5_refined_mask_v2_contact_sheet.png",
+  "overlay_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b5_refined_mask_v2/v22_b5_refined_mask_v2_overlay_qa.png",
+  "entries": [
+    {
+      "part_id": "torso_base",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/torso_base.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/torso_base.png",
+      "refine_status": "REFINED_MASK_V2",
+      "bbox": [
+        630,
+        990,
+        1429,
+        1864
+      ],
+      "alpha_coverage": 0.14019799,
+      "alpha_sum_before": 140604686,
+      "alpha_sum_after": 91175837,
+      "alpha_sum_ratio": 0.648455,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "neck",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/neck.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/neck.png",
+      "refine_status": "COPIED_FROM_V1",
+      "bbox": [
+        882,
+        701,
+        1167,
+        1090
+      ],
+      "alpha_coverage": 0.01887441,
+      "alpha_sum_before": 19450924,
+      "alpha_sum_after": 19450924,
+      "alpha_sum_ratio": 1.0,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "shoulder_L",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/shoulder_L.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/shoulder_L.png",
+      "refine_status": "REFINED_MASK_V2",
+      "bbox": [
+        577,
+        1011,
+        863,
+        1216
+      ],
+      "alpha_coverage": 0.01091456,
+      "alpha_sum_before": 10709592,
+      "alpha_sum_after": 5074062,
+      "alpha_sum_ratio": 0.473787,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "shoulder_R",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/shoulder_R.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/shoulder_R.png",
+      "refine_status": "REFINED_MASK_V2",
+      "bbox": [
+        1205,
+        1013,
+        1455,
+        1218
+      ],
+      "alpha_coverage": 0.00972676,
+      "alpha_sum_before": 9360552,
+      "alpha_sum_after": 4640992,
+      "alpha_sum_ratio": 0.495803,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "arm_L_upper_simple",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/arm_L_upper_simple.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/arm_L_upper_simple.png",
+      "refine_status": "COPIED_FROM_V1",
+      "bbox": [
+        485,
+        1115,
+        695,
+        1786
+      ],
+      "alpha_coverage": 0.01823521,
+      "alpha_sum_before": 12403550,
+      "alpha_sum_after": 12403550,
+      "alpha_sum_ratio": 1.0,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "arm_R_upper_simple",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/arm_R_upper_simple.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/arm_R_upper_simple.png",
+      "refine_status": "COPIED_FROM_V1",
+      "bbox": [
+        1334,
+        1116,
+        1521,
+        1786
+      ],
+      "alpha_coverage": 0.01637411,
+      "alpha_sum_before": 11551116,
+      "alpha_sum_after": 11551116,
+      "alpha_sum_ratio": 1.0,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "collar_front",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/collar_front.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/collar_front.png",
+      "refine_status": "COPIED_FROM_V1",
+      "bbox": [
+        748,
+        1078,
+        1300,
+        1198
+      ],
+      "alpha_coverage": 0.00627613,
+      "alpha_sum_before": 3009496,
+      "alpha_sum_after": 3009496,
+      "alpha_sum_ratio": 1.0,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "collar_shadow",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/collar_shadow.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/collar_shadow.png",
+      "refine_status": "COPIED_FROM_V1",
+      "bbox": [
+        753,
+        1178,
+        1295,
+        1269
+      ],
+      "alpha_coverage": 0.00243759,
+      "alpha_sum_before": 610118,
+      "alpha_sum_after": 610118,
+      "alpha_sum_ratio": 1.0,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "chest_cloth_base",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/chest_cloth_base.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/chest_cloth_base.png",
+      "refine_status": "COPIED_FROM_V1",
+      "bbox": [
+        698,
+        1246,
+        1350,
+        1546
+      ],
+      "alpha_coverage": 0.01802492,
+      "alpha_sum_before": 11537218,
+      "alpha_sum_after": 11537218,
+      "alpha_sum_ratio": 1.0,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "chest_cloth_shadow",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/chest_cloth_shadow.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/chest_cloth_shadow.png",
+      "refine_status": "COPIED_FROM_V1",
+      "bbox": [
+        733,
+        1481,
+        1288,
+        1641
+      ],
+      "alpha_coverage": 0.00590897,
+      "alpha_sum_before": 1532851,
+      "alpha_sum_after": 1532851,
+      "alpha_sum_ratio": 1.0,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "brow_L",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/brow_L.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/brow_L.png",
+      "refine_status": "COPIED_FROM_V1",
+      "bbox": [
+        779,
+        631,
+        924,
+        659
+      ],
+      "alpha_coverage": 0.00030065,
+      "alpha_sum_before": 211890,
+      "alpha_sum_after": 211890,
+      "alpha_sum_ratio": 1.0,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "brow_R",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/brow_R.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/brow_R.png",
+      "refine_status": "COPIED_FROM_V1",
+      "bbox": [
+        1103,
+        631,
+        1247,
+        659
+      ],
+      "alpha_coverage": 0.00030589,
+      "alpha_sum_before": 218017,
+      "alpha_sum_after": 218017,
+      "alpha_sum_ratio": 1.0,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "nose",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/nose.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/nose.png",
+      "refine_status": "REFINED_MASK_V2",
+      "bbox": [
+        1003,
+        757,
+        1046,
+        823
+      ],
+      "alpha_coverage": 0.00052786,
+      "alpha_sum_before": 310889,
+      "alpha_sum_after": 66405,
+      "alpha_sum_ratio": 0.213597,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "cheek_L",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/cheek_L.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/cheek_L.png",
+      "refine_status": "COPIED_FROM_V1",
+      "bbox": [
+        752,
+        744,
+        917,
+        844
+      ],
+      "alpha_coverage": 0.0030582,
+      "alpha_sum_before": 812838,
+      "alpha_sum_after": 812838,
+      "alpha_sum_ratio": 1.0,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "cheek_R",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/cheek_R.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/cheek_R.png",
+      "refine_status": "COPIED_FROM_V1",
+      "bbox": [
+        1129,
+        744,
+        1294,
+        844
+      ],
+      "alpha_coverage": 0.00305676,
+      "alpha_sum_before": 800048,
+      "alpha_sum_after": 800048,
+      "alpha_sum_ratio": 1.0,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "face_shadow_L",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/face_shadow_L.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/face_shadow_L.png",
+      "refine_status": "REFINED_MASK_V2",
+      "bbox": [
+        721,
+        678,
+        809,
+        883
+      ],
+      "alpha_coverage": 0.00281453,
+      "alpha_sum_before": 1309134,
+      "alpha_sum_after": 373049,
+      "alpha_sum_ratio": 0.284959,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "face_shadow_R",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/face_shadow_R.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/face_shadow_R.png",
+      "refine_status": "REFINED_MASK_V2",
+      "bbox": [
+        1211,
+        680,
+        1291,
+        881
+      ],
+      "alpha_coverage": 0.00274563,
+      "alpha_sum_before": 1351915,
+      "alpha_sum_after": 377979,
+      "alpha_sum_ratio": 0.279588,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    }
+  ],
+  "decision": "B5 refined-mask v2 only changes the six focused v1 revise parts and keeps all gates blocked. This is a smaller candidate for overlay review, not material PASS.",
+  "next_action": [
+    "Run conservative v2 overlay QA.",
+    "If v2 still reads patch-like, mark remaining parts for regeneration or human review instead of more anchor tweaking.",
+    "Keep B4 hair focused review separate."
+  ],
+  "self_review": {
+    "entry_count": 17,
+    "refined_mask_v2_count": 6,
+    "copied_from_v1_count": 11,
+    "expected_focused_target_count": 6,
+    "all_layers_rgba": true,
+    "all_layers_2048": true,
+    "all_layers_nonempty": true,
+    "overlay_sheet_exists": true,
+    "contact_sheet_exists": true,
+    "validator_only_promotion_blocked": true,
+    "param_hair_front_hidden": true,
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true,
+    "status": "PASS"
+  }
+}

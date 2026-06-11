@@ -1,0 +1,522 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T14:48:48.773372+00:00",
+  "id": "miku_pro_jp_miku_sample_t05",
+  "name": "miku_sample_t05",
+  "source_url": "https://www.live2d.com/ko/learn/sample/",
+  "source_type": "OFFICIAL_SAMPLE_ZIP",
+  "license_status": "OFFICIAL_TERMS_ACCEPTED_BY_USER",
+  "analysis_mode": "FULL_STRUCTURE",
+  "official_profile_key": "miku",
+  "analysis_safety_notes": [],
+  "has_cmo3": true,
+  "has_moc3": true,
+  "has_model3_json": true,
+  "has_physics3_json": true,
+  "has_psd": false,
+  "local_paths": {
+    "cmo3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/miku_sample_t05.cmo3",
+      "exists": true,
+      "size_bytes": 18155959
+    },
+    "physics3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/miku_sample_t04.physics3.json",
+      "exists": true,
+      "size_bytes": 33097
+    },
+    "moc3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/miku_sample_t04.moc3",
+      "exists": true,
+      "size_bytes": 289920
+    },
+    "cdi3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/miku_sample_t04.cdi3.json",
+      "exists": true,
+      "size_bytes": 8381
+    },
+    "model3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/miku_sample_t04.model3.json",
+      "exists": true,
+      "size_bytes": 1015
+    },
+    "motion3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/motion/miku_01.motion3.json",
+        "exists": true,
+        "size_bytes": 5948
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/motion/miku_02.motion3.json",
+        "exists": true,
+        "size_bytes": 6253
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/motion/miku_03.motion3.json",
+        "exists": true,
+        "size_bytes": 6476
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/motion/miku_04.motion3.json",
+        "exists": true,
+        "size_bytes": 4308
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/motion/miku_05.motion3.json",
+        "exists": true,
+        "size_bytes": 7226
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/motion/miku_06.motion3.json",
+        "exists": true,
+        "size_bytes": 5561
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/motion/miku_07.motion3.json",
+        "exists": true,
+        "size_bytes": 4949
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/motion/miku_08.motion3.json",
+        "exists": true,
+        "size_bytes": 9246
+      }
+    ]
+  },
+  "cmo3": {
+    "status": "PASS",
+    "returncode": 0,
+    "json": "experiments/reference-model-structure-001/models/miku_pro_jp_miku_sample_t05/cmo3_structure_report.json",
+    "markdown": "experiments/reference-model-structure-001/models/miku_pro_jp_miku_sample_t05/cmo3_structure_report.md",
+    "stdout": "[cmo3-structure] WARN\n[cmo3-structure] json: /Users/family/jason/Vtube/experiments/reference-model-structure-001/models/miku_pro_jp_miku_sample_t05/cmo3_structure_report.json\n[cmo3-structure] md:   /Users/family/jason/Vtube/experiments/reference-model-structure-001/models/miku_pro_jp_miku_sample_t05/cmo3_structure_report.md",
+    "stderr": "",
+    "cmo3_status": "WARN",
+    "counts": {
+      "art_meshes": 116,
+      "parts": 26,
+      "parameters": 59,
+      "warp_deformers": 27,
+      "rotation_deformers": 38,
+      "keyform_bindings": 233,
+      "keyform_grids": 229,
+      "glue": 22,
+      "masks": 0
+    },
+    "parameter_ids": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamEyeLOpen",
+      "ParamEyeLSmile",
+      "ParamEyeROpen",
+      "ParamEyeRSmile",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamBrowLY",
+      "ParamBrowRY",
+      "ParamBrowLX",
+      "ParamBrowRX",
+      "ParamBrowLAngle",
+      "ParamBrowRAngle",
+      "ParamBrowLForm",
+      "ParamBrowRForm",
+      "ParamMouthForm",
+      "ParamMouthOpenY",
+      "ParamCheek",
+      "ParamArmL",
+      "ParamArmR",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBodyAngleZ",
+      "ParamBreath",
+      "ParamHairFront",
+      "ParamHairBack",
+      "ParamHairBackL8",
+      "ParamHairBackR6",
+      "Param_Angle_Rotation_1_D_HAIR_BACK_10",
+      "Param_Angle_Rotation_2_D_HAIR_BACK_10",
+      "Param_Angle_Rotation_3_D_HAIR_BACK_10",
+      "Param_Angle_Rotation_4_D_HAIR_BACK_10",
+      "Param_Angle_Rotation_5_D_HAIR_BACK_10",
+      "Param_Angle_Rotation_6_D_HAIR_BACK_10",
+      "Param_Angle_Rotation_7_D_HAIR_BACK_10",
+      "Param_Angle_Rotation_8_D_HAIR_BACK_10",
+      "Param_Angle_Rotation_9_D_HAIR_BACK_10",
+      "Param_Angle_Rotation_1_D_HAIR_BACK_00",
+      "Param_Angle_Rotation_2_D_HAIR_BACK_00",
+      "Param_Angle_Rotation_3_D_HAIR_BACK_00",
+      "Param_Angle_Rotation_4_D_HAIR_BACK_00",
+      "Param_Angle_Rotation_5_D_HAIR_BACK_00",
+      "Param_Angle_Rotation_6_D_HAIR_BACK_00",
+      "Param_Angle_Rotation_7_D_HAIR_BACK_00",
+      "Param_Angle_Rotation_8_D_HAIR_BACK_00",
+      "Param_Angle_Rotation_9_D_HAIR_BACK_00",
+      "ParamHairFront2",
+      "Param_Angle_Rotation_1_D_BODY_06",
+      "Param_Angle_Rotation_2_D_BODY_06",
+      "Param_Angle_Rotation_3_D_BODY_06",
+      "Param_Angle_Rotation_4_D_BODY_06",
+      "Param_Angle_Rotation_5_D_BODY_06",
+      "Param_Angle_Rotation_6_D_BODY_06",
+      "Param_Angle_Rotation_7_D_BODY_06",
+      "Param",
+      "Param2",
+      "Param3"
+    ],
+    "part_names": [
+      "Root Part",
+      "足",
+      "体",
+      "腕",
+      "首",
+      "後ろ髪",
+      "横髪",
+      "前髪",
+      "耳",
+      "鼻",
+      "口",
+      "まゆ毛",
+      "目玉",
+      "目",
+      "顔",
+      "頬",
+      "ヘッドセット",
+      "D_HAIR_BACK_00(回転)",
+      "D_HAIR_BACK_00(スキニング)",
+      "D_HAIR_BACK_10(回転)",
+      "D_HAIR_BACK_10(スキニング)",
+      "D_BODY_06(回転)",
+      "D_BODY_06(スキニング)",
+      "[ 下絵 ]",
+      "コアパーツ",
+      "背景"
+    ]
+  },
+  "moc3": {
+    "present": true,
+    "path": "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/miku_sample_t04.moc3",
+    "size_bytes": 289920,
+    "sha256": "6ada807bb167c5721cb26780c4926582eb2dc4098c2db4c6d751fc3e0f4b995f",
+    "py_moc3_status": "PASS",
+    "parameter_count": 59,
+    "art_mesh_count": 110,
+    "parameter_ids": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamCheek",
+      "ParamEyeLOpen",
+      "ParamEyeLSmile",
+      "ParamEyeROpen",
+      "ParamEyeRSmile",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamBrowLY",
+      "ParamBrowRY",
+      "ParamBrowLX",
+      "ParamBrowRX",
+      "ParamBrowLAngle",
+      "ParamBrowRAngle",
+      "ParamBrowLForm",
+      "ParamBrowRForm",
+      "ParamMouthOpenY",
+      "ParamMouthForm",
+      "ParamArmL",
+      "ParamArmR",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBodyAngleZ",
+      "ParamBreath",
+      "ParamHairFront",
+      "ParamHairFront2",
+      "ParamHairBack",
+      "ParamHairBackL8",
+      "ParamHairBackR6",
+      "Param",
+      "Param2",
+      "Param3",
+      "Param_Angle_Rotation_1_D_HAIR_BACK_10",
+      "Param_Angle_Rotation_2_D_HAIR_BACK_10",
+      "Param_Angle_Rotation_3_D_HAIR_BACK_10",
+      "Param_Angle_Rotation_4_D_HAIR_BACK_10",
+      "Param_Angle_Rotation_5_D_HAIR_BACK_10",
+      "Param_Angle_Rotation_6_D_HAIR_BACK_10",
+      "Param_Angle_Rotation_7_D_HAIR_BACK_10",
+      "Param_Angle_Rotation_8_D_HAIR_BACK_10",
+      "Param_Angle_Rotation_9_D_HAIR_BACK_10",
+      "Param_Angle_Rotation_1_D_HAIR_BACK_00",
+      "Param_Angle_Rotation_2_D_HAIR_BACK_00",
+      "Param_Angle_Rotation_3_D_HAIR_BACK_00",
+      "Param_Angle_Rotation_4_D_HAIR_BACK_00",
+      "Param_Angle_Rotation_5_D_HAIR_BACK_00",
+      "Param_Angle_Rotation_6_D_HAIR_BACK_00",
+      "Param_Angle_Rotation_7_D_HAIR_BACK_00",
+      "Param_Angle_Rotation_8_D_HAIR_BACK_00",
+      "Param_Angle_Rotation_9_D_HAIR_BACK_00",
+      "Param_Angle_Rotation_1_D_BODY_06",
+      "Param_Angle_Rotation_2_D_BODY_06",
+      "Param_Angle_Rotation_3_D_BODY_06",
+      "Param_Angle_Rotation_4_D_BODY_06",
+      "Param_Angle_Rotation_5_D_BODY_06",
+      "Param_Angle_Rotation_6_D_BODY_06",
+      "Param_Angle_Rotation_7_D_BODY_06"
+    ],
+    "art_mesh_ids_sample": [
+      "D_LEG_04",
+      "D_LEG_01",
+      "D_LEG_05",
+      "D_LEG_03",
+      "D_LEG_02",
+      "D_LEG_00",
+      "D_BODY_19",
+      "D_BODY_18",
+      "D_BODY_09",
+      "D_BODY_17",
+      "D_BODY_14",
+      "D_BODY_02",
+      "D_BODY_16",
+      "D_BODY_15",
+      "D_BODY_10",
+      "D_BODY_07",
+      "D_BODY_03",
+      "D_BODY_04",
+      "D_BODY_13",
+      "D_BODY_12",
+      "D_BODY_11",
+      "D_BODY_01",
+      "D_BODY_08",
+      "D_BODY_05",
+      "D_ARM_03",
+      "D_ARM_05",
+      "D_ARM_04",
+      "D_ARM_02",
+      "D_ARM_01",
+      "D_ARM_00",
+      "D_NECK_00",
+      "D_HAIR_BACK_c_09",
+      "D_HAIR_BACK_c_13",
+      "D_HAIR_BACK_c_08",
+      "D_HAIR_BACK_c_07",
+      "D_HAIR_BACK_14",
+      "D_HAIR_BACK_05",
+      "D_HAIR_BACK_06",
+      "D_HAIR_BACK_04",
+      "D_HAIR_BACK_03",
+      "D_HAIR_BACK_02",
+      "D_HAIR_BACK_01",
+      "D_HAIR_FRONT_02",
+      "D_HAIR_FRONT_01",
+      "D_HAIR_FRONT_00",
+      "D_NOSE_00",
+      "D_MOUTH_04",
+      "D_MOUTH_03",
+      "D_MOUTH_02",
+      "D_MOUTH_01"
+    ]
+  },
+  "runtime_json": {
+    "model3": {
+      "present": true,
+      "version": 3,
+      "moc": "miku_sample_t04.moc3",
+      "texture_count": 1,
+      "has_physics": true,
+      "has_pose": false,
+      "has_display_info": true,
+      "has_user_data": false,
+      "expression_count": 0,
+      "motion_group_count": 4,
+      "motion_count": 8,
+      "group_count": 2,
+      "parameter_ids": [
+        "ParamEyeLOpen",
+        "ParamEyeROpen",
+        "ParamMouthOpenY"
+      ],
+      "file_references": {
+        "Moc": "miku_sample_t04.moc3",
+        "Textures": [
+          "miku_sample_t04.2048/texture_00.png"
+        ],
+        "Physics": "miku_sample_t04.physics3.json",
+        "DisplayInfo": "miku_sample_t04.cdi3.json",
+        "Motions": {
+          "Idle": [
+            {
+              "File": "motion/miku_01.motion3.json"
+            },
+            {
+              "File": "motion/miku_04.motion3.json"
+            },
+            {
+              "File": "motion/miku_07.motion3.json"
+            }
+          ],
+          "Tap": [
+            {
+              "File": "motion/miku_02.motion3.json"
+            },
+            {
+              "File": "motion/miku_03.motion3.json"
+            }
+          ],
+          "Flick": [
+            {
+              "File": "motion/miku_05.motion3.json"
+            },
+            {
+              "File": "motion/miku_08.motion3.json"
+            }
+          ],
+          "FlickUp": [
+            {
+              "File": "motion/miku_06.motion3.json"
+            }
+          ]
+        }
+      }
+    },
+    "physics3": {
+      "present": true,
+      "version": 3,
+      "physics_group_count": 13,
+      "physics_input_count": 37,
+      "physics_output_count": 51,
+      "physics_vertex_count": 71,
+      "groups": [
+        {
+          "index": 0,
+          "id": "PhysicsSetting1",
+          "input_count": 4,
+          "output_count": 9,
+          "vertex_count": 11
+        },
+        {
+          "index": 1,
+          "id": "PhysicsSetting2",
+          "input_count": 4,
+          "output_count": 9,
+          "vertex_count": 11
+        },
+        {
+          "index": 2,
+          "id": "PhysicsSetting3",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 3,
+          "id": "PhysicsSetting4",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 4,
+          "id": "PhysicsSetting5",
+          "input_count": 2,
+          "output_count": 9,
+          "vertex_count": 11
+        },
+        {
+          "index": 5,
+          "id": "PhysicsSetting6",
+          "input_count": 2,
+          "output_count": 9,
+          "vertex_count": 11
+        },
+        {
+          "index": 6,
+          "id": "PhysicsSetting7",
+          "input_count": 2,
+          "output_count": 7,
+          "vertex_count": 11
+        },
+        {
+          "index": 7,
+          "id": "PhysicsSetting8",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 8,
+          "id": "PhysicsSetting9",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 9,
+          "id": "PhysicsSetting10",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 10,
+          "id": "PhysicsSetting11",
+          "input_count": 1,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 11,
+          "id": "PhysicsSetting12",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 12,
+          "id": "PhysicsSetting13",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        }
+      ]
+    },
+    "cdi3": {
+      "present": true,
+      "parameter_display_count": 59,
+      "part_display_count": 25
+    },
+    "motion3_count": 8,
+    "exp3_count": 0,
+    "pose3_present": false,
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 116,
+    "parts": 26,
+    "parameters": 59,
+    "warp_deformers": 27,
+    "rotation_deformers": 38,
+    "keyform_bindings": 233,
+    "keyform_grids": 229,
+    "glue": 22,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": true,
+    "pose": false,
+    "expression": false,
+    "motion": true,
+    "physics": true
+  },
+  "structure_hints": {
+    "hair": 1,
+    "eye": 1,
+    "mouth": 2,
+    "body": 1,
+    "arm": 1
+  },
+  "reuse_decision": "REFERENCE_ONLY",
+  "notes": [
+    "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+    "Source zip: miku_pro_jp.zip"
+  ],
+  "structure_report_path": "experiments/reference-model-structure-001/models/miku_pro_jp_miku_sample_t05/cmo3_structure_report.json"
+}

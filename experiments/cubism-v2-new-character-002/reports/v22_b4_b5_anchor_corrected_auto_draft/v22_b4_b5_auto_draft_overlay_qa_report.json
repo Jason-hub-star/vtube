@@ -1,0 +1,54 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T13:49:50.403109+00:00",
+  "status": "G6_B4_B5_AUTO_DRAFT_OVERLAY_QA_REVIEW_REQUIRED",
+  "corrected_candidate_report": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_anchor_corrected_auto_draft/v22_b4_b5_anchor_corrected_auto_draft_report.json",
+  "overlay_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_anchor_corrected_auto_draft/v22_b4_b5_auto_draft_overlay_qa.png",
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_anchor_corrected_auto_draft/v22_b4_b5_anchor_corrected_auto_draft_contact_sheet.png",
+  "checks": [
+    {
+      "id": "technical_corrected_candidate",
+      "status": "PASS_TECHNICAL",
+      "evidence": "Auto-draft corrected candidate rebuilt 33/33 B4/B5 full-canvas 2048 RGBA non-empty layers."
+    },
+    {
+      "id": "auto_anchor_scope",
+      "status": "PASS_DRAFT",
+      "evidence": "Automatic first-pass anchors were applied to all 16 B4 and 17 B5 revise targets."
+    },
+    {
+      "id": "visual_overlay_gate",
+      "status": "REVIEW_REQUIRED",
+      "evidence": "Overlay sheet is generated for human review. Auto-draft placement cannot approve B4/B5 material quality by itself."
+    },
+    {
+      "id": "hairfront_contract_gate",
+      "status": "HOLD_UNSUPPORTED_CONTROL",
+      "evidence": "ParamHairFront remains hidden until corrected hair_front_* children pass overlay QA and motion-readiness checks."
+    },
+    {
+      "id": "mini_real_cubism_gate",
+      "status": "BLOCKED",
+      "evidence": "Do not unlock Mini Cubism diagnostic or real Cubism authoring from this auto-draft overlay evidence."
+    }
+  ],
+  "decision": "Keep the auto-draft corrected B4/B5 layers as review candidates only. They reduce manual work but still need 주인님 visual review and possibly targeted editor adjustments.",
+  "next_action": [
+    "Review the overlay sheet and mark only visibly bad B4/B5 parts for manual adjustment.",
+    "Save real target anchors for those parts if needed.",
+    "Rebuild corrected candidates and rerun overlay QA before manifest promotion."
+  ],
+  "self_review": {
+    "entry_count": 33,
+    "b4_entry_count": 16,
+    "b5_entry_count": 17,
+    "corrected_candidate_status": "G6_B4_B5_AUTO_ANCHOR_DRAFT_CORRECTED_CANDIDATE_READY_FOR_OVERLAY_QA",
+    "applied_override_count": 33,
+    "overlay_sheet_exists": true,
+    "has_review_required_gate": true,
+    "param_hair_front_hidden": true,
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true,
+    "status": "PASS"
+  }
+}

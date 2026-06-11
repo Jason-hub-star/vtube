@@ -1,0 +1,82 @@
+{
+  "url": "http://127.0.0.1:56248/",
+  "framesDir": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_qa_v1/frames",
+  "resultPath": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_qa_v1/face_capture_result.json",
+  "poses": [
+    {
+      "name": "neutral",
+      "parameters": {}
+    },
+    {
+      "name": "angle_left",
+      "parameters": {
+        "ParamAngleX": -30
+      }
+    },
+    {
+      "name": "angle_right",
+      "parameters": {
+        "ParamAngleX": 30
+      }
+    },
+    {
+      "name": "eye_look_left",
+      "parameters": {
+        "ParamEyeBallX": -1
+      }
+    },
+    {
+      "name": "eye_look_right",
+      "parameters": {
+        "ParamEyeBallX": 1
+      }
+    },
+    {
+      "name": "eye_look_up",
+      "parameters": {
+        "ParamEyeBallY": 1
+      }
+    },
+    {
+      "name": "brow_raise",
+      "parameters": {
+        "ParamBrowLY": 1,
+        "ParamBrowRY": 1
+      }
+    },
+    {
+      "name": "brow_down",
+      "parameters": {
+        "ParamBrowLY": -1,
+        "ParamBrowRY": -1
+      }
+    },
+    {
+      "name": "smile",
+      "parameters": {
+        "ParamMouthForm": 1,
+        "ParamCheek": 1
+      }
+    },
+    {
+      "name": "frown",
+      "parameters": {
+        "ParamMouthForm": -1
+      }
+    },
+    {
+      "name": "mouth_open",
+      "parameters": {
+        "ParamMouthOpenY": 1,
+        "ParamCheek": 0.4
+      }
+    },
+    {
+      "name": "blink",
+      "parameters": {
+        "ParamEyeLOpen": 0,
+        "ParamEyeROpen": 0
+      }
+    }
+  ]
+}

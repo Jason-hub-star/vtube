@@ -1,0 +1,14 @@
+{
+  "status": "PASS_MANIFEST_READY",
+  "manifest": "experiments/cubism-v2-new-character-001/material_pack_v0/material_asset_manifest.json",
+  "layer_manifest": "experiments/cubism-v2-new-character-001/material_pack_v0/layer_manifest.json",
+  "summary": {
+    "taxonomy_parts": 64,
+    "generated_layer_target": 62,
+    "merged_metadata_target": 2,
+    "expected_direct_or_risk": 46,
+    "expected_auxiliary": 7,
+    "expected_underpaint": 9,
+    "expected_merge": 2
+  }
+}

@@ -1,0 +1,508 @@
+{
+  "schema_version": 1,
+  "experiment_id": "mini-cubism-dedicated-model-v1-001",
+  "generated_at": "2026-06-05T02:26:36.922703+00:00",
+  "source_review_manifest": "review_app/review_manifest.json",
+  "targets": [
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__L_brow",
+      "ko_name": "왼쪽 눈썹",
+      "group": "brows",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_brow.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "left brow only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "lash"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__R_brow",
+      "ko_name": "오른쪽 눈썹",
+      "group": "brows",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_brow.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "right brow only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "lash"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__L_eye_white",
+      "ko_name": "왼쪽 흰자",
+      "group": "eyes",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_eye_white.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "left sclera only"
+      ],
+      "forbidden_contamination": [
+        "iris",
+        "pupil",
+        "lash",
+        "hair",
+        "skin"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__L_iris",
+      "ko_name": "왼쪽 홍채",
+      "group": "eyes",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_iris.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "left iris color only"
+      ],
+      "forbidden_contamination": [
+        "pupil",
+        "highlight",
+        "eye_white",
+        "lash"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__L_upper_lash",
+      "ko_name": "왼쪽 윗속눈썹",
+      "group": "eyes",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_upper_lash.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "upper lash line only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "eye_white",
+        "iris"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__R_eye_white",
+      "ko_name": "오른쪽 흰자",
+      "group": "eyes",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_eye_white.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "right sclera only"
+      ],
+      "forbidden_contamination": [
+        "iris",
+        "pupil",
+        "lash",
+        "hair",
+        "skin"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__R_iris",
+      "ko_name": "오른쪽 홍채",
+      "group": "eyes",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_iris.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "right iris color only"
+      ],
+      "forbidden_contamination": [
+        "pupil",
+        "highlight",
+        "eye_white",
+        "lash"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__R_upper_lash",
+      "ko_name": "오른쪽 윗속눈썹",
+      "group": "eyes",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_upper_lash.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "upper lash line only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "eye_white",
+        "iris"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__face_base",
+      "ko_name": "얼굴 베이스",
+      "group": "face",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__face_base.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "visible face skin and face outline"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "eyes",
+        "mouth"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__back_hair",
+      "ko_name": "뒷머리",
+      "group": "hair",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__back_hair.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "rear hair mass only"
+      ],
+      "forbidden_contamination": [
+        "face",
+        "neck",
+        "front_hair",
+        "side_hair"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__front_hair",
+      "ko_name": "앞머리",
+      "group": "hair",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__front_hair.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "front bangs only"
+      ],
+      "forbidden_contamination": [
+        "face",
+        "eye",
+        "brow",
+        "side_hair",
+        "back_hair"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__mouth_line",
+      "ko_name": "입 라인",
+      "group": "mouth",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__mouth_line.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "mouth outline and lip line only"
+      ],
+      "forbidden_contamination": [
+        "teeth",
+        "tongue",
+        "skin"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__choker",
+      "ko_name": "초커",
+      "group": "accessory",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__choker.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "black choker band only"
+      ],
+      "forbidden_contamination": [
+        "neck",
+        "clothes",
+        "gold_ornaments",
+        "hair"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__L_arm",
+      "ko_name": "왼쪽 팔",
+      "group": "body",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_arm.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "left arm, sleeve, or visible arm-side silhouette only"
+      ],
+      "forbidden_contamination": [
+        "face",
+        "hair",
+        "right_arm",
+        "background"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__R_arm",
+      "ko_name": "오른쪽 팔",
+      "group": "body",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_arm.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "right arm, sleeve, or visible arm-side silhouette only"
+      ],
+      "forbidden_contamination": [
+        "face",
+        "hair",
+        "left_arm",
+        "background"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__clothes",
+      "ko_name": "의상",
+      "group": "body",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__clothes.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "clothing pixels only"
+      ],
+      "forbidden_contamination": [
+        "skin",
+        "hair",
+        "face"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__L_ear_outer",
+      "ko_name": "왼쪽 귀 바깥",
+      "group": "ears",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_ear_outer.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "left animal ear outer fur only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "ear_inner",
+        "accessory"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__R_ear_outer",
+      "ko_name": "오른쪽 귀 바깥",
+      "group": "ears",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_ear_outer.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "right animal ear outer fur only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "ear_inner",
+        "accessory"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__neck",
+      "ko_name": "목",
+      "group": "face",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__neck.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "neck skin only"
+      ],
+      "forbidden_contamination": [
+        "clothes",
+        "hair",
+        "face_outline"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__raw_bottomwear",
+      "ko_name": "mini cubism dedicated model v1 001  raw bottomwear",
+      "group": "overlays",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__raw_bottomwear.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__tail_reference",
+      "ko_name": "mini cubism dedicated model v1 001  tail reference",
+      "group": "overlays",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__tail_reference.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__wings_reference",
+      "ko_name": "mini cubism dedicated model v1 001  wings reference",
+      "group": "overlays",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__wings_reference.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__headwear_reference",
+      "ko_name": "mini cubism dedicated model v1 001  headwear reference",
+      "group": "overlays",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__headwear_reference.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__object_reference",
+      "ko_name": "mini cubism dedicated model v1 001  object reference",
+      "group": "overlays",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__object_reference.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__ear_inner",
+      "ko_name": "mini cubism dedicated model v1 001  ear inner",
+      "group": "overlays",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__ear_inner.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__nose_reference",
+      "ko_name": "mini cubism dedicated model v1 001  nose reference",
+      "group": "overlays",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__nose_reference.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__raw_eyewear",
+      "ko_name": "mini cubism dedicated model v1 001  raw eyewear",
+      "group": "overlays",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__raw_eyewear.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__raw_footwear",
+      "ko_name": "mini cubism dedicated model v1 001  raw footwear",
+      "group": "overlays",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__raw_footwear.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "mini_cubism_dedicated_model_v1_001__raw_legwear",
+      "ko_name": "mini cubism dedicated model v1 001  raw legwear",
+      "group": "overlays",
+      "section": "mini_cubism_dedicated_candidates",
+      "source_image": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__raw_legwear.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    }
+  ],
+  "gate": "Dedicated Mini Cubism candidates are See-through layer split evidence only; map to the 73-part taxonomy before rig build claims."
+}

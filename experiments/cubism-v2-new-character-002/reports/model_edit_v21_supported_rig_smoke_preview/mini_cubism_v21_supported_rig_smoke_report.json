@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T09:12:55.160003+00:00",
+  "status": "V21_SUPPORTED_RIG_SMOKE_READY_FOR_VALIDATION",
+  "source_project": "experiments/cubism-v2-new-character-002/model_edit_v20_manual_eye_anchor_preview/mini_cubism_diagnostic_project",
+  "project": "experiments/cubism-v2-new-character-002/model_edit_v21_supported_rig_smoke_preview/mini_cubism_diagnostic_project",
+  "unsupported_parameters": {
+    "ParamHairFront": {
+      "reason": "front_hair_warp has no child parts; keep contract parameter but hide from active preview",
+      "hide_in_preview": true,
+      "keep_for_contract_validation": true
+    }
+  },
+  "original_counts": {
+    "parameters": 7,
+    "deformers": 6,
+    "keyform_bindings": 15
+  },
+  "new_counts": {
+    "parameters": 7,
+    "deformers": 6,
+    "keyform_bindings": 15
+  },
+  "active_controls": [
+    "ParamAngleX",
+    "ParamEyeBallX",
+    "ParamEyeBallY",
+    "ParamEyeLOpen",
+    "ParamEyeROpen",
+    "ParamMouthOpenY"
+  ],
+  "policy": {
+    "exclude_fake_sliders": true,
+    "hair_front_requires_independent_parts": true,
+    "mini_cubism_only_not_real_cubism_authoring": true
+  }
+}

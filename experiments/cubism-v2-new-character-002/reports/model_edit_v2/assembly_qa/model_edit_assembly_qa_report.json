@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T02:30:22.432969+00:00",
+  "experiment_id": "cubism-v2-new-character-002",
+  "candidate_id": "model_edit_v2_clean_base_from_material_pack_first_v0",
+  "status": "ASSEMBLY_QA_READY_FOR_VISUAL_REVIEW",
+  "layers_dir": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers",
+  "sheets": {
+    "eye_assembly_qa_sheet": "experiments/cubism-v2-new-character-002/reports/model_edit_v2/assembly_qa/eye_assembly_qa_sheet.png",
+    "face_assembly_qa_sheet": "experiments/cubism-v2-new-character-002/reports/model_edit_v2/assembly_qa/face_assembly_qa_sheet.png",
+    "mouth_assembly_qa_sheet": "experiments/cubism-v2-new-character-002/reports/model_edit_v2/assembly_qa/mouth_assembly_qa_sheet.png"
+  },
+  "rows": [
+    {
+      "group": "eye",
+      "state": "clean_base",
+      "assets": [],
+      "image": "experiments/cubism-v2-new-character-002/reports/model_edit_v2/assembly_qa/eye_clean_base.png"
+    },
+    {
+      "group": "eye",
+      "state": "open",
+      "assets": [
+        "eye_L_open",
+        "eye_R_open"
+      ],
+      "image": "experiments/cubism-v2-new-character-002/reports/model_edit_v2/assembly_qa/eye_open.png"
+    },
+    {
+      "group": "eye",
+      "state": "half_closed",
+      "assets": [
+        "eye_L_half_closed_lid",
+        "eye_R_half_closed_lid"
+      ],
+      "image": "experiments/cubism-v2-new-character-002/reports/model_edit_v2/assembly_qa/eye_half_closed.png"
+    },
+    {
+      "group": "eye",
+      "state": "mostly_closed",
+      "assets": [
+        "eye_L_mostly_closed_lid",
+        "eye_R_mostly_closed_lid"
+      ],
+      "image": "experiments/cubism-v2-new-character-002/reports/model_edit_v2/assembly_qa/eye_mostly_closed.png"
+    },
+    {
+      "group": "eye",
+      "state": "closed",
+      "assets": [
+        "eye_L_closed_underpaint",
+        "eye_R_closed_underpaint",
+        "eye_L_closed_lid",
+        "eye_R_closed_lid"
+      ],
+      "image": "experiments/cubism-v2-new-character-002/reports/model_edit_v2/assembly_qa/eye_closed.png"
+    },
+    {
+      "group": "eye",
+      "state": "closed_lids_only",
+      "assets": [
+        "eye_L_closed_lid",
+        "eye_R_closed_lid"
+      ],
+      "image": "experiments/cubism-v2-new-character-002/reports/model_edit_v2/assembly_qa/eye_closed_lids_only.png"
+    },
+    {
+      "group": "mouth",
+      "state": "clean_base",
+      "assets": [],
+      "image": "experiments/cubism-v2-new-character-002/reports/model_edit_v2/assembly_qa/mouth_clean_base.png"
+    },
+    {
+      "group": "mouth",
+      "state": "closed_smile",
+      "assets": [
+        "mouth_closed_smile"
+      ],
+      "image": "experiments/cubism-v2-new-character-002/reports/model_edit_v2/assembly_qa/mouth_closed_smile.png"
+    },
+    {
+      "group": "mouth",
+      "state": "small_open",
+      "assets": [
+        "mouth_small_open"
+      ],
+      "image": "experiments/cubism-v2-new-character-002/reports/model_edit_v2/assembly_qa/mouth_small_open.png"
+    },
+    {
+      "group": "mouth",
+      "state": "wide_open",
+      "assets": [
+        "mouth_wide_open"
+      ],
+      "image": "experiments/cubism-v2-new-character-002/reports/model_edit_v2/assembly_qa/mouth_wide_open.png"
+    },
+    {
+      "group": "mouth",
+      "state": "o_vowel",
+      "assets": [
+        "mouth_o_vowel"
+      ],
+      "image": "experiments/cubism-v2-new-character-002/reports/model_edit_v2/assembly_qa/mouth_o_vowel.png"
+    },
+    {
+      "group": "mouth",
+      "state": "inner_teeth_tongue",
+      "assets": [
+        "mouth_inner",
+        "mouth_teeth",
+        "mouth_tongue"
+      ],
+      "image": "experiments/cubism-v2-new-character-002/reports/model_edit_v2/assembly_qa/mouth_inner_teeth_tongue.png"
+    },
+    {
+      "group": "mouth",
+      "state": "wide_inner_tongue",
+      "assets": [
+        "mouth_inner",
+        "mouth_tongue",
+        "mouth_wide_open"
+      ],
+      "image": "experiments/cubism-v2-new-character-002/reports/model_edit_v2/assembly_qa/mouth_wide_inner_tongue.png"
+    }
+  ]
+}

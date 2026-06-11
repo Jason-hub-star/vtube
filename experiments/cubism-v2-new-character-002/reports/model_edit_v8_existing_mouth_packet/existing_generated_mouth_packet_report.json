@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T04:24:38.622909+00:00",
+  "status": "PASS_EXISTING_MOUTH_PACKET_READY_FOR_VISUAL_QA",
+  "parts_dir": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v7_smooth_mouth_preview/mini_cubism_diagnostic_project/parts",
+  "layers_dir": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v8_existing_mouth_packet/normalized_layers",
+  "contact_sheet": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v8_existing_mouth_packet/existing_generated_mouth_contact_sheet.png",
+  "validation_issues": [],
+  "mouths": [
+    {
+      "id": "mouth_closed_smile",
+      "source": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v7_smooth_mouth_preview/mini_cubism_diagnostic_project/parts/mouth_closed_smile.png",
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v8_existing_mouth_packet/normalized_layers/mouth_closed_smile.png",
+      "policy": "ACTIVE",
+      "note": "closed smile, current v7 closed state",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        952,
+        851,
+        1121,
+        945
+      ],
+      "alpha_nonzero": 526
+    },
+    {
+      "id": "mouth_small_open",
+      "source": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v7_smooth_mouth_preview/mini_cubism_diagnostic_project/parts/mouth_small_open.png",
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v8_existing_mouth_packet/normalized_layers/mouth_small_open.png",
+      "policy": "ACTIVE",
+      "note": "current v7 open state",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        934,
+        845,
+        1118,
+        946
+      ],
+      "alpha_nonzero": 1929
+    },
+    {
+      "id": "mouth_inner",
+      "source": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v7_smooth_mouth_preview/mini_cubism_diagnostic_project/parts/mouth_inner.png",
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v8_existing_mouth_packet/normalized_layers/mouth_inner.png",
+      "policy": "REFERENCE_ONLY",
+      "note": "existing inner-mouth helper, not active in v7 crossfade",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        937,
+        849,
+        1122,
+        942
+      ],
+      "alpha_nonzero": 14372
+    },
+    {
+      "id": "mouth_teeth",
+      "source": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v7_smooth_mouth_preview/mini_cubism_diagnostic_project/parts/mouth_teeth.png",
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v8_existing_mouth_packet/normalized_layers/mouth_teeth.png",
+      "policy": "REFERENCE_ONLY",
+      "note": "existing teeth helper, not active in v7 crossfade",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        930,
+        867,
+        1128,
+        923
+      ],
+      "alpha_nonzero": 9546
+    },
+    {
+      "id": "mouth_tongue",
+      "source": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v7_smooth_mouth_preview/mini_cubism_diagnostic_project/parts/mouth_tongue.png",
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v8_existing_mouth_packet/normalized_layers/mouth_tongue.png",
+      "policy": "REFERENCE_ONLY",
+      "note": "existing tongue helper, not active in v7 crossfade",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        940,
+        846,
+        1116,
+        944
+      ],
+      "alpha_nonzero": 13523
+    },
+    {
+      "id": "mouth_o_vowel",
+      "source": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v7_smooth_mouth_preview/mini_cubism_diagnostic_project/parts/mouth_o_vowel.png",
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v8_existing_mouth_packet/normalized_layers/mouth_o_vowel.png",
+      "policy": "REJECTED_ACTIVE_EXCLUDED",
+      "note": "rejected because it reads as tiny centered O mouth",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        937,
+        845,
+        1111,
+        951
+      ],
+      "alpha_nonzero": 1163
+    },
+    {
+      "id": "mouth_wide_open",
+      "source": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v6_no_wide_open/normalized_layers/mouth_wide_open.png",
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v8_existing_mouth_packet/normalized_layers/mouth_wide_open.png",
+      "policy": "REJECTED_ACTIVE_EXCLUDED",
+      "note": "rejected by 주인님 as visually awkward",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        943,
+        841,
+        1128,
+        945
+      ],
+      "alpha_nonzero": 6054
+    }
+  ],
+  "active_policy": {
+    "ParamMouthOpenY": [
+      "mouth_closed_smile",
+      "mouth_small_open"
+    ],
+    "excluded_from_active": [
+      "mouth_o_vowel",
+      "mouth_wide_open"
+    ],
+    "reference_only": [
+      "mouth_inner",
+      "mouth_teeth",
+      "mouth_tongue"
+    ]
+  }
+}

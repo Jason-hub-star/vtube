@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T15:27:02.882183+00:00",
+  "id": "mark_movie_pro_ko_mark_movie_pro_t02",
+  "name": "mark_movie_pro_t02",
+  "source_url": "https://www.live2d.com/ko/learn/sample/",
+  "source_type": "OFFICIAL_SAMPLE_ZIP",
+  "license_status": "OFFICIAL_TERMS_ACCEPTED_BY_USER",
+  "analysis_mode": "FULL_STRUCTURE",
+  "official_profile_key": "mark",
+  "analysis_safety_notes": [],
+  "has_cmo3": true,
+  "has_moc3": false,
+  "has_model3_json": false,
+  "has_physics3_json": false,
+  "has_psd": false,
+  "local_paths": {
+    "cmo3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/mark_movie_pro_ko/mark_movie_pro_ko/mark_movie_pro_t02.cmo3",
+      "exists": true,
+      "size_bytes": 1543352
+    }
+  },
+  "cmo3": {
+    "status": "PASS",
+    "returncode": 0,
+    "json": "experiments/reference-model-structure-001/official_combined_analysis/models/mark_movie_pro_ko_mark_movie_pro_t02/cmo3_structure_report.json",
+    "markdown": "experiments/reference-model-structure-001/official_combined_analysis/models/mark_movie_pro_ko_mark_movie_pro_t02/cmo3_structure_report.md",
+    "stdout": "[cmo3-structure] WARN\n[cmo3-structure] json: /Users/family/jason/Vtube/experiments/reference-model-structure-001/official_combined_analysis/models/mark_movie_pro_ko_mark_movie_pro_t02/cmo3_structure_report.json\n[cmo3-structure] md:   /Users/family/jason/Vtube/experiments/reference-model-structure-001/official_combined_analysis/models/mark_movie_pro_ko_mark_movie_pro_t02/cmo3_structure_report.md",
+    "stderr": "",
+    "cmo3_status": "WARN",
+    "counts": {
+      "art_meshes": 33,
+      "parts": 22,
+      "parameters": 27,
+      "warp_deformers": 26,
+      "rotation_deformers": 13,
+      "keyform_bindings": 90,
+      "keyform_grids": 114,
+      "glue": 0,
+      "masks": 0
+    },
+    "parameter_ids": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamEyeLOpen",
+      "ParamEyeROpen",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamBrowLY",
+      "ParamBrowRY",
+      "ParamMouthOpenY",
+      "ParamBodyAngleX",
+      "ParamBreath",
+      "ParamHairFront",
+      "ParamHairSide",
+      "ParamHairBack",
+      "ParamArmR",
+      "ParamArmL",
+      "ParamRightLeg",
+      "ParamLeftLeg",
+      "ParamBodyAngleZ",
+      "ParamBodyAngleY",
+      "ParamPositionX",
+      "ParamPositionY",
+      "ParamBodyTransform",
+      "ParamGrass",
+      "ParamLine1",
+      "ParamLine2"
+    ],
+    "part_names": [
+      "Root Part",
+      "왼쪽 눈알",
+      "왼쪽 눈 흰자",
+      "오른쪽 눈알",
+      "왼쪽 눈 흰자",
+      "입 안",
+      "앞머리",
+      "왼쪽 눈",
+      "오른쪽 눈",
+      "옆머리",
+      "입",
+      "얼굴",
+      "머리",
+      "몸",
+      "왼팔",
+      "오른팔",
+      "뒷머리",
+      "코어",
+      "오른쪽 눈썹",
+      "왼쪽 눈썹",
+      "떨림선",
+      "풀"
+    ]
+  },
+  "moc3": {
+    "present": false
+  },
+  "runtime_json": {
+    "model3": {
+      "present": false
+    },
+    "physics3": {
+      "present": false
+    },
+    "cdi3": {
+      "present": false
+    },
+    "motion3_count": 0,
+    "exp3_count": 0,
+    "pose3_present": false,
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 33,
+    "parts": 22,
+    "parameters": 27,
+    "warp_deformers": 26,
+    "rotation_deformers": 13,
+    "keyform_bindings": 90,
+    "keyform_grids": 114,
+    "glue": 0,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": false,
+    "pose": false,
+    "expression": false,
+    "motion": false,
+    "physics": false
+  },
+  "structure_hints": {
+    "hair": 1,
+    "eye": 1,
+    "mouth": 1,
+    "body": 1,
+    "arm": 1
+  },
+  "reuse_decision": "REFERENCE_ONLY",
+  "notes": [
+    "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+    "Source zip: mark_movie_pro_ko.zip"
+  ],
+  "structure_report_path": "experiments/reference-model-structure-001/official_combined_analysis/models/mark_movie_pro_ko_mark_movie_pro_t02/cmo3_structure_report.json"
+}

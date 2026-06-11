@@ -1,0 +1,491 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T14:48:28.570916+00:00",
+  "id": "koharu_haruto_koharu_t01",
+  "name": "koharu_t01",
+  "source_url": "https://www.live2d.com/ko/learn/sample/",
+  "source_type": "OFFICIAL_SAMPLE_ZIP",
+  "license_status": "OFFICIAL_TERMS_ACCEPTED_BY_USER",
+  "analysis_mode": "FULL_STRUCTURE",
+  "official_profile_key": "koharu",
+  "analysis_safety_notes": [],
+  "has_cmo3": true,
+  "has_moc3": true,
+  "has_model3_json": true,
+  "has_physics3_json": true,
+  "has_psd": true,
+  "local_paths": {
+    "psd": [
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/PSD/é═éΘé╞_âCâôâ|ü[âg.psd",
+        "exists": true,
+        "size_bytes": 3783592
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/PSD/é═éΘé╞_æfì▐ò¬é».psd",
+        "exists": true,
+        "size_bytes": 7102150
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/PSD/é▒é═éΘ_âCâôâ|ü[âg.psd",
+        "exists": true,
+        "size_bytes": 4210980
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/PSD/é▒é═éΘ_æfì▐ò¬é».psd",
+        "exists": true,
+        "size_bytes": 8977681
+      }
+    ],
+    "cmo3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/koharu_t01.cmo3",
+      "exists": true,
+      "size_bytes": 4437982
+    },
+    "physics3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/koharu.physics3.json",
+      "exists": true,
+      "size_bytes": 7129
+    },
+    "moc3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/koharu.moc3",
+      "exists": true,
+      "size_bytes": 281472
+    },
+    "cdi3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/koharu.cdi3.json",
+      "exists": true,
+      "size_bytes": 5382
+    },
+    "model3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/koharu.model3.json",
+      "exists": true,
+      "size_bytes": 922
+    },
+    "motion3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/motion/01.motion3.json",
+        "exists": true,
+        "size_bytes": 12205
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/motion/02.motion3.json",
+        "exists": true,
+        "size_bytes": 10380
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/motion/03.motion3.json",
+        "exists": true,
+        "size_bytes": 10170
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/motion/04.motion3.json",
+        "exists": true,
+        "size_bytes": 9919
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/motion/05.motion3.json",
+        "exists": true,
+        "size_bytes": 10184
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/motion/06.motion3.json",
+        "exists": true,
+        "size_bytes": 15601
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/motion/07.motion3.json",
+        "exists": true,
+        "size_bytes": 11489
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/motion/08.motion3.json",
+        "exists": true,
+        "size_bytes": 9476
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/motion/09.motion3.json",
+        "exists": true,
+        "size_bytes": 12432
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/motion/idle.motion3.json",
+        "exists": true,
+        "size_bytes": 11908
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/motion/idle_02.motion3.json",
+        "exists": true,
+        "size_bytes": 11908
+      }
+    ]
+  },
+  "cmo3": {
+    "status": "PASS",
+    "returncode": 0,
+    "json": "experiments/reference-model-structure-001/models/koharu_haruto_koharu_t01/cmo3_structure_report.json",
+    "markdown": "experiments/reference-model-structure-001/models/koharu_haruto_koharu_t01/cmo3_structure_report.md",
+    "stdout": "[cmo3-structure] WARN\n[cmo3-structure] json: /Users/family/jason/Vtube/experiments/reference-model-structure-001/models/koharu_haruto_koharu_t01/cmo3_structure_report.json\n[cmo3-structure] md:   /Users/family/jason/Vtube/experiments/reference-model-structure-001/models/koharu_haruto_koharu_t01/cmo3_structure_report.md",
+    "stderr": "",
+    "cmo3_status": "WARN",
+    "counts": {
+      "art_meshes": 91,
+      "parts": 19,
+      "parameters": 52,
+      "warp_deformers": 63,
+      "rotation_deformers": 18,
+      "keyform_bindings": 220,
+      "keyform_grids": 191,
+      "glue": 0,
+      "masks": 0
+    },
+    "parameter_ids": [
+      "PARAM_ANGLE_X",
+      "PARAM_ANGLE_Y",
+      "PARAM_ANGLE_Z",
+      "PARAM_EYE_L_OPEN",
+      "PARAM_EYE_L_SMILE",
+      "PARAM_EYE_R_OPEN",
+      "PARAM_EYE_R_SMILE",
+      "PARAM_EYE_BALL_X",
+      "PARAM_EYE_BALL_Y",
+      "PARAM_EYE_SIZE",
+      "PARAM_EYE_HI",
+      "PARAM_EYE_01",
+      "PARAM_TEAR_L",
+      "PARAM_TEAR_R",
+      "PARAM_BROW_L_Y",
+      "PARAM_BROW_R_Y",
+      "PARAM_BROW_L_X",
+      "PARAM_BROW_R_X",
+      "PARAM_BROW_L_ANGLE",
+      "PARAM_BROW_R_ANGLE",
+      "PARAM_BROW_L_FORM",
+      "PARAM_BROW_R_FORM",
+      "PARAM_MOUTH_FORM",
+      "PARAM_MOUTH_OPEN_Y",
+      "PARAM_MOUTH_FORM_02",
+      "PARAM_DROOL",
+      "PARAM_CHEEK",
+      "PARAM_BODY_ANGLE_X",
+      "PARAM_BODY_ANGLE_Y",
+      "PARAM_BODY_ANGLE_Z",
+      "PARAM_BODY",
+      "PARAM_BREATH",
+      "PARAM_HAIR_FRONT",
+      "PARAM_HAIR_SIDE",
+      "PARAM_HAIR_BACK",
+      "PARAM_HAIR_FLUFFY",
+      "PARAM_HAIR_FLUFFY_02",
+      "PARAM_SKIRT",
+      "PARAM_NECKTIE",
+      "PARAM_ARM_L_01",
+      "PARAM_ARM_L_02",
+      "PARAM_ARM_L_03",
+      "PARAM_ARM_L",
+      "PARAM_ARM_R_01",
+      "PARAM_ARM_R_02",
+      "PARAM_ARM_R_03",
+      "PARAM_ARM_R",
+      "PARAM_HAND_SWITCH_L",
+      "PARAM_HAND_SWITCH_R",
+      "PARAM_HAND_L",
+      "PARAM_HAND_R",
+      "PARAM_PONPON"
+    ],
+    "part_names": [
+      "Root Part",
+      "[ 下絵 ]",
+      "背景",
+      "体",
+      "アイテム",
+      "腕",
+      "首",
+      "後ろ髪",
+      "横髪",
+      "前髪",
+      "耳",
+      "鼻",
+      "口",
+      "まゆ毛",
+      "目玉",
+      "目",
+      "顔",
+      "コア",
+      "ラフ"
+    ]
+  },
+  "moc3": {
+    "present": true,
+    "path": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/koharu.moc3",
+    "size_bytes": 281472,
+    "sha256": "cb5d270b6aeea5cb2a70d8728f52db49cee833f2a66a53db7f80a9e34ed5e005",
+    "py_moc3_status": "PASS",
+    "parameter_count": 52,
+    "art_mesh_count": 90,
+    "parameter_ids": [
+      "PARAM_ANGLE_X",
+      "PARAM_ANGLE_Y",
+      "PARAM_ANGLE_Z",
+      "PARAM_EYE_L_OPEN",
+      "PARAM_EYE_L_SMILE",
+      "PARAM_EYE_R_OPEN",
+      "PARAM_EYE_R_SMILE",
+      "PARAM_EYE_BALL_X",
+      "PARAM_EYE_BALL_Y",
+      "PARAM_EYE_SIZE",
+      "PARAM_EYE_HI",
+      "PARAM_EYE_01",
+      "PARAM_TEAR_L",
+      "PARAM_TEAR_R",
+      "PARAM_BROW_L_Y",
+      "PARAM_BROW_R_Y",
+      "PARAM_BROW_L_X",
+      "PARAM_BROW_R_X",
+      "PARAM_BROW_L_ANGLE",
+      "PARAM_BROW_R_ANGLE",
+      "PARAM_BROW_L_FORM",
+      "PARAM_BROW_R_FORM",
+      "PARAM_MOUTH_FORM",
+      "PARAM_MOUTH_OPEN_Y",
+      "PARAM_MOUTH_FORM_02",
+      "PARAM_DROOL",
+      "PARAM_CHEEK",
+      "PARAM_BODY_ANGLE_X",
+      "PARAM_BODY_ANGLE_Y",
+      "PARAM_BODY_ANGLE_Z",
+      "PARAM_BODY",
+      "PARAM_BREATH",
+      "PARAM_HAIR_FRONT",
+      "PARAM_HAIR_SIDE",
+      "PARAM_HAIR_BACK",
+      "PARAM_HAIR_FLUFFY",
+      "PARAM_HAIR_FLUFFY_02",
+      "PARAM_SKIRT",
+      "PARAM_NECKTIE",
+      "PARAM_ARM_L_01",
+      "PARAM_ARM_L_02",
+      "PARAM_ARM_L_03",
+      "PARAM_ARM_L",
+      "PARAM_ARM_R_01",
+      "PARAM_ARM_R_02",
+      "PARAM_ARM_R_03",
+      "PARAM_ARM_R",
+      "PARAM_HAND_SWITCH_L",
+      "PARAM_HAND_SWITCH_R",
+      "PARAM_HAND_L",
+      "PARAM_HAND_R",
+      "PARAM_PONPON"
+    ],
+    "art_mesh_ids_sample": [
+      "D_PSD_16",
+      "D_PSD_15",
+      "D_PSD_14",
+      "D_PSD_07",
+      "D_PSD_06",
+      "D_PSD_55",
+      "D_PSD_54",
+      "D_PSD_53",
+      "D_PSD_52",
+      "D_PSD_13",
+      "D_PSD_51",
+      "D_PSD_50",
+      "D_PSD_12",
+      "D_PSD_36",
+      "D_PSD_11",
+      "D_PSD_10",
+      "D_PSD_09",
+      "D_PSD_45",
+      "D_PSD_34",
+      "D_PSD_81",
+      "D_PSD_72",
+      "D_PSD_92",
+      "D_PSD_91",
+      "D_PSD_90",
+      "D_PSD_89",
+      "D_PSD_88",
+      "D_PSD_87",
+      "D_PSD_86",
+      "D_PSD_85",
+      "D_PSD_82",
+      "D_PSD_80",
+      "D_PSD_79",
+      "D_PSD_44",
+      "D_PSD_73",
+      "D_PSD_43",
+      "D_PSD_42",
+      "D_PSD_40",
+      "D_PSD_08",
+      "D_PSD_46",
+      "D_PSD_05",
+      "D_PSD_04",
+      "D_PSD_03",
+      "D_PSD_02",
+      "D_PSD_01",
+      "D_PSD_00",
+      "D_PSD_71",
+      "D_PSD_70",
+      "D_PSD_69",
+      "D_PSD_68",
+      "D_PSD_18"
+    ]
+  },
+  "runtime_json": {
+    "model3": {
+      "present": true,
+      "version": 3,
+      "moc": "koharu.moc3",
+      "texture_count": 1,
+      "has_physics": true,
+      "has_pose": false,
+      "has_display_info": true,
+      "has_user_data": false,
+      "expression_count": 0,
+      "motion_group_count": 6,
+      "motion_count": 11,
+      "group_count": 0,
+      "parameter_ids": [],
+      "file_references": {
+        "Moc": "koharu.moc3",
+        "Textures": [
+          "koharu.2048/texture_00.png"
+        ],
+        "Physics": "koharu.physics3.json",
+        "DisplayInfo": "koharu.cdi3.json",
+        "Motions": {
+          "Tap": [
+            {
+              "File": "motion/01.motion3.json"
+            },
+            {
+              "File": "motion/02.motion3.json"
+            },
+            {
+              "File": "motion/03.motion3.json"
+            },
+            {
+              "File": "motion/05.motion3.json"
+            }
+          ],
+          "FlickLeft": [
+            {
+              "File": "motion/04.motion3.json"
+            }
+          ],
+          "Idle": [
+            {
+              "File": "motion/06.motion3.json"
+            },
+            {
+              "File": "motion/idle.motion3.json"
+            },
+            {
+              "File": "motion/idle_02.motion3.json"
+            }
+          ],
+          "FlickUp": [
+            {
+              "File": "motion/07.motion3.json"
+            }
+          ],
+          "FlickDown": [
+            {
+              "File": "motion/08.motion3.json"
+            }
+          ],
+          "FlickRight": [
+            {
+              "File": "motion/09.motion3.json"
+            }
+          ]
+        }
+      }
+    },
+    "physics3": {
+      "present": true,
+      "version": 3,
+      "physics_group_count": 5,
+      "physics_input_count": 16,
+      "physics_output_count": 5,
+      "physics_vertex_count": 10,
+      "groups": [
+        {
+          "index": 0,
+          "id": "PhysicsSetting1",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 1,
+          "id": "PhysicsSetting2",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 2,
+          "id": "PhysicsSetting3",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 3,
+          "id": "PhysicsSetting4",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 4,
+          "id": "PhysicsSetting5",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        }
+      ]
+    },
+    "cdi3": {
+      "present": true,
+      "parameter_display_count": 52,
+      "part_display_count": 18
+    },
+    "motion3_count": 11,
+    "exp3_count": 0,
+    "pose3_present": false,
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 91,
+    "parts": 19,
+    "parameters": 52,
+    "warp_deformers": 63,
+    "rotation_deformers": 18,
+    "keyform_bindings": 220,
+    "keyform_grids": 191,
+    "glue": 0,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": false,
+    "pose": false,
+    "expression": false,
+    "motion": true,
+    "physics": true
+  },
+  "structure_hints": {
+    "hair": 1,
+    "eye": 1,
+    "mouth": 2,
+    "body": 2,
+    "arm": 2
+  },
+  "reuse_decision": "REFERENCE_ONLY",
+  "notes": [
+    "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+    "Source zip: koharu_haruto.zip"
+  ],
+  "structure_report_path": "experiments/reference-model-structure-001/models/koharu_haruto_koharu_t01/cmo3_structure_report.json"
+}

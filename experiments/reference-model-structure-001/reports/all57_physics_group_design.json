@@ -1,0 +1,2854 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-07T22:40:44.432310+00:00",
+  "scope": "all57 runtime physics where physics3.json exists",
+  "summary": {
+    "model_count": 57,
+    "physics_present_count": 44,
+    "group_count_stats": {
+      "n": 44,
+      "min": 1,
+      "p25": 3.0,
+      "median": 6.0,
+      "p75": 11.0,
+      "max": 19,
+      "mean": 7.32
+    },
+    "input_count_stats": {
+      "n": 44,
+      "min": 3,
+      "p25": 12.0,
+      "median": 18.0,
+      "p75": 33.25,
+      "max": 82,
+      "mean": 22.52
+    },
+    "output_count_stats": {
+      "n": 44,
+      "min": 2,
+      "p25": 3.75,
+      "median": 7.0,
+      "p75": 20.0,
+      "max": 63,
+      "mean": 14.8
+    },
+    "output_category_frequency": {
+      "hair": 196,
+      "other": 84,
+      "accessory": 64,
+      "effect_expression": 271,
+      "body_angle": 9,
+      "arm_hand": 9
+    }
+  },
+  "tier_guidance": {
+    "v2_min": "2 groups: hair front/side/back merged plus breath/body secondary motion if the design has medium hair.",
+    "v2_standard": "4-6 groups: front hair, side hair L/R, back hair, body/breath, accessory if present.",
+    "v2_rich": "8+ groups: split hair strands, ribbons/accessories, skirt/clothing, bust/body, and effect-secondary motion when needed."
+  },
+  "models": [
+    {
+      "id": "chitose_chitose_t01",
+      "name": "chitose_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 2,
+        "input_count": 8,
+        "output_count": 2,
+        "input_ids": [
+          "PARAM_ANGLE_X",
+          "PARAM_ANGLE_Z",
+          "PARAM_BODY_ANGLE_X",
+          "PARAM_BODY_ANGLE_Z"
+        ],
+        "output_ids": [
+          "PARAM_HAIR_BACK",
+          "PARAM_HAIR_FRONT"
+        ],
+        "output_categories": {
+          "hair": 2
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT"
+          ]
+        }
+      }
+    },
+    {
+      "id": "epsilon_epsilon_t02",
+      "name": "Epsilon_t02",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 2,
+        "input_count": 8,
+        "output_count": 4,
+        "input_ids": [
+          "PARAM_ANGLE_X",
+          "PARAM_ANGLE_Z",
+          "PARAM_BODY_ANGLE_X",
+          "PARAM_BODY_ANGLE_Z"
+        ],
+        "output_ids": [
+          "PARAM_HAIR_BACK_L",
+          "PARAM_HAIR_BACK_R",
+          "PARAM_HAIR_SIDE_L",
+          "PARAM_HAIR_SIDE_R"
+        ],
+        "output_categories": {
+          "hair": 4
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "PARAM_HAIR_BACK_L",
+            "PARAM_HAIR_BACK_R",
+            "PARAM_HAIR_SIDE_L",
+            "PARAM_HAIR_SIDE_R"
+          ]
+        }
+      }
+    },
+    {
+      "id": "haru_greeter_pro_jp_haru_greeter_t05",
+      "name": "haru_greeter_t05",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 4,
+        "input_count": 14,
+        "output_count": 4,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "ParamHairBack",
+          "ParamHairFront",
+          "ParamHairSide",
+          "ParamScarf"
+        ],
+        "output_categories": {
+          "hair": 3,
+          "other": 1
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairBack",
+            "ParamHairFront",
+            "ParamHairSide"
+          ],
+          "other": [
+            "ParamScarf"
+          ]
+        }
+      }
+    },
+    {
+      "id": "haru_haru_t01",
+      "name": "haru_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 2,
+        "input_count": 8,
+        "output_count": 2,
+        "input_ids": [
+          "PARAM_ANGLE_X",
+          "PARAM_ANGLE_Z",
+          "PARAM_BODY_ANGLE_X",
+          "PARAM_BODY_ANGLE_Z"
+        ],
+        "output_ids": [
+          "PARAM_HAIR_BACK",
+          "PARAM_HAIR_FRONT"
+        ],
+        "output_categories": {
+          "hair": 2
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT"
+          ]
+        }
+      }
+    },
+    {
+      "id": "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+      "name": "hiyori_movie_pro_t02",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": false,
+        "group_count": 0,
+        "input_count": 0,
+        "output_count": 0,
+        "input_ids": [],
+        "output_ids": [],
+        "output_categories": {},
+        "output_ids_by_category": {}
+      }
+    },
+    {
+      "id": "kei_ko_kei_basic_free_t02",
+      "name": "kei_basic_free_t02",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 6,
+        "input_count": 18,
+        "output_count": 7,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleY",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleY",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "ParamHairBack",
+          "ParamHairBackFuwa",
+          "ParamHairFront",
+          "ParamHairFrontFuwa",
+          "ParamHairSide",
+          "ParamHairSide2",
+          "ParamHairSideFuwa"
+        ],
+        "output_categories": {
+          "hair": 7
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSide2",
+            "ParamHairSideFuwa"
+          ]
+        }
+      }
+    },
+    {
+      "id": "kei_ko_kei_vowels_pro_t02",
+      "name": "kei_vowels_pro_t02",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 6,
+        "input_count": 18,
+        "output_count": 7,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleY",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleY",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "ParamHairBack",
+          "ParamHairBackFuwa",
+          "ParamHairFront",
+          "ParamHairFrontFuwa",
+          "ParamHairSide",
+          "ParamHairSide2",
+          "ParamHairSideFuwa"
+        ],
+        "output_categories": {
+          "hair": 7
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSide2",
+            "ParamHairSideFuwa"
+          ]
+        }
+      }
+    },
+    {
+      "id": "koharu_haruto_haruto_t01",
+      "name": "haruto_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 4,
+        "input_count": 14,
+        "output_count": 4,
+        "input_ids": [
+          "PARAM_ANGLE_X",
+          "PARAM_ANGLE_Z",
+          "PARAM_BODY_ANGLE_X",
+          "PARAM_BODY_ANGLE_Z"
+        ],
+        "output_ids": [
+          "PARAM_HAIR_BACK",
+          "PARAM_HAIR_FRONT",
+          "PARAM_HAIR_SIDE",
+          "PARAM_NECKTIE"
+        ],
+        "output_categories": {
+          "hair": 3,
+          "other": 1
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE"
+          ],
+          "other": [
+            "PARAM_NECKTIE"
+          ]
+        }
+      }
+    },
+    {
+      "id": "koharu_haruto_koharu_t01",
+      "name": "koharu_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 5,
+        "input_count": 16,
+        "output_count": 5,
+        "input_ids": [
+          "PARAM_ANGLE_X",
+          "PARAM_ANGLE_Z",
+          "PARAM_BODY_ANGLE_X",
+          "PARAM_BODY_ANGLE_Z"
+        ],
+        "output_ids": [
+          "PARAM_HAIR_BACK",
+          "PARAM_HAIR_FRONT",
+          "PARAM_HAIR_SIDE",
+          "PARAM_NECKTIE",
+          "PARAM_SKIRT"
+        ],
+        "output_categories": {
+          "hair": 3,
+          "other": 1,
+          "accessory": 1
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE"
+          ],
+          "accessory": [
+            "PARAM_SKIRT"
+          ],
+          "other": [
+            "PARAM_NECKTIE"
+          ]
+        }
+      }
+    },
+    {
+      "id": "mao_pro_ko_mao_pro_t06",
+      "name": "mao_pro_t06",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 16,
+        "input_count": 43,
+        "output_count": 20,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleY",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleY",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "ParamAccessory1",
+          "ParamAccessory2",
+          "ParamHairBack",
+          "ParamHairBackFuwa",
+          "ParamHairBackL",
+          "ParamHairBackR",
+          "ParamHairFront",
+          "ParamHairFrontFuwa",
+          "ParamHairSideFuwa",
+          "ParamHairSideL",
+          "ParamHairSideR",
+          "ParamHatBrim",
+          "ParamHatTop",
+          "ParamRibbon",
+          "ParamRobeFuwa",
+          "ParamRobeL",
+          "ParamRobeR",
+          "ParamString",
+          "ParamWing",
+          "ParamoHairMesh"
+        ],
+        "output_categories": {
+          "accessory": 5,
+          "hair": 10,
+          "other": 5
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairBackL",
+            "ParamHairBackR",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSideFuwa",
+            "ParamHairSideL",
+            "ParamHairSideR",
+            "ParamoHairMesh"
+          ],
+          "accessory": [
+            "ParamAccessory1",
+            "ParamAccessory2",
+            "ParamHatBrim",
+            "ParamHatTop",
+            "ParamRibbon"
+          ],
+          "other": [
+            "ParamRobeFuwa",
+            "ParamRobeL",
+            "ParamRobeR",
+            "ParamString",
+            "ParamWing"
+          ]
+        }
+      }
+    },
+    {
+      "id": "mark_movie_pro_ko_mark_movie_pro_t02",
+      "name": "mark_movie_pro_t02",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": false,
+        "group_count": 0,
+        "input_count": 0,
+        "output_count": 0,
+        "input_ids": [],
+        "output_ids": [],
+        "output_categories": {},
+        "output_ids_by_category": {}
+      }
+    },
+    {
+      "id": "miara_pro_en_miara_pro_t04",
+      "name": "miara_pro_t04",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 19,
+        "input_count": 82,
+        "output_count": 63,
+        "input_ids": [
+          "ParamAllRotate",
+          "ParamAllX",
+          "ParamAllY",
+          "ParamAngleX",
+          "ParamAngleZ",
+          "ParamArmL1",
+          "ParamArmL2",
+          "ParamArmR1",
+          "ParamArmR2",
+          "ParamBodyAngleX",
+          "ParamBodyAngleZ",
+          "ParamMoveX",
+          "ParamMoveY"
+        ],
+        "output_ids": [
+          "ParamBust",
+          "ParamBustX",
+          "ParamChestAccessory",
+          "ParamCloth1",
+          "ParamCloth2",
+          "ParamHairAho1",
+          "ParamHairAho2",
+          "ParamHairBack",
+          "ParamHairBack2",
+          "ParamHairCloth",
+          "ParamHairCloth2",
+          "ParamHairFront",
+          "ParamHairFront2",
+          "ParamHairSide",
+          "ParamHairSide2",
+          "ParamHairTail",
+          "ParamHairTail2",
+          "ParamPepram1",
+          "ParamPepram2",
+          "ParamSleeve",
+          "ParamSleeve2",
+          "ParamSleeveL",
+          "ParamSleeveL2",
+          "ParamSleeveRibbon",
+          "ParamSleeveRibbonL",
+          "Param_Angle_Rotation_1_ArtMesh108",
+          "Param_Angle_Rotation_1_ArtMesh109",
+          "Param_Angle_Rotation_1_ArtMesh179",
+          "Param_Angle_Rotation_1_ArtMesh181",
+          "Param_Angle_Rotation_1_ArtMesh76",
+          "Param_Angle_Rotation_1_ArtMesh77",
+          "Param_Angle_Rotation_2_ArtMesh108",
+          "Param_Angle_Rotation_2_ArtMesh109",
+          "Param_Angle_Rotation_2_ArtMesh179",
+          "Param_Angle_Rotation_2_ArtMesh181",
+          "Param_Angle_Rotation_2_ArtMesh76",
+          "Param_Angle_Rotation_2_ArtMesh77",
+          "Param_Angle_Rotation_3_ArtMesh108",
+          "Param_Angle_Rotation_3_ArtMesh109",
+          "Param_Angle_Rotation_3_ArtMesh179",
+          "Param_Angle_Rotation_3_ArtMesh181",
+          "Param_Angle_Rotation_3_ArtMesh76",
+          "Param_Angle_Rotation_3_ArtMesh77",
+          "Param_Angle_Rotation_4_ArtMesh108",
+          "Param_Angle_Rotation_4_ArtMesh109",
+          "Param_Angle_Rotation_4_ArtMesh179",
+          "Param_Angle_Rotation_4_ArtMesh181",
+          "Param_Angle_Rotation_4_ArtMesh76",
+          "Param_Angle_Rotation_4_ArtMesh77",
+          "Param_Angle_Rotation_5_ArtMesh108",
+          "Param_Angle_Rotation_5_ArtMesh109",
+          "Param_Angle_Rotation_5_ArtMesh179",
+          "Param_Angle_Rotation_5_ArtMesh181",
+          "Param_Angle_Rotation_5_ArtMesh76",
+          "Param_Angle_Rotation_5_ArtMesh77",
+          "Param_Angle_Rotation_6_ArtMesh108",
+          "Param_Angle_Rotation_6_ArtMesh109",
+          "Param_Angle_Rotation_6_ArtMesh76",
+          "Param_Angle_Rotation_6_ArtMesh77",
+          "Param_Angle_Rotation_7_ArtMesh108",
+          "Param_Angle_Rotation_7_ArtMesh109",
+          "Param_Angle_Rotation_7_ArtMesh76",
+          "Param_Angle_Rotation_7_ArtMesh77"
+        ],
+        "output_categories": {
+          "accessory": 5,
+          "other": 8,
+          "hair": 12,
+          "effect_expression": 38
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairAho1",
+            "ParamHairAho2",
+            "ParamHairBack",
+            "ParamHairBack2",
+            "ParamHairCloth",
+            "ParamHairCloth2",
+            "ParamHairFront",
+            "ParamHairFront2",
+            "ParamHairSide",
+            "ParamHairSide2",
+            "ParamHairTail",
+            "ParamHairTail2"
+          ],
+          "accessory": [
+            "ParamBust",
+            "ParamBustX",
+            "ParamChestAccessory",
+            "ParamSleeveRibbon",
+            "ParamSleeveRibbonL"
+          ],
+          "effect_expression": [
+            "Param_Angle_Rotation_1_ArtMesh108",
+            "Param_Angle_Rotation_1_ArtMesh109",
+            "Param_Angle_Rotation_1_ArtMesh179",
+            "Param_Angle_Rotation_1_ArtMesh181",
+            "Param_Angle_Rotation_1_ArtMesh76",
+            "Param_Angle_Rotation_1_ArtMesh77",
+            "Param_Angle_Rotation_2_ArtMesh108",
+            "Param_Angle_Rotation_2_ArtMesh109",
+            "Param_Angle_Rotation_2_ArtMesh179",
+            "Param_Angle_Rotation_2_ArtMesh181",
+            "Param_Angle_Rotation_2_ArtMesh76",
+            "Param_Angle_Rotation_2_ArtMesh77",
+            "Param_Angle_Rotation_3_ArtMesh108",
+            "Param_Angle_Rotation_3_ArtMesh109",
+            "Param_Angle_Rotation_3_ArtMesh179",
+            "Param_Angle_Rotation_3_ArtMesh181",
+            "Param_Angle_Rotation_3_ArtMesh76",
+            "Param_Angle_Rotation_3_ArtMesh77",
+            "Param_Angle_Rotation_4_ArtMesh108",
+            "Param_Angle_Rotation_4_ArtMesh109",
+            "Param_Angle_Rotation_4_ArtMesh179",
+            "Param_Angle_Rotation_4_ArtMesh181",
+            "Param_Angle_Rotation_4_ArtMesh76",
+            "Param_Angle_Rotation_4_ArtMesh77",
+            "Param_Angle_Rotation_5_ArtMesh108",
+            "Param_Angle_Rotation_5_ArtMesh109",
+            "Param_Angle_Rotation_5_ArtMesh179",
+            "Param_Angle_Rotation_5_ArtMesh181",
+            "Param_Angle_Rotation_5_ArtMesh76",
+            "Param_Angle_Rotation_5_ArtMesh77",
+            "Param_Angle_Rotation_6_ArtMesh108",
+            "Param_Angle_Rotation_6_ArtMesh109",
+            "Param_Angle_Rotation_6_ArtMesh76",
+            "Param_Angle_Rotation_6_ArtMesh77",
+            "Param_Angle_Rotation_7_ArtMesh108",
+            "Param_Angle_Rotation_7_ArtMesh109",
+            "Param_Angle_Rotation_7_ArtMesh76",
+            "Param_Angle_Rotation_7_ArtMesh77"
+          ],
+          "other": [
+            "ParamCloth1",
+            "ParamCloth2",
+            "ParamPepram1",
+            "ParamPepram2",
+            "ParamSleeve",
+            "ParamSleeve2",
+            "ParamSleeveL",
+            "ParamSleeveL2"
+          ]
+        }
+      }
+    },
+    {
+      "id": "natori_pro_ko_natori_pro_t06",
+      "name": "natori_pro_t06",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 11,
+        "input_count": 34,
+        "output_count": 12,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleY",
+          "ParamAngleZ",
+          "ParamArmBR03",
+          "ParamBodyAngleX",
+          "ParamBodyAngleY",
+          "ParamBodyAngleZ",
+          "ParamBodyPosition",
+          "ParamWaistAngleZ"
+        ],
+        "output_ids": [
+          "ParamChainWaist",
+          "ParamHairBack",
+          "ParamHairBackFuwa",
+          "ParamHairFront",
+          "ParamHairFrontFuwa",
+          "ParamHairSide",
+          "ParamHairSideFuwa",
+          "ParamJacket",
+          "ParamWatchAX",
+          "ParamWatchBChain",
+          "ParamWatchSwingA1",
+          "ParamWatchSwingA2"
+        ],
+        "output_categories": {
+          "other": 6,
+          "hair": 6
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSideFuwa"
+          ],
+          "other": [
+            "ParamChainWaist",
+            "ParamJacket",
+            "ParamWatchAX",
+            "ParamWatchBChain",
+            "ParamWatchSwingA1",
+            "ParamWatchSwingA2"
+          ]
+        }
+      }
+    },
+    {
+      "id": "param_ctrl_pro_ko_haruto_pc_pro_t02",
+      "name": "haruto_pc_pro_t02",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": false,
+        "group_count": 0,
+        "input_count": 0,
+        "output_count": 0,
+        "input_ids": [],
+        "output_ids": [],
+        "output_categories": {},
+        "output_ids_by_category": {}
+      }
+    },
+    {
+      "id": "param_ctrl_pro_ko_koharu_pc_pro_t02",
+      "name": "koharu_pc_pro_t02",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": false,
+        "group_count": 0,
+        "input_count": 0,
+        "output_count": 0,
+        "input_ids": [],
+        "output_ids": [],
+        "output_categories": {},
+        "output_ids_by_category": {}
+      }
+    },
+    {
+      "id": "param_ctrl_pro_ko_seesaw_pc_pro_t02",
+      "name": "seesaw_pc_pro_t02",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": false,
+        "group_count": 0,
+        "input_count": 0,
+        "output_count": 0,
+        "input_ids": [],
+        "output_ids": [],
+        "output_categories": {},
+        "output_ids_by_category": {}
+      }
+    },
+    {
+      "id": "param_ctrl_pro_ko_rice_pc_pro_t02",
+      "name": "rice_pc_pro_t02",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": false,
+        "group_count": 0,
+        "input_count": 0,
+        "output_count": 0,
+        "input_ids": [],
+        "output_ids": [],
+        "output_categories": {},
+        "output_ids_by_category": {}
+      }
+    },
+    {
+      "id": "param_ctrl_pro_ko_target_pc_pro_t02",
+      "name": "target_pc_pro_t02",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": false,
+        "group_count": 0,
+        "input_count": 0,
+        "output_count": 0,
+        "input_ids": [],
+        "output_ids": [],
+        "output_categories": {},
+        "output_ids_by_category": {}
+      }
+    },
+    {
+      "id": "ren_pro_ko_ren_t01",
+      "name": "ren_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 16,
+        "input_count": 33,
+        "output_count": 20,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleY",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleY",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "ParamBodyAngleX2",
+          "ParamBodyAngleY2",
+          "ParamBodyCenter2",
+          "ParamCollarFuwa",
+          "ParamCollarString",
+          "ParamCollarStringFuwa",
+          "ParamHairBack",
+          "ParamHairBackFuwa",
+          "ParamHairFront",
+          "ParamHairFrontFuwa",
+          "ParamHairSide",
+          "ParamHairSideFuwa",
+          "ParamJacket",
+          "ParamLeftShoulderUp2",
+          "ParamNecklace1",
+          "ParamNecklace2",
+          "ParamNecklace3",
+          "ParamPocketString",
+          "ParamPullHandle",
+          "ParamRightShoulderUp2"
+        ],
+        "output_categories": {
+          "body_angle": 3,
+          "other": 8,
+          "hair": 6,
+          "arm_hand": 3
+        },
+        "output_ids_by_category": {
+          "body_angle": [
+            "ParamBodyAngleX2",
+            "ParamBodyAngleY2",
+            "ParamBodyCenter2"
+          ],
+          "hair": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSideFuwa"
+          ],
+          "arm_hand": [
+            "ParamLeftShoulderUp2",
+            "ParamPullHandle",
+            "ParamRightShoulderUp2"
+          ],
+          "other": [
+            "ParamCollarFuwa",
+            "ParamCollarString",
+            "ParamCollarStringFuwa",
+            "ParamJacket",
+            "ParamNecklace1",
+            "ParamNecklace2",
+            "ParamNecklace3",
+            "ParamPocketString"
+          ]
+        }
+      }
+    },
+    {
+      "id": "rice_pro_ko_rice_pro_t03",
+      "name": "rice_pro_t03",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 9,
+        "input_count": 32,
+        "output_count": 42,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "ParamBustRibbon01",
+          "ParamBustRibbon02",
+          "ParamHairFront01",
+          "ParamHairFront02",
+          "ParamHeadRibbon",
+          "ParamWaistRibbon01",
+          "ParamWaistRibbon02",
+          "Param_Angle_Rotation_1_ArtMesh20",
+          "Param_Angle_Rotation_1_ArtMesh67",
+          "Param_Angle_Rotation_1_ArtMesh80",
+          "Param_Angle_Rotation_1_ArtMesh81",
+          "Param_Angle_Rotation_1_ArtMesh82",
+          "Param_Angle_Rotation_2_ArtMesh20",
+          "Param_Angle_Rotation_2_ArtMesh67",
+          "Param_Angle_Rotation_2_ArtMesh80",
+          "Param_Angle_Rotation_2_ArtMesh81",
+          "Param_Angle_Rotation_2_ArtMesh82",
+          "Param_Angle_Rotation_3_ArtMesh20",
+          "Param_Angle_Rotation_3_ArtMesh67",
+          "Param_Angle_Rotation_3_ArtMesh80",
+          "Param_Angle_Rotation_3_ArtMesh81",
+          "Param_Angle_Rotation_3_ArtMesh82",
+          "Param_Angle_Rotation_4_ArtMesh20",
+          "Param_Angle_Rotation_4_ArtMesh67",
+          "Param_Angle_Rotation_4_ArtMesh80",
+          "Param_Angle_Rotation_4_ArtMesh81",
+          "Param_Angle_Rotation_4_ArtMesh82",
+          "Param_Angle_Rotation_5_ArtMesh20",
+          "Param_Angle_Rotation_5_ArtMesh67",
+          "Param_Angle_Rotation_5_ArtMesh80",
+          "Param_Angle_Rotation_5_ArtMesh81",
+          "Param_Angle_Rotation_5_ArtMesh82",
+          "Param_Angle_Rotation_6_ArtMesh80",
+          "Param_Angle_Rotation_6_ArtMesh81",
+          "Param_Angle_Rotation_6_ArtMesh82",
+          "Param_Angle_Rotation_7_ArtMesh80",
+          "Param_Angle_Rotation_7_ArtMesh81",
+          "Param_Angle_Rotation_7_ArtMesh82",
+          "Param_Angle_Rotation_8_ArtMesh80",
+          "Param_Angle_Rotation_8_ArtMesh81",
+          "Param_Angle_Rotation_9_ArtMesh80",
+          "Param_Angle_Rotation_9_ArtMesh81"
+        ],
+        "output_categories": {
+          "accessory": 5,
+          "hair": 2,
+          "effect_expression": 35
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairFront01",
+            "ParamHairFront02"
+          ],
+          "accessory": [
+            "ParamBustRibbon01",
+            "ParamBustRibbon02",
+            "ParamHeadRibbon",
+            "ParamWaistRibbon01",
+            "ParamWaistRibbon02"
+          ],
+          "effect_expression": [
+            "Param_Angle_Rotation_1_ArtMesh20",
+            "Param_Angle_Rotation_1_ArtMesh67",
+            "Param_Angle_Rotation_1_ArtMesh80",
+            "Param_Angle_Rotation_1_ArtMesh81",
+            "Param_Angle_Rotation_1_ArtMesh82",
+            "Param_Angle_Rotation_2_ArtMesh20",
+            "Param_Angle_Rotation_2_ArtMesh67",
+            "Param_Angle_Rotation_2_ArtMesh80",
+            "Param_Angle_Rotation_2_ArtMesh81",
+            "Param_Angle_Rotation_2_ArtMesh82",
+            "Param_Angle_Rotation_3_ArtMesh20",
+            "Param_Angle_Rotation_3_ArtMesh67",
+            "Param_Angle_Rotation_3_ArtMesh80",
+            "Param_Angle_Rotation_3_ArtMesh81",
+            "Param_Angle_Rotation_3_ArtMesh82",
+            "Param_Angle_Rotation_4_ArtMesh20",
+            "Param_Angle_Rotation_4_ArtMesh67",
+            "Param_Angle_Rotation_4_ArtMesh80",
+            "Param_Angle_Rotation_4_ArtMesh81",
+            "Param_Angle_Rotation_4_ArtMesh82",
+            "Param_Angle_Rotation_5_ArtMesh20",
+            "Param_Angle_Rotation_5_ArtMesh67",
+            "Param_Angle_Rotation_5_ArtMesh80",
+            "Param_Angle_Rotation_5_ArtMesh81",
+            "Param_Angle_Rotation_5_ArtMesh82",
+            "Param_Angle_Rotation_6_ArtMesh80",
+            "Param_Angle_Rotation_6_ArtMesh81",
+            "Param_Angle_Rotation_6_ArtMesh82",
+            "Param_Angle_Rotation_7_ArtMesh80",
+            "Param_Angle_Rotation_7_ArtMesh81",
+            "Param_Angle_Rotation_7_ArtMesh82",
+            "Param_Angle_Rotation_8_ArtMesh80",
+            "Param_Angle_Rotation_8_ArtMesh81",
+            "Param_Angle_Rotation_9_ArtMesh80",
+            "Param_Angle_Rotation_9_ArtMesh81"
+          ]
+        }
+      }
+    },
+    {
+      "id": "shizuku_shizuku_t02",
+      "name": "shizuku_t02",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 3,
+        "input_count": 6,
+        "output_count": 5,
+        "input_ids": [
+          "PARAM_ANGLE_X",
+          "PARAM_ANGLE_Z"
+        ],
+        "output_ids": [
+          "PARAM_KAMIYURE_FRONT",
+          "PARAM_KAMIYURE_SIDE_L",
+          "PARAM_KAMIYURE_SIDE_R",
+          "PARAM_KAMIYURE_TWIN_L",
+          "PARAM_KAMIYURE_TWIN_R"
+        ],
+        "output_categories": {
+          "hair": 5
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "PARAM_KAMIYURE_FRONT",
+            "PARAM_KAMIYURE_SIDE_L",
+            "PARAM_KAMIYURE_SIDE_R",
+            "PARAM_KAMIYURE_TWIN_L",
+            "PARAM_KAMIYURE_TWIN_R"
+          ]
+        }
+      }
+    },
+    {
+      "id": "tsumiki_tsumiki_t01",
+      "name": "tsumiki_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 7,
+        "input_count": 22,
+        "output_count": 9,
+        "input_ids": [
+          "PARAM_ANGLE_X",
+          "PARAM_ANGLE_Z",
+          "PARAM_BODY_ANGLE_X",
+          "PARAM_BODY_ANGLE_Z"
+        ],
+        "output_ids": [
+          "PARAM_BUST_Y",
+          "PARAM_HAIR_AHO",
+          "PARAM_HAIR_BACK",
+          "PARAM_HAIR_FRONT",
+          "PARAM_HAIR_SIDE",
+          "PARAM_RIBON_L",
+          "PARAM_RIBON_R",
+          "PARAM_SKIRT",
+          "PARAM_TIE"
+        ],
+        "output_categories": {
+          "accessory": 2,
+          "hair": 4,
+          "effect_expression": 2,
+          "other": 1
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "PARAM_HAIR_AHO",
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE"
+          ],
+          "accessory": [
+            "PARAM_BUST_Y",
+            "PARAM_SKIRT"
+          ],
+          "effect_expression": [
+            "PARAM_RIBON_L",
+            "PARAM_RIBON_R"
+          ],
+          "other": [
+            "PARAM_TIE"
+          ]
+        }
+      }
+    },
+    {
+      "id": "unitychan_unitychan_t01",
+      "name": "unitychan_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 3,
+        "input_count": 12,
+        "output_count": 3,
+        "input_ids": [
+          "PARAM_ANGLE_X",
+          "PARAM_ANGLE_Z",
+          "PARAM_BODY_ANGLE_X",
+          "PARAM_BODY_ANGLE_Z"
+        ],
+        "output_ids": [
+          "PARAM_HAIR_BACK",
+          "PARAM_HAIR_FLUFFY",
+          "PARAM_HAIR_FRONT"
+        ],
+        "output_categories": {
+          "hair": 3
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FLUFFY",
+            "PARAM_HAIR_FRONT"
+          ]
+        }
+      }
+    },
+    {
+      "id": "wanko_wanko_touch_t01",
+      "name": "wanko_touch_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 4,
+        "input_count": 14,
+        "output_count": 4,
+        "input_ids": [
+          "PARAM_ANGLE_X",
+          "PARAM_ANGLE_Y",
+          "PARAM_ANGLE_Z",
+          "PARAM_BODY_ANGLE_X",
+          "PARAM_BODY_ANGLE_Y",
+          "PARAM_BODY_ANGLE_Z"
+        ],
+        "output_ids": [
+          "PARAM_BOWL_SWING",
+          "PARAM_EAR_L",
+          "PARAM_EAR_R",
+          "PARAM_SWING"
+        ],
+        "output_categories": {
+          "other": 2,
+          "accessory": 2
+        },
+        "output_ids_by_category": {
+          "accessory": [
+            "PARAM_EAR_L",
+            "PARAM_EAR_R"
+          ],
+          "other": [
+            "PARAM_BOWL_SWING",
+            "PARAM_SWING"
+          ]
+        }
+      }
+    },
+    {
+      "id": "hiyori_pro_ko_hiyori_pro_t11",
+      "name": "hiyori_pro_t11",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 11,
+        "input_count": 34,
+        "output_count": 35,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleY",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "ParamBustY",
+          "ParamHairBack",
+          "ParamHairFront",
+          "ParamRibbon",
+          "ParamSideupRibbon",
+          "ParamSkirt",
+          "ParamSkirt2",
+          "Param_Angle_Rotation_1_ArtMesh54",
+          "Param_Angle_Rotation_1_ArtMesh55",
+          "Param_Angle_Rotation_1_ArtMesh61",
+          "Param_Angle_Rotation_1_ArtMesh62",
+          "Param_Angle_Rotation_2_ArtMesh54",
+          "Param_Angle_Rotation_2_ArtMesh55",
+          "Param_Angle_Rotation_2_ArtMesh61",
+          "Param_Angle_Rotation_2_ArtMesh62",
+          "Param_Angle_Rotation_3_ArtMesh54",
+          "Param_Angle_Rotation_3_ArtMesh55",
+          "Param_Angle_Rotation_3_ArtMesh61",
+          "Param_Angle_Rotation_3_ArtMesh62",
+          "Param_Angle_Rotation_4_ArtMesh54",
+          "Param_Angle_Rotation_4_ArtMesh55",
+          "Param_Angle_Rotation_4_ArtMesh61",
+          "Param_Angle_Rotation_4_ArtMesh62",
+          "Param_Angle_Rotation_5_ArtMesh54",
+          "Param_Angle_Rotation_5_ArtMesh55",
+          "Param_Angle_Rotation_5_ArtMesh61",
+          "Param_Angle_Rotation_5_ArtMesh62",
+          "Param_Angle_Rotation_6_ArtMesh54",
+          "Param_Angle_Rotation_6_ArtMesh55",
+          "Param_Angle_Rotation_6_ArtMesh61",
+          "Param_Angle_Rotation_6_ArtMesh62",
+          "Param_Angle_Rotation_7_ArtMesh54",
+          "Param_Angle_Rotation_7_ArtMesh55",
+          "Param_Angle_Rotation_7_ArtMesh61",
+          "Param_Angle_Rotation_7_ArtMesh62"
+        ],
+        "output_categories": {
+          "accessory": 5,
+          "hair": 2,
+          "effect_expression": 28
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairBack",
+            "ParamHairFront"
+          ],
+          "accessory": [
+            "ParamBustY",
+            "ParamRibbon",
+            "ParamSideupRibbon",
+            "ParamSkirt",
+            "ParamSkirt2"
+          ],
+          "effect_expression": [
+            "Param_Angle_Rotation_1_ArtMesh54",
+            "Param_Angle_Rotation_1_ArtMesh55",
+            "Param_Angle_Rotation_1_ArtMesh61",
+            "Param_Angle_Rotation_1_ArtMesh62",
+            "Param_Angle_Rotation_2_ArtMesh54",
+            "Param_Angle_Rotation_2_ArtMesh55",
+            "Param_Angle_Rotation_2_ArtMesh61",
+            "Param_Angle_Rotation_2_ArtMesh62",
+            "Param_Angle_Rotation_3_ArtMesh54",
+            "Param_Angle_Rotation_3_ArtMesh55",
+            "Param_Angle_Rotation_3_ArtMesh61",
+            "Param_Angle_Rotation_3_ArtMesh62",
+            "Param_Angle_Rotation_4_ArtMesh54",
+            "Param_Angle_Rotation_4_ArtMesh55",
+            "Param_Angle_Rotation_4_ArtMesh61",
+            "Param_Angle_Rotation_4_ArtMesh62",
+            "Param_Angle_Rotation_5_ArtMesh54",
+            "Param_Angle_Rotation_5_ArtMesh55",
+            "Param_Angle_Rotation_5_ArtMesh61",
+            "Param_Angle_Rotation_5_ArtMesh62",
+            "Param_Angle_Rotation_6_ArtMesh54",
+            "Param_Angle_Rotation_6_ArtMesh55",
+            "Param_Angle_Rotation_6_ArtMesh61",
+            "Param_Angle_Rotation_6_ArtMesh62",
+            "Param_Angle_Rotation_7_ArtMesh54",
+            "Param_Angle_Rotation_7_ArtMesh55",
+            "Param_Angle_Rotation_7_ArtMesh61",
+            "Param_Angle_Rotation_7_ArtMesh62"
+          ]
+        }
+      }
+    },
+    {
+      "id": "miku_pro_jp_miku_sample_t05",
+      "name": "miku_sample_t05",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 13,
+        "input_count": 37,
+        "output_count": 51,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleY",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleY",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "Param",
+          "Param2",
+          "Param3",
+          "ParamHairBack",
+          "ParamHairBackL8",
+          "ParamHairBackR6",
+          "ParamHairFront",
+          "ParamHairFront2",
+          "Param_Angle_Rotation_1_D_BODY_06",
+          "Param_Angle_Rotation_1_D_HAIR_BACK_00",
+          "Param_Angle_Rotation_1_D_HAIR_BACK_10",
+          "Param_Angle_Rotation_2_D_BODY_06",
+          "Param_Angle_Rotation_2_D_HAIR_BACK_00",
+          "Param_Angle_Rotation_2_D_HAIR_BACK_10",
+          "Param_Angle_Rotation_3_D_BODY_06",
+          "Param_Angle_Rotation_3_D_HAIR_BACK_00",
+          "Param_Angle_Rotation_3_D_HAIR_BACK_10",
+          "Param_Angle_Rotation_4_D_BODY_06",
+          "Param_Angle_Rotation_4_D_HAIR_BACK_00",
+          "Param_Angle_Rotation_4_D_HAIR_BACK_10",
+          "Param_Angle_Rotation_5_D_BODY_06",
+          "Param_Angle_Rotation_5_D_HAIR_BACK_00",
+          "Param_Angle_Rotation_5_D_HAIR_BACK_10",
+          "Param_Angle_Rotation_6_D_BODY_06",
+          "Param_Angle_Rotation_6_D_HAIR_BACK_00",
+          "Param_Angle_Rotation_6_D_HAIR_BACK_10",
+          "Param_Angle_Rotation_7_D_BODY_06",
+          "Param_Angle_Rotation_7_D_HAIR_BACK_00",
+          "Param_Angle_Rotation_7_D_HAIR_BACK_10",
+          "Param_Angle_Rotation_8_D_HAIR_BACK_00",
+          "Param_Angle_Rotation_8_D_HAIR_BACK_10",
+          "Param_Angle_Rotation_9_D_HAIR_BACK_00",
+          "Param_Angle_Rotation_9_D_HAIR_BACK_10"
+        ],
+        "output_categories": {
+          "other": 3,
+          "hair": 23,
+          "effect_expression": 7
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairBack",
+            "ParamHairBackL8",
+            "ParamHairBackR6",
+            "ParamHairFront",
+            "ParamHairFront2",
+            "Param_Angle_Rotation_1_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_1_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_2_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_2_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_3_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_3_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_4_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_4_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_5_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_5_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_6_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_6_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_7_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_7_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_8_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_8_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_9_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_9_D_HAIR_BACK_10"
+          ],
+          "effect_expression": [
+            "Param_Angle_Rotation_1_D_BODY_06",
+            "Param_Angle_Rotation_2_D_BODY_06",
+            "Param_Angle_Rotation_3_D_BODY_06",
+            "Param_Angle_Rotation_4_D_BODY_06",
+            "Param_Angle_Rotation_5_D_BODY_06",
+            "Param_Angle_Rotation_6_D_BODY_06",
+            "Param_Angle_Rotation_7_D_BODY_06"
+          ],
+          "other": [
+            "Param",
+            "Param2",
+            "Param3"
+          ]
+        }
+      }
+    },
+    {
+      "id": "tororo_hijiki_hijiki_t01",
+      "name": "hijiki_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 1,
+        "input_count": 3,
+        "output_count": 2,
+        "input_ids": [
+          "PARAM_ANGLE_X",
+          "PARAM_ANGLE_Z",
+          "PARAM_BODY_ANGLE_X"
+        ],
+        "output_ids": [
+          "PARAM_BLOW_L",
+          "PARAM_BLOW_R"
+        ],
+        "output_categories": {
+          "other": 2
+        },
+        "output_ids_by_category": {
+          "other": [
+            "PARAM_BLOW_L",
+            "PARAM_BLOW_R"
+          ]
+        }
+      }
+    },
+    {
+      "id": "tororo_hijiki_tororo_t01",
+      "name": "tororo_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 1,
+        "input_count": 3,
+        "output_count": 2,
+        "input_ids": [
+          "PARAM_ANGLE_X",
+          "PARAM_ANGLE_Z",
+          "PARAM_BODY_ANGLE_X"
+        ],
+        "output_ids": [
+          "PARAM_BLOW_L",
+          "PARAM_BLOW_R"
+        ],
+        "output_categories": {
+          "other": 2
+        },
+        "output_ids_by_category": {
+          "other": [
+            "PARAM_BLOW_L",
+            "PARAM_BLOW_R"
+          ]
+        }
+      }
+    },
+    {
+      "id": "nito_nito_t01",
+      "name": "nito_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": false,
+        "group_count": 0,
+        "input_count": 0,
+        "output_count": 0,
+        "input_ids": [],
+        "output_ids": [],
+        "output_categories": {},
+        "output_ids_by_category": {}
+      }
+    },
+    {
+      "id": "nito_ni-j.model3_runtime",
+      "name": "ni-j.model3",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": false,
+        "group_count": 0,
+        "input_count": 0,
+        "output_count": 0,
+        "input_ids": [],
+        "output_ids": [],
+        "output_categories": {},
+        "output_ids_by_category": {}
+      }
+    },
+    {
+      "id": "nito_nico.model3_runtime",
+      "name": "nico.model3",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": false,
+        "group_count": 0,
+        "input_count": 0,
+        "output_count": 0,
+        "input_ids": [],
+        "output_ids": [],
+        "output_categories": {},
+        "output_ids_by_category": {}
+      }
+    },
+    {
+      "id": "nito_nietzsche.model3_runtime",
+      "name": "nietzsche.model3",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": false,
+        "group_count": 0,
+        "input_count": 0,
+        "output_count": 0,
+        "input_ids": [],
+        "output_ids": [],
+        "output_categories": {},
+        "output_ids_by_category": {}
+      }
+    },
+    {
+      "id": "nito_nipsilon.model3_runtime",
+      "name": "nipsilon.model3",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": false,
+        "group_count": 0,
+        "input_count": 0,
+        "output_count": 0,
+        "input_ids": [],
+        "output_ids": [],
+        "output_categories": {},
+        "output_ids_by_category": {}
+      }
+    },
+    {
+      "id": "izumi_izumi_anime_t01",
+      "name": "izumi_anime_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 3,
+        "input_count": 12,
+        "output_count": 3,
+        "input_ids": [
+          "PARAM_ANGLE_X",
+          "PARAM_ANGLE_Z",
+          "PARAM_BODY_ANGLE_X",
+          "PARAM_BODY_ANGLE_Z"
+        ],
+        "output_ids": [
+          "PARAM_HAIR_BACK",
+          "PARAM_HAIR_FRONT",
+          "PARAM_HAIR_SIDE"
+        ],
+        "output_categories": {
+          "hair": 3
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE"
+          ]
+        }
+      }
+    },
+    {
+      "id": "izumi_izumi_atsu_t01",
+      "name": "izumi_atsu_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 3,
+        "input_count": 12,
+        "output_count": 3,
+        "input_ids": [
+          "PARAM_ANGLE_X",
+          "PARAM_ANGLE_Z",
+          "PARAM_BODY_ANGLE_X",
+          "PARAM_BODY_ANGLE_Z"
+        ],
+        "output_ids": [
+          "PARAM_HAIR_BACK",
+          "PARAM_HAIR_FRONT",
+          "PARAM_HAIR_SIDE"
+        ],
+        "output_categories": {
+          "hair": 3
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE"
+          ]
+        }
+      }
+    },
+    {
+      "id": "izumi_izumi_illust_t01",
+      "name": "izumi_illust_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 3,
+        "input_count": 12,
+        "output_count": 3,
+        "input_ids": [
+          "PARAM_ANGLE_X",
+          "PARAM_ANGLE_Z",
+          "PARAM_BODY_ANGLE_X",
+          "PARAM_BODY_ANGLE_Z"
+        ],
+        "output_ids": [
+          "PARAM_HAIR_BACK",
+          "PARAM_HAIR_FRONT",
+          "PARAM_HAIR_SIDE"
+        ],
+        "output_categories": {
+          "hair": 3
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE"
+          ]
+        }
+      }
+    },
+    {
+      "id": "izumi_izumi_suisai_t01",
+      "name": "izumi_suisai_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": true,
+        "group_count": 3,
+        "input_count": 12,
+        "output_count": 3,
+        "input_ids": [
+          "PARAM_ANGLE_X",
+          "PARAM_ANGLE_Z",
+          "PARAM_BODY_ANGLE_X",
+          "PARAM_BODY_ANGLE_Z"
+        ],
+        "output_ids": [
+          "PARAM_HAIR_BACK",
+          "PARAM_HAIR_FRONT",
+          "PARAM_HAIR_SIDE"
+        ],
+        "output_categories": {
+          "hair": 3
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE"
+          ]
+        }
+      }
+    },
+    {
+      "id": "gantzert_felixander_gantzert_felixander_t01",
+      "name": "Gantzert_Felixander_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "physics": {
+        "present": false,
+        "group_count": 0,
+        "input_count": 0,
+        "output_count": 0,
+        "input_ids": [],
+        "output_ids": [],
+        "output_categories": {},
+        "output_ids_by_category": {}
+      }
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_haru_haru.model3",
+      "name": "Haru",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": true,
+        "group_count": 4,
+        "input_count": 14,
+        "output_count": 4,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "ParamHairBack",
+          "ParamHairFront",
+          "ParamHairSide",
+          "ParamScarf"
+        ],
+        "output_categories": {
+          "hair": 3,
+          "other": 1
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairBack",
+            "ParamHairFront",
+            "ParamHairSide"
+          ],
+          "other": [
+            "ParamScarf"
+          ]
+        }
+      }
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori.model3",
+      "name": "Hiyori",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": true,
+        "group_count": 11,
+        "input_count": 34,
+        "output_count": 35,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleY",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "ParamBustY",
+          "ParamHairBack",
+          "ParamHairFront",
+          "ParamRibbon",
+          "ParamSideupRibbon",
+          "ParamSkirt",
+          "ParamSkirt2",
+          "Param_Angle_Rotation_1_ArtMesh54",
+          "Param_Angle_Rotation_1_ArtMesh55",
+          "Param_Angle_Rotation_1_ArtMesh61",
+          "Param_Angle_Rotation_1_ArtMesh62",
+          "Param_Angle_Rotation_2_ArtMesh54",
+          "Param_Angle_Rotation_2_ArtMesh55",
+          "Param_Angle_Rotation_2_ArtMesh61",
+          "Param_Angle_Rotation_2_ArtMesh62",
+          "Param_Angle_Rotation_3_ArtMesh54",
+          "Param_Angle_Rotation_3_ArtMesh55",
+          "Param_Angle_Rotation_3_ArtMesh61",
+          "Param_Angle_Rotation_3_ArtMesh62",
+          "Param_Angle_Rotation_4_ArtMesh54",
+          "Param_Angle_Rotation_4_ArtMesh55",
+          "Param_Angle_Rotation_4_ArtMesh61",
+          "Param_Angle_Rotation_4_ArtMesh62",
+          "Param_Angle_Rotation_5_ArtMesh54",
+          "Param_Angle_Rotation_5_ArtMesh55",
+          "Param_Angle_Rotation_5_ArtMesh61",
+          "Param_Angle_Rotation_5_ArtMesh62",
+          "Param_Angle_Rotation_6_ArtMesh54",
+          "Param_Angle_Rotation_6_ArtMesh55",
+          "Param_Angle_Rotation_6_ArtMesh61",
+          "Param_Angle_Rotation_6_ArtMesh62",
+          "Param_Angle_Rotation_7_ArtMesh54",
+          "Param_Angle_Rotation_7_ArtMesh55",
+          "Param_Angle_Rotation_7_ArtMesh61",
+          "Param_Angle_Rotation_7_ArtMesh62"
+        ],
+        "output_categories": {
+          "accessory": 5,
+          "hair": 2,
+          "effect_expression": 28
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairBack",
+            "ParamHairFront"
+          ],
+          "accessory": [
+            "ParamBustY",
+            "ParamRibbon",
+            "ParamSideupRibbon",
+            "ParamSkirt",
+            "ParamSkirt2"
+          ],
+          "effect_expression": [
+            "Param_Angle_Rotation_1_ArtMesh54",
+            "Param_Angle_Rotation_1_ArtMesh55",
+            "Param_Angle_Rotation_1_ArtMesh61",
+            "Param_Angle_Rotation_1_ArtMesh62",
+            "Param_Angle_Rotation_2_ArtMesh54",
+            "Param_Angle_Rotation_2_ArtMesh55",
+            "Param_Angle_Rotation_2_ArtMesh61",
+            "Param_Angle_Rotation_2_ArtMesh62",
+            "Param_Angle_Rotation_3_ArtMesh54",
+            "Param_Angle_Rotation_3_ArtMesh55",
+            "Param_Angle_Rotation_3_ArtMesh61",
+            "Param_Angle_Rotation_3_ArtMesh62",
+            "Param_Angle_Rotation_4_ArtMesh54",
+            "Param_Angle_Rotation_4_ArtMesh55",
+            "Param_Angle_Rotation_4_ArtMesh61",
+            "Param_Angle_Rotation_4_ArtMesh62",
+            "Param_Angle_Rotation_5_ArtMesh54",
+            "Param_Angle_Rotation_5_ArtMesh55",
+            "Param_Angle_Rotation_5_ArtMesh61",
+            "Param_Angle_Rotation_5_ArtMesh62",
+            "Param_Angle_Rotation_6_ArtMesh54",
+            "Param_Angle_Rotation_6_ArtMesh55",
+            "Param_Angle_Rotation_6_ArtMesh61",
+            "Param_Angle_Rotation_6_ArtMesh62",
+            "Param_Angle_Rotation_7_ArtMesh54",
+            "Param_Angle_Rotation_7_ArtMesh55",
+            "Param_Angle_Rotation_7_ArtMesh61",
+            "Param_Angle_Rotation_7_ArtMesh62"
+          ]
+        }
+      }
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_mao_mao.model3",
+      "name": "Mao",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": true,
+        "group_count": 16,
+        "input_count": 43,
+        "output_count": 20,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleY",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleY",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "ParamAccessory1",
+          "ParamAccessory2",
+          "ParamHairBack",
+          "ParamHairBackFuwa",
+          "ParamHairBackL",
+          "ParamHairBackR",
+          "ParamHairFront",
+          "ParamHairFrontFuwa",
+          "ParamHairSideFuwa",
+          "ParamHairSideL",
+          "ParamHairSideR",
+          "ParamHatBrim",
+          "ParamHatTop",
+          "ParamRibbon",
+          "ParamRobeFuwa",
+          "ParamRobeL",
+          "ParamRobeR",
+          "ParamString",
+          "ParamWing",
+          "ParamoHairMesh"
+        ],
+        "output_categories": {
+          "accessory": 5,
+          "hair": 10,
+          "other": 5
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairBackL",
+            "ParamHairBackR",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSideFuwa",
+            "ParamHairSideL",
+            "ParamHairSideR",
+            "ParamoHairMesh"
+          ],
+          "accessory": [
+            "ParamAccessory1",
+            "ParamAccessory2",
+            "ParamHatBrim",
+            "ParamHatTop",
+            "ParamRibbon"
+          ],
+          "other": [
+            "ParamRobeFuwa",
+            "ParamRobeL",
+            "ParamRobeR",
+            "ParamString",
+            "ParamWing"
+          ]
+        }
+      }
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_mark_mark.model3",
+      "name": "Mark",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": true,
+        "group_count": 1,
+        "input_count": 4,
+        "output_count": 3,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "ParamHairBack",
+          "ParamHairFront",
+          "ParamHairSide"
+        ],
+        "output_categories": {
+          "hair": 3
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairBack",
+            "ParamHairFront",
+            "ParamHairSide"
+          ]
+        }
+      }
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_natori_natori.model3",
+      "name": "Natori",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": true,
+        "group_count": 11,
+        "input_count": 34,
+        "output_count": 12,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleY",
+          "ParamAngleZ",
+          "ParamArmBR03",
+          "ParamBodyAngleX",
+          "ParamBodyAngleY",
+          "ParamBodyAngleZ",
+          "ParamBodyPosition",
+          "ParamWaistAngleZ"
+        ],
+        "output_ids": [
+          "ParamChainWaist",
+          "ParamHairBack",
+          "ParamHairBackFuwa",
+          "ParamHairFront",
+          "ParamHairFrontFuwa",
+          "ParamHairSide",
+          "ParamHairSideFuwa",
+          "ParamJacket",
+          "ParamWatchAX",
+          "ParamWatchBChain",
+          "ParamWatchSwingA1",
+          "ParamWatchSwingA2"
+        ],
+        "output_categories": {
+          "other": 6,
+          "hair": 6
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSideFuwa"
+          ],
+          "other": [
+            "ParamChainWaist",
+            "ParamJacket",
+            "ParamWatchAX",
+            "ParamWatchBChain",
+            "ParamWatchSwingA1",
+            "ParamWatchSwingA2"
+          ]
+        }
+      }
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_ren_ren.model3",
+      "name": "Ren",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": true,
+        "group_count": 16,
+        "input_count": 33,
+        "output_count": 20,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleY",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleY",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "ParamBodyAngleX2",
+          "ParamBodyAngleY2",
+          "ParamBodyCenter2",
+          "ParamCollarFuwa",
+          "ParamCollarString",
+          "ParamCollarStringFuwa",
+          "ParamHairBack",
+          "ParamHairBackFuwa",
+          "ParamHairFront",
+          "ParamHairFrontFuwa",
+          "ParamHairSide",
+          "ParamHairSideFuwa",
+          "ParamJacket",
+          "ParamLeftShoulderUp2",
+          "ParamNecklace1",
+          "ParamNecklace2",
+          "ParamNecklace3",
+          "ParamPocketString",
+          "ParamPullHandle",
+          "ParamRightShoulderUp2"
+        ],
+        "output_categories": {
+          "body_angle": 3,
+          "other": 8,
+          "hair": 6,
+          "arm_hand": 3
+        },
+        "output_ids_by_category": {
+          "body_angle": [
+            "ParamBodyAngleX2",
+            "ParamBodyAngleY2",
+            "ParamBodyCenter2"
+          ],
+          "hair": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSideFuwa"
+          ],
+          "arm_hand": [
+            "ParamLeftShoulderUp2",
+            "ParamPullHandle",
+            "ParamRightShoulderUp2"
+          ],
+          "other": [
+            "ParamCollarFuwa",
+            "ParamCollarString",
+            "ParamCollarStringFuwa",
+            "ParamJacket",
+            "ParamNecklace1",
+            "ParamNecklace2",
+            "ParamNecklace3",
+            "ParamPocketString"
+          ]
+        }
+      }
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_rice_rice.model3",
+      "name": "Rice",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": true,
+        "group_count": 9,
+        "input_count": 32,
+        "output_count": 42,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "ParamBustRibbon01",
+          "ParamBustRibbon02",
+          "ParamHairFront01",
+          "ParamHairFront02",
+          "ParamHeadRibbon",
+          "ParamWaistRibbon01",
+          "ParamWaistRibbon02",
+          "Param_Angle_Rotation_1_ArtMesh20",
+          "Param_Angle_Rotation_1_ArtMesh67",
+          "Param_Angle_Rotation_1_ArtMesh80",
+          "Param_Angle_Rotation_1_ArtMesh81",
+          "Param_Angle_Rotation_1_ArtMesh82",
+          "Param_Angle_Rotation_2_ArtMesh20",
+          "Param_Angle_Rotation_2_ArtMesh67",
+          "Param_Angle_Rotation_2_ArtMesh80",
+          "Param_Angle_Rotation_2_ArtMesh81",
+          "Param_Angle_Rotation_2_ArtMesh82",
+          "Param_Angle_Rotation_3_ArtMesh20",
+          "Param_Angle_Rotation_3_ArtMesh67",
+          "Param_Angle_Rotation_3_ArtMesh80",
+          "Param_Angle_Rotation_3_ArtMesh81",
+          "Param_Angle_Rotation_3_ArtMesh82",
+          "Param_Angle_Rotation_4_ArtMesh20",
+          "Param_Angle_Rotation_4_ArtMesh67",
+          "Param_Angle_Rotation_4_ArtMesh80",
+          "Param_Angle_Rotation_4_ArtMesh81",
+          "Param_Angle_Rotation_4_ArtMesh82",
+          "Param_Angle_Rotation_5_ArtMesh20",
+          "Param_Angle_Rotation_5_ArtMesh67",
+          "Param_Angle_Rotation_5_ArtMesh80",
+          "Param_Angle_Rotation_5_ArtMesh81",
+          "Param_Angle_Rotation_5_ArtMesh82",
+          "Param_Angle_Rotation_6_ArtMesh80",
+          "Param_Angle_Rotation_6_ArtMesh81",
+          "Param_Angle_Rotation_6_ArtMesh82",
+          "Param_Angle_Rotation_7_ArtMesh80",
+          "Param_Angle_Rotation_7_ArtMesh81",
+          "Param_Angle_Rotation_7_ArtMesh82",
+          "Param_Angle_Rotation_8_ArtMesh80",
+          "Param_Angle_Rotation_8_ArtMesh81",
+          "Param_Angle_Rotation_9_ArtMesh80",
+          "Param_Angle_Rotation_9_ArtMesh81"
+        ],
+        "output_categories": {
+          "accessory": 5,
+          "hair": 2,
+          "effect_expression": 35
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairFront01",
+            "ParamHairFront02"
+          ],
+          "accessory": [
+            "ParamBustRibbon01",
+            "ParamBustRibbon02",
+            "ParamHeadRibbon",
+            "ParamWaistRibbon01",
+            "ParamWaistRibbon02"
+          ],
+          "effect_expression": [
+            "Param_Angle_Rotation_1_ArtMesh20",
+            "Param_Angle_Rotation_1_ArtMesh67",
+            "Param_Angle_Rotation_1_ArtMesh80",
+            "Param_Angle_Rotation_1_ArtMesh81",
+            "Param_Angle_Rotation_1_ArtMesh82",
+            "Param_Angle_Rotation_2_ArtMesh20",
+            "Param_Angle_Rotation_2_ArtMesh67",
+            "Param_Angle_Rotation_2_ArtMesh80",
+            "Param_Angle_Rotation_2_ArtMesh81",
+            "Param_Angle_Rotation_2_ArtMesh82",
+            "Param_Angle_Rotation_3_ArtMesh20",
+            "Param_Angle_Rotation_3_ArtMesh67",
+            "Param_Angle_Rotation_3_ArtMesh80",
+            "Param_Angle_Rotation_3_ArtMesh81",
+            "Param_Angle_Rotation_3_ArtMesh82",
+            "Param_Angle_Rotation_4_ArtMesh20",
+            "Param_Angle_Rotation_4_ArtMesh67",
+            "Param_Angle_Rotation_4_ArtMesh80",
+            "Param_Angle_Rotation_4_ArtMesh81",
+            "Param_Angle_Rotation_4_ArtMesh82",
+            "Param_Angle_Rotation_5_ArtMesh20",
+            "Param_Angle_Rotation_5_ArtMesh67",
+            "Param_Angle_Rotation_5_ArtMesh80",
+            "Param_Angle_Rotation_5_ArtMesh81",
+            "Param_Angle_Rotation_5_ArtMesh82",
+            "Param_Angle_Rotation_6_ArtMesh80",
+            "Param_Angle_Rotation_6_ArtMesh81",
+            "Param_Angle_Rotation_6_ArtMesh82",
+            "Param_Angle_Rotation_7_ArtMesh80",
+            "Param_Angle_Rotation_7_ArtMesh81",
+            "Param_Angle_Rotation_7_ArtMesh82",
+            "Param_Angle_Rotation_8_ArtMesh80",
+            "Param_Angle_Rotation_8_ArtMesh81",
+            "Param_Angle_Rotation_9_ArtMesh80",
+            "Param_Angle_Rotation_9_ArtMesh81"
+          ]
+        }
+      }
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_wanko_wanko.model3",
+      "name": "Wanko",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": true,
+        "group_count": 4,
+        "input_count": 14,
+        "output_count": 4,
+        "input_ids": [
+          "PARAM_ANGLE_X",
+          "PARAM_ANGLE_Y",
+          "PARAM_ANGLE_Z",
+          "PARAM_BODY_ANGLE_X",
+          "PARAM_BODY_ANGLE_Y",
+          "PARAM_BODY_ANGLE_Z"
+        ],
+        "output_ids": [
+          "PARAM_BOWL_SWING",
+          "PARAM_EAR_L",
+          "PARAM_EAR_R",
+          "PARAM_SWING"
+        ],
+        "output_categories": {
+          "other": 2,
+          "accessory": 2
+        },
+        "output_ids_by_category": {
+          "accessory": [
+            "PARAM_EAR_L",
+            "PARAM_EAR_R"
+          ],
+          "other": [
+            "PARAM_BOWL_SWING",
+            "PARAM_SWING"
+          ]
+        }
+      }
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_haru_haru.model3",
+      "name": "Haru",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": true,
+        "group_count": 4,
+        "input_count": 14,
+        "output_count": 4,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "ParamHairBack",
+          "ParamHairFront",
+          "ParamHairSide",
+          "ParamScarf"
+        ],
+        "output_categories": {
+          "hair": 3,
+          "other": 1
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairBack",
+            "ParamHairFront",
+            "ParamHairSide"
+          ],
+          "other": [
+            "ParamScarf"
+          ]
+        }
+      }
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori.model3",
+      "name": "Hiyori",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": true,
+        "group_count": 11,
+        "input_count": 34,
+        "output_count": 35,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleY",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "ParamBustY",
+          "ParamHairBack",
+          "ParamHairFront",
+          "ParamRibbon",
+          "ParamSideupRibbon",
+          "ParamSkirt",
+          "ParamSkirt2",
+          "Param_Angle_Rotation_1_ArtMesh54",
+          "Param_Angle_Rotation_1_ArtMesh55",
+          "Param_Angle_Rotation_1_ArtMesh61",
+          "Param_Angle_Rotation_1_ArtMesh62",
+          "Param_Angle_Rotation_2_ArtMesh54",
+          "Param_Angle_Rotation_2_ArtMesh55",
+          "Param_Angle_Rotation_2_ArtMesh61",
+          "Param_Angle_Rotation_2_ArtMesh62",
+          "Param_Angle_Rotation_3_ArtMesh54",
+          "Param_Angle_Rotation_3_ArtMesh55",
+          "Param_Angle_Rotation_3_ArtMesh61",
+          "Param_Angle_Rotation_3_ArtMesh62",
+          "Param_Angle_Rotation_4_ArtMesh54",
+          "Param_Angle_Rotation_4_ArtMesh55",
+          "Param_Angle_Rotation_4_ArtMesh61",
+          "Param_Angle_Rotation_4_ArtMesh62",
+          "Param_Angle_Rotation_5_ArtMesh54",
+          "Param_Angle_Rotation_5_ArtMesh55",
+          "Param_Angle_Rotation_5_ArtMesh61",
+          "Param_Angle_Rotation_5_ArtMesh62",
+          "Param_Angle_Rotation_6_ArtMesh54",
+          "Param_Angle_Rotation_6_ArtMesh55",
+          "Param_Angle_Rotation_6_ArtMesh61",
+          "Param_Angle_Rotation_6_ArtMesh62",
+          "Param_Angle_Rotation_7_ArtMesh54",
+          "Param_Angle_Rotation_7_ArtMesh55",
+          "Param_Angle_Rotation_7_ArtMesh61",
+          "Param_Angle_Rotation_7_ArtMesh62"
+        ],
+        "output_categories": {
+          "accessory": 5,
+          "hair": 2,
+          "effect_expression": 28
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairBack",
+            "ParamHairFront"
+          ],
+          "accessory": [
+            "ParamBustY",
+            "ParamRibbon",
+            "ParamSideupRibbon",
+            "ParamSkirt",
+            "ParamSkirt2"
+          ],
+          "effect_expression": [
+            "Param_Angle_Rotation_1_ArtMesh54",
+            "Param_Angle_Rotation_1_ArtMesh55",
+            "Param_Angle_Rotation_1_ArtMesh61",
+            "Param_Angle_Rotation_1_ArtMesh62",
+            "Param_Angle_Rotation_2_ArtMesh54",
+            "Param_Angle_Rotation_2_ArtMesh55",
+            "Param_Angle_Rotation_2_ArtMesh61",
+            "Param_Angle_Rotation_2_ArtMesh62",
+            "Param_Angle_Rotation_3_ArtMesh54",
+            "Param_Angle_Rotation_3_ArtMesh55",
+            "Param_Angle_Rotation_3_ArtMesh61",
+            "Param_Angle_Rotation_3_ArtMesh62",
+            "Param_Angle_Rotation_4_ArtMesh54",
+            "Param_Angle_Rotation_4_ArtMesh55",
+            "Param_Angle_Rotation_4_ArtMesh61",
+            "Param_Angle_Rotation_4_ArtMesh62",
+            "Param_Angle_Rotation_5_ArtMesh54",
+            "Param_Angle_Rotation_5_ArtMesh55",
+            "Param_Angle_Rotation_5_ArtMesh61",
+            "Param_Angle_Rotation_5_ArtMesh62",
+            "Param_Angle_Rotation_6_ArtMesh54",
+            "Param_Angle_Rotation_6_ArtMesh55",
+            "Param_Angle_Rotation_6_ArtMesh61",
+            "Param_Angle_Rotation_6_ArtMesh62",
+            "Param_Angle_Rotation_7_ArtMesh54",
+            "Param_Angle_Rotation_7_ArtMesh55",
+            "Param_Angle_Rotation_7_ArtMesh61",
+            "Param_Angle_Rotation_7_ArtMesh62"
+          ]
+        }
+      }
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_mao_mao.model3",
+      "name": "Mao",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": true,
+        "group_count": 16,
+        "input_count": 43,
+        "output_count": 20,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleY",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleY",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "ParamAccessory1",
+          "ParamAccessory2",
+          "ParamHairBack",
+          "ParamHairBackFuwa",
+          "ParamHairBackL",
+          "ParamHairBackR",
+          "ParamHairFront",
+          "ParamHairFrontFuwa",
+          "ParamHairSideFuwa",
+          "ParamHairSideL",
+          "ParamHairSideR",
+          "ParamHatBrim",
+          "ParamHatTop",
+          "ParamRibbon",
+          "ParamRobeFuwa",
+          "ParamRobeL",
+          "ParamRobeR",
+          "ParamString",
+          "ParamWing",
+          "ParamoHairMesh"
+        ],
+        "output_categories": {
+          "accessory": 5,
+          "hair": 10,
+          "other": 5
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairBackL",
+            "ParamHairBackR",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSideFuwa",
+            "ParamHairSideL",
+            "ParamHairSideR",
+            "ParamoHairMesh"
+          ],
+          "accessory": [
+            "ParamAccessory1",
+            "ParamAccessory2",
+            "ParamHatBrim",
+            "ParamHatTop",
+            "ParamRibbon"
+          ],
+          "other": [
+            "ParamRobeFuwa",
+            "ParamRobeL",
+            "ParamRobeR",
+            "ParamString",
+            "ParamWing"
+          ]
+        }
+      }
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_mark_mark.model3",
+      "name": "Mark",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": true,
+        "group_count": 1,
+        "input_count": 4,
+        "output_count": 3,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "ParamHairBack",
+          "ParamHairFront",
+          "ParamHairSide"
+        ],
+        "output_categories": {
+          "hair": 3
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairBack",
+            "ParamHairFront",
+            "ParamHairSide"
+          ]
+        }
+      }
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_natori_natori.model3",
+      "name": "Natori",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": true,
+        "group_count": 11,
+        "input_count": 34,
+        "output_count": 12,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleY",
+          "ParamAngleZ",
+          "ParamArmBR03",
+          "ParamBodyAngleX",
+          "ParamBodyAngleY",
+          "ParamBodyAngleZ",
+          "ParamBodyPosition",
+          "ParamWaistAngleZ"
+        ],
+        "output_ids": [
+          "ParamChainWaist",
+          "ParamHairBack",
+          "ParamHairBackFuwa",
+          "ParamHairFront",
+          "ParamHairFrontFuwa",
+          "ParamHairSide",
+          "ParamHairSideFuwa",
+          "ParamJacket",
+          "ParamWatchAX",
+          "ParamWatchBChain",
+          "ParamWatchSwingA1",
+          "ParamWatchSwingA2"
+        ],
+        "output_categories": {
+          "other": 6,
+          "hair": 6
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSideFuwa"
+          ],
+          "other": [
+            "ParamChainWaist",
+            "ParamJacket",
+            "ParamWatchAX",
+            "ParamWatchBChain",
+            "ParamWatchSwingA1",
+            "ParamWatchSwingA2"
+          ]
+        }
+      }
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_ren_ren.model3",
+      "name": "Ren",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": true,
+        "group_count": 16,
+        "input_count": 33,
+        "output_count": 20,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleY",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleY",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "ParamBodyAngleX2",
+          "ParamBodyAngleY2",
+          "ParamBodyCenter2",
+          "ParamCollarFuwa",
+          "ParamCollarString",
+          "ParamCollarStringFuwa",
+          "ParamHairBack",
+          "ParamHairBackFuwa",
+          "ParamHairFront",
+          "ParamHairFrontFuwa",
+          "ParamHairSide",
+          "ParamHairSideFuwa",
+          "ParamJacket",
+          "ParamLeftShoulderUp2",
+          "ParamNecklace1",
+          "ParamNecklace2",
+          "ParamNecklace3",
+          "ParamPocketString",
+          "ParamPullHandle",
+          "ParamRightShoulderUp2"
+        ],
+        "output_categories": {
+          "body_angle": 3,
+          "other": 8,
+          "hair": 6,
+          "arm_hand": 3
+        },
+        "output_ids_by_category": {
+          "body_angle": [
+            "ParamBodyAngleX2",
+            "ParamBodyAngleY2",
+            "ParamBodyCenter2"
+          ],
+          "hair": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSideFuwa"
+          ],
+          "arm_hand": [
+            "ParamLeftShoulderUp2",
+            "ParamPullHandle",
+            "ParamRightShoulderUp2"
+          ],
+          "other": [
+            "ParamCollarFuwa",
+            "ParamCollarString",
+            "ParamCollarStringFuwa",
+            "ParamJacket",
+            "ParamNecklace1",
+            "ParamNecklace2",
+            "ParamNecklace3",
+            "ParamPocketString"
+          ]
+        }
+      }
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_rice_rice.model3",
+      "name": "Rice",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": true,
+        "group_count": 9,
+        "input_count": 32,
+        "output_count": 42,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "ParamBustRibbon01",
+          "ParamBustRibbon02",
+          "ParamHairFront01",
+          "ParamHairFront02",
+          "ParamHeadRibbon",
+          "ParamWaistRibbon01",
+          "ParamWaistRibbon02",
+          "Param_Angle_Rotation_1_ArtMesh20",
+          "Param_Angle_Rotation_1_ArtMesh67",
+          "Param_Angle_Rotation_1_ArtMesh80",
+          "Param_Angle_Rotation_1_ArtMesh81",
+          "Param_Angle_Rotation_1_ArtMesh82",
+          "Param_Angle_Rotation_2_ArtMesh20",
+          "Param_Angle_Rotation_2_ArtMesh67",
+          "Param_Angle_Rotation_2_ArtMesh80",
+          "Param_Angle_Rotation_2_ArtMesh81",
+          "Param_Angle_Rotation_2_ArtMesh82",
+          "Param_Angle_Rotation_3_ArtMesh20",
+          "Param_Angle_Rotation_3_ArtMesh67",
+          "Param_Angle_Rotation_3_ArtMesh80",
+          "Param_Angle_Rotation_3_ArtMesh81",
+          "Param_Angle_Rotation_3_ArtMesh82",
+          "Param_Angle_Rotation_4_ArtMesh20",
+          "Param_Angle_Rotation_4_ArtMesh67",
+          "Param_Angle_Rotation_4_ArtMesh80",
+          "Param_Angle_Rotation_4_ArtMesh81",
+          "Param_Angle_Rotation_4_ArtMesh82",
+          "Param_Angle_Rotation_5_ArtMesh20",
+          "Param_Angle_Rotation_5_ArtMesh67",
+          "Param_Angle_Rotation_5_ArtMesh80",
+          "Param_Angle_Rotation_5_ArtMesh81",
+          "Param_Angle_Rotation_5_ArtMesh82",
+          "Param_Angle_Rotation_6_ArtMesh80",
+          "Param_Angle_Rotation_6_ArtMesh81",
+          "Param_Angle_Rotation_6_ArtMesh82",
+          "Param_Angle_Rotation_7_ArtMesh80",
+          "Param_Angle_Rotation_7_ArtMesh81",
+          "Param_Angle_Rotation_7_ArtMesh82",
+          "Param_Angle_Rotation_8_ArtMesh80",
+          "Param_Angle_Rotation_8_ArtMesh81",
+          "Param_Angle_Rotation_9_ArtMesh80",
+          "Param_Angle_Rotation_9_ArtMesh81"
+        ],
+        "output_categories": {
+          "accessory": 5,
+          "hair": 2,
+          "effect_expression": 35
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairFront01",
+            "ParamHairFront02"
+          ],
+          "accessory": [
+            "ParamBustRibbon01",
+            "ParamBustRibbon02",
+            "ParamHeadRibbon",
+            "ParamWaistRibbon01",
+            "ParamWaistRibbon02"
+          ],
+          "effect_expression": [
+            "Param_Angle_Rotation_1_ArtMesh20",
+            "Param_Angle_Rotation_1_ArtMesh67",
+            "Param_Angle_Rotation_1_ArtMesh80",
+            "Param_Angle_Rotation_1_ArtMesh81",
+            "Param_Angle_Rotation_1_ArtMesh82",
+            "Param_Angle_Rotation_2_ArtMesh20",
+            "Param_Angle_Rotation_2_ArtMesh67",
+            "Param_Angle_Rotation_2_ArtMesh80",
+            "Param_Angle_Rotation_2_ArtMesh81",
+            "Param_Angle_Rotation_2_ArtMesh82",
+            "Param_Angle_Rotation_3_ArtMesh20",
+            "Param_Angle_Rotation_3_ArtMesh67",
+            "Param_Angle_Rotation_3_ArtMesh80",
+            "Param_Angle_Rotation_3_ArtMesh81",
+            "Param_Angle_Rotation_3_ArtMesh82",
+            "Param_Angle_Rotation_4_ArtMesh20",
+            "Param_Angle_Rotation_4_ArtMesh67",
+            "Param_Angle_Rotation_4_ArtMesh80",
+            "Param_Angle_Rotation_4_ArtMesh81",
+            "Param_Angle_Rotation_4_ArtMesh82",
+            "Param_Angle_Rotation_5_ArtMesh20",
+            "Param_Angle_Rotation_5_ArtMesh67",
+            "Param_Angle_Rotation_5_ArtMesh80",
+            "Param_Angle_Rotation_5_ArtMesh81",
+            "Param_Angle_Rotation_5_ArtMesh82",
+            "Param_Angle_Rotation_6_ArtMesh80",
+            "Param_Angle_Rotation_6_ArtMesh81",
+            "Param_Angle_Rotation_6_ArtMesh82",
+            "Param_Angle_Rotation_7_ArtMesh80",
+            "Param_Angle_Rotation_7_ArtMesh81",
+            "Param_Angle_Rotation_7_ArtMesh82",
+            "Param_Angle_Rotation_8_ArtMesh80",
+            "Param_Angle_Rotation_8_ArtMesh81",
+            "Param_Angle_Rotation_9_ArtMesh80",
+            "Param_Angle_Rotation_9_ArtMesh81"
+          ]
+        }
+      }
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_wanko_wanko.model3",
+      "name": "Wanko",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": true,
+        "group_count": 4,
+        "input_count": 14,
+        "output_count": 4,
+        "input_ids": [
+          "PARAM_ANGLE_X",
+          "PARAM_ANGLE_Y",
+          "PARAM_ANGLE_Z",
+          "PARAM_BODY_ANGLE_X",
+          "PARAM_BODY_ANGLE_Y",
+          "PARAM_BODY_ANGLE_Z"
+        ],
+        "output_ids": [
+          "PARAM_BOWL_SWING",
+          "PARAM_EAR_L",
+          "PARAM_EAR_R",
+          "PARAM_SWING"
+        ],
+        "output_categories": {
+          "other": 2,
+          "accessory": 2
+        },
+        "output_ids_by_category": {
+          "accessory": [
+            "PARAM_EAR_L",
+            "PARAM_EAR_R"
+          ],
+          "other": [
+            "PARAM_BOWL_SWING",
+            "PARAM_SWING"
+          ]
+        }
+      }
+    },
+    {
+      "id": "github_live2d_cubism_web_motionsync_samples_resources_kei_basic_kei_basic.model3",
+      "name": "Kei_basic",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": true,
+        "group_count": 6,
+        "input_count": 18,
+        "output_count": 7,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleY",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleY",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "ParamHairBack",
+          "ParamHairBackFuwa",
+          "ParamHairFront",
+          "ParamHairFrontFuwa",
+          "ParamHairSide",
+          "ParamHairSide2",
+          "ParamHairSideFuwa"
+        ],
+        "output_categories": {
+          "hair": 7
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSide2",
+            "ParamHairSideFuwa"
+          ]
+        }
+      }
+    },
+    {
+      "id": "github_live2d_cubism_web_motionsync_samples_resources_kei_vowels_kei_vowels.model3",
+      "name": "Kei_vowels",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": true,
+        "group_count": 6,
+        "input_count": 18,
+        "output_count": 7,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleY",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleY",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "ParamHairBack",
+          "ParamHairBackFuwa",
+          "ParamHairFront",
+          "ParamHairFrontFuwa",
+          "ParamHairSide",
+          "ParamHairSide2",
+          "ParamHairSideFuwa"
+        ],
+        "output_categories": {
+          "hair": 7
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSide2",
+            "ParamHairSideFuwa"
+          ]
+        }
+      }
+    },
+    {
+      "id": "github_live2d_garage_cubism_web_ar_sample_assets_models_rice_rice.model3",
+      "name": "Rice",
+      "analysis_mode": "RUNTIME_ONLY",
+      "physics": {
+        "present": true,
+        "group_count": 9,
+        "input_count": 32,
+        "output_count": 42,
+        "input_ids": [
+          "ParamAngleX",
+          "ParamAngleZ",
+          "ParamBodyAngleX",
+          "ParamBodyAngleZ"
+        ],
+        "output_ids": [
+          "ParamBustRibbon01",
+          "ParamBustRibbon02",
+          "ParamHairFront01",
+          "ParamHairFront02",
+          "ParamHeadRibbon",
+          "ParamWaistRibbon01",
+          "ParamWaistRibbon02",
+          "Param_Angle_Rotation_1_ArtMesh20",
+          "Param_Angle_Rotation_1_ArtMesh67",
+          "Param_Angle_Rotation_1_ArtMesh80",
+          "Param_Angle_Rotation_1_ArtMesh81",
+          "Param_Angle_Rotation_1_ArtMesh82",
+          "Param_Angle_Rotation_2_ArtMesh20",
+          "Param_Angle_Rotation_2_ArtMesh67",
+          "Param_Angle_Rotation_2_ArtMesh80",
+          "Param_Angle_Rotation_2_ArtMesh81",
+          "Param_Angle_Rotation_2_ArtMesh82",
+          "Param_Angle_Rotation_3_ArtMesh20",
+          "Param_Angle_Rotation_3_ArtMesh67",
+          "Param_Angle_Rotation_3_ArtMesh80",
+          "Param_Angle_Rotation_3_ArtMesh81",
+          "Param_Angle_Rotation_3_ArtMesh82",
+          "Param_Angle_Rotation_4_ArtMesh20",
+          "Param_Angle_Rotation_4_ArtMesh67",
+          "Param_Angle_Rotation_4_ArtMesh80",
+          "Param_Angle_Rotation_4_ArtMesh81",
+          "Param_Angle_Rotation_4_ArtMesh82",
+          "Param_Angle_Rotation_5_ArtMesh20",
+          "Param_Angle_Rotation_5_ArtMesh67",
+          "Param_Angle_Rotation_5_ArtMesh80",
+          "Param_Angle_Rotation_5_ArtMesh81",
+          "Param_Angle_Rotation_5_ArtMesh82",
+          "Param_Angle_Rotation_6_ArtMesh80",
+          "Param_Angle_Rotation_6_ArtMesh81",
+          "Param_Angle_Rotation_6_ArtMesh82",
+          "Param_Angle_Rotation_7_ArtMesh80",
+          "Param_Angle_Rotation_7_ArtMesh81",
+          "Param_Angle_Rotation_7_ArtMesh82",
+          "Param_Angle_Rotation_8_ArtMesh80",
+          "Param_Angle_Rotation_8_ArtMesh81",
+          "Param_Angle_Rotation_9_ArtMesh80",
+          "Param_Angle_Rotation_9_ArtMesh81"
+        ],
+        "output_categories": {
+          "accessory": 5,
+          "hair": 2,
+          "effect_expression": 35
+        },
+        "output_ids_by_category": {
+          "hair": [
+            "ParamHairFront01",
+            "ParamHairFront02"
+          ],
+          "accessory": [
+            "ParamBustRibbon01",
+            "ParamBustRibbon02",
+            "ParamHeadRibbon",
+            "ParamWaistRibbon01",
+            "ParamWaistRibbon02"
+          ],
+          "effect_expression": [
+            "Param_Angle_Rotation_1_ArtMesh20",
+            "Param_Angle_Rotation_1_ArtMesh67",
+            "Param_Angle_Rotation_1_ArtMesh80",
+            "Param_Angle_Rotation_1_ArtMesh81",
+            "Param_Angle_Rotation_1_ArtMesh82",
+            "Param_Angle_Rotation_2_ArtMesh20",
+            "Param_Angle_Rotation_2_ArtMesh67",
+            "Param_Angle_Rotation_2_ArtMesh80",
+            "Param_Angle_Rotation_2_ArtMesh81",
+            "Param_Angle_Rotation_2_ArtMesh82",
+            "Param_Angle_Rotation_3_ArtMesh20",
+            "Param_Angle_Rotation_3_ArtMesh67",
+            "Param_Angle_Rotation_3_ArtMesh80",
+            "Param_Angle_Rotation_3_ArtMesh81",
+            "Param_Angle_Rotation_3_ArtMesh82",
+            "Param_Angle_Rotation_4_ArtMesh20",
+            "Param_Angle_Rotation_4_ArtMesh67",
+            "Param_Angle_Rotation_4_ArtMesh80",
+            "Param_Angle_Rotation_4_ArtMesh81",
+            "Param_Angle_Rotation_4_ArtMesh82",
+            "Param_Angle_Rotation_5_ArtMesh20",
+            "Param_Angle_Rotation_5_ArtMesh67",
+            "Param_Angle_Rotation_5_ArtMesh80",
+            "Param_Angle_Rotation_5_ArtMesh81",
+            "Param_Angle_Rotation_5_ArtMesh82",
+            "Param_Angle_Rotation_6_ArtMesh80",
+            "Param_Angle_Rotation_6_ArtMesh81",
+            "Param_Angle_Rotation_6_ArtMesh82",
+            "Param_Angle_Rotation_7_ArtMesh80",
+            "Param_Angle_Rotation_7_ArtMesh81",
+            "Param_Angle_Rotation_7_ArtMesh82",
+            "Param_Angle_Rotation_8_ArtMesh80",
+            "Param_Angle_Rotation_8_ArtMesh81",
+            "Param_Angle_Rotation_9_ArtMesh80",
+            "Param_Angle_Rotation_9_ArtMesh81"
+          ]
+        }
+      }
+    }
+  ]
+}

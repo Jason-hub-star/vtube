@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T08:34:57.916799+00:00",
+  "status": "V19_GENERATED_EYE_READY_FOR_VALIDATION",
+  "source_project": "experiments/cubism-v2-new-character-002/model_edit_v15_eye_nose_position_preview/mini_cubism_diagnostic_project",
+  "project": "experiments/cubism-v2-new-character-002/model_edit_v19_generated_eye_preview/mini_cubism_diagnostic_project",
+  "generated_layers": "experiments/cubism-v2-new-character-002/generated_eye_v19/normalized_layers",
+  "replaced_parts": {
+    "eye_L_white": {
+      "bbox_xywh": [
+        792,
+        619,
+        177,
+        101
+      ],
+      "alpha_nonzero": 12117,
+      "alpha_coverage": 0.00288892,
+      "source": "experiments/cubism-v2-new-character-002/generated_eye_v19/normalized_layers/eye_L_white.png"
+    },
+    "eye_R_white": {
+      "bbox_xywh": [
+        1083,
+        619,
+        175,
+        100
+      ],
+      "alpha_nonzero": 11879,
+      "alpha_coverage": 0.00283217,
+      "source": "experiments/cubism-v2-new-character-002/generated_eye_v19/normalized_layers/eye_R_white.png"
+    },
+    "eye_L_iris": {
+      "bbox_xywh": [
+        846,
+        624,
+        77,
+        84
+      ],
+      "alpha_nonzero": 5456,
+      "alpha_coverage": 0.00130081,
+      "source": "experiments/cubism-v2-new-character-002/generated_eye_v19/normalized_layers/eye_L_iris.png"
+    },
+    "eye_R_iris": {
+      "bbox_xywh": [
+        1128,
+        624,
+        77,
+        84
+      ],
+      "alpha_nonzero": 5468,
+      "alpha_coverage": 0.00130367,
+      "source": "experiments/cubism-v2-new-character-002/generated_eye_v19/normalized_layers/eye_R_iris.png"
+    }
+  },
+  "hidden_old_detail_parts": [
+    "eye_L_pupil",
+    "eye_R_pupil",
+    "eye_L_highlight",
+    "eye_R_highlight"
+  ],
+  "policy": {
+    "fixed_eye_white": [
+      "eye_L_white",
+      "eye_R_white"
+    ],
+    "moving_eye_detail": [
+      "eye_L_iris",
+      "eye_R_iris"
+    ],
+    "pupil_highlight_baked_into_iris": true,
+    "preserve_v15_non_eye_state": true
+  }
+}

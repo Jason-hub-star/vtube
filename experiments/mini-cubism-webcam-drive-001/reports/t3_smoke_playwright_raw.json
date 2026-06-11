@@ -1,0 +1,468 @@
+{
+  "t3a": {
+    "ready": true,
+    "parameter_count": 7,
+    "parameters": [
+      {
+        "id": "ParamAngleX",
+        "min": -30,
+        "max": 30,
+        "defaultValue": 0
+      },
+      {
+        "id": "ParamEyeBallX",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0
+      },
+      {
+        "id": "ParamEyeBallY",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0
+      },
+      {
+        "id": "ParamEyeLOpen",
+        "min": 0.27,
+        "max": 1,
+        "defaultValue": 1
+      },
+      {
+        "id": "ParamEyeROpen",
+        "min": 0.27,
+        "max": 1,
+        "defaultValue": 1
+      },
+      {
+        "id": "ParamHairFront",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0
+      },
+      {
+        "id": "ParamMouthOpenY",
+        "min": 0,
+        "max": 0.85,
+        "defaultValue": 0
+      }
+    ],
+    "neutral_hash": 3190967686,
+    "rows": [
+      {
+        "label": "neutral",
+        "applied": [
+          "ParamAngleX",
+          "ParamEyeLOpen",
+          "ParamEyeROpen",
+          "ParamEyeBallX",
+          "ParamEyeBallY",
+          "ParamMouthOpenY"
+        ],
+        "missing": [],
+        "canvas_hash": 3190967686,
+        "parameters": {
+          "ParamAngleX": 0,
+          "ParamEyeBallX": 0,
+          "ParamEyeBallY": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamHairFront": 0,
+          "ParamMouthOpenY": 0
+        }
+      },
+      {
+        "label": "blink_L_full",
+        "applied": [
+          "ParamEyeLOpen",
+          "ParamEyeROpen"
+        ],
+        "missing": [],
+        "canvas_hash": 3343169392,
+        "parameters": {
+          "ParamAngleX": 0,
+          "ParamEyeBallX": 0,
+          "ParamEyeBallY": 0,
+          "ParamEyeLOpen": 0.27,
+          "ParamEyeROpen": 1,
+          "ParamHairFront": 0,
+          "ParamMouthOpenY": 0
+        }
+      },
+      {
+        "label": "blink_R_full",
+        "applied": [
+          "ParamEyeLOpen",
+          "ParamEyeROpen"
+        ],
+        "missing": [],
+        "canvas_hash": 1354642767,
+        "parameters": {
+          "ParamAngleX": 0,
+          "ParamEyeBallX": 0,
+          "ParamEyeBallY": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 0.27,
+          "ParamHairFront": 0,
+          "ParamMouthOpenY": 0
+        }
+      },
+      {
+        "label": "blink_both_half",
+        "applied": [
+          "ParamEyeLOpen",
+          "ParamEyeROpen"
+        ],
+        "missing": [],
+        "canvas_hash": 4069081224,
+        "parameters": {
+          "ParamAngleX": 0,
+          "ParamEyeBallX": 0,
+          "ParamEyeBallY": 0,
+          "ParamEyeLOpen": 0.5,
+          "ParamEyeROpen": 0.5,
+          "ParamHairFront": 0,
+          "ParamMouthOpenY": 0
+        }
+      },
+      {
+        "label": "mouth_open_full",
+        "applied": [
+          "ParamMouthOpenY"
+        ],
+        "missing": [],
+        "canvas_hash": 2045652631,
+        "parameters": {
+          "ParamAngleX": 0,
+          "ParamEyeBallX": 0,
+          "ParamEyeBallY": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamHairFront": 0,
+          "ParamMouthOpenY": 0.85
+        }
+      },
+      {
+        "label": "mouth_open_mid",
+        "applied": [
+          "ParamMouthOpenY"
+        ],
+        "missing": [],
+        "canvas_hash": 671304082,
+        "parameters": {
+          "ParamAngleX": 0,
+          "ParamEyeBallX": 0,
+          "ParamEyeBallY": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamHairFront": 0,
+          "ParamMouthOpenY": 0.45
+        }
+      },
+      {
+        "label": "gaze_left_up",
+        "applied": [
+          "ParamEyeBallX",
+          "ParamEyeBallY"
+        ],
+        "missing": [],
+        "canvas_hash": 72773100,
+        "parameters": {
+          "ParamAngleX": 0,
+          "ParamEyeBallX": -1,
+          "ParamEyeBallY": 0.8,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamHairFront": 0,
+          "ParamMouthOpenY": 0
+        }
+      },
+      {
+        "label": "gaze_right_down",
+        "applied": [
+          "ParamEyeBallX",
+          "ParamEyeBallY"
+        ],
+        "missing": [],
+        "canvas_hash": 1876724710,
+        "parameters": {
+          "ParamAngleX": 0,
+          "ParamEyeBallX": 1,
+          "ParamEyeBallY": -0.8,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamHairFront": 0,
+          "ParamMouthOpenY": 0
+        }
+      },
+      {
+        "label": "head_left",
+        "applied": [
+          "ParamAngleX"
+        ],
+        "missing": [],
+        "canvas_hash": 842137665,
+        "parameters": {
+          "ParamAngleX": -28,
+          "ParamEyeBallX": 0,
+          "ParamEyeBallY": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamHairFront": 0,
+          "ParamMouthOpenY": 0
+        }
+      },
+      {
+        "label": "head_right_over",
+        "applied": [
+          "ParamAngleX"
+        ],
+        "missing": [],
+        "canvas_hash": 291497653,
+        "parameters": {
+          "ParamAngleX": 30,
+          "ParamEyeBallX": 0,
+          "ParamEyeBallY": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamHairFront": 0,
+          "ParamMouthOpenY": 0
+        }
+      },
+      {
+        "label": "combo_talk",
+        "applied": [
+          "ParamAngleX",
+          "ParamEyeLOpen",
+          "ParamEyeROpen",
+          "ParamMouthOpenY",
+          "ParamEyeBallX"
+        ],
+        "missing": [],
+        "canvas_hash": 3269354331,
+        "parameters": {
+          "ParamAngleX": 10,
+          "ParamEyeBallX": 0.3,
+          "ParamEyeBallY": 0,
+          "ParamEyeLOpen": 0.6,
+          "ParamEyeROpen": 0.6,
+          "ParamHairFront": 0,
+          "ParamMouthOpenY": 0.7
+        }
+      },
+      {
+        "label": "back_to_neutral",
+        "applied": [
+          "ParamAngleX",
+          "ParamEyeLOpen",
+          "ParamEyeROpen",
+          "ParamEyeBallX",
+          "ParamEyeBallY",
+          "ParamMouthOpenY"
+        ],
+        "missing": [],
+        "canvas_hash": 3190967686,
+        "parameters": {
+          "ParamAngleX": 0,
+          "ParamEyeBallX": 0,
+          "ParamEyeBallY": 0,
+          "ParamEyeLOpen": 1,
+          "ParamEyeROpen": 1,
+          "ParamHairFront": 0,
+          "ParamMouthOpenY": 0
+        }
+      }
+    ]
+  },
+  "t3b": {
+    "mode": "replay",
+    "frames_applied": 175,
+    "applied_counts": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "missing_union": [
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamMouthForm",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBodyAngleZ",
+      "ParamBreath"
+    ],
+    "done": true
+  },
+  "errors": []
+}

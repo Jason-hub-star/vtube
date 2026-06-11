@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "experiment_id": "see-through-mps-compat-002",
+  "generated_at": "2026-06-04T07:39:58.583109+00:00",
+  "source_review": "experiments/see-through-mps-compat-002/reports/part_visual_review.json",
+  "items": [
+    {
+      "part_id": "seethrough_mps__clothes",
+      "original_part_id": "clothes",
+      "experiment_id": "see-through-mps-compat-002",
+      "ko_name": "의상",
+      "section": "mps_compat_candidates",
+      "group": "body",
+      "verdict": "X",
+      "failure_tags": [
+        "skin_mixed"
+      ],
+      "human_note": "",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__clothes.png",
+      "canonical_image": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "overlay_image": null,
+      "include_in_import_psd": false,
+      "suggested_generation_mode": "regenerate_part",
+      "negative_prompt_hints": [
+        "no skin area, no face fill, no neck fill"
+      ]
+    },
+    {
+      "part_id": "seethrough_mps_clean__clothes",
+      "original_part_id": "clothes",
+      "experiment_id": "see-through-mps-compat-002",
+      "ko_name": "의상",
+      "section": "mps_compat_candidates",
+      "group": "body",
+      "verdict": "X",
+      "failure_tags": [],
+      "human_note": "",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/cleanup_layers/seethrough_mps_clean__clothes.png",
+      "canonical_image": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "overlay_image": null,
+      "include_in_import_psd": false,
+      "suggested_generation_mode": "regenerate_part",
+      "negative_prompt_hints": []
+    },
+    {
+      "part_id": "seethrough_mps__face_base",
+      "original_part_id": "face_base",
+      "experiment_id": "see-through-mps-compat-002",
+      "ko_name": "얼굴 베이스",
+      "section": "mps_compat_candidates",
+      "group": "face",
+      "verdict": "REVISE",
+      "failure_tags": [
+        "hair_mixed"
+      ],
+      "human_note": "머리카락이 좀 섞여보임 ",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__face_base.png",
+      "canonical_image": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "overlay_image": null,
+      "include_in_import_psd": false,
+      "suggested_generation_mode": "mask_cleanup_or_regenerate",
+      "negative_prompt_hints": [
+        "no hair strands, no bangs, no side hair, no hair shadow"
+      ]
+    },
+    {
+      "part_id": "seethrough_mps__neck",
+      "original_part_id": "neck",
+      "experiment_id": "see-through-mps-compat-002",
+      "ko_name": "목",
+      "section": "mps_compat_candidates",
+      "group": "face",
+      "verdict": "X",
+      "failure_tags": [],
+      "human_note": "입과 목과 복장영역이랑 곂침 . 얼굴과 의상과 따로 선택되야함",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__neck.png",
+      "canonical_image": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "overlay_image": null,
+      "include_in_import_psd": false,
+      "suggested_generation_mode": "regenerate_part",
+      "negative_prompt_hints": []
+    },
+    {
+      "part_id": "seethrough_mps__mouth_line",
+      "original_part_id": "mouth_line",
+      "experiment_id": "see-through-mps-compat-002",
+      "ko_name": "입 라인",
+      "section": "mps_compat_candidates",
+      "group": "mouth",
+      "verdict": "X",
+      "failure_tags": [
+        "semantic_too_coarse",
+        "wrong_shape"
+      ],
+      "human_note": "주인님 지정: 이 raw mouth_line은 입 라인이 아니라 타원형 덩어리/피부 테두리가 섞여 PSD에 쓰면 안 된다.",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__mouth_line.png",
+      "canonical_image": "/assets/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "overlay_image": null,
+      "include_in_import_psd": false,
+      "suggested_generation_mode": "regenerate_part",
+      "negative_prompt_hints": [
+        "single layer is too broad; split into Live2D schema parts",
+        "match canonical silhouette, proportions, and placement"
+      ]
+    }
+  ],
+  "counts": {
+    "queued": 5
+  }
+}

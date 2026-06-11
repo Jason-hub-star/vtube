@@ -1,0 +1,2632 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-07T23:08:08.557Z",
+  "model_id": "kei_ko_kei_basic_free_t02",
+  "safe_id": "kei_ko_kei_basic_free_t02",
+  "model_name": "kei_basic_free_t02",
+  "sandbox_model_name": "kei_ko_kei_basic_free_t02",
+  "policy": {
+    "asset_reuse": "FORBIDDEN",
+    "content": "runtime IDs, counts, order, masks, and geometry bounds only"
+  },
+  "snapshot": {
+    "source": "Cubism SDK for Web / Live2DCubismCore-backed Framework snapshot",
+    "canvas": {
+      "width": 1,
+      "height": 1,
+      "pixelsPerUnit": 1000,
+      "raw": {
+        "CanvasWidth": 1000,
+        "CanvasHeight": 1000,
+        "CanvasOriginX": 500,
+        "CanvasOriginY": 500,
+        "PixelsPerUnit": 1000
+      }
+    },
+    "counts": {
+      "parameters": 27,
+      "parts": 19,
+      "drawables": 59,
+      "maskedDrawables": 11,
+      "invertedMaskDrawables": 0,
+      "offscreens": 0,
+      "maskedOffscreens": 0
+    },
+    "parameters": [
+      {
+        "index": 0,
+        "id": "ParamAngleX",
+        "min": -30,
+        "max": 30,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -30,
+          0,
+          30
+        ]
+      },
+      {
+        "index": 1,
+        "id": "ParamAngleY",
+        "min": -30,
+        "max": 30,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -30,
+          0,
+          30
+        ]
+      },
+      {
+        "index": 2,
+        "id": "ParamAngleZ",
+        "min": -30,
+        "max": 30,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -30,
+          0,
+          30
+        ]
+      },
+      {
+        "index": 3,
+        "id": "ParamCheek",
+        "min": 0,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 2,
+        "keyValues": [
+          0,
+          1
+        ]
+      },
+      {
+        "index": 4,
+        "id": "ParamBodyAngleX",
+        "min": -10,
+        "max": 10,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -10,
+          0,
+          10
+        ]
+      },
+      {
+        "index": 5,
+        "id": "ParamBodyAngleY",
+        "min": -10,
+        "max": 10,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -10,
+          0,
+          10
+        ]
+      },
+      {
+        "index": 6,
+        "id": "ParamBodyAngleZ",
+        "min": -10,
+        "max": 10,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -10,
+          0,
+          10
+        ]
+      },
+      {
+        "index": 7,
+        "id": "ParamBreath",
+        "min": 0,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 2,
+        "keyValues": [
+          0,
+          1
+        ]
+      },
+      {
+        "index": 8,
+        "id": "ParamBrowLY",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -1,
+          0,
+          1
+        ]
+      },
+      {
+        "index": 9,
+        "id": "ParamBrowRY",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -1,
+          0,
+          1
+        ]
+      },
+      {
+        "index": 10,
+        "id": "ParamBrowLForm",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -1,
+          0,
+          1
+        ]
+      },
+      {
+        "index": 11,
+        "id": "ParamBrowRForm",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -1,
+          0,
+          1
+        ]
+      },
+      {
+        "index": 12,
+        "id": "ParamEyeLOpen",
+        "min": 0,
+        "max": 1.2000000476837158,
+        "defaultValue": 1,
+        "value": 1,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          0,
+          1,
+          1.2000000476837158
+        ]
+      },
+      {
+        "index": 13,
+        "id": "ParamEyeLSmile",
+        "min": 0,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 2,
+        "keyValues": [
+          0,
+          1
+        ]
+      },
+      {
+        "index": 14,
+        "id": "ParamEyeROpen",
+        "min": 0,
+        "max": 1.2000000476837158,
+        "defaultValue": 1,
+        "value": 1,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          0,
+          1,
+          1.2000000476837158
+        ]
+      },
+      {
+        "index": 15,
+        "id": "ParamEyeRSmile",
+        "min": 0,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 2,
+        "keyValues": [
+          0,
+          1
+        ]
+      },
+      {
+        "index": 16,
+        "id": "ParamEyeBallX",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -1,
+          0,
+          1
+        ]
+      },
+      {
+        "index": 17,
+        "id": "ParamEyeBallY",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -1,
+          0,
+          1
+        ]
+      },
+      {
+        "index": 18,
+        "id": "ParamMouthForm",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -1,
+          0,
+          1
+        ]
+      },
+      {
+        "index": 19,
+        "id": "ParamMouthOpenY",
+        "min": 0,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          0,
+          0.3799999952316284,
+          1
+        ]
+      },
+      {
+        "index": 20,
+        "id": "ParamHairFront",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -1,
+          0,
+          1
+        ]
+      },
+      {
+        "index": 21,
+        "id": "ParamHairSide",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -1,
+          0,
+          1
+        ]
+      },
+      {
+        "index": 22,
+        "id": "ParamHairSide2",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -1,
+          0,
+          1
+        ]
+      },
+      {
+        "index": 23,
+        "id": "ParamHairBack",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -1,
+          0,
+          1
+        ]
+      },
+      {
+        "index": 24,
+        "id": "ParamHairFrontFuwa",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -1,
+          0,
+          1
+        ]
+      },
+      {
+        "index": 25,
+        "id": "ParamHairSideFuwa",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -1,
+          0,
+          1
+        ]
+      },
+      {
+        "index": 26,
+        "id": "ParamHairBackFuwa",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -1,
+          0,
+          1
+        ]
+      }
+    ],
+    "parts": [
+      {
+        "index": 0,
+        "id": "Part15",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 1,
+        "id": "Part",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 2,
+        "id": "Part2",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 3,
+        "id": "Part3",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 4,
+        "id": "Part4",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 5,
+        "id": "Part5",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 6,
+        "id": "Part22",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 7,
+        "id": "Part7",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 8,
+        "id": "Part6",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 9,
+        "id": "Part9",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 10,
+        "id": "Part13",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 11,
+        "id": "Part10",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 12,
+        "id": "Part11",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 13,
+        "id": "Part12",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 14,
+        "id": "Part14",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 15,
+        "id": "Part16",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 16,
+        "id": "Part17",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 17,
+        "id": "Part23",
+        "opacity": 1,
+        "parentPartIndex": 6,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 18,
+        "id": "Part21",
+        "opacity": 1,
+        "parentPartIndex": 7,
+        "offscreenIndex": -1
+      }
+    ],
+    "drawables": [
+      {
+        "index": 0,
+        "id": "ArtMesh2",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 55,
+        "opacity": 1,
+        "parentPartIndex": 2,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 45,
+        "vertexIndexCount": 192,
+        "vertexBounds": {
+          "minX": -0.29096290469169617,
+          "minY": -0.09481560438871384,
+          "maxX": -0.04894149675965309,
+          "maxY": 0.35917508602142334,
+          "width": 0.24202140793204308,
+          "height": 0.4539906904101372
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 1,
+        "id": "ArtMesh3",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 53,
+        "opacity": 1,
+        "parentPartIndex": 3,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 77,
+        "vertexIndexCount": 357,
+        "vertexBounds": {
+          "minX": -0.22996258735656738,
+          "minY": -0.05305920168757439,
+          "maxX": 0.21510650217533112,
+          "maxY": 0.3761719763278961,
+          "width": 0.4450690895318985,
+          "height": 0.4292311780154705
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 2,
+        "id": "ArtMesh4",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 52,
+        "opacity": 1,
+        "parentPartIndex": 4,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 28,
+        "vertexIndexCount": 102,
+        "vertexBounds": {
+          "minX": 0.043315887451171875,
+          "minY": 0.03261427581310272,
+          "maxX": 0.2164081633090973,
+          "maxY": 0.07276937365531921,
+          "width": 0.17309227585792542,
+          "height": 0.04015509784221649
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 3,
+        "id": "ArtMesh14",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 38,
+        "opacity": 1,
+        "parentPartIndex": 7,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 64,
+        "vertexIndexCount": 279,
+        "vertexBounds": {
+          "minX": -0.2161748707294464,
+          "minY": -0.028763433918356895,
+          "maxX": -0.04760464280843735,
+          "maxY": 0.018557503819465637,
+          "width": 0.16857022792100906,
+          "height": 0.04732093773782253
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 4,
+        "id": "ArtMesh15",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 37,
+        "opacity": 1,
+        "parentPartIndex": 7,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 16,
+        "vertexIndexCount": 57,
+        "vertexBounds": {
+          "minX": -0.20284216105937958,
+          "minY": -0.03371455520391464,
+          "maxX": -0.16701002418994904,
+          "maxY": -0.0005999007262289524,
+          "width": 0.03583213686943054,
+          "height": 0.03311465447768569
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 5,
+        "id": "ArtMesh16",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 36,
+        "opacity": 1,
+        "parentPartIndex": 7,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 25,
+        "vertexIndexCount": 90,
+        "vertexBounds": {
+          "minX": -0.16639769077301025,
+          "minY": -0.06018434464931488,
+          "maxX": -0.059871185570955276,
+          "maxY": -0.0360228531062603,
+          "width": 0.10652650520205498,
+          "height": 0.02416149154305458
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 6,
+        "id": "ArtMesh19",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 29,
+        "opacity": 1,
+        "parentPartIndex": 7,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 27,
+        "vertexIndexCount": 111,
+        "vertexBounds": {
+          "minX": -0.18708524107933044,
+          "minY": -0.06023411452770233,
+          "maxX": -0.04779335856437683,
+          "maxY": 0.010481094941496849,
+          "width": 0.1392918825149536,
+          "height": 0.07071520946919918
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 7,
+        "id": "ArtMesh28",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 21,
+        "opacity": 1,
+        "parentPartIndex": 9,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 6,
+        "vertexIndexCount": 15,
+        "vertexBounds": {
+          "minX": -0.011789595708251,
+          "minY": -0.12481992691755295,
+          "maxX": 0.004492312669754028,
+          "maxY": -0.10428087413311005,
+          "width": 0.016281908378005028,
+          "height": 0.0205390527844429
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 8,
+        "id": "ArtMesh29",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 20,
+        "opacity": 1,
+        "parentPartIndex": 9,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 7,
+        "vertexIndexCount": 18,
+        "vertexBounds": {
+          "minX": -0.014380660839378834,
+          "minY": -0.13703113794326782,
+          "maxX": 0.0205904059112072,
+          "maxY": -0.10964629799127579,
+          "width": 0.03497106675058603,
+          "height": 0.027384839951992035
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 9,
+        "id": "ArtMesh39",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 9,
+        "opacity": 1,
+        "parentPartIndex": 12,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 16,
+        "vertexIndexCount": 63,
+        "vertexBounds": {
+          "minX": 0.14859570562839508,
+          "minY": -0.13751563429832458,
+          "maxX": 0.2735999822616577,
+          "maxY": 0.008673503994941711,
+          "width": 0.12500427663326263,
+          "height": 0.1461891382932663
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 10,
+        "id": "ArtMesh40",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 8,
+        "opacity": 1,
+        "parentPartIndex": 13,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 16,
+        "vertexIndexCount": 63,
+        "vertexBounds": {
+          "minX": -0.2735435366630554,
+          "minY": -0.1374887228012085,
+          "maxX": -0.14854775369167328,
+          "maxY": 0.008711524307727814,
+          "width": 0.12499578297138214,
+          "height": 0.1462002471089363
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 11,
+        "id": "ArtMesh42",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 6,
+        "opacity": 1,
+        "parentPartIndex": 14,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 32,
+        "vertexIndexCount": 138,
+        "vertexBounds": {
+          "minX": -0.0973861813545227,
+          "minY": -0.3408852815628052,
+          "maxX": 0.09940315783023834,
+          "maxY": -0.13268235325813293,
+          "width": 0.19678933918476105,
+          "height": 0.20820292830467224
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 12,
+        "id": "ArtMesh44",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 4,
+        "opacity": 1,
+        "parentPartIndex": 15,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 92,
+        "vertexIndexCount": 423,
+        "vertexBounds": {
+          "minX": -0.2785272002220154,
+          "minY": -0.5183697938919067,
+          "maxX": 0.2840113639831543,
+          "maxY": -0.3229411840438843,
+          "width": 0.5625385642051697,
+          "height": 0.19542860984802246
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 13,
+        "id": "ArtMesh45",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 3,
+        "opacity": 1,
+        "parentPartIndex": 15,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 17,
+        "vertexIndexCount": 66,
+        "vertexBounds": {
+          "minX": 0.23067937791347504,
+          "minY": -0.5140220522880554,
+          "maxX": 0.3800480365753174,
+          "maxY": -0.36350512504577637,
+          "width": 0.14936865866184235,
+          "height": 0.15051692724227905
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 14,
+        "id": "ArtMesh46",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 2,
+        "opacity": 1,
+        "parentPartIndex": 15,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 17,
+        "vertexIndexCount": 66,
+        "vertexBounds": {
+          "minX": -0.3800485134124756,
+          "minY": -0.5140202045440674,
+          "maxX": -0.23068192601203918,
+          "maxY": -0.36350780725479126,
+          "width": 0.1493665874004364,
+          "height": 0.15051239728927612
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 15,
+        "id": "ArtMesh47",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 1,
+        "opacity": 1,
+        "parentPartIndex": 16,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 65,
+        "vertexIndexCount": 321,
+        "vertexBounds": {
+          "minX": -0.37094876170158386,
+          "minY": -0.13975979387760162,
+          "maxX": 0.3608880639076233,
+          "maxY": 0.4632953107357025,
+          "width": 0.7318368256092072,
+          "height": 0.6030551046133041
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 16,
+        "id": "ArtMesh58",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 27,
+        "opacity": 1,
+        "parentPartIndex": 7,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 22,
+        "vertexIndexCount": 78,
+        "vertexBounds": {
+          "minX": -0.21504932641983032,
+          "minY": -0.01782853901386261,
+          "maxX": -0.05819818377494812,
+          "maxY": 0.03268817439675331,
+          "width": 0.1568511426448822,
+          "height": 0.05051671341061592
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 17,
+        "id": "ArtMesh55",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 35,
+        "opacity": 1,
+        "parentPartIndex": 7,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 22,
+        "vertexIndexCount": 78,
+        "vertexBounds": {
+          "minX": -0.13244006037712097,
+          "minY": -0.010471964254975319,
+          "maxX": -0.05521592125296593,
+          "maxY": 0.01841486617922783,
+          "width": 0.07722413912415504,
+          "height": 0.028886830434203148
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 18,
+        "id": "ArtMesh56",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 34,
+        "opacity": 1,
+        "parentPartIndex": 7,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 9,
+        "vertexIndexCount": 27,
+        "vertexBounds": {
+          "minX": -0.16177654266357422,
+          "minY": -0.052631840109825134,
+          "maxX": -0.14326803386211395,
+          "maxY": -0.04181777685880661,
+          "width": 0.018508508801460266,
+          "height": 0.010814063251018524
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 19,
+        "id": "ArtMesh57",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 33,
+        "opacity": 1,
+        "parentPartIndex": 7,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 9,
+        "vertexIndexCount": 27,
+        "vertexBounds": {
+          "minX": -0.15024198591709137,
+          "minY": -0.05722871795296669,
+          "maxX": -0.1317334771156311,
+          "maxY": -0.04641462862491608,
+          "width": 0.018508508801460266,
+          "height": 0.010814089328050613
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 20,
+        "id": "ArtMesh13",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 28,
+        "opacity": 1,
+        "parentPartIndex": 7,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 16,
+        "vertexIndexCount": 54,
+        "vertexBounds": {
+          "minX": -0.1283574402332306,
+          "minY": -0.00010632071644067764,
+          "maxX": -0.05124653875827789,
+          "maxY": 0.03847585991024971,
+          "width": 0.0771109014749527,
+          "height": 0.03858218062669039
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 21,
+        "id": "ArtMesh17",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 32,
+        "opacity": 1,
+        "parentPartIndex": 18,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 1,
+        "masks": [
+          6
+        ],
+        "vertexCount": 7,
+        "vertexIndexCount": 18,
+        "vertexBounds": {
+          "minX": -0.12144546955823898,
+          "minY": -0.031450919806957245,
+          "maxX": -0.10202185064554214,
+          "maxY": -0.0037221356760710478,
+          "width": 0.01942361891269684,
+          "height": 0.027728784130886197
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 22,
+        "id": "ArtMesh54",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 31,
+        "opacity": 1,
+        "parentPartIndex": 18,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 1,
+        "masks": [
+          6
+        ],
+        "vertexCount": 7,
+        "vertexIndexCount": 18,
+        "vertexBounds": {
+          "minX": -0.11690078675746918,
+          "minY": -0.03897428512573242,
+          "maxX": -0.10661940276622772,
+          "maxY": -0.028964579105377197,
+          "width": 0.010281383991241455,
+          "height": 0.010009706020355225
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 23,
+        "id": "ArtMesh11",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 30,
+        "opacity": 1,
+        "parentPartIndex": 18,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 1,
+        "masks": [
+          6
+        ],
+        "vertexCount": 9,
+        "vertexIndexCount": 24,
+        "vertexBounds": {
+          "minX": -0.15804380178451538,
+          "minY": -0.06426143646240234,
+          "maxX": -0.06871442496776581,
+          "maxY": 0.023553889244794846,
+          "width": 0.08932937681674957,
+          "height": 0.08781532570719719
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 24,
+        "id": "ArtMesh82",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 39,
+        "opacity": 1,
+        "parentPartIndex": 6,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 22,
+        "vertexIndexCount": 78,
+        "vertexBounds": {
+          "minX": 0.05811333656311035,
+          "minY": -0.017860442399978638,
+          "maxX": 0.21496397256851196,
+          "maxY": 0.032665763050317764,
+          "width": 0.1568506360054016,
+          "height": 0.0505262054502964
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 25,
+        "id": "ArtMesh81",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 40,
+        "opacity": 1,
+        "parentPartIndex": 6,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 16,
+        "vertexIndexCount": 54,
+        "vertexBounds": {
+          "minX": 0.05116472393274307,
+          "minY": -0.00011458492372184992,
+          "maxX": 0.12827736139297485,
+          "maxY": 0.03845931217074394,
+          "width": 0.07711263746023178,
+          "height": 0.03857389709446579
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 26,
+        "id": "ArtMesh80",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 41,
+        "opacity": 1,
+        "parentPartIndex": 6,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 27,
+        "vertexIndexCount": 111,
+        "vertexBounds": {
+          "minX": 0.04770480841398239,
+          "minY": -0.06025051698088646,
+          "maxX": 0.18699827790260315,
+          "maxY": 0.010462259873747826,
+          "width": 0.13929346948862076,
+          "height": 0.07071277685463428
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 27,
+        "id": "ArtMesh79",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 42,
+        "opacity": 1,
+        "parentPartIndex": 17,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 1,
+        "masks": [
+          26
+        ],
+        "vertexCount": 9,
+        "vertexIndexCount": 24,
+        "vertexBounds": {
+          "minX": 0.06716097146272659,
+          "minY": -0.06427950412034988,
+          "maxX": 0.15649092197418213,
+          "maxY": 0.02353624440729618,
+          "width": 0.08932995051145554,
+          "height": 0.08781574852764606
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 28,
+        "id": "ArtMesh78",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 43,
+        "opacity": 1,
+        "parentPartIndex": 17,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 1,
+        "masks": [
+          26
+        ],
+        "vertexCount": 7,
+        "vertexIndexCount": 18,
+        "vertexBounds": {
+          "minX": 0.10578464716672897,
+          "minY": -0.03899208828806877,
+          "maxX": 0.11606527864933014,
+          "maxY": -0.0289822556078434,
+          "width": 0.010280631482601166,
+          "height": 0.010009832680225372
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 29,
+        "id": "ArtMesh77",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 44,
+        "opacity": 1,
+        "parentPartIndex": 17,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 1,
+        "masks": [
+          26
+        ],
+        "vertexCount": 7,
+        "vertexIndexCount": 18,
+        "vertexBounds": {
+          "minX": 0.10115008056163788,
+          "minY": -0.031468771398067474,
+          "maxX": 0.12057147920131683,
+          "maxY": -0.003739813342690468,
+          "width": 0.019421398639678955,
+          "height": 0.027728958055377007
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 30,
+        "id": "ArtMesh76",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 45,
+        "opacity": 1,
+        "parentPartIndex": 6,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 9,
+        "vertexIndexCount": 27,
+        "vertexBounds": {
+          "minX": 0.13164129853248596,
+          "minY": -0.05725263059139252,
+          "maxX": 0.1501491367816925,
+          "maxY": -0.046437401324510574,
+          "width": 0.018507838249206543,
+          "height": 0.010815229266881943
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 31,
+        "id": "ArtMesh75",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 46,
+        "opacity": 1,
+        "parentPartIndex": 6,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 9,
+        "vertexIndexCount": 27,
+        "vertexBounds": {
+          "minX": 0.14317657053470612,
+          "minY": -0.052657585591077805,
+          "maxX": 0.16168437898159027,
+          "maxY": -0.04184238612651825,
+          "width": 0.018507808446884155,
+          "height": 0.010815199464559555
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 32,
+        "id": "ArtMesh74",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 47,
+        "opacity": 1,
+        "parentPartIndex": 6,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 22,
+        "vertexIndexCount": 78,
+        "vertexBounds": {
+          "minX": 0.055130764842033386,
+          "minY": -0.010482161305844784,
+          "maxX": 0.13235829770565033,
+          "maxY": 0.018398234620690346,
+          "width": 0.07722753286361694,
+          "height": 0.02888039592653513
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 33,
+        "id": "ArtMesh73",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 48,
+        "opacity": 1,
+        "parentPartIndex": 6,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 25,
+        "vertexIndexCount": 90,
+        "vertexBounds": {
+          "minX": 0.05978042632341385,
+          "minY": -0.060201771557331085,
+          "maxX": 0.16630813479423523,
+          "maxY": -0.03604830056428909,
+          "width": 0.10652770847082138,
+          "height": 0.024153470993041992
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 34,
+        "id": "ArtMesh72",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 49,
+        "opacity": 1,
+        "parentPartIndex": 6,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 16,
+        "vertexIndexCount": 57,
+        "vertexBounds": {
+          "minX": 0.16692091524600983,
+          "minY": -0.03374113887548447,
+          "maxX": 0.2027568519115448,
+          "maxY": -0.0006280096713453531,
+          "width": 0.03583593666553497,
+          "height": 0.03311312920413911
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 35,
+        "id": "ArtMesh71",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 50,
+        "opacity": 1,
+        "parentPartIndex": 6,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 64,
+        "vertexIndexCount": 279,
+        "vertexBounds": {
+          "minX": 0.04751632735133171,
+          "minY": -0.02877100743353367,
+          "maxX": 0.21609115600585938,
+          "maxY": 0.01853855326771736,
+          "width": 0.16857482865452766,
+          "height": 0.04730956070125103
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 36,
+        "id": "ArtMesh41",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 7,
+        "opacity": 1,
+        "parentPartIndex": 14,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 65,
+        "vertexIndexCount": 300,
+        "vertexBounds": {
+          "minX": -0.1524001508951187,
+          "minY": -0.44741374254226685,
+          "maxX": 0.16399438679218292,
+          "maxY": -0.25806352496147156,
+          "width": 0.31639453768730164,
+          "height": 0.1893502175807953
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 37,
+        "id": "ArtMesh43",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 5,
+        "opacity": 1,
+        "parentPartIndex": 14,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 9,
+        "vertexIndexCount": 21,
+        "vertexBounds": {
+          "minX": -0.09675193578004837,
+          "minY": -0.3175754249095917,
+          "maxX": 0.094924196600914,
+          "maxY": -0.2456967681646347,
+          "width": 0.19167613238096237,
+          "height": 0.07187865674495697
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 38,
+        "id": "ArtMesh6",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 51,
+        "opacity": 1,
+        "parentPartIndex": 5,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 28,
+        "vertexIndexCount": 102,
+        "vertexBounds": {
+          "minX": -0.2156142294406891,
+          "minY": 0.032648682594299316,
+          "maxX": -0.04252086579799652,
+          "maxY": 0.07279045134782791,
+          "width": 0.17309336364269257,
+          "height": 0.040141768753528595
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 39,
+        "id": "ArtMesh8",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 0,
+        "opacity": 1,
+        "parentPartIndex": 16,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 44,
+        "vertexIndexCount": 195,
+        "vertexBounds": {
+          "minX": -0.25710323452949524,
+          "minY": -0.2625143229961395,
+          "maxX": 0.2524586319923401,
+          "maxY": 0.004035601858049631,
+          "width": 0.5095618665218353,
+          "height": 0.26654992485418916
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 40,
+        "id": "ArtMesh30",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 19,
+        "opacity": 1,
+        "parentPartIndex": 9,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 7,
+        "vertexIndexCount": 18,
+        "vertexBounds": {
+          "minX": -0.018633222207427025,
+          "minY": -0.11057218909263611,
+          "maxX": 0.018870078027248383,
+          "maxY": -0.06930997967720032,
+          "width": 0.03750330023467541,
+          "height": 0.04126220941543579
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 41,
+        "id": "ArtMesh7",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 22,
+        "opacity": 0,
+        "parentPartIndex": 8,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 1,
+        "masks": [
+          42
+        ],
+        "vertexCount": 13,
+        "vertexIndexCount": 42,
+        "vertexBounds": {
+          "minX": -0.17854717373847961,
+          "minY": -0.17145754396915436,
+          "maxX": 0.191279798746109,
+          "maxY": 0.05013875663280487,
+          "width": 0.3698269724845886,
+          "height": 0.22159630060195923
+        },
+        "dynamicFlags": {
+          "visible": false,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 42,
+        "id": "ArtMesh53",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 10,
+        "opacity": 1,
+        "parentPartIndex": 11,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 104,
+        "vertexIndexCount": 483,
+        "vertexBounds": {
+          "minX": -0.23956827819347382,
+          "minY": -0.2826467752456665,
+          "maxX": 0.24042557179927826,
+          "maxY": 0.27408117055892944,
+          "width": 0.4799938499927521,
+          "height": 0.556727945804596
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 43,
+        "id": "ArtMesh49",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 26,
+        "opacity": 1,
+        "parentPartIndex": 8,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 1,
+        "masks": [
+          42
+        ],
+        "vertexCount": 4,
+        "vertexIndexCount": 6,
+        "vertexBounds": {
+          "minX": 0.15000003576278687,
+          "minY": -0.0650000274181366,
+          "maxX": 0.16400004923343658,
+          "maxY": -0.05500002205371857,
+          "width": 0.01400001347064972,
+          "height": 0.01000000536441803
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 44,
+        "id": "ArtMesh50",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 25,
+        "opacity": 1,
+        "parentPartIndex": 8,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 1,
+        "masks": [
+          42
+        ],
+        "vertexCount": 4,
+        "vertexIndexCount": 6,
+        "vertexBounds": {
+          "minX": 0.05600003898143768,
+          "minY": -0.15700004994869232,
+          "maxX": 0.23700006306171417,
+          "maxY": 0.027000010013580322,
+          "width": 0.1810000240802765,
+          "height": 0.18400005996227264
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 45,
+        "id": "ArtMesh51",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 24,
+        "opacity": 1,
+        "parentPartIndex": 8,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 1,
+        "masks": [
+          42
+        ],
+        "vertexCount": 4,
+        "vertexIndexCount": 6,
+        "vertexBounds": {
+          "minX": -0.16399995982646942,
+          "minY": -0.06499994546175003,
+          "maxX": -0.15099996328353882,
+          "maxY": -0.055999938398599625,
+          "width": 0.012999996542930603,
+          "height": 0.009000007063150406
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 46,
+        "id": "ArtMesh52",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 23,
+        "opacity": 1,
+        "parentPartIndex": 8,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 1,
+        "masks": [
+          42
+        ],
+        "vertexCount": 4,
+        "vertexIndexCount": 6,
+        "vertexBounds": {
+          "minX": -0.23799997568130493,
+          "minY": -0.15699996054172516,
+          "maxX": -0.05699993297457695,
+          "maxY": 0.02700009010732174,
+          "width": 0.18100004270672798,
+          "height": 0.1840000506490469
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 47,
+        "id": "ArtMesh34",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 56,
+        "opacity": 1,
+        "parentPartIndex": 1,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 31,
+        "vertexIndexCount": 114,
+        "vertexBounds": {
+          "minX": 0.19370107352733612,
+          "minY": -0.05422031134366989,
+          "maxX": 0.2817806303501129,
+          "maxY": 0.24171163141727448,
+          "width": 0.0880795568227768,
+          "height": 0.29593194276094437
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 48,
+        "id": "ArtMesh",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 57,
+        "opacity": 1,
+        "parentPartIndex": 1,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 43,
+        "vertexIndexCount": 183,
+        "vertexBounds": {
+          "minX": 0.04705999046564102,
+          "minY": -0.09984433650970459,
+          "maxX": 0.28703758120536804,
+          "maxY": 0.36216360330581665,
+          "width": 0.23997759073972702,
+          "height": 0.46200793981552124
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 49,
+        "id": "ArtMesh35",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 54,
+        "opacity": 1,
+        "parentPartIndex": 2,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 31,
+        "vertexIndexCount": 114,
+        "vertexBounds": {
+          "minX": -0.2817804515361786,
+          "minY": -0.054220229387283325,
+          "maxX": -0.19370076060295105,
+          "maxY": 0.24171176552772522,
+          "width": 0.08807969093322754,
+          "height": 0.29593199491500854
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 50,
+        "id": "ArtMesh60",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 11,
+        "opacity": 1,
+        "parentPartIndex": 10,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 20,
+        "vertexIndexCount": 78,
+        "vertexBounds": {
+          "minX": -0.05936236307024956,
+          "minY": -0.2270212471485138,
+          "maxX": 0.05993545427918434,
+          "maxY": -0.12852127850055695,
+          "width": 0.1192978173494339,
+          "height": 0.09849996864795685
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 51,
+        "id": "ArtMesh38",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 13,
+        "opacity": 1,
+        "parentPartIndex": 10,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 46,
+        "vertexIndexCount": 174,
+        "vertexBounds": {
+          "minX": -0.050557538866996765,
+          "minY": -0.20765420794487,
+          "maxX": 0.05103452503681183,
+          "maxY": -0.18276232481002808,
+          "width": 0.1015920639038086,
+          "height": 0.02489188313484192
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 52,
+        "id": "ArtMesh37",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 14,
+        "opacity": 1,
+        "parentPartIndex": 10,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 34,
+        "vertexIndexCount": 126,
+        "vertexBounds": {
+          "minX": -0.04546940699219704,
+          "minY": -0.1688767671585083,
+          "maxX": 0.04666238650679588,
+          "maxY": -0.15043805539608002,
+          "width": 0.09213179349899292,
+          "height": 0.018438711762428284
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 53,
+        "id": "ArtMesh36",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 15,
+        "opacity": 1,
+        "parentPartIndex": 10,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 127,
+        "vertexIndexCount": 618,
+        "vertexBounds": {
+          "minX": -0.06935050338506699,
+          "minY": -0.2265709638595581,
+          "maxX": 0.07028886675834656,
+          "maxY": -0.15958121418952942,
+          "width": 0.13963937014341354,
+          "height": 0.06698974967002869
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 54,
+        "id": "ArtMesh33",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 16,
+        "opacity": 1,
+        "parentPartIndex": 10,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 113,
+        "vertexIndexCount": 552,
+        "vertexBounds": {
+          "minX": -0.06660619378089905,
+          "minY": -0.17413851618766785,
+          "maxX": 0.06664697825908661,
+          "maxY": -0.12510427832603455,
+          "width": 0.13325317203998566,
+          "height": 0.0490342378616333
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 55,
+        "id": "ArtMesh32",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 17,
+        "opacity": 1,
+        "parentPartIndex": 10,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 9,
+        "vertexIndexCount": 24,
+        "vertexBounds": {
+          "minX": -0.008687402121722698,
+          "minY": -0.18162168562412262,
+          "maxX": 0.008474050089716911,
+          "maxY": -0.17055918276309967,
+          "width": 0.01716145221143961,
+          "height": 0.01106250286102295
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 56,
+        "id": "ArtMesh31",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 18,
+        "opacity": 1,
+        "parentPartIndex": 10,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 7,
+        "vertexIndexCount": 18,
+        "vertexBounds": {
+          "minX": -0.0033114065881818533,
+          "minY": -0.16852790117263794,
+          "maxX": 0.003157359315082431,
+          "maxY": -0.16209039092063904,
+          "width": 0.006468765903264284,
+          "height": 0.006437510251998901
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 57,
+        "id": "ArtMesh99",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 12,
+        "opacity": 1,
+        "parentPartIndex": 10,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 14,
+        "vertexIndexCount": 54,
+        "vertexBounds": {
+          "minX": -0.06019250303506851,
+          "minY": -0.22389107942581177,
+          "maxX": 0.058437228202819824,
+          "maxY": -0.15413883328437805,
+          "width": 0.11862973123788834,
+          "height": 0.06975224614143372
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 58,
+        "id": "HitAreaHead",
+        "textureIndex": 0,
+        "drawOrder": 1000,
+        "renderOrder": 58,
+        "opacity": 1,
+        "parentPartIndex": 0,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": false,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 4,
+        "vertexIndexCount": 6,
+        "vertexBounds": {
+          "minX": -0.29847753047943115,
+          "minY": -0.2716502249240875,
+          "maxX": 0.2957949936389923,
+          "maxY": 0.3226222097873688,
+          "width": 0.5942725241184235,
+          "height": 0.5942724347114563
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      }
+    ],
+    "offscreens": []
+  }
+}

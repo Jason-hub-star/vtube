@@ -1,0 +1,371 @@
+{
+  "schema_version": 1,
+  "experiment_id": "mini-cubism-hair-face-motion-v1-001",
+  "generated_at": "2026-06-05T13:50:14.357917+00:00",
+  "status": "PASS",
+  "source_hair": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_fit_v1/hair_fit_birefnet_hr.png",
+  "source_bbox": [
+    602,
+    18,
+    845,
+    1050
+  ],
+  "source_alpha_coverage": 0.0976088,
+  "part_count": 16,
+  "physics_target_count": 16,
+  "records": [
+    {
+      "part_id": "back_hair_base",
+      "folder": "Hair Back",
+      "role": "back",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_fit_v1/hair_fit_birefnet_hr.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_split_v1/parts/back_hair_base.png",
+      "split_rect": [
+        737,
+        18,
+        575,
+        357
+      ],
+      "bbox": [
+        754,
+        18,
+        540,
+        377
+      ],
+      "nonzero_alpha": 129807,
+      "alpha_coverage": 0.0309484,
+      "is_physics_target": true
+    },
+    {
+      "part_id": "back_hair_L",
+      "folder": "Hair Back",
+      "role": "back",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_fit_v1/hair_fit_birefnet_hr.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_split_v1/parts/back_hair_L.png",
+      "split_rect": [
+        1058,
+        228,
+        389,
+        609
+      ],
+      "bbox": [
+        1039,
+        209,
+        408,
+        648
+      ],
+      "nonzero_alpha": 143031,
+      "alpha_coverage": 0.03410125,
+      "is_physics_target": true
+    },
+    {
+      "part_id": "back_hair_C",
+      "folder": "Hair Back",
+      "role": "back",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_fit_v1/hair_fit_birefnet_hr.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_split_v1/parts/back_hair_C.png",
+      "split_rect": [
+        906,
+        196,
+        237,
+        683
+      ],
+      "bbox": [
+        887,
+        177,
+        276,
+        722
+      ],
+      "nonzero_alpha": 81484,
+      "alpha_coverage": 0.0194273,
+      "is_physics_target": true
+    },
+    {
+      "part_id": "back_hair_R",
+      "folder": "Hair Back",
+      "role": "back",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_fit_v1/hair_fit_birefnet_hr.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_split_v1/parts/back_hair_R.png",
+      "split_rect": [
+        602,
+        228,
+        389,
+        609
+      ],
+      "bbox": [
+        602,
+        209,
+        409,
+        648
+      ],
+      "nonzero_alpha": 137120,
+      "alpha_coverage": 0.03269196,
+      "is_physics_target": true
+    },
+    {
+      "part_id": "back_hair_tip_L",
+      "folder": "Hair Tips",
+      "role": "tip",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_fit_v1/hair_fit_birefnet_hr.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_split_v1/parts/back_hair_tip_L.png",
+      "split_rect": [
+        1092,
+        753,
+        355,
+        315
+      ],
+      "bbox": [
+        1100,
+        734,
+        347,
+        334
+      ],
+      "nonzero_alpha": 67370,
+      "alpha_coverage": 0.01606226,
+      "is_physics_target": true
+    },
+    {
+      "part_id": "back_hair_tip_C",
+      "folder": "Hair Tips",
+      "role": "tip",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_fit_v1/hair_fit_birefnet_hr.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_split_v1/parts/back_hair_tip_C.png",
+      "split_rect": [
+        889,
+        732,
+        271,
+        336
+      ],
+      "bbox": [
+        870,
+        713,
+        310,
+        320
+      ],
+      "nonzero_alpha": 17859,
+      "alpha_coverage": 0.00425792,
+      "is_physics_target": true
+    },
+    {
+      "part_id": "back_hair_tip_R",
+      "folder": "Hair Tips",
+      "role": "tip",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_fit_v1/hair_fit_birefnet_hr.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_split_v1/parts/back_hair_tip_R.png",
+      "split_rect": [
+        602,
+        753,
+        355,
+        315
+      ],
+      "bbox": [
+        602,
+        734,
+        332,
+        332
+      ],
+      "nonzero_alpha": 59089,
+      "alpha_coverage": 0.01408792,
+      "is_physics_target": true
+    },
+    {
+      "part_id": "side_hair_L",
+      "folder": "Hair Side",
+      "role": "side",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_fit_v1/hair_fit_birefnet_hr.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_split_v1/parts/side_hair_L.png",
+      "split_rect": [
+        1160,
+        312,
+        270,
+        630
+      ],
+      "bbox": [
+        1141,
+        293,
+        303,
+        669
+      ],
+      "nonzero_alpha": 128236,
+      "alpha_coverage": 0.03057384,
+      "is_physics_target": true
+    },
+    {
+      "part_id": "side_hair_R",
+      "folder": "Hair Side",
+      "role": "side",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_fit_v1/hair_fit_birefnet_hr.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_split_v1/parts/side_hair_R.png",
+      "split_rect": [
+        619,
+        312,
+        270,
+        630
+      ],
+      "bbox": [
+        603,
+        293,
+        306,
+        669
+      ],
+      "nonzero_alpha": 125183,
+      "alpha_coverage": 0.02984595,
+      "is_physics_target": true
+    },
+    {
+      "part_id": "side_lock_L",
+      "folder": "Hair Front",
+      "role": "front_side",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_fit_v1/hair_fit_birefnet_hr.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_split_v1/parts/side_lock_L.png",
+      "split_rect": [
+        1092,
+        144,
+        203,
+        420
+      ],
+      "bbox": [
+        1073,
+        125,
+        242,
+        459
+      ],
+      "nonzero_alpha": 73091,
+      "alpha_coverage": 0.01742625,
+      "is_physics_target": true
+    },
+    {
+      "part_id": "side_lock_R",
+      "folder": "Hair Front",
+      "role": "front_side",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_fit_v1/hair_fit_birefnet_hr.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_split_v1/parts/side_lock_R.png",
+      "split_rect": [
+        754,
+        144,
+        203,
+        420
+      ],
+      "bbox": [
+        735,
+        125,
+        242,
+        459
+      ],
+      "nonzero_alpha": 72186,
+      "alpha_coverage": 0.01721048,
+      "is_physics_target": true
+    },
+    {
+      "part_id": "front_bang_L",
+      "folder": "Hair Front",
+      "role": "front_bang",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_fit_v1/hair_fit_birefnet_hr.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_split_v1/parts/front_bang_L.png",
+      "split_rect": [
+        1092,
+        39,
+        118,
+        336
+      ],
+      "bbox": [
+        1073,
+        21,
+        157,
+        374
+      ],
+      "nonzero_alpha": 42246,
+      "alpha_coverage": 0.01007223,
+      "is_physics_target": true
+    },
+    {
+      "part_id": "front_bang_CL",
+      "folder": "Hair Front",
+      "role": "front_bang",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_fit_v1/hair_fit_birefnet_hr.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_split_v1/parts/front_bang_CL.png",
+      "split_rect": [
+        1016,
+        39,
+        93,
+        389
+      ],
+      "bbox": [
+        997,
+        20,
+        132,
+        428
+      ],
+      "nonzero_alpha": 37475,
+      "alpha_coverage": 0.00893474,
+      "is_physics_target": true
+    },
+    {
+      "part_id": "front_bang_C",
+      "folder": "Hair Front",
+      "role": "front_bang",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_fit_v1/hair_fit_birefnet_hr.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_split_v1/parts/front_bang_C.png",
+      "split_rect": [
+        965,
+        39,
+        102,
+        431
+      ],
+      "bbox": [
+        946,
+        20,
+        141,
+        347
+      ],
+      "nonzero_alpha": 40911,
+      "alpha_coverage": 0.00975394,
+      "is_physics_target": true
+    },
+    {
+      "part_id": "front_bang_CR",
+      "folder": "Hair Front",
+      "role": "front_bang",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_fit_v1/hair_fit_birefnet_hr.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_split_v1/parts/front_bang_CR.png",
+      "split_rect": [
+        923,
+        39,
+        101,
+        389
+      ],
+      "bbox": [
+        904,
+        20,
+        140,
+        428
+      ],
+      "nonzero_alpha": 39639,
+      "alpha_coverage": 0.00945067,
+      "is_physics_target": true
+    },
+    {
+      "part_id": "front_bang_R",
+      "folder": "Hair Front",
+      "role": "front_bang",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_fit_v1/hair_fit_birefnet_hr.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_split_v1/parts/front_bang_R.png",
+      "split_rect": [
+        839,
+        39,
+        118,
+        336
+      ],
+      "bbox": [
+        820,
+        23,
+        157,
+        372
+      ],
+      "nonzero_alpha": 40936,
+      "alpha_coverage": 0.0097599,
+      "is_physics_target": true
+    }
+  ],
+  "contact_sheet": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_split_v1/reports/hair_split_contact_sheet.png"
+}

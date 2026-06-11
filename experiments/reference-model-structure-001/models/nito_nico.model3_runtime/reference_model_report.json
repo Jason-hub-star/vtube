@@ -1,0 +1,434 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T14:48:53.237502+00:00",
+  "id": "nito_nico.model3_runtime",
+  "name": "nico.model3",
+  "source_url": "https://www.live2d.com/ko/learn/sample/",
+  "source_type": "OFFICIAL_SAMPLE_ZIP",
+  "license_status": "OFFICIAL_TERMS_ACCEPTED_BY_USER",
+  "analysis_mode": "RUNTIME_ONLY",
+  "official_profile_key": "nito",
+  "analysis_safety_notes": [],
+  "has_cmo3": false,
+  "has_moc3": true,
+  "has_model3_json": true,
+  "has_physics3_json": false,
+  "has_psd": false,
+  "local_paths": {
+    "pose3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nito/nito.pose3.json",
+      "exists": true,
+      "size_bytes": 417
+    },
+    "moc3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nito/nito.moc3",
+      "exists": true,
+      "size_bytes": 236160
+    },
+    "cdi3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nito/nito.cdi3.json",
+      "exists": true,
+      "size_bytes": 7466
+    },
+    "model3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nico.model3.json",
+      "exists": true,
+      "size_bytes": 1874
+    },
+    "motion3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/00_idle.motion3.json",
+        "exists": true,
+        "size_bytes": 17029
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/01_happy.motion3.json",
+        "exists": true,
+        "size_bytes": 15779
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/02_angry.motion3.json",
+        "exists": true,
+        "size_bytes": 17021
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/03_fear.motion3.json",
+        "exists": true,
+        "size_bytes": 21510
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/04_surprise.motion3.json",
+        "exists": true,
+        "size_bytes": 19269
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/05_fun.motion3.json",
+        "exists": true,
+        "size_bytes": 14300
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/06_love.motion3.json",
+        "exists": true,
+        "size_bytes": 14510
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/07_bye.motion3.json",
+        "exists": true,
+        "size_bytes": 14438
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/08_sad.motion3.json",
+        "exists": true,
+        "size_bytes": 19414
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/09_yawn.motion3.json",
+        "exists": true,
+        "size_bytes": 18721
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/10_yeah.motion3.json",
+        "exists": true,
+        "size_bytes": 16614
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/11_muscle.motion3.json",
+        "exists": true,
+        "size_bytes": 17299
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/12_stagger.motion3.json",
+        "exists": true,
+        "size_bytes": 14030
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/13_cry.motion3.json",
+        "exists": true,
+        "size_bytes": 26799
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/14_ sigh.motion3.json",
+        "exists": true,
+        "size_bytes": 13023
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/15_joy.motion3.json",
+        "exists": true,
+        "size_bytes": 19473
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/16_menace.motion3.json",
+        "exists": true,
+        "size_bytes": 19673
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/17_yes.motion3.json",
+        "exists": true,
+        "size_bytes": 12619
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/18_no.motion3.json",
+        "exists": true,
+        "size_bytes": 19459
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/19_walk.motion3.json",
+        "exists": true,
+        "size_bytes": 14328
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/20_sleep.motion3.json",
+        "exists": true,
+        "size_bytes": 25221
+      }
+    ]
+  },
+  "cmo3": {
+    "status": "NOT_REQUESTED"
+  },
+  "moc3": {
+    "present": true,
+    "path": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nito/nito.moc3",
+    "size_bytes": 236160,
+    "sha256": "df1c5ec2a29d7f2d25e1019aa77aa0785aba4580276700245100675b23bc7dcf",
+    "py_moc3_status": "PASS",
+    "parameter_count": 66,
+    "art_mesh_count": 91,
+    "parameter_ids": [
+      "PARAM_ANGLE_Y",
+      "PARAM_ANGLE_Z",
+      "PARAM_EYE_L_OPEN",
+      "PARAM_EYE_L_SMILE",
+      "PARAM_EYE_R_OPEN",
+      "PARAM_EYE_R_SMILE",
+      "PARAM_EYE_SIZE",
+      "PARAM_EYE_BALL_Y",
+      "PARAM_EYELOOP1",
+      "PARAM_EYELOOP2",
+      "PARAM_MOUTH_FORM",
+      "PARAM_MOUTH_OPEN_Y",
+      "PARAM_INMOUTH",
+      "PARAM_FACE_RED",
+      "PARAM_CHEEK",
+      "PARAM_TEAR",
+      "PARAM_EAR_FORM",
+      "PARAM_EAR",
+      "PARAM_GLASS",
+      "PARAM_BODY_UD",
+      "PARAM_BREATH",
+      "PARAM_BODY_ANGLE_Y",
+      "PARAM_BODY_ANGLE_Z",
+      "PARAM_HAIR_FRONT",
+      "PARAM_HAIR_SIDE",
+      "PARAM_ACC",
+      "PARAM_TAIL_FORM",
+      "PARAM_TAIL",
+      "PARAM_ACC1L",
+      "PARAM_ACC1R",
+      "PARAM_ACC2L",
+      "PARAM_ACC2R",
+      "PARAM_HAIR_ROLL",
+      "PARAM_ROLL_FUWA",
+      "PARAM_ACC_2",
+      "PARAM_LEG_L_Z",
+      "PARAM_LEG_L",
+      "PARAM_LEG_R_Z",
+      "PARAM_LEG_R",
+      "PARAM_SHOULDER",
+      "PARAM_ARM_L",
+      "PARAM_ARM_L_FORM1",
+      "PARAM_ARM_L_FORM2",
+      "PARAM_ARM_R",
+      "PARAM_ARM_R_FORM1",
+      "PARAM_ARM_R_ROFM2",
+      "PARAM_ARCH_L",
+      "PARAM_ARCH_R",
+      "PARAM_JOY_ON",
+      "PARAM_JOY1",
+      "PARAM_JOY2",
+      "PARAM_ANGER_ON",
+      "PARAM_ANGER1",
+      "PARAM_ANGER2",
+      "PARAM_FEAR_ON",
+      "PARAM_FEAR1",
+      "PARAM_FEAR2",
+      "PARAM_SURP_ON",
+      "PARAM_SURP1",
+      "PARAM_SURP2",
+      "PARAM_CRY_ON",
+      "PARAM_CRY1",
+      "PARAM_CRY2",
+      "PARAM_HANA_ON",
+      "PARAM_HANA",
+      "PARAM_HANA_2"
+    ],
+    "art_mesh_ids_sample": [
+      "D_PSD_104",
+      "D_PSD_103",
+      "D_PSD_102",
+      "D_PSD_101",
+      "D_PSD1_07",
+      "D_PSD1_06",
+      "D_PSD_33",
+      "D_PSD1_05",
+      "D_PSD1_04",
+      "D_PSD_03",
+      "D_PSD_08",
+      "D_PSD_07",
+      "D_PSD_06",
+      "D_PSD_05",
+      "D_PSD_04",
+      "D_PSD1_03",
+      "D_PSD_02",
+      "D_PSD1_02",
+      "D_PSD1_01",
+      "D_PSD_01",
+      "D_PSD1_00",
+      "D_PSD_00",
+      "D_PSD_18",
+      "D_PSD_35",
+      "D_PSD_38",
+      "D_PSD_34",
+      "D_PSD_37",
+      "D_PSD_36",
+      "D_PSD_20",
+      "D_PSD_19",
+      "D_PSD_16",
+      "D_PSD_15",
+      "D_PSD_26",
+      "D_PSD_25",
+      "D_PSD_39",
+      "D_PSD_17",
+      "D_PSD_14",
+      "D_PSD_13",
+      "D_PSD_12",
+      "D_PSD_11",
+      "D_PSD_10",
+      "D_PSD_09",
+      "D_PSD_32",
+      "D_PSD_31",
+      "D_PSD_30",
+      "D_PSD_29",
+      "D_PSD_28",
+      "D_PSD_27",
+      "D_PSD_61",
+      "D_PSD_51"
+    ]
+  },
+  "runtime_json": {
+    "model3": {
+      "present": true,
+      "version": 3,
+      "moc": "nico/nico.moc3",
+      "texture_count": 3,
+      "has_physics": false,
+      "has_pose": true,
+      "has_display_info": true,
+      "has_user_data": false,
+      "expression_count": 0,
+      "motion_group_count": 8,
+      "motion_count": 21,
+      "group_count": 2,
+      "parameter_ids": [
+        "PARAM_EYE_L_OPEN",
+        "PARAM_EYE_R_OPEN",
+        "PARAM_MOUTH_OPEN_Y"
+      ],
+      "file_references": {
+        "Moc": "nico/nico.moc3",
+        "Textures": [
+          "nico/nico.2048/texture_00.png",
+          "nico/nico.2048/texture_01.png",
+          "nico/nico.2048/texture_02.png"
+        ],
+        "Pose": "nico/nico.pose3.json",
+        "DisplayInfo": "nico/nico.cdi3.json",
+        "Motions": {
+          "Idle": [
+            {
+              "File": "motion/00_idle.motion3.json"
+            },
+            {
+              "File": "motion/05_fun.motion3.json"
+            },
+            {
+              "File": "motion/14_ sigh.motion3.json"
+            },
+            {
+              "File": "motion/20_sleep.motion3.json"
+            }
+          ],
+          "FlickUp": [
+            {
+              "File": "motion/07_bye.motion3.json"
+            },
+            {
+              "File": "motion/01_happy.motion3.json"
+            },
+            {
+              "File": "motion/16_menace.motion3.json"
+            }
+          ],
+          "Tap": [
+            {
+              "File": "motion/02_angry.motion3.json"
+            },
+            {
+              "File": "motion/08_sad.motion3.json"
+            },
+            {
+              "File": "motion/13_cry.motion3.json"
+            },
+            {
+              "File": "motion/15_joy.motion3.json"
+            },
+            {
+              "File": "motion/17_yes.motion3.json"
+            }
+          ],
+          "FlickDown": [
+            {
+              "File": "motion/11_muscle.motion3.json"
+            },
+            {
+              "File": "motion/03_fear.motion3.json"
+            }
+          ],
+          "FlickRight": [
+            {
+              "File": "motion/04_surprise.motion3.json"
+            }
+          ],
+          "Flick3": [
+            {
+              "File": "motion/06_love.motion3.json"
+            },
+            {
+              "File": "motion/09_yawn.motion3.json"
+            }
+          ],
+          "FlickLeft": [
+            {
+              "File": "motion/10_yeah.motion3.json"
+            },
+            {
+              "File": "motion/19_walk.motion3.json"
+            }
+          ],
+          "Shake": [
+            {
+              "File": "motion/12_stagger.motion3.json"
+            },
+            {
+              "File": "motion/18_no.motion3.json"
+            }
+          ]
+        }
+      }
+    },
+    "physics3": {
+      "present": false
+    },
+    "cdi3": {
+      "present": true,
+      "parameter_display_count": 66,
+      "part_display_count": 38
+    },
+    "motion3_count": 21,
+    "exp3_count": 0,
+    "pose3_present": true,
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 91,
+    "parts": 0,
+    "parameters": 66,
+    "warp_deformers": 0,
+    "rotation_deformers": 0,
+    "keyform_bindings": 0,
+    "keyform_grids": 0,
+    "glue": 0,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": false,
+    "pose": true,
+    "expression": false,
+    "motion": true,
+    "physics": false
+  },
+  "structure_hints": {
+    "hair": 1,
+    "eye": 1,
+    "mouth": 1,
+    "body": 1,
+    "arm": 1
+  },
+  "reuse_decision": "REFERENCE_ONLY",
+  "notes": [
+    "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+    "Source zip: nito.zip"
+  ],
+  "structure_report_path": null
+}

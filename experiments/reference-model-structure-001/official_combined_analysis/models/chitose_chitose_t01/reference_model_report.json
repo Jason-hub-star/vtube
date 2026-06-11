@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T15:26:55.278946+00:00",
+  "id": "chitose_chitose_t01",
+  "name": "chitose_t01",
+  "source_url": "https://www.live2d.com/ko/learn/sample/",
+  "source_type": "OFFICIAL_SAMPLE_ZIP",
+  "license_status": "OFFICIAL_TERMS_ACCEPTED_BY_USER",
+  "analysis_mode": "FULL_STRUCTURE",
+  "official_profile_key": "chitose",
+  "analysis_safety_notes": [],
+  "has_cmo3": true,
+  "has_moc3": true,
+  "has_model3_json": true,
+  "has_physics3_json": true,
+  "has_psd": false,
+  "local_paths": {
+    "exp3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/expressions/Angry.exp3.json",
+        "exists": true,
+        "size_bytes": 1485
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/expressions/Blushing.exp3.json",
+        "exists": true,
+        "size_bytes": 1506
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/expressions/Normal.exp3.json",
+        "exists": true,
+        "size_bytes": 1465
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/expressions/Sad.exp3.json",
+        "exists": true,
+        "size_bytes": 1501
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/expressions/Smile.exp3.json",
+        "exists": true,
+        "size_bytes": 1467
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/expressions/Surprised.exp3.json",
+        "exists": true,
+        "size_bytes": 1491
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/expressions/f01.exp3.json",
+        "exists": true,
+        "size_bytes": 1490
+      }
+    ],
+    "motion3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/motion/chitose_handwave.motion3.json",
+        "exists": true,
+        "size_bytes": 12258
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/motion/chitose_idle.motion3.json",
+        "exists": true,
+        "size_bytes": 23939
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/motion/chitose_kime01.motion3.json",
+        "exists": true,
+        "size_bytes": 11416
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/motion/chitose_kime02.motion3.json",
+        "exists": true,
+        "size_bytes": 14399
+      }
+    ],
+    "cdi3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/chitose.cdi3.json",
+      "exists": true,
+      "size_bytes": 3972
+    },
+    "pose3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/chitose.pose3.json",
+      "exists": true,
+      "size_bytes": 226
+    },
+    "model3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/chitose.model3.json",
+      "exists": true,
+      "size_bytes": 1426
+    },
+    "moc3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/chitose.moc3",
+      "exists": true,
+      "size_bytes": 259584
+    },
+    "physics3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/chitose.physics3.json",
+      "exists": true,
+      "size_bytes": 3281
+    },
+    "cmo3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/chitose_t01.cmo3",
+      "exists": true,
+      "size_bytes": 27825195
+    }
+  },
+  "cmo3": {
+    "status": "PASS",
+    "returncode": 0,
+    "json": "experiments/reference-model-structure-001/official_combined_analysis/models/chitose_chitose_t01/cmo3_structure_report.json",
+    "markdown": "experiments/reference-model-structure-001/official_combined_analysis/models/chitose_chitose_t01/cmo3_structure_report.md",
+    "stdout": "[cmo3-structure] WARN\n[cmo3-structure] json: /Users/family/jason/Vtube/experiments/reference-model-structure-001/official_combined_analysis/models/chitose_chitose_t01/cmo3_structure_report.json\n[cmo3-structure] md:   /Users/family/jason/Vtube/experiments/reference-model-structure-001/official_combined_analysis/models/chitose_chitose_t01/cmo3_structure_report.md",
+    "stderr": "",
+    "cmo3_status": "WARN",
+    "counts": {
+      "art_meshes": 79,
+      "parts": 22,
+      "parameters": 33,
+      "warp_deformers": 54,
+      "rotation_deformers": 13,
+      "keyform_bindings": 175,
+      "keyform_grids": 168,
+      "glue": 0,
+      "masks": 0
+    },
+    "parameter_ids": [
+      "PARAM_ANGLE_X",
+      "PARAM_ANGLE_Y",
+      "PARAM_ANGLE_Z",
+      "PARAM_EYE_L_OPEN",
+      "PARAM_EYE_L_SMILE",
+      "PARAM_EYE_R_OPEN",
+      "PARAM_EYE_R_SMILE",
+      "PARAM_EYE_FORM",
+      "PARAM_EYE_BALL_X",
+      "PARAM_EYE_BALL_Y",
+      "PARAM_EYE_BALL_FORM",
+      "PARAM_BROW_L_Y",
+      "PARAM_BROW_R_Y",
+      "PARAM_BROW_L_X",
+      "PARAM_BROW_R_X",
+      "PARAM_BROW_L_ANGLE",
+      "PARAM_BROW_R_ANGLE",
+      "PARAM_BROW_L_FORM",
+      "PARAM_BROW_R_FORM",
+      "PARAM_MOUTH_FORM",
+      "PARAM_MOUTH_OPEN_Y",
+      "PARAM_CHEEK",
+      "PARAM_SWEAT",
+      "PARAM_BODY_ANGLE_X",
+      "PARAM_BODY_ANGLE_Y",
+      "PARAM_BODY_ANGLE_Z",
+      "PARAM_ARM_L_A",
+      "PARAM_ARM_R_A",
+      "PARAM_ARM_R_B",
+      "PARAM_BREATH",
+      "PARAM_HAIR_FRONT",
+      "PARAM_HAIR_SIDE",
+      "PARAM_HAIR_BACK"
+    ],
+    "part_names": [
+      "Root Part",
+      "[ 下絵 ]",
+      "背景",
+      "体",
+      "右腕B",
+      "右腕A",
+      "左腕A",
+      "首",
+      "後ろ髪",
+      "横髪",
+      "前髪",
+      "耳",
+      "鼻",
+      "口",
+      "まゆ毛",
+      "目玉",
+      "目",
+      "顔",
+      "頬",
+      "汗",
+      "コア",
+      "ラフ"
+    ]
+  },
+  "moc3": {
+    "present": true,
+    "path": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/chitose.moc3",
+    "size_bytes": 259584,
+    "sha256": "308926ffb52a215010887acfeec36a129772b361cb8bc2aab459d70bad4fe89c",
+    "py_moc3_status": "PASS",
+    "parameter_count": 33,
+    "art_mesh_count": 66,
+    "parameter_ids": [
+      "PARAM_ANGLE_X",
+      "PARAM_ANGLE_Y",
+      "PARAM_ANGLE_Z",
+      "PARAM_EYE_L_OPEN",
+      "PARAM_EYE_L_SMILE",
+      "PARAM_EYE_R_OPEN",
+      "PARAM_EYE_R_SMILE",
+      "PARAM_EYE_FORM",
+      "PARAM_EYE_BALL_X",
+      "PARAM_EYE_BALL_Y",
+      "PARAM_EYE_BALL_FORM",
+      "PARAM_BROW_L_Y",
+      "PARAM_BROW_R_Y",
+      "PARAM_BROW_L_X",
+      "PARAM_BROW_R_X",
+      "PARAM_BROW_L_ANGLE",
+      "PARAM_BROW_R_ANGLE",
+      "PARAM_BROW_L_FORM",
+      "PARAM_BROW_R_FORM",
+      "PARAM_MOUTH_FORM",
+      "PARAM_MOUTH_OPEN_Y",
+      "PARAM_CHEEK",
+      "PARAM_SWEAT",
+      "PARAM_BODY_ANGLE_X",
+      "PARAM_BODY_ANGLE_Y",
+      "PARAM_BODY_ANGLE_Z",
+      "PARAM_ARM_L_A",
+      "PARAM_ARM_R_A",
+      "PARAM_ARM_R_B",
+      "PARAM_BREATH",
+      "PARAM_HAIR_FRONT",
+      "PARAM_HAIR_SIDE",
+      "PARAM_HAIR_BACK"
+    ],
+    "art_mesh_ids_sample": [
+      "D_BODY_03",
+      "D_BODY_02",
+      "D_BODY_01",
+      "D_BODY_00",
+      "D_ARM_R_B_02",
+      "D_ARM_R_B_01",
+      "D_ARM_R_B_04",
+      "D_ARM_R_B_03",
+      "D_ARM_R_B_00",
+      "D_ARM_R_A_01",
+      "D_ARM_R_A_00",
+      "D_ARM_L_A_03",
+      "D_ARM_L_A_02",
+      "D_ARM_L_A_01",
+      "D_ARM_L_A_00",
+      "D_NECK_00",
+      "D_HAIR_BACK_00",
+      "D_HAIR_FRONT_03",
+      "D_HAIR_FRONT_02",
+      "D_HAIR_FRONT_01",
+      "D_HAIR_FRONT_00",
+      "D_EAR_01",
+      "D_EAR_00",
+      "D_NOSE_01",
+      "D_NOSE_00",
+      "D_MOUTH_05",
+      "D_MOUTH_04",
+      "D_MOUTH_02",
+      "D_MOUTH_03",
+      "D_MOUTH_01",
+      "D_MOUTH_00",
+      "D_BROW_01",
+      "D_BROW_03",
+      "D_BROW_00",
+      "D_BROW_02",
+      "D_EYE_BALL_03",
+      "D_EYE_BALL_02",
+      "D_EYE_BALL_01",
+      "D_EYE_BALL_00",
+      "D_EYE_15",
+      "D_EYE_13",
+      "D_EYE_19",
+      "D_EYE_18",
+      "D_EYE_12",
+      "D_EYE_14",
+      "D_EYE_11",
+      "D_EYE_10",
+      "D_EYE_09",
+      "D_EYE_08",
+      "D_EYE_07"
+    ]
+  },
+  "runtime_json": {
+    "model3": {
+      "present": true,
+      "version": 3,
+      "moc": "chitose.moc3",
+      "texture_count": 1,
+      "has_physics": true,
+      "has_pose": true,
+      "has_display_info": true,
+      "has_user_data": false,
+      "expression_count": 7,
+      "motion_group_count": 3,
+      "motion_count": 4,
+      "group_count": 2,
+      "parameter_ids": [
+        "PARAM_EYE_L_OPEN",
+        "PARAM_EYE_R_OPEN",
+        "PARAM_MOUTH_OPEN_Y"
+      ],
+      "file_references": {
+        "Moc": "chitose.moc3",
+        "Textures": [
+          "chitose.2048/texture_00.png"
+        ],
+        "Physics": "chitose.physics3.json",
+        "Pose": "chitose.pose3.json",
+        "DisplayInfo": "chitose.cdi3.json",
+        "Expressions": [
+          {
+            "Name": "Angry.exp3.json",
+            "File": "expressions/Angry.exp3.json"
+          },
+          {
+            "Name": "Blushing.exp3.json",
+            "File": "expressions/Blushing.exp3.json"
+          },
+          {
+            "Name": "f01.exp3.json",
+            "File": "expressions/f01.exp3.json"
+          },
+          {
+            "Name": "Normal.exp3.json",
+            "File": "expressions/Normal.exp3.json"
+          },
+          {
+            "Name": "Sad.exp3.json",
+            "File": "expressions/Sad.exp3.json"
+          },
+          {
+            "Name": "Smile.exp3.json",
+            "File": "expressions/Smile.exp3.json"
+          },
+          {
+            "Name": "Surprised.exp3.json",
+            "File": "expressions/Surprised.exp3.json"
+          }
+        ],
+        "Motions": {
+          "Flick": [
+            {
+              "File": "motion/chitose_handwave.motion3.json"
+            }
+          ],
+          "Idle": [
+            {
+              "File": "motion/chitose_idle.motion3.json"
+            }
+          ],
+          "Tap": [
+            {
+              "File": "motion/chitose_kime01.motion3.json"
+            },
+            {
+              "File": "motion/chitose_kime02.motion3.json"
+            }
+          ]
+        }
+      }
+    },
+    "physics3": {
+      "present": true,
+      "version": 3,
+      "physics_group_count": 2,
+      "physics_input_count": 8,
+      "physics_output_count": 2,
+      "physics_vertex_count": 4,
+      "groups": [
+        {
+          "index": 0,
+          "id": "PhysicsSetting1",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 1,
+          "id": "PhysicsSetting2",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        }
+      ]
+    },
+    "cdi3": {
+      "present": true,
+      "parameter_display_count": 33,
+      "part_display_count": 21
+    },
+    "motion3_count": 4,
+    "exp3_count": 7,
+    "pose3_present": true,
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 79,
+    "parts": 22,
+    "parameters": 33,
+    "warp_deformers": 54,
+    "rotation_deformers": 13,
+    "keyform_bindings": 175,
+    "keyform_grids": 168,
+    "glue": 0,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": false,
+    "pose": true,
+    "expression": true,
+    "motion": true,
+    "physics": true
+  },
+  "structure_hints": {
+    "hair": 1,
+    "eye": 1,
+    "mouth": 2,
+    "body": 1,
+    "arm": 1
+  },
+  "reuse_decision": "REFERENCE_ONLY",
+  "notes": [
+    "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+    "Source zip: chitose.zip"
+  ],
+  "structure_report_path": "experiments/reference-model-structure-001/official_combined_analysis/models/chitose_chitose_t01/cmo3_structure_report.json"
+}

@@ -1,0 +1,403 @@
+{
+  "schema_version": 1,
+  "experiment_id": "mini-cubism-pack-splitter-v0-001",
+  "generated_at": "2026-06-05T06:46:05.945702+00:00",
+  "status": "MODEL_COMPARISON_DONE_PROMOTION_BLOCKED_RELAYOUT_REQUIRED",
+  "promotion_allowed": false,
+  "models": [
+    {
+      "id": "layerd_birefnet",
+      "label": "LayerD BiRefNet",
+      "role": "layer decomposition reference",
+      "report_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/layerd_birefnet_inference_report.json",
+      "contact_sheet": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/layerd_birefnet_contact_sheet.png",
+      "status": "RUNTIME_PASS_REVISE_MASK",
+      "runtime_status": "PASS",
+      "quality_status": "REVISE_MASK",
+      "model_id": "cyberagent/layerd-birefnet",
+      "actual_hf_inference_count": 4,
+      "issue_count": 3,
+      "hard_failure_count": 0,
+      "error_type": null,
+      "error": null,
+      "pack_results": {
+        "hair_pack": {
+          "status": "CANDIDATE",
+          "record_count": 1,
+          "sample_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/layerd_birefnet/hair_pack/hair_pack_layerd_birefnet.png",
+          "issues": [],
+          "hard_failures": []
+        },
+        "outfit_pack": {
+          "status": "CANDIDATE",
+          "record_count": 1,
+          "sample_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/layerd_birefnet/outfit_pack/outfit_pack_layerd_birefnet.png",
+          "issues": [],
+          "hard_failures": []
+        },
+        "accessory_pack": {
+          "status": "REVISE_MASK",
+          "record_count": 1,
+          "sample_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/layerd_birefnet/accessory_pack/accessory_pack_layerd_birefnet.png",
+          "issues": [
+            "BROAD_MASK_ALPHA_COVERAGE"
+          ],
+          "hard_failures": []
+        },
+        "keypose_asset_pack": {
+          "status": "REVISE_MASK",
+          "record_count": 1,
+          "sample_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/layerd_birefnet/keypose_asset_pack/keypose_asset_pack_layerd_birefnet.png",
+          "issues": [
+            "BBOX_NEAR_FULL_CANVAS",
+            "BROAD_MASK_ALPHA_COVERAGE"
+          ],
+          "hard_failures": []
+        }
+      },
+      "decision": "REFERENCE_ONLY",
+      "why": "Hair/outfit are usable candidates, but accessory/keypose masks are broad."
+    },
+    {
+      "id": "birefnet",
+      "label": "BiRefNet",
+      "role": "stable foreground alpha cleanup",
+      "report_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/birefnet_inference_report.json",
+      "contact_sheet": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/birefnet_contact_sheet.png",
+      "status": "PASS",
+      "runtime_status": "PASS",
+      "quality_status": "CANDIDATE",
+      "model_id": "ZhengPeng7/BiRefNet",
+      "actual_hf_inference_count": 4,
+      "issue_count": 0,
+      "hard_failure_count": 0,
+      "error_type": null,
+      "error": null,
+      "pack_results": {
+        "hair_pack": {
+          "status": "CANDIDATE",
+          "record_count": 1,
+          "sample_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/birefnet/hair_pack/hair_pack_birefnet.png",
+          "issues": [],
+          "hard_failures": []
+        },
+        "outfit_pack": {
+          "status": "CANDIDATE",
+          "record_count": 1,
+          "sample_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/birefnet/outfit_pack/outfit_pack_birefnet.png",
+          "issues": [],
+          "hard_failures": []
+        },
+        "accessory_pack": {
+          "status": "CANDIDATE",
+          "record_count": 1,
+          "sample_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/birefnet/accessory_pack/accessory_pack_birefnet.png",
+          "issues": [],
+          "hard_failures": []
+        },
+        "keypose_asset_pack": {
+          "status": "CANDIDATE",
+          "record_count": 1,
+          "sample_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/birefnet/keypose_asset_pack/keypose_asset_pack_birefnet.png",
+          "issues": [],
+          "hard_failures": []
+        }
+      },
+      "decision": "SELECTED_STABLE_FALLBACK",
+      "why": "All four packs passed runtime and simple mask gates with no broad-mask issues."
+    },
+    {
+      "id": "birefnet_hr",
+      "label": "BiRefNet HR",
+      "role": "primary high-resolution alpha cleanup",
+      "report_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/birefnet_hr_inference_report.json",
+      "contact_sheet": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/birefnet_hr_contact_sheet.png",
+      "status": "PASS",
+      "runtime_status": "PASS",
+      "quality_status": "CANDIDATE",
+      "model_id": "ZhengPeng7/BiRefNet_HR",
+      "actual_hf_inference_count": 4,
+      "issue_count": 0,
+      "hard_failure_count": 0,
+      "error_type": null,
+      "error": null,
+      "pack_results": {
+        "hair_pack": {
+          "status": "CANDIDATE",
+          "record_count": 1,
+          "sample_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/birefnet_hr/hair_pack/hair_pack_birefnet_hr.png",
+          "issues": [],
+          "hard_failures": []
+        },
+        "outfit_pack": {
+          "status": "CANDIDATE",
+          "record_count": 1,
+          "sample_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/birefnet_hr/outfit_pack/outfit_pack_birefnet_hr.png",
+          "issues": [],
+          "hard_failures": []
+        },
+        "accessory_pack": {
+          "status": "CANDIDATE",
+          "record_count": 1,
+          "sample_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/birefnet_hr/accessory_pack/accessory_pack_birefnet_hr.png",
+          "issues": [],
+          "hard_failures": []
+        },
+        "keypose_asset_pack": {
+          "status": "CANDIDATE",
+          "record_count": 1,
+          "sample_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/birefnet_hr/keypose_asset_pack/keypose_asset_pack_birefnet_hr.png",
+          "issues": [],
+          "hard_failures": []
+        }
+      },
+      "decision": "SELECTED_PRIMARY_ALPHA",
+      "why": "All four packs passed and it is the best default for full-pack alpha cleanup."
+    },
+    {
+      "id": "birefnet_matting",
+      "label": "BiRefNet matting",
+      "role": "optional edge/matting cleanup",
+      "report_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/birefnet_matting_inference_report.json",
+      "contact_sheet": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/birefnet_matting_contact_sheet.png",
+      "status": "RUNTIME_PASS_REVISE_MASK",
+      "runtime_status": "PASS",
+      "quality_status": "REVISE_MASK",
+      "model_id": "ZhengPeng7/BiRefNet-matting",
+      "actual_hf_inference_count": 4,
+      "issue_count": 1,
+      "hard_failure_count": 0,
+      "error_type": null,
+      "error": null,
+      "pack_results": {
+        "hair_pack": {
+          "status": "CANDIDATE",
+          "record_count": 1,
+          "sample_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/birefnet_matting/hair_pack/hair_pack_birefnet_matting.png",
+          "issues": [],
+          "hard_failures": []
+        },
+        "outfit_pack": {
+          "status": "CANDIDATE",
+          "record_count": 1,
+          "sample_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/birefnet_matting/outfit_pack/outfit_pack_birefnet_matting.png",
+          "issues": [],
+          "hard_failures": []
+        },
+        "accessory_pack": {
+          "status": "CANDIDATE",
+          "record_count": 1,
+          "sample_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/birefnet_matting/accessory_pack/accessory_pack_birefnet_matting.png",
+          "issues": [],
+          "hard_failures": []
+        },
+        "keypose_asset_pack": {
+          "status": "REVISE_MASK",
+          "record_count": 1,
+          "sample_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/birefnet_matting/keypose_asset_pack/keypose_asset_pack_birefnet_matting.png",
+          "issues": [
+            "BBOX_NEAR_FULL_CANVAS"
+          ],
+          "hard_failures": []
+        }
+      },
+      "decision": "OPTIONAL_EDGE_CLEANUP",
+      "why": "Hair/outfit/accessory passed, but keypose became near full-canvas and must not be used there."
+    },
+    {
+      "id": "sam2_tiny",
+      "label": "SAM2 tiny ROI",
+      "role": "ROI point-prompt refinement test",
+      "report_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/facebook_sam2_1_hiera_tiny_roi_refinement_report.json",
+      "contact_sheet": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/facebook_sam2_1_hiera_tiny_roi_refinement_contact_sheet.png",
+      "status": "RUNTIME_PASS_VISUAL_FAIL",
+      "runtime_status": "PASS",
+      "quality_status": "VISUAL_FAIL",
+      "model_id": "facebook/sam2.1-hiera-tiny",
+      "actual_hf_inference_count": 16,
+      "issue_count": 19,
+      "hard_failure_count": 18,
+      "error_type": null,
+      "error": null,
+      "pack_results": {
+        "hair_pack": null,
+        "outfit_pack": null,
+        "accessory_pack": {
+          "status": "VISUAL_FAIL",
+          "record_count": 7,
+          "sample_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/facebook_sam2_1_hiera_tiny/accessory_pack/choker_base_facebook_sam2_1_hiera_tiny.png",
+          "issues": [
+            "MASK_TOUCHES_ROI_EDGE",
+            "ROI_MASK_TOO_BROAD",
+            "ROI_MASK_TOO_SMALL_OR_FRAGMENT"
+          ],
+          "hard_failures": [
+            "VISUAL_FAIL_CROPPED_BY_ROI",
+            "VISUAL_FAIL_FRAGMENT"
+          ]
+        },
+        "keypose_asset_pack": {
+          "status": "VISUAL_FAIL",
+          "record_count": 9,
+          "sample_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/facebook_sam2_1_hiera_tiny/keypose_asset_pack/eye_open_L_facebook_sam2_1_hiera_tiny.png",
+          "issues": [
+            "MASK_TOUCHES_ROI_EDGE",
+            "ROI_MASK_TOO_SMALL_OR_FRAGMENT"
+          ],
+          "hard_failures": [
+            "VISUAL_FAIL_CROPPED_BY_ROI",
+            "VISUAL_FAIL_FRAGMENT"
+          ]
+        }
+      },
+      "decision": "REJECT_CURRENT_OUTPUTS",
+      "why": "Runtime passed, but strict visual QA detected cropped or fragment masks."
+    },
+    {
+      "id": "sam2_large",
+      "label": "SAM2 large ROI",
+      "role": "ROI point-prompt refinement test",
+      "report_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/facebook_sam2_1_hiera_large_roi_refinement_report.json",
+      "contact_sheet": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/facebook_sam2_1_hiera_large_roi_refinement_contact_sheet.png",
+      "status": "RUNTIME_PASS_VISUAL_FAIL",
+      "runtime_status": "PASS",
+      "quality_status": "VISUAL_FAIL",
+      "model_id": "facebook/sam2.1-hiera-large",
+      "actual_hf_inference_count": 16,
+      "issue_count": 21,
+      "hard_failure_count": 20,
+      "error_type": null,
+      "error": null,
+      "pack_results": {
+        "hair_pack": null,
+        "outfit_pack": null,
+        "accessory_pack": {
+          "status": "VISUAL_FAIL",
+          "record_count": 7,
+          "sample_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/facebook_sam2_1_hiera_large/accessory_pack/choker_base_facebook_sam2_1_hiera_large.png",
+          "issues": [
+            "MASK_TOUCHES_ROI_EDGE",
+            "ROI_MASK_TOO_BROAD",
+            "ROI_MASK_TOO_SMALL_OR_FRAGMENT"
+          ],
+          "hard_failures": [
+            "VISUAL_FAIL_CROPPED_BY_ROI",
+            "VISUAL_FAIL_FRAGMENT"
+          ]
+        },
+        "keypose_asset_pack": {
+          "status": "VISUAL_FAIL",
+          "record_count": 9,
+          "sample_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/facebook_sam2_1_hiera_large/keypose_asset_pack/eye_open_L_facebook_sam2_1_hiera_large.png",
+          "issues": [
+            "MASK_TOUCHES_ROI_EDGE",
+            "ROI_MASK_TOO_SMALL_OR_FRAGMENT"
+          ],
+          "hard_failures": [
+            "VISUAL_FAIL_CROPPED_BY_ROI",
+            "VISUAL_FAIL_FRAGMENT"
+          ]
+        }
+      },
+      "decision": "REJECT_CURRENT_OUTPUTS",
+      "why": "Large model did not improve the ROI crop/fragment failure pattern."
+    },
+    {
+      "id": "fashion_segformer",
+      "label": "Fashion SegFormer",
+      "role": "outfit semantic hint probe",
+      "report_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/fashion_segformer_probe_report.json",
+      "contact_sheet": null,
+      "status": "BLOCKED_MODEL_PROBE",
+      "runtime_status": null,
+      "quality_status": null,
+      "model_id": "Itbanque/fashion_segformer",
+      "actual_hf_inference_count": 0,
+      "issue_count": null,
+      "hard_failure_count": 0,
+      "error_type": "OSError",
+      "error": "Can't load image processor for 'Itbanque/fashion_segformer'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'Itbanque/fashion_segformer' is the correct path to a directory containing a preprocessor_config.json file",
+      "pack_results": {
+        "hair_pack": null,
+        "outfit_pack": null,
+        "accessory_pack": null,
+        "keypose_asset_pack": null
+      },
+      "decision": "BLOCKED_NOT_SELECTED",
+      "why": "The current HF repo cannot be loaded by the default Transformers image-segmentation pipeline."
+    },
+    {
+      "id": "anime_instance",
+      "label": "AnimeInstance",
+      "role": "anime instance probe",
+      "report_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/anime_instance_probe_report.json",
+      "contact_sheet": null,
+      "status": "BLOCKED_MODEL_PROBE",
+      "runtime_status": null,
+      "quality_status": null,
+      "model_id": "dreMaz/AnimeInstanceSegmentation",
+      "actual_hf_inference_count": 0,
+      "issue_count": null,
+      "hard_failure_count": 0,
+      "error_type": "ValueError",
+      "error": "Unrecognized model in dreMaz/AnimeInstanceSegmentation. Should have a `model_type` key in its config.json, or contain one of the following strings in its name: aimv2, aimv2_vision_model, albert, align, altclip, apertus, arcee, aria, aria_text, audio-spectrogram-transformer, autoformer, aya_vision, bamba, bark, bart, beit, bert, bert-generation, big_bird, bigbird_pegasus, biogpt, bit, bitnet, blenderbot, blenderbot-small, blip, blip-2, blip_2_qformer, bloom, blt, bridgetower, bros, camembert, canine, chameleon, chinese_clip, chinese_clip_vision_model, clap, clip, clip_text_model, clip_vision_model, clipseg, clvp, code_llama, codegen, cohere, cohere2, cohere2_vision, colpali, colqwen2, conditional_detr, convbert, convnext, convnextv2, cpmant, csm, ctrl, cvt, d_fine, dab-detr, dac, data2vec-audio, data2vec-text, data2vec-vision, dbrx, deberta, deberta-v2, decision_transformer, deepseek_v2, deepseek_v3, deepseek_vl, deepseek_vl_hybrid, deformable_detr, deit, depth_anything, depth_pro, deta, detr, dia, diffllama, dinat, dinov2, dinov2_with_registers, dinov3_convnext, dinov3_vit, distilbert, doge, donut-swin, dots1, dpr, dpt, edgetam, edgetam_video, edgetam_vision_model, efficientformer, efficientloftr, efficientnet, electra, emu3, encodec, encoder-decoder, eomt, ernie, ernie4_5, ernie4_5_moe, ernie_m, esm, evolla, exaone4, falcon, falcon_h1, falcon_mamba, fastspeech2_conformer, fastspeech2_conformer_with_hifigan, flaubert, flava, flex_olmo, florence2, fnet, focalnet, fsmt, funnel, fuyu, gemma, gemma2, gemma3, gemma3_text, gemma3n, gemma3n_audio, gemma3n_text, gemma3n_vision, git, glm, glm4, glm4_moe, glm4v, glm4v_moe, glm4v_moe_text, glm4v_text, glpn, got_ocr2, gpt-sw3, gpt2, gpt_bigcode, gpt_neo, gpt_neox, gpt_neox_japanese, gpt_oss, gptj, gptsan-japanese, granite, granite_speech, granitemoe, granitemoehybrid, granitemoeshared, granitevision, graphormer, grounding-dino, groupvit, helium, hgnet_v2, hiera, hubert, hunyuan_v1_dense, hunyuan_v1_moe, ibert, idefics, idefics2, idefics3, idefics3_vision, ijepa, imagegpt, informer, instructblip, instructblipvideo, internvl, internvl_vision, jamba, janus, jetmoe, jukebox, kosmos-2, kosmos-2.5, kyutai_speech_to_text, layoutlm, layoutlmv2, layoutlmv3, led, levit, lfm2, lfm2_vl, lightglue, lilt, llama, llama4, llama4_text, llava, llava_next, llava_next_video, llava_onevision, longcat_flash, longformer, longt5, luke, lxmert, m2m_100, mamba, mamba2, marian, markuplm, mask2former, maskformer, maskformer-swin, mbart, mctct, mega, megatron-bert, metaclip_2, mgp-str, mimi, minimax, ministral, mistral, mistral3, mixtral, mlcd, mllama, mm-grounding-dino, mobilebert, mobilenet_v1, mobilenet_v2, mobilevit, mobilevitv2, modernbert, modernbert-decoder, moonshine, moshi, mpnet, mpt, mra, mt5, musicgen, musicgen_melody, mvp, nat, nemotron, nezha, nllb-moe, nougat, nystromformer, olmo, olmo2, olmo3, olmoe, omdet-turbo, oneformer, open-llama, openai-gpt, opt, ovis2, owlv2, owlvit, paligemma, parakeet_ctc, parakeet_encoder, patchtsmixer, patchtst, pegasus, pegasus_x, perceiver, perception_encoder, perception_lm, persimmon, phi, phi3, phi4_multimodal, phimoe, pix2struct, pixtral, plbart, poolformer, pop2piano, prompt_depth_anything, prophetnet, pvt, pvt_v2, qdqbert, qwen2, qwen2_5_omni, qwen2_5_vl, qwen2_5_vl_text, qwen2_audio, qwen2_audio_encoder, qwen2_moe, qwen2_vl, qwen2_vl_text, qwen3, qwen3_moe, qwen3_next, qwen3_omni_moe, qwen3_vl, qwen3_vl_moe, qwen3_vl_moe_text, qwen3_vl_text, rag, realm, recurrent_gemma, reformer, regnet, rembert, resnet, retribert, roberta, roberta-prelayernorm, roc_bert, roformer, rt_detr, rt_detr_resnet, rt_detr_v2, rwkv, sam, sam2, sam2_hiera_det_model, sam2_video, sam2_vision_model, sam_hq, sam_hq_vision_model, sam_vision_model, seamless_m4t, seamless_m4t_v2, seed_oss, segformer, seggpt, sew, sew-d, shieldgemma2, siglip, siglip2, siglip2_vision_model, siglip_vision_model, smollm3, smolvlm, smolvlm_vision, speech-encoder-decoder, speech_to_text, speech_to_text_2, speecht5, splinter, squeezebert, stablelm, starcoder2, superglue, superpoint, swiftformer, swin, swin2sr, swinv2, switch_transformers, t5, t5gemma, table-transformer, tapas, textnet, time_series_transformer, timesfm, timesformer, timm_backbone, timm_wrapper, trajectory_transformer, transfo-xl, trocr, tvlt, tvp, udop, umt5, unispeech, unispeech-sat, univnet, upernet, van, vaultgemma, video_llava, videomae, vilt, vipllava, vision-encoder-decoder, vision-text-dual-encoder, visual_bert, vit, vit_hybrid, vit_mae, vit_msn, vitdet, vitmatte, vitpose, vitpose_backbone, vits, vivit, vjepa2, voxtral, voxtral_encoder, wav2vec2, wav2vec2-bert, wav2vec2-conformer, wavlm, whisper, xclip, xcodec, xglm, xlm, xlm-prophetnet, xlm-roberta, xlm-roberta-xl, xlnet, xlstm, xmod, yolos, yoso, zamba, zamba2, zoedepth",
+      "pack_results": {
+        "hair_pack": null,
+        "outfit_pack": null,
+        "accessory_pack": null,
+        "keypose_asset_pack": null
+      },
+      "decision": "BLOCKED_NOT_SELECTED",
+      "why": "The current HF repo is not directly loadable by Transformers without a custom legacy wrapper."
+    }
+  ],
+  "pack_decisions": {
+    "base_mannequin": {
+      "primary": "imagegen alpha base",
+      "fallback": "none",
+      "use": "Keep the two-piece rig underlayer: chest and pelvis covered, abdomen visible.",
+      "blocked_by": [],
+      "next_action": "Use as the stable mannequin target for pack fitting."
+    },
+    "hair_pack": {
+      "primary": "ZhengPeng7/BiRefNet_HR",
+      "fallback": "ZhengPeng7/BiRefNet",
+      "use": "Full-pack alpha cleanup, then separate hair-specific splitter for front/side/back/tips.",
+      "blocked_by": [
+        "No actual 18+ strand-level hair split yet."
+      ],
+      "next_action": "Run hair band/contour splitter on the selected BiRefNet HR mask."
+    },
+    "outfit_pack": {
+      "primary": "ZhengPeng7/BiRefNet_HR",
+      "fallback": "ZhengPeng7/BiRefNet",
+      "use": "Full-pack alpha cleanup for outfit pieces; semantic Fashion SegFormer is not selected.",
+      "blocked_by": [
+        "No proven semantic outfit label split from Fashion SegFormer."
+      ],
+      "next_action": "Use geometry/ROI splitter for sleeves, top, frills, ribbons on BiRefNet HR alpha."
+    },
+    "accessory_pack": {
+      "primary": "ZhengPeng7/BiRefNet_HR",
+      "fallback": "ZhengPeng7/BiRefNet",
+      "use": "Use only as full-pack alpha cleanup for now.",
+      "blocked_by": [
+        "Current SAM2 ROI outputs are cropped/fragments.",
+        "Small accessories are too dense for the current layout."
+      ],
+      "next_action": "Regenerate or relayout accessory pack with larger spacing, then retry connected-component or SAM2 ROI."
+    },
+    "keypose_asset_pack": {
+      "primary": "ZhengPeng7/BiRefNet",
+      "fallback": "ZhengPeng7/BiRefNet_HR",
+      "use": "Use only as full-pack alpha cleanup for now; do not split final eye/mouth states from current SAM2 output.",
+      "blocked_by": [
+        "Current SAM2 ROI outputs are cropped/fragments.",
+        "BiRefNet-matting over-expands keypose alpha."
+      ],
+      "next_action": "Regenerate as separate eye keypose pack and mouth keypose pack with larger spacing and no overlap."
+    }
+  },
+  "contact_sheet": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/model_candidate_comparison_contact_sheet.png",
+  "decision_markdown": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/model_candidate_decision.md"
+}

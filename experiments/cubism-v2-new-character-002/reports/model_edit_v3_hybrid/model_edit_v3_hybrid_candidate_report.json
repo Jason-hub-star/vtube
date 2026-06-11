@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T02:31:39.111204+00:00",
+  "experiment_id": "cubism-v2-new-character-002",
+  "candidate_id": "model_edit_v3_hybrid_eye_filtered_mouth_v2",
+  "status": "MODEL_EDIT_HYBRID_CANDIDATE_READY_FOR_VALIDATOR",
+  "source_layers": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers",
+  "output_layers": "experiments/cubism-v2-new-character-002/model_edit_v3_hybrid/normalized_layers",
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/model_edit_v3_hybrid/model_edit_v3_hybrid_contact_sheet.png",
+  "filtered_eye_layers": [
+    "eye_L_closed_lid",
+    "eye_L_half_closed_lid",
+    "eye_L_mostly_closed_lid",
+    "eye_L_open",
+    "eye_R_closed_lid",
+    "eye_R_half_closed_lid",
+    "eye_R_mostly_closed_lid",
+    "eye_R_open"
+  ],
+  "note": "Hybrid keeps v2 clean-base and mouth layers, filters only eye expression layers to reduce assembly skin-patch boundaries."
+}

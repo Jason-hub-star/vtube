@@ -1,0 +1,708 @@
+{
+  "schema_version": 1,
+  "experiment_id": "see-through-mps-compat-002",
+  "generated_at": "2026-06-04T07:30:58.984227+00:00",
+  "source_review_manifest": "review_app/review_manifest.json",
+  "targets": [
+    {
+      "part_id": "seethrough_mps__L_brow",
+      "ko_name": "왼쪽 눈썹",
+      "group": "brows",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__L_brow.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "left brow only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "lash"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__R_brow",
+      "ko_name": "오른쪽 눈썹",
+      "group": "brows",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__R_brow.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "right brow only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "lash"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__L_eye_white",
+      "ko_name": "왼쪽 흰자",
+      "group": "eyes",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__L_eye_white.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "left sclera only"
+      ],
+      "forbidden_contamination": [
+        "iris",
+        "pupil",
+        "lash",
+        "hair",
+        "skin"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__L_iris",
+      "ko_name": "왼쪽 홍채",
+      "group": "eyes",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__L_iris.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "left iris color only"
+      ],
+      "forbidden_contamination": [
+        "pupil",
+        "highlight",
+        "eye_white",
+        "lash"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__L_upper_lash",
+      "ko_name": "왼쪽 윗속눈썹",
+      "group": "eyes",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__L_upper_lash.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "upper lash line only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "eye_white",
+        "iris"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__R_eye_white",
+      "ko_name": "오른쪽 흰자",
+      "group": "eyes",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__R_eye_white.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "right sclera only"
+      ],
+      "forbidden_contamination": [
+        "iris",
+        "pupil",
+        "lash",
+        "hair",
+        "skin"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__R_iris",
+      "ko_name": "오른쪽 홍채",
+      "group": "eyes",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__R_iris.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "right iris color only"
+      ],
+      "forbidden_contamination": [
+        "pupil",
+        "highlight",
+        "eye_white",
+        "lash"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__R_upper_lash",
+      "ko_name": "오른쪽 윗속눈썹",
+      "group": "eyes",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__R_upper_lash.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "upper lash line only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "eye_white",
+        "iris"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__face_base",
+      "ko_name": "얼굴 베이스",
+      "group": "face",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__face_base.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "visible face skin and face outline"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "eyes",
+        "mouth"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps_clean__face_base",
+      "ko_name": "얼굴 베이스",
+      "group": "face",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/cleanup_layers/seethrough_mps_clean__face_base.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "visible face skin and face outline"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "eyes",
+        "mouth"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__back_hair",
+      "ko_name": "뒷머리",
+      "group": "hair",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__back_hair.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "rear hair mass only"
+      ],
+      "forbidden_contamination": [
+        "face",
+        "neck",
+        "front_hair",
+        "side_hair"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__front_hair",
+      "ko_name": "앞머리",
+      "group": "hair",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__front_hair.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "front bangs only"
+      ],
+      "forbidden_contamination": [
+        "face",
+        "eye",
+        "brow",
+        "side_hair",
+        "back_hair"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__mouth_line",
+      "ko_name": "입 라인",
+      "group": "mouth",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__mouth_line.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "mouth outline and lip line only"
+      ],
+      "forbidden_contamination": [
+        "teeth",
+        "tongue",
+        "skin"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__L_ear_outer",
+      "ko_name": "왼쪽 귀 바깥",
+      "group": "ears",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__L_ear_outer.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "left animal ear outer fur only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "ear_inner",
+        "accessory"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__R_ear_outer",
+      "ko_name": "오른쪽 귀 바깥",
+      "group": "ears",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__R_ear_outer.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "right animal ear outer fur only"
+      ],
+      "forbidden_contamination": [
+        "hair",
+        "skin",
+        "ear_inner",
+        "accessory"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__neck",
+      "ko_name": "목",
+      "group": "face",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__neck.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "neck skin only"
+      ],
+      "forbidden_contamination": [
+        "clothes",
+        "hair",
+        "face_outline"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps_clean__neck",
+      "ko_name": "목",
+      "group": "face",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/cleanup_layers/seethrough_mps_clean__neck.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "neck skin only"
+      ],
+      "forbidden_contamination": [
+        "clothes",
+        "hair",
+        "face_outline"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__clothes",
+      "ko_name": "의상",
+      "group": "body",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__clothes.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "clothing pixels only"
+      ],
+      "forbidden_contamination": [
+        "skin",
+        "hair",
+        "face"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps_clean__clothes",
+      "ko_name": "의상",
+      "group": "body",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/cleanup_layers/seethrough_mps_clean__clothes.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "clothing pixels only"
+      ],
+      "forbidden_contamination": [
+        "skin",
+        "hair",
+        "face"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__raw_handwear",
+      "ko_name": "seethrough mps  raw handwear",
+      "group": "overlays",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_handwear.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__raw_handwear_13",
+      "ko_name": "seethrough mps  raw handwear 13",
+      "group": "overlays",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_handwear_13.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__headwear_reference",
+      "ko_name": "seethrough mps  headwear reference",
+      "group": "overlays",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__headwear_reference.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__nose_reference",
+      "ko_name": "seethrough mps  nose reference",
+      "group": "overlays",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__nose_reference.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__choker",
+      "ko_name": "초커",
+      "group": "accessory",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__choker.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "black choker band only"
+      ],
+      "forbidden_contamination": [
+        "neck",
+        "clothes",
+        "gold_ornaments",
+        "hair"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__ear_inner",
+      "ko_name": "seethrough mps  ear inner",
+      "group": "overlays",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__ear_inner.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__object_reference",
+      "ko_name": "seethrough mps  object reference",
+      "group": "overlays",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__object_reference.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__raw_bottomwear",
+      "ko_name": "seethrough mps  raw bottomwear",
+      "group": "overlays",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_bottomwear.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__raw_eyewear",
+      "ko_name": "seethrough mps  raw eyewear",
+      "group": "overlays",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_eyewear.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__raw_footwear",
+      "ko_name": "seethrough mps  raw footwear",
+      "group": "overlays",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_footwear.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__raw_legwear",
+      "ko_name": "seethrough mps  raw legwear",
+      "group": "overlays",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_legwear.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__tail_reference",
+      "ko_name": "seethrough mps  tail reference",
+      "group": "overlays",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__tail_reference.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps__wings_reference",
+      "ko_name": "seethrough mps  wings reference",
+      "group": "overlays",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__wings_reference.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps_roi__clothes",
+      "ko_name": "의상",
+      "group": "body",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/clothes-roi-cleanup-001/layers/seethrough_mps_roi__clothes.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "clothing pixels only"
+      ],
+      "forbidden_contamination": [
+        "skin",
+        "hair",
+        "face"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps_manual__neck",
+      "ko_name": "목",
+      "group": "face",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/manual_layers/seethrough_mps_manual__neck.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "neck skin only"
+      ],
+      "forbidden_contamination": [
+        "clothes",
+        "hair",
+        "face_outline"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps_roi__neck",
+      "ko_name": "목",
+      "group": "face",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/neck-roi-cleanup-001/layers/seethrough_mps_roi__neck.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "neck skin only"
+      ],
+      "forbidden_contamination": [
+        "clothes",
+        "hair",
+        "face_outline"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps_clean__mouth_line",
+      "ko_name": "입 라인",
+      "group": "mouth",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/see-through-mps-compat-002/cleanup_layers/seethrough_mps_clean__mouth_line.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "mouth outline and lip line only"
+      ],
+      "forbidden_contamination": [
+        "teeth",
+        "tongue",
+        "skin"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps_roi__mouth_inner",
+      "ko_name": "입 안쪽",
+      "group": "mouth",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/mouth-roi-cleanup-001/layers/seethrough_mps_roi__mouth_inner.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "dark mouth cavity only"
+      ],
+      "forbidden_contamination": [
+        "teeth",
+        "tongue",
+        "skin",
+        "cropped_line"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps_roi__mouth_line",
+      "ko_name": "입 라인",
+      "group": "mouth",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/mouth-roi-cleanup-001/layers/seethrough_mps_roi__mouth_line.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "mouth outline and lip line only"
+      ],
+      "forbidden_contamination": [
+        "teeth",
+        "tongue",
+        "skin"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps_roi__teeth",
+      "ko_name": "치아",
+      "group": "mouth",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/mouth-roi-cleanup-001/layers/seethrough_mps_roi__teeth.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "teeth only"
+      ],
+      "forbidden_contamination": [
+        "tongue",
+        "mouth_line",
+        "skin"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps_roi__tongue",
+      "ko_name": "혀",
+      "group": "mouth",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/mouth-roi-cleanup-001/layers/seethrough_mps_roi__tongue.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "tongue only"
+      ],
+      "forbidden_contamination": [
+        "teeth",
+        "mouth_line",
+        "skin"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    },
+    {
+      "part_id": "seethrough_mps_roi__neck_underpaint",
+      "ko_name": "seethrough mps roi  neck underpaint",
+      "group": "overlays",
+      "section": "mps_compat_candidates",
+      "source_image": "/assets/experiments/neck-roi-cleanup-001/layers/seethrough_mps_roi__neck_underpaint.png",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "reference key-pose guide only"
+      ],
+      "forbidden_contamination": [
+        "production layer pixels",
+        "guide overlay pixels"
+      ],
+      "suggested_generation_mode": "seethrough_cleanup_or_schema_remap"
+    }
+  ],
+  "gate": "Mac MPS compatibility candidates are smoke evidence first; keep PSD-excluded until human O review and Cubism gate."
+}

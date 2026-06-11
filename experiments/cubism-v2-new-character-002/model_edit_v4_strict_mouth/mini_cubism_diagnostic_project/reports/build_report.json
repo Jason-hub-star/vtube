@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "status": "BUILT_PENDING_VALIDATION",
+  "generated_at": "2026-06-09T02:52:47.415234+00:00",
+  "project": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v4_strict_mouth/mini_cubism_diagnostic_project",
+  "counts": {
+    "parts": 21,
+    "meshes": 21,
+    "deformers": 6,
+    "parameters": 8,
+    "keyform_bindings": 6,
+    "part_opacity_keyframes": 19
+  }
+}

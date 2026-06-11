@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "experiment_id": "see-through-mps-compat-002",
+  "generated_at": "2026-06-04T07:30:58.936483+00:00",
+  "layers": [
+    {
+      "layer_name": "seethrough_mps_roi__mouth_line",
+      "original_part_id": "mouth_line",
+      "raw_tag": "roi_cleanup:mouth:mouth_line",
+      "role": "mouth_line",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__mouth_line.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mouth-roi-cleanup-001/layers/seethrough_mps_roi__mouth_line.png",
+      "relative_output_path": null,
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        983,
+        923,
+        78,
+        47
+      ],
+      "alpha_coverage": 0.173759,
+      "draw_order": 410,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "roi_cleanup_experiment_id": "mouth-roi-cleanup-001",
+      "notes": "Mouth ROI cleanup: line/edge pixels only. Human O review is required before PSD inclusion."
+    },
+    {
+      "layer_name": "seethrough_mps_roi__mouth_inner",
+      "original_part_id": "mouth_inner",
+      "raw_tag": "roi_cleanup:mouth:mouth_inner",
+      "role": "mouth_inner",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__mouth_line.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mouth-roi-cleanup-001/layers/seethrough_mps_roi__mouth_inner.png",
+      "relative_output_path": null,
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        996,
+        927,
+        58,
+        39
+      ],
+      "alpha_coverage": 0.067639,
+      "draw_order": 405,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "roi_cleanup_experiment_id": "mouth-roi-cleanup-001",
+      "notes": "Mouth ROI cleanup: inner mouth fill candidate. Human O review is required before PSD inclusion."
+    },
+    {
+      "layer_name": "seethrough_mps_roi__teeth",
+      "original_part_id": "teeth",
+      "raw_tag": "roi_cleanup:mouth:teeth",
+      "role": "teeth",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__mouth_line.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mouth-roi-cleanup-001/layers/seethrough_mps_roi__teeth.png",
+      "relative_output_path": null,
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        987,
+        927,
+        68,
+        39
+      ],
+      "alpha_coverage": 0.597662,
+      "draw_order": 415,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "roi_cleanup_experiment_id": "mouth-roi-cleanup-001",
+      "notes": "Mouth ROI cleanup: bright teeth candidate if present. Human O review is required before PSD inclusion."
+    },
+    {
+      "layer_name": "seethrough_mps_roi__tongue",
+      "original_part_id": "tongue",
+      "raw_tag": "roi_cleanup:mouth:tongue",
+      "role": "tongue",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__mouth_line.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mouth-roi-cleanup-001/layers/seethrough_mps_roi__tongue.png",
+      "relative_output_path": null,
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        986,
+        926,
+        71,
+        42
+      ],
+      "alpha_coverage": 0.142522,
+      "draw_order": 416,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "roi_cleanup_experiment_id": "mouth-roi-cleanup-001",
+      "notes": "Mouth ROI cleanup: pink tongue candidate if present. Human O review is required before PSD inclusion."
+    },
+    {
+      "layer_name": "seethrough_mps_roi__neck",
+      "original_part_id": "neck",
+      "raw_tag": "roi_cleanup:neck",
+      "role": "neck",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/manual_layers/seethrough_mps_manual__neck.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/neck-roi-cleanup-001/layers/seethrough_mps_roi__neck.png",
+      "relative_output_path": null,
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        921,
+        1007,
+        200,
+        108
+      ],
+      "alpha_coverage": 0.585185,
+      "draw_order": 200,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "roi_cleanup_experiment_id": "neck-roi-cleanup-001",
+      "notes": "Neck ROI cleanup: face, mouth, and clothes masks are excluded. Human O review is required before PSD inclusion."
+    },
+    {
+      "layer_name": "seethrough_mps_roi__neck_underpaint",
+      "original_part_id": "neck_underpaint",
+      "raw_tag": "roi_cleanup:neck_underpaint",
+      "role": "underpaint",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/manual_layers/seethrough_mps_manual__neck.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/neck-roi-cleanup-001/layers/seethrough_mps_roi__neck_underpaint.png",
+      "relative_output_path": null,
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        904,
+        990,
+        234,
+        142
+      ],
+      "alpha_coverage": 0.782984,
+      "draw_order": 190,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "roi_cleanup_experiment_id": "neck-roi-cleanup-001",
+      "notes": "Neck ROI underpaint: slightly expanded skin fill for Cubism deformation margin. Human O review is required before PSD inclusion."
+    },
+    {
+      "layer_name": "seethrough_mps_roi__clothes",
+      "original_part_id": "clothes",
+      "raw_tag": "roi_cleanup:clothes",
+      "role": "clothes",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__clothes.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/clothes-roi-cleanup-001/layers/seethrough_mps_roi__clothes.png",
+      "relative_output_path": null,
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        23,
+        1061,
+        1991,
+        987
+      ],
+      "alpha_coverage": 0.341784,
+      "draw_order": 210,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "roi_cleanup_experiment_id": "clothes-roi-cleanup-001",
+      "notes": "Clothes ROI cleanup: skin, face, neck, and front hair are excluded while dark/gold clothing pixels are kept. Human O review is required before PSD inclusion."
+    }
+  ]
+}

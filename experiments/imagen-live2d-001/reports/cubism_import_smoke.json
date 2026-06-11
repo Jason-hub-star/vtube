@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "experiment_id": "imagen-live2d-001",
+  "date": "2026-06-04T08:45:30Z",
+  "cubism_version": "Live2D Cubism Editor 5.3.01",
+  "input_psd": "experiments/imagen-live2d-001/import_ready_candidate.psd",
+  "cubism_import_success": true,
+  "layers_flattened": false,
+  "forced_all_o_review": true,
+  "forced_front_hair_arms": true,
+  "review_gate_note": "주인님 지시로 모든 후보를 임시 O 처리했고, 추가로 앞머리와 양팔도 강제 production 후보로 승격했다. 이 결과는 Cubism import 기술 smoke PASS이며, 파츠 품질 최종 승인이나 리깅 품질 PASS는 아니다.",
+  "psd_gate_accepted_layer_count": 19,
+  "psd_actual_layer_count": 19,
+  "cubism_visible_layer_count": 19,
+  "forced_layers_included": [
+    "front_hair",
+    "R_arm",
+    "L_arm"
+  ],
+  "visible_layer_evidence": [
+    "front_hair",
+    "L_brow",
+    "R_brow",
+    "L_upper_lash",
+    "R_upper_lash",
+    "L_iris",
+    "R_iris",
+    "L_eye_white",
+    "R_eye_white",
+    "mouth_line",
+    "face_base",
+    "L_ear_outer",
+    "R_ear_outer",
+    "choker",
+    "L_arm",
+    "R_arm",
+    "clothes",
+    "neck",
+    "back_hair"
+  ],
+  "known_quality_risks": [
+    "front_hair is a forced extraction from the canonical image because the original See-through front hair layer was zero-alpha.",
+    "L_arm and R_arm are forced from See-through handwear-r/l outputs and may represent sleeves/arm-side silhouette rather than clean anatomical arms.",
+    "mouth_line is accepted only by forced-all-O pipeline progress, not by final visual quality review.",
+    "clothes, neck, hair, and face boundaries still need quality review before serious ArtMesh/Deformer work.",
+    "This smoke only proves that the PSD can be opened by Cubism as separate parts."
+  ],
+  "evidence_screenshot": "experiments/imagen-live2d-001/reports/cubism_smoke_evidence/cubism_import_candidate_forced_front_hair_arms_19_layer_attempt.png",
+  "reviewer": "Codex screenshot smoke",
+  "notes": [
+    "Cubism Editor 5.3.01 opened the rebuilt import_ready_candidate.psd.",
+    "The left Parts panel shows individual layer entries including front_hair, L_arm, and R_arm, so the PSD was not flattened.",
+    "PSD metadata check found RGB 8-bit canvas and 19 concrete PSD child layers.",
+    "This is a forced MVP pass for pipeline progression, not a final art-quality pass."
+  ]
+}

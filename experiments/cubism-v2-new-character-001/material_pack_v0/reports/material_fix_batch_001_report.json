@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-08T05:49:15.813525+00:00",
+  "status": "PASS_FIX_BATCH_001_APPLIED",
+  "scope": {
+    "regenerated_eye_mouth_parts": [
+      "eye_L_highlight",
+      "eye_R_highlight",
+      "eye_L_closed_lid",
+      "eye_R_closed_lid",
+      "mouth_inner",
+      "mouth_teeth",
+      "mouth_tongue",
+      "mouth_line",
+      "mouth_upper_lip_mask",
+      "mouth_lower_lip_mask",
+      "mouth_corner_L",
+      "mouth_corner_R"
+    ],
+    "underpaint_parts_trimmed": [
+      "body_underpaint",
+      "neck_shadow_underpaint",
+      "arm_L_underpaint",
+      "arm_R_underpaint",
+      "face_underpaint_L",
+      "face_underpaint_R",
+      "eye_L_underpaint",
+      "eye_R_underpaint",
+      "hair_back_underpaint"
+    ],
+    "semantic_mask_cleanup_parts": [
+      "torso_base",
+      "neck",
+      "shoulder_L",
+      "shoulder_R",
+      "face_base",
+      "nose",
+      "collar_front",
+      "chest_cloth_base"
+    ]
+  },
+  "evidence": {
+    "manifest": "experiments/cubism-v2-new-character-001/material_pack_v0/material_asset_manifest.json",
+    "validation_report": "experiments/cubism-v2-new-character-001/material_pack_v0/reports/material_asset_validation_report.json",
+    "contact_sheet": "experiments/cubism-v2-new-character-001/material_pack_v0/reports/material_contact_sheet.png",
+    "review_summary": "experiments/cubism-v2-new-character-001/material_pack_v0/reports/material_human_review_summary.json",
+    "fix_queue": "experiments/cubism-v2-new-character-001/material_pack_v0/reports/material_review_fix_queue.json",
+    "browser_screenshot": "cubism-v2-material-fix-batch-001.png"
+  },
+  "checks": {
+    "validation_status": "PASS_MATERIAL_ASSET_DRAFT_READY",
+    "generated_png_layers": 62,
+    "merged_metadata_entries": 2,
+    "critical_missing_count": 0,
+    "psd_layer_count": 62,
+    "regenerate_verdict_count_after_batch": 0,
+    "fix_queue_count_after_batch": 53
+  },
+  "source_type_after_batch": {
+    "eye_L_highlight": "DERIVED_KEYPOSE",
+    "eye_R_highlight": "DERIVED_KEYPOSE",
+    "eye_L_closed_lid": "DERIVED_KEYPOSE",
+    "eye_R_closed_lid": "DERIVED_KEYPOSE",
+    "mouth_inner": "DERIVED_KEYPOSE",
+    "mouth_teeth": "DERIVED_KEYPOSE",
+    "mouth_tongue": "DERIVED_KEYPOSE",
+    "mouth_line": "DERIVED_KEYPOSE",
+    "mouth_upper_lip_mask": "DERIVED_KEYPOSE",
+    "mouth_lower_lip_mask": "DERIVED_KEYPOSE",
+    "mouth_corner_L": "DERIVED_KEYPOSE",
+    "mouth_corner_R": "DERIVED_KEYPOSE"
+  },
+  "alpha_coverage_after_batch": {
+    "eye_L_highlight": 0.556522,
+    "eye_R_highlight": 0.556522,
+    "eye_L_closed_lid": 0.19449,
+    "eye_R_closed_lid": 0.19449,
+    "mouth_inner": 0.797232,
+    "mouth_teeth": 0.977757,
+    "mouth_tongue": 0.809524,
+    "mouth_line": 0.290984,
+    "mouth_upper_lip_mask": 0.243844,
+    "mouth_lower_lip_mask": 0.247162,
+    "mouth_corner_L": 0.471429,
+    "mouth_corner_R": 0.475,
+    "body_underpaint": 0.972476,
+    "neck_shadow_underpaint": 0.908402,
+    "arm_L_underpaint": 0.964642,
+    "arm_R_underpaint": 0.96642,
+    "face_underpaint_L": 0.778155,
+    "face_underpaint_R": 0.778155,
+    "eye_L_underpaint": 0.79486,
+    "eye_R_underpaint": 0.79486,
+    "hair_back_underpaint": 0.985907
+  },
+  "interpretation_ko": [
+    "REGENERATE 12개는 source cut이 아니라 재생성/derived detail로 처리되어 REGENERATE 0으로 내려갔다.",
+    "underpaint 9개는 bbox와 alpha/color 처리를 줄여 블록감을 완화했다.",
+    "큰 몸/얼굴/의상 파츠는 bbox를 축소했지만 아직 semantic mask cleanup 후보로 남긴다.",
+    "fix queue 53은 실패라기보다 Cubism import 전 미세수정 대기열이다."
+  ]
+}

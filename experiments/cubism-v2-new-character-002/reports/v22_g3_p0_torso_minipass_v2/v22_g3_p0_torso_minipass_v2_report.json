@@ -1,0 +1,368 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T15:48:47.120886+00:00",
+  "status": "P0_TORSO_MINIPASS_V2_CANDIDATE_READY_FOR_G3_REVIEW",
+  "current_b5_candidate": "experiments/cubism-v2-new-character-002/reports/v22_b5_provisional_minipass_candidate/v22_b5_provisional_minipass_candidate_report.json",
+  "g3_blocker_reduction_packet": "experiments/cubism-v2-new-character-002/reports/v22_g3_b4_b5_blocker_reduction/v22_g3_b4_b5_blocker_reduction_packet.json",
+  "source_image": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/new_character_002_source_front.raw.png",
+  "b5_raw_reference": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/raw_outputs/b5_body_clothing_pack_reference_001.png",
+  "output_dir": "experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers",
+  "qa_sheet": "experiments/cubism-v2-new-character-002/reports/v22_g3_p0_torso_minipass_v2/v22_g3_p0_torso_minipass_v2_overlay_qa.png",
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/v22_g3_p0_torso_minipass_v2/v22_g3_p0_torso_minipass_v2_contact_sheet.png",
+  "torso_metrics": {
+    "old_bbox": [
+      534,
+      915,
+      1547,
+      1927
+    ],
+    "new_bbox": [
+      504,
+      874,
+      1500,
+      1342
+    ],
+    "old_alpha_coverage": 0.20855403,
+    "new_alpha_coverage": 0.05906725,
+    "old_alpha_sum": 169789605,
+    "new_alpha_sum": 60697770,
+    "alpha_sum_ratio": 0.357488,
+    "verdict": "P0_TORSO_MINIPASS_V2_IMPROVEMENT_CANDIDATE_REVIEW_REQUIRED",
+    "improvement_candidate": true
+  },
+  "entries": [
+    {
+      "part_id": "torso_base",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/torso_base.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/torso_base.png",
+      "candidate_status": "P0_TORSO_MINIPASS_V2_REBUILT_FROM_B5_RAW_SKIN_MASK",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        504,
+        874,
+        1500,
+        1342
+      ],
+      "alpha_coverage": 0.05906725
+    },
+    {
+      "part_id": "neck",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/neck.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/neck.png",
+      "candidate_status": "COPIED_FROM_B5_PROVISIONAL_MINIPASS",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        882,
+        701,
+        1167,
+        1090
+      ],
+      "alpha_coverage": 0.01887441
+    },
+    {
+      "part_id": "shoulder_L",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/shoulder_L.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/shoulder_L.png",
+      "candidate_status": "COPIED_FROM_B5_PROVISIONAL_MINIPASS",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        588,
+        1020,
+        861,
+        1214
+      ],
+      "alpha_coverage": 0.00211596
+    },
+    {
+      "part_id": "shoulder_R",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/shoulder_R.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/shoulder_R.png",
+      "candidate_status": "COPIED_FROM_B5_PROVISIONAL_MINIPASS",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1209,
+        1104,
+        1454,
+        1216
+      ],
+      "alpha_coverage": 0.00183344
+    },
+    {
+      "part_id": "arm_L_upper_simple",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/arm_L_upper_simple.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/arm_L_upper_simple.png",
+      "candidate_status": "COPIED_FROM_B5_PROVISIONAL_MINIPASS",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        485,
+        1115,
+        695,
+        1786
+      ],
+      "alpha_coverage": 0.01823521
+    },
+    {
+      "part_id": "arm_R_upper_simple",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/arm_R_upper_simple.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/arm_R_upper_simple.png",
+      "candidate_status": "COPIED_FROM_B5_PROVISIONAL_MINIPASS",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1334,
+        1116,
+        1521,
+        1786
+      ],
+      "alpha_coverage": 0.01637411
+    },
+    {
+      "part_id": "collar_front",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/collar_front.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/collar_front.png",
+      "candidate_status": "COPIED_FROM_B5_PROVISIONAL_MINIPASS",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        748,
+        1078,
+        1300,
+        1198
+      ],
+      "alpha_coverage": 0.00627613
+    },
+    {
+      "part_id": "collar_shadow",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/collar_shadow.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/collar_shadow.png",
+      "candidate_status": "COPIED_FROM_B5_PROVISIONAL_MINIPASS",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        753,
+        1178,
+        1295,
+        1269
+      ],
+      "alpha_coverage": 0.00243759
+    },
+    {
+      "part_id": "chest_cloth_base",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/chest_cloth_base.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/chest_cloth_base.png",
+      "candidate_status": "COPIED_FROM_B5_PROVISIONAL_MINIPASS",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        698,
+        1246,
+        1350,
+        1546
+      ],
+      "alpha_coverage": 0.01802492
+    },
+    {
+      "part_id": "chest_cloth_shadow",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/chest_cloth_shadow.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/chest_cloth_shadow.png",
+      "candidate_status": "COPIED_FROM_B5_PROVISIONAL_MINIPASS",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        733,
+        1481,
+        1288,
+        1641
+      ],
+      "alpha_coverage": 0.00590897
+    },
+    {
+      "part_id": "brow_L",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/brow_L.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/brow_L.png",
+      "candidate_status": "COPIED_FROM_B5_PROVISIONAL_MINIPASS",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        779,
+        631,
+        924,
+        659
+      ],
+      "alpha_coverage": 0.00030065
+    },
+    {
+      "part_id": "brow_R",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/brow_R.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/brow_R.png",
+      "candidate_status": "COPIED_FROM_B5_PROVISIONAL_MINIPASS",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1103,
+        631,
+        1247,
+        659
+      ],
+      "alpha_coverage": 0.00030589
+    },
+    {
+      "part_id": "nose",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/nose.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/nose.png",
+      "candidate_status": "COPIED_FROM_B5_PROVISIONAL_MINIPASS",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1003,
+        757,
+        1046,
+        823
+      ],
+      "alpha_coverage": 0.00052786
+    },
+    {
+      "part_id": "cheek_L",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/cheek_L.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/cheek_L.png",
+      "candidate_status": "COPIED_FROM_B5_PROVISIONAL_MINIPASS",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        752,
+        744,
+        917,
+        844
+      ],
+      "alpha_coverage": 0.0030582
+    },
+    {
+      "part_id": "cheek_R",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/cheek_R.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/cheek_R.png",
+      "candidate_status": "COPIED_FROM_B5_PROVISIONAL_MINIPASS",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1129,
+        744,
+        1294,
+        844
+      ],
+      "alpha_coverage": 0.00305676
+    },
+    {
+      "part_id": "face_shadow_L",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/face_shadow_L.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/face_shadow_L.png",
+      "candidate_status": "COPIED_FROM_B5_PROVISIONAL_MINIPASS",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        721,
+        678,
+        809,
+        883
+      ],
+      "alpha_coverage": 0.00281453
+    },
+    {
+      "part_id": "face_shadow_R",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b5_provisional_minipass_candidate/normalized_layers/face_shadow_R.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/face_shadow_R.png",
+      "candidate_status": "COPIED_FROM_B5_PROVISIONAL_MINIPASS",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1211,
+        680,
+        1291,
+        881
+      ],
+      "alpha_coverage": 0.00274563
+    }
+  ],
+  "decision": "P0 torso minipass v2 is an improvement candidate because its alpha is tighter and derived from the B5 raw skin/upper-torso area, but it remains review-required and cannot promote material PASS.",
+  "next_action": [
+    "Use the v2 torso QA sheet to decide whether to rebuild the corrected 64-part manifest with this torso candidate.",
+    "Keep G3 visual overlay blocked until P0 and P1 rows are resolved.",
+    "Do not promote material PASS, ParamHairFront, Mini Cubism, or real Cubism from this candidate."
+  ],
+  "self_review": {
+    "g3_blocker_status": "G3_B4_B5_BLOCKER_REDUCTION_PACKET_READY_PRIMARY_10_MATERIAL_BLOCKED",
+    "current_b5_status": "B5_PROVISIONAL_MINIPASS_CANDIDATE_READY_FOR_OVERLAY_QA",
+    "entry_count": 17,
+    "all_layers_rgba": true,
+    "all_layers_2048": true,
+    "all_layers_nonempty": true,
+    "torso_improvement_candidate": true,
+    "old_alpha_coverage": 0.20855403,
+    "new_alpha_coverage": 0.05906725,
+    "alpha_sum_ratio": 0.357488,
+    "qa_sheet_exists": true,
+    "contact_sheet_exists": true,
+    "material_pass_blocked": true,
+    "visual_promotion_blocked": true,
+    "param_hair_front_hidden": true,
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true,
+    "not_owner_approval": true,
+    "status": "PASS"
+  }
+}

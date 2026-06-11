@@ -1,0 +1,405 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-06T13:41:11.681905+00:00",
+  "status": "PASS",
+  "thresholds": {
+    "art_meshes": 20,
+    "parameters": 15,
+    "warp_deformers": 8,
+    "rotation_deformers": 1,
+    "keyform_bindings": 20,
+    "physics_groups": 1
+  },
+  "false_pass_count": 0,
+  "failed_case_count": 0,
+  "scores": {
+    "structure_score": {
+      "passed": 12,
+      "total": 12,
+      "ratio": 1.0
+    },
+    "golden_score": {
+      "passed": 12,
+      "total": 12,
+      "ratio": 1.0
+    },
+    "bad_score": {
+      "passed": 1,
+      "total": 1,
+      "ratio": 1.0
+    },
+    "mutation_score": {
+      "passed": 8,
+      "total": 8,
+      "ratio": 1.0
+    },
+    "part_score": {
+      "passed": 8,
+      "total": 8,
+      "ratio": 1.0
+    },
+    "motion_score": "NOT_SCORED_NO_HUMAN_OR_RUNTIME_MOTION_SET",
+    "human_review_score": "NOT_SCORED_NO_SAVED_HUMAN_CALIBRATION_SET"
+  },
+  "confusion_matrix": {
+    "PASS": {
+      "PASS": 12
+    },
+    "REVISE": {
+      "REVISE": 9
+    }
+  },
+  "source_reports": {
+    "official_summary": "experiments/reference-model-structure-001/reports/reference_model_structure_summary.combined.json",
+    "success_pattern_spec": "experiments/reference-model-structure-001/reports/cubism_success_pattern_spec.json",
+    "shallow_cmo3_report": "experiments/imagen-live2d-001/reports/cmo3_structure_report.json",
+    "fixture_score": "experiments/cubism-v2-validator-fixtures-001/reports/validator_fixture_score_report.json"
+  },
+  "cases": [
+    {
+      "case_id": "golden__mao_pro_ko_mao_pro_t06",
+      "set": "golden",
+      "expected_class": "PASS",
+      "observed_class": "PASS",
+      "model_name": "mao_pro_t06",
+      "official_profile_key": "mao",
+      "values": {
+        "art_meshes": 262,
+        "parameters": 128,
+        "warp_deformers": 116,
+        "rotation_deformers": 59,
+        "keyform_bindings": 497,
+        "physics_groups": 16
+      },
+      "status": "PASS",
+      "source_report": "experiments/reference-model-structure-001/official_combined_analysis/models/mao_pro_ko_mao_pro_t06/reference_model_report.json"
+    },
+    {
+      "case_id": "golden__ren_pro_ko_ren_t01",
+      "set": "golden",
+      "expected_class": "PASS",
+      "observed_class": "PASS",
+      "model_name": "ren_t01",
+      "official_profile_key": "ren",
+      "values": {
+        "art_meshes": 201,
+        "parameters": 73,
+        "warp_deformers": 128,
+        "rotation_deformers": 22,
+        "keyform_bindings": 470,
+        "physics_groups": 16
+      },
+      "status": "PASS",
+      "source_report": "experiments/reference-model-structure-001/official_combined_analysis/models/ren_pro_ko_ren_t01/reference_model_report.json"
+    },
+    {
+      "case_id": "golden__miara_pro_en_miara_pro_t04",
+      "set": "golden",
+      "expected_class": "PASS",
+      "observed_class": "PASS",
+      "model_name": "miara_pro_t04",
+      "official_profile_key": "miara",
+      "values": {
+        "art_meshes": 245,
+        "parameters": 138,
+        "warp_deformers": 93,
+        "rotation_deformers": 107,
+        "keyform_bindings": 467,
+        "physics_groups": 19
+      },
+      "status": "PASS",
+      "source_report": "experiments/reference-model-structure-001/official_combined_analysis/models/miara_pro_en_miara_pro_t04/reference_model_report.json"
+    },
+    {
+      "case_id": "golden__natori_pro_ko_natori_pro_t06",
+      "set": "golden",
+      "expected_class": "PASS",
+      "observed_class": "PASS",
+      "model_name": "natori_pro_t06",
+      "official_profile_key": "natori",
+      "values": {
+        "art_meshes": 176,
+        "parameters": 96,
+        "warp_deformers": 128,
+        "rotation_deformers": 52,
+        "keyform_bindings": 407,
+        "physics_groups": 11
+      },
+      "status": "PASS",
+      "source_report": "experiments/reference-model-structure-001/official_combined_analysis/models/natori_pro_ko_natori_pro_t06/reference_model_report.json"
+    },
+    {
+      "case_id": "golden__shizuku_shizuku_t02",
+      "set": "golden",
+      "expected_class": "PASS",
+      "observed_class": "PASS",
+      "model_name": "shizuku_t02",
+      "official_profile_key": "shizuku",
+      "values": {
+        "art_meshes": 187,
+        "parameters": 45,
+        "warp_deformers": 156,
+        "rotation_deformers": 27,
+        "keyform_bindings": 358,
+        "physics_groups": 3
+      },
+      "status": "PASS",
+      "source_report": "experiments/reference-model-structure-001/official_combined_analysis/models/shizuku_shizuku_t02/reference_model_report.json"
+    },
+    {
+      "case_id": "golden__hiyori_pro_ko_hiyori_pro_t11",
+      "set": "golden",
+      "expected_class": "PASS",
+      "observed_class": "PASS",
+      "model_name": "hiyori_pro_t11",
+      "official_profile_key": "hiyori",
+      "values": {
+        "art_meshes": 140,
+        "parameters": 70,
+        "warp_deformers": 50,
+        "rotation_deformers": 54,
+        "keyform_bindings": 346,
+        "physics_groups": 11
+      },
+      "status": "PASS",
+      "source_report": "experiments/reference-model-structure-001/official_combined_analysis/models/hiyori_pro_ko_hiyori_pro_t11/reference_model_report.json"
+    },
+    {
+      "case_id": "golden__rice_pro_ko_rice_pro_t03",
+      "set": "golden",
+      "expected_class": "PASS",
+      "observed_class": "PASS",
+      "model_name": "rice_pro_t03",
+      "official_profile_key": "rice",
+      "values": {
+        "art_meshes": 183,
+        "parameters": 96,
+        "warp_deformers": 58,
+        "rotation_deformers": 80,
+        "keyform_bindings": 306,
+        "physics_groups": 9
+      },
+      "status": "PASS",
+      "source_report": "experiments/reference-model-structure-001/official_combined_analysis/models/rice_pro_ko_rice_pro_t03/reference_model_report.json"
+    },
+    {
+      "case_id": "golden__haru_haru_t01",
+      "set": "golden",
+      "expected_class": "PASS",
+      "observed_class": "PASS",
+      "model_name": "haru_t01",
+      "official_profile_key": "haru",
+      "values": {
+        "art_meshes": 114,
+        "parameters": 33,
+        "warp_deformers": 53,
+        "rotation_deformers": 34,
+        "keyform_bindings": 267,
+        "physics_groups": 2
+      },
+      "status": "PASS",
+      "source_report": "experiments/reference-model-structure-001/official_combined_analysis/models/haru_haru_t01/reference_model_report.json"
+    },
+    {
+      "case_id": "golden__tsumiki_tsumiki_t01",
+      "set": "golden",
+      "expected_class": "PASS",
+      "observed_class": "PASS",
+      "model_name": "tsumiki_t01",
+      "official_profile_key": "tsumiki",
+      "values": {
+        "art_meshes": 89,
+        "parameters": 46,
+        "warp_deformers": 67,
+        "rotation_deformers": 22,
+        "keyform_bindings": 240,
+        "physics_groups": 7
+      },
+      "status": "PASS",
+      "source_report": "experiments/reference-model-structure-001/official_combined_analysis/models/tsumiki_tsumiki_t01/reference_model_report.json"
+    },
+    {
+      "case_id": "golden__miku_pro_jp_miku_sample_t05",
+      "set": "golden",
+      "expected_class": "PASS",
+      "observed_class": "PASS",
+      "model_name": "miku_sample_t05",
+      "official_profile_key": "miku",
+      "values": {
+        "art_meshes": 116,
+        "parameters": 59,
+        "warp_deformers": 27,
+        "rotation_deformers": 38,
+        "keyform_bindings": 233,
+        "physics_groups": 13
+      },
+      "status": "PASS",
+      "source_report": "experiments/reference-model-structure-001/official_combined_analysis/models/miku_pro_jp_miku_sample_t05/reference_model_report.json"
+    },
+    {
+      "case_id": "golden__haru_greeter_pro_jp_haru_greeter_t05",
+      "set": "golden",
+      "expected_class": "PASS",
+      "observed_class": "PASS",
+      "model_name": "haru_greeter_t05",
+      "official_profile_key": "haru_greeter",
+      "values": {
+        "art_meshes": 86,
+        "parameters": 42,
+        "warp_deformers": 66,
+        "rotation_deformers": 31,
+        "keyform_bindings": 221,
+        "physics_groups": 4
+      },
+      "status": "PASS",
+      "source_report": "experiments/reference-model-structure-001/official_combined_analysis/models/haru_greeter_pro_jp_haru_greeter_t05/reference_model_report.json"
+    },
+    {
+      "case_id": "golden__koharu_haruto_koharu_t01",
+      "set": "golden",
+      "expected_class": "PASS",
+      "observed_class": "PASS",
+      "model_name": "koharu_t01",
+      "official_profile_key": "koharu",
+      "values": {
+        "art_meshes": 91,
+        "parameters": 52,
+        "warp_deformers": 63,
+        "rotation_deformers": 18,
+        "keyform_bindings": 220,
+        "physics_groups": 5
+      },
+      "status": "PASS",
+      "source_report": "experiments/reference-model-structure-001/official_combined_analysis/models/koharu_haruto_koharu_t01/reference_model_report.json"
+    },
+    {
+      "case_id": "bad__imagen_live2d_shallow_rig",
+      "set": "bad",
+      "expected_class": "REVISE",
+      "observed_class": "REVISE",
+      "model_name": "imagen-live2d-001",
+      "values": {
+        "art_meshes": 19,
+        "parameters": 27,
+        "warp_deformers": 0,
+        "rotation_deformers": 0,
+        "keyform_bindings": 0,
+        "physics_groups": 0
+      },
+      "status": "PASS",
+      "source_report": "experiments/imagen-live2d-001/reports/cmo3_structure_report.json"
+    },
+    {
+      "case_id": "mutation__fixture__missing_part",
+      "set": "mutation",
+      "expected_class": "REVISE",
+      "observed_class": "REVISE",
+      "expected_tags": [
+        "missing_part"
+      ],
+      "observed_tags": [
+        "missing_part"
+      ],
+      "status": "PASS",
+      "source_case": "fixture__missing_part"
+    },
+    {
+      "case_id": "mutation__fixture__bad_alpha",
+      "set": "mutation",
+      "expected_class": "REVISE",
+      "observed_class": "REVISE",
+      "expected_tags": [
+        "bad_alpha"
+      ],
+      "observed_tags": [
+        "bad_alpha"
+      ],
+      "status": "PASS",
+      "source_case": "fixture__bad_alpha"
+    },
+    {
+      "case_id": "mutation__fixture__misaligned",
+      "set": "mutation",
+      "expected_class": "REVISE",
+      "observed_class": "REVISE",
+      "expected_tags": [
+        "misaligned"
+      ],
+      "observed_tags": [
+        "misaligned"
+      ],
+      "status": "PASS",
+      "source_case": "fixture__misaligned"
+    },
+    {
+      "case_id": "mutation__fixture__style_mismatch",
+      "set": "mutation",
+      "expected_class": "REVISE",
+      "observed_class": "REVISE",
+      "expected_tags": [
+        "style_mismatch"
+      ],
+      "observed_tags": [
+        "style_mismatch"
+      ],
+      "status": "PASS",
+      "source_case": "fixture__style_mismatch"
+    },
+    {
+      "case_id": "mutation__fixture__underpaint_missing",
+      "set": "mutation",
+      "expected_class": "REVISE",
+      "observed_class": "REVISE",
+      "expected_tags": [
+        "underpaint_missing"
+      ],
+      "observed_tags": [
+        "underpaint_missing"
+      ],
+      "status": "PASS",
+      "source_case": "fixture__underpaint_missing"
+    },
+    {
+      "case_id": "mutation__fixture__clipping_risk",
+      "set": "mutation",
+      "expected_class": "REVISE",
+      "observed_class": "REVISE",
+      "expected_tags": [
+        "clipping_risk"
+      ],
+      "observed_tags": [
+        "clipping_risk"
+      ],
+      "status": "PASS",
+      "source_case": "fixture__clipping_risk"
+    },
+    {
+      "case_id": "mutation__fixture__draw_order_issue",
+      "set": "mutation",
+      "expected_class": "REVISE",
+      "observed_class": "REVISE",
+      "expected_tags": [
+        "draw_order_issue"
+      ],
+      "observed_tags": [
+        "draw_order_issue"
+      ],
+      "status": "PASS",
+      "source_case": "fixture__draw_order_issue"
+    },
+    {
+      "case_id": "mutation__fixture__overhang_issue",
+      "set": "mutation",
+      "expected_class": "REVISE",
+      "observed_class": "REVISE",
+      "expected_tags": [
+        "overhang_issue"
+      ],
+      "observed_tags": [
+        "overhang_issue"
+      ],
+      "status": "PASS",
+      "source_case": "fixture__overhang_issue"
+    }
+  ]
+}

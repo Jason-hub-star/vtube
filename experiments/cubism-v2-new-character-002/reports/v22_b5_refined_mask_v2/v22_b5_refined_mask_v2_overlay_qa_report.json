@@ -1,0 +1,70 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T23:08:44.461978+09:00",
+  "status": "B5_REFINED_MASK_V2_OVERLAY_QA_REVISE_REGENERATE_OR_HUMAN_REVIEW_REQUIRED",
+  "v2_report": "experiments/cubism-v2-new-character-002/reports/v22_b5_refined_mask_v2/v22_b5_refined_mask_v2_report.json",
+  "overlay_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b5_refined_mask_v2/v22_b5_refined_mask_v2_overlay_qa.png",
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b5_refined_mask_v2/v22_b5_refined_mask_v2_contact_sheet.png",
+  "checks": [
+    {
+      "id": "technical_refined_mask_v2_pack",
+      "status": "PASS_TECHNICAL",
+      "evidence": "B5 refined-mask v2 generated 17/17 full-canvas 2048 RGBA non-empty candidates, with six focused v2 refinements and eleven v1 copies."
+    },
+    {
+      "id": "focused_mask_reduction",
+      "status": "IMPROVED_CANDIDATE_REVIEW_REQUIRED",
+      "evidence": "Torso, shoulders, face shadows, and nose are narrower than v1 in the overlay sheet."
+    },
+    {
+      "id": "body_semantic_quality",
+      "status": "REVISE_REGENERATE_OR_REEXTRACT",
+      "evidence": "Torso and shoulders still read as broad body patches rather than clean source-matched B5 production parts. More alpha shrinking risks losing required body/clothing material."
+    },
+    {
+      "id": "face_detail_quality",
+      "status": "REVIEW_REQUIRED",
+      "evidence": "Nose and face shadows are smaller and may be reviewable, but should not be promoted without 주인님 visual acceptance."
+    },
+    {
+      "id": "material_promotion_gate",
+      "status": "BLOCKED",
+      "evidence": "B5 v2 remains candidate evidence only. Technical validators cannot promote it to material PASS."
+    },
+    {
+      "id": "g7_g8_gate",
+      "status": "BLOCKED",
+      "evidence": "Mini Cubism diagnostic and real Cubism authoring remain blocked until B4/B5 visual QA and human review accept corrected materials."
+    }
+  ],
+  "remaining_b5_revise_parts": [
+    "torso_base",
+    "shoulder_L",
+    "shoulder_R"
+  ],
+  "possible_human_review_parts": [
+    "nose",
+    "face_shadow_L",
+    "face_shadow_R"
+  ],
+  "decision": "Keep B5 refined-mask v2 as the current best automatic mask-reduction candidate, but do not keep shrinking body masks blindly. Torso and shoulders should move to regeneration/re-extraction or human review; nose/face shadows can be reviewed as smaller candidates.",
+  "next_action": [
+    "Do not ask 주인님 to anchor all B5 parts.",
+    "Use regeneration/re-extraction for torso_base and shoulder_L/R, or ask 주인님 for focused acceptance/rejection of those three.",
+    "Review nose and face shadows as small candidates if needed.",
+    "Keep B4 hair focused review separate and keep G7/G8 blocked."
+  ],
+  "self_review": {
+    "v2_report_status": "B5_REFINED_MASK_V2_CANDIDATE_READY_FOR_OVERLAY_REVIEW",
+    "refined_mask_v2_count": 6,
+    "copied_from_v1_count": 11,
+    "has_revise_gate": true,
+    "has_regenerate_or_reextract_gate": true,
+    "has_blocked_material_gate": true,
+    "validator_only_promotion_blocked": true,
+    "param_hair_front_hidden": true,
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true,
+    "status": "PASS"
+  }
+}

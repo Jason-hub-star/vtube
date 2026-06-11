@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "status": "PASS_NEUTRAL_REPAIR_V1",
+  "source_manifest_backup": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/layer_manifest.before_neutral_repair_v1.json",
+  "repaired_manifest": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/layer_manifest.json",
+  "neutral_visibility": {
+    "hidden_at_neutral": [
+      "eye_L_closed_lid",
+      "eye_R_closed_lid",
+      "mouth_corner_L",
+      "mouth_corner_R",
+      "mouth_inner",
+      "mouth_lower_lip_mask",
+      "mouth_teeth",
+      "mouth_tongue",
+      "mouth_upper_lip_mask"
+    ],
+    "policy": "Auxiliary blink/open-mouth parts are hidden at neutral through Mini Cubism part_opacity_keyframes."
+  },
+  "part_opacity_keyframes_count": 9,
+  "scores": {
+    "before_all_visible": {
+      "visible_pixels": 959971,
+      "bad_pixels": 430426,
+      "bad_ratio_visible": 0.448374,
+      "missing_pixels": 77449,
+      "extra_pixels": 130870
+    },
+    "before_neutral_visibility_only": {
+      "visible_pixels": 959971,
+      "bad_pixels": 426025,
+      "bad_ratio_visible": 0.443789,
+      "missing_pixels": 77449,
+      "extra_pixels": 130870
+    },
+    "after_repair": {
+      "visible_pixels": 829101,
+      "bad_pixels": 0,
+      "bad_ratio_visible": 0.0,
+      "missing_pixels": 0,
+      "extra_pixels": 0
+    },
+    "target_primary": {
+      "bad_ratio_visible_lte": 0.1
+    },
+    "target_good": {
+      "bad_ratio_visible_lte": 0.05
+    }
+  },
+  "outputs": {
+    "neutral_composite_before": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/neutral_composite_before.png",
+    "neutral_diff_overlay_before": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/neutral_diff_overlay_before.png",
+    "neutral_composite_after": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/neutral_composite_after.png",
+    "neutral_diff_overlay_after": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/neutral_diff_overlay_after.png",
+    "mini_cubism_neutral_repair_v1": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_v0/reports/mini_cubism_neutral_repair_v1.png"
+  },
+  "interpretation": "Neutral composite repair v1 passes both primary <=10% and good <=5% gates under alpha>5 visual-hole scoring; this is pre-rig material evidence, not final CMO3 evidence."
+}

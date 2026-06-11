@@ -1,0 +1,628 @@
+{
+  "schema_version": 1,
+  "experiment_id": "see-through-mps-compat-002",
+  "generated_at": "2026-06-04T06:39:29.287573+00:00",
+  "source_manifest": "experiments/see-through-mps-compat-002/layer_manifest.json",
+  "contact_sheet": "experiments/see-through-mps-compat-002/reports/mps_candidate_contact_sheet.png",
+  "counts": {
+    "total": 32,
+    "review_priority": 17,
+    "review_high_risk": 4,
+    "reference_review": 2,
+    "empty": 9,
+    "practical_gate_targets": 13
+  },
+  "practical_success_gate": "Human review must mark at least 5 hair/face/eye/mouth candidates as O or REVISE.",
+  "items": [
+    {
+      "layer_name": "seethrough_mps__back_hair",
+      "original_part_id": "back_hair",
+      "role": "back_hair",
+      "side": null,
+      "bbox": [
+        83,
+        174,
+        1867,
+        1874
+      ],
+      "alpha_coverage": 0.573283,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__back_hair.png"
+    },
+    {
+      "layer_name": "seethrough_mps__face_base",
+      "original_part_id": "face_base",
+      "role": "face",
+      "side": null,
+      "bbox": [
+        736,
+        392,
+        565,
+        666
+      ],
+      "alpha_coverage": 0.760788,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__face_base.png"
+    },
+    {
+      "layer_name": "seethrough_mps_clean__face_base",
+      "original_part_id": "face_base",
+      "role": "face",
+      "side": null,
+      "bbox": [
+        740,
+        394,
+        557,
+        659
+      ],
+      "alpha_coverage": 0.659151,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/cleanup_layers/seethrough_mps_clean__face_base.png"
+    },
+    {
+      "layer_name": "seethrough_mps__front_hair",
+      "original_part_id": "front_hair",
+      "role": "front_hair",
+      "side": null,
+      "bbox": [
+        539,
+        217,
+        1002,
+        1419
+      ],
+      "alpha_coverage": 0.369361,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__front_hair.png"
+    },
+    {
+      "layer_name": "seethrough_mps__mouth_line",
+      "original_part_id": "mouth_line",
+      "role": "mouth_line",
+      "side": null,
+      "bbox": [
+        983,
+        923,
+        78,
+        47
+      ],
+      "alpha_coverage": 0.763775,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__mouth_line.png"
+    },
+    {
+      "layer_name": "seethrough_mps__neck",
+      "original_part_id": "neck",
+      "role": "neck",
+      "side": null,
+      "bbox": [
+        905,
+        861,
+        231,
+        306
+      ],
+      "alpha_coverage": 0.867173,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "production_candidate"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__neck.png"
+    },
+    {
+      "layer_name": "seethrough_mps_clean__neck",
+      "original_part_id": "neck",
+      "role": "neck",
+      "side": null,
+      "bbox": [
+        918,
+        1006,
+        206,
+        108
+      ],
+      "alpha_coverage": 0.559736,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "production_candidate"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/cleanup_layers/seethrough_mps_clean__neck.png"
+    },
+    {
+      "layer_name": "seethrough_mps__L_brow",
+      "original_part_id": "L_brow",
+      "role": "seethrough_reference",
+      "side": "L",
+      "bbox": [
+        1097,
+        653,
+        140,
+        24
+      ],
+      "alpha_coverage": 0.471131,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__L_brow.png"
+    },
+    {
+      "layer_name": "seethrough_mps__L_ear_outer",
+      "original_part_id": "L_ear_outer",
+      "role": "seethrough_reference",
+      "side": "L",
+      "bbox": [
+        1133,
+        21,
+        312,
+        488
+      ],
+      "alpha_coverage": 0.53636,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "production_candidate"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__L_ear_outer.png"
+    },
+    {
+      "layer_name": "seethrough_mps__L_eye_white",
+      "original_part_id": "L_eye_white",
+      "role": "seethrough_reference",
+      "side": "L",
+      "bbox": [
+        1106,
+        721,
+        138,
+        79
+      ],
+      "alpha_coverage": 0.748945,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__L_eye_white.png"
+    },
+    {
+      "layer_name": "seethrough_mps__L_iris",
+      "original_part_id": "L_iris",
+      "role": "seethrough_reference",
+      "side": "L",
+      "bbox": [
+        1120,
+        719,
+        93,
+        78
+      ],
+      "alpha_coverage": 0.790598,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__L_iris.png"
+    },
+    {
+      "layer_name": "seethrough_mps__L_upper_lash",
+      "original_part_id": "L_upper_lash",
+      "role": "seethrough_reference",
+      "side": "L",
+      "bbox": [
+        1088,
+        697,
+        195,
+        108
+      ],
+      "alpha_coverage": 0.350047,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__L_upper_lash.png"
+    },
+    {
+      "layer_name": "seethrough_mps__R_brow",
+      "original_part_id": "R_brow",
+      "role": "seethrough_reference",
+      "side": "R",
+      "bbox": [
+        797,
+        656,
+        143,
+        22
+      ],
+      "alpha_coverage": 0.501589,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__R_brow.png"
+    },
+    {
+      "layer_name": "seethrough_mps__R_ear_outer",
+      "original_part_id": "R_ear_outer",
+      "role": "seethrough_reference",
+      "side": "R",
+      "bbox": [
+        597,
+        22,
+        322,
+        487
+      ],
+      "alpha_coverage": 0.523282,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "production_candidate"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__R_ear_outer.png"
+    },
+    {
+      "layer_name": "seethrough_mps__R_eye_white",
+      "original_part_id": "R_eye_white",
+      "role": "seethrough_reference",
+      "side": "R",
+      "bbox": [
+        800,
+        723,
+        136,
+        77
+      ],
+      "alpha_coverage": 0.768239,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__R_eye_white.png"
+    },
+    {
+      "layer_name": "seethrough_mps__R_iris",
+      "original_part_id": "R_iris",
+      "role": "seethrough_reference",
+      "side": "R",
+      "bbox": [
+        831,
+        720,
+        94,
+        78
+      ],
+      "alpha_coverage": 0.77305,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__R_iris.png"
+    },
+    {
+      "layer_name": "seethrough_mps__R_upper_lash",
+      "original_part_id": "R_upper_lash",
+      "role": "seethrough_reference",
+      "side": "R",
+      "bbox": [
+        758,
+        694,
+        189,
+        111
+      ],
+      "alpha_coverage": 0.338767,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__R_upper_lash.png"
+    },
+    {
+      "layer_name": "seethrough_mps__clothes",
+      "original_part_id": "clothes",
+      "role": "clothes",
+      "side": null,
+      "bbox": [
+        23,
+        1060,
+        1991,
+        988
+      ],
+      "alpha_coverage": 0.650597,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_HIGH_RISK",
+      "triage_notes": [
+        "production_candidate",
+        "likely_too_broad"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__clothes.png"
+    },
+    {
+      "layer_name": "seethrough_mps_clean__clothes",
+      "original_part_id": "clothes",
+      "role": "clothes",
+      "side": null,
+      "bbox": [
+        23,
+        1497,
+        1991,
+        551
+      ],
+      "alpha_coverage": 0.138023,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_HIGH_RISK",
+      "triage_notes": [
+        "production_candidate",
+        "likely_too_broad"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/cleanup_layers/seethrough_mps_clean__clothes.png"
+    },
+    {
+      "layer_name": "seethrough_mps__raw_handwear",
+      "original_part_id": "raw_handwear",
+      "role": "seethrough_reference",
+      "side": "L",
+      "bbox": [
+        1178,
+        1234,
+        835,
+        814
+      ],
+      "alpha_coverage": 0.64327,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_HIGH_RISK",
+      "triage_notes": [
+        "unmapped_raw_layer"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_handwear.png"
+    },
+    {
+      "layer_name": "seethrough_mps__raw_handwear_13",
+      "original_part_id": "raw_handwear",
+      "role": "seethrough_reference",
+      "side": "R",
+      "bbox": [
+        22,
+        1236,
+        845,
+        812
+      ],
+      "alpha_coverage": 0.644559,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_HIGH_RISK",
+      "triage_notes": [
+        "unmapped_raw_layer"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_handwear_13.png"
+    },
+    {
+      "layer_name": "seethrough_mps__headwear_reference",
+      "original_part_id": "headwear_reference",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": [
+        1295,
+        459,
+        186,
+        236
+      ],
+      "alpha_coverage": 0.311714,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "REFERENCE_REVIEW",
+      "triage_notes": [
+        "reference_only_mapping"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__headwear_reference.png"
+    },
+    {
+      "layer_name": "seethrough_mps__nose_reference",
+      "original_part_id": "nose_reference",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": [
+        978,
+        829,
+        45,
+        60
+      ],
+      "alpha_coverage": 0.642222,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "REFERENCE_REVIEW",
+      "triage_notes": [
+        "reference_only_mapping"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__nose_reference.png"
+    },
+    {
+      "layer_name": "seethrough_mps__choker",
+      "original_part_id": "choker",
+      "role": "accessory",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__choker.png"
+    },
+    {
+      "layer_name": "seethrough_mps__ear_inner",
+      "original_part_id": "ear_inner",
+      "role": "ears",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__ear_inner.png"
+    },
+    {
+      "layer_name": "seethrough_mps__object_reference",
+      "original_part_id": "object_reference",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__object_reference.png"
+    },
+    {
+      "layer_name": "seethrough_mps__raw_bottomwear",
+      "original_part_id": "raw_bottomwear",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_bottomwear.png"
+    },
+    {
+      "layer_name": "seethrough_mps__raw_eyewear",
+      "original_part_id": "raw_eyewear",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_eyewear.png"
+    },
+    {
+      "layer_name": "seethrough_mps__raw_footwear",
+      "original_part_id": "raw_footwear",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_footwear.png"
+    },
+    {
+      "layer_name": "seethrough_mps__raw_legwear",
+      "original_part_id": "raw_legwear",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_legwear.png"
+    },
+    {
+      "layer_name": "seethrough_mps__tail_reference",
+      "original_part_id": "tail_reference",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__tail_reference.png"
+    },
+    {
+      "layer_name": "seethrough_mps__wings_reference",
+      "original_part_id": "wings_reference",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__wings_reference.png"
+    }
+  ]
+}

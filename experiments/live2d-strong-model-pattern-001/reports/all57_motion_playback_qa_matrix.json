@@ -1,0 +1,2835 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-08T01:30:52.073148+00:00",
+  "kind": "all57_motion_playback_qa_matrix",
+  "status": "PASS",
+  "inputs": {
+    "manifest": "experiments/live2d-strong-model-pattern-001/reports/all57_render_manifest.json",
+    "manual_observations": "experiments/live2d-strong-model-pattern-001/reports/all57_manual_operator_observations_20260608.json"
+  },
+  "summary": {
+    "model_count": 57,
+    "runtime_capable_count": 50,
+    "no_runtime_count": 7,
+    "class_counts": {
+      "MOTION_STRONG": 43,
+      "NO_MOTION_GROUP": 5,
+      "NO_RUNTIME": 7,
+      "MOTION_VISIBLE": 2
+    }
+  },
+  "thresholds": {
+    "MOTION_STRONG": "max changed_ratio >= 0.02",
+    "MOTION_VISIBLE": "max changed_ratio >= 0.004",
+    "MOTION_SUBTLE_OR_EYE_ONLY": "max changed_ratio >= 0.0005",
+    "MOTION_STATIC": "motion group exists but changed_ratio < 0.0005"
+  },
+  "rows": [
+    {
+      "rank": 1,
+      "id": "chitose_chitose_t01",
+      "safe_id": "chitose_chitose_t01",
+      "name": "chitose_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 0,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/chitose_chitose_t01/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/chitose_chitose_t01/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/chitose_chitose_t01/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/chitose_chitose_t01/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 2.2717,
+          "changed_ratio": 0.049531,
+          "bbox": [
+            481,
+            47,
+            835,
+            900
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 7.0406,
+          "changed_ratio": 0.107526,
+          "bbox": [
+            481,
+            48,
+            835,
+            900
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 2.9287,
+          "changed_ratio": 0.061275,
+          "bbox": [
+            481,
+            48,
+            835,
+            900
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG",
+      "manual_observation": {
+        "manual_status": "EYE_ONLY",
+        "note_ko": "눈만 움직임. 모션 재생 버튼으로 재확인 필요."
+      }
+    },
+    {
+      "rank": 2,
+      "id": "epsilon_epsilon_t02",
+      "safe_id": "epsilon_epsilon_t02",
+      "name": "Epsilon_t02",
+      "manifest_status": "PASS",
+      "runtime_index": 1,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/epsilon_epsilon_t02/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/epsilon_epsilon_t02/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/epsilon_epsilon_t02/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/epsilon_epsilon_t02/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 1.6642,
+          "changed_ratio": 0.035126,
+          "bbox": [
+            455,
+            63,
+            822,
+            867
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 2.4334,
+          "changed_ratio": 0.047162,
+          "bbox": [
+            452,
+            63,
+            821,
+            868
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 2.5292,
+          "changed_ratio": 0.049045,
+          "bbox": [
+            455,
+            63,
+            821,
+            870
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG",
+      "manual_observation": {
+        "manual_status": "EYE_ONLY",
+        "note_ko": "눈만 움직임. 모션 재생 버튼으로 재확인 필요."
+      }
+    },
+    {
+      "rank": 3,
+      "id": "haru_greeter_pro_jp_haru_greeter_t05",
+      "safe_id": "haru_greeter_pro_jp_haru_greeter_t05",
+      "name": "haru_greeter_t05",
+      "manifest_status": "PASS",
+      "runtime_index": 2,
+      "status": "NO_MOTION_GROUP",
+      "motion_group": null,
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/haru_greeter_pro_jp_haru_greeter_t05/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/haru_greeter_pro_jp_haru_greeter_t05/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/haru_greeter_pro_jp_haru_greeter_t05/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/haru_greeter_pro_jp_haru_greeter_t05/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 0.6718,
+          "changed_ratio": 0.013651,
+          "bbox": [
+            551,
+            43,
+            729,
+            843
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 0.6597,
+          "changed_ratio": 0.013811,
+          "bbox": [
+            551,
+            43,
+            730,
+            843
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 0.748,
+          "changed_ratio": 0.014707,
+          "bbox": [
+            551,
+            43,
+            730,
+            843
+          ]
+        }
+      },
+      "qa_class": "NO_MOTION_GROUP",
+      "manual_observation": {
+        "manual_status": "WORKS_WELL",
+        "note_ko": "작동 잘함."
+      }
+    },
+    {
+      "rank": 4,
+      "id": "haru_haru_t01",
+      "safe_id": "haru_haru_t01",
+      "name": "haru_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 3,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/haru_haru_t01/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/haru_haru_t01/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/haru_haru_t01/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/haru_haru_t01/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 1.2729,
+          "changed_ratio": 0.0257,
+          "bbox": [
+            461,
+            52,
+            819,
+            884
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 2.7862,
+          "changed_ratio": 0.047262,
+          "bbox": [
+            460,
+            53,
+            821,
+            884
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 3.3783,
+          "changed_ratio": 0.053921,
+          "bbox": [
+            460,
+            53,
+            821,
+            884
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG",
+      "manual_observation": {
+        "manual_status": "EYE_ONLY",
+        "note_ko": "눈만 움직임. 모션 재생 버튼으로 재확인 필요."
+      }
+    },
+    {
+      "rank": 5,
+      "id": "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+      "safe_id": "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+      "name": "hiyori_movie_pro_t02",
+      "manifest_status": "NO_RUNTIME",
+      "status": "NO_RUNTIME",
+      "motion_group": null,
+      "captures": {},
+      "errors": [
+        "model3_json"
+      ],
+      "motion_diffs": {},
+      "qa_class": "NO_RUNTIME",
+      "manual_observation": {
+        "manual_status": "RENDER_NOT_AVAILABLE_EXPECTED",
+        "note_ko": "렌더링 안 됨. model3.json 없는 CMO3-only 항목이라 현재 Web Player에서는 정상적인 no-runtime 상태."
+      }
+    },
+    {
+      "rank": 6,
+      "id": "kei_ko_kei_basic_free_t02",
+      "safe_id": "kei_ko_kei_basic_free_t02",
+      "name": "kei_basic_free_t02",
+      "manifest_status": "PASS",
+      "runtime_index": 4,
+      "status": "NO_MOTION_GROUP",
+      "motion_group": null,
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/kei_ko_kei_basic_free_t02/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/kei_ko_kei_basic_free_t02/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/kei_ko_kei_basic_free_t02/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/kei_ko_kei_basic_free_t02/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 3.4293,
+          "changed_ratio": 0.062049,
+          "bbox": [
+            309,
+            54,
+            974,
+            900
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 4.771,
+          "changed_ratio": 0.086056,
+          "bbox": [
+            309,
+            51,
+            974,
+            900
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 4.8089,
+          "changed_ratio": 0.087064,
+          "bbox": [
+            309,
+            54,
+            974,
+            900
+          ]
+        }
+      },
+      "qa_class": "NO_MOTION_GROUP",
+      "manual_observation": {
+        "manual_status": "MOVES",
+        "note_ko": "움직임 확인."
+      }
+    },
+    {
+      "rank": 7,
+      "id": "kei_ko_kei_vowels_pro_t02",
+      "safe_id": "kei_ko_kei_vowels_pro_t02",
+      "name": "kei_vowels_pro_t02",
+      "manifest_status": "PASS",
+      "runtime_index": 5,
+      "status": "NO_MOTION_GROUP",
+      "motion_group": null,
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/kei_ko_kei_vowels_pro_t02/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/kei_ko_kei_vowels_pro_t02/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/kei_ko_kei_vowels_pro_t02/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/kei_ko_kei_vowels_pro_t02/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 3.6433,
+          "changed_ratio": 0.065667,
+          "bbox": [
+            309,
+            54,
+            974,
+            900
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 4.8839,
+          "changed_ratio": 0.087753,
+          "bbox": [
+            309,
+            50,
+            973,
+            900
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 4.7383,
+          "changed_ratio": 0.085288,
+          "bbox": [
+            309,
+            54,
+            974,
+            900
+          ]
+        }
+      },
+      "qa_class": "NO_MOTION_GROUP"
+    },
+    {
+      "rank": 8,
+      "id": "koharu_haruto_haruto_t01",
+      "safe_id": "koharu_haruto_haruto_t01",
+      "name": "haruto_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 6,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/koharu_haruto_haruto_t01/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/koharu_haruto_haruto_t01/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/koharu_haruto_haruto_t01/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/koharu_haruto_haruto_t01/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 11.0981,
+          "changed_ratio": 0.145231,
+          "bbox": [
+            400,
+            21,
+            911,
+            875
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 3.6139,
+          "changed_ratio": 0.045216,
+          "bbox": [
+            400,
+            21,
+            878,
+            875
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 10.2045,
+          "changed_ratio": 0.12877,
+          "bbox": [
+            399,
+            21,
+            875,
+            875
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG",
+      "manual_observation": {
+        "manual_status": "NO_MOTION_OBSERVED",
+        "note_ko": "안 움직임. 모션 재생 버튼으로 재확인 필요."
+      }
+    },
+    {
+      "rank": 9,
+      "id": "koharu_haruto_koharu_t01",
+      "safe_id": "koharu_haruto_koharu_t01",
+      "name": "koharu_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 7,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/koharu_haruto_koharu_t01/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/koharu_haruto_koharu_t01/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/koharu_haruto_koharu_t01/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/koharu_haruto_koharu_t01/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 10.4686,
+          "changed_ratio": 0.134179,
+          "bbox": [
+            368,
+            23,
+            911,
+            875
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 9.4554,
+          "changed_ratio": 0.122929,
+          "bbox": [
+            368,
+            22,
+            885,
+            875
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 13.7208,
+          "changed_ratio": 0.17641,
+          "bbox": [
+            368,
+            22,
+            885,
+            875
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG",
+      "manual_observation": {
+        "manual_status": "NO_MOTION_OBSERVED",
+        "note_ko": "안 움직임. 모션 재생 버튼으로 재확인 필요."
+      }
+    },
+    {
+      "rank": 10,
+      "id": "mao_pro_ko_mao_pro_t06",
+      "safe_id": "mao_pro_ko_mao_pro_t06",
+      "name": "mao_pro_t06",
+      "manifest_status": "PASS",
+      "runtime_index": 8,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/mao_pro_ko_mao_pro_t06/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/mao_pro_ko_mao_pro_t06/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/mao_pro_ko_mao_pro_t06/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/mao_pro_ko_mao_pro_t06/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 3.554,
+          "changed_ratio": 0.058115,
+          "bbox": [
+            337,
+            77,
+            812,
+            880
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 1.9575,
+          "changed_ratio": 0.039922,
+          "bbox": [
+            337,
+            75,
+            803,
+            878
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 5.1119,
+          "changed_ratio": 0.074669,
+          "bbox": [
+            337,
+            77,
+            803,
+            880
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 11,
+      "id": "mark_movie_pro_ko_mark_movie_pro_t02",
+      "safe_id": "mark_movie_pro_ko_mark_movie_pro_t02",
+      "name": "mark_movie_pro_t02",
+      "manifest_status": "NO_RUNTIME",
+      "status": "NO_RUNTIME",
+      "motion_group": null,
+      "captures": {},
+      "errors": [
+        "model3_json"
+      ],
+      "motion_diffs": {},
+      "qa_class": "NO_RUNTIME",
+      "manual_observation": {
+        "manual_status": "RENDER_NOT_AVAILABLE_EXPECTED",
+        "note_ko": "렌더링 안 됨. model3.json 없는 CMO3-only 항목이라 현재 Web Player에서는 정상적인 no-runtime 상태."
+      }
+    },
+    {
+      "rank": 12,
+      "id": "miara_pro_en_miara_pro_t04",
+      "safe_id": "miara_pro_en_miara_pro_t04",
+      "name": "miara_pro_t04",
+      "manifest_status": "PASS",
+      "runtime_index": 9,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/miara_pro_en_miara_pro_t04/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/miara_pro_en_miara_pro_t04/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/miara_pro_en_miara_pro_t04/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/miara_pro_en_miara_pro_t04/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 5.9283,
+          "changed_ratio": 0.12659,
+          "bbox": [
+            283,
+            10,
+            886,
+            850
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 6.289,
+          "changed_ratio": 0.13224,
+          "bbox": [
+            283,
+            10,
+            891,
+            852
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 7.2165,
+          "changed_ratio": 0.143867,
+          "bbox": [
+            283,
+            4,
+            890,
+            847
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 13,
+      "id": "natori_pro_ko_natori_pro_t06",
+      "safe_id": "natori_pro_ko_natori_pro_t06",
+      "name": "natori_pro_t06",
+      "manifest_status": "PASS",
+      "runtime_index": 10,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/natori_pro_ko_natori_pro_t06/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/natori_pro_ko_natori_pro_t06/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/natori_pro_ko_natori_pro_t06/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/natori_pro_ko_natori_pro_t06/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 0.4094,
+          "changed_ratio": 0.011525,
+          "bbox": [
+            542,
+            56,
+            739,
+            629
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 0.235,
+          "changed_ratio": 0.005729,
+          "bbox": [
+            542,
+            56,
+            739,
+            629
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 0.6501,
+          "changed_ratio": 0.01553,
+          "bbox": [
+            542,
+            56,
+            739,
+            629
+          ]
+        }
+      },
+      "qa_class": "MOTION_VISIBLE"
+    },
+    {
+      "rank": 14,
+      "id": "param_ctrl_pro_ko_haruto_pc_pro_t02",
+      "safe_id": "param_ctrl_pro_ko_haruto_pc_pro_t02",
+      "name": "haruto_pc_pro_t02",
+      "manifest_status": "NO_RUNTIME",
+      "status": "NO_RUNTIME",
+      "motion_group": null,
+      "captures": {},
+      "errors": [
+        "model3_json"
+      ],
+      "motion_diffs": {},
+      "qa_class": "NO_RUNTIME",
+      "manual_observation": {
+        "manual_status": "RENDER_NOT_AVAILABLE_EXPECTED",
+        "note_ko": "렌더링 안 됨. model3.json 없는 CMO3-only 항목이라 현재 Web Player에서는 정상적인 no-runtime 상태."
+      }
+    },
+    {
+      "rank": 15,
+      "id": "param_ctrl_pro_ko_koharu_pc_pro_t02",
+      "safe_id": "param_ctrl_pro_ko_koharu_pc_pro_t02",
+      "name": "koharu_pc_pro_t02",
+      "manifest_status": "NO_RUNTIME",
+      "status": "NO_RUNTIME",
+      "motion_group": null,
+      "captures": {},
+      "errors": [
+        "model3_json"
+      ],
+      "motion_diffs": {},
+      "qa_class": "NO_RUNTIME"
+    },
+    {
+      "rank": 16,
+      "id": "param_ctrl_pro_ko_seesaw_pc_pro_t02",
+      "safe_id": "param_ctrl_pro_ko_seesaw_pc_pro_t02",
+      "name": "seesaw_pc_pro_t02",
+      "manifest_status": "NO_RUNTIME",
+      "status": "NO_RUNTIME",
+      "motion_group": null,
+      "captures": {},
+      "errors": [
+        "model3_json"
+      ],
+      "motion_diffs": {},
+      "qa_class": "NO_RUNTIME"
+    },
+    {
+      "rank": 17,
+      "id": "param_ctrl_pro_ko_rice_pc_pro_t02",
+      "safe_id": "param_ctrl_pro_ko_rice_pc_pro_t02",
+      "name": "rice_pc_pro_t02",
+      "manifest_status": "NO_RUNTIME",
+      "status": "NO_RUNTIME",
+      "motion_group": null,
+      "captures": {},
+      "errors": [
+        "model3_json"
+      ],
+      "motion_diffs": {},
+      "qa_class": "NO_RUNTIME"
+    },
+    {
+      "rank": 18,
+      "id": "param_ctrl_pro_ko_target_pc_pro_t02",
+      "safe_id": "param_ctrl_pro_ko_target_pc_pro_t02",
+      "name": "target_pc_pro_t02",
+      "manifest_status": "NO_RUNTIME",
+      "status": "NO_RUNTIME",
+      "motion_group": null,
+      "captures": {},
+      "errors": [
+        "model3_json"
+      ],
+      "motion_diffs": {},
+      "qa_class": "NO_RUNTIME"
+    },
+    {
+      "rank": 19,
+      "id": "ren_pro_ko_ren_t01",
+      "safe_id": "ren_pro_ko_ren_t01",
+      "name": "ren_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 11,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/ren_pro_ko_ren_t01/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/ren_pro_ko_ren_t01/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/ren_pro_ko_ren_t01/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/ren_pro_ko_ren_t01/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 4.0395,
+          "changed_ratio": 0.063375,
+          "bbox": [
+            502,
+            36,
+            782,
+            857
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 2.2165,
+          "changed_ratio": 0.041792,
+          "bbox": [
+            502,
+            36,
+            779,
+            857
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 4.1567,
+          "changed_ratio": 0.064583,
+          "bbox": [
+            502,
+            35,
+            783,
+            857
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 20,
+      "id": "rice_pro_ko_rice_pro_t03",
+      "safe_id": "rice_pro_ko_rice_pro_t03",
+      "name": "rice_pro_t03",
+      "manifest_status": "PASS",
+      "runtime_index": 12,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/rice_pro_ko_rice_pro_t03/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/rice_pro_ko_rice_pro_t03/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/rice_pro_ko_rice_pro_t03/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/rice_pro_ko_rice_pro_t03/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 0.9107,
+          "changed_ratio": 0.019934,
+          "bbox": [
+            751,
+            122,
+            1025,
+            853
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 1.0629,
+          "changed_ratio": 0.022924,
+          "bbox": [
+            751,
+            124,
+            1027,
+            853
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 0.9113,
+          "changed_ratio": 0.019947,
+          "bbox": [
+            753,
+            124,
+            1025,
+            853
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 21,
+      "id": "shizuku_shizuku_t02",
+      "safe_id": "shizuku_shizuku_t02",
+      "name": "shizuku_t02",
+      "manifest_status": "PASS",
+      "runtime_index": 13,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/shizuku_shizuku_t02/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/shizuku_shizuku_t02/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/shizuku_shizuku_t02/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/shizuku_shizuku_t02/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 10.6568,
+          "changed_ratio": 0.160853,
+          "bbox": [
+            356,
+            90,
+            898,
+            879
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 10.3865,
+          "changed_ratio": 0.156796,
+          "bbox": [
+            357,
+            90,
+            898,
+            879
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 10.3843,
+          "changed_ratio": 0.153739,
+          "bbox": [
+            356,
+            90,
+            898,
+            879
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 22,
+      "id": "tsumiki_tsumiki_t01",
+      "safe_id": "tsumiki_tsumiki_t01",
+      "name": "tsumiki_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 14,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/tsumiki_tsumiki_t01/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/tsumiki_tsumiki_t01/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/tsumiki_tsumiki_t01/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/tsumiki_tsumiki_t01/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 0.5862,
+          "changed_ratio": 0.015942,
+          "bbox": [
+            472,
+            35,
+            776,
+            846
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 0.7604,
+          "changed_ratio": 0.019022,
+          "bbox": [
+            472,
+            35,
+            776,
+            846
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 0.7802,
+          "changed_ratio": 0.019576,
+          "bbox": [
+            472,
+            35,
+            776,
+            846
+          ]
+        }
+      },
+      "qa_class": "MOTION_VISIBLE",
+      "manual_observation": {
+        "manual_status": "EYE_ONLY",
+        "note_ko": "눈만 움직임. 모션 재생 버튼으로 재확인 필요."
+      }
+    },
+    {
+      "rank": 23,
+      "id": "unitychan_unitychan_t01",
+      "safe_id": "unitychan_unitychan_t01",
+      "name": "unitychan_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 15,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/unitychan_unitychan_t01/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/unitychan_unitychan_t01/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/unitychan_unitychan_t01/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/unitychan_unitychan_t01/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 14.1149,
+          "changed_ratio": 0.135483,
+          "bbox": [
+            287,
+            68,
+            983,
+            852
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 9.7369,
+          "changed_ratio": 0.095605,
+          "bbox": [
+            287,
+            68,
+            980,
+            852
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 7.3796,
+          "changed_ratio": 0.081222,
+          "bbox": [
+            287,
+            68,
+            982,
+            852
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG",
+      "manual_observation": {
+        "manual_status": "EYE_ONLY",
+        "note_ko": "눈만 움직임. 모션 재생 버튼으로 재확인 필요."
+      }
+    },
+    {
+      "rank": 24,
+      "id": "wanko_wanko_touch_t01",
+      "safe_id": "wanko_wanko_touch_t01",
+      "name": "wanko_touch_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 16,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/wanko_wanko_touch_t01/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/wanko_wanko_touch_t01/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/wanko_wanko_touch_t01/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/wanko_wanko_touch_t01/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 1.0092,
+          "changed_ratio": 0.010592,
+          "bbox": [
+            477,
+            391,
+            825,
+            743
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 2.2885,
+          "changed_ratio": 0.025529,
+          "bbox": [
+            477,
+            391,
+            828,
+            743
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 1.0449,
+          "changed_ratio": 0.010931,
+          "bbox": [
+            476,
+            391,
+            825,
+            743
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG",
+      "manual_observation": {
+        "manual_status": "EYE_MOVEMENT",
+        "note_ko": "눈 움직임 확인. 모션 재생 버튼으로 touch/representative motion 재확인 필요."
+      }
+    },
+    {
+      "rank": 25,
+      "id": "hiyori_pro_ko_hiyori_pro_t11",
+      "safe_id": "hiyori_pro_ko_hiyori_pro_t11",
+      "name": "hiyori_pro_t11",
+      "manifest_status": "PASS",
+      "runtime_index": 17,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/hiyori_pro_ko_hiyori_pro_t11/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/hiyori_pro_ko_hiyori_pro_t11/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/hiyori_pro_ko_hiyori_pro_t11/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/hiyori_pro_ko_hiyori_pro_t11/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 0.9186,
+          "changed_ratio": 0.023832,
+          "bbox": [
+            539,
+            66,
+            744,
+            878
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 0.987,
+          "changed_ratio": 0.025327,
+          "bbox": [
+            539,
+            68,
+            744,
+            877
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 2.0537,
+          "changed_ratio": 0.039058,
+          "bbox": [
+            534,
+            61,
+            744,
+            878
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG",
+      "manual_observation": {
+        "manual_status": "PENDING_INCOMPLETE_NOTE",
+        "note_ko": "주인님 메시지가 25에서 끊겨서 상태 확인 필요."
+      }
+    },
+    {
+      "rank": 26,
+      "id": "miku_pro_jp_miku_sample_t05",
+      "safe_id": "miku_pro_jp_miku_sample_t05",
+      "name": "miku_sample_t05",
+      "manifest_status": "PASS",
+      "runtime_index": 18,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/miku_pro_jp_miku_sample_t05/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/miku_pro_jp_miku_sample_t05/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/miku_pro_jp_miku_sample_t05/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/miku_pro_jp_miku_sample_t05/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 7.9638,
+          "changed_ratio": 0.124193,
+          "bbox": [
+            432,
+            23,
+            861,
+            895
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 6.678,
+          "changed_ratio": 0.105921,
+          "bbox": [
+            432,
+            23,
+            860,
+            895
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 10.5448,
+          "changed_ratio": 0.165746,
+          "bbox": [
+            432,
+            23,
+            882,
+            895
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 27,
+      "id": "tororo_hijiki_hijiki_t01",
+      "safe_id": "tororo_hijiki_hijiki_t01",
+      "name": "hijiki_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 19,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/tororo_hijiki_hijiki_t01/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/tororo_hijiki_hijiki_t01/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/tororo_hijiki_hijiki_t01/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/tororo_hijiki_hijiki_t01/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 1.0912,
+          "changed_ratio": 0.018041,
+          "bbox": [
+            472,
+            137,
+            803,
+            795
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 4.3193,
+          "changed_ratio": 0.037147,
+          "bbox": [
+            286,
+            138,
+            803,
+            795
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 1.8089,
+          "changed_ratio": 0.023719,
+          "bbox": [
+            467,
+            142,
+            803,
+            795
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 28,
+      "id": "tororo_hijiki_tororo_t01",
+      "safe_id": "tororo_hijiki_tororo_t01",
+      "name": "tororo_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 20,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/tororo_hijiki_tororo_t01/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/tororo_hijiki_tororo_t01/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/tororo_hijiki_tororo_t01/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/tororo_hijiki_tororo_t01/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 0.5053,
+          "changed_ratio": 0.011727,
+          "bbox": [
+            472,
+            133,
+            802,
+            742
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 1.0359,
+          "changed_ratio": 0.024156,
+          "bbox": [
+            286,
+            133,
+            802,
+            763
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 0.7604,
+          "changed_ratio": 0.017084,
+          "bbox": [
+            468,
+            133,
+            802,
+            742
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 29,
+      "id": "nito_nito_t01",
+      "safe_id": "nito_nito_t01",
+      "name": "nito_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 21,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nito_t01/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nito_t01/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nito_t01/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nito_t01/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 2.3657,
+          "changed_ratio": 0.029257,
+          "bbox": [
+            491,
+            190,
+            865,
+            673
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 4.1928,
+          "changed_ratio": 0.044341,
+          "bbox": [
+            493,
+            191,
+            873,
+            674
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 8.3903,
+          "changed_ratio": 0.081247,
+          "bbox": [
+            472,
+            176,
+            865,
+            673
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 30,
+      "id": "nito_ni-j.model3_runtime",
+      "safe_id": "nito_ni_j_model3_runtime",
+      "name": "ni-j.model3",
+      "manifest_status": "PASS",
+      "runtime_index": 22,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_ni_j_model3_runtime/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_ni_j_model3_runtime/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_ni_j_model3_runtime/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_ni_j_model3_runtime/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 6.8855,
+          "changed_ratio": 0.070674,
+          "bbox": [
+            473,
+            195,
+            838,
+            817
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 7.9874,
+          "changed_ratio": 0.078907,
+          "bbox": [
+            473,
+            195,
+            845,
+            817
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 8.2054,
+          "changed_ratio": 0.081194,
+          "bbox": [
+            457,
+            193,
+            829,
+            817
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 31,
+      "id": "nito_nico.model3_runtime",
+      "safe_id": "nito_nico_model3_runtime",
+      "name": "nico.model3",
+      "manifest_status": "PASS",
+      "runtime_index": 23,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nico_model3_runtime/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nico_model3_runtime/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nico_model3_runtime/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nico_model3_runtime/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 6.1374,
+          "changed_ratio": 0.057839,
+          "bbox": [
+            449,
+            142,
+            956,
+            741
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 8.2339,
+          "changed_ratio": 0.087976,
+          "bbox": [
+            453,
+            137,
+            994,
+            741
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 11.0879,
+          "changed_ratio": 0.118589,
+          "bbox": [
+            429,
+            136,
+            963,
+            741
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 32,
+      "id": "nito_nietzsche.model3_runtime",
+      "safe_id": "nito_nietzsche_model3_runtime",
+      "name": "nietzsche.model3",
+      "manifest_status": "PASS",
+      "runtime_index": 24,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nietzsche_model3_runtime/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nietzsche_model3_runtime/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nietzsche_model3_runtime/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nietzsche_model3_runtime/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 10.1575,
+          "changed_ratio": 0.107588,
+          "bbox": [
+            400,
+            147,
+            904,
+            817
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 14.7007,
+          "changed_ratio": 0.162157,
+          "bbox": [
+            400,
+            141,
+            908,
+            817
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 13.7055,
+          "changed_ratio": 0.15097,
+          "bbox": [
+            392,
+            148,
+            897,
+            817
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 33,
+      "id": "nito_nipsilon.model3_runtime",
+      "safe_id": "nito_nipsilon_model3_runtime",
+      "name": "nipsilon.model3",
+      "manifest_status": "PASS",
+      "runtime_index": 25,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nipsilon_model3_runtime/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nipsilon_model3_runtime/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nipsilon_model3_runtime/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nipsilon_model3_runtime/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 9.5858,
+          "changed_ratio": 0.105073,
+          "bbox": [
+            414,
+            198,
+            939,
+            817
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 11.8319,
+          "changed_ratio": 0.126371,
+          "bbox": [
+            414,
+            198,
+            946,
+            817
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 12.4027,
+          "changed_ratio": 0.133556,
+          "bbox": [
+            393,
+            196,
+            930,
+            817
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 34,
+      "id": "izumi_izumi_anime_t01",
+      "safe_id": "izumi_izumi_anime_t01",
+      "name": "izumi_anime_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 26,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_anime_t01/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_anime_t01/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_anime_t01/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_anime_t01/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 4.7482,
+          "changed_ratio": 0.089692,
+          "bbox": [
+            406,
+            71,
+            804,
+            900
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 2.4024,
+          "changed_ratio": 0.055516,
+          "bbox": [
+            408,
+            74,
+            793,
+            900
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 3.6988,
+          "changed_ratio": 0.054113,
+          "bbox": [
+            408,
+            74,
+            787,
+            900
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 35,
+      "id": "izumi_izumi_atsu_t01",
+      "safe_id": "izumi_izumi_atsu_t01",
+      "name": "izumi_atsu_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 27,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_atsu_t01/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_atsu_t01/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_atsu_t01/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_atsu_t01/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 3.1013,
+          "changed_ratio": 0.070356,
+          "bbox": [
+            406,
+            71,
+            808,
+            900
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 3.8986,
+          "changed_ratio": 0.081942,
+          "bbox": [
+            411,
+            75,
+            808,
+            900
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 6.9493,
+          "changed_ratio": 0.111465,
+          "bbox": [
+            403,
+            75,
+            808,
+            900
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 36,
+      "id": "izumi_izumi_illust_t01",
+      "safe_id": "izumi_izumi_illust_t01",
+      "name": "izumi_illust_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 28,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_illust_t01/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_illust_t01/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_illust_t01/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_illust_t01/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 3.3831,
+          "changed_ratio": 0.068921,
+          "bbox": [
+            406,
+            71,
+            804,
+            900
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 2.99,
+          "changed_ratio": 0.068894,
+          "bbox": [
+            411,
+            75,
+            803,
+            900
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 4.7634,
+          "changed_ratio": 0.090442,
+          "bbox": [
+            393,
+            75,
+            803,
+            900
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 37,
+      "id": "izumi_izumi_suisai_t01",
+      "safe_id": "izumi_izumi_suisai_t01",
+      "name": "izumi_suisai_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 29,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_suisai_t01/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_suisai_t01/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_suisai_t01/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_suisai_t01/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 3.0265,
+          "changed_ratio": 0.069018,
+          "bbox": [
+            406,
+            71,
+            808,
+            900
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 3.2664,
+          "changed_ratio": 0.074773,
+          "bbox": [
+            411,
+            75,
+            808,
+            900
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 6.6361,
+          "changed_ratio": 0.10024,
+          "bbox": [
+            411,
+            75,
+            808,
+            900
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 38,
+      "id": "gantzert_felixander_gantzert_felixander_t01",
+      "safe_id": "gantzert_felixander_gantzert_felixander_t01",
+      "name": "Gantzert_Felixander_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 30,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/gantzert_felixander_gantzert_felixander_t01/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/gantzert_felixander_gantzert_felixander_t01/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/gantzert_felixander_gantzert_felixander_t01/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/gantzert_felixander_gantzert_felixander_t01/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 29.3426,
+          "changed_ratio": 0.46203,
+          "bbox": [
+            116,
+            0,
+            1280,
+            900
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 0.0,
+          "changed_ratio": 0.0,
+          "bbox": null
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 29.2641,
+          "changed_ratio": 0.462893,
+          "bbox": [
+            116,
+            0,
+            1280,
+            900
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 39,
+      "id": "github_live2d_cubism_web_samples_samples_resources_haru_haru.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_haru_haru_model3",
+      "name": "Haru",
+      "manifest_status": "PASS",
+      "runtime_index": 31,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_haru_haru_model3/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_haru_haru_model3/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_haru_haru_model3/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_haru_haru_model3/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 1.4408,
+          "changed_ratio": 0.020964,
+          "bbox": [
+            551,
+            43,
+            729,
+            843
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 2.6528,
+          "changed_ratio": 0.035285,
+          "bbox": [
+            496,
+            43,
+            775,
+            843
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 2.9954,
+          "changed_ratio": 0.036896,
+          "bbox": [
+            478,
+            29,
+            802,
+            844
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 40,
+      "id": "github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori_model3",
+      "name": "Hiyori",
+      "manifest_status": "PASS",
+      "runtime_index": 32,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori_model3/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori_model3/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori_model3/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori_model3/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 0.5601,
+          "changed_ratio": 0.015333,
+          "bbox": [
+            540,
+            67,
+            730,
+            878
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 0.9064,
+          "changed_ratio": 0.022825,
+          "bbox": [
+            540,
+            66,
+            730,
+            878
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 1.5684,
+          "changed_ratio": 0.027681,
+          "bbox": [
+            532,
+            59,
+            730,
+            877
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 41,
+      "id": "github_live2d_cubism_web_samples_samples_resources_mao_mao.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_mao_mao_model3",
+      "name": "Mao",
+      "manifest_status": "PASS",
+      "runtime_index": 33,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_mao_mao_model3/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_mao_mao_model3/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_mao_mao_model3/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_mao_mao_model3/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 4.1266,
+          "changed_ratio": 0.065623,
+          "bbox": [
+            337,
+            77,
+            909,
+            880
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 4.3009,
+          "changed_ratio": 0.058882,
+          "bbox": [
+            241,
+            74,
+            909,
+            879
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 3.3126,
+          "changed_ratio": 0.052345,
+          "bbox": [
+            291,
+            75,
+            909,
+            873
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 42,
+      "id": "github_live2d_cubism_web_samples_samples_resources_mark_mark.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_mark_mark_model3",
+      "name": "Mark",
+      "manifest_status": "PASS",
+      "runtime_index": 34,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_mark_mark_model3/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_mark_mark_model3/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_mark_mark_model3/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_mark_mark_model3/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 3.694,
+          "changed_ratio": 0.039385,
+          "bbox": [
+            488,
+            177,
+            793,
+            693
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 3.1132,
+          "changed_ratio": 0.034201,
+          "bbox": [
+            488,
+            182,
+            788,
+            693
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 3.6078,
+          "changed_ratio": 0.038756,
+          "bbox": [
+            488,
+            178,
+            793,
+            693
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 43,
+      "id": "github_live2d_cubism_web_samples_samples_resources_natori_natori.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_natori_natori_model3",
+      "name": "Natori",
+      "manifest_status": "PASS",
+      "runtime_index": 35,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_natori_natori_model3/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_natori_natori_model3/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_natori_natori_model3/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_natori_natori_model3/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 1.1895,
+          "changed_ratio": 0.019381,
+          "bbox": [
+            537,
+            56,
+            738,
+            629
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 1.3112,
+          "changed_ratio": 0.020206,
+          "bbox": [
+            534,
+            56,
+            738,
+            629
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 1.2329,
+          "changed_ratio": 0.019226,
+          "bbox": [
+            537,
+            55,
+            738,
+            628
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 44,
+      "id": "github_live2d_cubism_web_samples_samples_resources_ren_ren.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_ren_ren_model3",
+      "name": "Ren",
+      "manifest_status": "PASS",
+      "runtime_index": 36,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_ren_ren_model3/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_ren_ren_model3/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_ren_ren_model3/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_ren_ren_model3/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 4.8054,
+          "changed_ratio": 0.077857,
+          "bbox": [
+            467,
+            36,
+            832,
+            857
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 8.6992,
+          "changed_ratio": 0.113794,
+          "bbox": [
+            497,
+            36,
+            780,
+            857
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 9.6061,
+          "changed_ratio": 0.117231,
+          "bbox": [
+            503,
+            35,
+            812,
+            857
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 45,
+      "id": "github_live2d_cubism_web_samples_samples_resources_rice_rice.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_rice_rice_model3",
+      "name": "Rice",
+      "manifest_status": "PASS",
+      "runtime_index": 37,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_rice_rice_model3/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_rice_rice_model3/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_rice_rice_model3/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_rice_rice_model3/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 2.6909,
+          "changed_ratio": 0.038753,
+          "bbox": [
+            752,
+            115,
+            1025,
+            853
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 4.0866,
+          "changed_ratio": 0.07164,
+          "bbox": [
+            659,
+            94,
+            1046,
+            880
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 3.7454,
+          "changed_ratio": 0.055254,
+          "bbox": [
+            578,
+            123,
+            1027,
+            853
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 46,
+      "id": "github_live2d_cubism_web_samples_samples_resources_wanko_wanko.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_wanko_wanko_model3",
+      "name": "Wanko",
+      "manifest_status": "PASS",
+      "runtime_index": 38,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_wanko_wanko_model3/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_wanko_wanko_model3/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_wanko_wanko_model3/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_wanko_wanko_model3/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 2.4842,
+          "changed_ratio": 0.027345,
+          "bbox": [
+            478,
+            377,
+            829,
+            743
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 1.8207,
+          "changed_ratio": 0.016063,
+          "bbox": [
+            478,
+            387,
+            826,
+            743
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 1.7649,
+          "changed_ratio": 0.015644,
+          "bbox": [
+            478,
+            387,
+            826,
+            743
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 47,
+      "id": "github_live2d_cubism_native_samples_samples_resources_haru_haru.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_haru_haru_model3",
+      "name": "Haru",
+      "manifest_status": "PASS",
+      "runtime_index": 39,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_haru_haru_model3/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_haru_haru_model3/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_haru_haru_model3/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_haru_haru_model3/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 1.0603,
+          "changed_ratio": 0.017106,
+          "bbox": [
+            551,
+            43,
+            730,
+            843
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 2.8784,
+          "changed_ratio": 0.036773,
+          "bbox": [
+            496,
+            43,
+            774,
+            843
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 3.4978,
+          "changed_ratio": 0.045048,
+          "bbox": [
+            474,
+            43,
+            803,
+            857
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 48,
+      "id": "github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori_model3",
+      "name": "Hiyori",
+      "manifest_status": "PASS",
+      "runtime_index": 40,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori_model3/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori_model3/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori_model3/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori_model3/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 0.6064,
+          "changed_ratio": 0.01578,
+          "bbox": [
+            539,
+            68,
+            732,
+            877
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 1.0276,
+          "changed_ratio": 0.024221,
+          "bbox": [
+            539,
+            68,
+            728,
+            877
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 1.58,
+          "changed_ratio": 0.028066,
+          "bbox": [
+            530,
+            58,
+            729,
+            878
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 49,
+      "id": "github_live2d_cubism_native_samples_samples_resources_mao_mao.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_mao_mao_model3",
+      "name": "Mao",
+      "manifest_status": "PASS",
+      "runtime_index": 41,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_mao_mao_model3/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_mao_mao_model3/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_mao_mao_model3/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_mao_mao_model3/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 4.1343,
+          "changed_ratio": 0.065524,
+          "bbox": [
+            337,
+            77,
+            909,
+            880
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 4.4537,
+          "changed_ratio": 0.061298,
+          "bbox": [
+            241,
+            73,
+            909,
+            879
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 3.3806,
+          "changed_ratio": 0.053075,
+          "bbox": [
+            291,
+            75,
+            909,
+            873
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 50,
+      "id": "github_live2d_cubism_native_samples_samples_resources_mark_mark.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_mark_mark_model3",
+      "name": "Mark",
+      "manifest_status": "PASS",
+      "runtime_index": 42,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_mark_mark_model3/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_mark_mark_model3/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_mark_mark_model3/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_mark_mark_model3/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 3.782,
+          "changed_ratio": 0.039987,
+          "bbox": [
+            489,
+            178,
+            793,
+            698
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 3.0484,
+          "changed_ratio": 0.033273,
+          "bbox": [
+            489,
+            182,
+            788,
+            698
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 3.3654,
+          "changed_ratio": 0.035957,
+          "bbox": [
+            489,
+            178,
+            792,
+            698
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 51,
+      "id": "github_live2d_cubism_native_samples_samples_resources_natori_natori.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_natori_natori_model3",
+      "name": "Natori",
+      "manifest_status": "PASS",
+      "runtime_index": 43,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_natori_natori_model3/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_natori_natori_model3/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_natori_natori_model3/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_natori_natori_model3/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 2.0331,
+          "changed_ratio": 0.025464,
+          "bbox": [
+            537,
+            56,
+            741,
+            827
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 2.3684,
+          "changed_ratio": 0.030202,
+          "bbox": [
+            534,
+            56,
+            741,
+            827
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 2.1791,
+          "changed_ratio": 0.027222,
+          "bbox": [
+            537,
+            55,
+            741,
+            827
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 52,
+      "id": "github_live2d_cubism_native_samples_samples_resources_ren_ren.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_ren_ren_model3",
+      "name": "Ren",
+      "manifest_status": "PASS",
+      "runtime_index": 44,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_ren_ren_model3/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_ren_ren_model3/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_ren_ren_model3/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_ren_ren_model3/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 4.868,
+          "changed_ratio": 0.078782,
+          "bbox": [
+            468,
+            36,
+            832,
+            857
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 8.3776,
+          "changed_ratio": 0.115862,
+          "bbox": [
+            486,
+            36,
+            780,
+            857
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 9.5142,
+          "changed_ratio": 0.11703,
+          "bbox": [
+            503,
+            35,
+            813,
+            857
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 53,
+      "id": "github_live2d_cubism_native_samples_samples_resources_rice_rice.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_rice_rice_model3",
+      "name": "Rice",
+      "manifest_status": "PASS",
+      "runtime_index": 45,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_rice_rice_model3/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_rice_rice_model3/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_rice_rice_model3/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_rice_rice_model3/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 2.6066,
+          "changed_ratio": 0.038313,
+          "bbox": [
+            752,
+            113,
+            1025,
+            853
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 4.1712,
+          "changed_ratio": 0.074128,
+          "bbox": [
+            567,
+            3,
+            1045,
+            880
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 3.9426,
+          "changed_ratio": 0.056477,
+          "bbox": [
+            580,
+            123,
+            1027,
+            853
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 54,
+      "id": "github_live2d_cubism_native_samples_samples_resources_wanko_wanko.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_wanko_wanko_model3",
+      "name": "Wanko",
+      "manifest_status": "PASS",
+      "runtime_index": 46,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_wanko_wanko_model3/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_wanko_wanko_model3/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_wanko_wanko_model3/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_wanko_wanko_model3/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 2.5145,
+          "changed_ratio": 0.028229,
+          "bbox": [
+            478,
+            376,
+            830,
+            743
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 1.787,
+          "changed_ratio": 0.015882,
+          "bbox": [
+            478,
+            385,
+            826,
+            743
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 2.5333,
+          "changed_ratio": 0.026272,
+          "bbox": [
+            478,
+            385,
+            829,
+            743
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    },
+    {
+      "rank": 55,
+      "id": "github_live2d_cubism_web_motionsync_samples_resources_kei_basic_kei_basic.model3",
+      "safe_id": "github_live2d_cubism_web_motionsync_samples_resources_kei_basic_kei_basic_model3",
+      "name": "Kei_basic",
+      "manifest_status": "PASS",
+      "runtime_index": 47,
+      "status": "NO_MOTION_GROUP",
+      "motion_group": null,
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_motionsync_samples_resources_kei_basic_kei_basic_model3/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_motionsync_samples_resources_kei_basic_kei_basic_model3/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_motionsync_samples_resources_kei_basic_kei_basic_model3/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_motionsync_samples_resources_kei_basic_kei_basic_model3/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 3.0147,
+          "changed_ratio": 0.055911,
+          "bbox": [
+            309,
+            54,
+            974,
+            900
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 4.629,
+          "changed_ratio": 0.08247,
+          "bbox": [
+            309,
+            52,
+            974,
+            900
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 4.9757,
+          "changed_ratio": 0.091419,
+          "bbox": [
+            309,
+            52,
+            974,
+            900
+          ]
+        }
+      },
+      "qa_class": "NO_MOTION_GROUP"
+    },
+    {
+      "rank": 56,
+      "id": "github_live2d_cubism_web_motionsync_samples_resources_kei_vowels_kei_vowels.model3",
+      "safe_id": "github_live2d_cubism_web_motionsync_samples_resources_kei_vowels_kei_vowels_model3",
+      "name": "Kei_vowels",
+      "manifest_status": "PASS",
+      "runtime_index": 48,
+      "status": "NO_MOTION_GROUP",
+      "motion_group": null,
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_motionsync_samples_resources_kei_vowels_kei_vowels_model3/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_motionsync_samples_resources_kei_vowels_kei_vowels_model3/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_motionsync_samples_resources_kei_vowels_kei_vowels_model3/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_motionsync_samples_resources_kei_vowels_kei_vowels_model3/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 2.9686,
+          "changed_ratio": 0.055328,
+          "bbox": [
+            309,
+            54,
+            974,
+            900
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 4.6499,
+          "changed_ratio": 0.082822,
+          "bbox": [
+            309,
+            52,
+            974,
+            900
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 4.9717,
+          "changed_ratio": 0.091174,
+          "bbox": [
+            309,
+            52,
+            974,
+            900
+          ]
+        }
+      },
+      "qa_class": "NO_MOTION_GROUP"
+    },
+    {
+      "rank": 57,
+      "id": "github_live2d_garage_cubism_web_ar_sample_assets_models_rice_rice.model3",
+      "safe_id": "github_live2d_garage_cubism_web_ar_sample_assets_models_rice_rice_model3",
+      "name": "Rice",
+      "manifest_status": "PASS",
+      "runtime_index": 49,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_garage_cubism_web_ar_sample_assets_models_rice_rice_model3/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_garage_cubism_web_ar_sample_assets_models_rice_rice_model3/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_garage_cubism_web_ar_sample_assets_models_rice_rice_model3/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_garage_cubism_web_ar_sample_assets_models_rice_rice_model3/motion_80.png"
+      },
+      "errors": [],
+      "motion_diffs": {
+        "motion_20": {
+          "present": true,
+          "mean_diff": 2.471,
+          "changed_ratio": 0.037224,
+          "bbox": [
+            751,
+            121,
+            1025,
+            853
+          ]
+        },
+        "motion_50": {
+          "present": true,
+          "mean_diff": 3.691,
+          "changed_ratio": 0.063948,
+          "bbox": [
+            658,
+            124,
+            1047,
+            880
+          ]
+        },
+        "motion_80": {
+          "present": true,
+          "mean_diff": 3.6854,
+          "changed_ratio": 0.054437,
+          "bbox": [
+            577,
+            124,
+            1026,
+            853
+          ]
+        }
+      },
+      "qa_class": "MOTION_STRONG"
+    }
+  ]
+}

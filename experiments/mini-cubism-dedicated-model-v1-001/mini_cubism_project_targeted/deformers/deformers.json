@@ -1,0 +1,310 @@
+[
+  {
+    "id": "Root",
+    "type": "warp",
+    "parent_id": null,
+    "child_ids": [],
+    "bounds": [
+      0,
+      0,
+      2048,
+      2048
+    ],
+    "pivot": [
+      1024.0,
+      1024.0
+    ]
+  },
+  {
+    "id": "Body",
+    "type": "warp",
+    "parent_id": "Root",
+    "child_ids": [
+      "body_base",
+      "neck",
+      "neck_shadow",
+      "chest",
+      "chest_shadow",
+      "shoulder_L",
+      "shoulder_R",
+      "arm_L",
+      "arm_R",
+      "sleeve_L",
+      "sleeve_R",
+      "choker_base",
+      "choker_gem",
+      "ribbon_center",
+      "ribbon_loop_L",
+      "ribbon_loop_R",
+      "ribbon_tail_L",
+      "ribbon_tail_R",
+      "shoulder_frill_L",
+      "shoulder_frill_R",
+      "sleeve_frill_L",
+      "sleeve_frill_R"
+    ],
+    "bounds": [
+      216,
+      846,
+      1835,
+      1881
+    ],
+    "pivot": [
+      1025.5,
+      1363.5
+    ]
+  },
+  {
+    "id": "Head_X",
+    "type": "warp",
+    "parent_id": "Root",
+    "child_ids": [
+      "front_bang_L",
+      "front_bang_CL",
+      "front_bang_C",
+      "front_bang_CR",
+      "front_bang_R",
+      "front_side_lock_L",
+      "front_side_lock_R",
+      "side_hair_L_upper",
+      "side_hair_L_lower",
+      "side_hair_R_upper",
+      "side_hair_R_lower",
+      "back_hair_base",
+      "back_hair_L",
+      "back_hair_C",
+      "back_hair_R",
+      "back_hair_tip_L",
+      "back_hair_tip_C",
+      "back_hair_tip_R",
+      "face_base",
+      "face_shadow_L",
+      "face_shadow_R",
+      "ear_L",
+      "ear_R",
+      "ear_inner_L",
+      "ear_inner_R",
+      "cheek_blush_L",
+      "cheek_blush_R",
+      "eye_white_L",
+      "eye_white_R",
+      "iris_L",
+      "iris_R",
+      "pupil_L",
+      "pupil_R",
+      "catchlight_L",
+      "catchlight_R",
+      "upper_lid_L",
+      "upper_lid_R",
+      "lower_lid_L",
+      "lower_lid_R",
+      "upper_lash_L",
+      "upper_lash_R",
+      "brow_L",
+      "brow_R",
+      "mouth_closed_line",
+      "mouth_half_outer",
+      "mouth_half_inner",
+      "mouth_open_outer",
+      "mouth_open_inner",
+      "mouth_teeth_upper",
+      "mouth_tongue",
+      "mouth_shadow"
+    ],
+    "bounds": [
+      326,
+      251,
+      1725,
+      1953
+    ],
+    "pivot": [
+      1025.5,
+      1102.0
+    ]
+  },
+  {
+    "id": "Face_Base",
+    "type": "warp",
+    "parent_id": "Head_X",
+    "child_ids": [
+      "face_base",
+      "face_shadow_L",
+      "face_shadow_R",
+      "ear_L",
+      "ear_R",
+      "ear_inner_L",
+      "ear_inner_R",
+      "cheek_blush_L",
+      "cheek_blush_R"
+    ],
+    "bounds": [
+      576,
+      363,
+      1470,
+      847
+    ],
+    "pivot": [
+      1023.0,
+      605.0
+    ]
+  },
+  {
+    "id": "Eye_L",
+    "type": "warp",
+    "parent_id": "Head_X",
+    "child_ids": [
+      "eye_white_L",
+      "iris_L",
+      "pupil_L",
+      "catchlight_L",
+      "upper_lid_L",
+      "lower_lid_L",
+      "upper_lash_L",
+      "brow_L"
+    ],
+    "bounds": [
+      1016,
+      496,
+      1303,
+      762
+    ],
+    "pivot": [
+      1159.5,
+      629.0
+    ]
+  },
+  {
+    "id": "Eye_R",
+    "type": "warp",
+    "parent_id": "Head_X",
+    "child_ids": [
+      "eye_white_R",
+      "iris_R",
+      "pupil_R",
+      "catchlight_R",
+      "upper_lid_R",
+      "lower_lid_R",
+      "upper_lash_R",
+      "brow_R"
+    ],
+    "bounds": [
+      741,
+      496,
+      1028,
+      762
+    ],
+    "pivot": [
+      884.5,
+      629.0
+    ]
+  },
+  {
+    "id": "Mouth",
+    "type": "warp",
+    "parent_id": "Head_X",
+    "child_ids": [
+      "mouth_closed_line",
+      "mouth_half_outer",
+      "mouth_half_inner",
+      "mouth_open_outer",
+      "mouth_open_inner",
+      "mouth_teeth_upper",
+      "mouth_tongue",
+      "mouth_shadow"
+    ],
+    "bounds": [
+      901,
+      778,
+      1150,
+      951
+    ],
+    "pivot": [
+      1025.5,
+      864.5
+    ]
+  },
+  {
+    "id": "Hair_Front",
+    "type": "rotation",
+    "parent_id": "Head_X",
+    "child_ids": [
+      "front_bang_L",
+      "front_bang_CL",
+      "front_bang_C",
+      "front_bang_CR",
+      "front_bang_R",
+      "front_side_lock_L",
+      "front_side_lock_R"
+    ],
+    "bounds": [
+      709,
+      279,
+      1331,
+      1295
+    ],
+    "pivot": [
+      1020.0,
+      787.0
+    ]
+  },
+  {
+    "id": "Hair_Back",
+    "type": "warp",
+    "parent_id": "Root",
+    "child_ids": [
+      "side_hair_L_upper",
+      "side_hair_L_lower",
+      "side_hair_R_upper",
+      "side_hair_R_lower",
+      "back_hair_base",
+      "back_hair_L",
+      "back_hair_C",
+      "back_hair_R",
+      "back_hair_tip_L",
+      "back_hair_tip_C",
+      "back_hair_tip_R"
+    ],
+    "bounds": [
+      326,
+      251,
+      1725,
+      1953
+    ],
+    "pivot": [
+      1025.5,
+      1102.0
+    ]
+  },
+  {
+    "id": "Accessory",
+    "type": "rotation",
+    "parent_id": "Root",
+    "child_ids": [
+      "ear_L",
+      "ear_R",
+      "ear_inner_L",
+      "ear_inner_R",
+      "choker_base",
+      "choker_gem",
+      "ribbon_center",
+      "ribbon_loop_L",
+      "ribbon_loop_R",
+      "ribbon_tail_L",
+      "ribbon_tail_R",
+      "shoulder_frill_L",
+      "shoulder_frill_R",
+      "sleeve_frill_L",
+      "sleeve_frill_R"
+    ],
+    "bounds": [
+      266,
+      596,
+      1785,
+      1785
+    ],
+    "pivot": [
+      1025.5,
+      1190.5
+    ]
+  }
+]

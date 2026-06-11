@@ -1,0 +1,106 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T14:22:05.617024+00:00",
+  "status": "B5_BODY_BLOCKER_DRAW_ORDER_REVIEW_READY_HUMAN_DECISION_REQUIRED",
+  "source_image": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/new_character_002_source_front.raw.png",
+  "b5_raw_image": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/raw_outputs/b5_body_clothing_pack_reference_001.png",
+  "v2_report": "experiments/cubism-v2-new-character-002/reports/v22_b5_refined_mask_v2/v22_b5_refined_mask_v2_report.json",
+  "v2_overlay_qa_report": "experiments/cubism-v2-new-character-002/reports/v22_b5_refined_mask_v2/v22_b5_refined_mask_v2_overlay_qa_report.json",
+  "review_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b5_body_blocker_draw_order_review/v22_b5_body_blocker_draw_order_review.png",
+  "targets": [
+    "torso_base",
+    "shoulder_L",
+    "shoulder_R"
+  ],
+  "entries": [
+    {
+      "part_id": "torso_base",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/torso_base.png",
+      "bbox": [
+        630,
+        990,
+        1429,
+        1864
+      ],
+      "crop_box": [
+        520,
+        880,
+        1539,
+        1974
+      ],
+      "alpha_coverage": 0.14019799,
+      "hair_occlusion_overlap_ratio": 0.141695,
+      "recommendation": "REGENERATE_OR_FOCUSED_HUMAN_ACCEPT_BROAD_UNDERPAINT",
+      "interpretation": "Torso remains a broad underpaint/body material decision and should not be solved by more alpha shrinking."
+    },
+    {
+      "part_id": "shoulder_L",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/shoulder_L.png",
+      "bbox": [
+        577,
+        1011,
+        863,
+        1216
+      ],
+      "crop_box": [
+        467,
+        901,
+        973,
+        1326
+      ],
+      "alpha_coverage": 0.01091456,
+      "hair_occlusion_overlap_ratio": 0.870193,
+      "recommendation": "REVIEW_DRAW_ORDER_BEFORE_REGENERATE",
+      "interpretation": "Shoulder overlap is likely partly draw-order/occlusion related; review before regenerating."
+    },
+    {
+      "part_id": "shoulder_R",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/shoulder_R.png",
+      "bbox": [
+        1205,
+        1013,
+        1455,
+        1218
+      ],
+      "crop_box": [
+        1095,
+        903,
+        1565,
+        1328
+      ],
+      "alpha_coverage": 0.00972676,
+      "hair_occlusion_overlap_ratio": 0.868247,
+      "recommendation": "REVIEW_DRAW_ORDER_BEFORE_REGENERATE",
+      "interpretation": "Shoulder overlap is likely partly draw-order/occlusion related; review before regenerating."
+    }
+  ],
+  "regeneration_prompt_if_rejected": "Create a focused Live2D/Cubism B5 body mini-pass for the same accepted G0 source character.\nGenerate only clean rig-friendly body material references for torso_base, shoulder_L, and shoulder_R.\nKeep the same adult cute woman identity, pale soft skin, warm brown hair context, white ribbed off-shoulder sweater, shoulder straps, line thickness, and soft anime shading.\nThe shoulders must be clean skin/strap/cloth underpaint suitable to sit behind front/side hair without hair pixels baked into the shoulder layer.\nThe torso_base must be a complete upper-body base for breath/body-angle support, with coherent skin-to-clothing continuity and no pasted crop artifacts.\nNo labels, arrows, grids, extra faces, hands, jewelry, props, hairstyle changes, new outfit, perspective pose, cropped shoulders, or source-crop artifacts.",
+  "decision": "The three B5 hard blockers remain blocked from material PASS, but this packet separates draw-order-aware shoulder review from true regeneration/re-extraction. Do not ask the owner to manually anchor all B5 parts.",
+  "next_action": [
+    "Ask for focused accept/reject only on torso_base, shoulder_L, and shoulder_R using this review sheet.",
+    "If shoulders are rejected after draw-order review, run the regeneration prompt for a B5 body mini-pass.",
+    "If torso_base is rejected, regenerate or re-extract a complete torso/body underpaint instead of shrinking alpha again.",
+    "Keep B4 hair focused review separate and keep G7/G8 blocked."
+  ],
+  "self_review": {
+    "v2_status": "B5_REFINED_MASK_V2_CANDIDATE_READY_FOR_OVERLAY_REVIEW",
+    "v2_qa_status": "B5_REFINED_MASK_V2_OVERLAY_QA_REVISE_REGENERATE_OR_HUMAN_REVIEW_REQUIRED",
+    "previous_remaining_b5_revise_parts": [
+      "torso_base",
+      "shoulder_L",
+      "shoulder_R"
+    ],
+    "target_count": 3,
+    "entries_count": 3,
+    "all_targets_present": true,
+    "review_sheet_exists": true,
+    "has_regeneration_prompt": true,
+    "has_human_decision_gate": true,
+    "does_not_require_owner_review_all_33": true,
+    "validator_only_promotion_blocked": true,
+    "param_hair_front_hidden": true,
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true,
+    "status": "PASS"
+  }
+}

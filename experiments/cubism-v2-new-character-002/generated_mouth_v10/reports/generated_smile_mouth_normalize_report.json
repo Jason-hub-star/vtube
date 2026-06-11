@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T05:24:27.613925+00:00",
+  "status": "PASS_GENERATED_MOUTH_NORMALIZED_READY_FOR_VISUAL_QA",
+  "source_image": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/generated_mouth_v10/raw_outputs/smile_mouth_keypose_sheet_chromakey.png",
+  "alpha_sheet": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/generated_mouth_v10/reports/smile_mouth_keypose_sheet_alpha.png",
+  "layers_dir": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/generated_mouth_v10/normalized_layers",
+  "contact_sheet": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/generated_mouth_v10/reports/generated_smile_mouth_contact_sheet.png",
+  "mouth_layers": [
+    {
+      "id": "mouth_smile_closed_gen",
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/generated_mouth_v10/normalized_layers/mouth_smile_closed_gen.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "bbox": [
+        951,
+        872,
+        1119,
+        912
+      ],
+      "alpha_nonzero": 3209,
+      "target_width": 168
+    },
+    {
+      "id": "mouth_smile_small_open_gen",
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/generated_mouth_v10/normalized_layers/mouth_smile_small_open_gen.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "bbox": [
+        943,
+        864,
+        1127,
+        920
+      ],
+      "alpha_nonzero": 6970,
+      "target_width": 184
+    },
+    {
+      "id": "mouth_smile_mid_teeth_gen",
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/generated_mouth_v10/normalized_layers/mouth_smile_mid_teeth_gen.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "bbox": [
+        931,
+        850,
+        1139,
+        934
+      ],
+      "alpha_nonzero": 11920,
+      "target_width": 208
+    },
+    {
+      "id": "mouth_smile_wide_teeth_tongue_gen",
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/generated_mouth_v10/normalized_layers/mouth_smile_wide_teeth_tongue_gen.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "bbox": [
+        919,
+        834,
+        1151,
+        950
+      ],
+      "alpha_nonzero": 18439,
+      "target_width": 232
+    }
+  ]
+}

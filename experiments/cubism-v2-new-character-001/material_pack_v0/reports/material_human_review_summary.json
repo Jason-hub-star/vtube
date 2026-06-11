@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "HUMAN_REVIEW_IN_PROGRESS",
+  "generated_at": "2026-06-08T05:56:28.203419+00:00",
+  "review_path": "experiments/cubism-v2-new-character-001/material_pack_v0/reports/material_human_review.json",
+  "fix_queue_path": "experiments/cubism-v2-new-character-001/material_pack_v0/reports/material_review_fix_queue.json",
+  "total_items": 64,
+  "reviewed_items": 64,
+  "verdict_counts": {
+    "UNREVIEWED": 0,
+    "KEEP": 9,
+    "REVISE": 53,
+    "REGENERATE": 0,
+    "MERGE": 2,
+    "IGNORE": 0
+  },
+  "issue_counts": {
+    "missing_part": 0,
+    "bad_alpha": 7,
+    "misaligned": 28,
+    "style_mismatch": 7,
+    "underpaint_missing": 9,
+    "clipping_risk": 9,
+    "draw_order_issue": 6,
+    "overhang_issue": 2,
+    "too_coarse": 33,
+    "too_tiny": 4,
+    "placeholder": 0
+  },
+  "fix_queue_count": 53,
+  "critical_next_action": "Fix REVISE/REGENERATE parts before Cubism import smoke."
+}

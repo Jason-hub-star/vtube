@@ -1,0 +1,6 @@
+{
+  "pw": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/TypeScript/Demo/node_modules/playwright",
+  "base": "http://127.0.0.1:8066/",
+  "captures": "/Users/family/jason/Vtube/experiments/autorig-template-001/reports/mesh_deform_verify",
+  "out": "/Users/family/jason/Vtube/experiments/autorig-template-001/reports/mesh_deform_verify_raw.json"
+}

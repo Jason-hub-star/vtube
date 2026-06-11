@@ -1,0 +1,112 @@
+[
+  {
+    "id": "ParamAngleX",
+    "min": -30,
+    "max": 30,
+    "default": 0,
+    "key_values": [
+      -30,
+      0,
+      30
+    ]
+  },
+  {
+    "id": "ParamAngleY",
+    "min": -20,
+    "max": 20,
+    "default": 0,
+    "key_values": [
+      -20,
+      0,
+      20
+    ]
+  },
+  {
+    "id": "ParamAngleZ",
+    "min": -15,
+    "max": 15,
+    "default": 0,
+    "key_values": [
+      -15,
+      0,
+      15
+    ]
+  },
+  {
+    "id": "ParamEyeLOpen",
+    "min": 0,
+    "max": 1,
+    "default": 1,
+    "key_values": [
+      0,
+      0.5,
+      1
+    ]
+  },
+  {
+    "id": "ParamEyeROpen",
+    "min": 0,
+    "max": 1,
+    "default": 1,
+    "key_values": [
+      0,
+      0.5,
+      1
+    ]
+  },
+  {
+    "id": "ParamMouthOpenY",
+    "min": 0,
+    "max": 1,
+    "default": 0,
+    "key_values": [
+      0,
+      0.5,
+      1
+    ]
+  },
+  {
+    "id": "ParamMouthForm",
+    "min": -1,
+    "max": 1,
+    "default": 0,
+    "key_values": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "ParamHairFront",
+    "min": -1,
+    "max": 1,
+    "default": 0,
+    "key_values": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "ParamHairBack",
+    "min": -1,
+    "max": 1,
+    "default": 0,
+    "key_values": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "ParamAccessory",
+    "min": -1,
+    "max": 1,
+    "default": 0,
+    "key_values": [
+      -1,
+      0,
+      1
+    ]
+  }
+]

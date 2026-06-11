@@ -1,0 +1,213 @@
+{
+  "status": "FAIL_NEUTRAL_VISUAL_COMPOSITE",
+  "canonical": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/canonical/candidate_002_2048_rgba.png",
+  "composite": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/import_visual_diagnosis/neutral_composite_from_layers.png",
+  "diff_overlay": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/import_visual_diagnosis/neutral_diff_overlay.png",
+  "counts": {
+    "layers_included": 62,
+    "part_opacity_keyframes": 0,
+    "visible_pixels": 948321,
+    "bad_pixels": 418776,
+    "bad_ratio_visible": 0.441597,
+    "missing_pixels": 91638,
+    "extra_pixels": 122724
+  },
+  "visible_keypose_or_aux_parts": [
+    [
+      "eye_L_highlight",
+      182,
+      "DERIVED_KEYPOSE",
+      1022
+    ],
+    [
+      "eye_L_closed_lid",
+      1517,
+      "DERIVED_KEYPOSE",
+      1025
+    ],
+    [
+      "eye_R_closed_lid",
+      760,
+      "DERIVED_KEYPOSE",
+      1033
+    ],
+    [
+      "mouth_inner",
+      1992,
+      "DERIVED_KEYPOSE",
+      1238
+    ],
+    [
+      "mouth_teeth",
+      1215,
+      "DERIVED_KEYPOSE",
+      1341
+    ],
+    [
+      "mouth_tongue",
+      642,
+      "DERIVED_KEYPOSE",
+      1342
+    ],
+    [
+      "mouth_line",
+      1148,
+      "DERIVED_KEYPOSE",
+      1437
+    ],
+    [
+      "mouth_upper_lip_mask",
+      661,
+      "DERIVED_KEYPOSE",
+      1439
+    ],
+    [
+      "mouth_lower_lip_mask",
+      621,
+      "DERIVED_KEYPOSE",
+      1440
+    ],
+    [
+      "mouth_corner_L",
+      170,
+      "DERIVED_KEYPOSE",
+      1443
+    ],
+    [
+      "mouth_corner_R",
+      173,
+      "DERIVED_KEYPOSE",
+      1444
+    ]
+  ],
+  "visible_underpaint_parts": [
+    [
+      "body_underpaint",
+      47270,
+      1
+    ],
+    [
+      "arm_L_underpaint",
+      4088,
+      9
+    ],
+    [
+      "arm_R_underpaint",
+      20165,
+      10
+    ],
+    [
+      "hair_back_underpaint",
+      161806,
+      146
+    ],
+    [
+      "face_underpaint_L",
+      2165,
+      514
+    ],
+    [
+      "face_underpaint_R",
+      2191,
+      515
+    ],
+    [
+      "eye_L_underpaint",
+      527,
+      826
+    ],
+    [
+      "eye_R_underpaint",
+      575,
+      834
+    ]
+  ],
+  "top_bad_owner_parts": [
+    [
+      "hair_back_underpaint",
+      126089
+    ],
+    [
+      "body_underpaint",
+      44074
+    ],
+    [
+      "chest_cloth_base",
+      35206
+    ],
+    [
+      "face_base",
+      20836
+    ],
+    [
+      "arm_R_underpaint",
+      16895
+    ],
+    [
+      "neck",
+      15479
+    ],
+    [
+      "collar_front",
+      9454
+    ],
+    [
+      "face_shadow_R",
+      6248
+    ],
+    [
+      "arm_L_upper_simple",
+      6117
+    ],
+    [
+      "hair_front_side_L",
+      6000
+    ],
+    [
+      "hair_front_side_R",
+      4737
+    ],
+    [
+      "shoulder_R",
+      4428
+    ],
+    [
+      "hair_front_L",
+      4054
+    ],
+    [
+      "shoulder_L",
+      4028
+    ],
+    [
+      "brow_L",
+      3661
+    ],
+    [
+      "eye_L_upper_lash",
+      3506
+    ],
+    [
+      "hair_front_R",
+      3430
+    ],
+    [
+      "arm_L_underpaint",
+      3139
+    ],
+    [
+      "arm_R_upper_simple",
+      2895
+    ],
+    [
+      "eye_L_lower_lash",
+      2484
+    ]
+  ],
+  "interpretation": [
+    "Neutral composite does not match canonical closely enough.",
+    "Auxiliary keypose/mouth/blink parts are visible because Mini Cubism material project has no part_opacity_keyframes yet.",
+    "Underpaint/flat generated fills are visible where source-cut foreground masks are incomplete.",
+    "This is material extraction/neutral state setup failure, not PSD parser/import failure."
+  ]
+}

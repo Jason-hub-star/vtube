@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T02:45:01.224726+00:00",
+  "experiment_id": "cubism-v2-new-character-002",
+  "candidate_id": "model_edit_v4_strict_mouth",
+  "status": "MODEL_EDIT_STRICT_MOUTH_CANDIDATE_READY_FOR_VALIDATOR",
+  "base_layers": "experiments/cubism-v2-new-character-002/model_edit_v3_hybrid/normalized_layers",
+  "strict_mouth_layers": "experiments/cubism-v2-new-character-002/material_pack_first_v5_layer_alpha_seed_strict_expr/normalized_layers",
+  "output_layers": "experiments/cubism-v2-new-character-002/model_edit_v4_strict_mouth/normalized_layers",
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/model_edit_v4_strict_mouth/model_edit_v4_strict_mouth_contact_sheet.png",
+  "replacements": [
+    {
+      "asset_id": "mouth_closed_smile",
+      "source": "experiments/cubism-v2-new-character-002/material_pack_first_v5_layer_alpha_seed_strict_expr/normalized_layers/mouth_closed_smile.png",
+      "before_alpha_bbox": [
+        921,
+        785,
+        1149,
+        905
+      ],
+      "after_alpha_bbox": [
+        946,
+        794,
+        1143,
+        903
+      ],
+      "before_alpha_coverage": 0.00529718,
+      "after_alpha_coverage": 6.986e-05
+    },
+    {
+      "asset_id": "mouth_small_open",
+      "source": "experiments/cubism-v2-new-character-002/material_pack_first_v5_layer_alpha_seed_strict_expr/normalized_layers/mouth_small_open.png",
+      "before_alpha_bbox": [
+        924,
+        785,
+        1147,
+        905
+      ],
+      "after_alpha_bbox": [
+        925,
+        787,
+        1139,
+        905
+      ],
+      "before_alpha_coverage": 0.00528765,
+      "after_alpha_coverage": 0.00051355
+    },
+    {
+      "asset_id": "mouth_wide_open",
+      "source": "experiments/cubism-v2-new-character-002/material_pack_first_v5_layer_alpha_seed_strict_expr/normalized_layers/mouth_wide_open.png",
+      "before_alpha_bbox": [
+        915,
+        780,
+        1155,
+        909
+      ],
+      "after_alpha_bbox": [
+        936,
+        782,
+        1151,
+        903
+      ],
+      "before_alpha_coverage": 0.00601721,
+      "after_alpha_coverage": 0.00163794
+    },
+    {
+      "asset_id": "mouth_o_vowel",
+      "source": "experiments/cubism-v2-new-character-002/material_pack_first_v5_layer_alpha_seed_strict_expr/normalized_layers/mouth_o_vowel.png",
+      "before_alpha_bbox": [
+        924,
+        780,
+        1145,
+        910
+      ],
+      "after_alpha_bbox": [
+        928,
+        787,
+        1130,
+        910
+      ],
+      "before_alpha_coverage": 0.00573254,
+      "after_alpha_coverage": 0.00026917
+    }
+  ],
+  "note": "Best current clean base/eye candidate with strict-alpha mouth expression layers."
+}

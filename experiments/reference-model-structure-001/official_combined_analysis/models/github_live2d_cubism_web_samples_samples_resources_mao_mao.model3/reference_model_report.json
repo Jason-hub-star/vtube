@@ -1,0 +1,583 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T15:27:25.842946+00:00",
+  "id": "github_live2d_cubism_web_samples_samples_resources_mao_mao.model3",
+  "name": "Mao",
+  "source_url": "https://github.com/Live2D/CubismWebSamples",
+  "source_type": "OFFICIAL_GITHUB_SAMPLE",
+  "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+  "analysis_mode": "RUNTIME_ONLY",
+  "official_profile_key": "mao",
+  "analysis_safety_notes": [],
+  "has_cmo3": false,
+  "has_moc3": true,
+  "has_model3_json": true,
+  "has_physics3_json": true,
+  "has_psd": false,
+  "local_paths": {
+    "exp3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_01.exp3.json",
+        "exists": true,
+        "size_bytes": 1981
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_02.exp3.json",
+        "exists": true,
+        "size_bytes": 1981
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_03.exp3.json",
+        "exists": true,
+        "size_bytes": 1981
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_04.exp3.json",
+        "exists": true,
+        "size_bytes": 1985
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_05.exp3.json",
+        "exists": true,
+        "size_bytes": 1986
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_06.exp3.json",
+        "exists": true,
+        "size_bytes": 1985
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_07.exp3.json",
+        "exists": true,
+        "size_bytes": 1987
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_08.exp3.json",
+        "exists": true,
+        "size_bytes": 1982
+      }
+    ],
+    "motion3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/mtn_01.motion3.json",
+        "exists": true,
+        "size_bytes": 27661
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/sample_01.motion3.json",
+        "exists": true,
+        "size_bytes": 28330
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/mtn_02.motion3.json",
+        "exists": true,
+        "size_bytes": 24274
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/mtn_03.motion3.json",
+        "exists": true,
+        "size_bytes": 22934
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/mtn_04.motion3.json",
+        "exists": true,
+        "size_bytes": 27346
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/special_01.motion3.json",
+        "exists": true,
+        "size_bytes": 34229
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/special_02.motion3.json",
+        "exists": true,
+        "size_bytes": 41809
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/special_03.motion3.json",
+        "exists": true,
+        "size_bytes": 48041
+      }
+    ],
+    "cdi3_json": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/Mao.cdi3.json",
+      "exists": true,
+      "size_bytes": 16797
+    },
+    "pose3_json": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/Mao.pose3.json",
+      "exists": true,
+      "size_bytes": 254
+    },
+    "model3_json": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/Mao.model3.json",
+      "exists": true,
+      "size_bytes": 1699
+    },
+    "moc3": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/Mao.moc3",
+      "exists": true,
+      "size_bytes": 879680
+    },
+    "physics3_json": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/Mao.physics3.json",
+      "exists": true,
+      "size_bytes": 21838
+    }
+  },
+  "cmo3": {
+    "status": "NOT_REQUESTED"
+  },
+  "moc3": {
+    "present": true,
+    "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/Mao.moc3",
+    "size_bytes": 879680,
+    "sha256": "ad5195b39e35e0da8ba0c825ad9cc2d60571502007f6f7d4f00963b768bb90d8",
+    "py_moc3_status": "PASS",
+    "parameter_count": 132,
+    "art_mesh_count": 262,
+    "parameter_ids": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamCheek",
+      "ParamFaceInkOn",
+      "ParamEyeLOpen",
+      "ParamEyeLSmile",
+      "ParamEyeLForm",
+      "ParamEyeROpen",
+      "ParamEyeRSmile",
+      "ParamEyeRForm",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamEyeBallForm",
+      "ParamEyeEffect",
+      "ParamBrowLY",
+      "ParamBrowRY",
+      "ParamBrowLX",
+      "ParamBrowRX",
+      "ParamBrowLAngle",
+      "ParamBrowRAngle",
+      "ParamBrowLForm",
+      "ParamBrowRForm",
+      "ParamA",
+      "ParamI",
+      "ParamU",
+      "ParamE",
+      "ParamO",
+      "ParamMouthUp",
+      "ParamMouthDown",
+      "ParamMouthAngry",
+      "ParamMouthAngryLine",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBodyAngleZ",
+      "ParamBreath",
+      "ParamLeftShoulderUp",
+      "ParamRightShoulderUp",
+      "ParamArmLA01",
+      "ParamArmLA02",
+      "ParamArmLA03",
+      "ParamHandLA",
+      "ParamArmRA01",
+      "ParamArmRA02",
+      "ParamArmRA03",
+      "ParamWandRotate",
+      "ParamHandRA",
+      "ParamInkDrop",
+      "ParamInkDropRotate",
+      "ParamInkDropOn",
+      "ParamArmLB01",
+      "ParamArmLB02",
+      "ParamArmLB03",
+      "ParamHandLB",
+      "ParamHatForm",
+      "ParamArmRB01",
+      "ParamArmRB02",
+      "ParamArmRB02Y",
+      "ParamArmRB03",
+      "ParamHandRB",
+      "ParamAllX",
+      "ParamAllY",
+      "ParamAllRotate",
+      "ParamHairFront",
+      "ParamHairSideL",
+      "ParamHairSideR",
+      "ParamHairBack",
+      "ParamHairBackR",
+      "ParamHairBackL",
+      "ParamoHairMesh",
+      "ParamHairFrontFuwa",
+      "ParamHairSideFuwa",
+      "ParamHairBackFuwa",
+      "ParamWing",
+      "ParamRibbon",
+      "ParamHatBrim",
+      "ParamHatTop",
+      "ParamAccessory1",
+      "ParamAccessory2",
+      "ParamString",
+      "ParamRobeL",
+      "ParamRobeR",
+      "ParamRobeFuwa",
+      "ParamHeartMissOn",
+      "ParamHeartBackMissOn",
+      "ParamHeartColorRainbow",
+      "ParamHeartHealOn",
+      "ParamHeartBackHealOn",
+      "ParamHeartColorHeal",
+      "ParamHeartDrow",
+      "ParamHeartSize",
+      "ParamHeartColorLight",
+      "ParamWandInkColorRainbow",
+      "ParamWandInkColorHeal",
+      "ParamWandInk",
+      "ParamSmokeOn",
+      "ParamSmoke",
+      "ParamExplosionChargeOn",
+      "ParamExplosionLightCharge",
+      "ParamExplosionOn",
+      "ParamExplosion",
+      "ParamRabbitElimination",
+      "ParamRabbitAppearance",
+      "ParamRabbitSize",
+      "ParamRabbitDraworder",
+      "ParamRabbitEar",
+      "ParamRabbitDirection",
+      "ParamRabbitLight",
+      "ParamRabbitLightSize",
+      "ParamRabbitX",
+      "ParamRabbitY",
+      "ParamRabbitRotate",
+      "ParamAuraOn",
+      "ParamAura",
+      "ParamAuraColor1",
+      "ParamAuraColor2",
+      "ParamHeartLightOn",
+      "ParamHeartLight",
+      "ParamHeartLightColor",
+      "ParamHealLightOn",
+      "ParamHealLight",
+      "ParamStrengthenLightOn",
+      "ParamStrengthenLight",
+      "ParamStrengthenLightMove",
+      "ParamMagicPositionX",
+      "ParamMagicPositionY",
+      "ParamAllColor1",
+      "ParamAllColor2",
+      "ParamSphereOn",
+      "ParamSphereMove",
+      "ParamSphereMultiplyColor",
+      "ParamSphereScreenColor"
+    ],
+    "art_mesh_ids_sample": [
+      "ArtMesh121",
+      "ArtMesh122",
+      "ArtMesh124",
+      "ArtMesh125",
+      "ArtMesh126",
+      "ArtMesh127",
+      "ArtMesh128",
+      "ArtMesh129",
+      "ArtMesh130",
+      "ArtMesh131",
+      "ArtMesh132",
+      "ArtMesh133",
+      "ArtMesh135",
+      "ArtMesh136",
+      "ArtMesh137",
+      "ArtMesh144",
+      "ArtMesh145",
+      "ArtMesh147",
+      "ArtMesh149",
+      "ArtMesh150",
+      "ArtMesh151",
+      "ArtMesh152",
+      "ArtMesh157",
+      "ArtMesh158",
+      "ArtMesh159",
+      "ArtMesh160",
+      "ArtMesh161",
+      "ArtMesh153",
+      "ArtMesh154",
+      "ArtMesh155",
+      "ArtMesh156",
+      "ArtMesh163",
+      "ArtMesh164",
+      "ArtMesh165",
+      "ArtMesh166",
+      "ArtMesh179",
+      "ArtMesh180",
+      "ArtMesh119",
+      "ArtMesh123",
+      "ArtMesh118",
+      "ArtMesh172",
+      "ArtMesh173",
+      "ArtMesh181",
+      "ArtMesh182",
+      "ArtMesh162",
+      "ArtMesh148",
+      "ArtMesh139",
+      "ArtMesh134",
+      "ArtMesh197",
+      "ArtMesh200"
+    ]
+  },
+  "runtime_json": {
+    "model3": {
+      "present": true,
+      "version": 3,
+      "moc": "Mao.moc3",
+      "texture_count": 1,
+      "has_physics": true,
+      "has_pose": true,
+      "has_display_info": true,
+      "has_user_data": false,
+      "expression_count": 8,
+      "motion_group_count": 2,
+      "motion_count": 8,
+      "group_count": 2,
+      "parameter_ids": [
+        "ParamA",
+        "ParamEyeLOpen",
+        "ParamEyeROpen"
+      ],
+      "file_references": {
+        "Moc": "Mao.moc3",
+        "Textures": [
+          "Mao.2048/texture_00.png"
+        ],
+        "Physics": "Mao.physics3.json",
+        "Pose": "Mao.pose3.json",
+        "DisplayInfo": "Mao.cdi3.json",
+        "Expressions": [
+          {
+            "Name": "exp_01",
+            "File": "expressions/exp_01.exp3.json"
+          },
+          {
+            "Name": "exp_02",
+            "File": "expressions/exp_02.exp3.json"
+          },
+          {
+            "Name": "exp_03",
+            "File": "expressions/exp_03.exp3.json"
+          },
+          {
+            "Name": "exp_04",
+            "File": "expressions/exp_04.exp3.json"
+          },
+          {
+            "Name": "exp_05",
+            "File": "expressions/exp_05.exp3.json"
+          },
+          {
+            "Name": "exp_06",
+            "File": "expressions/exp_06.exp3.json"
+          },
+          {
+            "Name": "exp_07",
+            "File": "expressions/exp_07.exp3.json"
+          },
+          {
+            "Name": "exp_08",
+            "File": "expressions/exp_08.exp3.json"
+          }
+        ],
+        "Motions": {
+          "Idle": [
+            {
+              "File": "motions/mtn_01.motion3.json"
+            },
+            {
+              "File": "motions/sample_01.motion3.json"
+            }
+          ],
+          "TapBody": [
+            {
+              "File": "motions/mtn_02.motion3.json"
+            },
+            {
+              "File": "motions/mtn_03.motion3.json"
+            },
+            {
+              "File": "motions/mtn_04.motion3.json"
+            },
+            {
+              "File": "motions/special_01.motion3.json"
+            },
+            {
+              "File": "motions/special_02.motion3.json"
+            },
+            {
+              "File": "motions/special_03.motion3.json"
+            }
+          ]
+        }
+      }
+    },
+    "physics3": {
+      "present": true,
+      "version": 3,
+      "physics_group_count": 16,
+      "physics_input_count": 43,
+      "physics_output_count": 20,
+      "physics_vertex_count": 33,
+      "groups": [
+        {
+          "index": 0,
+          "id": "PhysicsSetting1",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 1,
+          "id": "PhysicsSetting2",
+          "input_count": 4,
+          "output_count": 2,
+          "vertex_count": 2
+        },
+        {
+          "index": 2,
+          "id": "PhysicsSetting3",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 3,
+          "id": "PhysicsSetting4",
+          "input_count": 4,
+          "output_count": 2,
+          "vertex_count": 2
+        },
+        {
+          "index": 4,
+          "id": "PhysicsSetting5",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 5,
+          "id": "PhysicsSetting6",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 6,
+          "id": "PhysicsSetting7",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 7,
+          "id": "PhysicsSetting8",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 8,
+          "id": "PhysicsSetting9",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 9,
+          "id": "PhysicsSetting10",
+          "input_count": 3,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 10,
+          "id": "PhysicsSetting11",
+          "input_count": 3,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 11,
+          "id": "PhysicsSetting12",
+          "input_count": 1,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 12,
+          "id": "PhysicsSetting13",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 13,
+          "id": "PhysicsSetting14",
+          "input_count": 2,
+          "output_count": 2,
+          "vertex_count": 3
+        },
+        {
+          "index": 14,
+          "id": "PhysicsSetting15",
+          "input_count": 2,
+          "output_count": 2,
+          "vertex_count": 2
+        },
+        {
+          "index": 15,
+          "id": "PhysicsSetting16",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        }
+      ]
+    },
+    "cdi3": {
+      "present": true,
+      "parameter_display_count": 132,
+      "part_display_count": 33
+    },
+    "motion3_count": 8,
+    "exp3_count": 8,
+    "pose3_present": true,
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 262,
+    "parts": 0,
+    "parameters": 132,
+    "warp_deformers": 0,
+    "rotation_deformers": 0,
+    "keyform_bindings": 0,
+    "keyform_grids": 0,
+    "glue": 0,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": false,
+    "pose": true,
+    "expression": true,
+    "motion": true,
+    "physics": true
+  },
+  "structure_hints": {
+    "hair": 1,
+    "eye": 1,
+    "mouth": 1,
+    "body": 1,
+    "arm": 2
+  },
+  "reuse_decision": "REFERENCE_ONLY",
+  "notes": [
+    "Official Live2D Cubism Web SDK samples. Runtime resources only.",
+    "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+  ],
+  "structure_report_path": null
+}

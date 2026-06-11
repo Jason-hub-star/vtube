@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "validated_at": "2026-06-09T08:15:02.075271+00:00",
+  "project": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v17_clean_white_full_iris_preview/mini_cubism_diagnostic_project",
+  "status": "PASS",
+  "counts": {
+    "parts": 36,
+    "meshes": 36,
+    "deformers": 6,
+    "parameters": 7,
+    "keyform_bindings": 31,
+    "glue": 0
+  }
+}

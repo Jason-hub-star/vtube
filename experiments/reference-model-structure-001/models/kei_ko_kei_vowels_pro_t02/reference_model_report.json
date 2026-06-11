@@ -1,0 +1,382 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T14:48:27.762776+00:00",
+  "id": "kei_ko_kei_vowels_pro_t02",
+  "name": "kei_vowels_pro_t02",
+  "source_url": "https://www.live2d.com/ko/learn/sample/",
+  "source_type": "OFFICIAL_SAMPLE_ZIP",
+  "license_status": "OFFICIAL_TERMS_ACCEPTED_BY_USER",
+  "analysis_mode": "FULL_STRUCTURE",
+  "official_profile_key": "kei",
+  "analysis_safety_notes": [],
+  "has_cmo3": true,
+  "has_moc3": true,
+  "has_model3_json": true,
+  "has_physics3_json": true,
+  "has_psd": false,
+  "local_paths": {
+    "cmo3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_vowels_pro/kei_vowels_pro_t02.cmo3",
+      "exists": true,
+      "size_bytes": 2435621
+    },
+    "physics3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_vowels_pro/runtime/kei_vowels_pro.physics3.json",
+      "exists": true,
+      "size_bytes": 8509
+    },
+    "moc3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_vowels_pro/runtime/kei_vowels_pro.moc3",
+      "exists": true,
+      "size_bytes": 259968
+    },
+    "cdi3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_vowels_pro/runtime/kei_vowels_pro.cdi3.json",
+      "exists": true,
+      "size_bytes": 4590
+    },
+    "model3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_vowels_pro/runtime/kei_vowels_pro.model3.json",
+      "exists": true,
+      "size_bytes": 1099
+    },
+    "motion3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_vowels_pro/runtime/motions/01_kei_en.motion3.json",
+        "exists": true,
+        "size_bytes": 3804
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_vowels_pro/runtime/motions/01_kei_jp.motion3.json",
+        "exists": true,
+        "size_bytes": 4308
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_vowels_pro/runtime/motions/01_kei_ko.motion3.json",
+        "exists": true,
+        "size_bytes": 4308
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_vowels_pro/runtime/motions/01_kei_zh.motion3.json",
+        "exists": true,
+        "size_bytes": 3760
+      }
+    ]
+  },
+  "cmo3": {
+    "status": "PASS",
+    "returncode": 0,
+    "json": "experiments/reference-model-structure-001/models/kei_ko_kei_vowels_pro_t02/cmo3_structure_report.json",
+    "markdown": "experiments/reference-model-structure-001/models/kei_ko_kei_vowels_pro_t02/cmo3_structure_report.md",
+    "stdout": "[cmo3-structure] WARN\n[cmo3-structure] json: /Users/family/jason/Vtube/experiments/reference-model-structure-001/models/kei_ko_kei_vowels_pro_t02/cmo3_structure_report.json\n[cmo3-structure] md:   /Users/family/jason/Vtube/experiments/reference-model-structure-001/models/kei_ko_kei_vowels_pro_t02/cmo3_structure_report.md",
+    "stderr": "",
+    "cmo3_status": "WARN",
+    "counts": {
+      "art_meshes": 61,
+      "parts": 21,
+      "parameters": 31,
+      "warp_deformers": 46,
+      "rotation_deformers": 2,
+      "keyform_bindings": 141,
+      "keyform_grids": 131,
+      "glue": 1,
+      "masks": 0
+    },
+    "parameter_ids": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamEyeLOpen",
+      "ParamEyeLSmile",
+      "ParamEyeROpen",
+      "ParamEyeRSmile",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamBrowLY",
+      "ParamBrowRY",
+      "ParamBrowLForm",
+      "ParamBrowRForm",
+      "ParamCheek",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBodyAngleZ",
+      "ParamBreath",
+      "ParamHairFront",
+      "ParamHairSide",
+      "ParamHairBack",
+      "ParamHairSide2",
+      "ParamHairFrontFuwa",
+      "ParamHairSideFuwa",
+      "ParamHairBackFuwa",
+      "ParamA",
+      "ParamE",
+      "ParamI",
+      "ParamO",
+      "ParamU",
+      "ParamMouthOpenY"
+    ],
+    "part_names": [
+      "Root Part",
+      "왼쪽 옆머리",
+      "오른쪽 옆머리",
+      "앞머리",
+      "오른쪽 눈",
+      "얼굴",
+      "왼쪽 귀",
+      "오른쪽 귀",
+      "목",
+      "몸",
+      "뒷머리",
+      "왼쪽 눈썹",
+      "오른쪽 눈썹",
+      "오른쪽 눈알",
+      "왼쪽 눈알",
+      "왼쪽 눈",
+      "[밑그림]",
+      "뺨",
+      "코",
+      "입 모음만",
+      "코어"
+    ]
+  },
+  "moc3": {
+    "present": true,
+    "path": "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_vowels_pro/runtime/kei_vowels_pro.moc3",
+    "size_bytes": 259968,
+    "sha256": "143aebf6f5b3e0c0c8ed92cfd7049d76858b6dd9440d236f21251d8f33f43d5f",
+    "py_moc3_status": "PASS",
+    "parameter_count": 31,
+    "art_mesh_count": 59,
+    "parameter_ids": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamCheek",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBodyAngleZ",
+      "ParamBreath",
+      "ParamBrowLY",
+      "ParamBrowRY",
+      "ParamBrowLForm",
+      "ParamBrowRForm",
+      "ParamEyeLOpen",
+      "ParamEyeLSmile",
+      "ParamEyeROpen",
+      "ParamEyeRSmile",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamMouthOpenY",
+      "ParamA",
+      "ParamI",
+      "ParamU",
+      "ParamE",
+      "ParamO",
+      "ParamHairFront",
+      "ParamHairSide",
+      "ParamHairSide2",
+      "ParamHairBack",
+      "ParamHairFrontFuwa",
+      "ParamHairSideFuwa",
+      "ParamHairBackFuwa"
+    ],
+    "art_mesh_ids_sample": [
+      "ArtMesh2",
+      "ArtMesh3",
+      "ArtMesh4",
+      "ArtMesh14",
+      "ArtMesh15",
+      "ArtMesh16",
+      "ArtMesh19",
+      "ArtMesh28",
+      "ArtMesh29",
+      "ArtMesh39",
+      "ArtMesh40",
+      "ArtMesh42",
+      "ArtMesh44",
+      "ArtMesh45",
+      "ArtMesh46",
+      "ArtMesh47",
+      "ArtMesh58",
+      "ArtMesh55",
+      "ArtMesh56",
+      "ArtMesh57",
+      "ArtMesh13",
+      "ArtMesh17",
+      "ArtMesh54",
+      "ArtMesh11",
+      "ArtMesh82",
+      "ArtMesh81",
+      "ArtMesh80",
+      "ArtMesh79",
+      "ArtMesh78",
+      "ArtMesh77",
+      "ArtMesh76",
+      "ArtMesh75",
+      "ArtMesh74",
+      "ArtMesh73",
+      "ArtMesh72",
+      "ArtMesh71",
+      "ArtMesh41",
+      "ArtMesh43",
+      "ArtMesh6",
+      "ArtMesh8",
+      "ArtMesh30",
+      "ArtMesh7",
+      "ArtMesh53",
+      "ArtMesh49",
+      "ArtMesh50",
+      "ArtMesh51",
+      "ArtMesh52",
+      "ArtMesh34",
+      "ArtMesh",
+      "ArtMesh35"
+    ]
+  },
+  "runtime_json": {
+    "model3": {
+      "present": true,
+      "version": 3,
+      "moc": "kei_vowels_pro.moc3",
+      "texture_count": 1,
+      "has_physics": true,
+      "has_pose": false,
+      "has_display_info": true,
+      "has_user_data": false,
+      "expression_count": 0,
+      "motion_group_count": 1,
+      "motion_count": 4,
+      "group_count": 2,
+      "parameter_ids": [
+        "ParamEyeLOpen",
+        "ParamEyeROpen"
+      ],
+      "file_references": {
+        "Moc": "kei_vowels_pro.moc3",
+        "Textures": [
+          "kei_vowels_pro.2048/texture_00.png"
+        ],
+        "Physics": "kei_vowels_pro.physics3.json",
+        "DisplayInfo": "kei_vowels_pro.cdi3.json",
+        "MotionSync": "kei_vowels_pro.motionsync3.json",
+        "Motions": {
+          "": [
+            {
+              "File": "motions/01_kei_en.motion3.json",
+              "Sound": "sounds/01_kei_en.wav",
+              "MotionSync": "Vowels_CRI"
+            },
+            {
+              "File": "motions/01_kei_jp.motion3.json",
+              "Sound": "sounds/01_kei_jp.wav",
+              "MotionSync": "Vowels_CRI"
+            },
+            {
+              "File": "motions/01_kei_ko.motion3.json",
+              "Sound": "sounds/01_kei_ko.wav",
+              "MotionSync": "Vowels_CRI"
+            },
+            {
+              "File": "motions/01_kei_zh.motion3.json",
+              "Sound": "sounds/01_kei_zh.wav",
+              "MotionSync": "Vowels_CRI"
+            }
+          ]
+        }
+      }
+    },
+    "physics3": {
+      "present": true,
+      "version": 3,
+      "physics_group_count": 6,
+      "physics_input_count": 18,
+      "physics_output_count": 7,
+      "physics_vertex_count": 12,
+      "groups": [
+        {
+          "index": 0,
+          "id": "PhysicsSetting1",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 1,
+          "id": "PhysicsSetting2",
+          "input_count": 4,
+          "output_count": 2,
+          "vertex_count": 2
+        },
+        {
+          "index": 2,
+          "id": "PhysicsSetting3",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 3,
+          "id": "PhysicsSetting4",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 4,
+          "id": "PhysicsSetting5",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 5,
+          "id": "PhysicsSetting6",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        }
+      ]
+    },
+    "cdi3": {
+      "present": true,
+      "parameter_display_count": 31,
+      "part_display_count": 20
+    },
+    "motion3_count": 4,
+    "exp3_count": 0,
+    "pose3_present": false,
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 61,
+    "parts": 21,
+    "parameters": 31,
+    "warp_deformers": 46,
+    "rotation_deformers": 2,
+    "keyform_bindings": 141,
+    "keyform_grids": 131,
+    "glue": 1,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": true,
+    "pose": false,
+    "expression": false,
+    "motion": true,
+    "physics": true
+  },
+  "structure_hints": {
+    "hair": 1,
+    "eye": 1,
+    "mouth": 1,
+    "body": 1,
+    "arm": 0
+  },
+  "reuse_decision": "REFERENCE_ONLY",
+  "notes": [
+    "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+    "Source zip: kei_ko.zip"
+  ],
+  "structure_report_path": "experiments/reference-model-structure-001/models/kei_ko_kei_vowels_pro_t02/cmo3_structure_report.json"
+}

@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T02:27:47.175946+00:00",
+  "experiment_id": "cubism-v2-new-character-002",
+  "candidate_id": "model_edit_v2_clean_base_from_material_pack_first_v0",
+  "status": "MODEL_EDIT_CLEAN_BASE_CANDIDATE_READY_FOR_VALIDATOR",
+  "basis": {
+    "kept_good_contact_sheet": "experiments/cubism-v2-new-character-002/reports/material_pack_first_contact_sheet.png",
+    "model_edit_raw": "experiments/cubism-v2-new-character-002/model_edit_v1/raw_outputs/model_edit_clean_base_source.raw.png",
+    "model_edit_clean_2048": "experiments/cubism-v2-new-character-002/reports/model_edit_v2/model_edit_clean_base_source_2048_rgba.png",
+    "source_layers": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers"
+  },
+  "output_layers": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers",
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/model_edit_v2/model_edit_v2_contact_sheet.png",
+  "replaced_layers": [
+    "eye_L_clean_socket",
+    "eye_L_closed_underpaint",
+    "eye_R_clean_socket",
+    "eye_R_closed_underpaint",
+    "face_base_clean",
+    "mouth_base_clean"
+  ],
+  "feature_filtered_layers": [],
+  "assets": [
+    {
+      "asset_id": "eye_L_clean_socket",
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers/eye_L_clean_socket.png",
+      "alpha_bbox": [
+        734,
+        602,
+        1026,
+        771
+      ],
+      "alpha_coverage": 0.00994039
+    },
+    {
+      "asset_id": "eye_L_closed_lid",
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers/eye_L_closed_lid.png",
+      "alpha_bbox": [
+        758,
+        636,
+        1003,
+        737
+      ],
+      "alpha_coverage": 0.00500441
+    },
+    {
+      "asset_id": "eye_L_closed_underpaint",
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers/eye_L_closed_underpaint.png",
+      "alpha_bbox": [
+        734,
+        602,
+        1026,
+        771
+      ],
+      "alpha_coverage": 0.00994039
+    },
+    {
+      "asset_id": "eye_L_half_closed_lid",
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers/eye_L_half_closed_lid.png",
+      "alpha_bbox": [
+        762,
+        620,
+        997,
+        755
+      ],
+      "alpha_coverage": 0.00596905
+    },
+    {
+      "asset_id": "eye_L_mostly_closed_lid",
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers/eye_L_mostly_closed_lid.png",
+      "alpha_bbox": [
+        762,
+        627,
+        997,
+        747
+      ],
+      "alpha_coverage": 0.00550675
+    },
+    {
+      "asset_id": "eye_L_open",
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers/eye_L_open.png",
+      "alpha_bbox": [
+        750,
+        618,
+        1010,
+        755
+      ],
+      "alpha_coverage": 0.00703692
+    },
+    {
+      "asset_id": "eye_R_clean_socket",
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers/eye_R_clean_socket.png",
+      "alpha_bbox": [
+        1024,
+        603,
+        1316,
+        771
+      ],
+      "alpha_coverage": 0.01001167
+    },
+    {
+      "asset_id": "eye_R_closed_lid",
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers/eye_R_closed_lid.png",
+      "alpha_bbox": [
+        1048,
+        636,
+        1293,
+        737
+      ],
+      "alpha_coverage": 0.00502777
+    },
+    {
+      "asset_id": "eye_R_closed_underpaint",
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers/eye_R_closed_underpaint.png",
+      "alpha_bbox": [
+        1024,
+        603,
+        1316,
+        771
+      ],
+      "alpha_coverage": 0.01001167
+    },
+    {
+      "asset_id": "eye_R_half_closed_lid",
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers/eye_R_half_closed_lid.png",
+      "alpha_bbox": [
+        1052,
+        620,
+        1289,
+        755
+      ],
+      "alpha_coverage": 0.00599027
+    },
+    {
+      "asset_id": "eye_R_mostly_closed_lid",
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers/eye_R_mostly_closed_lid.png",
+      "alpha_bbox": [
+        1052,
+        627,
+        1288,
+        747
+      ],
+      "alpha_coverage": 0.0054872
+    },
+    {
+      "asset_id": "eye_R_open",
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers/eye_R_open.png",
+      "alpha_bbox": [
+        1040,
+        619,
+        1300,
+        755
+      ],
+      "alpha_coverage": 0.00710487
+    },
+    {
+      "asset_id": "face_base_clean",
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers/face_base_clean.png",
+      "alpha_bbox": [
+        308,
+        19,
+        1740,
+        2048
+      ],
+      "alpha_coverage": 0.50843525
+    },
+    {
+      "asset_id": "mouth_base_clean",
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers/mouth_base_clean.png",
+      "alpha_bbox": [
+        906,
+        765,
+        1164,
+        925
+      ],
+      "alpha_coverage": 0.00823021
+    },
+    {
+      "asset_id": "mouth_closed_smile",
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers/mouth_closed_smile.png",
+      "alpha_bbox": [
+        921,
+        785,
+        1149,
+        905
+      ],
+      "alpha_coverage": 0.00529718
+    },
+    {
+      "asset_id": "mouth_inner",
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers/mouth_inner.png",
+      "alpha_bbox": [
+        928,
+        791,
+        1143,
+        899
+      ],
+      "alpha_coverage": 0.0045464
+    },
+    {
+      "asset_id": "mouth_o_vowel",
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers/mouth_o_vowel.png",
+      "alpha_bbox": [
+        924,
+        780,
+        1145,
+        910
+      ],
+      "alpha_coverage": 0.00573254
+    },
+    {
+      "asset_id": "mouth_small_open",
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers/mouth_small_open.png",
+      "alpha_bbox": [
+        924,
+        785,
+        1147,
+        905
+      ],
+      "alpha_coverage": 0.00528765
+    },
+    {
+      "asset_id": "mouth_teeth",
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers/mouth_teeth.png",
+      "alpha_bbox": [
+        920,
+        812,
+        1150,
+        877
+      ],
+      "alpha_coverage": 0.00297761
+    },
+    {
+      "asset_id": "mouth_tongue",
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers/mouth_tongue.png",
+      "alpha_bbox": [
+        932,
+        788,
+        1137,
+        902
+      ],
+      "alpha_coverage": 0.0042665
+    },
+    {
+      "asset_id": "mouth_wide_open",
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v2/normalized_layers/mouth_wide_open.png",
+      "alpha_bbox": [
+        915,
+        780,
+        1155,
+        909
+      ],
+      "alpha_coverage": 0.00601721
+    }
+  ],
+  "note": "This candidate preserves material_pack_first_v0 expression shapes but replaces clean-base layers with a model-edited clean face source."
+}

@@ -1,0 +1,152 @@
+{
+  "report_id": "face_tracking_webcam_probe_report",
+  "created_at": "2026-06-08T03:16:59.710984+00:00",
+  "status": "PASS",
+  "capture_class": "PASS_CAPTURE",
+  "summary": {
+    "webcam_required": true,
+    "live_tracking_input": true,
+    "frame_count": 175,
+    "valid_face_frame_count": 175,
+    "duration_ms": 10050,
+    "face_present_ratio": 1.0,
+    "required_output_count": 12,
+    "movement_score": 89.213822,
+    "failure_count": 0,
+    "warning_count": 0
+  },
+  "checks": {
+    "required_coverage": {
+      "ParamAngleX": {
+        "covered": true,
+        "samples": 175,
+        "missing_frames": 0
+      },
+      "ParamAngleY": {
+        "covered": true,
+        "samples": 175,
+        "missing_frames": 0
+      },
+      "ParamAngleZ": {
+        "covered": true,
+        "samples": 175,
+        "missing_frames": 0
+      },
+      "ParamBodyAngleX": {
+        "covered": true,
+        "samples": 175,
+        "missing_frames": 0
+      },
+      "ParamBodyAngleY": {
+        "covered": true,
+        "samples": 175,
+        "missing_frames": 0
+      },
+      "ParamEyeLOpen": {
+        "covered": true,
+        "samples": 175,
+        "missing_frames": 0
+      },
+      "ParamEyeROpen": {
+        "covered": true,
+        "samples": 175,
+        "missing_frames": 0
+      },
+      "ParamEyeBallX": {
+        "covered": true,
+        "samples": 175,
+        "missing_frames": 0
+      },
+      "ParamEyeBallY": {
+        "covered": true,
+        "samples": 175,
+        "missing_frames": 0
+      },
+      "ParamMouthOpenY": {
+        "covered": true,
+        "samples": 175,
+        "missing_frames": 0
+      },
+      "ParamMouthForm": {
+        "covered": true,
+        "samples": 175,
+        "missing_frames": 0
+      },
+      "ParamBreath": {
+        "covered": true,
+        "samples": 175,
+        "missing_frames": 0
+      }
+    },
+    "parameter_extrema": {
+      "ParamAngleX": {
+        "min": -1.386768,
+        "max": 30.0,
+        "span": 31.386768
+      },
+      "ParamAngleY": {
+        "min": -0.675062,
+        "max": 6.598117,
+        "span": 7.273179
+      },
+      "ParamAngleZ": {
+        "min": -30.0,
+        "max": 6.872167,
+        "span": 36.872167
+      },
+      "ParamBodyAngleX": {
+        "min": -0.300466,
+        "max": 6.5,
+        "span": 6.800466
+      },
+      "ParamBodyAngleY": {
+        "min": -0.101259,
+        "max": 0.989718,
+        "span": 1.090977
+      },
+      "ParamEyeLOpen": {
+        "min": 0.403766,
+        "max": 0.942261,
+        "span": 0.538495
+      },
+      "ParamEyeROpen": {
+        "min": 0.468647,
+        "max": 0.990802,
+        "span": 0.522155
+      },
+      "ParamEyeBallX": {
+        "min": -0.29626,
+        "max": 0.755059,
+        "span": 1.051319
+      },
+      "ParamEyeBallY": {
+        "min": -0.534765,
+        "max": 0.037716,
+        "span": 0.572482
+      },
+      "ParamMouthOpenY": {
+        "min": 0.0,
+        "max": 1.0,
+        "span": 1.0
+      },
+      "ParamMouthForm": {
+        "min": -0.250626,
+        "max": 0.855198,
+        "span": 1.105825
+      },
+      "ParamBreath": {
+        "min": 6e-06,
+        "max": 0.999995,
+        "span": 0.999989
+      }
+    },
+    "failures": [],
+    "warnings": [],
+    "out_of_range": [],
+    "nonfinite": []
+  },
+  "interpretation": {
+    "ko": "내장 웹캠 입력이 Cubism v2 필수 파라미터로 변환되는 T1 smoke를 통과했습니다.",
+    "next": "다음은 이 파라미터 스트림으로 Live2D Web Player 모델 또는 새 v2 rig preview를 구동하는 T2 테스트입니다."
+  }
+}

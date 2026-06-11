@@ -1,0 +1,704 @@
+# CMO3 Structure Report
+
+Generated: 2026-06-08T01:24:11.695Z
+
+Status: **WARN**
+
+Input:
+
+- CMO3: `experiments/reference-model-structure-001/official_samples/extracted/miara_pro_en/miara_pro_en/miara_pro_t04.cmo3`
+- Size: 26830998 bytes
+- SHA256: `3649c222bb0b7555f0fa6e49a762f26446af0f2744beef138f803ccb0b2b4a42`
+
+## Checks
+
+| Check | Status | Message |
+|---|---:|---|
+| main_xml_extracted | PASS | main.xml was extracted from the CAFF archive. |
+| artmesh_present | PASS | 245 CArtMeshSource definition(s) found. |
+| part_sources_present | PASS | 54 CPartSource definition(s) found. |
+| parameters_present | PASS | 138 CParameterSource definition(s) found. |
+| required_parameters_present | WARN | Missing configured parameter(s): ParamBodyAngleY |
+| warp_deformers_present | PASS | 93 CWarpDeformerSource definition(s) found. |
+| rotation_deformers_present | PASS | 107 CRotationDeformerSource definition(s) found. |
+| keyform_bindings_present | PASS | 467 KeyformBindingSource definition(s) found. |
+
+## Structure Counts
+
+| XML Source | Definitions | References |
+|---|---:|---:|
+| CArtMeshSource | 245 | 4735 |
+| CPartSource | 54 | 113 |
+| CWarpDeformerSource | 93 | 2178 |
+| CRotationDeformerSource | 107 | 803 |
+| KeyformGridSource | 535 | 804 |
+| KeyformBindingSource | 467 | 4477 |
+| CParameterSource | 138 | 0 |
+| CPhysicsSettingsSource | 19 | 0 |
+| CGlueSource | 36 | 72 |
+| CClippingMaskSource | 0 | 0 |
+| CClippingMaskGuid | 0 | 0 |
+| CInvertedMaskSource | 0 | 0 |
+| CLayer | 163 | 486 |
+| CLayerGroup | 27 | 240 |
+| CLayeredImage | 4 | 197 |
+| CImageResource | 321 | 644 |
+| GEditableMesh2 | 245 | 0 |
+
+## Parameters
+
+- `ParamAngleX`
+- `ParamAngleY`
+- `ParamAngleZ`
+- `ParamEyeLOpen`
+- `ParamEyeROpen`
+- `ParamEyeBallX`
+- `ParamEyeBallY`
+- `ParamBrowLY`
+- `ParamBrowRY`
+- `ParamBrowLX`
+- `ParamBrowRX`
+- `ParamBrowLAngle`
+- `ParamBrowRAngle`
+- `ParamBrowLForm`
+- `ParamBrowRForm`
+- `ParamMouthForm`
+- `ParamMouthOpenY`
+- `ParamBodyAngleX`
+- `ParamBodyAngleZ`
+- `ParamBreath`
+- `ParamHairFront`
+- `ParamHairSide`
+- `ParamHairBack`
+- `ParamBust`
+- `ParamChestAccessory`
+- `ParamCloth1`
+- `ParamLegR1X`
+- `ParamLegL1X`
+- `ParamLegR2`
+- `ParamLegR1Z`
+- `ParamLegR3X`
+- `ParamLegR3Z`
+- `ParamLegL1Z`
+- `ParamLegL2X`
+- `ParamLegL2Z`
+- `ParamLegL3X`
+- `ParamLegL3Z`
+- `ParamArmL1`
+- `ParamArmL2`
+- `ParamArmL3`
+- `ParamFingerL1X`
+- `ParamFingerL1Z`
+- `ParamFingerL2`
+- `ParamFingerL3`
+- `ParamFingerL4`
+- `ParamArmR1`
+- `ParamArmR2`
+- `ParamArmR3`
+- `ParamFingerR1`
+- `ParamFingerR2`
+- `ParamFingerR3`
+- `ParamFingerR4`
+- `ParamHairTail`
+- `ParamHairCloth`
+- `ParamSleeve`
+- `ParamSleeveRibbon`
+- `ParamAllX`
+- `ParamAllY`
+- `ParamAllRotate`
+- `ParamCloth2`
+- `ParamHairFront2`
+- `ParamHairSide2`
+- `ParamHairTail2`
+- `ParamHairBack2`
+- `ParamHairAho1`
+- `ParamHairAho2`
+- `ParamSleeve2`
+- `ParamHairCloth2`
+- `ParamPepram1`
+- `ParamPepram2`
+- `ParamSleeveL`
+- `ParamSleeveL2`
+- `ParamSleeveRibbonL`
+- `ParamLegRibbonR1`
+- `ParamLegRibbonR2`
+- `ParamLegRibbonL1`
+- `ParamLegRibbonL2`
+- `ParamLegLDO`
+- `ParamLegR2X`
+- `ParamWaterSurface1`
+- `ParamWaterSurface2`
+- `ParamWaterSurfaceLight1`
+- `ParamWaterSurfaceLight2`
+- `ParamWaterSurfaceLight3`
+- `ParamWaterSurfaceLower1`
+- `ParamWaterSurfaceLower2`
+- `ParamWaterSurfaceBack1`
+- `ParamWaterSurfaceBack2`
+- `ParamMoveX`
+- `ParamMoveY`
+- `ParamBodyAngleZ2`
+- `ParamScaling`
+- `ParamEffect1`
+- `ParamBodyAngleX2`
+- `ParamFlapping7`
+- `ParamFlapping8`
+- `ParamFlapping3`
+- `ParamFlapping4`
+- `Param_Angle_Rotation_1_ArtMesh108`
+- `Param_Angle_Rotation_2_ArtMesh108`
+- `Param_Angle_Rotation_3_ArtMesh108`
+- `Param_Angle_Rotation_4_ArtMesh108`
+- `Param_Angle_Rotation_5_ArtMesh108`
+- `Param_Angle_Rotation_6_ArtMesh108`
+- `Param_Angle_Rotation_7_ArtMesh108`
+- `Param_Angle_Rotation_1_ArtMesh109`
+- `Param_Angle_Rotation_2_ArtMesh109`
+- `Param_Angle_Rotation_3_ArtMesh109`
+- `Param_Angle_Rotation_4_ArtMesh109`
+- `Param_Angle_Rotation_5_ArtMesh109`
+- `Param_Angle_Rotation_6_ArtMesh109`
+- `Param_Angle_Rotation_7_ArtMesh109`
+- `Param_Angle_Rotation_1_ArtMesh76`
+- `Param_Angle_Rotation_2_ArtMesh76`
+- `Param_Angle_Rotation_3_ArtMesh76`
+- `Param_Angle_Rotation_4_ArtMesh76`
+- `Param_Angle_Rotation_5_ArtMesh76`
+- `Param_Angle_Rotation_6_ArtMesh76`
+- `Param_Angle_Rotation_7_ArtMesh76`
+- `Param_Angle_Rotation_1_ArtMesh77`
+- `Param_Angle_Rotation_2_ArtMesh77`
+- `Param_Angle_Rotation_3_ArtMesh77`
+- `Param_Angle_Rotation_4_ArtMesh77`
+- `Param_Angle_Rotation_5_ArtMesh77`
+- `Param_Angle_Rotation_6_ArtMesh77`
+- `Param_Angle_Rotation_7_ArtMesh77`
+- `Param_Angle_Rotation_1_ArtMesh181`
+- `Param_Angle_Rotation_2_ArtMesh181`
+- `Param_Angle_Rotation_3_ArtMesh181`
+- `Param_Angle_Rotation_4_ArtMesh181`
+- `Param_Angle_Rotation_5_ArtMesh181`
+- `Param_Angle_Rotation_1_ArtMesh179`
+- `Param_Angle_Rotation_2_ArtMesh179`
+- `Param_Angle_Rotation_3_ArtMesh179`
+- `Param_Angle_Rotation_4_ArtMesh179`
+- `Param_Angle_Rotation_5_ArtMesh179`
+- `ParamBustX`
+- `ParamFairyDO`
+
+## Parts
+
+- `Root Part`
+- `Hair Front`
+- `Hair Side L`
+- `Hair Side R`
+- `Face`
+- `Eye`
+- `Mouth`
+- `Leg L`
+- `Leg R`
+- `Arm R`
+- `Body`
+- `Lower Body`
+- `Hair Back`
+- `Hair Back Tale`
+- `Hair Side Back`
+- `Hair L`
+- `Hair Twin L`
+- `Hair Twin R`
+- `Hair Ahoge`
+- `Upper Body`
+- `Trunk`
+- `Bust`
+- `Brows`
+- `Hair R`
+- `Hair Accessory Front`
+- `Hair Back Back R`
+- `Arm L`
+- `Hand L`
+- `Fairy Lower Wing R`
+- `Fairy Upper Wing R`
+- `Fairy Lower Wing L`
+- `Fairy Upper Wing L`
+- `Fairy Body`
+- `Fairy`
+- `Wing Back R(Rotation)`
+- `Wing Back R(Skinning)`
+- `Wing Back L(Rotation)`
+- `Wing Back L(Skinning)`
+- `Chest Cloth L(Rotation)`
+- `Chest Cloth L(Skinning)`
+- `Chest Cloth R(Rotation)`
+- `Chest Cloth R(Skinning)`
+- `Wing R 2(Rotation)`
+- `Wing R 2(Skinning)`
+- `Wing L 2(Rotation)`
+- `Wing L 2(Skinning)`
+- `Water Surface Under`
+- `Water Surface Back`
+- `Water Surface Upper`
+- `Sparkle`
+- `Water Surface`
+- `Background`
+- `Water Surface Reflection`
+- `Background All`
+
+## ArtMeshes
+
+- `Hair Front Bundle 1`
+- `Hair Front Bundle 2`
+- `Hair Front L`
+- `Hair Front R`
+- `Hair Side Straggling L`
+- `Hair Side Bundle L 1`
+- `Hair Side Bundle R`
+- `Hair Side R`
+- `Hair Tassel Between Twintail R`
+- `Hair Tip Bundle Between Twintail R`
+- `Hair Twintail R`
+- `Hair Root Bundle Between Twintail R`
+- `Hair Twintail Back Bundle R`
+- `Hair Twintail Bundle L 1`
+- `Hair Twintail Bundle L 2`
+- `Hair Twintail L`
+- `Nose`
+- `Nose Highlight`
+- `Eyelash R a`
+- `Eyelash R c`
+- `Eyelash R b`
+- `Eyelash R d`
+- `Under Eyelash R`
+- `Eyelid R`
+- `Eyelash L a`
+- `Eyelash L b`
+- `Eyelash L c`
+- `Eyelash L d`
+- `Under Eyelash L`
+- `Eye Hi L a`
+- `Eye Hi L b`
+- `Eyeball L`
+- `Eyeball L`
+- `Under Lip Highlight`
+- `Under Lip`
+- `Teeth`
+- `Oral`
+- `Hair Shadow 2`
+- `Hair Shadow 3`
+- `Cheek Highlight`
+- `Arm Clothing L 1`
+- `Sleeve Decoration L 1`
+- `Sleeve Decoration L 2`
+- `Arm L`
+- `Arm Clothing Back L2`
+- `Chest Cloth L`
+- `Chest Cloth R`
+- `Upper Body`
+- `Waist Feather L`
+- `Waist Feather R`
+- `Lower Body Clothing White`
+- `Lower Body Clothing Black`
+- `Sock Thigh L`
+- `Thigh L`
+- `Sock Ribbon Knot L`
+- `Sock Toe L`
+- `Foot Skin L`
+- `Leg L`
+- `Sock Ankle Back L`
+- `Sock Ribbon L 2`
+- `Knee R 1`
+- `Thigh R`
+- `Sock Toe R`
+- `Sock Ankle R`
+- `Sock Ankle Back R`
+- `Sock Ribbon R 1`
+- `Sock Ribbon R 2`
+- `Lower Body Clothing Black Back`
+- `Hair Side L 1`
+- `Hair Side L 2`
+- `Hair Side L 3`
+- `Hair Side Bundle L 3`
+- `Hair Back Bundle 1`
+- `Hair Back Bundle 2`
+- `Hair Back`
+- `Hair Back Bundle 3`
+- `Bust`
+- `Head Back`
+- `Hat Front L`
+- `Hat Back L`
+- `Hair Accessory L`
+- `Hat Back R`
+- `Hat Front R`
+- `Hair Ahoge 2`
+- `Cheek Highlight`
+- `Eye Hi R a`
+- `Eye Hi R b`
+- `Eyeball R`
+- `Lower Body Clothing White Back`
+- `Sock Thigh R`
+- `Hair Ahoge 1`
+- `Leg R`
+- `Earring R`
+- `Earring L`
+- `Contours`
+- `Knee R 2`
+- `Hand Finger Ring R`
+- `Hand R`
+- `Hand Finger Little R`
+- `Hair Side Bundle L 2`
+- `Neck`
+- `Foot Skin R`
+- `Sock Instep R`
+- `Arm Clothing Elbow Front R`
+- `Brow L`
+- `Brow R`
+- `Eyelid Shadow R`
+- `Eyelid Shadow L`
+- `Hair Back Long 4`
+- `Hair Back Long 3`
+- `Hair Back Long 2`
+- `Hair Accessory R`
+- `Hair Back Long 1`
+- `Upper Lip`
+- `Eyelid L`
+- `Eyeball R`
+- `Chest Accessory`
+- `Chest Accessory Highlight`
+- `Sock Ankle L`
+- `Sock Instep L`
+- `Sock Ribbon L 1`
+- `Shoulder L`
+- `Armpit Line L`
+- `Hand L`
+- `Hand Finger Little L`
+- `Hand Finger Index L`
+- `Arm Clothing BackL 1`
+- `Hand Finger Ring L`
+- `Hand Finger Middle L`
+- `Hand Finger Thumd L`
+- `Arm Clothing Back R 1`
+- `Arm R`
+- `Arm Clothing Elbow Back R`
+- `Arm Clothing R`
+- `Shoulder R`
+- `Arm Clothing Back R 2`
+- `Hand Finger Thumb R`
+- `Hand Finger Middle R`
+- `Hand Finger Index R`
+- `Contours Line 1`
+- `Contours Line 2`
+- `Hair Shadow 1`
+- `Hair Back Long 5`
+- `Hair Back Long 6`
+- `Arm Clothing L 2`
+- `Sleeve Decoration R 1`
+- `Sleeve Decoration R 2`
+- `Wing Back L`
+- `Wing Back R`
+- `Wing R 2`
+- `Wing R 1`
+- `Wing L 2`
+- `Wing L 1`
+- `A Body`
+- `Effect Light`
+- `Wing Back R[0]`
+- `Wing Back R[1]`
+- `Wing Back R[2]`
+- `Wing Back R[3]`
+- `Wing Back R[4]`
+- `Wing Back R[5]`
+- `Wing Back R[6]`
+- `Wing Back L[0]`
+- `Wing Back L[1]`
+- `Wing Back L[2]`
+- `Wing Back L[3]`
+- `Wing Back L[4]`
+- `Wing Back L[5]`
+- `Wing Back L[6]`
+- `Chest Cloth L[0]`
+- `Chest Cloth L[1]`
+- `Chest Cloth L[2]`
+- `Chest Cloth L[3]`
+- `Chest Cloth L[4]`
+- `Chest Cloth L[5]`
+- `Chest Cloth L[6]`
+- `Chest Cloth R[0]`
+- `Chest Cloth R[1]`
+- `Chest Cloth R[2]`
+- `Chest Cloth R[3]`
+- `Chest Cloth R[4]`
+- `Chest Cloth R[5]`
+- `Chest Cloth R[6]`
+- `Wing R 2[0]`
+- `Wing R 2[1]`
+- `Wing R 2[2]`
+- `Wing R 2[3]`
+- `Wing R 2[4]`
+- `Wing L 2[0]`
+- `Wing L 2[1]`
+- `Wing L 2[2]`
+- `Wing L 2[3]`
+- `Wing L 2[4]`
+- `Background`
+- `Water Surface Lower 2`
+- `Water Surface Lower 1`
+- `Water Surface 4`
+- `Water Surface 3`
+- `Water Surface 2`
+- `Water Surface 1`
+- `Sparkle 1`
+- `Sparkle 2`
+- `Sparkle 3`
+- `Sparkle 4`
+- `Sparkle 5`
+- `Sparkle 6`
+- `Sparkle 7`
+- `Sparkle 8`
+- `Sparkle 9`
+- `Sparkle 10`
+- `Sparkle 11`
+- `Sparkle 12`
+- `Sparkle 13`
+- `Sparkle 14`
+- `Sparkle 15`
+- `Sparkle 16`
+- `Sparkle 17`
+- `Sparkle 18`
+- `Sock Ribbon R 2`
+- `右靴下_リボン2`
+- `Sock Ribbon R 1`
+- `右靴下_リボン1`
+- `Foot R`
+- `Sock Instep R`
+- `Sock Ankle Back R`
+- `Leg R`
+- `Knee R 2`
+- `Sock Ankle R`
+- `Sock Toe R`
+- `Thigh R`
+- `Sock Thigh R`
+- `Knee R 1`
+- `Sock Ribbon L 2`
+- `左靴下_リボン2`
+- `Sock Ankle Back L`
+- `Leg L`
+- `Foot Skin L`
+- `Sock Instep L`
+- `Sock Ankle L`
+- `Sock Toe L`
+- `Sock Ribbon Knot L`
+- `Sock Ribbon L 1`
+- `左靴下_リボン1`
+- `Thigh L`
+- `Sock Thigh L`
+
+## Warp Deformers
+
+- `Warp Move Bust`
+- `Warp Shoulder Y`
+- `Warp Upper Body X`
+- `Warp Breath`
+- `Warp Neck Z`
+- `Warp Body Z`
+- `Warp Waist Feather R`
+- `Warp Waist Feather L`
+- `Warp Nose`
+- `Warp Eyeball R`
+- `Warp Eyeball L`
+- `Warp Brow R`
+- `Warp Brow L`
+- `Warp Hair Front`
+- `Warp Hair Front Z`
+- `Warp Move Hair Front`
+- `Warp Hair Side L`
+- `Warp Hair Side R`
+- `Warp Hair Side R Z`
+- `Warp Move Hair Side R`
+- `Warp Head Back`
+- `Warp Hair Back Back R`
+- `Warp Hair Back Back R Z`
+- `Warp Move Hair Back R`
+- `Warp Hair Side Back L`
+- `Warp Hair Side Back L Z`
+- `Warp Move Hair Tail Back`
+- `Warp Hair Tail Back`
+- `Warp Earring R XY`
+- `Warp Earring R XY`
+- `Warp Hat L`
+- `Warp Hair Accessory L`
+- `Warp Hair Accessory L Z`
+- `Warp Move Hair Accessory L`
+- `Warp Hat R`
+- `Warp Hair Accessory Z`
+- `Warp Hair Accessory`
+- `Warp Move Hair Accessory`
+- `Warp Move Hair Twintail R`
+- `Warp Hair Twintail R Z`
+- `Warp Hair Twintail R`
+- `Warp Move Hair Twintail L`
+- `Warp Hair Twintail L Z`
+- `Warp Hair Twintail L`
+- `Warp Move Hair Tail Back 1`
+- `Warp Hair Tail Back 1`
+- `Warp Move Hair Tail Back 5`
+- `Warp Hair Tail Back 5`
+- `Warp Hair Ahoge Z`
+- `Warp Hair Ahoge`
+- `Warp Mouse`
+- `Warp Move Hair Side L Back`
+- `Warp Move Hair Side L Back`
+- `Warp Hair Side L Back`
+- `Warp Eye R`
+- `Warp Bust`
+- `Warp Neck Body X`
+- `Warp Lower Body Z`
+- `Warp Lower Body X`
+- `Warp Shin R`
+- `Warp Thigh R`
+- `Warp Ankle R`
+- `Warp Thigh L`
+- `Warp Shin L`
+- `Warp Instep L`
+- `Warp Finger Thumb L`
+- `Warp Cuff R`
+- `Warp Face`
+- `Warp Move Sleeve L`
+- `Warp Move Sleeve R`
+- `Warp Eye L`
+- `Warp Upper Wing R X`
+- `Warp Upper Wing L X`
+- `Warp Upper Wing L`
+- `Warp Body X`
+- `Warp Brow R Angle`
+- `Warp Brow R Position`
+- `Warp Brow R XY`
+- `Warp Brow L XY`
+- `Warp Brow L Position`
+- `Warp Brow L Angle`
+- `Warp Skirt Black Back Z`
+- `Warp Skirt Black Back X`
+- `Warp Skirt White Back`
+- `Warp Skirt White Back X`
+- `Warp Upper Wing R`
+- `Warp Move Bust X`
+- `Warp Ankle R`
+- `Warp Thigh R`
+- `Warp Shin R`
+- `Warp Instep L`
+- `Warp Shin L`
+- `Warp Thight L`
+
+## Rotation Deformers
+
+- `Rotation Overall`
+- `Rotation Shoulder L`
+- `Rotation Elbow L`
+- `Rotation Wrist L`
+- `Rotation Elbow R`
+- `Rotation Wrist R`
+- `Position Neck`
+- `Position Earring L`
+- `Position Earring R`
+- `Rotation Face`
+- `Earring L XY`
+- `Earring R XY`
+- `Rotation Hair Back Tail Z`
+- `Rotation Hair Back Tail 1 Z`
+- `Rotation Hair Back Tail 5 Z`
+- `Rotation Hair Side Back L`
+- `Position Shoulder R`
+- `Rotation Shoulder R`
+- `Position Shoulder L`
+- `Position Chest Accessory`
+- `Rotation Chest Accessory`
+- `Rotation Ankle R`
+- `Rotation Ankle L`
+- `Rotation Knee L`
+- `Rotation Thumb R`
+- `Position String R`
+- `Position String L`
+- `Rotation Knee R`
+- `Position Leg L`
+- `Rotation Leg L`
+- `Position Leg R`
+- `Rotation Leg R`
+- `Scaling Light`
+- `Scaling Overall`
+- `Rotation Overall`
+- `Move Overall`
+- `Rotation0_Wing Back R`
+- `Rotation1_Wing Back R`
+- `Rotation2_Wing Back R`
+- `Rotation3_Wing Back R`
+- `Rotation4_Wing Back R`
+- `Rotation5_Wing Back R`
+- `Rotation6_Wing Back R`
+- `Rotation0_Wing Back L`
+- `Rotation1_Wing Back L`
+- `Rotation2_Wing Back L`
+- `Rotation3_Wing Back L`
+- `Rotation4_Wing Back L`
+- `Rotation5_Wing Back L`
+- `Rotation6_Wing Back L`
+- `Rotation0_Chest Cloth L`
+- `Rotation1_Chest Cloth L`
+- `Rotation2_Chest Cloth L`
+- `Rotation3_Chest Cloth L`
+- `Rotation4_Chest Cloth L`
+- `Rotation5_Chest Cloth L`
+- `Rotation6_Chest Cloth L`
+- `Rotation0_Chest Cloth R`
+- `Rotation1_Chest Cloth R`
+- `Rotation2_Chest Cloth R`
+- `Rotation3_Chest Cloth R`
+- `Rotation4_Chest Cloth R`
+- `Rotation5_Chest Cloth R`
+- `Rotation6_Chest Cloth R`
+- `Rotation0_Wing R 2`
+- `Rotation1_Wing R 2`
+- `Rotation2_Wing R 2`
+- `Rotation3_Wing R 2`
+- `Rotation4_Wing R 2`
+- `Rotation0_Wing L 2`
+- `Rotation1_Wing L 2`
+- `Rotation2_Wing L 2`
+- `Rotation3_Wing L 2`
+- `Rotation4_Wing L 2`
+- `Rotation Sparkle 1`
+- `Rotation Sparkle 2`
+- `Rotation Sparkle 3`
+- `Rotation Sparkle 4`
+- `Rotation Sparkle 5`
+- `Rotation Sparkle 6`
+- `Rotation Sparkle 7`
+- `Rotation Sparkle 8`
+- `Rotation Sparkle 9`
+- `Rotation Sparkle 10`
+- `Rotation Sparkle 11`
+- `Rotation Sparkle 12`
+- `Rotation Sparkle 13`
+- `Rotation Sparkle 14`
+- `Rotation Sparkle 15`
+- `Rotation Sparkle 16`
+- `Rotation Sparkle 17`
+- `Rotation Sparkle 18`
+- `Rotation Sparkle 19`
+- `Rotation Sparkle 20`
+- `Rotation Sparkle 21`
+- `Rotation Leg R`
+- `Position Leg R`
+- `Rotation Knee R`
+- `Rotation Ankle R`
+- `Rotation Leg L`
+- `Position Leg L`
+- `Rotation Knee L`
+- `Rotation Ankle L`
+- `Rotation Water Surface Refrection`
+- `Move Overall`
+- `Rotation Weist`
+- `Rotaion Lower Body`
+
+## Interpretation
+
+- This proves CMO3 structure presence, not final visual rig quality.
+- It does not replace runtime render checks for keyform motion, draw order under motion, or overhang.
+- Part and layer names are extracted dynamically from this CMO3; they are not image-specific hardcoded expectations.

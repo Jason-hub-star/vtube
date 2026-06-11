@@ -1,0 +1,20 @@
+{
+  "status": "DISCARDED_VISUAL_FAIL",
+  "decision": "Do not use the rectangular closed-eye underpaint patch as active rig material.",
+  "reason": "It hid baked eyes only inside the manually saved bbox but produced visible rectangular skin patches; the correct next path is regenerating face_base_clean plus dedicated closed-eye underpaint from clean material sources.",
+  "removed_from_active_character": {
+    "parts": [
+      "eye_L_closed_underpaint",
+      "eye_R_closed_underpaint"
+    ],
+    "meshes": [
+      "eye_L_closed_underpaint",
+      "eye_R_closed_underpaint"
+    ],
+    "opacity": [
+      "eye_L_closed_underpaint",
+      "eye_R_closed_underpaint"
+    ]
+  },
+  "preserved_evidence_note": "Generated ignored PNG files may remain on disk as local diagnostics, but character.json no longer references them."
+}

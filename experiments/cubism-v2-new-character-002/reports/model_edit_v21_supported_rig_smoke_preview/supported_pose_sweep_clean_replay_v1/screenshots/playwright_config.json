@@ -1,0 +1,55 @@
+{
+  "url": "http://127.0.0.1:59175/",
+  "outDir": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v21_supported_rig_smoke_preview/supported_pose_sweep_clean_replay_v1/screenshots",
+  "resultPath": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v21_supported_rig_smoke_preview/supported_pose_sweep_clean_replay_v1/screenshots/playwright_result.json",
+  "poses": [
+    {
+      "name": "neutral",
+      "parameters": {}
+    },
+    {
+      "name": "angle_left",
+      "parameters": {
+        "ParamAngleX": -30
+      }
+    },
+    {
+      "name": "angle_right",
+      "parameters": {
+        "ParamAngleX": 30
+      }
+    },
+    {
+      "name": "eye_l_close",
+      "parameters": {
+        "ParamEyeLOpen": 0
+      }
+    },
+    {
+      "name": "eye_r_close",
+      "parameters": {
+        "ParamEyeROpen": 0
+      }
+    },
+    {
+      "name": "mouth_open",
+      "parameters": {
+        "ParamMouthOpenY": 1
+      }
+    }
+  ],
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "captureElement": "canvas",
+  "showOverlays": false
+}

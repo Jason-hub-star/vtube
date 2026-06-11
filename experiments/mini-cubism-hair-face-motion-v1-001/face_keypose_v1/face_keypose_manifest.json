@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "experiment_id": "mini-cubism-hair-face-motion-v1-001",
+  "generated_at": "2026-06-05T13:15:00.367164+00:00",
+  "status": "PASS",
+  "canvas_size": [
+    2048,
+    2048
+  ],
+  "source_policy": "generated_separate_keypose_layers_not_crowded_pack",
+  "records": [
+    {
+      "part_id": "face_cover",
+      "role": "face_cover",
+      "parameter_id": null,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/face_keypose_v1/parts/face_cover.png",
+      "bbox": [
+        785,
+        145,
+        481,
+        221
+      ],
+      "nonzero_alpha": 97560,
+      "alpha_coverage": 0.02326012
+    },
+    {
+      "part_id": "eye_open_L",
+      "role": "eye_open",
+      "parameter_id": "ParamEyeLOpen",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/face_keypose_v1/parts/eye_open_L.png",
+      "bbox": [
+        843,
+        177,
+        154,
+        99
+      ],
+      "nonzero_alpha": 10782,
+      "alpha_coverage": 0.00257063
+    },
+    {
+      "part_id": "eye_half_L",
+      "role": "eye_half",
+      "parameter_id": "ParamEyeLOpen",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/face_keypose_v1/parts/eye_half_L.png",
+      "bbox": [
+        843,
+        183,
+        154,
+        81
+      ],
+      "nonzero_alpha": 9789,
+      "alpha_coverage": 0.00233388
+    },
+    {
+      "part_id": "eye_closed_L",
+      "role": "eye_closed",
+      "parameter_id": "ParamEyeLOpen",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/face_keypose_v1/parts/eye_closed_L.png",
+      "bbox": [
+        845,
+        211,
+        147,
+        28
+      ],
+      "nonzero_alpha": 1446,
+      "alpha_coverage": 0.00034475
+    },
+    {
+      "part_id": "eye_open_R",
+      "role": "eye_open",
+      "parameter_id": "ParamEyeROpen",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/face_keypose_v1/parts/eye_open_R.png",
+      "bbox": [
+        1053,
+        177,
+        154,
+        99
+      ],
+      "nonzero_alpha": 10782,
+      "alpha_coverage": 0.00257063
+    },
+    {
+      "part_id": "eye_half_R",
+      "role": "eye_half",
+      "parameter_id": "ParamEyeROpen",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/face_keypose_v1/parts/eye_half_R.png",
+      "bbox": [
+        1053,
+        183,
+        154,
+        81
+      ],
+      "nonzero_alpha": 9789,
+      "alpha_coverage": 0.00233388
+    },
+    {
+      "part_id": "eye_closed_R",
+      "role": "eye_closed",
+      "parameter_id": "ParamEyeROpen",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/face_keypose_v1/parts/eye_closed_R.png",
+      "bbox": [
+        1055,
+        211,
+        147,
+        28
+      ],
+      "nonzero_alpha": 1446,
+      "alpha_coverage": 0.00034475
+    },
+    {
+      "part_id": "mouth_closed",
+      "role": "mouth_closed",
+      "parameter_id": "ParamMouthOpenY",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/face_keypose_v1/parts/mouth_closed.png",
+      "bbox": [
+        968,
+        337,
+        113,
+        24
+      ],
+      "nonzero_alpha": 791,
+      "alpha_coverage": 0.00018859
+    },
+    {
+      "part_id": "mouth_half",
+      "role": "mouth_half",
+      "parameter_id": "ParamMouthOpenY",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/face_keypose_v1/parts/mouth_half.png",
+      "bbox": [
+        968,
+        312,
+        113,
+        51
+      ],
+      "nonzero_alpha": 4527,
+      "alpha_coverage": 0.00107932
+    },
+    {
+      "part_id": "mouth_open",
+      "role": "mouth_open",
+      "parameter_id": "ParamMouthOpenY",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/face_keypose_v1/parts/mouth_open.png",
+      "bbox": [
+        962,
+        304,
+        125,
+        77
+      ],
+      "nonzero_alpha": 7553,
+      "alpha_coverage": 0.00180078
+    }
+  ],
+  "eye_visibility_groups": {
+    "states": {
+      "0": [
+        "eye_closed_L",
+        "eye_closed_R"
+      ],
+      "0.5": [
+        "eye_half_L",
+        "eye_half_R"
+      ],
+      "1": [
+        "eye_open_L",
+        "eye_open_R"
+      ]
+    },
+    "closed_hidden_parts": [
+      "eye_open_L",
+      "eye_half_L",
+      "eye_open_R",
+      "eye_half_R"
+    ]
+  },
+  "mouth_visibility_groups": {
+    "states": {
+      "0": [
+        "mouth_closed"
+      ],
+      "0.5": [
+        "mouth_half"
+      ],
+      "1": [
+        "mouth_open"
+      ]
+    }
+  },
+  "contact_sheet": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/face_keypose_v1/reports/face_keypose_contact_sheet.png"
+}

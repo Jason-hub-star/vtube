@@ -1,0 +1,552 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T14:49:40.177960+00:00",
+  "source_url": "https://www.live2d.com/ko/learn/sample/",
+  "copyright_note": "Short learning targets only; do not copy official sample art, textures, PSD layers, or long page text.",
+  "profiles": [
+    {
+      "profile_key": "chitose",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/chitose.zip"
+      ],
+      "official_description": "Official page describes Chitose as a male model with right-arm switching for waving.",
+      "official_learning_target": [
+        "male avatar model",
+        "right-arm switching",
+        "handwave motion"
+      ],
+      "expected_success_pattern": {
+        "motion_pose": "KEEP",
+        "body_angle": "REFERENCE_ONLY"
+      },
+      "pattern_decision": "REFERENCE_ONLY",
+      "aliases": [
+        "chitose"
+      ],
+      "display_name": "Chitose"
+    },
+    {
+      "profile_key": "epsilon",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/Epsilon.zip"
+      ],
+      "official_description": "Official page describes Epsilon as a standard easy-to-use model with expression effects.",
+      "official_learning_target": [
+        "standard easy-to-use model",
+        "expression effects"
+      ],
+      "expected_success_pattern": {
+        "eye": "REFERENCE_ONLY",
+        "mouth": "REFERENCE_ONLY",
+        "motion_pose": "REFERENCE_ONLY"
+      },
+      "pattern_decision": "REFERENCE_ONLY",
+      "aliases": [
+        "epsilon"
+      ],
+      "display_name": "Epsilon"
+    },
+    {
+      "profile_key": "gantzert_felixander",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/Gantzert_Felixander.zip"
+      ],
+      "official_description": "Official page describes additive effects and many clipping expressions for hand, wings, thunder, and fire reflection.",
+      "official_learning_target": [
+        "additive drawing effects",
+        "many clipping expressions",
+        "right hand, dragon wings, thunder and fire reflection"
+      ],
+      "expected_success_pattern": {
+        "mask": "KEEP",
+        "motion_pose": "REFERENCE_ONLY"
+      },
+      "pattern_decision": "REFERENCE_ONLY",
+      "aliases": [
+        "gantzert",
+        "felixander",
+        "gantzert_felixander"
+      ],
+      "display_name": "Gantzert & Felixander"
+    },
+    {
+      "profile_key": "haru",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/haru.zip"
+      ],
+      "official_description": "Official page describes Haru as supporting arm switching and clothing changes with voice files.",
+      "official_learning_target": [
+        "arm switching",
+        "clothing changes",
+        "voice and expression testing",
+        "overall Live2D feature test"
+      ],
+      "expected_success_pattern": {
+        "motion_pose": "KEEP",
+        "body_angle": "REFERENCE_ONLY",
+        "physics": "REFERENCE_ONLY"
+      },
+      "pattern_decision": "REFERENCE_ONLY",
+      "aliases": [
+        "haru"
+      ],
+      "display_name": "Haru"
+    },
+    {
+      "profile_key": "haru_greeter",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/haru_greeter_pro_jp.zip"
+      ],
+      "official_description": "Official distribution contains material-division and import PSDs, making it useful for PSD layer structure study.",
+      "official_learning_target": [
+        "PSD material division",
+        "PSD import material structure",
+        "avatar greeting motions"
+      ],
+      "expected_success_pattern": {
+        "psd_layering": "KEEP",
+        "motion_pose": "REFERENCE_ONLY"
+      },
+      "pattern_decision": "KEEP",
+      "aliases": [
+        "haru_greeter",
+        "greeter"
+      ],
+      "display_name": "Haru Greeter"
+    },
+    {
+      "profile_key": "haruto",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/koharu_haruto.zip"
+      ],
+      "official_description": "Official zip contains Haruto PSD and runtime files; use as PSD/material structure reference.",
+      "official_learning_target": [
+        "PSD material division",
+        "paired sample character",
+        "runtime motion baseline"
+      ],
+      "expected_success_pattern": {
+        "psd_layering": "KEEP",
+        "motion_pose": "REFERENCE_ONLY"
+      },
+      "pattern_decision": "REFERENCE_ONLY",
+      "aliases": [
+        "haruto"
+      ],
+      "display_name": "Haruto"
+    },
+    {
+      "profile_key": "hiyori",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/hiyori_movie_pro_ko.zip",
+        "/Users/family/Downloads/hiyori_pro_ko.zip"
+      ],
+      "official_description": "Official page describes Hiyori as a standard model for learning deformer and parameter structure, with hair skinning.",
+      "official_learning_target": [
+        "standard Cubism 3.0 model",
+        "deformer structure",
+        "parameter structure",
+        "hair skinning"
+      ],
+      "expected_success_pattern": {
+        "eye": "KEEP",
+        "mouth": "KEEP",
+        "hair": "KEEP",
+        "body_angle": "KEEP",
+        "physics": "KEEP"
+      },
+      "pattern_decision": "KEEP",
+      "aliases": [
+        "hiyori",
+        "momose hiyori"
+      ],
+      "display_name": "Momose Hiyori"
+    },
+    {
+      "profile_key": "izumi",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/izumi.zip"
+      ],
+      "official_description": "Official page describes four texture styles and motion from an oblique original pose toward the opposite direction.",
+      "official_learning_target": [
+        "multiple art styles",
+        "oblique source pose",
+        "opposite-facing motion"
+      ],
+      "expected_success_pattern": {
+        "body_angle": "KEEP",
+        "motion_pose": "REFERENCE_ONLY"
+      },
+      "pattern_decision": "REFERENCE_ONLY",
+      "aliases": [
+        "izumi"
+      ],
+      "display_name": "Izumi"
+    },
+    {
+      "profile_key": "kei",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/kei_ko.zip"
+      ],
+      "official_description": "Official page describes Kei as a motion-sync/lip-sync sample with preset-compatible mouth parameters.",
+      "official_learning_target": [
+        "motion sync",
+        "lip-sync presets",
+        "mouth parameter composition"
+      ],
+      "expected_success_pattern": {
+        "mouth": "KEEP",
+        "physics": "REFERENCE_ONLY"
+      },
+      "pattern_decision": "KEEP",
+      "aliases": [
+        "kei",
+        "케이"
+      ],
+      "display_name": "Kei"
+    },
+    {
+      "profile_key": "koharu",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/koharu_haruto.zip"
+      ],
+      "official_description": "Official zip contains Koharu PSD and runtime files; use as PSD/material structure reference.",
+      "official_learning_target": [
+        "PSD material division",
+        "paired sample character",
+        "runtime motion baseline"
+      ],
+      "expected_success_pattern": {
+        "psd_layering": "KEEP",
+        "motion_pose": "REFERENCE_ONLY"
+      },
+      "pattern_decision": "REFERENCE_ONLY",
+      "aliases": [
+        "koharu"
+      ],
+      "display_name": "Koharu"
+    },
+    {
+      "profile_key": "mao",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/mao_pro_ko.zip"
+      ],
+      "official_description": "Official page describes blend shapes for mouth, eyebrow, and hair swing, plus a wide face range.",
+      "official_learning_target": [
+        "blend shapes",
+        "multiply and screen color",
+        "mouth, eyebrow, and hair additive shape differences",
+        "wide face motion range"
+      ],
+      "expected_success_pattern": {
+        "mouth": "KEEP",
+        "eye": "KEEP",
+        "hair": "KEEP",
+        "body_angle": "KEEP",
+        "motion_pose": "REFERENCE_ONLY"
+      },
+      "pattern_decision": "KEEP",
+      "aliases": [
+        "mao",
+        "niziiro mao",
+        "니지이로 마오"
+      ],
+      "display_name": "Niziiro Mao"
+    },
+    {
+      "profile_key": "mark",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/mark_movie_pro_ko.zip"
+      ],
+      "official_description": "Official page describes Mark-kun as a simple beginner model with physics, blinking, SDK introduction, and PSD availability.",
+      "official_learning_target": [
+        "simple deformer structure",
+        "simple parameter structure",
+        "physics",
+        "eye blink",
+        "PSD availability"
+      ],
+      "expected_success_pattern": {
+        "eye": "KEEP",
+        "mouth": "REFERENCE_ONLY",
+        "physics": "KEEP",
+        "psd_layering": "KEEP"
+      },
+      "pattern_decision": "KEEP",
+      "aliases": [
+        "mark",
+        "mark-kun",
+        "mark_movie"
+      ],
+      "display_name": "Mark-kun"
+    },
+    {
+      "profile_key": "miara",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/miara_pro_en.zip"
+      ],
+      "official_description": "Official sample includes CMO3, runtime, motion, and physics; use as secondary full-body baseline.",
+      "official_learning_target": [
+        "full-body avatar",
+        "voice motion",
+        "physics baseline"
+      ],
+      "expected_success_pattern": {
+        "body_angle": "REFERENCE_ONLY",
+        "physics": "REFERENCE_ONLY"
+      },
+      "pattern_decision": "REFERENCE_ONLY",
+      "aliases": [
+        "miara"
+      ],
+      "display_name": "Miara"
+    },
+    {
+      "profile_key": "miku",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/miku_pro_jp.zip"
+      ],
+      "official_description": "Official page describes Miku as a sample where twin-tail hair moves smoothly through skinning. Character/art style is not reusable.",
+      "official_learning_target": [
+        "twin-tail hair skinning",
+        "smooth long hair motion"
+      ],
+      "expected_success_pattern": {
+        "hair": "KEEP",
+        "physics": "KEEP"
+      },
+      "pattern_decision": "REFERENCE_ONLY",
+      "aliases": [
+        "miku",
+        "hatsune miku"
+      ],
+      "display_name": "Hatsune Miku"
+    },
+    {
+      "profile_key": "natori",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/natori_pro_ko.zip"
+      ],
+      "official_description": "Official sample includes many expressions, pose data, motions, and physics.",
+      "official_learning_target": [
+        "expressions",
+        "pose",
+        "motion baseline",
+        "physics baseline"
+      ],
+      "expected_success_pattern": {
+        "motion_pose": "KEEP",
+        "physics": "REFERENCE_ONLY"
+      },
+      "pattern_decision": "REFERENCE_ONLY",
+      "aliases": [
+        "natori"
+      ],
+      "display_name": "Natori"
+    },
+    {
+      "profile_key": "nito",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/nito.zip"
+      ],
+      "official_description": "Official page describes Nito as a two-head character with multiple variants, large mouth expressions, and comical limb motion.",
+      "official_learning_target": [
+        "two-head character",
+        "multiple variants in one model",
+        "large mouth expression",
+        "limbless comical motion"
+      ],
+      "expected_success_pattern": {
+        "mouth": "KEEP",
+        "motion_pose": "KEEP"
+      },
+      "pattern_decision": "REFERENCE_ONLY",
+      "aliases": [
+        "nito",
+        "nico",
+        "nietzsche",
+        "ni-j",
+        "nipsilon"
+      ],
+      "display_name": "Nito"
+    },
+    {
+      "profile_key": "param_ctrl",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/param_ctrl_pro_ko.zip"
+      ],
+      "official_description": "Official page describes parameter controller target-following for animation production.",
+      "official_learning_target": [
+        "parameter controller",
+        "target following",
+        "animation efficiency"
+      ],
+      "expected_success_pattern": {
+        "motion_pose": "REFERENCE_ONLY",
+        "body_angle": "REFERENCE_ONLY"
+      },
+      "pattern_decision": "REFERENCE_ONLY",
+      "aliases": [
+        "param_ctrl",
+        "parameter controller",
+        "파라미터 컨트롤러"
+      ],
+      "display_name": "Parameter Controller Sample"
+    },
+    {
+      "profile_key": "ren",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/ren_pro_ko.zip"
+      ],
+      "official_description": "Official page describes this as a Cubism 5.3 rich rendering sample using alpha blend masks and offscreen rendering.",
+      "official_learning_target": [
+        "Cubism 5.3 rich drawing",
+        "alpha blend masks",
+        "offscreen rendering",
+        "high-spec avatar expression"
+      ],
+      "expected_success_pattern": {
+        "mask": "KEEP",
+        "physics": "REFERENCE_ONLY",
+        "body_angle": "REFERENCE_ONLY"
+      },
+      "pattern_decision": "REFERENCE_ONLY",
+      "aliases": [
+        "ren",
+        "ren_pro",
+        "렌 포스터"
+      ],
+      "display_name": "Ren Foster"
+    },
+    {
+      "profile_key": "rice",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/rice_pro_ko.zip"
+      ],
+      "official_description": "Official page describes Rice as useful for extended interpolation and inverted-mask expression such as forelock and fire.",
+      "official_learning_target": [
+        "extended interpolation",
+        "inverted mask",
+        "forelock and fire effects"
+      ],
+      "expected_success_pattern": {
+        "mask": "KEEP",
+        "hair": "REFERENCE_ONLY",
+        "motion_pose": "REFERENCE_ONLY"
+      },
+      "pattern_decision": "REFERENCE_ONLY",
+      "aliases": [
+        "rice"
+      ],
+      "display_name": "Rice Glassfield"
+    },
+    {
+      "profile_key": "shizuku",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/shizuku.zip"
+      ],
+      "official_description": "Official sample includes runtime, motion, pose, and physics; use as secondary baseline only.",
+      "official_learning_target": [
+        "legacy sample structure",
+        "pose and physics baseline"
+      ],
+      "expected_success_pattern": {
+        "motion_pose": "REFERENCE_ONLY",
+        "physics": "REFERENCE_ONLY"
+      },
+      "pattern_decision": "REFERENCE_ONLY",
+      "aliases": [
+        "shizuku"
+      ],
+      "display_name": "Shizuku"
+    },
+    {
+      "profile_key": "tsumiki",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/tsumiki.zip"
+      ],
+      "official_description": "Official page groups Tsumiki with eyelid clipping-mask learning value.",
+      "official_learning_target": [
+        "eyelid clipping mask",
+        "standard avatar motion"
+      ],
+      "expected_success_pattern": {
+        "eye": "KEEP",
+        "mask": "KEEP"
+      },
+      "pattern_decision": "REFERENCE_ONLY",
+      "aliases": [
+        "tsumiki"
+      ],
+      "display_name": "Tsumiki"
+    },
+    {
+      "profile_key": "unitychan",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/Unitychan.zip"
+      ],
+      "official_description": "Official page describes eyelid clipping masks and includes a PSD, with separate Unity-chan license rules.",
+      "official_learning_target": [
+        "eyelid clipping mask",
+        "PSD layer reference",
+        "deformed character model"
+      ],
+      "expected_success_pattern": {
+        "eye": "KEEP",
+        "mask": "KEEP",
+        "psd_layering": "REFERENCE_ONLY"
+      },
+      "pattern_decision": "REFERENCE_ONLY",
+      "aliases": [
+        "unitychan",
+        "unity-chan"
+      ],
+      "display_name": "Unity-chan"
+    },
+    {
+      "profile_key": "wanko",
+      "official_sample_url": "https://www.live2d.com/ko/learn/sample/",
+      "linked_zip_files": [
+        "/Users/family/Downloads/wanko.zip"
+      ],
+      "official_description": "Official sample includes touch/idle motions and physics; useful as non-human contrast only.",
+      "official_learning_target": [
+        "touch motions",
+        "non-human avatar runtime",
+        "physics baseline"
+      ],
+      "expected_success_pattern": {
+        "motion_pose": "REFERENCE_ONLY",
+        "physics": "REFERENCE_ONLY"
+      },
+      "pattern_decision": "REFERENCE_ONLY",
+      "aliases": [
+        "wanko"
+      ],
+      "display_name": "Wanko"
+    }
+  ],
+  "zip_profile_missing": []
+}

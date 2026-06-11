@@ -1,0 +1,575 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T03:05:55.085453+00:00",
+  "experiment_id": "cubism-v2-new-character-002",
+  "candidate_id": "model_edit_v5_manual_aligned",
+  "status": "MANUAL_ALIGNED_CANDIDATE_READY_FOR_VALIDATOR",
+  "source_layers": "experiments/cubism-v2-new-character-002/model_edit_v4_strict_mouth/normalized_layers",
+  "manual_overrides": "experiments/cubism-v2-new-character-002/reports/model_edit_v4_strict_mouth/manual_alignment_v1/manual_keypose_alignment_overrides.json",
+  "output_layers": "experiments/cubism-v2-new-character-002/model_edit_v5_manual_aligned/normalized_layers",
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/model_edit_v5_manual_aligned/model_edit_v5_manual_aligned_contact_sheet.png",
+  "adjustment_count": 20,
+  "adjustments": [
+    {
+      "group_id": "eye_L",
+      "part_id": "eye_L_clean_socket",
+      "preview_part": "eye_L_open",
+      "source_origin": [
+        880.0,
+        686.5
+      ],
+      "target_anchor": [
+        880.0,
+        687.0
+      ],
+      "scale": 0.78,
+      "before_alpha_bbox": [
+        734,
+        602,
+        1026,
+        771
+      ],
+      "after_alpha_bbox": [
+        766,
+        621,
+        994,
+        753
+      ],
+      "before_alpha_coverage": 0.00994039,
+      "after_alpha_coverage": 0.00605702
+    },
+    {
+      "group_id": "eye_L",
+      "part_id": "eye_L_closed_underpaint",
+      "preview_part": "eye_L_open",
+      "source_origin": [
+        880.0,
+        686.5
+      ],
+      "target_anchor": [
+        880.0,
+        687.0
+      ],
+      "scale": 0.78,
+      "before_alpha_bbox": [
+        734,
+        602,
+        1026,
+        771
+      ],
+      "after_alpha_bbox": [
+        766,
+        621,
+        994,
+        753
+      ],
+      "before_alpha_coverage": 0.00994039,
+      "after_alpha_coverage": 0.00605702
+    },
+    {
+      "group_id": "eye_L",
+      "part_id": "eye_L_open",
+      "preview_part": "eye_L_open",
+      "source_origin": [
+        880.0,
+        686.5
+      ],
+      "target_anchor": [
+        880.0,
+        687.0
+      ],
+      "scale": 0.78,
+      "before_alpha_bbox": [
+        750,
+        618,
+        1010,
+        755
+      ],
+      "after_alpha_bbox": [
+        779,
+        634,
+        982,
+        741
+      ],
+      "before_alpha_coverage": 0.00584531,
+      "after_alpha_coverage": 0.00402975
+    },
+    {
+      "group_id": "eye_L",
+      "part_id": "eye_L_half_closed_lid",
+      "preview_part": "eye_L_open",
+      "source_origin": [
+        880.0,
+        686.5
+      ],
+      "target_anchor": [
+        880.0,
+        687.0
+      ],
+      "scale": 0.78,
+      "before_alpha_bbox": [
+        764,
+        655,
+        967,
+        742
+      ],
+      "after_alpha_bbox": [
+        790,
+        662,
+        948,
+        730
+      ],
+      "before_alpha_coverage": 0.00138474,
+      "after_alpha_coverage": 0.00102115
+    },
+    {
+      "group_id": "eye_L",
+      "part_id": "eye_L_mostly_closed_lid",
+      "preview_part": "eye_L_open",
+      "source_origin": [
+        880.0,
+        686.5
+      ],
+      "target_anchor": [
+        880.0,
+        687.0
+      ],
+      "scale": 0.78,
+      "before_alpha_bbox": [
+        766,
+        640,
+        975,
+        736
+      ],
+      "after_alpha_bbox": [
+        791,
+        651,
+        954,
+        726
+      ],
+      "before_alpha_coverage": 0.00081611,
+      "after_alpha_coverage": 0.00063419
+    },
+    {
+      "group_id": "eye_L",
+      "part_id": "eye_L_closed_lid",
+      "preview_part": "eye_L_open",
+      "source_origin": [
+        880.0,
+        686.5
+      ],
+      "target_anchor": [
+        880.0,
+        687.0
+      ],
+      "scale": 0.78,
+      "before_alpha_bbox": [
+        761,
+        647,
+        986,
+        733
+      ],
+      "after_alpha_bbox": [
+        787,
+        656,
+        963,
+        723
+      ],
+      "before_alpha_coverage": 0.00087619,
+      "after_alpha_coverage": 0.00067067
+    },
+    {
+      "group_id": "eye_R",
+      "part_id": "eye_R_clean_socket",
+      "preview_part": "eye_R_open",
+      "source_origin": [
+        1170.0,
+        687.0
+      ],
+      "target_anchor": [
+        1170.0,
+        687.0
+      ],
+      "scale": 0.78,
+      "before_alpha_bbox": [
+        1024,
+        603,
+        1316,
+        771
+      ],
+      "after_alpha_bbox": [
+        1056,
+        621,
+        1284,
+        752
+      ],
+      "before_alpha_coverage": 0.01001167,
+      "after_alpha_coverage": 0.00609136
+    },
+    {
+      "group_id": "eye_R",
+      "part_id": "eye_R_closed_underpaint",
+      "preview_part": "eye_R_open",
+      "source_origin": [
+        1170.0,
+        687.0
+      ],
+      "target_anchor": [
+        1170.0,
+        687.0
+      ],
+      "scale": 0.78,
+      "before_alpha_bbox": [
+        1024,
+        603,
+        1316,
+        771
+      ],
+      "after_alpha_bbox": [
+        1056,
+        621,
+        1284,
+        752
+      ],
+      "before_alpha_coverage": 0.01001167,
+      "after_alpha_coverage": 0.00609136
+    },
+    {
+      "group_id": "eye_R",
+      "part_id": "eye_R_open",
+      "preview_part": "eye_R_open",
+      "source_origin": [
+        1170.0,
+        687.0
+      ],
+      "target_anchor": [
+        1170.0,
+        687.0
+      ],
+      "scale": 0.78,
+      "before_alpha_bbox": [
+        1040,
+        619,
+        1300,
+        755
+      ],
+      "after_alpha_bbox": [
+        1069,
+        634,
+        1272,
+        740
+      ],
+      "before_alpha_coverage": 0.00580096,
+      "after_alpha_coverage": 0.00401068
+    },
+    {
+      "group_id": "eye_R",
+      "part_id": "eye_R_half_closed_lid",
+      "preview_part": "eye_R_open",
+      "source_origin": [
+        1170.0,
+        687.0
+      ],
+      "target_anchor": [
+        1170.0,
+        687.0
+      ],
+      "scale": 0.78,
+      "before_alpha_bbox": [
+        1083,
+        680,
+        1287,
+        743
+      ],
+      "after_alpha_bbox": [
+        1102,
+        682,
+        1261,
+        731
+      ],
+      "before_alpha_coverage": 0.00137758,
+      "after_alpha_coverage": 0.0010221
+    },
+    {
+      "group_id": "eye_R",
+      "part_id": "eye_R_mostly_closed_lid",
+      "preview_part": "eye_R_open",
+      "source_origin": [
+        1170.0,
+        687.0
+      ],
+      "target_anchor": [
+        1170.0,
+        687.0
+      ],
+      "scale": 0.78,
+      "before_alpha_bbox": [
+        1083,
+        692,
+        1286,
+        736
+      ],
+      "after_alpha_bbox": [
+        1102,
+        691,
+        1260,
+        725
+      ],
+      "before_alpha_coverage": 0.00081873,
+      "after_alpha_coverage": 0.00062752
+    },
+    {
+      "group_id": "eye_R",
+      "part_id": "eye_R_closed_lid",
+      "preview_part": "eye_R_open",
+      "source_origin": [
+        1170.0,
+        687.0
+      ],
+      "target_anchor": [
+        1170.0,
+        687.0
+      ],
+      "scale": 0.78,
+      "before_alpha_bbox": [
+        1070,
+        643,
+        1290,
+        727
+      ],
+      "after_alpha_bbox": [
+        1092,
+        653,
+        1264,
+        719
+      ],
+      "before_alpha_coverage": 0.00088596,
+      "after_alpha_coverage": 0.00069284
+    },
+    {
+      "group_id": "mouth",
+      "part_id": "mouth_base_clean",
+      "preview_part": "mouth_small_open",
+      "source_origin": [
+        1032.0,
+        846.0
+      ],
+      "target_anchor": [
+        1026.0,
+        896.0
+      ],
+      "scale": 0.86,
+      "before_alpha_bbox": [
+        906,
+        765,
+        1164,
+        925
+      ],
+      "after_alpha_bbox": [
+        918,
+        826,
+        1140,
+        964
+      ],
+      "before_alpha_coverage": 0.00823021,
+      "after_alpha_coverage": 0.00609875
+    },
+    {
+      "group_id": "mouth",
+      "part_id": "mouth_closed_smile",
+      "preview_part": "mouth_small_open",
+      "source_origin": [
+        1032.0,
+        846.0
+      ],
+      "target_anchor": [
+        1026.0,
+        896.0
+      ],
+      "scale": 0.86,
+      "before_alpha_bbox": [
+        946,
+        794,
+        1143,
+        903
+      ],
+      "after_alpha_bbox": [
+        952,
+        851,
+        1121,
+        945
+      ],
+      "before_alpha_coverage": 6.986e-05,
+      "after_alpha_coverage": 0.00012541
+    },
+    {
+      "group_id": "mouth",
+      "part_id": "mouth_small_open",
+      "preview_part": "mouth_small_open",
+      "source_origin": [
+        1032.0,
+        846.0
+      ],
+      "target_anchor": [
+        1026.0,
+        896.0
+      ],
+      "scale": 0.86,
+      "before_alpha_bbox": [
+        925,
+        787,
+        1139,
+        905
+      ],
+      "after_alpha_bbox": [
+        934,
+        845,
+        1118,
+        946
+      ],
+      "before_alpha_coverage": 0.00051355,
+      "after_alpha_coverage": 0.00045991
+    },
+    {
+      "group_id": "mouth",
+      "part_id": "mouth_wide_open",
+      "preview_part": "mouth_small_open",
+      "source_origin": [
+        1032.0,
+        846.0
+      ],
+      "target_anchor": [
+        1026.0,
+        896.0
+      ],
+      "scale": 0.86,
+      "before_alpha_bbox": [
+        936,
+        782,
+        1151,
+        903
+      ],
+      "after_alpha_bbox": [
+        943,
+        841,
+        1128,
+        945
+      ],
+      "before_alpha_coverage": 0.00163794,
+      "after_alpha_coverage": 0.00144339
+    },
+    {
+      "group_id": "mouth",
+      "part_id": "mouth_o_vowel",
+      "preview_part": "mouth_small_open",
+      "source_origin": [
+        1032.0,
+        846.0
+      ],
+      "target_anchor": [
+        1026.0,
+        896.0
+      ],
+      "scale": 0.86,
+      "before_alpha_bbox": [
+        928,
+        787,
+        1130,
+        910
+      ],
+      "after_alpha_bbox": [
+        937,
+        845,
+        1111,
+        951
+      ],
+      "before_alpha_coverage": 0.00026917,
+      "after_alpha_coverage": 0.00027728
+    },
+    {
+      "group_id": "mouth",
+      "part_id": "mouth_inner",
+      "preview_part": "mouth_small_open",
+      "source_origin": [
+        1032.0,
+        846.0
+      ],
+      "target_anchor": [
+        1026.0,
+        896.0
+      ],
+      "scale": 0.86,
+      "before_alpha_bbox": [
+        928,
+        791,
+        1143,
+        899
+      ],
+      "after_alpha_bbox": [
+        937,
+        849,
+        1122,
+        942
+      ],
+      "before_alpha_coverage": 0.0045464,
+      "after_alpha_coverage": 0.00342655
+    },
+    {
+      "group_id": "mouth",
+      "part_id": "mouth_teeth",
+      "preview_part": "mouth_small_open",
+      "source_origin": [
+        1032.0,
+        846.0
+      ],
+      "target_anchor": [
+        1026.0,
+        896.0
+      ],
+      "scale": 0.86,
+      "before_alpha_bbox": [
+        920,
+        812,
+        1150,
+        877
+      ],
+      "after_alpha_bbox": [
+        930,
+        867,
+        1128,
+        923
+      ],
+      "before_alpha_coverage": 0.00297761,
+      "after_alpha_coverage": 0.00227594
+    },
+    {
+      "group_id": "mouth",
+      "part_id": "mouth_tongue",
+      "preview_part": "mouth_small_open",
+      "source_origin": [
+        1032.0,
+        846.0
+      ],
+      "target_anchor": [
+        1026.0,
+        896.0
+      ],
+      "scale": 0.86,
+      "before_alpha_bbox": [
+        932,
+        788,
+        1137,
+        902
+      ],
+      "after_alpha_bbox": [
+        940,
+        846,
+        1116,
+        944
+      ],
+      "before_alpha_coverage": 0.0042665,
+      "after_alpha_coverage": 0.00322413
+    }
+  ],
+  "note": "Applies saved manual eye/mouth anchors and scales. This is material alignment evidence, not final Cubism authoring."
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T14:45:55.494015+00:00",
+  "status": "OWNER_DECISION_TEMPLATE_PENDING",
+  "source_packet": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_focused_owner_review/v22_b4_b5_focused_owner_review.json",
+  "instructions": "Fill owner_decision only with one of allowed_owner_decisions. PENDING entries do not approve material PASS.",
+  "decisions": [
+    {
+      "part_id": "hair_front_L",
+      "review_group": "B4_FRONT_HAIR",
+      "owner_decision": "PENDING_OWNER_REVIEW",
+      "allowed_owner_decisions": [
+        "ACCEPT_FOR_MOTION_READINESS_CANDIDATE",
+        "REVISE_MASK_OR_ANCHOR",
+        "REGENERATE_B4_FRONT_HAIR_MINIPASS"
+      ],
+      "owner_note": ""
+    },
+    {
+      "part_id": "hair_front_R",
+      "review_group": "B4_FRONT_HAIR",
+      "owner_decision": "PENDING_OWNER_REVIEW",
+      "allowed_owner_decisions": [
+        "ACCEPT_FOR_MOTION_READINESS_CANDIDATE",
+        "REVISE_MASK_OR_ANCHOR",
+        "REGENERATE_B4_FRONT_HAIR_MINIPASS"
+      ],
+      "owner_note": ""
+    },
+    {
+      "part_id": "hair_front_center",
+      "review_group": "B4_FRONT_HAIR",
+      "owner_decision": "PENDING_OWNER_REVIEW",
+      "allowed_owner_decisions": [
+        "ACCEPT_FOR_MOTION_READINESS_CANDIDATE",
+        "REVISE_MASK_OR_ANCHOR",
+        "REGENERATE_B4_FRONT_HAIR_MINIPASS"
+      ],
+      "owner_note": ""
+    },
+    {
+      "part_id": "hair_front_side_L",
+      "review_group": "B4_FRONT_HAIR",
+      "owner_decision": "PENDING_OWNER_REVIEW",
+      "allowed_owner_decisions": [
+        "ACCEPT_FOR_MOTION_READINESS_CANDIDATE",
+        "REVISE_MASK_OR_ANCHOR",
+        "REGENERATE_B4_FRONT_HAIR_MINIPASS"
+      ],
+      "owner_note": ""
+    },
+    {
+      "part_id": "hair_front_side_R",
+      "review_group": "B4_FRONT_HAIR",
+      "owner_decision": "PENDING_OWNER_REVIEW",
+      "allowed_owner_decisions": [
+        "ACCEPT_FOR_MOTION_READINESS_CANDIDATE",
+        "REVISE_MASK_OR_ANCHOR",
+        "REGENERATE_B4_FRONT_HAIR_MINIPASS"
+      ],
+      "owner_note": ""
+    },
+    {
+      "part_id": "hair_front_tip_L",
+      "review_group": "B4_FRONT_HAIR",
+      "owner_decision": "PENDING_OWNER_REVIEW",
+      "allowed_owner_decisions": [
+        "ACCEPT_FOR_MOTION_READINESS_CANDIDATE",
+        "REVISE_MASK_OR_ANCHOR",
+        "REGENERATE_B4_FRONT_HAIR_MINIPASS"
+      ],
+      "owner_note": ""
+    },
+    {
+      "part_id": "hair_front_tip_R",
+      "review_group": "B4_FRONT_HAIR",
+      "owner_decision": "PENDING_OWNER_REVIEW",
+      "allowed_owner_decisions": [
+        "ACCEPT_FOR_MOTION_READINESS_CANDIDATE",
+        "REVISE_MASK_OR_ANCHOR",
+        "REGENERATE_B4_FRONT_HAIR_MINIPASS"
+      ],
+      "owner_note": ""
+    },
+    {
+      "part_id": "torso_base",
+      "review_group": "B5_BODY_BLOCKER",
+      "owner_decision": "PENDING_OWNER_REVIEW",
+      "allowed_owner_decisions": [
+        "ACCEPT_WITH_DRAW_ORDER_CONTEXT",
+        "REVISE_MASK_OR_DRAW_ORDER",
+        "REGENERATE_B5_BODY_MINIPASS"
+      ],
+      "owner_note": ""
+    },
+    {
+      "part_id": "shoulder_L",
+      "review_group": "B5_BODY_BLOCKER",
+      "owner_decision": "PENDING_OWNER_REVIEW",
+      "allowed_owner_decisions": [
+        "ACCEPT_WITH_DRAW_ORDER_CONTEXT",
+        "REVISE_MASK_OR_DRAW_ORDER",
+        "REGENERATE_B5_BODY_MINIPASS"
+      ],
+      "owner_note": ""
+    },
+    {
+      "part_id": "shoulder_R",
+      "review_group": "B5_BODY_BLOCKER",
+      "owner_decision": "PENDING_OWNER_REVIEW",
+      "allowed_owner_decisions": [
+        "ACCEPT_WITH_DRAW_ORDER_CONTEXT",
+        "REVISE_MASK_OR_DRAW_ORDER",
+        "REGENERATE_B5_BODY_MINIPASS"
+      ],
+      "owner_note": ""
+    }
+  ]
+}

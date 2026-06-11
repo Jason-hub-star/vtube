@@ -1,0 +1,41 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-10T01:05:38.322911+00:00",
+  "status": "TORSO_BASE_REGEN_INPUT_READY_MATERIAL_BLOCKED",
+  "source_image": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/new_character_002_source_front.raw.png",
+  "b5_raw_reference": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/raw_outputs/b5_body_clothing_pack_reference_001.png",
+  "current_p0_torso_candidate": "experiments/cubism-v2-new-character-002/v22_b5_p0_torso_minipass_v2_candidate/normalized_layers/torso_base.png",
+  "target": {
+    "part_id": "torso_base",
+    "mode": "REGENERATE_BODY_UNDERPAINT_OR_REVIEW_CURRENT_P0",
+    "crop_box": [
+      520,
+      880,
+      1539,
+      1974
+    ],
+    "current_bbox": [
+      504,
+      874,
+      1500,
+      1342
+    ],
+    "required_output": "full-canvas 2048x2048 RGBA torso_base.png"
+  },
+  "prompt": "Generate a focused Live2D/Cubism torso_base body-underpaint candidate for the existing character 002 front-view source. Use the same adult cute anime style, same neck/shoulder proportions, same off-shoulder white sweater context, same soft line weight, and same lighting. Produce only the coherent torso/upper-body underpaint needed behind neck, shoulders, collar, arms, and chest cloth. The result must be suitable for a full-canvas 2048x2048 RGBA Live2D part named torso_base. It must not be a thin crop, rectangular patch, oval skin patch, or alpha-shrunk remnant. Preserve natural body continuity under clothing and shoulders, with no baked hair, no face detail, no extra clothing design, no hands, no props, no labels, and no background.",
+  "negative_prompt": "No labels, arrows, grids, extra face, extra hair, baked hair pixels, hands, props, new outfit, jewelry, perspective pose, rectangular skin patch, oval patch, flat beige block, noisy alpha scraps, lower-body crop artifact, white background baked into alpha, large unrelated torso blob, or material PASS claim.",
+  "acceptance_checks": [
+    "Full-canvas RGBA 2048x2048 output, non-empty alpha.",
+    "Torso/upper-body underpaint is coherent and not just an alpha-shrunk crop.",
+    "No rectangular or oval skin patch.",
+    "No baked hair pixels in torso_base.",
+    "Fits behind neck, shoulders, collar, arms, and chest cloth in overlay QA.",
+    "Still requires separate visual QA and G5 material acceptance."
+  ],
+  "locks": {
+    "material_pass_status": "BLOCKED",
+    "param_hair_front_status": "HIDDEN_CONTRACT_ONLY",
+    "g7_mini_cubism_status": "BLOCKED",
+    "g8_real_cubism_status": "BLOCKED"
+  }
+}

@@ -1,0 +1,695 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-08T05:56:28.203678+00:00",
+  "items": [
+    {
+      "part_id": "body_underpaint",
+      "label_ko": "몸 밑색",
+      "group": "body",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse",
+        "underpaint_missing"
+      ],
+      "human_note": "Codex first-pass: 밑색 역할은 맞지만 현재는 단순 블록/타원이라 실제 움직임에서 튀어나오지 않게 다듬기 필요.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/01_body_underpaint.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "neck_shadow_underpaint",
+      "label_ko": "목 그림자 밑색",
+      "group": "body",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse",
+        "underpaint_missing"
+      ],
+      "human_note": "Codex first-pass: 밑색 역할은 맞지만 현재는 단순 블록/타원이라 실제 움직임에서 튀어나오지 않게 다듬기 필요.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/04_neck_shadow_underpaint.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "arm_L_underpaint",
+      "label_ko": "왼팔 밑색",
+      "group": "body",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse",
+        "underpaint_missing"
+      ],
+      "human_note": "Codex first-pass: 밑색 역할은 맞지만 현재는 단순 블록/타원이라 실제 움직임에서 튀어나오지 않게 다듬기 필요.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/09_arm_L_underpaint.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "arm_R_underpaint",
+      "label_ko": "오른팔 밑색",
+      "group": "body",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse",
+        "underpaint_missing"
+      ],
+      "human_note": "Codex first-pass: 밑색 역할은 맞지만 현재는 단순 블록/타원이라 실제 움직임에서 튀어나오지 않게 다듬기 필요.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/10_arm_R_underpaint.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "hair_back_base",
+      "label_ko": "뒷머리 기본",
+      "group": "hair",
+      "verdict": "REVISE",
+      "issue_tags": [],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/45_hair_back_base.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "hair_back_underpaint",
+      "label_ko": "뒷머리 밑색",
+      "group": "hair",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse",
+        "underpaint_missing"
+      ],
+      "human_note": "Codex first-pass: 밑색 역할은 맞지만 현재는 단순 블록/타원이라 실제 움직임에서 튀어나오지 않게 다듬기 필요.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/46_hair_back_underpaint.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "hair_back_strand_L",
+      "label_ko": "왼쪽 뒷머리 가닥",
+      "group": "hair",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "draw_order_issue",
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/47_hair_back_strand_L.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "hair_back_strand_R",
+      "label_ko": "오른쪽 뒷머리 가닥",
+      "group": "hair",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "draw_order_issue",
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/48_hair_back_strand_R.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "hair_back_center",
+      "label_ko": "가운데 뒷머리",
+      "group": "hair",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "draw_order_issue",
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/49_hair_back_center.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "torso_base",
+      "label_ko": "상체 기본",
+      "group": "body",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 원본에서 잘렸지만 파츠 범위가 넓거나 주변 요소가 섞여 있어 semantic mask 정리 필요.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/02_torso_base.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "neck",
+      "label_ko": "목",
+      "group": "body",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 원본에서 잘렸지만 파츠 범위가 넓거나 주변 요소가 섞여 있어 semantic mask 정리 필요.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/03_neck.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "shoulder_L",
+      "label_ko": "왼쪽 어깨",
+      "group": "body",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 원본에서 잘렸지만 파츠 범위가 넓거나 주변 요소가 섞여 있어 semantic mask 정리 필요.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/05_shoulder_L.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "shoulder_R",
+      "label_ko": "오른쪽 어깨",
+      "group": "body",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 원본에서 잘렸지만 파츠 범위가 넓거나 주변 요소가 섞여 있어 semantic mask 정리 필요.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/06_shoulder_R.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "arm_L_upper_simple",
+      "label_ko": "왼쪽 간단 팔",
+      "group": "body",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned",
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/07_arm_L_upper_simple.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "arm_R_upper_simple",
+      "label_ko": "오른쪽 간단 팔",
+      "group": "body",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned",
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/08_arm_R_upper_simple.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "chest_cloth_base",
+      "label_ko": "가슴 의상 기본",
+      "group": "clothing",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 원본에서 잘렸지만 파츠 범위가 넓거나 주변 요소가 섞여 있어 semantic mask 정리 필요.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/63_chest_cloth_base.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "face_underpaint_L",
+      "label_ko": "왼쪽 얼굴 밑색",
+      "group": "face_base",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse",
+        "underpaint_missing"
+      ],
+      "human_note": "Codex first-pass: 밑색 역할은 맞지만 현재는 단순 블록/타원이라 실제 움직임에서 튀어나오지 않게 다듬기 필요.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/14_face_underpaint_L.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "face_underpaint_R",
+      "label_ko": "오른쪽 얼굴 밑색",
+      "group": "face_base",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse",
+        "underpaint_missing"
+      ],
+      "human_note": "Codex first-pass: 밑색 역할은 맞지만 현재는 단순 블록/타원이라 실제 움직임에서 튀어나오지 않게 다듬기 필요.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/15_face_underpaint_R.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "face_base",
+      "label_ko": "얼굴 기본",
+      "group": "face_base",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 원본에서 잘렸지만 파츠 범위가 넓거나 주변 요소가 섞여 있어 semantic mask 정리 필요.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/11_face_base.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "face_shadow_L",
+      "label_ko": "왼쪽 얼굴 그림자",
+      "group": "face_base",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/12_face_shadow_L.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "face_shadow_R",
+      "label_ko": "오른쪽 얼굴 그림자",
+      "group": "face_base",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/13_face_shadow_R.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "nose",
+      "label_ko": "코",
+      "group": "face_base",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 원본에서 잘렸지만 파츠 범위가 넓거나 주변 요소가 섞여 있어 semantic mask 정리 필요.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/16_nose.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "cheek_L",
+      "label_ko": "왼쪽 볼",
+      "group": "face_base",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/17_cheek_L.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "cheek_R",
+      "label_ko": "오른쪽 볼",
+      "group": "face_base",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/18_cheek_R.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "eye_L_white",
+      "label_ko": "왼쪽 눈 흰자",
+      "group": "eye_L",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "bad_alpha",
+        "misaligned"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/19_eye_L_white.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "eye_L_underpaint",
+      "label_ko": "왼쪽 눈 밑색",
+      "group": "eye_L",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned",
+        "too_coarse",
+        "underpaint_missing"
+      ],
+      "human_note": "Codex first-pass: 밑색 역할은 맞지만 현재는 단순 블록/타원이라 실제 움직임에서 튀어나오지 않게 다듬기 필요.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/26_eye_L_underpaint.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "eye_R_white",
+      "label_ko": "오른쪽 눈 흰자",
+      "group": "eye_R",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "bad_alpha",
+        "misaligned"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/27_eye_R_white.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "eye_R_underpaint",
+      "label_ko": "오른쪽 눈 밑색",
+      "group": "eye_R",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned",
+        "too_coarse",
+        "underpaint_missing"
+      ],
+      "human_note": "Codex first-pass: 밑색 역할은 맞지만 현재는 단순 블록/타원이라 실제 움직임에서 튀어나오지 않게 다듬기 필요.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/34_eye_R_underpaint.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "eye_L_iris",
+      "label_ko": "왼쪽 홍채",
+      "group": "eye_L",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/20_eye_L_iris.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "eye_L_pupil",
+      "label_ko": "왼쪽 동공",
+      "group": "eye_L",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/21_eye_L_pupil.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "eye_R_iris",
+      "label_ko": "오른쪽 홍채",
+      "group": "eye_R",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/28_eye_R_iris.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "eye_R_pupil",
+      "label_ko": "오른쪽 동공",
+      "group": "eye_R",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/29_eye_R_pupil.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "eye_L_highlight",
+      "label_ko": "왼쪽 눈 하이라이트",
+      "group": "eye_L",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned",
+        "too_tiny"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/22_eye_L_highlight.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "eye_L_upper_lash",
+      "label_ko": "왼쪽 위 속눈썹",
+      "group": "eye_L",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "draw_order_issue",
+        "misaligned"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/23_eye_L_upper_lash.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "eye_L_lower_lash",
+      "label_ko": "왼쪽 아래 속눈썹",
+      "group": "eye_L",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/24_eye_L_lower_lash.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "eye_L_closed_lid",
+      "label_ko": "왼쪽 감은 눈꺼풀",
+      "group": "eye_L",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "clipping_risk",
+        "misaligned",
+        "style_mismatch"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/25_eye_L_closed_lid.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "eye_R_highlight",
+      "label_ko": "오른쪽 눈 하이라이트",
+      "group": "eye_R",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned",
+        "too_tiny"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/30_eye_R_highlight.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "eye_R_upper_lash",
+      "label_ko": "오른쪽 위 속눈썹",
+      "group": "eye_R",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "draw_order_issue",
+        "misaligned"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/31_eye_R_upper_lash.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "eye_R_lower_lash",
+      "label_ko": "오른쪽 아래 속눈썹",
+      "group": "eye_R",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/32_eye_R_lower_lash.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "eye_R_closed_lid",
+      "label_ko": "오른쪽 감은 눈꺼풀",
+      "group": "eye_R",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "clipping_risk",
+        "misaligned",
+        "style_mismatch"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/33_eye_R_closed_lid.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "brow_L",
+      "label_ko": "왼쪽 눈썹",
+      "group": "brow",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "clipping_risk",
+        "misaligned",
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/35_brow_L.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "brow_R",
+      "label_ko": "오른쪽 눈썹",
+      "group": "brow",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "clipping_risk",
+        "misaligned",
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/36_brow_R.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "mouth_inner",
+      "label_ko": "입 안쪽",
+      "group": "mouth",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "bad_alpha",
+        "clipping_risk",
+        "misaligned",
+        "style_mismatch"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/38_mouth_inner.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "mouth_teeth",
+      "label_ko": "치아",
+      "group": "mouth",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "bad_alpha",
+        "clipping_risk",
+        "misaligned",
+        "style_mismatch"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/41_mouth_teeth.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "mouth_tongue",
+      "label_ko": "혀",
+      "group": "mouth",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "bad_alpha",
+        "clipping_risk",
+        "misaligned",
+        "style_mismatch"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/42_mouth_tongue.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "mouth_line",
+      "label_ko": "입 선",
+      "group": "mouth",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned",
+        "too_coarse"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/37_mouth_line.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "mouth_upper_lip_mask",
+      "label_ko": "윗입술 마스크",
+      "group": "mouth",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "bad_alpha",
+        "clipping_risk",
+        "misaligned",
+        "style_mismatch"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/39_mouth_upper_lip_mask.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "mouth_lower_lip_mask",
+      "label_ko": "아랫입술 마스크",
+      "group": "mouth",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "bad_alpha",
+        "clipping_risk",
+        "misaligned",
+        "style_mismatch"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/40_mouth_lower_lip_mask.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "mouth_corner_L",
+      "label_ko": "왼쪽 입꼬리",
+      "group": "mouth",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned",
+        "too_coarse"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/43_mouth_corner_L.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "mouth_corner_R",
+      "label_ko": "오른쪽 입꼬리",
+      "group": "mouth",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "misaligned",
+        "too_coarse"
+      ],
+      "human_note": "Codex post-fix pass: 재생성 로직을 적용했으므로 이제 위치, 스타일, 크기를 확인하고 필요하면 수동 미세수정.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/44_mouth_corner_R.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "hair_front_tip_L",
+      "label_ko": "왼쪽 앞머리 끝",
+      "group": "hair",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "overhang_issue",
+        "too_coarse",
+        "too_tiny"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/55_hair_front_tip_L.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "hair_front_tip_R",
+      "label_ko": "오른쪽 앞머리 끝",
+      "group": "hair",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "overhang_issue",
+        "too_coarse",
+        "too_tiny"
+      ],
+      "human_note": "Codex first-pass: 자동 bbox/색상 마스크 초안이므로 alpha, 위치, 앞뒤 순서를 한 번 다듬는 편이 안전.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/56_hair_front_tip_R.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    },
+    {
+      "part_id": "collar_front",
+      "label_ko": "앞깃",
+      "group": "clothing",
+      "verdict": "REVISE",
+      "issue_tags": [
+        "too_coarse"
+      ],
+      "human_note": "Codex first-pass: 원본에서 잘렸지만 파츠 범위가 넓거나 주변 요소가 섞여 있어 semantic mask 정리 필요.",
+      "source_image": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers/61_collar_front.png",
+      "suggested_action": "manual_or_mask_cleanup"
+    }
+  ],
+  "counts": {
+    "queued": 53
+  }
+}

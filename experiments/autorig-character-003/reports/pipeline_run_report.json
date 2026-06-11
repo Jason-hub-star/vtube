@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-06-10T17:54:08.278969+00:00",
+  "run_id": "autorig-character-003_20260611_013748",
+  "elapsed_seconds": 4580,
+  "elapsed_human": "76분 20초",
+  "stages": [
+    "P0",
+    "P1",
+    "P2",
+    "H1_5",
+    "P3",
+    "P4",
+    "P5",
+    "H2"
+  ],
+  "status": "PASS"
+}

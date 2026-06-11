@@ -1,0 +1,245 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T10:00:39.112664+00:00",
+  "report_id": "cubism-v2-new-character-002-v22-b1-clean-base-layer-pack-001",
+  "status": "B1_LAYER_PACK_CANDIDATE_READY_FOR_OVERLAY_QA",
+  "source_image": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/new_character_002_source_front.raw.png",
+  "b1_raw_reference": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/raw_outputs/b1_clean_base_underpaint_reference_001.png",
+  "b1_reference_2048": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/b1_clean_base_underpaint_reference_001_2048.png",
+  "output_layers_dir": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers",
+  "expected_outputs": [
+    "face_base",
+    "face_underpaint_L",
+    "face_underpaint_R",
+    "eye_L_underpaint",
+    "eye_R_underpaint",
+    "mouth_base_clean_reference",
+    "body_underpaint",
+    "neck_shadow_underpaint",
+    "arm_L_underpaint",
+    "arm_R_underpaint",
+    "hair_back_underpaint"
+  ],
+  "generated_outputs": [
+    "arm_L_underpaint",
+    "arm_R_underpaint",
+    "body_underpaint",
+    "eye_L_underpaint",
+    "eye_R_underpaint",
+    "face_base",
+    "face_underpaint_L",
+    "face_underpaint_R",
+    "hair_back_underpaint",
+    "mouth_base_clean_reference",
+    "neck_shadow_underpaint"
+  ],
+  "missing_outputs": [],
+  "empty_outputs": [],
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b1_clean_base_underpaint/v22_b1_layer_pack_contact_sheet.png",
+  "overlay_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b1_clean_base_underpaint/v22_b1_layer_pack_overlay_qa.png",
+  "layer_metrics": {
+    "face_base": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/face_base.png",
+      "bbox": [
+        640,
+        350,
+        1381,
+        1239
+      ],
+      "alpha_coverage": 0.111241,
+      "mean_rgb": [
+        179.609,
+        144.339,
+        132.526
+      ],
+      "status": "PASS_LAYER_NONEMPTY"
+    },
+    "face_underpaint_L": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/face_underpaint_L.png",
+      "bbox": [
+        640,
+        497,
+        975,
+        1078
+      ],
+      "alpha_coverage": 0.032362,
+      "mean_rgb": [
+        165.633,
+        133.815,
+        123.524
+      ],
+      "status": "PASS_LAYER_NONEMPTY"
+    },
+    "face_underpaint_R": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/face_underpaint_R.png",
+      "bbox": [
+        1074,
+        497,
+        1381,
+        1078
+      ],
+      "alpha_coverage": 0.029257,
+      "mean_rgb": [
+        172.779,
+        140.189,
+        129.599
+      ],
+      "status": "PASS_LAYER_NONEMPTY"
+    },
+    "eye_L_underpaint": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/eye_L_underpaint.png",
+      "bbox": [
+        710,
+        580,
+        976,
+        776
+      ],
+      "alpha_coverage": 0.009752,
+      "mean_rgb": [
+        222.43,
+        180.109,
+        162.908
+      ],
+      "status": "PASS_LAYER_NONEMPTY"
+    },
+    "eye_R_underpaint": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/eye_R_underpaint.png",
+      "bbox": [
+        1073,
+        580,
+        1339,
+        776
+      ],
+      "alpha_coverage": 0.009752,
+      "mean_rgb": [
+        224.449,
+        182.399,
+        165.341
+      ],
+      "status": "PASS_LAYER_NONEMPTY"
+    },
+    "mouth_base_clean_reference": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/mouth_base_clean_reference.png",
+      "bbox": [
+        900,
+        790,
+        1151,
+        941
+      ],
+      "alpha_coverage": 0.0071,
+      "mean_rgb": [
+        253.869,
+        227.065,
+        210.92
+      ],
+      "status": "PASS_LAYER_NONEMPTY"
+    },
+    "body_underpaint": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/body_underpaint.png",
+      "bbox": [
+        355,
+        1136,
+        1694,
+        2048
+      ],
+      "alpha_coverage": 0.266661,
+      "mean_rgb": [
+        224.973,
+        205.124,
+        199.021
+      ],
+      "status": "PASS_LAYER_NONEMPTY"
+    },
+    "neck_shadow_underpaint": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/neck_shadow_underpaint.png",
+      "bbox": [
+        802,
+        910,
+        1248,
+        1331
+      ],
+      "alpha_coverage": 0.039044,
+      "mean_rgb": [
+        211.493,
+        173.396,
+        160.102
+      ],
+      "status": "PASS_LAYER_NONEMPTY"
+    },
+    "arm_L_underpaint": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/arm_L_underpaint.png",
+      "bbox": [
+        352,
+        1182,
+        709,
+        2048
+      ],
+      "alpha_coverage": 0.065003,
+      "mean_rgb": [
+        216.081,
+        198.166,
+        192.948
+      ],
+      "status": "PASS_LAYER_NONEMPTY"
+    },
+    "arm_R_underpaint": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/arm_R_underpaint.png",
+      "bbox": [
+        1340,
+        1182,
+        1697,
+        2048
+      ],
+      "alpha_coverage": 0.065643,
+      "mean_rgb": [
+        211.859,
+        194.675,
+        190.449
+      ],
+      "status": "PASS_LAYER_NONEMPTY"
+    },
+    "hair_back_underpaint": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/normalized_layers/hair_back_underpaint.png",
+      "bbox": [
+        336,
+        110,
+        1720,
+        1677
+      ],
+      "alpha_coverage": 0.152597,
+      "mean_rgb": [
+        114.124,
+        90.705,
+        86.398
+      ],
+      "status": "PASS_LAYER_NONEMPTY"
+    }
+  },
+  "manual_visual_review": {
+    "status": "REQUIRED",
+    "notes": "This is an automatically masked B1 layer pack candidate. Visual QA must confirm no patch boundaries before B1 material PASS."
+  },
+  "limits": [
+    "Automatic masks are coarse and must not be treated as final Cubism ArtMesh geometry.",
+    "This does not generate B2 eyes, B3 mouth expressions, B4 hair children, or B5 final body/clothing parts.",
+    "Mini Cubism diagnostic and real Cubism authoring gates remain locked until later material QA passes."
+  ],
+  "next_action": [
+    "Run B1 overlay/contact-sheet visual QA.",
+    "If accepted, use these B1 layers as clean-base inputs for B2 eye pack and B3 mouth pack generation.",
+    "If rejected, regenerate or manually edit only the failing B1 layer areas; do not fall back to patch-style clean bases."
+  ],
+  "self_review": {
+    "expected_output_count": 11,
+    "generated_output_count": 11,
+    "missing_output_count": 0,
+    "empty_output_count": 0,
+    "all_outputs_present": true,
+    "all_outputs_nonempty": true,
+    "canvas": [
+      2048,
+      2048
+    ],
+    "status": "PASS"
+  }
+}

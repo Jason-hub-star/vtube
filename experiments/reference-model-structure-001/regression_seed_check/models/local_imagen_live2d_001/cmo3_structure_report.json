@@ -1,0 +1,1077 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T14:50:25.599Z",
+  "tool": {
+    "name": "inspect_cmo3_structure.mjs",
+    "repo_root": "/Users/family/jason/Vtube",
+    "note": "Generic CMO3 structure inspector. No image-specific part names are hardcoded."
+  },
+  "experiment_id": "imagen-live2d-001",
+  "input": {
+    "cmo3_path": "/Users/family/jason/Vtube/experiments/imagen-live2d-001/cubism_mvp_rig.cmo3",
+    "cmo3_path_relative": "experiments/imagen-live2d-001/cubism_mvp_rig.cmo3",
+    "size_bytes": 6599184,
+    "sha256": "9574f12eb3c099d39727043e4124409ec1a51e4e5da6b759dd39da6af1f49e3f"
+  },
+  "caff": {
+    "magic": "CAFF",
+    "obfKey": 273518007,
+    "fileCount": 99,
+    "mainXml": {
+      "path": "main.xml",
+      "tag": "main_xml",
+      "compressedLength": 36196,
+      "compression": 33,
+      "obfuscated": true,
+      "extractedBytes": 311818
+    }
+  },
+  "file_table": {
+    "count": 99,
+    "paths_sample": [
+      "imageFileBuf.png",
+      "image.png",
+      "image_0.png",
+      "imageFileBuf_0.png",
+      "image_1.png",
+      "image_2.png",
+      "imageFileBuf_1.png",
+      "image_3.png",
+      "image_4.png",
+      "imageFileBuf_2.png",
+      "image_5.png",
+      "image_6.png",
+      "imageFileBuf_3.png",
+      "image_7.png",
+      "image_8.png",
+      "imageFileBuf_4.png",
+      "image_9.png",
+      "image_10.png",
+      "imageFileBuf_5.png",
+      "image_11.png",
+      "image_12.png",
+      "imageFileBuf_6.png",
+      "image_13.png",
+      "image_14.png",
+      "imageFileBuf_7.png",
+      "image_15.png",
+      "image_16.png",
+      "imageFileBuf_8.png",
+      "image_17.png",
+      "image_18.png",
+      "imageFileBuf_9.png",
+      "image_19.png",
+      "image_20.png",
+      "imageFileBuf_10.png",
+      "image_21.png",
+      "image_22.png",
+      "imageFileBuf_11.png",
+      "image_23.png",
+      "image_24.png",
+      "imageFileBuf_12.png"
+    ],
+    "main_xml_size_chars": 311032
+  },
+  "status": "WARN",
+  "counts": {
+    "CArtMeshSource": {
+      "definitions": 19,
+      "references": 95
+    },
+    "CPartSource": {
+      "definitions": 1,
+      "references": 3
+    },
+    "CWarpDeformerSource": {
+      "definitions": 0,
+      "references": 0
+    },
+    "CRotationDeformerSource": {
+      "definitions": 0,
+      "references": 0
+    },
+    "KeyformGridSource": {
+      "definitions": 20,
+      "references": 0
+    },
+    "KeyformBindingSource": {
+      "definitions": 0,
+      "references": 0
+    },
+    "CParameterSource": {
+      "definitions": 27,
+      "references": 0
+    },
+    "CPhysicsSettingsSource": {
+      "definitions": 0,
+      "references": 0
+    },
+    "CGlueSource": {
+      "definitions": 0,
+      "references": 0
+    },
+    "CClippingMaskSource": {
+      "definitions": 0,
+      "references": 0
+    },
+    "CClippingMaskGuid": {
+      "definitions": 0,
+      "references": 0
+    },
+    "CInvertedMaskSource": {
+      "definitions": 0,
+      "references": 0
+    },
+    "CLayer": {
+      "definitions": 19,
+      "references": 57
+    },
+    "CLayerGroup": {
+      "definitions": 1,
+      "references": 21
+    },
+    "CLayeredImage": {
+      "definitions": 1,
+      "references": 22
+    },
+    "CImageResource": {
+      "definitions": 19,
+      "references": 95
+    },
+    "GEditableMesh2": {
+      "definitions": 19,
+      "references": 0
+    }
+  },
+  "checks": [
+    {
+      "id": "main_xml_extracted",
+      "status": "PASS",
+      "message": "main.xml was extracted from the CAFF archive."
+    },
+    {
+      "id": "artmesh_present",
+      "status": "PASS",
+      "message": "19 CArtMeshSource definition(s) found."
+    },
+    {
+      "id": "part_sources_present",
+      "status": "PASS",
+      "message": "1 CPartSource definition(s) found."
+    },
+    {
+      "id": "parameters_present",
+      "status": "PASS",
+      "message": "27 CParameterSource definition(s) found."
+    },
+    {
+      "id": "required_parameters_present",
+      "status": "PASS",
+      "message": "16 configured parameter check(s) passed."
+    },
+    {
+      "id": "warp_deformers_present",
+      "status": "WARN",
+      "message": "0 CWarpDeformerSource definition(s) found."
+    },
+    {
+      "id": "rotation_deformers_present",
+      "status": "WARN",
+      "message": "0 CRotationDeformerSource definition(s) found."
+    },
+    {
+      "id": "keyform_bindings_present",
+      "status": "WARN",
+      "message": "0 KeyformBindingSource definition(s) found."
+    }
+  ],
+  "parameters": {
+    "count": 27,
+    "ids": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamEyeLOpen",
+      "ParamEyeLSmile",
+      "ParamEyeROpen",
+      "ParamEyeRSmile",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamBrowLY",
+      "ParamBrowRY",
+      "ParamBrowLX",
+      "ParamBrowRX",
+      "ParamBrowLAngle",
+      "ParamBrowRAngle",
+      "ParamBrowLForm",
+      "ParamBrowRForm",
+      "ParamMouthForm",
+      "ParamMouthOpenY",
+      "ParamCheek",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBodyAngleZ",
+      "ParamBreath",
+      "ParamHairFront",
+      "ParamHairSide",
+      "ParamHairBack"
+    ],
+    "required_presence": {
+      "ParamAngleX": true,
+      "ParamAngleY": true,
+      "ParamAngleZ": true,
+      "ParamEyeLOpen": true,
+      "ParamEyeROpen": true,
+      "ParamEyeBallX": true,
+      "ParamEyeBallY": true,
+      "ParamMouthForm": true,
+      "ParamMouthOpenY": true,
+      "ParamBodyAngleX": true,
+      "ParamBodyAngleY": true,
+      "ParamBodyAngleZ": true,
+      "ParamBreath": true,
+      "ParamHairFront": true,
+      "ParamHairSide": true,
+      "ParamHairBack": true
+    },
+    "sources": [
+      {
+        "index": 0,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamAngleX",
+        "idRef": "#382",
+        "localName": "각도 X",
+        "min": -30,
+        "max": 30,
+        "default": 0,
+        "snippetHash": "ab8a72684130"
+      },
+      {
+        "index": 1,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamAngleY",
+        "idRef": "#383",
+        "localName": "각도 Y",
+        "min": -30,
+        "max": 30,
+        "default": 0,
+        "snippetHash": "1834bec42371"
+      },
+      {
+        "index": 2,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamAngleZ",
+        "idRef": "#384",
+        "localName": "각도 Z",
+        "min": -30,
+        "max": 30,
+        "default": 0,
+        "snippetHash": "d1b277afd6e1"
+      },
+      {
+        "index": 3,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamEyeLOpen",
+        "idRef": "#385",
+        "localName": "왼쪽 눈 깜빡임",
+        "min": 0,
+        "max": 1,
+        "default": 1,
+        "snippetHash": "9104d3d29d80"
+      },
+      {
+        "index": 4,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamEyeLSmile",
+        "idRef": "#386",
+        "localName": "왼쪽 눈 미소",
+        "min": 0,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "1e28b4f38cde"
+      },
+      {
+        "index": 5,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamEyeROpen",
+        "idRef": "#387",
+        "localName": "오른쪽 눈 깜빡임",
+        "min": 0,
+        "max": 1,
+        "default": 1,
+        "snippetHash": "6fbc58bffa45"
+      },
+      {
+        "index": 6,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamEyeRSmile",
+        "idRef": "#388",
+        "localName": "오른쪽 눈 미소",
+        "min": 0,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "c0932b741fc7"
+      },
+      {
+        "index": 7,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamEyeBallX",
+        "idRef": "#389",
+        "localName": "눈 X",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "812df9e4b2e3"
+      },
+      {
+        "index": 8,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamEyeBallY",
+        "idRef": "#390",
+        "localName": "눈 Y",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "c58dc5e26942"
+      },
+      {
+        "index": 9,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamBrowLY",
+        "idRef": "#391",
+        "localName": "왼쪽 눈썹 위아래로",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "92f880f3be4b"
+      },
+      {
+        "index": 10,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamBrowRY",
+        "idRef": "#392",
+        "localName": "오른쪽 눈썹 위아래로",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "1bba443cb95b"
+      },
+      {
+        "index": 11,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamBrowLX",
+        "idRef": "#393",
+        "localName": "왼쪽 눈썹 좌우로",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "b0992513b715"
+      },
+      {
+        "index": 12,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamBrowRX",
+        "idRef": "#394",
+        "localName": "오른쪽 눈썹 좌우로",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "10191751af51"
+      },
+      {
+        "index": 13,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamBrowLAngle",
+        "idRef": "#395",
+        "localName": "왼쪽 눈썹 각도",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "93cd784f8a73"
+      },
+      {
+        "index": 14,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamBrowRAngle",
+        "idRef": "#396",
+        "localName": "오른쪽 눈썹 각도",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "f559ca0edab4"
+      },
+      {
+        "index": 15,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamBrowLForm",
+        "idRef": "#397",
+        "localName": "왼쪽 눈썹 변형",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "f42289eacac1"
+      },
+      {
+        "index": 16,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamBrowRForm",
+        "idRef": "#398",
+        "localName": "오른쪽 눈썹 변형",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "b6100c4b5b8f"
+      },
+      {
+        "index": 17,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamMouthForm",
+        "idRef": "#399",
+        "localName": "입 변형",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "c2926dcdcb5c"
+      },
+      {
+        "index": 18,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamMouthOpenY",
+        "idRef": "#400",
+        "localName": "입 여닫기",
+        "min": 0,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "2d49c686edb1"
+      },
+      {
+        "index": 19,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamCheek",
+        "idRef": "#401",
+        "localName": "수줍음",
+        "min": 0,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "95ec27b9ed26"
+      },
+      {
+        "index": 20,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamBodyAngleX",
+        "idRef": "#402",
+        "localName": "몸의 회전 X",
+        "min": -10,
+        "max": 10,
+        "default": 0,
+        "snippetHash": "6cda2ea0f9d3"
+      },
+      {
+        "index": 21,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamBodyAngleY",
+        "idRef": "#403",
+        "localName": "몸의 회전 Y",
+        "min": -10,
+        "max": 10,
+        "default": 0,
+        "snippetHash": "2f7c7e89a5c0"
+      },
+      {
+        "index": 22,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamBodyAngleZ",
+        "idRef": "#404",
+        "localName": "몸의 회전 Z",
+        "min": -10,
+        "max": 10,
+        "default": 0,
+        "snippetHash": "0247d07c3529"
+      },
+      {
+        "index": 23,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamBreath",
+        "idRef": "#405",
+        "localName": "호흡",
+        "min": 0,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "0d2ae790261e"
+      },
+      {
+        "index": 24,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamHairFront",
+        "idRef": "#406",
+        "localName": "머리 흔들림 앞",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "63ecac90216b"
+      },
+      {
+        "index": 25,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamHairSide",
+        "idRef": "#407",
+        "localName": "머리 흔들림 옆",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "d2df43d98229"
+      },
+      {
+        "index": 26,
+        "xsId": null,
+        "xsIdx": null,
+        "id": "ParamHairBack",
+        "idRef": "#408",
+        "localName": "머리 흔들림 뒤",
+        "min": -1,
+        "max": 1,
+        "default": 0,
+        "snippetHash": "8ee4e23c4cdd"
+      }
+    ]
+  },
+  "parts": {
+    "count": 1,
+    "names": [
+      "Root Part"
+    ],
+    "sources": [
+      {
+        "tag": "CPartSource",
+        "xsId": "#334",
+        "xsIdx": "2004",
+        "localName": "Root Part",
+        "idstr": "__RootPart__",
+        "targetDeformerRef": null,
+        "parentPartRef": null,
+        "keyformGridRef": null,
+        "keyformCount": 1,
+        "snippetHash": "fa039465e66c",
+        "childRefCount": 19
+      }
+    ]
+  },
+  "art_meshes": {
+    "count": 19,
+    "names": [
+      "front_hair",
+      "L_brow",
+      "R_brow",
+      "L_upper_lash",
+      "R_upper_lash",
+      "L_iris",
+      "R_iris",
+      "L_eye_white",
+      "R_eye_white",
+      "mouth_line",
+      "face_base",
+      "L_ear_outer",
+      "R_ear_outer",
+      "choker",
+      "L_arm",
+      "R_arm",
+      "clothes",
+      "neck",
+      "back_hair"
+    ],
+    "sources": [
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#196",
+        "xsIdx": "1082",
+        "localName": "front_hair",
+        "idstr": null,
+        "targetDeformerRef": "#209",
+        "parentPartRef": "#203",
+        "keyformGridRef": null,
+        "keyformCount": 1,
+        "snippetHash": "536d771d1abc",
+        "drawableIdstr": "front_hair",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#204",
+        "xsIdx": "1134",
+        "localName": "L_brow",
+        "idstr": null,
+        "targetDeformerRef": "#209",
+        "parentPartRef": "#203",
+        "keyformGridRef": null,
+        "keyformCount": 1,
+        "snippetHash": "d044fce64ac5",
+        "drawableIdstr": "L_brow",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#214",
+        "xsIdx": "1182",
+        "localName": "R_brow",
+        "idstr": null,
+        "targetDeformerRef": "#209",
+        "parentPartRef": "#203",
+        "keyformGridRef": null,
+        "keyformCount": 1,
+        "snippetHash": "f8ba82881eb1",
+        "drawableIdstr": "R_brow",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#221",
+        "xsIdx": "1230",
+        "localName": "L_upper_lash",
+        "idstr": null,
+        "targetDeformerRef": "#209",
+        "parentPartRef": "#203",
+        "keyformGridRef": null,
+        "keyformCount": 1,
+        "snippetHash": "194b5ac9d133",
+        "drawableIdstr": "L_upper_lash",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#228",
+        "xsIdx": "1278",
+        "localName": "R_upper_lash",
+        "idstr": null,
+        "targetDeformerRef": "#209",
+        "parentPartRef": "#203",
+        "keyformGridRef": null,
+        "keyformCount": 1,
+        "snippetHash": "580e350405b8",
+        "drawableIdstr": "R_upper_lash",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#235",
+        "xsIdx": "1326",
+        "localName": "L_iris",
+        "idstr": null,
+        "targetDeformerRef": "#209",
+        "parentPartRef": "#203",
+        "keyformGridRef": null,
+        "keyformCount": 1,
+        "snippetHash": "dd3898940a32",
+        "drawableIdstr": "L_iris",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#242",
+        "xsIdx": "1374",
+        "localName": "R_iris",
+        "idstr": null,
+        "targetDeformerRef": "#209",
+        "parentPartRef": "#203",
+        "keyformGridRef": null,
+        "keyformCount": 1,
+        "snippetHash": "ce00a67bedab",
+        "drawableIdstr": "R_iris",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#249",
+        "xsIdx": "1422",
+        "localName": "L_eye_white",
+        "idstr": null,
+        "targetDeformerRef": "#209",
+        "parentPartRef": "#203",
+        "keyformGridRef": null,
+        "keyformCount": 1,
+        "snippetHash": "464f8f14db91",
+        "drawableIdstr": "L_eye_white",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#256",
+        "xsIdx": "1470",
+        "localName": "R_eye_white",
+        "idstr": null,
+        "targetDeformerRef": "#209",
+        "parentPartRef": "#203",
+        "keyformGridRef": null,
+        "keyformCount": 1,
+        "snippetHash": "b4e1a9656f4c",
+        "drawableIdstr": "R_eye_white",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#263",
+        "xsIdx": "1518",
+        "localName": "mouth_line",
+        "idstr": null,
+        "targetDeformerRef": "#209",
+        "parentPartRef": "#203",
+        "keyformGridRef": null,
+        "keyformCount": 1,
+        "snippetHash": "a90454fce09b",
+        "drawableIdstr": "mouth_line",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#270",
+        "xsIdx": "1566",
+        "localName": "face_base",
+        "idstr": null,
+        "targetDeformerRef": "#209",
+        "parentPartRef": "#203",
+        "keyformGridRef": null,
+        "keyformCount": 1,
+        "snippetHash": "61ffeab6cfd7",
+        "drawableIdstr": "face_base",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#277",
+        "xsIdx": "1614",
+        "localName": "L_ear_outer",
+        "idstr": null,
+        "targetDeformerRef": "#209",
+        "parentPartRef": "#203",
+        "keyformGridRef": null,
+        "keyformCount": 1,
+        "snippetHash": "88dd60b0afbc",
+        "drawableIdstr": "L_ear_outer",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#284",
+        "xsIdx": "1662",
+        "localName": "R_ear_outer",
+        "idstr": null,
+        "targetDeformerRef": "#209",
+        "parentPartRef": "#203",
+        "keyformGridRef": null,
+        "keyformCount": 1,
+        "snippetHash": "ad62ebbdf53d",
+        "drawableIdstr": "R_ear_outer",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#291",
+        "xsIdx": "1710",
+        "localName": "choker",
+        "idstr": null,
+        "targetDeformerRef": "#209",
+        "parentPartRef": "#203",
+        "keyformGridRef": null,
+        "keyformCount": 1,
+        "snippetHash": "57d0e751ad9a",
+        "drawableIdstr": "choker",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#298",
+        "xsIdx": "1758",
+        "localName": "L_arm",
+        "idstr": null,
+        "targetDeformerRef": "#209",
+        "parentPartRef": "#203",
+        "keyformGridRef": null,
+        "keyformCount": 1,
+        "snippetHash": "7e9995d84b6c",
+        "drawableIdstr": "L_arm",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#305",
+        "xsIdx": "1806",
+        "localName": "R_arm",
+        "idstr": null,
+        "targetDeformerRef": "#209",
+        "parentPartRef": "#203",
+        "keyformGridRef": null,
+        "keyformCount": 1,
+        "snippetHash": "5eaf6e7c36cc",
+        "drawableIdstr": "R_arm",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#312",
+        "xsIdx": "1854",
+        "localName": "clothes",
+        "idstr": null,
+        "targetDeformerRef": "#209",
+        "parentPartRef": "#203",
+        "keyformGridRef": null,
+        "keyformCount": 1,
+        "snippetHash": "d26ceb97d951",
+        "drawableIdstr": "clothes",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#319",
+        "xsIdx": "1902",
+        "localName": "neck",
+        "idstr": null,
+        "targetDeformerRef": "#209",
+        "parentPartRef": "#203",
+        "keyformGridRef": null,
+        "keyformCount": 1,
+        "snippetHash": "4ca65979b37d",
+        "drawableIdstr": "neck",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      },
+      {
+        "tag": "CArtMeshSource",
+        "xsId": "#326",
+        "xsIdx": "1950",
+        "localName": "back_hair",
+        "idstr": null,
+        "targetDeformerRef": "#209",
+        "parentPartRef": "#203",
+        "keyformGridRef": null,
+        "keyformCount": 1,
+        "snippetHash": "d9f60851ff46",
+        "drawableIdstr": "back_hair",
+        "vertexCount": null,
+        "triangleIndexCount": null
+      }
+    ]
+  },
+  "deformers": {
+    "warp_count": 0,
+    "rotation_count": 0,
+    "warp_names": [],
+    "rotation_names": [],
+    "warp_sources": [],
+    "rotation_sources": []
+  },
+  "keyforms": {
+    "grid_count": 20,
+    "binding_count": 0,
+    "bindings": []
+  },
+  "layers": {
+    "count": 19,
+    "names": [
+      "front_hair",
+      "L_brow",
+      "R_brow",
+      "L_upper_lash",
+      "R_upper_lash",
+      "L_iris",
+      "R_iris",
+      "L_eye_white",
+      "R_eye_white",
+      "mouth_line",
+      "face_base",
+      "L_ear_outer",
+      "R_ear_outer",
+      "choker",
+      "L_arm",
+      "R_arm",
+      "clothes",
+      "neck",
+      "back_hair"
+    ],
+    "sources": [
+      {
+        "xsId": "#23",
+        "xsIdx": "101",
+        "name": "front_hair",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#24",
+        "xsIdx": "112",
+        "name": "L_brow",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#25",
+        "xsIdx": "123",
+        "name": "R_brow",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#26",
+        "xsIdx": "134",
+        "name": "L_upper_lash",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#27",
+        "xsIdx": "145",
+        "name": "R_upper_lash",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#28",
+        "xsIdx": "156",
+        "name": "L_iris",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#29",
+        "xsIdx": "167",
+        "name": "R_iris",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#30",
+        "xsIdx": "178",
+        "name": "L_eye_white",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#31",
+        "xsIdx": "189",
+        "name": "R_eye_white",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#32",
+        "xsIdx": "200",
+        "name": "mouth_line",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#33",
+        "xsIdx": "211",
+        "name": "face_base",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#34",
+        "xsIdx": "222",
+        "name": "L_ear_outer",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#35",
+        "xsIdx": "233",
+        "name": "R_ear_outer",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#36",
+        "xsIdx": "244",
+        "name": "choker",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#37",
+        "xsIdx": "255",
+        "name": "L_arm",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#38",
+        "xsIdx": "266",
+        "name": "R_arm",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#39",
+        "xsIdx": "277",
+        "name": "clothes",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#40",
+        "xsIdx": "288",
+        "name": "neck",
+        "visible": "true",
+        "opacity255": "255"
+      },
+      {
+        "xsId": "#41",
+        "xsIdx": "299",
+        "name": "back_hair",
+        "visible": "true",
+        "opacity255": "255"
+      }
+    ]
+  },
+  "interpretation": [
+    "This report proves CMO3 structure presence, not visual motion quality.",
+    "Parameter/keyform/deformer presence does not prove that the rig deforms well under extreme values.",
+    "Use this as a stronger gate before runtime render and Cubism visual overhang validation."
+  ],
+  "outputs": {
+    "json": "/Users/family/jason/Vtube/experiments/reference-model-structure-001/regression_seed_check/models/local_imagen_live2d_001/cmo3_structure_report.json",
+    "markdown": "/Users/family/jason/Vtube/experiments/reference-model-structure-001/regression_seed_check/models/local_imagen_live2d_001/cmo3_structure_report.md"
+  }
+}

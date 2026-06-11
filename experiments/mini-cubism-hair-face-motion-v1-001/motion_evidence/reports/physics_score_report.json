@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T13:57:09.295133+00:00",
+  "run": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/motion_evidence",
+  "project": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/mini_cubism_project",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "required_scenarios",
+      "status": "PASS",
+      "missing": []
+    },
+    {
+      "check": "head_tilt_gif_exists",
+      "status": "PASS",
+      "path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/motion_evidence/gifs/head_tilt.gif"
+    },
+    {
+      "check": "angle_swing_gif_exists",
+      "status": "PASS",
+      "path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/motion_evidence/gifs/angle_swing.gif"
+    },
+    {
+      "check": "hair_settle_gif_exists",
+      "status": "PASS",
+      "path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/motion_evidence/gifs/hair_settle.gif"
+    },
+    {
+      "check": "mouth_talk_gif_exists",
+      "status": "PASS",
+      "path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/motion_evidence/gifs/mouth_talk.gif"
+    },
+    {
+      "check": "eye_blink_gif_exists",
+      "status": "PASS",
+      "path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/motion_evidence/gifs/eye_blink.gif"
+    },
+    {
+      "check": "mouth_keypose_exclusive_opacity",
+      "status": "PASS",
+      "messages": []
+    },
+    {
+      "check": "eye_open_half_closed_keyposes",
+      "status": "PASS",
+      "messages": []
+    },
+    {
+      "check": "spring_damper_profiles_active_and_settle",
+      "status": "PASS",
+      "active_profiles": [
+        "front_bangs_light_spring",
+        "side_locks_medium_spring",
+        "side_hair_slow_spring",
+        "back_hair_heavy_spring",
+        "hair_tips_delayed_spring"
+      ],
+      "minimum_active_profiles": 5,
+      "physics_target_count": 16,
+      "minimum_physics_targets": 10,
+      "target_stats": {
+        "front_bangs_light_spring": {
+          "max_offset": 4.99979267414321,
+          "max_velocity": 0.8318111788138113
+        },
+        "side_locks_medium_spring": {
+          "max_offset": 7.267304131718898,
+          "max_velocity": 1.166391099147695
+        },
+        "side_hair_slow_spring": {
+          "max_offset": 21.99247375111648,
+          "max_velocity": 3.1909507970448323
+        },
+        "back_hair_heavy_spring": {
+          "max_offset": 20.92891134736643,
+          "max_velocity": 2.871893524062484
+        },
+        "hair_tips_delayed_spring": {
+          "max_offset": 38.51528315836141,
+          "max_velocity": 5.0638752521194785
+        }
+      },
+      "messages": []
+    },
+    {
+      "check": "nonblank_and_in_canvas",
+      "status": "PASS",
+      "messages": []
+    }
+  ]
+}

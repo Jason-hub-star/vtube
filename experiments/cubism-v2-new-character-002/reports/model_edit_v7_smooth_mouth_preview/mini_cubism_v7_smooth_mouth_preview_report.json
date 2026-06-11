@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T03:19:47.920330+00:00",
+  "status": "V7_SMOOTH_MOUTH_PREVIEW_READY_FOR_VALIDATION",
+  "source_project": "experiments/cubism-v2-new-character-002/model_edit_v6_no_wide_open/mini_cubism_diagnostic_project",
+  "project": "experiments/cubism-v2-new-character-002/model_edit_v7_smooth_mouth_preview/mini_cubism_diagnostic_project",
+  "removed_active_parts": [
+    "mouth_o_vowel"
+  ],
+  "removed_parameters": [
+    "ParamEyeBallX",
+    "ParamEyeBallY",
+    "ParamMouthForm"
+  ],
+  "remaining_parts": 19,
+  "remaining_parameters": [
+    "ParamAngleX",
+    "ParamEyeLOpen",
+    "ParamEyeROpen",
+    "ParamMouthOpenY",
+    "ParamHairFront"
+  ],
+  "mouth_policy": "ParamMouthOpenY crossfades closed_smile and small_open. Wide open and MouthForm/o_vowel are not active in this diagnostic preview.",
+  "unsupported": {
+    "ParamHairFront": "No independent front_hair part exists in this keypose pack.",
+    "eyeball": "No separated iris/pupil/highlight parts exist; eye_open is a baked eye image."
+  }
+}

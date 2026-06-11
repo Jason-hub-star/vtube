@@ -1,0 +1,856 @@
+{
+  "generated_at": "2026-06-07T23:08:39.995Z",
+  "status": "PASS",
+  "model_count": 20,
+  "models": [
+    {
+      "id": "haru_greeter_pro_jp_haru_greeter_t05",
+      "safe_id": "haru_greeter_pro_jp_haru_greeter_t05",
+      "name": "haru_greeter_t05",
+      "sandbox_model_name": "haru_greeter_pro_jp_haru_greeter_t05",
+      "status": "PASS",
+      "snapshot_path": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/core_api/haru_greeter_pro_jp_haru_greeter_t05/core_snapshot.json",
+      "counts": {
+        "parameters": 42,
+        "parts": 19,
+        "drawables": 84,
+        "maskedDrawables": 10,
+        "invertedMaskDrawables": 0,
+        "offscreens": 0,
+        "maskedOffscreens": 0
+      },
+      "canvas": {
+        "width": 1,
+        "height": 1.875,
+        "pixelsPerUnit": 2400,
+        "raw": {
+          "CanvasWidth": 2400,
+          "CanvasHeight": 4500,
+          "CanvasOriginX": 1200,
+          "CanvasOriginY": 2250,
+          "PixelsPerUnit": 2400
+        }
+      },
+      "masked_drawable_ids": [
+        "D_PSD_74",
+        "D_PSD_75",
+        "D_PSD_44",
+        "D_PSD_43",
+        "D_PSD_42",
+        "D_PSD_41",
+        "D_PSD_40",
+        "D_PSD_39",
+        "D_PSD_38",
+        "D_PSD_37"
+      ],
+      "inverted_mask_drawable_ids": [],
+      "draw_order_min": 260,
+      "draw_order_max": 1000,
+      "render_order_min": 0,
+      "render_order_max": 83
+    },
+    {
+      "id": "koharu_haruto_haruto_t01",
+      "safe_id": "koharu_haruto_haruto_t01",
+      "name": "haruto_t01",
+      "sandbox_model_name": "koharu_haruto_haruto_t01",
+      "status": "PASS",
+      "snapshot_path": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/core_api/koharu_haruto_haruto_t01/core_snapshot.json",
+      "counts": {
+        "parameters": 51,
+        "parts": 17,
+        "drawables": 86,
+        "maskedDrawables": 0,
+        "invertedMaskDrawables": 0,
+        "offscreens": 0,
+        "maskedOffscreens": 0
+      },
+      "canvas": {
+        "width": 1,
+        "height": 1.25,
+        "pixelsPerUnit": 1600,
+        "raw": {
+          "CanvasWidth": 1600,
+          "CanvasHeight": 2000,
+          "CanvasOriginX": 800,
+          "CanvasOriginY": 1000,
+          "PixelsPerUnit": 1600
+        }
+      },
+      "masked_drawable_ids": [],
+      "inverted_mask_drawable_ids": [],
+      "draw_order_min": 260,
+      "draw_order_max": 720,
+      "render_order_min": 0,
+      "render_order_max": 85
+    },
+    {
+      "id": "hiyori_pro_ko_hiyori_pro_t11",
+      "safe_id": "hiyori_pro_ko_hiyori_pro_t11",
+      "name": "hiyori_pro_t11",
+      "sandbox_model_name": "hiyori_pro_ko_hiyori_pro_t11",
+      "status": "PASS",
+      "snapshot_path": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/core_api/hiyori_pro_ko_hiyori_pro_t11/core_snapshot.json",
+      "counts": {
+        "parameters": 70,
+        "parts": 24,
+        "drawables": 134,
+        "maskedDrawables": 8,
+        "invertedMaskDrawables": 0,
+        "offscreens": 0,
+        "maskedOffscreens": 0
+      },
+      "canvas": {
+        "width": 1,
+        "height": 1.4028897849462365,
+        "pixelsPerUnit": 2976,
+        "raw": {
+          "CanvasWidth": 2976,
+          "CanvasHeight": 4175,
+          "CanvasOriginX": 1488,
+          "CanvasOriginY": 2087.5,
+          "PixelsPerUnit": 2976
+        }
+      },
+      "masked_drawable_ids": [
+        "ArtMesh9",
+        "ArtMesh10",
+        "ArtMesh11",
+        "ArtMesh12",
+        "ArtMesh13",
+        "ArtMesh14",
+        "ArtMesh15",
+        "ArtMesh16"
+      ],
+      "inverted_mask_drawable_ids": [],
+      "draw_order_min": 200,
+      "draw_order_max": 1000,
+      "render_order_min": 0,
+      "render_order_max": 133
+    },
+    {
+      "id": "kei_ko_kei_basic_free_t02",
+      "safe_id": "kei_ko_kei_basic_free_t02",
+      "name": "kei_basic_free_t02",
+      "sandbox_model_name": "kei_ko_kei_basic_free_t02",
+      "status": "PASS",
+      "snapshot_path": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/core_api/kei_ko_kei_basic_free_t02/core_snapshot.json",
+      "counts": {
+        "parameters": 27,
+        "parts": 19,
+        "drawables": 59,
+        "maskedDrawables": 11,
+        "invertedMaskDrawables": 0,
+        "offscreens": 0,
+        "maskedOffscreens": 0
+      },
+      "canvas": {
+        "width": 1,
+        "height": 1,
+        "pixelsPerUnit": 1000,
+        "raw": {
+          "CanvasWidth": 1000,
+          "CanvasHeight": 1000,
+          "CanvasOriginX": 500,
+          "CanvasOriginY": 500,
+          "PixelsPerUnit": 1000
+        }
+      },
+      "masked_drawable_ids": [
+        "ArtMesh17",
+        "ArtMesh54",
+        "ArtMesh11",
+        "ArtMesh79",
+        "ArtMesh78",
+        "ArtMesh77",
+        "ArtMesh7",
+        "ArtMesh49",
+        "ArtMesh50",
+        "ArtMesh51",
+        "ArtMesh52"
+      ],
+      "inverted_mask_drawable_ids": [],
+      "draw_order_min": 500,
+      "draw_order_max": 1000,
+      "render_order_min": 0,
+      "render_order_max": 58
+    },
+    {
+      "id": "kei_ko_kei_vowels_pro_t02",
+      "safe_id": "kei_ko_kei_vowels_pro_t02",
+      "name": "kei_vowels_pro_t02",
+      "sandbox_model_name": "kei_ko_kei_vowels_pro_t02",
+      "status": "PASS",
+      "snapshot_path": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/core_api/kei_ko_kei_vowels_pro_t02/core_snapshot.json",
+      "counts": {
+        "parameters": 31,
+        "parts": 19,
+        "drawables": 59,
+        "maskedDrawables": 11,
+        "invertedMaskDrawables": 0,
+        "offscreens": 0,
+        "maskedOffscreens": 0
+      },
+      "canvas": {
+        "width": 1,
+        "height": 1,
+        "pixelsPerUnit": 1000,
+        "raw": {
+          "CanvasWidth": 1000,
+          "CanvasHeight": 1000,
+          "CanvasOriginX": 500,
+          "CanvasOriginY": 500,
+          "PixelsPerUnit": 1000
+        }
+      },
+      "masked_drawable_ids": [
+        "ArtMesh17",
+        "ArtMesh54",
+        "ArtMesh11",
+        "ArtMesh79",
+        "ArtMesh78",
+        "ArtMesh77",
+        "ArtMesh7",
+        "ArtMesh49",
+        "ArtMesh50",
+        "ArtMesh51",
+        "ArtMesh52"
+      ],
+      "inverted_mask_drawable_ids": [],
+      "draw_order_min": 500,
+      "draw_order_max": 1000,
+      "render_order_min": 0,
+      "render_order_max": 58
+    },
+    {
+      "id": "koharu_haruto_koharu_t01",
+      "safe_id": "koharu_haruto_koharu_t01",
+      "name": "koharu_t01",
+      "sandbox_model_name": "koharu_haruto_koharu_t01",
+      "status": "PASS",
+      "snapshot_path": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/core_api/koharu_haruto_koharu_t01/core_snapshot.json",
+      "counts": {
+        "parameters": 52,
+        "parts": 17,
+        "drawables": 90,
+        "maskedDrawables": 0,
+        "invertedMaskDrawables": 0,
+        "offscreens": 0,
+        "maskedOffscreens": 0
+      },
+      "canvas": {
+        "width": 1,
+        "height": 1.25,
+        "pixelsPerUnit": 1600,
+        "raw": {
+          "CanvasWidth": 1600,
+          "CanvasHeight": 2000,
+          "CanvasOriginX": 800,
+          "CanvasOriginY": 1000,
+          "PixelsPerUnit": 1600
+        }
+      },
+      "masked_drawable_ids": [],
+      "inverted_mask_drawable_ids": [],
+      "draw_order_min": 260,
+      "draw_order_max": 720,
+      "render_order_min": 0,
+      "render_order_max": 89
+    },
+    {
+      "id": "mao_pro_ko_mao_pro_t06",
+      "safe_id": "mao_pro_ko_mao_pro_t06",
+      "name": "mao_pro_t06",
+      "sandbox_model_name": "mao_pro_ko_mao_pro_t06",
+      "status": "PASS",
+      "snapshot_path": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/core_api/mao_pro_ko_mao_pro_t06/core_snapshot.json",
+      "counts": {
+        "parameters": 128,
+        "parts": 31,
+        "drawables": 260,
+        "maskedDrawables": 37,
+        "invertedMaskDrawables": 10,
+        "offscreens": 0,
+        "maskedOffscreens": 0
+      },
+      "canvas": {
+        "width": 1,
+        "height": 1.4482758620689655,
+        "pixelsPerUnit": 5800,
+        "raw": {
+          "CanvasWidth": 5800,
+          "CanvasHeight": 8400,
+          "CanvasOriginX": 2900,
+          "CanvasOriginY": 4200,
+          "PixelsPerUnit": 5800
+        }
+      },
+      "masked_drawable_ids": [
+        "ArtMesh160",
+        "ArtMesh123",
+        "ArtMesh202",
+        "ArtMesh276",
+        "ArtMesh275",
+        "ArtMesh274",
+        "ArtMesh273",
+        "ArtMesh272",
+        "ArtMesh270",
+        "ArtMesh269",
+        "ArtMesh268",
+        "ArtMesh260",
+        "ArtMesh259",
+        "ArtMesh258",
+        "ArtMesh257",
+        "ArtMesh256",
+        "ArtMesh255",
+        "ArtMesh254",
+        "ArtMesh253",
+        "ArtMesh252",
+        "ArtMesh251",
+        "ArtMesh250",
+        "ArtMesh249",
+        "ArtMesh248",
+        "ArtMesh247",
+        "ArtMesh246",
+        "ArtMesh218",
+        "ArtMesh193",
+        "ArtMesh192",
+        "ArtMesh190",
+        "ArtMesh189",
+        "ArtMesh287",
+        "ArtMesh288",
+        "ArtMesh292",
+        "ArtMesh293",
+        "ArtMesh14",
+        "ArtMesh20"
+      ],
+      "inverted_mask_drawable_ids": [
+        "ArtMesh160",
+        "ArtMesh275",
+        "ArtMesh193",
+        "ArtMesh192",
+        "ArtMesh190",
+        "ArtMesh189",
+        "ArtMesh287",
+        "ArtMesh288",
+        "ArtMesh292",
+        "ArtMesh293"
+      ],
+      "draw_order_min": 0,
+      "draw_order_max": 1000,
+      "render_order_min": 0,
+      "render_order_max": 259
+    },
+    {
+      "id": "miara_pro_en_miara_pro_t04",
+      "safe_id": "miara_pro_en_miara_pro_t04",
+      "name": "miara_pro_t04",
+      "sandbox_model_name": "miara_pro_en_miara_pro_t04",
+      "status": "PASS",
+      "snapshot_path": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/core_api/miara_pro_en_miara_pro_t04/core_snapshot.json",
+      "counts": {
+        "parameters": 138,
+        "parts": 45,
+        "drawables": 187,
+        "maskedDrawables": 9,
+        "invertedMaskDrawables": 0,
+        "offscreens": 0,
+        "maskedOffscreens": 0
+      },
+      "canvas": {
+        "width": 1,
+        "height": 1.162,
+        "pixelsPerUnit": 2000,
+        "raw": {
+          "CanvasWidth": 2000,
+          "CanvasHeight": 2324,
+          "CanvasOriginX": 1000,
+          "CanvasOriginY": 1162,
+          "PixelsPerUnit": 2000
+        }
+      },
+      "masked_drawable_ids": [
+        "ArtMesh51",
+        "ArtMesh52",
+        "ArtMesh53",
+        "ArtMesh64",
+        "ArtMesh67",
+        "ArtMesh42",
+        "ArtMesh43",
+        "ArtMesh44",
+        "ArtMesh60"
+      ],
+      "inverted_mask_drawable_ids": [],
+      "draw_order_min": 300,
+      "draw_order_max": 500,
+      "render_order_min": 0,
+      "render_order_max": 186
+    },
+    {
+      "id": "miku_pro_jp_miku_sample_t05",
+      "safe_id": "miku_pro_jp_miku_sample_t05",
+      "name": "miku_sample_t05",
+      "sandbox_model_name": "miku_pro_jp_miku_sample_t05",
+      "status": "PASS",
+      "snapshot_path": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/core_api/miku_pro_jp_miku_sample_t05/core_snapshot.json",
+      "counts": {
+        "parameters": 59,
+        "parts": 24,
+        "drawables": 110,
+        "maskedDrawables": 0,
+        "invertedMaskDrawables": 0,
+        "offscreens": 0,
+        "maskedOffscreens": 0
+      },
+      "canvas": {
+        "width": 1,
+        "height": 1.3333333333333333,
+        "pixelsPerUnit": 900,
+        "raw": {
+          "CanvasWidth": 900,
+          "CanvasHeight": 1200,
+          "CanvasOriginX": 450,
+          "CanvasOriginY": 600,
+          "PixelsPerUnit": 900
+        }
+      },
+      "masked_drawable_ids": [],
+      "inverted_mask_drawable_ids": [],
+      "draw_order_min": 190,
+      "draw_order_max": 700,
+      "render_order_min": 0,
+      "render_order_max": 109
+    },
+    {
+      "id": "natori_pro_ko_natori_pro_t06",
+      "safe_id": "natori_pro_ko_natori_pro_t06",
+      "name": "natori_pro_t06",
+      "sandbox_model_name": "natori_pro_ko_natori_pro_t06",
+      "status": "PASS",
+      "snapshot_path": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/core_api/natori_pro_ko_natori_pro_t06/core_snapshot.json",
+      "counts": {
+        "parameters": 96,
+        "parts": 32,
+        "drawables": 176,
+        "maskedDrawables": 9,
+        "invertedMaskDrawables": 0,
+        "offscreens": 0,
+        "maskedOffscreens": 0
+      },
+      "canvas": {
+        "width": 1,
+        "height": 1.75,
+        "pixelsPerUnit": 4000,
+        "raw": {
+          "CanvasWidth": 4000,
+          "CanvasHeight": 7000,
+          "CanvasOriginX": 2000,
+          "CanvasOriginY": 3500,
+          "PixelsPerUnit": 4000
+        }
+      },
+      "masked_drawable_ids": [
+        "ArtMesh3",
+        "ArtMesh32",
+        "ArtMesh33",
+        "ArtMesh34",
+        "ArtMesh35",
+        "ArtMesh49",
+        "ArtMesh48",
+        "ArtMesh47",
+        "ArtMesh46"
+      ],
+      "inverted_mask_drawable_ids": [],
+      "draw_order_min": 400,
+      "draw_order_max": 1000,
+      "render_order_min": 0,
+      "render_order_max": 175
+    },
+    {
+      "id": "ren_pro_ko_ren_t01",
+      "safe_id": "ren_pro_ko_ren_t01",
+      "name": "ren_t01",
+      "sandbox_model_name": "ren_pro_ko_ren_t01",
+      "status": "PASS",
+      "snapshot_path": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/core_api/ren_pro_ko_ren_t01/core_snapshot.json",
+      "counts": {
+        "parameters": 73,
+        "parts": 51,
+        "drawables": 198,
+        "maskedDrawables": 4,
+        "invertedMaskDrawables": 3,
+        "offscreens": 24,
+        "maskedOffscreens": 4
+      },
+      "canvas": {
+        "width": 1,
+        "height": 1.3461538461538463,
+        "pixelsPerUnit": 5200,
+        "raw": {
+          "CanvasWidth": 5200,
+          "CanvasHeight": 7000,
+          "CanvasOriginX": 2600,
+          "CanvasOriginY": 3500,
+          "PixelsPerUnit": 5200
+        }
+      },
+      "masked_drawable_ids": [
+        "ArtMesh120",
+        "ArtMesh126",
+        "ArtMesh174",
+        "ArtMesh184"
+      ],
+      "inverted_mask_drawable_ids": [
+        "ArtMesh53",
+        "ArtMesh54",
+        "ArtMesh192"
+      ],
+      "draw_order_min": 200,
+      "draw_order_max": 1000,
+      "render_order_min": 1,
+      "render_order_max": 221
+    },
+    {
+      "id": "rice_pro_ko_rice_pro_t03",
+      "safe_id": "rice_pro_ko_rice_pro_t03",
+      "name": "rice_pro_t03",
+      "sandbox_model_name": "rice_pro_ko_rice_pro_t03",
+      "status": "PASS",
+      "snapshot_path": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/core_api/rice_pro_ko_rice_pro_t03/core_snapshot.json",
+      "counts": {
+        "parameters": 96,
+        "parts": 30,
+        "drawables": 178,
+        "maskedDrawables": 12,
+        "invertedMaskDrawables": 7,
+        "offscreens": 0,
+        "maskedOffscreens": 0
+      },
+      "canvas": {
+        "width": 1.5,
+        "height": 1,
+        "pixelsPerUnit": 3000,
+        "raw": {
+          "CanvasWidth": 4500,
+          "CanvasHeight": 3000,
+          "CanvasOriginX": 2250,
+          "CanvasOriginY": 1500,
+          "PixelsPerUnit": 3000
+        }
+      },
+      "masked_drawable_ids": [
+        "ArtMesh50",
+        "ArtMesh18",
+        "ArtMesh19",
+        "ArtMesh36",
+        "ArtMesh28",
+        "ArtMesh143",
+        "ArtMesh144",
+        "ArtMesh145",
+        "ArtMesh",
+        "ArtMesh2",
+        "ArtMesh9",
+        "ArtMesh165"
+      ],
+      "inverted_mask_drawable_ids": [
+        "ArtMesh50",
+        "ArtMesh18",
+        "ArtMesh19",
+        "ArtMesh9",
+        "ArtMesh165",
+        "ArtMesh168",
+        "ArtMesh169"
+      ],
+      "draw_order_min": 200,
+      "draw_order_max": 1000,
+      "render_order_min": 0,
+      "render_order_max": 177
+    },
+    {
+      "id": "tsumiki_tsumiki_t01",
+      "safe_id": "tsumiki_tsumiki_t01",
+      "name": "tsumiki_t01",
+      "sandbox_model_name": "tsumiki_tsumiki_t01",
+      "status": "PASS",
+      "snapshot_path": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/core_api/tsumiki_tsumiki_t01/core_snapshot.json",
+      "counts": {
+        "parameters": 46,
+        "parts": 19,
+        "drawables": 89,
+        "maskedDrawables": 5,
+        "invertedMaskDrawables": 0,
+        "offscreens": 0,
+        "maskedOffscreens": 0
+      },
+      "canvas": {
+        "width": 1,
+        "height": 1.6071428571428572,
+        "pixelsPerUnit": 2800,
+        "raw": {
+          "CanvasWidth": 2800,
+          "CanvasHeight": 4500,
+          "CanvasOriginX": 1400,
+          "CanvasOriginY": 2250,
+          "PixelsPerUnit": 2800
+        }
+      },
+      "masked_drawable_ids": [
+        "D_PSD_36",
+        "D_PSD_69",
+        "D_PSD_68",
+        "D_PSD_67",
+        "D_PSD_66"
+      ],
+      "inverted_mask_drawable_ids": [],
+      "draw_order_min": 180,
+      "draw_order_max": 700,
+      "render_order_min": 0,
+      "render_order_max": 88
+    },
+    {
+      "id": "wanko_wanko_touch_t01",
+      "safe_id": "wanko_wanko_touch_t01",
+      "name": "wanko_touch_t01",
+      "sandbox_model_name": "wanko_wanko_touch_t01",
+      "status": "PASS",
+      "snapshot_path": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/core_api/wanko_wanko_touch_t01/core_snapshot.json",
+      "counts": {
+        "parameters": 25,
+        "parts": 15,
+        "drawables": 33,
+        "maskedDrawables": 0,
+        "invertedMaskDrawables": 0,
+        "offscreens": 0,
+        "maskedOffscreens": 0
+      },
+      "canvas": {
+        "width": 1,
+        "height": 1,
+        "pixelsPerUnit": 1200,
+        "raw": {
+          "CanvasWidth": 1200,
+          "CanvasHeight": 1200,
+          "CanvasOriginX": 600,
+          "CanvasOriginY": 600,
+          "PixelsPerUnit": 1200
+        }
+      },
+      "masked_drawable_ids": [],
+      "inverted_mask_drawable_ids": [],
+      "draw_order_min": 100,
+      "draw_order_max": 900,
+      "render_order_min": 0,
+      "render_order_max": 32
+    },
+    {
+      "id": "epsilon_epsilon_t02",
+      "safe_id": "epsilon_epsilon_t02",
+      "name": "Epsilon_t02",
+      "sandbox_model_name": "epsilon_epsilon_t02",
+      "status": "PASS",
+      "snapshot_path": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/core_api/epsilon_epsilon_t02/core_snapshot.json",
+      "counts": {
+        "parameters": 37,
+        "parts": 20,
+        "drawables": 66,
+        "maskedDrawables": 0,
+        "invertedMaskDrawables": 0,
+        "offscreens": 0,
+        "maskedOffscreens": 0
+      },
+      "canvas": {
+        "width": 1,
+        "height": 1.6666666666666667,
+        "pixelsPerUnit": 1200,
+        "raw": {
+          "CanvasWidth": 1200,
+          "CanvasHeight": 2000,
+          "CanvasOriginX": 600,
+          "CanvasOriginY": 1000,
+          "PixelsPerUnit": 1200
+        }
+      },
+      "masked_drawable_ids": [],
+      "inverted_mask_drawable_ids": [],
+      "draw_order_min": 200,
+      "draw_order_max": 900,
+      "render_order_min": 0,
+      "render_order_max": 65
+    },
+    {
+      "id": "chitose_chitose_t01",
+      "safe_id": "chitose_chitose_t01",
+      "name": "chitose_t01",
+      "sandbox_model_name": "chitose_chitose_t01",
+      "status": "PASS",
+      "snapshot_path": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/core_api/chitose_chitose_t01/core_snapshot.json",
+      "counts": {
+        "parameters": 33,
+        "parts": 20,
+        "drawables": 66,
+        "maskedDrawables": 0,
+        "invertedMaskDrawables": 0,
+        "offscreens": 0,
+        "maskedOffscreens": 0
+      },
+      "canvas": {
+        "width": 1,
+        "height": 1.25,
+        "pixelsPerUnit": 2000,
+        "raw": {
+          "CanvasWidth": 2000,
+          "CanvasHeight": 2500,
+          "CanvasOriginX": 1000,
+          "CanvasOriginY": 1250,
+          "PixelsPerUnit": 2000
+        }
+      },
+      "masked_drawable_ids": [],
+      "inverted_mask_drawable_ids": [],
+      "draw_order_min": 300,
+      "draw_order_max": 850,
+      "render_order_min": 0,
+      "render_order_max": 65
+    },
+    {
+      "id": "haru_haru_t01",
+      "safe_id": "haru_haru_t01",
+      "name": "haru_t01",
+      "sandbox_model_name": "haru_haru_t01",
+      "status": "PASS",
+      "snapshot_path": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/core_api/haru_haru_t01/core_snapshot.json",
+      "counts": {
+        "parameters": 33,
+        "parts": 19,
+        "drawables": 84,
+        "maskedDrawables": 0,
+        "invertedMaskDrawables": 0,
+        "offscreens": 0,
+        "maskedOffscreens": 0
+      },
+      "canvas": {
+        "width": 1,
+        "height": 1.3333333333333333,
+        "pixelsPerUnit": 2400,
+        "raw": {
+          "CanvasWidth": 2400,
+          "CanvasHeight": 3200,
+          "CanvasOriginX": 1200,
+          "CanvasOriginY": 1600,
+          "PixelsPerUnit": 2400
+        }
+      },
+      "masked_drawable_ids": [],
+      "inverted_mask_drawable_ids": [],
+      "draw_order_min": 300,
+      "draw_order_max": 950,
+      "render_order_min": 0,
+      "render_order_max": 83
+    },
+    {
+      "id": "tororo_hijiki_hijiki_t01",
+      "safe_id": "tororo_hijiki_hijiki_t01",
+      "name": "hijiki_t01",
+      "sandbox_model_name": "tororo_hijiki_hijiki_t01",
+      "status": "PASS",
+      "snapshot_path": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/core_api/tororo_hijiki_hijiki_t01/core_snapshot.json",
+      "counts": {
+        "parameters": 31,
+        "parts": 16,
+        "drawables": 56,
+        "maskedDrawables": 0,
+        "invertedMaskDrawables": 0,
+        "offscreens": 0,
+        "maskedOffscreens": 0
+      },
+      "canvas": {
+        "width": 1,
+        "height": 1.25,
+        "pixelsPerUnit": 2000,
+        "raw": {
+          "CanvasWidth": 2000,
+          "CanvasHeight": 2500,
+          "CanvasOriginX": 1000,
+          "CanvasOriginY": 1250,
+          "PixelsPerUnit": 2000
+        }
+      },
+      "masked_drawable_ids": [],
+      "inverted_mask_drawable_ids": [],
+      "draw_order_min": 0,
+      "draw_order_max": 800,
+      "render_order_min": 0,
+      "render_order_max": 55
+    },
+    {
+      "id": "izumi_izumi_anime_t01",
+      "safe_id": "izumi_izumi_anime_t01",
+      "name": "izumi_anime_t01",
+      "sandbox_model_name": "izumi_izumi_anime_t01",
+      "status": "PASS",
+      "snapshot_path": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/core_api/izumi_izumi_anime_t01/core_snapshot.json",
+      "counts": {
+        "parameters": 30,
+        "parts": 18,
+        "drawables": 69,
+        "maskedDrawables": 0,
+        "invertedMaskDrawables": 0,
+        "offscreens": 0,
+        "maskedOffscreens": 0
+      },
+      "canvas": {
+        "width": 1,
+        "height": 1.125,
+        "pixelsPerUnit": 4000,
+        "raw": {
+          "CanvasWidth": 4000,
+          "CanvasHeight": 4500,
+          "CanvasOriginX": 2000,
+          "CanvasOriginY": 2250,
+          "PixelsPerUnit": 4000
+        }
+      },
+      "masked_drawable_ids": [],
+      "inverted_mask_drawable_ids": [],
+      "draw_order_min": 200,
+      "draw_order_max": 700,
+      "render_order_min": 0,
+      "render_order_max": 68
+    },
+    {
+      "id": "izumi_izumi_atsu_t01",
+      "safe_id": "izumi_izumi_atsu_t01",
+      "name": "izumi_atsu_t01",
+      "sandbox_model_name": "izumi_izumi_atsu_t01",
+      "status": "PASS",
+      "snapshot_path": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/core_api/izumi_izumi_atsu_t01/core_snapshot.json",
+      "counts": {
+        "parameters": 30,
+        "parts": 18,
+        "drawables": 69,
+        "maskedDrawables": 0,
+        "invertedMaskDrawables": 0,
+        "offscreens": 0,
+        "maskedOffscreens": 0
+      },
+      "canvas": {
+        "width": 1,
+        "height": 1.125,
+        "pixelsPerUnit": 4000,
+        "raw": {
+          "CanvasWidth": 4000,
+          "CanvasHeight": 4500,
+          "CanvasOriginX": 2000,
+          "CanvasOriginY": 2250,
+          "PixelsPerUnit": 4000
+        }
+      },
+      "masked_drawable_ids": [],
+      "inverted_mask_drawable_ids": [],
+      "draw_order_min": 200,
+      "draw_order_max": 700,
+      "render_order_min": 0,
+      "render_order_max": 68
+    }
+  ]
+}

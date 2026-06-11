@@ -1,0 +1,11 @@
+{
+  "asset_id": "eye_L_clean_socket",
+  "started_at": "2026-06-08T15:40:09.660176+00:00",
+  "project": "chrome-folio-489112-s9",
+  "region": "us-central1",
+  "model": "imagen-3.0-capability-001",
+  "edit_mode": "EDIT_MODE_INPAINT_REMOVAL",
+  "raw_image": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/references/source_candidate_002_2048_rgba.png",
+  "mask": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_L_full_canvas_mask.png",
+  "prompt": "Asset: eye_L_clean_socket\nKorean name: 왼눈 깨끗한 눈구멍/피부 밑색\nTarget group: eye_L\nTarget parameter: ParamEyeLOpen\nCommon constraints:\n- Use the selected character reference exactly: same identity, same face proportions, same anime rendering style, same front-facing camera, same lighting.\n- Generate Live2D/Cubism material, not a new character design and not a sprite sheet.\n- No labels, no guides, no text, no colored boxes, no extra face marks, no new accessories.\n- Prefer transparent background/full-canvas layer output when possible.\n- If the image model cannot output a true layer, generate a clean high-resolution reference and route it through the normalization/alpha validation step before use.\nTask:\nCreate clean eye-socket skin material for the specified left/right eye area. Remove iris, pupil, white of eye, highlight, and open-eye lash artifacts. Preserve surrounding skin gradient, blush, eyelid fold, and hair occlusion style. Output only the clean material needed under closed eyelids.\nOutput requirements:\n- Preferred: 2048x2048 RGBA full-canvas transparent PNG aligned to the provided reference canvas.\n- If only a crop can be generated, keep the crop aspect ratio and include the ROI name in the filename; the normalization pipeline will place it into 2048x2048.\n- Do not create a sprite sheet. Do not include labels or guide marks."
+}

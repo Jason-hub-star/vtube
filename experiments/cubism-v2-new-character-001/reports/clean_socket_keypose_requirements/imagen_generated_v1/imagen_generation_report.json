@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-08T15:40:13.357603+00:00",
+  "status": "REVISE",
+  "pack": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1",
+  "out_dir": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_generated_v1",
+  "project": "chrome-folio-489112-s9",
+  "region": "us-central1",
+  "model": "imagen-3.0-capability-001",
+  "count": 1,
+  "results": [
+    {
+      "asset_id": "eye_L_clean_socket",
+      "status": "FAIL",
+      "error": "Imagen HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"This API method requires billing to be enabled. Please enable billing on project #chrome-folio-489112-s9 by visiting https://console.developers.google.com/billing/enable?project=chrome-folio-489112-s9 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry.\",\n    \"status\": \"PERMISSION_DENIED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"BILLING_DISABLED\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"containerInfo\": \"chrome-folio-489112-s9\",\n          \"consoleUrl\": \"https://console.developers.google.com/billing/enable?project=chrome-folio-489112-s9\",\n          \"service\": \"aiplatform.googleapis.com\",\n          \"consumer\": \"projects/chrome-folio-489112-s9\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"This API method requires billing to be enabled. Please enable billing on project #chrome-folio-489112-s9 by visiting https://console.developers.google.com/billing/enable?project=chrome-folio-489112-s9 then retry. If you enabled billing for this project recently, wait a few minutes for the action to propagate to our systems and retry.\"\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Google developers console billing\",\n            \"url\": \"https://console.developers.google.com/billing/enable?project=chrome-folio-489112-s9\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+      "raw_output": null,
+      "normalized_layer": null,
+      "edit_mode": "EDIT_MODE_INPAINT_REMOVAL"
+    }
+  ]
+}

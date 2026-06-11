@@ -1,0 +1,4327 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-07T22:40:44.418947+00:00",
+  "scope": "all57 references; runtime-only rows cannot prove source part taxonomy",
+  "category_summary": {
+    "face_base": {
+      "model_count_with_evidence": 54,
+      "full_structure_count_stats": {
+        "n": 34,
+        "min": 0,
+        "p25": 1.0,
+        "median": 2.0,
+        "p75": 3.0,
+        "max": 6,
+        "mean": 2.12
+      },
+      "all57_count_stats": {
+        "n": 57,
+        "min": 0,
+        "p25": 1.0,
+        "median": 1,
+        "p75": 3.0,
+        "max": 6,
+        "mean": 1.67
+      },
+      "example_models": [
+        "chitose_chitose_t01",
+        "epsilon_epsilon_t02",
+        "haru_greeter_pro_jp_haru_greeter_t05",
+        "haru_haru_t01",
+        "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+        "kei_ko_kei_basic_free_t02",
+        "kei_ko_kei_vowels_pro_t02",
+        "koharu_haruto_haruto_t01",
+        "koharu_haruto_koharu_t01",
+        "mao_pro_ko_mao_pro_t06"
+      ]
+    },
+    "eye_group": {
+      "model_count_with_evidence": 48,
+      "full_structure_count_stats": {
+        "n": 34,
+        "min": 0,
+        "p25": 0.25,
+        "median": 2.0,
+        "p75": 2.0,
+        "max": 8,
+        "mean": 1.79
+      },
+      "all57_count_stats": {
+        "n": 57,
+        "min": 0,
+        "p25": 1.0,
+        "median": 1,
+        "p75": 2.0,
+        "max": 8,
+        "mean": 1.47
+      },
+      "example_models": [
+        "chitose_chitose_t01",
+        "epsilon_epsilon_t02",
+        "haru_greeter_pro_jp_haru_greeter_t05",
+        "haru_haru_t01",
+        "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+        "koharu_haruto_haruto_t01",
+        "koharu_haruto_koharu_t01",
+        "mao_pro_ko_mao_pro_t06",
+        "miara_pro_en_miara_pro_t04",
+        "param_ctrl_pro_ko_haruto_pc_pro_t02"
+      ]
+    },
+    "eye_L": {
+      "model_count_with_evidence": 30,
+      "full_structure_count_stats": {
+        "n": 34,
+        "min": 0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 0.0,
+        "max": 6,
+        "mean": 0.5
+      },
+      "all57_count_stats": {
+        "n": 57,
+        "min": 0,
+        "p25": 0.0,
+        "median": 1,
+        "p75": 1.0,
+        "max": 6,
+        "mean": 0.7
+      },
+      "example_models": [
+        "kei_ko_kei_basic_free_t02",
+        "kei_ko_kei_vowels_pro_t02",
+        "mark_movie_pro_ko_mark_movie_pro_t02",
+        "natori_pro_ko_natori_pro_t06",
+        "param_ctrl_pro_ko_rice_pc_pro_t02",
+        "ren_pro_ko_ren_t01",
+        "rice_pro_ko_rice_pro_t03",
+        "nito_ni-j.model3_runtime",
+        "nito_nico.model3_runtime",
+        "nito_nietzsche.model3_runtime"
+      ]
+    },
+    "eye_R": {
+      "model_count_with_evidence": 30,
+      "full_structure_count_stats": {
+        "n": 34,
+        "min": 0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 0.0,
+        "max": 6,
+        "mean": 0.44
+      },
+      "all57_count_stats": {
+        "n": 57,
+        "min": 0,
+        "p25": 0.0,
+        "median": 1,
+        "p75": 1.0,
+        "max": 6,
+        "mean": 0.67
+      },
+      "example_models": [
+        "kei_ko_kei_basic_free_t02",
+        "kei_ko_kei_vowels_pro_t02",
+        "mark_movie_pro_ko_mark_movie_pro_t02",
+        "natori_pro_ko_natori_pro_t06",
+        "param_ctrl_pro_ko_rice_pc_pro_t02",
+        "ren_pro_ko_ren_t01",
+        "rice_pro_ko_rice_pro_t03",
+        "nito_ni-j.model3_runtime",
+        "nito_nico.model3_runtime",
+        "nito_nietzsche.model3_runtime"
+      ]
+    },
+    "brow_group": {
+      "model_count_with_evidence": 40,
+      "full_structure_count_stats": {
+        "n": 34,
+        "min": 0,
+        "p25": 1.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "max": 2,
+        "mean": 0.88
+      },
+      "all57_count_stats": {
+        "n": 57,
+        "min": 0,
+        "p25": 0.0,
+        "median": 1,
+        "p75": 1.0,
+        "max": 2,
+        "mean": 0.74
+      },
+      "example_models": [
+        "chitose_chitose_t01",
+        "epsilon_epsilon_t02",
+        "haru_greeter_pro_jp_haru_greeter_t05",
+        "haru_haru_t01",
+        "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+        "koharu_haruto_haruto_t01",
+        "koharu_haruto_koharu_t01",
+        "mao_pro_ko_mao_pro_t06",
+        "miara_pro_en_miara_pro_t04",
+        "natori_pro_ko_natori_pro_t06"
+      ]
+    },
+    "brow_L": {
+      "model_count_with_evidence": 15,
+      "full_structure_count_stats": {
+        "n": 34,
+        "min": 0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 0.0,
+        "max": 1,
+        "mean": 0.09
+      },
+      "all57_count_stats": {
+        "n": 57,
+        "min": 0,
+        "p25": 0.0,
+        "median": 0,
+        "p75": 1.0,
+        "max": 1,
+        "mean": 0.26
+      },
+      "example_models": [
+        "kei_ko_kei_basic_free_t02",
+        "kei_ko_kei_vowels_pro_t02",
+        "mark_movie_pro_ko_mark_movie_pro_t02",
+        "github_live2d_cubism_web_samples_samples_resources_haru_haru.model3",
+        "github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori.model3",
+        "github_live2d_cubism_web_samples_samples_resources_mao_mao.model3",
+        "github_live2d_cubism_web_samples_samples_resources_mark_mark.model3",
+        "github_live2d_cubism_web_samples_samples_resources_natori_natori.model3",
+        "github_live2d_cubism_native_samples_samples_resources_haru_haru.model3",
+        "github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori.model3"
+      ]
+    },
+    "brow_R": {
+      "model_count_with_evidence": 15,
+      "full_structure_count_stats": {
+        "n": 34,
+        "min": 0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 0.0,
+        "max": 1,
+        "mean": 0.09
+      },
+      "all57_count_stats": {
+        "n": 57,
+        "min": 0,
+        "p25": 0.0,
+        "median": 0,
+        "p75": 1.0,
+        "max": 1,
+        "mean": 0.26
+      },
+      "example_models": [
+        "kei_ko_kei_basic_free_t02",
+        "kei_ko_kei_vowels_pro_t02",
+        "mark_movie_pro_ko_mark_movie_pro_t02",
+        "github_live2d_cubism_web_samples_samples_resources_haru_haru.model3",
+        "github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori.model3",
+        "github_live2d_cubism_web_samples_samples_resources_mao_mao.model3",
+        "github_live2d_cubism_web_samples_samples_resources_mark_mark.model3",
+        "github_live2d_cubism_web_samples_samples_resources_natori_natori.model3",
+        "github_live2d_cubism_native_samples_samples_resources_haru_haru.model3",
+        "github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori.model3"
+      ]
+    },
+    "mouth_group": {
+      "model_count_with_evidence": 49,
+      "full_structure_count_stats": {
+        "n": 34,
+        "min": 0,
+        "p25": 1.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "max": 2,
+        "mean": 0.88
+      },
+      "all57_count_stats": {
+        "n": 57,
+        "min": 0,
+        "p25": 1.0,
+        "median": 1,
+        "p75": 1.0,
+        "max": 2,
+        "mean": 0.88
+      },
+      "example_models": [
+        "chitose_chitose_t01",
+        "epsilon_epsilon_t02",
+        "haru_greeter_pro_jp_haru_greeter_t05",
+        "haru_haru_t01",
+        "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+        "kei_ko_kei_basic_free_t02",
+        "kei_ko_kei_vowels_pro_t02",
+        "koharu_haruto_haruto_t01",
+        "koharu_haruto_koharu_t01",
+        "mao_pro_ko_mao_pro_t06"
+      ]
+    },
+    "front_hair": {
+      "model_count_with_evidence": 49,
+      "full_structure_count_stats": {
+        "n": 34,
+        "min": 0,
+        "p25": 1.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "max": 7,
+        "mean": 1.41
+      },
+      "all57_count_stats": {
+        "n": 57,
+        "min": 0,
+        "p25": 1.0,
+        "median": 1,
+        "p75": 1.0,
+        "max": 7,
+        "mean": 1.21
+      },
+      "example_models": [
+        "chitose_chitose_t01",
+        "epsilon_epsilon_t02",
+        "haru_greeter_pro_jp_haru_greeter_t05",
+        "haru_haru_t01",
+        "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+        "kei_ko_kei_basic_free_t02",
+        "kei_ko_kei_vowels_pro_t02",
+        "koharu_haruto_haruto_t01",
+        "koharu_haruto_koharu_t01",
+        "mao_pro_ko_mao_pro_t06"
+      ]
+    },
+    "side_hair_L": {
+      "model_count_with_evidence": 42,
+      "full_structure_count_stats": {
+        "n": 34,
+        "min": 0,
+        "p25": 1.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "max": 2,
+        "mean": 0.88
+      },
+      "all57_count_stats": {
+        "n": 57,
+        "min": 0,
+        "p25": 0.0,
+        "median": 1,
+        "p75": 1.0,
+        "max": 2,
+        "mean": 0.81
+      },
+      "example_models": [
+        "chitose_chitose_t01",
+        "epsilon_epsilon_t02",
+        "haru_greeter_pro_jp_haru_greeter_t05",
+        "haru_haru_t01",
+        "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+        "kei_ko_kei_basic_free_t02",
+        "kei_ko_kei_vowels_pro_t02",
+        "koharu_haruto_haruto_t01",
+        "koharu_haruto_koharu_t01",
+        "mao_pro_ko_mao_pro_t06"
+      ]
+    },
+    "side_hair_R": {
+      "model_count_with_evidence": 21,
+      "full_structure_count_stats": {
+        "n": 34,
+        "min": 0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 0.0,
+        "max": 2,
+        "mean": 0.21
+      },
+      "all57_count_stats": {
+        "n": 57,
+        "min": 0,
+        "p25": 0.0,
+        "median": 0,
+        "p75": 1.0,
+        "max": 2,
+        "mean": 0.4
+      },
+      "example_models": [
+        "kei_ko_kei_basic_free_t02",
+        "kei_ko_kei_vowels_pro_t02",
+        "miara_pro_en_miara_pro_t04",
+        "param_ctrl_pro_ko_rice_pc_pro_t02",
+        "rice_pro_ko_rice_pro_t03",
+        "nito_ni-j.model3_runtime",
+        "nito_nico.model3_runtime",
+        "nito_nietzsche.model3_runtime",
+        "nito_nipsilon.model3_runtime",
+        "github_live2d_cubism_web_samples_samples_resources_haru_haru.model3"
+      ]
+    },
+    "back_hair": {
+      "model_count_with_evidence": 41,
+      "full_structure_count_stats": {
+        "n": 34,
+        "min": 0,
+        "p25": 1.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "max": 7,
+        "mean": 1.35
+      },
+      "all57_count_stats": {
+        "n": 57,
+        "min": 0,
+        "p25": 0.0,
+        "median": 1,
+        "p75": 1.0,
+        "max": 7,
+        "mean": 1.05
+      },
+      "example_models": [
+        "chitose_chitose_t01",
+        "epsilon_epsilon_t02",
+        "haru_greeter_pro_jp_haru_greeter_t05",
+        "haru_haru_t01",
+        "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+        "kei_ko_kei_basic_free_t02",
+        "kei_ko_kei_vowels_pro_t02",
+        "koharu_haruto_haruto_t01",
+        "koharu_haruto_koharu_t01",
+        "mao_pro_ko_mao_pro_t06"
+      ]
+    },
+    "neck": {
+      "model_count_with_evidence": 46,
+      "full_structure_count_stats": {
+        "n": 34,
+        "min": 0,
+        "p25": 0.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "max": 2,
+        "mean": 0.71
+      },
+      "all57_count_stats": {
+        "n": 57,
+        "min": 0,
+        "p25": 1.0,
+        "median": 1,
+        "p75": 1.0,
+        "max": 2,
+        "mean": 0.82
+      },
+      "example_models": [
+        "chitose_chitose_t01",
+        "epsilon_epsilon_t02",
+        "haru_greeter_pro_jp_haru_greeter_t05",
+        "haru_haru_t01",
+        "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+        "kei_ko_kei_basic_free_t02",
+        "kei_ko_kei_vowels_pro_t02",
+        "koharu_haruto_haruto_t01",
+        "koharu_haruto_koharu_t01",
+        "mao_pro_ko_mao_pro_t06"
+      ]
+    },
+    "upper_body": {
+      "model_count_with_evidence": 51,
+      "full_structure_count_stats": {
+        "n": 34,
+        "min": 0,
+        "p25": 1.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "max": 7,
+        "mean": 1.18
+      },
+      "all57_count_stats": {
+        "n": 57,
+        "min": 0,
+        "p25": 1.0,
+        "median": 1,
+        "p75": 1.0,
+        "max": 7,
+        "mean": 1.11
+      },
+      "example_models": [
+        "chitose_chitose_t01",
+        "epsilon_epsilon_t02",
+        "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+        "kei_ko_kei_basic_free_t02",
+        "kei_ko_kei_vowels_pro_t02",
+        "koharu_haruto_haruto_t01",
+        "koharu_haruto_koharu_t01",
+        "mark_movie_pro_ko_mark_movie_pro_t02",
+        "miara_pro_en_miara_pro_t04",
+        "param_ctrl_pro_ko_haruto_pc_pro_t02"
+      ]
+    },
+    "shoulder_arm": {
+      "model_count_with_evidence": 50,
+      "full_structure_count_stats": {
+        "n": 34,
+        "min": 0,
+        "p25": 1.0,
+        "median": 2.0,
+        "p75": 4.0,
+        "max": 10,
+        "mean": 2.94
+      },
+      "all57_count_stats": {
+        "n": 57,
+        "min": 0,
+        "p25": 1.0,
+        "median": 1,
+        "p75": 2.0,
+        "max": 10,
+        "mean": 2.12
+      },
+      "example_models": [
+        "chitose_chitose_t01",
+        "epsilon_epsilon_t02",
+        "haru_greeter_pro_jp_haru_greeter_t05",
+        "haru_haru_t01",
+        "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+        "koharu_haruto_haruto_t01",
+        "koharu_haruto_koharu_t01",
+        "mao_pro_ko_mao_pro_t06",
+        "mark_movie_pro_ko_mark_movie_pro_t02",
+        "miara_pro_en_miara_pro_t04"
+      ]
+    },
+    "hand": {
+      "model_count_with_evidence": 2,
+      "full_structure_count_stats": {
+        "n": 34,
+        "min": 0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 0.0,
+        "max": 4,
+        "mean": 0.15
+      },
+      "all57_count_stats": {
+        "n": 57,
+        "min": 0,
+        "p25": 0.0,
+        "median": 0,
+        "p75": 0.0,
+        "max": 4,
+        "mean": 0.09
+      },
+      "example_models": [
+        "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+        "miara_pro_en_miara_pro_t04"
+      ]
+    },
+    "accessory": {
+      "model_count_with_evidence": 33,
+      "full_structure_count_stats": {
+        "n": 34,
+        "min": 0,
+        "p25": 0.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "max": 1,
+        "mean": 0.53
+      },
+      "all57_count_stats": {
+        "n": 57,
+        "min": 0,
+        "p25": 0.0,
+        "median": 1,
+        "p75": 1.0,
+        "max": 1,
+        "mean": 0.58
+      },
+      "example_models": [
+        "chitose_chitose_t01",
+        "epsilon_epsilon_t02",
+        "haru_greeter_pro_jp_haru_greeter_t05",
+        "haru_haru_t01",
+        "koharu_haruto_haruto_t01",
+        "koharu_haruto_koharu_t01",
+        "shizuku_shizuku_t02",
+        "tsumiki_tsumiki_t01",
+        "unitychan_unitychan_t01",
+        "wanko_wanko_touch_t01"
+      ]
+    },
+    "effect": {
+      "model_count_with_evidence": 24,
+      "full_structure_count_stats": {
+        "n": 34,
+        "min": 0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 0.0,
+        "max": 2,
+        "mean": 0.26
+      },
+      "all57_count_stats": {
+        "n": 57,
+        "min": 0,
+        "p25": 0.0,
+        "median": 0,
+        "p75": 1.0,
+        "max": 2,
+        "mean": 0.46
+      },
+      "example_models": [
+        "epsilon_epsilon_t02",
+        "mao_pro_ko_mao_pro_t06",
+        "miara_pro_en_miara_pro_t04",
+        "param_ctrl_pro_ko_rice_pc_pro_t02",
+        "rice_pro_ko_rice_pro_t03",
+        "wanko_wanko_touch_t01",
+        "nito_nito_t01",
+        "nito_ni-j.model3_runtime",
+        "nito_nico.model3_runtime",
+        "nito_nietzsche.model3_runtime"
+      ]
+    },
+    "clothing": {
+      "model_count_with_evidence": 9,
+      "full_structure_count_stats": {
+        "n": 34,
+        "min": 0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 0.75,
+        "max": 4,
+        "mean": 0.35
+      },
+      "all57_count_stats": {
+        "n": 57,
+        "min": 0,
+        "p25": 0.0,
+        "median": 0,
+        "p75": 0.0,
+        "max": 4,
+        "mean": 0.21
+      },
+      "example_models": [
+        "epsilon_epsilon_t02",
+        "haru_greeter_pro_jp_haru_greeter_t05",
+        "haru_haru_t01",
+        "miara_pro_en_miara_pro_t04",
+        "shizuku_shizuku_t02",
+        "izumi_izumi_anime_t01",
+        "izumi_izumi_atsu_t01",
+        "izumi_izumi_illust_t01",
+        "izumi_izumi_suisai_t01"
+      ]
+    },
+    "other": {
+      "model_count_with_evidence": 34,
+      "full_structure_count_stats": {
+        "n": 34,
+        "min": 1,
+        "p25": 5.25,
+        "median": 6.0,
+        "p75": 9.0,
+        "max": 24,
+        "mean": 8.29
+      },
+      "all57_count_stats": {
+        "n": 57,
+        "min": 0,
+        "p25": 0.0,
+        "median": 5,
+        "p75": 7.0,
+        "max": 24,
+        "mean": 4.95
+      },
+      "example_models": [
+        "chitose_chitose_t01",
+        "epsilon_epsilon_t02",
+        "haru_greeter_pro_jp_haru_greeter_t05",
+        "haru_haru_t01",
+        "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+        "kei_ko_kei_basic_free_t02",
+        "kei_ko_kei_vowels_pro_t02",
+        "koharu_haruto_haruto_t01",
+        "koharu_haruto_koharu_t01",
+        "mao_pro_ko_mao_pro_t06"
+      ]
+    }
+  },
+  "models": [
+    {
+      "id": "chitose_chitose_t01",
+      "name": "chitose_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 3,
+        "eye_group": 2,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 0,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 3,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 0,
+        "clothing": 0,
+        "other": 6
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "鼻",
+          "顔",
+          "頬"
+        ],
+        "eye_group": [
+          "目玉",
+          "目"
+        ],
+        "brow_group": [
+          "まゆ毛"
+        ],
+        "mouth_group": [
+          "口"
+        ],
+        "front_hair": [
+          "前髪"
+        ],
+        "side_hair_L": [
+          "横髪"
+        ],
+        "back_hair": [
+          "後ろ髪"
+        ],
+        "neck": [
+          "首"
+        ],
+        "upper_body": [
+          "体"
+        ],
+        "shoulder_arm": [
+          "右腕B",
+          "右腕A",
+          "左腕A"
+        ],
+        "accessory": [
+          "耳"
+        ],
+        "other": [
+          "Root Part",
+          "[ 下絵 ]",
+          "背景",
+          "汗",
+          "コア",
+          "ラフ"
+        ]
+      }
+    },
+    {
+      "id": "epsilon_epsilon_t02",
+      "name": "Epsilon_t02",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 4,
+        "eye_group": 2,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 2,
+        "side_hair_L": 2,
+        "side_hair_R": 0,
+        "back_hair": 2,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 2,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 1,
+        "clothing": 1,
+        "other": 6
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "鼻",
+          "顔デフォーマのみ",
+          "顔",
+          "頬"
+        ],
+        "eye_group": [
+          "目玉",
+          "目"
+        ],
+        "brow_group": [
+          "まゆ毛"
+        ],
+        "mouth_group": [
+          "口"
+        ],
+        "front_hair": [
+          "前髪１",
+          "前髪２"
+        ],
+        "side_hair_L": [
+          "横髪１",
+          "横髪２"
+        ],
+        "back_hair": [
+          "後ろ髪１",
+          "後ろ髪２"
+        ],
+        "neck": [
+          "首"
+        ],
+        "upper_body": [
+          "体"
+        ],
+        "shoulder_arm": [
+          "右腕",
+          "左腕"
+        ],
+        "accessory": [
+          "耳"
+        ],
+        "effect": [
+          "表情エフェクト"
+        ],
+        "clothing": [
+          "服"
+        ],
+        "other": [
+          "Root Part",
+          "[ 下絵 ]",
+          "背景",
+          "足",
+          "コアパーツ",
+          "ラフ"
+        ]
+      }
+    },
+    {
+      "id": "haru_greeter_pro_jp_haru_greeter_t05",
+      "name": "haru_greeter_t05",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 3,
+        "eye_group": 2,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 0,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 0,
+        "shoulder_arm": 4,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 0,
+        "clothing": 1,
+        "other": 4
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "頬",
+          "鼻",
+          "顔"
+        ],
+        "eye_group": [
+          "目",
+          "目玉"
+        ],
+        "brow_group": [
+          "まゆ毛"
+        ],
+        "mouth_group": [
+          "口"
+        ],
+        "front_hair": [
+          "前髪"
+        ],
+        "side_hair_L": [
+          "横髪"
+        ],
+        "back_hair": [
+          "後ろ髪"
+        ],
+        "neck": [
+          "首"
+        ],
+        "shoulder_arm": [
+          "右腕 B",
+          "右腕 A",
+          "左腕 A",
+          "左腕 B"
+        ],
+        "accessory": [
+          "耳"
+        ],
+        "clothing": [
+          "制服"
+        ],
+        "other": [
+          "Root Part",
+          "コアパーツ",
+          "[ 下絵 ]",
+          "涙"
+        ]
+      }
+    },
+    {
+      "id": "haru_haru_t01",
+      "name": "haru_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 3,
+        "eye_group": 2,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 0,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 0,
+        "shoulder_arm": 8,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 0,
+        "clothing": 1,
+        "other": 6
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "鼻",
+          "顔",
+          "頬"
+        ],
+        "eye_group": [
+          "目玉",
+          "目"
+        ],
+        "brow_group": [
+          "まゆ毛"
+        ],
+        "mouth_group": [
+          "口"
+        ],
+        "front_hair": [
+          "前髪"
+        ],
+        "side_hair_L": [
+          "横髪"
+        ],
+        "back_hair": [
+          "後ろ髪"
+        ],
+        "neck": [
+          "首"
+        ],
+        "shoulder_arm": [
+          "２　制服　右腕 B",
+          "２　制服　左腕 B",
+          "２　制服　右腕 A",
+          "２　制服　左腕 A",
+          "１　ワンピース　右腕 B",
+          "１　ワンピース　左腕 B",
+          "１　ワンピース　右腕 A",
+          "１　ワンピース　左腕 A"
+        ],
+        "accessory": [
+          "耳"
+        ],
+        "clothing": [
+          "２　制服"
+        ],
+        "other": [
+          "Root Part",
+          "[ 下絵 ]",
+          "背景",
+          "１　ワンピース",
+          "コアパーツ",
+          "ラフ"
+        ]
+      }
+    },
+    {
+      "id": "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+      "name": "hiyori_movie_pro_t02",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 2,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 5,
+        "side_hair_L": 1,
+        "side_hair_R": 0,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 8,
+        "hand": 4,
+        "accessory": 0,
+        "effect": 0,
+        "clothing": 0,
+        "other": 10
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "얼굴"
+        ],
+        "eye_group": [
+          "눈",
+          "눈알"
+        ],
+        "brow_group": [
+          "눈썹"
+        ],
+        "mouth_group": [
+          "입"
+        ],
+        "front_hair": [
+          "앞머리",
+          "오른쪽 앞머리(회전)",
+          "오른쪽 앞머리(스키닝)",
+          "왼쪽 앞머리(회전)",
+          "왼쪽 앞머리(스키닝)"
+        ],
+        "side_hair_L": [
+          "옆머리"
+        ],
+        "back_hair": [
+          "뒷머리"
+        ],
+        "neck": [
+          "목"
+        ],
+        "upper_body": [
+          "몸"
+        ],
+        "shoulder_arm": [
+          "오른팔",
+          "오른쪽 팔꿈치",
+          "오른쪽 팔뚝",
+          "오른쪽 팔뚝",
+          "왼팔",
+          "왼쪽 팔뚝",
+          "왼쪽 팔꿈치",
+          "왼팔"
+        ],
+        "hand": [
+          "오른손",
+          "오른손 배면",
+          "왼손",
+          "왼손 뒷면"
+        ],
+        "other": [
+          "Root Part",
+          "코어",
+          "볼",
+          "귀",
+          "코",
+          "오른쪽 사이드업(회전)",
+          "오른쪽 사이드 업(스키닝)",
+          "좌측 사이드업(회전)",
+          "왼쪽 사이드업(스키닝)",
+          "책상"
+        ]
+      }
+    },
+    {
+      "id": "kei_ko_kei_basic_free_t02",
+      "name": "kei_basic_free_t02",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 0,
+        "eye_L": 2,
+        "eye_R": 2,
+        "brow_group": 0,
+        "brow_L": 1,
+        "brow_R": 1,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 1,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 0,
+        "hand": 0,
+        "accessory": 0,
+        "effect": 0,
+        "clothing": 0,
+        "other": 7
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "얼굴"
+        ],
+        "eye_L": [
+          "왼쪽 눈알",
+          "왼쪽 눈"
+        ],
+        "eye_R": [
+          "오른쪽 눈",
+          "오른쪽 눈알"
+        ],
+        "brow_L": [
+          "왼쪽 눈썹"
+        ],
+        "brow_R": [
+          "오른쪽 눈썹"
+        ],
+        "mouth_group": [
+          "입 기본"
+        ],
+        "front_hair": [
+          "앞머리"
+        ],
+        "side_hair_L": [
+          "왼쪽 옆머리"
+        ],
+        "side_hair_R": [
+          "오른쪽 옆머리"
+        ],
+        "back_hair": [
+          "뒷머리"
+        ],
+        "neck": [
+          "목"
+        ],
+        "upper_body": [
+          "몸"
+        ],
+        "other": [
+          "Root Part",
+          "왼쪽 귀",
+          "오른쪽 귀",
+          "[밑그림]",
+          "뺨",
+          "코",
+          "코어"
+        ]
+      }
+    },
+    {
+      "id": "kei_ko_kei_vowels_pro_t02",
+      "name": "kei_vowels_pro_t02",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 0,
+        "eye_L": 2,
+        "eye_R": 2,
+        "brow_group": 0,
+        "brow_L": 1,
+        "brow_R": 1,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 1,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 0,
+        "hand": 0,
+        "accessory": 0,
+        "effect": 0,
+        "clothing": 0,
+        "other": 7
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "얼굴"
+        ],
+        "eye_L": [
+          "왼쪽 눈알",
+          "왼쪽 눈"
+        ],
+        "eye_R": [
+          "오른쪽 눈",
+          "오른쪽 눈알"
+        ],
+        "brow_L": [
+          "왼쪽 눈썹"
+        ],
+        "brow_R": [
+          "오른쪽 눈썹"
+        ],
+        "mouth_group": [
+          "입 모음만"
+        ],
+        "front_hair": [
+          "앞머리"
+        ],
+        "side_hair_L": [
+          "왼쪽 옆머리"
+        ],
+        "side_hair_R": [
+          "오른쪽 옆머리"
+        ],
+        "back_hair": [
+          "뒷머리"
+        ],
+        "neck": [
+          "목"
+        ],
+        "upper_body": [
+          "몸"
+        ],
+        "other": [
+          "Root Part",
+          "왼쪽 귀",
+          "오른쪽 귀",
+          "[밑그림]",
+          "뺨",
+          "코",
+          "코어"
+        ]
+      }
+    },
+    {
+      "id": "koharu_haruto_haruto_t01",
+      "name": "haruto_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 2,
+        "eye_group": 2,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 0,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 0,
+        "clothing": 0,
+        "other": 6
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "鼻",
+          "顔"
+        ],
+        "eye_group": [
+          "目玉",
+          "目"
+        ],
+        "brow_group": [
+          "まゆ毛"
+        ],
+        "mouth_group": [
+          "口"
+        ],
+        "front_hair": [
+          "前髪"
+        ],
+        "side_hair_L": [
+          "横髪"
+        ],
+        "back_hair": [
+          "後ろ髪"
+        ],
+        "neck": [
+          "首"
+        ],
+        "upper_body": [
+          "体"
+        ],
+        "shoulder_arm": [
+          "腕"
+        ],
+        "accessory": [
+          "耳"
+        ],
+        "other": [
+          "Root Part",
+          "[ 下絵 ]",
+          "背景",
+          "アイテム",
+          "コア",
+          "ラフ"
+        ]
+      }
+    },
+    {
+      "id": "koharu_haruto_koharu_t01",
+      "name": "koharu_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 2,
+        "eye_group": 2,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 0,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 0,
+        "clothing": 0,
+        "other": 6
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "鼻",
+          "顔"
+        ],
+        "eye_group": [
+          "目玉",
+          "目"
+        ],
+        "brow_group": [
+          "まゆ毛"
+        ],
+        "mouth_group": [
+          "口"
+        ],
+        "front_hair": [
+          "前髪"
+        ],
+        "side_hair_L": [
+          "横髪"
+        ],
+        "back_hair": [
+          "後ろ髪"
+        ],
+        "neck": [
+          "首"
+        ],
+        "upper_body": [
+          "体"
+        ],
+        "shoulder_arm": [
+          "腕"
+        ],
+        "accessory": [
+          "耳"
+        ],
+        "other": [
+          "Root Part",
+          "[ 下絵 ]",
+          "背景",
+          "アイテム",
+          "コア",
+          "ラフ"
+        ]
+      }
+    },
+    {
+      "id": "mao_pro_ko_mao_pro_t06",
+      "name": "mao_pro_t06",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 2,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 0,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 0,
+        "shoulder_arm": 4,
+        "hand": 0,
+        "accessory": 0,
+        "effect": 1,
+        "clothing": 0,
+        "other": 19
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "얼굴"
+        ],
+        "eye_group": [
+          "눈알",
+          "눈"
+        ],
+        "brow_group": [
+          "눈썹"
+        ],
+        "mouth_group": [
+          "입"
+        ],
+        "front_hair": [
+          "앞머리"
+        ],
+        "side_hair_L": [
+          "옆머리"
+        ],
+        "back_hair": [
+          "뒷머리"
+        ],
+        "neck": [
+          "목"
+        ],
+        "shoulder_arm": [
+          "오른팔 B",
+          "왼팔 B",
+          "오른팔 A",
+          "왼팔 A"
+        ],
+        "effect": [
+          "이펙트"
+        ],
+        "other": [
+          "Root Part",
+          "다리",
+          "[밑그림]",
+          "지팡이 B",
+          "로브",
+          "파커",
+          "코어",
+          "귀",
+          "코",
+          "뺨",
+          "모자",
+          "잉크",
+          "연기",
+          "폭발광",
+          "아우라",
+          "빛",
+          "하트",
+          "지팡이 A",
+          "토끼"
+        ]
+      }
+    },
+    {
+      "id": "mark_movie_pro_ko_mark_movie_pro_t02",
+      "name": "mark_movie_pro_t02",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 0,
+        "eye_L": 4,
+        "eye_R": 2,
+        "brow_group": 0,
+        "brow_L": 1,
+        "brow_R": 1,
+        "mouth_group": 2,
+        "front_hair": 2,
+        "side_hair_L": 1,
+        "side_hair_R": 0,
+        "back_hair": 1,
+        "neck": 0,
+        "upper_body": 1,
+        "shoulder_arm": 2,
+        "hand": 0,
+        "accessory": 0,
+        "effect": 0,
+        "clothing": 0,
+        "other": 4
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "얼굴"
+        ],
+        "eye_L": [
+          "왼쪽 눈알",
+          "왼쪽 눈 흰자",
+          "왼쪽 눈 흰자",
+          "왼쪽 눈"
+        ],
+        "eye_R": [
+          "오른쪽 눈알",
+          "오른쪽 눈"
+        ],
+        "brow_L": [
+          "왼쪽 눈썹"
+        ],
+        "brow_R": [
+          "오른쪽 눈썹"
+        ],
+        "mouth_group": [
+          "입 안",
+          "입"
+        ],
+        "front_hair": [
+          "앞머리",
+          "머리"
+        ],
+        "side_hair_L": [
+          "옆머리"
+        ],
+        "back_hair": [
+          "뒷머리"
+        ],
+        "upper_body": [
+          "몸"
+        ],
+        "shoulder_arm": [
+          "왼팔",
+          "오른팔"
+        ],
+        "other": [
+          "Root Part",
+          "코어",
+          "떨림선",
+          "풀"
+        ]
+      }
+    },
+    {
+      "id": "miara_pro_en_miara_pro_t04",
+      "name": "miara_pro_t04",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 4,
+        "eye_group": 1,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 7,
+        "side_hair_L": 2,
+        "side_hair_R": 1,
+        "back_hair": 3,
+        "neck": 0,
+        "upper_body": 7,
+        "shoulder_arm": 2,
+        "hand": 1,
+        "accessory": 0,
+        "effect": 1,
+        "clothing": 4,
+        "other": 19
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "Face",
+          "Water Surface Under",
+          "Water Surface Back",
+          "Water Surface"
+        ],
+        "eye_group": [
+          "Eye"
+        ],
+        "brow_group": [
+          "Brows"
+        ],
+        "mouth_group": [
+          "Mouth"
+        ],
+        "front_hair": [
+          "Hair Front",
+          "Hair L",
+          "Hair Twin L",
+          "Hair Twin R",
+          "Hair Ahoge",
+          "Hair R",
+          "Hair Accessory Front"
+        ],
+        "side_hair_L": [
+          "Hair Side L",
+          "Hair Side Back"
+        ],
+        "side_hair_R": [
+          "Hair Side R"
+        ],
+        "back_hair": [
+          "Hair Back",
+          "Hair Back Tale",
+          "Hair Back Back R"
+        ],
+        "upper_body": [
+          "Body",
+          "Lower Body",
+          "Upper Body",
+          "Fairy Upper Wing R",
+          "Fairy Upper Wing L",
+          "Fairy Body",
+          "Water Surface Upper"
+        ],
+        "shoulder_arm": [
+          "Arm R",
+          "Arm L"
+        ],
+        "hand": [
+          "Hand L"
+        ],
+        "effect": [
+          "Water Surface Reflection"
+        ],
+        "clothing": [
+          "Chest Cloth L(Rotation)",
+          "Chest Cloth L(Skinning)",
+          "Chest Cloth R(Rotation)",
+          "Chest Cloth R(Skinning)"
+        ],
+        "other": [
+          "Root Part",
+          "Leg L",
+          "Leg R",
+          "Trunk",
+          "Bust",
+          "Fairy Lower Wing R",
+          "Fairy Lower Wing L",
+          "Fairy",
+          "Wing Back R(Rotation)",
+          "Wing Back R(Skinning)",
+          "Wing Back L(Rotation)",
+          "Wing Back L(Skinning)",
+          "Wing R 2(Rotation)",
+          "Wing R 2(Skinning)",
+          "Wing L 2(Rotation)",
+          "Wing L 2(Skinning)",
+          "Sparkle",
+          "Background",
+          "Background All"
+        ]
+      }
+    },
+    {
+      "id": "natori_pro_ko_natori_pro_t06",
+      "name": "natori_pro_t06",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 0,
+        "eye_group": 0,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 3,
+        "side_hair_L": 0,
+        "side_hair_R": 0,
+        "back_hair": 1,
+        "neck": 0,
+        "upper_body": 0,
+        "shoulder_arm": 8,
+        "hand": 0,
+        "accessory": 0,
+        "effect": 0,
+        "clothing": 0,
+        "other": 17
+      },
+      "taxonomy_names": {
+        "eye_L": [
+          "왼쪽 눈"
+        ],
+        "eye_R": [
+          "오른쪽 눈"
+        ],
+        "brow_group": [
+          "눈썹"
+        ],
+        "mouth_group": [
+          "입"
+        ],
+        "front_hair": [
+          "머리카락이 난 곳",
+          "앞머리",
+          "머리"
+        ],
+        "back_hair": [
+          "뒷머리"
+        ],
+        "shoulder_arm": [
+          "왼팔 A",
+          "오른팔 A",
+          "오른팔 B",
+          "왼팔 C",
+          "왼팔D",
+          "오른팔 E",
+          "오른팔 A 팔뚝",
+          "왼팔 A 전완"
+        ],
+        "other": [
+          "Root Part",
+          "그림자",
+          "코",
+          "쟈켓",
+          "CORE",
+          "장갑_4",
+          "장갑_6",
+          "장갑_3",
+          "장갑_2",
+          "장갑_1",
+          "장갑_5",
+          "안경",
+          "회중시계_B",
+          "상반신",
+          "하반신",
+          "회중시계_A",
+          "크레딧"
+        ]
+      }
+    },
+    {
+      "id": "param_ctrl_pro_ko_haruto_pc_pro_t02",
+      "name": "haruto_pc_pro_t02",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 2,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 0,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 0,
+        "effect": 0,
+        "clothing": 0,
+        "other": 6
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "얼굴"
+        ],
+        "eye_group": [
+          "눈알",
+          "눈"
+        ],
+        "brow_group": [
+          "눈썹"
+        ],
+        "mouth_group": [
+          "입"
+        ],
+        "front_hair": [
+          "앞머리"
+        ],
+        "side_hair_L": [
+          "옆머리"
+        ],
+        "back_hair": [
+          "뒷머리"
+        ],
+        "neck": [
+          "목"
+        ],
+        "upper_body": [
+          "몸"
+        ],
+        "shoulder_arm": [
+          "팔뚝"
+        ],
+        "other": [
+          "Root Part",
+          "아이템",
+          "귀",
+          "코",
+          "코어",
+          "다리"
+        ]
+      }
+    },
+    {
+      "id": "param_ctrl_pro_ko_koharu_pc_pro_t02",
+      "name": "koharu_pc_pro_t02",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 2,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 0,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 0,
+        "effect": 0,
+        "clothing": 0,
+        "other": 6
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "얼굴"
+        ],
+        "eye_group": [
+          "눈알",
+          "눈"
+        ],
+        "brow_group": [
+          "눈썹"
+        ],
+        "mouth_group": [
+          "입"
+        ],
+        "front_hair": [
+          "앞머리"
+        ],
+        "side_hair_L": [
+          "옆머리"
+        ],
+        "back_hair": [
+          "뒷머리"
+        ],
+        "neck": [
+          "목"
+        ],
+        "upper_body": [
+          "몸"
+        ],
+        "shoulder_arm": [
+          "팔뚝"
+        ],
+        "other": [
+          "Root Part",
+          "아이템",
+          "귀",
+          "코",
+          "코어",
+          "다리"
+        ]
+      }
+    },
+    {
+      "id": "param_ctrl_pro_ko_seesaw_pc_pro_t02",
+      "name": "seesaw_pc_pro_t02",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 0,
+        "eye_group": 0,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 0,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 0,
+        "front_hair": 0,
+        "side_hair_L": 0,
+        "side_hair_R": 0,
+        "back_hair": 0,
+        "neck": 0,
+        "upper_body": 0,
+        "shoulder_arm": 0,
+        "hand": 0,
+        "accessory": 0,
+        "effect": 0,
+        "clothing": 0,
+        "other": 1
+      },
+      "taxonomy_names": {
+        "other": [
+          "Root Part"
+        ]
+      }
+    },
+    {
+      "id": "param_ctrl_pro_ko_rice_pc_pro_t02",
+      "name": "rice_pc_pro_t02",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 0,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 0,
+        "front_hair": 1,
+        "side_hair_L": 2,
+        "side_hair_R": 2,
+        "back_hair": 7,
+        "neck": 0,
+        "upper_body": 1,
+        "shoulder_arm": 3,
+        "hand": 0,
+        "accessory": 0,
+        "effect": 2,
+        "clothing": 0,
+        "other": 6
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "얼굴"
+        ],
+        "eye_L": [
+          "왼쪽 눈"
+        ],
+        "eye_R": [
+          "오른쪽 눈"
+        ],
+        "brow_group": [
+          "눈썹"
+        ],
+        "front_hair": [
+          "머리칼"
+        ],
+        "side_hair_L": [
+          "왼쪽 옆머리(회전)",
+          "왼쪽 옆머리(스키닝)"
+        ],
+        "side_hair_R": [
+          "오른쪽 옆머리(회전)",
+          "오른쪽 옆머리(스키닝)"
+        ],
+        "back_hair": [
+          "뒷머리",
+          "뒷머리 A(회전)",
+          "뒷머리 A(스키닝)",
+          "뒷머리 C(회전)",
+          "뒷머리 C(스키닝)",
+          "뒷머리 B(회전)",
+          "뒷머리 B(스키닝)"
+        ],
+        "upper_body": [
+          "몸"
+        ],
+        "shoulder_arm": [
+          "오른팔 차분",
+          "오른팔",
+          "왼팔"
+        ],
+        "effect": [
+          "마법진 A",
+          "마법진 B"
+        ],
+        "other": [
+          "Root Part",
+          "왼쪽 다리",
+          "모자",
+          "코어",
+          "오른쪽 다리",
+          "파동 B"
+        ]
+      }
+    },
+    {
+      "id": "param_ctrl_pro_ko_target_pc_pro_t02",
+      "name": "target_pc_pro_t02",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 0,
+        "eye_group": 0,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 0,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 0,
+        "front_hair": 0,
+        "side_hair_L": 0,
+        "side_hair_R": 0,
+        "back_hair": 0,
+        "neck": 0,
+        "upper_body": 0,
+        "shoulder_arm": 0,
+        "hand": 0,
+        "accessory": 0,
+        "effect": 0,
+        "clothing": 0,
+        "other": 1
+      },
+      "taxonomy_names": {
+        "other": [
+          "Root Part"
+        ]
+      }
+    },
+    {
+      "id": "ren_pro_ko_ren_t01",
+      "name": "ren_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 0,
+        "eye_L": 6,
+        "eye_R": 6,
+        "brow_group": 2,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 2,
+        "side_hair_L": 0,
+        "side_hair_R": 0,
+        "back_hair": 1,
+        "neck": 2,
+        "upper_body": 1,
+        "shoulder_arm": 6,
+        "hand": 0,
+        "accessory": 0,
+        "effect": 0,
+        "clothing": 0,
+        "other": 24
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "얼굴"
+        ],
+        "eye_L": [
+          "왼쪽 눈알",
+          "왼쪽 눈동자",
+          "왼쪽 눈",
+          "왼쪽 눈알",
+          "왼쪽 눈",
+          "왼쪽 눈동자"
+        ],
+        "eye_R": [
+          "오른쪽 눈알",
+          "오른쪽 눈동자",
+          "오른쪽 눈",
+          "오른쪽 눈알",
+          "오른쪽 눈",
+          "오른쪽 눈동자"
+        ],
+        "brow_group": [
+          "눈썹",
+          "눈썹"
+        ],
+        "mouth_group": [
+          "입"
+        ],
+        "front_hair": [
+          "머리 그림자 아웃",
+          "앞머리"
+        ],
+        "back_hair": [
+          "뒷머리"
+        ],
+        "neck": [
+          "목걸이",
+          "목"
+        ],
+        "upper_body": [
+          "몸통"
+        ],
+        "shoulder_arm": [
+          "재킷 오른팔",
+          "오른팔 그리기 순서",
+          "왼팔 그리기 순서",
+          "재킷 왼팔",
+          "왼팔",
+          "오른팔"
+        ],
+        "other": [
+          "Root Part",
+          "재킷 그림자",
+          "셔츠",
+          "하반신",
+          "왼쪽 헤어라인",
+          "전체",
+          "효과",
+          "쟈켓",
+          "단색",
+          "밤",
+          "그림자",
+          "홀로그램",
+          "上半身 阴影",
+          "디스플레이",
+          "디스플레이 채색",
+          "디스플레이 2",
+          "디스플레이 1",
+          "그림자",
+          "코",
+          "귀"
+        ]
+      }
+    },
+    {
+      "id": "rice_pro_ko_rice_pro_t03",
+      "name": "rice_pro_t03",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 0,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 0,
+        "front_hair": 1,
+        "side_hair_L": 2,
+        "side_hair_R": 2,
+        "back_hair": 7,
+        "neck": 0,
+        "upper_body": 1,
+        "shoulder_arm": 3,
+        "hand": 0,
+        "accessory": 0,
+        "effect": 2,
+        "clothing": 0,
+        "other": 9
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "얼굴"
+        ],
+        "eye_L": [
+          "왼쪽 눈"
+        ],
+        "eye_R": [
+          "오른쪽 눈"
+        ],
+        "brow_group": [
+          "눈썹"
+        ],
+        "front_hair": [
+          "머리칼"
+        ],
+        "side_hair_L": [
+          "왼쪽 옆머리(회전)",
+          "왼쪽 옆머리(스키닝)"
+        ],
+        "side_hair_R": [
+          "오른쪽 옆머리(회전)",
+          "오른쪽 옆머리(스키닝)"
+        ],
+        "back_hair": [
+          "뒷머리",
+          "뒷머리 A(회전)",
+          "뒷머리 A(스키닝)",
+          "뒷머리 C(회전)",
+          "뒷머리 C(스키닝)",
+          "뒷머리 B(회전)",
+          "뒷머리 B(스키닝)"
+        ],
+        "upper_body": [
+          "몸"
+        ],
+        "shoulder_arm": [
+          "오른팔 차분",
+          "오른팔",
+          "왼팔"
+        ],
+        "effect": [
+          "마법진 A",
+          "마법진 B"
+        ],
+        "other": [
+          "Root Part",
+          "왼발",
+          "모자",
+          "코어",
+          "파동 쌓기",
+          "오른발",
+          "불꽃",
+          "파동 A",
+          "파동 B"
+        ]
+      }
+    },
+    {
+      "id": "shizuku_shizuku_t02",
+      "name": "shizuku_t02",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 4,
+        "eye_group": 4,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 2,
+        "side_hair_L": 1,
+        "side_hair_R": 0,
+        "back_hair": 0,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 8,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 0,
+        "clothing": 1,
+        "other": 15
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "鼻",
+          "顔",
+          "頬",
+          "顔影"
+        ],
+        "eye_group": [
+          "目玉",
+          "目玉 ぐるぐる",
+          "目玉 キラキラ",
+          "目"
+        ],
+        "brow_group": [
+          "まゆ毛"
+        ],
+        "mouth_group": [
+          "口"
+        ],
+        "front_hair": [
+          "下ろし髪　後ろ",
+          "前髪"
+        ],
+        "side_hair_L": [
+          "横髪"
+        ],
+        "neck": [
+          "首"
+        ],
+        "upper_body": [
+          "体"
+        ],
+        "shoulder_arm": [
+          "右腕２ パジャマ",
+          "左腕２ パジャマ",
+          "右腕１ パジャマ",
+          "左腕１ パジャマ",
+          "右腕２",
+          "左腕２",
+          "右腕１",
+          "左腕１"
+        ],
+        "accessory": [
+          "耳"
+        ],
+        "clothing": [
+          "制服※座標系はコアに移動"
+        ],
+        "other": [
+          "Root Part",
+          "[ 下絵 ]",
+          "マグカップ・クッキー",
+          "背景　家",
+          "背景　学校",
+          "背景",
+          "キラキラ",
+          "汗",
+          "イライラ",
+          "パジャマ",
+          "ツインテール　後ろ",
+          "ツインテール　右",
+          "ツインテール　左",
+          "コアパーツ",
+          "ラフ"
+        ]
+      }
+    },
+    {
+      "id": "tsumiki_tsumiki_t01",
+      "name": "tsumiki_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 3,
+        "eye_group": 2,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 0,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 2,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 0,
+        "clothing": 0,
+        "other": 7
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "頬",
+          "鼻",
+          "顔"
+        ],
+        "eye_group": [
+          "目玉",
+          "目"
+        ],
+        "brow_group": [
+          "まゆ毛"
+        ],
+        "mouth_group": [
+          "口"
+        ],
+        "front_hair": [
+          "前髪"
+        ],
+        "side_hair_L": [
+          "横髪"
+        ],
+        "back_hair": [
+          "後ろ髪"
+        ],
+        "neck": [
+          "首"
+        ],
+        "upper_body": [
+          "体"
+        ],
+        "shoulder_arm": [
+          "右腕",
+          "左腕"
+        ],
+        "accessory": [
+          "耳"
+        ],
+        "other": [
+          "Root Part",
+          "[ 下絵 ]",
+          "背景",
+          "脚",
+          "あほ毛",
+          "コアパーツ",
+          "ラフ"
+        ]
+      }
+    },
+    {
+      "id": "unitychan_unitychan_t01",
+      "name": "unitychan_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 3,
+        "eye_group": 2,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 0,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 2,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 0,
+        "clothing": 0,
+        "other": 5
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "鼻",
+          "顔",
+          "頬"
+        ],
+        "eye_group": [
+          "目玉",
+          "目"
+        ],
+        "brow_group": [
+          "まゆ毛"
+        ],
+        "mouth_group": [
+          "口"
+        ],
+        "front_hair": [
+          "前髪"
+        ],
+        "side_hair_L": [
+          "横髪"
+        ],
+        "back_hair": [
+          "後ろ髪"
+        ],
+        "neck": [
+          "首"
+        ],
+        "upper_body": [
+          "体"
+        ],
+        "shoulder_arm": [
+          "右腕",
+          "左腕"
+        ],
+        "accessory": [
+          "耳"
+        ],
+        "other": [
+          "Root Part",
+          "[ 下絵 ]",
+          "背景",
+          "足",
+          "ラフ"
+        ]
+      }
+    },
+    {
+      "id": "wanko_wanko_touch_t01",
+      "name": "wanko_touch_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 3,
+        "eye_group": 8,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 2,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 0,
+        "side_hair_L": 0,
+        "side_hair_R": 0,
+        "back_hair": 0,
+        "neck": 0,
+        "upper_body": 1,
+        "shoulder_arm": 0,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 1,
+        "clothing": 0,
+        "other": 16
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "鼻",
+          "顔",
+          "頬"
+        ],
+        "eye_group": [
+          "目玉",
+          "目",
+          "蕎麦６杯目",
+          "蕎麦５杯目",
+          "蕎麦４杯目",
+          "蕎麦３杯目",
+          "蕎麦２杯目",
+          "蕎麦１杯目"
+        ],
+        "brow_group": [
+          "まゆ毛",
+          "まゆげ"
+        ],
+        "mouth_group": [
+          "口"
+        ],
+        "upper_body": [
+          "体"
+        ],
+        "accessory": [
+          "耳"
+        ],
+        "effect": [
+          "エフェクト"
+        ],
+        "other": [
+          "Root Part",
+          "[ 下絵 ]",
+          "背景",
+          "お椀",
+          "ベニテングタケ",
+          "しいたけ",
+          "みかん",
+          "王冠",
+          "アフロ",
+          "リボン",
+          "星",
+          "ひげ",
+          "たんぽぽ",
+          "コア　アイテム",
+          "コア",
+          "ラフ"
+        ]
+      }
+    },
+    {
+      "id": "hiyori_pro_ko_hiyori_pro_t11",
+      "name": "hiyori_pro_t11",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 5,
+        "side_hair_L": 1,
+        "side_hair_R": 0,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 2,
+        "hand": 0,
+        "accessory": 0,
+        "effect": 0,
+        "clothing": 0,
+        "other": 12
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "얼굴"
+        ],
+        "eye_group": [
+          "눈"
+        ],
+        "brow_group": [
+          "눈썹"
+        ],
+        "mouth_group": [
+          "입"
+        ],
+        "front_hair": [
+          "앞머리",
+          "앞머리 오른쪽(회전)",
+          "앞머리 오른쪽(스키닝)",
+          "앞머리 왼쪽(회전)",
+          "왼쪽 앞머리(스키닝)"
+        ],
+        "side_hair_L": [
+          "옆머리"
+        ],
+        "back_hair": [
+          "뒷머리"
+        ],
+        "neck": [
+          "목"
+        ],
+        "upper_body": [
+          "몸"
+        ],
+        "shoulder_arm": [
+          "팔A",
+          "팔 B"
+        ],
+        "other": [
+          "Root Part",
+          "[밑그림]",
+          "코어",
+          "뺨",
+          "귀",
+          "배경",
+          "안구",
+          "코",
+          "사이드업 오른쪽 (회전)",
+          "사이드업 오른쪽(스키닝)",
+          "사이드 업 왼쪽(회전)",
+          "사이드 업 왼쪽(스키닝)"
+        ]
+      }
+    },
+    {
+      "id": "miku_pro_jp_miku_sample_t05",
+      "name": "miku_sample_t05",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 3,
+        "eye_group": 2,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 0,
+        "back_hair": 5,
+        "neck": 1,
+        "upper_body": 3,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 0,
+        "clothing": 0,
+        "other": 6
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "鼻",
+          "顔",
+          "頬"
+        ],
+        "eye_group": [
+          "目玉",
+          "目"
+        ],
+        "brow_group": [
+          "まゆ毛"
+        ],
+        "mouth_group": [
+          "口"
+        ],
+        "front_hair": [
+          "前髪"
+        ],
+        "side_hair_L": [
+          "横髪"
+        ],
+        "back_hair": [
+          "後ろ髪",
+          "D_HAIR_BACK_00(回転)",
+          "D_HAIR_BACK_00(スキニング)",
+          "D_HAIR_BACK_10(回転)",
+          "D_HAIR_BACK_10(スキニング)"
+        ],
+        "neck": [
+          "首"
+        ],
+        "upper_body": [
+          "体",
+          "D_BODY_06(回転)",
+          "D_BODY_06(スキニング)"
+        ],
+        "shoulder_arm": [
+          "腕"
+        ],
+        "accessory": [
+          "耳"
+        ],
+        "other": [
+          "Root Part",
+          "足",
+          "ヘッドセット",
+          "[ 下絵 ]",
+          "コアパーツ",
+          "背景"
+        ]
+      }
+    },
+    {
+      "id": "tororo_hijiki_hijiki_t01",
+      "name": "hijiki_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 2,
+        "eye_group": 2,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 0,
+        "side_hair_L": 0,
+        "side_hair_R": 0,
+        "back_hair": 0,
+        "neck": 0,
+        "upper_body": 1,
+        "shoulder_arm": 4,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 0,
+        "clothing": 0,
+        "other": 7
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "鼻",
+          "顔"
+        ],
+        "eye_group": [
+          "目玉",
+          "目"
+        ],
+        "brow_group": [
+          "まゆ毛"
+        ],
+        "mouth_group": [
+          "口"
+        ],
+        "upper_body": [
+          "体"
+        ],
+        "shoulder_arm": [
+          "左腕_02",
+          "右腕_02",
+          "左腕",
+          "右腕"
+        ],
+        "accessory": [
+          "耳"
+        ],
+        "other": [
+          "Root Part",
+          "[ 下絵 ]",
+          "背景",
+          "しっぽ",
+          "胸",
+          "コアパーツ",
+          "ラフ"
+        ]
+      }
+    },
+    {
+      "id": "tororo_hijiki_tororo_t01",
+      "name": "tororo_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 2,
+        "eye_group": 2,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 0,
+        "side_hair_L": 0,
+        "side_hair_R": 0,
+        "back_hair": 0,
+        "neck": 0,
+        "upper_body": 1,
+        "shoulder_arm": 4,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 0,
+        "clothing": 0,
+        "other": 7
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "鼻",
+          "顔"
+        ],
+        "eye_group": [
+          "目玉",
+          "目"
+        ],
+        "brow_group": [
+          "まゆ毛"
+        ],
+        "mouth_group": [
+          "口"
+        ],
+        "upper_body": [
+          "体"
+        ],
+        "shoulder_arm": [
+          "左腕_02",
+          "右腕_02",
+          "左腕",
+          "右腕"
+        ],
+        "accessory": [
+          "耳"
+        ],
+        "other": [
+          "Root Part",
+          "[ 下絵 ]",
+          "背景",
+          "しっぽ",
+          "胸",
+          "コアパーツ",
+          "ラフ"
+        ]
+      }
+    },
+    {
+      "id": "nito_nito_t01",
+      "name": "nito_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 6,
+        "eye_group": 8,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 0,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 0,
+        "front_hair": 0,
+        "side_hair_L": 0,
+        "side_hair_R": 0,
+        "back_hair": 0,
+        "neck": 0,
+        "upper_body": 5,
+        "shoulder_arm": 10,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 1,
+        "clothing": 0,
+        "other": 8
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "顔_05",
+          "顔_04",
+          "顔_03",
+          "顔_02",
+          "顔",
+          "頬 涙"
+        ],
+        "eye_group": [
+          "目",
+          "目",
+          "目",
+          "目",
+          "目",
+          "目_4",
+          "目_3",
+          "目_2"
+        ],
+        "upper_body": [
+          "体_05",
+          "体_04",
+          "体_03",
+          "体_02",
+          "体"
+        ],
+        "shoulder_arm": [
+          "腕_2_05",
+          "腕_1_05",
+          "腕_2_04",
+          "腕_1_04",
+          "腕_2_03",
+          "腕_1_03",
+          "腕_2_02",
+          "腕_1_02",
+          "腕_2",
+          "腕_1"
+        ],
+        "accessory": [
+          "帽子"
+        ],
+        "effect": [
+          "感情エフェクト"
+        ],
+        "other": [
+          "Root Part",
+          "+++NIETZSCHE+++",
+          "+++NI-J+++",
+          "+++NICO+++",
+          "+++NIPSILON+++",
+          "+++NITO+++",
+          "コア",
+          "+++COMMON+++"
+        ]
+      }
+    },
+    {
+      "id": "nito_ni-j.model3_runtime",
+      "name": "ni-j.model3",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 0,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 1,
+        "back_hair": 0,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 1,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "mouth_group": [],
+        "front_hair": [],
+        "side_hair_L": [],
+        "side_hair_R": [],
+        "neck": [],
+        "upper_body": [],
+        "shoulder_arm": [],
+        "accessory": [],
+        "effect": []
+      }
+    },
+    {
+      "id": "nito_nico.model3_runtime",
+      "name": "nico.model3",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 0,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 1,
+        "back_hair": 0,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 1,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "mouth_group": [],
+        "front_hair": [],
+        "side_hair_L": [],
+        "side_hair_R": [],
+        "neck": [],
+        "upper_body": [],
+        "shoulder_arm": [],
+        "accessory": [],
+        "effect": []
+      }
+    },
+    {
+      "id": "nito_nietzsche.model3_runtime",
+      "name": "nietzsche.model3",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 0,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 1,
+        "back_hair": 0,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 1,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "mouth_group": [],
+        "front_hair": [],
+        "side_hair_L": [],
+        "side_hair_R": [],
+        "neck": [],
+        "upper_body": [],
+        "shoulder_arm": [],
+        "accessory": [],
+        "effect": []
+      }
+    },
+    {
+      "id": "nito_nipsilon.model3_runtime",
+      "name": "nipsilon.model3",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 0,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 1,
+        "back_hair": 0,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 1,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "mouth_group": [],
+        "front_hair": [],
+        "side_hair_L": [],
+        "side_hair_R": [],
+        "neck": [],
+        "upper_body": [],
+        "shoulder_arm": [],
+        "accessory": [],
+        "effect": []
+      }
+    },
+    {
+      "id": "izumi_izumi_anime_t01",
+      "name": "izumi_anime_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 3,
+        "eye_group": 2,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 0,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 2,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 0,
+        "clothing": 1,
+        "other": 5
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "鼻",
+          "顔",
+          "頬"
+        ],
+        "eye_group": [
+          "目玉",
+          "目"
+        ],
+        "brow_group": [
+          "まゆ毛"
+        ],
+        "mouth_group": [
+          "口"
+        ],
+        "front_hair": [
+          "前髪"
+        ],
+        "side_hair_L": [
+          "横髪"
+        ],
+        "back_hair": [
+          "後ろ髪"
+        ],
+        "neck": [
+          "首"
+        ],
+        "upper_body": [
+          "体"
+        ],
+        "shoulder_arm": [
+          "右腕",
+          "左腕"
+        ],
+        "accessory": [
+          "耳"
+        ],
+        "clothing": [
+          "服"
+        ],
+        "other": [
+          "Root Part",
+          "[ 下絵 ]",
+          "背景",
+          "コアパーツ",
+          "ラフ"
+        ]
+      }
+    },
+    {
+      "id": "izumi_izumi_atsu_t01",
+      "name": "izumi_atsu_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 3,
+        "eye_group": 2,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 0,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 2,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 0,
+        "clothing": 1,
+        "other": 5
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "鼻",
+          "顔",
+          "頬"
+        ],
+        "eye_group": [
+          "目玉",
+          "目"
+        ],
+        "brow_group": [
+          "まゆ毛"
+        ],
+        "mouth_group": [
+          "口"
+        ],
+        "front_hair": [
+          "前髪"
+        ],
+        "side_hair_L": [
+          "横髪"
+        ],
+        "back_hair": [
+          "後ろ髪"
+        ],
+        "neck": [
+          "首"
+        ],
+        "upper_body": [
+          "体"
+        ],
+        "shoulder_arm": [
+          "右腕",
+          "左腕"
+        ],
+        "accessory": [
+          "耳"
+        ],
+        "clothing": [
+          "服"
+        ],
+        "other": [
+          "Root Part",
+          "[ 下絵 ]",
+          "背景",
+          "コアパーツ",
+          "ラフ"
+        ]
+      }
+    },
+    {
+      "id": "izumi_izumi_illust_t01",
+      "name": "izumi_illust_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 3,
+        "eye_group": 2,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 0,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 2,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 0,
+        "clothing": 1,
+        "other": 5
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "鼻",
+          "顔",
+          "頬"
+        ],
+        "eye_group": [
+          "目玉",
+          "目"
+        ],
+        "brow_group": [
+          "まゆ毛"
+        ],
+        "mouth_group": [
+          "口"
+        ],
+        "front_hair": [
+          "前髪"
+        ],
+        "side_hair_L": [
+          "横髪"
+        ],
+        "back_hair": [
+          "後ろ髪"
+        ],
+        "neck": [
+          "首"
+        ],
+        "upper_body": [
+          "体"
+        ],
+        "shoulder_arm": [
+          "右腕",
+          "左腕"
+        ],
+        "accessory": [
+          "耳"
+        ],
+        "clothing": [
+          "服"
+        ],
+        "other": [
+          "Root Part",
+          "[ 下絵 ]",
+          "背景",
+          "コアパーツ",
+          "ラフ"
+        ]
+      }
+    },
+    {
+      "id": "izumi_izumi_suisai_t01",
+      "name": "izumi_suisai_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 3,
+        "eye_group": 2,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 0,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 2,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 0,
+        "clothing": 1,
+        "other": 5
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "鼻",
+          "顔",
+          "頬"
+        ],
+        "eye_group": [
+          "目玉",
+          "目"
+        ],
+        "brow_group": [
+          "まゆ毛"
+        ],
+        "mouth_group": [
+          "口"
+        ],
+        "front_hair": [
+          "前髪"
+        ],
+        "side_hair_L": [
+          "横髪"
+        ],
+        "back_hair": [
+          "後ろ髪"
+        ],
+        "neck": [
+          "首"
+        ],
+        "upper_body": [
+          "体"
+        ],
+        "shoulder_arm": [
+          "右腕",
+          "左腕"
+        ],
+        "accessory": [
+          "耳"
+        ],
+        "clothing": [
+          "服"
+        ],
+        "other": [
+          "Root Part",
+          "[ 下絵 ]",
+          "背景",
+          "コアパーツ",
+          "ラフ"
+        ]
+      }
+    },
+    {
+      "id": "gantzert_felixander_gantzert_felixander_t01",
+      "name": "Gantzert_Felixander_t01",
+      "analysis_mode": "FULL_STRUCTURE",
+      "confidence": "FULL_STRUCTURE",
+      "taxonomy_evidence_type": "CMO3_PART_NAMES",
+      "taxonomy_counts": {
+        "face_base": 2,
+        "eye_group": 1,
+        "eye_L": 0,
+        "eye_R": 0,
+        "brow_group": 1,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 0,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 2,
+        "hand": 0,
+        "accessory": 0,
+        "effect": 0,
+        "clothing": 0,
+        "other": 9
+      },
+      "taxonomy_names": {
+        "face_base": [
+          "鼻",
+          "顔"
+        ],
+        "eye_group": [
+          "目"
+        ],
+        "brow_group": [
+          "まゆ毛"
+        ],
+        "mouth_group": [
+          "口"
+        ],
+        "front_hair": [
+          "前髪"
+        ],
+        "side_hair_L": [
+          "横髪"
+        ],
+        "back_hair": [
+          "後ろ髪"
+        ],
+        "neck": [
+          "首"
+        ],
+        "upper_body": [
+          "体"
+        ],
+        "shoulder_arm": [
+          "左腕",
+          "右腕"
+        ],
+        "other": [
+          "Root Part",
+          "[ 下絵 ]",
+          "背景",
+          "裾",
+          "炎",
+          "ドラゴン",
+          "剣",
+          "コアパーツ",
+          "ラフ"
+        ]
+      }
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_haru_haru.model3",
+      "name": "Haru",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 1,
+        "brow_L": 1,
+        "brow_R": 1,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 1,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 0,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "brow_group": [],
+        "brow_L": [],
+        "brow_R": [],
+        "mouth_group": [],
+        "front_hair": [],
+        "side_hair_L": [],
+        "side_hair_R": [],
+        "back_hair": [],
+        "neck": [],
+        "upper_body": [],
+        "shoulder_arm": [],
+        "accessory": []
+      }
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori.model3",
+      "name": "Hiyori",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 1,
+        "brow_L": 1,
+        "brow_R": 1,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 0,
+        "side_hair_R": 0,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 1,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "brow_group": [],
+        "brow_L": [],
+        "brow_R": [],
+        "mouth_group": [],
+        "front_hair": [],
+        "back_hair": [],
+        "neck": [],
+        "upper_body": [],
+        "shoulder_arm": [],
+        "accessory": [],
+        "effect": []
+      }
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_mao_mao.model3",
+      "name": "Mao",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 1,
+        "brow_L": 1,
+        "brow_R": 1,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 1,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 1,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "brow_group": [],
+        "brow_L": [],
+        "brow_R": [],
+        "mouth_group": [],
+        "front_hair": [],
+        "side_hair_L": [],
+        "side_hair_R": [],
+        "back_hair": [],
+        "neck": [],
+        "upper_body": [],
+        "shoulder_arm": [],
+        "accessory": [],
+        "effect": []
+      }
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_mark_mark.model3",
+      "name": "Mark",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 1,
+        "brow_L": 1,
+        "brow_R": 1,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 1,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 0,
+        "effect": 0,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "brow_group": [],
+        "brow_L": [],
+        "brow_R": [],
+        "mouth_group": [],
+        "front_hair": [],
+        "side_hair_L": [],
+        "side_hair_R": [],
+        "back_hair": [],
+        "neck": [],
+        "upper_body": [],
+        "shoulder_arm": []
+      }
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_natori_natori.model3",
+      "name": "Natori",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 1,
+        "brow_L": 1,
+        "brow_R": 1,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 1,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 0,
+        "effect": 1,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "brow_group": [],
+        "brow_L": [],
+        "brow_R": [],
+        "mouth_group": [],
+        "front_hair": [],
+        "side_hair_L": [],
+        "side_hair_R": [],
+        "back_hair": [],
+        "neck": [],
+        "upper_body": [],
+        "shoulder_arm": [],
+        "effect": []
+      }
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_ren_ren.model3",
+      "name": "Ren",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 0,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 1,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 0,
+        "effect": 0,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "mouth_group": [],
+        "front_hair": [],
+        "side_hair_L": [],
+        "side_hair_R": [],
+        "back_hair": [],
+        "neck": [],
+        "upper_body": [],
+        "shoulder_arm": []
+      }
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_rice_rice.model3",
+      "name": "Rice",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 0,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 0,
+        "front_hair": 1,
+        "side_hair_L": 0,
+        "side_hair_R": 0,
+        "back_hair": 0,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 1,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "front_hair": [],
+        "neck": [],
+        "upper_body": [],
+        "shoulder_arm": [],
+        "accessory": [],
+        "effect": []
+      }
+    },
+    {
+      "id": "github_live2d_cubism_web_samples_samples_resources_wanko_wanko.model3",
+      "name": "Wanko",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 0,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 0,
+        "side_hair_L": 0,
+        "side_hair_R": 0,
+        "back_hair": 0,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 1,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "mouth_group": [],
+        "neck": [],
+        "upper_body": [],
+        "shoulder_arm": [],
+        "accessory": [],
+        "effect": []
+      }
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_haru_haru.model3",
+      "name": "Haru",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 1,
+        "brow_L": 1,
+        "brow_R": 1,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 1,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 0,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "brow_group": [],
+        "brow_L": [],
+        "brow_R": [],
+        "mouth_group": [],
+        "front_hair": [],
+        "side_hair_L": [],
+        "side_hair_R": [],
+        "back_hair": [],
+        "neck": [],
+        "upper_body": [],
+        "shoulder_arm": [],
+        "accessory": []
+      }
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori.model3",
+      "name": "Hiyori",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 1,
+        "brow_L": 1,
+        "brow_R": 1,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 0,
+        "side_hair_R": 0,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 1,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "brow_group": [],
+        "brow_L": [],
+        "brow_R": [],
+        "mouth_group": [],
+        "front_hair": [],
+        "back_hair": [],
+        "neck": [],
+        "upper_body": [],
+        "shoulder_arm": [],
+        "accessory": [],
+        "effect": []
+      }
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_mao_mao.model3",
+      "name": "Mao",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 1,
+        "brow_L": 1,
+        "brow_R": 1,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 1,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 1,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "brow_group": [],
+        "brow_L": [],
+        "brow_R": [],
+        "mouth_group": [],
+        "front_hair": [],
+        "side_hair_L": [],
+        "side_hair_R": [],
+        "back_hair": [],
+        "neck": [],
+        "upper_body": [],
+        "shoulder_arm": [],
+        "accessory": [],
+        "effect": []
+      }
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_mark_mark.model3",
+      "name": "Mark",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 1,
+        "brow_L": 1,
+        "brow_R": 1,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 1,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 0,
+        "effect": 0,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "brow_group": [],
+        "brow_L": [],
+        "brow_R": [],
+        "mouth_group": [],
+        "front_hair": [],
+        "side_hair_L": [],
+        "side_hair_R": [],
+        "back_hair": [],
+        "neck": [],
+        "upper_body": [],
+        "shoulder_arm": []
+      }
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_natori_natori.model3",
+      "name": "Natori",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 1,
+        "brow_L": 1,
+        "brow_R": 1,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 1,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 0,
+        "effect": 1,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "brow_group": [],
+        "brow_L": [],
+        "brow_R": [],
+        "mouth_group": [],
+        "front_hair": [],
+        "side_hair_L": [],
+        "side_hair_R": [],
+        "back_hair": [],
+        "neck": [],
+        "upper_body": [],
+        "shoulder_arm": [],
+        "effect": []
+      }
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_ren_ren.model3",
+      "name": "Ren",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 0,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 1,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 0,
+        "effect": 0,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "mouth_group": [],
+        "front_hair": [],
+        "side_hair_L": [],
+        "side_hair_R": [],
+        "back_hair": [],
+        "neck": [],
+        "upper_body": [],
+        "shoulder_arm": []
+      }
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_rice_rice.model3",
+      "name": "Rice",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 0,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 0,
+        "front_hair": 1,
+        "side_hair_L": 0,
+        "side_hair_R": 0,
+        "back_hair": 0,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 1,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "front_hair": [],
+        "neck": [],
+        "upper_body": [],
+        "shoulder_arm": [],
+        "accessory": [],
+        "effect": []
+      }
+    },
+    {
+      "id": "github_live2d_cubism_native_samples_samples_resources_wanko_wanko.model3",
+      "name": "Wanko",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 0,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 1,
+        "front_hair": 0,
+        "side_hair_L": 0,
+        "side_hair_R": 0,
+        "back_hair": 0,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 1,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "mouth_group": [],
+        "neck": [],
+        "upper_body": [],
+        "shoulder_arm": [],
+        "accessory": [],
+        "effect": []
+      }
+    },
+    {
+      "id": "github_live2d_cubism_web_motionsync_samples_resources_kei_basic_kei_basic.model3",
+      "name": "Kei_basic",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 1,
+        "brow_L": 1,
+        "brow_R": 1,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 1,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 0,
+        "hand": 0,
+        "accessory": 0,
+        "effect": 1,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "brow_group": [],
+        "brow_L": [],
+        "brow_R": [],
+        "mouth_group": [],
+        "front_hair": [],
+        "side_hair_L": [],
+        "side_hair_R": [],
+        "back_hair": [],
+        "neck": [],
+        "upper_body": [],
+        "effect": []
+      }
+    },
+    {
+      "id": "github_live2d_cubism_web_motionsync_samples_resources_kei_vowels_kei_vowels.model3",
+      "name": "Kei_vowels",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 1,
+        "brow_L": 1,
+        "brow_R": 1,
+        "mouth_group": 1,
+        "front_hair": 1,
+        "side_hair_L": 1,
+        "side_hair_R": 1,
+        "back_hair": 1,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 0,
+        "hand": 0,
+        "accessory": 0,
+        "effect": 1,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "brow_group": [],
+        "brow_L": [],
+        "brow_R": [],
+        "mouth_group": [],
+        "front_hair": [],
+        "side_hair_L": [],
+        "side_hair_R": [],
+        "back_hair": [],
+        "neck": [],
+        "upper_body": [],
+        "effect": []
+      }
+    },
+    {
+      "id": "github_live2d_garage_cubism_web_ar_sample_assets_models_rice_rice.model3",
+      "name": "Rice",
+      "analysis_mode": "RUNTIME_ONLY",
+      "confidence": "RUNTIME_INFERRED",
+      "taxonomy_evidence_type": "RUNTIME_PARAMETER_INFERRED",
+      "taxonomy_counts": {
+        "face_base": 1,
+        "eye_group": 1,
+        "eye_L": 1,
+        "eye_R": 1,
+        "brow_group": 0,
+        "brow_L": 0,
+        "brow_R": 0,
+        "mouth_group": 0,
+        "front_hair": 1,
+        "side_hair_L": 0,
+        "side_hair_R": 0,
+        "back_hair": 0,
+        "neck": 1,
+        "upper_body": 1,
+        "shoulder_arm": 1,
+        "hand": 0,
+        "accessory": 1,
+        "effect": 1,
+        "clothing": 0,
+        "other": 0
+      },
+      "taxonomy_names": {
+        "face_base": [],
+        "eye_group": [],
+        "eye_L": [],
+        "eye_R": [],
+        "front_hair": [],
+        "neck": [],
+        "upper_body": [],
+        "shoulder_arm": [],
+        "accessory": [],
+        "effect": []
+      }
+    }
+  ]
+}

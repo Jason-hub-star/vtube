@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T15:27:25.898634+00:00",
+  "id": "github_live2d_cubism_native_samples_samples_resources_mark_mark.model3",
+  "name": "Mark",
+  "source_url": "https://github.com/Live2D/CubismNativeSamples",
+  "source_type": "OFFICIAL_GITHUB_SAMPLE",
+  "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+  "analysis_mode": "RUNTIME_ONLY",
+  "official_profile_key": "mark",
+  "analysis_safety_notes": [],
+  "has_cmo3": false,
+  "has_moc3": true,
+  "has_model3_json": true,
+  "has_physics3_json": true,
+  "has_psd": false,
+  "local_paths": {
+    "motion3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/motions/mark_m01.motion3.json",
+        "exists": true,
+        "size_bytes": 28711
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/motions/mark_m02.motion3.json",
+        "exists": true,
+        "size_bytes": 18717
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/motions/mark_m03.motion3.json",
+        "exists": true,
+        "size_bytes": 9201
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/motions/mark_m04.motion3.json",
+        "exists": true,
+        "size_bytes": 15897
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/motions/mark_m05.motion3.json",
+        "exists": true,
+        "size_bytes": 13054
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/motions/mark_m06.motion3.json",
+        "exists": true,
+        "size_bytes": 8451
+      }
+    ],
+    "cdi3_json": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/Mark.cdi3.json",
+      "exists": true,
+      "size_bytes": 2590
+    },
+    "model3_json": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/Mark.model3.json",
+      "exists": true,
+      "size_bytes": 1119
+    },
+    "moc3": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/Mark.moc3",
+      "exists": true,
+      "size_bytes": 124736
+    },
+    "physics3_json": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/Mark.physics3.json",
+      "exists": true,
+      "size_bytes": 2198
+    }
+  },
+  "cmo3": {
+    "status": "NOT_REQUESTED"
+  },
+  "moc3": {
+    "present": true,
+    "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/Mark.moc3",
+    "size_bytes": 124736,
+    "sha256": "f6351429bd3dd655ac95d1027e463ae415e99e2b1b43431a9662fcd316373e9e",
+    "py_moc3_status": "PASS",
+    "parameter_count": 21,
+    "art_mesh_count": 30,
+    "parameter_ids": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamEyeLOpen",
+      "ParamEyeROpen",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamBrowLY",
+      "ParamBrowRY",
+      "ParamMouthOpenY",
+      "ParamArmL",
+      "ParamArmR",
+      "ParamLeftLeg",
+      "ParamRightLeg",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBodyAngleZ",
+      "ParamBreath",
+      "ParamHairFront",
+      "ParamHairSide",
+      "ParamHairBack"
+    ],
+    "art_mesh_ids_sample": [
+      "Hair2",
+      "BrowR",
+      "BrowL",
+      "EyeL1",
+      "EyeL3",
+      "EyeL4",
+      "EyeR1",
+      "EyeR2",
+      "EyeR3",
+      "EyeR4",
+      "EyeR5",
+      "Hair4",
+      "Mouth1",
+      "Mouth3",
+      "Mouth4",
+      "Mouth5",
+      "Body",
+      "LegL",
+      "LegR",
+      "ArmL",
+      "ArmR",
+      "Hair5",
+      "EarR",
+      "Face",
+      "EarL",
+      "Hair3",
+      "EyeL5",
+      "Hair1",
+      "Mouth2",
+      "EyeL2"
+    ]
+  },
+  "runtime_json": {
+    "model3": {
+      "present": true,
+      "version": 3,
+      "moc": "Mark.moc3",
+      "texture_count": 1,
+      "has_physics": true,
+      "has_pose": false,
+      "has_display_info": true,
+      "has_user_data": true,
+      "expression_count": 0,
+      "motion_group_count": 1,
+      "motion_count": 6,
+      "group_count": 2,
+      "parameter_ids": [
+        "ParamEyeLOpen",
+        "ParamEyeROpen"
+      ],
+      "file_references": {
+        "Moc": "Mark.moc3",
+        "Textures": [
+          "Mark.2048/texture_00.png"
+        ],
+        "Physics": "Mark.physics3.json",
+        "UserData": "Mark.userdata3.json",
+        "DisplayInfo": "Mark.cdi3.json",
+        "Motions": {
+          "Idle": [
+            {
+              "File": "motions/mark_m01.motion3.json",
+              "FadeInTime": 0.5,
+              "FadeOutTime": 0.5
+            },
+            {
+              "File": "motions/mark_m02.motion3.json",
+              "FadeInTime": 0.5,
+              "FadeOutTime": 0.5
+            },
+            {
+              "File": "motions/mark_m03.motion3.json",
+              "FadeInTime": 0.5,
+              "FadeOutTime": 0.5
+            },
+            {
+              "File": "motions/mark_m04.motion3.json",
+              "FadeInTime": 0.5,
+              "FadeOutTime": 0.5
+            },
+            {
+              "File": "motions/mark_m05.motion3.json",
+              "FadeInTime": 0.5,
+              "FadeOutTime": 0.5
+            },
+            {
+              "File": "motions/mark_m06.motion3.json",
+              "FadeInTime": 0.5,
+              "FadeOutTime": 0.5
+            }
+          ]
+        }
+      }
+    },
+    "physics3": {
+      "present": true,
+      "version": 3,
+      "physics_group_count": 1,
+      "physics_input_count": 4,
+      "physics_output_count": 3,
+      "physics_vertex_count": 2,
+      "groups": [
+        {
+          "index": 0,
+          "id": "PhysicsSetting1",
+          "input_count": 4,
+          "output_count": 3,
+          "vertex_count": 2
+        }
+      ]
+    },
+    "cdi3": {
+      "present": true,
+      "parameter_display_count": 21,
+      "part_display_count": 17
+    },
+    "motion3_count": 6,
+    "exp3_count": 0,
+    "pose3_present": false,
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 30,
+    "parts": 0,
+    "parameters": 21,
+    "warp_deformers": 0,
+    "rotation_deformers": 0,
+    "keyform_bindings": 0,
+    "keyform_grids": 0,
+    "glue": 0,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": false,
+    "pose": false,
+    "expression": false,
+    "motion": true,
+    "physics": true
+  },
+  "structure_hints": {
+    "hair": 1,
+    "eye": 1,
+    "mouth": 1,
+    "body": 1,
+    "arm": 1
+  },
+  "reuse_decision": "REFERENCE_ONLY",
+  "notes": [
+    "Official Live2D Cubism Native SDK samples. Runtime resources only.",
+    "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+  ],
+  "structure_report_path": null
+}

@@ -1,0 +1,758 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T14:48:31.288597+00:00",
+  "id": "mao_pro_ko_mao_pro_t06",
+  "name": "mao_pro_t06",
+  "source_url": "https://www.live2d.com/ko/learn/sample/",
+  "source_type": "OFFICIAL_SAMPLE_ZIP",
+  "license_status": "OFFICIAL_TERMS_ACCEPTED_BY_USER",
+  "analysis_mode": "FULL_STRUCTURE",
+  "official_profile_key": "mao",
+  "analysis_safety_notes": [],
+  "has_cmo3": true,
+  "has_moc3": true,
+  "has_model3_json": true,
+  "has_physics3_json": true,
+  "has_psd": false,
+  "local_paths": {
+    "pose3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/mao_pro.pose3.json",
+      "exists": true,
+      "size_bytes": 254
+    },
+    "cmo3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/mao_pro_t06.cmo3",
+      "exists": true,
+      "size_bytes": 70523521
+    },
+    "physics3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/mao_pro.physics3.json",
+      "exists": true,
+      "size_bytes": 21895
+    },
+    "moc3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/mao_pro.moc3",
+      "exists": true,
+      "size_bytes": 870272
+    },
+    "cdi3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/mao_pro.cdi3.json",
+      "exists": true,
+      "size_bytes": 16299
+    },
+    "exp3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/expressions/exp_01.exp3.json",
+        "exists": true,
+        "size_bytes": 1981
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/expressions/exp_02.exp3.json",
+        "exists": true,
+        "size_bytes": 1981
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/expressions/exp_03.exp3.json",
+        "exists": true,
+        "size_bytes": 1981
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/expressions/exp_04.exp3.json",
+        "exists": true,
+        "size_bytes": 1985
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/expressions/exp_05.exp3.json",
+        "exists": true,
+        "size_bytes": 1986
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/expressions/exp_06.exp3.json",
+        "exists": true,
+        "size_bytes": 1985
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/expressions/exp_07.exp3.json",
+        "exists": true,
+        "size_bytes": 1987
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/expressions/exp_08.exp3.json",
+        "exists": true,
+        "size_bytes": 1982
+      }
+    ],
+    "model3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/mao_pro.model3.json",
+      "exists": true,
+      "size_bytes": 1645
+    },
+    "motion3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/motions/mtn_01.motion3.json",
+        "exists": true,
+        "size_bytes": 27147
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/motions/mtn_02.motion3.json",
+        "exists": true,
+        "size_bytes": 23760
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/motions/mtn_03.motion3.json",
+        "exists": true,
+        "size_bytes": 22428
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/motions/mtn_04.motion3.json",
+        "exists": true,
+        "size_bytes": 26840
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/motions/special_01.motion3.json",
+        "exists": true,
+        "size_bytes": 33723
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/motions/special_02.motion3.json",
+        "exists": true,
+        "size_bytes": 41295
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/motions/special_03.motion3.json",
+        "exists": true,
+        "size_bytes": 47803
+      }
+    ]
+  },
+  "cmo3": {
+    "status": "PASS",
+    "returncode": 0,
+    "json": "experiments/reference-model-structure-001/models/mao_pro_ko_mao_pro_t06/cmo3_structure_report.json",
+    "markdown": "experiments/reference-model-structure-001/models/mao_pro_ko_mao_pro_t06/cmo3_structure_report.md",
+    "stdout": "[cmo3-structure] WARN\n[cmo3-structure] json: /Users/family/jason/Vtube/experiments/reference-model-structure-001/models/mao_pro_ko_mao_pro_t06/cmo3_structure_report.json\n[cmo3-structure] md:   /Users/family/jason/Vtube/experiments/reference-model-structure-001/models/mao_pro_ko_mao_pro_t06/cmo3_structure_report.md",
+    "stderr": "",
+    "cmo3_status": "WARN",
+    "counts": {
+      "art_meshes": 262,
+      "parts": 33,
+      "parameters": 128,
+      "warp_deformers": 116,
+      "rotation_deformers": 59,
+      "keyform_bindings": 497,
+      "keyform_grids": 479,
+      "glue": 7,
+      "masks": 0
+    },
+    "parameter_ids": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamEyeLOpen",
+      "ParamEyeLSmile",
+      "ParamEyeROpen",
+      "ParamEyeRSmile",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamBrowLY",
+      "ParamBrowRY",
+      "ParamBrowLX",
+      "ParamBrowRX",
+      "ParamBrowLAngle",
+      "ParamBrowRAngle",
+      "ParamBrowLForm",
+      "ParamBrowRForm",
+      "ParamCheek",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBodyAngleZ",
+      "ParamBreath",
+      "ParamHairFront",
+      "ParamHairSideR",
+      "ParamHairBack",
+      "ParamEyeBallForm",
+      "ParamEyeEffect",
+      "ParamHairFrontFuwa",
+      "ParamHairSideFuwa",
+      "ParamHairBackFuwa",
+      "ParamWing",
+      "ParamAccessory1",
+      "ParamString",
+      "ParamRobeR",
+      "ParamAllX",
+      "ParamAllY",
+      "ParamAllRotate",
+      "ParamAccessory2",
+      "ParamRobeFuwa",
+      "ParamHatBrim",
+      "ParamArmRA01",
+      "ParamArmRA02",
+      "ParamArmRA03",
+      "ParamHandRA",
+      "ParamArmLA01",
+      "ParamArmLA02",
+      "ParamArmLA03",
+      "ParamHandLA",
+      "ParamArmLB01",
+      "ParamArmLB02",
+      "ParamArmLB03",
+      "ParamHandLB",
+      "ParamArmRB01",
+      "ParamArmRB02",
+      "ParamArmRB03",
+      "ParamHandRB",
+      "ParamWandRotate",
+      "ParamHairSideL",
+      "ParamRobeL",
+      "ParamAura",
+      "ParamAuraColor1",
+      "ParamHealLight",
+      "ParamHealLightOn",
+      "ParamSmoke",
+      "ParamInkDrop",
+      "ParamInkDropOn",
+      "ParamFaceInkOn",
+      "ParamWandInk",
+      "ParamHeartColorRainbow",
+      "ParamHeartColorLight",
+      "ParamHeartColorHeal",
+      "ParamHeartBackHealOn",
+      "ParamHeartHealOn",
+      "ParamHeartDrow",
+      "ParamHeartLight",
+      "ParamHeartMissOn",
+      "ParamHeartBackMissOn",
+      "ParamAuraOn",
+      "ParamA",
+      "ParamI",
+      "ParamU",
+      "ParamE",
+      "ParamO",
+      "ParamMouthDown",
+      "ParamMouthAngry",
+      "ParamMouthAngryLine",
+      "ParamMouthUp",
+      "ParamHatForm",
+      "ParamInkDropRotate",
+      "ParamHeartLightColor",
+      "ParamExplosionLightCharge",
+      "ParamExplosionChargeOn",
+      "ParamMagicPositionX",
+      "ParamMagicPositionY",
+      "ParamExplosion",
+      "ParamLeftShoulderUp",
+      "ParamRightShoulderUp",
+      "ParamHeartLightOn",
+      "ParamSmokeOn",
+      "ParamWandInkColorRainbow",
+      "ParamWandInkColorHeal",
+      "ParamHeartSize",
+      "ParamAllColor1",
+      "ParamoHairMesh",
+      "ParamRibbon",
+      "ParamHairBackL",
+      "ParamHatTop",
+      "ParamHairBackR",
+      "ParamEyeRForm",
+      "ParamEyeLForm",
+      "ParamArmRB02Y",
+      "ParamExplosionOn",
+      "ParamRabbitAppearance",
+      "ParamRabbitY",
+      "ParamRabbitX",
+      "ParamRabbitDirection",
+      "ParamRabbitLight",
+      "ParamRabbitLightSize",
+      "ParamRabbitDraworder",
+      "ParamAllColor2",
+      "ParamRabbitSize",
+      "ParamRabbitEar",
+      "ParamRabbitRotate",
+      "ParamRabbitElimination",
+      "ParamAuraColor2",
+      "ParamStrengthenLight",
+      "ParamStrengthenLightOn",
+      "ParamStrengthenLightMove"
+    ],
+    "part_names": [
+      "Root Part",
+      "다리",
+      "[밑그림]",
+      "오른팔 B",
+      "왼팔 B",
+      "오른팔 A",
+      "지팡이 B",
+      "로브",
+      "파커",
+      "코어",
+      "왼팔 A",
+      "눈알",
+      "목",
+      "귀",
+      "얼굴",
+      "입",
+      "코",
+      "뺨",
+      "눈",
+      "뒷머리",
+      "앞머리",
+      "옆머리",
+      "모자",
+      "잉크",
+      "연기",
+      "폭발광",
+      "아우라",
+      "빛",
+      "하트",
+      "눈썹",
+      "지팡이 A",
+      "토끼",
+      "이펙트"
+    ]
+  },
+  "moc3": {
+    "present": true,
+    "path": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/mao_pro.moc3",
+    "size_bytes": 870272,
+    "sha256": "247d028f9900be2a46e4530816ece5749524d35013ba77424bd943598e0e54ff",
+    "py_moc3_status": "PASS",
+    "parameter_count": 128,
+    "art_mesh_count": 260,
+    "parameter_ids": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamCheek",
+      "ParamFaceInkOn",
+      "ParamEyeLOpen",
+      "ParamEyeLSmile",
+      "ParamEyeLForm",
+      "ParamEyeROpen",
+      "ParamEyeRSmile",
+      "ParamEyeRForm",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamEyeBallForm",
+      "ParamEyeEffect",
+      "ParamBrowLY",
+      "ParamBrowRY",
+      "ParamBrowLX",
+      "ParamBrowRX",
+      "ParamBrowLAngle",
+      "ParamBrowRAngle",
+      "ParamBrowLForm",
+      "ParamBrowRForm",
+      "ParamA",
+      "ParamI",
+      "ParamU",
+      "ParamE",
+      "ParamO",
+      "ParamMouthUp",
+      "ParamMouthDown",
+      "ParamMouthAngry",
+      "ParamMouthAngryLine",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBodyAngleZ",
+      "ParamBreath",
+      "ParamLeftShoulderUp",
+      "ParamRightShoulderUp",
+      "ParamArmLA01",
+      "ParamArmLA02",
+      "ParamArmLA03",
+      "ParamHandLA",
+      "ParamArmRA01",
+      "ParamArmRA02",
+      "ParamArmRA03",
+      "ParamWandRotate",
+      "ParamHandRA",
+      "ParamInkDrop",
+      "ParamInkDropRotate",
+      "ParamInkDropOn",
+      "ParamArmLB01",
+      "ParamArmLB02",
+      "ParamArmLB03",
+      "ParamHandLB",
+      "ParamHatForm",
+      "ParamArmRB01",
+      "ParamArmRB02",
+      "ParamArmRB02Y",
+      "ParamArmRB03",
+      "ParamHandRB",
+      "ParamAllX",
+      "ParamAllY",
+      "ParamAllRotate",
+      "ParamHairFront",
+      "ParamHairSideL",
+      "ParamHairSideR",
+      "ParamHairBack",
+      "ParamHairBackR",
+      "ParamHairBackL",
+      "ParamoHairMesh",
+      "ParamHairFrontFuwa",
+      "ParamHairSideFuwa",
+      "ParamHairBackFuwa",
+      "ParamWing",
+      "ParamRibbon",
+      "ParamHatBrim",
+      "ParamHatTop",
+      "ParamAccessory1",
+      "ParamAccessory2",
+      "ParamString",
+      "ParamRobeL",
+      "ParamRobeR",
+      "ParamRobeFuwa",
+      "ParamHeartMissOn",
+      "ParamHeartBackMissOn",
+      "ParamHeartColorRainbow",
+      "ParamHeartHealOn",
+      "ParamHeartBackHealOn",
+      "ParamHeartColorHeal",
+      "ParamHeartDrow",
+      "ParamHeartSize",
+      "ParamHeartColorLight",
+      "ParamWandInkColorRainbow",
+      "ParamWandInkColorHeal",
+      "ParamWandInk",
+      "ParamSmokeOn",
+      "ParamSmoke",
+      "ParamExplosionChargeOn",
+      "ParamExplosionLightCharge",
+      "ParamExplosionOn",
+      "ParamExplosion",
+      "ParamRabbitElimination",
+      "ParamRabbitAppearance",
+      "ParamRabbitSize",
+      "ParamRabbitDraworder",
+      "ParamRabbitEar",
+      "ParamRabbitDirection",
+      "ParamRabbitLight",
+      "ParamRabbitLightSize",
+      "ParamRabbitX",
+      "ParamRabbitY",
+      "ParamRabbitRotate",
+      "ParamAuraOn",
+      "ParamAura",
+      "ParamAuraColor1",
+      "ParamAuraColor2",
+      "ParamHeartLightOn",
+      "ParamHeartLight",
+      "ParamHeartLightColor",
+      "ParamHealLightOn",
+      "ParamHealLight",
+      "ParamStrengthenLightOn",
+      "ParamStrengthenLight",
+      "ParamStrengthenLightMove",
+      "ParamMagicPositionX",
+      "ParamMagicPositionY",
+      "ParamAllColor1",
+      "ParamAllColor2"
+    ],
+    "art_mesh_ids_sample": [
+      "ArtMesh121",
+      "ArtMesh122",
+      "ArtMesh124",
+      "ArtMesh125",
+      "ArtMesh126",
+      "ArtMesh127",
+      "ArtMesh128",
+      "ArtMesh129",
+      "ArtMesh130",
+      "ArtMesh131",
+      "ArtMesh132",
+      "ArtMesh133",
+      "ArtMesh135",
+      "ArtMesh136",
+      "ArtMesh137",
+      "ArtMesh144",
+      "ArtMesh145",
+      "ArtMesh147",
+      "ArtMesh149",
+      "ArtMesh150",
+      "ArtMesh151",
+      "ArtMesh152",
+      "ArtMesh157",
+      "ArtMesh158",
+      "ArtMesh159",
+      "ArtMesh160",
+      "ArtMesh161",
+      "ArtMesh153",
+      "ArtMesh154",
+      "ArtMesh155",
+      "ArtMesh156",
+      "ArtMesh163",
+      "ArtMesh164",
+      "ArtMesh165",
+      "ArtMesh166",
+      "ArtMesh179",
+      "ArtMesh180",
+      "ArtMesh119",
+      "ArtMesh123",
+      "ArtMesh118",
+      "ArtMesh172",
+      "ArtMesh173",
+      "ArtMesh181",
+      "ArtMesh182",
+      "ArtMesh162",
+      "ArtMesh148",
+      "ArtMesh139",
+      "ArtMesh134",
+      "ArtMesh197",
+      "ArtMesh200"
+    ]
+  },
+  "runtime_json": {
+    "model3": {
+      "present": true,
+      "version": 3,
+      "moc": "mao_pro.moc3",
+      "texture_count": 1,
+      "has_physics": true,
+      "has_pose": true,
+      "has_display_info": true,
+      "has_user_data": false,
+      "expression_count": 8,
+      "motion_group_count": 2,
+      "motion_count": 7,
+      "group_count": 2,
+      "parameter_ids": [
+        "ParamA",
+        "ParamEyeLOpen",
+        "ParamEyeROpen"
+      ],
+      "file_references": {
+        "Moc": "mao_pro.moc3",
+        "Textures": [
+          "mao_pro.4096/texture_00.png"
+        ],
+        "Physics": "mao_pro.physics3.json",
+        "Pose": "mao_pro.pose3.json",
+        "DisplayInfo": "mao_pro.cdi3.json",
+        "Expressions": [
+          {
+            "Name": "exp_01",
+            "File": "expressions/exp_01.exp3.json"
+          },
+          {
+            "Name": "exp_02",
+            "File": "expressions/exp_02.exp3.json"
+          },
+          {
+            "Name": "exp_03",
+            "File": "expressions/exp_03.exp3.json"
+          },
+          {
+            "Name": "exp_04",
+            "File": "expressions/exp_04.exp3.json"
+          },
+          {
+            "Name": "exp_05",
+            "File": "expressions/exp_05.exp3.json"
+          },
+          {
+            "Name": "exp_06",
+            "File": "expressions/exp_06.exp3.json"
+          },
+          {
+            "Name": "exp_07",
+            "File": "expressions/exp_07.exp3.json"
+          },
+          {
+            "Name": "exp_08",
+            "File": "expressions/exp_08.exp3.json"
+          }
+        ],
+        "Motions": {
+          "Idle": [
+            {
+              "File": "motions/mtn_01.motion3.json"
+            }
+          ],
+          "": [
+            {
+              "File": "motions/mtn_02.motion3.json"
+            },
+            {
+              "File": "motions/mtn_03.motion3.json"
+            },
+            {
+              "File": "motions/mtn_04.motion3.json"
+            },
+            {
+              "File": "motions/special_01.motion3.json"
+            },
+            {
+              "File": "motions/special_02.motion3.json"
+            },
+            {
+              "File": "motions/special_03.motion3.json"
+            }
+          ]
+        }
+      }
+    },
+    "physics3": {
+      "present": true,
+      "version": 3,
+      "physics_group_count": 16,
+      "physics_input_count": 43,
+      "physics_output_count": 20,
+      "physics_vertex_count": 33,
+      "groups": [
+        {
+          "index": 0,
+          "id": "PhysicsSetting1",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 1,
+          "id": "PhysicsSetting2",
+          "input_count": 4,
+          "output_count": 2,
+          "vertex_count": 2
+        },
+        {
+          "index": 2,
+          "id": "PhysicsSetting3",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 3,
+          "id": "PhysicsSetting4",
+          "input_count": 4,
+          "output_count": 2,
+          "vertex_count": 2
+        },
+        {
+          "index": 4,
+          "id": "PhysicsSetting5",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 5,
+          "id": "PhysicsSetting6",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 6,
+          "id": "PhysicsSetting7",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 7,
+          "id": "PhysicsSetting8",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 8,
+          "id": "PhysicsSetting9",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 9,
+          "id": "PhysicsSetting10",
+          "input_count": 3,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 10,
+          "id": "PhysicsSetting11",
+          "input_count": 3,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 11,
+          "id": "PhysicsSetting12",
+          "input_count": 1,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 12,
+          "id": "PhysicsSetting13",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 13,
+          "id": "PhysicsSetting14",
+          "input_count": 2,
+          "output_count": 2,
+          "vertex_count": 3
+        },
+        {
+          "index": 14,
+          "id": "PhysicsSetting15",
+          "input_count": 2,
+          "output_count": 2,
+          "vertex_count": 2
+        },
+        {
+          "index": 15,
+          "id": "PhysicsSetting16",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        }
+      ]
+    },
+    "cdi3": {
+      "present": true,
+      "parameter_display_count": 128,
+      "part_display_count": 32
+    },
+    "motion3_count": 7,
+    "exp3_count": 8,
+    "pose3_present": true,
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 262,
+    "parts": 33,
+    "parameters": 128,
+    "warp_deformers": 116,
+    "rotation_deformers": 59,
+    "keyform_bindings": 497,
+    "keyform_grids": 479,
+    "glue": 7,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": true,
+    "pose": true,
+    "expression": true,
+    "motion": true,
+    "physics": true
+  },
+  "structure_hints": {
+    "hair": 1,
+    "eye": 1,
+    "mouth": 1,
+    "body": 1,
+    "arm": 2
+  },
+  "reuse_decision": "REFERENCE_ONLY",
+  "notes": [
+    "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+    "Source zip: mao_pro_ko.zip"
+  ],
+  "structure_report_path": "experiments/reference-model-structure-001/models/mao_pro_ko_mao_pro_t06/cmo3_structure_report.json"
+}

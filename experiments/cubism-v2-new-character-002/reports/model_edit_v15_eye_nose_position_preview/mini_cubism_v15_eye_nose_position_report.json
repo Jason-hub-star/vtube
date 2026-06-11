@@ -1,0 +1,292 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T07:50:05.779673+00:00",
+  "status": "V15_EYE_NOSE_POSITION_READY_FOR_VALIDATION",
+  "source_project": "experiments/cubism-v2-new-character-002/model_edit_v14_eye_detail_inbetween_preview/mini_cubism_diagnostic_project",
+  "project": "experiments/cubism-v2-new-character-002/model_edit_v15_eye_nose_position_preview/mini_cubism_diagnostic_project",
+  "source_front": "experiments/cubism-v2-new-character-002/reports/overlay_qa/source_front_2048.png",
+  "eye_shift_y": -18,
+  "eye_ball_binding_strength": {
+    "x": 7.5,
+    "y": 4.5,
+    "same_for_iris_pupil_highlight": true
+  },
+  "nose_detail": {
+    "bbox_xywh": [
+      1001,
+      757,
+      35,
+      48
+    ],
+    "alpha_nonzero": 745,
+    "alpha_coverage": 0.00017762
+  },
+  "shifted_eye_parts": {
+    "eye_L_clean_socket": {
+      "bbox_xywh": [
+        773,
+        607,
+        214,
+        124
+      ],
+      "alpha_nonzero": 22393,
+      "alpha_coverage": 0.00533891
+    },
+    "eye_R_clean_socket": {
+      "bbox_xywh": [
+        1063,
+        607,
+        214,
+        123
+      ],
+      "alpha_nonzero": 22509,
+      "alpha_coverage": 0.00536656
+    },
+    "eye_L_closed_underpaint": {
+      "bbox_xywh": [
+        773,
+        607,
+        214,
+        124
+      ],
+      "alpha_nonzero": 22393,
+      "alpha_coverage": 0.00533891
+    },
+    "eye_R_closed_underpaint": {
+      "bbox_xywh": [
+        1063,
+        607,
+        214,
+        123
+      ],
+      "alpha_nonzero": 22509,
+      "alpha_coverage": 0.00536656
+    },
+    "eye_L_open": {
+      "bbox_xywh": [
+        785,
+        619,
+        191,
+        101
+      ],
+      "alpha_nonzero": 15401,
+      "alpha_coverage": 0.00367188
+    },
+    "eye_R_open": {
+      "bbox_xywh": [
+        1075,
+        619,
+        191,
+        100
+      ],
+      "alpha_nonzero": 15373,
+      "alpha_coverage": 0.00366521
+    },
+    "eye_L_white": {
+      "bbox_xywh": [
+        785,
+        619,
+        191,
+        101
+      ],
+      "alpha_nonzero": 15401,
+      "alpha_coverage": 0.00367188
+    },
+    "eye_R_white": {
+      "bbox_xywh": [
+        1075,
+        619,
+        191,
+        100
+      ],
+      "alpha_nonzero": 15373,
+      "alpha_coverage": 0.00366521
+    },
+    "eye_L_iris": {
+      "bbox_xywh": [
+        841,
+        631,
+        88,
+        71
+      ],
+      "alpha_nonzero": 4705,
+      "alpha_coverage": 0.00112176
+    },
+    "eye_R_iris": {
+      "bbox_xywh": [
+        1123,
+        631,
+        88,
+        70
+      ],
+      "alpha_nonzero": 4599,
+      "alpha_coverage": 0.00109649
+    },
+    "eye_L_pupil": {
+      "bbox_xywh": [
+        842,
+        632,
+        86,
+        66
+      ],
+      "alpha_nonzero": 3135,
+      "alpha_coverage": 0.00074744
+    },
+    "eye_R_pupil": {
+      "bbox_xywh": [
+        1124,
+        632,
+        86,
+        66
+      ],
+      "alpha_nonzero": 3089,
+      "alpha_coverage": 0.00073647
+    },
+    "eye_L_highlight": {
+      "bbox_xywh": [
+        865,
+        648,
+        17,
+        13
+      ],
+      "alpha_nonzero": 165,
+      "alpha_coverage": 3.934e-05
+    },
+    "eye_R_highlight": {
+      "bbox_xywh": [
+        1148,
+        648,
+        17,
+        13
+      ],
+      "alpha_nonzero": 165,
+      "alpha_coverage": 3.934e-05
+    },
+    "eye_L_half_closed_lid": {
+      "bbox_xywh": [
+        795,
+        645,
+        149,
+        64
+      ],
+      "alpha_nonzero": 4045,
+      "alpha_coverage": 0.0009644
+    },
+    "eye_R_half_closed_lid": {
+      "bbox_xywh": [
+        1106,
+        664,
+        149,
+        46
+      ],
+      "alpha_nonzero": 4044,
+      "alpha_coverage": 0.00096416
+    },
+    "eye_L_lid_inbetween_080": {
+      "bbox_xywh": [
+        795,
+        645,
+        149,
+        64
+      ],
+      "alpha_nonzero": 3937,
+      "alpha_coverage": 0.00093865
+    },
+    "eye_R_lid_inbetween_080": {
+      "bbox_xywh": [
+        1106,
+        664,
+        149,
+        46
+      ],
+      "alpha_nonzero": 3894,
+      "alpha_coverage": 0.0009284
+    },
+    "eye_L_lid_inbetween_065": {
+      "bbox_xywh": [
+        795,
+        645,
+        149,
+        64
+      ],
+      "alpha_nonzero": 4045,
+      "alpha_coverage": 0.0009644
+    },
+    "eye_R_lid_inbetween_065": {
+      "bbox_xywh": [
+        1106,
+        664,
+        149,
+        46
+      ],
+      "alpha_nonzero": 4044,
+      "alpha_coverage": 0.00096416
+    },
+    "eye_L_lid_inbetween_038": {
+      "bbox_xywh": [
+        793,
+        635,
+        159,
+        70
+      ],
+      "alpha_nonzero": 3477,
+      "alpha_coverage": 0.00082898
+    },
+    "eye_L_mostly_closed_lid": {
+      "bbox_xywh": [
+        796,
+        635,
+        153,
+        70
+      ],
+      "alpha_nonzero": 2526,
+      "alpha_coverage": 0.00060225
+    },
+    "eye_R_lid_inbetween_038": {
+      "bbox_xywh": [
+        1100,
+        656,
+        159,
+        49
+      ],
+      "alpha_nonzero": 3446,
+      "alpha_coverage": 0.00082159
+    },
+    "eye_R_mostly_closed_lid": {
+      "bbox_xywh": [
+        1106,
+        673,
+        149,
+        32
+      ],
+      "alpha_nonzero": 2518,
+      "alpha_coverage": 0.00060034
+    },
+    "eye_L_closed_lid": {
+      "bbox_xywh": [
+        793,
+        640,
+        165,
+        63
+      ],
+      "alpha_nonzero": 2721,
+      "alpha_coverage": 0.00064874
+    },
+    "eye_R_closed_lid": {
+      "bbox_xywh": [
+        1097,
+        637,
+        162,
+        62
+      ],
+      "alpha_nonzero": 2798,
+      "alpha_coverage": 0.0006671
+    }
+  },
+  "policy": {
+    "preserve_v13_mouth_pattern": true,
+    "eye_open_min": 0.27,
+    "mouth_open_y_max": 0.85,
+    "production_claim": "diagnostic only; nose and eye details require human visual QA before promotion"
+  }
+}

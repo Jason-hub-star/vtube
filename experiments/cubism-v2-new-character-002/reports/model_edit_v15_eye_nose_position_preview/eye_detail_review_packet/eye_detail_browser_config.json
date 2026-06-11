@@ -1,0 +1,77 @@
+{
+  "url": "http://127.0.0.1:56154/",
+  "framesDir": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v15_eye_nose_position_preview/eye_detail_review_packet/frames",
+  "resultPath": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v15_eye_nose_position_preview/eye_detail_review_packet/eye_detail_browser_result.json",
+  "frames": [
+    {
+      "id": "open_center",
+      "label": "open / centered iris",
+      "eyeOpen": 1.0,
+      "eyeBallX": 0.0,
+      "eyeBallY": 0.0
+    },
+    {
+      "id": "open_left",
+      "label": "open / eyeball left",
+      "eyeOpen": 1.0,
+      "eyeBallX": -1.0,
+      "eyeBallY": 0.0
+    },
+    {
+      "id": "open_right",
+      "label": "open / eyeball right",
+      "eyeOpen": 1.0,
+      "eyeBallX": 1.0,
+      "eyeBallY": 0.0
+    },
+    {
+      "id": "open_up",
+      "label": "open / eyeball up",
+      "eyeOpen": 1.0,
+      "eyeBallX": 0.0,
+      "eyeBallY": -1.0
+    },
+    {
+      "id": "open_down",
+      "label": "open / eyeball down",
+      "eyeOpen": 1.0,
+      "eyeBallX": 0.0,
+      "eyeBallY": 1.0
+    },
+    {
+      "id": "eyeopen_080",
+      "label": "in-between 0.80",
+      "eyeOpen": 0.8,
+      "eyeBallX": 0.0,
+      "eyeBallY": 0.0
+    },
+    {
+      "id": "eyeopen_065",
+      "label": "in-between 0.65",
+      "eyeOpen": 0.65,
+      "eyeBallX": 0.0,
+      "eyeBallY": 0.0
+    },
+    {
+      "id": "eyeopen_050",
+      "label": "in-between 0.50",
+      "eyeOpen": 0.5,
+      "eyeBallX": 0.0,
+      "eyeBallY": 0.0
+    },
+    {
+      "id": "eyeopen_038",
+      "label": "in-between 0.38",
+      "eyeOpen": 0.38,
+      "eyeBallX": 0.0,
+      "eyeBallY": 0.0
+    },
+    {
+      "id": "eyeopen_027",
+      "label": "natural close 0.27",
+      "eyeOpen": 0.27,
+      "eyeBallX": 0.0,
+      "eyeBallY": 0.0
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T09:58:08.895332+00:00",
+  "review_id": "cubism-v2-new-character-002-v22-b1-clean-base-review-001",
+  "status": "B1_RAW_CLEAN_BASE_REFERENCE_READY_FOR_VISUAL_QA",
+  "source_image": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/new_character_002_source_front.raw.png",
+  "b1_raw_image": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/raw_outputs/b1_clean_base_underpaint_reference_001.png",
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b1_clean_base_underpaint/v22_b1_clean_base_contact_sheet.png",
+  "imagegen_mode": "built_in_image_gen",
+  "image_generation": "RUN_ON_2026_06_09",
+  "prompt": "Use the provided anime VTuber source image as the identity, pose, hairstyle, outfit, line thickness, color palette, and shading reference. Create a Live2D Cubism v2_standard B1 clean-base / underpaint production reference image for the same adult cute female character.\n\nPrimary edit: preserve the exact same centered front-facing upper-body pose, hair silhouette, outfit, neck, shoulders, torso, and subtle nose/blush style, but create a clean base version where the face has no open eyes, no irises, no pupils, no eye whites, no eyelashes, no mouth line, no teeth, and no tongue. The eye socket areas and mouth area must be naturally painted skin/underpaint with continuous gradients, matching blush and face lighting, not erased patches.\n\nUnderpaint requirements: eye socket underpaint should look like natural skin behind future eyelids/eye parts; mouth base should be natural skin with no oval fill; neck, shoulder, torso, arm, and back-hair underpaint should remain coherent for later separated layers. Preserve hair occlusion and skin shadows naturally.\n\nComposition: a single coherent clean master image, same crop and framing as the source, not a part sheet, not an exploded diagram. Plain white background is acceptable. No text, no labels, no guide marks, no arrows, no UI, no watermark.\n\nStrict negatives: rectangular skin fill, oval mouth patch, visible erased-eye residue, visible erased-mouth residue, blurry smears, flat pasted skin, changed character, changed hairstyle, changed outfit, covered face, side view, extra accessories, extra hands, part names, labels, diagrams.",
+  "roi_metrics": {
+    "eye_L_feature_roi": {
+      "box": [
+        445,
+        350,
+        575,
+        445
+      ],
+      "source_feature_density": 0.458381,
+      "b1_feature_density": 0.22251,
+      "feature_density_reduction": 0.23587,
+      "status": "REVIEW_VISUALLY"
+    },
+    "eye_R_feature_roi": {
+      "box": [
+        675,
+        350,
+        805,
+        445
+      ],
+      "source_feature_density": 0.408421,
+      "b1_feature_density": 0.157004,
+      "feature_density_reduction": 0.251417,
+      "status": "PASS_REDUCED_FEATURE_RESIDUE"
+    },
+    "mouth_feature_roi": {
+      "box": [
+        565,
+        500,
+        695,
+        565
+      ],
+      "source_feature_density": 0.004142,
+      "b1_feature_density": 0.0,
+      "feature_density_reduction": 0.004142,
+      "status": "PASS_REDUCED_FEATURE_RESIDUE"
+    }
+  },
+  "manual_visual_review": {
+    "status": "CODEX_VISUAL_FIRST_PASS_PASS_RAW_REFERENCE",
+    "notes": [
+      "Open eyes, irises, eye whites, lashes, mouth line, teeth, and tongue are removed from the generated raw reference.",
+      "Eye and mouth underpaint regions read as continuous skin gradients rather than the previous oval/rectangular patch failure.",
+      "This is still a raw B1 reference image; it must be split/normalized before being treated as 64-part material."
+    ]
+  },
+  "locked_success_criteria": [
+    "no open-eye, iris, pupil, eye-white, lash, mouth-line, teeth, or tongue residue in clean base",
+    "no rectangular or oval patch boundary around eyes or mouth",
+    "underpaint is suitable for later blink, mouth-open, body-angle, and hair-motion gaps"
+  ],
+  "limits": [
+    "Not a final full-canvas RGBA 64-part layer pack.",
+    "Does not yet create all B1 expected outputs as separated layers.",
+    "Does not unlock B2/B3/B4/B5 promotion by itself; it provides the clean-base reference needed for those generations."
+  ],
+  "next_action": [
+    "Use this B1 raw reference as the clean-base style/input when generating or splitting B1 expected outputs.",
+    "Normalize/split B1 expected outputs into full-canvas RGBA layers.",
+    "Run contact-sheet and overlay QA before accepting B1 as material PASS."
+  ],
+  "self_review": {
+    "source_exists": true,
+    "b1_raw_exists": true,
+    "source_size": [
+      1254,
+      1254
+    ],
+    "b1_raw_size": [
+      1254,
+      1254
+    ],
+    "same_size_as_source": true,
+    "roi_count": 3,
+    "roi_feature_residue_reduced": true,
+    "status": "PASS"
+  }
+}

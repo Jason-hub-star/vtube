@@ -1,0 +1,389 @@
+{
+  "ok": true,
+  "results": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      "poses": [
+        {
+          "pose": "neutral",
+          "parameters": {},
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v4_strict_mouth/mini_cubism_diagnostic_project/pose_sweep_v1/screenshots/desktop_neutral.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "b1424218",
+            "nonBackground": 4194302,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "angle_left",
+          "parameters": {
+            "ParamAngleX": -30
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v4_strict_mouth/mini_cubism_diagnostic_project/pose_sweep_v1/screenshots/desktop_angle_left.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "b1424218",
+            "nonBackground": 4194302,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "REVISE",
+          "messages": [
+            "pose barely differs from neutral"
+          ]
+        },
+        {
+          "pose": "angle_right",
+          "parameters": {
+            "ParamAngleX": 30
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v4_strict_mouth/mini_cubism_diagnostic_project/pose_sweep_v1/screenshots/desktop_angle_right.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "b1424218",
+            "nonBackground": 4194302,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "REVISE",
+          "messages": [
+            "pose barely differs from neutral"
+          ]
+        },
+        {
+          "pose": "eye_l_close",
+          "parameters": {
+            "ParamEyeLOpen": 0
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v4_strict_mouth/mini_cubism_diagnostic_project/pose_sweep_v1/screenshots/desktop_eye_l_close.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "b1424218",
+            "nonBackground": 4194302,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "REVISE",
+          "messages": [
+            "pose barely differs from neutral"
+          ]
+        },
+        {
+          "pose": "eye_r_close",
+          "parameters": {
+            "ParamEyeROpen": 0
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v4_strict_mouth/mini_cubism_diagnostic_project/pose_sweep_v1/screenshots/desktop_eye_r_close.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "b1424218",
+            "nonBackground": 4194302,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "REVISE",
+          "messages": [
+            "pose barely differs from neutral"
+          ]
+        },
+        {
+          "pose": "mouth_open",
+          "parameters": {
+            "ParamMouthOpenY": 1
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v4_strict_mouth/mini_cubism_diagnostic_project/pose_sweep_v1/screenshots/desktop_mouth_open.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "b1424218",
+            "nonBackground": 4194302,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "REVISE",
+          "messages": [
+            "pose barely differs from neutral"
+          ]
+        },
+        {
+          "pose": "hair_swing",
+          "parameters": {
+            "ParamHairFront": 1
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v4_strict_mouth/mini_cubism_diagnostic_project/pose_sweep_v1/screenshots/desktop_hair_swing.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "346034f4",
+            "nonBackground": 4194302,
+            "alphaPixels": 4194304,
+            "diffPixels": 19498,
+            "totalAbsDiff": 3079555,
+            "changedRatio": 0.004648685455322266,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "poses": [
+        {
+          "pose": "neutral",
+          "parameters": {},
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v4_strict_mouth/mini_cubism_diagnostic_project/pose_sweep_v1/screenshots/mobile_neutral.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "b1424218",
+            "nonBackground": 4194302,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "angle_left",
+          "parameters": {
+            "ParamAngleX": -30
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v4_strict_mouth/mini_cubism_diagnostic_project/pose_sweep_v1/screenshots/mobile_angle_left.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "b1424218",
+            "nonBackground": 4194302,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "REVISE",
+          "messages": [
+            "pose barely differs from neutral"
+          ]
+        },
+        {
+          "pose": "angle_right",
+          "parameters": {
+            "ParamAngleX": 30
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v4_strict_mouth/mini_cubism_diagnostic_project/pose_sweep_v1/screenshots/mobile_angle_right.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "b1424218",
+            "nonBackground": 4194302,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "REVISE",
+          "messages": [
+            "pose barely differs from neutral"
+          ]
+        },
+        {
+          "pose": "eye_l_close",
+          "parameters": {
+            "ParamEyeLOpen": 0
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v4_strict_mouth/mini_cubism_diagnostic_project/pose_sweep_v1/screenshots/mobile_eye_l_close.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "b1424218",
+            "nonBackground": 4194302,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "REVISE",
+          "messages": [
+            "pose barely differs from neutral"
+          ]
+        },
+        {
+          "pose": "eye_r_close",
+          "parameters": {
+            "ParamEyeROpen": 0
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v4_strict_mouth/mini_cubism_diagnostic_project/pose_sweep_v1/screenshots/mobile_eye_r_close.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "b1424218",
+            "nonBackground": 4194302,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "REVISE",
+          "messages": [
+            "pose barely differs from neutral"
+          ]
+        },
+        {
+          "pose": "mouth_open",
+          "parameters": {
+            "ParamMouthOpenY": 1
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v4_strict_mouth/mini_cubism_diagnostic_project/pose_sweep_v1/screenshots/mobile_mouth_open.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "b1424218",
+            "nonBackground": 4194302,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "REVISE",
+          "messages": [
+            "pose barely differs from neutral"
+          ]
+        },
+        {
+          "pose": "hair_swing",
+          "parameters": {
+            "ParamHairFront": 1
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v4_strict_mouth/mini_cubism_diagnostic_project/pose_sweep_v1/screenshots/mobile_hair_swing.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "346034f4",
+            "nonBackground": 4194302,
+            "alphaPixels": 4194304,
+            "diffPixels": 19498,
+            "totalAbsDiff": 3079555,
+            "changedRatio": 0.004648685455322266,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        }
+      ]
+    }
+  ]
+}

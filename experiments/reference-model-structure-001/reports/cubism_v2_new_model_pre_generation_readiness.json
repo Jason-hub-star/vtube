@@ -1,0 +1,453 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-08T00:46:38.861648+00:00",
+  "spec_id": "cubism_v2_new_model_pre_generation_readiness",
+  "status": "READY_FOR_CHARACTER_GENERATION_CHECKLIST",
+  "inputs": {
+    "part_spec": "experiments/reference-model-structure-001/reports/cubism_v2_new_model_v2_standard_part_spec.json",
+    "parameter_single_sweep": "experiments/live2d-strong-model-pattern-001/reports/strong20_parameter_single_sweep_report.json",
+    "core_report": "experiments/live2d-strong-model-pattern-001/reports/strong20_core_api_extractor_report.json",
+    "deep_report": "experiments/live2d-strong-model-pattern-001/reports/deep_reference_motion_analysis.json",
+    "runtime_metadata_extras": "experiments/reference-model-structure-001/reports/all57_runtime_metadata_extras.json"
+  },
+  "skillization_decision": {
+    "decision": "UPDATE_EXISTING_SKILL_AND_HARNESS",
+    "reason_ko": "이미 vtube-cubism-success-pattern-workflow 스킬과 vtube-live2d-strong-model-pattern 하네스가 있으므로 새 스킬을 늘리기보다 Core extractor와 parameter single sweep 절차를 기존 흐름에 추가한다.",
+    "skill_to_update": "/Users/family/.codex/skills/vtube-cubism-success-pattern-workflow/SKILL.md",
+    "harnesses_to_update": [
+      "/Users/family/jason/jason-agent-harness-template/harnesses/vtube-live2d-strong-model-pattern.md",
+      "/Users/family/jason/jason-agent-harness-template/harnesses/vtube-live2d-all57-production-design.md"
+    ],
+    "new_skill_needed": false
+  },
+  "reference_scope_decision": {
+    "decision": "DO_NOT_EXPAND_FULL_RUNTIME_BEYOND_STRONG20_FOR_V2_STANDARD_NOW",
+    "reason_ko": "all57은 이미 static structure/parameter/deformer/physics 설계표에 반영됐고, strong20은 runtime render/Core/single-parameter/motion/physics evidence를 모두 통과했다. v2_standard 첫 production 설계에는 충분하다.",
+    "analyze_more_when": [
+      "v2_rich로 넘어가서 offscreen/mask/effect-heavy 표현을 목표로 할 때",
+      "비인간/SD/측면 포즈/큰 팔 스위칭 모델을 목표로 할 때",
+      "새 캐릭터 디자인이 strong20 범위 밖의 장식, 소품, 긴 의상, 특수 머리카락 구조를 요구할 때"
+    ],
+    "next_optional_reference_batch": [
+      "Ren/Rice/Mao 같은 high mask/offscreen/effect 모델 재분석",
+      "Miku/Hiyori 같은 long hair physics 모델 단독 심화",
+      "Kei mouth/vowel 모델 lip-sync 심화"
+    ]
+  },
+  "part_spec_decision": {
+    "decision": "KEEP_64_PART_V2_STANDARD",
+    "reason_ko": "parameter single sweep과 Core risk를 봐도 64파트 taxonomy는 눈/입/머리/몸각도 production gate를 커버한다. 지금은 파츠 수를 늘리지 말고 mask와 draw-order 위험을 줄이는 생성 조건을 강화한다.",
+    "part_count": 64,
+    "required_parameters_from_part_spec": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBreath",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamEyeLOpen",
+      "ParamEyeROpen",
+      "ParamHairBack",
+      "ParamHairFront",
+      "ParamHairSide",
+      "ParamMouthForm",
+      "ParamMouthOpenY"
+    ],
+    "swept_required_parameters": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamEyeLOpen",
+      "ParamEyeROpen",
+      "ParamHairBack",
+      "ParamHairFront",
+      "ParamHairSide",
+      "ParamMouthForm",
+      "ParamMouthOpenY"
+    ],
+    "not_swept_yet_but_required": [
+      "ParamBreath"
+    ]
+  },
+  "parameter_single_sweep_policy": {
+    "evidence_status": "PASS",
+    "summary": {
+      "model_count": 20,
+      "sample_count": 320,
+      "parameter_count": 27,
+      "category_counts": {
+        "body_angle": 108,
+        "eye": 156,
+        "mouth": 34,
+        "hair": 22
+      }
+    },
+    "category_summary": {
+      "body_angle": {
+        "sample_count": 108,
+        "parameter_count": 9,
+        "median_changed_ratio": 0.026783,
+        "max_changed_ratio": 0.331323,
+        "production_interpretation": "몸/머리 각도는 넓은 변화가 가능하다. 너무 큰 변화는 overhang/draw-order 위험을 같이 본다."
+      },
+      "eye": {
+        "sample_count": 156,
+        "parameter_count": 11,
+        "median_changed_ratio": 0.004109,
+        "max_changed_ratio": 0.331338,
+        "production_interpretation": "작은 변화도 정상이다. 눈은 bbox가 작으므로 L/R open, eyeball X의 비어있지 않은 변화와 위치 정렬을 본다."
+      },
+      "hair": {
+        "sample_count": 22,
+        "parameter_count": 3,
+        "median_changed_ratio": 0.040611,
+        "max_changed_ratio": 0.080211,
+        "production_interpretation": "머리는 medium 변화가 정상이다. HairFront/Side가 빈 변화면 physics/keyform 후보가 부족하다."
+      },
+      "mouth": {
+        "sample_count": 34,
+        "parameter_count": 4,
+        "median_changed_ratio": 0.024491,
+        "max_changed_ratio": 0.059225,
+        "production_interpretation": "입은 localized 변화가 정상이다. OpenY/Form 둘 다 nonzero bbox를 가져야 한다."
+      }
+    },
+    "required_g3_single_sweep_parameters_for_new_model": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamEyeLOpen",
+      "ParamEyeROpen",
+      "ParamEyeBallX",
+      "ParamMouthOpenY",
+      "ParamMouthForm",
+      "ParamHairFront",
+      "ParamHairSide"
+    ]
+  },
+  "core_runtime_policy": {
+    "evidence_status": "PASS",
+    "summary": {
+      "model_count": 20,
+      "pass_count": 20,
+      "fail_or_skip_count": 0,
+      "parameters": {
+        "count": 20,
+        "min": 25.0,
+        "median": 44.0,
+        "max": 138.0,
+        "mean": 56.4
+      },
+      "parts": {
+        "count": 20,
+        "min": 15.0,
+        "median": 19.0,
+        "max": 51.0,
+        "mean": 23.65
+      },
+      "drawables": {
+        "count": 20,
+        "min": 33.0,
+        "median": 85.0,
+        "max": 260.0,
+        "mean": 107.65
+      },
+      "masked_drawables": {
+        "count": 20,
+        "min": 0.0,
+        "median": 2.0,
+        "max": 37.0,
+        "mean": 5.8
+      },
+      "inverted_mask_drawables": {
+        "count": 20,
+        "min": 0.0,
+        "median": 0.0,
+        "max": 10.0,
+        "mean": 1.0
+      },
+      "offscreens": {
+        "count": 20,
+        "min": 0.0,
+        "median": 0.0,
+        "max": 24.0,
+        "mean": 1.2
+      }
+    },
+    "deep_core_status": "PASS_CORE_API_EXTRACTED",
+    "new_model_mask_policy": {
+      "target": "LOW_TO_MEDIUM_RISK",
+      "avoid": [
+        "inverted masks unless visually necessary",
+        "offscreen-rich effects in v2_standard",
+        "hair covering eyes/mouth so much that clipping becomes mandatory"
+      ],
+      "allowed": [
+        "small eye/mouth clipping masks when needed",
+        "simple draw-order bands for hair_front/face/eye/mouth/body"
+      ]
+    }
+  },
+  "runtime_metadata_extras_policy": {
+    "evidence_status": "PASS",
+    "summary": {
+      "model_count": 57,
+      "coverage": {
+        "model3_json": 50,
+        "cdi3_json": 50,
+        "pose3_json": 22,
+        "userdata3_json": 6,
+        "exp3_json_models": 19,
+        "motionsync3_json": 4,
+        "hit_area_models": 25,
+        "lipsync_group_models": 39,
+        "eyeblink_group_models": 47
+      },
+      "averages": {
+        "cdi_parameter_display_count": 59.42,
+        "cdi_part_display_count": 28.24,
+        "pose_group_count": 2,
+        "expression_count": 7.84,
+        "hit_area_count": 1.48
+      },
+      "expression_blend_counts": {
+        "Add": 2724,
+        "Multiply": 92
+      },
+      "top_expression_parameters": [
+        [
+          "ParamBrowLY",
+          84
+        ],
+        [
+          "ParamBrowRY",
+          84
+        ],
+        [
+          "ParamEyeLOpen",
+          82
+        ],
+        [
+          "ParamEyeROpen",
+          82
+        ],
+        [
+          "ParamBrowRX",
+          78
+        ],
+        [
+          "ParamBrowLX",
+          76
+        ],
+        [
+          "ParamBrowLAngle",
+          76
+        ],
+        [
+          "ParamEyeLSmile",
+          74
+        ],
+        [
+          "ParamEyeRSmile",
+          74
+        ],
+        [
+          "PARAM_EYE_L_OPEN",
+          60
+        ],
+        [
+          "PARAM_EYE_R_OPEN",
+          60
+        ],
+        [
+          "PARAM_BROW_L_ANGLE",
+          60
+        ],
+        [
+          "PARAM_BROW_R_ANGLE",
+          60
+        ],
+        [
+          "PARAM_BROW_L_Y",
+          59
+        ],
+        [
+          "PARAM_BROW_R_Y",
+          59
+        ],
+        [
+          "PARAM_BROW_L_FORM",
+          59
+        ],
+        [
+          "PARAM_BROW_R_FORM",
+          59
+        ],
+        [
+          "ParamEyeBallForm",
+          59
+        ],
+        [
+          "ParamBrowLForm",
+          58
+        ],
+        [
+          "ParamBrowRForm",
+          58
+        ]
+      ],
+      "models_with_pose_switching": [
+        "chitose_chitose_t01",
+        "haru_greeter_pro_jp_haru_greeter_t05",
+        "haru_haru_t01",
+        "mao_pro_ko_mao_pro_t06",
+        "natori_pro_ko_natori_pro_t06",
+        "shizuku_shizuku_t02",
+        "hiyori_pro_ko_hiyori_pro_t11",
+        "tororo_hijiki_hijiki_t01",
+        "tororo_hijiki_tororo_t01",
+        "nito_nito_t01",
+        "nito_ni-j.model3_runtime",
+        "nito_nico.model3_runtime",
+        "nito_nietzsche.model3_runtime",
+        "nito_nipsilon.model3_runtime",
+        "github_live2d_cubism_web_samples_samples_resources_haru_haru.model3",
+        "github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori.model3",
+        "github_live2d_cubism_web_samples_samples_resources_mao_mao.model3",
+        "github_live2d_cubism_web_samples_samples_resources_natori_natori.model3",
+        "github_live2d_cubism_native_samples_samples_resources_haru_haru.model3",
+        "github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori.model3",
+        "github_live2d_cubism_native_samples_samples_resources_mao_mao.model3",
+        "github_live2d_cubism_native_samples_samples_resources_natori_natori.model3"
+      ],
+      "models_with_expressions": [
+        "chitose_chitose_t01",
+        "epsilon_epsilon_t02",
+        "haru_haru_t01",
+        "mao_pro_ko_mao_pro_t06",
+        "natori_pro_ko_natori_pro_t06",
+        "ren_pro_ko_ren_t01",
+        "tsumiki_tsumiki_t01",
+        "izumi_izumi_anime_t01",
+        "izumi_izumi_atsu_t01",
+        "izumi_izumi_illust_t01",
+        "izumi_izumi_suisai_t01",
+        "github_live2d_cubism_web_samples_samples_resources_haru_haru.model3",
+        "github_live2d_cubism_web_samples_samples_resources_mao_mao.model3",
+        "github_live2d_cubism_web_samples_samples_resources_natori_natori.model3",
+        "github_live2d_cubism_web_samples_samples_resources_ren_ren.model3",
+        "github_live2d_cubism_native_samples_samples_resources_haru_haru.model3",
+        "github_live2d_cubism_native_samples_samples_resources_mao_mao.model3",
+        "github_live2d_cubism_native_samples_samples_resources_natori_natori.model3",
+        "github_live2d_cubism_native_samples_samples_resources_ren_ren.model3"
+      ],
+      "models_with_userdata": [
+        "github_live2d_cubism_web_samples_samples_resources_haru_haru.model3",
+        "github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori.model3",
+        "github_live2d_cubism_web_samples_samples_resources_mark_mark.model3",
+        "github_live2d_cubism_native_samples_samples_resources_haru_haru.model3",
+        "github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori.model3",
+        "github_live2d_cubism_native_samples_samples_resources_mark_mark.model3"
+      ],
+      "models_with_motionsync": [
+        "kei_ko_kei_basic_free_t02",
+        "kei_ko_kei_vowels_pro_t02",
+        "github_live2d_cubism_web_motionsync_samples_resources_kei_basic_kei_basic.model3",
+        "github_live2d_cubism_web_motionsync_samples_resources_kei_vowels_kei_vowels.model3"
+      ],
+      "production_use": {
+        "before_character_image": [
+          "cdi3의 표시 이름과 그룹은 새 모델 파츠/파라미터 명명 규칙을 사람이 읽기 쉽게 만드는 데 사용한다.",
+          "pose3는 v2_standard에서는 복잡한 팔/의상 전환을 미루고, simple shoulder/arm만 유지할 근거로 사용한다.",
+          "exp3는 기본 표정 세트와 fade 0.5초 전후의 부드러운 전환 기준으로 사용한다.",
+          "HitAreas는 runtime export 때 얼굴/몸 터치 영역을 model3.json에 넣을 체크리스트로 사용한다.",
+          "MotionSync는 Kei 계열의 고급 립싱크 참조다. v2_standard 첫 모델에서는 LipSync group만 준비하고, motionsync3는 v2_rich/고급 립싱크 단계로 미룬다."
+        ],
+        "not_blockers_for_first_image": [
+          "userdata3",
+          "motionsync3",
+          "pose3 arm switching",
+          "rich expression pack"
+        ]
+      }
+    },
+    "new_model_before_image_policy": {
+      "use_now": [
+        "cdi3 표시 이름/그룹을 참고해 파츠와 파라미터 이름을 사람이 읽기 좋게 정한다.",
+        "HitAreas 패턴을 참고해 얼굴/몸 터치 영역은 runtime export 체크리스트에 미리 둔다.",
+        "EyeBlink/LipSync group은 첫 모델부터 준비한다.",
+        "exp3 패턴은 기본 표정 세트와 fade 기준으로만 참고한다."
+      ],
+      "defer": [
+        "pose3 기반 복잡한 팔/의상 전환",
+        "userdata3 ArtMesh annotation",
+        "motionsync3 고급 립싱크 설정",
+        "대량 expression pack"
+      ],
+      "decision": "DO_NOT_BLOCK_FIRST_CHARACTER_IMAGE"
+    }
+  },
+  "pre_generation_checklist": [
+    {
+      "gate": "G0_CONCEPT",
+      "label_ko": "캐릭터 고르기",
+      "pass_conditions": [
+        "정면 또는 거의 정면의 상반신 캐릭터다.",
+        "눈, 입, 앞머리, 옆머리, 뒷머리, 목, 어깨/팔 경계가 한눈에 보인다.",
+        "큰 소품, 복잡한 손가락, 얼굴을 가리는 장식, 강한 투명 이펙트를 넣지 않는다.",
+        "1024/1536/2048 중 하나를 쓸 수 있지만 해상도보다 파츠 분리 가능성이 우선이다."
+      ],
+      "fail_if": [
+        "옆얼굴/극단 포즈라 반대 방향 회전 keyform을 만들기 어렵다.",
+        "머리카락이 얼굴/눈/입을 과하게 덮어 mask가 필수다.",
+        "팔이 몸통과 복잡하게 겹쳐 shoulder/arm simple 범위를 넘는다."
+      ]
+    },
+    {
+      "gate": "G1_PART_TAXONOMY",
+      "label_ko": "파츠 나누기",
+      "pass_conditions": [
+        "64파트 v2_standard taxonomy를 기준으로 face/eye/mouth/hair/body/clothing 후보가 모두 있다.",
+        "눈 L/R 각각 white/iris/pupil/highlight/lash/lid/underpaint가 있다.",
+        "입은 line/inner/lip masks/teeth/tongue/corners가 분리된다.",
+        "머리는 front/side/back이 분리되고 최소 5개 physics group에 연결 가능하다.",
+        "underpaint 후보가 face/eye/hair/body에서 누락되지 않는다."
+      ],
+      "fail_if": [
+        "한 파츠가 여러 기능을 합쳐서 ParamEyeOpen/MouthOpenY/HairFront keyform을 분리하기 어렵다.",
+        "alpha 테두리가 지저분하거나 bbox crop이 너무 빡빡하다."
+      ]
+    },
+    {
+      "gate": "G2_STRUCTURE",
+      "label_ko": "구조 자동검사",
+      "pass_conditions": [
+        "v2_standard floor: parameters >=25, warp >=35, rotation >=8, keyform >=120, physics_groups >=4.",
+        "CMO3 inspector before/after 비교에서 warp/keyform 증가가 검출된다.",
+        "Core/runtime export 후 Parameters/Parts/Drawables snapshot이 생성된다."
+      ],
+      "fail_if": [
+        "ArtMesh/Parameter만 있고 Warp/Rotation Deformer나 KeyformBinding이 0에 가깝다.",
+        "runtime은 보이지만 CMO3 구조가 shallow import 수준이다."
+      ]
+    },
+    {
+      "gate": "G3_MOTION_VISUAL",
+      "label_ko": "움직임 보기",
+      "pass_conditions": [
+        "단일 파라미터 sweep에서 ParamAngleX/Y, ParamEyeLOpen/ROpen, ParamMouthOpenY/Form, ParamHairFront/Side가 nonblank 변화를 만든다.",
+        "neutral vs extreme strip에서 눈/입/머리/몸각도 변화가 잘리고 겹치지 않는다.",
+        "mask/draw-order risk가 높은 파츠는 onion-skin 또는 before/after strip으로 사람이 확인한다."
+      ],
+      "fail_if": [
+        "파라미터를 움직여도 화면 변화가 거의 없다.",
+        "움직임은 생기지만 눈/입/머리/팔이 서로 앞뒤 순서를 깨뜨린다."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1110 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-07T22:40:44.695230+00:00",
+  "spec_id": "cubism_v2_new_model_v2_standard_part_spec",
+  "status": "SPEC_CONFIRMED",
+  "source": {
+    "production_spec": "experiments/reference-model-structure-001/reports/cubism_v2_production_design_spec.json",
+    "basis": "all57 official/reference structure baseline normalized into cubism_v2_production_design_spec schema v2"
+  },
+  "target": {
+    "tier": "v2_standard",
+    "part_count": 64,
+    "canvas_policy": "1024, 1536, or 2048 allowed; part/deformer/keyform gate is more important than fixed resolution.",
+    "character_scope": "front-facing upper-body human VTuber, clear eyes/mouth/hair/body angle, simple shoulders/arms, no heavy props/effects."
+  },
+  "source_production_spec_summary": {
+    "schema_version": 2,
+    "v2_standard_minimum_floor": {
+      "parameters": 25,
+      "warp_deformers": 35,
+      "rotation_deformers": 8,
+      "keyform_bindings": 120,
+      "physics_groups": 4
+    },
+    "v2_standard_recommended_target": {
+      "parameters": "35-55",
+      "warp_deformers": "40-65",
+      "rotation_deformers": "12-25",
+      "keyform_bindings": "160-260",
+      "physics_groups": "4-6"
+    },
+    "required_parameter_entries": 17,
+    "deformer_hierarchy_nodes": 11,
+    "physics_blueprint_groups": 6,
+    "acceptance_gates": [
+      "G0_CONCEPT",
+      "G1_PART_TAXONOMY",
+      "G2_STRUCTURE",
+      "G3_MOTION_VISUAL"
+    ]
+  },
+  "parts": [
+    {
+      "id": "body_underpaint",
+      "group": "body",
+      "label_ko": "몸 밑색",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBodyAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "body_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": "몸 각도에서 빈틈이 보이지 않게 받치는 밑색"
+    },
+    {
+      "id": "torso_base",
+      "group": "body",
+      "label_ko": "상체 기본",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBodyAngleY",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "draw_order_band": "body_mid",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "neck",
+      "group": "body",
+      "label_ko": "목",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamBodyAngleX",
+        "ParamBodyAngleY"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "draw_order_band": "body_mid",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "neck_shadow_underpaint",
+      "group": "body",
+      "label_ko": "목 그림자 밑색",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "body_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "shoulder_L",
+      "group": "body",
+      "label_ko": "왼쪽 어깨",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "draw_order_band": "body_mid",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "shoulder_R",
+      "group": "body",
+      "label_ko": "오른쪽 어깨",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "draw_order_band": "body_mid",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "arm_L_upper_simple",
+      "group": "body",
+      "label_ko": "왼쪽 간단 팔",
+      "deformer_node": "shoulder_arm_rotation",
+      "parameters": [
+        "ParamArmL/R or ParamHandL/R",
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "body_front",
+      "qa_tags": [
+        "misaligned"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "arm_R_upper_simple",
+      "group": "body",
+      "label_ko": "오른쪽 간단 팔",
+      "deformer_node": "shoulder_arm_rotation",
+      "parameters": [
+        "ParamArmL/R or ParamHandL/R",
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "body_front",
+      "qa_tags": [
+        "misaligned"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "arm_L_underpaint",
+      "group": "body",
+      "label_ko": "왼팔 밑색",
+      "deformer_node": "shoulder_arm_rotation",
+      "parameters": [
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "body_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "arm_R_underpaint",
+      "group": "body",
+      "label_ko": "오른팔 밑색",
+      "deformer_node": "shoulder_arm_rotation",
+      "parameters": [
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "body_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "face_base",
+      "group": "face_base",
+      "label_ko": "얼굴 기본",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleY",
+        "ParamAngleZ"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_mid",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "face_shadow_L",
+      "group": "face_base",
+      "label_ko": "왼쪽 얼굴 그림자",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "face_shadow_R",
+      "group": "face_base",
+      "label_ko": "오른쪽 얼굴 그림자",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "face_underpaint_L",
+      "group": "face_base",
+      "label_ko": "왼쪽 얼굴 밑색",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "face_underpaint_R",
+      "group": "face_base",
+      "label_ko": "오른쪽 얼굴 밑색",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "nose",
+      "group": "face_base",
+      "label_ko": "코",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "cheek_L",
+      "group": "face_base",
+      "label_ko": "왼쪽 볼",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "cheek_R",
+      "group": "face_base",
+      "label_ko": "오른쪽 볼",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_L_white",
+      "group": "eye_L",
+      "label_ko": "왼쪽 눈 흰자",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_back",
+      "qa_tags": [
+        "bad_alpha"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_L_iris",
+      "group": "eye_L",
+      "label_ko": "왼쪽 홍채",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_mid",
+      "qa_tags": [
+        "misaligned"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_L_pupil",
+      "group": "eye_L",
+      "label_ko": "왼쪽 동공",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_mid",
+      "qa_tags": [
+        "misaligned"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_L_highlight",
+      "group": "eye_L",
+      "label_ko": "왼쪽 눈 하이라이트",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_L_upper_lash",
+      "group": "eye_L",
+      "label_ko": "왼쪽 위 속눈썹",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [
+        "draw_order_issue"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_L_lower_lash",
+      "group": "eye_L",
+      "label_ko": "왼쪽 아래 속눈썹",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_L_closed_lid",
+      "group": "eye_L",
+      "label_ko": "왼쪽 감은 눈꺼풀",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [
+        "clipping_risk"
+      ],
+      "purpose_ko": "눈 감김 extreme에서 흰자/홍채를 가리는 키폼용"
+    },
+    {
+      "id": "eye_L_underpaint",
+      "group": "eye_L",
+      "label_ko": "왼쪽 눈 밑색",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_R_white",
+      "group": "eye_R",
+      "label_ko": "오른쪽 눈 흰자",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_back",
+      "qa_tags": [
+        "bad_alpha"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_R_iris",
+      "group": "eye_R",
+      "label_ko": "오른쪽 홍채",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_mid",
+      "qa_tags": [
+        "misaligned"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_R_pupil",
+      "group": "eye_R",
+      "label_ko": "오른쪽 동공",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_mid",
+      "qa_tags": [
+        "misaligned"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_R_highlight",
+      "group": "eye_R",
+      "label_ko": "오른쪽 눈 하이라이트",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_R_upper_lash",
+      "group": "eye_R",
+      "label_ko": "오른쪽 위 속눈썹",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [
+        "draw_order_issue"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_R_lower_lash",
+      "group": "eye_R",
+      "label_ko": "오른쪽 아래 속눈썹",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_R_closed_lid",
+      "group": "eye_R",
+      "label_ko": "오른쪽 감은 눈꺼풀",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [
+        "clipping_risk"
+      ],
+      "purpose_ko": "눈 감김 extreme에서 흰자/홍채를 가리는 키폼용"
+    },
+    {
+      "id": "eye_R_underpaint",
+      "group": "eye_R",
+      "label_ko": "오른쪽 눈 밑색",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "brow_L",
+      "group": "brow",
+      "label_ko": "왼쪽 눈썹",
+      "deformer_node": "brow_L_R_warp",
+      "parameters": [
+        "ParamBrowL/R Angle/Form/Y",
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "brow_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "brow_R",
+      "group": "brow",
+      "label_ko": "오른쪽 눈썹",
+      "deformer_node": "brow_L_R_warp",
+      "parameters": [
+        "ParamBrowL/R Angle/Form/Y",
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "brow_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "mouth_line",
+      "group": "mouth",
+      "label_ko": "입 선",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm",
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_front",
+      "qa_tags": [
+        "misaligned"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "mouth_inner",
+      "group": "mouth",
+      "label_ko": "입 안쪽",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_back",
+      "qa_tags": [
+        "bad_alpha"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "mouth_upper_lip_mask",
+      "group": "mouth",
+      "label_ko": "윗입술 마스크",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_front",
+      "qa_tags": [
+        "clipping_risk"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "mouth_lower_lip_mask",
+      "group": "mouth",
+      "label_ko": "아랫입술 마스크",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_front",
+      "qa_tags": [
+        "clipping_risk"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "mouth_teeth",
+      "group": "mouth",
+      "label_ko": "치아",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_mid",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "mouth_tongue",
+      "group": "mouth",
+      "label_ko": "혀",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_mid",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "mouth_corner_L",
+      "group": "mouth",
+      "label_ko": "왼쪽 입꼬리",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "mouth_corner_R",
+      "group": "mouth",
+      "label_ko": "오른쪽 입꼬리",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_back_base",
+      "group": "hair",
+      "label_ko": "뒷머리 기본",
+      "deformer_node": "back_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleZ",
+        "ParamHairBack"
+      ],
+      "physics_groups": [
+        "back_hair_physics"
+      ],
+      "draw_order_band": "hair_back",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_back_underpaint",
+      "group": "hair",
+      "label_ko": "뒷머리 밑색",
+      "deformer_node": "back_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamHairBack"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "hair_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_back_strand_L",
+      "group": "hair",
+      "label_ko": "왼쪽 뒷머리 가닥",
+      "deformer_node": "back_hair_warp",
+      "parameters": [
+        "ParamHairBack",
+        "ParamAngleZ"
+      ],
+      "physics_groups": [
+        "back_hair_physics"
+      ],
+      "draw_order_band": "hair_back",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_back_strand_R",
+      "group": "hair",
+      "label_ko": "오른쪽 뒷머리 가닥",
+      "deformer_node": "back_hair_warp",
+      "parameters": [
+        "ParamHairBack",
+        "ParamAngleZ"
+      ],
+      "physics_groups": [
+        "back_hair_physics"
+      ],
+      "draw_order_band": "hair_back",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_back_center",
+      "group": "hair",
+      "label_ko": "가운데 뒷머리",
+      "deformer_node": "back_hair_warp",
+      "parameters": [
+        "ParamHairBack",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "back_hair_physics"
+      ],
+      "draw_order_band": "hair_back",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_front_center",
+      "group": "hair",
+      "label_ko": "가운데 앞머리",
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleZ",
+        "ParamHairFront"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "draw_order_band": "hair_front",
+      "qa_tags": [
+        "draw_order_issue"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_front_L",
+      "group": "hair",
+      "label_ko": "왼쪽 앞머리",
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleZ",
+        "ParamHairFront"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "draw_order_band": "hair_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_front_R",
+      "group": "hair",
+      "label_ko": "오른쪽 앞머리",
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleZ",
+        "ParamHairFront"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "draw_order_band": "hair_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_front_side_L",
+      "group": "hair",
+      "label_ko": "왼쪽 앞 옆머리",
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamHairFront"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "draw_order_band": "hair_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_front_side_R",
+      "group": "hair",
+      "label_ko": "오른쪽 앞 옆머리",
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamHairFront"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "draw_order_band": "hair_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_front_tip_L",
+      "group": "hair",
+      "label_ko": "왼쪽 앞머리 끝",
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamHairFront",
+        "ParamAngleZ"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "draw_order_band": "hair_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_front_tip_R",
+      "group": "hair",
+      "label_ko": "오른쪽 앞머리 끝",
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamHairFront",
+        "ParamAngleZ"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "draw_order_band": "hair_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_side_L_outer",
+      "group": "hair",
+      "label_ko": "왼쪽 바깥 옆머리",
+      "deformer_node": "side_hair_L_R_warp",
+      "parameters": [
+        "ParamHairSide",
+        "ParamAngleX"
+      ],
+      "physics_groups": [
+        "side_hair_L_physics"
+      ],
+      "draw_order_band": "hair_side",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_side_L_inner",
+      "group": "hair",
+      "label_ko": "왼쪽 안쪽 옆머리",
+      "deformer_node": "side_hair_L_R_warp",
+      "parameters": [
+        "ParamHairSide",
+        "ParamAngleX"
+      ],
+      "physics_groups": [
+        "side_hair_L_physics"
+      ],
+      "draw_order_band": "hair_side",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_side_R_outer",
+      "group": "hair",
+      "label_ko": "오른쪽 바깥 옆머리",
+      "deformer_node": "side_hair_L_R_warp",
+      "parameters": [
+        "ParamHairSide",
+        "ParamAngleX"
+      ],
+      "physics_groups": [
+        "side_hair_R_physics"
+      ],
+      "draw_order_band": "hair_side",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_side_R_inner",
+      "group": "hair",
+      "label_ko": "오른쪽 안쪽 옆머리",
+      "deformer_node": "side_hair_L_R_warp",
+      "parameters": [
+        "ParamHairSide",
+        "ParamAngleX"
+      ],
+      "physics_groups": [
+        "side_hair_R_physics"
+      ],
+      "draw_order_band": "hair_side",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "collar_front",
+      "group": "clothing",
+      "label_ko": "앞깃",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "draw_order_band": "clothing_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "collar_shadow",
+      "group": "clothing",
+      "label_ko": "깃 그림자",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "clothing_mid",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "chest_cloth_base",
+      "group": "clothing",
+      "label_ko": "가슴 의상 기본",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "draw_order_band": "clothing_mid",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "chest_cloth_shadow",
+      "group": "clothing",
+      "label_ko": "가슴 의상 그림자",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "clothing_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    }
+  ],
+  "deferred_until_v2_rich": [
+    "complex hands/fingers",
+    "heavy props",
+    "large effects",
+    "skirt/cloth secondary rig unless design requires it",
+    "ParamA/I/U/E/O vowel rig unless lip-sync becomes a first release requirement"
+  ],
+  "self_review": {
+    "status": "PASS",
+    "checks": {
+      "production_spec_schema_v2": true,
+      "part_count_50_to_70": true,
+      "exact_target_count_64": true,
+      "no_duplicate_part_ids": true,
+      "has_face_base": true,
+      "has_eye_L": true,
+      "has_eye_R": true,
+      "eye_symmetry": true,
+      "has_brows": true,
+      "has_mouth": true,
+      "has_hair": true,
+      "has_body_and_simple_arms": true,
+      "has_underpaint_parts": true,
+      "covers_required_parameters": true,
+      "has_v2_standard_physics_groups": true,
+      "avoids_v2_rich_scope": true
+    },
+    "counts": {
+      "parts": 64,
+      "groups": {
+        "body": 10,
+        "face_base": 8,
+        "eye_L": 8,
+        "eye_R": 8,
+        "brow": 2,
+        "mouth": 8,
+        "hair": 16,
+        "clothing": 4
+      },
+      "underpaint_parts": 9,
+      "physics_groups": [
+        "back_hair_physics",
+        "body_breath_physics",
+        "front_hair_physics",
+        "side_hair_L_physics",
+        "side_hair_R_physics"
+      ],
+      "used_parameters": [
+        "ParamAngleX",
+        "ParamAngleY",
+        "ParamAngleZ",
+        "ParamArmL/R or ParamHandL/R",
+        "ParamBodyAngleX",
+        "ParamBodyAngleY",
+        "ParamBreath",
+        "ParamBrowL/R Angle/Form/Y",
+        "ParamEyeBallX",
+        "ParamEyeBallY",
+        "ParamEyeLOpen",
+        "ParamEyeROpen",
+        "ParamHairBack",
+        "ParamHairFront",
+        "ParamHairSide",
+        "ParamMouthForm",
+        "ParamMouthOpenY"
+      ]
+    },
+    "duplicates": []
+  }
+}

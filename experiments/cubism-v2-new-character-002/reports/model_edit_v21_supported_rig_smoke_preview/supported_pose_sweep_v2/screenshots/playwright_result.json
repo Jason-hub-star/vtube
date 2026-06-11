@@ -1,0 +1,319 @@
+{
+  "ok": true,
+  "results": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      "poses": [
+        {
+          "pose": "neutral",
+          "parameters": {},
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v21_supported_rig_smoke_preview/supported_pose_sweep_v2/screenshots/desktop_neutral.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "cb0c562d",
+            "nonBackground": 4194303,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "angle_left",
+          "parameters": {
+            "ParamAngleX": -30
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v21_supported_rig_smoke_preview/supported_pose_sweep_v2/screenshots/desktop_angle_left.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "be8688d6",
+            "nonBackground": 4194303,
+            "alphaPixels": 4194304,
+            "diffPixels": 1156594,
+            "totalAbsDiff": 200209462,
+            "changedRatio": 0.2757534980773926,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "angle_right",
+          "parameters": {
+            "ParamAngleX": 30
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v21_supported_rig_smoke_preview/supported_pose_sweep_v2/screenshots/desktop_angle_right.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "ec01f7e7",
+            "nonBackground": 4194303,
+            "alphaPixels": 4194304,
+            "diffPixels": 1156588,
+            "totalAbsDiff": 200207425,
+            "changedRatio": 0.27575206756591797,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "eye_l_close",
+          "parameters": {
+            "ParamEyeLOpen": 0
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v21_supported_rig_smoke_preview/supported_pose_sweep_v2/screenshots/desktop_eye_l_close.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "c5cb2275",
+            "nonBackground": 4194303,
+            "alphaPixels": 4194304,
+            "diffPixels": 25795,
+            "totalAbsDiff": 4998351,
+            "changedRatio": 0.006150007247924805,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "eye_r_close",
+          "parameters": {
+            "ParamEyeROpen": 0
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v21_supported_rig_smoke_preview/supported_pose_sweep_v2/screenshots/desktop_eye_r_close.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "fd44469e",
+            "nonBackground": 4194303,
+            "alphaPixels": 4194304,
+            "diffPixels": 25544,
+            "totalAbsDiff": 4761889,
+            "changedRatio": 0.0060901641845703125,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "mouth_open",
+          "parameters": {
+            "ParamMouthOpenY": 1
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v21_supported_rig_smoke_preview/supported_pose_sweep_v2/screenshots/desktop_mouth_open.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "c13079f6",
+            "nonBackground": 4194303,
+            "alphaPixels": 4194304,
+            "diffPixels": 17707,
+            "totalAbsDiff": 2041922,
+            "changedRatio": 0.004221677780151367,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "poses": [
+        {
+          "pose": "neutral",
+          "parameters": {},
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v21_supported_rig_smoke_preview/supported_pose_sweep_v2/screenshots/mobile_neutral.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "cb0c562d",
+            "nonBackground": 4194303,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "angle_left",
+          "parameters": {
+            "ParamAngleX": -30
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v21_supported_rig_smoke_preview/supported_pose_sweep_v2/screenshots/mobile_angle_left.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "be8688d6",
+            "nonBackground": 4194303,
+            "alphaPixels": 4194304,
+            "diffPixels": 1156594,
+            "totalAbsDiff": 200209462,
+            "changedRatio": 0.2757534980773926,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "angle_right",
+          "parameters": {
+            "ParamAngleX": 30
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v21_supported_rig_smoke_preview/supported_pose_sweep_v2/screenshots/mobile_angle_right.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "ec01f7e7",
+            "nonBackground": 4194303,
+            "alphaPixels": 4194304,
+            "diffPixels": 1156588,
+            "totalAbsDiff": 200207425,
+            "changedRatio": 0.27575206756591797,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "eye_l_close",
+          "parameters": {
+            "ParamEyeLOpen": 0
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v21_supported_rig_smoke_preview/supported_pose_sweep_v2/screenshots/mobile_eye_l_close.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "c5cb2275",
+            "nonBackground": 4194303,
+            "alphaPixels": 4194304,
+            "diffPixels": 25795,
+            "totalAbsDiff": 4998351,
+            "changedRatio": 0.006150007247924805,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "eye_r_close",
+          "parameters": {
+            "ParamEyeROpen": 0
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v21_supported_rig_smoke_preview/supported_pose_sweep_v2/screenshots/mobile_eye_r_close.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "fd44469e",
+            "nonBackground": 4194303,
+            "alphaPixels": 4194304,
+            "diffPixels": 25544,
+            "totalAbsDiff": 4761889,
+            "changedRatio": 0.0060901641845703125,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        },
+        {
+          "pose": "mouth_open",
+          "parameters": {
+            "ParamMouthOpenY": 1
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v21_supported_rig_smoke_preview/supported_pose_sweep_v2/screenshots/mobile_mouth_open.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "c13079f6",
+            "nonBackground": 4194303,
+            "alphaPixels": 4194304,
+            "diffPixels": 17707,
+            "totalAbsDiff": 2041922,
+            "changedRatio": 0.004221677780151367,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "PASS",
+          "messages": []
+        }
+      ]
+    }
+  ]
+}

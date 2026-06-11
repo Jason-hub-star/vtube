@@ -1,0 +1,1977 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-08T01:03:40.797391+00:00",
+  "kind": "all57",
+  "policy": {
+    "asset_reuse": "local viewing and success-pattern checking only; do not reuse official art/textures",
+    "runtime_note": "Entries without model3/moc/textures are kept in the carousel list as NO_RUNTIME."
+  },
+  "summary": {
+    "model_count": 57,
+    "renderable_count": 50,
+    "no_runtime_count": 7
+  },
+  "models": [
+    {
+      "rank": 1,
+      "id": "chitose_chitose_t01",
+      "safe_id": "chitose_chitose_t01",
+      "name": "chitose_t01",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/chitose_t01.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/chitose.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/chitose.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/chitose.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/chitose.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/chitose.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/motion/chitose_handwave.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/motion/chitose_idle.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/motion/chitose_kime01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/motion/chitose_kime02.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/expressions/Angry.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/expressions/Blushing.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/expressions/Normal.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/expressions/Sad.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/expressions/Smile.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/expressions/Surprised.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/chitose/chitose/runtime/expressions/f01.exp3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: chitose.zip"
+      ]
+    },
+    {
+      "rank": 2,
+      "id": "epsilon_epsilon_t02",
+      "safe_id": "epsilon_epsilon_t02",
+      "name": "Epsilon_t02",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/Epsilon_t02.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/Epsilon.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/Epsilon.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/Epsilon.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/Epsilon.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/motion/Epsilon_idle_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/motion/Epsilon_m_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/motion/Epsilon_m_02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/motion/Epsilon_m_03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/motion/Epsilon_m_04.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/motion/Epsilon_m_05.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/motion/Epsilon_m_06.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/motion/Epsilon_m_07.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/motion/Epsilon_m_08.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/motion/Epsilon_m_sp_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/motion/Epsilon_m_sp_02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/motion/Epsilon_m_sp_03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/motion/Epsilon_m_sp_04.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/motion/Epsilon_m_sp_05.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/motion/Epsilon_shake_01.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/expressions/Angry.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/expressions/Blushing.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/expressions/Normal.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/expressions/Sad.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/expressions/Smile.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/expressions/Surprised.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/expressions/f01.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/epsilon/Epsilon/runtime/expressions/f02.exp3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: Epsilon.zip"
+      ]
+    },
+    {
+      "rank": 3,
+      "id": "haru_greeter_pro_jp_haru_greeter_t05",
+      "safe_id": "haru_greeter_pro_jp_haru_greeter_t05",
+      "name": "haru_greeter_t05",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/haru_greeter_t05.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/haru_greeter_t05.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/haru_greeter_t05.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/haru_greeter_t05.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/haru_greeter_t05.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/haru_greeter_t05.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_idle.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m04.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m05.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m06.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m07.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m08.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m09.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m10.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m11.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m12.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m13.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m14.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m15.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m16.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m17.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m18.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m19.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m20.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m21.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m22.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m23.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m24.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m25.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/runtime/motion/haru_g_m26.motion3.json"
+        ],
+        "psd": [
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/haru_Ä≤òtâXü[âc_âCâôâ|ü[âg_t07.psd",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru_greeter_pro_jp/haru_greeter_pro_jp/haru_Ä≤òtâXü[âc_æfì▐ò¬é»_t07.psd"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: haru_greeter_pro_jp.zip"
+      ]
+    },
+    {
+      "rank": 4,
+      "id": "haru_haru_t01",
+      "safe_id": "haru_haru_t01",
+      "name": "haru_t01",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/haru_t01.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/haru.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/haru.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/haru.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/haru.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/haru.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_idle_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_idle_02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_idle_03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_m_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_m_02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_m_03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_m_04.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_m_05.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_m_06.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_m_07.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_m_08.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_m_09.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_m_10.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_normal_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_normal_02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_normal_03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_normal_04.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_normal_05.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_normal_06.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_normal_07.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_normal_08.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_normal_09.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/motion/haru_normal_10.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/expressions/Angry.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/expressions/Blushing.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/expressions/Normal.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/expressions/Sad.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/expressions/Smile.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/expressions/Surprised.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/expressions/f01.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/haru/haru/runtime/expressions/f02.exp3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: haru.zip"
+      ]
+    },
+    {
+      "rank": 5,
+      "id": "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+      "safe_id": "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+      "name": "hiyori_movie_pro_t02",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/hiyori_movie_pro_ko/hiyori_movie_pro_ko/hiyori_movie_pro_t02.cmo3"
+      },
+      "manifest_status": "NO_RUNTIME",
+      "missing_required_paths": [
+        "model3_json"
+      ],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: hiyori_movie_pro_ko.zip"
+      ]
+    },
+    {
+      "rank": 6,
+      "id": "kei_ko_kei_basic_free_t02",
+      "safe_id": "kei_ko_kei_basic_free_t02",
+      "name": "kei_basic_free_t02",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_basic_free/kei_basic_free_t02.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_basic_free/runtime/kei_basic_free.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_basic_free/runtime/kei_basic_free.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_basic_free/runtime/kei_basic_free.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_basic_free/runtime/kei_basic_free.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_basic_free/runtime/motions/01_kei_en.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_basic_free/runtime/motions/01_kei_jp.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_basic_free/runtime/motions/01_kei_ko.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_basic_free/runtime/motions/01_kei_zh.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: kei_ko.zip"
+      ]
+    },
+    {
+      "rank": 7,
+      "id": "kei_ko_kei_vowels_pro_t02",
+      "safe_id": "kei_ko_kei_vowels_pro_t02",
+      "name": "kei_vowels_pro_t02",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_vowels_pro/kei_vowels_pro_t02.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_vowels_pro/runtime/kei_vowels_pro.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_vowels_pro/runtime/kei_vowels_pro.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_vowels_pro/runtime/kei_vowels_pro.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_vowels_pro/runtime/kei_vowels_pro.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_vowels_pro/runtime/motions/01_kei_en.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_vowels_pro/runtime/motions/01_kei_jp.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_vowels_pro/runtime/motions/01_kei_ko.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/kei_ko/kei_ko/kei_vowels_pro/runtime/motions/01_kei_zh.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: kei_ko.zip"
+      ]
+    },
+    {
+      "rank": 8,
+      "id": "koharu_haruto_haruto_t01",
+      "safe_id": "koharu_haruto_haruto_t01",
+      "name": "haruto_t01",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/haruto_t01.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/runtime/haruto.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/runtime/haruto.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/runtime/haruto.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/runtime/haruto.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/runtime/motion/01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/runtime/motion/02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/runtime/motion/03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/runtime/motion/04.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/runtime/motion/05.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/runtime/motion/06.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/runtime/motion/07.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/runtime/motion/08.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/runtime/motion/09.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/runtime/motion/idle.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/runtime/motion/idle_02.motion3.json"
+        ],
+        "psd": [
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/PSD/é═éΘé╞_âCâôâ|ü[âg.psd",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/PSD/é═éΘé╞_æfì▐ò¬é».psd",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/PSD/é▒é═éΘ_âCâôâ|ü[âg.psd",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/PSD/é▒é═éΘ_æfì▐ò¬é».psd"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: koharu_haruto.zip"
+      ]
+    },
+    {
+      "rank": 9,
+      "id": "koharu_haruto_koharu_t01",
+      "safe_id": "koharu_haruto_koharu_t01",
+      "name": "koharu_t01",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/koharu_t01.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/koharu.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/koharu.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/koharu.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/koharu.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/motion/01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/motion/02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/motion/03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/motion/04.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/motion/05.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/motion/06.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/motion/07.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/motion/08.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/motion/09.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/motion/idle.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/runtime/motion/idle_02.motion3.json"
+        ],
+        "psd": [
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/PSD/é═éΘé╞_âCâôâ|ü[âg.psd",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é═éΘé╞/PSD/é═éΘé╞_æfì▐ò¬é».psd",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/PSD/é▒é═éΘ_âCâôâ|ü[âg.psd",
+          "experiments/reference-model-structure-001/official_samples/extracted/koharu_haruto/koharu_haruto/é▒é═éΘ/PSD/é▒é═éΘ_æfì▐ò¬é».psd"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: koharu_haruto.zip"
+      ]
+    },
+    {
+      "rank": 10,
+      "id": "mao_pro_ko_mao_pro_t06",
+      "safe_id": "mao_pro_ko_mao_pro_t06",
+      "name": "mao_pro_t06",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/mao_pro_t06.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/mao_pro.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/mao_pro.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/mao_pro.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/mao_pro.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/mao_pro.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/motions/mtn_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/motions/mtn_02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/motions/mtn_03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/motions/mtn_04.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/motions/special_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/motions/special_02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/motions/special_03.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/expressions/exp_01.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/expressions/exp_02.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/expressions/exp_03.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/expressions/exp_04.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/expressions/exp_05.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/expressions/exp_06.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/expressions/exp_07.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/mao_pro_ko/mao_pro_ko/runtime/expressions/exp_08.exp3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: mao_pro_ko.zip"
+      ]
+    },
+    {
+      "rank": 11,
+      "id": "mark_movie_pro_ko_mark_movie_pro_t02",
+      "safe_id": "mark_movie_pro_ko_mark_movie_pro_t02",
+      "name": "mark_movie_pro_t02",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/mark_movie_pro_ko/mark_movie_pro_ko/mark_movie_pro_t02.cmo3"
+      },
+      "manifest_status": "NO_RUNTIME",
+      "missing_required_paths": [
+        "model3_json"
+      ],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: mark_movie_pro_ko.zip"
+      ]
+    },
+    {
+      "rank": 12,
+      "id": "miara_pro_en_miara_pro_t04",
+      "safe_id": "miara_pro_en_miara_pro_t04",
+      "name": "miara_pro_t04",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/miara_pro_en/miara_pro_en/miara_pro_t04.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/miara_pro_en/miara_pro_en/runtime/miara_pro_t03.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/miara_pro_en/miara_pro_en/runtime/miara_pro_t03.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/miara_pro_en/miara_pro_en/runtime/miara_pro_t03.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/miara_pro_en/miara_pro_en/runtime/miara_pro_t03.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/miara_pro_en/miara_pro_en/runtime/motion/Scene1.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/miara_pro_en/miara_pro_en/runtime/motion/Scene2.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/miara_pro_en/miara_pro_en/runtime/motion/Scene3.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: miara_pro_en.zip"
+      ]
+    },
+    {
+      "rank": 13,
+      "id": "natori_pro_ko_natori_pro_t06",
+      "safe_id": "natori_pro_ko_natori_pro_t06",
+      "name": "natori_pro_t06",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/natori_pro_t06.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/natori_pro_t06.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/natori_pro_t06.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/natori_pro_t06.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/natori_pro_t06.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/natori.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/motions/mtn_00.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/motions/mtn_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/motions/mtn_02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/motions/mtn_03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/motions/mtn_04.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/motions/mtn_05.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/motions/mtn_06.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/motions/mtn_07.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/exp/Angry.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/exp/Blushing.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/exp/Normal.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/exp/Sad.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/exp/Smile.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/exp/Surprised.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/exp/exp_01.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/exp/exp_02.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/exp/exp_03.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/exp/exp_04.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/exp/exp_05.exp3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: natori_pro_ko.zip"
+      ]
+    },
+    {
+      "rank": 14,
+      "id": "param_ctrl_pro_ko_haruto_pc_pro_t02",
+      "safe_id": "param_ctrl_pro_ko_haruto_pc_pro_t02",
+      "name": "haruto_pc_pro_t02",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/param_ctrl_pro_ko/param_ctrl_pro_ko/koharu_haruto_pc_pro/haruto_pc_pro_t02.cmo3"
+      },
+      "manifest_status": "NO_RUNTIME",
+      "missing_required_paths": [
+        "model3_json"
+      ],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: param_ctrl_pro_ko.zip"
+      ]
+    },
+    {
+      "rank": 15,
+      "id": "param_ctrl_pro_ko_koharu_pc_pro_t02",
+      "safe_id": "param_ctrl_pro_ko_koharu_pc_pro_t02",
+      "name": "koharu_pc_pro_t02",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/param_ctrl_pro_ko/param_ctrl_pro_ko/koharu_haruto_pc_pro/koharu_pc_pro_t02.cmo3"
+      },
+      "manifest_status": "NO_RUNTIME",
+      "missing_required_paths": [
+        "model3_json"
+      ],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: param_ctrl_pro_ko.zip"
+      ]
+    },
+    {
+      "rank": 16,
+      "id": "param_ctrl_pro_ko_seesaw_pc_pro_t02",
+      "safe_id": "param_ctrl_pro_ko_seesaw_pc_pro_t02",
+      "name": "seesaw_pc_pro_t02",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/param_ctrl_pro_ko/param_ctrl_pro_ko/koharu_haruto_pc_pro/seesaw_pc_pro_t02.cmo3"
+      },
+      "manifest_status": "NO_RUNTIME",
+      "missing_required_paths": [
+        "model3_json"
+      ],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: param_ctrl_pro_ko.zip"
+      ]
+    },
+    {
+      "rank": 17,
+      "id": "param_ctrl_pro_ko_rice_pc_pro_t02",
+      "safe_id": "param_ctrl_pro_ko_rice_pc_pro_t02",
+      "name": "rice_pc_pro_t02",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/param_ctrl_pro_ko/param_ctrl_pro_ko/rice_pc_pro/rice_pc_pro_t02.cmo3"
+      },
+      "manifest_status": "NO_RUNTIME",
+      "missing_required_paths": [
+        "model3_json"
+      ],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: param_ctrl_pro_ko.zip"
+      ]
+    },
+    {
+      "rank": 18,
+      "id": "param_ctrl_pro_ko_target_pc_pro_t02",
+      "safe_id": "param_ctrl_pro_ko_target_pc_pro_t02",
+      "name": "target_pc_pro_t02",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/param_ctrl_pro_ko/param_ctrl_pro_ko/rice_pc_pro/target_pc_pro_t02.cmo3"
+      },
+      "manifest_status": "NO_RUNTIME",
+      "missing_required_paths": [
+        "model3_json"
+      ],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: param_ctrl_pro_ko.zip"
+      ]
+    },
+    {
+      "rank": 19,
+      "id": "ren_pro_ko_ren_t01",
+      "safe_id": "ren_pro_ko_ren_t01",
+      "name": "ren_t01",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/ren_t01.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/ren.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/ren.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/ren.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/ren.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/motions/mtn_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/motions/mtn_02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/motions/mtn_03.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/expressions/exp_01.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/expressions/exp_02.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/expressions/exp_03.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/expressions/exp_04.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/expressions/exp_05.exp3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: ren_pro_ko.zip"
+      ]
+    },
+    {
+      "rank": 20,
+      "id": "rice_pro_ko_rice_pro_t03",
+      "safe_id": "rice_pro_ko_rice_pro_t03",
+      "name": "rice_pro_t03",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/rice_pro_ko/rice_pro_ko/rice_pro_t03.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/rice_pro_ko/rice_pro_ko/runtime/rice_pro_t03.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/rice_pro_ko/rice_pro_ko/runtime/rice_pro_t03.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/rice_pro_ko/rice_pro_ko/runtime/rice_pro_t03.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/rice_pro_ko/rice_pro_ko/runtime/rice_pro_t03.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/rice_pro_ko/rice_pro_ko/runtime/motions/idle.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/rice_pro_ko/rice_pro_ko/runtime/motions/mtn_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/rice_pro_ko/rice_pro_ko/runtime/motions/mtn_02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/rice_pro_ko/rice_pro_ko/runtime/motions/mtn_03.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: rice_pro_ko.zip"
+      ]
+    },
+    {
+      "rank": 21,
+      "id": "shizuku_shizuku_t02",
+      "safe_id": "shizuku_shizuku_t02",
+      "name": "shizuku_t02",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/shizuku/shizuku/shizuku_t02.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/shizuku/shizuku/runtime/shizuku.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/shizuku/shizuku/runtime/shizuku.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/shizuku/shizuku/runtime/shizuku.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/shizuku/shizuku/runtime/shizuku.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_samples/extracted/shizuku/shizuku/runtime/shizuku.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/shizuku/shizuku/runtime/motion/01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/shizuku/shizuku/runtime/motion/02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/shizuku/shizuku/runtime/motion/03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/shizuku/shizuku/runtime/motion/04.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: shizuku.zip"
+      ]
+    },
+    {
+      "rank": 22,
+      "id": "tsumiki_tsumiki_t01",
+      "safe_id": "tsumiki_tsumiki_t01",
+      "name": "tsumiki_t01",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/tsumiki_t01.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/tsumiki.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/tsumiki.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/tsumiki.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/tsumiki.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_idle_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_01_df.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_04.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_05.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_06.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_08.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_09.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_10.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_11.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_12.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_13.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_14.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_15.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_16.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_17.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_18.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_19.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_20.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_21.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_22.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/expressions/Angry.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/expressions/Blushing.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/expressions/Normal.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/expressions/Sad.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/expressions/Surprised.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/expressions/f01.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/expressions/f02.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/expressions/f03.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/expressions/f04.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/expressions/f05.exp3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: tsumiki.zip"
+      ]
+    },
+    {
+      "rank": 23,
+      "id": "unitychan_unitychan_t01",
+      "safe_id": "unitychan_unitychan_t01",
+      "name": "unitychan_t01",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/unitychan_t01.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/unitychan.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/unitychan.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/unitychan.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/unitychan.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/idle_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/idle_02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_04.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_05.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_06.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_07.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_08.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_09.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_10.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_11.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_12.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_13.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_14.motion3.json"
+        ],
+        "psd": [
+          "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/License/License Logo/LUUL_LOGO_rules02.psd",
+          "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/Unitychan_Live2D_2015_150424.psd"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: Unitychan.zip"
+      ]
+    },
+    {
+      "rank": 24,
+      "id": "wanko_wanko_touch_t01",
+      "safe_id": "wanko_wanko_touch_t01",
+      "name": "wanko_touch_t01",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/wanko_touch_t01.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/wanko_touch.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/wanko_touch.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/wanko_touch.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/wanko_touch.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/idle_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/idle_02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/idle_03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/idle_04.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/shake_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/shake_02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/touch_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/touch_02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/touch_03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/touch_04.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/touch_05.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/touch_06.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: wanko.zip"
+      ]
+    },
+    {
+      "rank": 25,
+      "id": "hiyori_pro_ko_hiyori_pro_t11",
+      "safe_id": "hiyori_pro_ko_hiyori_pro_t11",
+      "name": "hiyori_pro_t11",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/hiyori_pro_ko/hiyori_pro_ko/hiyori_pro_t11.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/hiyori_pro_ko/hiyori_pro_ko/runtime/hiyori_pro_t11.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/hiyori_pro_ko/hiyori_pro_ko/runtime/hiyori_pro_t11.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/hiyori_pro_ko/hiyori_pro_ko/runtime/hiyori_pro_t11.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/hiyori_pro_ko/hiyori_pro_ko/runtime/hiyori_pro_t11.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_samples/extracted/hiyori_pro_ko/hiyori_pro_ko/runtime/hiyori_pro_t11.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/hiyori_pro_ko/hiyori_pro_ko/runtime/motion/hiyori_m01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/hiyori_pro_ko/hiyori_pro_ko/runtime/motion/hiyori_m02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/hiyori_pro_ko/hiyori_pro_ko/runtime/motion/hiyori_m03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/hiyori_pro_ko/hiyori_pro_ko/runtime/motion/hiyori_m04.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/hiyori_pro_ko/hiyori_pro_ko/runtime/motion/hiyori_m05.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/hiyori_pro_ko/hiyori_pro_ko/runtime/motion/hiyori_m06.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/hiyori_pro_ko/hiyori_pro_ko/runtime/motion/hiyori_m07.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/hiyori_pro_ko/hiyori_pro_ko/runtime/motion/hiyori_m08.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/hiyori_pro_ko/hiyori_pro_ko/runtime/motion/hiyori_m09.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/hiyori_pro_ko/hiyori_pro_ko/runtime/motion/hiyori_m10.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: hiyori_pro_ko.zip"
+      ]
+    },
+    {
+      "rank": 26,
+      "id": "miku_pro_jp_miku_sample_t05",
+      "safe_id": "miku_pro_jp_miku_sample_t05",
+      "name": "miku_sample_t05",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/miku_sample_t05.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/miku_sample_t04.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/miku_sample_t04.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/miku_sample_t04.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/miku_sample_t04.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/motion/miku_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/motion/miku_02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/motion/miku_03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/motion/miku_04.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/motion/miku_05.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/motion/miku_06.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/motion/miku_07.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/miku_pro_jp/miku_pro_jp/runtime/motion/miku_08.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: miku_pro_jp.zip"
+      ]
+    },
+    {
+      "rank": 27,
+      "id": "tororo_hijiki_hijiki_t01",
+      "safe_id": "tororo_hijiki_hijiki_t01",
+      "name": "hijiki_t01",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/hijiki/hijiki_t01.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/hijiki/runtime/hijiki.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/hijiki/runtime/hijiki.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/hijiki/runtime/hijiki.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/hijiki/runtime/hijiki.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/hijiki/runtime/hijiki.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/hijiki/runtime/motion/00_idle.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/hijiki/runtime/motion/01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/hijiki/runtime/motion/02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/hijiki/runtime/motion/03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/hijiki/runtime/motion/04.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/hijiki/runtime/motion/05.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/hijiki/runtime/motion/06.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/hijiki/runtime/motion/07.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/hijiki/runtime/motion/08.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: tororo_hijiki.zip"
+      ]
+    },
+    {
+      "rank": 28,
+      "id": "tororo_hijiki_tororo_t01",
+      "safe_id": "tororo_hijiki_tororo_t01",
+      "name": "tororo_t01",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/tororo/tororo_t01.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/tororo/runtime/tororo.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/tororo/runtime/tororo.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/tororo/runtime/tororo.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/tororo/runtime/tororo.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/tororo/runtime/tororo.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/tororo/runtime/motion/00_idle.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/tororo/runtime/motion/01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/tororo/runtime/motion/02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/tororo/runtime/motion/03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/tororo/runtime/motion/04.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/tororo/runtime/motion/05.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/tororo/runtime/motion/06.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/tororo/runtime/motion/07.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/tororo_hijiki/tororo_hijiki/tororo/runtime/motion/08.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: tororo_hijiki.zip"
+      ]
+    },
+    {
+      "rank": 29,
+      "id": "nito_nito_t01",
+      "safe_id": "nito_nito_t01",
+      "name": "nito_t01",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/nito_t01.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nito/nito.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nito.model3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nito/nito.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nito/nito.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/00_idle.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/01_happy.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/02_angry.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/03_fear.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/04_surprise.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/05_fun.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/06_love.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/07_bye.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/08_sad.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/09_yawn.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/10_yeah.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/11_muscle.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/12_stagger.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/13_cry.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/14_ sigh.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/15_joy.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/16_menace.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/17_yes.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/18_no.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/19_walk.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/20_sleep.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: nito.zip"
+      ]
+    },
+    {
+      "rank": 30,
+      "id": "nito_ni-j.model3_runtime",
+      "safe_id": "nito_ni_j_model3_runtime",
+      "name": "ni-j.model3",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nito/nito.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/ni-j.model3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nito/nito.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nito/nito.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/00_idle.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/01_happy.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/02_angry.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/03_fear.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/04_surprise.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/05_fun.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/06_love.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/07_bye.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/08_sad.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/09_yawn.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/10_yeah.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/11_muscle.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/12_stagger.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/13_cry.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/14_ sigh.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/15_joy.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/16_menace.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/17_yes.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/18_no.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/19_walk.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/20_sleep.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: nito.zip"
+      ]
+    },
+    {
+      "rank": 31,
+      "id": "nito_nico.model3_runtime",
+      "safe_id": "nito_nico_model3_runtime",
+      "name": "nico.model3",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nito/nito.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nico.model3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nito/nito.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nito/nito.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/00_idle.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/01_happy.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/02_angry.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/03_fear.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/04_surprise.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/05_fun.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/06_love.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/07_bye.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/08_sad.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/09_yawn.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/10_yeah.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/11_muscle.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/12_stagger.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/13_cry.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/14_ sigh.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/15_joy.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/16_menace.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/17_yes.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/18_no.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/19_walk.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/20_sleep.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: nito.zip"
+      ]
+    },
+    {
+      "rank": 32,
+      "id": "nito_nietzsche.model3_runtime",
+      "safe_id": "nito_nietzsche_model3_runtime",
+      "name": "nietzsche.model3",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nito/nito.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nietzsche.model3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nito/nito.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nito/nito.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/00_idle.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/01_happy.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/02_angry.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/03_fear.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/04_surprise.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/05_fun.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/06_love.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/07_bye.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/08_sad.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/09_yawn.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/10_yeah.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/11_muscle.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/12_stagger.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/13_cry.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/14_ sigh.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/15_joy.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/16_menace.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/17_yes.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/18_no.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/19_walk.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/20_sleep.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: nito.zip"
+      ]
+    },
+    {
+      "rank": 33,
+      "id": "nito_nipsilon.model3_runtime",
+      "safe_id": "nito_nipsilon_model3_runtime",
+      "name": "nipsilon.model3",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nito/nito.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nipsilon.model3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nito/nito.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/nito/nito.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/00_idle.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/01_happy.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/02_angry.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/03_fear.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/04_surprise.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/05_fun.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/06_love.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/07_bye.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/08_sad.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/09_yawn.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/10_yeah.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/11_muscle.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/12_stagger.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/13_cry.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/14_ sigh.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/15_joy.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/16_menace.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/17_yes.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/18_no.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/19_walk.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/nito/nito/runtime/motion/20_sleep.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: nito.zip"
+      ]
+    },
+    {
+      "rank": 34,
+      "id": "izumi_izumi_anime_t01",
+      "safe_id": "izumi_izumi_anime_t01",
+      "name": "izumi_anime_t01",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/izumi_anime_t01.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/izumi_illust.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/izumi_illust.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/izumi_illust.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/izumi_illust.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_04.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_05.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_06.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_07.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_08.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_09.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_10.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Angry.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Blushing.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Normal.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Sad.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Smile.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Surprised.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/f01.exp3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: izumi.zip"
+      ]
+    },
+    {
+      "rank": 35,
+      "id": "izumi_izumi_atsu_t01",
+      "safe_id": "izumi_izumi_atsu_t01",
+      "name": "izumi_atsu_t01",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/izumi_atsu_t01.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/izumi_illust.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/izumi_illust.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/izumi_illust.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/izumi_illust.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_04.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_05.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_06.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_07.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_08.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_09.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_10.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Angry.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Blushing.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Normal.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Sad.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Smile.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Surprised.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/f01.exp3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: izumi.zip"
+      ]
+    },
+    {
+      "rank": 36,
+      "id": "izumi_izumi_illust_t01",
+      "safe_id": "izumi_izumi_illust_t01",
+      "name": "izumi_illust_t01",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/izumi_illust_t01.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/izumi_illust.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/izumi_illust.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/izumi_illust.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/izumi_illust.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_04.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_05.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_06.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_07.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_08.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_09.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_10.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Angry.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Blushing.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Normal.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Sad.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Smile.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Surprised.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/f01.exp3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: izumi.zip"
+      ]
+    },
+    {
+      "rank": 37,
+      "id": "izumi_izumi_suisai_t01",
+      "safe_id": "izumi_izumi_suisai_t01",
+      "name": "izumi_suisai_t01",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/izumi_suisai_t01.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/izumi_illust.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/izumi_illust.model3.json",
+        "physics3_json": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/izumi_illust.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/izumi_illust.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_04.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_05.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_06.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_07.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_08.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_09.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_10.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Angry.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Blushing.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Normal.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Sad.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Smile.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Surprised.exp3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/f01.exp3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: izumi.zip"
+      ]
+    },
+    {
+      "rank": 38,
+      "id": "gantzert_felixander_gantzert_felixander_t01",
+      "safe_id": "gantzert_felixander_gantzert_felixander_t01",
+      "name": "Gantzert_Felixander_t01",
+      "source_type": "OFFICIAL_SAMPLE_ZIP",
+      "analysis_mode": "FULL_STRUCTURE",
+      "local_paths": {
+        "cmo3": "experiments/reference-model-structure-001/official_samples/extracted/gantzert_felixander/Gantzert_Felixander/Gantzert_Felixander_t01.cmo3",
+        "moc3": "experiments/reference-model-structure-001/official_samples/extracted/gantzert_felixander/Gantzert_Felixander/runtime/Gantzert_Felixander.moc3",
+        "model3_json": "experiments/reference-model-structure-001/official_samples/extracted/gantzert_felixander/Gantzert_Felixander/runtime/Gantzert_Felixander.model3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_samples/extracted/gantzert_felixander/Gantzert_Felixander/runtime/Gantzert_Felixander.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_samples/extracted/gantzert_felixander/Gantzert_Felixander/runtime/motion/A_00_idle.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/gantzert_felixander/Gantzert_Felixander/runtime/motion/A_01.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/gantzert_felixander/Gantzert_Felixander/runtime/motion/A_02.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/gantzert_felixander/Gantzert_Felixander/runtime/motion/A_03.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/gantzert_felixander/Gantzert_Felixander/runtime/motion/A_04.motion3.json",
+          "experiments/reference-model-structure-001/official_samples/extracted/gantzert_felixander/Gantzert_Felixander/runtime/motion/A_05.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+        "Source zip: Gantzert_Felixander.zip"
+      ]
+    },
+    {
+      "rank": 39,
+      "id": "github_live2d_cubism_web_samples_samples_resources_haru_haru.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_haru_haru_model3",
+      "name": "Haru",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/Haru.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/Haru.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/Haru.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/Haru.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/Haru.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/motions/haru_g_idle.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/motions/haru_g_m15.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/motions/haru_g_m26.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/motions/haru_g_m06.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/motions/haru_g_m20.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/motions/haru_g_m09.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F01.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F02.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F03.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F04.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F05.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F06.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F07.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F08.exp3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D Cubism Web SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ]
+    },
+    {
+      "rank": 40,
+      "id": "github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori_model3",
+      "name": "Hiyori",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/Hiyori.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/Hiyori.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/Hiyori.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/Hiyori.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/Hiyori.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/motions/Hiyori_m01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/motions/Hiyori_m02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/motions/Hiyori_m03.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/motions/Hiyori_m05.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/motions/Hiyori_m06.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/motions/Hiyori_m07.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/motions/Hiyori_m08.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/motions/Hiyori_m09.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/motions/Hiyori_m10.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Hiyori/motions/Hiyori_m04.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D Cubism Web SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ]
+    },
+    {
+      "rank": 41,
+      "id": "github_live2d_cubism_web_samples_samples_resources_mao_mao.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_mao_mao_model3",
+      "name": "Mao",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/Mao.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/Mao.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/Mao.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/Mao.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/Mao.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/mtn_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/sample_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/mtn_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/mtn_03.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/mtn_04.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/special_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/special_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/motions/special_03.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_01.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_02.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_03.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_04.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_05.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_06.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_07.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mao/expressions/exp_08.exp3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D Cubism Web SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ]
+    },
+    {
+      "rank": 42,
+      "id": "github_live2d_cubism_web_samples_samples_resources_mark_mark.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_mark_mark_model3",
+      "name": "Mark",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mark/Mark.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mark/Mark.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mark/Mark.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mark/Mark.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mark/motions/mark_m01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mark/motions/mark_m02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mark/motions/mark_m03.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mark/motions/mark_m04.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mark/motions/mark_m05.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Mark/motions/mark_m06.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D Cubism Web SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ]
+    },
+    {
+      "rank": 43,
+      "id": "github_live2d_cubism_web_samples_samples_resources_natori_natori.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_natori_natori_model3",
+      "name": "Natori",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/Natori.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/Natori.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/Natori.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/Natori.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/Natori.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/motions/mtn_00.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/motions/mtn_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/motions/mtn_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/motions/mtn_03.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/motions/mtn_04.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/motions/mtn_05.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/motions/mtn_06.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/motions/mtn_07.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/exp/Angry.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/exp/Blushing.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/exp/Normal.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/exp/Sad.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/exp/Smile.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/exp/Surprised.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/exp/exp_01.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/exp/exp_02.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/exp/exp_03.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/exp/exp_04.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Natori/exp/exp_05.exp3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D Cubism Web SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ]
+    },
+    {
+      "rank": 44,
+      "id": "github_live2d_cubism_web_samples_samples_resources_ren_ren.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_ren_ren_model3",
+      "name": "Ren",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/Ren.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/Ren.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/Ren.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/Ren.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/motions/mtn_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/motions/mtn_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/motions/mtn_03.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/expressions/exp_01.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/expressions/exp_02.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/expressions/exp_03.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/expressions/exp_04.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Ren/expressions/exp_05.exp3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D Cubism Web SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ]
+    },
+    {
+      "rank": 45,
+      "id": "github_live2d_cubism_web_samples_samples_resources_rice_rice.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_rice_rice_model3",
+      "name": "Rice",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Rice/Rice.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Rice/Rice.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Rice/Rice.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Rice/Rice.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Rice/motions/idle.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Rice/motions/mtn_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Rice/motions/mtn_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Rice/motions/mtn_03.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D Cubism Web SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ]
+    },
+    {
+      "rank": 46,
+      "id": "github_live2d_cubism_web_samples_samples_resources_wanko_wanko.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_wanko_wanko_model3",
+      "name": "Wanko",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Wanko/Wanko.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Wanko/Wanko.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Wanko/Wanko.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Wanko/Wanko.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Wanko/motions/idle_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Wanko/motions/idle_03.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Wanko/motions/idle_04.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Wanko/motions/touch_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Wanko/motions/touch_04.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D Cubism Web SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ]
+    },
+    {
+      "rank": 47,
+      "id": "github_live2d_cubism_native_samples_samples_resources_haru_haru.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_haru_haru_model3",
+      "name": "Haru",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/Haru.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/Haru.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/Haru.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/Haru.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/Haru.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/motions/haru_g_idle.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/motions/haru_g_m15.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/motions/haru_g_m26.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/motions/haru_g_m06.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/motions/haru_g_m20.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/motions/haru_g_m09.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/expressions/F01.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/expressions/F02.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/expressions/F03.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/expressions/F04.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/expressions/F05.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/expressions/F06.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/expressions/F07.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Haru/expressions/F08.exp3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D Cubism Native SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ]
+    },
+    {
+      "rank": 48,
+      "id": "github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori_model3",
+      "name": "Hiyori",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/Hiyori.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/Hiyori.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/Hiyori.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/Hiyori.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/Hiyori.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m03.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m05.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m06.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m07.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m08.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m09.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m10.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m04.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D Cubism Native SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ]
+    },
+    {
+      "rank": 49,
+      "id": "github_live2d_cubism_native_samples_samples_resources_mao_mao.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_mao_mao_model3",
+      "name": "Mao",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/Mao.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/Mao.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/Mao.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/Mao.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/Mao.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/motions/mtn_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/motions/sample_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/motions/mtn_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/motions/mtn_03.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/motions/mtn_04.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/motions/special_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/motions/special_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/motions/special_03.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/expressions/exp_01.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/expressions/exp_02.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/expressions/exp_03.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/expressions/exp_04.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/expressions/exp_05.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/expressions/exp_06.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/expressions/exp_07.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mao/expressions/exp_08.exp3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D Cubism Native SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ]
+    },
+    {
+      "rank": 50,
+      "id": "github_live2d_cubism_native_samples_samples_resources_mark_mark.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_mark_mark_model3",
+      "name": "Mark",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/Mark.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/Mark.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/Mark.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/Mark.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/motions/mark_m01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/motions/mark_m02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/motions/mark_m03.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/motions/mark_m04.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/motions/mark_m05.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Mark/motions/mark_m06.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D Cubism Native SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ]
+    },
+    {
+      "rank": 51,
+      "id": "github_live2d_cubism_native_samples_samples_resources_natori_natori.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_natori_natori_model3",
+      "name": "Natori",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/Natori.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/Natori.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/Natori.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/Natori.cdi3.json",
+        "pose3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/Natori.pose3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/motions/mtn_00.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/motions/mtn_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/motions/mtn_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/motions/mtn_03.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/motions/mtn_04.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/motions/mtn_05.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/motions/mtn_06.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/motions/mtn_07.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/exp/Angry.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/exp/Blushing.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/exp/Normal.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/exp/Sad.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/exp/Smile.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/exp/Surprised.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/exp/exp_01.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/exp/exp_02.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/exp/exp_03.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/exp/exp_04.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Natori/exp/exp_05.exp3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D Cubism Native SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ]
+    },
+    {
+      "rank": 52,
+      "id": "github_live2d_cubism_native_samples_samples_resources_ren_ren.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_ren_ren_model3",
+      "name": "Ren",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/Ren.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/Ren.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/Ren.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/Ren.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/motions/mtn_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/motions/mtn_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/motions/mtn_03.motion3.json"
+        ],
+        "exp3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/expressions/exp_01.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/expressions/exp_02.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/expressions/exp_03.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/expressions/exp_04.exp3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Ren/expressions/exp_05.exp3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D Cubism Native SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ]
+    },
+    {
+      "rank": 53,
+      "id": "github_live2d_cubism_native_samples_samples_resources_rice_rice.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_rice_rice_model3",
+      "name": "Rice",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/Rice.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/Rice.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/Rice.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/Rice.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/motions/idle.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/motions/mtn_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/motions/mtn_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Rice/motions/mtn_03.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D Cubism Native SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ]
+    },
+    {
+      "rank": 54,
+      "id": "github_live2d_cubism_native_samples_samples_resources_wanko_wanko.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_wanko_wanko_model3",
+      "name": "Wanko",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Wanko/Wanko.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Wanko/Wanko.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Wanko/Wanko.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Wanko/Wanko.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Wanko/motions/idle_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Wanko/motions/idle_03.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Wanko/motions/idle_04.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Wanko/motions/touch_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Wanko/motions/touch_04.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D Cubism Native SDK samples. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ]
+    },
+    {
+      "rank": 55,
+      "id": "github_live2d_cubism_web_motionsync_samples_resources_kei_basic_kei_basic.model3",
+      "safe_id": "github_live2d_cubism_web_motionsync_samples_resources_kei_basic_kei_basic_model3",
+      "name": "Kei_basic",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/Kei_basic.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/Kei_basic.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/Kei_basic.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/Kei_basic.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/motions/01_kei_en.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/motions/01_kei_jp.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/motions/01_kei_ko.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/motions/01_kei_zh.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D Web MotionSync sample resources. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ]
+    },
+    {
+      "rank": 56,
+      "id": "github_live2d_cubism_web_motionsync_samples_resources_kei_vowels_kei_vowels.model3",
+      "safe_id": "github_live2d_cubism_web_motionsync_samples_resources_kei_vowels_kei_vowels_model3",
+      "name": "Kei_vowels",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_vowels/Kei_vowels.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_vowels/Kei_vowels.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_vowels/Kei_vowels.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_vowels/Kei_vowels.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_vowels/motions/01_kei_en.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_vowels/motions/01_kei_jp.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_vowels/motions/01_kei_ko.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_vowels/motions/01_kei_zh.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Official Live2D Web MotionSync sample resources. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ]
+    },
+    {
+      "rank": 57,
+      "id": "github_live2d_garage_cubism_web_ar_sample_assets_models_rice_rice.model3",
+      "safe_id": "github_live2d_garage_cubism_web_ar_sample_assets_models_rice_rice_model3",
+      "name": "Rice",
+      "source_type": "OFFICIAL_GITHUB_SAMPLE",
+      "analysis_mode": "RUNTIME_ONLY",
+      "local_paths": {
+        "model3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_garage_cubism_web_ar_sample/assets/models/Rice/Rice.model3.json",
+        "moc3": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_garage_cubism_web_ar_sample/assets/models/Rice/Rice.moc3",
+        "physics3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_garage_cubism_web_ar_sample/assets/models/Rice/Rice.physics3.json",
+        "cdi3_json": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_garage_cubism_web_ar_sample/assets/models/Rice/Rice.cdi3.json",
+        "motion3_json": [
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_garage_cubism_web_ar_sample/assets/models/Rice/motions/mtn_00.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_garage_cubism_web_ar_sample/assets/models/Rice/motions/mtn_01.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_garage_cubism_web_ar_sample/assets/models/Rice/motions/mtn_02.motion3.json",
+          "experiments/reference-model-structure-001/official_github_samples/repos/live2d_garage_cubism_web_ar_sample/assets/models/Rice/motions/mtn_03.motion3.json"
+        ]
+      },
+      "manifest_status": "PASS",
+      "missing_required_paths": [],
+      "notes": [
+        "Live2D Garage Web AR sample resources. Runtime resources only.",
+        "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+      ]
+    }
+  ]
+}

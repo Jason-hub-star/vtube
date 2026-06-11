@@ -1,0 +1,282 @@
+{
+  "schema_version": 1,
+  "experiment_id": "autorig-character-003",
+  "generated_at": "2026-06-10T16:51:34.255605+00:00",
+  "status": "COMPLETED",
+  "base_url": "http://127.0.0.1:8188",
+  "prompt_id": "16eebabc-2fdf-4239-8eda-8bee11ce8231",
+  "started_at_epoch": 1781109469.1733902,
+  "timeout_seconds": 7200,
+  "poll_interval_seconds": 10,
+  "response": {
+    "prompt_id": "16eebabc-2fdf-4239-8eda-8bee11ce8231",
+    "number": 0,
+    "node_errors": {}
+  },
+  "last_error": null,
+  "consecutive_connection_errors": 0,
+  "history": {
+    "prompt": [
+      0,
+      "16eebabc-2fdf-4239-8eda-8bee11ce8231",
+      {
+        "27": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "/Users/family/jason/Vtube/experiments/autorig-character-003/master_640.png"
+          }
+        },
+        "28": {
+          "class_type": "SeeThrough_LoadLayerDiffModel",
+          "inputs": {
+            "model": "layerdifforg/seethroughv0.0.2_layerdiff3d",
+            "vae_ckpt": "",
+            "unet_ckpt": "",
+            "quant_mode": "none",
+            "cache_tag_embeds": true,
+            "group_offload": false,
+            "auto_download": true
+          }
+        },
+        "29": {
+          "class_type": "SeeThrough_LoadDepthModel",
+          "inputs": {
+            "model": "layerdifforg/seethroughv0.0.1_marigold",
+            "quant_mode": "none",
+            "cache_tag_embeds": true,
+            "group_offload": false,
+            "auto_download": true
+          }
+        },
+        "24": {
+          "class_type": "SeeThrough_GenerateLayers",
+          "inputs": {
+            "image": [
+              "27",
+              0
+            ],
+            "layerdiff_model": [
+              "28",
+              0
+            ],
+            "seed": 42,
+            "resolution": 640,
+            "num_inference_steps": 12
+          }
+        },
+        "23": {
+          "class_type": "SeeThrough_GenerateDepth",
+          "inputs": {
+            "layers": [
+              "24",
+              0
+            ],
+            "depth_model": [
+              "29",
+              0
+            ],
+            "seed": 42,
+            "resolution_depth": 512
+          }
+        },
+        "20": {
+          "class_type": "SeeThrough_PostProcess",
+          "inputs": {
+            "layers_depth": [
+              "23",
+              0
+            ],
+            "tblr_split": true,
+            "use_lama": true
+          }
+        },
+        "21": {
+          "class_type": "SeeThrough_SavePSD",
+          "inputs": {
+            "parts": [
+              "20",
+              0
+            ],
+            "filename_prefix": "autorig-character-003_seethrough"
+          }
+        },
+        "22": {
+          "class_type": "PreviewImage",
+          "inputs": {
+            "images": [
+              "20",
+              1
+            ]
+          }
+        }
+      },
+      {
+        "client_id": "vtube-see-through-runner",
+        "create_time": 1781109469174
+      },
+      [
+        "21",
+        "22"
+      ]
+    ],
+    "outputs": {
+      "22": {
+        "images": [
+          {
+            "filename": "ComfyUI_temp_udaxi_00001_.png",
+            "subfolder": "",
+            "type": "temp"
+          }
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "16eebabc-2fdf-4239-8eda-8bee11ce8231",
+            "timestamp": 1781109469174
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [],
+            "prompt_id": "16eebabc-2fdf-4239-8eda-8bee11ce8231",
+            "timestamp": 1781109469176
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "16eebabc-2fdf-4239-8eda-8bee11ce8231",
+            "timestamp": 1781110293372
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "22": {
+        "node_id": "22",
+        "display_node": "22",
+        "parent_node": null,
+        "real_node_id": "22"
+      }
+    }
+  },
+  "layers_json": [
+    "/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/output/autorig-character-003_seethrough_20260611_015132_a2a695f9_layers.json"
+  ],
+  "output_dir": "/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/output",
+  "report_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/reports/comfyui_inference_report.json",
+  "environment": {
+    "PYTORCH_ENABLE_MPS_FALLBACK": null,
+    "PYTORCH_MPS_LOW_WATERMARK_RATIO": null,
+    "PYTORCH_MPS_HIGH_WATERMARK_RATIO": null
+  },
+  "settings": {
+    "input_image": "/Users/family/jason/Vtube/experiments/autorig-character-003/master_640.png",
+    "resolution": 640,
+    "steps": 12,
+    "depth_resolution": 512,
+    "filename_prefix": "autorig-character-003_seethrough",
+    "quant_mode": "none",
+    "group_offload": false,
+    "use_lama": true,
+    "auto_download": true
+  },
+  "prompt": {
+    "27": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "/Users/family/jason/Vtube/experiments/autorig-character-003/master_640.png"
+      }
+    },
+    "28": {
+      "class_type": "SeeThrough_LoadLayerDiffModel",
+      "inputs": {
+        "model": "layerdifforg/seethroughv0.0.2_layerdiff3d",
+        "vae_ckpt": "",
+        "unet_ckpt": "",
+        "quant_mode": "none",
+        "cache_tag_embeds": true,
+        "group_offload": false,
+        "auto_download": true
+      }
+    },
+    "29": {
+      "class_type": "SeeThrough_LoadDepthModel",
+      "inputs": {
+        "model": "layerdifforg/seethroughv0.0.1_marigold",
+        "quant_mode": "none",
+        "cache_tag_embeds": true,
+        "group_offload": false,
+        "auto_download": true
+      }
+    },
+    "24": {
+      "class_type": "SeeThrough_GenerateLayers",
+      "inputs": {
+        "image": [
+          "27",
+          0
+        ],
+        "layerdiff_model": [
+          "28",
+          0
+        ],
+        "seed": 42,
+        "resolution": 640,
+        "num_inference_steps": 12
+      }
+    },
+    "23": {
+      "class_type": "SeeThrough_GenerateDepth",
+      "inputs": {
+        "layers": [
+          "24",
+          0
+        ],
+        "depth_model": [
+          "29",
+          0
+        ],
+        "seed": 42,
+        "resolution_depth": 512
+      }
+    },
+    "20": {
+      "class_type": "SeeThrough_PostProcess",
+      "inputs": {
+        "layers_depth": [
+          "23",
+          0
+        ],
+        "tblr_split": true,
+        "use_lama": true
+      }
+    },
+    "21": {
+      "class_type": "SeeThrough_SavePSD",
+      "inputs": {
+        "parts": [
+          "20",
+          0
+        ],
+        "filename_prefix": "autorig-character-003_seethrough"
+      }
+    },
+    "22": {
+      "class_type": "PreviewImage",
+      "inputs": {
+        "images": [
+          "20",
+          1
+        ]
+      }
+    }
+  }
+}

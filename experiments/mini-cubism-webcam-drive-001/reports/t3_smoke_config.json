@@ -1,0 +1,124 @@
+{
+  "playwright_module": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/TypeScript/Demo/node_modules/playwright",
+  "base_url": "http://127.0.0.1:8061",
+  "captures_dir": "/Users/family/jason/Vtube/experiments/mini-cubism-webcam-drive-001/reports/captures",
+  "raw_out": "/Users/family/jason/Vtube/experiments/mini-cubism-webcam-drive-001/reports/t3_smoke_playwright_raw.json",
+  "samples": [
+    {
+      "label": "neutral",
+      "outputs": {
+        "ParamAngleX": 0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamEyeBallX": 0,
+        "ParamEyeBallY": 0,
+        "ParamMouthOpenY": 0
+      },
+      "expect_change": false
+    },
+    {
+      "label": "blink_L_full",
+      "outputs": {
+        "ParamEyeLOpen": 0.0,
+        "ParamEyeROpen": 1.0
+      },
+      "expect_change": true,
+      "expect": {
+        "ParamEyeLOpen": 0.27
+      }
+    },
+    {
+      "label": "blink_R_full",
+      "outputs": {
+        "ParamEyeLOpen": 1.0,
+        "ParamEyeROpen": 0.0
+      },
+      "expect_change": true,
+      "expect": {
+        "ParamEyeROpen": 0.27
+      }
+    },
+    {
+      "label": "blink_both_half",
+      "outputs": {
+        "ParamEyeLOpen": 0.5,
+        "ParamEyeROpen": 0.5
+      },
+      "expect_change": true
+    },
+    {
+      "label": "mouth_open_full",
+      "outputs": {
+        "ParamMouthOpenY": 1.0
+      },
+      "expect_change": true,
+      "expect": {
+        "ParamMouthOpenY": 0.85
+      }
+    },
+    {
+      "label": "mouth_open_mid",
+      "outputs": {
+        "ParamMouthOpenY": 0.45
+      },
+      "expect_change": true
+    },
+    {
+      "label": "gaze_left_up",
+      "outputs": {
+        "ParamEyeBallX": -1.0,
+        "ParamEyeBallY": 0.8
+      },
+      "expect_change": true
+    },
+    {
+      "label": "gaze_right_down",
+      "outputs": {
+        "ParamEyeBallX": 1.0,
+        "ParamEyeBallY": -0.8
+      },
+      "expect_change": true
+    },
+    {
+      "label": "head_left",
+      "outputs": {
+        "ParamAngleX": -28.0
+      },
+      "expect_change": true
+    },
+    {
+      "label": "head_right_over",
+      "outputs": {
+        "ParamAngleX": 45.0
+      },
+      "expect_change": true,
+      "expect": {
+        "ParamAngleX": 30.0
+      }
+    },
+    {
+      "label": "combo_talk",
+      "outputs": {
+        "ParamAngleX": 10,
+        "ParamEyeLOpen": 0.6,
+        "ParamEyeROpen": 0.6,
+        "ParamMouthOpenY": 0.7,
+        "ParamEyeBallX": 0.3
+      },
+      "expect_change": true
+    },
+    {
+      "label": "back_to_neutral",
+      "outputs": {
+        "ParamAngleX": 0,
+        "ParamEyeLOpen": 1,
+        "ParamEyeROpen": 1,
+        "ParamEyeBallX": 0,
+        "ParamEyeBallY": 0,
+        "ParamMouthOpenY": 0
+      },
+      "expect_change": false
+    }
+  ],
+  "replay_speed": 8
+}

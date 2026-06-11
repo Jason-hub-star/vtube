@@ -1,0 +1,675 @@
+{
+  "schema_version": 1,
+  "gate": "G1.6_MANUAL_SEMANTIC_ANCHOR_EDITOR",
+  "updated_at": "2026-06-08T09:30:53.103098+00:00",
+  "canonical_path": "experiments/cubism-v2-new-character-001/material_pack_v0/canonical/candidate_002_2048_rgba.png",
+  "manifest": "experiments/cubism-v2-new-character-001/material_pack_v0/layer_manifest.json",
+  "overrides": {
+    "mouth_corner_L": {
+      "part_id": "mouth_corner_L",
+      "semantic_role": "mouth_corner_L",
+      "expected_group": "mouth",
+      "roi": [
+        982,
+        839,
+        20,
+        30
+      ],
+      "anchor": [
+        992,
+        854
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:30:14.390783+00:00"
+    },
+    "mouth_corner_R": {
+      "part_id": "mouth_corner_R",
+      "semantic_role": "mouth_corner_R",
+      "expected_group": "mouth",
+      "roi": [
+        1059,
+        839,
+        20,
+        30
+      ],
+      "anchor": [
+        1069,
+        854
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:30:23.083185+00:00"
+    },
+    "mouth_lower_lip_mask": {
+      "part_id": "mouth_lower_lip_mask",
+      "semantic_role": "mouth_lower_lip_mask",
+      "expected_group": "mouth",
+      "roi": [
+        979,
+        1038,
+        104,
+        21
+      ],
+      "anchor": [
+        1032,
+        875
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T07:35:45.952820+00:00"
+    },
+    "mouth_upper_lip_mask": {
+      "part_id": "mouth_upper_lip_mask",
+      "semantic_role": "mouth_upper_lip_mask",
+      "expected_group": "mouth",
+      "roi": [
+        976,
+        975,
+        111,
+        21
+      ],
+      "anchor": [
+        1029,
+        854
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T07:35:56.084990+00:00"
+    },
+    "mouth_line": {
+      "part_id": "mouth_line",
+      "semantic_role": "mouth_line",
+      "expected_group": "mouth",
+      "roi": [
+        965,
+        855,
+        124,
+        25
+      ],
+      "anchor": [
+        1027,
+        867
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:29:43.062129+00:00"
+    },
+    "mouth_tongue": {
+      "part_id": "mouth_tongue",
+      "semantic_role": "mouth_tongue",
+      "expected_group": "mouth",
+      "roi": [
+        1000,
+        852,
+        65,
+        27
+      ],
+      "anchor": [
+        1032,
+        865
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:30:18.147209+00:00"
+    },
+    "mouth_teeth": {
+      "part_id": "mouth_teeth",
+      "semantic_role": "mouth_teeth",
+      "expected_group": "mouth",
+      "roi": [
+        985,
+        857,
+        85,
+        20
+      ],
+      "anchor": [
+        1027,
+        867
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:30:11.161685+00:00"
+    },
+    "mouth_inner": {
+      "part_id": "mouth_inner",
+      "semantic_role": "mouth_inner",
+      "expected_group": "mouth",
+      "roi": [
+        977,
+        837,
+        111,
+        61
+      ],
+      "anchor": [
+        1032,
+        867
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:29:39.061791+00:00"
+    },
+    "brow_R": {
+      "part_id": "brow_R",
+      "semantic_role": "brow_R",
+      "expected_group": "brow",
+      "roi": [
+        1025,
+        624,
+        200,
+        58
+      ],
+      "anchor": [
+        1125,
+        653
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:30:49.218495+00:00"
+    },
+    "brow_L": {
+      "part_id": "brow_L",
+      "semantic_role": "brow_L",
+      "expected_group": "brow",
+      "roi": [
+        839,
+        618,
+        200,
+        58
+      ],
+      "anchor": [
+        939,
+        647
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:30:53.103059+00:00"
+    },
+    "eye_R_closed_lid": {
+      "part_id": "eye_R_closed_lid",
+      "semantic_role": "right_eye_closed_lid",
+      "expected_group": "eye_R",
+      "roi": [
+        1100,
+        823,
+        143,
+        53
+      ],
+      "anchor": [
+        1143,
+        722
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T07:42:42.535198+00:00"
+    },
+    "eye_R_lower_lash": {
+      "part_id": "eye_R_lower_lash",
+      "semantic_role": "right_eye_lower_lash",
+      "expected_group": "eye_R",
+      "roi": [
+        1092,
+        726,
+        140,
+        45
+      ],
+      "anchor": [
+        1162,
+        748
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:30:05.527857+00:00"
+    },
+    "eye_R_upper_lash": {
+      "part_id": "eye_R_upper_lash",
+      "semantic_role": "right_eye_upper_lash",
+      "expected_group": "eye_R",
+      "roi": [
+        1072,
+        672,
+        180,
+        62
+      ],
+      "anchor": [
+        1162,
+        703
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:29:58.511947+00:00"
+    },
+    "eye_R_highlight": {
+      "part_id": "eye_R_highlight",
+      "semantic_role": "right_eye_highlight",
+      "expected_group": "eye_R",
+      "roi": [
+        1115,
+        714,
+        25,
+        27
+      ],
+      "anchor": [
+        1127,
+        727
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:29:35.442531+00:00"
+    },
+    "eye_L_closed_lid": {
+      "part_id": "eye_L_closed_lid",
+      "semantic_role": "left_eye_closed_lid",
+      "expected_group": "eye_L",
+      "roi": [
+        870,
+        823,
+        143,
+        53
+      ],
+      "anchor": [
+        931,
+        727
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T07:43:55.183595+00:00"
+    },
+    "eye_L_lower_lash": {
+      "part_id": "eye_L_lower_lash",
+      "semantic_role": "left_eye_lower_lash",
+      "expected_group": "eye_L",
+      "roi": [
+        829,
+        726,
+        140,
+        45
+      ],
+      "anchor": [
+        899,
+        748
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:29:51.112399+00:00"
+    },
+    "eye_L_upper_lash": {
+      "part_id": "eye_L_upper_lash",
+      "semantic_role": "left_eye_upper_lash",
+      "expected_group": "eye_L",
+      "roi": [
+        820,
+        669,
+        180,
+        62
+      ],
+      "anchor": [
+        910,
+        700
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:29:46.944877+00:00"
+    },
+    "eye_L_highlight": {
+      "part_id": "eye_L_highlight",
+      "semantic_role": "left_eye_highlight",
+      "expected_group": "eye_L",
+      "roi": [
+        926,
+        709,
+        20,
+        20
+      ],
+      "anchor": [
+        936,
+        719
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:29:31.561371+00:00"
+    },
+    "eye_R_pupil": {
+      "part_id": "eye_R_pupil",
+      "semantic_role": "right_eye_pupil",
+      "expected_group": "eye_R",
+      "roi": [
+        1104,
+        715,
+        36,
+        40
+      ],
+      "anchor": [
+        1122,
+        735
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:29:26.293600+00:00"
+    },
+    "eye_R_iris": {
+      "part_id": "eye_R_iris",
+      "semantic_role": "right_eye_iris",
+      "expected_group": "eye_R",
+      "roi": [
+        1084,
+        698,
+        72,
+        75
+      ],
+      "anchor": [
+        1120,
+        735
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:29:20.827640+00:00"
+    },
+    "eye_L_pupil": {
+      "part_id": "eye_L_pupil",
+      "semantic_role": "left_eye_pupil",
+      "expected_group": "eye_L",
+      "roi": [
+        924,
+        716,
+        36,
+        23
+      ],
+      "anchor": [
+        942,
+        727
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:29:16.195549+00:00"
+    },
+    "eye_L_iris": {
+      "part_id": "eye_L_iris",
+      "semantic_role": "left_eye_iris",
+      "expected_group": "eye_L",
+      "roi": [
+        900,
+        703,
+        72,
+        48
+      ],
+      "anchor": [
+        936,
+        727
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:29:11.158123+00:00"
+    },
+    "eye_R_underpaint": {
+      "part_id": "eye_R_underpaint",
+      "semantic_role": "eye_R_underpaint",
+      "expected_group": "eye_R",
+      "roi": [
+        1127,
+        818,
+        111,
+        69
+      ],
+      "anchor": [
+        1127,
+        780
+      ],
+      "action": "REPAIR_UNDERPAINT",
+      "note": "",
+      "updated_at": "2026-06-08T07:44:41.001089+00:00"
+    },
+    "eye_R_white": {
+      "part_id": "eye_R_white",
+      "semantic_role": "right_eye_white",
+      "expected_group": "eye_R",
+      "roi": [
+        1117,
+        688,
+        91,
+        95
+      ],
+      "anchor": [
+        1162,
+        735
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:29:08.261868+00:00"
+    },
+    "eye_L_underpaint": {
+      "part_id": "eye_L_underpaint",
+      "semantic_role": "eye_L_underpaint",
+      "expected_group": "eye_L",
+      "roi": [
+        873,
+        821,
+        132,
+        66
+      ],
+      "anchor": [
+        926,
+        785
+      ],
+      "action": "REPAIR_UNDERPAINT",
+      "note": "",
+      "updated_at": "2026-06-08T07:44:51.200775+00:00"
+    },
+    "eye_L_white": {
+      "part_id": "eye_L_white",
+      "semantic_role": "left_eye_white",
+      "expected_group": "eye_L",
+      "roi": [
+        828,
+        686,
+        148,
+        92
+      ],
+      "anchor": [
+        902,
+        732
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:29:02.896259+00:00"
+    },
+    "cheek_R": {
+      "part_id": "cheek_R",
+      "semantic_role": "cheek_R",
+      "expected_group": "face_base",
+      "roi": [
+        1080,
+        822,
+        85,
+        65
+      ],
+      "anchor": [
+        1122,
+        854
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:30:40.617563+00:00"
+    },
+    "cheek_L": {
+      "part_id": "cheek_L",
+      "semantic_role": "cheek_L",
+      "expected_group": "face_base",
+      "roi": [
+        884,
+        809,
+        84,
+        65
+      ],
+      "anchor": [
+        926,
+        841
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:30:34.051009+00:00"
+    },
+    "nose": {
+      "part_id": "nose",
+      "semantic_role": "nose",
+      "expected_group": "face_base",
+      "roi": [
+        997,
+        771,
+        60,
+        70
+      ],
+      "anchor": [
+        1027,
+        806
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T09:30:29.016609+00:00"
+    },
+    "face_shadow_R": {
+      "part_id": "face_shadow_R",
+      "semantic_role": "face_shadow_R",
+      "expected_group": "face_base",
+      "roi": [
+        1041,
+        745,
+        205,
+        300
+      ],
+      "anchor": [
+        1096,
+        894
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T07:45:48.284306+00:00"
+    },
+    "face_shadow_L": {
+      "part_id": "face_shadow_L",
+      "semantic_role": "face_shadow_L",
+      "expected_group": "face_base",
+      "roi": [
+        816,
+        745,
+        205,
+        300
+      ],
+      "anchor": [
+        947,
+        883
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T07:45:53.717430+00:00"
+    },
+    "face_underpaint_R": {
+      "part_id": "face_underpaint_R",
+      "semantic_role": "face_R_underpaint",
+      "expected_group": "face_base",
+      "roi": [
+        1043,
+        705,
+        202,
+        349
+      ],
+      "anchor": [
+        1104,
+        865
+      ],
+      "action": "REPAIR_UNDERPAINT",
+      "note": "",
+      "updated_at": "2026-06-08T07:46:02.400860+00:00"
+    },
+    "face_underpaint_L": {
+      "part_id": "face_underpaint_L",
+      "semantic_role": "face_L_underpaint",
+      "expected_group": "face_base",
+      "roi": [
+        817,
+        705,
+        202,
+        349
+      ],
+      "anchor": [
+        955,
+        870
+      ],
+      "action": "REPAIR_UNDERPAINT",
+      "note": "",
+      "updated_at": "2026-06-08T07:46:07.134005+00:00"
+    },
+    "shoulder_R": {
+      "part_id": "shoulder_R",
+      "semantic_role": "shoulder_R",
+      "expected_group": "body",
+      "roi": [
+        1066,
+        1185,
+        335,
+        250
+      ],
+      "anchor": [
+        1308,
+        1112
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T07:46:22.483453+00:00"
+    },
+    "shoulder_L": {
+      "part_id": "shoulder_L",
+      "semantic_role": "shoulder_L",
+      "expected_group": "body",
+      "roi": [
+        650,
+        1185,
+        361,
+        250
+      ],
+      "anchor": [
+        761,
+        1141
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T07:46:26.665440+00:00"
+    },
+    "neck": {
+      "part_id": "neck",
+      "semantic_role": "neck",
+      "expected_group": "body",
+      "roi": [
+        911,
+        1060,
+        230,
+        185
+      ],
+      "anchor": [
+        1027,
+        990
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T07:46:32.334253+00:00"
+    },
+    "torso_base": {
+      "part_id": "torso_base",
+      "semantic_role": "torso_base",
+      "expected_group": "body",
+      "roi": [
+        766,
+        1200,
+        540,
+        492
+      ],
+      "anchor": [
+        1024,
+        1167
+      ],
+      "action": "REEXTRACT_FROM_CANONICAL",
+      "note": "",
+      "updated_at": "2026-06-08T07:46:40.117349+00:00"
+    }
+  }
+}

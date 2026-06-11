@@ -1,0 +1,28 @@
+{
+  "asset": {
+    "asset_id": "eye_R_closed_underpaint",
+    "group": "eye_R",
+    "ko": "오른눈 닫힘용 피부 밑색",
+    "kind": "underpaint",
+    "required": true,
+    "reason": "Covers the eye socket under closed lids without using visible rectangular patches.",
+    "param_targets": [
+      "ParamEyeROpen"
+    ]
+  },
+  "roi_name": "eye_R",
+  "roi_bbox": [
+    1014,
+    616,
+    297,
+    235
+  ],
+  "prompt": "Asset: eye_R_closed_underpaint\nKorean name: 오른눈 닫힘용 피부 밑색\nTarget group: eye_R\nTarget parameter: ParamEyeROpen\n\nCommon constraints:\n- Use the selected character reference exactly: same identity, same face proportions, same anime rendering style, same front-facing camera, same lighting.\n- Generate Live2D/Cubism material, not a new character design and not a sprite sheet.\n- No labels, no guides, no text, no colored boxes, no extra face marks, no new accessories.\n- Prefer transparent background/full-canvas layer output when possible.\n- If the image model cannot output a true layer, generate a clean high-resolution reference and route it through the normalization/alpha validation step before use.\n\nTask:\nCreate clean eye-socket skin material for the specified left/right eye area. Remove iris, pupil, white of eye, highlight, and open-eye lash artifacts. Preserve surrounding skin gradient, blush, eyelid fold, and hair occlusion style. Output only the clean material needed under closed eyelids. Make it a soft underpaint layer for closed-eye states.\n\nOutput requirements:\n- Preferred: 2048x2048 RGBA full-canvas transparent PNG aligned to the provided reference canvas.\n- If only a crop can be generated, keep the crop aspect ratio and include the ROI name in the filename; the normalization pipeline will place it into 2048x2048.\n- Do not create a sprite sheet. Do not include labels or guide marks.\n",
+  "input_references": {
+    "source_2048_rgba": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/references/source_candidate_002_2048_rgba.png",
+    "roi_crop": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/roi_crops/eye_R_source_crop.png",
+    "full_canvas_mask": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_R_full_canvas_mask.png",
+    "crop_mask": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/eye_R_crop_mask.png"
+  },
+  "post_generation_validation": "python3 scripts/validate_cubism_v2_keypose_pngs.py --input-dir /path/to/generated_pngs"
+}

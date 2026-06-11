@@ -1,0 +1,1437 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T09:36:22.238312+00:00",
+  "spec_id": "cubism-v2-new-character-002-v22-64part-generation-spec",
+  "status": "PASS_SPEC_READY_FOR_IMAGE_GENERATION_PLANNING",
+  "target": {
+    "experiment_id": "cubism-v2-new-character-002",
+    "version": "v22_64part_generation_spec",
+    "tier": "v2_standard",
+    "part_count": 64,
+    "default_canvas": "2048x2048 RGBA full-canvas after normalization",
+    "production_target": "Live2D/Cubism PSD, ArtMesh, Deformer, Keyform, CMO3/runtime validation",
+    "not_target": "PNG frame-swap production runtime"
+  },
+  "source_refs": {
+    "project_status": "docs/status/PROJECT-STATUS.md",
+    "material_pack_first_plan": "docs/ref/CUBISM-V2-MATERIAL-PACK-FIRST-GENERATION.md",
+    "confirmed_64part_spec": "experiments/reference-model-structure-001/reports/cubism_v2_new_model_v2_standard_part_spec.json",
+    "v21_success_replay": "experiments/cubism-v2-new-character-002/reports/model_edit_v21_supported_rig_smoke_preview/success_pattern_replay_v1/success_pattern_replay_report.md",
+    "v21_clean_contact_sheet": "experiments/cubism-v2-new-character-002/reports/model_edit_v21_supported_rig_smoke_preview/supported_pose_sweep_clean_replay_v2/v21_supported_pose_sweep_clean_contact_sheet.png",
+    "manual_eye_anchor_overrides": "experiments/cubism-v2-new-character-002/reports/model_edit_v19_generated_eye_preview/manual_eye_detail_anchor_v1/manual_eye_detail_anchor_overrides.json"
+  },
+  "locked_success_baseline": {
+    "current_preview": "v21 supported-control Mini Cubism rig smoke",
+    "active_controls": [
+      "ParamAngleX",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamEyeLOpen",
+      "ParamEyeROpen",
+      "ParamMouthOpenY"
+    ],
+    "hidden_unsupported_controls": [
+      "ParamHairFront"
+    ],
+    "eye_open_visual_policy": "natural close around 0.27; do not expose harder close as default visual target until new assets approve it",
+    "mouth_open_policy": "clamp wide open around 0.85 until regenerated smile-open packet passes visual QA",
+    "diagnostic_scope": "Mini Cubism PASS is local diagnostic evidence only, not real Cubism authoring success"
+  },
+  "part_groups": {
+    "body": 10,
+    "face_base": 8,
+    "eye_L": 8,
+    "eye_R": 8,
+    "brow": 2,
+    "mouth": 8,
+    "hair": 16,
+    "clothing": 4
+  },
+  "parts": [
+    {
+      "id": "body_underpaint",
+      "group": "body",
+      "label_ko": "몸 밑색",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBodyAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "body_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": "몸 각도에서 빈틈이 보이지 않게 받치는 밑색"
+    },
+    {
+      "id": "torso_base",
+      "group": "body",
+      "label_ko": "상체 기본",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBodyAngleY",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "draw_order_band": "body_mid",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "neck",
+      "group": "body",
+      "label_ko": "목",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamBodyAngleX",
+        "ParamBodyAngleY"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "draw_order_band": "body_mid",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "neck_shadow_underpaint",
+      "group": "body",
+      "label_ko": "목 그림자 밑색",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "body_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "shoulder_L",
+      "group": "body",
+      "label_ko": "왼쪽 어깨",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "draw_order_band": "body_mid",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "shoulder_R",
+      "group": "body",
+      "label_ko": "오른쪽 어깨",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "draw_order_band": "body_mid",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "arm_L_upper_simple",
+      "group": "body",
+      "label_ko": "왼쪽 간단 팔",
+      "deformer_node": "shoulder_arm_rotation",
+      "parameters": [
+        "ParamArmL/R or ParamHandL/R",
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "body_front",
+      "qa_tags": [
+        "misaligned"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "arm_R_upper_simple",
+      "group": "body",
+      "label_ko": "오른쪽 간단 팔",
+      "deformer_node": "shoulder_arm_rotation",
+      "parameters": [
+        "ParamArmL/R or ParamHandL/R",
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "body_front",
+      "qa_tags": [
+        "misaligned"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "arm_L_underpaint",
+      "group": "body",
+      "label_ko": "왼팔 밑색",
+      "deformer_node": "shoulder_arm_rotation",
+      "parameters": [
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "body_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "arm_R_underpaint",
+      "group": "body",
+      "label_ko": "오른팔 밑색",
+      "deformer_node": "shoulder_arm_rotation",
+      "parameters": [
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "body_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "face_base",
+      "group": "face_base",
+      "label_ko": "얼굴 기본",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleY",
+        "ParamAngleZ"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_mid",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "face_shadow_L",
+      "group": "face_base",
+      "label_ko": "왼쪽 얼굴 그림자",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "face_shadow_R",
+      "group": "face_base",
+      "label_ko": "오른쪽 얼굴 그림자",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "face_underpaint_L",
+      "group": "face_base",
+      "label_ko": "왼쪽 얼굴 밑색",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "face_underpaint_R",
+      "group": "face_base",
+      "label_ko": "오른쪽 얼굴 밑색",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "nose",
+      "group": "face_base",
+      "label_ko": "코",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "cheek_L",
+      "group": "face_base",
+      "label_ko": "왼쪽 볼",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "cheek_R",
+      "group": "face_base",
+      "label_ko": "오른쪽 볼",
+      "deformer_node": "head_angle_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "face_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_L_white",
+      "group": "eye_L",
+      "label_ko": "왼쪽 눈 흰자",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_back",
+      "qa_tags": [
+        "bad_alpha"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_L_iris",
+      "group": "eye_L",
+      "label_ko": "왼쪽 홍채",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_mid",
+      "qa_tags": [
+        "misaligned"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_L_pupil",
+      "group": "eye_L",
+      "label_ko": "왼쪽 동공",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_mid",
+      "qa_tags": [
+        "misaligned"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_L_highlight",
+      "group": "eye_L",
+      "label_ko": "왼쪽 눈 하이라이트",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_L_upper_lash",
+      "group": "eye_L",
+      "label_ko": "왼쪽 위 속눈썹",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [
+        "draw_order_issue"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_L_lower_lash",
+      "group": "eye_L",
+      "label_ko": "왼쪽 아래 속눈썹",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_L_closed_lid",
+      "group": "eye_L",
+      "label_ko": "왼쪽 감은 눈꺼풀",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [
+        "clipping_risk"
+      ],
+      "purpose_ko": "눈 감김 extreme에서 흰자/홍채를 가리는 키폼용"
+    },
+    {
+      "id": "eye_L_underpaint",
+      "group": "eye_L",
+      "label_ko": "왼쪽 눈 밑색",
+      "deformer_node": "eye_L_warp",
+      "parameters": [
+        "ParamEyeLOpen",
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_R_white",
+      "group": "eye_R",
+      "label_ko": "오른쪽 눈 흰자",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_back",
+      "qa_tags": [
+        "bad_alpha"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_R_iris",
+      "group": "eye_R",
+      "label_ko": "오른쪽 홍채",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_mid",
+      "qa_tags": [
+        "misaligned"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_R_pupil",
+      "group": "eye_R",
+      "label_ko": "오른쪽 동공",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_mid",
+      "qa_tags": [
+        "misaligned"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_R_highlight",
+      "group": "eye_R",
+      "label_ko": "오른쪽 눈 하이라이트",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamEyeBallX",
+        "ParamEyeBallY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_R_upper_lash",
+      "group": "eye_R",
+      "label_ko": "오른쪽 위 속눈썹",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [
+        "draw_order_issue"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_R_lower_lash",
+      "group": "eye_R",
+      "label_ko": "오른쪽 아래 속눈썹",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamAngleY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "eye_R_closed_lid",
+      "group": "eye_R",
+      "label_ko": "오른쪽 감은 눈꺼풀",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_front",
+      "qa_tags": [
+        "clipping_risk"
+      ],
+      "purpose_ko": "눈 감김 extreme에서 흰자/홍채를 가리는 키폼용"
+    },
+    {
+      "id": "eye_R_underpaint",
+      "group": "eye_R",
+      "label_ko": "오른쪽 눈 밑색",
+      "deformer_node": "eye_R_warp",
+      "parameters": [
+        "ParamEyeROpen",
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "eye_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "brow_L",
+      "group": "brow",
+      "label_ko": "왼쪽 눈썹",
+      "deformer_node": "brow_L_R_warp",
+      "parameters": [
+        "ParamBrowL/R Angle/Form/Y",
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "brow_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "brow_R",
+      "group": "brow",
+      "label_ko": "오른쪽 눈썹",
+      "deformer_node": "brow_L_R_warp",
+      "parameters": [
+        "ParamBrowL/R Angle/Form/Y",
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "brow_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "mouth_line",
+      "group": "mouth",
+      "label_ko": "입 선",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm",
+        "ParamAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_front",
+      "qa_tags": [
+        "misaligned"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "mouth_inner",
+      "group": "mouth",
+      "label_ko": "입 안쪽",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_back",
+      "qa_tags": [
+        "bad_alpha"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "mouth_upper_lip_mask",
+      "group": "mouth",
+      "label_ko": "윗입술 마스크",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_front",
+      "qa_tags": [
+        "clipping_risk"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "mouth_lower_lip_mask",
+      "group": "mouth",
+      "label_ko": "아랫입술 마스크",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_front",
+      "qa_tags": [
+        "clipping_risk"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "mouth_teeth",
+      "group": "mouth",
+      "label_ko": "치아",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_mid",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "mouth_tongue",
+      "group": "mouth",
+      "label_ko": "혀",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_mid",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "mouth_corner_L",
+      "group": "mouth",
+      "label_ko": "왼쪽 입꼬리",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "mouth_corner_R",
+      "group": "mouth",
+      "label_ko": "오른쪽 입꼬리",
+      "deformer_node": "mouth_warp",
+      "parameters": [
+        "ParamMouthOpenY",
+        "ParamMouthForm"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "mouth_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_back_base",
+      "group": "hair",
+      "label_ko": "뒷머리 기본",
+      "deformer_node": "back_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleZ",
+        "ParamHairBack"
+      ],
+      "physics_groups": [
+        "back_hair_physics"
+      ],
+      "draw_order_band": "hair_back",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_back_underpaint",
+      "group": "hair",
+      "label_ko": "뒷머리 밑색",
+      "deformer_node": "back_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamHairBack"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "hair_back",
+      "qa_tags": [
+        "underpaint_missing"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_back_strand_L",
+      "group": "hair",
+      "label_ko": "왼쪽 뒷머리 가닥",
+      "deformer_node": "back_hair_warp",
+      "parameters": [
+        "ParamHairBack",
+        "ParamAngleZ"
+      ],
+      "physics_groups": [
+        "back_hair_physics"
+      ],
+      "draw_order_band": "hair_back",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_back_strand_R",
+      "group": "hair",
+      "label_ko": "오른쪽 뒷머리 가닥",
+      "deformer_node": "back_hair_warp",
+      "parameters": [
+        "ParamHairBack",
+        "ParamAngleZ"
+      ],
+      "physics_groups": [
+        "back_hair_physics"
+      ],
+      "draw_order_band": "hair_back",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_back_center",
+      "group": "hair",
+      "label_ko": "가운데 뒷머리",
+      "deformer_node": "back_hair_warp",
+      "parameters": [
+        "ParamHairBack",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "back_hair_physics"
+      ],
+      "draw_order_band": "hair_back",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_front_center",
+      "group": "hair",
+      "label_ko": "가운데 앞머리",
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleZ",
+        "ParamHairFront"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "draw_order_band": "hair_front",
+      "qa_tags": [
+        "draw_order_issue"
+      ],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_front_L",
+      "group": "hair",
+      "label_ko": "왼쪽 앞머리",
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleZ",
+        "ParamHairFront"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "draw_order_band": "hair_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_front_R",
+      "group": "hair",
+      "label_ko": "오른쪽 앞머리",
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamAngleZ",
+        "ParamHairFront"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "draw_order_band": "hair_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_front_side_L",
+      "group": "hair",
+      "label_ko": "왼쪽 앞 옆머리",
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamHairFront"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "draw_order_band": "hair_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_front_side_R",
+      "group": "hair",
+      "label_ko": "오른쪽 앞 옆머리",
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamAngleX",
+        "ParamHairFront"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "draw_order_band": "hair_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_front_tip_L",
+      "group": "hair",
+      "label_ko": "왼쪽 앞머리 끝",
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamHairFront",
+        "ParamAngleZ"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "draw_order_band": "hair_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_front_tip_R",
+      "group": "hair",
+      "label_ko": "오른쪽 앞머리 끝",
+      "deformer_node": "front_hair_warp",
+      "parameters": [
+        "ParamHairFront",
+        "ParamAngleZ"
+      ],
+      "physics_groups": [
+        "front_hair_physics"
+      ],
+      "draw_order_band": "hair_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_side_L_outer",
+      "group": "hair",
+      "label_ko": "왼쪽 바깥 옆머리",
+      "deformer_node": "side_hair_L_R_warp",
+      "parameters": [
+        "ParamHairSide",
+        "ParamAngleX"
+      ],
+      "physics_groups": [
+        "side_hair_L_physics"
+      ],
+      "draw_order_band": "hair_side",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_side_L_inner",
+      "group": "hair",
+      "label_ko": "왼쪽 안쪽 옆머리",
+      "deformer_node": "side_hair_L_R_warp",
+      "parameters": [
+        "ParamHairSide",
+        "ParamAngleX"
+      ],
+      "physics_groups": [
+        "side_hair_L_physics"
+      ],
+      "draw_order_band": "hair_side",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_side_R_outer",
+      "group": "hair",
+      "label_ko": "오른쪽 바깥 옆머리",
+      "deformer_node": "side_hair_L_R_warp",
+      "parameters": [
+        "ParamHairSide",
+        "ParamAngleX"
+      ],
+      "physics_groups": [
+        "side_hair_R_physics"
+      ],
+      "draw_order_band": "hair_side",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "hair_side_R_inner",
+      "group": "hair",
+      "label_ko": "오른쪽 안쪽 옆머리",
+      "deformer_node": "side_hair_L_R_warp",
+      "parameters": [
+        "ParamHairSide",
+        "ParamAngleX"
+      ],
+      "physics_groups": [
+        "side_hair_R_physics"
+      ],
+      "draw_order_band": "hair_side",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "collar_front",
+      "group": "clothing",
+      "label_ko": "앞깃",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "draw_order_band": "clothing_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "collar_shadow",
+      "group": "clothing",
+      "label_ko": "깃 그림자",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "clothing_mid",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "chest_cloth_base",
+      "group": "clothing",
+      "label_ko": "가슴 의상 기본",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX",
+        "ParamBreath"
+      ],
+      "physics_groups": [
+        "body_breath_physics"
+      ],
+      "draw_order_band": "clothing_mid",
+      "qa_tags": [],
+      "purpose_ko": ""
+    },
+    {
+      "id": "chest_cloth_shadow",
+      "group": "clothing",
+      "label_ko": "가슴 의상 그림자",
+      "deformer_node": "body_root_warp",
+      "parameters": [
+        "ParamBodyAngleX"
+      ],
+      "physics_groups": [],
+      "draw_order_band": "clothing_front",
+      "qa_tags": [],
+      "purpose_ko": ""
+    }
+  ],
+  "generation_batches": [
+    {
+      "id": "B0_source_identity",
+      "purpose": "Lock one same-character source before any split asset is accepted.",
+      "outputs": [
+        "new_character_002_source_front",
+        "source_palette_reference",
+        "source_identity_notes"
+      ],
+      "rules": [
+        "adult cute female character identity remains fixed across all following assets",
+        "front or near-front upper-body pose with visible neck, shoulders, torso, eyes, mouth, and readable hair groups",
+        "no labels, guides, text, props covering eyes/mouth/hair, or accessory changes between sheets"
+      ]
+    },
+    {
+      "id": "B1_clean_base_underpaint",
+      "purpose": "Create clean bases at generation time instead of patching baked pixels later.",
+      "outputs": [
+        "face_base",
+        "face_underpaint_L",
+        "face_underpaint_R",
+        "eye_L_underpaint",
+        "eye_R_underpaint",
+        "mouth_base_clean_reference",
+        "body_underpaint",
+        "neck_shadow_underpaint",
+        "arm_L_underpaint",
+        "arm_R_underpaint",
+        "hair_back_underpaint"
+      ],
+      "rules": [
+        "face_base has no open-eye, iris, pupil, eye-white, lash, mouth-line, teeth, or tongue remnants",
+        "underpaint preserves skin/hair gradients and occlusion, with no rectangular patch boundary",
+        "do not promote procedural cover patches or late mask surgery as production clean base"
+      ]
+    },
+    {
+      "id": "B2_eye_pack",
+      "purpose": "Generate production eye parts and blink in-betweens as one coordinated eye packet.",
+      "outputs": [
+        "eye_L_white",
+        "eye_L_iris",
+        "eye_L_pupil",
+        "eye_L_highlight",
+        "eye_L_upper_lash",
+        "eye_L_lower_lash",
+        "eye_L_closed_lid",
+        "eye_R_white",
+        "eye_R_iris",
+        "eye_R_pupil",
+        "eye_R_highlight",
+        "eye_R_upper_lash",
+        "eye_R_lower_lash",
+        "eye_R_closed_lid",
+        "eye_open_reference",
+        "eye_half_closed_reference",
+        "eye_mostly_closed_reference",
+        "eye_closed_reference"
+      ],
+      "rules": [
+        "eye whites stay fixed for EyeBallX/Y; iris, pupil, and highlight move together from the same anchor",
+        "split iris/pupil/highlight may pass only if they are generated as a coherent packet and anchor-locked",
+        "if split details drift or create crossed eyes, fall back to a coherent iris-detail diagnostic asset and regenerate the production split",
+        "EyeOpen visual clamp target starts from v21 pattern: natural close is around 0.27, not hard 0.0"
+      ]
+    },
+    {
+      "id": "B3_mouth_pack",
+      "purpose": "Generate mouth rig parts as a coordinated smile-open material packet.",
+      "outputs": [
+        "mouth_line",
+        "mouth_inner",
+        "mouth_upper_lip_mask",
+        "mouth_lower_lip_mask",
+        "mouth_teeth",
+        "mouth_tongue",
+        "mouth_corner_L",
+        "mouth_corner_R",
+        "mouth_closed_smile_reference",
+        "mouth_small_open_reference",
+        "mouth_mid_teeth_reference",
+        "mouth_wide_teeth_tongue_reference"
+      ],
+      "rules": [
+        "teeth/tongue/inner must be drawn naturally inside the same mouth opening, not pasted as separate centered overlays",
+        "wide-open reference must be proportion-limited; reject oversized round mouth shapes",
+        "ParamMouthOpenY max remains visually clamped around 0.85 until a better mouth packet is approved",
+        "ParamMouthForm is not active in v21 diagnostic unless a real production mouth-form set is generated"
+      ]
+    },
+    {
+      "id": "B4_hair_pack",
+      "purpose": "Create independent front/back/side hair children so HairFront can become real.",
+      "outputs": [
+        "hair_back_base",
+        "hair_back_strand_L",
+        "hair_back_strand_R",
+        "hair_back_center",
+        "hair_front_center",
+        "hair_front_L",
+        "hair_front_R",
+        "hair_front_side_L",
+        "hair_front_side_R",
+        "hair_front_tip_L",
+        "hair_front_tip_R",
+        "hair_side_L_outer",
+        "hair_side_L_inner",
+        "hair_side_R_outer",
+        "hair_side_R_inner"
+      ],
+      "rules": [
+        "ParamHairFront stays unsupported until real hair_front_* child parts exist and move independently",
+        "front bangs must preserve face/eye occlusion consistency across clean base and eye packets",
+        "side/back hair parts must leave underpaint coverage for angle and physics motion"
+      ]
+    },
+    {
+      "id": "B5_body_clothing_pack",
+      "purpose": "Complete torso, neck, shoulder, arm, and clothing layers for standard body motion.",
+      "outputs": [
+        "torso_base",
+        "neck",
+        "shoulder_L",
+        "shoulder_R",
+        "arm_L_upper_simple",
+        "arm_R_upper_simple",
+        "collar_front",
+        "collar_shadow",
+        "chest_cloth_base",
+        "chest_cloth_shadow",
+        "brow_L",
+        "brow_R",
+        "nose",
+        "cheek_L",
+        "cheek_R",
+        "face_shadow_L",
+        "face_shadow_R"
+      ],
+      "rules": [
+        "keep first v2_standard scope simple: no complex hands, large props, heavy effects, or rich vowel set",
+        "nose must remain visible as its own subtle part; do not lose it during face cleanup",
+        "body and clothing parts must support breath and body-angle motion without visible holes"
+      ]
+    },
+    {
+      "id": "B6_manifest_normalize_validate",
+      "purpose": "Normalize and validate only after raw evidence is preserved.",
+      "outputs": [
+        "raw_outputs/",
+        "normalized_layers/",
+        "generation_manifest.json",
+        "layer_manifest.json",
+        "technical_validation_report.json",
+        "contact_sheet.png",
+        "overlay_qa_report.md",
+        "manual_anchor_overrides.json"
+      ],
+      "rules": [
+        "keep raw generated files; never delete rejected evidence",
+        "normalize to full-canvas RGBA, default 2048x2048 unless the Cubism authoring plan explicitly chooses another allowed size",
+        "all crop outputs need full-canvas placement plus ROI/anchor metadata"
+      ]
+    }
+  ],
+  "quality_gates": [
+    {
+      "id": "G0_source_identity",
+      "status_to_reach": "PASS_READY_FOR_64PART_GENERATION",
+      "checks": [
+        "same character accepted by 주인님",
+        "style/outfit accepted enough for production split",
+        "hair, eyes, mouth, neck, shoulders, torso are readable"
+      ]
+    },
+    {
+      "id": "G1_64part_completeness",
+      "status_to_reach": "PASS_64_PARTS_PRESENT",
+      "checks": [
+        "64 required part IDs present in manifest",
+        "group counts match v2_standard spec",
+        "no duplicate IDs or missing underpaint placeholders"
+      ]
+    },
+    {
+      "id": "G2_full_canvas_rgba",
+      "status_to_reach": "PASS_NORMALIZED_FULL_CANVAS",
+      "checks": [
+        "each PNG is RGBA",
+        "each layer has shared full-canvas dimensions",
+        "non-empty alpha and bbox metadata exist"
+      ]
+    },
+    {
+      "id": "G3_technical_validators",
+      "status_to_reach": "PASS_READY_FOR_VISUAL_QA",
+      "checks": [
+        "validate_cubism_v2_keypose_pngs.py passes for required keypose PNGs",
+        "64-part manifest validator passes",
+        "PSD input validator passes before import attempt"
+      ]
+    },
+    {
+      "id": "G4_contact_sheet_visual_qa",
+      "status_to_reach": "PASS_HUMAN_VISUAL_QA_REQUIRED_OR_ACCEPTED",
+      "checks": [
+        "contact sheet shows no patch borders, baked residues, or identity drift",
+        "eye size/location and mouth location are coherent",
+        "mouth teeth/tongue/inner read naturally"
+      ]
+    },
+    {
+      "id": "G5_overlay_qa",
+      "status_to_reach": "PASS_OVERLAY_QA_OR_REVISE",
+      "checks": [
+        "clean bases do not contain eye/mouth remnants",
+        "closed-eye states do not reveal original open-eye pixels",
+        "mouth open states do not reveal circular patch boundaries"
+      ]
+    },
+    {
+      "id": "G6_manual_anchor_correction",
+      "status_to_reach": "PASS_ANCHOR_LOCKED_OR_REVISE",
+      "checks": [
+        "use drag/zoom editor when eye, mouth, or hair parts are visually misaligned",
+        "save explicit override JSON with target anchors and applied deltas",
+        "rebuild full-canvas layers from overrides, then rerun contact sheet"
+      ]
+    },
+    {
+      "id": "G7_mini_cubism_diagnostic",
+      "status_to_reach": "PASS_DIAGNOSTIC_ONLY",
+      "checks": [
+        "Mini Cubism supported controls pass validator and pose sweep",
+        "unsupported controls are hidden or marked contract-only",
+        "diagnostic PASS is not promoted to real Cubism authoring success"
+      ]
+    },
+    {
+      "id": "G8_real_cubism_authoring_readiness",
+      "status_to_reach": "READY_FOR_CUBISM_EDITOR_AUTHORING",
+      "checks": [
+        "PSD candidate uses psd-tools path and passes input validation",
+        "actual Cubism Editor import smoke is captured",
+        "CMO3 structure gate targets warp >=35, rotation >=8, keyform bindings >=120, physics groups >=4"
+      ]
+    }
+  ],
+  "success_patterns": [
+    {
+      "id": "same_character_material_pack_first",
+      "signal": "source, clean bases, eyes, mouth, hair, and body are generated as one coordinated identity set",
+      "distinguishes_from_failure": "not a pretty front image followed by late erasing/patching"
+    },
+    {
+      "id": "clean_base_generated_not_patched",
+      "signal": "face_base and underpaints have natural gradients and no baked eye/mouth pixels",
+      "distinguishes_from_failure": "no rectangular skin patches or socket cover stains"
+    },
+    {
+      "id": "eye_detail_anchor_locked",
+      "signal": "eye whites are fixed; iris, pupil, and highlight share the same EyeBall delta and target anchor",
+      "distinguishes_from_failure": "not partial original eye movement, moving whites, or split detail drift"
+    },
+    {
+      "id": "mouth_generated_as_packet",
+      "signal": "inner, teeth, tongue, lips, line, and corners belong to the same opening and scale",
+      "distinguishes_from_failure": "not tiny centered mouth swaps or pasted helper overlays"
+    },
+    {
+      "id": "real_hairfront_children",
+      "signal": "hair_front_* parts exist and can move independently before ParamHairFront is shown",
+      "distinguishes_from_failure": "not a fake slider with no moving front hair art"
+    },
+    {
+      "id": "evidence_separation",
+      "signal": "technical PASS, human visual PASS, Mini Cubism PASS, and Cubism structure PASS are recorded separately",
+      "distinguishes_from_failure": "not treating validator or Mini Cubism preview as final production rig success"
+    }
+  ],
+  "failure_patterns": [
+    {
+      "id": "late_patch_clean_base",
+      "verdict": "FAIL_VISUAL_QA",
+      "signals": [
+        "rectangular skin boundary",
+        "stain around sockets",
+        "open-eye or mouth remnants in face_base"
+      ],
+      "recovery": "regenerate or model-native repaint clean base; do not widen cover patches"
+    },
+    {
+      "id": "moving_eye_white",
+      "verdict": "FAIL_RIG_POLICY",
+      "signals": [
+        "eye white follows EyeBallX/Y",
+        "whole baked eye slides inside face"
+      ],
+      "recovery": "keep white fixed; move only anchor-locked iris/pupil/highlight detail"
+    },
+    {
+      "id": "split_eye_detail_drift",
+      "verdict": "REVISE_OR_REGENERATE",
+      "signals": [
+        "pupil/highlight detach from iris",
+        "cross-eyed gaze",
+        "only a small part of original eye moves"
+      ],
+      "recovery": "use manual anchor correction and regenerate production split as a coherent eye packet"
+    },
+    {
+      "id": "oversized_or_centered_mouth",
+      "verdict": "REVISE_OR_REGENERATE",
+      "signals": [
+        "wide open mouth too large",
+        "round patch boundary",
+        "tiny mouth opens at center only"
+      ],
+      "recovery": "regenerate smile-open mouth packet with bounded max open and visible teeth/tongue"
+    },
+    {
+      "id": "pasted_mouth_internals",
+      "verdict": "FAIL_VISUAL_QA",
+      "signals": [
+        "teeth/tongue/inner look like overlays",
+        "internals do not follow mouth shape"
+      ],
+      "recovery": "generate internals inside coordinated mouth opening, then split cleanly"
+    },
+    {
+      "id": "fake_hairfront_slider",
+      "verdict": "UNSUPPORTED_CONTROL_HIDE",
+      "signals": [
+        "ParamHairFront exists but no independent front hair child parts move"
+      ],
+      "recovery": "hide in diagnostic preview until hair_front_* parts exist"
+    },
+    {
+      "id": "validator_only_promotion",
+      "verdict": "BLOCKED_FROM_PRODUCTION",
+      "signals": [
+        "PNG validator passes but contact sheet or human review says REVISE/FAIL"
+      ],
+      "recovery": "keep technical PASS separate and return to visual/overlay QA"
+    },
+    {
+      "id": "mini_cubism_as_real_cubism",
+      "verdict": "BLOCKED_FROM_PRODUCTION_CLAIM",
+      "signals": [
+        "Mini Cubism pose sweep PASS used as final rig proof"
+      ],
+      "recovery": "author real Cubism deformers/keyforms, then run CMO3 structure inspection"
+    }
+  ],
+  "required_outputs": [
+    "raw_outputs/",
+    "normalized_layers/",
+    "generation_manifest.json",
+    "layer_manifest.json",
+    "technical_validation_report.json",
+    "64part_completeness_report.json",
+    "contact_sheet.png",
+    "overlay_qa_report.md",
+    "human_visual_review.md",
+    "manual_anchor_overrides.json when used",
+    "mini_cubism_diagnostic_project/ after visual QA only",
+    "import_ready_candidate.psd after material QA",
+    "cubism_import_smoke.json after actual Cubism Editor import",
+    "cmo3_structure_report.json after real Cubism authoring"
+  ],
+  "self_review": {
+    "part_count": 64,
+    "group_counts": {
+      "body": 10,
+      "face_base": 8,
+      "eye_L": 8,
+      "eye_R": 8,
+      "brow": 2,
+      "mouth": 8,
+      "hair": 16,
+      "clothing": 4
+    },
+    "no_duplicate_part_ids": true,
+    "has_real_hairfront_scope": true,
+    "has_eye_detail_split_scope": true,
+    "has_mouth_internal_scope": true,
+    "status": "PASS"
+  }
+}

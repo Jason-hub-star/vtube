@@ -1,0 +1,28 @@
+{
+  "asset": {
+    "asset_id": "mouth_teeth",
+    "group": "mouth",
+    "ko": "치아",
+    "kind": "mouth_detail",
+    "required": true,
+    "reason": "Teeth should be an independent detail layer for open-mouth poses.",
+    "param_targets": [
+      "ParamMouthOpenY"
+    ]
+  },
+  "roi_name": "mouth",
+  "roi_bbox": [
+    907,
+    773,
+    250,
+    356
+  ],
+  "prompt": "Asset: mouth_teeth\nKorean name: 치아\nTarget group: mouth\nTarget parameter: ParamMouthOpenY\n\nCommon constraints:\n- Use the selected character reference exactly: same identity, same face proportions, same anime rendering style, same front-facing camera, same lighting.\n- Generate Live2D/Cubism material, not a new character design and not a sprite sheet.\n- No labels, no guides, no text, no colored boxes, no extra face marks, no new accessories.\n- Prefer transparent background/full-canvas layer output when possible.\n- If the image model cannot output a true layer, generate a clean high-resolution reference and route it through the normalization/alpha validation step before use.\n\nTask:\nCreate separate mouth detail material for mouth_inner, teeth, or tongue. Keep it style-matched and usable as an independent Cubism layer.\n\nOutput requirements:\n- Preferred: 2048x2048 RGBA full-canvas transparent PNG aligned to the provided reference canvas.\n- If only a crop can be generated, keep the crop aspect ratio and include the ROI name in the filename; the normalization pipeline will place it into 2048x2048.\n- Do not create a sprite sheet. Do not include labels or guide marks.\n",
+  "input_references": {
+    "source_2048_rgba": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/references/source_candidate_002_2048_rgba.png",
+    "roi_crop": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/roi_crops/mouth_source_crop.png",
+    "full_canvas_mask": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/mouth_full_canvas_mask.png",
+    "crop_mask": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1/masks/mouth_crop_mask.png"
+  },
+  "post_generation_validation": "python3 scripts/validate_cubism_v2_keypose_pngs.py --input-dir /path/to/generated_pngs"
+}

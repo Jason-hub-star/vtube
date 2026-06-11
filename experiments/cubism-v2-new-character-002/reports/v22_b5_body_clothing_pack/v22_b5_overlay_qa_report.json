@@ -1,0 +1,57 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T13:21:30.050845+00:00",
+  "report_id": "cubism-v2-new-character-002-v22-b5-overlay-qa-001",
+  "status": "B5_CODEX_OVERLAY_QA_REVISE_ANCHOR_OR_EXTRACTION_HUMAN_REVIEW_REQUIRED",
+  "layer_pack_report": "experiments/cubism-v2-new-character-002/reports/v22_b5_body_clothing_pack/v22_b5_layer_pack_report.json",
+  "layer_pack_status": "B5_LAYER_PACK_CANDIDATE_READY_FOR_OVERLAY_QA_HUMAN_REVIEW_REQUIRED",
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b5_body_clothing_pack/v22_b5_layer_pack_contact_sheet.png",
+  "overlay_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b5_body_clothing_pack/v22_b5_layer_pack_overlay_qa.png",
+  "checks": [
+    {
+      "id": "technical_layer_pack",
+      "status": "PASS_TECHNICAL",
+      "evidence": "B5 layer pack generated 17/17 full-canvas 2048 RGBA candidates with no missing or empty outputs."
+    },
+    {
+      "id": "body_clothing_scope",
+      "status": "PASS_CANDIDATE",
+      "evidence": "Torso, neck, shoulders, arms, collar, chest cloth, brow, nose, cheek, and face-shadow outputs exist as candidate PNGs."
+    },
+    {
+      "id": "body_clothing_overlay_alignment",
+      "status": "REVISE_ANCHOR_OR_EXTRACTION",
+      "evidence": "Overlay sheet shows torso/neck/arm/clothing candidates are visually misaligned or overlaid too heavily on the source body, so they need anchor correction or refined extraction before material PASS."
+    },
+    {
+      "id": "face_detail_overlay_alignment",
+      "status": "REVISE_ANCHOR_OR_EXTRACTION",
+      "evidence": "Brow/nose/cheek/face-shadow candidates exist, but current automatic face-detail placement is too large or patch-like on the face."
+    },
+    {
+      "id": "breath_body_angle_gate",
+      "status": "REVIEW_BLOCKED_UNTIL_ALIGNMENT",
+      "evidence": "Breath/body-angle support cannot be judged until body/clothing anchors and crop assignments are visually corrected."
+    },
+    {
+      "id": "human_visual_review",
+      "status": "REQUIRED",
+      "evidence": "주인님 review is required after crop/anchor correction; technical PNG generation alone cannot approve B5 material."
+    }
+  ],
+  "decision": "Do not promote B5 to material PASS. Keep the 17 RGBA body/clothing outputs as extraction candidates, but revise anchor placement/crop assignment before manifest promotion, Mini Cubism diagnostics, or real Cubism authoring.",
+  "next_action": [
+    "Use manual anchor correction or a refined extraction script for torso, neck, arms, clothing, and face-detail placement.",
+    "Regenerate B5 only if crop refinement cannot make the parts read as source-matched body/clothing material.",
+    "Keep B5 blocked from material PASS until overlay QA and 주인님 human review accept the corrected candidate."
+  ],
+  "self_review": {
+    "b5_layer_pack_status": "B5_LAYER_PACK_CANDIDATE_READY_FOR_OVERLAY_QA_HUMAN_REVIEW_REQUIRED",
+    "b5_layer_self_review_status": "PASS",
+    "check_count": 6,
+    "has_revise_gate": true,
+    "has_human_required_gate": true,
+    "has_breath_body_angle_block": true,
+    "status": "PASS"
+  }
+}

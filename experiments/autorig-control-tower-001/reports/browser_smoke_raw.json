@@ -1,0 +1,40 @@
+{
+  "checks": [
+    {
+      "name": "타임라인 칩 10개",
+      "ok": true,
+      "detail": "10"
+    },
+    {
+      "name": "피드 썸네일 표시",
+      "ok": true,
+      "detail": "count=5"
+    },
+    {
+      "name": "게이트 배너 출현",
+      "ok": true,
+      "detail": "스타일 확인이 필요해요"
+    },
+    {
+      "name": "피드 실시간 증가",
+      "ok": true,
+      "detail": "5 -> 8"
+    },
+    {
+      "name": "마커 드래그로 오버라이드 생성",
+      "ok": true,
+      "detail": "{\"eye_L_open\":{\"target_anchor\":[1026,778]}}"
+    },
+    {
+      "name": "패널 순서 localStorage 유지",
+      "ok": true,
+      "detail": "qa"
+    },
+    {
+      "name": "브라우저에서 런 완주 확인",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "errors": []
+}

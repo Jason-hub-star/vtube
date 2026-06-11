@@ -1,0 +1,24 @@
+{
+  "neutral": {
+    "mesh": 1525000311,
+    "sprite": 1525000311
+  },
+  "hashes": {
+    "head_turn": 3971971455,
+    "nod": 2197246027,
+    "tilt": 2598630968,
+    "gaze_turn": 2408418714,
+    "combo": 187112425
+  },
+  "neck": {
+    "head_max": 0
+  },
+  "timing": {
+    "head_turn": 92.4,
+    "nod": 97.6,
+    "tilt": 113.1,
+    "gaze_turn": 101.5,
+    "combo": 103.4
+  },
+  "errors": []
+}

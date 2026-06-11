@@ -1,0 +1,573 @@
+{
+  "schema_version": 1,
+  "experiment_id": "imagen-live2d-001",
+  "generated_at": "2026-06-04T08:11:29.512388+00:00",
+  "source_manifest": "experiments/imagen-live2d-001/layer_manifest.json",
+  "contact_sheet": "experiments/imagen-live2d-001/reports/mps_candidate_contact_sheet.png",
+  "counts": {
+    "total": 29,
+    "review_priority": 16,
+    "review_high_risk": 3,
+    "reference_review": 3,
+    "empty": 7,
+    "practical_gate_targets": 11
+  },
+  "practical_success_gate": "Human review must mark at least 5 hair/face/eye/mouth candidates as O or REVISE.",
+  "items": [
+    {
+      "layer_name": "imagen_live2d_001__choker",
+      "original_part_id": "choker",
+      "role": "accessory",
+      "side": null,
+      "bbox": [
+        870,
+        1172,
+        309,
+        350
+      ],
+      "alpha_coverage": 0.42295,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "production_candidate"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__choker.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__back_hair",
+      "original_part_id": "back_hair",
+      "role": "back_hair",
+      "side": null,
+      "bbox": [
+        199,
+        55,
+        1645,
+        1993
+      ],
+      "alpha_coverage": 0.644293,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__back_hair.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__clothes",
+      "original_part_id": "clothes",
+      "role": "clothes",
+      "side": null,
+      "bbox": [
+        499,
+        1228,
+        1049,
+        820
+      ],
+      "alpha_coverage": 0.848134,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "production_candidate"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__clothes.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__face_base",
+      "original_part_id": "face_base",
+      "role": "face",
+      "side": null,
+      "bbox": [
+        645,
+        114,
+        754,
+        1023
+      ],
+      "alpha_coverage": 0.762369,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__face_base.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__mouth_line",
+      "original_part_id": "mouth_line",
+      "role": "mouth_line",
+      "side": null,
+      "bbox": [
+        964,
+        958,
+        125,
+        95
+      ],
+      "alpha_coverage": 0.786274,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__mouth_line.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__neck",
+      "original_part_id": "neck",
+      "role": "neck",
+      "side": null,
+      "bbox": [
+        891,
+        923,
+        267,
+        366
+      ],
+      "alpha_coverage": 0.849225,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "production_candidate"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__neck.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__L_brow",
+      "original_part_id": "L_brow",
+      "role": "seethrough_reference",
+      "side": "L",
+      "bbox": [
+        1118,
+        620,
+        189,
+        35
+      ],
+      "alpha_coverage": 0.226153,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__L_brow.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__L_ear_outer",
+      "original_part_id": "L_ear_outer",
+      "role": "seethrough_reference",
+      "side": "L",
+      "bbox": [
+        1260,
+        739,
+        172,
+        199
+      ],
+      "alpha_coverage": 0.69858,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "production_candidate"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__L_ear_outer.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__L_eye_white",
+      "original_part_id": "L_eye_white",
+      "role": "seethrough_reference",
+      "side": "L",
+      "bbox": [
+        1117,
+        709,
+        191,
+        126
+      ],
+      "alpha_coverage": 0.736475,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__L_eye_white.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__L_iris",
+      "original_part_id": "L_iris",
+      "role": "seethrough_reference",
+      "side": "L",
+      "bbox": [
+        1142,
+        717,
+        111,
+        109
+      ],
+      "alpha_coverage": 0.858501,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__L_iris.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__L_upper_lash",
+      "original_part_id": "L_upper_lash",
+      "role": "seethrough_reference",
+      "side": "L",
+      "bbox": [
+        1108,
+        685,
+        235,
+        148
+      ],
+      "alpha_coverage": 0.267395,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__L_upper_lash.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__R_brow",
+      "original_part_id": "R_brow",
+      "role": "seethrough_reference",
+      "side": "R",
+      "bbox": [
+        744,
+        620,
+        186,
+        37
+      ],
+      "alpha_coverage": 0.242953,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__R_brow.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__R_ear_outer",
+      "original_part_id": "R_ear_outer",
+      "role": "seethrough_reference",
+      "side": "R",
+      "bbox": [
+        616,
+        739,
+        170,
+        199
+      ],
+      "alpha_coverage": 0.700089,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "production_candidate"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__R_ear_outer.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__R_eye_white",
+      "original_part_id": "R_eye_white",
+      "role": "seethrough_reference",
+      "side": "R",
+      "bbox": [
+        745,
+        710,
+        188,
+        125
+      ],
+      "alpha_coverage": 0.742468,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__R_eye_white.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__R_iris",
+      "original_part_id": "R_iris",
+      "role": "seethrough_reference",
+      "side": "R",
+      "bbox": [
+        799,
+        717,
+        113,
+        110
+      ],
+      "alpha_coverage": 0.843604,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__R_iris.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__R_upper_lash",
+      "original_part_id": "R_upper_lash",
+      "role": "seethrough_reference",
+      "side": "R",
+      "bbox": [
+        707,
+        684,
+        237,
+        148
+      ],
+      "alpha_coverage": 0.268959,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__R_upper_lash.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__raw_handwear",
+      "original_part_id": "raw_handwear",
+      "role": "seethrough_reference",
+      "side": "R",
+      "bbox": [
+        192,
+        1327,
+        605,
+        721
+      ],
+      "alpha_coverage": 0.696881,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_HIGH_RISK",
+      "triage_notes": [
+        "unmapped_raw_layer"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__raw_handwear.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__raw_handwear_11",
+      "original_part_id": "raw_handwear",
+      "role": "seethrough_reference",
+      "side": "L",
+      "bbox": [
+        1250,
+        1327,
+        601,
+        721
+      ],
+      "alpha_coverage": 0.704889,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_HIGH_RISK",
+      "triage_notes": [
+        "unmapped_raw_layer"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__raw_handwear_11.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__raw_legwear",
+      "original_part_id": "raw_legwear",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": [
+        2047,
+        2047,
+        1,
+        1
+      ],
+      "alpha_coverage": 1.0,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_HIGH_RISK",
+      "triage_notes": [
+        "dense_alpha",
+        "unmapped_raw_layer"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__raw_legwear.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__ear_inner",
+      "original_part_id": "ear_inner",
+      "role": "ears",
+      "side": null,
+      "bbox": [
+        1270,
+        912,
+        100,
+        210
+      ],
+      "alpha_coverage": 0.469619,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "REFERENCE_REVIEW",
+      "triage_notes": [],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__ear_inner.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__headwear_reference",
+      "original_part_id": "headwear_reference",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": [
+        539,
+        319,
+        973,
+        222
+      ],
+      "alpha_coverage": 0.236623,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "REFERENCE_REVIEW",
+      "triage_notes": [
+        "reference_only_mapping"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__headwear_reference.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__nose_reference",
+      "original_part_id": "nose_reference",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": [
+        998,
+        838,
+        53,
+        59
+      ],
+      "alpha_coverage": 0.523505,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "REFERENCE_REVIEW",
+      "triage_notes": [
+        "reference_only_mapping"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__nose_reference.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__front_hair",
+      "original_part_id": "front_hair",
+      "role": "front_hair",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__front_hair.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__object_reference",
+      "original_part_id": "object_reference",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__object_reference.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__raw_bottomwear",
+      "original_part_id": "raw_bottomwear",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__raw_bottomwear.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__raw_eyewear",
+      "original_part_id": "raw_eyewear",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__raw_eyewear.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__raw_footwear",
+      "original_part_id": "raw_footwear",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__raw_footwear.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__tail_reference",
+      "original_part_id": "tail_reference",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__tail_reference.png"
+    },
+    {
+      "layer_name": "imagen_live2d_001__wings_reference",
+      "original_part_id": "wings_reference",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/imagen-live2d-001/normalized_layers/imagen_live2d_001__wings_reference.png"
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "schema_version": 1,
+  "experiment_id": "mini-cubism-dedicated-model-v1-001",
+  "generated_at": "2026-06-05T03:20:58.866102+00:00",
+  "status": "BUILT_PENDING_VALIDATION",
+  "source_project": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/mini_cubism_project_targeted",
+  "project": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/mini_cubism_project_face_v1",
+  "face_split_dir": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_split_v1",
+  "layers": [
+    {
+      "part_id": "brow_L",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_split_v1/parts/brow_L.png",
+      "bbox": [
+        1063,
+        512,
+        195,
+        30
+      ],
+      "alpha_coverage": 0.00047827,
+      "draw_order": 520,
+      "folder": "Eyes",
+      "derivation_mode": "face_v1_procedural_replacement",
+      "status": "FACE_CANDIDATE"
+    },
+    {
+      "part_id": "brow_R",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_split_v1/parts/brow_R.png",
+      "bbox": [
+        790,
+        512,
+        196,
+        30
+      ],
+      "alpha_coverage": 0.00047827,
+      "draw_order": 521,
+      "folder": "Eyes",
+      "derivation_mode": "face_v1_procedural_replacement",
+      "status": "FACE_CANDIDATE"
+    },
+    {
+      "part_id": "cheek_blush_L",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_split_v1/parts/cheek_blush_L.png",
+      "bbox": [
+        1105,
+        712,
+        141,
+        67
+      ],
+      "alpha_coverage": 0.00176597,
+      "draw_order": 362,
+      "folder": "Face",
+      "derivation_mode": "face_v1_procedural_replacement",
+      "status": "FACE_CANDIDATE"
+    },
+    {
+      "part_id": "cheek_blush_R",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_split_v1/parts/cheek_blush_R.png",
+      "bbox": [
+        795,
+        712,
+        141,
+        67
+      ],
+      "alpha_coverage": 0.00176597,
+      "draw_order": 363,
+      "folder": "Face",
+      "derivation_mode": "face_v1_procedural_replacement",
+      "status": "FACE_CANDIDATE"
+    },
+    {
+      "part_id": "eye_shadow_L",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_split_v1/parts/eye_shadow_L.png",
+      "bbox": [
+        1048,
+        590,
+        221,
+        135
+      ],
+      "alpha_coverage": 0.00558639,
+      "draw_order": 364,
+      "folder": "Eyes",
+      "derivation_mode": "face_v1_procedural_replacement",
+      "status": "FACE_CANDIDATE"
+    },
+    {
+      "part_id": "eye_shadow_R",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_split_v1/parts/eye_shadow_R.png",
+      "bbox": [
+        780,
+        590,
+        221,
+        135
+      ],
+      "alpha_coverage": 0.00558639,
+      "draw_order": 365,
+      "folder": "Eyes",
+      "derivation_mode": "face_v1_procedural_replacement",
+      "status": "FACE_CANDIDATE"
+    },
+    {
+      "part_id": "lower_lid_L",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_split_v1/parts/lower_lid_L.png",
+      "bbox": [
+        1054,
+        714,
+        208,
+        39
+      ],
+      "alpha_coverage": 0.00020313,
+      "draw_order": 526,
+      "folder": "Eyes",
+      "derivation_mode": "face_v1_procedural_replacement",
+      "status": "FACE_CANDIDATE"
+    },
+    {
+      "part_id": "lower_lid_R",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_split_v1/parts/lower_lid_R.png",
+      "bbox": [
+        786,
+        714,
+        208,
+        39
+      ],
+      "alpha_coverage": 0.00020313,
+      "draw_order": 527,
+      "folder": "Eyes",
+      "derivation_mode": "face_v1_procedural_replacement",
+      "status": "FACE_CANDIDATE"
+    },
+    {
+      "part_id": "mouth_corner_L",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_split_v1/parts/mouth_corner_L.png",
+      "bbox": [
+        1075,
+        830,
+        41,
+        21
+      ],
+      "alpha_coverage": 5.555e-05,
+      "draw_order": 623,
+      "folder": "Mouth",
+      "derivation_mode": "face_v1_procedural_replacement",
+      "status": "FACE_CANDIDATE"
+    },
+    {
+      "part_id": "mouth_corner_R",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_split_v1/parts/mouth_corner_R.png",
+      "bbox": [
+        933,
+        830,
+        41,
+        21
+      ],
+      "alpha_coverage": 5.555e-05,
+      "draw_order": 624,
+      "folder": "Mouth",
+      "derivation_mode": "face_v1_procedural_replacement",
+      "status": "FACE_CANDIDATE"
+    },
+    {
+      "part_id": "mouth_half_inner",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_split_v1/parts/mouth_half_inner.png",
+      "bbox": [
+        968,
+        835,
+        115,
+        39
+      ],
+      "alpha_coverage": 0.00084043,
+      "draw_order": 625,
+      "folder": "Mouth",
+      "derivation_mode": "face_v1_procedural_replacement",
+      "status": "FACE_CANDIDATE"
+    },
+    {
+      "part_id": "mouth_half_outer",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_split_v1/parts/mouth_half_outer.png",
+      "bbox": [
+        936,
+        817,
+        179,
+        68
+      ],
+      "alpha_coverage": 0.0022831,
+      "draw_order": 626,
+      "folder": "Mouth",
+      "derivation_mode": "face_v1_procedural_replacement",
+      "status": "FACE_CANDIDATE"
+    },
+    {
+      "part_id": "mouth_open_inner",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_split_v1/parts/mouth_open_inner.png",
+      "bbox": [
+        958,
+        826,
+        135,
+        87
+      ],
+      "alpha_coverage": 0.00219655,
+      "draw_order": 627,
+      "folder": "Mouth",
+      "derivation_mode": "face_v1_procedural_replacement",
+      "status": "FACE_CANDIDATE"
+    },
+    {
+      "part_id": "mouth_open_outer",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_split_v1/parts/mouth_open_outer.png",
+      "bbox": [
+        922,
+        802,
+        207,
+        129
+      ],
+      "alpha_coverage": 0.00499701,
+      "draw_order": 628,
+      "folder": "Mouth",
+      "derivation_mode": "face_v1_procedural_replacement",
+      "status": "FACE_CANDIDATE"
+    },
+    {
+      "part_id": "mouth_shadow",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_split_v1/parts/mouth_shadow.png",
+      "bbox": [
+        950,
+        842,
+        151,
+        71
+      ],
+      "alpha_coverage": 0.00200582,
+      "draw_order": 629,
+      "folder": "Mouth",
+      "derivation_mode": "face_v1_procedural_replacement",
+      "status": "FACE_CANDIDATE"
+    },
+    {
+      "part_id": "mouth_teeth_upper",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_split_v1/parts/mouth_teeth_upper.png",
+      "bbox": [
+        982,
+        826,
+        87,
+        27
+      ],
+      "alpha_coverage": 0.00054383,
+      "draw_order": 630,
+      "folder": "Mouth",
+      "derivation_mode": "face_v1_procedural_replacement",
+      "status": "FACE_CANDIDATE"
+    },
+    {
+      "part_id": "mouth_tongue",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_split_v1/parts/mouth_tongue.png",
+      "bbox": [
+        980,
+        868,
+        93,
+        37
+      ],
+      "alpha_coverage": 0.00064492,
+      "draw_order": 631,
+      "folder": "Mouth",
+      "derivation_mode": "face_v1_procedural_replacement",
+      "status": "FACE_CANDIDATE"
+    },
+    {
+      "part_id": "nose_bridge",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_split_v1/parts/nose_bridge.png",
+      "bbox": [
+        1002,
+        734,
+        31,
+        73
+      ],
+      "alpha_coverage": 9.322e-05,
+      "draw_order": 377,
+      "folder": "Face",
+      "derivation_mode": "face_v1_procedural_replacement",
+      "status": "FACE_CANDIDATE"
+    },
+    {
+      "part_id": "nose_tip",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_split_v1/parts/nose_tip.png",
+      "bbox": [
+        998,
+        793,
+        59,
+        18
+      ],
+      "alpha_coverage": 7.725e-05,
+      "draw_order": 378,
+      "folder": "Face",
+      "derivation_mode": "face_v1_procedural_replacement",
+      "status": "FACE_CANDIDATE"
+    },
+    {
+      "part_id": "upper_lid_L",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_split_v1/parts/upper_lid_L.png",
+      "bbox": [
+        1044,
+        592,
+        229,
+        63
+      ],
+      "alpha_coverage": 0.00134015,
+      "draw_order": 539,
+      "folder": "Eyes",
+      "derivation_mode": "face_v1_procedural_replacement",
+      "status": "FACE_CANDIDATE"
+    },
+    {
+      "part_id": "upper_lid_R",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/face_split_v1/parts/upper_lid_R.png",
+      "bbox": [
+        772,
+        592,
+        229,
+        62
+      ],
+      "alpha_coverage": 0.00132346,
+      "draw_order": 540,
+      "folder": "Eyes",
+      "derivation_mode": "face_v1_procedural_replacement",
+      "status": "FACE_CANDIDATE"
+    }
+  ],
+  "counts": {
+    "face_replacement_parts": 21,
+    "new_parameters": 5,
+    "total_parameters": 15,
+    "total_keyform_bindings": 78
+  },
+  "review_contact_sheet": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/reports/face_split_v1_contact_sheet.png",
+  "interpretation": [
+    "This is a face-only candidate replacement over the targeted Mini Cubism baseline.",
+    "It does not discard the previous targeted split or motion evidence.",
+    "Generated face expression parts require close-up visual QA before promotion."
+  ]
+}

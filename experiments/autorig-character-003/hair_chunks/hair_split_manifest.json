@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-06-10T16:56:56.240863+00:00",
+  "overlap_px": 30,
+  "chunks": [
+    {
+      "part_id": "hair_front_L",
+      "path": "experiments/autorig-character-003/hair_chunks/hair_front_L.png",
+      "source": "experiments/autorig-character-003/seethrough_true_reskinned/front_hair.png",
+      "x_range": [
+        675,
+        964
+      ]
+    },
+    {
+      "part_id": "hair_front_C",
+      "path": "experiments/autorig-character-003/hair_chunks/hair_front_C.png",
+      "source": "experiments/autorig-character-003/seethrough_true_reskinned/front_hair.png",
+      "x_range": [
+        850,
+        1197
+      ]
+    },
+    {
+      "part_id": "hair_front_R",
+      "path": "experiments/autorig-character-003/hair_chunks/hair_front_R.png",
+      "source": "experiments/autorig-character-003/seethrough_true_reskinned/front_hair.png",
+      "x_range": [
+        1083,
+        1373
+      ]
+    },
+    {
+      "part_id": "hair_back_L",
+      "path": "experiments/autorig-character-003/hair_chunks/hair_back_L.png",
+      "source": "experiments/autorig-character-003/seethrough_true_reskinned/back_hair.png",
+      "x_range": [
+        307,
+        1077
+      ]
+    },
+    {
+      "part_id": "hair_back_R",
+      "path": "experiments/autorig-character-003/hair_chunks/hair_back_R.png",
+      "source": "experiments/autorig-character-003/seethrough_true_reskinned/back_hair.png",
+      "x_range": [
+        963,
+        1734
+      ]
+    }
+  ],
+  "integrity": [
+    {
+      "label": "front_hair",
+      "strong_changed_ratio": 0.0,
+      "mean_delta": 0.070404,
+      "recompose": "experiments/autorig-character-003/hair_chunks/recompose_front_hair.png"
+    },
+    {
+      "label": "back_hair",
+      "strong_changed_ratio": 0.0,
+      "mean_delta": 0.11109,
+      "recompose": "experiments/autorig-character-003/hair_chunks/recompose_back_hair.png"
+    }
+  ],
+  "integrity_pass": true
+}

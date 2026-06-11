@@ -1,0 +1,121 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T15:20:03.327393+00:00",
+  "status": "B5_PROVISIONAL_MINIPASS_INPUT_PACKET_READY",
+  "source_image": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/new_character_002_source_front.raw.png",
+  "route_plan": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_focused_owner_review/v22_b4_b5_owner_decision_route_plan.json",
+  "codex_provisional_decisions": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_focused_owner_review/v22_b4_b5_focused_codex_provisional_decisions.json",
+  "b5_body_blocker_review": "experiments/cubism-v2-new-character-002/reports/v22_b5_body_blocker_draw_order_review/v22_b5_body_blocker_draw_order_review.json",
+  "b5_refined_mask_v2_overlay_qa": "experiments/cubism-v2-new-character-002/reports/v22_b5_refined_mask_v2/v22_b5_refined_mask_v2_overlay_qa_report.json",
+  "targets": [
+    {
+      "part_id": "torso_base",
+      "mode": "REGENERATE_BODY_MINIPASS",
+      "route": "ROUTE_TO_B5_BODY_MINIPASS_REGENERATION",
+      "owner_decision": "REGENERATE_B5_BODY_MINIPASS",
+      "decision_authority": "CODEX_PROVISIONAL_SUCCESS_PATTERN",
+      "current_output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/torso_base.png",
+      "crop_box": [
+        520,
+        880,
+        1539,
+        1974
+      ],
+      "current_bbox": [
+        630,
+        990,
+        1429,
+        1864
+      ],
+      "alpha_coverage": 0.14019799,
+      "hair_occlusion_overlap_ratio": 0.141695,
+      "source_recommendation": "REGENERATE_OR_FOCUSED_HUMAN_ACCEPT_BROAD_UNDERPAINT",
+      "instruction": "Regenerate this as a coherent B5 torso/body underpaint reference; do not solve it by alpha shrinking."
+    },
+    {
+      "part_id": "shoulder_L",
+      "mode": "REVISE_DRAW_ORDER_OR_MASK",
+      "route": "ROUTE_TO_B5_DRAW_ORDER_OR_MASK_REFINEMENT",
+      "owner_decision": "REVISE_MASK_OR_DRAW_ORDER",
+      "decision_authority": "CODEX_PROVISIONAL_SUCCESS_PATTERN",
+      "current_output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/shoulder_L.png",
+      "crop_box": [
+        467,
+        901,
+        973,
+        1326
+      ],
+      "current_bbox": [
+        577,
+        1011,
+        863,
+        1216
+      ],
+      "alpha_coverage": 0.01091456,
+      "hair_occlusion_overlap_ratio": 0.870193,
+      "source_recommendation": "REVIEW_DRAW_ORDER_BEFORE_REGENERATE",
+      "instruction": "Revise draw-order context or mask separation so shoulder material can sit behind front/side hair without baked hair pixels."
+    },
+    {
+      "part_id": "shoulder_R",
+      "mode": "REVISE_DRAW_ORDER_OR_MASK",
+      "route": "ROUTE_TO_B5_DRAW_ORDER_OR_MASK_REFINEMENT",
+      "owner_decision": "REVISE_MASK_OR_DRAW_ORDER",
+      "decision_authority": "CODEX_PROVISIONAL_SUCCESS_PATTERN",
+      "current_output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v2/normalized_layers/shoulder_R.png",
+      "crop_box": [
+        1095,
+        903,
+        1565,
+        1328
+      ],
+      "current_bbox": [
+        1205,
+        1013,
+        1455,
+        1218
+      ],
+      "alpha_coverage": 0.00972676,
+      "hair_occlusion_overlap_ratio": 0.868247,
+      "source_recommendation": "REVIEW_DRAW_ORDER_BEFORE_REGENERATE",
+      "instruction": "Revise draw-order context or mask separation so shoulder material can sit behind front/side hair without baked hair pixels."
+    }
+  ],
+  "image_generation_prompt": "Create a focused Live2D/Cubism B5 body mini-pass for the same accepted G0 source character.\nGenerate only clean rig-friendly body material references for torso_base, shoulder_L, and shoulder_R.\nKeep the same adult cute woman identity, pale soft skin, warm brown hair context, white ribbed off-shoulder sweater, shoulder straps, line thickness, and soft anime shading.\nThe shoulders must be clean skin/strap/cloth underpaint suitable to sit behind front/side hair without hair pixels baked into the shoulder layer.\nThe torso_base must be a complete upper-body base for breath/body-angle support, with coherent skin-to-clothing continuity and no pasted crop artifacts.\nNo labels, arrows, grids, extra faces, hands, jewelry, props, hairstyle changes, new outfit, perspective pose, cropped shoulders, or source-crop artifacts.",
+  "negative_prompt": "No labels, arrows, grids, extra faces, hands, jewelry, props, hairstyle changes, new outfit, perspective pose, cropped shoulders, baked hair pixels in shoulder layers, rectangular skin patches, alpha-noise scraps, or source-crop artifacts.",
+  "output_requirements": [
+    "Return clean full-canvas 2048x2048 RGBA candidates for torso_base, shoulder_L, and shoulder_R.",
+    "Keep same character identity, off-shoulder white sweater, shoulder straps, line thickness, and soft anime shading.",
+    "Shoulders must be usable behind front/side hair without hair baked into the shoulder art.",
+    "torso_base must be coherent enough for later breath/body-angle support.",
+    "Do not unlock material PASS until overlay QA and visual QA pass after normalization."
+  ],
+  "decision": "This packet lets B5 continue without owner acceptance by using Codex provisional success-pattern routes. It is generation/revision input only, not material approval.",
+  "next_action": [
+    "Run the focused B5 mini-pass generation/revision using this packet.",
+    "Normalize returned candidates as full-canvas RGBA layers.",
+    "Rerun B5 overlay QA and then rebuild the 64-part manifest candidate if B5 improves.",
+    "Keep B4 front hair as motion-readiness candidates with ParamHairFront hidden."
+  ],
+  "self_review": {
+    "route_plan_status": "B4_B5_OWNER_DECISION_ROUTE_PLAN_READY_FOR_REVISION_WORK",
+    "codex_decision_status": "CODEX_PROVISIONAL_DECISIONS_READY_NO_OWNER_APPROVAL",
+    "b5_overlay_qa_status": "B5_REFINED_MASK_V2_OVERLAY_QA_REVISE_REGENERATE_OR_HUMAN_REVIEW_REQUIRED",
+    "target_count": 3,
+    "target_parts": [
+      "torso_base",
+      "shoulder_L",
+      "shoulder_R"
+    ],
+    "regenerate_target_count": 1,
+    "revise_target_count": 2,
+    "all_targets_have_crop_box": true,
+    "prompt_present": true,
+    "not_owner_approval": true,
+    "material_pass_blocked": true,
+    "param_hair_front_hidden": true,
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true,
+    "status": "PASS"
+  }
+}

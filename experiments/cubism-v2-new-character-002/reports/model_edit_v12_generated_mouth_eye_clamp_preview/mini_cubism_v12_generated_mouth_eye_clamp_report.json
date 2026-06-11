@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T05:57:49.932174+00:00",
+  "status": "V12_GENERATED_MOUTH_EYE_CLAMP_READY_FOR_VALIDATION",
+  "source_project": "experiments/cubism-v2-new-character-002/model_edit_v10_generated_mouth_eye_clamp_preview/mini_cubism_diagnostic_project",
+  "project": "experiments/cubism-v2-new-character-002/model_edit_v12_generated_mouth_eye_clamp_preview/mini_cubism_diagnostic_project",
+  "generated_mouth_layers": {
+    "mouth_closed_smile": "experiments/cubism-v2-new-character-002/generated_mouth_v12/normalized_layers/mouth_smile_closed_gen.png",
+    "mouth_small_open": "experiments/cubism-v2-new-character-002/generated_mouth_v12/normalized_layers/mouth_smile_small_open_gen.png",
+    "mouth_mid_teeth_gen": "experiments/cubism-v2-new-character-002/generated_mouth_v12/normalized_layers/mouth_smile_mid_teeth_gen.png",
+    "mouth_wide_teeth_tongue_gen": "experiments/cubism-v2-new-character-002/generated_mouth_v12/normalized_layers/mouth_smile_wide_teeth_tongue_gen.png"
+  },
+  "eye_clamp": {
+    "ParamEyeLOpen": {
+      "min": 0.27
+    },
+    "ParamEyeROpen": {
+      "min": 0.27
+    }
+  },
+  "mouth_clamp": {
+    "ParamMouthOpenY": {
+      "max": 0.85
+    }
+  },
+  "active_mouth_parts": [
+    "mouth_closed_smile",
+    "mouth_mid_teeth_gen",
+    "mouth_small_open",
+    "mouth_wide_teeth_tongue_gen"
+  ],
+  "hidden_old_helpers": [
+    "mouth_inner",
+    "mouth_teeth",
+    "mouth_tongue"
+  ]
+}

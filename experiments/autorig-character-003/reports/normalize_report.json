@@ -1,0 +1,812 @@
+{
+  "schema_version": 1,
+  "experiment_id": "autorig-character-003",
+  "generated_at": "2026-06-10T16:51:39.167924+00:00",
+  "source_layers_json": "/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/output/autorig-character-003_seethrough_20260611_015132_a2a695f9_layers.json",
+  "source_canvas_size": [
+    640,
+    640
+  ],
+  "normalized_canvas_size": [
+    2048,
+    2048
+  ],
+  "scale_to_2048": [
+    3.2,
+    3.2
+  ],
+  "layers": [
+    {
+      "layer_name": "autorig_character_003__neck",
+      "original_part_id": "neck",
+      "raw_tag": "neck",
+      "role": "neck",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_neck.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__neck.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "draw_order": 300,
+      "depth_median": 1.0,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_neck_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__choker",
+      "original_part_id": "choker",
+      "raw_tag": "neckwear",
+      "role": "accessory",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_neckwear.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__choker.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "draw_order": 301,
+      "depth_median": 1.0,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_neckwear_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__raw_bottomwear",
+      "original_part_id": "raw_bottomwear",
+      "raw_tag": "bottomwear",
+      "role": "seethrough_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_bottomwear.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__raw_bottomwear.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "draw_order": 302,
+      "depth_median": 1.0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_bottomwear_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__raw_legwear",
+      "original_part_id": "raw_legwear",
+      "raw_tag": "legwear",
+      "role": "seethrough_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_legwear.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__raw_legwear.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "draw_order": 303,
+      "depth_median": 1.0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_legwear_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__raw_footwear",
+      "original_part_id": "raw_footwear",
+      "raw_tag": "footwear",
+      "role": "seethrough_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_footwear.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__raw_footwear.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "draw_order": 304,
+      "depth_median": 1.0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_footwear_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__tail_reference",
+      "original_part_id": "tail_reference",
+      "raw_tag": "tail",
+      "role": "seethrough_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_tail.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__tail_reference.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "draw_order": 305,
+      "depth_median": 1.0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_tail_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__wings_reference",
+      "original_part_id": "wings_reference",
+      "raw_tag": "wings",
+      "role": "seethrough_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_wings.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__wings_reference.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "draw_order": 306,
+      "depth_median": 1.0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_wings_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__object_reference",
+      "original_part_id": "object_reference",
+      "raw_tag": "objects",
+      "role": "seethrough_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_objects.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__object_reference.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "draw_order": 307,
+      "depth_median": 1.0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_objects_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__headwear_reference",
+      "original_part_id": "headwear_reference",
+      "raw_tag": "headwear",
+      "role": "seethrough_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_headwear.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__headwear_reference.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "draw_order": 308,
+      "depth_median": 1.0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_headwear_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__raw_eyewear",
+      "original_part_id": "raw_eyewear",
+      "raw_tag": "eyewear",
+      "role": "seethrough_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_eyewear.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__raw_eyewear.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "draw_order": 309,
+      "depth_median": 1.0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_eyewear_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__ear_inner",
+      "original_part_id": "ear_inner",
+      "raw_tag": "earwear",
+      "role": "ears",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_earwear.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__ear_inner.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "draw_order": 310,
+      "depth_median": 1.0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_earwear_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__back_hair",
+      "original_part_id": "back_hair",
+      "raw_tag": "back hair",
+      "role": "back_hair",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_back hair.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__back_hair.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        306,
+        23,
+        1429,
+        1939
+      ],
+      "alpha_coverage": 0.652873,
+      "draw_order": 311,
+      "depth_median": 0.9609375,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_back hair_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__L_arm",
+      "original_part_id": "L_arm",
+      "raw_tag": "handwear-l",
+      "role": "seethrough_reference",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_handwear-l.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__L_arm.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1320,
+        1164,
+        338,
+        884
+      ],
+      "alpha_coverage": 0.73424,
+      "draw_order": 312,
+      "depth_median": 0.80078125,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_handwear-l_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__R_arm",
+      "original_part_id": "R_arm",
+      "raw_tag": "handwear-r",
+      "role": "seethrough_reference",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_handwear-r.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__R_arm.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        387,
+        1163,
+        332,
+        885
+      ],
+      "alpha_coverage": 0.741434,
+      "draw_order": 313,
+      "depth_median": 0.77734375,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_handwear-r_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__clothes",
+      "original_part_id": "clothes",
+      "raw_tag": "topwear",
+      "role": "clothes",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_topwear.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__clothes.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        517,
+        1051,
+        1010,
+        997
+      ],
+      "alpha_coverage": 0.82952,
+      "draw_order": 314,
+      "depth_median": 0.671875,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_topwear_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__R_ear_outer",
+      "original_part_id": "R_ear_outer",
+      "raw_tag": "ears-r",
+      "role": "seethrough_reference",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_ears-r.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__R_ear_outer.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        669,
+        604,
+        138,
+        196
+      ],
+      "alpha_coverage": 0.520408,
+      "draw_order": 315,
+      "depth_median": 0.5543359518051147,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_ears-r_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__L_ear_outer",
+      "original_part_id": "L_ear_outer",
+      "raw_tag": "ears-l",
+      "role": "seethrough_reference",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_ears-l.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__L_ear_outer.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1228,
+        605,
+        139,
+        196
+      ],
+      "alpha_coverage": 0.515893,
+      "draw_order": 316,
+      "depth_median": 0.5414844751358032,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_ears-l_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__face_base",
+      "original_part_id": "face_base",
+      "raw_tag": "face",
+      "role": "face",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_face.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__face_base.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        719,
+        262,
+        606,
+        733
+      ],
+      "alpha_coverage": 0.749585,
+      "draw_order": 317,
+      "depth_median": 0.4870508015155792,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_face_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__nose_reference",
+      "original_part_id": "nose_reference",
+      "raw_tag": "nose",
+      "role": "seethrough_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_nose.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__nose_reference.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1000,
+        755,
+        25,
+        42
+      ],
+      "alpha_coverage": 0.685714,
+      "draw_order": 318,
+      "depth_median": 0.4860508015155792,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_nose_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__mouth_line",
+      "original_part_id": "mouth_line",
+      "raw_tag": "mouth",
+      "role": "mouth_line",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_mouth.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__mouth_line.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        945,
+        818,
+        152,
+        105
+      ],
+      "alpha_coverage": 0.756516,
+      "draw_order": 319,
+      "depth_median": 0.41115230321884155,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_mouth_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__R_brow",
+      "original_part_id": "R_brow",
+      "raw_tag": "eyebrow-r",
+      "role": "seethrough_reference",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_eyebrow-r.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__R_brow.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        762,
+        536,
+        185,
+        39
+      ],
+      "alpha_coverage": 0.287457,
+      "draw_order": 320,
+      "depth_median": 0.3448760509490967,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_eyebrow-r_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__L_brow",
+      "original_part_id": "L_brow",
+      "raw_tag": "eyebrow-l",
+      "role": "seethrough_reference",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_eyebrow-l.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__L_brow.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1097,
+        534,
+        183,
+        39
+      ],
+      "alpha_coverage": 0.287236,
+      "draw_order": 321,
+      "depth_median": 0.3356621265411377,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_eyebrow-l_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__L_upper_lash",
+      "original_part_id": "L_upper_lash",
+      "raw_tag": "eyelash-l",
+      "role": "seethrough_reference",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_eyelash-l.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__L_upper_lash.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1096,
+        596,
+        191,
+        118
+      ],
+      "alpha_coverage": 0.346526,
+      "draw_order": 322,
+      "depth_median": 0.2917376756668091,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_eyelash-l_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__R_eye_white",
+      "original_part_id": "R_eye_white",
+      "raw_tag": "eyewhite-r",
+      "role": "seethrough_reference",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_eyewhite-r.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__R_eye_white.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        786,
+        611,
+        147,
+        106
+      ],
+      "alpha_coverage": 0.757605,
+      "draw_order": 323,
+      "depth_median": 0.2874218225479126,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_eyewhite-r_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__L_eye_white",
+      "original_part_id": "L_eye_white",
+      "raw_tag": "eyewhite-l",
+      "role": "seethrough_reference",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_eyewhite-l.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__L_eye_white.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1108,
+        612,
+        150,
+        105
+      ],
+      "alpha_coverage": 0.76546,
+      "draw_order": 324,
+      "depth_median": 0.2874218225479126,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_eyewhite-l_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__L_iris",
+      "original_part_id": "L_iris",
+      "raw_tag": "irides-l",
+      "role": "seethrough_reference",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_irides-l.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__L_iris.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1123,
+        621,
+        90,
+        92
+      ],
+      "alpha_coverage": 0.828261,
+      "draw_order": 325,
+      "depth_median": 0.2841991186141968,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_irides-l_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__R_upper_lash",
+      "original_part_id": "R_upper_lash",
+      "raw_tag": "eyelash-r",
+      "role": "seethrough_reference",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_eyelash-r.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__R_upper_lash.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        758,
+        595,
+        189,
+        120
+      ],
+      "alpha_coverage": 0.30873,
+      "draw_order": 326,
+      "depth_median": 0.2758786678314209,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_eyelash-r_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__R_iris",
+      "original_part_id": "R_iris",
+      "raw_tag": "irides-r",
+      "role": "seethrough_reference",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_irides-r.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__R_iris.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        830,
+        621,
+        90,
+        93
+      ],
+      "alpha_coverage": 0.835364,
+      "draw_order": 327,
+      "depth_median": 0.2579883337020874,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_irides-r_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "autorig_character_003__front_hair",
+      "original_part_id": "front_hair",
+      "raw_tag": "front hair",
+      "role": "front_hair",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/raw_comfyui_output/autorig-character-003_seethrough_20260611_015132_a2a695f9_front hair.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/normalized_layers/autorig_character_003__front_hair.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        674,
+        117,
+        700,
+        982
+      ],
+      "alpha_coverage": 0.474449,
+      "draw_order": 328,
+      "depth_median": 0.103515625,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/autorig-character-003/depth_layers/autorig-character-003_seethrough_20260611_015132_a2a695f9_front hair_depth.png",
+      "experiment_id": "autorig-character-003",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    }
+  ],
+  "counts": {
+    "raw_layers": 29,
+    "normalized_layers": 29,
+    "production_candidates": 19,
+    "reference_only": 10
+  }
+}

@@ -1,0 +1,820 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T13:49:41.234506+00:00",
+  "status": "G6_B4_B5_AUTO_ANCHOR_DRAFT_READY_FOR_REBUILD",
+  "source_readiness_report": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_anchor_correction_readiness/v22_b4_b5_anchor_correction_readiness.json",
+  "project": "cubism-v2-new-character-002",
+  "canvas": [
+    2048,
+    2048
+  ],
+  "saved_count": 33,
+  "rules": [
+    "This is an automatic first-pass draft, not human approval.",
+    "Keep ParamHairFront hidden until corrected front hair passes overlay QA.",
+    "Do not unlock Mini Cubism or real Cubism from this draft alone."
+  ],
+  "overrides": {
+    "torso_base": {
+      "part_id": "torso_base",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/torso_base.png",
+      "current_center": [
+        1039.0,
+        1374.5
+      ],
+      "current_bbox": [
+        604,
+        884,
+        1474,
+        1865
+      ],
+      "target_anchor": [
+        1024.0,
+        1372.0
+      ],
+      "target_scale": 1.0,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=-15.0, dy=-2.5; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234193+00:00"
+    },
+    "neck": {
+      "part_id": "neck",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/neck.png",
+      "current_center": [
+        1036.5,
+        895.5
+      ],
+      "current_bbox": [
+        894,
+        701,
+        1179,
+        1090
+      ],
+      "target_anchor": [
+        1024.0,
+        896.0
+      ],
+      "target_scale": 1.0,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=-12.5, dy=0.5; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234413+00:00"
+    },
+    "shoulder_L": {
+      "part_id": "shoulder_L",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/shoulder_L.png",
+      "current_center": [
+        717.5,
+        1109.5
+      ],
+      "current_bbox": [
+        565,
+        993,
+        870,
+        1226
+      ],
+      "target_anchor": [
+        718.0,
+        1110.0
+      ],
+      "target_scale": 1.0,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=0.5, dy=0.5; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234419+00:00"
+    },
+    "shoulder_R": {
+      "part_id": "shoulder_R",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/shoulder_R.png",
+      "current_center": [
+        1326.5,
+        1112.5
+      ],
+      "current_bbox": [
+        1197,
+        996,
+        1456,
+        1229
+      ],
+      "target_anchor": [
+        1330.0,
+        1110.0
+      ],
+      "target_scale": 1.0,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=3.5, dy=-2.5; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234422+00:00"
+    },
+    "arm_L_upper_simple": {
+      "part_id": "arm_L_upper_simple",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/arm_L_upper_simple.png",
+      "current_center": [
+        590.5,
+        1448.5
+      ],
+      "current_bbox": [
+        485,
+        1112,
+        696,
+        1785
+      ],
+      "target_anchor": [
+        590.0,
+        1450.0
+      ],
+      "target_scale": 1.0,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=-0.5, dy=1.5; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234426+00:00"
+    },
+    "arm_R_upper_simple": {
+      "part_id": "arm_R_upper_simple",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/arm_R_upper_simple.png",
+      "current_center": [
+        1428.0,
+        1450.5
+      ],
+      "current_bbox": [
+        1335,
+        1115,
+        1521,
+        1786
+      ],
+      "target_anchor": [
+        1428.0,
+        1450.0
+      ],
+      "target_scale": 1.0,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=0.0, dy=-0.5; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234429+00:00"
+    },
+    "face_shadow_L": {
+      "part_id": "face_shadow_L",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/face_shadow_L.png",
+      "current_center": [
+        750.0,
+        774.5
+      ],
+      "current_bbox": [
+        694,
+        650,
+        806,
+        899
+      ],
+      "target_anchor": [
+        770.0,
+        775.0
+      ],
+      "target_scale": 0.92,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=20.0, dy=0.5; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234432+00:00"
+    },
+    "face_shadow_R": {
+      "part_id": "face_shadow_R",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/face_shadow_R.png",
+      "current_center": [
+        1210.0,
+        773.0
+      ],
+      "current_bbox": [
+        1165,
+        650,
+        1255,
+        896
+      ],
+      "target_anchor": [
+        1250.0,
+        775.0
+      ],
+      "target_scale": 0.92,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=40.0, dy=2.0; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234435+00:00"
+    },
+    "nose": {
+      "part_id": "nose",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/nose.png",
+      "current_center": [
+        1026.0,
+        790.0
+      ],
+      "current_bbox": [
+        991,
+        739,
+        1061,
+        841
+      ],
+      "target_anchor": [
+        1024.0,
+        790.0
+      ],
+      "target_scale": 0.85,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=-2.0, dy=0.0; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234440+00:00"
+    },
+    "cheek_L": {
+      "part_id": "cheek_L",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/cheek_L.png",
+      "current_center": [
+        830.0,
+        794.0
+      ],
+      "current_bbox": [
+        725,
+        731,
+        935,
+        857
+      ],
+      "target_anchor": [
+        835.0,
+        794.0
+      ],
+      "target_scale": 0.82,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=5.0, dy=0.0; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234443+00:00"
+    },
+    "cheek_R": {
+      "part_id": "cheek_R",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/cheek_R.png",
+      "current_center": [
+        1215.0,
+        794.0
+      ],
+      "current_bbox": [
+        1110,
+        731,
+        1320,
+        857
+      ],
+      "target_anchor": [
+        1210.0,
+        794.0
+      ],
+      "target_scale": 0.82,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=-5.0, dy=0.0; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234446+00:00"
+    },
+    "brow_L": {
+      "part_id": "brow_L",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/brow_L.png",
+      "current_center": [
+        844.5,
+        644.5
+      ],
+      "current_bbox": [
+        764,
+        628,
+        925,
+        661
+      ],
+      "target_anchor": [
+        852.0,
+        645.0
+      ],
+      "target_scale": 0.9,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=7.5, dy=0.5; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234449+00:00"
+    },
+    "brow_R": {
+      "part_id": "brow_R",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/brow_R.png",
+      "current_center": [
+        1183.5,
+        644.0
+      ],
+      "current_bbox": [
+        1105,
+        628,
+        1262,
+        660
+      ],
+      "target_anchor": [
+        1176.0,
+        645.0
+      ],
+      "target_scale": 0.9,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=-7.5, dy=1.0; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234452+00:00"
+    },
+    "hair_back_base": {
+      "part_id": "hair_back_base",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_back_base.png",
+      "current_center": [
+        1024.0,
+        720.0
+      ],
+      "current_bbox": [
+        644,
+        190,
+        1404,
+        1250
+      ],
+      "target_anchor": [
+        1024.0,
+        720.0
+      ],
+      "target_scale": 1.0,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=0.0, dy=0.0; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234454+00:00"
+    },
+    "hair_back_underpaint": {
+      "part_id": "hair_back_underpaint",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_back_underpaint.png",
+      "current_center": [
+        939.5,
+        880.0
+      ],
+      "current_bbox": [
+        734,
+        585,
+        1145,
+        1175
+      ],
+      "target_anchor": [
+        1024.0,
+        880.0
+      ],
+      "target_scale": 1.0,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=84.5, dy=0.0; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234457+00:00"
+    },
+    "hair_back_strand_L": {
+      "part_id": "hair_back_strand_L",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_back_strand_L.png",
+      "current_center": [
+        725.0,
+        820.0
+      ],
+      "current_bbox": [
+        595,
+        440,
+        855,
+        1200
+      ],
+      "target_anchor": [
+        725.0,
+        820.0
+      ],
+      "target_scale": 1.0,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=0.0, dy=0.0; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234459+00:00"
+    },
+    "hair_back_strand_R": {
+      "part_id": "hair_back_strand_R",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_back_strand_R.png",
+      "current_center": [
+        1334.0,
+        830.0
+      ],
+      "current_bbox": [
+        1223,
+        450,
+        1445,
+        1210
+      ],
+      "target_anchor": [
+        1335.0,
+        830.0
+      ],
+      "target_scale": 1.0,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=1.0, dy=0.0; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234462+00:00"
+    },
+    "hair_back_center": {
+      "part_id": "hair_back_center",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_back_center.png",
+      "current_center": [
+        1026.0,
+        822.5
+      ],
+      "current_bbox": [
+        839,
+        435,
+        1213,
+        1210
+      ],
+      "target_anchor": [
+        1024.0,
+        822.0
+      ],
+      "target_scale": 1.0,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=-2.0, dy=-0.5; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234465+00:00"
+    },
+    "hair_front_center": {
+      "part_id": "hair_front_center",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_front_center.png",
+      "current_center": [
+        1024.0,
+        429.0
+      ],
+      "current_bbox": [
+        814,
+        222,
+        1234,
+        636
+      ],
+      "target_anchor": [
+        1024.0,
+        430.0
+      ],
+      "target_scale": 0.96,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=0.0, dy=1.0; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234467+00:00"
+    },
+    "hair_front_L": {
+      "part_id": "hair_front_L",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_front_L.png",
+      "current_center": [
+        881.5,
+        445.0
+      ],
+      "current_bbox": [
+        753,
+        279,
+        1010,
+        611
+      ],
+      "target_anchor": [
+        882.0,
+        445.0
+      ],
+      "target_scale": 0.96,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=0.5, dy=0.0; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234470+00:00"
+    },
+    "hair_front_R": {
+      "part_id": "hair_front_R",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_front_R.png",
+      "current_center": [
+        1160.0,
+        455.0
+      ],
+      "current_bbox": [
+        1010,
+        275,
+        1310,
+        635
+      ],
+      "target_anchor": [
+        1160.0,
+        455.0
+      ],
+      "target_scale": 0.96,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=0.0, dy=0.0; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234472+00:00"
+    },
+    "hair_front_side_L": {
+      "part_id": "hair_front_side_L",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_front_side_L.png",
+      "current_center": [
+        812.0,
+        635.0
+      ],
+      "current_bbox": [
+        712,
+        375,
+        912,
+        895
+      ],
+      "target_anchor": [
+        812.0,
+        635.0
+      ],
+      "target_scale": 0.96,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=0.0, dy=0.0; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234475+00:00"
+    },
+    "hair_front_side_R": {
+      "part_id": "hair_front_side_R",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_front_side_R.png",
+      "current_center": [
+        1287.0,
+        635.0
+      ],
+      "current_bbox": [
+        1223,
+        375,
+        1351,
+        895
+      ],
+      "target_anchor": [
+        1287.0,
+        635.0
+      ],
+      "target_scale": 0.96,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=0.0, dy=0.0; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234477+00:00"
+    },
+    "hair_front_tip_L": {
+      "part_id": "hair_front_tip_L",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_front_tip_L.png",
+      "current_center": [
+        760.0,
+        872.5
+      ],
+      "current_bbox": [
+        696,
+        690,
+        824,
+        1055
+      ],
+      "target_anchor": [
+        760.0,
+        873.0
+      ],
+      "target_scale": 0.96,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=0.0, dy=0.5; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234480+00:00"
+    },
+    "hair_front_tip_R": {
+      "part_id": "hair_front_tip_R",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_front_tip_R.png",
+      "current_center": [
+        1209.0,
+        885.0
+      ],
+      "current_bbox": [
+        1155,
+        690,
+        1263,
+        1080
+      ],
+      "target_anchor": [
+        1209.0,
+        885.0
+      ],
+      "target_scale": 0.96,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=0.0, dy=0.0; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234482+00:00"
+    },
+    "hair_side_L_outer": {
+      "part_id": "hair_side_L_outer",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_side_L_outer.png",
+      "current_center": [
+        716.5,
+        910.5
+      ],
+      "current_bbox": [
+        696,
+        670,
+        737,
+        1151
+      ],
+      "target_anchor": [
+        716.0,
+        911.0
+      ],
+      "target_scale": 1.0,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=-0.5, dy=0.5; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234485+00:00"
+    },
+    "hair_side_L_inner": {
+      "part_id": "hair_side_L_inner",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_side_L_inner.png",
+      "current_center": [
+        738.5,
+        922.5
+      ],
+      "current_bbox": [
+        670,
+        712,
+        807,
+        1133
+      ],
+      "target_anchor": [
+        738.0,
+        923.0
+      ],
+      "target_scale": 1.0,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=-0.5, dy=0.5; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234488+00:00"
+    },
+    "hair_side_R_outer": {
+      "part_id": "hair_side_R_outer",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_side_R_outer.png",
+      "current_center": [
+        1418.5,
+        932.5
+      ],
+      "current_bbox": [
+        1328,
+        675,
+        1509,
+        1190
+      ],
+      "target_anchor": [
+        1418.0,
+        933.0
+      ],
+      "target_scale": 1.0,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=-0.5, dy=0.5; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234490+00:00"
+    },
+    "hair_side_R_inner": {
+      "part_id": "hair_side_R_inner",
+      "source_batch": "B4",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/normalized_layers/hair_side_R_inner.png",
+      "current_center": [
+        1253.0,
+        935.5
+      ],
+      "current_bbox": [
+        1187,
+        712,
+        1319,
+        1159
+      ],
+      "target_anchor": [
+        1253.0,
+        936.0
+      ],
+      "target_scale": 1.0,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=0.0, dy=0.5; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234493+00:00"
+    },
+    "collar_front": {
+      "part_id": "collar_front",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/collar_front.png",
+      "current_center": [
+        1028.0,
+        1138.0
+      ],
+      "current_bbox": [
+        752,
+        1078,
+        1304,
+        1198
+      ],
+      "target_anchor": [
+        1024.0,
+        1138.0
+      ],
+      "target_scale": 1.0,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=-4.0, dy=0.0; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234495+00:00"
+    },
+    "collar_shadow": {
+      "part_id": "collar_shadow",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/collar_shadow.png",
+      "current_center": [
+        1016.5,
+        1223.5
+      ],
+      "current_bbox": [
+        745,
+        1177,
+        1288,
+        1270
+      ],
+      "target_anchor": [
+        1024.0,
+        1224.0
+      ],
+      "target_scale": 1.0,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=7.5, dy=0.5; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234498+00:00"
+    },
+    "chest_cloth_base": {
+      "part_id": "chest_cloth_base",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/chest_cloth_base.png",
+      "current_center": [
+        1047.5,
+        1395.0
+      ],
+      "current_bbox": [
+        721,
+        1245,
+        1374,
+        1545
+      ],
+      "target_anchor": [
+        1024.0,
+        1395.0
+      ],
+      "target_scale": 1.0,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=-23.5, dy=0.0; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234501+00:00"
+    },
+    "chest_cloth_shadow": {
+      "part_id": "chest_cloth_shadow",
+      "source_batch": "B5",
+      "layer_path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/chest_cloth_shadow.png",
+      "current_center": [
+        1034.5,
+        1565.0
+      ],
+      "current_bbox": [
+        697,
+        1482,
+        1372,
+        1648
+      ],
+      "target_anchor": [
+        1024.0,
+        1565.0
+      ],
+      "target_scale": 1.0,
+      "preview_opacity": 0.72,
+      "notes": "auto draft; dx=-10.5, dy=0.0; requires overlay QA and 주인님 visual review",
+      "status": "AUTO_DRAFT_TARGET_ANCHOR_PENDING_REBUILD_AND_REVIEW",
+      "updated_at": "2026-06-09T13:49:41.234504+00:00"
+    }
+  },
+  "self_review": {
+    "target_count": 33,
+    "saved_count": 33,
+    "all_targets_have_override": true,
+    "param_hair_front_hidden": true,
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true,
+    "status": "PASS"
+  }
+}

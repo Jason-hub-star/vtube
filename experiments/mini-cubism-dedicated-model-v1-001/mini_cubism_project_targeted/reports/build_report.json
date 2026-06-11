@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T02:59:56.493647+00:00",
+  "status": "BUILT_PENDING_VALIDATION",
+  "project": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/mini_cubism_project_targeted",
+  "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/targeted_split_v1/targeted_layer_manifest.json",
+  "counts": {
+    "parts": 73,
+    "meshes": 73,
+    "deformers": 10,
+    "parameters": 10,
+    "keyform_bindings": 18,
+    "physics_profiles": 9,
+    "vertex_weights": 26
+  }
+}

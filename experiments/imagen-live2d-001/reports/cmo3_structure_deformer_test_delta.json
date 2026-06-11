@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T14:52:01.985681+00:00",
+  "tool": "compare_cmo3_structure_reports.py",
+  "status": "FAIL_EXPECTATION_NOT_MET",
+  "inputs": {
+    "before": "experiments/imagen-live2d-001/reports/cmo3_structure_baseline_before_deformer_test.json",
+    "after": "experiments/imagen-live2d-001/reports/cmo3_structure_after_deformer_test_current.json"
+  },
+  "count_deltas": {
+    "art_meshes": {
+      "before": 19,
+      "after": 19,
+      "delta": 0
+    },
+    "parameters": {
+      "before": 27,
+      "after": 27,
+      "delta": 0
+    },
+    "parts": {
+      "before": 1,
+      "after": 1,
+      "delta": 0
+    },
+    "warp_deformers": {
+      "before": 0,
+      "after": 0,
+      "delta": 0
+    },
+    "rotation_deformers": {
+      "before": 0,
+      "after": 0,
+      "delta": 0
+    },
+    "keyform_grids": {
+      "before": 20,
+      "after": 20,
+      "delta": 0
+    },
+    "keyform_bindings": {
+      "before": 0,
+      "after": 0,
+      "delta": 0
+    },
+    "layers": {
+      "before": 19,
+      "after": 19,
+      "delta": 0
+    }
+  },
+  "name_deltas": {
+    "art_meshes": {
+      "added": [],
+      "removed": [],
+      "unchanged_count": 19
+    },
+    "parameters": {
+      "added": [],
+      "removed": [],
+      "unchanged_count": 27
+    },
+    "parts": {
+      "added": [],
+      "removed": [],
+      "unchanged_count": 1
+    },
+    "warp_deformers": {
+      "added": [],
+      "removed": [],
+      "unchanged_count": 0
+    },
+    "rotation_deformers": {
+      "added": [],
+      "removed": [],
+      "unchanged_count": 0
+    },
+    "layers": {
+      "added": [],
+      "removed": [],
+      "unchanged_count": 19
+    }
+  },
+  "expectation_checks": [
+    {
+      "id": "expected_warp_deformer_increase",
+      "status": "FAIL",
+      "message": "warp deformer delta = 0"
+    },
+    {
+      "id": "expected_keyform_binding_increase",
+      "status": "FAIL",
+      "message": "keyform binding delta = 0"
+    }
+  ],
+  "interpretation": [
+    "This compares CMO3 structure reports only.",
+    "A positive deformer or keyform delta proves structure was saved, not that motion quality is good.",
+    "Visual/runtime overhang validation remains separate."
+  ]
+}

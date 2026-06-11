@@ -1,0 +1,122 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-10T01:16:59.808330+00:00",
+  "status": "G4_TORSO_BASE_REGEN_CANDIDATE_READY_FOR_OVERLAY_QA_MATERIAL_BLOCKED",
+  "input_status": "TORSO_BASE_REGEN_INPUT_READY_MATERIAL_BLOCKED",
+  "source_image": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/new_character_002_source_front.raw.png",
+  "raw_image": "experiments/cubism-v2-new-character-002/v22_g4_torso_base_regen_candidate/raw_outputs/torso_base_regen_reference_001.png",
+  "alpha_candidate": "experiments/cubism-v2-new-character-002/v22_g4_torso_base_regen_candidate/normalized_layers/torso_base_generated_alpha_candidate.png",
+  "full_canvas_candidate": "experiments/cubism-v2-new-character-002/v22_g4_torso_base_regen_candidate/normalized_layers/torso_base.png",
+  "overlay": "experiments/cubism-v2-new-character-002/reports/v22_g4_torso_base_regen_candidate/v22_g4_torso_base_regen_candidate_overlay.png",
+  "mask_overlay": "experiments/cubism-v2-new-character-002/reports/v22_g4_torso_base_regen_candidate/v22_g4_torso_base_regen_candidate_mask_overlay.png",
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/v22_g4_torso_base_regen_candidate/v22_g4_torso_base_regen_candidate_contact_sheet.png",
+  "target": {
+    "part_id": "torso_base",
+    "required_output": "full-canvas 2048x2048 RGBA torso_base.png",
+    "crop_box": [
+      520,
+      880,
+      1539,
+      1974
+    ],
+    "placement": {
+      "mode": "fit_candidate_alpha_bbox_to_target_crop_width_top_aligned",
+      "scale": 0.83730485,
+      "paste_xy": [
+        520,
+        880
+      ],
+      "resized_size": [
+        1019,
+        808
+      ]
+    }
+  },
+  "metrics": {
+    "raw": {
+      "mode": "RGB",
+      "size": [
+        1309,
+        1202
+      ]
+    },
+    "alpha_candidate": {
+      "mode": "RGBA",
+      "size": [
+        1309,
+        1202
+      ],
+      "bbox": [
+        47,
+        120,
+        1264,
+        1085
+      ],
+      "alpha_pixels": 720489,
+      "partial_alpha_pixels": 3616,
+      "alpha_coverage": 0.45791328,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "full_canvas": {
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        520,
+        880,
+        1539,
+        1688
+      ],
+      "alpha_pixels": 505201,
+      "partial_alpha_pixels": 9526,
+      "alpha_coverage": 0.1204493,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "crop_contains_bbox": true
+  },
+  "qa": {
+    "automated_verdict": "PASS_TECHNICAL_CANDIDATE_REVIEW_REQUIRED",
+    "visual_verdict": "PENDING_OVERLAY_QA_REVIEW",
+    "material_promotion": "BLOCKED",
+    "reason": "Generated torso_base is a coherent single-part underpaint candidate, but generated anatomy/style/placement require overlay QA before any G5 material gate."
+  },
+  "locks": {
+    "not_owner_approval": true,
+    "material_pass_status": "BLOCKED",
+    "param_hair_front_status": "HIDDEN_CONTRACT_ONLY",
+    "g5_status": "BLOCKED_PENDING_TORSO_OVERLAY_QA_AND_SEPARATE_G5_ACCEPTANCE",
+    "g7_mini_cubism_status": "BLOCKED",
+    "g8_real_cubism_status": "BLOCKED"
+  },
+  "self_review": {
+    "status": true,
+    "input_status": true,
+    "raw_exists": true,
+    "alpha_candidate_exists": true,
+    "full_canvas_exists": true,
+    "full_canvas_rgba_2048": true,
+    "full_canvas_non_empty": true,
+    "transparent_corners": true,
+    "crop_contains_bbox": true,
+    "overlay_exists": true,
+    "mask_overlay_exists": true,
+    "contact_sheet_exists": true,
+    "not_owner_approval": true,
+    "material_pass_blocked": true,
+    "param_hair_front_hidden": true,
+    "g7_blocked": true,
+    "g8_blocked": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-08T08:34:49.345747+00:00",
+  "status": "BUILT_ANCHOR_CLEAN_COMBINED_CANDIDATE_V1",
+  "snapshot_manifest": "experiments/cubism-v2-new-character-001/material_pack_v0/layer_manifest.anchor_clean_combined_candidate_v1.json",
+  "counts": {
+    "layers": 64,
+    "import_layers": 62,
+    "part_opacity_keyframes": 20,
+    "anchor_methods": {
+      "KEEP_ACTIVE_ROI_GUIDED": 35,
+      "NO_ANCHOR_METHOD": 2,
+      "ANCHOR_CENTERED_CANONICAL_REEXTRACT": 18,
+      "ANCHOR_CENTERED_TRANSLATE_EXISTING": 9
+    }
+  },
+  "interpretation": [
+    "This combines 8065-style anchor position repair with 8066-style clean-neutral opacity hiding.",
+    "Use it as the next visual review target. Do not promote until 주인님 confirms face/eye/mouth placement and blotches are acceptable."
+  ]
+}

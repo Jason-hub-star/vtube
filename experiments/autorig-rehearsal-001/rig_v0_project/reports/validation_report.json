@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "validated_at": "2026-06-10T16:22:18.423339+00:00",
+  "project": "/Users/family/jason/Vtube/experiments/autorig-rehearsal-001/rig_v0_project",
+  "status": "PASS",
+  "counts": {
+    "parts": 40,
+    "meshes": 40,
+    "deformers": 9,
+    "parameters": 14,
+    "keyform_bindings": 32,
+    "glue": 0
+  }
+}

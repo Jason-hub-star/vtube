@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "experiment_id": "mini-cubism-hair-face-motion-v1-001",
+  "generated_at": "2026-06-05T13:50:15.867365+00:00",
+  "status": "PASS",
+  "project": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/mini_cubism_project",
+  "counts": {
+    "parts": 27,
+    "meshes": 27,
+    "deformers": 9,
+    "parameters": 7,
+    "keyform_bindings": 14,
+    "part_opacity_keyframes": 9,
+    "vertex_weights": 16,
+    "physics_profiles": 5
+  },
+  "excluded_packs": [
+    "outfit_pack",
+    "accessory_pack"
+  ]
+}

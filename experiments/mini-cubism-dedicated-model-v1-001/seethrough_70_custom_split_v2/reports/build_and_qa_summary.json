@@ -1,0 +1,34 @@
+{
+  "ok": false,
+  "manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/candidate_layer_manifest.json",
+  "counts": {
+    "parts": 73,
+    "hair_parts": 18,
+    "eye_parts": 16,
+    "mouth_parts": 8,
+    "physics_targets": 33,
+    "from_seethrough_masks": 40,
+    "generated_or_fallback_candidates": 33
+  },
+  "mps_case_status": {
+    "primary_case": "mps_640_safe",
+    "status": "PRIMARY_640_LAYERS_JSON_PRESENT_WITH_INCOMPLETE_RUN_REPORT",
+    "layers_json": "/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_layers.json",
+    "report": null
+  },
+  "qa": {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "/Users/family/jason/Vtube/scripts/validate_seethrough_70_custom_split_v2.py",
+      "--experiment",
+      "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001",
+      "--manifest",
+      "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/candidate_layer_manifest.json"
+    ],
+    "returncode": 1,
+    "stdout_tail": "{\n  \"ok\": false,\n  \"status\": \"REVISE_VISUAL\",\n  \"structural_status\": \"PASS\",\n  \"visual_status\": \"FAIL\",\n  \"counts\": {\n    \"parts\": 73,\n    \"hair_parts\": 18,\n    \"eye_parts\": 16,\n    \"mouth_parts\": 8,\n    \"physics_targets\": 33\n  },\n  \"report\": \"/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/reports/seethrough_70_custom_split_v2_qa_report.json\"\n}\n",
+    "stderr_tail": "",
+    "status": "QA_REVISE_OR_FAIL"
+  },
+  "next_action": "Do not promote; inspect QA problem sheets and retry ROI/keypose generation."
+}

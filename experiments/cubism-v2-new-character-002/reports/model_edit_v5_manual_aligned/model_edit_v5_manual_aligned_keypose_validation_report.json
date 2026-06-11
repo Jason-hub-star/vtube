@@ -1,0 +1,458 @@
+{
+  "schema_version": 1,
+  "validated_at": "2026-06-09T03:06:10.416116+00:00",
+  "status": "PASS_READY_FOR_VISUAL_QA",
+  "input_dir": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v5_manual_aligned/normalized_layers",
+  "spec": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/clean_socket_keypose_requirements.json",
+  "required_size": [
+    2048,
+    2048
+  ],
+  "required_mode": "RGBA",
+  "summary": {
+    "total_required": 19,
+    "found": 19,
+    "missing": 0,
+    "normalize_required": 0,
+    "alpha_or_mode_required": 0
+  },
+  "assets": [
+    {
+      "asset_id": "face_base_clean",
+      "group": "face",
+      "kind": "clean_base",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v5_manual_aligned/normalized_layers/face_base_clean.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        308,
+        19,
+        1740,
+        2048
+      ],
+      "alpha_coverage": 0.50843525
+    },
+    {
+      "asset_id": "eye_L_clean_socket",
+      "group": "eye_L",
+      "kind": "clean_socket",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v5_manual_aligned/normalized_layers/eye_L_clean_socket.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        766,
+        621,
+        994,
+        753
+      ],
+      "alpha_coverage": 0.00605702
+    },
+    {
+      "asset_id": "eye_R_clean_socket",
+      "group": "eye_R",
+      "kind": "clean_socket",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v5_manual_aligned/normalized_layers/eye_R_clean_socket.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        1056,
+        621,
+        1284,
+        752
+      ],
+      "alpha_coverage": 0.00609136
+    },
+    {
+      "asset_id": "eye_L_half_closed_lid",
+      "group": "eye_L",
+      "kind": "eye_keypose",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v5_manual_aligned/normalized_layers/eye_L_half_closed_lid.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        790,
+        662,
+        948,
+        730
+      ],
+      "alpha_coverage": 0.00102115
+    },
+    {
+      "asset_id": "eye_R_half_closed_lid",
+      "group": "eye_R",
+      "kind": "eye_keypose",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v5_manual_aligned/normalized_layers/eye_R_half_closed_lid.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        1102,
+        682,
+        1261,
+        731
+      ],
+      "alpha_coverage": 0.0010221
+    },
+    {
+      "asset_id": "eye_L_mostly_closed_lid",
+      "group": "eye_L",
+      "kind": "eye_keypose",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v5_manual_aligned/normalized_layers/eye_L_mostly_closed_lid.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        791,
+        651,
+        954,
+        726
+      ],
+      "alpha_coverage": 0.00063419
+    },
+    {
+      "asset_id": "eye_R_mostly_closed_lid",
+      "group": "eye_R",
+      "kind": "eye_keypose",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v5_manual_aligned/normalized_layers/eye_R_mostly_closed_lid.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        1102,
+        691,
+        1260,
+        725
+      ],
+      "alpha_coverage": 0.00062752
+    },
+    {
+      "asset_id": "eye_L_closed_lid",
+      "group": "eye_L",
+      "kind": "eye_keypose",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v5_manual_aligned/normalized_layers/eye_L_closed_lid.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        787,
+        656,
+        963,
+        723
+      ],
+      "alpha_coverage": 0.00067067
+    },
+    {
+      "asset_id": "eye_R_closed_lid",
+      "group": "eye_R",
+      "kind": "eye_keypose",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v5_manual_aligned/normalized_layers/eye_R_closed_lid.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        1092,
+        653,
+        1264,
+        719
+      ],
+      "alpha_coverage": 0.00069284
+    },
+    {
+      "asset_id": "eye_L_closed_underpaint",
+      "group": "eye_L",
+      "kind": "underpaint",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v5_manual_aligned/normalized_layers/eye_L_closed_underpaint.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        766,
+        621,
+        994,
+        753
+      ],
+      "alpha_coverage": 0.00605702
+    },
+    {
+      "asset_id": "eye_R_closed_underpaint",
+      "group": "eye_R",
+      "kind": "underpaint",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v5_manual_aligned/normalized_layers/eye_R_closed_underpaint.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        1056,
+        621,
+        1284,
+        752
+      ],
+      "alpha_coverage": 0.00609136
+    },
+    {
+      "asset_id": "mouth_base_clean",
+      "group": "mouth",
+      "kind": "clean_socket",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v5_manual_aligned/normalized_layers/mouth_base_clean.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        918,
+        826,
+        1140,
+        964
+      ],
+      "alpha_coverage": 0.00609875
+    },
+    {
+      "asset_id": "mouth_closed_smile",
+      "group": "mouth",
+      "kind": "mouth_keypose",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v5_manual_aligned/normalized_layers/mouth_closed_smile.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        952,
+        851,
+        1121,
+        945
+      ],
+      "alpha_coverage": 0.00012541
+    },
+    {
+      "asset_id": "mouth_small_open",
+      "group": "mouth",
+      "kind": "mouth_keypose",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v5_manual_aligned/normalized_layers/mouth_small_open.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        934,
+        845,
+        1118,
+        946
+      ],
+      "alpha_coverage": 0.00045991
+    },
+    {
+      "asset_id": "mouth_wide_open",
+      "group": "mouth",
+      "kind": "mouth_keypose",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v5_manual_aligned/normalized_layers/mouth_wide_open.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        943,
+        841,
+        1128,
+        945
+      ],
+      "alpha_coverage": 0.00144339
+    },
+    {
+      "asset_id": "mouth_o_vowel",
+      "group": "mouth",
+      "kind": "mouth_keypose",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v5_manual_aligned/normalized_layers/mouth_o_vowel.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        937,
+        845,
+        1111,
+        951
+      ],
+      "alpha_coverage": 0.00027728
+    },
+    {
+      "asset_id": "mouth_inner",
+      "group": "mouth",
+      "kind": "mouth_detail",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v5_manual_aligned/normalized_layers/mouth_inner.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        937,
+        849,
+        1122,
+        942
+      ],
+      "alpha_coverage": 0.00342655
+    },
+    {
+      "asset_id": "mouth_teeth",
+      "group": "mouth",
+      "kind": "mouth_detail",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v5_manual_aligned/normalized_layers/mouth_teeth.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        930,
+        867,
+        1128,
+        923
+      ],
+      "alpha_coverage": 0.00227594
+    },
+    {
+      "asset_id": "mouth_tongue",
+      "group": "mouth",
+      "kind": "mouth_detail",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v5_manual_aligned/normalized_layers/mouth_tongue.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        940,
+        846,
+        1116,
+        944
+      ],
+      "alpha_coverage": 0.00322413
+    }
+  ]
+}

@@ -1,0 +1,419 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T15:27:16.984045+00:00",
+  "id": "wanko_wanko_touch_t01",
+  "name": "wanko_touch_t01",
+  "source_url": "https://www.live2d.com/ko/learn/sample/",
+  "source_type": "OFFICIAL_SAMPLE_ZIP",
+  "license_status": "OFFICIAL_TERMS_ACCEPTED_BY_USER",
+  "analysis_mode": "FULL_STRUCTURE",
+  "official_profile_key": "wanko",
+  "analysis_safety_notes": [],
+  "has_cmo3": true,
+  "has_moc3": true,
+  "has_model3_json": true,
+  "has_physics3_json": true,
+  "has_psd": false,
+  "local_paths": {
+    "motion3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/idle_01.motion3.json",
+        "exists": true,
+        "size_bytes": 6897
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/idle_02.motion3.json",
+        "exists": true,
+        "size_bytes": 7781
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/idle_03.motion3.json",
+        "exists": true,
+        "size_bytes": 7475
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/idle_04.motion3.json",
+        "exists": true,
+        "size_bytes": 6406
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/shake_01.motion3.json",
+        "exists": true,
+        "size_bytes": 7296
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/shake_02.motion3.json",
+        "exists": true,
+        "size_bytes": 8335
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/touch_01.motion3.json",
+        "exists": true,
+        "size_bytes": 5819
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/touch_02.motion3.json",
+        "exists": true,
+        "size_bytes": 6712
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/touch_03.motion3.json",
+        "exists": true,
+        "size_bytes": 6228
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/touch_04.motion3.json",
+        "exists": true,
+        "size_bytes": 5986
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/touch_05.motion3.json",
+        "exists": true,
+        "size_bytes": 5031
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/motion/touch_06.motion3.json",
+        "exists": true,
+        "size_bytes": 7070
+      }
+    ],
+    "cdi3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/wanko_touch.cdi3.json",
+      "exists": true,
+      "size_bytes": 3986
+    },
+    "model3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/wanko_touch.model3.json",
+      "exists": true,
+      "size_bytes": 1302
+    },
+    "moc3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/wanko_touch.moc3",
+      "exists": true,
+      "size_bytes": 107200
+    },
+    "physics3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/wanko_touch.physics3.json",
+      "exists": true,
+      "size_bytes": 5937
+    },
+    "cmo3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/wanko_touch_t01.cmo3",
+      "exists": true,
+      "size_bytes": 3954855
+    }
+  },
+  "cmo3": {
+    "status": "PASS",
+    "returncode": 0,
+    "json": "experiments/reference-model-structure-001/official_combined_analysis/models/wanko_wanko_touch_t01/cmo3_structure_report.json",
+    "markdown": "experiments/reference-model-structure-001/official_combined_analysis/models/wanko_wanko_touch_t01/cmo3_structure_report.md",
+    "stdout": "[cmo3-structure] WARN\n[cmo3-structure] json: /Users/family/jason/Vtube/experiments/reference-model-structure-001/official_combined_analysis/models/wanko_wanko_touch_t01/cmo3_structure_report.json\n[cmo3-structure] md:   /Users/family/jason/Vtube/experiments/reference-model-structure-001/official_combined_analysis/models/wanko_wanko_touch_t01/cmo3_structure_report.md",
+    "stderr": "",
+    "cmo3_status": "WARN",
+    "counts": {
+      "art_meshes": 78,
+      "parts": 33,
+      "parameters": 25,
+      "warp_deformers": 28,
+      "rotation_deformers": 6,
+      "keyform_bindings": 85,
+      "keyform_grids": 145,
+      "glue": 0,
+      "masks": 0
+    },
+    "parameter_ids": [
+      "PARAM_ANGLE_X",
+      "PARAM_ANGLE_Y",
+      "PARAM_ANGLE_Z",
+      "PARAM_EYE_L_OPEN",
+      "PARAM_EYE_R_OPEN",
+      "PARAM_MOUTH_FORM",
+      "PARAM_MOUTH_OPEN_Y",
+      "PARAM_TERE",
+      "PARAM_BODY_ANGLE_X",
+      "PARAM_BODY_ANGLE_Z",
+      "PARAM_BODY_ANGLE_Y",
+      "PARAM_BREATH",
+      "PARAM_BOWL_LID",
+      "PARAM_YUGE_01",
+      "PARAM_YUGE_02",
+      "PARAM_EFFECT",
+      "PARAM_EAR_L",
+      "PARAM_EAR_R",
+      "PARAM_HAND_L",
+      "PARAM_HAND_R",
+      "PARAM_SWING",
+      "PARAM_BOWL_SWING",
+      "PARAM_FACE_01",
+      "PARAM_BASE_X",
+      "PARAM_BASE_Y"
+    ],
+    "part_names": [
+      "Root Part",
+      "[ 下絵 ]",
+      "背景",
+      "お椀",
+      "体",
+      "耳",
+      "鼻",
+      "口",
+      "まゆ毛",
+      "目玉",
+      "目",
+      "顔",
+      "頬",
+      "エフェクト",
+      "蕎麦６杯目",
+      "ベニテングタケ",
+      "蕎麦５杯目",
+      "しいたけ",
+      "みかん",
+      "蕎麦４杯目",
+      "王冠",
+      "まゆげ",
+      "蕎麦３杯目",
+      "アフロ",
+      "リボン",
+      "蕎麦２杯目",
+      "星",
+      "ひげ",
+      "蕎麦１杯目",
+      "たんぽぽ",
+      "コア　アイテム",
+      "コア",
+      "ラフ"
+    ]
+  },
+  "moc3": {
+    "present": true,
+    "path": "experiments/reference-model-structure-001/official_samples/extracted/wanko/wanko/runtime/wanko_touch.moc3",
+    "size_bytes": 107200,
+    "sha256": "7bb0ea10be066cea9d673e2bf73067f6c04ac89d614bb63ad176ca096b94a651",
+    "py_moc3_status": "PASS",
+    "parameter_count": 25,
+    "art_mesh_count": 33,
+    "parameter_ids": [
+      "PARAM_ANGLE_X",
+      "PARAM_ANGLE_Y",
+      "PARAM_ANGLE_Z",
+      "PARAM_EYE_L_OPEN",
+      "PARAM_EYE_R_OPEN",
+      "PARAM_MOUTH_FORM",
+      "PARAM_MOUTH_OPEN_Y",
+      "PARAM_TERE",
+      "PARAM_BODY_ANGLE_X",
+      "PARAM_BODY_ANGLE_Z",
+      "PARAM_BODY_ANGLE_Y",
+      "PARAM_BREATH",
+      "PARAM_BOWL_LID",
+      "PARAM_YUGE_01",
+      "PARAM_YUGE_02",
+      "PARAM_EFFECT",
+      "PARAM_EAR_L",
+      "PARAM_EAR_R",
+      "PARAM_HAND_L",
+      "PARAM_HAND_R",
+      "PARAM_SWING",
+      "PARAM_BOWL_SWING",
+      "PARAM_FACE_01",
+      "PARAM_BASE_X",
+      "PARAM_BASE_Y"
+    ],
+    "art_mesh_ids_sample": [
+      "D_BACKGROUND_00",
+      "D_BOWL_02",
+      "D_BOWL_01",
+      "D_BOWL_00",
+      "D_BODY_02",
+      "D_BODY_01",
+      "D_BODY_00",
+      "D_EAR_01",
+      "D_EAR_00",
+      "D_NOSE_00",
+      "D_MOUTH_02",
+      "D_MOUTH_01",
+      "D_MOUTH_00",
+      "D_EYE_02",
+      "D_EYE_01",
+      "D_EYE_00",
+      "D_FACE_01",
+      "D_FACE_00",
+      "D_HOHO_01",
+      "D_HOHO_00",
+      "D_EFFECT_05",
+      "D_EFFECT_04",
+      "D_EFFECT_03",
+      "D_EFFECT_01",
+      "D_EFFECT_00",
+      "D_REF_PT_BOWL",
+      "D_REF_PT_OUCH_01",
+      "D_REF_PT_SOBA_06",
+      "D_REF_PT_SOBA_05",
+      "D_REF_PT_SOBA_04",
+      "D_REF_PT_SOBA_03",
+      "D_REF_PT_SOBA_02",
+      "D_REF_PT_SOBA_01"
+    ]
+  },
+  "runtime_json": {
+    "model3": {
+      "present": true,
+      "version": 3,
+      "moc": "wanko_touch.moc3",
+      "texture_count": 1,
+      "has_physics": true,
+      "has_pose": false,
+      "has_display_info": true,
+      "has_user_data": false,
+      "expression_count": 0,
+      "motion_group_count": 7,
+      "motion_count": 12,
+      "group_count": 2,
+      "parameter_ids": [
+        "PARAM_EYE_L_OPEN",
+        "PARAM_EYE_R_OPEN",
+        "PARAM_MOUTH_OPEN_Y"
+      ],
+      "file_references": {
+        "Moc": "wanko_touch.moc3",
+        "Textures": [
+          "wanko_touch.1024/texture_00.png"
+        ],
+        "Physics": "wanko_touch.physics3.json",
+        "DisplayInfo": "wanko_touch.cdi3.json",
+        "Motions": {
+          "Idle": [
+            {
+              "File": "motion/idle_01.motion3.json"
+            },
+            {
+              "File": "motion/idle_03.motion3.json"
+            },
+            {
+              "File": "motion/idle_04.motion3.json"
+            }
+          ],
+          "Flick3": [
+            {
+              "File": "motion/idle_02.motion3.json"
+            },
+            {
+              "File": "motion/touch_01.motion3.json"
+            }
+          ],
+          "Shake": [
+            {
+              "File": "motion/shake_01.motion3.json"
+            }
+          ],
+          "FlickUp": [
+            {
+              "File": "motion/shake_02.motion3.json"
+            }
+          ],
+          "Tap": [
+            {
+              "File": "motion/touch_02.motion3.json"
+            },
+            {
+              "File": "motion/touch_04.motion3.json"
+            }
+          ],
+          "Flick": [
+            {
+              "File": "motion/touch_03.motion3.json"
+            },
+            {
+              "File": "motion/touch_05.motion3.json"
+            }
+          ],
+          "FlickLeft": [
+            {
+              "File": "motion/touch_06.motion3.json"
+            }
+          ]
+        }
+      }
+    },
+    "physics3": {
+      "present": true,
+      "version": 3,
+      "physics_group_count": 4,
+      "physics_input_count": 14,
+      "physics_output_count": 4,
+      "physics_vertex_count": 8,
+      "groups": [
+        {
+          "index": 0,
+          "id": "PhysicsSetting1",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 1,
+          "id": "PhysicsSetting2",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 2,
+          "id": "PhysicsSetting3",
+          "input_count": 5,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 3,
+          "id": "PhysicsSetting4",
+          "input_count": 5,
+          "output_count": 1,
+          "vertex_count": 2
+        }
+      ]
+    },
+    "cdi3": {
+      "present": true,
+      "parameter_display_count": 25,
+      "part_display_count": 32
+    },
+    "motion3_count": 12,
+    "exp3_count": 0,
+    "pose3_present": false,
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 78,
+    "parts": 33,
+    "parameters": 25,
+    "warp_deformers": 28,
+    "rotation_deformers": 6,
+    "keyform_bindings": 85,
+    "keyform_grids": 145,
+    "glue": 0,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": false,
+    "pose": false,
+    "expression": false,
+    "motion": true,
+    "physics": true
+  },
+  "structure_hints": {
+    "hair": 0,
+    "eye": 1,
+    "mouth": 2,
+    "body": 1,
+    "arm": 1
+  },
+  "reuse_decision": "REFERENCE_ONLY",
+  "notes": [
+    "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+    "Source zip: wanko.zip"
+  ],
+  "structure_report_path": "experiments/reference-model-structure-001/official_combined_analysis/models/wanko_wanko_touch_t01/cmo3_structure_report.json"
+}

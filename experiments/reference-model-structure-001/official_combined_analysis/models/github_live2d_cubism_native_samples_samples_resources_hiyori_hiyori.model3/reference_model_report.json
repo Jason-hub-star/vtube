@@ -1,0 +1,448 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T15:27:25.884559+00:00",
+  "id": "github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori.model3",
+  "name": "Hiyori",
+  "source_url": "https://github.com/Live2D/CubismNativeSamples",
+  "source_type": "OFFICIAL_GITHUB_SAMPLE",
+  "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+  "analysis_mode": "RUNTIME_ONLY",
+  "official_profile_key": "hiyori",
+  "analysis_safety_notes": [],
+  "has_cmo3": false,
+  "has_moc3": true,
+  "has_model3_json": true,
+  "has_physics3_json": true,
+  "has_psd": false,
+  "local_paths": {
+    "motion3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m01.motion3.json",
+        "exists": true,
+        "size_bytes": 10622
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m02.motion3.json",
+        "exists": true,
+        "size_bytes": 14248
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m03.motion3.json",
+        "exists": true,
+        "size_bytes": 12732
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m05.motion3.json",
+        "exists": true,
+        "size_bytes": 16061
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m06.motion3.json",
+        "exists": true,
+        "size_bytes": 19492
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m07.motion3.json",
+        "exists": true,
+        "size_bytes": 9636
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m08.motion3.json",
+        "exists": true,
+        "size_bytes": 10551
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m09.motion3.json",
+        "exists": true,
+        "size_bytes": 11479
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m10.motion3.json",
+        "exists": true,
+        "size_bytes": 9604
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/motions/Hiyori_m04.motion3.json",
+        "exists": true,
+        "size_bytes": 8772
+      }
+    ],
+    "cdi3_json": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/Hiyori.cdi3.json",
+      "exists": true,
+      "size_bytes": 9660
+    },
+    "pose3_json": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/Hiyori.pose3.json",
+      "exists": true,
+      "size_bytes": 166
+    },
+    "model3_json": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/Hiyori.model3.json",
+      "exists": true,
+      "size_bytes": 1736
+    },
+    "moc3": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/Hiyori.moc3",
+      "exists": true,
+      "size_bytes": 443648
+    },
+    "physics3_json": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/Hiyori.physics3.json",
+      "exists": true,
+      "size_bytes": 26160
+    }
+  },
+  "cmo3": {
+    "status": "NOT_REQUESTED"
+  },
+  "moc3": {
+    "present": true,
+    "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_native_samples/Samples/Resources/Hiyori/Hiyori.moc3",
+    "size_bytes": 443648,
+    "sha256": "0323f5f377b9afef54318be09e9b4eea2a8cb266190ff9d2f843f95ecb77716c",
+    "py_moc3_status": "PASS",
+    "parameter_count": 70,
+    "art_mesh_count": 134,
+    "parameter_ids": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamCheek",
+      "ParamEyeLOpen",
+      "ParamEyeLSmile",
+      "ParamEyeROpen",
+      "ParamEyeRSmile",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamBrowLY",
+      "ParamBrowRY",
+      "ParamBrowLX",
+      "ParamBrowRX",
+      "ParamBrowLAngle",
+      "ParamBrowRAngle",
+      "ParamBrowLForm",
+      "ParamBrowRForm",
+      "ParamMouthForm",
+      "ParamMouthOpenY",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBodyAngleZ",
+      "ParamBreath",
+      "ParamShoulder",
+      "ParamLeg",
+      "ParamArmLA",
+      "ParamArmRA",
+      "ParamArmLB",
+      "ParamArmRB",
+      "ParamHandLB",
+      "ParamHandRB",
+      "ParamHandL",
+      "ParamHandR",
+      "ParamBustY",
+      "ParamHairAhoge",
+      "ParamHairFront",
+      "ParamHairBack",
+      "ParamSideupRibbon",
+      "ParamRibbon",
+      "ParamSkirt",
+      "ParamSkirt2",
+      "Param_Angle_Rotation_1_ArtMesh62",
+      "Param_Angle_Rotation_2_ArtMesh62",
+      "Param_Angle_Rotation_3_ArtMesh62",
+      "Param_Angle_Rotation_4_ArtMesh62",
+      "Param_Angle_Rotation_5_ArtMesh62",
+      "Param_Angle_Rotation_6_ArtMesh62",
+      "Param_Angle_Rotation_7_ArtMesh62",
+      "Param_Angle_Rotation_1_ArtMesh61",
+      "Param_Angle_Rotation_2_ArtMesh61",
+      "Param_Angle_Rotation_3_ArtMesh61",
+      "Param_Angle_Rotation_4_ArtMesh61",
+      "Param_Angle_Rotation_5_ArtMesh61",
+      "Param_Angle_Rotation_6_ArtMesh61",
+      "Param_Angle_Rotation_7_ArtMesh61",
+      "Param_Angle_Rotation_1_ArtMesh55",
+      "Param_Angle_Rotation_2_ArtMesh55",
+      "Param_Angle_Rotation_3_ArtMesh55",
+      "Param_Angle_Rotation_4_ArtMesh55",
+      "Param_Angle_Rotation_5_ArtMesh55",
+      "Param_Angle_Rotation_6_ArtMesh55",
+      "Param_Angle_Rotation_7_ArtMesh55",
+      "Param_Angle_Rotation_1_ArtMesh54",
+      "Param_Angle_Rotation_2_ArtMesh54",
+      "Param_Angle_Rotation_3_ArtMesh54",
+      "Param_Angle_Rotation_4_ArtMesh54",
+      "Param_Angle_Rotation_5_ArtMesh54",
+      "Param_Angle_Rotation_6_ArtMesh54",
+      "Param_Angle_Rotation_7_ArtMesh54"
+    ],
+    "art_mesh_ids_sample": [
+      "ArtMesh93",
+      "ArtMesh94",
+      "ArtMesh95",
+      "ArtMesh96",
+      "ArtMesh97",
+      "ArtMesh98",
+      "ArtMesh99",
+      "ArtMesh100",
+      "ArtMesh101",
+      "ArtMesh102",
+      "ArtMesh103",
+      "ArtMesh104",
+      "ArtMesh105",
+      "ArtMesh106",
+      "ArtMesh81",
+      "ArtMesh82",
+      "ArtMesh83",
+      "ArtMesh85",
+      "ArtMesh87",
+      "ArtMesh88",
+      "ArtMesh89",
+      "ArtMesh90",
+      "ArtMesh92",
+      "ArtMesh70",
+      "ArtMesh71",
+      "ArtMesh72",
+      "ArtMesh73",
+      "ArtMesh74",
+      "ArtMesh75",
+      "ArtMesh76",
+      "ArtMesh77",
+      "ArtMesh78",
+      "ArtMesh79",
+      "ArtMesh67",
+      "ArtMesh63",
+      "ArtMesh64",
+      "ArtMesh65",
+      "ArtMesh66",
+      "ArtMesh56",
+      "ArtMesh52",
+      "ArtMesh53",
+      "ArtMesh43",
+      "ArtMesh44",
+      "ArtMesh45",
+      "ArtMesh46",
+      "ArtMesh47",
+      "ArtMesh48",
+      "ArtMesh49",
+      "ArtMesh7",
+      "ArtMesh8"
+    ]
+  },
+  "runtime_json": {
+    "model3": {
+      "present": true,
+      "version": 3,
+      "moc": "Hiyori.moc3",
+      "texture_count": 2,
+      "has_physics": true,
+      "has_pose": true,
+      "has_display_info": true,
+      "has_user_data": true,
+      "expression_count": 0,
+      "motion_group_count": 2,
+      "motion_count": 10,
+      "group_count": 2,
+      "parameter_ids": [
+        "ParamEyeLOpen",
+        "ParamEyeROpen",
+        "ParamMouthOpenY"
+      ],
+      "file_references": {
+        "Moc": "Hiyori.moc3",
+        "Textures": [
+          "Hiyori.2048/texture_00.png",
+          "Hiyori.2048/texture_01.png"
+        ],
+        "Physics": "Hiyori.physics3.json",
+        "Pose": "Hiyori.pose3.json",
+        "UserData": "Hiyori.userdata3.json",
+        "DisplayInfo": "Hiyori.cdi3.json",
+        "Motions": {
+          "Idle": [
+            {
+              "File": "motions/Hiyori_m01.motion3.json",
+              "FadeInTime": 0.5,
+              "FadeOutTime": 0.5
+            },
+            {
+              "File": "motions/Hiyori_m02.motion3.json",
+              "FadeInTime": 0.5,
+              "FadeOutTime": 0.5
+            },
+            {
+              "File": "motions/Hiyori_m03.motion3.json",
+              "FadeInTime": 0.5,
+              "FadeOutTime": 0.5
+            },
+            {
+              "File": "motions/Hiyori_m05.motion3.json",
+              "FadeInTime": 0.5,
+              "FadeOutTime": 0.5
+            },
+            {
+              "File": "motions/Hiyori_m06.motion3.json",
+              "FadeInTime": 0.5,
+              "FadeOutTime": 0.5
+            },
+            {
+              "File": "motions/Hiyori_m07.motion3.json",
+              "FadeInTime": 0.5,
+              "FadeOutTime": 0.5
+            },
+            {
+              "File": "motions/Hiyori_m08.motion3.json",
+              "FadeInTime": 0.5,
+              "FadeOutTime": 0.5
+            },
+            {
+              "File": "motions/Hiyori_m09.motion3.json",
+              "FadeInTime": 0.5,
+              "FadeOutTime": 0.5
+            },
+            {
+              "File": "motions/Hiyori_m10.motion3.json",
+              "FadeInTime": 0.5,
+              "FadeOutTime": 0.5
+            }
+          ],
+          "TapBody": [
+            {
+              "File": "motions/Hiyori_m04.motion3.json",
+              "FadeInTime": 0.5,
+              "FadeOutTime": 0.5
+            }
+          ]
+        }
+      }
+    },
+    "physics3": {
+      "present": true,
+      "version": 3,
+      "physics_group_count": 11,
+      "physics_input_count": 34,
+      "physics_output_count": 35,
+      "physics_vertex_count": 58,
+      "groups": [
+        {
+          "index": 0,
+          "id": "PhysicsSetting1",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 1,
+          "id": "PhysicsSetting2",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 2,
+          "id": "PhysicsSetting3",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 3,
+          "id": "PhysicsSetting4",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 4,
+          "id": "PhysicsSetting5",
+          "input_count": 1,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 5,
+          "id": "PhysicsSetting6",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 6,
+          "id": "PhysicsSetting7",
+          "input_count": 1,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 7,
+          "id": "PhysicsSetting8",
+          "input_count": 4,
+          "output_count": 7,
+          "vertex_count": 11
+        },
+        {
+          "index": 8,
+          "id": "PhysicsSetting9",
+          "input_count": 4,
+          "output_count": 7,
+          "vertex_count": 11
+        },
+        {
+          "index": 9,
+          "id": "PhysicsSetting10",
+          "input_count": 4,
+          "output_count": 7,
+          "vertex_count": 11
+        },
+        {
+          "index": 10,
+          "id": "PhysicsSetting11",
+          "input_count": 4,
+          "output_count": 7,
+          "vertex_count": 11
+        }
+      ]
+    },
+    "cdi3": {
+      "present": true,
+      "parameter_display_count": 70,
+      "part_display_count": 26
+    },
+    "motion3_count": 10,
+    "exp3_count": 0,
+    "pose3_present": true,
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 134,
+    "parts": 0,
+    "parameters": 70,
+    "warp_deformers": 0,
+    "rotation_deformers": 0,
+    "keyform_bindings": 0,
+    "keyform_grids": 0,
+    "glue": 0,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": false,
+    "pose": true,
+    "expression": false,
+    "motion": true,
+    "physics": true
+  },
+  "structure_hints": {
+    "hair": 1,
+    "eye": 1,
+    "mouth": 1,
+    "body": 2,
+    "arm": 2
+  },
+  "reuse_decision": "REFERENCE_ONLY",
+  "notes": [
+    "Official Live2D Cubism Native SDK samples. Runtime resources only.",
+    "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+  ],
+  "structure_report_path": null
+}

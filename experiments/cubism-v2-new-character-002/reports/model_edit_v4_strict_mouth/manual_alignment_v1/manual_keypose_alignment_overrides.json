@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "status": "MANUAL_KEYPOSE_ALIGNMENT_REVIEW_SAVED",
+  "candidate_id": "model_edit_v4_strict_mouth",
+  "source_layers": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v4_strict_mouth/normalized_layers",
+  "groups": {
+    "eye_L": {
+      "group_id": "eye_L",
+      "anchor": [
+        880,
+        687
+      ],
+      "scale": 0.78,
+      "preview_part": "eye_L_open",
+      "parts": [
+        "eye_L_clean_socket",
+        "eye_L_closed_underpaint",
+        "eye_L_open",
+        "eye_L_half_closed_lid",
+        "eye_L_mostly_closed_lid",
+        "eye_L_closed_lid"
+      ],
+      "updated_at": "2026-06-09T03:01:26.462Z"
+    },
+    "eye_R": {
+      "group_id": "eye_R",
+      "anchor": [
+        1170,
+        687
+      ],
+      "scale": 0.78,
+      "preview_part": "eye_R_open",
+      "parts": [
+        "eye_R_clean_socket",
+        "eye_R_closed_underpaint",
+        "eye_R_open",
+        "eye_R_half_closed_lid",
+        "eye_R_mostly_closed_lid",
+        "eye_R_closed_lid"
+      ],
+      "updated_at": "2026-06-09T03:01:30.062Z"
+    },
+    "mouth": {
+      "group_id": "mouth",
+      "anchor": [
+        1026,
+        896
+      ],
+      "scale": 0.86,
+      "preview_part": "mouth_small_open",
+      "parts": [
+        "mouth_base_clean",
+        "mouth_closed_smile",
+        "mouth_small_open",
+        "mouth_wide_open",
+        "mouth_o_vowel",
+        "mouth_inner",
+        "mouth_teeth",
+        "mouth_tongue"
+      ],
+      "updated_at": "2026-06-09T03:04:38.078Z"
+    }
+  },
+  "updated_at": "2026-06-09T03:04:38.080892+00:00"
+}

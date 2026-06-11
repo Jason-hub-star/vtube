@@ -1,0 +1,122 @@
+{
+  "semantic_colors": {
+    "body": [
+      67,
+      133,
+      255,
+      230
+    ],
+    "hair": [
+      151,
+      93,
+      74,
+      230
+    ],
+    "face": [
+      255,
+      184,
+      162,
+      230
+    ],
+    "eye": [
+      120,
+      92,
+      255,
+      230
+    ],
+    "brow": [
+      99,
+      69,
+      55,
+      230
+    ],
+    "mouth": [
+      230,
+      66,
+      110,
+      230
+    ],
+    "clothing": [
+      255,
+      204,
+      71,
+      230
+    ],
+    "underpaint": [
+      96,
+      201,
+      145,
+      230
+    ],
+    "metadata": [
+      130,
+      130,
+      130,
+      230
+    ],
+    "unknown": [
+      220,
+      220,
+      220,
+      230
+    ]
+  },
+  "top_owner_pixels_by_group": {
+    "body": 217614,
+    "brow": 13281,
+    "face": 107933,
+    "clothing": 130941,
+    "eye": 11436,
+    "underpaint": 3110,
+    "hair": 341208,
+    "mouth": 3100
+  },
+  "top_owner_pixels_by_part": {
+    "chest_cloth_base": 118711,
+    "arm_L_upper_simple": 88619,
+    "face_base": 80379,
+    "hair_back_base": 69440,
+    "hair_front_side_R": 66113,
+    "arm_R_upper_simple": 62400,
+    "hair_front_side_L": 62273,
+    "torso_base": 32177,
+    "hair_front_R": 31435,
+    "hair_front_L": 25582,
+    "hair_front_tip_R": 20635,
+    "hair_front_tip_L": 20457,
+    "hair_front_center": 17460,
+    "neck": 13573,
+    "face_shadow_R": 13157,
+    "hair_back_center": 12587,
+    "shoulder_R": 12336,
+    "collar_front": 12230,
+    "face_shadow_L": 10901,
+    "shoulder_L": 8509,
+    "brow_R": 6659,
+    "brow_L": 6622,
+    "hair_side_L_outer": 5845,
+    "hair_side_R_outer": 5110,
+    "nose": 3472,
+    "eye_R_upper_lash": 3339,
+    "eye_L_upper_lash": 3244,
+    "mouth_line": 3100,
+    "hair_side_L_inner": 2186,
+    "hair_side_R_inner": 2085,
+    "eye_L_lower_lash": 1997,
+    "eye_L_underpaint": 1886,
+    "eye_L_white": 816,
+    "face_underpaint_L": 604,
+    "eye_R_white": 587,
+    "eye_R_lower_lash": 583,
+    "face_underpaint_R": 512,
+    "eye_L_highlight": 270,
+    "eye_R_iris": 202,
+    "eye_L_pupil": 177,
+    "eye_L_iris": 173,
+    "eye_R_underpaint": 108,
+    "eye_R_pupil": 34,
+    "cheek_R": 20,
+    "eye_R_highlight": 14,
+    "cheek_L": 4
+  }
+}

@@ -1,0 +1,392 @@
+{
+  "schema_version": 1,
+  "experiment_id": "see-through-mps-compat-002",
+  "generated_at": "2026-06-04T07:42:37.254399+00:00",
+  "status": "PASS_WITH_CUBISM_IMPORT",
+  "source_manifest": "experiments/see-through-mps-compat-002/layer_manifest.json",
+  "source_review": "experiments/see-through-mps-compat-002/reports/part_visual_review.json",
+  "gate": {
+    "accepted_verdict": "O",
+    "require_production_candidate": true,
+    "excluded_verdicts": [
+      "X",
+      "REVISE",
+      "REFERENCE_ONLY",
+      "UNREVIEWED"
+    ]
+  },
+  "accepted_layer_count": 16,
+  "excluded_layer_count": 25,
+  "accepted_layers": [
+    {
+      "part_id": "back_hair",
+      "raw_tag": "back hair",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/psd_candidate_layers/back_hair.png",
+      "draw_order": 100
+    },
+    {
+      "part_id": "neck_underpaint",
+      "raw_tag": "roi_cleanup:neck_underpaint",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/psd_candidate_layers/neck_underpaint.png",
+      "draw_order": 190
+    },
+    {
+      "part_id": "neck",
+      "raw_tag": "roi_cleanup:neck",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/psd_candidate_layers/neck.png",
+      "draw_order": 200
+    },
+    {
+      "part_id": "face_base",
+      "raw_tag": "cleanup:seethrough_mps__face_base",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/psd_candidate_layers/face_base.png",
+      "draw_order": 315
+    },
+    {
+      "part_id": "L_ear_outer",
+      "raw_tag": "ears-l",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/psd_candidate_layers/L_ear_outer.png",
+      "draw_order": 326
+    },
+    {
+      "part_id": "R_ear_outer",
+      "raw_tag": "ears-r",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/psd_candidate_layers/R_ear_outer.png",
+      "draw_order": 327
+    },
+    {
+      "part_id": "mouth_inner",
+      "raw_tag": "roi_cleanup:mouth:mouth_inner",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/psd_candidate_layers/mouth_inner.png",
+      "draw_order": 405
+    },
+    {
+      "part_id": "R_eye_white",
+      "raw_tag": "eyewhite-r",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/psd_candidate_layers/R_eye_white.png",
+      "draw_order": 500
+    },
+    {
+      "part_id": "L_eye_white",
+      "raw_tag": "eyewhite-l",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/psd_candidate_layers/L_eye_white.png",
+      "draw_order": 500
+    },
+    {
+      "part_id": "R_iris",
+      "raw_tag": "irides-r",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/psd_candidate_layers/R_iris.png",
+      "draw_order": 510
+    },
+    {
+      "part_id": "L_iris",
+      "raw_tag": "irides-l",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/psd_candidate_layers/L_iris.png",
+      "draw_order": 510
+    },
+    {
+      "part_id": "R_upper_lash",
+      "raw_tag": "eyelash-r",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/psd_candidate_layers/R_upper_lash.png",
+      "draw_order": 530
+    },
+    {
+      "part_id": "L_upper_lash",
+      "raw_tag": "eyelash-l",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/psd_candidate_layers/L_upper_lash.png",
+      "draw_order": 530
+    },
+    {
+      "part_id": "R_brow",
+      "raw_tag": "eyebrow-r",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/psd_candidate_layers/R_brow.png",
+      "draw_order": 540
+    },
+    {
+      "part_id": "L_brow",
+      "raw_tag": "eyebrow-l",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/psd_candidate_layers/L_brow.png",
+      "draw_order": 540
+    },
+    {
+      "part_id": "front_hair",
+      "raw_tag": "front hair",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/psd_candidate_layers/front_hair.png",
+      "draw_order": 700
+    }
+  ],
+  "excluded_layers": [
+    {
+      "part_id": "seethrough_mps_roi__clothes",
+      "original_part_id": "clothes",
+      "raw_tag": "roi_cleanup:clothes",
+      "verdict": "UNREVIEWED",
+      "production_candidate": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/clothes-roi-cleanup-001/layers/seethrough_mps_roi__clothes.png"
+    },
+    {
+      "part_id": "seethrough_mps__choker",
+      "original_part_id": "choker",
+      "raw_tag": "neckwear",
+      "verdict": "UNREVIEWED",
+      "production_candidate": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__choker.png"
+    },
+    {
+      "part_id": "seethrough_mps__raw_bottomwear",
+      "original_part_id": "raw_bottomwear",
+      "raw_tag": "bottomwear",
+      "verdict": "UNREVIEWED",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_bottomwear.png"
+    },
+    {
+      "part_id": "seethrough_mps__raw_legwear",
+      "original_part_id": "raw_legwear",
+      "raw_tag": "legwear",
+      "verdict": "UNREVIEWED",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_legwear.png"
+    },
+    {
+      "part_id": "seethrough_mps__raw_footwear",
+      "original_part_id": "raw_footwear",
+      "raw_tag": "footwear",
+      "verdict": "UNREVIEWED",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_footwear.png"
+    },
+    {
+      "part_id": "seethrough_mps__tail_reference",
+      "original_part_id": "tail_reference",
+      "raw_tag": "tail",
+      "verdict": "UNREVIEWED",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__tail_reference.png"
+    },
+    {
+      "part_id": "seethrough_mps__wings_reference",
+      "original_part_id": "wings_reference",
+      "raw_tag": "wings",
+      "verdict": "UNREVIEWED",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__wings_reference.png"
+    },
+    {
+      "part_id": "seethrough_mps__object_reference",
+      "original_part_id": "object_reference",
+      "raw_tag": "objects",
+      "verdict": "UNREVIEWED",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__object_reference.png"
+    },
+    {
+      "part_id": "seethrough_mps__raw_eyewear",
+      "original_part_id": "raw_eyewear",
+      "raw_tag": "eyewear",
+      "verdict": "UNREVIEWED",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_eyewear.png"
+    },
+    {
+      "part_id": "seethrough_mps__ear_inner",
+      "original_part_id": "ear_inner",
+      "raw_tag": "earwear",
+      "verdict": "UNREVIEWED",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__ear_inner.png"
+    },
+    {
+      "part_id": "seethrough_mps__neck",
+      "original_part_id": "neck",
+      "raw_tag": "neck",
+      "verdict": "X",
+      "production_candidate": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__neck.png"
+    },
+    {
+      "part_id": "seethrough_mps_clean__neck",
+      "original_part_id": "neck",
+      "raw_tag": "cleanup:seethrough_mps__neck",
+      "verdict": "O",
+      "production_candidate": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/cleanup_layers/seethrough_mps_clean__neck.png",
+      "exclude_reason": "duplicate_lower_priority_candidate"
+    },
+    {
+      "part_id": "seethrough_mps_manual__neck",
+      "original_part_id": "neck",
+      "raw_tag": "manual_mask:seethrough_mps__neck",
+      "verdict": "REFERENCE_ONLY",
+      "production_candidate": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/manual_layers/seethrough_mps_manual__neck.png"
+    },
+    {
+      "part_id": "seethrough_mps__clothes",
+      "original_part_id": "clothes",
+      "raw_tag": "topwear",
+      "verdict": "X",
+      "production_candidate": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__clothes.png"
+    },
+    {
+      "part_id": "seethrough_mps_clean__clothes",
+      "original_part_id": "clothes",
+      "raw_tag": "cleanup:seethrough_mps__clothes",
+      "verdict": "X",
+      "production_candidate": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/cleanup_layers/seethrough_mps_clean__clothes.png"
+    },
+    {
+      "part_id": "seethrough_mps__raw_handwear",
+      "original_part_id": "raw_handwear",
+      "raw_tag": "handwear-l",
+      "verdict": "O",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_handwear.png"
+    },
+    {
+      "part_id": "seethrough_mps__raw_handwear_13",
+      "original_part_id": "raw_handwear",
+      "raw_tag": "handwear-r",
+      "verdict": "O",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_handwear_13.png"
+    },
+    {
+      "part_id": "seethrough_mps__headwear_reference",
+      "original_part_id": "headwear_reference",
+      "raw_tag": "headwear",
+      "verdict": "O",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__headwear_reference.png"
+    },
+    {
+      "part_id": "seethrough_mps__face_base",
+      "original_part_id": "face_base",
+      "raw_tag": "face",
+      "verdict": "REVISE",
+      "production_candidate": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__face_base.png"
+    },
+    {
+      "part_id": "seethrough_mps__nose_reference",
+      "original_part_id": "nose_reference",
+      "raw_tag": "nose",
+      "verdict": "O",
+      "production_candidate": false,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__nose_reference.png"
+    },
+    {
+      "part_id": "seethrough_mps__mouth_line",
+      "original_part_id": "mouth_line",
+      "raw_tag": "mouth",
+      "verdict": "X",
+      "production_candidate": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__mouth_line.png"
+    },
+    {
+      "part_id": "seethrough_mps_clean__mouth_line",
+      "original_part_id": "mouth_line",
+      "raw_tag": "cleanup:seethrough_mps__mouth_line",
+      "verdict": "UNREVIEWED",
+      "production_candidate": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/cleanup_layers/seethrough_mps_clean__mouth_line.png"
+    },
+    {
+      "part_id": "seethrough_mps_roi__mouth_line",
+      "original_part_id": "mouth_line",
+      "raw_tag": "roi_cleanup:mouth:mouth_line",
+      "verdict": "UNREVIEWED",
+      "production_candidate": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/mouth-roi-cleanup-001/layers/seethrough_mps_roi__mouth_line.png"
+    },
+    {
+      "part_id": "seethrough_mps_roi__teeth",
+      "original_part_id": "teeth",
+      "raw_tag": "roi_cleanup:mouth:teeth",
+      "verdict": "UNREVIEWED",
+      "production_candidate": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/mouth-roi-cleanup-001/layers/seethrough_mps_roi__teeth.png"
+    },
+    {
+      "part_id": "seethrough_mps_roi__tongue",
+      "original_part_id": "tongue",
+      "raw_tag": "roi_cleanup:mouth:tongue",
+      "verdict": "UNREVIEWED",
+      "production_candidate": true,
+      "source_path": "/Users/family/jason/Vtube/experiments/mouth-roi-cleanup-001/layers/seethrough_mps_roi__tongue.png"
+    }
+  ],
+  "psd_writer": "psd-tools",
+  "psd_candidate": "experiments/see-through-mps-compat-002/import_ready_candidate.psd",
+  "import_ready_psd": "experiments/see-through-mps-compat-002/import_ready.psd",
+  "psd_metadata": {
+    "exists": true,
+    "valid_header": true,
+    "channels": 3,
+    "width": 2048,
+    "height": 2048,
+    "depth": 8,
+    "color_mode": "RGB",
+    "layer_mask_section_length": 7078932,
+    "layer_count": 16
+  },
+  "cubism_import_smoke": {
+    "schema_version": 1,
+    "experiment_id": "see-through-mps-compat-002",
+    "date": "2026-06-04T07:42:08+00:00",
+    "cubism_version": "Live2D Cubism Editor 5.3.01",
+    "input_psd": "experiments/see-through-mps-compat-002/import_ready_candidate.psd",
+    "cubism_import_success": true,
+    "layers_flattened": false,
+    "psd_candidate_layer_count": 16,
+    "manual_mask_layers_included": [],
+    "roi_layers_included": [
+      "neck",
+      "neck_underpaint",
+      "mouth_inner"
+    ],
+    "reference_only_layers_excluded": [
+      "seethrough_mps_manual__neck"
+    ],
+    "rejected_layers_excluded": [
+      "seethrough_mps__mouth_line"
+    ],
+    "automatic_cleanup": [
+      "PSD candidate builder removes alpha values <= 10 from accepted layers before writing import_ready_candidate.psd.",
+      "raw mouth_line is excluded because the current human review verdict is X.",
+      "manual neck is excluded because the current human review verdict is REFERENCE_ONLY.",
+      "ROI neck, ROI neck_underpaint, and ROI mouth_inner are included because their current review verdict is O."
+    ],
+    "visible_layer_evidence": [
+      "front_hair",
+      "R_brow",
+      "L_brow",
+      "L_upper_lash",
+      "R_upper_lash",
+      "L_iris",
+      "R_iris",
+      "L_eye_white",
+      "R_eye_white",
+      "mouth_inner",
+      "R_ear_outer",
+      "L_ear_outer",
+      "face_base",
+      "neck",
+      "neck_underpaint",
+      "back_hair"
+    ],
+    "technical_log_import_success": true,
+    "log_path": "/Users/family/Library/Live2D/Cubism5.3_Editor/logs/log.txt",
+    "log_excerpt_path": "experiments/see-through-mps-compat-002/reports/cubism_import_smoke_log_excerpt.txt",
+    "reviewer": "Codex screenshot smoke",
+    "notes": [
+      "Cubism Editor 5.3.01 launched and read the rebuilt import_ready_candidate.psd after ROI neck, ROI neck underpaint, ROI mouth_inner, and alpha-floor cleanup were applied.",
+      "Screenshot shows individual layer entries/thumbnails in the Cubism Parts panel, so the PSD was not flattened.",
+      "This confirms technical Cubism import only; art-quality cleanup remains gated by part review. Raw mouth_line is not included in this candidate because 주인님 rejected it."
+    ],
+    "evidence_screenshot": "experiments/see-through-mps-compat-002/reports/cubism_smoke_evidence/cubism_import_candidate_16_layer_roi_neck_no_raw_mouth_line_screen.png"
+  },
+  "cubism_gate_note": "Cubism Editor actual import has passed and import_ready.psd may be trusted."
+}

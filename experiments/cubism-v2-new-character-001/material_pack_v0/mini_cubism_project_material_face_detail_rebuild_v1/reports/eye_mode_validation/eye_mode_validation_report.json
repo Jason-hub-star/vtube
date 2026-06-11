@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "validated_at": "2026-06-08T14:22:46.256382+00:00",
+  "validated_at": "2026-06-08T14:55:20.152456+00:00",
   "project": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_face_detail_rebuild_v1",
   "mini_rig_present": true,
-  "mini_rig_keyform_overrides": 7,
+  "mini_rig_keyform_overrides": 26,
   "threshold": 12,
   "eye_roi_padding": 28,
   "warn_pixels": 0,
@@ -32,7 +32,7 @@
       "label_ko": "눈동자 왼쪽",
       "status": "PASS",
       "outside_changed_pixels": 0,
-      "allowed_changed_pixels": 5873,
+      "allowed_changed_pixels": 5740,
       "parameters": {
         "ParamEyeBallX": -1
       }
@@ -42,7 +42,7 @@
       "label_ko": "눈동자 오른쪽",
       "status": "PASS",
       "outside_changed_pixels": 0,
-      "allowed_changed_pixels": 5941,
+      "allowed_changed_pixels": 5795,
       "parameters": {
         "ParamEyeBallX": 1
       }
@@ -52,7 +52,7 @@
       "label_ko": "눈동자 위",
       "status": "PASS",
       "outside_changed_pixels": 0,
-      "allowed_changed_pixels": 6069,
+      "allowed_changed_pixels": 5758,
       "parameters": {
         "ParamEyeBallY": -1
       }
@@ -62,7 +62,7 @@
       "label_ko": "눈동자 아래",
       "status": "PASS",
       "outside_changed_pixels": 0,
-      "allowed_changed_pixels": 5782,
+      "allowed_changed_pixels": 5548,
       "parameters": {
         "ParamEyeBallY": 1
       }
@@ -72,7 +72,7 @@
       "label_ko": "왼눈 닫힘",
       "status": "PASS",
       "outside_changed_pixels": 0,
-      "allowed_changed_pixels": 5578,
+      "allowed_changed_pixels": 2642,
       "parameters": {
         "ParamEyeLOpen": 0
       }
@@ -82,7 +82,7 @@
       "label_ko": "오른눈 닫힘",
       "status": "PASS",
       "outside_changed_pixels": 0,
-      "allowed_changed_pixels": 5676,
+      "allowed_changed_pixels": 2813,
       "parameters": {
         "ParamEyeROpen": 0
       }
@@ -92,7 +92,7 @@
       "label_ko": "양눈 닫힘",
       "status": "PASS",
       "outside_changed_pixels": 0,
-      "allowed_changed_pixels": 11254,
+      "allowed_changed_pixels": 5455,
       "parameters": {
         "ParamEyeLOpen": 0,
         "ParamEyeROpen": 0

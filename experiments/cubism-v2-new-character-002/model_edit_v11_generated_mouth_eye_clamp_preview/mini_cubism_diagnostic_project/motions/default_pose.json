@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "parameters": {
+    "ParamAngleX": 0,
+    "ParamEyeLOpen": 1,
+    "ParamEyeROpen": 1,
+    "ParamEyeBallX": 0,
+    "ParamEyeBallY": 0,
+    "ParamMouthOpenY": 0,
+    "ParamMouthForm": 0,
+    "ParamHairFront": 0
+  }
+}

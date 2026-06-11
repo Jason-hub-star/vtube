@@ -1,0 +1,37 @@
+{
+  "url": "http://127.0.0.1:54579/",
+  "framesDir": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v12_generated_mouth_eye_clamp_preview/generated_mouth_open_packet/frames",
+  "resultPath": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v12_generated_mouth_eye_clamp_preview/generated_mouth_open_packet/existing_mouth_open_browser_result.json",
+  "frames": [
+    {
+      "id": "mouthopen_0_00_closed",
+      "mouthOpen": 0.0,
+      "label": "closed smile"
+    },
+    {
+      "id": "mouthopen_0_20_tiny",
+      "mouthOpen": 0.2,
+      "label": "tiny opening"
+    },
+    {
+      "id": "mouthopen_0_40_soft",
+      "mouthOpen": 0.4,
+      "label": "soft transition"
+    },
+    {
+      "id": "mouthopen_0_60_mid",
+      "mouthOpen": 0.6,
+      "label": "mid transition"
+    },
+    {
+      "id": "mouthopen_0_80_open",
+      "mouthOpen": 0.8,
+      "label": "open"
+    },
+    {
+      "id": "mouthopen_1_00_full",
+      "mouthOpen": 1.0,
+      "label": "full existing small open"
+    }
+  ]
+}

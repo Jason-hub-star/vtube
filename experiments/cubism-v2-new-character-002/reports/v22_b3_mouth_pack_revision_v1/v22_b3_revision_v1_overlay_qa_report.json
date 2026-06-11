@@ -1,0 +1,57 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T12:51:34.165074+00:00",
+  "report_id": "cubism-v2-new-character-002-v22-b3-revision-v1-overlay-qa-001",
+  "status": "B3_REVISION_V1_CODEX_OVERLAY_QA_PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+  "revision_layer_pack_report": "experiments/cubism-v2-new-character-002/reports/v22_b3_mouth_pack_revision_v1/v22_b3_revision_v1_layer_pack_report.json",
+  "previous_overlay_qa_report": "experiments/cubism-v2-new-character-002/reports/v22_b3_mouth_pack/v22_b3_overlay_qa_report.json",
+  "overlay_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b3_mouth_pack_revision_v1/v22_b3_revision_v1_overlay_qa.png",
+  "checks": [
+    {
+      "id": "previous_failure_preserved",
+      "status": "PASS_RECORDED",
+      "evidence": "Previous B3 overlay remains recorded as B3_CODEX_OVERLAY_QA_REVISE_EXTRACTION_OR_REGENERATE_HUMAN_REVIEW_REQUIRED; revision v1 does not overwrite that failed evidence."
+    },
+    {
+      "id": "technical_layer_pack",
+      "status": "PASS_TECHNICAL",
+      "evidence": "Revision v1 layer-pack self-review reports 12/12 expected outputs, 0 missing, 0 empty, all RGBA 2048."
+    },
+    {
+      "id": "open_internals_overlay",
+      "status": "PASS_CANDIDATE",
+      "evidence": "Revision v1 derives mouth_inner, teeth, and tongue from the same coherent wide-mouth crop, removing the previous large rectangular skin patch and reducing the pasted-helper look."
+    },
+    {
+      "id": "mouth_anchor_and_scale",
+      "status": "REVIEW_VISUALLY",
+      "evidence": "The open-mouth candidate is coherent but still needs 주인님 review for mouth anchor, expression size, and fit against the source face."
+    },
+    {
+      "id": "wide_reference_restraint",
+      "status": "REVIEW_VISUALLY",
+      "evidence": "Wide-open reference remains subject to the v21/v13 MouthOpenY 0.85 restraint before material promotion."
+    },
+    {
+      "id": "human_visual_review",
+      "status": "REQUIRED",
+      "evidence": "주인님 human visual review is required before promoting B3 revision v1 beyond candidate."
+    }
+  ],
+  "decision": "B3 revision v1 fixes the first extraction's obvious pasted-internals failure enough to continue as a candidate, but it is not final material PASS until 주인님 visual review accepts anchor, scale, and MouthOpenY restraint.",
+  "next_action": [
+    "Use B3 revision v1 as the current B3 candidate for human review or manual anchor correction.",
+    "If 주인님 rejects mouth size/anchor or wide-open restraint, regenerate B3 or tune revision anchors without reusing v10/v12/v13 mouth PNGs.",
+    "Do not proceed to Mini Cubism diagnostics from B3 until visual QA accepts the mouth candidate."
+  ],
+  "self_review": {
+    "revision_layer_pack_status": "B3_REVISION_V1_LAYER_PACK_CANDIDATE_READY_FOR_OVERLAY_QA_HUMAN_REVIEW_REQUIRED",
+    "revision_layer_self_review_status": "PASS",
+    "previous_overlay_status": "B3_CODEX_OVERLAY_QA_REVISE_EXTRACTION_OR_REGENERATE_HUMAN_REVIEW_REQUIRED",
+    "check_count": 6,
+    "has_pass_candidate_gate": true,
+    "has_human_required_gate": true,
+    "has_review_visually_gate": true,
+    "status": "PASS"
+  }
+}

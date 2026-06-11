@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T15:27:25.928283+00:00",
+  "id": "github_live2d_cubism_web_motionsync_samples_resources_kei_basic_kei_basic.model3",
+  "name": "Kei_basic",
+  "source_url": "https://github.com/Live2D/CubismWebMotionSyncComponents",
+  "source_type": "OFFICIAL_GITHUB_SAMPLE",
+  "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+  "analysis_mode": "RUNTIME_ONLY",
+  "official_profile_key": "OFFICIAL_PROFILE_MISSING",
+  "analysis_safety_notes": [],
+  "has_cmo3": false,
+  "has_moc3": true,
+  "has_model3_json": true,
+  "has_physics3_json": true,
+  "has_psd": false,
+  "local_paths": {
+    "motion3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/motions/01_kei_en.motion3.json",
+        "exists": true,
+        "size_bytes": 3434
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/motions/01_kei_jp.motion3.json",
+        "exists": true,
+        "size_bytes": 3938
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/motions/01_kei_ko.motion3.json",
+        "exists": true,
+        "size_bytes": 3938
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/motions/01_kei_zh.motion3.json",
+        "exists": true,
+        "size_bytes": 3396
+      }
+    ],
+    "cdi3_json": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/Kei_basic.cdi3.json",
+      "exists": true,
+      "size_bytes": 4241
+    },
+    "model3_json": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/Kei_basic.model3.json",
+      "exists": true,
+      "size_bytes": 1097
+    },
+    "moc3": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/Kei_basic.moc3",
+      "exists": true,
+      "size_bytes": 248256
+    },
+    "physics3_json": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/Kei_basic.physics3.json",
+      "exists": true,
+      "size_bytes": 8509
+    }
+  },
+  "cmo3": {
+    "status": "NOT_REQUESTED"
+  },
+  "moc3": {
+    "present": true,
+    "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_motionsync/Samples/Resources/Kei_basic/Kei_basic.moc3",
+    "size_bytes": 248256,
+    "sha256": "75e3edbace85d0f728204605ed8cedd4f38d09153c833d4e719390d28e052736",
+    "py_moc3_status": "PASS",
+    "parameter_count": 27,
+    "art_mesh_count": 60,
+    "parameter_ids": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamCheek",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBodyAngleZ",
+      "ParamBreath",
+      "ParamBrowLY",
+      "ParamBrowRY",
+      "ParamBrowLForm",
+      "ParamBrowRForm",
+      "ParamEyeLOpen",
+      "ParamEyeLSmile",
+      "ParamEyeROpen",
+      "ParamEyeRSmile",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamMouthForm",
+      "ParamMouthOpenY",
+      "ParamHairFront",
+      "ParamHairSide",
+      "ParamHairSide2",
+      "ParamHairBack",
+      "ParamHairFrontFuwa",
+      "ParamHairSideFuwa",
+      "ParamHairBackFuwa"
+    ],
+    "art_mesh_ids_sample": [
+      "ArtMesh2",
+      "ArtMesh3",
+      "ArtMesh4",
+      "ArtMesh14",
+      "ArtMesh15",
+      "ArtMesh16",
+      "ArtMesh19",
+      "ArtMesh28",
+      "ArtMesh29",
+      "ArtMesh39",
+      "ArtMesh40",
+      "ArtMesh42",
+      "ArtMesh44",
+      "ArtMesh45",
+      "ArtMesh46",
+      "ArtMesh47",
+      "ArtMesh58",
+      "ArtMesh55",
+      "ArtMesh56",
+      "ArtMesh57",
+      "ArtMesh13",
+      "ArtMesh17",
+      "ArtMesh54",
+      "ArtMesh11",
+      "ArtMesh82",
+      "ArtMesh81",
+      "ArtMesh80",
+      "ArtMesh79",
+      "ArtMesh78",
+      "ArtMesh77",
+      "ArtMesh76",
+      "ArtMesh75",
+      "ArtMesh74",
+      "ArtMesh73",
+      "ArtMesh72",
+      "ArtMesh71",
+      "ArtMesh41",
+      "ArtMesh43",
+      "ArtMesh6",
+      "ArtMesh8",
+      "ArtMesh30",
+      "ArtMesh7",
+      "ArtMesh53",
+      "ArtMesh49",
+      "ArtMesh50",
+      "ArtMesh51",
+      "ArtMesh52",
+      "ArtMesh34",
+      "ArtMesh",
+      "ArtMesh35"
+    ]
+  },
+  "runtime_json": {
+    "model3": {
+      "present": true,
+      "version": 3,
+      "moc": "Kei_basic.moc3",
+      "texture_count": 1,
+      "has_physics": true,
+      "has_pose": false,
+      "has_display_info": true,
+      "has_user_data": false,
+      "expression_count": 0,
+      "motion_group_count": 1,
+      "motion_count": 4,
+      "group_count": 2,
+      "parameter_ids": [
+        "ParamEyeLOpen",
+        "ParamEyeROpen",
+        "ParamMouthOpenY"
+      ],
+      "file_references": {
+        "Moc": "Kei_basic.moc3",
+        "Textures": [
+          "Kei_basic.2048/texture_00.png"
+        ],
+        "Physics": "Kei_basic.physics3.json",
+        "DisplayInfo": "Kei_basic.cdi3.json",
+        "MotionSync": "Kei_basic.motionsync3.json",
+        "Motions": {
+          "": [
+            {
+              "File": "motions/01_kei_en.motion3.json",
+              "Sound": "sounds/01_kei_en.wav",
+              "MotionSync": "Basic_CRI"
+            },
+            {
+              "File": "motions/01_kei_jp.motion3.json",
+              "Sound": "sounds/01_kei_jp.wav",
+              "MotionSync": "Basic_CRI"
+            },
+            {
+              "File": "motions/01_kei_ko.motion3.json",
+              "Sound": "sounds/01_kei_ko.wav",
+              "MotionSync": "Basic_CRI"
+            },
+            {
+              "File": "motions/01_kei_zh.motion3.json",
+              "Sound": "sounds/01_kei_zh.wav",
+              "MotionSync": "Basic_CRI"
+            }
+          ]
+        }
+      }
+    },
+    "physics3": {
+      "present": true,
+      "version": 3,
+      "physics_group_count": 6,
+      "physics_input_count": 18,
+      "physics_output_count": 7,
+      "physics_vertex_count": 12,
+      "groups": [
+        {
+          "index": 0,
+          "id": "PhysicsSetting1",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 1,
+          "id": "PhysicsSetting2",
+          "input_count": 4,
+          "output_count": 2,
+          "vertex_count": 2
+        },
+        {
+          "index": 2,
+          "id": "PhysicsSetting3",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 3,
+          "id": "PhysicsSetting4",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 4,
+          "id": "PhysicsSetting5",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 5,
+          "id": "PhysicsSetting6",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        }
+      ]
+    },
+    "cdi3": {
+      "present": true,
+      "parameter_display_count": 27,
+      "part_display_count": 21
+    },
+    "motion3_count": 4,
+    "exp3_count": 0,
+    "pose3_present": false,
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 60,
+    "parts": 0,
+    "parameters": 27,
+    "warp_deformers": 0,
+    "rotation_deformers": 0,
+    "keyform_bindings": 0,
+    "keyform_grids": 0,
+    "glue": 0,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": false,
+    "pose": false,
+    "expression": false,
+    "motion": true,
+    "physics": true
+  },
+  "structure_hints": {
+    "hair": 1,
+    "eye": 1,
+    "mouth": 1,
+    "body": 1,
+    "arm": 0
+  },
+  "reuse_decision": "REFERENCE_ONLY",
+  "notes": [
+    "Official Live2D Web MotionSync sample resources. Runtime resources only.",
+    "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+  ],
+  "structure_report_path": null
+}

@@ -1,0 +1,458 @@
+{
+  "schema_version": 1,
+  "validated_at": "2026-06-08T15:45:35.684412+00:00",
+  "status": "PASS_READY_FOR_VISUAL_QA",
+  "input_dir": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers",
+  "spec": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/clean_socket_keypose_requirements.json",
+  "required_size": [
+    2048,
+    2048
+  ],
+  "required_mode": "RGBA",
+  "summary": {
+    "total_required": 19,
+    "found": 19,
+    "missing": 0,
+    "normalize_required": 0,
+    "alpha_or_mode_required": 0
+  },
+  "assets": [
+    {
+      "asset_id": "face_base_clean",
+      "group": "face",
+      "kind": "clean_base",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/face_base_clean.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        608,
+        336,
+        1426,
+        1748
+      ],
+      "alpha_coverage": 0.20057034
+    },
+    {
+      "asset_id": "eye_L_clean_socket",
+      "group": "eye_L",
+      "kind": "clean_socket",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/eye_L_clean_socket.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        794,
+        663,
+        1026,
+        765
+      ],
+      "alpha_coverage": 0.00564194
+    },
+    {
+      "asset_id": "eye_R_clean_socket",
+      "group": "eye_R",
+      "kind": "clean_socket",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/eye_R_clean_socket.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        1046,
+        666,
+        1279,
+        769
+      ],
+      "alpha_coverage": 0.00572181
+    },
+    {
+      "asset_id": "eye_L_half_closed_lid",
+      "group": "eye_L",
+      "kind": "eye_keypose",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/eye_L_half_closed_lid.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        810,
+        680,
+        1010,
+        738
+      ],
+      "alpha_coverage": 0.00215006
+    },
+    {
+      "asset_id": "eye_R_half_closed_lid",
+      "group": "eye_R",
+      "kind": "eye_keypose",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/eye_R_half_closed_lid.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        1062,
+        684,
+        1263,
+        742
+      ],
+      "alpha_coverage": 0.00217772
+    },
+    {
+      "asset_id": "eye_L_mostly_closed_lid",
+      "group": "eye_L",
+      "kind": "eye_keypose",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/eye_L_mostly_closed_lid.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        810,
+        686,
+        1010,
+        732
+      ],
+      "alpha_coverage": 0.00142336
+    },
+    {
+      "asset_id": "eye_R_mostly_closed_lid",
+      "group": "eye_R",
+      "kind": "eye_keypose",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/eye_R_mostly_closed_lid.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        1062,
+        689,
+        1263,
+        735
+      ],
+      "alpha_coverage": 0.00144482
+    },
+    {
+      "asset_id": "eye_L_closed_lid",
+      "group": "eye_L",
+      "kind": "eye_keypose",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/eye_L_closed_lid.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        818,
+        687,
+        1002,
+        741
+      ],
+      "alpha_coverage": 0.00074196
+    },
+    {
+      "asset_id": "eye_R_closed_lid",
+      "group": "eye_R",
+      "kind": "eye_keypose",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/eye_R_closed_lid.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        1070,
+        690,
+        1255,
+        745
+      ],
+      "alpha_coverage": 0.00079131
+    },
+    {
+      "asset_id": "eye_L_closed_underpaint",
+      "group": "eye_L",
+      "kind": "underpaint",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/eye_L_closed_underpaint.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        794,
+        663,
+        1026,
+        765
+      ],
+      "alpha_coverage": 0.00564194
+    },
+    {
+      "asset_id": "eye_R_closed_underpaint",
+      "group": "eye_R",
+      "kind": "underpaint",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/eye_R_closed_underpaint.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        1046,
+        666,
+        1279,
+        769
+      ],
+      "alpha_coverage": 0.00572181
+    },
+    {
+      "asset_id": "mouth_base_clean",
+      "group": "mouth",
+      "kind": "clean_socket",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/mouth_base_clean.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        907,
+        773,
+        1157,
+        1129
+      ],
+      "alpha_coverage": 0.02104855
+    },
+    {
+      "asset_id": "mouth_closed_smile",
+      "group": "mouth",
+      "kind": "mouth_keypose",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/mouth_closed_smile.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        965,
+        941,
+        1100,
+        976
+      ],
+      "alpha_coverage": 0.0001955
+    },
+    {
+      "asset_id": "mouth_small_open",
+      "group": "mouth",
+      "kind": "mouth_keypose",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/mouth_small_open.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        988,
+        910,
+        1076,
+        1009
+      ],
+      "alpha_coverage": 0.00157833
+    },
+    {
+      "asset_id": "mouth_wide_open",
+      "group": "mouth",
+      "kind": "mouth_keypose",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/mouth_wide_open.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        966,
+        900,
+        1099,
+        1031
+      ],
+      "alpha_coverage": 0.00407195
+    },
+    {
+      "asset_id": "mouth_o_vowel",
+      "group": "mouth",
+      "kind": "mouth_keypose",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/mouth_o_vowel.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        988,
+        878,
+        1076,
+        1031
+      ],
+      "alpha_coverage": 0.00251293
+    },
+    {
+      "asset_id": "mouth_inner",
+      "group": "mouth",
+      "kind": "mouth_detail",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/mouth_inner.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        981,
+        837,
+        1084,
+        898
+      ],
+      "alpha_coverage": 0.00120091
+    },
+    {
+      "asset_id": "mouth_teeth",
+      "group": "mouth",
+      "kind": "mouth_detail",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/mouth_teeth.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        985,
+        857,
+        1070,
+        877
+      ],
+      "alpha_coverage": 0.00039625
+    },
+    {
+      "asset_id": "mouth_tongue",
+      "group": "mouth",
+      "kind": "mouth_detail",
+      "required": true,
+      "status": "PASS_READY_FOR_VISUAL_QA",
+      "resize_decision": "NO_RESIZE",
+      "issues": [],
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/mouth_tongue.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "has_alpha": true,
+      "alpha_bbox": [
+        1002,
+        849,
+        1063,
+        882
+      ],
+      "alpha_coverage": 0.0003922
+    }
+  ]
+}

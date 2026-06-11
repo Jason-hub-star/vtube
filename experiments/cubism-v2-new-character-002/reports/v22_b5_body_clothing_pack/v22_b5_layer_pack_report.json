@@ -1,0 +1,408 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T13:21:29.979481+00:00",
+  "report_id": "cubism-v2-new-character-002-v22-b5-body-clothing-layer-pack-001",
+  "status": "B5_LAYER_PACK_CANDIDATE_READY_FOR_OVERLAY_QA_HUMAN_REVIEW_REQUIRED",
+  "raw_review_report": "experiments/cubism-v2-new-character-002/reports/v22_b5_body_clothing_pack/v22_b5_body_clothing_pack_review.json",
+  "b5_raw_image": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/raw_outputs/b5_body_clothing_pack_reference_001.png",
+  "normalized_layers_dir": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers",
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b5_body_clothing_pack/v22_b5_layer_pack_contact_sheet.png",
+  "overlay_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b5_body_clothing_pack/v22_b5_layer_pack_overlay_qa.png",
+  "expected_outputs": [
+    "torso_base",
+    "neck",
+    "shoulder_L",
+    "shoulder_R",
+    "arm_L_upper_simple",
+    "arm_R_upper_simple",
+    "collar_front",
+    "collar_shadow",
+    "chest_cloth_base",
+    "chest_cloth_shadow",
+    "brow_L",
+    "brow_R",
+    "nose",
+    "cheek_L",
+    "cheek_R",
+    "face_shadow_L",
+    "face_shadow_R"
+  ],
+  "metrics": {
+    "torso_base": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/torso_base.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        604,
+        884,
+        1474,
+        1865
+      ],
+      "alpha_coverage": 0.15899587,
+      "anchor_center": [
+        1039.0,
+        1374.5
+      ]
+    },
+    "neck": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/neck.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        894,
+        701,
+        1179,
+        1090
+      ],
+      "alpha_coverage": 0.01887441,
+      "anchor_center": [
+        1036.5,
+        895.5
+      ]
+    },
+    "shoulder_L": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/shoulder_L.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        565,
+        993,
+        870,
+        1226
+      ],
+      "alpha_coverage": 0.01319313,
+      "anchor_center": [
+        717.5,
+        1109.5
+      ]
+    },
+    "shoulder_R": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/shoulder_R.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1197,
+        996,
+        1456,
+        1229
+      ],
+      "alpha_coverage": 0.0113492,
+      "anchor_center": [
+        1326.5,
+        1112.5
+      ]
+    },
+    "arm_L_upper_simple": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/arm_L_upper_simple.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        485,
+        1112,
+        696,
+        1785
+      ],
+      "alpha_coverage": 0.01842356,
+      "anchor_center": [
+        590.5,
+        1448.5
+      ]
+    },
+    "arm_R_upper_simple": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/arm_R_upper_simple.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1335,
+        1115,
+        1521,
+        1786
+      ],
+      "alpha_coverage": 0.0163765,
+      "anchor_center": [
+        1428.0,
+        1450.5
+      ]
+    },
+    "collar_front": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/collar_front.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        752,
+        1078,
+        1304,
+        1198
+      ],
+      "alpha_coverage": 0.00627613,
+      "anchor_center": [
+        1028.0,
+        1138.0
+      ]
+    },
+    "collar_shadow": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/collar_shadow.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        745,
+        1177,
+        1288,
+        1270
+      ],
+      "alpha_coverage": 0.00278354,
+      "anchor_center": [
+        1016.5,
+        1223.5
+      ]
+    },
+    "chest_cloth_base": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/chest_cloth_base.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        721,
+        1245,
+        1374,
+        1545
+      ],
+      "alpha_coverage": 0.01906276,
+      "anchor_center": [
+        1047.5,
+        1395.0
+      ]
+    },
+    "chest_cloth_shadow": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/chest_cloth_shadow.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        697,
+        1482,
+        1372,
+        1648
+      ],
+      "alpha_coverage": 0.01092887,
+      "anchor_center": [
+        1034.5,
+        1565.0
+      ]
+    },
+    "brow_L": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/brow_L.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        764,
+        628,
+        925,
+        661
+      ],
+      "alpha_coverage": 0.00039005,
+      "anchor_center": [
+        844.5,
+        644.5
+      ]
+    },
+    "brow_R": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/brow_R.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1105,
+        628,
+        1262,
+        660
+      ],
+      "alpha_coverage": 0.00039315,
+      "anchor_center": [
+        1183.5,
+        644.0
+      ]
+    },
+    "nose": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/nose.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        991,
+        739,
+        1061,
+        841
+      ],
+      "alpha_coverage": 0.00128794,
+      "anchor_center": [
+        1026.0,
+        790.0
+      ]
+    },
+    "cheek_L": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/cheek_L.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        725,
+        731,
+        935,
+        857
+      ],
+      "alpha_coverage": 0.00489974,
+      "anchor_center": [
+        830.0,
+        794.0
+      ]
+    },
+    "cheek_R": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/cheek_R.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1110,
+        731,
+        1320,
+        857
+      ],
+      "alpha_coverage": 0.00492239,
+      "anchor_center": [
+        1215.0,
+        794.0
+      ]
+    },
+    "face_shadow_L": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/face_shadow_L.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        694,
+        650,
+        806,
+        899
+      ],
+      "alpha_coverage": 0.00382805,
+      "anchor_center": [
+        750.0,
+        774.5
+      ]
+    },
+    "face_shadow_R": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/normalized_layers/face_shadow_R.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1165,
+        650,
+        1255,
+        896
+      ],
+      "alpha_coverage": 0.00384521,
+      "anchor_center": [
+        1210.0,
+        773.0
+      ]
+    }
+  },
+  "forbidden_existing_body_clothing_assets": [
+    {
+      "path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B5_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v13_scaled_eye_mouth_preview/mini_cubism_diagnostic_project/parts",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B5_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v21_supported_rig_smoke_preview/mini_cubism_diagnostic_project/parts",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B5_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B5_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_roi_semantic_remask_v1",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B5_INPUT"
+    }
+  ],
+  "locked_success_criteria": [
+    "Do not reuse prior normalized/model_edit/body-clothing PNGs for B5 material.",
+    "All outputs are 2048 full-canvas RGBA candidates.",
+    "B5 must provide complete torso, neck, shoulder, arm, clothing, and face-detail references instead of relying on a source crop.",
+    "Contact sheet and overlay QA are required before material PASS."
+  ],
+  "decision": "Keep this B5 extraction as full-canvas RGBA candidate evidence only. It does not prove body-motion, visual material PASS, Mini Cubism success, or real Cubism success before overlay QA and 주인님 review.",
+  "next_action": [
+    "Run B5 overlay QA and visual review against the G0 source silhouette.",
+    "Use manual anchor correction or refined extraction if body/clothing/face detail parts are visually misaligned.",
+    "Only after B1-B5 visual QA acceptance, build the v22 64-part manifest."
+  ],
+  "self_review": {
+    "expected_output_count": 17,
+    "generated_output_count": 17,
+    "missing_output_count": 0,
+    "empty_output_count": 0,
+    "all_layers_rgba": true,
+    "all_layers_2048": true,
+    "forbidden_existing_body_clothing_asset_count": 5,
+    "forbidden_assets_not_output_path": true,
+    "has_human_required_gate": true,
+    "has_overlay_qa_requirement": true,
+    "has_face_detail_scope": true,
+    "status": "PASS"
+  }
+}

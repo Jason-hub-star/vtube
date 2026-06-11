@@ -1,0 +1,477 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T15:27:13.364267+00:00",
+  "id": "ren_pro_ko_ren_t01",
+  "name": "ren_t01",
+  "source_url": "https://www.live2d.com/ko/learn/sample/",
+  "source_type": "OFFICIAL_SAMPLE_ZIP",
+  "license_status": "OFFICIAL_TERMS_ACCEPTED_BY_USER",
+  "analysis_mode": "FULL_STRUCTURE",
+  "official_profile_key": "ren",
+  "analysis_safety_notes": [],
+  "has_cmo3": true,
+  "has_moc3": true,
+  "has_model3_json": true,
+  "has_physics3_json": true,
+  "has_psd": false,
+  "local_paths": {
+    "exp3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/expressions/exp_01.exp3.json",
+        "exists": true,
+        "size_bytes": 1121
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/expressions/exp_02.exp3.json",
+        "exists": true,
+        "size_bytes": 1123
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/expressions/exp_03.exp3.json",
+        "exists": true,
+        "size_bytes": 1123
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/expressions/exp_04.exp3.json",
+        "exists": true,
+        "size_bytes": 1126
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/expressions/exp_05.exp3.json",
+        "exists": true,
+        "size_bytes": 1128
+      }
+    ],
+    "motion3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/motions/mtn_01.motion3.json",
+        "exists": true,
+        "size_bytes": 18202
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/motions/mtn_02.motion3.json",
+        "exists": true,
+        "size_bytes": 37525
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/motions/mtn_03.motion3.json",
+        "exists": true,
+        "size_bytes": 50727
+      }
+    ],
+    "cdi3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/ren.cdi3.json",
+      "exists": true,
+      "size_bytes": 11476
+    },
+    "model3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/ren.model3.json",
+      "exists": true,
+      "size_bytes": 1150
+    },
+    "moc3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/ren.moc3",
+      "exists": true,
+      "size_bytes": 915200
+    },
+    "physics3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/ren.physics3.json",
+      "exists": true,
+      "size_bytes": 20679
+    },
+    "cmo3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/ren_t01.cmo3",
+      "exists": true,
+      "size_bytes": 43554788
+    }
+  },
+  "cmo3": {
+    "status": "PASS",
+    "returncode": 0,
+    "json": "experiments/reference-model-structure-001/official_combined_analysis/models/ren_pro_ko_ren_t01/cmo3_structure_report.json",
+    "markdown": "experiments/reference-model-structure-001/official_combined_analysis/models/ren_pro_ko_ren_t01/cmo3_structure_report.md",
+    "stdout": "[cmo3-structure] PASS\n[cmo3-structure] json: /Users/family/jason/Vtube/experiments/reference-model-structure-001/official_combined_analysis/models/ren_pro_ko_ren_t01/cmo3_structure_report.json\n[cmo3-structure] md:   /Users/family/jason/Vtube/experiments/reference-model-structure-001/official_combined_analysis/models/ren_pro_ko_ren_t01/cmo3_structure_report.md",
+    "stderr": "",
+    "cmo3_status": "PASS",
+    "counts": {
+      "art_meshes": 201,
+      "parts": 52,
+      "parameters": 73,
+      "warp_deformers": 128,
+      "rotation_deformers": 22,
+      "keyform_bindings": 470,
+      "keyform_grids": 418,
+      "glue": 13,
+      "masks": 0
+    },
+    "parameter_ids": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamEyeLOpen",
+      "ParamEyeLSmile",
+      "ParamEyeROpen",
+      "ParamEyeRSmile",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamBrowLY",
+      "ParamBrowRY",
+      "ParamBrowLX",
+      "ParamBrowRX",
+      "ParamBrowLAngle",
+      "ParamBrowRAngle",
+      "ParamBrowLForm",
+      "ParamBrowRForm",
+      "ParamMouthForm",
+      "ParamMouthOpenY",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBodyAngleZ",
+      "ParamBreath",
+      "ParamHairFront",
+      "ParamHairSide",
+      "ParamHairBack",
+      "ParamLeftShoulderUp",
+      "ParamRightShoulderUp",
+      "ParamArmL01",
+      "ParamArmL02",
+      "ParamArmL03",
+      "ParamArmR01",
+      "ParamArmR02",
+      "ParamArmR03",
+      "ParamHairFrontFuwa",
+      "ParamHairSideFuwa",
+      "ParamHairBackFuwa",
+      "ParamPullHandle",
+      "ParamPocketString",
+      "ParamNecklace1",
+      "ParamNecklace2",
+      "ParamJacket",
+      "ParamNecklace3",
+      "ParamCollarString",
+      "ParamCollarFuwa",
+      "ParamHologram",
+      "ParamTransparent",
+      "ParamHologramPattern",
+      "ParamMonochrome",
+      "ParamNight",
+      "ParamLight",
+      "ParamDisplayHeight1",
+      "ParamDisplayWidth1",
+      "ParamNoise",
+      "ParamNoiseRotate",
+      "ParamWaistAngleZ",
+      "ParamHandR",
+      "ParamHandRDrawOrder",
+      "ParamHandL",
+      "ParamHandLDrawOrder",
+      "ParamLegR",
+      "ParamLegL",
+      "ParamBodyCenter",
+      "ParamEyeSize",
+      "ParamDisplayWidth2",
+      "ParamDisplayHeight2",
+      "ParamDisplayAngle",
+      "ParamCollarStringFuwa",
+      "ParamBodyAngleX2",
+      "ParamBodyAngleY2",
+      "ParamBodyCenter2",
+      "ParamLeftShoulderUp2",
+      "ParamRightShoulderUp2"
+    ],
+    "part_names": [
+      "Root Part",
+      "왼쪽 눈알",
+      "오른쪽 눈알",
+      "재킷 그림자",
+      "목걸이",
+      "셔츠",
+      "하반신",
+      "오른쪽 눈동자",
+      "왼쪽 눈동자",
+      "왼쪽 헤어라인",
+      "재킷 오른팔",
+      "전체",
+      "효과",
+      "쟈켓",
+      "몸통",
+      "단색",
+      "밤",
+      "그림자",
+      "홀로그램",
+      "上半身 阴影",
+      "디스플레이",
+      "디스플레이 채색",
+      "디스플레이 2",
+      "디스플레이 1",
+      "그림자",
+      "머리 그림자 아웃",
+      "앞머리",
+      "눈썹",
+      "왼쪽 눈",
+      "오른쪽 눈",
+      "코",
+      "입",
+      "얼굴",
+      "귀",
+      "목",
+      "뒷머리",
+      "쟈켓",
+      "오른팔 그리기 순서",
+      "왼팔 그리기 순서",
+      "재킷 왼팔",
+      "왼팔",
+      "오른쪽 눈알",
+      "왼쪽 눈알",
+      "비침",
+      "눈썹",
+      "왼쪽 눈",
+      "오른쪽 눈",
+      "왼쪽 눈동자",
+      "오른쪽 눈동자",
+      "오른팔",
+      "后发 遮罩",
+      "코어"
+    ]
+  },
+  "moc3": {
+    "present": true,
+    "path": "experiments/reference-model-structure-001/official_samples/extracted/ren_pro_ko/ren_pro_ko/runtime/ren.moc3",
+    "size_bytes": 915200,
+    "sha256": "a9ccf7d6b2f4f16c8b13da29b9b4f34dc865ba9c8ad88a0388530e7f2d6cc533",
+    "py_moc3_status": "PASS",
+    "parameter_count": 0,
+    "art_mesh_count": 0,
+    "parameter_ids": [],
+    "art_mesh_ids_sample": []
+  },
+  "runtime_json": {
+    "model3": {
+      "present": true,
+      "version": 3,
+      "moc": "ren.moc3",
+      "texture_count": 1,
+      "has_physics": true,
+      "has_pose": false,
+      "has_display_info": true,
+      "has_user_data": false,
+      "expression_count": 5,
+      "motion_group_count": 2,
+      "motion_count": 3,
+      "group_count": 2,
+      "parameter_ids": [
+        "ParamEyeLOpen",
+        "ParamEyeROpen",
+        "ParamMouthOpenY"
+      ],
+      "file_references": {
+        "Moc": "ren.moc3",
+        "Textures": [
+          "ren.4096/texture_00.png"
+        ],
+        "Physics": "ren.physics3.json",
+        "DisplayInfo": "ren.cdi3.json",
+        "Expressions": [
+          {
+            "Name": "exp_01",
+            "File": "expressions/exp_01.exp3.json"
+          },
+          {
+            "Name": "exp_02",
+            "File": "expressions/exp_02.exp3.json"
+          },
+          {
+            "Name": "exp_03",
+            "File": "expressions/exp_03.exp3.json"
+          },
+          {
+            "Name": "exp_04",
+            "File": "expressions/exp_04.exp3.json"
+          },
+          {
+            "Name": "exp_05",
+            "File": "expressions/exp_05.exp3.json"
+          }
+        ],
+        "Motions": {
+          "Idle": [
+            {
+              "File": "motions/mtn_01.motion3.json"
+            }
+          ],
+          "": [
+            {
+              "File": "motions/mtn_02.motion3.json"
+            },
+            {
+              "File": "motions/mtn_03.motion3.json"
+            }
+          ]
+        }
+      }
+    },
+    "physics3": {
+      "present": true,
+      "version": 3,
+      "physics_group_count": 16,
+      "physics_input_count": 33,
+      "physics_output_count": 20,
+      "physics_vertex_count": 36,
+      "groups": [
+        {
+          "index": 0,
+          "id": "PhysicsSetting1",
+          "input_count": 1,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 1,
+          "id": "PhysicsSetting2",
+          "input_count": 1,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 2,
+          "id": "PhysicsSetting3",
+          "input_count": 1,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 3,
+          "id": "PhysicsSetting4",
+          "input_count": 1,
+          "output_count": 2,
+          "vertex_count": 3
+        },
+        {
+          "index": 4,
+          "id": "PhysicsSetting5",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 5,
+          "id": "PhysicsSetting6",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 6,
+          "id": "PhysicsSetting7",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 7,
+          "id": "PhysicsSetting8",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 8,
+          "id": "PhysicsSetting9",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 9,
+          "id": "PhysicsSetting10",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 10,
+          "id": "PhysicsSetting11",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 11,
+          "id": "PhysicsSetting12",
+          "input_count": 2,
+          "output_count": 3,
+          "vertex_count": 4
+        },
+        {
+          "index": 12,
+          "id": "PhysicsSetting13",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 13,
+          "id": "PhysicsSetting14",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 14,
+          "id": "PhysicsSetting15",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 15,
+          "id": "PhysicsSetting16",
+          "input_count": 1,
+          "output_count": 2,
+          "vertex_count": 3
+        }
+      ]
+    },
+    "cdi3": {
+      "present": true,
+      "parameter_display_count": 73,
+      "part_display_count": 52
+    },
+    "motion3_count": 3,
+    "exp3_count": 5,
+    "pose3_present": false,
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 201,
+    "parts": 52,
+    "parameters": 73,
+    "warp_deformers": 128,
+    "rotation_deformers": 22,
+    "keyform_bindings": 470,
+    "keyform_grids": 418,
+    "glue": 13,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": true,
+    "pose": false,
+    "expression": true,
+    "motion": true,
+    "physics": true
+  },
+  "structure_hints": {
+    "hair": 1,
+    "eye": 1,
+    "mouth": 1,
+    "body": 2,
+    "arm": 2
+  },
+  "reuse_decision": "REFERENCE_ONLY",
+  "notes": [
+    "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+    "Source zip: ren_pro_ko.zip"
+  ],
+  "structure_report_path": "experiments/reference-model-structure-001/official_combined_analysis/models/ren_pro_ko_ren_t01/cmo3_structure_report.json"
+}

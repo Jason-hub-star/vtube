@@ -1,0 +1,50 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T10:02:00.025442+00:00",
+  "report_id": "cubism-v2-new-character-002-v22-b1-visual-qa-001",
+  "status": "B1_CODEX_VISUAL_QA_PASS_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+  "layer_pack_report": "experiments/cubism-v2-new-character-002/reports/v22_b1_clean_base_underpaint/v22_b1_layer_pack_report.json",
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b1_clean_base_underpaint/v22_b1_layer_pack_contact_sheet.png",
+  "overlay_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b1_clean_base_underpaint/v22_b1_layer_pack_overlay_qa.png",
+  "checks": [
+    {
+      "id": "clean_face_no_eye_mouth_residue",
+      "status": "PASS_CANDIDATE",
+      "evidence": "Overlay sheet shows the raw B1 reference and face composite without open eyes, iris/pupil/white/lash detail, or mouth line."
+    },
+    {
+      "id": "no_oval_or_rectangular_patch_boundary",
+      "status": "PASS_CANDIDATE",
+      "evidence": "Eye and mouth areas read as soft continuous skin gradients on the B1 raw reference; no obvious oval mouth fill like the previous failed clean-base attempts."
+    },
+    {
+      "id": "b1_outputs_complete_and_nonempty",
+      "status": "PASS_TECHNICAL",
+      "evidence": "Layer pack self-review reports 11/11 expected outputs present, 0 missing, 0 empty, 2048 canvas."
+    },
+    {
+      "id": "mask_precision_for_final_material",
+      "status": "REVISE_BEFORE_FINAL_MATERIAL_PASS",
+      "evidence": "Automatic masks are coarse around face side hair, arms, body, and hair_back; acceptable as B1 candidate inputs, not final Cubism ArtMesh-ready masks."
+    },
+    {
+      "id": "human_visual_review",
+      "status": "REQUIRED",
+      "evidence": "주인님 human review is still required before promoting B1 from candidate to material PASS."
+    }
+  ],
+  "decision": "Keep the B1 layer pack as the current clean-base/underpaint candidate for follow-on B2/B3 prompt inputs, but do not promote it to final material PASS until human visual QA accepts it.",
+  "next_action": [
+    "Use B1 clean-base reference and layer pack to guide B2 eye pack generation.",
+    "Keep B1 mask precision issues visible in contact-sheet QA; refine masks if they block overlay QA.",
+    "Do not activate Mini Cubism diagnostic from this B1 pack alone."
+  ],
+  "self_review": {
+    "has_layer_pack_report": true,
+    "has_contact_sheet": true,
+    "has_overlay_sheet": true,
+    "check_count": 5,
+    "has_human_required_gate": true,
+    "status": "PASS"
+  }
+}

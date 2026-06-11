@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "status": "PASS_MINI_CUBISM_MATERIAL_OPEN_SMOKE",
+  "tested_at": "2026-06-08T15:13:00+09:00",
+  "server_url": "http://127.0.0.1:8063/",
+  "project_dir": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_v0",
+  "source_material_pack": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0",
+  "builder_script": "/Users/family/jason/Vtube/scripts/build_mini_cubism_project_from_cubism_v2_material_pack.py",
+  "validator_script": "/Users/family/jason/Vtube/scripts/validate_mini_cubism_project.py",
+  "counts": {
+    "parts": 62,
+    "meshes": 62,
+    "deformers": 11,
+    "parameters": 15,
+    "keyform_bindings": 22,
+    "physics_profiles": 3,
+    "glue": 0
+  },
+  "browser_smoke": {
+    "project_loaded": true,
+    "canvas_size": [
+      2048,
+      2048
+    ],
+    "non_background_sampled_pixels": 55808,
+    "model_bbox_sampled": [
+      612,
+      356,
+      836,
+      1388
+    ],
+    "parameter_injection_checked": [
+      "ParamAngleX",
+      "ParamMouthOpenY",
+      "ParamHairFront"
+    ],
+    "parameter_injection_result": "PASS_VALUES_UPDATED"
+  },
+  "evidence": {
+    "build_report": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_v0/reports/build_report.json",
+    "validation_report": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_v0/reports/validation_report.json",
+    "screenshot": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_v0/reports/mini_cubism_material_preview.png"
+  },
+  "interpretation": [
+    "This confirms the material pack can be converted into and opened by the local Mini Cubism preview format.",
+    "This confirms parts, bbox meshes, simple deformer/keyform response, and local physics preview scaffolding.",
+    "This does not replace Live2D Cubism Editor PSD import smoke, CMO3 authoring, ArtMesh quality, or final runtime export validation."
+  ]
+}

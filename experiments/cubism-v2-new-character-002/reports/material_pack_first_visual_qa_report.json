@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "experiment_id": "cubism-v2-new-character-002",
+  "reviewed_at": "2026-06-09",
+  "status": "REVISE_VISUAL_QA",
+  "technical_gate": {
+    "status": "PASS_READY_FOR_VISUAL_QA",
+    "report": "experiments/cubism-v2-new-character-002/reports/material_pack_first_keypose_validation_report.json"
+  },
+  "visual_gate": {
+    "status": "REVISE",
+    "contact_sheet": "experiments/cubism-v2-new-character-002/reports/material_pack_first_contact_sheet.png",
+    "decision": "Do not proceed to Mini Cubism diagnostic preview yet."
+  },
+  "source_front": {
+    "path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/new_character_002_source_front.raw.png",
+    "status": "KEEP_FOR_G0_REVIEW",
+    "notes": [
+      "Front-facing upper-body source with visible eyes, mouth, hair, neck, shoulders, and torso.",
+      "Hair and face regions are readable for Cubism planning.",
+      "Outfit/body emphasis may require user preference review before production promotion."
+    ]
+  },
+  "raw_outputs": [
+    "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/new_character_002_source_front.raw.png",
+    "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_closeups.raw.png",
+    "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/material_keypose_pack_fullface.raw.png"
+  ],
+  "normalized_layers": {
+    "path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers",
+    "count": 21,
+    "status": "TECHNICAL_PASS_VISUAL_REVISE"
+  },
+  "findings": [
+    {
+      "area": "face_base_clean",
+      "status": "REVISE",
+      "reason": "The generated clean face removes baked eyes and mouth, but it is still a generated full-face candidate and needs human style/identity review."
+    },
+    {
+      "area": "eye open states",
+      "status": "KEEP_FOR_REVIEW",
+      "reason": "Open eye candidates are present for both left and right eyes; they still need overlay QA for anchor/scale before production layer expansion."
+    },
+    {
+      "area": "eye clean sockets and underpaint",
+      "status": "REVISE",
+      "reason": "Clean socket and underpaint candidates pass alpha/size checks but look like isolated skin patches; they may create visible rectangular or oval stains when composited."
+    },
+    {
+      "area": "eye half-closed states",
+      "status": "KEEP_FOR_REVIEW",
+      "reason": "Half-closed states intentionally include visible iris/eye white, but alignment and symmetry need overlay QA."
+    },
+    {
+      "area": "eye mostly/closed states",
+      "status": "KEEP_FOR_REVIEW",
+      "reason": "Closed states do not show obvious iris/pupil/eye-white leakage in the contact sheet."
+    },
+    {
+      "area": "mouth keyposes",
+      "status": "REVISE",
+      "reason": "Mouth states are coherent as technical candidates, but mouth_base_clean and detail crops still have strong skin-patch boundaries and need compositing QA."
+    },
+    {
+      "area": "mouth detail parts",
+      "status": "KEEP_FOR_REVIEW",
+      "reason": "Mouth inner, teeth, and tongue are present as separate candidates but need anchor and scale overlay review."
+    }
+  ],
+  "blocked_next_step": "Mini Cubism diagnostic preview",
+  "recommended_next_actions": [
+    "Build an overlay QA sheet on top of source_front to check eye/mouth anchors and patch visibility.",
+    "Regenerate or edit clean sockets, closed underpaint, and mouth_base_clean if overlay QA shows visible stains.",
+    "Ask 주인님 to review the source_front style and outfit before expanding to 64-part production layers."
+  ]
+}

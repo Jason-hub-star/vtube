@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T04:17:56.761192+00:00",
+  "status": "PASS_READY_FOR_HUMAN_VISUAL_QA",
+  "source_parts_dir": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v7_smooth_mouth_preview/mini_cubism_diagnostic_project/parts",
+  "layers_dir": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v8_smile_open_mouth_packet/normalized_layers",
+  "contact_sheet": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v8_smile_open_mouth_packet/smile_open_mouth_contact_sheet.png",
+  "validation_issues": [],
+  "candidates": [
+    {
+      "id": "mouth_smile_closed",
+      "label": "smile closed",
+      "open_value": 0.0,
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v8_smile_open_mouth_packet/normalized_layers/mouth_smile_closed.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        952,
+        851,
+        1121,
+        945
+      ],
+      "alpha_nonzero": 526,
+      "qa": "reference"
+    },
+    {
+      "id": "mouth_smile_small_open",
+      "label": "smile small open",
+      "open_value": 0.35,
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v8_smile_open_mouth_packet/normalized_layers/mouth_smile_small_open.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        973,
+        878,
+        1086,
+        906
+      ],
+      "alpha_nonzero": 1416,
+      "qa": "candidate"
+    },
+    {
+      "id": "mouth_smile_mid_open",
+      "label": "smile mid open",
+      "open_value": 0.65,
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v8_smile_open_mouth_packet/normalized_layers/mouth_smile_mid_open.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        973,
+        878,
+        1096,
+        911
+      ],
+      "alpha_nonzero": 2163,
+      "qa": "candidate"
+    },
+    {
+      "id": "mouth_smile_wide_open_candidate",
+      "label": "smile wide candidate",
+      "open_value": 1.0,
+      "path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/reports/model_edit_v8_smile_open_mouth_packet/normalized_layers/mouth_smile_wide_open_candidate.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        964,
+        878,
+        1109,
+        916
+      ],
+      "alpha_nonzero": 3024,
+      "qa": "candidate_needs_human_review"
+    }
+  ],
+  "excluded_assets": [
+    "mouth_wide_open",
+    "mouth_o_vowel"
+  ],
+  "decision": "Smile-open mouth candidates generated for visual QA; do not promote until 주인님 approves contact sheet."
+}

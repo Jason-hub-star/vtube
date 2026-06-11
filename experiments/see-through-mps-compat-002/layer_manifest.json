@@ -1,0 +1,1215 @@
+{
+  "schema_version": 1,
+  "experiment_id": "see-through-mps-compat-002",
+  "generated_at": "2026-06-04T06:13:49.161375+00:00",
+  "source_layers_json": "/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_layers.json",
+  "source_canvas_size": [
+    640,
+    640
+  ],
+  "normalized_canvas_size": [
+    2048,
+    2048
+  ],
+  "scale_to_2048": [
+    3.2,
+    3.2
+  ],
+  "layers": [
+    {
+      "layer_name": "seethrough_mps_roi__neck_underpaint",
+      "original_part_id": "neck_underpaint",
+      "raw_tag": "roi_cleanup:neck_underpaint",
+      "role": "underpaint",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/manual_layers/seethrough_mps_manual__neck.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/neck-roi-cleanup-001/layers/seethrough_mps_roi__neck_underpaint.png",
+      "relative_output_path": null,
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        904,
+        990,
+        234,
+        142
+      ],
+      "alpha_coverage": 0.782984,
+      "draw_order": 190,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "roi_cleanup_experiment_id": "neck-roi-cleanup-001",
+      "notes": "Neck ROI underpaint: slightly expanded skin fill for Cubism deformation margin. Human O review is required before PSD inclusion."
+    },
+    {
+      "layer_name": "seethrough_mps_roi__neck",
+      "original_part_id": "neck",
+      "raw_tag": "roi_cleanup:neck",
+      "role": "neck",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/manual_layers/seethrough_mps_manual__neck.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/neck-roi-cleanup-001/layers/seethrough_mps_roi__neck.png",
+      "relative_output_path": null,
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        921,
+        1007,
+        200,
+        108
+      ],
+      "alpha_coverage": 0.585185,
+      "draw_order": 200,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "roi_cleanup_experiment_id": "neck-roi-cleanup-001",
+      "notes": "Neck ROI cleanup: face, mouth, and clothes masks are excluded. Human O review is required before PSD inclusion."
+    },
+    {
+      "layer_name": "seethrough_mps_roi__clothes",
+      "original_part_id": "clothes",
+      "raw_tag": "roi_cleanup:clothes",
+      "role": "clothes",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__clothes.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/clothes-roi-cleanup-001/layers/seethrough_mps_roi__clothes.png",
+      "relative_output_path": null,
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        23,
+        1061,
+        1991,
+        987
+      ],
+      "alpha_coverage": 0.341784,
+      "draw_order": 210,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "roi_cleanup_experiment_id": "clothes-roi-cleanup-001",
+      "notes": "Clothes ROI cleanup: skin, face, neck, and front hair are excluded while dark/gold clothing pixels are kept. Human O review is required before PSD inclusion."
+    },
+    {
+      "layer_name": "seethrough_mps__choker",
+      "original_part_id": "choker",
+      "raw_tag": "neckwear",
+      "role": "accessory",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_neckwear.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__choker.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "draw_order": 300,
+      "depth_median": 1.0,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_neckwear_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__raw_bottomwear",
+      "original_part_id": "raw_bottomwear",
+      "raw_tag": "bottomwear",
+      "role": "seethrough_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_bottomwear.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_bottomwear.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "draw_order": 301,
+      "depth_median": 1.0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_bottomwear_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__raw_legwear",
+      "original_part_id": "raw_legwear",
+      "raw_tag": "legwear",
+      "role": "seethrough_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_legwear.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_legwear.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "draw_order": 302,
+      "depth_median": 1.0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_legwear_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__raw_footwear",
+      "original_part_id": "raw_footwear",
+      "raw_tag": "footwear",
+      "role": "seethrough_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_footwear.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_footwear.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "draw_order": 303,
+      "depth_median": 1.0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_footwear_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__tail_reference",
+      "original_part_id": "tail_reference",
+      "raw_tag": "tail",
+      "role": "seethrough_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_tail.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__tail_reference.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "draw_order": 304,
+      "depth_median": 1.0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_tail_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__wings_reference",
+      "original_part_id": "wings_reference",
+      "raw_tag": "wings",
+      "role": "seethrough_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_wings.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__wings_reference.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "draw_order": 305,
+      "depth_median": 1.0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_wings_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__object_reference",
+      "original_part_id": "object_reference",
+      "raw_tag": "objects",
+      "role": "seethrough_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_objects.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__object_reference.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "draw_order": 306,
+      "depth_median": 1.0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_objects_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__raw_eyewear",
+      "original_part_id": "raw_eyewear",
+      "raw_tag": "eyewear",
+      "role": "seethrough_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_eyewear.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_eyewear.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "draw_order": 307,
+      "depth_median": 1.0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_eyewear_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__ear_inner",
+      "original_part_id": "ear_inner",
+      "raw_tag": "earwear",
+      "role": "ears",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_earwear.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__ear_inner.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "draw_order": 308,
+      "depth_median": 1.0,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_earwear_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__back_hair",
+      "original_part_id": "back_hair",
+      "raw_tag": "back hair",
+      "role": "back_hair",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_back hair.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__back_hair.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        83,
+        174,
+        1867,
+        1874
+      ],
+      "alpha_coverage": 0.573283,
+      "draw_order": 309,
+      "depth_median": 0.9296875,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_back hair_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__neck",
+      "original_part_id": "neck",
+      "raw_tag": "neck",
+      "role": "neck",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_neck.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__neck.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        905,
+        861,
+        231,
+        306
+      ],
+      "alpha_coverage": 0.867173,
+      "draw_order": 310,
+      "depth_median": 0.7709766030311584,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_neck_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps_clean__neck",
+      "original_part_id": "neck",
+      "raw_tag": "cleanup:seethrough_mps__neck",
+      "role": "neck",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__neck.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/cleanup_layers/seethrough_mps_clean__neck.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        918,
+        1006,
+        206,
+        108
+      ],
+      "alpha_coverage": 0.559736,
+      "draw_order": 310,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "cleanup_source_layer": "seethrough_mps__neck",
+      "notes": "Neck cleanup: keep central neck ROI and subtract mouth, face, clothes, and hair masks. Human O review is required before PSD inclusion."
+    },
+    {
+      "layer_name": "seethrough_mps_manual__neck",
+      "original_part_id": "neck",
+      "raw_tag": "manual_mask:seethrough_mps__neck",
+      "role": "neck",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__neck.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/manual_layers/seethrough_mps_manual__neck.png",
+      "relative_output_path": "manual_layers/seethrough_mps_manual__neck.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        921,
+        1003,
+        200,
+        130
+      ],
+      "alpha_coverage": 0.573385,
+      "draw_order": 310,
+      "depth_median": 0.7709766030311584,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_neck_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "manual_mask_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/manual_masks/seethrough_mps__neck.png",
+      "manual_source_layer": "seethrough_mps__neck",
+      "notes": "Human-painted review-app mask candidate. Human O review is required before PSD inclusion."
+    },
+    {
+      "layer_name": "seethrough_mps__clothes",
+      "original_part_id": "clothes",
+      "raw_tag": "topwear",
+      "role": "clothes",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_topwear.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__clothes.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        23,
+        1060,
+        1991,
+        988
+      ],
+      "alpha_coverage": 0.650597,
+      "draw_order": 311,
+      "depth_median": 0.640625,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_topwear_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps_clean__clothes",
+      "original_part_id": "clothes",
+      "raw_tag": "cleanup:seethrough_mps__clothes",
+      "role": "clothes",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__clothes.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/cleanup_layers/seethrough_mps_clean__clothes.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        23,
+        1497,
+        1991,
+        551
+      ],
+      "alpha_coverage": 0.138023,
+      "draw_order": 311,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "cleanup_source_layer": "seethrough_mps__clothes",
+      "notes": "Clothes cleanup: remove skin-colored pixels and subtract face/neck/hair/ear masks. Human O review is required before PSD inclusion."
+    },
+    {
+      "layer_name": "seethrough_mps__raw_handwear",
+      "original_part_id": "raw_handwear",
+      "raw_tag": "handwear-l",
+      "role": "seethrough_reference",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_handwear-l.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_handwear.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1178,
+        1234,
+        835,
+        814
+      ],
+      "alpha_coverage": 0.64327,
+      "draw_order": 312,
+      "depth_median": 0.62109375,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_handwear-l_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__raw_handwear_13",
+      "original_part_id": "raw_handwear",
+      "raw_tag": "handwear-r",
+      "role": "seethrough_reference",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_handwear-r.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__raw_handwear_13.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        22,
+        1236,
+        845,
+        812
+      ],
+      "alpha_coverage": 0.644559,
+      "draw_order": 313,
+      "depth_median": 0.6015625,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_handwear-r_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__headwear_reference",
+      "original_part_id": "headwear_reference",
+      "raw_tag": "headwear",
+      "role": "seethrough_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_headwear.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__headwear_reference.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1295,
+        459,
+        186,
+        236
+      ],
+      "alpha_coverage": 0.311714,
+      "draw_order": 314,
+      "depth_median": 0.5913053154945374,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_headwear_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__face_base",
+      "original_part_id": "face_base",
+      "raw_tag": "face",
+      "role": "face",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_face.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__face_base.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        736,
+        392,
+        565,
+        666
+      ],
+      "alpha_coverage": 0.760788,
+      "draw_order": 315,
+      "depth_median": 0.515625,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_face_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps_clean__face_base",
+      "original_part_id": "face_base",
+      "raw_tag": "cleanup:seethrough_mps__face_base",
+      "role": "face",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__face_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/cleanup_layers/seethrough_mps_clean__face_base.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        740,
+        394,
+        557,
+        659
+      ],
+      "alpha_coverage": 0.659151,
+      "draw_order": 315,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "cleanup_source_layer": "seethrough_mps__face_base",
+      "notes": "Face cleanup: subtract accepted hair, eye, brow, and mouth masks. Human O review is required before PSD inclusion."
+    },
+    {
+      "layer_name": "seethrough_mps__nose_reference",
+      "original_part_id": "nose_reference",
+      "raw_tag": "nose",
+      "role": "seethrough_reference",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_nose.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__nose_reference.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        978,
+        829,
+        45,
+        60
+      ],
+      "alpha_coverage": 0.642222,
+      "draw_order": 316,
+      "depth_median": 0.5033895373344421,
+      "status": "REFERENCE_ONLY",
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_nose_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__mouth_line",
+      "original_part_id": "mouth_line",
+      "raw_tag": "mouth",
+      "role": "mouth_line",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_mouth.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__mouth_line.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        983,
+        923,
+        78,
+        47
+      ],
+      "alpha_coverage": 0.763775,
+      "draw_order": 317,
+      "depth_median": 0.4828144609928131,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_mouth_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps_clean__mouth_line",
+      "original_part_id": "mouth_line",
+      "raw_tag": "cleanup:seethrough_mps__mouth_line",
+      "role": "mouth_line",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__mouth_line.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/cleanup_layers/seethrough_mps_clean__mouth_line.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        983,
+        923,
+        78,
+        47
+      ],
+      "alpha_coverage": 0.154937,
+      "draw_order": 317,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "cleanup_source_layer": "seethrough_mps__mouth_line",
+      "notes": "Mouth cleanup: keep only darker line pixels inside the mouth ROI; remove pale oval fill. Human O review is required before PSD inclusion."
+    },
+    {
+      "layer_name": "seethrough_mps__R_brow",
+      "original_part_id": "R_brow",
+      "raw_tag": "eyebrow-r",
+      "role": "seethrough_reference",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_eyebrow-r.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__R_brow.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        797,
+        656,
+        143,
+        22
+      ],
+      "alpha_coverage": 0.501589,
+      "draw_order": 318,
+      "depth_median": 0.45093870162963867,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_eyebrow-r_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__L_brow",
+      "original_part_id": "L_brow",
+      "raw_tag": "eyebrow-l",
+      "role": "seethrough_reference",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_eyebrow-l.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__L_brow.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1097,
+        653,
+        140,
+        24
+      ],
+      "alpha_coverage": 0.471131,
+      "draw_order": 319,
+      "depth_median": 0.4330080449581146,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_eyebrow-l_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__R_iris",
+      "original_part_id": "R_iris",
+      "raw_tag": "irides-r",
+      "role": "seethrough_reference",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_irides-r.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__R_iris.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        831,
+        720,
+        94,
+        78
+      ],
+      "alpha_coverage": 0.77305,
+      "draw_order": 320,
+      "depth_median": 0.331484317779541,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_irides-r_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__R_upper_lash",
+      "original_part_id": "R_upper_lash",
+      "raw_tag": "eyelash-r",
+      "role": "seethrough_reference",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_eyelash-r.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__R_upper_lash.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        758,
+        694,
+        189,
+        111
+      ],
+      "alpha_coverage": 0.338767,
+      "draw_order": 321,
+      "depth_median": 0.3305966556072235,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_eyelash-r_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__R_eye_white",
+      "original_part_id": "R_eye_white",
+      "raw_tag": "eyewhite-r",
+      "role": "seethrough_reference",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_eyewhite-r.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__R_eye_white.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        800,
+        723,
+        136,
+        77
+      ],
+      "alpha_coverage": 0.768239,
+      "draw_order": 322,
+      "depth_median": 0.32791024446487427,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_eyewhite-r_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__L_eye_white",
+      "original_part_id": "L_eye_white",
+      "raw_tag": "eyewhite-l",
+      "role": "seethrough_reference",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_eyewhite-l.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__L_eye_white.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1106,
+        721,
+        138,
+        79
+      ],
+      "alpha_coverage": 0.748945,
+      "draw_order": 323,
+      "depth_median": 0.32791024446487427,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_eyewhite-l_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__L_iris",
+      "original_part_id": "L_iris",
+      "raw_tag": "irides-l",
+      "role": "seethrough_reference",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_irides-l.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__L_iris.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1120,
+        719,
+        93,
+        78
+      ],
+      "alpha_coverage": 0.790598,
+      "draw_order": 324,
+      "depth_median": 0.2608984708786011,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_irides-l_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__L_upper_lash",
+      "original_part_id": "L_upper_lash",
+      "raw_tag": "eyelash-l",
+      "role": "seethrough_reference",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_eyelash-l.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__L_upper_lash.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1088,
+        697,
+        195,
+        108
+      ],
+      "alpha_coverage": 0.350047,
+      "draw_order": 325,
+      "depth_median": 0.2552534341812134,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_eyelash-l_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__L_ear_outer",
+      "original_part_id": "L_ear_outer",
+      "raw_tag": "ears-l",
+      "role": "seethrough_reference",
+      "side": "L",
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_ears-l.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__L_ear_outer.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1133,
+        21,
+        312,
+        488
+      ],
+      "alpha_coverage": 0.53636,
+      "draw_order": 326,
+      "depth_median": 0.1961914300918579,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_ears-l_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__R_ear_outer",
+      "original_part_id": "R_ear_outer",
+      "raw_tag": "ears-r",
+      "role": "seethrough_reference",
+      "side": "R",
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_ears-r.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__R_ear_outer.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        597,
+        22,
+        322,
+        487
+      ],
+      "alpha_coverage": 0.523282,
+      "draw_order": 327,
+      "depth_median": 0.19126951694488525,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_ears-r_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps__front_hair",
+      "original_part_id": "front_hair",
+      "raw_tag": "front hair",
+      "role": "front_hair",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/raw_comfyui_output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_front hair.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__front_hair.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        539,
+        217,
+        1002,
+        1419
+      ],
+      "alpha_coverage": 0.369361,
+      "draw_order": 328,
+      "depth_median": 0.13251952826976776,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/depth_layers/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_front hair_depth.png",
+      "experiment_id": "see-through-mps-compat-002",
+      "notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate."
+    },
+    {
+      "layer_name": "seethrough_mps_roi__mouth_inner",
+      "original_part_id": "mouth_inner",
+      "raw_tag": "roi_cleanup:mouth:mouth_inner",
+      "role": "mouth_inner",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__mouth_line.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mouth-roi-cleanup-001/layers/seethrough_mps_roi__mouth_inner.png",
+      "relative_output_path": null,
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        996,
+        927,
+        58,
+        39
+      ],
+      "alpha_coverage": 0.067639,
+      "draw_order": 405,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "roi_cleanup_experiment_id": "mouth-roi-cleanup-001",
+      "notes": "Mouth ROI cleanup: inner mouth fill candidate. Human O review is required before PSD inclusion."
+    },
+    {
+      "layer_name": "seethrough_mps_roi__mouth_line",
+      "original_part_id": "mouth_line",
+      "raw_tag": "roi_cleanup:mouth:mouth_line",
+      "role": "mouth_line",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__mouth_line.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mouth-roi-cleanup-001/layers/seethrough_mps_roi__mouth_line.png",
+      "relative_output_path": null,
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        983,
+        923,
+        78,
+        47
+      ],
+      "alpha_coverage": 0.173759,
+      "draw_order": 410,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "roi_cleanup_experiment_id": "mouth-roi-cleanup-001",
+      "notes": "Mouth ROI cleanup: line/edge pixels only. Human O review is required before PSD inclusion."
+    },
+    {
+      "layer_name": "seethrough_mps_roi__teeth",
+      "original_part_id": "teeth",
+      "raw_tag": "roi_cleanup:mouth:teeth",
+      "role": "teeth",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__mouth_line.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mouth-roi-cleanup-001/layers/seethrough_mps_roi__teeth.png",
+      "relative_output_path": null,
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        987,
+        927,
+        68,
+        39
+      ],
+      "alpha_coverage": 0.597662,
+      "draw_order": 415,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "roi_cleanup_experiment_id": "mouth-roi-cleanup-001",
+      "notes": "Mouth ROI cleanup: bright teeth candidate if present. Human O review is required before PSD inclusion."
+    },
+    {
+      "layer_name": "seethrough_mps_roi__tongue",
+      "original_part_id": "tongue",
+      "raw_tag": "roi_cleanup:mouth:tongue",
+      "role": "tongue",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__mouth_line.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mouth-roi-cleanup-001/layers/seethrough_mps_roi__tongue.png",
+      "relative_output_path": null,
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        986,
+        926,
+        71,
+        42
+      ],
+      "alpha_coverage": 0.142522,
+      "draw_order": 416,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "roi_cleanup_experiment_id": "mouth-roi-cleanup-001",
+      "notes": "Mouth ROI cleanup: pink tongue candidate if present. Human O review is required before PSD inclusion."
+    }
+  ],
+  "counts": {
+    "raw_layers": 29,
+    "normalized_layers": 29,
+    "production_candidates": 17,
+    "reference_only": 12
+  },
+  "updated_at": "2026-06-04T07:30:58.936483+00:00",
+  "cleanup_candidates": {
+    "generated_at": "2026-06-04T07:10:27.780892+00:00",
+    "count": 4,
+    "targets": [
+      "face_base",
+      "neck",
+      "clothes",
+      "mouth_line"
+    ]
+  },
+  "manual_mask_candidates": {
+    "updated_at": "2026-06-04T07:00:06.053648+00:00",
+    "latest_part_id": "seethrough_mps_manual__neck"
+  },
+  "roi_cleanup_candidates": {
+    "generated_at": "2026-06-04T07:30:58.936483+00:00",
+    "count": 7,
+    "experiments": [
+      "clothes-roi-cleanup-001",
+      "mouth-roi-cleanup-001",
+      "neck-roi-cleanup-001"
+    ]
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "experiment_id": "imagen-live2d-001",
+  "validated_at": "2026-06-04T09:17:16Z",
+  "status": "MOC3_EXPORT_AND_GUI_PARTS_PARAMETERS_OBSERVED_PENDING_DEFORMER_KEYFORM_VALIDATION",
+  "source_user_saved_cmo3": "/Users/family/jason/URHYNIX/import_ready_candidate.cmo3",
+  "source_user_exported_moc3": "/Users/family/jason/URHYNIX/import_ready_candidate.moc3",
+  "cmo3_path": "experiments/imagen-live2d-001/cubism_mvp_rig.cmo3",
+  "cmo3_size_bytes": 6599184,
+  "cmo3_sha256": "9574f12eb3c099d39727043e4124409ec1a51e4e5da6b759dd39da6af1f49e3f",
+  "moc3_export_dir": "experiments/imagen-live2d-001/moc3_export_smoke",
+  "moc3_export_files": {
+    "moc3": {
+      "path": "experiments/imagen-live2d-001/moc3_export_smoke/import_ready_candidate.moc3",
+      "size_bytes": 18368,
+      "sha256": "43d5eeee1388c6337b6a5fa369fd8765d1cbf1e3dd077728f60bfd902f9d25cd"
+    },
+    "model3_json": {
+      "path": "experiments/imagen-live2d-001/moc3_export_smoke/import_ready_candidate.model3.json",
+      "size_bytes": 203,
+      "sha256": "a30e782cf811a0787d1d98811f50bb573c504c4b1ae35b06f059a54586667480"
+    },
+    "display_info": {
+      "path": "experiments/imagen-live2d-001/moc3_export_smoke/import_ready_candidate.cdi3.json",
+      "size_bytes": 2330,
+      "sha256": "6c3f0200cfc35b108b8b26d13d44fac5938eb0c01d72cba7d74ad57d5ac80c10"
+    },
+    "texture": {
+      "path": "experiments/imagen-live2d-001/moc3_export_smoke/import_ready_candidate.1024/texture_00.png",
+      "size_bytes": 1291483,
+      "sha256": "2a92f57f56c0899c8695cbaa13381fd2b0f50ef08d66287aa6173d447e8b698a",
+      "image_size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA"
+    }
+  },
+  "runtime_reference_check": {
+    "model3_json_references_moc3": "PASS",
+    "model3_json_references_texture": "PASS",
+    "model3_json_references_display_info": "PASS",
+    "display_info_parameter_count": 27,
+    "required_parameters_present": {
+      "ParamAngleX": true,
+      "ParamEyeLOpen": true,
+      "ParamEyeROpen": true,
+      "ParamMouthOpenY": true,
+      "ParamBreath": true,
+      "ParamHairFront": true,
+      "ParamHairSide": true,
+      "ParamHairBack": true
+    }
+  },
+  "gui_observation": {
+    "cubism_window_title": "Live2D Cubism Editor 5.3.01 [무료 버전] - import_ready_candidate.cmo3",
+    "parts_panel_observed": "PASS_SCREENSHOT",
+    "visible_layer_names_observed": [
+      "front_hair",
+      "L_brow",
+      "R_brow",
+      "L_upper_lash",
+      "R_upper_lash",
+      "L_iris",
+      "R_iris",
+      "L_eye_white",
+      "R_eye_white",
+      "mouth_line",
+      "face_base",
+      "L_ear_outer",
+      "R_ear_outer",
+      "choker",
+      "L_arm",
+      "R_arm"
+    ],
+    "parameter_panel_observed": "PASS_SCREENSHOT",
+    "standard_parameters_exported": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamEyeLOpen",
+      "ParamEyeLSmile",
+      "ParamEyeROpen",
+      "ParamEyeRSmile",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamBrowLY",
+      "ParamBrowRY",
+      "ParamBrowLX",
+      "ParamBrowRX",
+      "ParamBrowLAngle",
+      "ParamBrowRAngle",
+      "ParamBrowLForm",
+      "ParamBrowRForm",
+      "ParamMouthForm",
+      "ParamMouthOpenY",
+      "ParamCheek",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBodyAngleZ",
+      "ParamBreath",
+      "ParamHairFront",
+      "ParamHairSide",
+      "ParamHairBack"
+    ],
+    "arm_parameters_exported": false,
+    "deformer_hierarchy_visible_in_current_evidence": false,
+    "keyform_motion_visible_in_current_evidence": false
+  },
+  "checks": {
+    "cmo3_saved": "PASS",
+    "texture_atlas_created": "PASS",
+    "moc3_export_smoke": "PASS",
+    "mvp_parameters_created": "PASS_CDI_HAS_STANDARD_EYE_MOUTH_HAIR_PARAMETERS",
+    "artmesh_created_for_19_layers": "OBSERVED_AS_VISIBLE_LAYER_PARTS_IN_CUBISM_GUI",
+    "deformer_hierarchy_created": "UNVERIFIED_NOT_VISIBLE_IN_CURRENT_GUI_EVIDENCE",
+    "eye_keyforms_tested": "PARAMETERS_PRESENT_NOT_MOTION_TESTED",
+    "mouth_keyforms_tested": "PARAMETERS_PRESENT_NOT_MOTION_TESTED",
+    "hair_keyforms_tested": "PARAMETERS_PRESENT_NOT_MOTION_TESTED",
+    "arm_keyforms_tested": "OPTIONAL_ARM_PARAMETERS_NOT_EXPORTED",
+    "draw_order_validated": "OBSERVED_SCREENSHOT_ONLY",
+    "overhang_validated": "UNVERIFIED"
+  },
+  "blocking_issues": [],
+  "revise_issues": [
+    "Runtime export smoke passed and GUI screenshots show visible parts plus parameter panel, but deformer hierarchy and keyform behavior still need direct Cubism GUI validation screenshots.",
+    "Draw order looks plausible in screenshots, but overhang and deformation behavior are not validated.",
+    "The runtime display info exports standard eye, mouth, body, breath, and hair parameters, but no arm-specific parameter IDs. Arm swing remains a later optional rig target.",
+    "This remains a forced-O MVP pipeline smoke, not final production rig quality."
+  ],
+  "evidence_screenshots": [
+    "experiments/imagen-live2d-001/reports/cubism_mvp_rig_evidence/gui_parts_parameters_current.png",
+    "experiments/imagen-live2d-001/reports/cubism_mvp_rig_evidence/current_cubism_before_reopen_cmo3.png",
+    "experiments/imagen-live2d-001/reports/cubism_mvp_rig_evidence/texture_atlas_after_free_ok.png",
+    "experiments/imagen-live2d-001/reports/cubism_mvp_rig_evidence/texture_atlas_applied.png",
+    "experiments/imagen-live2d-001/reports/cubism_mvp_rig_evidence/moc3_export_after_settings_ok.png",
+    "experiments/imagen-live2d-001/reports/cubism_mvp_rig_evidence/moc3_export_after_save_button.png"
+  ],
+  "notes": [
+    "주인님 provided /Users/family/jason/URHYNIX/import_ready_candidate.cmo3 and /Users/family/jason/URHYNIX/import_ready_candidate.moc3.",
+    "Codex copied the CMO3 and the full runtime export bundle into experiments/imagen-live2d-001 without modifying the source files.",
+    "Cubism FREE texture-atlas flow was opened and the moc3 runtime export dialog completed successfully.",
+    "The full objective remains active because deformer/keyform/overhang validation is not yet proven."
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T14:22:45.001895+00:00",
+  "id": "live2d_official_sample_catalog",
+  "name": "Live2D Official Sample Data Catalog",
+  "source_url": "https://www.live2d.com/en/learn/sample/",
+  "source_type": "OFFICIAL_SAMPLE_INDEX",
+  "license_status": "OFFICIAL_TERMS_REQUIRED",
+  "analysis_mode": "METADATA_ONLY",
+  "analysis_safety_notes": [],
+  "has_cmo3": true,
+  "has_moc3": true,
+  "has_model3_json": true,
+  "has_physics3_json": true,
+  "has_psd": true,
+  "local_paths": {},
+  "cmo3": {
+    "status": "NOT_REQUESTED"
+  },
+  "moc3": {
+    "present": false
+  },
+  "runtime_json": {
+    "model3": {
+      "present": false
+    },
+    "physics3": {
+      "present": false
+    },
+    "cdi3": {
+      "present": false
+    },
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 0,
+    "parts": 0,
+    "parameters": 0,
+    "warp_deformers": 0,
+    "rotation_deformers": 0,
+    "keyform_bindings": 0,
+    "keyform_grids": 0,
+    "glue": 0,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": false,
+    "pose": false,
+    "expression": false,
+    "motion": false,
+    "physics": false
+  },
+  "structure_hints": {
+    "hair": 0,
+    "eye": 0,
+    "mouth": 0,
+    "body": 0,
+    "arm": 0
+  },
+  "reuse_decision": "IGNORE",
+  "notes": [
+    "Record only until individual sample downloads and terms are reviewed.",
+    "Use as priority source for future FULL_STRUCTURE entries."
+  ],
+  "structure_report_path": null
+}

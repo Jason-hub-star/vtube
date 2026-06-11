@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "experiment_id": "clothes-roi-cleanup-001",
+  "generated_at": "2026-06-04T07:30:58.936247+00:00",
+  "layers": [
+    {
+      "layer_name": "seethrough_mps_roi__clothes",
+      "original_part_id": "clothes",
+      "raw_tag": "roi_cleanup:clothes",
+      "role": "clothes",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__clothes.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/clothes-roi-cleanup-001/layers/seethrough_mps_roi__clothes.png",
+      "relative_output_path": null,
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        23,
+        1061,
+        1991,
+        987
+      ],
+      "alpha_coverage": 0.341784,
+      "draw_order": 210,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "roi_cleanup_experiment_id": "clothes-roi-cleanup-001",
+      "notes": "Clothes ROI cleanup: skin, face, neck, and front hair are excluded while dark/gold clothing pixels are kept. Human O review is required before PSD inclusion."
+    }
+  ],
+  "acceptance": "Review these ROI cleanup candidates in the MPS review app. Only human O can enter the PSD candidate."
+}

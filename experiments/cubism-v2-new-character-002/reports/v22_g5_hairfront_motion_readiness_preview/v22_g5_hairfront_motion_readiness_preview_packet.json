@@ -1,0 +1,188 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-10T02:31:27.006689+00:00",
+  "status": "G5_HAIRFRONT_MOTION_READINESS_PREVIEW_READY_REVIEW_REQUIRED_PARAM_HIDDEN",
+  "source_hairfront_acceptance": "experiments/cubism-v2-new-character-002/reports/v22_g5_hairfront_motion_readiness_acceptance/v22_g5_hairfront_motion_readiness_acceptance_packet.json",
+  "source_status": "G5_HAIRFRONT_MOTION_READINESS_REVIEW_REQUIRED_PARAM_HIDDEN",
+  "source_image": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/new_character_002_source_front.raw.png",
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/v22_g5_hairfront_motion_readiness_preview/v22_g5_hairfront_motion_readiness_preview_sheet.png",
+  "pose_frames": [
+    {
+      "pose_id": "neutral",
+      "label": "Neutral",
+      "dx": 0,
+      "dy": 0,
+      "image": "experiments/cubism-v2-new-character-002/reports/v22_g5_hairfront_motion_readiness_preview/hairfront_motion_preview_neutral.png"
+    },
+    {
+      "pose_id": "swing_left",
+      "label": "Swing L",
+      "dx": -14,
+      "dy": 4,
+      "image": "experiments/cubism-v2-new-character-002/reports/v22_g5_hairfront_motion_readiness_preview/hairfront_motion_preview_swing_left.png"
+    },
+    {
+      "pose_id": "swing_right",
+      "label": "Swing R",
+      "dx": 14,
+      "dy": 4,
+      "image": "experiments/cubism-v2-new-character-002/reports/v22_g5_hairfront_motion_readiness_preview/hairfront_motion_preview_swing_right.png"
+    },
+    {
+      "pose_id": "lift",
+      "label": "Lift",
+      "dx": 0,
+      "dy": -10,
+      "image": "experiments/cubism-v2-new-character-002/reports/v22_g5_hairfront_motion_readiness_preview/hairfront_motion_preview_lift.png"
+    },
+    {
+      "pose_id": "settle",
+      "label": "Settle",
+      "dx": 0,
+      "dy": 8,
+      "image": "experiments/cubism-v2-new-character-002/reports/v22_g5_hairfront_motion_readiness_preview/hairfront_motion_preview_settle.png"
+    }
+  ],
+  "hairfront_rows": [
+    {
+      "row_id": "hair_front_center",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_center.png",
+      "bbox": [
+        820,
+        231,
+        1228,
+        629
+      ],
+      "alpha_coverage": 0.02321458
+    },
+    {
+      "row_id": "hair_front_L",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_L.png",
+      "bbox": [
+        759,
+        286,
+        1008,
+        605
+      ],
+      "alpha_coverage": 0.01171589
+    },
+    {
+      "row_id": "hair_front_R",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_R.png",
+      "bbox": [
+        1015,
+        282,
+        1306,
+        630
+      ],
+      "alpha_coverage": 0.01713395
+    },
+    {
+      "row_id": "hair_front_side_L",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_side_L.png",
+      "bbox": [
+        715,
+        385,
+        907,
+        885
+      ],
+      "alpha_coverage": 0.01118851
+    },
+    {
+      "row_id": "hair_front_side_R",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_side_R.png",
+      "bbox": [
+        1225,
+        385,
+        1348,
+        885
+      ],
+      "alpha_coverage": 0.0070703
+    },
+    {
+      "row_id": "hair_front_tip_L",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_tip_L.png",
+      "bbox": [
+        698,
+        695,
+        821,
+        1047
+      ],
+      "alpha_coverage": 0.00541162
+    },
+    {
+      "row_id": "hair_front_tip_R",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_tip_R.png",
+      "bbox": [
+        1156,
+        695,
+        1261,
+        1074
+      ],
+      "alpha_coverage": 0.00642014
+    }
+  ],
+  "summary": {
+    "hairfront_row_count": 7,
+    "pose_frame_count": 5,
+    "preview_contact_sheet_exists": true,
+    "all_pose_frames_exist": true,
+    "static_independent_candidate_count": 7,
+    "motion_preview_generated_count": 5,
+    "motion_readiness_pass_count": 0,
+    "motion_readiness_review_required_count": 7,
+    "param_hairfront_activation_count": 0,
+    "material_acceptance_pass_count": 0,
+    "owner_approval_count": 0,
+    "g5_material_acceptance_status": "BLOCKED_HAIRFRONT_PREVIEW_REVIEW_REQUIRED",
+    "material_pass_status": "BLOCKED",
+    "param_hair_front_status": "HIDDEN_CONTRACT_ONLY",
+    "g7_mini_cubism_status": "BLOCKED_UNTIL_G5_MATERIAL_ACCEPTANCE",
+    "g8_real_cubism_status": "BLOCKED_UNTIL_MATERIAL_ACCEPTANCE_AND_EDITOR_GATE"
+  },
+  "gate_matrix": {
+    "G5_HAIRFRONT_MOTION_PREVIEW": "PREVIEW_READY_REVIEW_REQUIRED",
+    "G5_HAIRFRONT_MOTION_READINESS": "REVIEW_REQUIRED_KEEP_PARAM_HIDDEN",
+    "G5_MATERIAL_ACCEPTANCE": "BLOCKED_HAIRFRONT_PREVIEW_REVIEW_REQUIRED",
+    "G7_MINI_CUBISM_DIAGNOSTIC": "BLOCKED_UNTIL_G5_MATERIAL_ACCEPTANCE",
+    "G8_REAL_CUBISM_AUTHORING": "BLOCKED_UNTIL_MATERIAL_ACCEPTANCE_AND_EDITOR_GATE"
+  },
+  "locks": {
+    "v21_eye_open_lower_bound": 0.27,
+    "v21_mouth_open_y_max": 0.85,
+    "param_hair_front_status": "HIDDEN_CONTRACT_ONLY",
+    "validator_only_promotion_blocked": true,
+    "material_pass_status": "BLOCKED",
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true,
+    "not_owner_approval": true
+  },
+  "decision": "Pre-G7 HairFront motion preview frames are ready for review. They demonstrate shifted static candidate layers, but do not prove rig motion readiness, material acceptance, ParamHairFront activation, G7, or real Cubism readiness.",
+  "next_action": [
+    "Review the contact sheet for obvious front-hair drift, pasted edges, or occlusion problems.",
+    "If acceptable, build a dedicated Mini Cubism HairFront diagnostic preview while keeping ParamHairFront hidden until material acceptance.",
+    "If not acceptable, route the seven HairFront rows to manual anchor correction or regeneration."
+  ],
+  "self_review": {
+    "source_status": "G5_HAIRFRONT_MOTION_READINESS_REVIEW_REQUIRED_PARAM_HIDDEN",
+    "hairfront_row_count": 7,
+    "pose_frame_count": 5,
+    "preview_contact_sheet_exists": true,
+    "all_pose_frames_exist": true,
+    "static_independent_candidate_count": 7,
+    "motion_preview_generated_count": 5,
+    "motion_readiness_pass_count": 0,
+    "motion_readiness_review_required_count": 7,
+    "param_hairfront_activation_count": 0,
+    "material_acceptance_pass_count": 0,
+    "owner_approval_count": 0,
+    "g5_material_not_accepted": true,
+    "validator_only_promotion_blocked": true,
+    "material_pass_blocked": true,
+    "param_hair_front_hidden": true,
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true,
+    "not_owner_approval": true,
+    "status": "PASS"
+  }
+}

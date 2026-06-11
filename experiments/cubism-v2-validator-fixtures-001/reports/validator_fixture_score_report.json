@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-06T08:05:05.714270+00:00",
+  "status": "PASS",
+  "total_cases": 10,
+  "passed_cases": 10,
+  "source_reports": {
+    "positive_cmo3_report": "experiments/cmo3-structure-fixture-001/reports/cmo3_structure_report.json",
+    "shallow_cmo3_report": "experiments/imagen-live2d-001/reports/cmo3_structure_report.json"
+  },
+  "cases": [
+    {
+      "case_id": "fixture__missing_part",
+      "kind": "issue_tag",
+      "expected": [
+        "missing_part"
+      ],
+      "observed": [
+        "missing_part"
+      ],
+      "status": "PASS"
+    },
+    {
+      "case_id": "fixture__bad_alpha",
+      "kind": "issue_tag",
+      "expected": [
+        "bad_alpha"
+      ],
+      "observed": [
+        "bad_alpha"
+      ],
+      "status": "PASS"
+    },
+    {
+      "case_id": "fixture__misaligned",
+      "kind": "issue_tag",
+      "expected": [
+        "misaligned"
+      ],
+      "observed": [
+        "misaligned"
+      ],
+      "status": "PASS"
+    },
+    {
+      "case_id": "fixture__style_mismatch",
+      "kind": "issue_tag",
+      "expected": [
+        "style_mismatch"
+      ],
+      "observed": [
+        "style_mismatch"
+      ],
+      "status": "PASS"
+    },
+    {
+      "case_id": "fixture__underpaint_missing",
+      "kind": "issue_tag",
+      "expected": [
+        "underpaint_missing"
+      ],
+      "observed": [
+        "underpaint_missing"
+      ],
+      "status": "PASS"
+    },
+    {
+      "case_id": "fixture__clipping_risk",
+      "kind": "issue_tag",
+      "expected": [
+        "clipping_risk"
+      ],
+      "observed": [
+        "clipping_risk"
+      ],
+      "status": "PASS"
+    },
+    {
+      "case_id": "fixture__draw_order_issue",
+      "kind": "issue_tag",
+      "expected": [
+        "draw_order_issue"
+      ],
+      "observed": [
+        "draw_order_issue"
+      ],
+      "status": "PASS"
+    },
+    {
+      "case_id": "fixture__overhang_issue",
+      "kind": "issue_tag",
+      "expected": [
+        "overhang_issue"
+      ],
+      "observed": [
+        "overhang_issue"
+      ],
+      "status": "PASS"
+    },
+    {
+      "case_id": "fixture__positive_cmo3_structure",
+      "kind": "structure",
+      "expected": "PASS",
+      "observed": "PASS",
+      "status": "PASS"
+    },
+    {
+      "case_id": "fixture__shallow_cmo3_structure",
+      "kind": "structure",
+      "expected": "REVISE",
+      "observed": "REVISE",
+      "status": "PASS"
+    }
+  ]
+}

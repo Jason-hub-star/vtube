@@ -1,0 +1,512 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T13:49:50.449237+00:00",
+  "status": "G6_B4_B5_AUTO_DRAFT_TRIAGE_REEXTRACTION_AND_FOCUSED_REVIEW_REQUIRED",
+  "overlay_qa_report": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_anchor_corrected_auto_draft/v22_b4_b5_auto_draft_overlay_qa_report.json",
+  "overlay_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_anchor_corrected_auto_draft/v22_b4_b5_auto_draft_overlay_qa.png",
+  "corrected_candidate_report": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_anchor_corrected_auto_draft/v22_b4_b5_anchor_corrected_auto_draft_report.json",
+  "summary": {
+    "entry_count": 33,
+    "recommended_action_counts": {
+      "REFINE_EXTRACTION_MASK": 13,
+      "REVIEW_ANCHOR_AND_MASK": 15,
+      "REVIEW_DRAW_ORDER_OR_MASK": 3,
+      "REVIEW_OR_REFINE_SMALL_MASK": 2
+    },
+    "review_focus_count": 12,
+    "review_focus_parts": [
+      "hair_back_base",
+      "hair_back_center",
+      "hair_back_underpaint",
+      "hair_back_strand_L",
+      "hair_back_strand_R",
+      "hair_front_L",
+      "hair_front_R",
+      "hair_front_center",
+      "hair_front_side_L",
+      "hair_front_side_R",
+      "hair_front_tip_L",
+      "hair_front_tip_R"
+    ]
+  },
+  "entries": [
+    {
+      "part_id": "arm_L_upper_simple",
+      "source_batch": "B5",
+      "group": "body",
+      "recommended_action": "REFINE_EXTRACTION_MASK",
+      "reason": "Sleeve/arm crop has strong internal noise and should be remasked or regenerated.",
+      "priority": 1,
+      "target_anchor": [
+        590.0,
+        1450.0
+      ],
+      "target_scale": 1.0,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/arm_L_upper_simple.png"
+    },
+    {
+      "part_id": "arm_R_upper_simple",
+      "source_batch": "B5",
+      "group": "body",
+      "recommended_action": "REFINE_EXTRACTION_MASK",
+      "reason": "Sleeve/arm crop has strong internal noise and should be remasked or regenerated.",
+      "priority": 1,
+      "target_anchor": [
+        1428.0,
+        1450.0
+      ],
+      "target_scale": 1.0,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/arm_R_upper_simple.png"
+    },
+    {
+      "part_id": "cheek_L",
+      "source_batch": "B5",
+      "group": "face_base",
+      "recommended_action": "REFINE_EXTRACTION_MASK",
+      "reason": "Cheek patch remains too large/oval and needs mask refinement rather than more anchor movement.",
+      "priority": 1,
+      "target_anchor": [
+        835.0,
+        794.0
+      ],
+      "target_scale": 0.82,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/cheek_L.png"
+    },
+    {
+      "part_id": "cheek_R",
+      "source_batch": "B5",
+      "group": "face_base",
+      "recommended_action": "REFINE_EXTRACTION_MASK",
+      "reason": "Cheek patch remains too large/oval and needs mask refinement rather than more anchor movement.",
+      "priority": 1,
+      "target_anchor": [
+        1210.0,
+        794.0
+      ],
+      "target_scale": 0.82,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/cheek_R.png"
+    },
+    {
+      "part_id": "chest_cloth_base",
+      "source_batch": "B5",
+      "group": "clothing",
+      "recommended_action": "REFINE_EXTRACTION_MASK",
+      "reason": "Chest cloth base includes noisy stripe/garment artifacts and needs mask refinement.",
+      "priority": 1,
+      "target_anchor": [
+        1024.0,
+        1395.0
+      ],
+      "target_scale": 1.0,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/chest_cloth_base.png"
+    },
+    {
+      "part_id": "chest_cloth_shadow",
+      "source_batch": "B5",
+      "group": "clothing",
+      "recommended_action": "REFINE_EXTRACTION_MASK",
+      "reason": "Chest cloth shadow shape is too blocky and needs mask refinement.",
+      "priority": 1,
+      "target_anchor": [
+        1024.0,
+        1565.0
+      ],
+      "target_scale": 1.0,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/chest_cloth_shadow.png"
+    },
+    {
+      "part_id": "collar_shadow",
+      "source_batch": "B5",
+      "group": "clothing",
+      "recommended_action": "REFINE_EXTRACTION_MASK",
+      "reason": "Shadow line is too thin/noisy and likely needs extraction refinement.",
+      "priority": 1,
+      "target_anchor": [
+        1024.0,
+        1224.0
+      ],
+      "target_scale": 1.0,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/collar_shadow.png"
+    },
+    {
+      "part_id": "face_shadow_L",
+      "source_batch": "B5",
+      "group": "face_base",
+      "recommended_action": "REFINE_EXTRACTION_MASK",
+      "reason": "Face shadow is patch-like and too broad; this is a semantic mask issue.",
+      "priority": 1,
+      "target_anchor": [
+        770.0,
+        775.0
+      ],
+      "target_scale": 0.92,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/face_shadow_L.png"
+    },
+    {
+      "part_id": "face_shadow_R",
+      "source_batch": "B5",
+      "group": "face_base",
+      "recommended_action": "REFINE_EXTRACTION_MASK",
+      "reason": "Face shadow is patch-like and too broad; this is a semantic mask issue.",
+      "priority": 1,
+      "target_anchor": [
+        1250.0,
+        775.0
+      ],
+      "target_scale": 0.92,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/face_shadow_R.png"
+    },
+    {
+      "part_id": "nose",
+      "source_batch": "B5",
+      "group": "face_base",
+      "recommended_action": "REFINE_EXTRACTION_MASK",
+      "reason": "Nose candidate is too blob-like after scaling and needs smaller semantic extraction.",
+      "priority": 1,
+      "target_anchor": [
+        1024.0,
+        790.0
+      ],
+      "target_scale": 0.85,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/nose.png"
+    },
+    {
+      "part_id": "shoulder_L",
+      "source_batch": "B5",
+      "group": "body",
+      "recommended_action": "REFINE_EXTRACTION_MASK",
+      "reason": "Patch-like shoulder crop overlays hair/skin area and needs refined extraction.",
+      "priority": 1,
+      "target_anchor": [
+        718.0,
+        1110.0
+      ],
+      "target_scale": 1.0,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/shoulder_L.png"
+    },
+    {
+      "part_id": "shoulder_R",
+      "source_batch": "B5",
+      "group": "body",
+      "recommended_action": "REFINE_EXTRACTION_MASK",
+      "reason": "Patch-like shoulder crop overlays hair/skin area and needs refined extraction.",
+      "priority": 1,
+      "target_anchor": [
+        1330.0,
+        1110.0
+      ],
+      "target_scale": 1.0,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/shoulder_R.png"
+    },
+    {
+      "part_id": "torso_base",
+      "source_batch": "B5",
+      "group": "body",
+      "recommended_action": "REFINE_EXTRACTION_MASK",
+      "reason": "Large body/clothing overlay includes noisy garment/skin regions; anchor alone will not make this material-ready.",
+      "priority": 1,
+      "target_anchor": [
+        1024.0,
+        1372.0
+      ],
+      "target_scale": 1.0,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/torso_base.png"
+    },
+    {
+      "part_id": "hair_back_base",
+      "source_batch": "B4",
+      "group": "hair",
+      "recommended_action": "REVIEW_DRAW_ORDER_OR_MASK",
+      "reason": "Back hair base covers the face area in overlay; draw order/visibility and mask scope need review.",
+      "priority": 2,
+      "target_anchor": [
+        1024.0,
+        720.0
+      ],
+      "target_scale": 1.0,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_base.png"
+    },
+    {
+      "part_id": "hair_back_center",
+      "source_batch": "B4",
+      "group": "hair",
+      "recommended_action": "REVIEW_DRAW_ORDER_OR_MASK",
+      "reason": "Back center overlaps face/neck and needs draw-order/material review.",
+      "priority": 2,
+      "target_anchor": [
+        1024.0,
+        822.0
+      ],
+      "target_scale": 1.0,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_center.png"
+    },
+    {
+      "part_id": "hair_back_underpaint",
+      "source_batch": "B4",
+      "group": "hair",
+      "recommended_action": "REVIEW_DRAW_ORDER_OR_MASK",
+      "reason": "Back underpaint overlaps face/neck strongly; keep as underpaint candidate only.",
+      "priority": 2,
+      "target_anchor": [
+        1024.0,
+        880.0
+      ],
+      "target_scale": 1.0,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_underpaint.png"
+    },
+    {
+      "part_id": "hair_back_strand_L",
+      "source_batch": "B4",
+      "group": "hair",
+      "recommended_action": "REVIEW_ANCHOR_AND_MASK",
+      "reason": "Left back strand roughly follows side hair but needs focused review.",
+      "priority": 3,
+      "target_anchor": [
+        725.0,
+        820.0
+      ],
+      "target_scale": 1.0,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_strand_L.png"
+    },
+    {
+      "part_id": "hair_back_strand_R",
+      "source_batch": "B4",
+      "group": "hair",
+      "recommended_action": "REVIEW_ANCHOR_AND_MASK",
+      "reason": "Right back strand roughly follows side hair but needs focused review.",
+      "priority": 3,
+      "target_anchor": [
+        1335.0,
+        830.0
+      ],
+      "target_scale": 1.0,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_strand_R.png"
+    },
+    {
+      "part_id": "hair_front_L",
+      "source_batch": "B4",
+      "group": "hair",
+      "recommended_action": "REVIEW_ANCHOR_AND_MASK",
+      "reason": "Left front hair follows bang area but still needs focused manual review.",
+      "priority": 3,
+      "target_anchor": [
+        882.0,
+        445.0
+      ],
+      "target_scale": 0.96,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_L.png"
+    },
+    {
+      "part_id": "hair_front_R",
+      "source_batch": "B4",
+      "group": "hair",
+      "recommended_action": "REVIEW_ANCHOR_AND_MASK",
+      "reason": "Right front hair follows bang area but still needs focused manual review.",
+      "priority": 3,
+      "target_anchor": [
+        1160.0,
+        455.0
+      ],
+      "target_scale": 0.96,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_R.png"
+    },
+    {
+      "part_id": "hair_front_center",
+      "source_batch": "B4",
+      "group": "hair",
+      "recommended_action": "REVIEW_ANCHOR_AND_MASK",
+      "reason": "Front hair is the highest HairFront priority; anchor is plausible but mask still needs review.",
+      "priority": 3,
+      "target_anchor": [
+        1024.0,
+        430.0
+      ],
+      "target_scale": 0.96,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_center.png"
+    },
+    {
+      "part_id": "hair_front_side_L",
+      "source_batch": "B4",
+      "group": "hair",
+      "recommended_action": "REVIEW_ANCHOR_AND_MASK",
+      "reason": "Left side-front hair is plausible but may cover the eye/face too much.",
+      "priority": 3,
+      "target_anchor": [
+        812.0,
+        635.0
+      ],
+      "target_scale": 0.96,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_side_L.png"
+    },
+    {
+      "part_id": "hair_front_side_R",
+      "source_batch": "B4",
+      "group": "hair",
+      "recommended_action": "REVIEW_ANCHOR_AND_MASK",
+      "reason": "Right side-front hair is plausible but may cover the eye/face too much.",
+      "priority": 3,
+      "target_anchor": [
+        1287.0,
+        635.0
+      ],
+      "target_scale": 0.96,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_side_R.png"
+    },
+    {
+      "part_id": "hair_front_tip_L",
+      "source_batch": "B4",
+      "group": "hair",
+      "recommended_action": "REVIEW_ANCHOR_AND_MASK",
+      "reason": "Left front tip is plausible but should be reviewed as a separate motion child.",
+      "priority": 3,
+      "target_anchor": [
+        760.0,
+        873.0
+      ],
+      "target_scale": 0.96,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_tip_L.png"
+    },
+    {
+      "part_id": "hair_front_tip_R",
+      "source_batch": "B4",
+      "group": "hair",
+      "recommended_action": "REVIEW_ANCHOR_AND_MASK",
+      "reason": "Right front tip is plausible but should be reviewed as a separate motion child.",
+      "priority": 3,
+      "target_anchor": [
+        1209.0,
+        885.0
+      ],
+      "target_scale": 0.96,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_tip_R.png"
+    },
+    {
+      "part_id": "hair_side_L_inner",
+      "source_batch": "B4",
+      "group": "hair",
+      "recommended_action": "REVIEW_ANCHOR_AND_MASK",
+      "reason": "Left side inner hair follows silhouette but needs focused review.",
+      "priority": 3,
+      "target_anchor": [
+        738.0,
+        923.0
+      ],
+      "target_scale": 1.0,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_L_inner.png"
+    },
+    {
+      "part_id": "hair_side_L_outer",
+      "source_batch": "B4",
+      "group": "hair",
+      "recommended_action": "REVIEW_ANCHOR_AND_MASK",
+      "reason": "Left side outer hair follows silhouette but needs focused review.",
+      "priority": 3,
+      "target_anchor": [
+        716.0,
+        911.0
+      ],
+      "target_scale": 1.0,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_L_outer.png"
+    },
+    {
+      "part_id": "hair_side_R_inner",
+      "source_batch": "B4",
+      "group": "hair",
+      "recommended_action": "REVIEW_ANCHOR_AND_MASK",
+      "reason": "Right side inner hair follows silhouette but needs focused review.",
+      "priority": 3,
+      "target_anchor": [
+        1253.0,
+        936.0
+      ],
+      "target_scale": 1.0,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_R_inner.png"
+    },
+    {
+      "part_id": "hair_side_R_outer",
+      "source_batch": "B4",
+      "group": "hair",
+      "recommended_action": "REVIEW_ANCHOR_AND_MASK",
+      "reason": "Right side outer hair follows silhouette but needs focused review.",
+      "priority": 3,
+      "target_anchor": [
+        1418.0,
+        933.0
+      ],
+      "target_scale": 1.0,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_side_R_outer.png"
+    },
+    {
+      "part_id": "collar_front",
+      "source_batch": "B5",
+      "group": "clothing",
+      "recommended_action": "REVIEW_ANCHOR_AND_MASK",
+      "reason": "Collar location is plausible; use focused review before remasking.",
+      "priority": 3,
+      "target_anchor": [
+        1024.0,
+        1138.0
+      ],
+      "target_scale": 1.0,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/collar_front.png"
+    },
+    {
+      "part_id": "neck",
+      "source_batch": "B5",
+      "group": "body",
+      "recommended_action": "REVIEW_ANCHOR_AND_MASK",
+      "reason": "Neck placement is plausible, but the face/neck boundary still needs visual review.",
+      "priority": 3,
+      "target_anchor": [
+        1024.0,
+        896.0
+      ],
+      "target_scale": 1.0,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/neck.png"
+    },
+    {
+      "part_id": "brow_L",
+      "source_batch": "B5",
+      "group": "brow",
+      "recommended_action": "REVIEW_OR_REFINE_SMALL_MASK",
+      "reason": "Small brow overlay is close enough for focused review, but mask may still include hair/skin.",
+      "priority": 4,
+      "target_anchor": [
+        852.0,
+        645.0
+      ],
+      "target_scale": 0.9,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/brow_L.png"
+    },
+    {
+      "part_id": "brow_R",
+      "source_batch": "B5",
+      "group": "brow",
+      "recommended_action": "REVIEW_OR_REFINE_SMALL_MASK",
+      "reason": "Small brow overlay is close enough for focused review, but mask may still include hair/skin.",
+      "priority": 4,
+      "target_anchor": [
+        1176.0,
+        645.0
+      ],
+      "target_scale": 0.9,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/brow_R.png"
+    }
+  ],
+  "decision": "Do not ask 주인님 to manually anchor all 33 parts. Many B5 face/body/clothing issues are extraction-mask problems. Use automatic/refined extraction first, then ask 주인님 to review the focused hair/draw-order/anchor set.",
+  "next_action": [
+    "Refine extraction masks for B5 body/clothing/face-detail problem parts before another anchor-only pass.",
+    "Use the editor only for focused hair and remaining anchor/draw-order issues.",
+    "Keep ParamHairFront hidden and keep G7/G8 blocked."
+  ],
+  "self_review": {
+    "entry_count": 33,
+    "has_reextraction_bucket": true,
+    "has_focused_review_bucket": true,
+    "does_not_require_owner_review_all_33": true,
+    "param_hair_front_hidden": true,
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true,
+    "status": "PASS"
+  }
+}

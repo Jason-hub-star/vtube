@@ -1,0 +1,468 @@
+{
+  "schema_version": 1,
+  "experiment_id": "mini-cubism-pack-splitter-v0-001",
+  "generated_at": "2026-06-05T06:22:36.018154+00:00",
+  "status": "MODEL_COMPARISON_DONE_PROMOTION_BLOCKED_RELAYOUT_REQUIRED",
+  "canvas_size": [
+    2048,
+    2048
+  ],
+  "plan": "/Users/family/jason/Vtube/docs/ref/MINI-CUBISM-PACK-SPLITTER-v0-PLAN.md",
+  "packs": {
+    "base_mannequin": {
+      "source": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+      "description": "Clean bald neutral bodysuit mannequin for rig-safe base tests.",
+      "targets": {
+        "head_base": [
+          760,
+          45,
+          530,
+          470
+        ],
+        "ear_L": [
+          1120,
+          145,
+          250,
+          285
+        ],
+        "ear_R": [
+          680,
+          145,
+          250,
+          285
+        ],
+        "neck": [
+          895,
+          390,
+          260,
+          210
+        ],
+        "torso_skin_abdomen": [
+          760,
+          610,
+          530,
+          430
+        ],
+        "underlayer_chest_cover": [
+          735,
+          500,
+          580,
+          300
+        ],
+        "underlayer_pelvis_cover": [
+          760,
+          900,
+          540,
+          310
+        ],
+        "arm_L": [
+          1190,
+          500,
+          380,
+          770
+        ],
+        "arm_R": [
+          480,
+          500,
+          380,
+          770
+        ],
+        "hand_L": [
+          1245,
+          910,
+          360,
+          390
+        ],
+        "hand_R": [
+          445,
+          910,
+          360,
+          390
+        ],
+        "leg_L": [
+          1010,
+          1030,
+          360,
+          930
+        ],
+        "leg_R": [
+          675,
+          1030,
+          360,
+          930
+        ],
+        "foot_L": [
+          1010,
+          1810,
+          360,
+          210
+        ],
+        "foot_R": [
+          675,
+          1810,
+          360,
+          210
+        ]
+      },
+      "production_allowed": true,
+      "source_kind": "imagegen_clean_base_mannequin_v3_twopiece_underlayer_alpha",
+      "source_original_chroma": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/source_originals/clean_base_twopiece_v3_chroma.png",
+      "source_original_alpha_raw": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/source_originals/clean_base_twopiece_v3_alpha_raw.png",
+      "alpha_bbox": [
+        654,
+        44,
+        740,
+        1980
+      ],
+      "status": "CLEAN_BASE_TWOPIECE_READY_ROI_REVISED",
+      "underlayer_policy": "neutral two-piece swimsuit/rig underlayer; chest cover and pelvis cover only; abdomen must remain visible skin"
+    },
+    "hair_pack": {
+      "source": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "description": "Detachable hair pack for physics-first split tests.",
+      "targets": {
+        "front_bang_L": [
+          700,
+          250,
+          260,
+          360
+        ],
+        "front_bang_C": [
+          875,
+          180,
+          300,
+          450
+        ],
+        "front_bang_R": [
+          1080,
+          250,
+          260,
+          360
+        ],
+        "side_lock_L": [
+          1180,
+          500,
+          310,
+          840
+        ],
+        "side_lock_R": [
+          560,
+          500,
+          310,
+          840
+        ],
+        "back_hair_base": [
+          520,
+          120,
+          1010,
+          1350
+        ],
+        "hair_tip_L": [
+          1120,
+          1100,
+          360,
+          620
+        ],
+        "hair_tip_R": [
+          590,
+          1100,
+          360,
+          620
+        ]
+      },
+      "production_allowed": true,
+      "source_kind": "imagegen_real_pack_v1_alpha",
+      "status": "REAL_PACK_ASSET_READY_PENDING_HF_PROBE",
+      "versioned_source": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack_real_v1.png",
+      "source_original_chroma": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_originals/hair_pack_real_v1_chroma.png",
+      "source_original_alpha_raw": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_originals/hair_pack_real_v1_alpha_raw.png",
+      "alpha_bbox": [
+        309,
+        14,
+        1429,
+        1780
+      ],
+      "nonzero_alpha": 1126044
+    },
+    "outfit_pack": {
+      "source": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/outfit_pack/source_outfit_pack.png",
+      "description": "Detachable neutral outfit pack for garment physics split tests.",
+      "targets": {
+        "collar": [
+          760,
+          510,
+          520,
+          170
+        ],
+        "cropped_top": [
+          690,
+          590,
+          650,
+          350
+        ],
+        "sleeve_L": [
+          1220,
+          620,
+          350,
+          650
+        ],
+        "sleeve_R": [
+          480,
+          620,
+          350,
+          650
+        ],
+        "skirt_or_lower_cloth": [
+          690,
+          1080,
+          660,
+          430
+        ],
+        "front_frill": [
+          665,
+          1010,
+          710,
+          210
+        ],
+        "ribbon_center": [
+          940,
+          850,
+          180,
+          170
+        ],
+        "ribbon_L": [
+          1060,
+          830,
+          320,
+          230
+        ],
+        "ribbon_R": [
+          650,
+          830,
+          320,
+          230
+        ]
+      },
+      "production_allowed": true,
+      "source_kind": "imagegen_real_pack_v1_alpha",
+      "status": "REAL_PACK_ASSET_READY_PENDING_HF_PROBE",
+      "versioned_source": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/outfit_pack/source_outfit_pack_real_v1.png",
+      "source_original_chroma": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/outfit_pack/source_originals/outfit_pack_real_v1_chroma.png",
+      "source_original_alpha_raw": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/outfit_pack/source_originals/outfit_pack_real_v1_alpha_raw.png",
+      "alpha_bbox": [
+        274,
+        371,
+        1500,
+        1446
+      ],
+      "nonzero_alpha": 1115222
+    },
+    "accessory_pack": {
+      "source": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/accessory_pack/source_accessory_pack.png",
+      "description": "Small detachable accessory pack for attach-point tests.",
+      "targets": {
+        "choker_base": [
+          760,
+          760,
+          520,
+          120
+        ],
+        "choker_gem": [
+          950,
+          850,
+          150,
+          170
+        ],
+        "earring_L": [
+          1260,
+          760,
+          220,
+          320
+        ],
+        "earring_R": [
+          560,
+          760,
+          220,
+          320
+        ],
+        "hairpin_L": [
+          1110,
+          430,
+          320,
+          150
+        ],
+        "hairpin_R": [
+          620,
+          430,
+          320,
+          150
+        ],
+        "ornament_cluster": [
+          700,
+          1110,
+          650,
+          420
+        ]
+      },
+      "production_allowed": true,
+      "source_kind": "imagegen_real_pack_v1_alpha",
+      "status": "REAL_PACK_ASSET_READY_PENDING_HF_PROBE",
+      "versioned_source": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/accessory_pack/source_accessory_pack_real_v1.png",
+      "source_original_chroma": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/accessory_pack/source_originals/accessory_pack_real_v1_chroma.png",
+      "source_original_alpha_raw": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/accessory_pack/source_originals/accessory_pack_real_v1_alpha_raw.png",
+      "alpha_bbox": [
+        199,
+        448,
+        1650,
+        1151
+      ],
+      "nonzero_alpha": 405704
+    },
+    "keypose_asset_pack": {
+      "source": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "description": "Reference-only placeholders for eye and mouth keypose asset planning.",
+      "targets": {
+        "eye_open_L": [
+          1060,
+          470,
+          330,
+          190
+        ],
+        "eye_open_R": [
+          660,
+          470,
+          330,
+          190
+        ],
+        "eye_half_L": [
+          1060,
+          710,
+          330,
+          170
+        ],
+        "eye_half_R": [
+          660,
+          710,
+          330,
+          170
+        ],
+        "eye_closed_L": [
+          1060,
+          930,
+          330,
+          160
+        ],
+        "eye_closed_R": [
+          660,
+          930,
+          330,
+          160
+        ],
+        "mouth_closed": [
+          850,
+          1170,
+          350,
+          110
+        ],
+        "mouth_half": [
+          820,
+          1320,
+          410,
+          160
+        ],
+        "mouth_open": [
+          800,
+          1490,
+          450,
+          230
+        ]
+      },
+      "production_allowed": false,
+      "source_kind": "imagegen_real_pack_v1_alpha",
+      "status": "REAL_PACK_ASSET_READY_PENDING_HF_PROBE_OPTIONAL_SMILE_REMOVED",
+      "versioned_source": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_pack_real_v1.png",
+      "source_original_chroma": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_originals/keypose_pack_real_v1_chroma.png",
+      "source_original_alpha_raw": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_originals/keypose_pack_real_v1_alpha_raw.png",
+      "alpha_bbox": [
+        174,
+        400,
+        1700,
+        1248
+      ],
+      "nonzero_alpha": 254349
+    }
+  },
+  "model_candidates": [
+    {
+      "id": "layerd",
+      "repo": "cyberagent/layerd-birefnet",
+      "role": "primary layer decomposition"
+    },
+    {
+      "id": "birefnet",
+      "repo": "ZhengPeng7/BiRefNet",
+      "role": "foreground alpha cleanup"
+    },
+    {
+      "id": "birefnet_hr",
+      "repo": "ZhengPeng7/BiRefNet_HR",
+      "role": "high-resolution alpha cleanup"
+    },
+    {
+      "id": "birefnet_matting",
+      "repo": "ZhengPeng7/BiRefNet-matting",
+      "role": "matting-oriented alpha cleanup"
+    },
+    {
+      "id": "sam2_roi",
+      "repo": "facebook/sam2.1-hiera-large",
+      "role": "ROI box/point refinement"
+    },
+    {
+      "id": "fashion_segformer",
+      "repo": "Itbanque/fashion_segformer",
+      "role": "outfit semantic hints"
+    },
+    {
+      "id": "anime_instance",
+      "repo": "dreMaz/AnimeInstanceSegmentation",
+      "role": "anime character foreground sanity check"
+    }
+  ],
+  "qa_thresholds": {
+    "minimum_candidate_parts": 24,
+    "minimum_pack_count": 5,
+    "require_contact_sheets": true,
+    "project_promotion_requires": "pack_splitter_qa_report.status == PASS"
+  },
+  "outputs": {
+    "source_composite_preview": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/source_composite_preview.png",
+    "clean_base_preview": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/clean_base_twopiece_v3_preview.png",
+    "placeholder_archive": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/archive/procedural_placeholder_20260605",
+    "aborted_onepiece_archive": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/archive/clean_base_v2_onepiece_aborted_20260605",
+    "real_pack_contact_sheet": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/real_pack_sources_contact_sheet.png",
+    "real_pack_connection_report": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/real_pack_connection_report.json",
+    "hf_probe_report": "experiments/mini-cubism-pack-splitter-v0-001/reports/hf_probe_report.json",
+    "pack_splitter_qa_report": "experiments/mini-cubism-pack-splitter-v0-001/reports/pack_splitter_qa_report.json",
+    "model_comparison_contact_sheet": "experiments/mini-cubism-pack-splitter-v0-001/reports/model_comparison_contact_sheet.png",
+    "pack_problem_contact_sheet": "experiments/mini-cubism-pack-splitter-v0-001/reports/pack_problem_contact_sheet.png",
+    "layerd_birefnet_inference_report": "experiments/mini-cubism-pack-splitter-v0-001/reports/layerd_birefnet_inference_report.json",
+    "layerd_birefnet_contact_sheet": "experiments/mini-cubism-pack-splitter-v0-001/reports/layerd_birefnet_contact_sheet.png",
+    "sam2_roi_refinement_report": "experiments/mini-cubism-pack-splitter-v0-001/reports/sam2_roi_refinement_report.json",
+    "sam2_roi_refinement_contact_sheet": "experiments/mini-cubism-pack-splitter-v0-001/reports/sam2_roi_refinement_contact_sheet.png",
+    "actual_model_pack_qa_report": "experiments/mini-cubism-pack-splitter-v0-001/reports/actual_model_pack_qa_report.json",
+    "model_candidate_comparison_report": "experiments/mini-cubism-pack-splitter-v0-001/reports/model_candidate_comparison_report.json",
+    "model_candidate_comparison_contact_sheet": "experiments/mini-cubism-pack-splitter-v0-001/reports/model_candidate_comparison_contact_sheet.png",
+    "model_candidate_decision": "experiments/mini-cubism-pack-splitter-v0-001/reports/model_candidate_decision.md"
+  },
+  "notes": [
+    "Base mannequin policy is two-piece neutral rig underlayer: chest and pelvis covered, abdomen visible skin.",
+    "Real imagegen pack assets are connected for hair/outfit/accessory/keypose.",
+    "Local adapter probe QA passed on real pack assets.",
+    "Actual LayerD BiRefNet runtime passed for four packs.",
+    "Strict SAM2 ROI visual QA correctly blocks cropped/fragments/broad masks.",
+    "BiRefNet_HR is selected as primary full-pack alpha cleanup; BiRefNet is the stable fallback.",
+    "Fashion SegFormer and AnimeInstance are blocked/not selected in the current Transformers-based probe path.",
+    "Mini Cubism project promotion is blocked until accessory/keypose packs are relaid out or regenerated and pass without crop/fragment visual failures."
+  ]
+}

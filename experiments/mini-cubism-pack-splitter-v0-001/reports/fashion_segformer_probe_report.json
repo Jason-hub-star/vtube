@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "experiment_id": "mini-cubism-pack-splitter-v0-001",
+  "generated_at": "2026-06-05T06:43:47.145933+00:00",
+  "status": "BLOCKED_MODEL_PROBE",
+  "model_id": "Itbanque/fashion_segformer",
+  "model_slug": "fashion_segformer",
+  "task": "image-segmentation",
+  "packs": [
+    "outfit_pack"
+  ],
+  "error_type": "OSError",
+  "error": "Can't load image processor for 'Itbanque/fashion_segformer'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'Itbanque/fashion_segformer' is the correct path to a directory containing a preprocessor_config.json file"
+}

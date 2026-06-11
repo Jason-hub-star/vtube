@@ -1,0 +1,673 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T14:48:46.526288+00:00",
+  "id": "tsumiki_tsumiki_t01",
+  "name": "tsumiki_t01",
+  "source_url": "https://www.live2d.com/ko/learn/sample/",
+  "source_type": "OFFICIAL_SAMPLE_ZIP",
+  "license_status": "OFFICIAL_TERMS_ACCEPTED_BY_USER",
+  "analysis_mode": "FULL_STRUCTURE",
+  "official_profile_key": "tsumiki",
+  "analysis_safety_notes": [],
+  "has_cmo3": true,
+  "has_moc3": true,
+  "has_model3_json": true,
+  "has_physics3_json": true,
+  "has_psd": false,
+  "local_paths": {
+    "cmo3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/tsumiki_t01.cmo3",
+      "exists": true,
+      "size_bytes": 8456454
+    },
+    "physics3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/tsumiki.physics3.json",
+      "exists": true,
+      "size_bytes": 10226
+    },
+    "moc3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/tsumiki.moc3",
+      "exists": true,
+      "size_bytes": 344896
+    },
+    "cdi3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/tsumiki.cdi3.json",
+      "exists": true,
+      "size_bytes": 5031
+    },
+    "exp3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/expressions/Angry.exp3.json",
+        "exists": true,
+        "size_bytes": 1421
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/expressions/Blushing.exp3.json",
+        "exists": true,
+        "size_bytes": 1425
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/expressions/Normal.exp3.json",
+        "exists": true,
+        "size_bytes": 1403
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/expressions/Sad.exp3.json",
+        "exists": true,
+        "size_bytes": 1285
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/expressions/Surprised.exp3.json",
+        "exists": true,
+        "size_bytes": 1411
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/expressions/f01.exp3.json",
+        "exists": true,
+        "size_bytes": 1406
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/expressions/f02.exp3.json",
+        "exists": true,
+        "size_bytes": 1416
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/expressions/f03.exp3.json",
+        "exists": true,
+        "size_bytes": 1354
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/expressions/f04.exp3.json",
+        "exists": true,
+        "size_bytes": 1189
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/expressions/f05.exp3.json",
+        "exists": true,
+        "size_bytes": 1428
+      }
+    ],
+    "model3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/tsumiki.model3.json",
+      "exists": true,
+      "size_bytes": 2832
+    },
+    "motion3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_idle_01.motion3.json",
+        "exists": true,
+        "size_bytes": 18904
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_01.motion3.json",
+        "exists": true,
+        "size_bytes": 12916
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_01_df.motion3.json",
+        "exists": true,
+        "size_bytes": 12227
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_02.motion3.json",
+        "exists": true,
+        "size_bytes": 15648
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_03.motion3.json",
+        "exists": true,
+        "size_bytes": 15220
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_04.motion3.json",
+        "exists": true,
+        "size_bytes": 15453
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_05.motion3.json",
+        "exists": true,
+        "size_bytes": 14014
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_06.motion3.json",
+        "exists": true,
+        "size_bytes": 13567
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_08.motion3.json",
+        "exists": true,
+        "size_bytes": 11158
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_09.motion3.json",
+        "exists": true,
+        "size_bytes": 13112
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_10.motion3.json",
+        "exists": true,
+        "size_bytes": 15294
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_11.motion3.json",
+        "exists": true,
+        "size_bytes": 47864
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_12.motion3.json",
+        "exists": true,
+        "size_bytes": 56241
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_13.motion3.json",
+        "exists": true,
+        "size_bytes": 12934
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_14.motion3.json",
+        "exists": true,
+        "size_bytes": 27557
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_15.motion3.json",
+        "exists": true,
+        "size_bytes": 18814
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_16.motion3.json",
+        "exists": true,
+        "size_bytes": 32262
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_17.motion3.json",
+        "exists": true,
+        "size_bytes": 19787
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_18.motion3.json",
+        "exists": true,
+        "size_bytes": 26634
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_19.motion3.json",
+        "exists": true,
+        "size_bytes": 10869
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_20.motion3.json",
+        "exists": true,
+        "size_bytes": 12766
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_21.motion3.json",
+        "exists": true,
+        "size_bytes": 8640
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/motion/tsumiki_m_22.motion3.json",
+        "exists": true,
+        "size_bytes": 9390
+      }
+    ]
+  },
+  "cmo3": {
+    "status": "PASS",
+    "returncode": 0,
+    "json": "experiments/reference-model-structure-001/models/tsumiki_tsumiki_t01/cmo3_structure_report.json",
+    "markdown": "experiments/reference-model-structure-001/models/tsumiki_tsumiki_t01/cmo3_structure_report.md",
+    "stdout": "[cmo3-structure] WARN\n[cmo3-structure] json: /Users/family/jason/Vtube/experiments/reference-model-structure-001/models/tsumiki_tsumiki_t01/cmo3_structure_report.json\n[cmo3-structure] md:   /Users/family/jason/Vtube/experiments/reference-model-structure-001/models/tsumiki_tsumiki_t01/cmo3_structure_report.md",
+    "stderr": "",
+    "cmo3_status": "WARN",
+    "counts": {
+      "art_meshes": 89,
+      "parts": 22,
+      "parameters": 46,
+      "warp_deformers": 67,
+      "rotation_deformers": 22,
+      "keyform_bindings": 240,
+      "keyform_grids": 200,
+      "glue": 0,
+      "masks": 0
+    },
+    "parameter_ids": [
+      "PARAM_ANGLE_X",
+      "PARAM_ANGLE_Y",
+      "PARAM_ANGLE_Z",
+      "PARAM_EYE_L_OPEN",
+      "PARAM_EYE_L_SMILE",
+      "PARAM_EYE_R_OPEN",
+      "PARAM_EYE_R_SMILE",
+      "PARAM_EYE_FORM",
+      "PARAM_TEAR",
+      "PARAM_EYE_BALL_X",
+      "PARAM_EYE_BALL_Y",
+      "PARAM_EYE_BALL_FORM",
+      "PARAM_BROW_L_Y",
+      "PARAM_BROW_R_Y",
+      "PARAM_BROW_L_X",
+      "PARAM_BROW_R_X",
+      "PARAM_BROW_L_ANGLE",
+      "PARAM_BROW_R_ANGLE",
+      "PARAM_BROW_L_FORM",
+      "PARAM_BROW_R_FORM",
+      "PARAM_MOUTH_FORM",
+      "PARAM_MOUTH_OPEN_Y",
+      "PARAM_CHEEK_01",
+      "PARAM_CHEEK_02",
+      "PARAM_CHEEK_03",
+      "PARAM_CHEEK_04",
+      "PARAM_BODY_ANGLE_X",
+      "PARAM_BODY_ANGLE_Y",
+      "PARAM_BODY_ANGLE_Z",
+      "PARAM_BREATH",
+      "PARAM_UPBACK",
+      "PARAM_BUST_Y",
+      "PARAM_TIE",
+      "PARAM_SKIRT",
+      "PARAM_HAIR_FRONT",
+      "PARAM_HAIR_SIDE",
+      "PARAM_HAIR_BACK",
+      "PARAM_HAIR_AHO",
+      "PARAM_HAIR_TAIR",
+      "PARAM_RIBON_L",
+      "PARAM_RIBON_R",
+      "PARAM_ARM",
+      "PARAM_ARM_L",
+      "PARAM_ARM_R",
+      "PARAM_FINGER",
+      "PARAM_LEG_L"
+    ],
+    "part_names": [
+      "Root Part",
+      "[ 下絵 ]",
+      "背景",
+      "脚",
+      "右腕",
+      "左腕",
+      "体",
+      "首",
+      "後ろ髪",
+      "横髪",
+      "前髪",
+      "耳",
+      "頬",
+      "鼻",
+      "口",
+      "まゆ毛",
+      "目玉",
+      "目",
+      "あほ毛",
+      "顔",
+      "コアパーツ",
+      "ラフ"
+    ]
+  },
+  "moc3": {
+    "present": true,
+    "path": "experiments/reference-model-structure-001/official_samples/extracted/tsumiki/tsumiki/runtime/tsumiki.moc3",
+    "size_bytes": 344896,
+    "sha256": "a3d5f2aa73caffaa6889fb3e341f072a3e2bd0cb5d4da14c03aa0b912fd8026e",
+    "py_moc3_status": "PASS",
+    "parameter_count": 46,
+    "art_mesh_count": 89,
+    "parameter_ids": [
+      "PARAM_ANGLE_X",
+      "PARAM_ANGLE_Y",
+      "PARAM_ANGLE_Z",
+      "PARAM_EYE_L_OPEN",
+      "PARAM_EYE_L_SMILE",
+      "PARAM_EYE_R_OPEN",
+      "PARAM_EYE_R_SMILE",
+      "PARAM_EYE_FORM",
+      "PARAM_TEAR",
+      "PARAM_EYE_BALL_X",
+      "PARAM_EYE_BALL_Y",
+      "PARAM_EYE_BALL_FORM",
+      "PARAM_BROW_L_Y",
+      "PARAM_BROW_R_Y",
+      "PARAM_BROW_L_X",
+      "PARAM_BROW_R_X",
+      "PARAM_BROW_L_ANGLE",
+      "PARAM_BROW_R_ANGLE",
+      "PARAM_BROW_L_FORM",
+      "PARAM_BROW_R_FORM",
+      "PARAM_MOUTH_FORM",
+      "PARAM_MOUTH_OPEN_Y",
+      "PARAM_CHEEK_01",
+      "PARAM_CHEEK_02",
+      "PARAM_CHEEK_03",
+      "PARAM_CHEEK_04",
+      "PARAM_BODY_ANGLE_X",
+      "PARAM_BODY_ANGLE_Y",
+      "PARAM_BODY_ANGLE_Z",
+      "PARAM_BREATH",
+      "PARAM_UPBACK",
+      "PARAM_BUST_Y",
+      "PARAM_TIE",
+      "PARAM_SKIRT",
+      "PARAM_HAIR_FRONT",
+      "PARAM_HAIR_SIDE",
+      "PARAM_HAIR_BACK",
+      "PARAM_HAIR_AHO",
+      "PARAM_HAIR_TAIR",
+      "PARAM_RIBON_L",
+      "PARAM_RIBON_R",
+      "PARAM_ARM",
+      "PARAM_ARM_L",
+      "PARAM_ARM_R",
+      "PARAM_FINGER",
+      "PARAM_LEG_L"
+    ],
+    "art_mesh_ids_sample": [
+      "D_PSD1_03",
+      "D_PSD1_02",
+      "D_PSD_01",
+      "D_PSD_00",
+      "D_PSD_13",
+      "D_PSD_14",
+      "D_PSD_15",
+      "D_PSD_17",
+      "D_PSD_18",
+      "D_PSD_19",
+      "D_PSD_20",
+      "D_PSD_06",
+      "D_PSD_07",
+      "D_PSD_08",
+      "D_PSD_09",
+      "D_PSD_10",
+      "D_PSD_12",
+      "D_PSD_11",
+      "D_PSD_02",
+      "D_PSD_04",
+      "D_PSD_03",
+      "D_PSD1_00",
+      "D_PSD_23",
+      "D_PSD1_01",
+      "D_PSD_24",
+      "D_PSD_26",
+      "D_PSD_25",
+      "D_PSD_22",
+      "D_PSD_05",
+      "D_PSD_28",
+      "D_PSD_27",
+      "D_PSD_33",
+      "D_PSD_32",
+      "D_PSD_34",
+      "D_PSD_30",
+      "D_PSD_29",
+      "D_PSD_31",
+      "D_PSD_87",
+      "D_PSD_36",
+      "D_PSD_39",
+      "D_PSD_38",
+      "D_PSD_62",
+      "D_PSD_61",
+      "D_PSD_60",
+      "D_PSD_57",
+      "D_PSD_53",
+      "D_PSD_52",
+      "D_PSD_51",
+      "D_PSD_63",
+      "D_PSD_42"
+    ]
+  },
+  "runtime_json": {
+    "model3": {
+      "present": true,
+      "version": 3,
+      "moc": "tsumiki.moc3",
+      "texture_count": 2,
+      "has_physics": true,
+      "has_pose": false,
+      "has_display_info": true,
+      "has_user_data": false,
+      "expression_count": 10,
+      "motion_group_count": 8,
+      "motion_count": 23,
+      "group_count": 2,
+      "parameter_ids": [
+        "PARAM_EYE_L_OPEN",
+        "PARAM_EYE_R_OPEN",
+        "PARAM_MOUTH_OPEN_Y"
+      ],
+      "file_references": {
+        "Moc": "tsumiki.moc3",
+        "Textures": [
+          "tsumiki.2048/texture_00.png",
+          "tsumiki.2048/texture_01.png"
+        ],
+        "Physics": "tsumiki.physics3.json",
+        "DisplayInfo": "tsumiki.cdi3.json",
+        "Expressions": [
+          {
+            "Name": "Angry",
+            "File": "expressions/Angry.exp3.json"
+          },
+          {
+            "Name": "Blushing",
+            "File": "expressions/Blushing.exp3.json"
+          },
+          {
+            "Name": "f01",
+            "File": "expressions/f01.exp3.json"
+          },
+          {
+            "Name": "f02",
+            "File": "expressions/f02.exp3.json"
+          },
+          {
+            "Name": "f03",
+            "File": "expressions/f03.exp3.json"
+          },
+          {
+            "Name": "f04",
+            "File": "expressions/f04.exp3.json"
+          },
+          {
+            "Name": "f05",
+            "File": "expressions/f05.exp3.json"
+          },
+          {
+            "Name": "Normal",
+            "File": "expressions/Normal.exp3.json"
+          },
+          {
+            "Name": "Sad",
+            "File": "expressions/Sad.exp3.json"
+          },
+          {
+            "Name": "Surprised",
+            "File": "expressions/Surprised.exp3.json"
+          }
+        ],
+        "Motions": {
+          "Flick3": [
+            {
+              "File": "motion/tsumiki_m_01_df.motion3.json"
+            },
+            {
+              "File": "motion/tsumiki_m_09.motion3.json"
+            },
+            {
+              "File": "motion/tsumiki_m_10.motion3.json"
+            },
+            {
+              "File": "motion/tsumiki_m_20.motion3.json"
+            }
+          ],
+          "FlickDown": [
+            {
+              "File": "motion/tsumiki_m_03.motion3.json"
+            },
+            {
+              "File": "motion/tsumiki_m_18.motion3.json"
+            },
+            {
+              "File": "motion/tsumiki_m_13.motion3.json"
+            }
+          ],
+          "FlickUp": [
+            {
+              "File": "motion/tsumiki_m_21.motion3.json"
+            },
+            {
+              "File": "motion/tsumiki_m_05.motion3.json"
+            },
+            {
+              "File": "motion/tsumiki_m_22.motion3.json"
+            }
+          ],
+          "Tap": [
+            {
+              "File": "motion/tsumiki_m_11.motion3.json"
+            },
+            {
+              "File": "motion/tsumiki_m_12.motion3.json"
+            },
+            {
+              "File": "motion/tsumiki_m_02.motion3.json"
+            },
+            {
+              "File": "motion/tsumiki_m_08.motion3.json"
+            },
+            {
+              "File": "motion/tsumiki_m_14.motion3.json"
+            }
+          ],
+          "FlickRight": [
+            {
+              "File": "motion/tsumiki_m_15.motion3.json"
+            },
+            {
+              "File": "motion/tsumiki_m_06.motion3.json"
+            }
+          ],
+          "FlickLeft": [
+            {
+              "File": "motion/tsumiki_m_16.motion3.json"
+            },
+            {
+              "File": "motion/tsumiki_m_01.motion3.json"
+            }
+          ],
+          "Idle": [
+            {
+              "File": "motion/tsumiki_m_17.motion3.json"
+            },
+            {
+              "File": "motion/tsumiki_idle_01.motion3.json"
+            },
+            {
+              "File": "motion/tsumiki_m_04.motion3.json"
+            }
+          ],
+          "Shake": [
+            {
+              "File": "motion/tsumiki_m_19.motion3.json"
+            }
+          ]
+        }
+      }
+    },
+    "physics3": {
+      "present": true,
+      "version": 3,
+      "physics_group_count": 7,
+      "physics_input_count": 22,
+      "physics_output_count": 9,
+      "physics_vertex_count": 14,
+      "groups": [
+        {
+          "index": 0,
+          "id": "PhysicsSetting1",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 1,
+          "id": "PhysicsSetting2",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 2,
+          "id": "PhysicsSetting3",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 3,
+          "id": "PhysicsSetting4",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 4,
+          "id": "PhysicsSetting5",
+          "input_count": 4,
+          "output_count": 2,
+          "vertex_count": 2
+        },
+        {
+          "index": 5,
+          "id": "PhysicsSetting6",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 6,
+          "id": "PhysicsSetting7",
+          "input_count": 4,
+          "output_count": 2,
+          "vertex_count": 2
+        }
+      ]
+    },
+    "cdi3": {
+      "present": true,
+      "parameter_display_count": 46,
+      "part_display_count": 21
+    },
+    "motion3_count": 23,
+    "exp3_count": 10,
+    "pose3_present": false,
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 89,
+    "parts": 22,
+    "parameters": 46,
+    "warp_deformers": 67,
+    "rotation_deformers": 22,
+    "keyform_bindings": 240,
+    "keyform_grids": 200,
+    "glue": 0,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": false,
+    "pose": false,
+    "expression": true,
+    "motion": true,
+    "physics": true
+  },
+  "structure_hints": {
+    "hair": 1,
+    "eye": 1,
+    "mouth": 2,
+    "body": 2,
+    "arm": 1
+  },
+  "reuse_decision": "REFERENCE_ONLY",
+  "notes": [
+    "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+    "Source zip: tsumiki.zip"
+  ],
+  "structure_report_path": "experiments/reference-model-structure-001/models/tsumiki_tsumiki_t01/cmo3_structure_report.json"
+}

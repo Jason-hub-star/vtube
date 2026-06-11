@@ -1,0 +1,532 @@
+{
+  "schema_version": 1,
+  "kind": "pilot",
+  "status": "PASS",
+  "summary": {
+    "model_count": 5,
+    "pass_count": 5,
+    "fail_count": 0
+  },
+  "contact_sheet": "experiments/live2d-strong-model-pattern-001/reports/pilot_contact_sheet.png",
+  "models": [
+    {
+      "id": "haru_greeter_pro_jp_haru_greeter_t05",
+      "safe_id": "haru_greeter_pro_jp_haru_greeter_t05",
+      "name": "haru_greeter_t05",
+      "expected_name": "haru_greeter_pro_jp_haru_greeter_t05",
+      "status": "PASS",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/motion_80.png",
+        "extreme_eye_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_eye_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_eye_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_mouth_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_mouth_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_hair_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_hair_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_body_angle_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_body_angle_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_arm_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_arm_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_arm_max.png"
+        ],
+        "extreme_eye": "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_eye.png",
+        "extreme_mouth": "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_mouth.png",
+        "extreme_hair": "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_hair.png",
+        "extreme_body_angle": "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_body_angle.png",
+        "extreme_arm": "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05/extreme_arm.png"
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile",
+            "ParamEyeForm",
+            "ParamEyeBallForm",
+            "ParamEyeBallX",
+            "ParamEyeBallY"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ]
+        },
+        "hair": {
+          "matched_parameters": [
+            "ParamHairFront",
+            "ParamHairSide",
+            "ParamHairBack"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ]
+        },
+        "arm": {
+          "matched_parameters": [
+            "ParamArmLA",
+            "ParamArmRA",
+            "ParamArmLB",
+            "ParamArmRB",
+            "ParamHandChangeR",
+            "ParamHandAngleR",
+            "ParamHandDhangeL",
+            "ParamHandAngleL"
+          ]
+        }
+      },
+      "errors": [],
+      "motion_group": null,
+      "capture_count": 24,
+      "nonblank_capture_count": 24
+    },
+    {
+      "id": "hiyori_pro_ko_hiyori_pro_t11",
+      "safe_id": "hiyori_pro_ko_hiyori_pro_t11",
+      "name": "hiyori_pro_t11",
+      "expected_name": "hiyori_pro_ko_hiyori_pro_t11",
+      "status": "PASS",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/motion_80.png",
+        "extreme_eye_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_eye_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_eye_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_mouth_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_mouth_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_hair_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_hair_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_body_angle_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_body_angle_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_arm_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_arm_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_arm_max.png"
+        ],
+        "extreme_eye": "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_eye.png",
+        "extreme_mouth": "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_mouth.png",
+        "extreme_hair": "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_hair.png",
+        "extreme_body_angle": "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_body_angle.png",
+        "extreme_arm": "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11/extreme_arm.png"
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile",
+            "ParamEyeBallX",
+            "ParamEyeBallY"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ]
+        },
+        "hair": {
+          "matched_parameters": [
+            "ParamHairAhoge",
+            "ParamHairFront",
+            "ParamHairBack"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ]
+        },
+        "arm": {
+          "matched_parameters": [
+            "ParamShoulder",
+            "ParamArmLA",
+            "ParamArmRA",
+            "ParamArmLB",
+            "ParamArmRB",
+            "ParamHandLB",
+            "ParamHandRB",
+            "ParamHandL",
+            "ParamHandR"
+          ]
+        }
+      },
+      "errors": [],
+      "motion_group": "Idle",
+      "capture_count": 24,
+      "nonblank_capture_count": 24
+    },
+    {
+      "id": "kei_ko_kei_vowels_pro_t02",
+      "safe_id": "kei_ko_kei_vowels_pro_t02",
+      "name": "kei_vowels_pro_t02",
+      "expected_name": "kei_ko_kei_vowels_pro_t02",
+      "status": "PASS",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/motion_80.png",
+        "extreme_eye_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_eye_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_eye_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_mouth_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_mouth_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_hair_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_hair_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_body_angle_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_body_angle_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_arm_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_arm_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_arm_max.png"
+        ],
+        "extreme_eye": "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_eye.png",
+        "extreme_mouth": "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_mouth.png",
+        "extreme_hair": "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_hair.png",
+        "extreme_body_angle": "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_body_angle.png",
+        "extreme_arm": "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02/extreme_arm.png"
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile",
+            "ParamEyeBallX",
+            "ParamEyeBallY"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "ParamMouthOpenY",
+            "ParamA",
+            "ParamI",
+            "ParamU",
+            "ParamE",
+            "ParamO"
+          ]
+        },
+        "hair": {
+          "matched_parameters": [
+            "ParamHairFront",
+            "ParamHairSide",
+            "ParamHairSide2",
+            "ParamHairBack",
+            "ParamHairFrontFuwa",
+            "ParamHairSideFuwa",
+            "ParamHairBackFuwa"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ]
+        },
+        "arm": {
+          "matched_parameters": []
+        }
+      },
+      "errors": [],
+      "motion_group": null,
+      "capture_count": 24,
+      "nonblank_capture_count": 24
+    },
+    {
+      "id": "mao_pro_ko_mao_pro_t06",
+      "safe_id": "mao_pro_ko_mao_pro_t06",
+      "name": "mao_pro_t06",
+      "expected_name": "mao_pro_ko_mao_pro_t06",
+      "status": "PASS",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/motion_80.png",
+        "extreme_eye_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_eye_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_eye_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_mouth_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_mouth_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_hair_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_hair_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_body_angle_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_body_angle_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_arm_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_arm_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_arm_max.png"
+        ],
+        "extreme_eye": "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_eye.png",
+        "extreme_mouth": "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_mouth.png",
+        "extreme_hair": "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_hair.png",
+        "extreme_body_angle": "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_body_angle.png",
+        "extreme_arm": "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06/extreme_arm.png"
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeLForm",
+            "ParamEyeROpen",
+            "ParamEyeRSmile",
+            "ParamEyeRForm",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeBallForm",
+            "ParamEyeEffect"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "ParamA",
+            "ParamI",
+            "ParamU",
+            "ParamE",
+            "ParamO",
+            "ParamMouthUp",
+            "ParamMouthDown",
+            "ParamMouthAngry",
+            "ParamMouthAngryLine"
+          ]
+        },
+        "hair": {
+          "matched_parameters": [
+            "ParamHairFront",
+            "ParamHairSideL",
+            "ParamHairSideR",
+            "ParamHairBack",
+            "ParamHairBackR",
+            "ParamHairBackL",
+            "ParamoHairMesh",
+            "ParamHairFrontFuwa",
+            "ParamHairSideFuwa",
+            "ParamHairBackFuwa"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ]
+        },
+        "arm": {
+          "matched_parameters": [
+            "ParamLeftShoulderUp",
+            "ParamRightShoulderUp",
+            "ParamArmLA01",
+            "ParamArmLA02",
+            "ParamArmLA03",
+            "ParamHandLA",
+            "ParamArmRA01",
+            "ParamArmRA02",
+            "ParamArmRA03",
+            "ParamHandRA",
+            "ParamArmLB01",
+            "ParamArmLB02",
+            "ParamArmLB03",
+            "ParamHandLB",
+            "ParamArmRB01",
+            "ParamArmRB02",
+            "ParamArmRB02Y",
+            "ParamArmRB03",
+            "ParamHandRB"
+          ]
+        }
+      },
+      "errors": [],
+      "motion_group": "Idle",
+      "capture_count": 24,
+      "nonblank_capture_count": 24
+    },
+    {
+      "id": "miku_pro_jp_miku_sample_t05",
+      "safe_id": "miku_pro_jp_miku_sample_t05",
+      "name": "miku_sample_t05",
+      "expected_name": "miku_pro_jp_miku_sample_t05",
+      "status": "PASS",
+      "captures": {
+        "neutral": "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/neutral.png",
+        "motion_20": "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/motion_20.png",
+        "motion_50": "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/motion_50.png",
+        "motion_80": "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/motion_80.png",
+        "extreme_eye_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_eye_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_eye_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_eye_max.png"
+        ],
+        "extreme_mouth_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_mouth_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_mouth_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_mouth_max.png"
+        ],
+        "extreme_hair_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_hair_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_hair_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_hair_max.png"
+        ],
+        "extreme_body_angle_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_body_angle_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_body_angle_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_body_angle_max.png"
+        ],
+        "extreme_arm_frames": [
+          "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_arm_min.png",
+          "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_arm_default.png",
+          "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_arm_max.png"
+        ],
+        "extreme_eye": "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_eye.png",
+        "extreme_mouth": "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_mouth.png",
+        "extreme_hair": "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_hair.png",
+        "extreme_body_angle": "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_body_angle.png",
+        "extreme_arm": "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05/extreme_arm.png"
+      },
+      "categories": {
+        "eye": {
+          "matched_parameters": [
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile",
+            "ParamEyeBallX",
+            "ParamEyeBallY"
+          ]
+        },
+        "mouth": {
+          "matched_parameters": [
+            "ParamMouthOpenY",
+            "ParamMouthForm"
+          ]
+        },
+        "hair": {
+          "matched_parameters": [
+            "ParamHairFront",
+            "ParamHairFront2",
+            "ParamHairBack",
+            "ParamHairBackL8",
+            "ParamHairBackR6",
+            "Param_Angle_Rotation_1_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_2_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_3_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_4_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_5_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_6_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_7_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_8_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_9_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_1_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_2_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_3_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_4_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_5_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_6_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_7_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_8_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_9_D_HAIR_BACK_00"
+          ]
+        },
+        "body_angle": {
+          "matched_parameters": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ]
+        },
+        "arm": {
+          "matched_parameters": [
+            "ParamArmL",
+            "ParamArmR"
+          ]
+        }
+      },
+      "errors": [],
+      "motion_group": "Idle",
+      "capture_count": 24,
+      "nonblank_capture_count": 24
+    }
+  ],
+  "interpretation": [
+    "Extreme parameter screenshots show parameter influence range, not natural motion quality.",
+    "Official sample screenshots are local evidence only and must not be reused as our model assets."
+  ]
+}

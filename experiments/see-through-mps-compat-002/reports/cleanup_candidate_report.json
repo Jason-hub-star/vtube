@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "experiment_id": "see-through-mps-compat-002",
+  "generated_at": "2026-06-04T07:10:27.780892+00:00",
+  "targets": [
+    {
+      "layer_name": "seethrough_mps_clean__face_base",
+      "original_part_id": "face_base",
+      "raw_tag": "cleanup:seethrough_mps__face_base",
+      "role": "face",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__face_base.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/cleanup_layers/seethrough_mps_clean__face_base.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        740,
+        394,
+        557,
+        659
+      ],
+      "alpha_coverage": 0.659151,
+      "draw_order": 315,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "cleanup_source_layer": "seethrough_mps__face_base",
+      "notes": "Face cleanup: subtract accepted hair, eye, brow, and mouth masks. Human O review is required before PSD inclusion."
+    },
+    {
+      "layer_name": "seethrough_mps_clean__neck",
+      "original_part_id": "neck",
+      "raw_tag": "cleanup:seethrough_mps__neck",
+      "role": "neck",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__neck.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/cleanup_layers/seethrough_mps_clean__neck.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        918,
+        1006,
+        206,
+        108
+      ],
+      "alpha_coverage": 0.559736,
+      "draw_order": 310,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "cleanup_source_layer": "seethrough_mps__neck",
+      "notes": "Neck cleanup: keep central neck ROI and subtract mouth, face, clothes, and hair masks. Human O review is required before PSD inclusion."
+    },
+    {
+      "layer_name": "seethrough_mps_clean__clothes",
+      "original_part_id": "clothes",
+      "raw_tag": "cleanup:seethrough_mps__clothes",
+      "role": "clothes",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__clothes.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/cleanup_layers/seethrough_mps_clean__clothes.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        23,
+        1497,
+        1991,
+        551
+      ],
+      "alpha_coverage": 0.138023,
+      "draw_order": 311,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "cleanup_source_layer": "seethrough_mps__clothes",
+      "notes": "Clothes cleanup: remove skin-colored pixels and subtract face/neck/hair/ear masks. Human O review is required before PSD inclusion."
+    },
+    {
+      "layer_name": "seethrough_mps_clean__mouth_line",
+      "original_part_id": "mouth_line",
+      "raw_tag": "cleanup:seethrough_mps__mouth_line",
+      "role": "mouth_line",
+      "side": null,
+      "source_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/normalized_layers/seethrough_mps__mouth_line.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/see-through-mps-compat-002/cleanup_layers/seethrough_mps_clean__mouth_line.png",
+      "canonical_path": "/Users/family/jason/Vtube/experiments/concept-regeneration-001/canonical/canonical_front_2048.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        983,
+        923,
+        78,
+        47
+      ],
+      "alpha_coverage": 0.154937,
+      "draw_order": 317,
+      "depth_median": null,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "production_candidate": true,
+      "depth_path": null,
+      "experiment_id": "see-through-mps-compat-002",
+      "cleanup_source_layer": "seethrough_mps__mouth_line",
+      "notes": "Mouth cleanup: keep only darker line pixels inside the mouth ROI; remove pale oval fill. Human O review is required before PSD inclusion."
+    }
+  ],
+  "acceptance": "Review seethrough_mps_clean__* candidates in the MPS review app. O verdict auto-adds them to the PSD candidate."
+}

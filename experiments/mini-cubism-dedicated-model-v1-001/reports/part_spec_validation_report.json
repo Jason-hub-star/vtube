@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "validated_at": "2026-06-05T02:30:25.281290+00:00",
+  "manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/part_spec_manifest.json",
+  "status": "PASS",
+  "counts": {
+    "parts": 73,
+    "hair_parts": 18,
+    "eye_parts": 16,
+    "mouth_parts": 8,
+    "physics_profiles": 9
+  },
+  "checks": {
+    "part_count": true,
+    "hair_parts": true,
+    "eye_parts": true,
+    "mouth_parts": true,
+    "physics_targets": true,
+    "no_duplicate_parts": true,
+    "has_physics_profiles": true,
+    "has_required_parameters": true
+  },
+  "duplicates": []
+}

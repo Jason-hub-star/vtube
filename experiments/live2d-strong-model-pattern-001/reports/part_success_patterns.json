@@ -1,0 +1,5918 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-06T15:10:23.588046+00:00",
+  "kind": "strong20",
+  "summary": {
+    "model_count": 20,
+    "cmo3_pass_or_warn": 20
+  },
+  "sections": {
+    "eye": {
+      "parameter_or_group_count": {
+        "min": 2,
+        "median": 15.0,
+        "max": 20,
+        "mean": 13.95
+      },
+      "motion_parameter_count": {
+        "min": 2,
+        "median": 15.0,
+        "max": 20,
+        "mean": 13.6
+      },
+      "part_count": {
+        "min": 1,
+        "median": 1.0,
+        "max": 14,
+        "mean": 2.6
+      },
+      "named_deformer_count": {
+        "min": 0,
+        "median": 6.0,
+        "max": 14,
+        "mean": 7.1
+      },
+      "examples": [
+        {
+          "model": "haru_greeter_t05",
+          "params": [
+            "ParamBrowLAngle",
+            "ParamBrowLForm",
+            "ParamBrowLX",
+            "ParamBrowLY",
+            "ParamBrowRAngle",
+            "ParamBrowRForm",
+            "ParamBrowRX",
+            "ParamBrowRY",
+            "ParamEyeBallForm",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeForm"
+          ],
+          "motion_params": [
+            "ParamBrowLAngle",
+            "ParamBrowLForm",
+            "ParamBrowLX",
+            "ParamBrowLY",
+            "ParamBrowRAngle",
+            "ParamBrowRForm",
+            "ParamBrowRX",
+            "ParamBrowRY",
+            "ParamEyeBallForm",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeForm"
+          ],
+          "parts": [
+            "まゆ毛"
+          ]
+        },
+        {
+          "model": "haruto_t01",
+          "params": [
+            "PARAM_BROW_L_ANGLE",
+            "PARAM_BROW_L_FORM",
+            "PARAM_BROW_L_X",
+            "PARAM_BROW_L_Y",
+            "PARAM_BROW_R_ANGLE",
+            "PARAM_BROW_R_FORM",
+            "PARAM_BROW_R_X",
+            "PARAM_BROW_R_Y",
+            "PARAM_CHEEK",
+            "PARAM_EYE_01",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y"
+          ],
+          "motion_params": [
+            "PARAM_BROW_L_ANGLE",
+            "PARAM_BROW_L_FORM",
+            "PARAM_BROW_L_X",
+            "PARAM_BROW_L_Y",
+            "PARAM_BROW_R_ANGLE",
+            "PARAM_BROW_R_FORM",
+            "PARAM_BROW_R_X",
+            "PARAM_BROW_R_Y",
+            "PARAM_CHEEK",
+            "PARAM_EYE_01",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y"
+          ],
+          "parts": [
+            "まゆ毛"
+          ]
+        },
+        {
+          "model": "hiyori_pro_t11",
+          "params": [
+            "ParamBrowLAngle",
+            "ParamBrowLForm",
+            "ParamBrowLX",
+            "ParamBrowLY",
+            "ParamBrowRAngle",
+            "ParamBrowRForm",
+            "ParamBrowRX",
+            "ParamBrowRY",
+            "ParamCheek",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLOpen"
+          ],
+          "motion_params": [
+            "ParamBrowLAngle",
+            "ParamBrowLForm",
+            "ParamBrowLX",
+            "ParamBrowLY",
+            "ParamBrowRAngle",
+            "ParamBrowRForm",
+            "ParamBrowRX",
+            "ParamBrowRY",
+            "ParamCheek",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLOpen"
+          ],
+          "parts": [
+            "눈",
+            "눈썹"
+          ]
+        },
+        {
+          "model": "kei_basic_free_t02",
+          "params": [
+            "ParamBrowLForm",
+            "ParamBrowLY",
+            "ParamBrowRForm",
+            "ParamBrowRY",
+            "ParamCheek",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile"
+          ],
+          "motion_params": [
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile"
+          ],
+          "parts": [
+            "오른쪽 눈",
+            "오른쪽 눈썹",
+            "오른쪽 눈알",
+            "왼쪽 눈",
+            "왼쪽 눈썹",
+            "왼쪽 눈알"
+          ]
+        },
+        {
+          "model": "kei_vowels_pro_t02",
+          "params": [
+            "ParamBrowLForm",
+            "ParamBrowLY",
+            "ParamBrowRForm",
+            "ParamBrowRY",
+            "ParamCheek",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile"
+          ],
+          "motion_params": [
+            "ParamEyeBallScale",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLForm",
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeRForm",
+            "ParamEyeROpen",
+            "ParamEyeRSmile"
+          ],
+          "parts": [
+            "오른쪽 눈",
+            "오른쪽 눈썹",
+            "오른쪽 눈알",
+            "왼쪽 눈",
+            "왼쪽 눈썹",
+            "왼쪽 눈알"
+          ]
+        },
+        {
+          "model": "koharu_t01",
+          "params": [
+            "PARAM_BROW_L_ANGLE",
+            "PARAM_BROW_L_FORM",
+            "PARAM_BROW_L_X",
+            "PARAM_BROW_L_Y",
+            "PARAM_BROW_R_ANGLE",
+            "PARAM_BROW_R_FORM",
+            "PARAM_BROW_R_X",
+            "PARAM_BROW_R_Y",
+            "PARAM_CHEEK",
+            "PARAM_EYE_01",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y"
+          ],
+          "motion_params": [
+            "PARAM_BROW_L_ANGLE",
+            "PARAM_BROW_L_FORM",
+            "PARAM_BROW_L_X",
+            "PARAM_BROW_L_Y",
+            "PARAM_BROW_R_ANGLE",
+            "PARAM_BROW_R_FORM",
+            "PARAM_BROW_R_X",
+            "PARAM_BROW_R_Y",
+            "PARAM_CHEEK",
+            "PARAM_EYE_01",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y"
+          ],
+          "parts": [
+            "まゆ毛"
+          ]
+        },
+        {
+          "model": "mao_pro_t06",
+          "params": [
+            "ParamBrowLAngle",
+            "ParamBrowLForm",
+            "ParamBrowLX",
+            "ParamBrowLY",
+            "ParamBrowRAngle",
+            "ParamBrowRForm",
+            "ParamBrowRX",
+            "ParamBrowRY",
+            "ParamCheek",
+            "ParamEyeBallForm",
+            "ParamEyeBallX",
+            "ParamEyeBallY"
+          ],
+          "motion_params": [
+            "ParamBrowLAngle",
+            "ParamBrowLForm",
+            "ParamBrowLX",
+            "ParamBrowLY",
+            "ParamBrowRAngle",
+            "ParamBrowRForm",
+            "ParamBrowRX",
+            "ParamBrowRY",
+            "ParamCheek",
+            "ParamEyeBallForm",
+            "ParamEyeBallX",
+            "ParamEyeBallY"
+          ],
+          "parts": [
+            "눈",
+            "눈썹",
+            "눈알"
+          ]
+        },
+        {
+          "model": "miara_pro_t04",
+          "params": [
+            "ParamBrowLAngle",
+            "ParamBrowLForm",
+            "ParamBrowLX",
+            "ParamBrowLY",
+            "ParamBrowRAngle",
+            "ParamBrowRForm",
+            "ParamBrowRX",
+            "ParamBrowRY",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLOpen",
+            "ParamEyeROpen"
+          ],
+          "motion_params": [
+            "ParamBrowLAngle",
+            "ParamBrowLForm",
+            "ParamBrowLX",
+            "ParamBrowLY",
+            "ParamBrowRAngle",
+            "ParamBrowRForm",
+            "ParamBrowRX",
+            "ParamBrowRY",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLOpen",
+            "ParamEyeROpen"
+          ],
+          "parts": [
+            "Brows",
+            "Eye"
+          ]
+        }
+      ],
+      "decision": "Use separate eye open/smile/eyeball/brow parameters; verify neutral and extreme eye screenshots."
+    },
+    "mouth": {
+      "parameter_or_group_count": {
+        "min": 0,
+        "median": 2.0,
+        "max": 9,
+        "mean": 2.6
+      },
+      "motion_parameter_count": {
+        "min": 0,
+        "median": 2.0,
+        "max": 9,
+        "mean": 2.15
+      },
+      "part_count": {
+        "min": 0,
+        "median": 1.0,
+        "max": 1,
+        "mean": 0.95
+      },
+      "named_deformer_count": {
+        "min": 0,
+        "median": 1.0,
+        "max": 2,
+        "mean": 1.25
+      },
+      "examples": [
+        {
+          "model": "haru_greeter_t05",
+          "params": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ],
+          "motion_params": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ],
+          "parts": [
+            "口"
+          ]
+        },
+        {
+          "model": "haruto_t01",
+          "params": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_FORM_02",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "motion_params": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_FORM_02",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "parts": [
+            "口"
+          ]
+        },
+        {
+          "model": "hiyori_pro_t11",
+          "params": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ],
+          "motion_params": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ],
+          "parts": [
+            "입"
+          ]
+        },
+        {
+          "model": "kei_basic_free_t02",
+          "params": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ],
+          "motion_params": [],
+          "parts": [
+            "입 기본"
+          ]
+        },
+        {
+          "model": "kei_vowels_pro_t02",
+          "params": [
+            "ParamA",
+            "ParamE",
+            "ParamI",
+            "ParamMouthOpenY",
+            "ParamO",
+            "ParamU"
+          ],
+          "motion_params": [],
+          "parts": [
+            "입 모음만"
+          ]
+        },
+        {
+          "model": "koharu_t01",
+          "params": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_FORM_02",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "motion_params": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_FORM_02",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "parts": [
+            "口"
+          ]
+        },
+        {
+          "model": "mao_pro_t06",
+          "params": [
+            "ParamA",
+            "ParamE",
+            "ParamI",
+            "ParamMouthAngry",
+            "ParamMouthAngryLine",
+            "ParamMouthDown",
+            "ParamMouthUp",
+            "ParamO",
+            "ParamU"
+          ],
+          "motion_params": [
+            "ParamA",
+            "ParamE",
+            "ParamI",
+            "ParamMouthAngry",
+            "ParamMouthAngryLine",
+            "ParamMouthDown",
+            "ParamMouthUp",
+            "ParamO",
+            "ParamU"
+          ],
+          "parts": [
+            "입"
+          ]
+        },
+        {
+          "model": "miara_pro_t04",
+          "params": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ],
+          "motion_params": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ],
+          "parts": [
+            "Mouth"
+          ]
+        }
+      ],
+      "decision": "Use MouthOpen/Form plus vowel/lip-sync references when available; Kei is the mouth baseline."
+    },
+    "hair": {
+      "parameter_or_group_count": {
+        "min": 0,
+        "median": 5.0,
+        "max": 23,
+        "mean": 5.6
+      },
+      "motion_parameter_count": {
+        "min": 0,
+        "median": 2.5,
+        "max": 10,
+        "mean": 2.9
+      },
+      "part_count": {
+        "min": 0,
+        "median": 3.0,
+        "max": 13,
+        "mean": 4.35
+      },
+      "named_deformer_count": {
+        "min": 0,
+        "median": 20.5,
+        "max": 63,
+        "mean": 22.4
+      },
+      "examples": [
+        {
+          "model": "haru_greeter_t05",
+          "params": [
+            "ParamHairBack",
+            "ParamHairFront",
+            "ParamHairSide"
+          ],
+          "motion_params": [
+            "ParamHairBack",
+            "ParamHairFront",
+            "ParamHairSide"
+          ],
+          "parts": [
+            "前髪",
+            "後ろ髪",
+            "横髪"
+          ]
+        },
+        {
+          "model": "haruto_t01",
+          "params": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FLUFFY",
+            "PARAM_HAIR_FLUFFY_02",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE"
+          ],
+          "motion_params": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FLUFFY",
+            "PARAM_HAIR_FLUFFY_02",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE"
+          ],
+          "parts": [
+            "前髪",
+            "後ろ髪",
+            "横髪"
+          ]
+        },
+        {
+          "model": "hiyori_pro_t11",
+          "params": [
+            "ParamHairAhoge",
+            "ParamHairBack",
+            "ParamHairFront"
+          ],
+          "motion_params": [
+            "ParamHairAhoge"
+          ],
+          "parts": [
+            "뒷머리",
+            "앞머리",
+            "앞머리 오른쪽(스키닝)",
+            "앞머리 오른쪽(회전)",
+            "앞머리 왼쪽(회전)",
+            "옆머리",
+            "왼쪽 앞머리(스키닝)"
+          ]
+        },
+        {
+          "model": "kei_basic_free_t02",
+          "params": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSide2",
+            "ParamHairSideFuwa"
+          ],
+          "motion_params": [],
+          "parts": [
+            "뒷머리",
+            "앞머리",
+            "오른쪽 옆머리",
+            "왼쪽 옆머리"
+          ]
+        },
+        {
+          "model": "kei_vowels_pro_t02",
+          "params": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSide2",
+            "ParamHairSideFuwa"
+          ],
+          "motion_params": [],
+          "parts": [
+            "뒷머리",
+            "앞머리",
+            "오른쪽 옆머리",
+            "왼쪽 옆머리"
+          ]
+        },
+        {
+          "model": "koharu_t01",
+          "params": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FLUFFY",
+            "PARAM_HAIR_FLUFFY_02",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE"
+          ],
+          "motion_params": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FLUFFY",
+            "PARAM_HAIR_FLUFFY_02",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE"
+          ],
+          "parts": [
+            "前髪",
+            "後ろ髪",
+            "横髪"
+          ]
+        },
+        {
+          "model": "mao_pro_t06",
+          "params": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairBackL",
+            "ParamHairBackR",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSideFuwa",
+            "ParamHairSideL",
+            "ParamHairSideR",
+            "ParamoHairMesh"
+          ],
+          "motion_params": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairBackL",
+            "ParamHairBackR",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSideFuwa",
+            "ParamHairSideL",
+            "ParamHairSideR",
+            "ParamoHairMesh"
+          ],
+          "parts": [
+            "뒷머리",
+            "앞머리",
+            "옆머리"
+          ]
+        },
+        {
+          "model": "miara_pro_t04",
+          "params": [
+            "ParamHairAho1",
+            "ParamHairAho2",
+            "ParamHairBack",
+            "ParamHairBack2",
+            "ParamHairCloth",
+            "ParamHairCloth2",
+            "ParamHairFront",
+            "ParamHairFront2",
+            "ParamHairSide",
+            "ParamHairSide2",
+            "ParamHairTail",
+            "ParamHairTail2"
+          ],
+          "motion_params": [],
+          "parts": [
+            "Hair Accessory Front",
+            "Hair Ahoge",
+            "Hair Back",
+            "Hair Back Back R",
+            "Hair Back Tale",
+            "Hair Front",
+            "Hair L",
+            "Hair R"
+          ]
+        }
+      ],
+      "decision": "Use front/side/back hair parameters and physics outputs; Miku/Hiyori are primary hair baselines."
+    },
+    "body_angle": {
+      "parameter_or_group_count": {
+        "min": 0,
+        "median": 2.5,
+        "max": 10,
+        "mean": 3.65
+      },
+      "motion_parameter_count": {
+        "min": 0,
+        "median": 0.0,
+        "max": 10,
+        "mean": 2.95
+      },
+      "part_count": {
+        "min": 0,
+        "median": 0.0,
+        "max": 4,
+        "mean": 0.85
+      },
+      "named_deformer_count": {
+        "min": 0,
+        "median": 0.0,
+        "max": 31,
+        "mean": 4.05
+      },
+      "examples": [
+        {
+          "model": "haru_greeter_t05",
+          "params": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "motion_params": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "parts": []
+        },
+        {
+          "model": "haruto_t01",
+          "params": [],
+          "motion_params": [],
+          "parts": []
+        },
+        {
+          "model": "hiyori_pro_t11",
+          "params": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "motion_params": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "parts": [
+            "목",
+            "몸"
+          ]
+        },
+        {
+          "model": "kei_basic_free_t02",
+          "params": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "motion_params": [],
+          "parts": [
+            "목",
+            "몸"
+          ]
+        },
+        {
+          "model": "kei_vowels_pro_t02",
+          "params": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "motion_params": [],
+          "parts": [
+            "목",
+            "몸"
+          ]
+        },
+        {
+          "model": "koharu_t01",
+          "params": [],
+          "motion_params": [],
+          "parts": []
+        },
+        {
+          "model": "mao_pro_t06",
+          "params": [
+            "ParamAllRotate",
+            "ParamAllX",
+            "ParamAllY",
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "motion_params": [
+            "ParamAllRotate",
+            "ParamAllX",
+            "ParamAllY",
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "parts": [
+            "목"
+          ]
+        },
+        {
+          "model": "miara_pro_t04",
+          "params": [
+            "ParamAllRotate",
+            "ParamAllX",
+            "ParamAllY",
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleX2",
+            "ParamBodyAngleZ",
+            "ParamBodyAngleZ2"
+          ],
+          "motion_params": [
+            "ParamAllRotate",
+            "ParamAllX",
+            "ParamAllY",
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleX2",
+            "ParamBodyAngleZ",
+            "ParamBodyAngleZ2"
+          ],
+          "parts": [
+            "Body",
+            "Fairy Body",
+            "Lower Body",
+            "Upper Body"
+          ]
+        }
+      ],
+      "decision": "Use AngleX/Y/Z and BodyAngleX/Y/Z as standard motion axes; avoid treating extreme sweep as natural pose."
+    },
+    "arm": {
+      "parameter_or_group_count": {
+        "min": 0,
+        "median": 5.0,
+        "max": 37,
+        "mean": 7.95
+      },
+      "motion_parameter_count": {
+        "min": 0,
+        "median": 5.0,
+        "max": 37,
+        "mean": 7.85
+      },
+      "part_count": {
+        "min": 0,
+        "median": 0.0,
+        "max": 8,
+        "mean": 1.3
+      },
+      "named_deformer_count": {
+        "min": 0,
+        "median": 0.0,
+        "max": 22,
+        "mean": 4.5
+      },
+      "examples": [
+        {
+          "model": "haru_greeter_t05",
+          "params": [
+            "ParamArmLA",
+            "ParamArmLB",
+            "ParamArmRA",
+            "ParamArmRB",
+            "ParamHandAngleL",
+            "ParamHandAngleR",
+            "ParamHandChangeR",
+            "ParamHandDhangeL"
+          ],
+          "motion_params": [
+            "ParamArmLA",
+            "ParamArmLB",
+            "ParamArmRA",
+            "ParamArmRB",
+            "ParamHandAngleL",
+            "ParamHandAngleR",
+            "ParamHandChangeR",
+            "ParamHandDhangeL"
+          ],
+          "parts": []
+        },
+        {
+          "model": "haruto_t01",
+          "params": [
+            "PARAM_ARM_L",
+            "PARAM_ARM_L_01",
+            "PARAM_ARM_L_02",
+            "PARAM_ARM_L_03",
+            "PARAM_ARM_R",
+            "PARAM_ARM_R_01",
+            "PARAM_ARM_R_02",
+            "PARAM_ARM_R_03",
+            "PARAM_HAND_L",
+            "PARAM_HAND_R",
+            "PARAM_HAND_SWITCH_L",
+            "PARAM_HAND_SWITCH_R"
+          ],
+          "motion_params": [
+            "PARAM_ARM_L",
+            "PARAM_ARM_L_01",
+            "PARAM_ARM_L_02",
+            "PARAM_ARM_L_03",
+            "PARAM_ARM_R",
+            "PARAM_ARM_R_01",
+            "PARAM_ARM_R_02",
+            "PARAM_ARM_R_03",
+            "PARAM_HAND_L",
+            "PARAM_HAND_R",
+            "PARAM_HAND_SWITCH_L",
+            "PARAM_HAND_SWITCH_R"
+          ],
+          "parts": []
+        },
+        {
+          "model": "hiyori_pro_t11",
+          "params": [
+            "ParamArmLA",
+            "ParamArmLB",
+            "ParamArmRA",
+            "ParamArmRB",
+            "ParamHandL",
+            "ParamHandLB",
+            "ParamHandR",
+            "ParamHandRB",
+            "ParamShoulder"
+          ],
+          "motion_params": [
+            "ParamArmLA",
+            "ParamArmLB",
+            "ParamArmRA",
+            "ParamArmRB",
+            "ParamHandL",
+            "ParamHandLB",
+            "ParamHandR",
+            "ParamHandRB",
+            "ParamShoulder"
+          ],
+          "parts": [
+            "팔 B",
+            "팔A"
+          ]
+        },
+        {
+          "model": "kei_basic_free_t02",
+          "params": [],
+          "motion_params": [],
+          "parts": []
+        },
+        {
+          "model": "kei_vowels_pro_t02",
+          "params": [],
+          "motion_params": [],
+          "parts": []
+        },
+        {
+          "model": "koharu_t01",
+          "params": [
+            "PARAM_ARM_L",
+            "PARAM_ARM_L_01",
+            "PARAM_ARM_L_02",
+            "PARAM_ARM_L_03",
+            "PARAM_ARM_R",
+            "PARAM_ARM_R_01",
+            "PARAM_ARM_R_02",
+            "PARAM_ARM_R_03",
+            "PARAM_HAND_L",
+            "PARAM_HAND_R",
+            "PARAM_HAND_SWITCH_L",
+            "PARAM_HAND_SWITCH_R"
+          ],
+          "motion_params": [
+            "PARAM_ARM_L",
+            "PARAM_ARM_L_01",
+            "PARAM_ARM_L_02",
+            "PARAM_ARM_L_03",
+            "PARAM_ARM_R",
+            "PARAM_ARM_R_01",
+            "PARAM_ARM_R_02",
+            "PARAM_ARM_R_03",
+            "PARAM_HAND_L",
+            "PARAM_HAND_R",
+            "PARAM_HAND_SWITCH_L",
+            "PARAM_HAND_SWITCH_R"
+          ],
+          "parts": []
+        },
+        {
+          "model": "mao_pro_t06",
+          "params": [
+            "ParamArmLA01",
+            "ParamArmLA02",
+            "ParamArmLA03",
+            "ParamArmLB01",
+            "ParamArmLB02",
+            "ParamArmLB03",
+            "ParamArmRA01",
+            "ParamArmRA02",
+            "ParamArmRA03",
+            "ParamArmRB01",
+            "ParamArmRB02",
+            "ParamArmRB02Y"
+          ],
+          "motion_params": [
+            "ParamArmLA01",
+            "ParamArmLA02",
+            "ParamArmLA03",
+            "ParamArmLB01",
+            "ParamArmLB02",
+            "ParamArmLB03",
+            "ParamArmRA01",
+            "ParamArmRA02",
+            "ParamArmRA03",
+            "ParamArmRB01",
+            "ParamArmRB02",
+            "ParamArmRB02Y"
+          ],
+          "parts": [
+            "오른팔 A",
+            "오른팔 B",
+            "왼팔 A",
+            "왼팔 B"
+          ]
+        },
+        {
+          "model": "miara_pro_t04",
+          "params": [
+            "ParamArmL1",
+            "ParamArmL2",
+            "ParamArmL3",
+            "ParamArmR1",
+            "ParamArmR2",
+            "ParamArmR3"
+          ],
+          "motion_params": [
+            "ParamArmL1",
+            "ParamArmL2",
+            "ParamArmL3",
+            "ParamArmR1",
+            "ParamArmR2",
+            "ParamArmR3"
+          ],
+          "parts": [
+            "Arm L",
+            "Arm R",
+            "Hand L"
+          ]
+        }
+      ],
+      "decision": "Keep optional for v2_min, but include arm/hand/shoulder variants in v2_standard when the design needs gestures."
+    },
+    "physics": {
+      "parameter_or_group_count": {
+        "min": 1,
+        "median": 5.5,
+        "max": 19,
+        "mean": 7.2
+      },
+      "motion_parameter_count": {
+        "min": null,
+        "median": null,
+        "max": null,
+        "mean": null
+      },
+      "part_count": {
+        "min": null,
+        "median": null,
+        "max": null,
+        "mean": null
+      },
+      "named_deformer_count": {
+        "min": null,
+        "median": null,
+        "max": null,
+        "mean": null
+      },
+      "examples": [
+        {
+          "model": "haru_greeter_t05",
+          "physics_groups": 4,
+          "outputs": [
+            "ParamHairBack",
+            "ParamHairFront",
+            "ParamHairSide",
+            "ParamScarf"
+          ]
+        },
+        {
+          "model": "haruto_t01",
+          "physics_groups": 4,
+          "outputs": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE",
+            "PARAM_NECKTIE"
+          ]
+        },
+        {
+          "model": "hiyori_pro_t11",
+          "physics_groups": 11,
+          "outputs": [
+            "ParamBustY",
+            "ParamHairBack",
+            "ParamHairFront",
+            "ParamRibbon",
+            "ParamSideupRibbon",
+            "ParamSkirt",
+            "ParamSkirt2",
+            "Param_Angle_Rotation_1_ArtMesh54",
+            "Param_Angle_Rotation_1_ArtMesh55",
+            "Param_Angle_Rotation_1_ArtMesh61",
+            "Param_Angle_Rotation_1_ArtMesh62",
+            "Param_Angle_Rotation_2_ArtMesh54"
+          ]
+        },
+        {
+          "model": "kei_basic_free_t02",
+          "physics_groups": 6,
+          "outputs": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSide2",
+            "ParamHairSideFuwa"
+          ]
+        },
+        {
+          "model": "kei_vowels_pro_t02",
+          "physics_groups": 6,
+          "outputs": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSide2",
+            "ParamHairSideFuwa"
+          ]
+        },
+        {
+          "model": "koharu_t01",
+          "physics_groups": 5,
+          "outputs": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE",
+            "PARAM_NECKTIE",
+            "PARAM_SKIRT"
+          ]
+        },
+        {
+          "model": "mao_pro_t06",
+          "physics_groups": 16,
+          "outputs": [
+            "ParamAccessory1",
+            "ParamAccessory2",
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairBackL",
+            "ParamHairBackR",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSideFuwa",
+            "ParamHairSideL",
+            "ParamHairSideR",
+            "ParamHatBrim"
+          ]
+        },
+        {
+          "model": "miara_pro_t04",
+          "physics_groups": 19,
+          "outputs": [
+            "ParamBust",
+            "ParamBustX",
+            "ParamChestAccessory",
+            "ParamCloth1",
+            "ParamCloth2",
+            "ParamHairAho1",
+            "ParamHairAho2",
+            "ParamHairBack",
+            "ParamHairBack2",
+            "ParamHairCloth",
+            "ParamHairCloth2",
+            "ParamHairFront"
+          ]
+        }
+      ],
+      "decision": "Require physics groups for hair/body secondary motion; use output category coverage as the main quality signal."
+    },
+    "mask_pose_expression": {
+      "parameter_or_group_count": {
+        "min": null,
+        "median": null,
+        "max": null,
+        "mean": null
+      },
+      "motion_parameter_count": {
+        "min": null,
+        "median": null,
+        "max": null,
+        "mean": null
+      },
+      "part_count": {
+        "min": null,
+        "median": null,
+        "max": null,
+        "mean": null
+      },
+      "named_deformer_count": {
+        "min": null,
+        "median": null,
+        "max": null,
+        "mean": null
+      },
+      "examples": [
+        {
+          "model": "haru_greeter_t05",
+          "has_pose": true,
+          "expression_count": 0,
+          "glue_count": 0
+        },
+        {
+          "model": "haruto_t01",
+          "has_pose": false,
+          "expression_count": 0,
+          "glue_count": 0
+        },
+        {
+          "model": "hiyori_pro_t11",
+          "has_pose": true,
+          "expression_count": 0,
+          "glue_count": 26
+        },
+        {
+          "model": "kei_basic_free_t02",
+          "has_pose": false,
+          "expression_count": 0,
+          "glue_count": 1
+        },
+        {
+          "model": "kei_vowels_pro_t02",
+          "has_pose": false,
+          "expression_count": 0,
+          "glue_count": 1
+        },
+        {
+          "model": "koharu_t01",
+          "has_pose": false,
+          "expression_count": 0,
+          "glue_count": 0
+        },
+        {
+          "model": "mao_pro_t06",
+          "has_pose": true,
+          "expression_count": 8,
+          "glue_count": 7
+        },
+        {
+          "model": "miara_pro_t04",
+          "has_pose": false,
+          "expression_count": 0,
+          "glue_count": 36
+        }
+      ],
+      "decision": "Use mask/pose/expression only when design needs it; do not force rich-sample complexity into v2_min."
+    },
+    "psd_layering": {
+      "parameter_or_group_count": {
+        "min": null,
+        "median": null,
+        "max": null,
+        "mean": null
+      },
+      "motion_parameter_count": {
+        "min": null,
+        "median": null,
+        "max": null,
+        "mean": null
+      },
+      "part_count": {
+        "min": null,
+        "median": null,
+        "max": null,
+        "mean": null
+      },
+      "named_deformer_count": {
+        "min": null,
+        "median": null,
+        "max": null,
+        "mean": null
+      },
+      "examples": [
+        {
+          "model": "haru_greeter_t05",
+          "psd_count": 2,
+          "has_psd": true
+        },
+        {
+          "model": "haruto_t01",
+          "psd_count": 4,
+          "has_psd": true
+        },
+        {
+          "model": "hiyori_pro_t11",
+          "psd_count": 0,
+          "has_psd": false
+        },
+        {
+          "model": "kei_basic_free_t02",
+          "psd_count": 0,
+          "has_psd": false
+        },
+        {
+          "model": "kei_vowels_pro_t02",
+          "psd_count": 0,
+          "has_psd": false
+        },
+        {
+          "model": "koharu_t01",
+          "psd_count": 4,
+          "has_psd": true
+        },
+        {
+          "model": "mao_pro_t06",
+          "psd_count": 0,
+          "has_psd": false
+        },
+        {
+          "model": "miara_pro_t04",
+          "psd_count": 0,
+          "has_psd": false
+        }
+      ],
+      "decision": "Use PSD/material split examples as taxonomy guidance only; do not reuse official art assets."
+    }
+  },
+  "models": [
+    {
+      "id": "haru_greeter_pro_jp_haru_greeter_t05",
+      "safe_id": "haru_greeter_pro_jp_haru_greeter_t05",
+      "name": "haru_greeter_t05",
+      "profile_key": "haru_greeter",
+      "learning_target": "PSD/material split, receptionist avatar baseline, body and arm-safe greeting motions",
+      "runtime_status": "PASS",
+      "cmo3_status": "PASS",
+      "structure_counts": {
+        "art_meshes": 86,
+        "parts": 21,
+        "parameters": 42,
+        "warp_deformers": 66,
+        "rotation_deformers": 31,
+        "keyform_bindings": 221,
+        "keyform_grids": 204,
+        "glue": 0
+      },
+      "categories": {
+        "eye": {
+          "parameter_ids": [
+            "ParamBrowLAngle",
+            "ParamBrowLForm",
+            "ParamBrowLX",
+            "ParamBrowLY",
+            "ParamBrowRAngle",
+            "ParamBrowRForm",
+            "ParamBrowRX",
+            "ParamBrowRY",
+            "ParamEyeBallForm",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeForm",
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile"
+          ],
+          "motion_parameter_ids": [
+            "ParamBrowLAngle",
+            "ParamBrowLForm",
+            "ParamBrowLX",
+            "ParamBrowLY",
+            "ParamBrowRAngle",
+            "ParamBrowRForm",
+            "ParamBrowRX",
+            "ParamBrowRY",
+            "ParamEyeBallForm",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeForm",
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile"
+          ],
+          "part_names": [
+            "まゆ毛"
+          ],
+          "warp_deformer_names": [
+            "右まゆ毛の位置",
+            "右まゆ毛の曲面",
+            "右まゆ毛の角度",
+            "左まゆ毛の位置",
+            "左まゆ毛の曲面",
+            "左まゆ毛の角度"
+          ],
+          "rotation_deformer_names": []
+        },
+        "mouth": {
+          "parameter_ids": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ],
+          "motion_parameter_ids": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ],
+          "part_names": [
+            "口"
+          ],
+          "warp_deformer_names": [
+            "口の曲面",
+            "口内の曲面"
+          ],
+          "rotation_deformer_names": []
+        },
+        "hair": {
+          "parameter_ids": [
+            "ParamHairBack",
+            "ParamHairFront",
+            "ParamHairSide"
+          ],
+          "motion_parameter_ids": [
+            "ParamHairBack",
+            "ParamHairFront",
+            "ParamHairSide"
+          ],
+          "part_names": [
+            "前髪",
+            "後ろ髪",
+            "横髪"
+          ],
+          "warp_deformer_names": [
+            "前髪の揺れ",
+            "前髪の曲面",
+            "前髪の角度Z",
+            "右後ろ髪の揺れ",
+            "右後ろ髪の曲面",
+            "右後ろ髪の角度Z",
+            "右横髪の曲面",
+            "右横髪の角度Z",
+            "左横髪の曲面",
+            "左横髪の角度Z",
+            "後ろ髪の曲面",
+            "横髪L揺れの曲面",
+            "横髪R揺れの曲面"
+          ],
+          "rotation_deformer_names": []
+        },
+        "body_angle": {
+          "parameter_ids": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "motion_parameter_ids": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "arm": {
+          "parameter_ids": [
+            "ParamArmLA",
+            "ParamArmLB",
+            "ParamArmRA",
+            "ParamArmRB",
+            "ParamHandAngleL",
+            "ParamHandAngleR",
+            "ParamHandChangeR",
+            "ParamHandDhangeL"
+          ],
+          "motion_parameter_ids": [
+            "ParamArmLA",
+            "ParamArmLB",
+            "ParamArmRA",
+            "ParamArmRB",
+            "ParamHandAngleL",
+            "ParamHandAngleR",
+            "ParamHandChangeR",
+            "ParamHandDhangeL"
+          ],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "physics": {
+          "group_count": 4,
+          "input_ids": [
+            "ParamAngleX",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleZ"
+          ],
+          "output_ids": [
+            "ParamHairBack",
+            "ParamHairFront",
+            "ParamHairSide",
+            "ParamScarf"
+          ],
+          "output_categories": [
+            "hair",
+            "other"
+          ]
+        },
+        "mask_pose_expression": {
+          "has_pose": true,
+          "expression_count": 0,
+          "glue_count": 0
+        },
+        "psd_layering": {
+          "psd_count": 2,
+          "has_psd": true
+        }
+      },
+      "evidence": {
+        "runtime_capture_dir": "experiments/live2d-strong-model-pattern-001/captures/haru_greeter_pro_jp_haru_greeter_t05",
+        "cmo3_report": "experiments/live2d-strong-model-pattern-001/cmo3/haru_greeter_pro_jp_haru_greeter_t05/cmo3_structure_report.json"
+      }
+    },
+    {
+      "id": "koharu_haruto_haruto_t01",
+      "safe_id": "koharu_haruto_haruto_t01",
+      "name": "haruto_t01",
+      "profile_key": "haruto",
+      "learning_target": "paired SD avatar, motion baseline and PSD layering",
+      "runtime_status": "PASS",
+      "cmo3_status": "WARN",
+      "structure_counts": {
+        "art_meshes": 87,
+        "parts": 19,
+        "parameters": 51,
+        "warp_deformers": 58,
+        "rotation_deformers": 18,
+        "keyform_bindings": 215,
+        "keyform_grids": 182,
+        "glue": 0
+      },
+      "categories": {
+        "eye": {
+          "parameter_ids": [
+            "PARAM_BROW_L_ANGLE",
+            "PARAM_BROW_L_FORM",
+            "PARAM_BROW_L_X",
+            "PARAM_BROW_L_Y",
+            "PARAM_BROW_R_ANGLE",
+            "PARAM_BROW_R_FORM",
+            "PARAM_BROW_R_X",
+            "PARAM_BROW_R_Y",
+            "PARAM_CHEEK",
+            "PARAM_EYE_01",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_HI",
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE",
+            "PARAM_EYE_SIZE"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_BROW_L_ANGLE",
+            "PARAM_BROW_L_FORM",
+            "PARAM_BROW_L_X",
+            "PARAM_BROW_L_Y",
+            "PARAM_BROW_R_ANGLE",
+            "PARAM_BROW_R_FORM",
+            "PARAM_BROW_R_X",
+            "PARAM_BROW_R_Y",
+            "PARAM_CHEEK",
+            "PARAM_EYE_01",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_HI",
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE",
+            "PARAM_EYE_SIZE"
+          ],
+          "part_names": [
+            "まゆ毛"
+          ],
+          "warp_deformer_names": [
+            "右まゆ毛の位置",
+            "右まゆ毛の曲面",
+            "右まゆ毛の角度",
+            "左まゆ毛の位置",
+            "左まゆ毛の曲面",
+            "左まゆ毛の角度"
+          ],
+          "rotation_deformer_names": []
+        },
+        "mouth": {
+          "parameter_ids": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_FORM_02",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_FORM_02",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "part_names": [
+            "口"
+          ],
+          "warp_deformer_names": [
+            "口の曲面"
+          ],
+          "rotation_deformer_names": []
+        },
+        "hair": {
+          "parameter_ids": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FLUFFY",
+            "PARAM_HAIR_FLUFFY_02",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FLUFFY",
+            "PARAM_HAIR_FLUFFY_02",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE"
+          ],
+          "part_names": [
+            "前髪",
+            "後ろ髪",
+            "横髪"
+          ],
+          "warp_deformer_names": [
+            "前髪の揺れ",
+            "前髪の曲面",
+            "前髪の曲面",
+            "前髪の曲面Z",
+            "前髪の曲面ふわ",
+            "右後ろ髪の揺れ",
+            "右後ろ髪の曲面",
+            "右後ろ髪の曲面Z",
+            "右横髪の曲面",
+            "右横髪の曲面Z",
+            "右横髪の曲面ふわ",
+            "左後ろ髪の揺れ",
+            "左後ろ髪の曲面",
+            "左後ろ髪の曲面Z",
+            "左横髪の曲面",
+            "左横髪の曲面Z",
+            "左横髪の曲面ふわ",
+            "後ろ髪の揺れ",
+            "後ろ髪の曲面",
+            "後ろ髪の曲面ふわ"
+          ],
+          "rotation_deformer_names": []
+        },
+        "body_angle": {
+          "parameter_ids": [],
+          "motion_parameter_ids": [],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "arm": {
+          "parameter_ids": [
+            "PARAM_ARM_L",
+            "PARAM_ARM_L_01",
+            "PARAM_ARM_L_02",
+            "PARAM_ARM_L_03",
+            "PARAM_ARM_R",
+            "PARAM_ARM_R_01",
+            "PARAM_ARM_R_02",
+            "PARAM_ARM_R_03",
+            "PARAM_HAND_L",
+            "PARAM_HAND_R",
+            "PARAM_HAND_SWITCH_L",
+            "PARAM_HAND_SWITCH_R"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_ARM_L",
+            "PARAM_ARM_L_01",
+            "PARAM_ARM_L_02",
+            "PARAM_ARM_L_03",
+            "PARAM_ARM_R",
+            "PARAM_ARM_R_01",
+            "PARAM_ARM_R_02",
+            "PARAM_ARM_R_03",
+            "PARAM_HAND_L",
+            "PARAM_HAND_R",
+            "PARAM_HAND_SWITCH_L",
+            "PARAM_HAND_SWITCH_R"
+          ],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "physics": {
+          "group_count": 4,
+          "input_ids": [
+            "PARAM_ANGLE_X",
+            "PARAM_ANGLE_Z",
+            "PARAM_BODY_ANGLE_X",
+            "PARAM_BODY_ANGLE_Z"
+          ],
+          "output_ids": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE",
+            "PARAM_NECKTIE"
+          ],
+          "output_categories": [
+            "hair",
+            "other"
+          ]
+        },
+        "mask_pose_expression": {
+          "has_pose": false,
+          "expression_count": 0,
+          "glue_count": 0
+        },
+        "psd_layering": {
+          "psd_count": 4,
+          "has_psd": true
+        }
+      },
+      "evidence": {
+        "runtime_capture_dir": "experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_haruto_t01",
+        "cmo3_report": "experiments/live2d-strong-model-pattern-001/cmo3/koharu_haruto_haruto_t01/cmo3_structure_report.json"
+      }
+    },
+    {
+      "id": "hiyori_pro_ko_hiyori_pro_t11",
+      "safe_id": "hiyori_pro_ko_hiyori_pro_t11",
+      "name": "hiyori_pro_t11",
+      "profile_key": "hiyori",
+      "learning_target": "standard human avatar, head/body angle, hair skinning and physics",
+      "runtime_status": "PASS",
+      "cmo3_status": "WARN",
+      "structure_counts": {
+        "art_meshes": 140,
+        "parts": 27,
+        "parameters": 70,
+        "warp_deformers": 50,
+        "rotation_deformers": 54,
+        "keyform_bindings": 346,
+        "keyform_grids": 297,
+        "glue": 26
+      },
+      "categories": {
+        "eye": {
+          "parameter_ids": [
+            "ParamBrowLAngle",
+            "ParamBrowLForm",
+            "ParamBrowLX",
+            "ParamBrowLY",
+            "ParamBrowRAngle",
+            "ParamBrowRForm",
+            "ParamBrowRX",
+            "ParamBrowRY",
+            "ParamCheek",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile"
+          ],
+          "motion_parameter_ids": [
+            "ParamBrowLAngle",
+            "ParamBrowLForm",
+            "ParamBrowLX",
+            "ParamBrowLY",
+            "ParamBrowRAngle",
+            "ParamBrowRForm",
+            "ParamBrowRX",
+            "ParamBrowRY",
+            "ParamCheek",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile"
+          ],
+          "part_names": [
+            "눈",
+            "눈썹"
+          ],
+          "warp_deformer_names": [
+            "오른쪽 눈썩의 각도",
+            "오른쪽 눈썹의 곡면",
+            "오른쪽 눈썹의 위치",
+            "오른쪽 눈알 위치",
+            "오른쪽 눈알 하이라이트 1의 위치",
+            "오른쪽 눈알 하이라이트 그림자 위치",
+            "오른쪽 눈의 곡면",
+            "왼쪽 눈썩의 각도",
+            "왼쪽 눈썹의 곡면",
+            "왼쪽 눈썹의 위치",
+            "왼쪽 눈알 위치",
+            "왼쪽 눈알 하이라이트 1의 위치",
+            "왼쪽 눈알 하이라이트 그림자 위치",
+            "왼쪽 눈의 곡면"
+          ],
+          "rotation_deformer_names": []
+        },
+        "mouth": {
+          "parameter_ids": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ],
+          "motion_parameter_ids": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ],
+          "part_names": [
+            "입"
+          ],
+          "warp_deformer_names": [
+            "입의 곡면"
+          ],
+          "rotation_deformer_names": []
+        },
+        "hair": {
+          "parameter_ids": [
+            "ParamHairAhoge",
+            "ParamHairBack",
+            "ParamHairFront"
+          ],
+          "motion_parameter_ids": [
+            "ParamHairAhoge"
+          ],
+          "part_names": [
+            "뒷머리",
+            "앞머리",
+            "앞머리 오른쪽(스키닝)",
+            "앞머리 오른쪽(회전)",
+            "앞머리 왼쪽(회전)",
+            "옆머리",
+            "왼쪽 앞머리(스키닝)"
+          ],
+          "warp_deformer_names": [
+            "뒷머리 곡면 1",
+            "뒷머리 곡면 2",
+            "뒷머리의 곡면",
+            "뒷머리의 곡면 Z",
+            "뒷머리의 흔들림",
+            "머리카락의 곡면",
+            "머리카락의 흔들림",
+            "앞머리 곡면 Z",
+            "앞머리의 곡면",
+            "앞머리의 흔들림",
+            "잔머리의 곡면"
+          ],
+          "rotation_deformer_names": [
+            "회전 4_앞머리 왼쪽",
+            "회전 5_앞머리 왼쪽",
+            "회전 6_앞머리 왼쪽",
+            "회전0_앞머리 오른쪽",
+            "회전0_앞머리 왼쪽",
+            "회전1_앞머리 오른쪽",
+            "회전1_앞머리 왼쪽",
+            "회전2_앞머리 오른쪽",
+            "회전2_앞머리왼쪽",
+            "회전3_앞머리 오른쪽",
+            "회전3_앞머리왼쪽",
+            "회전4_앞머리 오른쪽",
+            "회전5_앞머리 오른쪽",
+            "회전6_앞머리 오른쪽"
+          ]
+        },
+        "body_angle": {
+          "parameter_ids": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "motion_parameter_ids": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "part_names": [
+            "목",
+            "몸"
+          ],
+          "warp_deformer_names": [
+            "목의 곡면",
+            "몸의 곡면 X",
+            "몸의 곡선Y",
+            "몸의 곡선Z"
+          ],
+          "rotation_deformer_names": [
+            "목의 위치"
+          ]
+        },
+        "arm": {
+          "parameter_ids": [
+            "ParamArmLA",
+            "ParamArmLB",
+            "ParamArmRA",
+            "ParamArmRB",
+            "ParamHandL",
+            "ParamHandLB",
+            "ParamHandR",
+            "ParamHandRB",
+            "ParamShoulder"
+          ],
+          "motion_parameter_ids": [
+            "ParamArmLA",
+            "ParamArmLB",
+            "ParamArmRA",
+            "ParamArmRB",
+            "ParamHandL",
+            "ParamHandLB",
+            "ParamHandR",
+            "ParamHandRB",
+            "ParamShoulder"
+          ],
+          "part_names": [
+            "팔 B",
+            "팔A"
+          ],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": [
+            "팔 A 오른쪽 팔뚝 회전",
+            "팔 A 오른쪽 회전",
+            "팔 A 오른팔의 위치",
+            "팔 A 왼쪽 팔뚝 회전",
+            "팔 A 왼팔의 위치",
+            "팔 A 왼팔의 회전",
+            "팔B 오른손의 회전",
+            "팔B 오른쪽 뒷 팔의 회전",
+            "팔B 오른쪽 상단 팔 회전",
+            "팔B 오른팔의 위치",
+            "팔B 왼손의 회전",
+            "팔B 왼쪽 상단 팔 회전",
+            "팔B 왼쪽 팔 뒷면의 회전",
+            "팔B 왼팔 위치"
+          ]
+        },
+        "physics": {
+          "group_count": 11,
+          "input_ids": [
+            "ParamAngleX",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "output_ids": [
+            "ParamBustY",
+            "ParamHairBack",
+            "ParamHairFront",
+            "ParamRibbon",
+            "ParamSideupRibbon",
+            "ParamSkirt",
+            "ParamSkirt2",
+            "Param_Angle_Rotation_1_ArtMesh54",
+            "Param_Angle_Rotation_1_ArtMesh55",
+            "Param_Angle_Rotation_1_ArtMesh61",
+            "Param_Angle_Rotation_1_ArtMesh62",
+            "Param_Angle_Rotation_2_ArtMesh54",
+            "Param_Angle_Rotation_2_ArtMesh55",
+            "Param_Angle_Rotation_2_ArtMesh61",
+            "Param_Angle_Rotation_2_ArtMesh62",
+            "Param_Angle_Rotation_3_ArtMesh54",
+            "Param_Angle_Rotation_3_ArtMesh55",
+            "Param_Angle_Rotation_3_ArtMesh61",
+            "Param_Angle_Rotation_3_ArtMesh62",
+            "Param_Angle_Rotation_4_ArtMesh54",
+            "Param_Angle_Rotation_4_ArtMesh55",
+            "Param_Angle_Rotation_4_ArtMesh61",
+            "Param_Angle_Rotation_4_ArtMesh62",
+            "Param_Angle_Rotation_5_ArtMesh54",
+            "Param_Angle_Rotation_5_ArtMesh55",
+            "Param_Angle_Rotation_5_ArtMesh61",
+            "Param_Angle_Rotation_5_ArtMesh62",
+            "Param_Angle_Rotation_6_ArtMesh54",
+            "Param_Angle_Rotation_6_ArtMesh55",
+            "Param_Angle_Rotation_6_ArtMesh61",
+            "Param_Angle_Rotation_6_ArtMesh62",
+            "Param_Angle_Rotation_7_ArtMesh54",
+            "Param_Angle_Rotation_7_ArtMesh55",
+            "Param_Angle_Rotation_7_ArtMesh61",
+            "Param_Angle_Rotation_7_ArtMesh62"
+          ],
+          "output_categories": [
+            "hair",
+            "other"
+          ]
+        },
+        "mask_pose_expression": {
+          "has_pose": true,
+          "expression_count": 0,
+          "glue_count": 26
+        },
+        "psd_layering": {
+          "psd_count": 0,
+          "has_psd": false
+        }
+      },
+      "evidence": {
+        "runtime_capture_dir": "experiments/live2d-strong-model-pattern-001/captures/hiyori_pro_ko_hiyori_pro_t11",
+        "cmo3_report": "experiments/live2d-strong-model-pattern-001/cmo3/hiyori_pro_ko_hiyori_pro_t11/cmo3_structure_report.json"
+      }
+    },
+    {
+      "id": "kei_ko_kei_basic_free_t02",
+      "safe_id": "kei_ko_kei_basic_free_t02",
+      "name": "kei_basic_free_t02",
+      "profile_key": "kei",
+      "learning_target": "mouth vowels, lip-sync parameter coverage, compact face motion",
+      "runtime_status": "PASS",
+      "cmo3_status": "PASS",
+      "structure_counts": {
+        "art_meshes": 61,
+        "parts": 21,
+        "parameters": 27,
+        "warp_deformers": 47,
+        "rotation_deformers": 2,
+        "keyform_bindings": 150,
+        "keyform_grids": 132,
+        "glue": 1
+      },
+      "categories": {
+        "eye": {
+          "parameter_ids": [
+            "ParamBrowLForm",
+            "ParamBrowLY",
+            "ParamBrowRForm",
+            "ParamBrowRY",
+            "ParamCheek",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile"
+          ],
+          "motion_parameter_ids": [
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile"
+          ],
+          "part_names": [
+            "오른쪽 눈",
+            "오른쪽 눈썹",
+            "오른쪽 눈알",
+            "왼쪽 눈",
+            "왼쪽 눈썹",
+            "왼쪽 눈알"
+          ],
+          "warp_deformer_names": [
+            "오른쪽 눈썹 곡면",
+            "오른쪽 눈의 곡면",
+            "오른쪽 눈의 위치",
+            "왼쪽 눈썹 곡면",
+            "왼쪽 눈의 곡면",
+            "왼쪽 눈의 위치"
+          ],
+          "rotation_deformer_names": []
+        },
+        "mouth": {
+          "parameter_ids": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ],
+          "motion_parameter_ids": [],
+          "part_names": [
+            "입 기본"
+          ],
+          "warp_deformer_names": [
+            "입의 곡면"
+          ],
+          "rotation_deformer_names": []
+        },
+        "hair": {
+          "parameter_ids": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSide2",
+            "ParamHairSideFuwa"
+          ],
+          "motion_parameter_ids": [],
+          "part_names": [
+            "뒷머리",
+            "앞머리",
+            "오른쪽 옆머리",
+            "왼쪽 옆머리"
+          ],
+          "warp_deformer_names": [
+            "뒷머리 곡면",
+            "뒷머리 곡면 Z",
+            "뒷머리 볼륨",
+            "뒷머리 흔들림",
+            "뒷머리의 곡면",
+            "뒷머리의 곡면 Z",
+            "뒷머리의 볼륨",
+            "뒷머리의 흔들림",
+            "앞머리 곡면",
+            "앞머리 곡면 Z",
+            "앞머리 볼륨",
+            "앞머리 흔들림",
+            "오른쪽 옆머리 곡면",
+            "오른쪽 옆머리 곡면 Z",
+            "오른쪽 옆머리2 곡면",
+            "오른쪽 옆머리2 곡면 Z",
+            "오른쪽 옆머리2 볼륨",
+            "오른쪽 옆머리2 흔들림",
+            "오른쪽 옆머리의 볼륨",
+            "오른쪽 옆머리의 흔들림",
+            "왼쪽 옆머리 곡면 Z",
+            "왼쪽 옆머리2 곡면",
+            "왼쪽 옆머리2 곡면 Z",
+            "왼쪽 옆머리2 볼륨",
+            "왼쪽 옆머리2 흔들림",
+            "왼쪽 옆머리의 곡면",
+            "왼쪽 옆머리의 볼륨",
+            "왼쪽 옆머리의 흔들림"
+          ],
+          "rotation_deformer_names": []
+        },
+        "body_angle": {
+          "parameter_ids": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "motion_parameter_ids": [],
+          "part_names": [
+            "목",
+            "몸"
+          ],
+          "warp_deformer_names": [
+            "목의 곡면",
+            "몸의 곡면",
+            "몸의 곡면Y",
+            "몸의 곡면Z"
+          ],
+          "rotation_deformer_names": [
+            "목 회전"
+          ]
+        },
+        "arm": {
+          "parameter_ids": [],
+          "motion_parameter_ids": [],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "physics": {
+          "group_count": 6,
+          "input_ids": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "output_ids": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSide2",
+            "ParamHairSideFuwa"
+          ],
+          "output_categories": [
+            "hair"
+          ]
+        },
+        "mask_pose_expression": {
+          "has_pose": false,
+          "expression_count": 0,
+          "glue_count": 1
+        },
+        "psd_layering": {
+          "psd_count": 0,
+          "has_psd": false
+        }
+      },
+      "evidence": {
+        "runtime_capture_dir": "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_basic_free_t02",
+        "cmo3_report": "experiments/live2d-strong-model-pattern-001/cmo3/kei_ko_kei_basic_free_t02/cmo3_structure_report.json"
+      }
+    },
+    {
+      "id": "kei_ko_kei_vowels_pro_t02",
+      "safe_id": "kei_ko_kei_vowels_pro_t02",
+      "name": "kei_vowels_pro_t02",
+      "profile_key": "kei",
+      "learning_target": "mouth vowels, lip-sync parameter coverage, compact face motion",
+      "runtime_status": "PASS",
+      "cmo3_status": "WARN",
+      "structure_counts": {
+        "art_meshes": 61,
+        "parts": 21,
+        "parameters": 31,
+        "warp_deformers": 46,
+        "rotation_deformers": 2,
+        "keyform_bindings": 141,
+        "keyform_grids": 131,
+        "glue": 1
+      },
+      "categories": {
+        "eye": {
+          "parameter_ids": [
+            "ParamBrowLForm",
+            "ParamBrowLY",
+            "ParamBrowRForm",
+            "ParamBrowRY",
+            "ParamCheek",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile"
+          ],
+          "motion_parameter_ids": [
+            "ParamEyeBallScale",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLForm",
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeRForm",
+            "ParamEyeROpen",
+            "ParamEyeRSmile"
+          ],
+          "part_names": [
+            "오른쪽 눈",
+            "오른쪽 눈썹",
+            "오른쪽 눈알",
+            "왼쪽 눈",
+            "왼쪽 눈썹",
+            "왼쪽 눈알"
+          ],
+          "warp_deformer_names": [
+            "오른쪽 눈썹 곡면",
+            "오른쪽 눈의 곡면",
+            "오른쪽 눈의 위치",
+            "왼쪽 눈썹 곡면",
+            "왼쪽 눈의 곡면",
+            "왼쪽 눈의 위치"
+          ],
+          "rotation_deformer_names": []
+        },
+        "mouth": {
+          "parameter_ids": [
+            "ParamA",
+            "ParamE",
+            "ParamI",
+            "ParamMouthOpenY",
+            "ParamO",
+            "ParamU"
+          ],
+          "motion_parameter_ids": [],
+          "part_names": [
+            "입 모음만"
+          ],
+          "warp_deformer_names": [
+            "입의 곡면"
+          ],
+          "rotation_deformer_names": []
+        },
+        "hair": {
+          "parameter_ids": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSide2",
+            "ParamHairSideFuwa"
+          ],
+          "motion_parameter_ids": [],
+          "part_names": [
+            "뒷머리",
+            "앞머리",
+            "오른쪽 옆머리",
+            "왼쪽 옆머리"
+          ],
+          "warp_deformer_names": [
+            "뒷머리 곡면",
+            "뒷머리 곡면 Z",
+            "뒷머리 볼륨",
+            "뒷머리 흔들림",
+            "뒷머리의 곡면",
+            "뒷머리의 곡면 Z",
+            "뒷머리의 볼륨",
+            "뒷머리의 흔들림",
+            "앞머리 곡면",
+            "앞머리 곡면 Z",
+            "앞머리 볼륨",
+            "앞머리 흔들림",
+            "오른쪽 옆머리 곡면",
+            "오른쪽 옆머리 곡면 Z",
+            "오른쪽 옆머리2 곡면",
+            "오른쪽 옆머리2 곡면 Z",
+            "오른쪽 옆머리2 볼륨",
+            "오른쪽 옆머리2 흔들림",
+            "오른쪽 옆머리의 볼륨",
+            "오른쪽 옆머리의 흔들림",
+            "왼쪽 옆머리 곡면 Z",
+            "왼쪽 옆머리2 곡면",
+            "왼쪽 옆머리2 곡면 Z",
+            "왼쪽 옆머리2 볼륨",
+            "왼쪽 옆머리2 흔들림",
+            "왼쪽 옆머리의 곡면",
+            "왼쪽 옆머리의 볼륨",
+            "왼쪽 옆머리의 흔들림"
+          ],
+          "rotation_deformer_names": []
+        },
+        "body_angle": {
+          "parameter_ids": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "motion_parameter_ids": [],
+          "part_names": [
+            "목",
+            "몸"
+          ],
+          "warp_deformer_names": [
+            "목의 곡면",
+            "몸의 곡면",
+            "몸의 곡면Y",
+            "몸의 곡면Z"
+          ],
+          "rotation_deformer_names": [
+            "목 회전"
+          ]
+        },
+        "arm": {
+          "parameter_ids": [],
+          "motion_parameter_ids": [],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "physics": {
+          "group_count": 6,
+          "input_ids": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "output_ids": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSide2",
+            "ParamHairSideFuwa"
+          ],
+          "output_categories": [
+            "hair"
+          ]
+        },
+        "mask_pose_expression": {
+          "has_pose": false,
+          "expression_count": 0,
+          "glue_count": 1
+        },
+        "psd_layering": {
+          "psd_count": 0,
+          "has_psd": false
+        }
+      },
+      "evidence": {
+        "runtime_capture_dir": "experiments/live2d-strong-model-pattern-001/captures/kei_ko_kei_vowels_pro_t02",
+        "cmo3_report": "experiments/live2d-strong-model-pattern-001/cmo3/kei_ko_kei_vowels_pro_t02/cmo3_structure_report.json"
+      }
+    },
+    {
+      "id": "koharu_haruto_koharu_t01",
+      "safe_id": "koharu_haruto_koharu_t01",
+      "name": "koharu_t01",
+      "profile_key": "koharu",
+      "learning_target": "paired SD avatar, expression effects and motion baseline",
+      "runtime_status": "PASS",
+      "cmo3_status": "WARN",
+      "structure_counts": {
+        "art_meshes": 91,
+        "parts": 19,
+        "parameters": 52,
+        "warp_deformers": 63,
+        "rotation_deformers": 18,
+        "keyform_bindings": 220,
+        "keyform_grids": 191,
+        "glue": 0
+      },
+      "categories": {
+        "eye": {
+          "parameter_ids": [
+            "PARAM_BROW_L_ANGLE",
+            "PARAM_BROW_L_FORM",
+            "PARAM_BROW_L_X",
+            "PARAM_BROW_L_Y",
+            "PARAM_BROW_R_ANGLE",
+            "PARAM_BROW_R_FORM",
+            "PARAM_BROW_R_X",
+            "PARAM_BROW_R_Y",
+            "PARAM_CHEEK",
+            "PARAM_EYE_01",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_HI",
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE",
+            "PARAM_EYE_SIZE"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_BROW_L_ANGLE",
+            "PARAM_BROW_L_FORM",
+            "PARAM_BROW_L_X",
+            "PARAM_BROW_L_Y",
+            "PARAM_BROW_R_ANGLE",
+            "PARAM_BROW_R_FORM",
+            "PARAM_BROW_R_X",
+            "PARAM_BROW_R_Y",
+            "PARAM_CHEEK",
+            "PARAM_EYE_01",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_HI",
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE",
+            "PARAM_EYE_SIZE"
+          ],
+          "part_names": [
+            "まゆ毛"
+          ],
+          "warp_deformer_names": [
+            "右まゆ毛の位置",
+            "右まゆ毛の曲面",
+            "右まゆ毛の角度",
+            "左まゆ毛の位置",
+            "左まゆ毛の曲面",
+            "左まゆ毛の角度"
+          ],
+          "rotation_deformer_names": []
+        },
+        "mouth": {
+          "parameter_ids": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_FORM_02",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_FORM_02",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "part_names": [
+            "口"
+          ],
+          "warp_deformer_names": [
+            "口の曲面"
+          ],
+          "rotation_deformer_names": []
+        },
+        "hair": {
+          "parameter_ids": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FLUFFY",
+            "PARAM_HAIR_FLUFFY_02",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FLUFFY",
+            "PARAM_HAIR_FLUFFY_02",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE"
+          ],
+          "part_names": [
+            "前髪",
+            "後ろ髪",
+            "横髪"
+          ],
+          "warp_deformer_names": [
+            "前髪の揺れ",
+            "前髪の曲面",
+            "前髪の曲面",
+            "前髪の曲面Z",
+            "前髪の曲面ふわ",
+            "右後ろ髪の揺れ",
+            "右後ろ髪の曲面",
+            "右後ろ髪の曲面Z",
+            "右横髪の曲面",
+            "右横髪の曲面Z",
+            "右横髪の曲面ふわ",
+            "左後ろ髪の揺れ",
+            "左後ろ髪の曲面",
+            "左後ろ髪の曲面Z",
+            "左横髪の曲面",
+            "左横髪の曲面Z",
+            "左横髪の曲面ふわ",
+            "後ろ髪のふわ",
+            "後ろ髪の揺れ",
+            "後ろ髪の曲面",
+            "後ろ髪の曲面Z"
+          ],
+          "rotation_deformer_names": []
+        },
+        "body_angle": {
+          "parameter_ids": [],
+          "motion_parameter_ids": [],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "arm": {
+          "parameter_ids": [
+            "PARAM_ARM_L",
+            "PARAM_ARM_L_01",
+            "PARAM_ARM_L_02",
+            "PARAM_ARM_L_03",
+            "PARAM_ARM_R",
+            "PARAM_ARM_R_01",
+            "PARAM_ARM_R_02",
+            "PARAM_ARM_R_03",
+            "PARAM_HAND_L",
+            "PARAM_HAND_R",
+            "PARAM_HAND_SWITCH_L",
+            "PARAM_HAND_SWITCH_R"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_ARM_L",
+            "PARAM_ARM_L_01",
+            "PARAM_ARM_L_02",
+            "PARAM_ARM_L_03",
+            "PARAM_ARM_R",
+            "PARAM_ARM_R_01",
+            "PARAM_ARM_R_02",
+            "PARAM_ARM_R_03",
+            "PARAM_HAND_L",
+            "PARAM_HAND_R",
+            "PARAM_HAND_SWITCH_L",
+            "PARAM_HAND_SWITCH_R"
+          ],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "physics": {
+          "group_count": 5,
+          "input_ids": [
+            "PARAM_ANGLE_X",
+            "PARAM_ANGLE_Z",
+            "PARAM_BODY_ANGLE_X",
+            "PARAM_BODY_ANGLE_Z"
+          ],
+          "output_ids": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE",
+            "PARAM_NECKTIE",
+            "PARAM_SKIRT"
+          ],
+          "output_categories": [
+            "hair",
+            "other"
+          ]
+        },
+        "mask_pose_expression": {
+          "has_pose": false,
+          "expression_count": 0,
+          "glue_count": 0
+        },
+        "psd_layering": {
+          "psd_count": 4,
+          "has_psd": true
+        }
+      },
+      "evidence": {
+        "runtime_capture_dir": "experiments/live2d-strong-model-pattern-001/captures/koharu_haruto_koharu_t01",
+        "cmo3_report": "experiments/live2d-strong-model-pattern-001/cmo3/koharu_haruto_koharu_t01/cmo3_structure_report.json"
+      }
+    },
+    {
+      "id": "mao_pro_ko_mao_pro_t06",
+      "safe_id": "mao_pro_ko_mao_pro_t06",
+      "name": "mao_pro_t06",
+      "profile_key": "mao",
+      "learning_target": "rich face range, arms/accessories/effects, blend-shape-like expression breadth",
+      "runtime_status": "PASS",
+      "cmo3_status": "WARN",
+      "structure_counts": {
+        "art_meshes": 262,
+        "parts": 33,
+        "parameters": 128,
+        "warp_deformers": 116,
+        "rotation_deformers": 59,
+        "keyform_bindings": 497,
+        "keyform_grids": 479,
+        "glue": 7
+      },
+      "categories": {
+        "eye": {
+          "parameter_ids": [
+            "ParamBrowLAngle",
+            "ParamBrowLForm",
+            "ParamBrowLX",
+            "ParamBrowLY",
+            "ParamBrowRAngle",
+            "ParamBrowRForm",
+            "ParamBrowRX",
+            "ParamBrowRY",
+            "ParamCheek",
+            "ParamEyeBallForm",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeEffect",
+            "ParamEyeLForm",
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeRForm",
+            "ParamEyeROpen",
+            "ParamEyeRSmile"
+          ],
+          "motion_parameter_ids": [
+            "ParamBrowLAngle",
+            "ParamBrowLForm",
+            "ParamBrowLX",
+            "ParamBrowLY",
+            "ParamBrowRAngle",
+            "ParamBrowRForm",
+            "ParamBrowRX",
+            "ParamBrowRY",
+            "ParamCheek",
+            "ParamEyeBallForm",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeEffect",
+            "ParamEyeLForm",
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeRForm",
+            "ParamEyeROpen",
+            "ParamEyeRSmile"
+          ],
+          "part_names": [
+            "눈",
+            "눈썹",
+            "눈알"
+          ],
+          "warp_deformer_names": [
+            "오른쪽 눈썹 곡면",
+            "오른쪽 눈썹 위치",
+            "오른쪽 눈알의 축소",
+            "오른쪽 눈의 곡면",
+            "오른쪽 눈의 위치",
+            "왼쪽 눈썹 곡면",
+            "왼쪽 눈썹 위치",
+            "왼쪽 눈알의 축소",
+            "왼쪽 눈의 곡면",
+            "왼쪽 눈의 위치"
+          ],
+          "rotation_deformer_names": []
+        },
+        "mouth": {
+          "parameter_ids": [
+            "ParamA",
+            "ParamE",
+            "ParamI",
+            "ParamMouthAngry",
+            "ParamMouthAngryLine",
+            "ParamMouthDown",
+            "ParamMouthUp",
+            "ParamO",
+            "ParamU"
+          ],
+          "motion_parameter_ids": [
+            "ParamA",
+            "ParamE",
+            "ParamI",
+            "ParamMouthAngry",
+            "ParamMouthAngryLine",
+            "ParamMouthDown",
+            "ParamMouthUp",
+            "ParamO",
+            "ParamU"
+          ],
+          "part_names": [
+            "입"
+          ],
+          "warp_deformer_names": [
+            "입의 곡면"
+          ],
+          "rotation_deformer_names": []
+        },
+        "hair": {
+          "parameter_ids": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairBackL",
+            "ParamHairBackR",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSideFuwa",
+            "ParamHairSideL",
+            "ParamHairSideR",
+            "ParamoHairMesh"
+          ],
+          "motion_parameter_ids": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairBackL",
+            "ParamHairBackR",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSideFuwa",
+            "ParamHairSideL",
+            "ParamHairSideR",
+            "ParamoHairMesh"
+          ],
+          "part_names": [
+            "뒷머리",
+            "앞머리",
+            "옆머리"
+          ],
+          "warp_deformer_names": [
+            "뒷머리 곡면 Z",
+            "뒷머리 오른쪽의 Z",
+            "뒷머리 오른쪽의 곡면",
+            "뒷머리 오른쪽의 볼륨",
+            "뒷머리 오른쪽의 흔들림",
+            "뒷머리 왼쪽의 Z",
+            "뒷머리 왼쪽의 곡면",
+            "뒷머리 왼쪽의 볼륨",
+            "뒷머리 왼쪽의 흔들림",
+            "뒷머리의 곡면",
+            "뒷머리의 볼륨",
+            "뒷머리의 흔들림",
+            "머리카락의 곡면",
+            "머리카락의 곡면 Z",
+            "머리카락의 볼륨",
+            "머리카락의 흔들림",
+            "앞머리 곡면",
+            "앞머리 곡면 Z",
+            "앞머리 메쉬 Z 조정",
+            "앞머리 볼륨",
+            "앞머리 흔들림",
+            "오른쪽 옆머리 곡면",
+            "오른쪽 옆머리 곡면 Z",
+            "오른쪽 옆머리의 볼륨",
+            "오른쪽 옆머리의 흔들림",
+            "왼쪽 옆머리 곡면 Z",
+            "왼쪽 옆머리의 곡면",
+            "왼쪽 옆머리의 볼륨",
+            "왼쪽 옆머리의 흔들림"
+          ],
+          "rotation_deformer_names": []
+        },
+        "body_angle": {
+          "parameter_ids": [
+            "ParamAllRotate",
+            "ParamAllX",
+            "ParamAllY",
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "motion_parameter_ids": [
+            "ParamAllRotate",
+            "ParamAllX",
+            "ParamAllY",
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "part_names": [
+            "목"
+          ],
+          "warp_deformer_names": [
+            "목의 곡면",
+            "몸의 곡면",
+            "몸의 곡면Y",
+            "몸의 곡면Z"
+          ],
+          "rotation_deformer_names": [
+            "목의 위치"
+          ]
+        },
+        "arm": {
+          "parameter_ids": [
+            "ParamArmLA01",
+            "ParamArmLA02",
+            "ParamArmLA03",
+            "ParamArmLB01",
+            "ParamArmLB02",
+            "ParamArmLB03",
+            "ParamArmRA01",
+            "ParamArmRA02",
+            "ParamArmRA03",
+            "ParamArmRB01",
+            "ParamArmRB02",
+            "ParamArmRB02Y",
+            "ParamArmRB03",
+            "ParamHandLA",
+            "ParamHandLB",
+            "ParamHandRA",
+            "ParamHandRB",
+            "ParamLeftShoulderUp",
+            "ParamRightShoulderUp"
+          ],
+          "motion_parameter_ids": [
+            "ParamArmLA01",
+            "ParamArmLA02",
+            "ParamArmLA03",
+            "ParamArmLB01",
+            "ParamArmLB02",
+            "ParamArmLB03",
+            "ParamArmRA01",
+            "ParamArmRA02",
+            "ParamArmRA03",
+            "ParamArmRB01",
+            "ParamArmRB02",
+            "ParamArmRB02Y",
+            "ParamArmRB03",
+            "ParamHandLA",
+            "ParamHandLB",
+            "ParamHandRA",
+            "ParamHandRB",
+            "ParamLeftShoulderUp",
+            "ParamRightShoulderUp"
+          ],
+          "part_names": [
+            "오른팔 A",
+            "오른팔 B",
+            "왼팔 A",
+            "왼팔 B"
+          ],
+          "warp_deformer_names": [
+            "오른쪽 팔 뒤 A의 곡면",
+            "오른팔 B 곡면"
+          ],
+          "rotation_deformer_names": [
+            "오른손 A의 회전",
+            "오른손 B의 회전",
+            "오른쪽 팔 뒤 A의 회전",
+            "오른쪽 팔 위 A의 회전",
+            "오른팔 A의 위치",
+            "오른팔 B의 위치",
+            "왼손 A의 회전",
+            "왼손 B의 회전",
+            "왼손 집게손가락 B의 회전",
+            "왼팔 A의 위치",
+            "왼팔 B의 위치",
+            "왼팔 뒷면B의 회전",
+            "왼팔 윗면B의 회전",
+            "파커 오른팔의 위치",
+            "파커 오른팔의 회전",
+            "파커 왼팔의 위치",
+            "파커 왼팔의 회전"
+          ]
+        },
+        "physics": {
+          "group_count": 16,
+          "input_ids": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "output_ids": [
+            "ParamAccessory1",
+            "ParamAccessory2",
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairBackL",
+            "ParamHairBackR",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSideFuwa",
+            "ParamHairSideL",
+            "ParamHairSideR",
+            "ParamHatBrim",
+            "ParamHatTop",
+            "ParamRibbon",
+            "ParamRobeFuwa",
+            "ParamRobeL",
+            "ParamRobeR",
+            "ParamString",
+            "ParamWing",
+            "ParamoHairMesh"
+          ],
+          "output_categories": [
+            "hair",
+            "other"
+          ]
+        },
+        "mask_pose_expression": {
+          "has_pose": true,
+          "expression_count": 8,
+          "glue_count": 7
+        },
+        "psd_layering": {
+          "psd_count": 0,
+          "has_psd": false
+        }
+      },
+      "evidence": {
+        "runtime_capture_dir": "experiments/live2d-strong-model-pattern-001/captures/mao_pro_ko_mao_pro_t06",
+        "cmo3_report": "experiments/live2d-strong-model-pattern-001/cmo3/mao_pro_ko_mao_pro_t06/cmo3_structure_report.json"
+      }
+    },
+    {
+      "id": "miara_pro_en_miara_pro_t04",
+      "safe_id": "miara_pro_en_miara_pro_t04",
+      "name": "miara_pro_t04",
+      "profile_key": "miara",
+      "learning_target": "draw order groups, full-body motion and effect-rich scene structure",
+      "runtime_status": "PASS",
+      "cmo3_status": "WARN",
+      "structure_counts": {
+        "art_meshes": 245,
+        "parts": 54,
+        "parameters": 138,
+        "warp_deformers": 93,
+        "rotation_deformers": 107,
+        "keyform_bindings": 467,
+        "keyform_grids": 535,
+        "glue": 36
+      },
+      "categories": {
+        "eye": {
+          "parameter_ids": [
+            "ParamBrowLAngle",
+            "ParamBrowLForm",
+            "ParamBrowLX",
+            "ParamBrowLY",
+            "ParamBrowRAngle",
+            "ParamBrowRForm",
+            "ParamBrowRX",
+            "ParamBrowRY",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLOpen",
+            "ParamEyeROpen"
+          ],
+          "motion_parameter_ids": [
+            "ParamBrowLAngle",
+            "ParamBrowLForm",
+            "ParamBrowLX",
+            "ParamBrowLY",
+            "ParamBrowRAngle",
+            "ParamBrowRForm",
+            "ParamBrowRX",
+            "ParamBrowRY",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLOpen",
+            "ParamEyeROpen"
+          ],
+          "part_names": [
+            "Brows",
+            "Eye"
+          ],
+          "warp_deformer_names": [
+            "Warp Brow L",
+            "Warp Brow L Angle",
+            "Warp Brow L Position",
+            "Warp Brow L XY",
+            "Warp Brow R",
+            "Warp Brow R Angle",
+            "Warp Brow R Position",
+            "Warp Brow R XY",
+            "Warp Eye L",
+            "Warp Eye R",
+            "Warp Eyeball L",
+            "Warp Eyeball R"
+          ],
+          "rotation_deformer_names": []
+        },
+        "mouth": {
+          "parameter_ids": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ],
+          "motion_parameter_ids": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ],
+          "part_names": [
+            "Mouth"
+          ],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "hair": {
+          "parameter_ids": [
+            "ParamHairAho1",
+            "ParamHairAho2",
+            "ParamHairBack",
+            "ParamHairBack2",
+            "ParamHairCloth",
+            "ParamHairCloth2",
+            "ParamHairFront",
+            "ParamHairFront2",
+            "ParamHairSide",
+            "ParamHairSide2",
+            "ParamHairTail",
+            "ParamHairTail2"
+          ],
+          "motion_parameter_ids": [],
+          "part_names": [
+            "Hair Accessory Front",
+            "Hair Ahoge",
+            "Hair Back",
+            "Hair Back Back R",
+            "Hair Back Tale",
+            "Hair Front",
+            "Hair L",
+            "Hair R",
+            "Hair Side Back",
+            "Hair Side L",
+            "Hair Side R",
+            "Hair Twin L",
+            "Hair Twin R"
+          ],
+          "warp_deformer_names": [
+            "Warp Hair Accessory",
+            "Warp Hair Accessory L",
+            "Warp Hair Accessory L Z",
+            "Warp Hair Accessory Z",
+            "Warp Hair Ahoge",
+            "Warp Hair Ahoge Z",
+            "Warp Hair Back Back R",
+            "Warp Hair Back Back R Z",
+            "Warp Hair Front",
+            "Warp Hair Front Z",
+            "Warp Hair Side Back L",
+            "Warp Hair Side Back L Z",
+            "Warp Hair Side L",
+            "Warp Hair Side L Back",
+            "Warp Hair Side R",
+            "Warp Hair Side R Z",
+            "Warp Hair Tail Back",
+            "Warp Hair Tail Back 1",
+            "Warp Hair Tail Back 5",
+            "Warp Hair Twintail L",
+            "Warp Hair Twintail L Z",
+            "Warp Hair Twintail R",
+            "Warp Hair Twintail R Z",
+            "Warp Move Hair Accessory",
+            "Warp Move Hair Accessory L",
+            "Warp Move Hair Back R",
+            "Warp Move Hair Front",
+            "Warp Move Hair Side L Back",
+            "Warp Move Hair Side L Back",
+            "Warp Move Hair Side R",
+            "Warp Move Hair Tail Back",
+            "Warp Move Hair Tail Back 1",
+            "Warp Move Hair Tail Back 5",
+            "Warp Move Hair Twintail L",
+            "Warp Move Hair Twintail R"
+          ],
+          "rotation_deformer_names": [
+            "Rotation Hair Back Tail 1 Z",
+            "Rotation Hair Back Tail 5 Z",
+            "Rotation Hair Back Tail Z",
+            "Rotation Hair Side Back L"
+          ]
+        },
+        "body_angle": {
+          "parameter_ids": [
+            "ParamAllRotate",
+            "ParamAllX",
+            "ParamAllY",
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleX2",
+            "ParamBodyAngleZ",
+            "ParamBodyAngleZ2"
+          ],
+          "motion_parameter_ids": [
+            "ParamAllRotate",
+            "ParamAllX",
+            "ParamAllY",
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleX2",
+            "ParamBodyAngleZ",
+            "ParamBodyAngleZ2"
+          ],
+          "part_names": [
+            "Body",
+            "Fairy Body",
+            "Lower Body",
+            "Upper Body"
+          ],
+          "warp_deformer_names": [
+            "Warp Body X",
+            "Warp Body Z",
+            "Warp Lower Body X",
+            "Warp Lower Body Z",
+            "Warp Neck Body X",
+            "Warp Neck Z",
+            "Warp Upper Body X"
+          ],
+          "rotation_deformer_names": [
+            "Position Neck",
+            "Rotaion Lower Body"
+          ]
+        },
+        "arm": {
+          "parameter_ids": [
+            "ParamArmL1",
+            "ParamArmL2",
+            "ParamArmL3",
+            "ParamArmR1",
+            "ParamArmR2",
+            "ParamArmR3"
+          ],
+          "motion_parameter_ids": [
+            "ParamArmL1",
+            "ParamArmL2",
+            "ParamArmL3",
+            "ParamArmR1",
+            "ParamArmR2",
+            "ParamArmR3"
+          ],
+          "part_names": [
+            "Arm L",
+            "Arm R",
+            "Hand L"
+          ],
+          "warp_deformer_names": [
+            "Warp Shoulder Y"
+          ],
+          "rotation_deformer_names": [
+            "Position Shoulder L",
+            "Position Shoulder R",
+            "Rotation Shoulder L",
+            "Rotation Shoulder R"
+          ]
+        },
+        "physics": {
+          "group_count": 19,
+          "input_ids": [
+            "ParamAllRotate",
+            "ParamAllX",
+            "ParamAllY",
+            "ParamAngleX",
+            "ParamAngleZ",
+            "ParamArmL1",
+            "ParamArmL2",
+            "ParamArmR1",
+            "ParamArmR2",
+            "ParamBodyAngleX",
+            "ParamBodyAngleZ",
+            "ParamMoveX",
+            "ParamMoveY"
+          ],
+          "output_ids": [
+            "ParamBust",
+            "ParamBustX",
+            "ParamChestAccessory",
+            "ParamCloth1",
+            "ParamCloth2",
+            "ParamHairAho1",
+            "ParamHairAho2",
+            "ParamHairBack",
+            "ParamHairBack2",
+            "ParamHairCloth",
+            "ParamHairCloth2",
+            "ParamHairFront",
+            "ParamHairFront2",
+            "ParamHairSide",
+            "ParamHairSide2",
+            "ParamHairTail",
+            "ParamHairTail2",
+            "ParamPepram1",
+            "ParamPepram2",
+            "ParamSleeve",
+            "ParamSleeve2",
+            "ParamSleeveL",
+            "ParamSleeveL2",
+            "ParamSleeveRibbon",
+            "ParamSleeveRibbonL",
+            "Param_Angle_Rotation_1_ArtMesh108",
+            "Param_Angle_Rotation_1_ArtMesh109",
+            "Param_Angle_Rotation_1_ArtMesh179",
+            "Param_Angle_Rotation_1_ArtMesh181",
+            "Param_Angle_Rotation_1_ArtMesh76",
+            "Param_Angle_Rotation_1_ArtMesh77",
+            "Param_Angle_Rotation_2_ArtMesh108",
+            "Param_Angle_Rotation_2_ArtMesh109",
+            "Param_Angle_Rotation_2_ArtMesh179",
+            "Param_Angle_Rotation_2_ArtMesh181",
+            "Param_Angle_Rotation_2_ArtMesh76",
+            "Param_Angle_Rotation_2_ArtMesh77",
+            "Param_Angle_Rotation_3_ArtMesh108",
+            "Param_Angle_Rotation_3_ArtMesh109",
+            "Param_Angle_Rotation_3_ArtMesh179",
+            "Param_Angle_Rotation_3_ArtMesh181",
+            "Param_Angle_Rotation_3_ArtMesh76",
+            "Param_Angle_Rotation_3_ArtMesh77",
+            "Param_Angle_Rotation_4_ArtMesh108",
+            "Param_Angle_Rotation_4_ArtMesh109",
+            "Param_Angle_Rotation_4_ArtMesh179",
+            "Param_Angle_Rotation_4_ArtMesh181",
+            "Param_Angle_Rotation_4_ArtMesh76",
+            "Param_Angle_Rotation_4_ArtMesh77",
+            "Param_Angle_Rotation_5_ArtMesh108",
+            "Param_Angle_Rotation_5_ArtMesh109",
+            "Param_Angle_Rotation_5_ArtMesh179",
+            "Param_Angle_Rotation_5_ArtMesh181",
+            "Param_Angle_Rotation_5_ArtMesh76",
+            "Param_Angle_Rotation_5_ArtMesh77",
+            "Param_Angle_Rotation_6_ArtMesh108",
+            "Param_Angle_Rotation_6_ArtMesh109",
+            "Param_Angle_Rotation_6_ArtMesh76",
+            "Param_Angle_Rotation_6_ArtMesh77",
+            "Param_Angle_Rotation_7_ArtMesh108",
+            "Param_Angle_Rotation_7_ArtMesh109",
+            "Param_Angle_Rotation_7_ArtMesh76",
+            "Param_Angle_Rotation_7_ArtMesh77"
+          ],
+          "output_categories": [
+            "hair",
+            "other"
+          ]
+        },
+        "mask_pose_expression": {
+          "has_pose": false,
+          "expression_count": 0,
+          "glue_count": 36
+        },
+        "psd_layering": {
+          "psd_count": 0,
+          "has_psd": false
+        }
+      },
+      "evidence": {
+        "runtime_capture_dir": "experiments/live2d-strong-model-pattern-001/captures/miara_pro_en_miara_pro_t04",
+        "cmo3_report": "experiments/live2d-strong-model-pattern-001/cmo3/miara_pro_en_miara_pro_t04/cmo3_structure_report.json"
+      }
+    },
+    {
+      "id": "miku_pro_jp_miku_sample_t05",
+      "safe_id": "miku_pro_jp_miku_sample_t05",
+      "name": "miku_sample_t05",
+      "profile_key": "miku",
+      "learning_target": "long hair and twin-tail physics/skinning baseline",
+      "runtime_status": "PASS",
+      "cmo3_status": "WARN",
+      "structure_counts": {
+        "art_meshes": 116,
+        "parts": 26,
+        "parameters": 59,
+        "warp_deformers": 27,
+        "rotation_deformers": 38,
+        "keyform_bindings": 233,
+        "keyform_grids": 229,
+        "glue": 22
+      },
+      "categories": {
+        "eye": {
+          "parameter_ids": [
+            "ParamBrowLAngle",
+            "ParamBrowLForm",
+            "ParamBrowLX",
+            "ParamBrowLY",
+            "ParamBrowRAngle",
+            "ParamBrowRForm",
+            "ParamBrowRX",
+            "ParamBrowRY",
+            "ParamCheek",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile"
+          ],
+          "motion_parameter_ids": [
+            "ParamBrowLAngle",
+            "ParamBrowLForm",
+            "ParamBrowLX",
+            "ParamBrowLY",
+            "ParamBrowRAngle",
+            "ParamBrowRForm",
+            "ParamBrowRX",
+            "ParamBrowRY",
+            "ParamCheek",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile"
+          ],
+          "part_names": [
+            "まゆ毛"
+          ],
+          "warp_deformer_names": [
+            "右まゆ毛の位置",
+            "右まゆ毛の曲面",
+            "右まゆ毛の角度",
+            "左まゆ毛の位置",
+            "左まゆ毛の曲面",
+            "左まゆ毛の角度"
+          ],
+          "rotation_deformer_names": []
+        },
+        "mouth": {
+          "parameter_ids": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ],
+          "motion_parameter_ids": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ],
+          "part_names": [
+            "口"
+          ],
+          "warp_deformer_names": [
+            "口の曲面",
+            "口影かぶせの曲面"
+          ],
+          "rotation_deformer_names": []
+        },
+        "hair": {
+          "parameter_ids": [
+            "ParamHairBack",
+            "ParamHairBackL8",
+            "ParamHairBackR6",
+            "ParamHairFront",
+            "ParamHairFront2",
+            "Param_Angle_Rotation_1_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_1_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_2_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_2_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_3_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_3_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_4_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_4_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_5_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_5_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_6_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_6_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_7_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_7_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_8_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_8_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_9_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_9_D_HAIR_BACK_10"
+          ],
+          "motion_parameter_ids": [],
+          "part_names": [
+            "D_HAIR_BACK_00(スキニング)",
+            "D_HAIR_BACK_00(回転)",
+            "D_HAIR_BACK_10(スキニング)",
+            "D_HAIR_BACK_10(回転)",
+            "前髪",
+            "後ろ髪",
+            "横髪"
+          ],
+          "warp_deformer_names": [
+            "前髪の曲面",
+            "前髪の曲面1",
+            "前髪の曲面2",
+            "髪影の曲面"
+          ],
+          "rotation_deformer_names": [
+            "回転0_D_HAIR_BACK_00",
+            "回転0_D_HAIR_BACK_10",
+            "回転1_D_HAIR_BACK_00",
+            "回転1_D_HAIR_BACK_10",
+            "回転2_D_HAIR_BACK_00",
+            "回転2_D_HAIR_BACK_10",
+            "回転3_D_HAIR_BACK_00",
+            "回転3_D_HAIR_BACK_10",
+            "回転4_D_HAIR_BACK_00",
+            "回転4_D_HAIR_BACK_10",
+            "回転5_D_HAIR_BACK_00",
+            "回転5_D_HAIR_BACK_10",
+            "回転6_D_HAIR_BACK_00",
+            "回転6_D_HAIR_BACK_10",
+            "回転7_D_HAIR_BACK_00",
+            "回転7_D_HAIR_BACK_10",
+            "回転8_D_HAIR_BACK_00",
+            "回転8_D_HAIR_BACK_10"
+          ]
+        },
+        "body_angle": {
+          "parameter_ids": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "motion_parameter_ids": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "part_names": [
+            "D_BODY_06(スキニング)",
+            "D_BODY_06(回転)"
+          ],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": [
+            "回転0_D_BODY_06",
+            "回転1_D_BODY_06",
+            "回転2_D_BODY_06",
+            "回転3_D_BODY_06",
+            "回転4_D_BODY_06",
+            "回転5_D_BODY_06",
+            "回転6_D_BODY_06"
+          ]
+        },
+        "arm": {
+          "parameter_ids": [
+            "ParamArmL",
+            "ParamArmR"
+          ],
+          "motion_parameter_ids": [
+            "ParamArmL",
+            "ParamArmR"
+          ],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "physics": {
+          "group_count": 13,
+          "input_ids": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "output_ids": [
+            "Param",
+            "Param2",
+            "Param3",
+            "ParamHairBack",
+            "ParamHairBackL8",
+            "ParamHairBackR6",
+            "ParamHairFront",
+            "ParamHairFront2",
+            "Param_Angle_Rotation_1_D_BODY_06",
+            "Param_Angle_Rotation_1_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_1_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_2_D_BODY_06",
+            "Param_Angle_Rotation_2_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_2_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_3_D_BODY_06",
+            "Param_Angle_Rotation_3_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_3_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_4_D_BODY_06",
+            "Param_Angle_Rotation_4_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_4_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_5_D_BODY_06",
+            "Param_Angle_Rotation_5_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_5_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_6_D_BODY_06",
+            "Param_Angle_Rotation_6_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_6_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_7_D_BODY_06",
+            "Param_Angle_Rotation_7_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_7_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_8_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_8_D_HAIR_BACK_10",
+            "Param_Angle_Rotation_9_D_HAIR_BACK_00",
+            "Param_Angle_Rotation_9_D_HAIR_BACK_10"
+          ],
+          "output_categories": [
+            "hair",
+            "other"
+          ]
+        },
+        "mask_pose_expression": {
+          "has_pose": false,
+          "expression_count": 0,
+          "glue_count": 22
+        },
+        "psd_layering": {
+          "psd_count": 0,
+          "has_psd": false
+        }
+      },
+      "evidence": {
+        "runtime_capture_dir": "experiments/live2d-strong-model-pattern-001/captures/miku_pro_jp_miku_sample_t05",
+        "cmo3_report": "experiments/live2d-strong-model-pattern-001/cmo3/miku_pro_jp_miku_sample_t05/cmo3_structure_report.json"
+      }
+    },
+    {
+      "id": "natori_pro_ko_natori_pro_t06",
+      "safe_id": "natori_pro_ko_natori_pro_t06",
+      "name": "natori_pro_t06",
+      "profile_key": "natori",
+      "learning_target": "expression, pose, motion and physics baseline",
+      "runtime_status": "PASS",
+      "cmo3_status": "PASS",
+      "structure_counts": {
+        "art_meshes": 176,
+        "parts": 33,
+        "parameters": 96,
+        "warp_deformers": 128,
+        "rotation_deformers": 52,
+        "keyform_bindings": 407,
+        "keyform_grids": 400,
+        "glue": 11
+      },
+      "categories": {
+        "eye": {
+          "parameter_ids": [
+            "ParamBrowLAngle",
+            "ParamBrowLForm",
+            "ParamBrowLForm2",
+            "ParamBrowLX",
+            "ParamBrowLY",
+            "ParamBrowRAngle",
+            "ParamBrowRForm",
+            "ParamBrowRForm2",
+            "ParamBrowRX",
+            "ParamBrowRY",
+            "ParamCheek",
+            "ParamEyeBallForm",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLForm",
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeRForm",
+            "ParamEyeROpen",
+            "ParamEyeRSmile"
+          ],
+          "motion_parameter_ids": [
+            "ParamBrowLAngle",
+            "ParamBrowLForm",
+            "ParamBrowLForm2",
+            "ParamBrowLX",
+            "ParamBrowLY",
+            "ParamBrowRAngle",
+            "ParamBrowRForm",
+            "ParamBrowRForm2",
+            "ParamBrowRX",
+            "ParamBrowRY",
+            "ParamCheek",
+            "ParamEyeBallForm",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLForm",
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeRForm",
+            "ParamEyeROpen",
+            "ParamEyeRSmile"
+          ],
+          "part_names": [
+            "눈썹",
+            "오른쪽 눈",
+            "왼쪽 눈"
+          ],
+          "warp_deformer_names": [
+            "오른쪽 눈 수축",
+            "오른쪽 눈썹 곡면",
+            "오른쪽 눈썹 위치",
+            "오른쪽 눈썹의 각도",
+            "오른쪽 눈알 곡면",
+            "오른쪽 눈의 곡면",
+            "오른쪽 눈의 변형",
+            "왼쪽 눈 수축",
+            "왼쪽 눈썹 곡면",
+            "왼쪽 눈썹 위치",
+            "왼쪽 눈썹의 각도",
+            "왼쪽 눈알 곡면",
+            "왼쪽 눈의 곡면",
+            "왼쪽 눈의 변형"
+          ],
+          "rotation_deformer_names": []
+        },
+        "mouth": {
+          "parameter_ids": [
+            "ParamMouthForm",
+            "ParamMouthForm2",
+            "ParamMouthOpenY"
+          ],
+          "motion_parameter_ids": [
+            "ParamMouthForm",
+            "ParamMouthForm2",
+            "ParamMouthOpenY"
+          ],
+          "part_names": [
+            "입"
+          ],
+          "warp_deformer_names": [
+            "입의 곡면",
+            "입의 변형"
+          ],
+          "rotation_deformer_names": []
+        },
+        "hair": {
+          "parameter_ids": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSideFuwa"
+          ],
+          "motion_parameter_ids": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSideFuwa"
+          ],
+          "part_names": [
+            "뒷머리",
+            "머리",
+            "머리카락이 난 곳",
+            "앞머리"
+          ],
+          "warp_deformer_names": [
+            "머리카락이 난 곳의 곡면",
+            "오른쪽 뒷머리 1의 각도 Z",
+            "오른쪽 뒷머리 1의 각도 Z",
+            "오른쪽 뒷머리 1의 곡면",
+            "오른쪽 뒷머리 1의 곡면",
+            "오른쪽 뒷머리 1의 볼륨",
+            "오른쪽 뒷머리 1의 흔들림",
+            "오른쪽 뒷머리 2의 볼륨",
+            "오른쪽 뒷머리 2의 흔들림",
+            "오른쪽 머리 그림자1의 각도Z",
+            "오른쪽 머리 그림자1의 곡면",
+            "오른쪽 머리 그림자1의 볼륨",
+            "오른쪽 머리 그림자1의 흔들림",
+            "오른쪽 머리 그림자2의 각도Z",
+            "오른쪽 머리 그림자2의 곡면",
+            "오른쪽 머리 그림자2의 볼륨",
+            "오른쪽 머리 그림자2의 흔들림",
+            "오른쪽 앞머리 각도 Z",
+            "오른쪽 앞머리 곡면",
+            "오른쪽 앞머리의 볼륨",
+            "오른쪽 앞머리의 흔들림",
+            "왼쪽 뒷머리 각도 Z",
+            "왼쪽 뒷머리의 곡면",
+            "왼쪽 뒷머리의 볼륨",
+            "왼쪽 뒷머리의 흔들림",
+            "왼쪽 머리 그림자1의 각도Z",
+            "왼쪽 머리 그림자1의 곡면",
+            "왼쪽 머리 그림자1의 볼륨",
+            "왼쪽 머리 그림자1의 흔들림",
+            "왼쪽 머리 그림자2의 각도Z",
+            "왼쪽 머리 그림자2의 곡면",
+            "왼쪽 머리 그림자2의 볼륨",
+            "왼쪽 머리 그림자2의 흔들림",
+            "왼쪽 앞머리 1의 각도 Z",
+            "왼쪽 앞머리 1의 곡면",
+            "왼쪽 앞머리 1의 볼륨",
+            "왼쪽 앞머리 1의 흔들림",
+            "왼쪽 앞머리 2의 각도 Z",
+            "왼쪽 앞머리 2의 곡면",
+            "왼쪽 앞머리 2의 볼륨",
+            "왼쪽 앞머리 2의 흔들림",
+            "왼쪽 앞머리 3의 각도 Z",
+            "왼쪽 앞머리 3의 곡면",
+            "왼쪽 앞머리 3의 볼륨",
+            "왼쪽 앞머리 3의 흔들림"
+          ],
+          "rotation_deformer_names": [
+            "머리의 확장",
+            "머리의 회전"
+          ]
+        },
+        "body_angle": {
+          "parameter_ids": [
+            "ParamAllRotate",
+            "ParamAllX",
+            "ParamAllY",
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ",
+            "ParamWaistAngleZ"
+          ],
+          "motion_parameter_ids": [
+            "ParamAllRotate",
+            "ParamAllX",
+            "ParamAllY",
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ",
+            "ParamWaistAngleZ"
+          ],
+          "part_names": [],
+          "warp_deformer_names": [
+            "목 곡면_얼굴",
+            "목곡면_몸",
+            "목의 확장",
+            "몸의 Y회전",
+            "몸의 Z회전",
+            "몸의 앞뒤",
+            "소매 변형 손목 전환",
+            "오른발 곡면_몸의 X",
+            "왼발곡면_몸의X",
+            "왼쪽 목덜미의 각도 Z",
+            "왼쪽 목덜미의 곡면",
+            "왼쪽 목덜미의 볼륨",
+            "왼쪽 목덜미의 흔들림",
+            "자켓_아랫 몸Y",
+            "자켓_아랫 몸Z",
+            "체인 차이분 B_몸의 X와 어깨 회전",
+            "체인 차이분 B_몸의 YZ",
+            "체인 차이분 B_손목 위치"
+          ],
+          "rotation_deformer_names": [
+            "목의 위치",
+            "벨트링 몸과 허리의 Z",
+            "손목 1의 표시",
+            "손목 1의 회전",
+            "손목 5의 표시",
+            "손목 5의 회전",
+            "손목의 회전",
+            "손목의 회전",
+            "오른팔 A_ 손목 회전",
+            "왼팔 A_ 손목회전",
+            "왼팔 C의 손목 회전",
+            "왼팔D3 손목회전",
+            "회중시계_B 손목회전"
+          ]
+        },
+        "arm": {
+          "parameter_ids": [
+            "ParamArmAL01",
+            "ParamArmAL02",
+            "ParamArmAL03",
+            "ParamArmAL04",
+            "ParamArmAR01",
+            "ParamArmAR02",
+            "ParamArmAR03",
+            "ParamArmAR04",
+            "ParamArmBR01",
+            "ParamArmBR02",
+            "ParamArmBR03",
+            "ParamArmBRHand01",
+            "ParamArmBRHand01Roll",
+            "ParamArmBRHand05",
+            "ParamArmBRHand05Roll1",
+            "ParamArmBRHand05Roll2",
+            "ParamArmBRHand05Roll3",
+            "ParamArmCLHandRoll1",
+            "ParamArmCR01",
+            "ParamArmCR02",
+            "ParamArmCR03",
+            "ParamArmDL01",
+            "ParamArmDL02",
+            "ParamArmDL03",
+            "ParamArmDLHand03Roll",
+            "ParamArmER01",
+            "ParamArmER02",
+            "ParamArmER03",
+            "ParamArmER04",
+            "ParamArmERHand04",
+            "ParamArmERHand04Roll1",
+            "ParamArmERHand04Roll2",
+            "ParamArmERHand06",
+            "ParamArmERHand06Roll1",
+            "ParamArmERHand06Roll2",
+            "ParamLeftShoulderUp",
+            "ParamRightShoulderUp"
+          ],
+          "motion_parameter_ids": [
+            "ParamArmAL01",
+            "ParamArmAL02",
+            "ParamArmAL03",
+            "ParamArmAL04",
+            "ParamArmAR01",
+            "ParamArmAR02",
+            "ParamArmAR03",
+            "ParamArmAR04",
+            "ParamArmBR01",
+            "ParamArmBR02",
+            "ParamArmBR03",
+            "ParamArmBRHand01",
+            "ParamArmBRHand01Roll",
+            "ParamArmBRHand05",
+            "ParamArmBRHand05Roll1",
+            "ParamArmBRHand05Roll2",
+            "ParamArmBRHand05Roll3",
+            "ParamArmCLHandRoll1",
+            "ParamArmCR01",
+            "ParamArmCR02",
+            "ParamArmCR03",
+            "ParamArmDL01",
+            "ParamArmDL02",
+            "ParamArmDL03",
+            "ParamArmDLHand03Roll",
+            "ParamArmER01",
+            "ParamArmER02",
+            "ParamArmER03",
+            "ParamArmER04",
+            "ParamArmERHand04",
+            "ParamArmERHand04Roll1",
+            "ParamArmERHand04Roll2",
+            "ParamArmERHand06",
+            "ParamArmERHand06Roll1",
+            "ParamArmERHand06Roll2",
+            "ParamLeftShoulderUp",
+            "ParamRightShoulderUp"
+          ],
+          "part_names": [
+            "오른팔 A",
+            "오른팔 A 팔뚝",
+            "오른팔 B",
+            "오른팔 E",
+            "왼팔 A",
+            "왼팔 A 전완",
+            "왼팔 C",
+            "왼팔D"
+          ],
+          "warp_deformer_names": [
+            "오른팔 E 상완의 길이",
+            "오른팔 E_소매 곡면",
+            "왼팔 C_ 소매 곡면",
+            "체인 차이분 B_팔걸이 위치"
+          ],
+          "rotation_deformer_names": [
+            "오른손 4의 표시",
+            "오른손 6의 표시",
+            "오른팔 A_ 어깨 회전",
+            "오른팔 A_ 팔꿈치 회전",
+            "오른팔 B_어깨회전",
+            "오른팔 B의_팔꿈치 회전",
+            "오른팔 E_어깨회전",
+            "오른팔 E_팔꿈치 위치",
+            "오른팔 E_팔꿈치 회전",
+            "왼팔 A_ 어깨회전",
+            "왼팔 A_ 팔꿈치 회전",
+            "왼팔 C_ 어깨 회전",
+            "왼팔 C_ 팔꿈치 회전",
+            "왼팔D3 장갑표시",
+            "왼팔D_어깨의 회전",
+            "왼팔D_팔꿈치 회전"
+          ]
+        },
+        "physics": {
+          "group_count": 11,
+          "input_ids": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamArmBR03",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ",
+            "ParamBodyPosition",
+            "ParamWaistAngleZ"
+          ],
+          "output_ids": [
+            "ParamChainWaist",
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSideFuwa",
+            "ParamJacket",
+            "ParamWatchAX",
+            "ParamWatchBChain",
+            "ParamWatchSwingA1",
+            "ParamWatchSwingA2"
+          ],
+          "output_categories": [
+            "hair",
+            "other"
+          ]
+        },
+        "mask_pose_expression": {
+          "has_pose": true,
+          "expression_count": 11,
+          "glue_count": 11
+        },
+        "psd_layering": {
+          "psd_count": 0,
+          "has_psd": false
+        }
+      },
+      "evidence": {
+        "runtime_capture_dir": "experiments/live2d-strong-model-pattern-001/captures/natori_pro_ko_natori_pro_t06",
+        "cmo3_report": "experiments/live2d-strong-model-pattern-001/cmo3/natori_pro_ko_natori_pro_t06/cmo3_structure_report.json"
+      }
+    },
+    {
+      "id": "ren_pro_ko_ren_t01",
+      "safe_id": "ren_pro_ko_ren_t01",
+      "name": "ren_t01",
+      "profile_key": "ren",
+      "learning_target": "Cubism 5.3 rich drawing, offscreen/mask-style expression",
+      "runtime_status": "PASS",
+      "cmo3_status": "PASS",
+      "structure_counts": {
+        "art_meshes": 201,
+        "parts": 52,
+        "parameters": 73,
+        "warp_deformers": 128,
+        "rotation_deformers": 22,
+        "keyform_bindings": 470,
+        "keyform_grids": 418,
+        "glue": 13
+      },
+      "categories": {
+        "eye": {
+          "parameter_ids": [
+            "ParamBrowLAngle",
+            "ParamBrowLForm",
+            "ParamBrowLX",
+            "ParamBrowLY",
+            "ParamBrowRAngle",
+            "ParamBrowRForm",
+            "ParamBrowRX",
+            "ParamBrowRY",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile",
+            "ParamEyeSize"
+          ],
+          "motion_parameter_ids": [
+            "ParamBrowLAngle",
+            "ParamBrowLForm",
+            "ParamBrowLX",
+            "ParamBrowLY",
+            "ParamBrowRAngle",
+            "ParamBrowRForm",
+            "ParamBrowRX",
+            "ParamBrowRY",
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLOpen",
+            "ParamEyeLSmile",
+            "ParamEyeROpen",
+            "ParamEyeRSmile",
+            "ParamEyeSize"
+          ],
+          "part_names": [
+            "눈썹",
+            "눈썹",
+            "오른쪽 눈",
+            "오른쪽 눈",
+            "오른쪽 눈동자",
+            "오른쪽 눈동자",
+            "오른쪽 눈알",
+            "오른쪽 눈알",
+            "왼쪽 눈",
+            "왼쪽 눈",
+            "왼쪽 눈동자",
+            "왼쪽 눈동자",
+            "왼쪽 눈알",
+            "왼쪽 눈알"
+          ],
+          "warp_deformer_names": [
+            "오른쪽 눈동자 의 조절",
+            "오른쪽 눈썹 곡면",
+            "오른쪽 눈썹 위치",
+            "오른쪽 눈알 곡면",
+            "오른쪽 눈의 곡면",
+            "왼쪽 눈동자 의 조정",
+            "왼쪽 눈썹 곡면",
+            "왼쪽 눈썹 위치",
+            "왼쪽 눈알 곡면",
+            "왼쪽 눈의 곡면"
+          ],
+          "rotation_deformer_names": []
+        },
+        "mouth": {
+          "parameter_ids": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ],
+          "motion_parameter_ids": [
+            "ParamMouthForm",
+            "ParamMouthOpenY"
+          ],
+          "part_names": [
+            "입"
+          ],
+          "warp_deformer_names": [
+            "입의 곡면"
+          ],
+          "rotation_deformer_names": []
+        },
+        "hair": {
+          "parameter_ids": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSideFuwa"
+          ],
+          "motion_parameter_ids": [
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSideFuwa"
+          ],
+          "part_names": [
+            "뒷머리",
+            "머리 그림자 아웃",
+            "앞머리"
+          ],
+          "warp_deformer_names": [
+            "뒷머리 1 의 곡면",
+            "뒷머리 1 의 곡면 Z",
+            "뒷머리 1 의 볼륨",
+            "뒷머리 1 의 흔들림",
+            "뒷머리 10 의 곡면",
+            "뒷머리 2 의 곡면",
+            "뒷머리 2 의 곡면 Z",
+            "뒷머리 2 의 볼륨",
+            "뒷머리 2 의 흔들림",
+            "뒷머리 3 의 곡면",
+            "뒷머리 3 의 곡면 Z",
+            "뒷머리 3 의 곡면 바디 X",
+            "뒷머리 3 의 볼륨",
+            "뒷머리 3 의 흔들림",
+            "뒷머리 4 의 곡면",
+            "뒷머리 4 의 곡면 Z",
+            "뒷머리 4 의 곡면 바디 X",
+            "뒷머리 4 의 볼륨",
+            "뒷머리 4 의 흔들림",
+            "뒷머리 5 의 곡면",
+            "뒷머리 5 의 곡면 Z",
+            "뒷머리 5 의 볼륨",
+            "뒷머리 5 의 흔들림",
+            "뒷머리 6 의 곡면",
+            "뒷머리 6 의 곡면 Z",
+            "뒷머리 6 의 볼륨",
+            "뒷머리 6 의 흔들림",
+            "뒷머리 7 의 곡면",
+            "뒷머리 7 의 곡면 Z",
+            "뒷머리 7 의 볼륨",
+            "뒷머리 7 의 흔들림",
+            "뒷머리 8 의 곡면",
+            "뒷머리 8 의 곡면 Z",
+            "뒷머리 8 의 볼륨",
+            "뒷머리 8 의 흔들림",
+            "뒷머리 9 의 곡면",
+            "뒷머리 9 의 곡면 Z",
+            "뒷머리 9 의 볼륨",
+            "뒷머리 9 의 흔들림",
+            "머리 그림자 의 곡면 Z",
+            "머리카락의 곡면",
+            "머리카락의 볼륨",
+            "머리카락의 흔들림",
+            "앞머리 1 의 곡면",
+            "앞머리 1 의 곡면 Z",
+            "앞머리 1 의 볼륨",
+            "앞머리 1 의 흔들림",
+            "앞머리 2 의 곡면",
+            "앞머리 2 의 곡면 Z",
+            "앞머리 2 의 볼륨",
+            "앞머리 2 의 흔들림",
+            "앞머리 3 의 곡면",
+            "앞머리 3 의 곡면 Z",
+            "앞머리 3 의 볼륨",
+            "앞머리 3 의 흔들림",
+            "앞머리 4 의 곡면",
+            "앞머리 4 의 곡면 Z",
+            "앞머리 4 의 볼륨",
+            "앞머리 4 의 흔들림",
+            "앞머리 5 의 곡면",
+            "앞머리 5 의 곡면 Z",
+            "앞머리 5 의 볼륨",
+            "앞머리 5 의 흔들림"
+          ],
+          "rotation_deformer_names": []
+        },
+        "body_angle": {
+          "parameter_ids": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleX2",
+            "ParamBodyAngleY",
+            "ParamBodyAngleY2",
+            "ParamBodyAngleZ",
+            "ParamWaistAngleZ"
+          ],
+          "motion_parameter_ids": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ",
+            "ParamWaistAngleZ"
+          ],
+          "part_names": [
+            "목",
+            "목걸이",
+            "몸통"
+          ],
+          "warp_deformer_names": [
+            "목 그림자 의 곡면 Z",
+            "목 의 곡면 Z",
+            "목걸이 의 곡면",
+            "목걸이 의 흔들림",
+            "목의 곡면"
+          ],
+          "rotation_deformer_names": [
+            "목걸이 의 회전 1",
+            "목걸이 의 회전 2",
+            "목의 위치"
+          ]
+        },
+        "arm": {
+          "parameter_ids": [
+            "ParamArmL01",
+            "ParamArmL02",
+            "ParamArmL03",
+            "ParamArmR01",
+            "ParamArmR02",
+            "ParamArmR03",
+            "ParamHandL",
+            "ParamHandLDrawOrder",
+            "ParamHandR",
+            "ParamHandRDrawOrder",
+            "ParamLeftShoulderUp",
+            "ParamLeftShoulderUp2",
+            "ParamPullHandle",
+            "ParamRightShoulderUp",
+            "ParamRightShoulderUp2"
+          ],
+          "motion_parameter_ids": [
+            "ParamArmL01",
+            "ParamArmL02",
+            "ParamArmL03",
+            "ParamArmR01",
+            "ParamArmR02",
+            "ParamArmR03",
+            "ParamHandL",
+            "ParamHandLDrawOrder",
+            "ParamHandR",
+            "ParamHandRDrawOrder",
+            "ParamLeftShoulderUp",
+            "ParamPullHandle",
+            "ParamRightShoulderUp"
+          ],
+          "part_names": [
+            "오른팔",
+            "오른팔 그리기 순서",
+            "왼팔",
+            "왼팔 그리기 순서",
+            "재킷 오른팔",
+            "재킷 왼팔"
+          ],
+          "warp_deformer_names": [
+            "재킷 오른쪽 팔 위의 곡면",
+            "재킷 왼쪽 팔 위의 곡면"
+          ],
+          "rotation_deformer_names": [
+            "오른손의 회전",
+            "오른쪽 팔의 회전",
+            "오른팔의 위치",
+            "왼손의 회전",
+            "왼쪽 팔의 회전",
+            "왼팔의 위치",
+            "재킷 오른쪽 팔 위의 회전",
+            "재킷 왼쪽 팔 위의 회전"
+          ]
+        },
+        "physics": {
+          "group_count": 16,
+          "input_ids": [
+            "ParamAngleX",
+            "ParamAngleY",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "output_ids": [
+            "ParamBodyAngleX2",
+            "ParamBodyAngleY2",
+            "ParamBodyCenter2",
+            "ParamCollarFuwa",
+            "ParamCollarString",
+            "ParamCollarStringFuwa",
+            "ParamHairBack",
+            "ParamHairBackFuwa",
+            "ParamHairFront",
+            "ParamHairFrontFuwa",
+            "ParamHairSide",
+            "ParamHairSideFuwa",
+            "ParamJacket",
+            "ParamLeftShoulderUp2",
+            "ParamNecklace1",
+            "ParamNecklace2",
+            "ParamNecklace3",
+            "ParamPocketString",
+            "ParamPullHandle",
+            "ParamRightShoulderUp2"
+          ],
+          "output_categories": [
+            "arm",
+            "body_angle",
+            "hair",
+            "other"
+          ]
+        },
+        "mask_pose_expression": {
+          "has_pose": false,
+          "expression_count": 5,
+          "glue_count": 13
+        },
+        "psd_layering": {
+          "psd_count": 0,
+          "has_psd": false
+        }
+      },
+      "evidence": {
+        "runtime_capture_dir": "experiments/live2d-strong-model-pattern-001/captures/ren_pro_ko_ren_t01",
+        "cmo3_report": "experiments/live2d-strong-model-pattern-001/cmo3/ren_pro_ko_ren_t01/cmo3_structure_report.json"
+      }
+    },
+    {
+      "id": "rice_pro_ko_rice_pro_t03",
+      "safe_id": "rice_pro_ko_rice_pro_t03",
+      "name": "rice_pro_t03",
+      "profile_key": "rice",
+      "learning_target": "extended interpolation, inverted mask, side-view/special pose",
+      "runtime_status": "PASS",
+      "cmo3_status": "WARN",
+      "structure_counts": {
+        "art_meshes": 183,
+        "parts": 31,
+        "parameters": 96,
+        "warp_deformers": 58,
+        "rotation_deformers": 80,
+        "keyform_bindings": 306,
+        "keyform_grids": 399,
+        "glue": 33
+      },
+      "categories": {
+        "eye": {
+          "parameter_ids": [
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLOpen",
+            "ParamEyeROpen"
+          ],
+          "motion_parameter_ids": [
+            "ParamEyeBallX",
+            "ParamEyeBallY",
+            "ParamEyeLOpen",
+            "ParamEyeROpen"
+          ],
+          "part_names": [
+            "눈썹",
+            "오른쪽 눈",
+            "왼쪽 눈"
+          ],
+          "warp_deformer_names": [
+            "오른쪽 눈썹의 곡면",
+            "오른쪽 눈의 곡면",
+            "오른쪽 눈의 위치",
+            "왼쪽 눈썹의 곡면",
+            "왼쪽 눈의 곡면",
+            "왼쪽 눈의 위치"
+          ],
+          "rotation_deformer_names": []
+        },
+        "mouth": {
+          "parameter_ids": [],
+          "motion_parameter_ids": [],
+          "part_names": [],
+          "warp_deformer_names": [
+            "입의 곡면"
+          ],
+          "rotation_deformer_names": []
+        },
+        "hair": {
+          "parameter_ids": [
+            "ParamHairFront01",
+            "ParamHairFront02"
+          ],
+          "motion_parameter_ids": [],
+          "part_names": [
+            "뒷머리",
+            "뒷머리 A(스키닝)",
+            "뒷머리 A(회전)",
+            "뒷머리 B(스키닝)",
+            "뒷머리 B(회전)",
+            "뒷머리 C(스키닝)",
+            "뒷머리 C(회전)",
+            "머리칼",
+            "오른쪽 옆머리(스키닝)",
+            "오른쪽 옆머리(회전)",
+            "왼쪽 옆머리(스키닝)",
+            "왼쪽 옆머리(회전)"
+          ],
+          "warp_deformer_names": [
+            "뒷머리 A(스키닝) 곡면",
+            "뒷머리의 Z",
+            "뒷머리의 곡면",
+            "앞머리 01의 Z",
+            "앞머리 01의 곡면",
+            "앞머리 01의 흔들림",
+            "앞머리 02의 Z",
+            "앞머리 02의 곡면",
+            "앞머리 02의 흔들림"
+          ],
+          "rotation_deformer_names": [
+            "뒷머리의 Z",
+            "오른쪽 옆머리 각도 X",
+            "오른쪽 옆머리의 Z",
+            "왼쪽 옆머리 각도 X",
+            "왼쪽 옆머리의 Z",
+            "회전 0_뒷머리 A",
+            "회전 0_뒷머리 B",
+            "회전 0_뒷머리 C",
+            "회전 0_오른쪽 옆머리",
+            "회전 0_왼쪽 옆머리",
+            "회전 1_오른쪽 옆머리",
+            "회전 1_왼쪽 옆머리",
+            "회전 2_뒷머리 B",
+            "회전 2_오른쪽 옆머리",
+            "회전 2_왼쪽 옆머리",
+            "회전 3_뒷머리 A",
+            "회전 3_뒷머리 B",
+            "회전 3_뒷머리 C",
+            "회전 3_오른쪽 옆머리",
+            "회전 3_왼쪽 옆머리",
+            "회전 4_뒷머리 A",
+            "회전 4_뒷머리 B",
+            "회전 4_뒷머리 C",
+            "회전 4_오른쪽 옆머리",
+            "회전 4_왼쪽 옆머리",
+            "회전 5_뒷머리 A",
+            "회전 5_뒷머리 B",
+            "회전 5_뒷머리 C",
+            "회전 6_뒷머리 A",
+            "회전 6_뒷머리 B",
+            "회전 6_뒷머리 C",
+            "회전 7_뒷머리 B",
+            "회전 7_뒷머리 C",
+            "회전 8_뒷머리 B",
+            "회전 8_뒷머리 C",
+            "회전1_뒷머리 A",
+            "회전1_뒷머리 B",
+            "회전1_뒷머리 C",
+            "회전2_뒷머리 A",
+            "회전2_뒷머리 C"
+          ]
+        },
+        "body_angle": {
+          "parameter_ids": [
+            "ParamAngleX",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "motion_parameter_ids": [
+            "ParamAngleX",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleY",
+            "ParamBodyAngleZ"
+          ],
+          "part_names": [
+            "몸"
+          ],
+          "warp_deformer_names": [
+            "목의 곡면",
+            "몸 Y",
+            "몸 Z",
+            "몸통 곡면"
+          ],
+          "rotation_deformer_names": [
+            "목의 위치",
+            "오른쪽 손목 Y 위치"
+          ]
+        },
+        "arm": {
+          "parameter_ids": [
+            "ParamArmChange",
+            "ParamArmL01",
+            "ParamArmL02",
+            "ParamArmL03",
+            "ParamArmR01",
+            "ParamArmR01Y",
+            "ParamArmR02",
+            "ParamArmR02Y",
+            "ParamArmR03",
+            "ParamHandLightAOn",
+            "ParamHandLightASize",
+            "ParamHandLightBOn",
+            "ParamHandLightBSize",
+            "ParamShoulderL",
+            "ParamShoulderR"
+          ],
+          "motion_parameter_ids": [
+            "ParamArmChange",
+            "ParamArmL01",
+            "ParamArmL02",
+            "ParamArmL03",
+            "ParamArmR01",
+            "ParamArmR01Y",
+            "ParamArmR02",
+            "ParamArmR02Y",
+            "ParamArmR03",
+            "ParamHandLightAOn",
+            "ParamHandLightASize",
+            "ParamHandLightBOn",
+            "ParamHandLightBSize",
+            "ParamShoulderL",
+            "ParamShoulderR"
+          ],
+          "part_names": [
+            "오른팔",
+            "오른팔 차분",
+            "왼팔"
+          ],
+          "warp_deformer_names": [
+            "오른손의 곡면",
+            "오른쪽 팔, 차분의 곡면",
+            "오른쪽 팔뚝 차분의 Y",
+            "오른쪽 팔뚝 차분의 Y",
+            "오른쪽 팔뚝의 Y",
+            "오른쪽 팔뚝의 Y",
+            "오른팔의 곡면"
+          ],
+          "rotation_deformer_names": [
+            "오른손 차분의 위치",
+            "오른손 차분의 회전",
+            "오른손의 회전",
+            "오른쪽 앞팔 Y 위치",
+            "오른쪽 엄지손가락 위치",
+            "오른쪽 작은 손가락의 위치",
+            "오른쪽 집게손가락의 위치",
+            "오른쪽 팔뚝 차분의 회전",
+            "오른쪽 팔의 회전",
+            "오른팔 차분의 표시",
+            "오른팔의 위치",
+            "오른팔의 표시",
+            "왼손의 회전",
+            "왼쪽 팔의 회전",
+            "왼팔의 위치"
+          ]
+        },
+        "physics": {
+          "group_count": 9,
+          "input_ids": [
+            "ParamAngleX",
+            "ParamAngleZ",
+            "ParamBodyAngleX",
+            "ParamBodyAngleZ"
+          ],
+          "output_ids": [
+            "ParamBustRibbon01",
+            "ParamBustRibbon02",
+            "ParamHairFront01",
+            "ParamHairFront02",
+            "ParamHeadRibbon",
+            "ParamWaistRibbon01",
+            "ParamWaistRibbon02",
+            "Param_Angle_Rotation_1_ArtMesh20",
+            "Param_Angle_Rotation_1_ArtMesh67",
+            "Param_Angle_Rotation_1_ArtMesh80",
+            "Param_Angle_Rotation_1_ArtMesh81",
+            "Param_Angle_Rotation_1_ArtMesh82",
+            "Param_Angle_Rotation_2_ArtMesh20",
+            "Param_Angle_Rotation_2_ArtMesh67",
+            "Param_Angle_Rotation_2_ArtMesh80",
+            "Param_Angle_Rotation_2_ArtMesh81",
+            "Param_Angle_Rotation_2_ArtMesh82",
+            "Param_Angle_Rotation_3_ArtMesh20",
+            "Param_Angle_Rotation_3_ArtMesh67",
+            "Param_Angle_Rotation_3_ArtMesh80",
+            "Param_Angle_Rotation_3_ArtMesh81",
+            "Param_Angle_Rotation_3_ArtMesh82",
+            "Param_Angle_Rotation_4_ArtMesh20",
+            "Param_Angle_Rotation_4_ArtMesh67",
+            "Param_Angle_Rotation_4_ArtMesh80",
+            "Param_Angle_Rotation_4_ArtMesh81",
+            "Param_Angle_Rotation_4_ArtMesh82",
+            "Param_Angle_Rotation_5_ArtMesh20",
+            "Param_Angle_Rotation_5_ArtMesh67",
+            "Param_Angle_Rotation_5_ArtMesh80",
+            "Param_Angle_Rotation_5_ArtMesh81",
+            "Param_Angle_Rotation_5_ArtMesh82",
+            "Param_Angle_Rotation_6_ArtMesh80",
+            "Param_Angle_Rotation_6_ArtMesh81",
+            "Param_Angle_Rotation_6_ArtMesh82",
+            "Param_Angle_Rotation_7_ArtMesh80",
+            "Param_Angle_Rotation_7_ArtMesh81",
+            "Param_Angle_Rotation_7_ArtMesh82",
+            "Param_Angle_Rotation_8_ArtMesh80",
+            "Param_Angle_Rotation_8_ArtMesh81",
+            "Param_Angle_Rotation_9_ArtMesh80",
+            "Param_Angle_Rotation_9_ArtMesh81"
+          ],
+          "output_categories": [
+            "hair",
+            "other"
+          ]
+        },
+        "mask_pose_expression": {
+          "has_pose": false,
+          "expression_count": 0,
+          "glue_count": 33
+        },
+        "psd_layering": {
+          "psd_count": 0,
+          "has_psd": false
+        }
+      },
+      "evidence": {
+        "runtime_capture_dir": "experiments/live2d-strong-model-pattern-001/captures/rice_pro_ko_rice_pro_t03",
+        "cmo3_report": "experiments/live2d-strong-model-pattern-001/cmo3/rice_pro_ko_rice_pro_t03/cmo3_structure_report.json"
+      }
+    },
+    {
+      "id": "tsumiki_tsumiki_t01",
+      "safe_id": "tsumiki_tsumiki_t01",
+      "name": "tsumiki_t01",
+      "profile_key": "tsumiki",
+      "learning_target": "eyelid clipping mask and SD avatar expression",
+      "runtime_status": "PASS",
+      "cmo3_status": "WARN",
+      "structure_counts": {
+        "art_meshes": 89,
+        "parts": 22,
+        "parameters": 46,
+        "warp_deformers": 67,
+        "rotation_deformers": 22,
+        "keyform_bindings": 240,
+        "keyform_grids": 200,
+        "glue": 0
+      },
+      "categories": {
+        "eye": {
+          "parameter_ids": [
+            "PARAM_BROW_L_ANGLE",
+            "PARAM_BROW_L_FORM",
+            "PARAM_BROW_L_X",
+            "PARAM_BROW_L_Y",
+            "PARAM_BROW_R_ANGLE",
+            "PARAM_BROW_R_FORM",
+            "PARAM_BROW_R_X",
+            "PARAM_BROW_R_Y",
+            "PARAM_CHEEK_01",
+            "PARAM_CHEEK_02",
+            "PARAM_CHEEK_03",
+            "PARAM_CHEEK_04",
+            "PARAM_EYE_BALL_FORM",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_FORM",
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_BROW_L_ANGLE",
+            "PARAM_BROW_L_FORM",
+            "PARAM_BROW_L_X",
+            "PARAM_BROW_L_Y",
+            "PARAM_BROW_R_ANGLE",
+            "PARAM_BROW_R_FORM",
+            "PARAM_BROW_R_X",
+            "PARAM_BROW_R_Y",
+            "PARAM_CHEEK_01",
+            "PARAM_CHEEK_02",
+            "PARAM_CHEEK_03",
+            "PARAM_CHEEK_04",
+            "PARAM_EYE_BALL_FORM",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_FORM",
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE"
+          ],
+          "part_names": [
+            "まゆ毛"
+          ],
+          "warp_deformer_names": [
+            "右まゆ毛の位置",
+            "右まゆ毛の回転",
+            "右まゆ毛の曲面",
+            "左まゆ毛の位置",
+            "左まゆ毛の回転",
+            "左まゆ毛の曲面"
+          ],
+          "rotation_deformer_names": []
+        },
+        "mouth": {
+          "parameter_ids": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "part_names": [
+            "口"
+          ],
+          "warp_deformer_names": [
+            "口の曲面",
+            "口内の曲面"
+          ],
+          "rotation_deformer_names": []
+        },
+        "hair": {
+          "parameter_ids": [
+            "PARAM_HAIR_AHO",
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE",
+            "PARAM_HAIR_TAIR"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_HAIR_AHO",
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE",
+            "PARAM_HAIR_TAIR"
+          ],
+          "part_names": [
+            "前髪",
+            "後ろ髪",
+            "横髪"
+          ],
+          "warp_deformer_names": [
+            "前髪のZ回転",
+            "前髪の揺れ",
+            "前髪の曲面",
+            "右髪の回転",
+            "右髪の曲面",
+            "左髪の回転",
+            "左髪の曲面",
+            "後ろ髪の曲面"
+          ],
+          "rotation_deformer_names": []
+        },
+        "body_angle": {
+          "parameter_ids": [],
+          "motion_parameter_ids": [],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "arm": {
+          "parameter_ids": [
+            "PARAM_ARM",
+            "PARAM_ARM_L",
+            "PARAM_ARM_R"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_ARM",
+            "PARAM_ARM_L",
+            "PARAM_ARM_R"
+          ],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "physics": {
+          "group_count": 7,
+          "input_ids": [
+            "PARAM_ANGLE_X",
+            "PARAM_ANGLE_Z",
+            "PARAM_BODY_ANGLE_X",
+            "PARAM_BODY_ANGLE_Z"
+          ],
+          "output_ids": [
+            "PARAM_BUST_Y",
+            "PARAM_HAIR_AHO",
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE",
+            "PARAM_RIBON_L",
+            "PARAM_RIBON_R",
+            "PARAM_SKIRT",
+            "PARAM_TIE"
+          ],
+          "output_categories": [
+            "hair",
+            "other"
+          ]
+        },
+        "mask_pose_expression": {
+          "has_pose": false,
+          "expression_count": 10,
+          "glue_count": 0
+        },
+        "psd_layering": {
+          "psd_count": 0,
+          "has_psd": false
+        }
+      },
+      "evidence": {
+        "runtime_capture_dir": "experiments/live2d-strong-model-pattern-001/captures/tsumiki_tsumiki_t01",
+        "cmo3_report": "experiments/live2d-strong-model-pattern-001/cmo3/tsumiki_tsumiki_t01/cmo3_structure_report.json"
+      }
+    },
+    {
+      "id": "wanko_wanko_touch_t01",
+      "safe_id": "wanko_wanko_touch_t01",
+      "name": "wanko_touch_t01",
+      "profile_key": "wanko",
+      "learning_target": "non-human avatar, touch motion and accessory baseline",
+      "runtime_status": "PASS",
+      "cmo3_status": "WARN",
+      "structure_counts": {
+        "art_meshes": 78,
+        "parts": 33,
+        "parameters": 25,
+        "warp_deformers": 28,
+        "rotation_deformers": 6,
+        "keyform_bindings": 85,
+        "keyform_grids": 145,
+        "glue": 0
+      },
+      "categories": {
+        "eye": {
+          "parameter_ids": [
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_R_OPEN"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_R_OPEN"
+          ],
+          "part_names": [
+            "まゆげ",
+            "まゆ毛"
+          ],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "mouth": {
+          "parameter_ids": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "part_names": [
+            "口"
+          ],
+          "warp_deformer_names": [
+            "口の変形",
+            "口の曲面"
+          ],
+          "rotation_deformer_names": []
+        },
+        "hair": {
+          "parameter_ids": [],
+          "motion_parameter_ids": [],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "body_angle": {
+          "parameter_ids": [],
+          "motion_parameter_ids": [],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "arm": {
+          "parameter_ids": [
+            "PARAM_HAND_L",
+            "PARAM_HAND_R"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_HAND_L",
+            "PARAM_HAND_R"
+          ],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "physics": {
+          "group_count": 4,
+          "input_ids": [
+            "PARAM_ANGLE_X",
+            "PARAM_ANGLE_Y",
+            "PARAM_ANGLE_Z",
+            "PARAM_BODY_ANGLE_X",
+            "PARAM_BODY_ANGLE_Y",
+            "PARAM_BODY_ANGLE_Z"
+          ],
+          "output_ids": [
+            "PARAM_BOWL_SWING",
+            "PARAM_EAR_L",
+            "PARAM_EAR_R",
+            "PARAM_SWING"
+          ],
+          "output_categories": [
+            "other"
+          ]
+        },
+        "mask_pose_expression": {
+          "has_pose": false,
+          "expression_count": 0,
+          "glue_count": 0
+        },
+        "psd_layering": {
+          "psd_count": 0,
+          "has_psd": false
+        }
+      },
+      "evidence": {
+        "runtime_capture_dir": "experiments/live2d-strong-model-pattern-001/captures/wanko_wanko_touch_t01",
+        "cmo3_report": "experiments/live2d-strong-model-pattern-001/cmo3/wanko_wanko_touch_t01/cmo3_structure_report.json"
+      }
+    },
+    {
+      "id": "epsilon_epsilon_t02",
+      "safe_id": "epsilon_epsilon_t02",
+      "name": "Epsilon_t02",
+      "profile_key": "epsilon",
+      "learning_target": "simple standard reference with motion and physics",
+      "runtime_status": "PASS",
+      "cmo3_status": "WARN",
+      "structure_counts": {
+        "art_meshes": 73,
+        "parts": 27,
+        "parameters": 37,
+        "warp_deformers": 51,
+        "rotation_deformers": 12,
+        "keyform_bindings": 169,
+        "keyform_grids": 163,
+        "glue": 0
+      },
+      "categories": {
+        "eye": {
+          "parameter_ids": [
+            "PARAM_BROW_L_ANGLE",
+            "PARAM_BROW_L_FORM",
+            "PARAM_BROW_L_X",
+            "PARAM_BROW_L_Y",
+            "PARAM_BROW_R_ANGLE",
+            "PARAM_BROW_R_FORM",
+            "PARAM_BROW_R_X",
+            "PARAM_BROW_R_Y",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_FORM",
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_BROW_L_ANGLE",
+            "PARAM_BROW_L_FORM",
+            "PARAM_BROW_L_X",
+            "PARAM_BROW_L_Y",
+            "PARAM_BROW_R_ANGLE",
+            "PARAM_BROW_R_FORM",
+            "PARAM_BROW_R_X",
+            "PARAM_BROW_R_Y",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_FORM",
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE"
+          ],
+          "part_names": [
+            "まゆ毛"
+          ],
+          "warp_deformer_names": [
+            "右まゆ毛の位置",
+            "右まゆ毛の曲面",
+            "右まゆ毛の角度",
+            "左まゆ毛の位置",
+            "左まゆ毛の曲面",
+            "左まゆ毛の角度"
+          ],
+          "rotation_deformer_names": []
+        },
+        "mouth": {
+          "parameter_ids": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "part_names": [
+            "口"
+          ],
+          "warp_deformer_names": [
+            "口の曲面"
+          ],
+          "rotation_deformer_names": []
+        },
+        "hair": {
+          "parameter_ids": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_BACK_L",
+            "PARAM_HAIR_BACK_R",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE",
+            "PARAM_HAIR_SIDE_L",
+            "PARAM_HAIR_SIDE_R"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_BACK_L",
+            "PARAM_HAIR_BACK_R",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE",
+            "PARAM_HAIR_SIDE_L",
+            "PARAM_HAIR_SIDE_R"
+          ],
+          "part_names": [
+            "前髪１",
+            "前髪２",
+            "後ろ髪１",
+            "後ろ髪２",
+            "横髪１",
+            "横髪２"
+          ],
+          "warp_deformer_names": [
+            "前髪の揺れ",
+            "前髪の曲面",
+            "前髪２の曲面",
+            "右横髪の揺れ",
+            "右横髪の曲面",
+            "右横髪２のZ",
+            "右横髪２の曲面",
+            "左横髪の揺れ",
+            "左横髪の曲面",
+            "左横髪２のZ",
+            "左横髪２の曲面",
+            "後ろ髪のZ",
+            "後ろ髪の揺れ",
+            "後ろ髪の曲面"
+          ],
+          "rotation_deformer_names": []
+        },
+        "body_angle": {
+          "parameter_ids": [],
+          "motion_parameter_ids": [],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "arm": {
+          "parameter_ids": [
+            "PARAM_ARM_L",
+            "PARAM_ARM_R"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_ARM_L",
+            "PARAM_ARM_R"
+          ],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "physics": {
+          "group_count": 2,
+          "input_ids": [
+            "PARAM_ANGLE_X",
+            "PARAM_ANGLE_Z",
+            "PARAM_BODY_ANGLE_X",
+            "PARAM_BODY_ANGLE_Z"
+          ],
+          "output_ids": [
+            "PARAM_HAIR_BACK_L",
+            "PARAM_HAIR_BACK_R",
+            "PARAM_HAIR_SIDE_L",
+            "PARAM_HAIR_SIDE_R"
+          ],
+          "output_categories": [
+            "hair"
+          ]
+        },
+        "mask_pose_expression": {
+          "has_pose": false,
+          "expression_count": 8,
+          "glue_count": 0
+        },
+        "psd_layering": {
+          "psd_count": 0,
+          "has_psd": false
+        }
+      },
+      "evidence": {
+        "runtime_capture_dir": "experiments/live2d-strong-model-pattern-001/captures/epsilon_epsilon_t02",
+        "cmo3_report": "experiments/live2d-strong-model-pattern-001/cmo3/epsilon_epsilon_t02/cmo3_structure_report.json"
+      }
+    },
+    {
+      "id": "chitose_chitose_t01",
+      "safe_id": "chitose_chitose_t01",
+      "name": "chitose_t01",
+      "profile_key": "chitose",
+      "learning_target": "right-arm switching and handwave expression",
+      "runtime_status": "PASS",
+      "cmo3_status": "WARN",
+      "structure_counts": {
+        "art_meshes": 79,
+        "parts": 22,
+        "parameters": 33,
+        "warp_deformers": 54,
+        "rotation_deformers": 13,
+        "keyform_bindings": 175,
+        "keyform_grids": 168,
+        "glue": 0
+      },
+      "categories": {
+        "eye": {
+          "parameter_ids": [
+            "PARAM_BROW_L_ANGLE",
+            "PARAM_BROW_L_FORM",
+            "PARAM_BROW_L_X",
+            "PARAM_BROW_L_Y",
+            "PARAM_BROW_R_ANGLE",
+            "PARAM_BROW_R_FORM",
+            "PARAM_BROW_R_X",
+            "PARAM_BROW_R_Y",
+            "PARAM_CHEEK",
+            "PARAM_EYE_BALL_FORM",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_FORM",
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_BROW_L_ANGLE",
+            "PARAM_BROW_L_FORM",
+            "PARAM_BROW_L_X",
+            "PARAM_BROW_L_Y",
+            "PARAM_BROW_R_ANGLE",
+            "PARAM_BROW_R_FORM",
+            "PARAM_BROW_R_X",
+            "PARAM_BROW_R_Y",
+            "PARAM_CHEEK",
+            "PARAM_EYE_BALL_FORM",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_FORM",
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE"
+          ],
+          "part_names": [
+            "まゆ毛"
+          ],
+          "warp_deformer_names": [
+            "右まゆ毛の位置",
+            "右まゆ毛の曲面",
+            "右まゆ毛の角度",
+            "右まゆ毛影の位置",
+            "左まゆ毛の位置",
+            "左まゆ毛の曲面",
+            "左まゆ毛の角度",
+            "左まゆ毛影の位置"
+          ],
+          "rotation_deformer_names": []
+        },
+        "mouth": {
+          "parameter_ids": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "part_names": [
+            "口"
+          ],
+          "warp_deformer_names": [
+            "口の曲面"
+          ],
+          "rotation_deformer_names": []
+        },
+        "hair": {
+          "parameter_ids": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT"
+          ],
+          "part_names": [
+            "前髪",
+            "後ろ髪",
+            "横髪"
+          ],
+          "warp_deformer_names": [
+            "前髪てっぺんの揺れ",
+            "前髪てっぺんの曲面",
+            "前髪のZ",
+            "前髪の揺れ",
+            "前髪の曲面",
+            "後ろ髪のZ",
+            "後ろ髪の揺れ",
+            "後ろ髪の曲面"
+          ],
+          "rotation_deformer_names": []
+        },
+        "body_angle": {
+          "parameter_ids": [],
+          "motion_parameter_ids": [],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "arm": {
+          "parameter_ids": [
+            "PARAM_ARM_L_A",
+            "PARAM_ARM_R_A",
+            "PARAM_ARM_R_B"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_ARM_L_A",
+            "PARAM_ARM_R_A",
+            "PARAM_ARM_R_B"
+          ],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "physics": {
+          "group_count": 2,
+          "input_ids": [
+            "PARAM_ANGLE_X",
+            "PARAM_ANGLE_Z",
+            "PARAM_BODY_ANGLE_X",
+            "PARAM_BODY_ANGLE_Z"
+          ],
+          "output_ids": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT"
+          ],
+          "output_categories": [
+            "hair"
+          ]
+        },
+        "mask_pose_expression": {
+          "has_pose": true,
+          "expression_count": 7,
+          "glue_count": 0
+        },
+        "psd_layering": {
+          "psd_count": 0,
+          "has_psd": false
+        }
+      },
+      "evidence": {
+        "runtime_capture_dir": "experiments/live2d-strong-model-pattern-001/captures/chitose_chitose_t01",
+        "cmo3_report": "experiments/live2d-strong-model-pattern-001/cmo3/chitose_chitose_t01/cmo3_structure_report.json"
+      }
+    },
+    {
+      "id": "haru_haru_t01",
+      "safe_id": "haru_haru_t01",
+      "name": "haru_t01",
+      "profile_key": "haru",
+      "learning_target": "reference structure and motion pattern",
+      "runtime_status": "PASS",
+      "cmo3_status": "WARN",
+      "structure_counts": {
+        "art_meshes": 114,
+        "parts": 27,
+        "parameters": 33,
+        "warp_deformers": 53,
+        "rotation_deformers": 34,
+        "keyform_bindings": 267,
+        "keyform_grids": 228,
+        "glue": 0
+      },
+      "categories": {
+        "eye": {
+          "parameter_ids": [
+            "PARAM_BROW_L_ANGLE",
+            "PARAM_BROW_L_FORM",
+            "PARAM_BROW_L_X",
+            "PARAM_BROW_L_Y",
+            "PARAM_BROW_R_ANGLE",
+            "PARAM_BROW_R_FORM",
+            "PARAM_BROW_R_X",
+            "PARAM_BROW_R_Y",
+            "PARAM_EYE_BALL_FORM",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_FORM",
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_BROW_L_ANGLE",
+            "PARAM_BROW_L_FORM",
+            "PARAM_BROW_L_X",
+            "PARAM_BROW_L_Y",
+            "PARAM_BROW_R_ANGLE",
+            "PARAM_BROW_R_FORM",
+            "PARAM_BROW_R_X",
+            "PARAM_BROW_R_Y",
+            "PARAM_EYE_BALL_FORM",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_FORM",
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE"
+          ],
+          "part_names": [
+            "まゆ毛"
+          ],
+          "warp_deformer_names": [
+            "右まゆ毛の位置",
+            "右まゆ毛の曲面",
+            "右まゆ毛の角度",
+            "左まゆ毛の位置",
+            "左まゆ毛の曲面",
+            "左まゆ毛の角度"
+          ],
+          "rotation_deformer_names": []
+        },
+        "mouth": {
+          "parameter_ids": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "part_names": [
+            "口"
+          ],
+          "warp_deformer_names": [
+            "口の曲面",
+            "口内の曲面"
+          ],
+          "rotation_deformer_names": []
+        },
+        "hair": {
+          "parameter_ids": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT"
+          ],
+          "part_names": [
+            "前髪",
+            "後ろ髪",
+            "横髪"
+          ],
+          "warp_deformer_names": [
+            "前髪の揺れ",
+            "前髪の曲面",
+            "前髪の角度Z",
+            "右後ろ髪の曲面",
+            "右後ろ髪の角度Z",
+            "右横髪の曲面",
+            "右横髪の角度Z",
+            "左後ろ髪の曲面",
+            "左後ろ髪の角度Z",
+            "左横髪の曲面",
+            "左横髪の角度Z",
+            "後ろ髪の曲面"
+          ],
+          "rotation_deformer_names": []
+        },
+        "body_angle": {
+          "parameter_ids": [],
+          "motion_parameter_ids": [],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "arm": {
+          "parameter_ids": [
+            "PARAM_ARM_L_A",
+            "PARAM_ARM_L_B",
+            "PARAM_ARM_R_A",
+            "PARAM_ARM_R_B"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_ARM_L_A",
+            "PARAM_ARM_L_B",
+            "PARAM_ARM_R_A",
+            "PARAM_ARM_R_B"
+          ],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "physics": {
+          "group_count": 2,
+          "input_ids": [
+            "PARAM_ANGLE_X",
+            "PARAM_ANGLE_Z",
+            "PARAM_BODY_ANGLE_X",
+            "PARAM_BODY_ANGLE_Z"
+          ],
+          "output_ids": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT"
+          ],
+          "output_categories": [
+            "hair"
+          ]
+        },
+        "mask_pose_expression": {
+          "has_pose": true,
+          "expression_count": 8,
+          "glue_count": 0
+        },
+        "psd_layering": {
+          "psd_count": 0,
+          "has_psd": false
+        }
+      },
+      "evidence": {
+        "runtime_capture_dir": "experiments/live2d-strong-model-pattern-001/captures/haru_haru_t01",
+        "cmo3_report": "experiments/live2d-strong-model-pattern-001/cmo3/haru_haru_t01/cmo3_structure_report.json"
+      }
+    },
+    {
+      "id": "tororo_hijiki_hijiki_t01",
+      "safe_id": "tororo_hijiki_hijiki_t01",
+      "name": "hijiki_t01",
+      "profile_key": "tororo_hijiki",
+      "learning_target": "small non-human pair, simple physics and motion",
+      "runtime_status": "PASS",
+      "cmo3_status": "WARN",
+      "structure_counts": {
+        "art_meshes": 57,
+        "parts": 19,
+        "parameters": 31,
+        "warp_deformers": 36,
+        "rotation_deformers": 14,
+        "keyform_bindings": 121,
+        "keyform_grids": 126,
+        "glue": 0
+      },
+      "categories": {
+        "eye": {
+          "parameter_ids": [
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_FORM",
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_R_OPEN"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_FORM",
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_R_OPEN"
+          ],
+          "part_names": [
+            "まゆ毛"
+          ],
+          "warp_deformer_names": [
+            "右まゆ毛の曲面",
+            "左まゆ毛の曲面"
+          ],
+          "rotation_deformer_names": []
+        },
+        "mouth": {
+          "parameter_ids": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "part_names": [
+            "口"
+          ],
+          "warp_deformer_names": [
+            "口の曲面"
+          ],
+          "rotation_deformer_names": []
+        },
+        "hair": {
+          "parameter_ids": [],
+          "motion_parameter_ids": [],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "body_angle": {
+          "parameter_ids": [],
+          "motion_parameter_ids": [],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "arm": {
+          "parameter_ids": [
+            "ARM_R_MOVE_02",
+            "PARAM_ARM_L",
+            "PARAM_ARM_R_MOVE",
+            "PARAM_HAND_L",
+            "PARAM_HAND_L_MOVE",
+            "PARAM_HAND_R"
+          ],
+          "motion_parameter_ids": [
+            "ARM_R_MOVE_02",
+            "PARAM_ARM_L",
+            "PARAM_ARM_R_MOVE",
+            "PARAM_HAND_L",
+            "PARAM_HAND_L_MOVE",
+            "PARAM_HAND_R"
+          ],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "physics": {
+          "group_count": 1,
+          "input_ids": [
+            "PARAM_ANGLE_X",
+            "PARAM_ANGLE_Z",
+            "PARAM_BODY_ANGLE_X"
+          ],
+          "output_ids": [
+            "PARAM_BLOW_L",
+            "PARAM_BLOW_R"
+          ],
+          "output_categories": [
+            "other"
+          ]
+        },
+        "mask_pose_expression": {
+          "has_pose": true,
+          "expression_count": 0,
+          "glue_count": 0
+        },
+        "psd_layering": {
+          "psd_count": 0,
+          "has_psd": false
+        }
+      },
+      "evidence": {
+        "runtime_capture_dir": "experiments/live2d-strong-model-pattern-001/captures/tororo_hijiki_hijiki_t01",
+        "cmo3_report": "experiments/live2d-strong-model-pattern-001/cmo3/tororo_hijiki_hijiki_t01/cmo3_structure_report.json"
+      }
+    },
+    {
+      "id": "izumi_izumi_anime_t01",
+      "safe_id": "izumi_izumi_anime_t01",
+      "name": "izumi_anime_t01",
+      "profile_key": "izumi",
+      "learning_target": "source pose variants and opposite-facing motion reference",
+      "runtime_status": "PASS",
+      "cmo3_status": "WARN",
+      "structure_counts": {
+        "art_meshes": 77,
+        "parts": 21,
+        "parameters": 30,
+        "warp_deformers": 39,
+        "rotation_deformers": 6,
+        "keyform_bindings": 168,
+        "keyform_grids": 143,
+        "glue": 0
+      },
+      "categories": {
+        "eye": {
+          "parameter_ids": [
+            "PARAM_BROW_L_ANGLE",
+            "PARAM_BROW_L_FORM",
+            "PARAM_BROW_L_X",
+            "PARAM_BROW_L_Y",
+            "PARAM_BROW_R_ANGLE",
+            "PARAM_BROW_R_FORM",
+            "PARAM_BROW_R_X",
+            "PARAM_BROW_R_Y",
+            "PARAM_EYE_BALL_FORM",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_BROW_L_ANGLE",
+            "PARAM_BROW_L_FORM",
+            "PARAM_BROW_L_X",
+            "PARAM_BROW_L_Y",
+            "PARAM_BROW_R_ANGLE",
+            "PARAM_BROW_R_FORM",
+            "PARAM_BROW_R_X",
+            "PARAM_BROW_R_Y",
+            "PARAM_EYE_BALL_FORM",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE"
+          ],
+          "part_names": [
+            "まゆ毛"
+          ],
+          "warp_deformer_names": [
+            "右まゆ毛の位置",
+            "右まゆ毛の曲面",
+            "右まゆ毛の角度",
+            "左まゆ毛の位置",
+            "左まゆ毛の曲面",
+            "左まゆ毛の角度"
+          ],
+          "rotation_deformer_names": []
+        },
+        "mouth": {
+          "parameter_ids": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "part_names": [
+            "口"
+          ],
+          "warp_deformer_names": [
+            "口の曲面"
+          ],
+          "rotation_deformer_names": []
+        },
+        "hair": {
+          "parameter_ids": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE"
+          ],
+          "part_names": [
+            "前髪",
+            "後ろ髪",
+            "横髪"
+          ],
+          "warp_deformer_names": [
+            "前髪の揺れ",
+            "前髪の曲面",
+            "右横髪の揺れ",
+            "右横髪の曲面",
+            "左横髪の揺れ",
+            "左横髪の曲面",
+            "後ろ髪Z",
+            "後ろ髪の揺れ",
+            "後ろ髪の曲面",
+            "髪影の揺れ",
+            "髪影の曲面"
+          ],
+          "rotation_deformer_names": []
+        },
+        "body_angle": {
+          "parameter_ids": [],
+          "motion_parameter_ids": [],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "arm": {
+          "parameter_ids": [
+            "PARAM_ARM_L",
+            "PARAM_ARM_R"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_ARM_L",
+            "PARAM_ARM_R"
+          ],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "physics": {
+          "group_count": 3,
+          "input_ids": [
+            "PARAM_ANGLE_X",
+            "PARAM_ANGLE_Z",
+            "PARAM_BODY_ANGLE_X",
+            "PARAM_BODY_ANGLE_Z"
+          ],
+          "output_ids": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE"
+          ],
+          "output_categories": [
+            "hair"
+          ]
+        },
+        "mask_pose_expression": {
+          "has_pose": false,
+          "expression_count": 7,
+          "glue_count": 0
+        },
+        "psd_layering": {
+          "psd_count": 0,
+          "has_psd": false
+        }
+      },
+      "evidence": {
+        "runtime_capture_dir": "experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_anime_t01",
+        "cmo3_report": "experiments/live2d-strong-model-pattern-001/cmo3/izumi_izumi_anime_t01/cmo3_structure_report.json"
+      }
+    },
+    {
+      "id": "izumi_izumi_atsu_t01",
+      "safe_id": "izumi_izumi_atsu_t01",
+      "name": "izumi_atsu_t01",
+      "profile_key": "izumi",
+      "learning_target": "source pose variants and opposite-facing motion reference",
+      "runtime_status": "PASS",
+      "cmo3_status": "WARN",
+      "structure_counts": {
+        "art_meshes": 77,
+        "parts": 21,
+        "parameters": 30,
+        "warp_deformers": 39,
+        "rotation_deformers": 6,
+        "keyform_bindings": 171,
+        "keyform_grids": 143,
+        "glue": 0
+      },
+      "categories": {
+        "eye": {
+          "parameter_ids": [
+            "PARAM_BROW_L_ANGLE",
+            "PARAM_BROW_L_FORM",
+            "PARAM_BROW_L_X",
+            "PARAM_BROW_L_Y",
+            "PARAM_BROW_R_ANGLE",
+            "PARAM_BROW_R_FORM",
+            "PARAM_BROW_R_X",
+            "PARAM_BROW_R_Y",
+            "PARAM_EYE_BALL_FORM",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_BROW_L_ANGLE",
+            "PARAM_BROW_L_FORM",
+            "PARAM_BROW_L_X",
+            "PARAM_BROW_L_Y",
+            "PARAM_BROW_R_ANGLE",
+            "PARAM_BROW_R_FORM",
+            "PARAM_BROW_R_X",
+            "PARAM_BROW_R_Y",
+            "PARAM_EYE_BALL_FORM",
+            "PARAM_EYE_BALL_X",
+            "PARAM_EYE_BALL_Y",
+            "PARAM_EYE_L_OPEN",
+            "PARAM_EYE_L_SMILE",
+            "PARAM_EYE_R_OPEN",
+            "PARAM_EYE_R_SMILE"
+          ],
+          "part_names": [
+            "まゆ毛"
+          ],
+          "warp_deformer_names": [
+            "右まゆ毛の位置",
+            "右まゆ毛の曲面",
+            "右まゆ毛の角度",
+            "左まゆ毛の位置",
+            "左まゆ毛の曲面",
+            "左まゆ毛の角度"
+          ],
+          "rotation_deformer_names": []
+        },
+        "mouth": {
+          "parameter_ids": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_MOUTH_FORM",
+            "PARAM_MOUTH_OPEN_Y"
+          ],
+          "part_names": [
+            "口"
+          ],
+          "warp_deformer_names": [
+            "口の曲面"
+          ],
+          "rotation_deformer_names": []
+        },
+        "hair": {
+          "parameter_ids": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE"
+          ],
+          "part_names": [
+            "前髪",
+            "後ろ髪",
+            "横髪"
+          ],
+          "warp_deformer_names": [
+            "前髪の揺れ",
+            "前髪の曲面",
+            "右横髪の揺れ",
+            "右横髪の曲面",
+            "左横髪の揺れ",
+            "左横髪の曲面",
+            "後ろ髪Z",
+            "後ろ髪の揺れ",
+            "後ろ髪の曲面",
+            "髪影の揺れ",
+            "髪影の曲面"
+          ],
+          "rotation_deformer_names": []
+        },
+        "body_angle": {
+          "parameter_ids": [],
+          "motion_parameter_ids": [],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "arm": {
+          "parameter_ids": [
+            "PARAM_ARM_L",
+            "PARAM_ARM_R"
+          ],
+          "motion_parameter_ids": [
+            "PARAM_ARM_L",
+            "PARAM_ARM_R"
+          ],
+          "part_names": [],
+          "warp_deformer_names": [],
+          "rotation_deformer_names": []
+        },
+        "physics": {
+          "group_count": 3,
+          "input_ids": [
+            "PARAM_ANGLE_X",
+            "PARAM_ANGLE_Z",
+            "PARAM_BODY_ANGLE_X",
+            "PARAM_BODY_ANGLE_Z"
+          ],
+          "output_ids": [
+            "PARAM_HAIR_BACK",
+            "PARAM_HAIR_FRONT",
+            "PARAM_HAIR_SIDE"
+          ],
+          "output_categories": [
+            "hair"
+          ]
+        },
+        "mask_pose_expression": {
+          "has_pose": false,
+          "expression_count": 7,
+          "glue_count": 0
+        },
+        "psd_layering": {
+          "psd_count": 0,
+          "has_psd": false
+        }
+      },
+      "evidence": {
+        "runtime_capture_dir": "experiments/live2d-strong-model-pattern-001/captures/izumi_izumi_atsu_t01",
+        "cmo3_report": "experiments/live2d-strong-model-pattern-001/cmo3/izumi_izumi_atsu_t01/cmo3_structure_report.json"
+      }
+    }
+  ],
+  "policy": "local evidence only; do not reuse official art or textures"
+}

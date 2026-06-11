@@ -1,0 +1,2196 @@
+{
+  "schema_version": 2,
+  "experiment_id": "mini-cubism-dedicated-model-v1-001",
+  "generated_at": "2026-06-05T04:25:06.955847+00:00",
+  "source_canonical": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+  "source_layer_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+  "source_part_spec_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/part_spec_manifest.json",
+  "targeted_split_dir": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2",
+  "canvas_size": [
+    2048,
+    2048
+  ],
+  "mps_primary_case": "mps_640_safe",
+  "mps_fallback_case": "mps_512_safe",
+  "mps_case_status": {
+    "primary_case": "mps_640_safe",
+    "status": "PRIMARY_640_LAYERS_JSON_PRESENT_WITH_INCOMPLETE_RUN_REPORT",
+    "layers_json": "/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_layers.json",
+    "report": null
+  },
+  "layers": [
+    {
+      "part_id": "body_base",
+      "layer_name": "seethrough_70_custom_split_v2__body_base",
+      "original_part_id": "body_base",
+      "group": "body_anchor",
+      "folder": "Body",
+      "role": "body_anchor",
+      "source_original_part_id": "clothes",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/body_base.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        785,
+        1040,
+        465,
+        534
+      ],
+      "alpha_coverage": 0.04553437,
+      "draw_order": 230,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "neck",
+      "layer_name": "seethrough_70_custom_split_v2__neck",
+      "original_part_id": "neck",
+      "group": "body_anchor",
+      "folder": "Body",
+      "role": "body_anchor",
+      "source_original_part_id": "neck",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/neck.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        968,
+        870,
+        105,
+        15
+      ],
+      "alpha_coverage": 0.00026917,
+      "draw_order": 231,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "neck_shadow",
+      "layer_name": "seethrough_70_custom_split_v2__neck_shadow",
+      "original_part_id": "neck_shadow",
+      "group": "body_anchor",
+      "folder": "Body",
+      "role": "body_anchor",
+      "source_original_part_id": "neck",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/neck_shadow.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        880,
+        1010,
+        289,
+        131
+      ],
+      "alpha_coverage": 0.00708652,
+      "draw_order": 232,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_fallback_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "chest",
+      "layer_name": "seethrough_70_custom_split_v2__chest",
+      "original_part_id": "chest",
+      "group": "body_anchor",
+      "folder": "Body",
+      "role": "body_anchor",
+      "source_original_part_id": "clothes",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/chest.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        793,
+        1190,
+        447,
+        384
+      ],
+      "alpha_coverage": 0.02977848,
+      "draw_order": 233,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "chest_shadow",
+      "layer_name": "seethrough_70_custom_split_v2__chest_shadow",
+      "original_part_id": "chest_shadow",
+      "group": "body_anchor",
+      "folder": "Body",
+      "role": "body_anchor",
+      "source_original_part_id": "clothes",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/chest_shadow.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        806,
+        1220,
+        420,
+        271
+      ],
+      "alpha_coverage": 0.02273321,
+      "draw_order": 234,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "shoulder_L",
+      "layer_name": "seethrough_70_custom_split_v2__shoulder_L",
+      "original_part_id": "shoulder_L",
+      "group": "body_anchor",
+      "folder": "Body",
+      "role": "body_anchor",
+      "source_original_part_id": "clothes",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/shoulder_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1240,
+        1110,
+        10,
+        80
+      ],
+      "alpha_coverage": 0.00014544,
+      "draw_order": 235,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "shoulder_R",
+      "layer_name": "seethrough_70_custom_split_v2__shoulder_R",
+      "original_part_id": "shoulder_R",
+      "group": "body_anchor",
+      "folder": "Body",
+      "role": "body_anchor",
+      "source_original_part_id": "clothes",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/shoulder_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        785,
+        1110,
+        26,
+        117
+      ],
+      "alpha_coverage": 0.00053692,
+      "draw_order": 236,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "arm_L",
+      "layer_name": "seethrough_70_custom_split_v2__arm_L",
+      "original_part_id": "arm_L",
+      "group": "body_anchor",
+      "folder": "Body",
+      "role": "body_anchor",
+      "source_original_part_id": "L_arm",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/arm_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1370,
+        1240,
+        441,
+        615
+      ],
+      "alpha_coverage": 0.03340364,
+      "draw_order": 237,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "arm_R",
+      "layer_name": "seethrough_70_custom_split_v2__arm_R",
+      "original_part_id": "arm_R",
+      "group": "body_anchor",
+      "folder": "Body",
+      "role": "body_anchor",
+      "source_original_part_id": "R_arm",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/arm_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        240,
+        1240,
+        441,
+        609
+      ],
+      "alpha_coverage": 0.03438997,
+      "draw_order": 238,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "sleeve_L",
+      "layer_name": "seethrough_70_custom_split_v2__sleeve_L",
+      "original_part_id": "sleeve_L",
+      "group": "body_anchor",
+      "folder": "Body",
+      "role": "body_anchor",
+      "source_original_part_id": "L_arm",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/sleeve_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1260,
+        1210,
+        490,
+        471
+      ],
+      "alpha_coverage": 0.03289509,
+      "draw_order": 239,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "sleeve_R",
+      "layer_name": "seethrough_70_custom_split_v2__sleeve_R",
+      "original_part_id": "sleeve_R",
+      "group": "body_anchor",
+      "folder": "Body",
+      "role": "body_anchor",
+      "source_original_part_id": "R_arm",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/sleeve_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        284,
+        1210,
+        507,
+        471
+      ],
+      "alpha_coverage": 0.03318357,
+      "draw_order": 240,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "face_base",
+      "layer_name": "seethrough_70_custom_split_v2__face_base",
+      "original_part_id": "face_base",
+      "group": "face_ear",
+      "folder": "Face",
+      "role": "face_ear",
+      "source_original_part_id": "face_base",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/face_base.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        841,
+        380,
+        354,
+        438
+      ],
+      "alpha_coverage": 0.0280242,
+      "draw_order": 351,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "face_shadow_L",
+      "layer_name": "seethrough_70_custom_split_v2__face_shadow_L",
+      "original_part_id": "face_shadow_L",
+      "group": "face_ear",
+      "folder": "Face",
+      "role": "face_ear",
+      "source_original_part_id": "face_base",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/face_shadow_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1060,
+        530,
+        135,
+        272
+      ],
+      "alpha_coverage": 0.0062685,
+      "draw_order": 352,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "face_shadow_R",
+      "layer_name": "seethrough_70_custom_split_v2__face_shadow_R",
+      "original_part_id": "face_shadow_R",
+      "group": "face_ear",
+      "folder": "Face",
+      "role": "face_ear",
+      "source_original_part_id": "face_base",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/face_shadow_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        841,
+        530,
+        150,
+        280
+      ],
+      "alpha_coverage": 0.00736189,
+      "draw_order": 353,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "ear_L",
+      "layer_name": "seethrough_70_custom_split_v2__ear_L",
+      "original_part_id": "ear_L",
+      "group": "face_ear",
+      "folder": "Face",
+      "role": "face_ear",
+      "source_original_part_id": "L_ear_outer",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/ear_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1315,
+        620,
+        131,
+        191
+      ],
+      "alpha_coverage": 0.00467896,
+      "draw_order": 354,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_fallback_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "ear_R",
+      "layer_name": "seethrough_70_custom_split_v2__ear_R",
+      "original_part_id": "ear_R",
+      "group": "face_ear",
+      "folder": "Face",
+      "role": "face_ear",
+      "source_original_part_id": "R_ear_outer",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/ear_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        600,
+        620,
+        131,
+        191
+      ],
+      "alpha_coverage": 0.00467896,
+      "draw_order": 355,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_fallback_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "ear_inner_L",
+      "layer_name": "seethrough_70_custom_split_v2__ear_inner_L",
+      "original_part_id": "ear_inner_L",
+      "group": "face_ear",
+      "folder": "Face",
+      "role": "face_ear",
+      "source_original_part_id": "L_ear_outer",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/ear_inner_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1350,
+        660,
+        63,
+        109
+      ],
+      "alpha_coverage": 0.00128436,
+      "draw_order": 356,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_fallback_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "ear_inner_R",
+      "layer_name": "seethrough_70_custom_split_v2__ear_inner_R",
+      "original_part_id": "ear_inner_R",
+      "group": "face_ear",
+      "folder": "Face",
+      "role": "face_ear",
+      "source_original_part_id": "R_ear_outer",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/ear_inner_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        635,
+        660,
+        63,
+        109
+      ],
+      "alpha_coverage": 0.00128436,
+      "draw_order": 357,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_fallback_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "cheek_blush_L",
+      "layer_name": "seethrough_70_custom_split_v2__cheek_blush_L",
+      "original_part_id": "cheek_blush_L",
+      "group": "face_ear",
+      "folder": "Face",
+      "role": "face_ear",
+      "source_original_part_id": "face_base",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/cheek_blush_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1140,
+        720,
+        121,
+        57
+      ],
+      "alpha_coverage": 0.00129056,
+      "draw_order": 358,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_fallback_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "cheek_blush_R",
+      "layer_name": "seethrough_70_custom_split_v2__cheek_blush_R",
+      "original_part_id": "cheek_blush_R",
+      "group": "face_ear",
+      "folder": "Face",
+      "role": "face_ear",
+      "source_original_part_id": "face_base",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/cheek_blush_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        892,
+        720,
+        19,
+        34
+      ],
+      "alpha_coverage": 8.583e-05,
+      "draw_order": 359,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "front_bang_L",
+      "layer_name": "seethrough_70_custom_split_v2__front_bang_L",
+      "original_part_id": "front_bang_L",
+      "group": "hair_physics",
+      "folder": "Hair",
+      "role": "hair_physics",
+      "source_original_part_id": "front_hair",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/front_bang_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        752,
+        277,
+        157,
+        414
+      ],
+      "alpha_coverage": 0.01121926,
+      "draw_order": 120,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_fallback_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "front_bang_CL",
+      "layer_name": "seethrough_70_custom_split_v2__front_bang_CL",
+      "original_part_id": "front_bang_CL",
+      "group": "hair_physics",
+      "folder": "Hair",
+      "role": "hair_physics",
+      "source_original_part_id": "front_hair",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/front_bang_CL.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        881,
+        239,
+        139,
+        452
+      ],
+      "alpha_coverage": 0.01089454,
+      "draw_order": 121,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_fallback_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "front_bang_C",
+      "layer_name": "seethrough_70_custom_split_v2__front_bang_C",
+      "original_part_id": "front_bang_C",
+      "group": "hair_physics",
+      "folder": "Hair",
+      "role": "hair_physics",
+      "source_original_part_id": "front_hair",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/front_bang_C.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        972,
+        211,
+        127,
+        500
+      ],
+      "alpha_coverage": 0.01095033,
+      "draw_order": 122,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_fallback_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "front_bang_CR",
+      "layer_name": "seethrough_70_custom_split_v2__front_bang_CR",
+      "original_part_id": "front_bang_CR",
+      "group": "hair_physics",
+      "folder": "Hair",
+      "role": "hair_physics",
+      "source_original_part_id": "front_hair",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/front_bang_CR.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1056,
+        239,
+        139,
+        452
+      ],
+      "alpha_coverage": 0.01089454,
+      "draw_order": 123,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_fallback_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "front_bang_R",
+      "layer_name": "seethrough_70_custom_split_v2__front_bang_R",
+      "original_part_id": "front_bang_R",
+      "group": "hair_physics",
+      "folder": "Hair",
+      "role": "hair_physics",
+      "source_original_part_id": "front_hair",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/front_bang_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1142,
+        277,
+        157,
+        414
+      ],
+      "alpha_coverage": 0.01121926,
+      "draw_order": 124,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_fallback_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "front_side_lock_L",
+      "layer_name": "seethrough_70_custom_split_v2__front_side_lock_L",
+      "original_part_id": "front_side_lock_L",
+      "group": "hair_physics",
+      "folder": "Hair",
+      "role": "hair_physics",
+      "source_original_part_id": "front_hair",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/front_side_lock_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1246,
+        512,
+        169,
+        759
+      ],
+      "alpha_coverage": 0.02223778,
+      "draw_order": 125,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_fallback_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "front_side_lock_R",
+      "layer_name": "seethrough_70_custom_split_v2__front_side_lock_R",
+      "original_part_id": "front_side_lock_R",
+      "group": "hair_physics",
+      "folder": "Hair",
+      "role": "hair_physics",
+      "source_original_part_id": "front_hair",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/front_side_lock_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        636,
+        512,
+        169,
+        759
+      ],
+      "alpha_coverage": 0.02223778,
+      "draw_order": 126,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_fallback_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "side_hair_L_upper",
+      "layer_name": "seethrough_70_custom_split_v2__side_hair_L_upper",
+      "original_part_id": "side_hair_L_upper",
+      "group": "hair_physics",
+      "folder": "Hair",
+      "role": "hair_physics",
+      "source_original_part_id": "back_hair",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/side_hair_L_upper.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1280,
+        573,
+        257,
+        508
+      ],
+      "alpha_coverage": 0.01134515,
+      "draw_order": 127,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "side_hair_L_lower",
+      "layer_name": "seethrough_70_custom_split_v2__side_hair_L_lower",
+      "original_part_id": "side_hair_L_lower",
+      "group": "hair_physics",
+      "folder": "Hair",
+      "role": "hair_physics",
+      "source_original_part_id": "back_hair",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/side_hair_L_lower.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1340,
+        860,
+        358,
+        724
+      ],
+      "alpha_coverage": 0.03508353,
+      "draw_order": 128,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "side_hair_R_upper",
+      "layer_name": "seethrough_70_custom_split_v2__side_hair_R_upper",
+      "original_part_id": "side_hair_R_upper",
+      "group": "hair_physics",
+      "folder": "Hair",
+      "role": "hair_physics",
+      "source_original_part_id": "back_hair",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/side_hair_R_upper.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        497,
+        551,
+        274,
+        530
+      ],
+      "alpha_coverage": 0.01253819,
+      "draw_order": 129,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "side_hair_R_lower",
+      "layer_name": "seethrough_70_custom_split_v2__side_hair_R_lower",
+      "original_part_id": "side_hair_R_lower",
+      "group": "hair_physics",
+      "folder": "Hair",
+      "role": "hair_physics",
+      "source_original_part_id": "back_hair",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/side_hair_R_lower.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        350,
+        860,
+        361,
+        724
+      ],
+      "alpha_coverage": 0.03696489,
+      "draw_order": 130,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "back_hair_base",
+      "layer_name": "seethrough_70_custom_split_v2__back_hair_base",
+      "original_part_id": "back_hair_base",
+      "group": "hair_physics",
+      "folder": "Hair",
+      "role": "hair_physics",
+      "source_original_part_id": "back_hair",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/back_hair_base.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        500,
+        278,
+        1051,
+        1223
+      ],
+      "alpha_coverage": 0.18755651,
+      "draw_order": 131,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "back_hair_L",
+      "layer_name": "seethrough_70_custom_split_v2__back_hair_L",
+      "original_part_id": "back_hair_L",
+      "group": "hair_physics",
+      "folder": "Hair",
+      "role": "hair_physics",
+      "source_original_part_id": "back_hair",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/back_hair_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1210,
+        440,
+        451,
+        1144
+      ],
+      "alpha_coverage": 0.06505227,
+      "draw_order": 132,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "back_hair_C",
+      "layer_name": "seethrough_70_custom_split_v2__back_hair_C",
+      "original_part_id": "back_hair_C",
+      "group": "hair_physics",
+      "folder": "Hair",
+      "role": "hair_physics",
+      "source_original_part_id": "back_hair",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/back_hair_C.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        760,
+        360,
+        541,
+        1222
+      ],
+      "alpha_coverage": 0.11705303,
+      "draw_order": 133,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "back_hair_R",
+      "layer_name": "seethrough_70_custom_split_v2__back_hair_R",
+      "original_part_id": "back_hair_R",
+      "group": "hair_physics",
+      "folder": "Hair",
+      "role": "hair_physics",
+      "source_original_part_id": "back_hair",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/back_hair_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        380,
+        440,
+        451,
+        1144
+      ],
+      "alpha_coverage": 0.06496382,
+      "draw_order": 134,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "back_hair_tip_L",
+      "layer_name": "seethrough_70_custom_split_v2__back_hair_tip_L",
+      "original_part_id": "back_hair_tip_L",
+      "group": "hair_physics",
+      "folder": "Hair",
+      "role": "hair_physics",
+      "source_original_part_id": "back_hair",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/back_hair_tip_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1280,
+        1330,
+        361,
+        254
+      ],
+      "alpha_coverage": 0.01667547,
+      "draw_order": 135,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "back_hair_tip_C",
+      "layer_name": "seethrough_70_custom_split_v2__back_hair_tip_C",
+      "original_part_id": "back_hair_tip_C",
+      "group": "hair_physics",
+      "folder": "Hair",
+      "role": "hair_physics",
+      "source_original_part_id": "back_hair",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/back_hair_tip_C.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        850,
+        1380,
+        361,
+        192
+      ],
+      "alpha_coverage": 0.00957799,
+      "draw_order": 136,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "back_hair_tip_R",
+      "layer_name": "seethrough_70_custom_split_v2__back_hair_tip_R",
+      "original_part_id": "back_hair_tip_R",
+      "group": "hair_physics",
+      "folder": "Hair",
+      "role": "hair_physics",
+      "source_original_part_id": "back_hair",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/back_hair_tip_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        410,
+        1330,
+        361,
+        254
+      ],
+      "alpha_coverage": 0.01678276,
+      "draw_order": 137,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "eye_white_L",
+      "layer_name": "seethrough_70_custom_split_v2__eye_white_L",
+      "original_part_id": "eye_white_L",
+      "group": "eyes_keypose",
+      "folder": "Eyes",
+      "role": "eyes_keypose",
+      "source_original_part_id": "L_eye_white",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/eye_white_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1059,
+        630,
+        90,
+        51
+      ],
+      "alpha_coverage": 0.00084352,
+      "draw_order": 538,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "eye_white_R",
+      "layer_name": "seethrough_70_custom_split_v2__eye_white_R",
+      "original_part_id": "eye_white_R",
+      "group": "eyes_keypose",
+      "folder": "Eyes",
+      "role": "eyes_keypose",
+      "source_original_part_id": "R_eye_white",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/eye_white_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        886,
+        630,
+        86,
+        51
+      ],
+      "alpha_coverage": 0.00078106,
+      "draw_order": 539,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "iris_L",
+      "layer_name": "seethrough_70_custom_split_v2__iris_L",
+      "original_part_id": "iris_L",
+      "group": "eyes_keypose",
+      "folder": "Eyes",
+      "role": "eyes_keypose",
+      "source_original_part_id": "L_iris",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/iris_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1120,
+        623,
+        10,
+        48
+      ],
+      "alpha_coverage": 8.559e-05,
+      "draw_order": 540,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "iris_R",
+      "layer_name": "seethrough_70_custom_split_v2__iris_R",
+      "original_part_id": "iris_R",
+      "group": "eyes_keypose",
+      "folder": "Eyes",
+      "role": "eyes_keypose",
+      "source_original_part_id": "R_iris",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/iris_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        906,
+        621,
+        22,
+        61
+      ],
+      "alpha_coverage": 0.00025487,
+      "draw_order": 541,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "pupil_L",
+      "layer_name": "seethrough_70_custom_split_v2__pupil_L",
+      "original_part_id": "pupil_L",
+      "group": "eyes_keypose",
+      "folder": "Eyes",
+      "role": "eyes_keypose",
+      "source_original_part_id": "generated_from_target_bbox",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/pupil_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1146,
+        646,
+        35,
+        35
+      ],
+      "alpha_coverage": 0.00022817,
+      "draw_order": 542,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_keypose_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "pupil_R",
+      "layer_name": "seethrough_70_custom_split_v2__pupil_R",
+      "original_part_id": "pupil_R",
+      "group": "eyes_keypose",
+      "folder": "Eyes",
+      "role": "eyes_keypose",
+      "source_original_part_id": "generated_from_target_bbox",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/pupil_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        871,
+        646,
+        35,
+        35
+      ],
+      "alpha_coverage": 0.00022817,
+      "draw_order": 543,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_keypose_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "catchlight_L",
+      "layer_name": "seethrough_70_custom_split_v2__catchlight_L",
+      "original_part_id": "catchlight_L",
+      "group": "eyes_keypose",
+      "folder": "Eyes",
+      "role": "eyes_keypose",
+      "source_original_part_id": "generated_from_target_bbox",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/catchlight_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1165,
+        630,
+        23,
+        23
+      ],
+      "alpha_coverage": 9.847e-05,
+      "draw_order": 544,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_keypose_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "catchlight_R",
+      "layer_name": "seethrough_70_custom_split_v2__catchlight_R",
+      "original_part_id": "catchlight_R",
+      "group": "eyes_keypose",
+      "folder": "Eyes",
+      "role": "eyes_keypose",
+      "source_original_part_id": "generated_from_target_bbox",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/catchlight_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        890,
+        630,
+        23,
+        23
+      ],
+      "alpha_coverage": 9.847e-05,
+      "draw_order": 545,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_keypose_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "upper_lid_L",
+      "layer_name": "seethrough_70_custom_split_v2__upper_lid_L",
+      "original_part_id": "upper_lid_L",
+      "group": "eyes_keypose",
+      "folder": "Eyes",
+      "role": "eyes_keypose",
+      "source_original_part_id": "generated_from_target_bbox",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/upper_lid_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1040,
+        585,
+        239,
+        63
+      ],
+      "alpha_coverage": 0.00285292,
+      "draw_order": 546,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_keypose_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "upper_lid_R",
+      "layer_name": "seethrough_70_custom_split_v2__upper_lid_R",
+      "original_part_id": "upper_lid_R",
+      "group": "eyes_keypose",
+      "folder": "Eyes",
+      "role": "eyes_keypose",
+      "source_original_part_id": "generated_from_target_bbox",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/upper_lid_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        765,
+        585,
+        239,
+        63
+      ],
+      "alpha_coverage": 0.00285292,
+      "draw_order": 547,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_keypose_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "lower_lid_L",
+      "layer_name": "seethrough_70_custom_split_v2__lower_lid_L",
+      "original_part_id": "lower_lid_L",
+      "group": "eyes_keypose",
+      "folder": "Eyes",
+      "role": "eyes_keypose",
+      "source_original_part_id": "generated_from_target_bbox",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/lower_lid_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1057,
+        709,
+        207,
+        29
+      ],
+      "alpha_coverage": 0.00028682,
+      "draw_order": 548,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_keypose_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "lower_lid_R",
+      "layer_name": "seethrough_70_custom_split_v2__lower_lid_R",
+      "original_part_id": "lower_lid_R",
+      "group": "eyes_keypose",
+      "folder": "Eyes",
+      "role": "eyes_keypose",
+      "source_original_part_id": "generated_from_target_bbox",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/lower_lid_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        782,
+        709,
+        207,
+        29
+      ],
+      "alpha_coverage": 0.00028682,
+      "draw_order": 549,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_keypose_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "upper_lash_L",
+      "layer_name": "seethrough_70_custom_split_v2__upper_lash_L",
+      "original_part_id": "upper_lash_L",
+      "group": "eyes_keypose",
+      "folder": "Eyes",
+      "role": "eyes_keypose",
+      "source_original_part_id": "L_upper_lash",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/upper_lash_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1060,
+        607,
+        120,
+        34
+      ],
+      "alpha_coverage": 0.00070405,
+      "draw_order": 550,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "upper_lash_R",
+      "layer_name": "seethrough_70_custom_split_v2__upper_lash_R",
+      "original_part_id": "upper_lash_R",
+      "group": "eyes_keypose",
+      "folder": "Eyes",
+      "role": "eyes_keypose",
+      "source_original_part_id": "R_upper_lash",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/upper_lash_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        858,
+        605,
+        118,
+        36
+      ],
+      "alpha_coverage": 0.0006721,
+      "draw_order": 551,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "brow_L",
+      "layer_name": "seethrough_70_custom_split_v2__brow_L",
+      "original_part_id": "brow_L",
+      "group": "eyes_keypose",
+      "folder": "Eyes",
+      "role": "eyes_keypose",
+      "source_original_part_id": "L_brow",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/brow_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1069,
+        520,
+        191,
+        35
+      ],
+      "alpha_coverage": 0.00040245,
+      "draw_order": 552,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_fallback_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "brow_R",
+      "layer_name": "seethrough_70_custom_split_v2__brow_R",
+      "original_part_id": "brow_R",
+      "group": "eyes_keypose",
+      "folder": "Eyes",
+      "role": "eyes_keypose",
+      "source_original_part_id": "R_brow",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/brow_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        789,
+        520,
+        191,
+        35
+      ],
+      "alpha_coverage": 0.00040245,
+      "draw_order": 553,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_fallback_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "mouth_closed_line",
+      "layer_name": "seethrough_70_custom_split_v2__mouth_closed_line",
+      "original_part_id": "mouth_closed_line",
+      "group": "mouth_keypose",
+      "folder": "Mouth",
+      "role": "mouth_keypose",
+      "source_original_part_id": "mouth_line",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/mouth_closed_line.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        957,
+        848,
+        137,
+        32
+      ],
+      "alpha_coverage": 0.00023699,
+      "draw_order": 614,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_fallback_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "mouth_half_outer",
+      "layer_name": "seethrough_70_custom_split_v2__mouth_half_outer",
+      "original_part_id": "mouth_half_outer",
+      "group": "mouth_keypose",
+      "folder": "Mouth",
+      "role": "mouth_keypose",
+      "source_original_part_id": "generated_from_target_bbox",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/mouth_half_outer.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        935,
+        812,
+        181,
+        73
+      ],
+      "alpha_coverage": 0.00247216,
+      "draw_order": 615,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_keypose_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "mouth_half_inner",
+      "layer_name": "seethrough_70_custom_split_v2__mouth_half_inner",
+      "original_part_id": "mouth_half_inner",
+      "group": "mouth_keypose",
+      "folder": "Mouth",
+      "role": "mouth_keypose",
+      "source_original_part_id": "generated_from_target_bbox",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/mouth_half_inner.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        976,
+        837,
+        98,
+        32
+      ],
+      "alpha_coverage": 0.00058842,
+      "draw_order": 616,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_keypose_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "mouth_open_outer",
+      "layer_name": "seethrough_70_custom_split_v2__mouth_open_outer",
+      "original_part_id": "mouth_open_outer",
+      "group": "mouth_keypose",
+      "folder": "Mouth",
+      "role": "mouth_keypose",
+      "source_original_part_id": "generated_from_target_bbox",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/mouth_open_outer.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        925,
+        802,
+        201,
+        125
+      ],
+      "alpha_coverage": 0.00470471,
+      "draw_order": 617,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_keypose_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "mouth_open_inner",
+      "layer_name": "seethrough_70_custom_split_v2__mouth_open_inner",
+      "original_part_id": "mouth_open_inner",
+      "group": "mouth_keypose",
+      "folder": "Mouth",
+      "role": "mouth_keypose",
+      "source_original_part_id": "generated_from_target_bbox",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/mouth_open_inner.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        966,
+        832,
+        118,
+        71
+      ],
+      "alpha_coverage": 0.00156736,
+      "draw_order": 618,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_keypose_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "mouth_teeth_upper",
+      "layer_name": "seethrough_70_custom_split_v2__mouth_teeth_upper",
+      "original_part_id": "mouth_teeth_upper",
+      "group": "mouth_keypose",
+      "folder": "Mouth",
+      "role": "mouth_keypose",
+      "source_original_part_id": "generated_from_target_bbox",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/mouth_teeth_upper.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        980,
+        826,
+        89,
+        27
+      ],
+      "alpha_coverage": 0.00056338,
+      "draw_order": 619,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_keypose_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "mouth_tongue",
+      "layer_name": "seethrough_70_custom_split_v2__mouth_tongue",
+      "original_part_id": "mouth_tongue",
+      "group": "mouth_keypose",
+      "folder": "Mouth",
+      "role": "mouth_keypose",
+      "source_original_part_id": "generated_from_target_bbox",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/mouth_tongue.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        982,
+        872,
+        87,
+        31
+      ],
+      "alpha_coverage": 0.00050473,
+      "draw_order": 620,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_keypose_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "mouth_shadow",
+      "layer_name": "seethrough_70_custom_split_v2__mouth_shadow",
+      "original_part_id": "mouth_shadow",
+      "group": "mouth_keypose",
+      "folder": "Mouth",
+      "role": "mouth_keypose",
+      "source_original_part_id": "generated_from_target_bbox",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/mouth_shadow.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        956,
+        846,
+        139,
+        63
+      ],
+      "alpha_coverage": 0.0016396,
+      "draw_order": 621,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_keypose_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "choker_base",
+      "layer_name": "seethrough_70_custom_split_v2__choker_base",
+      "original_part_id": "choker_base",
+      "group": "clothes_accessory_physics",
+      "folder": "Accessory",
+      "role": "clothes_accessory_physics",
+      "source_original_part_id": "choker",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/choker_base.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        850,
+        1018,
+        351,
+        83
+      ],
+      "alpha_coverage": 0.0067265,
+      "draw_order": 712,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_fallback_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "choker_gem",
+      "layer_name": "seethrough_70_custom_split_v2__choker_gem",
+      "original_part_id": "choker_gem",
+      "group": "clothes_accessory_physics",
+      "folder": "Accessory",
+      "role": "clothes_accessory_physics",
+      "source_original_part_id": "choker",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/choker_gem.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        970,
+        1040,
+        111,
+        141
+      ],
+      "alpha_coverage": 0.00186944,
+      "draw_order": 713,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "generated_fallback_candidate",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "ribbon_center",
+      "layer_name": "seethrough_70_custom_split_v2__ribbon_center",
+      "original_part_id": "ribbon_center",
+      "group": "clothes_accessory_physics",
+      "folder": "Accessory",
+      "role": "clothes_accessory_physics",
+      "source_original_part_id": "clothes",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/ribbon_center.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        944,
+        1230,
+        161,
+        151
+      ],
+      "alpha_coverage": 0.00579619,
+      "draw_order": 714,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "ribbon_loop_L",
+      "layer_name": "seethrough_70_custom_split_v2__ribbon_loop_L",
+      "original_part_id": "ribbon_loop_L",
+      "group": "clothes_accessory_physics",
+      "folder": "Accessory",
+      "role": "clothes_accessory_physics",
+      "source_original_part_id": "clothes",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/ribbon_loop_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1090,
+        1235,
+        128,
+        171
+      ],
+      "alpha_coverage": 0.00416803,
+      "draw_order": 715,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "ribbon_loop_R",
+      "layer_name": "seethrough_70_custom_split_v2__ribbon_loop_R",
+      "original_part_id": "ribbon_loop_R",
+      "group": "clothes_accessory_physics",
+      "folder": "Accessory",
+      "role": "clothes_accessory_physics",
+      "source_original_part_id": "clothes",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/ribbon_loop_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        818,
+        1235,
+        138,
+        171
+      ],
+      "alpha_coverage": 0.00455642,
+      "draw_order": 716,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "ribbon_tail_L",
+      "layer_name": "seethrough_70_custom_split_v2__ribbon_tail_L",
+      "original_part_id": "ribbon_tail_L",
+      "group": "clothes_accessory_physics",
+      "folder": "Accessory",
+      "role": "clothes_accessory_physics",
+      "source_original_part_id": "clothes",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/ribbon_tail_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1115,
+        1370,
+        109,
+        171
+      ],
+      "alpha_coverage": 0.00257444,
+      "draw_order": 717,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "ribbon_tail_R",
+      "layer_name": "seethrough_70_custom_split_v2__ribbon_tail_R",
+      "original_part_id": "ribbon_tail_R",
+      "group": "clothes_accessory_physics",
+      "folder": "Accessory",
+      "role": "clothes_accessory_physics",
+      "source_original_part_id": "clothes",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/ribbon_tail_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        812,
+        1370,
+        124,
+        183
+      ],
+      "alpha_coverage": 0.00331569,
+      "draw_order": 718,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "shoulder_frill_L",
+      "layer_name": "seethrough_70_custom_split_v2__shoulder_frill_L",
+      "original_part_id": "shoulder_frill_L",
+      "group": "clothes_accessory_physics",
+      "folder": "Accessory",
+      "role": "clothes_accessory_physics",
+      "source_original_part_id": "clothes",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/shoulder_frill_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1190,
+        1130,
+        60,
+        151
+      ],
+      "alpha_coverage": 0.00142908,
+      "draw_order": 719,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "shoulder_frill_R",
+      "layer_name": "seethrough_70_custom_split_v2__shoulder_frill_R",
+      "original_part_id": "shoulder_frill_R",
+      "group": "clothes_accessory_physics",
+      "folder": "Accessory",
+      "role": "clothes_accessory_physics",
+      "source_original_part_id": "clothes",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/shoulder_frill_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        785,
+        1130,
+        76,
+        151
+      ],
+      "alpha_coverage": 0.00201368,
+      "draw_order": 720,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "sleeve_frill_L",
+      "layer_name": "seethrough_70_custom_split_v2__sleeve_frill_L",
+      "original_part_id": "sleeve_frill_L",
+      "group": "clothes_accessory_physics",
+      "folder": "Accessory",
+      "role": "clothes_accessory_physics",
+      "source_original_part_id": "L_arm",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/sleeve_frill_L.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1340,
+        1530,
+        421,
+        171
+      ],
+      "alpha_coverage": 0.01465988,
+      "draw_order": 721,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    },
+    {
+      "part_id": "sleeve_frill_R",
+      "layer_name": "seethrough_70_custom_split_v2__sleeve_frill_R",
+      "original_part_id": "sleeve_frill_R",
+      "group": "clothes_accessory_physics",
+      "folder": "Accessory",
+      "role": "clothes_accessory_physics",
+      "source_original_part_id": "R_arm",
+      "source_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/sleeve_frill_R.png",
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        290,
+        1530,
+        417,
+        171
+      ],
+      "alpha_coverage": 0.01456809,
+      "draw_order": 722,
+      "include_in_import_psd": false,
+      "production_candidate": false,
+      "status": "QA_REQUIRED_BEFORE_PROMOTION",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "qa_policy": "critical face/eye/mouth generated/procedural/fallback parts must fail visual gate"
+    }
+  ],
+  "part_groups": {
+    "body_anchor": [
+      "body_base",
+      "neck",
+      "neck_shadow",
+      "chest",
+      "chest_shadow",
+      "shoulder_L",
+      "shoulder_R",
+      "arm_L",
+      "arm_R",
+      "sleeve_L",
+      "sleeve_R"
+    ],
+    "face_ear": [
+      "face_base",
+      "face_shadow_L",
+      "face_shadow_R",
+      "ear_L",
+      "ear_R",
+      "ear_inner_L",
+      "ear_inner_R",
+      "cheek_blush_L",
+      "cheek_blush_R"
+    ],
+    "hair_physics": [
+      "front_bang_L",
+      "front_bang_CL",
+      "front_bang_C",
+      "front_bang_CR",
+      "front_bang_R",
+      "front_side_lock_L",
+      "front_side_lock_R",
+      "side_hair_L_upper",
+      "side_hair_L_lower",
+      "side_hair_R_upper",
+      "side_hair_R_lower",
+      "back_hair_base",
+      "back_hair_L",
+      "back_hair_C",
+      "back_hair_R",
+      "back_hair_tip_L",
+      "back_hair_tip_C",
+      "back_hair_tip_R"
+    ],
+    "eyes_keypose": [
+      "eye_white_L",
+      "eye_white_R",
+      "iris_L",
+      "iris_R",
+      "pupil_L",
+      "pupil_R",
+      "catchlight_L",
+      "catchlight_R",
+      "upper_lid_L",
+      "upper_lid_R",
+      "lower_lid_L",
+      "lower_lid_R",
+      "upper_lash_L",
+      "upper_lash_R",
+      "brow_L",
+      "brow_R"
+    ],
+    "mouth_keypose": [
+      "mouth_closed_line",
+      "mouth_half_outer",
+      "mouth_half_inner",
+      "mouth_open_outer",
+      "mouth_open_inner",
+      "mouth_teeth_upper",
+      "mouth_tongue",
+      "mouth_shadow"
+    ],
+    "clothes_accessory_physics": [
+      "choker_base",
+      "choker_gem",
+      "ribbon_center",
+      "ribbon_loop_L",
+      "ribbon_loop_R",
+      "ribbon_tail_L",
+      "ribbon_tail_R",
+      "shoulder_frill_L",
+      "shoulder_frill_R",
+      "sleeve_frill_L",
+      "sleeve_frill_R"
+    ]
+  },
+  "mouth_visibility_groups": {
+    "parameter_id": "ParamMouthOpenY",
+    "states": {
+      "0": [
+        "mouth_closed_line"
+      ],
+      "0.5": [
+        "mouth_half_outer",
+        "mouth_half_inner"
+      ],
+      "1": [
+        "mouth_open_outer",
+        "mouth_open_inner",
+        "mouth_teeth_upper",
+        "mouth_tongue",
+        "mouth_shadow"
+      ]
+    }
+  },
+  "eye_closed_hidden_parts": [
+    "iris_L",
+    "iris_R",
+    "pupil_L",
+    "pupil_R",
+    "catchlight_L",
+    "catchlight_R"
+  ],
+  "counts": {
+    "parts": 73,
+    "hair_parts": 18,
+    "eye_parts": 16,
+    "mouth_parts": 8,
+    "physics_targets": 33,
+    "from_seethrough_masks": 40,
+    "generated_or_fallback_candidates": 33
+  },
+  "status": "BUILT_PENDING_QA",
+  "interpretation": [
+    "This v2 candidate preserves existing evidence and applies a stricter QA gate before project promotion.",
+    "640 MPS is the primary intended See-through case; 512 is fallback evidence only.",
+    "Face/eye/mouth generated candidates are not production success and must be caught by QA."
+  ]
+}

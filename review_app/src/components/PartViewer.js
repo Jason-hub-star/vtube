@@ -1,4 +1,4 @@
-export function PartViewer({ item, viewMode, onModeChange }) {
+export function PartViewer({ item, viewMode, onionOpacity = 0.55, onModeChange, onOpacityChange }) {
   const root = document.createElement("section");
   root.className = "viewer-panel";
 
@@ -6,14 +6,22 @@ export function PartViewer({ item, viewMode, onModeChange }) {
   header.className = "viewer-header";
   const titleWrap = document.createElement("div");
   const title = document.createElement("h1");
-  title.textContent = `${item.ko_name} (${item.part_id})`;
+  title.textContent = item.simple_label || `${item.ko_name} (${item.part_id})`;
   const subtitle = document.createElement("p");
-  subtitle.textContent = `${groupLabel(item.group)} · ${roleLabel(item.role)} · ${item.include_in_import_psd ? "PSD 포함" : "PSD 제외"}`;
+  subtitle.textContent = [
+    gateLabel(item.review_gate),
+    groupLabel(item.group),
+    roleLabel(item.role),
+    triageLabel(item.triage_status),
+    item.include_in_import_psd ? "PSD 포함" : "PSD 제외",
+  ]
+    .filter(Boolean)
+    .join(" · ");
   titleWrap.append(title, subtitle);
 
   const modes = document.createElement("div");
   modes.className = "mode-toggle";
-  for (const mode of ["crop_overlay", "crop_part", "full_overlay", "canonical", "checker"]) {
+  for (const mode of viewModesFor(item)) {
     const button = document.createElement("button");
     button.type = "button";
     button.textContent = modeLabel(mode);
@@ -26,8 +34,19 @@ export function PartViewer({ item, viewMode, onModeChange }) {
   const stage = document.createElement("div");
   stage.className = `image-stage ${viewMode}`;
   const crop = cropBox(item);
+  const isEmptyCandidate = !item.bbox || Number(item.alpha_coverage || 0) === 0;
 
-  if (viewMode === "canonical" && item.canonical_path) {
+  if (viewMode === "structure_summary") {
+    stage.append(structureSummary(item));
+  } else if (viewMode === "side_by_side") {
+    stage.append(compareGrid("기본", comparePath(item, "neutral") || item.canonical_path, "크게 움직임", comparePath(item, "extreme") || item.overlay_path || item.image_path));
+  } else if (viewMode === "before_after") {
+    stage.append(compareGrid("수정 전", comparePath(item, "before") || item.source_path || item.canonical_path, "수정 후", comparePath(item, "after") || item.image_path || item.overlay_path));
+  } else if (viewMode === "alone_composited") {
+    stage.append(compareGrid("파츠만", comparePath(item, "layer") || item.image_path, "합쳐서 보기", comparePath(item, "composited") || item.overlay_path || item.canonical_path));
+  } else if (viewMode === "onion_skin") {
+    stage.append(onionSkin(item, crop, onionOpacity, onOpacityChange));
+  } else if (viewMode === "canonical" && item.canonical_path) {
     stage.append(image(item.canonical_path, "기준 이미지", "fit-image"));
   } else if (viewMode === "checker" && item.image_path) {
     stage.append(cropFrame(item, crop, [image(item.image_path, "체커 배경 위 파츠", "crop-image")]));
@@ -52,16 +71,44 @@ export function PartViewer({ item, viewMode, onModeChange }) {
     }
     stage.append(cropFrame(item, crop, layers));
   }
+  if (isEmptyCandidate && viewMode !== "canonical") {
+    const notice = document.createElement("div");
+    notice.className = "empty-candidate-notice";
+    notice.textContent = "알파가 비어 있거나 bbox가 없습니다. 보통 X 또는 참고용 후보입니다.";
+    stage.append(notice);
+  }
 
   const meta = document.createElement("dl");
   meta.className = "item-meta";
-  addMeta(meta, "영역", item.bbox ? item.bbox.join(", ") : "없음");
-  addMeta(meta, "알파", item.alpha_coverage ?? "해당 없음");
-  addMeta(meta, "순서", item.draw_order ?? "해당 없음");
+  addMeta(meta, "검수 단계", gateLabel(item.review_gate));
+  addMeta(meta, "파츠 영역", item.bbox ? item.bbox.join(", ") : "없음");
+  addMeta(meta, "투명도", item.alpha_coverage ?? "해당 없음");
   addMeta(meta, "PSD", item.include_in_import_psd ? "포함" : "제외");
 
-  root.append(header, stage, meta);
+  const quickGuide = document.createElement("div");
+  quickGuide.className = "quick-guide";
+  const guideTitle = document.createElement("strong");
+  guideTitle.textContent = item.simple_description || guideForGate(item.review_gate);
+  quickGuide.append(guideTitle);
+  if (item.checklist?.length) {
+    const ul = document.createElement("ul");
+    for (const check of item.checklist) {
+      const li = document.createElement("li");
+      li.textContent = check;
+      ul.append(li);
+    }
+    quickGuide.append(ul);
+  }
+
+  root.append(header, quickGuide, stage, meta);
   return root;
+}
+
+function viewModesFor(item) {
+  const base = ["crop_overlay", "crop_part", "full_overlay", "onion_skin", "alone_composited"];
+  if (item.review_gate === "G2_STRUCTURE") return ["structure_summary", "side_by_side", "before_after"];
+  if (item.review_gate === "G3_MOTION_VISUAL") return ["side_by_side", "onion_skin", "before_after", "alone_composited"];
+  return [...base, "canonical", "checker"];
 }
 
 function cropBox(item) {
@@ -96,6 +143,93 @@ function cropFrame(item, crop, images) {
   return frame;
 }
 
+function compareGrid(leftLabel, leftPath, rightLabel, rightPath) {
+  const grid = document.createElement("div");
+  grid.className = "compare-grid";
+  grid.append(comparePane(leftLabel, leftPath), comparePane(rightLabel, rightPath));
+  return grid;
+}
+
+function comparePane(labelText, src) {
+  const pane = document.createElement("div");
+  pane.className = "compare-pane";
+  const label = document.createElement("span");
+  label.textContent = labelText;
+  if (src) {
+    pane.append(image(src, labelText, "compare-image"));
+  } else {
+    const empty = document.createElement("p");
+    empty.textContent = "이미지 없음";
+    pane.append(empty);
+  }
+  pane.append(label);
+  return pane;
+}
+
+function onionSkin(item, crop, opacity, onOpacityChange) {
+  const root = document.createElement("div");
+  root.className = "onion-wrap";
+  const layers = [];
+  if (comparePath(item, "neutral") || item.canonical_path) {
+    layers.push(image(comparePath(item, "neutral") || item.canonical_path, "기본 이미지", "crop-image base"));
+  }
+  const overlay = image(comparePath(item, "extreme") || item.overlay_path || item.image_path, "겹쳐 보는 이미지", "crop-image overlay-image");
+  overlay.style.opacity = String(opacity);
+  layers.push(overlay);
+  root.append(cropFrame(item, crop, layers));
+  const control = document.createElement("label");
+  control.className = "opacity-control";
+  control.textContent = "겹침 진하기";
+  const input = document.createElement("input");
+  input.type = "range";
+  input.min = "0";
+  input.max = "1";
+  input.step = "0.05";
+  input.value = String(opacity);
+  input.addEventListener("input", () => onOpacityChange?.(Number(input.value)));
+  control.append(input);
+  root.append(control);
+  return root;
+}
+
+function structureSummary(item) {
+  const root = document.createElement("div");
+  root.className = "structure-summary";
+  const summary = item.auto_check_summary || {};
+  const status = document.createElement("strong");
+  status.className = `structure-status ${String(summary.status || "PENDING").toLowerCase()}`;
+  status.textContent = statusLabel(summary.status);
+  const hint = document.createElement("p");
+  hint.textContent =
+    summary.message ||
+    "자동검사 결과가 아직 없습니다. PASS로 처리하지 말고 inspector/comparator 결과를 먼저 넣어주세요.";
+  root.append(status, hint);
+
+  const checks = summary.checks || {};
+  const entries = [
+    ["필수 파츠", checks.required_part_count],
+    ["Alpha/crop", checks.alpha_bbox_crop],
+    ["ArtMesh", checks.artmesh_count],
+    ["Parameter", checks.parameter_count],
+    ["Deformer", checks.deformer_count],
+    ["Keyform", checks.keyform_binding_count],
+    ["Physics", checks.physics_group_count],
+  ];
+  const grid = document.createElement("dl");
+  for (const [label, value] of entries) {
+    addMeta(grid, label, value ?? "대기");
+  }
+  root.append(grid);
+  return root;
+}
+
+function comparePath(item, key) {
+  const value = item.compare_views?.[key];
+  if (!value) return null;
+  if (typeof value === "string") return value;
+  return value.path || value.image_path || null;
+}
+
 function image(src, alt, className) {
   const img = document.createElement("img");
   img.src = src;
@@ -118,9 +252,41 @@ function modeLabel(mode) {
     crop_overlay: "확대 비교",
     crop_part: "파츠만 확대",
     full_overlay: "전체 비교",
+    side_by_side: "나란히 보기",
+    onion_skin: "겹쳐 보기",
+    before_after: "전후 비교",
+    alone_composited: "단독/합성",
+    structure_summary: "자동검사",
     canonical: "기준 원본",
     checker: "투명 배경",
   }[mode];
+}
+
+function gateLabel(gate) {
+  return {
+    G0_CONCEPT: "캐릭터 고르기",
+    G1_PART_TAXONOMY: "파츠 확인",
+    G2_STRUCTURE: "구조 자동검사",
+    G3_MOTION_VISUAL: "움직임 확인",
+  }[gate] || "";
+}
+
+function guideForGate(gate) {
+  return {
+    G0_CONCEPT: "캐릭터가 마음에 드는지 먼저 고릅니다.",
+    G1_PART_TAXONOMY: "파츠가 빠지거나 지저분하지 않은지 봅니다.",
+    G2_STRUCTURE: "사람 눈보다 자동 숫자검사를 믿는 단계입니다.",
+    G3_MOTION_VISUAL: "눈, 입, 머리카락, 몸이 움직일 때 어색한지 봅니다.",
+  }[gate] || "이미지를 보고 판정합니다.";
+}
+
+function statusLabel(status) {
+  return {
+    PASS: "자동검사 PASS",
+    FAIL: "자동검사 FAIL",
+    REVISE: "구조 보강 필요",
+    PENDING: "자동검사 대기",
+  }[status] || "자동검사 대기";
 }
 
 function groupLabel(group) {
@@ -138,6 +304,10 @@ function groupLabel(group) {
     reference_blink: "눈깜빡임 참고",
     overlays: "오버레이",
     seethrough_reference: "See-through 참고",
+    mps_compat_reference: "Mac MPS 참고",
+    layerdivider_reference: "LayerDivider 참고",
+    qwen_layer_reference: "Qwen Layers 참고",
+    vtuber2d_ai_reference: "VTuber2D.AI 참고",
   }[group] || group;
 }
 
@@ -170,4 +340,13 @@ function roleLabel(role) {
     overlay_reference: "비교 오버레이",
     seethrough_reference: "See-through 참고",
   }[role] || role;
+}
+
+function triageLabel(status) {
+  return {
+    REVIEW_PRIORITY: "우선 검수",
+    REVIEW_HIGH_RISK: "오염 위험",
+    REFERENCE_REVIEW: "참고 판단",
+    X_CANDIDATE_EMPTY: "빈 후보",
+  }[status] || "";
 }

@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-08T15:45:30.844721+00:00",
+  "status": "PASS_LOCAL_PNGS_GENERATED_REQUIRES_VISUAL_QA",
+  "input_pack": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/imagen_input_pack_v1",
+  "output_dir": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1",
+  "normalized_layers": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers",
+  "note": "Deterministic local pack realization. Validator-ready PNGs, not model-native inpaint proof.",
+  "assets": [
+    {
+      "asset_id": "face_base_clean",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/face_base_clean.png",
+      "generation_mode": "generated_clean_face_base_from_source_roi_patches"
+    },
+    {
+      "asset_id": "eye_L_clean_socket",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/eye_L_clean_socket.png",
+      "generation_mode": "generated_skin_underpaint_from_pack_eye_roi"
+    },
+    {
+      "asset_id": "eye_R_clean_socket",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/eye_R_clean_socket.png",
+      "generation_mode": "generated_skin_underpaint_from_pack_eye_roi"
+    },
+    {
+      "asset_id": "eye_L_half_closed_lid",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/eye_L_half_closed_lid.png",
+      "generation_mode": "generated_lid_keypose_from_pack_eye_roi"
+    },
+    {
+      "asset_id": "eye_R_half_closed_lid",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/eye_R_half_closed_lid.png",
+      "generation_mode": "generated_lid_keypose_from_pack_eye_roi"
+    },
+    {
+      "asset_id": "eye_L_mostly_closed_lid",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/eye_L_mostly_closed_lid.png",
+      "generation_mode": "generated_lid_keypose_from_pack_eye_roi"
+    },
+    {
+      "asset_id": "eye_R_mostly_closed_lid",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/eye_R_mostly_closed_lid.png",
+      "generation_mode": "generated_lid_keypose_from_pack_eye_roi"
+    },
+    {
+      "asset_id": "eye_L_closed_lid",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/eye_L_closed_lid.png",
+      "generation_mode": "copied_existing_validated_layer"
+    },
+    {
+      "asset_id": "eye_R_closed_lid",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/eye_R_closed_lid.png",
+      "generation_mode": "copied_existing_validated_layer"
+    },
+    {
+      "asset_id": "eye_L_closed_underpaint",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/eye_L_closed_underpaint.png",
+      "generation_mode": "generated_skin_underpaint_from_pack_eye_roi"
+    },
+    {
+      "asset_id": "eye_R_closed_underpaint",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/eye_R_closed_underpaint.png",
+      "generation_mode": "generated_skin_underpaint_from_pack_eye_roi"
+    },
+    {
+      "asset_id": "mouth_base_clean",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/mouth_base_clean.png",
+      "generation_mode": "generated_mouth_clean_socket_from_pack_roi"
+    },
+    {
+      "asset_id": "mouth_closed_smile",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/mouth_closed_smile.png",
+      "generation_mode": "generated_mouth_keypose_from_pack_roi"
+    },
+    {
+      "asset_id": "mouth_small_open",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/mouth_small_open.png",
+      "generation_mode": "generated_mouth_keypose_from_pack_roi"
+    },
+    {
+      "asset_id": "mouth_wide_open",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/mouth_wide_open.png",
+      "generation_mode": "generated_mouth_keypose_from_pack_roi"
+    },
+    {
+      "asset_id": "mouth_o_vowel",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/mouth_o_vowel.png",
+      "generation_mode": "generated_mouth_keypose_from_pack_roi"
+    },
+    {
+      "asset_id": "mouth_inner",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/mouth_inner.png",
+      "generation_mode": "copied_existing_validated_layer"
+    },
+    {
+      "asset_id": "mouth_teeth",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/mouth_teeth.png",
+      "generation_mode": "copied_existing_validated_layer"
+    },
+    {
+      "asset_id": "mouth_tongue",
+      "output_path": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements/local_generated_keypose_v1/normalized_layers/mouth_tongue.png",
+      "generation_mode": "copied_existing_validated_layer"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "experiment_id": "mini-cubism-pack-splitter-v0-001",
+  "generated_at": "2026-06-05T05:09:20.456098+00:00",
+  "status": "CLEAN_BASE_TWOPIECE_CONNECTED_PACK_ASSETS_PENDING",
+  "source_kind": "imagegen_clean_base_mannequin_v3_twopiece_underlayer_alpha",
+  "underlayer_policy": "neutral two-piece swimsuit/rig underlayer; chest cover and pelvis cover only; abdomen must remain visible skin",
+  "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+  "alpha_bbox": [
+    654,
+    44,
+    740,
+    1980
+  ],
+  "nonzero_alpha": 524858,
+  "targets": {
+    "head_base": [
+      755,
+      40,
+      535,
+      450
+    ],
+    "ear_L": [
+      1215,
+      210,
+      120,
+      155
+    ],
+    "ear_R": [
+      710,
+      210,
+      120,
+      155
+    ],
+    "neck": [
+      895,
+      430,
+      250,
+      180
+    ],
+    "torso_skin_abdomen": [
+      780,
+      620,
+      488,
+      390
+    ],
+    "underlayer_chest_cover": [
+      765,
+      520,
+      520,
+      255
+    ],
+    "underlayer_pelvis_cover": [
+      790,
+      900,
+      470,
+      280
+    ],
+    "arm_L": [
+      1210,
+      520,
+      300,
+      735
+    ],
+    "arm_R": [
+      535,
+      520,
+      300,
+      735
+    ],
+    "hand_L": [
+      1330,
+      1125,
+      210,
+      175
+    ],
+    "hand_R": [
+      508,
+      1125,
+      210,
+      175
+    ],
+    "leg_L": [
+      1030,
+      1030,
+      330,
+      890
+    ],
+    "leg_R": [
+      690,
+      1030,
+      330,
+      890
+    ],
+    "foot_L": [
+      1055,
+      1830,
+      270,
+      160
+    ],
+    "foot_R": [
+      723,
+      1830,
+      270,
+      160
+    ]
+  },
+  "aborted_onepiece_archive": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/archive/clean_base_v2_onepiece_aborted_20260605",
+  "outputs": {
+    "source_composite_preview": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/source_composite_preview.png",
+    "clean_base_preview": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/clean_base_twopiece_v3_preview.png",
+    "placeholder_archive": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/archive/procedural_placeholder_20260605",
+    "aborted_onepiece_archive": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/archive/clean_base_v2_onepiece_aborted_20260605"
+  },
+  "next_action": "Generate real hair/outfit/accessory/keypose pack assets, then run actual HF inference starting with LayerD."
+}

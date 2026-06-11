@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "experiment_id": "mini-cubism-dedicated-model-v1-001",
+  "character_id": "mini_cubism_dedicated_v1",
+  "filename_prefix_base": "mini_cubism_dedicated_v1",
+  "generated_at": "2026-06-05T02:13:51.646625+00:00",
+  "host": {
+    "platform": "macOS-26.3.1-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "processor": "arm"
+  },
+  "source_comfy_experiment": "experiments/see-through-layer-decomp-001",
+  "source_image": "experiments/mini-cubism-dedicated-model-v1-001/raw/imagegen_source.png",
+  "canonical_image": "experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+  "canonical_report": {
+    "source_size": [
+      1394,
+      1128
+    ],
+    "canonical_size": [
+      2048,
+      2048
+    ],
+    "fit_size": [
+      2048,
+      1657
+    ],
+    "offset": [
+      0,
+      195
+    ],
+    "background": "white"
+  },
+  "input_outputs": [
+    {
+      "size": [
+        512,
+        512
+      ],
+      "path": "experiments/mini-cubism-dedicated-model-v1-001/input/canonical_front_mps_512.png",
+      "source": "experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png"
+    },
+    {
+      "size": [
+        640,
+        640
+      ],
+      "path": "experiments/mini-cubism-dedicated-model-v1-001/input/canonical_front_mps_640.png",
+      "source": "experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png"
+    },
+    {
+      "size": [
+        768,
+        768
+      ],
+      "path": "experiments/mini-cubism-dedicated-model-v1-001/input/canonical_front_mps_768.png",
+      "source": "experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png"
+    }
+  ],
+  "matrix": [
+    {
+      "case_id": "mps_512_safe",
+      "input_image": "canonical_front_mps_512.png",
+      "resolution": 512,
+      "steps": 8,
+      "depth_resolution": 384,
+      "env": {
+        "PYTORCH_ENABLE_MPS_FALLBACK": "1",
+        "PYTORCH_MPS_LOW_WATERMARK_RATIO": "0.85",
+        "PYTORCH_MPS_HIGH_WATERMARK_RATIO": "1.20"
+      },
+      "status": "READY_TO_RUN",
+      "risk": "lowest memory; first dedicated decomposition gate"
+    },
+    {
+      "case_id": "mps_640_safe",
+      "input_image": "canonical_front_mps_640.png",
+      "resolution": 640,
+      "steps": 12,
+      "depth_resolution": 512,
+      "env": {
+        "PYTORCH_ENABLE_MPS_FALLBACK": "1",
+        "PYTORCH_MPS_LOW_WATERMARK_RATIO": "0.90",
+        "PYTORCH_MPS_HIGH_WATERMARK_RATIO": "1.30"
+      },
+      "status": "READY_TO_RUN_AFTER_512",
+      "risk": "practical review candidate if 512 creates useful layers"
+    },
+    {
+      "case_id": "mps_768_safe",
+      "input_image": "canonical_front_mps_768.png",
+      "resolution": 768,
+      "steps": 16,
+      "depth_resolution": 512,
+      "env": {
+        "PYTORCH_ENABLE_MPS_FALLBACK": "1",
+        "PYTORCH_MPS_LOW_WATERMARK_RATIO": "0.95",
+        "PYTORCH_MPS_HIGH_WATERMARK_RATIO": "1.40"
+      },
+      "status": "MANUAL_ONLY_AFTER_512_640",
+      "risk": "quality probe only after 512/640 produce useful layers"
+    }
+  ],
+  "gates": {
+    "canonical_success": "front-facing, not cropped, no text, eyes/mouth visible, separable hair/accessories",
+    "layer_split_success": "512 or 640 creates *_layers.json and normalized layer_manifest.json",
+    "mapping_success_floor": ">=60 mapped parts, >=18 hair, >=16 eye, >=8 mouth, >=12 physics targets",
+    "human_review_rule": "See-through output is candidate evidence only until review app verdicts exist."
+  },
+  "status": "READY_FOR_LAYER_DECOMPOSITION"
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "experiment_id": "imagen-live2d-001",
+  "status": "PENDING_MANUAL_CUBISM_VALIDATION",
+  "source_plan": "experiments/imagen-live2d-001/reports/cubism_mvp_rig_smoke_plan.json",
+  "cmo3_path": "experiments/imagen-live2d-001/cubism_mvp_rig.cmo3",
+  "moc3_export_dir": "experiments/imagen-live2d-001/moc3_export_smoke",
+  "checks": {
+    "cmo3_saved": null,
+    "artmesh_created_for_19_layers": null,
+    "deformer_hierarchy_created": null,
+    "mvp_parameters_created": null,
+    "eye_keyforms_tested": null,
+    "mouth_keyforms_tested": null,
+    "hair_keyforms_tested": null,
+    "arm_keyforms_tested": null,
+    "draw_order_validated": null,
+    "overhang_validated": null,
+    "moc3_export_smoke": null
+  },
+  "blocking_issues": [],
+  "revise_issues": [],
+  "evidence_screenshots": [],
+  "notes": [
+    "Fill this after the manual Cubism FREE MVP rig smoke.",
+    "Use PASS, REVISE, FAIL, or BLOCKED values for each check."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "part_id": "chest_cloth_shadow",
+  "layer_name": "64_chest_cloth_shadow",
+  "label_ko": "가슴 의상 그림자",
+  "group": "clothing",
+  "feasibility": "SIMPLIFY_OR_MERGE",
+  "source_type": "MERGED_METADATA",
+  "source_bbox": [
+    255,
+    965,
+    585,
+    190
+  ],
+  "bbox": [
+    736,
+    1265,
+    585,
+    190
+  ],
+  "draw_order_band": "clothing_front",
+  "draw_order": 1764,
+  "deformer_node": "body_root_warp",
+  "parameters": [
+    "ParamBodyAngleX"
+  ],
+  "physics_groups": [],
+  "risk_tags": [],
+  "status": "MERGED_METADATA_ONLY",
+  "include_in_import_psd": false,
+  "output_path": null,
+  "merged_into": "chest_cloth_base",
+  "notes": "처음 PSD에서는 독립 파츠보다 기본 의상 레이어에 병합하고 metadata로만 추적한다.",
+  "mask_shape": "rounded",
+  "color_condition": "light",
+  "fallback_color": [
+    247,
+    229,
+    218
+  ],
+  "metadata_path": "experiments/cubism-v2-new-character-001/material_pack_v0/merged_metadata/chest_cloth_shadow.json"
+}

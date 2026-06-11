@@ -1,0 +1,629 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-08T02:09:59.352363+00:00",
+  "spec_id": "face_tracking_to_cubism_parameter_map",
+  "status": "PASS",
+  "inputs": {
+    "production_spec": "experiments/reference-model-structure-001/reports/cubism_v2_production_design_spec.json",
+    "part_spec": "experiments/reference-model-structure-001/reports/cubism_v2_new_model_v2_standard_part_spec.json",
+    "prompt_template": "experiments/reference-model-structure-001/reports/cubism_v2_character_prompt_template.json",
+    "runtime_metadata": "experiments/reference-model-structure-001/reports/all57_runtime_metadata_extras.json"
+  },
+  "reference_sources": [
+    {
+      "name": "MediaPipe Face Landmarker",
+      "url": "https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker",
+      "used_for": "webcam/video face landmarks, blendshape scores, and facial transformation matrices"
+    },
+    {
+      "name": "Live2D Cubism standard parameter list",
+      "url": "https://docs.live2d.com/ko/cubism-editor-manual/standard-parameter-list/",
+      "used_for": "Cubism parameter IDs and standard output ranges"
+    },
+    {
+      "name": "VTube Studio value-provider priority",
+      "url": "https://github.com/DenchiSoft/VTubeStudio/wiki/Interaction-between-Animations%2C-Tracking%2C-Physics%2C-etc.",
+      "used_for": "tracking/animation/expression/physics priority risk"
+    },
+    {
+      "name": "nizima LIVE parameter settings",
+      "url": "https://docs.live2d.com/nizimalive/en/manual/parameter/",
+      "used_for": "webcam tracking, automatic blink, lip-sync, and motion-sync interaction notes"
+    }
+  ],
+  "input_provider": {
+    "primary": "MediaPipe Face Landmarker",
+    "runtime_mode": "webcam_or_video_smoke_first",
+    "required_outputs": {
+      "face_landmarks": true,
+      "face_blendshapes": true,
+      "facial_transformation_matrixes": true
+    },
+    "recommended_options": {
+      "num_faces": 1,
+      "output_face_blendshapes": true,
+      "output_facial_transformation_matrixes": true,
+      "min_face_detection_confidence": 0.5,
+      "min_face_presence_confidence": 0.5,
+      "min_tracking_confidence": 0.5
+    }
+  },
+  "current_asset_readiness": {
+    "has_tracking_friendly_parameter_floor": true,
+    "has_actual_webcam_tracking_smoke": false,
+    "required_parameters_from_production_spec": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamEyeLOpen",
+      "ParamEyeROpen",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamMouthOpenY",
+      "ParamMouthForm",
+      "ParamBreath"
+    ],
+    "params_without_direct_mapping": [],
+    "part_group_counts": {
+      "body": 10,
+      "brow": 2,
+      "clothing": 4,
+      "eye_L": 8,
+      "eye_R": 8,
+      "face_base": 8,
+      "hair": 16,
+      "mouth": 8
+    },
+    "prompt_template_mode": "single_master_png_first",
+    "all57_runtime_metadata_coverage": {
+      "model3_json": 50,
+      "cdi3_json": 50,
+      "pose3_json": 22,
+      "userdata3_json": 6,
+      "exp3_json_models": 19,
+      "motionsync3_json": 4,
+      "hit_area_models": 25,
+      "lipsync_group_models": 39,
+      "eyeblink_group_models": 47
+    }
+  },
+  "mappings": [
+    {
+      "id": "head_yaw_to_angle_x",
+      "tracking_input": "head_yaw_from_facial_transformation_matrix",
+      "provider_aliases": [
+        "MediaPipe facialTransformationMatrix yaw",
+        "ARKit head yaw"
+      ],
+      "cubism_parameter": "ParamAngleX",
+      "input_range": [
+        -25,
+        25
+      ],
+      "output_range": [
+        -30,
+        30
+      ],
+      "default": 0,
+      "formula": "clamp(normalize_centered(head_yaw, -25, 25) * 30, -30, 30)",
+      "calibration": "center_zero_at_neutral_face",
+      "smoothing": {
+        "type": "ema",
+        "alpha": 0.35
+      },
+      "required_parts": [
+        "face_base",
+        "eye_L",
+        "eye_R",
+        "brow",
+        "mouth",
+        "hair"
+      ],
+      "qa_probe": "Turn face left/right; face, eyes, mouth, and front hair should follow without overhang.",
+      "priority": "REQUIRED"
+    },
+    {
+      "id": "head_pitch_to_angle_y",
+      "tracking_input": "head_pitch_from_facial_transformation_matrix",
+      "provider_aliases": [
+        "MediaPipe facialTransformationMatrix pitch",
+        "ARKit head pitch"
+      ],
+      "cubism_parameter": "ParamAngleY",
+      "input_range": [
+        -20,
+        20
+      ],
+      "output_range": [
+        -30,
+        30
+      ],
+      "default": 0,
+      "formula": "clamp(normalize_centered(head_pitch, -20, 20) * 30, -30, 30)",
+      "calibration": "center_zero_at_neutral_face",
+      "smoothing": {
+        "type": "ema",
+        "alpha": 0.35
+      },
+      "required_parts": [
+        "face_base",
+        "eye_L",
+        "eye_R",
+        "mouth",
+        "neck",
+        "front_hair"
+      ],
+      "qa_probe": "Look up/down; chin, neck, mouth, and bangs should not tear or expose missing underpaint.",
+      "priority": "REQUIRED"
+    },
+    {
+      "id": "head_roll_to_angle_z",
+      "tracking_input": "head_roll_from_facial_transformation_matrix",
+      "provider_aliases": [
+        "MediaPipe facialTransformationMatrix roll",
+        "ARKit head roll"
+      ],
+      "cubism_parameter": "ParamAngleZ",
+      "input_range": [
+        -25,
+        25
+      ],
+      "output_range": [
+        -30,
+        30
+      ],
+      "default": 0,
+      "formula": "clamp(normalize_centered(head_roll, -25, 25) * 30, -30, 30)",
+      "calibration": "center_zero_at_neutral_face",
+      "smoothing": {
+        "type": "ema",
+        "alpha": 0.35
+      },
+      "required_parts": [
+        "face_base",
+        "hair",
+        "neck"
+      ],
+      "qa_probe": "Tilt head left/right; hair and neck should follow without draw-order inversion.",
+      "priority": "REQUIRED"
+    },
+    {
+      "id": "eye_blink_left_to_eye_l_open",
+      "tracking_input": "eyeBlinkLeft",
+      "provider_aliases": [
+        "MediaPipe eyeBlinkLeft blendshape",
+        "ARKit eyeBlinkLeft"
+      ],
+      "cubism_parameter": "ParamEyeLOpen",
+      "input_range": [
+        0,
+        1
+      ],
+      "output_range": [
+        0,
+        1
+      ],
+      "default": 1,
+      "formula": "clamp(1 - eyeBlinkLeft, 0, 1)",
+      "calibration": "open_eye_baseline_and_closed_eye_baseline",
+      "smoothing": {
+        "type": "ema",
+        "alpha": 0.45,
+        "fast_close": true
+      },
+      "required_parts": [
+        "eye_white_L",
+        "iris_L",
+        "pupil_L",
+        "upper_lid_L",
+        "lower_lid_L",
+        "upper_lash_L"
+      ],
+      "qa_probe": "Blink left eye; left eye should close fully and reopen without affecting the right eye.",
+      "priority": "REQUIRED"
+    },
+    {
+      "id": "eye_blink_right_to_eye_r_open",
+      "tracking_input": "eyeBlinkRight",
+      "provider_aliases": [
+        "MediaPipe eyeBlinkRight blendshape",
+        "ARKit eyeBlinkRight"
+      ],
+      "cubism_parameter": "ParamEyeROpen",
+      "input_range": [
+        0,
+        1
+      ],
+      "output_range": [
+        0,
+        1
+      ],
+      "default": 1,
+      "formula": "clamp(1 - eyeBlinkRight, 0, 1)",
+      "calibration": "open_eye_baseline_and_closed_eye_baseline",
+      "smoothing": {
+        "type": "ema",
+        "alpha": 0.45,
+        "fast_close": true
+      },
+      "required_parts": [
+        "eye_white_R",
+        "iris_R",
+        "pupil_R",
+        "upper_lid_R",
+        "lower_lid_R",
+        "upper_lash_R"
+      ],
+      "qa_probe": "Blink right eye; right eye should close fully and reopen without affecting the left eye.",
+      "priority": "REQUIRED"
+    },
+    {
+      "id": "eye_gaze_x_to_eye_ball_x",
+      "tracking_input": "eye_gaze_x_from_landmarks_or_eyeLook blendshapes",
+      "provider_aliases": [
+        "eyeLookInLeft/Right",
+        "eyeLookOutLeft/Right",
+        "landmark iris center delta"
+      ],
+      "cubism_parameter": "ParamEyeBallX",
+      "input_range": [
+        -1,
+        1
+      ],
+      "output_range": [
+        -1,
+        1
+      ],
+      "default": 0,
+      "formula": "clamp(eye_gaze_x, -1, 1)",
+      "calibration": "center_zero_at_looking_forward",
+      "smoothing": {
+        "type": "ema",
+        "alpha": 0.3
+      },
+      "required_parts": [
+        "iris_L",
+        "iris_R",
+        "pupil_L",
+        "pupil_R",
+        "catchlight_L",
+        "catchlight_R"
+      ],
+      "qa_probe": "Look left/right; both irises should move together and stay inside eye masks.",
+      "priority": "REQUIRED"
+    },
+    {
+      "id": "eye_gaze_y_to_eye_ball_y",
+      "tracking_input": "eye_gaze_y_from_landmarks_or_eyeLook blendshapes",
+      "provider_aliases": [
+        "eyeLookUpLeft/Right",
+        "eyeLookDownLeft/Right",
+        "landmark iris center delta"
+      ],
+      "cubism_parameter": "ParamEyeBallY",
+      "input_range": [
+        -1,
+        1
+      ],
+      "output_range": [
+        -1,
+        1
+      ],
+      "default": 0,
+      "formula": "clamp(eye_gaze_y, -1, 1)",
+      "calibration": "center_zero_at_looking_forward",
+      "smoothing": {
+        "type": "ema",
+        "alpha": 0.3
+      },
+      "required_parts": [
+        "iris_L",
+        "iris_R",
+        "pupil_L",
+        "pupil_R",
+        "catchlight_L",
+        "catchlight_R"
+      ],
+      "qa_probe": "Look up/down; irises should stay clipped by eyelids and not float outside whites.",
+      "priority": "REQUIRED"
+    },
+    {
+      "id": "jaw_open_to_mouth_open_y",
+      "tracking_input": "jawOpen",
+      "provider_aliases": [
+        "MediaPipe jawOpen blendshape",
+        "ARKit jawOpen"
+      ],
+      "cubism_parameter": "ParamMouthOpenY",
+      "input_range": [
+        0,
+        1
+      ],
+      "output_range": [
+        0,
+        1
+      ],
+      "default": 0,
+      "formula": "clamp(remap_deadzone(jawOpen, 0.08, 0.85), 0, 1)",
+      "calibration": "closed_mouth_deadzone_and_max_open",
+      "smoothing": {
+        "type": "ema",
+        "alpha": 0.4,
+        "fast_open": true
+      },
+      "required_parts": [
+        "mouth_closed_line",
+        "mouth_open_inner",
+        "mouth_teeth_upper",
+        "mouth_tongue",
+        "mouth_shadow"
+      ],
+      "qa_probe": "Open/close mouth; inner mouth should appear smoothly and close fully at rest.",
+      "priority": "REQUIRED"
+    },
+    {
+      "id": "smile_frown_to_mouth_form",
+      "tracking_input": "mouthSmileLeft/Right minus mouthFrownLeft/Right",
+      "provider_aliases": [
+        "mouthSmileLeft",
+        "mouthSmileRight",
+        "mouthFrownLeft",
+        "mouthFrownRight"
+      ],
+      "cubism_parameter": "ParamMouthForm",
+      "input_range": [
+        -1,
+        1
+      ],
+      "output_range": [
+        -1,
+        1
+      ],
+      "default": 0,
+      "formula": "clamp(avg(mouthSmileLeft, mouthSmileRight) - avg(mouthFrownLeft, mouthFrownRight), -1, 1)",
+      "calibration": "neutral_mouth_zero",
+      "smoothing": {
+        "type": "ema",
+        "alpha": 0.35
+      },
+      "required_parts": [
+        "mouth_closed_line",
+        "mouth_corner_L",
+        "mouth_corner_R",
+        "mouth_open_outer"
+      ],
+      "qa_probe": "Smile/frown; mouth corners should move without breaking mouth-open keyforms.",
+      "priority": "REQUIRED"
+    },
+    {
+      "id": "head_yaw_to_body_angle_x",
+      "tracking_input": "head_yaw_from_facial_transformation_matrix",
+      "provider_aliases": [
+        "damped head yaw"
+      ],
+      "cubism_parameter": "ParamBodyAngleX",
+      "input_range": [
+        -25,
+        25
+      ],
+      "output_range": [
+        -10,
+        10
+      ],
+      "default": 0,
+      "formula": "clamp(normalize_centered(head_yaw, -25, 25) * 10 * 0.65, -10, 10)",
+      "calibration": "follow_head_but_weaker",
+      "smoothing": {
+        "type": "ema",
+        "alpha": 0.25
+      },
+      "required_parts": [
+        "neck",
+        "torso_base",
+        "shoulder_L",
+        "shoulder_R",
+        "arm_L_upper_simple",
+        "arm_R_upper_simple"
+      ],
+      "qa_probe": "Turn head; body should follow subtly and never move more strongly than the head.",
+      "priority": "REQUIRED"
+    },
+    {
+      "id": "head_pitch_to_body_angle_y",
+      "tracking_input": "head_pitch_from_facial_transformation_matrix",
+      "provider_aliases": [
+        "damped head pitch"
+      ],
+      "cubism_parameter": "ParamBodyAngleY",
+      "input_range": [
+        -20,
+        20
+      ],
+      "output_range": [
+        -10,
+        10
+      ],
+      "default": 0,
+      "formula": "clamp(normalize_centered(head_pitch, -20, 20) * 10 * 0.45, -10, 10)",
+      "calibration": "follow_head_but_weaker",
+      "smoothing": {
+        "type": "ema",
+        "alpha": 0.25
+      },
+      "required_parts": [
+        "neck",
+        "torso_base",
+        "shoulder_L",
+        "shoulder_R",
+        "body_underpaint"
+      ],
+      "qa_probe": "Look up/down; torso should breathe/follow subtly without neck gap.",
+      "priority": "REQUIRED"
+    },
+    {
+      "id": "head_roll_to_body_angle_z",
+      "tracking_input": "head_roll_from_facial_transformation_matrix",
+      "provider_aliases": [
+        "damped head roll"
+      ],
+      "cubism_parameter": "ParamBodyAngleZ",
+      "input_range": [
+        -25,
+        25
+      ],
+      "output_range": [
+        -10,
+        10
+      ],
+      "default": 0,
+      "formula": "clamp(normalize_centered(head_roll, -25, 25) * 10 * 0.5, -10, 10)",
+      "calibration": "follow_head_but_weaker",
+      "smoothing": {
+        "type": "ema",
+        "alpha": 0.25
+      },
+      "required_parts": [
+        "torso_base",
+        "shoulder_L",
+        "shoulder_R",
+        "neck"
+      ],
+      "qa_probe": "Tilt head; torso should tilt softly and preserve shoulder draw order.",
+      "priority": "RECOMMENDED"
+    },
+    {
+      "id": "breath_idle_to_param_breath",
+      "tracking_input": "synthetic_breath_idle",
+      "provider_aliases": [
+        "idle animation",
+        "runtime oscillator"
+      ],
+      "cubism_parameter": "ParamBreath",
+      "input_range": [
+        0,
+        1
+      ],
+      "output_range": [
+        0,
+        1
+      ],
+      "default": 0,
+      "formula": "0.5 + 0.5 * sin(time * breath_rate)",
+      "calibration": "not_face_tracking_direct",
+      "smoothing": {
+        "type": "runtime_generated"
+      },
+      "required_parts": [
+        "torso_base",
+        "neck",
+        "shoulder_L",
+        "shoulder_R"
+      ],
+      "qa_probe": "Idle for 10 seconds; breath should be visible but not distract from face tracking.",
+      "priority": "RECOMMENDED"
+    },
+    {
+      "id": "mouth_vowels_optional",
+      "tracking_input": "audio_motionsync_or_vowel_classifier",
+      "provider_aliases": [
+        "MotionSync",
+        "lip-sync A/I/U/E/O"
+      ],
+      "cubism_parameter": "ParamA/ParamI/ParamU/ParamE/ParamO",
+      "input_range": [
+        0,
+        1
+      ],
+      "output_range": [
+        0,
+        1
+      ],
+      "default": 0,
+      "formula": "optional; use only when v2_rich or motion-sync is enabled",
+      "calibration": "audio_or_motionsync_specific",
+      "smoothing": {
+        "type": "provider_specific"
+      },
+      "required_parts": [
+        "mouth_open_inner",
+        "mouth_tongue",
+        "mouth_teeth_upper",
+        "mouth_corner_L",
+        "mouth_corner_R"
+      ],
+      "qa_probe": "Optional vowel test; not required for first v2_standard model.",
+      "priority": "OPTIONAL_V2_RICH"
+    }
+  ],
+  "calibration_policy": {
+    "neutral_capture_seconds": 2,
+    "neutral_samples_min": 45,
+    "centered_head_pose": "average yaw/pitch/roll during neutral capture becomes zero",
+    "blink": "measure open-eye baseline and closed-eye baseline; map tracking blink to Live2D open value with inversion",
+    "mouth": "apply closed-mouth deadzone to jawOpen before ParamMouthOpenY",
+    "body": "derive from head pose with damping; body must never overpower head motion"
+  },
+  "runtime_priority_policy": {
+    "tracking_controls": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamEyeLOpen",
+      "ParamEyeROpen",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamMouthOpenY",
+      "ParamMouthForm",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBodyAngleZ"
+    ],
+    "physics_controls": [
+      "ParamHairFront",
+      "ParamHairSide",
+      "ParamHairBack",
+      "secondary sway outputs"
+    ],
+    "idle_controls": [
+      "ParamBreath"
+    ],
+    "risk_note": "Face tracking, idle animation, expressions, and physics can compete for the same parameter in viewer apps. Keep ownership explicit."
+  },
+  "pre_character_generation_requirements": [
+    "Character prompt must keep both eyes, mouth, eyebrows, neck, shoulders, and simple arms visible.",
+    "Do not hide mouth with hands, microphone, scarf, props, or bangs.",
+    "Do not hide eyes with hair or accessories; blink tracking requires visible eyelids/lashes.",
+    "Use standard Live2D parameter IDs so VTube Studio/nizima/other viewers can map tracking inputs predictably.",
+    "Keep body motion simple; complex arm/hand tracking is deferred."
+  ],
+  "smoke_test_plan": [
+    {
+      "id": "T0_static_sample_json",
+      "goal": "Convert recorded/synthetic MediaPipe-like values into Cubism parameter values without webcam dependency.",
+      "pass": "All REQUIRED mappings produce finite values inside output ranges."
+    },
+    {
+      "id": "T1_webcam_tracking_probe",
+      "goal": "Use MediaPipe webcam/video to emit head pose, blink, gaze, jawOpen, and mouthForm proxy values.",
+      "pass": "At least 10 seconds of timestamped tracking frames are saved as JSON with no missing required channels."
+    },
+    {
+      "id": "T2_reference_model_parameter_drive",
+      "goal": "Drive a verified reference model before using a new character.",
+      "pass": "ParamAngleX/Y/Z, eye open, eye ball, mouth open/form visibly affect the model in screenshots/strip."
+    },
+    {
+      "id": "T3_new_model_export_tracking_gate",
+      "goal": "After Cubism authoring, prove the new model responds to tracking-derived values.",
+      "pass": "G3 motion strip includes head yaw/pitch/roll, blink L/R, eye gaze, mouth open, mouth form, and body damped follow."
+    }
+  ],
+  "next_actions": [
+    "Create a MediaPipe webcam or recorded-video tracking smoke harness.",
+    "Run T0 with synthetic values immediately after any mapping code is implemented.",
+    "Run T1/T2 on a known-good official runtime model before generating production claims for the new character.",
+    "Update the character prompt template only if G0 candidates hide eyes/mouth or make tracking-required parts ambiguous."
+  ]
+}

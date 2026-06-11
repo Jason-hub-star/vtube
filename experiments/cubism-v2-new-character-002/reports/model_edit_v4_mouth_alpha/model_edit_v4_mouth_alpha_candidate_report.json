@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T02:41:34.371975+00:00",
+  "experiment_id": "cubism-v2-new-character-002",
+  "candidate_id": "model_edit_v4_mouth_alpha_filtered",
+  "status": "MODEL_EDIT_MOUTH_ALPHA_CANDIDATE_READY_FOR_VALIDATOR",
+  "source_layers": "experiments/cubism-v2-new-character-002/model_edit_v3_hybrid/normalized_layers",
+  "output_layers": "experiments/cubism-v2-new-character-002/model_edit_v4_mouth_alpha/normalized_layers",
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/model_edit_v4_mouth_alpha/model_edit_v4_mouth_alpha_contact_sheet.png",
+  "filtered_mouth_layers": [
+    "mouth_closed_smile",
+    "mouth_small_open",
+    "mouth_wide_open",
+    "mouth_o_vowel"
+  ],
+  "before_after": [
+    {
+      "asset_id": "mouth_closed_smile",
+      "before_alpha_bbox": [
+        921,
+        785,
+        1149,
+        905
+      ],
+      "after_alpha_bbox": [
+        938,
+        791,
+        1147,
+        872
+      ],
+      "before_alpha_coverage": 0.00529718,
+      "after_alpha_coverage": 0.00081706
+    },
+    {
+      "asset_id": "mouth_small_open",
+      "before_alpha_bbox": [
+        924,
+        785,
+        1147,
+        905
+      ],
+      "after_alpha_bbox": [
+        955,
+        795,
+        1117,
+        898
+      ],
+      "before_alpha_coverage": 0.00528765,
+      "after_alpha_coverage": 0.00114608
+    },
+    {
+      "asset_id": "mouth_wide_open",
+      "before_alpha_bbox": [
+        915,
+        780,
+        1155,
+        909
+      ],
+      "after_alpha_bbox": [
+        930,
+        781,
+        1154,
+        906
+      ],
+      "before_alpha_coverage": 0.00601721,
+      "after_alpha_coverage": 0.00303245
+    },
+    {
+      "asset_id": "mouth_o_vowel",
+      "before_alpha_bbox": [
+        924,
+        780,
+        1145,
+        910
+      ],
+      "after_alpha_bbox": [
+        1002,
+        816,
+        1087,
+        910
+      ],
+      "before_alpha_coverage": 0.00573254,
+      "after_alpha_coverage": 0.00077343
+    }
+  ],
+  "note": "Mouth alpha filtering removes skin-patch pixels while preserving dark/red/white mouth feature pixels near the mouth core."
+}

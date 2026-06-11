@@ -1,0 +1,1833 @@
+{
+  "schema_version": 1,
+  "pack_id": "hair_pack",
+  "generated_at": "2026-06-05T05:35:55.563258+00:00",
+  "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+  "status": "PROBED_WITH_LOCAL_ADAPTERS",
+  "candidates": [
+    {
+      "candidate_id": "layerd__hair_pack__front_bang_L",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "hair_pack",
+      "part_id": "front_bang_L",
+      "roi": [
+        700,
+        250,
+        260,
+        360
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/hair_pack/front_bang_L.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          700,
+          250,
+          261,
+          361
+        ],
+        "nonzero_alpha": 75542,
+        "alpha_coverage": 0.01801062,
+        "roi_coverage": 0.788814,
+        "edge_score": 0.1285,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__hair_pack__front_bang_L",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "hair_pack",
+      "part_id": "front_bang_L",
+      "roi": [
+        700,
+        250,
+        260,
+        360
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/hair_pack/front_bang_L.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          697,
+          247,
+          267,
+          367
+        ],
+        "nonzero_alpha": 79879,
+        "alpha_coverage": 0.01904464,
+        "roi_coverage": 0.797991,
+        "edge_score": 0.1217,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__hair_pack__front_bang_L",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "hair_pack",
+      "part_id": "front_bang_L",
+      "roi": [
+        700,
+        250,
+        260,
+        360
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/hair_pack/front_bang_L.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          695,
+          245,
+          271,
+          371
+        ],
+        "nonzero_alpha": 83008,
+        "alpha_coverage": 0.01979065,
+        "roi_coverage": 0.811335,
+        "edge_score": 0.1175,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__hair_pack__front_bang_L",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "hair_pack",
+      "part_id": "front_bang_L",
+      "roi": [
+        700,
+        250,
+        260,
+        360
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/hair_pack/front_bang_L.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          697,
+          247,
+          267,
+          367
+        ],
+        "nonzero_alpha": 78746,
+        "alpha_coverage": 0.01877451,
+        "roi_coverage": 0.805459,
+        "edge_score": 0.1144,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__hair_pack__front_bang_L",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "hair_pack",
+      "part_id": "front_bang_L",
+      "roi": [
+        700,
+        250,
+        260,
+        360
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/hair_pack/front_bang_L.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          698,
+          248,
+          265,
+          365
+        ],
+        "nonzero_alpha": 80374,
+        "alpha_coverage": 0.01916265,
+        "roi_coverage": 0.810085,
+        "edge_score": 0.1217,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__hair_pack__front_bang_L",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "hair_pack",
+      "part_id": "front_bang_L",
+      "roi": [
+        700,
+        250,
+        260,
+        360
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/hair_pack/front_bang_L.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__hair_pack__front_bang_L",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "hair_pack",
+      "part_id": "front_bang_L",
+      "roi": [
+        700,
+        250,
+        260,
+        360
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/hair_pack/front_bang_L.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          309,
+          14,
+          1429,
+          1780
+        ],
+        "nonzero_alpha": 1126044,
+        "alpha_coverage": 0.26846981,
+        "roi_coverage": 0.788814,
+        "edge_score": 1.686,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__hair_pack__front_bang_C",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "hair_pack",
+      "part_id": "front_bang_C",
+      "roi": [
+        875,
+        180,
+        300,
+        450
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/hair_pack/front_bang_C.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          875,
+          180,
+          301,
+          421
+        ],
+        "nonzero_alpha": 99723,
+        "alpha_coverage": 0.02377582,
+        "roi_coverage": 0.720044,
+        "edge_score": 0.1717,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__hair_pack__front_bang_C",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "hair_pack",
+      "part_id": "front_bang_C",
+      "roi": [
+        875,
+        180,
+        300,
+        450
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/hair_pack/front_bang_C.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          872,
+          177,
+          307,
+          424
+        ],
+        "nonzero_alpha": 104531,
+        "alpha_coverage": 0.02492213,
+        "roi_coverage": 0.73137,
+        "edge_score": 0.1563,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__hair_pack__front_bang_C",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "hair_pack",
+      "part_id": "front_bang_C",
+      "roi": [
+        875,
+        180,
+        300,
+        450
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/hair_pack/front_bang_C.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          870,
+          175,
+          311,
+          427
+        ],
+        "nonzero_alpha": 108183,
+        "alpha_coverage": 0.02579284,
+        "roi_coverage": 0.746585,
+        "edge_score": 0.1473,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__hair_pack__front_bang_C",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "hair_pack",
+      "part_id": "front_bang_C",
+      "roi": [
+        875,
+        180,
+        300,
+        450
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/hair_pack/front_bang_C.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          872,
+          177,
+          307,
+          420
+        ],
+        "nonzero_alpha": 102704,
+        "alpha_coverage": 0.02448654,
+        "roi_coverage": 0.739304,
+        "edge_score": 0.138,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__hair_pack__front_bang_C",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "hair_pack",
+      "part_id": "front_bang_C",
+      "roi": [
+        875,
+        180,
+        300,
+        450
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/hair_pack/front_bang_C.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          873,
+          178,
+          305,
+          425
+        ],
+        "nonzero_alpha": 106172,
+        "alpha_coverage": 0.02531338,
+        "roi_coverage": 0.745585,
+        "edge_score": 0.1533,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__hair_pack__front_bang_C",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "hair_pack",
+      "part_id": "front_bang_C",
+      "roi": [
+        875,
+        180,
+        300,
+        450
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/hair_pack/front_bang_C.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__hair_pack__front_bang_C",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "hair_pack",
+      "part_id": "front_bang_C",
+      "roi": [
+        875,
+        180,
+        300,
+        450
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/hair_pack/front_bang_C.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          309,
+          14,
+          1429,
+          1780
+        ],
+        "nonzero_alpha": 1126044,
+        "alpha_coverage": 0.26846981,
+        "roi_coverage": 0.720044,
+        "edge_score": 1.686,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__hair_pack__front_bang_R",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "hair_pack",
+      "part_id": "front_bang_R",
+      "roi": [
+        1080,
+        250,
+        260,
+        360
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/hair_pack/front_bang_R.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1080,
+          250,
+          261,
+          361
+        ],
+        "nonzero_alpha": 76731,
+        "alpha_coverage": 0.0182941,
+        "roi_coverage": 0.79938,
+        "edge_score": 0.1342,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__hair_pack__front_bang_R",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "hair_pack",
+      "part_id": "front_bang_R",
+      "roi": [
+        1080,
+        250,
+        260,
+        360
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/hair_pack/front_bang_R.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1077,
+          247,
+          267,
+          367
+        ],
+        "nonzero_alpha": 81099,
+        "alpha_coverage": 0.01933551,
+        "roi_coverage": 0.809476,
+        "edge_score": 0.1263,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__hair_pack__front_bang_R",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "hair_pack",
+      "part_id": "front_bang_R",
+      "roi": [
+        1080,
+        250,
+        260,
+        360
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/hair_pack/front_bang_R.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1075,
+          245,
+          271,
+          371
+        ],
+        "nonzero_alpha": 84355,
+        "alpha_coverage": 0.0201118,
+        "roi_coverage": 0.823793,
+        "edge_score": 0.1214,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__hair_pack__front_bang_R",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "hair_pack",
+      "part_id": "front_bang_R",
+      "roi": [
+        1080,
+        250,
+        260,
+        360
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/hair_pack/front_bang_R.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1077,
+          247,
+          267,
+          367
+        ],
+        "nonzero_alpha": 79939,
+        "alpha_coverage": 0.01905894,
+        "roi_coverage": 0.81766,
+        "edge_score": 0.1175,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__hair_pack__front_bang_R",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "hair_pack",
+      "part_id": "front_bang_R",
+      "roi": [
+        1080,
+        250,
+        260,
+        360
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/hair_pack/front_bang_R.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1078,
+          248,
+          265,
+          365
+        ],
+        "nonzero_alpha": 81729,
+        "alpha_coverage": 0.01948571,
+        "roi_coverage": 0.822703,
+        "edge_score": 0.1262,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__hair_pack__front_bang_R",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "hair_pack",
+      "part_id": "front_bang_R",
+      "roi": [
+        1080,
+        250,
+        260,
+        360
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/hair_pack/front_bang_R.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__hair_pack__front_bang_R",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "hair_pack",
+      "part_id": "front_bang_R",
+      "roi": [
+        1080,
+        250,
+        260,
+        360
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/hair_pack/front_bang_R.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          309,
+          14,
+          1429,
+          1780
+        ],
+        "nonzero_alpha": 1126044,
+        "alpha_coverage": 0.26846981,
+        "roi_coverage": 0.79938,
+        "edge_score": 1.686,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__hair_pack__side_lock_L",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "hair_pack",
+      "part_id": "side_lock_L",
+      "roi": [
+        1180,
+        500,
+        310,
+        840
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/hair_pack/side_lock_L.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1180,
+          500,
+          311,
+          841
+        ],
+        "nonzero_alpha": 235203,
+        "alpha_coverage": 0.05607677,
+        "roi_coverage": 0.888402,
+        "edge_score": 0.2504,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__hair_pack__side_lock_L",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "hair_pack",
+      "part_id": "side_lock_L",
+      "roi": [
+        1180,
+        500,
+        310,
+        840
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/hair_pack/side_lock_L.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1177,
+          497,
+          317,
+          847
+        ],
+        "nonzero_alpha": 242532,
+        "alpha_coverage": 0.05782413,
+        "roi_coverage": 0.896079,
+        "edge_score": 0.2376,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__hair_pack__side_lock_L",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "hair_pack",
+      "part_id": "side_lock_L",
+      "roi": [
+        1180,
+        500,
+        310,
+        840
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/hair_pack/side_lock_L.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1175,
+          495,
+          321,
+          851
+        ],
+        "nonzero_alpha": 248680,
+        "alpha_coverage": 0.05928993,
+        "roi_coverage": 0.907554,
+        "edge_score": 0.2304,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__hair_pack__side_lock_L",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "hair_pack",
+      "part_id": "side_lock_L",
+      "roi": [
+        1180,
+        500,
+        310,
+        840
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/hair_pack/side_lock_L.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1177,
+          497,
+          317,
+          847
+        ],
+        "nonzero_alpha": 240125,
+        "alpha_coverage": 0.05725026,
+        "roi_coverage": 0.902561,
+        "edge_score": 0.2322,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__hair_pack__side_lock_L",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "hair_pack",
+      "part_id": "side_lock_L",
+      "roi": [
+        1180,
+        500,
+        310,
+        840
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/hair_pack/side_lock_L.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1178,
+          498,
+          315,
+          845
+        ],
+        "nonzero_alpha": 245085,
+        "alpha_coverage": 0.05843282,
+        "roi_coverage": 0.906909,
+        "edge_score": 0.239,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__hair_pack__side_lock_L",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "hair_pack",
+      "part_id": "side_lock_L",
+      "roi": [
+        1180,
+        500,
+        310,
+        840
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/hair_pack/side_lock_L.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__hair_pack__side_lock_L",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "hair_pack",
+      "part_id": "side_lock_L",
+      "roi": [
+        1180,
+        500,
+        310,
+        840
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/hair_pack/side_lock_L.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          309,
+          14,
+          1429,
+          1780
+        ],
+        "nonzero_alpha": 1126044,
+        "alpha_coverage": 0.26846981,
+        "roi_coverage": 0.888402,
+        "edge_score": 1.686,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__hair_pack__side_lock_R",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "hair_pack",
+      "part_id": "side_lock_R",
+      "roi": [
+        560,
+        500,
+        310,
+        840
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/hair_pack/side_lock_R.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          560,
+          500,
+          311,
+          841
+        ],
+        "nonzero_alpha": 227492,
+        "alpha_coverage": 0.05423832,
+        "roi_coverage": 0.855876,
+        "edge_score": 0.2857,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__hair_pack__side_lock_R",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "hair_pack",
+      "part_id": "side_lock_R",
+      "roi": [
+        560,
+        500,
+        310,
+        840
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/hair_pack/side_lock_R.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          557,
+          497,
+          317,
+          847
+        ],
+        "nonzero_alpha": 235110,
+        "alpha_coverage": 0.05605459,
+        "roi_coverage": 0.866363,
+        "edge_score": 0.2687,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__hair_pack__side_lock_R",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "hair_pack",
+      "part_id": "side_lock_R",
+      "roi": [
+        560,
+        500,
+        310,
+        840
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/hair_pack/side_lock_R.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          555,
+          495,
+          321,
+          851
+        ],
+        "nonzero_alpha": 241442,
+        "alpha_coverage": 0.05756426,
+        "roi_coverage": 0.882035,
+        "edge_score": 0.2586,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__hair_pack__side_lock_R",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "hair_pack",
+      "part_id": "side_lock_R",
+      "roi": [
+        560,
+        500,
+        310,
+        840
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/hair_pack/side_lock_R.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          557,
+          497,
+          317,
+          847
+        ],
+        "nonzero_alpha": 231842,
+        "alpha_coverage": 0.05527544,
+        "roi_coverage": 0.875392,
+        "edge_score": 0.2544,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__hair_pack__side_lock_R",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "hair_pack",
+      "part_id": "side_lock_R",
+      "roi": [
+        560,
+        500,
+        310,
+        840
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/hair_pack/side_lock_R.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          558,
+          498,
+          315,
+          845
+        ],
+        "nonzero_alpha": 239156,
+        "alpha_coverage": 0.05701923,
+        "roi_coverage": 0.880668,
+        "edge_score": 0.2674,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__hair_pack__side_lock_R",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "hair_pack",
+      "part_id": "side_lock_R",
+      "roi": [
+        560,
+        500,
+        310,
+        840
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/hair_pack/side_lock_R.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__hair_pack__side_lock_R",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "hair_pack",
+      "part_id": "side_lock_R",
+      "roi": [
+        560,
+        500,
+        310,
+        840
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/hair_pack/side_lock_R.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          309,
+          14,
+          1429,
+          1780
+        ],
+        "nonzero_alpha": 1126044,
+        "alpha_coverage": 0.26846981,
+        "roi_coverage": 0.855876,
+        "edge_score": 1.686,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__hair_pack__back_hair_base",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "hair_pack",
+      "part_id": "back_hair_base",
+      "roi": [
+        520,
+        120,
+        1010,
+        1350
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/hair_pack/back_hair_base.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          520,
+          120,
+          1011,
+          1351
+        ],
+        "nonzero_alpha": 842272,
+        "alpha_coverage": 0.20081329,
+        "roi_coverage": 0.604823,
+        "edge_score": 0.9709,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__hair_pack__back_hair_base",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "hair_pack",
+      "part_id": "back_hair_base",
+      "roi": [
+        520,
+        120,
+        1010,
+        1350
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/hair_pack/back_hair_base.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          517,
+          117,
+          1017,
+          1357
+        ],
+        "nonzero_alpha": 864699,
+        "alpha_coverage": 0.20616031,
+        "roi_coverage": 0.612935,
+        "edge_score": 0.8983,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__hair_pack__back_hair_base",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "hair_pack",
+      "part_id": "back_hair_base",
+      "roi": [
+        520,
+        120,
+        1010,
+        1350
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/hair_pack/back_hair_base.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          515,
+          115,
+          1021,
+          1361
+        ],
+        "nonzero_alpha": 883765,
+        "alpha_coverage": 0.210706,
+        "roi_coverage": 0.624785,
+        "edge_score": 0.8616,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__hair_pack__back_hair_base",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "hair_pack",
+      "part_id": "back_hair_base",
+      "roi": [
+        520,
+        120,
+        1010,
+        1350
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/hair_pack/back_hair_base.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          517,
+          117,
+          1017,
+          1357
+        ],
+        "nonzero_alpha": 851878,
+        "alpha_coverage": 0.20310354,
+        "roi_coverage": 0.619847,
+        "edge_score": 0.819,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__hair_pack__back_hair_base",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "hair_pack",
+      "part_id": "back_hair_base",
+      "roi": [
+        520,
+        120,
+        1010,
+        1350
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/hair_pack/back_hair_base.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          518,
+          118,
+          1015,
+          1355
+        ],
+        "nonzero_alpha": 882319,
+        "alpha_coverage": 0.21036124,
+        "roi_coverage": 0.623498,
+        "edge_score": 0.8796,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__hair_pack__back_hair_base",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "hair_pack",
+      "part_id": "back_hair_base",
+      "roi": [
+        520,
+        120,
+        1010,
+        1350
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/hair_pack/back_hair_base.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__hair_pack__back_hair_base",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "hair_pack",
+      "part_id": "back_hair_base",
+      "roi": [
+        520,
+        120,
+        1010,
+        1350
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/hair_pack/back_hair_base.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          309,
+          14,
+          1429,
+          1780
+        ],
+        "nonzero_alpha": 1126044,
+        "alpha_coverage": 0.26846981,
+        "roi_coverage": 0.604823,
+        "edge_score": 1.686,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__hair_pack__hair_tip_L",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "hair_pack",
+      "part_id": "hair_tip_L",
+      "roi": [
+        1120,
+        1100,
+        360,
+        620
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/hair_pack/hair_tip_L.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1142,
+          1100,
+          339,
+          621
+        ],
+        "nonzero_alpha": 146011,
+        "alpha_coverage": 0.03481174,
+        "roi_coverage": 0.629633,
+        "edge_score": 0.3052,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__hair_pack__hair_tip_L",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "hair_pack",
+      "part_id": "hair_tip_L",
+      "roi": [
+        1120,
+        1100,
+        360,
+        620
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/hair_pack/hair_tip_L.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1141,
+          1097,
+          343,
+          627
+        ],
+        "nonzero_alpha": 154269,
+        "alpha_coverage": 0.0367806,
+        "roi_coverage": 0.644404,
+        "edge_score": 0.2845,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__hair_pack__hair_tip_L",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "hair_pack",
+      "part_id": "hair_tip_L",
+      "roi": [
+        1120,
+        1100,
+        360,
+        620
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/hair_pack/hair_tip_L.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1139,
+          1095,
+          347,
+          631
+        ],
+        "nonzero_alpha": 161085,
+        "alpha_coverage": 0.03840566,
+        "roi_coverage": 0.665999,
+        "edge_score": 0.2752,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__hair_pack__hair_tip_L",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "hair_pack",
+      "part_id": "hair_tip_L",
+      "roi": [
+        1120,
+        1100,
+        360,
+        620
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/hair_pack/hair_tip_L.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1143,
+          1097,
+          341,
+          627
+        ],
+        "nonzero_alpha": 150243,
+        "alpha_coverage": 0.03582072,
+        "roi_coverage": 0.656573,
+        "edge_score": 0.2696,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__hair_pack__hair_tip_L",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "hair_pack",
+      "part_id": "hair_tip_L",
+      "roi": [
+        1120,
+        1100,
+        360,
+        620
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/hair_pack/hair_tip_L.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          1140,
+          1098,
+          343,
+          625
+        ],
+        "nonzero_alpha": 158999,
+        "alpha_coverage": 0.03790832,
+        "roi_coverage": 0.663047,
+        "edge_score": 0.2838,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__hair_pack__hair_tip_L",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "hair_pack",
+      "part_id": "hair_tip_L",
+      "roi": [
+        1120,
+        1100,
+        360,
+        620
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/hair_pack/hair_tip_L.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__hair_pack__hair_tip_L",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "hair_pack",
+      "part_id": "hair_tip_L",
+      "roi": [
+        1120,
+        1100,
+        360,
+        620
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/hair_pack/hair_tip_L.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          309,
+          14,
+          1429,
+          1780
+        ],
+        "nonzero_alpha": 1126044,
+        "alpha_coverage": 0.26846981,
+        "roi_coverage": 0.629633,
+        "edge_score": 1.686,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "layerd__hair_pack__hair_tip_R",
+      "model_id": "layerd",
+      "model_repo": "cyberagent/layerd-birefnet",
+      "pack_id": "hair_pack",
+      "part_id": "hair_tip_R",
+      "roi": [
+        590,
+        1100,
+        360,
+        620
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/layerd/hair_pack/hair_tip_R.png",
+      "derivation_mode": "local_layerd_adapter_roi_alpha",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          590,
+          1100,
+          286,
+          621
+        ],
+        "nonzero_alpha": 105527,
+        "alpha_coverage": 0.0251596,
+        "roi_coverage": 0.449785,
+        "edge_score": 0.31,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet__hair_pack__hair_tip_R",
+      "model_id": "birefnet",
+      "model_repo": "ZhengPeng7/BiRefNet",
+      "pack_id": "hair_pack",
+      "part_id": "hair_tip_R",
+      "roi": [
+        590,
+        1100,
+        360,
+        620
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet/hair_pack/hair_tip_R.png",
+      "derivation_mode": "local_birefnet_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          587,
+          1097,
+          289,
+          627
+        ],
+        "nonzero_alpha": 113510,
+        "alpha_coverage": 0.02706289,
+        "roi_coverage": 0.465479,
+        "edge_score": 0.2852,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_hr__hair_pack__hair_tip_R",
+      "model_id": "birefnet_hr",
+      "model_repo": "ZhengPeng7/BiRefNet_HR",
+      "pack_id": "hair_pack",
+      "part_id": "hair_tip_R",
+      "roi": [
+        590,
+        1100,
+        360,
+        620
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_hr/hair_pack/hair_tip_R.png",
+      "derivation_mode": "local_birefnet_hr_adapter_alpha_smooth",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          585,
+          1095,
+          293,
+          631
+        ],
+        "nonzero_alpha": 120066,
+        "alpha_coverage": 0.02862597,
+        "roi_coverage": 0.488333,
+        "edge_score": 0.2713,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "birefnet_matting__hair_pack__hair_tip_R",
+      "model_id": "birefnet_matting",
+      "model_repo": "ZhengPeng7/BiRefNet-matting",
+      "pack_id": "hair_pack",
+      "part_id": "hair_tip_R",
+      "roi": [
+        590,
+        1100,
+        360,
+        620
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/birefnet_matting/hair_pack/hair_tip_R.png",
+      "derivation_mode": "local_birefnet_matting_adapter_threshold",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          587,
+          1097,
+          287,
+          627
+        ],
+        "nonzero_alpha": 109254,
+        "alpha_coverage": 0.02604818,
+        "roi_coverage": 0.478432,
+        "edge_score": 0.2665,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "sam2_roi__hair_pack__hair_tip_R",
+      "model_id": "sam2_roi",
+      "model_repo": "facebook/sam2.1-hiera-large",
+      "pack_id": "hair_pack",
+      "part_id": "hair_tip_R",
+      "roi": [
+        590,
+        1100,
+        360,
+        620
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/sam2_roi/hair_pack/hair_tip_R.png",
+      "derivation_mode": "local_sam2_roi_adapter_box_prompt",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          588,
+          1098,
+          290,
+          625
+        ],
+        "nonzero_alpha": 118585,
+        "alpha_coverage": 0.02827287,
+        "roi_coverage": 0.484879,
+        "edge_score": 0.2844,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "fashion_segformer__hair_pack__hair_tip_R",
+      "model_id": "fashion_segformer",
+      "model_repo": "Itbanque/fashion_segformer",
+      "pack_id": "hair_pack",
+      "part_id": "hair_tip_R",
+      "roi": [
+        590,
+        1100,
+        360,
+        620
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/fashion_segformer/hair_pack/hair_tip_R.png",
+      "derivation_mode": "skipped_non_outfit_pack",
+      "status": "REFERENCE_ONLY",
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nonzero_alpha": 0,
+        "alpha_coverage": 0.0,
+        "roi_coverage": 0.0,
+        "edge_score": 0.0,
+        "issues": [
+          "EMPTY_ALPHA",
+          "LOW_ROI_COVERAGE",
+          "REFERENCE_ONLY_NON_OUTFIT"
+        ],
+        "status": "REFERENCE_ONLY"
+      },
+      "is_actual_hf_inference": false
+    },
+    {
+      "candidate_id": "anime_instance__hair_pack__hair_tip_R",
+      "model_id": "anime_instance",
+      "model_repo": "dreMaz/AnimeInstanceSegmentation",
+      "pack_id": "hair_pack",
+      "part_id": "hair_tip_R",
+      "roi": [
+        590,
+        1100,
+        360,
+        620
+      ],
+      "source_image": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_probe/anime_instance/hair_pack/hair_tip_R.png",
+      "derivation_mode": "local_anime_instance_adapter_foreground",
+      "status": "CANDIDATE",
+      "metrics": {
+        "bbox": [
+          309,
+          14,
+          1429,
+          1780
+        ],
+        "nonzero_alpha": 1126044,
+        "alpha_coverage": 0.26846981,
+        "roi_coverage": 0.449785,
+        "edge_score": 1.686,
+        "issues": [],
+        "status": "CANDIDATE"
+      },
+      "is_actual_hf_inference": false
+    }
+  ]
+}

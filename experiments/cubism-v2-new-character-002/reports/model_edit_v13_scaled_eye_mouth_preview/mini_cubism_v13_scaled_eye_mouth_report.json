@@ -1,0 +1,443 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T06:12:35.924270+00:00",
+  "status": "V13_SCALED_EYE_MOUTH_READY_FOR_VALIDATION",
+  "source_project": "experiments/cubism-v2-new-character-002/model_edit_v12_generated_mouth_eye_clamp_preview/mini_cubism_diagnostic_project",
+  "project": "experiments/cubism-v2-new-character-002/model_edit_v13_scaled_eye_mouth_preview/mini_cubism_diagnostic_project",
+  "eye_scale": 0.94,
+  "mouth_scale": 0.92,
+  "scaled_parts": {
+    "eye_L_clean_socket": {
+      "bbox_xywh": [
+        773,
+        625,
+        214,
+        124
+      ],
+      "alpha_nonzero": 22393,
+      "alpha_coverage": 0.00533891,
+      "old_bbox": [
+        766,
+        621,
+        994,
+        753
+      ],
+      "new_bbox": [
+        773,
+        625,
+        987,
+        749
+      ],
+      "scale": 0.94,
+      "anchor": [
+        880,
+        687
+      ]
+    },
+    "eye_L_closed_lid": {
+      "bbox_xywh": [
+        793,
+        658,
+        165,
+        63
+      ],
+      "alpha_nonzero": 2721,
+      "alpha_coverage": 0.00064874,
+      "old_bbox": [
+        787,
+        656,
+        963,
+        723
+      ],
+      "new_bbox": [
+        793,
+        658,
+        958,
+        721
+      ],
+      "scale": 0.94,
+      "anchor": [
+        880,
+        687
+      ]
+    },
+    "eye_L_closed_underpaint": {
+      "bbox_xywh": [
+        773,
+        625,
+        214,
+        124
+      ],
+      "alpha_nonzero": 22393,
+      "alpha_coverage": 0.00533891,
+      "old_bbox": [
+        766,
+        621,
+        994,
+        753
+      ],
+      "new_bbox": [
+        773,
+        625,
+        987,
+        749
+      ],
+      "scale": 0.94,
+      "anchor": [
+        880,
+        687
+      ]
+    },
+    "eye_L_half_closed_lid": {
+      "bbox_xywh": [
+        795,
+        663,
+        149,
+        64
+      ],
+      "alpha_nonzero": 4045,
+      "alpha_coverage": 0.0009644,
+      "old_bbox": [
+        790,
+        662,
+        948,
+        730
+      ],
+      "new_bbox": [
+        795,
+        663,
+        944,
+        727
+      ],
+      "scale": 0.94,
+      "anchor": [
+        880,
+        687
+      ]
+    },
+    "eye_L_mostly_closed_lid": {
+      "bbox_xywh": [
+        796,
+        653,
+        153,
+        70
+      ],
+      "alpha_nonzero": 2526,
+      "alpha_coverage": 0.00060225,
+      "old_bbox": [
+        791,
+        651,
+        954,
+        726
+      ],
+      "new_bbox": [
+        796,
+        653,
+        949,
+        723
+      ],
+      "scale": 0.94,
+      "anchor": [
+        880,
+        687
+      ]
+    },
+    "eye_L_open": {
+      "bbox_xywh": [
+        785,
+        637,
+        191,
+        101
+      ],
+      "alpha_nonzero": 15401,
+      "alpha_coverage": 0.00367188,
+      "old_bbox": [
+        779,
+        634,
+        982,
+        741
+      ],
+      "new_bbox": [
+        785,
+        637,
+        976,
+        738
+      ],
+      "scale": 0.94,
+      "anchor": [
+        880,
+        687
+      ]
+    },
+    "eye_R_clean_socket": {
+      "bbox_xywh": [
+        1063,
+        625,
+        214,
+        123
+      ],
+      "alpha_nonzero": 22509,
+      "alpha_coverage": 0.00536656,
+      "old_bbox": [
+        1056,
+        621,
+        1284,
+        752
+      ],
+      "new_bbox": [
+        1063,
+        625,
+        1277,
+        748
+      ],
+      "scale": 0.94,
+      "anchor": [
+        1170,
+        687
+      ]
+    },
+    "eye_R_closed_lid": {
+      "bbox_xywh": [
+        1097,
+        655,
+        162,
+        62
+      ],
+      "alpha_nonzero": 2798,
+      "alpha_coverage": 0.0006671,
+      "old_bbox": [
+        1092,
+        653,
+        1264,
+        719
+      ],
+      "new_bbox": [
+        1097,
+        655,
+        1259,
+        717
+      ],
+      "scale": 0.94,
+      "anchor": [
+        1170,
+        687
+      ]
+    },
+    "eye_R_closed_underpaint": {
+      "bbox_xywh": [
+        1063,
+        625,
+        214,
+        123
+      ],
+      "alpha_nonzero": 22509,
+      "alpha_coverage": 0.00536656,
+      "old_bbox": [
+        1056,
+        621,
+        1284,
+        752
+      ],
+      "new_bbox": [
+        1063,
+        625,
+        1277,
+        748
+      ],
+      "scale": 0.94,
+      "anchor": [
+        1170,
+        687
+      ]
+    },
+    "eye_R_half_closed_lid": {
+      "bbox_xywh": [
+        1106,
+        682,
+        149,
+        46
+      ],
+      "alpha_nonzero": 4044,
+      "alpha_coverage": 0.00096416,
+      "old_bbox": [
+        1102,
+        682,
+        1261,
+        731
+      ],
+      "new_bbox": [
+        1106,
+        682,
+        1255,
+        728
+      ],
+      "scale": 0.94,
+      "anchor": [
+        1170,
+        687
+      ]
+    },
+    "eye_R_mostly_closed_lid": {
+      "bbox_xywh": [
+        1106,
+        691,
+        149,
+        32
+      ],
+      "alpha_nonzero": 2518,
+      "alpha_coverage": 0.00060034,
+      "old_bbox": [
+        1102,
+        691,
+        1260,
+        725
+      ],
+      "new_bbox": [
+        1106,
+        691,
+        1255,
+        723
+      ],
+      "scale": 0.94,
+      "anchor": [
+        1170,
+        687
+      ]
+    },
+    "eye_R_open": {
+      "bbox_xywh": [
+        1075,
+        637,
+        191,
+        100
+      ],
+      "alpha_nonzero": 15373,
+      "alpha_coverage": 0.00366521,
+      "old_bbox": [
+        1069,
+        634,
+        1272,
+        740
+      ],
+      "new_bbox": [
+        1075,
+        637,
+        1266,
+        737
+      ],
+      "scale": 0.94,
+      "anchor": [
+        1170,
+        687
+      ]
+    },
+    "mouth_closed_smile": {
+      "bbox_xywh": [
+        968,
+        876,
+        133,
+        32
+      ],
+      "alpha_nonzero": 2094,
+      "alpha_coverage": 0.00049925,
+      "old_bbox": [
+        962,
+        874,
+        1107,
+        909
+      ],
+      "new_bbox": [
+        968,
+        876,
+        1101,
+        908
+      ],
+      "scale": 0.92,
+      "anchor": [
+        1035,
+        892
+      ]
+    },
+    "mouth_mid_teeth_gen": {
+      "bbox_xywh": [
+        953,
+        860,
+        164,
+        64
+      ],
+      "alpha_nonzero": 7293,
+      "alpha_coverage": 0.00173879,
+      "old_bbox": [
+        946,
+        857,
+        1124,
+        927
+      ],
+      "new_bbox": [
+        953,
+        860,
+        1117,
+        924
+      ],
+      "scale": 0.92,
+      "anchor": [
+        1035,
+        892
+      ]
+    },
+    "mouth_small_open": {
+      "bbox_xywh": [
+        962,
+        870,
+        145,
+        45
+      ],
+      "alpha_nonzero": 4552,
+      "alpha_coverage": 0.00108528,
+      "old_bbox": [
+        956,
+        868,
+        1114,
+        917
+      ],
+      "new_bbox": [
+        962,
+        870,
+        1107,
+        915
+      ],
+      "scale": 0.92,
+      "anchor": [
+        1035,
+        892
+      ]
+    },
+    "mouth_wide_teeth_tongue_gen": {
+      "bbox_xywh": [
+        948,
+        853,
+        175,
+        78
+      ],
+      "alpha_nonzero": 9329,
+      "alpha_coverage": 0.00222421,
+      "old_bbox": [
+        940,
+        850,
+        1130,
+        935
+      ],
+      "new_bbox": [
+        948,
+        853,
+        1123,
+        931
+      ],
+      "scale": 0.92,
+      "anchor": [
+        1035,
+        892
+      ]
+    }
+  }
+}

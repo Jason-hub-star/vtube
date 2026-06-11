@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "validated_at": "2026-06-05T02:46:57.319292+00:00",
+  "manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/targeted_split_v1/targeted_layer_manifest.json",
+  "status": "PASS",
+  "counts": {
+    "parts": 73,
+    "hair_parts": 18,
+    "eye_parts": 16,
+    "mouth_parts": 8,
+    "physics_targets": 33
+  },
+  "required_counts": {
+    "parts": 60,
+    "hair_parts": 18,
+    "eye_parts": 16,
+    "mouth_parts": 8,
+    "physics_targets": 12
+  },
+  "floor_failures": {},
+  "checks": {
+    "full_canvas_2048": true,
+    "nonempty_alpha": true,
+    "unique_part_ids": true,
+    "mouth_visibility_exclusive": true,
+    "eye_closed_hidden_targets": true
+  }
+}

@@ -1,0 +1,487 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T14:48:53.601546+00:00",
+  "id": "izumi_izumi_anime_t01",
+  "name": "izumi_anime_t01",
+  "source_url": "https://www.live2d.com/ko/learn/sample/",
+  "source_type": "OFFICIAL_SAMPLE_ZIP",
+  "license_status": "OFFICIAL_TERMS_ACCEPTED_BY_USER",
+  "analysis_mode": "FULL_STRUCTURE",
+  "official_profile_key": "izumi",
+  "analysis_safety_notes": [],
+  "has_cmo3": true,
+  "has_moc3": true,
+  "has_model3_json": true,
+  "has_physics3_json": true,
+  "has_psd": false,
+  "local_paths": {
+    "cmo3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/izumi_anime_t01.cmo3",
+      "exists": true,
+      "size_bytes": 27582828
+    },
+    "physics3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/izumi_illust.physics3.json",
+      "exists": true,
+      "size_bytes": 4789
+    },
+    "moc3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/izumi_illust.moc3",
+      "exists": true,
+      "size_bytes": 208512
+    },
+    "cdi3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/izumi_illust.cdi3.json",
+      "exists": true,
+      "size_bytes": 3691
+    },
+    "exp3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Angry.exp3.json",
+        "exists": true,
+        "size_bytes": 1125
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Blushing.exp3.json",
+        "exists": true,
+        "size_bytes": 1148
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Normal.exp3.json",
+        "exists": true,
+        "size_bytes": 1122
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Sad.exp3.json",
+        "exists": true,
+        "size_bytes": 1136
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Smile.exp3.json",
+        "exists": true,
+        "size_bytes": 1132
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/Surprised.exp3.json",
+        "exists": true,
+        "size_bytes": 1138
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/expressions/f01.exp3.json",
+        "exists": true,
+        "size_bytes": 1159
+      }
+    ],
+    "model3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/izumi_illust.model3.json",
+      "exists": true,
+      "size_bytes": 2266
+    },
+    "motion3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_01.motion3.json",
+        "exists": true,
+        "size_bytes": 7843
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_02.motion3.json",
+        "exists": true,
+        "size_bytes": 10632
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_03.motion3.json",
+        "exists": true,
+        "size_bytes": 11799
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_04.motion3.json",
+        "exists": true,
+        "size_bytes": 9198
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_05.motion3.json",
+        "exists": true,
+        "size_bytes": 7534
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_06.motion3.json",
+        "exists": true,
+        "size_bytes": 6165
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_07.motion3.json",
+        "exists": true,
+        "size_bytes": 7793
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_08.motion3.json",
+        "exists": true,
+        "size_bytes": 13410
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_09.motion3.json",
+        "exists": true,
+        "size_bytes": 8253
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/motion/izumi_10.motion3.json",
+        "exists": true,
+        "size_bytes": 10729
+      }
+    ]
+  },
+  "cmo3": {
+    "status": "PASS",
+    "returncode": 0,
+    "json": "experiments/reference-model-structure-001/models/izumi_izumi_anime_t01/cmo3_structure_report.json",
+    "markdown": "experiments/reference-model-structure-001/models/izumi_izumi_anime_t01/cmo3_structure_report.md",
+    "stdout": "[cmo3-structure] WARN\n[cmo3-structure] json: /Users/family/jason/Vtube/experiments/reference-model-structure-001/models/izumi_izumi_anime_t01/cmo3_structure_report.json\n[cmo3-structure] md:   /Users/family/jason/Vtube/experiments/reference-model-structure-001/models/izumi_izumi_anime_t01/cmo3_structure_report.md",
+    "stderr": "",
+    "cmo3_status": "WARN",
+    "counts": {
+      "art_meshes": 77,
+      "parts": 21,
+      "parameters": 30,
+      "warp_deformers": 39,
+      "rotation_deformers": 6,
+      "keyform_bindings": 168,
+      "keyform_grids": 143,
+      "glue": 0,
+      "masks": 0
+    },
+    "parameter_ids": [
+      "PARAM_ANGLE_X",
+      "PARAM_ANGLE_Y",
+      "PARAM_ANGLE_Z",
+      "PARAM_EYE_L_OPEN",
+      "PARAM_EYE_L_SMILE",
+      "PARAM_EYE_R_OPEN",
+      "PARAM_EYE_R_SMILE",
+      "PARAM_EYE_BALL_X",
+      "PARAM_EYE_BALL_Y",
+      "PARAM_EYE_BALL_FORM",
+      "PARAM_BROW_L_Y",
+      "PARAM_BROW_R_Y",
+      "PARAM_BROW_L_X",
+      "PARAM_BROW_R_X",
+      "PARAM_BROW_L_ANGLE",
+      "PARAM_BROW_R_ANGLE",
+      "PARAM_BROW_L_FORM",
+      "PARAM_BROW_R_FORM",
+      "PARAM_MOUTH_FORM",
+      "PARAM_MOUTH_OPEN_Y",
+      "PARAM_TERE",
+      "PARAM_BODY_ANGLE_X",
+      "PARAM_BODY_ANGLE_Y",
+      "PARAM_BODY_ANGLE_Z",
+      "PARAM_ARM_L",
+      "PARAM_ARM_R",
+      "PARAM_BREATH",
+      "PARAM_HAIR_FRONT",
+      "PARAM_HAIR_SIDE",
+      "PARAM_HAIR_BACK"
+    ],
+    "part_names": [
+      "Root Part",
+      "[ 下絵 ]",
+      "背景",
+      "体",
+      "首",
+      "右腕",
+      "左腕",
+      "服",
+      "後ろ髪",
+      "横髪",
+      "前髪",
+      "耳",
+      "鼻",
+      "口",
+      "まゆ毛",
+      "目玉",
+      "目",
+      "顔",
+      "頬",
+      "コアパーツ",
+      "ラフ"
+    ]
+  },
+  "moc3": {
+    "present": true,
+    "path": "experiments/reference-model-structure-001/official_samples/extracted/izumi/izumi/runtime/izumi_illust.moc3",
+    "size_bytes": 208512,
+    "sha256": "0cb8447afb514bb5ed7a60c8e4158036bdcf4fb597bdb12c4312a9285fbd4e73",
+    "py_moc3_status": "PASS",
+    "parameter_count": 30,
+    "art_mesh_count": 69,
+    "parameter_ids": [
+      "PARAM_ANGLE_X",
+      "PARAM_ANGLE_Y",
+      "PARAM_ANGLE_Z",
+      "PARAM_EYE_L_OPEN",
+      "PARAM_EYE_L_SMILE",
+      "PARAM_EYE_R_OPEN",
+      "PARAM_EYE_R_SMILE",
+      "PARAM_EYE_BALL_X",
+      "PARAM_EYE_BALL_Y",
+      "PARAM_EYE_BALL_FORM",
+      "PARAM_BROW_L_Y",
+      "PARAM_BROW_R_Y",
+      "PARAM_BROW_L_X",
+      "PARAM_BROW_R_X",
+      "PARAM_BROW_L_ANGLE",
+      "PARAM_BROW_R_ANGLE",
+      "PARAM_BROW_L_FORM",
+      "PARAM_BROW_R_FORM",
+      "PARAM_MOUTH_FORM",
+      "PARAM_MOUTH_OPEN_Y",
+      "PARAM_TERE",
+      "PARAM_BODY_ANGLE_X",
+      "PARAM_BODY_ANGLE_Y",
+      "PARAM_BODY_ANGLE_Z",
+      "PARAM_ARM_L",
+      "PARAM_ARM_R",
+      "PARAM_BREATH",
+      "PARAM_HAIR_FRONT",
+      "PARAM_HAIR_SIDE",
+      "PARAM_HAIR_BACK"
+    ],
+    "art_mesh_ids_sample": [
+      "D_BODY_01",
+      "D_BODY_00",
+      "D_NECK_00",
+      "D_ARM_R_01",
+      "D_ARM_R_00",
+      "D_ARM_L_01",
+      "D_ARM_L_00",
+      "D_CLOTHES_06",
+      "D_CLOTHES_05",
+      "D_CLOTHES_04",
+      "D_CLOTHES_03",
+      "D_CLOTHES_02",
+      "D_CLOTHES_01",
+      "D_CLOTHES_00",
+      "D_HAIR_BACK_01",
+      "D_HAIR_BACK_00",
+      "D_HAIR_SIDE_02",
+      "D_HAIR_SIDE_01",
+      "D_HAIR_SIDE_00",
+      "D_HAIR_FRONT_01",
+      "D_HAIR_FRONT_00",
+      "D_EAR_01",
+      "D_EAR_00",
+      "D_NOSE_03",
+      "D_NOSE_02",
+      "D_NOSE_01",
+      "D_NOSE_00",
+      "D_MOUTH_03",
+      "D_MOUTH_02",
+      "D_MOUTH_01",
+      "D_MOUTH_00",
+      "D_BROW_02",
+      "D_EYE_18",
+      "D_BROW_01",
+      "D_BROW_00",
+      "D_EYE_BALL_03",
+      "D_EYE_BALL_02",
+      "D_EYE_BALL_01",
+      "D_EYE_BALL_00",
+      "D_EYE_22",
+      "D_EYE_21",
+      "D_EYE_20",
+      "D_EYE_19",
+      "D_EYE_17",
+      "D_EYE_16",
+      "D_EYE_15",
+      "D_EYE_14",
+      "D_EYE_13",
+      "D_EYE_12",
+      "D_EYE_BALL_04"
+    ]
+  },
+  "runtime_json": {
+    "model3": {
+      "present": true,
+      "version": 3,
+      "moc": "izumi_illust.moc3",
+      "texture_count": 4,
+      "has_physics": true,
+      "has_pose": false,
+      "has_display_info": true,
+      "has_user_data": false,
+      "expression_count": 7,
+      "motion_group_count": 5,
+      "motion_count": 10,
+      "group_count": 2,
+      "parameter_ids": [
+        "PARAM_EYE_L_OPEN",
+        "PARAM_EYE_R_OPEN",
+        "PARAM_MOUTH_OPEN_Y"
+      ],
+      "file_references": {
+        "Moc": "izumi_illust.moc3",
+        "Textures": [
+          "izumi_illust.1024/texture_00.png",
+          "izumi_illust.1024/texture_01.png",
+          "izumi_illust.1024/texture_02.png",
+          "izumi_illust.1024/texture_03.png"
+        ],
+        "Physics": "izumi_illust.physics3.json",
+        "DisplayInfo": "izumi_illust.cdi3.json",
+        "Expressions": [
+          {
+            "Name": "Angry.exp3.json",
+            "File": "expressions/Angry.exp3.json"
+          },
+          {
+            "Name": "Blushing.exp3.json",
+            "File": "expressions/Blushing.exp3.json"
+          },
+          {
+            "Name": "f01.exp3.json",
+            "File": "expressions/f01.exp3.json"
+          },
+          {
+            "Name": "Normal.exp3.json",
+            "File": "expressions/Normal.exp3.json"
+          },
+          {
+            "Name": "Sad.exp3.json",
+            "File": "expressions/Sad.exp3.json"
+          },
+          {
+            "Name": "Smile.exp3.json",
+            "File": "expressions/Smile.exp3.json"
+          },
+          {
+            "Name": "Surprised.exp3.json",
+            "File": "expressions/Surprised.exp3.json"
+          }
+        ],
+        "Motions": {
+          "FlickRight": [
+            {
+              "File": "motion/izumi_01.motion3.json",
+              "Sound": "sounds/izumi_01.wav"
+            },
+            {
+              "File": "motion/izumi_04.motion3.json",
+              "Sound": "sounds/izumi_04.wav"
+            }
+          ],
+          "Tap": [
+            {
+              "File": "motion/izumi_02.motion3.json",
+              "Sound": "sounds/izumi_02.wav"
+            },
+            {
+              "File": "motion/izumi_05.motion3.json",
+              "Sound": "sounds/izumi_05.wav"
+            },
+            {
+              "File": "motion/izumi_09.motion3.json",
+              "Sound": "sounds/izumi_09.wav"
+            }
+          ],
+          "Idle": [
+            {
+              "File": "motion/izumi_03.motion3.json",
+              "Sound": "sounds/izumi_03.wav"
+            },
+            {
+              "File": "motion/izumi_07.motion3.json",
+              "Sound": "sounds/izumi_07.wav"
+            },
+            {
+              "File": "motion/izumi_10.motion3.json",
+              "Sound": "sounds/izumi_10.wav"
+            }
+          ],
+          "FlickLeft": [
+            {
+              "File": "motion/izumi_06.motion3.json",
+              "Sound": "sounds/izumi_06.wav"
+            }
+          ],
+          "Shake": [
+            {
+              "File": "motion/izumi_08.motion3.json",
+              "Sound": "sounds/izumi_08.wav"
+            }
+          ]
+        }
+      }
+    },
+    "physics3": {
+      "present": true,
+      "version": 3,
+      "physics_group_count": 3,
+      "physics_input_count": 12,
+      "physics_output_count": 3,
+      "physics_vertex_count": 6,
+      "groups": [
+        {
+          "index": 0,
+          "id": "PhysicsSetting1",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 1,
+          "id": "PhysicsSetting2",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 2,
+          "id": "PhysicsSetting3",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        }
+      ]
+    },
+    "cdi3": {
+      "present": true,
+      "parameter_display_count": 30,
+      "part_display_count": 20
+    },
+    "motion3_count": 10,
+    "exp3_count": 7,
+    "pose3_present": false,
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 77,
+    "parts": 21,
+    "parameters": 30,
+    "warp_deformers": 39,
+    "rotation_deformers": 6,
+    "keyform_bindings": 168,
+    "keyform_grids": 143,
+    "glue": 0,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": false,
+    "pose": false,
+    "expression": true,
+    "motion": true,
+    "physics": true
+  },
+  "structure_hints": {
+    "hair": 1,
+    "eye": 1,
+    "mouth": 2,
+    "body": 1,
+    "arm": 1
+  },
+  "reuse_decision": "REFERENCE_ONLY",
+  "notes": [
+    "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+    "Source zip: izumi.zip"
+  ],
+  "structure_report_path": "experiments/reference-model-structure-001/models/izumi_izumi_anime_t01/cmo3_structure_report.json"
+}

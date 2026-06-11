@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T04:53:10.181255+00:00",
+  "status": "V9_ALL_MOUTH_ENABLED_READY_FOR_VALIDATION",
+  "source_project": "experiments/cubism-v2-new-character-002/model_edit_v8_existing_mouth_tuned_preview/mini_cubism_diagnostic_project",
+  "project": "experiments/cubism-v2-new-character-002/model_edit_v9_all_mouth_enabled_preview/mini_cubism_diagnostic_project",
+  "enabled_mouth_parts": [
+    "mouth_closed_smile",
+    "mouth_inner",
+    "mouth_o_vowel",
+    "mouth_small_open",
+    "mouth_teeth",
+    "mouth_tongue",
+    "mouth_wide_open"
+  ],
+  "parameters": [
+    "ParamAngleX",
+    "ParamEyeLOpen",
+    "ParamEyeROpen",
+    "ParamMouthOpenY",
+    "ParamHairFront",
+    "ParamMouthForm"
+  ],
+  "note": "Diagnostic comparison only; all mouth assets are active by request."
+}

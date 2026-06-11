@@ -1,0 +1,19 @@
+{
+  "status": "PASS_ASSETS_GENERATED",
+  "failures": [],
+  "psd_candidate": {
+    "status": "PASS_PSD_CANDIDATE_WRITTEN",
+    "writer": "psd-tools",
+    "psd_path": "experiments/cubism-v2-new-character-001/material_pack_v0/import_ready_candidate.psd",
+    "psd_metadata": {
+      "exists": true,
+      "valid_header": true,
+      "channels": 3,
+      "width": 2048,
+      "height": 2048,
+      "depth": 8,
+      "color_mode": "RGB",
+      "layer_count": 62
+    }
+  }
+}

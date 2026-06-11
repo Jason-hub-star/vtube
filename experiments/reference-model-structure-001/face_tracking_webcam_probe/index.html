@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="data:," />
+  <title>Cubism v2 웹캠 추적 테스트</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f6f8;
+      --panel: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --blue: #1677ff;
+      --blue-dark: #0f5fd8;
+      --red: #ef4444;
+      --green: #16a34a;
+      --shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) 420px;
+      gap: 18px;
+      width: min(1480px, calc(100vw - 32px));
+      margin: 16px auto;
+    }
+    .camera-panel, .side-panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .camera-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      background: #111827;
+    }
+    video, canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scaleX(-1);
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 16px 18px;
+      border-bottom: 1px solid var(--line);
+    }
+    h1 {
+      margin: 0;
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+    .sub {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 0 10px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #1d4ed8;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+    .controls {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 14px;
+      border-top: 1px solid var(--line);
+    }
+    button {
+      border: 0;
+      border-radius: 8px;
+      min-height: 44px;
+      padding: 0 14px;
+      background: #e5e7eb;
+      color: var(--text);
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    button.primary { background: var(--blue); color: #fff; }
+    button.primary:hover { background: var(--blue-dark); }
+    button:disabled { opacity: 0.46; cursor: not-allowed; }
+    .side-panel { padding: 16px; }
+    .section { padding: 12px 0; border-bottom: 1px solid var(--line); }
+    .section:last-child { border-bottom: 0; }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 16px;
+      letter-spacing: 0;
+    }
+    ol {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+      line-height: 1.72;
+      font-size: 14px;
+    }
+    .status {
+      display: grid;
+      gap: 8px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .status-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 9px 10px;
+      border-radius: 8px;
+      background: #f8fafc;
+    }
+    .status-row strong { color: var(--text); }
+    .meter {
+      height: 8px;
+      border-radius: 999px;
+      background: #e5e7eb;
+      overflow: hidden;
+    }
+    .meter > div {
+      width: 0%;
+      height: 100%;
+      background: var(--blue);
+      transition: width 140ms linear;
+    }
+    .param-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .param {
+      padding: 9px 10px;
+      border-radius: 8px;
+      background: #f8fafc;
+      font-size: 13px;
+    }
+    .param span {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--muted);
+    }
+    .param b { font-variant-numeric: tabular-nums; }
+    .log {
+      min-height: 64px;
+      padding: 10px;
+      border-radius: 8px;
+      background: #111827;
+      color: #d1d5db;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 12px;
+      white-space: pre-wrap;
+    }
+    .good { color: var(--green); }
+    .bad { color: var(--red); }
+    @media (max-width: 980px) {
+      main { grid-template-columns: 1fr; width: min(100vw - 20px, 720px); }
+      .controls { grid-template-columns: 1fr; }
+      .param-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="camera-panel">
+      <header>
+        <div>
+          <h1>웹캠 얼굴 추적 테스트</h1>
+          <div class="sub">노트북 내장 웹캠으로 Cubism v2 파라미터가 잘 나오는지 확인합니다.</div>
+        </div>
+        <div class="badge" id="topBadge">준비 중</div>
+      </header>
+      <div class="camera-wrap">
+        <video id="video" playsinline muted></video>
+        <canvas id="overlay"></canvas>
+      </div>
+      <div class="controls">
+        <button class="primary" id="startBtn">카메라 시작</button>
+        <button id="calibrateBtn" disabled>중립 맞추기</button>
+        <button id="recordBtn" disabled>10초 저장</button>
+      </div>
+    </section>
+
+    <aside class="side-panel">
+      <section class="section">
+        <h2>어떻게 움직이면 되나요?</h2>
+        <ol>
+          <li>카메라 권한을 허용합니다.</li>
+          <li>정면으로 가만히 보고 중립을 맞춥니다.</li>
+          <li>10초 동안 좌우 고개, 깜빡임, 입 열기, 웃기, 시선 이동을 해주세요.</li>
+          <li>저장이 끝나면 리포트가 자동으로 만들어집니다.</li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <h2>상태</h2>
+        <div class="status">
+          <div class="status-row"><span>카메라</span><strong id="cameraState">대기</strong></div>
+          <div class="status-row"><span>얼굴 인식</span><strong id="faceState">대기</strong></div>
+          <div class="status-row"><span>녹화 프레임</span><strong id="frameState">0</strong></div>
+          <div class="meter"><div id="recordMeter"></div></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>실시간 Cubism 값</h2>
+        <div class="param-grid" id="paramGrid"></div>
+      </section>
+
+      <section class="section">
+        <h2>저장 결과</h2>
+        <div class="log" id="log">아직 저장된 결과가 없습니다.</div>
+      </section>
+    </aside>
+  </main>
+
+  <script type="module">
+    import { FaceLandmarker, FilesetResolver } from "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14";
+
+    const video = document.getElementById("video");
+    const overlay = document.getElementById("overlay");
+    const ctx = overlay.getContext("2d");
+    const startBtn = document.getElementById("startBtn");
+    const calibrateBtn = document.getElementById("calibrateBtn");
+    const recordBtn = document.getElementById("recordBtn");
+    const topBadge = document.getElementById("topBadge");
+    const cameraState = document.getElementById("cameraState");
+    const faceState = document.getElementById("faceState");
+    const frameState = document.getElementById("frameState");
+    const recordMeter = document.getElementById("recordMeter");
+    const paramGrid = document.getElementById("paramGrid");
+    const logEl = document.getElementById("log");
+
+    const keyParams = [
+      "ParamAngleX", "ParamAngleY", "ParamAngleZ", "ParamEyeLOpen",
+      "ParamEyeROpen", "ParamEyeBallX", "ParamEyeBallY", "ParamMouthOpenY",
+      "ParamMouthForm", "ParamBodyAngleX", "ParamBodyAngleY", "ParamBreath"
+    ];
+    const paramEls = new Map();
+    for (const param of keyParams) {
+      const card = document.createElement("div");
+      card.className = "param";
+      card.innerHTML = `<span>${param}</span><b>0.000</b>`;
+      paramGrid.appendChild(card);
+      paramEls.set(param, card.querySelector("b"));
+    }
+
+    let landmarker = null;
+    let stream = null;
+    let running = false;
+    let calibrated = false;
+    let neutral = null;
+    let lastOutputs = {};
+    let latestRaw = null;
+    let recording = false;
+    let recordStart = 0;
+    let recordedFrames = [];
+    const recordDuration = 10000;
+
+    function setLog(message, isBad = false) {
+      logEl.textContent = message;
+      logEl.className = `log ${isBad ? "bad" : ""}`;
+    }
+
+    function clamp(value, lo, hi) {
+      return Math.max(lo, Math.min(hi, Number.isFinite(value) ? value : 0));
+    }
+
+    function normalizeCentered(value, lo, hi) {
+      const maxAbs = Math.max(Math.abs(lo), Math.abs(hi)) || 1;
+      return clamp(value / maxAbs, -1, 1);
+    }
+
+    function remapDeadzone(value, deadzone, maxValue) {
+      if (value <= deadzone) return 0;
+      if (maxValue <= deadzone) return 1;
+      return clamp((value - deadzone) / (maxValue - deadzone), 0, 1);
+    }
+
+    function avg(...values) {
+      return values.reduce((acc, value) => acc + value, 0) / values.length;
+    }
+
+    function blendScore(categories, name) {
+      return categories.get(name) ?? 0;
+    }
+
+    function rawChannels(result, nowMs) {
+      const landmarks = result.faceLandmarks?.[0];
+      const blendCategories = result.faceBlendshapes?.[0]?.categories ?? [];
+      const blends = new Map(blendCategories.map((item) => [item.categoryName, item.score]));
+      if (!landmarks) return null;
+
+      const leftEye = landmarks[33] ?? landmarks[130];
+      const rightEye = landmarks[263] ?? landmarks[359];
+      const nose = landmarks[1] ?? landmarks[4];
+      const chin = landmarks[152] ?? landmarks[175];
+      const forehead = landmarks[10] ?? landmarks[9];
+      if (!leftEye || !rightEye || !nose || !chin || !forehead) return null;
+
+      const eyeDx = rightEye.x - leftEye.x;
+      const eyeDy = rightEye.y - leftEye.y;
+      const eyeWidth = Math.max(Math.abs(eyeDx), 0.04);
+      const faceHeight = Math.max(Math.abs(chin.y - forehead.y), 0.12);
+      const eyeCenterX = (leftEye.x + rightEye.x) / 2;
+      const eyeCenterY = (leftEye.y + rightEye.y) / 2;
+      const rollDeg = Math.atan2(eyeDy, eyeDx) * 180 / Math.PI;
+      const yawDeg = clamp(((nose.x - eyeCenterX) / eyeWidth) * 42, -25, 25);
+      const pitchDeg = clamp(((eyeCenterY - nose.y) / faceHeight) * 46, -20, 20);
+      const gazeX = clamp(
+        avg(blendScore(blends, "eyeLookOutRight"), blendScore(blends, "eyeLookInLeft")) -
+        avg(blendScore(blends, "eyeLookInRight"), blendScore(blends, "eyeLookOutLeft")),
+        -1,
+        1
+      );
+      const gazeY = clamp(
+        avg(blendScore(blends, "eyeLookUpLeft"), blendScore(blends, "eyeLookUpRight")) -
+        avg(blendScore(blends, "eyeLookDownLeft"), blendScore(blends, "eyeLookDownRight")),
+        -1,
+        1
+      );
+      return {
+        head_yaw_raw: yawDeg,
+        head_pitch_raw: pitchDeg,
+        head_roll_raw: rollDeg,
+        head_yaw: yawDeg - (neutral?.head_yaw_raw ?? 0),
+        head_pitch: pitchDeg - (neutral?.head_pitch_raw ?? 0),
+        head_roll: rollDeg - (neutral?.head_roll_raw ?? 0),
+        eyeBlinkLeft: blendScore(blends, "eyeBlinkLeft"),
+        eyeBlinkRight: blendScore(blends, "eyeBlinkRight"),
+        eye_gaze_x: gazeX - (neutral?.eye_gaze_x ?? 0),
+        eye_gaze_y: gazeY - (neutral?.eye_gaze_y ?? 0),
+        jawOpen: blendScore(blends, "jawOpen"),
+        mouthSmileLeft: blendScore(blends, "mouthSmileLeft"),
+        mouthSmileRight: blendScore(blends, "mouthSmileRight"),
+        mouthFrownLeft: blendScore(blends, "mouthFrownLeft"),
+        mouthFrownRight: blendScore(blends, "mouthFrownRight"),
+        time: (nowMs % 4000) / 4000
+      };
+    }
+
+    function convert(channels) {
+      const headYaw = clamp(channels.head_yaw, -25, 25);
+      const headPitch = clamp(channels.head_pitch, -20, 20);
+      const headRoll = clamp(channels.head_roll, -25, 25);
+      return {
+        ParamAngleX: clamp(normalizeCentered(headYaw, -25, 25) * 30, -30, 30),
+        ParamAngleY: clamp(normalizeCentered(headPitch, -20, 20) * 30, -30, 30),
+        ParamAngleZ: clamp(normalizeCentered(headRoll, -25, 25) * 30, -30, 30),
+        ParamEyeLOpen: clamp(1 - channels.eyeBlinkLeft, 0, 1),
+        ParamEyeROpen: clamp(1 - channels.eyeBlinkRight, 0, 1),
+        ParamEyeBallX: clamp(channels.eye_gaze_x, -1, 1),
+        ParamEyeBallY: clamp(channels.eye_gaze_y, -1, 1),
+        ParamMouthOpenY: clamp(remapDeadzone(channels.jawOpen, 0.08, 0.85), 0, 1),
+        ParamMouthForm: clamp(
+          avg(channels.mouthSmileLeft, channels.mouthSmileRight) -
+          avg(channels.mouthFrownLeft, channels.mouthFrownRight),
+          -1,
+          1
+        ),
+        ParamBodyAngleX: clamp(normalizeCentered(headYaw, -25, 25) * 10 * 0.65, -10, 10),
+        ParamBodyAngleY: clamp(normalizeCentered(headPitch, -20, 20) * 10 * 0.45, -10, 10),
+        ParamBodyAngleZ: clamp(normalizeCentered(headRoll, -25, 25) * 10 * 0.5, -10, 10),
+        ParamBreath: clamp(0.5 + 0.5 * Math.sin(channels.time * Math.PI * 2), 0, 1)
+      };
+    }
+
+    function drawLandmarks(result) {
+      overlay.width = video.videoWidth || overlay.clientWidth;
+      overlay.height = video.videoHeight || overlay.clientHeight;
+      ctx.clearRect(0, 0, overlay.width, overlay.height);
+      const landmarks = result.faceLandmarks?.[0];
+      if (!landmarks) return;
+      ctx.fillStyle = "#1677ff";
+      for (const idx of [1, 10, 33, 61, 152, 263, 291]) {
+        const point = landmarks[idx];
+        if (!point) continue;
+        ctx.beginPath();
+        ctx.arc(point.x * overlay.width, point.y * overlay.height, 4, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+    function updateParams(outputs) {
+      for (const param of keyParams) {
+        const el = paramEls.get(param);
+        if (el) el.textContent = (outputs[param] ?? 0).toFixed(3);
+      }
+    }
+
+    async function loadLandmarker() {
+      if (landmarker) return landmarker;
+      topBadge.textContent = "모델 로딩";
+      const fileset = await FilesetResolver.forVisionTasks(
+        "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14/wasm"
+      );
+      landmarker = await FaceLandmarker.createFromOptions(fileset, {
+        baseOptions: {
+          modelAssetPath: "https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/latest/face_landmarker.task",
+          delegate: "CPU"
+        },
+        outputFaceBlendshapes: true,
+        outputFacialTransformationMatrixes: true,
+        runningMode: "VIDEO",
+        numFaces: 1
+      });
+      return landmarker;
+    }
+
+    async function startCamera() {
+      try {
+        await loadLandmarker();
+        stream = await navigator.mediaDevices.getUserMedia({
+          video: { facingMode: "user", width: { ideal: 1280 }, height: { ideal: 720 } },
+          audio: false
+        });
+        video.srcObject = stream;
+        await video.play();
+        cameraState.textContent = "켜짐";
+        topBadge.textContent = "추적 중";
+        startBtn.disabled = true;
+        calibrateBtn.disabled = false;
+        recordBtn.disabled = false;
+        running = true;
+        requestAnimationFrame(loop);
+      } catch (error) {
+        cameraState.textContent = "실패";
+        topBadge.textContent = "실패";
+        setLog(`카메라를 열 수 없습니다.\n${error.message}`, true);
+      }
+    }
+
+    async function calibrateNeutral() {
+      if (!latestRaw) {
+        setLog("얼굴이 인식된 뒤 다시 눌러주세요.", true);
+        return;
+      }
+      calibrated = false;
+      topBadge.textContent = "중립 측정";
+      const samples = [];
+      const started = performance.now();
+      while (performance.now() - started < 1600) {
+        if (latestRaw) samples.push(latestRaw);
+        await new Promise((resolve) => setTimeout(resolve, 60));
+      }
+      const mean = (key) => samples.reduce((acc, item) => acc + (item[key] ?? 0), 0) / Math.max(samples.length, 1);
+      neutral = {
+        head_yaw_raw: mean("head_yaw_raw"),
+        head_pitch_raw: mean("head_pitch_raw"),
+        head_roll_raw: mean("head_roll_raw"),
+        eye_gaze_x: mean("eye_gaze_x"),
+        eye_gaze_y: mean("eye_gaze_y")
+      };
+      calibrated = true;
+      topBadge.textContent = "중립 완료";
+      setLog("중립이 맞춰졌습니다. 이제 10초 저장을 눌러주세요.");
+    }
+
+    async function startRecording() {
+      if (!running) return;
+      if (!calibrated) {
+        await calibrateNeutral();
+      }
+      recordedFrames = [];
+      recording = true;
+      recordStart = performance.now();
+      recordBtn.disabled = true;
+      calibrateBtn.disabled = true;
+      topBadge.textContent = "저장 중";
+      setLog("10초 동안 좌우 고개, 깜빡임, 입 열기, 웃기, 시선 이동을 해주세요.");
+    }
+
+    async function finishRecording() {
+      recording = false;
+      recordBtn.disabled = false;
+      calibrateBtn.disabled = false;
+      recordMeter.style.width = "100%";
+      topBadge.textContent = "저장 처리";
+      const durationMs = recordedFrames.length
+        ? recordedFrames[recordedFrames.length - 1].t_ms - recordedFrames[0].t_ms
+        : 0;
+      const payload = {
+        probe_id: "T1_webcam_tracking_probe",
+        source: "built_in_laptop_webcam",
+        created_at_local: new Date().toISOString(),
+        calibrated,
+        neutral,
+        duration_ms: Math.round(durationMs),
+        frames: recordedFrames
+      };
+      try {
+        const response = await fetch("/save-report", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        const result = await response.json();
+        if (!response.ok) throw new Error(result.message ?? "save failed");
+        topBadge.textContent = result.status === "PASS" ? "PASS" : "FAIL";
+        setLog(JSON.stringify(result, null, 2), result.status !== "PASS");
+      } catch (error) {
+        topBadge.textContent = "저장 실패";
+        setLog(`리포트 저장 실패\n${error.message}`, true);
+      }
+    }
+
+    function loop(now) {
+      if (!running) return;
+      const result = landmarker.detectForVideo(video, now);
+      const channels = rawChannels(result, now);
+      latestRaw = channels;
+      const hasFace = Boolean(channels);
+      faceState.textContent = hasFace ? "인식됨" : "없음";
+      faceState.className = hasFace ? "good" : "bad";
+      drawLandmarks(result);
+      if (channels) {
+        lastOutputs = convert(channels);
+        updateParams(lastOutputs);
+      }
+      if (recording) {
+        const elapsed = now - recordStart;
+        recordMeter.style.width = `${clamp(elapsed / recordDuration, 0, 1) * 100}%`;
+        recordedFrames.push({
+          t_ms: Math.round(elapsed),
+          face_present: hasFace,
+          channels: channels ?? null,
+          outputs: hasFace ? lastOutputs : null
+        });
+        frameState.textContent = String(recordedFrames.length);
+        if (elapsed >= recordDuration) {
+          finishRecording();
+        }
+      }
+      requestAnimationFrame(loop);
+    }
+
+    startBtn.addEventListener("click", startCamera);
+    calibrateBtn.addEventListener("click", calibrateNeutral);
+    recordBtn.addEventListener("click", startRecording);
+    topBadge.textContent = "대기";
+  </script>
+</body>
+</html>

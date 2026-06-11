@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T03:06:33.731258+00:00",
+  "run": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence",
+  "project": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/mini_cubism_project_targeted",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "required_scenarios",
+      "status": "PASS",
+      "missing": []
+    },
+    {
+      "check": "angle_swing_gif_exists",
+      "status": "PASS",
+      "path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/angle_swing.gif"
+    },
+    {
+      "check": "eye_blink_gif_exists",
+      "status": "PASS",
+      "path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/eye_blink.gif"
+    },
+    {
+      "check": "mouth_talk_gif_exists",
+      "status": "PASS",
+      "path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/mouth_talk.gif"
+    },
+    {
+      "check": "hair_settle_gif_exists",
+      "status": "PASS",
+      "path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/gifs/hair_settle.gif"
+    },
+    {
+      "check": "mouth_keypose_exclusive_opacity",
+      "status": "PASS",
+      "messages": []
+    },
+    {
+      "check": "eye_open_half_closed_keyposes",
+      "status": "PASS",
+      "messages": []
+    },
+    {
+      "check": "spring_damper_profiles_active_and_settle",
+      "status": "PASS",
+      "active_profiles": [
+        "front_bang_light",
+        "front_side_lock_medium",
+        "side_hair_lower_slow",
+        "back_hair_heavy",
+        "back_hair_tip_slow",
+        "ribbon_tail_spring",
+        "choker_gem_fast",
+        "sleeve_frill_flutter",
+        "ear_small_secondary"
+      ],
+      "minimum_active_profiles": 6,
+      "physics_target_count": 26,
+      "minimum_physics_targets": 12,
+      "target_stats": {
+        "front_bang_light": {
+          "max_offset": 4.122070364811123,
+          "max_velocity": 0.7095490324977598
+        },
+        "front_side_lock_medium": {
+          "max_offset": 7.659481547939919,
+          "max_velocity": 1.3039962940945218
+        },
+        "side_hair_lower_slow": {
+          "max_offset": 23.664144413565268,
+          "max_velocity": 4.07252653971068
+        },
+        "back_hair_heavy": {
+          "max_offset": 23.92255025802146,
+          "max_velocity": 4.085450927267996
+        },
+        "back_hair_tip_slow": {
+          "max_offset": 27.732485944867513,
+          "max_velocity": 4.458958454261171
+        },
+        "ribbon_tail_spring": {
+          "max_offset": 13.897881427962464,
+          "max_velocity": 2.527863544799369
+        },
+        "choker_gem_fast": {
+          "max_offset": 10.441630947963374,
+          "max_velocity": 1.9967533709181402
+        },
+        "sleeve_frill_flutter": {
+          "max_offset": 9.240819116996693,
+          "max_velocity": 1.7207907732258254
+        },
+        "ear_small_secondary": {
+          "max_offset": 9.747285778650175,
+          "max_velocity": 1.8128735785032182
+        }
+      },
+      "messages": []
+    },
+    {
+      "check": "nonblank_and_in_canvas",
+      "status": "PASS",
+      "messages": []
+    }
+  ]
+}

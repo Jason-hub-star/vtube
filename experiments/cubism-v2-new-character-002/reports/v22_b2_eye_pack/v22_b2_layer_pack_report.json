@@ -1,0 +1,471 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T12:13:48.941309+00:00",
+  "report_id": "cubism-v2-new-character-002-v22-b2-eye-layer-pack-001",
+  "status": "B2_LAYER_PACK_CANDIDATE_READY_FOR_OVERLAY_QA_HUMAN_REVIEW_REQUIRED",
+  "raw_review_report": "experiments/cubism-v2-new-character-002/reports/v22_b2_eye_pack/v22_b2_eye_pack_review.json",
+  "b2_raw_image": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/raw_outputs/b2_eye_pack_reference_001.png",
+  "normalized_layers_dir": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers",
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b2_eye_pack/v22_b2_layer_pack_contact_sheet.png",
+  "overlay_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b2_eye_pack/v22_b2_layer_pack_overlay_qa.png",
+  "expected_outputs": [
+    "eye_L_white",
+    "eye_L_iris",
+    "eye_L_pupil",
+    "eye_L_highlight",
+    "eye_L_upper_lash",
+    "eye_L_lower_lash",
+    "eye_L_closed_lid",
+    "eye_R_white",
+    "eye_R_iris",
+    "eye_R_pupil",
+    "eye_R_highlight",
+    "eye_R_upper_lash",
+    "eye_R_lower_lash",
+    "eye_R_closed_lid",
+    "eye_open_reference",
+    "eye_half_closed_reference",
+    "eye_mostly_closed_reference",
+    "eye_closed_reference"
+  ],
+  "metrics": {
+    "eye_L_white": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_white.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        669,
+        637,
+        903,
+        725
+      ],
+      "alpha_coverage": 0.00388455,
+      "anchor_center": [
+        786.0,
+        681.0
+      ]
+    },
+    "eye_L_iris": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_iris.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        746,
+        640,
+        845,
+        731
+      ],
+      "alpha_coverage": 0.00101423,
+      "anchor_center": [
+        795.5,
+        685.5
+      ]
+    },
+    "eye_L_pupil": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_pupil.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        729,
+        633,
+        848,
+        750
+      ],
+      "alpha_coverage": 0.00119209,
+      "anchor_center": [
+        788.5,
+        691.5
+      ]
+    },
+    "eye_L_highlight": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_highlight.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        726,
+        610,
+        850,
+        750
+      ],
+      "alpha_coverage": 0.00082493,
+      "anchor_center": [
+        788.0,
+        680.0
+      ]
+    },
+    "eye_L_upper_lash": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_upper_lash.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        661,
+        627,
+        925,
+        734
+      ],
+      "alpha_coverage": 0.00190282,
+      "anchor_center": [
+        793.0,
+        680.5
+      ]
+    },
+    "eye_L_lower_lash": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_lower_lash.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        704,
+        692,
+        902,
+        762
+      ],
+      "alpha_coverage": 0.00045633,
+      "anchor_center": [
+        803.0,
+        727.0
+      ]
+    },
+    "eye_L_closed_lid": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_L_closed_lid.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        706,
+        713,
+        912,
+        745
+      ],
+      "alpha_coverage": 0.00076079,
+      "anchor_center": [
+        809.0,
+        729.0
+      ]
+    },
+    "eye_R_white": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_white.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1099,
+        637,
+        1333,
+        725
+      ],
+      "alpha_coverage": 0.00388455,
+      "anchor_center": [
+        1216.0,
+        681.0
+      ]
+    },
+    "eye_R_iris": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_iris.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1162,
+        641,
+        1256,
+        731
+      ],
+      "alpha_coverage": 0.00094867,
+      "anchor_center": [
+        1209.0,
+        686.0
+      ]
+    },
+    "eye_R_pupil": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_pupil.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1157,
+        634,
+        1280,
+        750
+      ],
+      "alpha_coverage": 0.00109196,
+      "anchor_center": [
+        1218.5,
+        692.0
+      ]
+    },
+    "eye_R_highlight": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_highlight.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1150,
+        610,
+        1280,
+        750
+      ],
+      "alpha_coverage": 0.00081873,
+      "anchor_center": [
+        1215.0,
+        680.0
+      ]
+    },
+    "eye_R_upper_lash": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_upper_lash.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1092,
+        630,
+        1355,
+        715
+      ],
+      "alpha_coverage": 0.00197911,
+      "anchor_center": [
+        1223.5,
+        672.5
+      ]
+    },
+    "eye_R_lower_lash": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_lower_lash.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1107,
+        692,
+        1332,
+        764
+      ],
+      "alpha_coverage": 0.00049138,
+      "anchor_center": [
+        1219.5,
+        728.0
+      ]
+    },
+    "eye_R_closed_lid": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_R_closed_lid.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        1087,
+        716,
+        1288,
+        747
+      ],
+      "alpha_coverage": 0.00076008,
+      "anchor_center": [
+        1187.5,
+        731.5
+      ]
+    },
+    "eye_open_reference": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_open_reference.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        709,
+        567,
+        1367,
+        804
+      ],
+      "alpha_coverage": 0.03461456,
+      "anchor_center": [
+        1038.0,
+        685.5
+      ]
+    },
+    "eye_half_closed_reference": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_half_closed_reference.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        709,
+        567,
+        1367,
+        812
+      ],
+      "alpha_coverage": 0.03577614,
+      "anchor_center": [
+        1038.0,
+        689.5
+      ]
+    },
+    "eye_mostly_closed_reference": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_mostly_closed_reference.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        709,
+        567,
+        1367,
+        812
+      ],
+      "alpha_coverage": 0.0370183,
+      "anchor_center": [
+        1038.0,
+        689.5
+      ]
+    },
+    "eye_closed_reference": {
+      "path": "experiments/cubism-v2-new-character-002/v22_b2_eye_pack/normalized_layers/eye_closed_reference.png",
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ],
+      "bbox": [
+        709,
+        583,
+        1367,
+        812
+      ],
+      "alpha_coverage": 0.03395367,
+      "anchor_center": [
+        1038.0,
+        697.5
+      ]
+    }
+  },
+  "anchor_checks": {
+    "L": {
+      "white_center": [
+        786.0,
+        681.0
+      ],
+      "iris_center": [
+        795.5,
+        685.5
+      ],
+      "pupil_center": [
+        788.5,
+        691.5
+      ],
+      "highlight_center": [
+        788.0,
+        680.0
+      ],
+      "status": "PASS_ANCHOR_LOCKED_SAME_TARGET"
+    },
+    "R": {
+      "white_center": [
+        1216.0,
+        681.0
+      ],
+      "iris_center": [
+        1209.0,
+        686.0
+      ],
+      "pupil_center": [
+        1218.5,
+        692.0
+      ],
+      "highlight_center": [
+        1215.0,
+        680.0
+      ],
+      "status": "PASS_ANCHOR_LOCKED_SAME_TARGET"
+    }
+  },
+  "forbidden_existing_eye_assets": [
+    {
+      "path": "experiments/cubism-v2-new-character-002/generated_eye_v19",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B2_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v14_eye_detail_inbetween_preview/mini_cubism_diagnostic_project/parts",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B2_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v15_eye_nose_position_preview/mini_cubism_diagnostic_project/parts",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B2_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v19_generated_eye_preview/mini_cubism_diagnostic_project/parts",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B2_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v20_manual_eye_anchor_preview/mini_cubism_diagnostic_project/parts",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B2_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v21_supported_rig_smoke_preview/mini_cubism_diagnostic_project/parts",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B2_INPUT"
+    }
+  ],
+  "decision": "Keep this B2 extraction as a full-canvas RGBA candidate only. It preserves the new generated eye sheet and same-target iris/pupil/highlight anchors, but visual overlay and 주인님 review are required before B2 material PASS.",
+  "limits": [
+    "RGB white-background sheet extraction can leave soft matte halos around lashes or skin context.",
+    "Iris, pupil, and highlight were split by color masks from one generated cluster and must be reviewed for visual drift after motion tests.",
+    "This does not activate Mini Cubism diagnostic and does not prove real Cubism rig success."
+  ],
+  "next_action": [
+    "Run overlay QA against the B1 clean-base sockets.",
+    "If visual QA accepts B2, continue to B3 mouth-pack generation without using existing mouth assets unless 주인님 explicitly allows them.",
+    "If B2 eye detail drifts, regenerate a new B2 sheet instead of importing v19/v20/v21 eye PNGs."
+  ],
+  "self_review": {
+    "raw_review_status": "B2_RAW_EYE_PACK_CANDIDATE_READY_FOR_EXTRACTION_HUMAN_REVIEW_REQUIRED",
+    "expected_output_count": 18,
+    "generated_output_count": 18,
+    "missing_output_count": 0,
+    "empty_output_count": 0,
+    "all_layers_rgba": true,
+    "all_layers_2048": true,
+    "forbidden_existing_eye_asset_count": 6,
+    "forbidden_assets_not_output_path": true,
+    "has_human_required_gate": true,
+    "status": "PASS"
+  }
+}

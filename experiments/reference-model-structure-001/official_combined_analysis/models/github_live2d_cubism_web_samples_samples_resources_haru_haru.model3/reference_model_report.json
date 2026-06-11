@@ -1,0 +1,411 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T15:27:25.825076+00:00",
+  "id": "github_live2d_cubism_web_samples_samples_resources_haru_haru.model3",
+  "name": "Haru",
+  "source_url": "https://github.com/Live2D/CubismWebSamples",
+  "source_type": "OFFICIAL_GITHUB_SAMPLE",
+  "license_status": "OFFICIAL_SDK_SAMPLE_TERMS_REVIEWED",
+  "analysis_mode": "RUNTIME_ONLY",
+  "official_profile_key": "haru",
+  "analysis_safety_notes": [],
+  "has_cmo3": false,
+  "has_moc3": true,
+  "has_model3_json": true,
+  "has_physics3_json": true,
+  "has_psd": false,
+  "local_paths": {
+    "exp3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F01.exp3.json",
+        "exists": true,
+        "size_bytes": 124
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F02.exp3.json",
+        "exists": true,
+        "size_bytes": 464
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F03.exp3.json",
+        "exists": true,
+        "size_bytes": 739
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F04.exp3.json",
+        "exists": true,
+        "size_bytes": 841
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F05.exp3.json",
+        "exists": true,
+        "size_bytes": 474
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F06.exp3.json",
+        "exists": true,
+        "size_bytes": 475
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F07.exp3.json",
+        "exists": true,
+        "size_bytes": 907
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/expressions/F08.exp3.json",
+        "exists": true,
+        "size_bytes": 421
+      }
+    ],
+    "motion3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/motions/haru_g_idle.motion3.json",
+        "exists": true,
+        "size_bytes": 21183
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/motions/haru_g_m15.motion3.json",
+        "exists": true,
+        "size_bytes": 13540
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/motions/haru_g_m26.motion3.json",
+        "exists": true,
+        "size_bytes": 23275
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/motions/haru_g_m06.motion3.json",
+        "exists": true,
+        "size_bytes": 15118
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/motions/haru_g_m20.motion3.json",
+        "exists": true,
+        "size_bytes": 23651
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/motions/haru_g_m09.motion3.json",
+        "exists": true,
+        "size_bytes": 25066
+      }
+    ],
+    "cdi3_json": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/Haru.cdi3.json",
+      "exists": true,
+      "size_bytes": 5536
+    },
+    "pose3_json": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/Haru.pose3.json",
+      "exists": true,
+      "size_bytes": 274
+    },
+    "model3_json": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/Haru.model3.json",
+      "exists": true,
+      "size_bytes": 2083
+    },
+    "moc3": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/Haru.moc3",
+      "exists": true,
+      "size_bytes": 384704
+    },
+    "physics3_json": {
+      "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/Haru.physics3.json",
+      "exists": true,
+      "size_bytes": 5914
+    }
+  },
+  "cmo3": {
+    "status": "NOT_REQUESTED"
+  },
+  "moc3": {
+    "present": true,
+    "path": "experiments/reference-model-structure-001/official_github_samples/repos/live2d_cubism_web_samples/Samples/Resources/Haru/Haru.moc3",
+    "size_bytes": 384704,
+    "sha256": "aa59f7a3dc3b30b23b5f10afd9192ed755e4d01dc9a12442d99b972a418e2543",
+    "py_moc3_status": "PASS",
+    "parameter_count": 42,
+    "art_mesh_count": 84,
+    "parameter_ids": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamTere",
+      "ParamFaceForm",
+      "ParamEyeLOpen",
+      "ParamEyeLSmile",
+      "ParamEyeROpen",
+      "ParamEyeRSmile",
+      "ParamEyeForm",
+      "ParamEyeBallForm",
+      "ParamTear",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamBrowLY",
+      "ParamBrowRY",
+      "ParamBrowLX",
+      "ParamBrowRX",
+      "ParamBrowLAngle",
+      "ParamBrowRAngle",
+      "ParamBrowLForm",
+      "ParamBrowRForm",
+      "ParamMouthForm",
+      "ParamMouthOpenY",
+      "ParamScarf",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBodyAngleZ",
+      "ParamBodyUpper",
+      "ParamBreath",
+      "ParamBustY",
+      "ParamArmLA",
+      "ParamArmRA",
+      "ParamArmLB",
+      "ParamArmRB",
+      "ParamHandChangeR",
+      "ParamHandAngleR",
+      "ParamHandDhangeL",
+      "ParamHandAngleL",
+      "ParamHairFront",
+      "ParamHairSide",
+      "ParamHairBack"
+    ],
+    "art_mesh_ids_sample": [
+      "D_PSD_20",
+      "D_PSD_18",
+      "D_PSD_19",
+      "D_PSD_71",
+      "D_PSD_81",
+      "D_PSD_23",
+      "D_PSD_22",
+      "D_PSD_17",
+      "D_PSD_67",
+      "D_PSD_21",
+      "D_PSD_10",
+      "D_PSD_09",
+      "D_PSD_08",
+      "D_PSD_13",
+      "D_PSD_12",
+      "D_PSD_11",
+      "D_PSD_16",
+      "D_PSD_15",
+      "D_PSD_14",
+      "D_PSD_05",
+      "D_PSD_02",
+      "D_PSD_01",
+      "D_PSD_00",
+      "D_PSD_27",
+      "D_PSD_26",
+      "D_PSD_25",
+      "D_PSD_24",
+      "D_PSD_07",
+      "D_PSD_06",
+      "D_PSD_70",
+      "D_PSD_68",
+      "D_PSD_73",
+      "D_PSD_72",
+      "D_PSD_69",
+      "D_PSD_66",
+      "D_PSD_65",
+      "D_PSD_64",
+      "D_PSD_63",
+      "D_PSD_03",
+      "D_PSD_77",
+      "D_PSD_76",
+      "D_PSD_78",
+      "D_PSD_74",
+      "D_PSD_75",
+      "D_PSD_29",
+      "D_PSD_28",
+      "D_PSD_34",
+      "D_PSD_33",
+      "D_PSD_32",
+      "D_PSD_31"
+    ]
+  },
+  "runtime_json": {
+    "model3": {
+      "present": true,
+      "version": 3,
+      "moc": "Haru.moc3",
+      "texture_count": 2,
+      "has_physics": true,
+      "has_pose": true,
+      "has_display_info": true,
+      "has_user_data": true,
+      "expression_count": 8,
+      "motion_group_count": 2,
+      "motion_count": 6,
+      "group_count": 2,
+      "parameter_ids": [
+        "ParamEyeLOpen",
+        "ParamEyeROpen",
+        "ParamMouthOpenY"
+      ],
+      "file_references": {
+        "Moc": "Haru.moc3",
+        "Textures": [
+          "Haru.2048/texture_00.png",
+          "Haru.2048/texture_01.png"
+        ],
+        "Physics": "Haru.physics3.json",
+        "Pose": "Haru.pose3.json",
+        "DisplayInfo": "Haru.cdi3.json",
+        "Expressions": [
+          {
+            "Name": "F01",
+            "File": "expressions/F01.exp3.json"
+          },
+          {
+            "Name": "F02",
+            "File": "expressions/F02.exp3.json"
+          },
+          {
+            "Name": "F03",
+            "File": "expressions/F03.exp3.json"
+          },
+          {
+            "Name": "F04",
+            "File": "expressions/F04.exp3.json"
+          },
+          {
+            "Name": "F05",
+            "File": "expressions/F05.exp3.json"
+          },
+          {
+            "Name": "F06",
+            "File": "expressions/F06.exp3.json"
+          },
+          {
+            "Name": "F07",
+            "File": "expressions/F07.exp3.json"
+          },
+          {
+            "Name": "F08",
+            "File": "expressions/F08.exp3.json"
+          }
+        ],
+        "Motions": {
+          "Idle": [
+            {
+              "File": "motions/haru_g_idle.motion3.json",
+              "FadeInTime": 0.5,
+              "FadeOutTime": 0.5
+            },
+            {
+              "File": "motions/haru_g_m15.motion3.json",
+              "FadeInTime": 0.5,
+              "FadeOutTime": 0.5
+            }
+          ],
+          "TapBody": [
+            {
+              "File": "motions/haru_g_m26.motion3.json",
+              "FadeInTime": 0.5,
+              "FadeOutTime": 0.5,
+              "Sound": "sounds/haru_talk_13.wav"
+            },
+            {
+              "File": "motions/haru_g_m06.motion3.json",
+              "FadeInTime": 0.5,
+              "FadeOutTime": 0.5,
+              "Sound": "sounds/haru_Info_14.wav"
+            },
+            {
+              "File": "motions/haru_g_m20.motion3.json",
+              "FadeInTime": 0.5,
+              "FadeOutTime": 0.5,
+              "Sound": "sounds/haru_normal_6.wav"
+            },
+            {
+              "File": "motions/haru_g_m09.motion3.json",
+              "FadeInTime": 0.5,
+              "FadeOutTime": 0.5,
+              "Sound": "sounds/haru_Info_04.wav"
+            }
+          ]
+        },
+        "UserData": "Haru.userdata3.json"
+      }
+    },
+    "physics3": {
+      "present": true,
+      "version": 3,
+      "physics_group_count": 4,
+      "physics_input_count": 14,
+      "physics_output_count": 4,
+      "physics_vertex_count": 8,
+      "groups": [
+        {
+          "index": 0,
+          "id": "PhysicsSetting1",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 1,
+          "id": "PhysicsSetting2",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 2,
+          "id": "PhysicsSetting3",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 3,
+          "id": "PhysicsSetting4",
+          "input_count": 2,
+          "output_count": 1,
+          "vertex_count": 2
+        }
+      ]
+    },
+    "cdi3": {
+      "present": true,
+      "parameter_display_count": 42,
+      "part_display_count": 20
+    },
+    "motion3_count": 6,
+    "exp3_count": 8,
+    "pose3_present": true,
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 84,
+    "parts": 0,
+    "parameters": 42,
+    "warp_deformers": 0,
+    "rotation_deformers": 0,
+    "keyform_bindings": 0,
+    "keyform_grids": 0,
+    "glue": 0,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": false,
+    "pose": true,
+    "expression": true,
+    "motion": true,
+    "physics": true
+  },
+  "structure_hints": {
+    "hair": 1,
+    "eye": 1,
+    "mouth": 1,
+    "body": 2,
+    "arm": 2
+  },
+  "reuse_decision": "REFERENCE_ONLY",
+  "notes": [
+    "Official Live2D Cubism Web SDK samples. Runtime resources only.",
+    "Runtime-only structural analysis; do not reuse art, textures, or character designs."
+  ],
+  "structure_report_path": null
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "validated_at": "2026-06-09T08:06:37.964131+00:00",
+  "project": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v16_whole_eyeball_preview/mini_cubism_diagnostic_project",
+  "status": "PASS",
+  "counts": {
+    "parts": 36,
+    "meshes": 36,
+    "deformers": 6,
+    "parameters": 7,
+    "keyform_bindings": 39,
+    "glue": 0
+  }
+}

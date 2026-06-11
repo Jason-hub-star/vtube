@@ -1,0 +1,1995 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T15:27:42.509429+00:00",
+  "source_url": "https://www.live2d.com/ko/learn/sample/",
+  "model_report_count": 57,
+  "sections": {
+    "eye": [
+      {
+        "profile_key": "epsilon",
+        "model": "Epsilon",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "standard easy-to-use model",
+          "expression effects"
+        ],
+        "measured_structure_values": {
+          "model_count": 1,
+          "art_meshes_max": 73,
+          "parameters_max": 37,
+          "warp_deformers_max": 51,
+          "rotation_deformers_max": 12,
+          "keyform_bindings_max": 169,
+          "physics_groups_max": 2,
+          "physics_inputs_max": 8,
+          "physics_outputs_max": 4,
+          "motion_count_total": 15,
+          "expression_count_total": 8,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "epsilon_epsilon_t02"
+          ]
+        },
+        "source_note": "Official page describes Epsilon as a standard easy-to-use model with expression effects."
+      },
+      {
+        "profile_key": "hiyori",
+        "model": "Momose Hiyori",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "standard Cubism 3.0 model",
+          "deformer structure",
+          "parameter structure",
+          "hair skinning"
+        ],
+        "measured_structure_values": {
+          "model_count": 4,
+          "art_meshes_max": 149,
+          "parameters_max": 78,
+          "warp_deformers_max": 62,
+          "rotation_deformers_max": 56,
+          "keyform_bindings_max": 382,
+          "physics_groups_max": 11,
+          "physics_inputs_max": 34,
+          "physics_outputs_max": 35,
+          "motion_count_total": 30,
+          "expression_count_total": 0,
+          "pose_count": 3,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 2,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori.model3",
+            "github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori.model3",
+            "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+            "hiyori_pro_ko_hiyori_pro_t11"
+          ]
+        },
+        "source_note": "Official page describes Hiyori as a standard model for learning deformer and parameter structure, with hair skinning."
+      },
+      {
+        "profile_key": "mao",
+        "model": "Niziiro Mao",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "blend shapes",
+          "multiply and screen color",
+          "mouth, eyebrow, and hair additive shape differences",
+          "wide face motion range"
+        ],
+        "measured_structure_values": {
+          "model_count": 3,
+          "art_meshes_max": 262,
+          "parameters_max": 132,
+          "warp_deformers_max": 116,
+          "rotation_deformers_max": 59,
+          "keyform_bindings_max": 497,
+          "physics_groups_max": 16,
+          "physics_inputs_max": 43,
+          "physics_outputs_max": 20,
+          "motion_count_total": 23,
+          "expression_count_total": 24,
+          "pose_count": 3,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 1,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_mao_mao.model3",
+            "github_live2d_cubism_web_samples_samples_resources_mao_mao.model3",
+            "mao_pro_ko_mao_pro_t06"
+          ]
+        },
+        "source_note": "Official page describes blend shapes for mouth, eyebrow, and hair swing, plus a wide face range."
+      },
+      {
+        "profile_key": "mark",
+        "model": "Mark-kun",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "simple deformer structure",
+          "simple parameter structure",
+          "physics",
+          "eye blink",
+          "PSD availability"
+        ],
+        "measured_structure_values": {
+          "model_count": 3,
+          "art_meshes_max": 33,
+          "parameters_max": 27,
+          "warp_deformers_max": 26,
+          "rotation_deformers_max": 13,
+          "keyform_bindings_max": 90,
+          "physics_groups_max": 1,
+          "physics_inputs_max": 4,
+          "physics_outputs_max": 3,
+          "motion_count_total": 12,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_mark_mark.model3",
+            "github_live2d_cubism_web_samples_samples_resources_mark_mark.model3",
+            "mark_movie_pro_ko_mark_movie_pro_t02"
+          ]
+        },
+        "source_note": "Official page describes Mark-kun as a simple beginner model with physics, blinking, SDK introduction, and PSD availability."
+      },
+      {
+        "profile_key": "tsumiki",
+        "model": "Tsumiki",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "eyelid clipping mask",
+          "standard avatar motion"
+        ],
+        "measured_structure_values": {
+          "model_count": 1,
+          "art_meshes_max": 89,
+          "parameters_max": 46,
+          "warp_deformers_max": 67,
+          "rotation_deformers_max": 22,
+          "keyform_bindings_max": 240,
+          "physics_groups_max": 7,
+          "physics_inputs_max": 22,
+          "physics_outputs_max": 9,
+          "motion_count_total": 23,
+          "expression_count_total": 10,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "tsumiki_tsumiki_t01"
+          ]
+        },
+        "source_note": "Official page groups Tsumiki with eyelid clipping-mask learning value."
+      },
+      {
+        "profile_key": "unitychan",
+        "model": "Unity-chan",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "eyelid clipping mask",
+          "PSD layer reference",
+          "deformed character model"
+        ],
+        "measured_structure_values": {
+          "model_count": 1,
+          "art_meshes_max": 70,
+          "parameters_max": 39,
+          "warp_deformers_max": 40,
+          "rotation_deformers_max": 15,
+          "keyform_bindings_max": 140,
+          "physics_groups_max": 3,
+          "physics_inputs_max": 12,
+          "physics_outputs_max": 3,
+          "motion_count_total": 16,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 2,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "unitychan_unitychan_t01"
+          ]
+        },
+        "source_note": "Official page describes eyelid clipping masks and includes a PSD, with separate Unity-chan license rules."
+      }
+    ],
+    "mouth": [
+      {
+        "profile_key": "epsilon",
+        "model": "Epsilon",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "standard easy-to-use model",
+          "expression effects"
+        ],
+        "measured_structure_values": {
+          "model_count": 1,
+          "art_meshes_max": 73,
+          "parameters_max": 37,
+          "warp_deformers_max": 51,
+          "rotation_deformers_max": 12,
+          "keyform_bindings_max": 169,
+          "physics_groups_max": 2,
+          "physics_inputs_max": 8,
+          "physics_outputs_max": 4,
+          "motion_count_total": 15,
+          "expression_count_total": 8,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "epsilon_epsilon_t02"
+          ]
+        },
+        "source_note": "Official page describes Epsilon as a standard easy-to-use model with expression effects."
+      },
+      {
+        "profile_key": "hiyori",
+        "model": "Momose Hiyori",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "standard Cubism 3.0 model",
+          "deformer structure",
+          "parameter structure",
+          "hair skinning"
+        ],
+        "measured_structure_values": {
+          "model_count": 4,
+          "art_meshes_max": 149,
+          "parameters_max": 78,
+          "warp_deformers_max": 62,
+          "rotation_deformers_max": 56,
+          "keyform_bindings_max": 382,
+          "physics_groups_max": 11,
+          "physics_inputs_max": 34,
+          "physics_outputs_max": 35,
+          "motion_count_total": 30,
+          "expression_count_total": 0,
+          "pose_count": 3,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 2,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori.model3",
+            "github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori.model3",
+            "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+            "hiyori_pro_ko_hiyori_pro_t11"
+          ]
+        },
+        "source_note": "Official page describes Hiyori as a standard model for learning deformer and parameter structure, with hair skinning."
+      },
+      {
+        "profile_key": "kei",
+        "model": "Kei",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "motion sync",
+          "lip-sync presets",
+          "mouth parameter composition"
+        ],
+        "measured_structure_values": {
+          "model_count": 2,
+          "art_meshes_max": 61,
+          "parameters_max": 31,
+          "warp_deformers_max": 47,
+          "rotation_deformers_max": 2,
+          "keyform_bindings_max": 150,
+          "physics_groups_max": 6,
+          "physics_inputs_max": 18,
+          "physics_outputs_max": 7,
+          "motion_count_total": 8,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 2,
+          "example_models": [
+            "kei_ko_kei_basic_free_t02",
+            "kei_ko_kei_vowels_pro_t02"
+          ]
+        },
+        "source_note": "Official page describes Kei as a motion-sync/lip-sync sample with preset-compatible mouth parameters."
+      },
+      {
+        "profile_key": "mao",
+        "model": "Niziiro Mao",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "blend shapes",
+          "multiply and screen color",
+          "mouth, eyebrow, and hair additive shape differences",
+          "wide face motion range"
+        ],
+        "measured_structure_values": {
+          "model_count": 3,
+          "art_meshes_max": 262,
+          "parameters_max": 132,
+          "warp_deformers_max": 116,
+          "rotation_deformers_max": 59,
+          "keyform_bindings_max": 497,
+          "physics_groups_max": 16,
+          "physics_inputs_max": 43,
+          "physics_outputs_max": 20,
+          "motion_count_total": 23,
+          "expression_count_total": 24,
+          "pose_count": 3,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 1,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_mao_mao.model3",
+            "github_live2d_cubism_web_samples_samples_resources_mao_mao.model3",
+            "mao_pro_ko_mao_pro_t06"
+          ]
+        },
+        "source_note": "Official page describes blend shapes for mouth, eyebrow, and hair swing, plus a wide face range."
+      },
+      {
+        "profile_key": "mark",
+        "model": "Mark-kun",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "simple deformer structure",
+          "simple parameter structure",
+          "physics",
+          "eye blink",
+          "PSD availability"
+        ],
+        "measured_structure_values": {
+          "model_count": 3,
+          "art_meshes_max": 33,
+          "parameters_max": 27,
+          "warp_deformers_max": 26,
+          "rotation_deformers_max": 13,
+          "keyform_bindings_max": 90,
+          "physics_groups_max": 1,
+          "physics_inputs_max": 4,
+          "physics_outputs_max": 3,
+          "motion_count_total": 12,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_mark_mark.model3",
+            "github_live2d_cubism_web_samples_samples_resources_mark_mark.model3",
+            "mark_movie_pro_ko_mark_movie_pro_t02"
+          ]
+        },
+        "source_note": "Official page describes Mark-kun as a simple beginner model with physics, blinking, SDK introduction, and PSD availability."
+      },
+      {
+        "profile_key": "nito",
+        "model": "Nito",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "two-head character",
+          "multiple variants in one model",
+          "large mouth expression",
+          "limbless comical motion"
+        ],
+        "measured_structure_values": {
+          "model_count": 5,
+          "art_meshes_max": 299,
+          "parameters_max": 66,
+          "warp_deformers_max": 137,
+          "rotation_deformers_max": 145,
+          "keyform_bindings_max": 559,
+          "physics_groups_max": 0,
+          "physics_inputs_max": 0,
+          "physics_outputs_max": 0,
+          "motion_count_total": 105,
+          "expression_count_total": 0,
+          "pose_count": 5,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "nito_ni-j.model3_runtime",
+            "nito_nico.model3_runtime",
+            "nito_nietzsche.model3_runtime",
+            "nito_nipsilon.model3_runtime",
+            "nito_nito_t01"
+          ]
+        },
+        "source_note": "Official page describes Nito as a two-head character with multiple variants, large mouth expressions, and comical limb motion."
+      }
+    ],
+    "hair": [
+      {
+        "profile_key": "hiyori",
+        "model": "Momose Hiyori",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "standard Cubism 3.0 model",
+          "deformer structure",
+          "parameter structure",
+          "hair skinning"
+        ],
+        "measured_structure_values": {
+          "model_count": 4,
+          "art_meshes_max": 149,
+          "parameters_max": 78,
+          "warp_deformers_max": 62,
+          "rotation_deformers_max": 56,
+          "keyform_bindings_max": 382,
+          "physics_groups_max": 11,
+          "physics_inputs_max": 34,
+          "physics_outputs_max": 35,
+          "motion_count_total": 30,
+          "expression_count_total": 0,
+          "pose_count": 3,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 2,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori.model3",
+            "github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori.model3",
+            "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+            "hiyori_pro_ko_hiyori_pro_t11"
+          ]
+        },
+        "source_note": "Official page describes Hiyori as a standard model for learning deformer and parameter structure, with hair skinning."
+      },
+      {
+        "profile_key": "mao",
+        "model": "Niziiro Mao",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "blend shapes",
+          "multiply and screen color",
+          "mouth, eyebrow, and hair additive shape differences",
+          "wide face motion range"
+        ],
+        "measured_structure_values": {
+          "model_count": 3,
+          "art_meshes_max": 262,
+          "parameters_max": 132,
+          "warp_deformers_max": 116,
+          "rotation_deformers_max": 59,
+          "keyform_bindings_max": 497,
+          "physics_groups_max": 16,
+          "physics_inputs_max": 43,
+          "physics_outputs_max": 20,
+          "motion_count_total": 23,
+          "expression_count_total": 24,
+          "pose_count": 3,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 1,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_mao_mao.model3",
+            "github_live2d_cubism_web_samples_samples_resources_mao_mao.model3",
+            "mao_pro_ko_mao_pro_t06"
+          ]
+        },
+        "source_note": "Official page describes blend shapes for mouth, eyebrow, and hair swing, plus a wide face range."
+      },
+      {
+        "profile_key": "miku",
+        "model": "Hatsune Miku",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "twin-tail hair skinning",
+          "smooth long hair motion"
+        ],
+        "measured_structure_values": {
+          "model_count": 1,
+          "art_meshes_max": 116,
+          "parameters_max": 59,
+          "warp_deformers_max": 27,
+          "rotation_deformers_max": 38,
+          "keyform_bindings_max": 233,
+          "physics_groups_max": 13,
+          "physics_inputs_max": 37,
+          "physics_outputs_max": 51,
+          "motion_count_total": 8,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 1,
+          "example_models": [
+            "miku_pro_jp_miku_sample_t05"
+          ]
+        },
+        "source_note": "Official page describes Miku as a sample where twin-tail hair moves smoothly through skinning. Character/art style is not reusable."
+      },
+      {
+        "profile_key": "rice",
+        "model": "Rice Glassfield",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "extended interpolation",
+          "inverted mask",
+          "forelock and fire effects"
+        ],
+        "measured_structure_values": {
+          "model_count": 5,
+          "art_meshes_max": 183,
+          "parameters_max": 96,
+          "warp_deformers_max": 58,
+          "rotation_deformers_max": 85,
+          "keyform_bindings_max": 306,
+          "physics_groups_max": 9,
+          "physics_inputs_max": 32,
+          "physics_outputs_max": 42,
+          "motion_count_total": 16,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 2,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_rice_rice.model3",
+            "github_live2d_cubism_web_samples_samples_resources_rice_rice.model3",
+            "github_live2d_garage_cubism_web_ar_sample_assets_models_rice_rice.model3",
+            "param_ctrl_pro_ko_rice_pc_pro_t02",
+            "rice_pro_ko_rice_pro_t03"
+          ]
+        },
+        "source_note": "Official page describes Rice as useful for extended interpolation and inverted-mask expression such as forelock and fire."
+      }
+    ],
+    "body_angle": [
+      {
+        "profile_key": "chitose",
+        "model": "Chitose",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "male avatar model",
+          "right-arm switching",
+          "handwave motion"
+        ],
+        "measured_structure_values": {
+          "model_count": 1,
+          "art_meshes_max": 79,
+          "parameters_max": 33,
+          "warp_deformers_max": 54,
+          "rotation_deformers_max": 13,
+          "keyform_bindings_max": 175,
+          "physics_groups_max": 2,
+          "physics_inputs_max": 8,
+          "physics_outputs_max": 2,
+          "motion_count_total": 4,
+          "expression_count_total": 7,
+          "pose_count": 1,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "chitose_chitose_t01"
+          ]
+        },
+        "source_note": "Official page describes Chitose as a male model with right-arm switching for waving."
+      },
+      {
+        "profile_key": "haru",
+        "model": "Haru",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "arm switching",
+          "clothing changes",
+          "voice and expression testing",
+          "overall Live2D feature test"
+        ],
+        "measured_structure_values": {
+          "model_count": 3,
+          "art_meshes_max": 114,
+          "parameters_max": 42,
+          "warp_deformers_max": 53,
+          "rotation_deformers_max": 34,
+          "keyform_bindings_max": 267,
+          "physics_groups_max": 4,
+          "physics_inputs_max": 14,
+          "physics_outputs_max": 4,
+          "motion_count_total": 35,
+          "expression_count_total": 24,
+          "pose_count": 3,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_haru_haru.model3",
+            "github_live2d_cubism_web_samples_samples_resources_haru_haru.model3",
+            "haru_haru_t01"
+          ]
+        },
+        "source_note": "Official page describes Haru as supporting arm switching and clothing changes with voice files."
+      },
+      {
+        "profile_key": "hiyori",
+        "model": "Momose Hiyori",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "standard Cubism 3.0 model",
+          "deformer structure",
+          "parameter structure",
+          "hair skinning"
+        ],
+        "measured_structure_values": {
+          "model_count": 4,
+          "art_meshes_max": 149,
+          "parameters_max": 78,
+          "warp_deformers_max": 62,
+          "rotation_deformers_max": 56,
+          "keyform_bindings_max": 382,
+          "physics_groups_max": 11,
+          "physics_inputs_max": 34,
+          "physics_outputs_max": 35,
+          "motion_count_total": 30,
+          "expression_count_total": 0,
+          "pose_count": 3,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 2,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori.model3",
+            "github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori.model3",
+            "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+            "hiyori_pro_ko_hiyori_pro_t11"
+          ]
+        },
+        "source_note": "Official page describes Hiyori as a standard model for learning deformer and parameter structure, with hair skinning."
+      },
+      {
+        "profile_key": "izumi",
+        "model": "Izumi",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "multiple art styles",
+          "oblique source pose",
+          "opposite-facing motion"
+        ],
+        "measured_structure_values": {
+          "model_count": 4,
+          "art_meshes_max": 77,
+          "parameters_max": 30,
+          "warp_deformers_max": 39,
+          "rotation_deformers_max": 6,
+          "keyform_bindings_max": 171,
+          "physics_groups_max": 3,
+          "physics_inputs_max": 12,
+          "physics_outputs_max": 3,
+          "motion_count_total": 40,
+          "expression_count_total": 28,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "izumi_izumi_anime_t01",
+            "izumi_izumi_atsu_t01",
+            "izumi_izumi_illust_t01",
+            "izumi_izumi_suisai_t01"
+          ]
+        },
+        "source_note": "Official page describes four texture styles and motion from an oblique original pose toward the opposite direction."
+      },
+      {
+        "profile_key": "mao",
+        "model": "Niziiro Mao",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "blend shapes",
+          "multiply and screen color",
+          "mouth, eyebrow, and hair additive shape differences",
+          "wide face motion range"
+        ],
+        "measured_structure_values": {
+          "model_count": 3,
+          "art_meshes_max": 262,
+          "parameters_max": 132,
+          "warp_deformers_max": 116,
+          "rotation_deformers_max": 59,
+          "keyform_bindings_max": 497,
+          "physics_groups_max": 16,
+          "physics_inputs_max": 43,
+          "physics_outputs_max": 20,
+          "motion_count_total": 23,
+          "expression_count_total": 24,
+          "pose_count": 3,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 1,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_mao_mao.model3",
+            "github_live2d_cubism_web_samples_samples_resources_mao_mao.model3",
+            "mao_pro_ko_mao_pro_t06"
+          ]
+        },
+        "source_note": "Official page describes blend shapes for mouth, eyebrow, and hair swing, plus a wide face range."
+      },
+      {
+        "profile_key": "miara",
+        "model": "Miara",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "full-body avatar",
+          "voice motion",
+          "physics baseline"
+        ],
+        "measured_structure_values": {
+          "model_count": 1,
+          "art_meshes_max": 245,
+          "parameters_max": 138,
+          "warp_deformers_max": 93,
+          "rotation_deformers_max": 107,
+          "keyform_bindings_max": 467,
+          "physics_groups_max": 19,
+          "physics_inputs_max": 82,
+          "physics_outputs_max": 63,
+          "motion_count_total": 3,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 1,
+          "example_models": [
+            "miara_pro_en_miara_pro_t04"
+          ]
+        },
+        "source_note": "Official sample includes CMO3, runtime, motion, and physics; use as secondary full-body baseline."
+      },
+      {
+        "profile_key": "param_ctrl",
+        "model": "Parameter Controller Sample",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "parameter controller",
+          "target following",
+          "animation efficiency"
+        ],
+        "measured_structure_values": {
+          "model_count": 2,
+          "art_meshes_max": 3,
+          "parameters_max": 27,
+          "warp_deformers_max": 0,
+          "rotation_deformers_max": 1,
+          "keyform_bindings_max": 2,
+          "physics_groups_max": 0,
+          "physics_inputs_max": 0,
+          "physics_outputs_max": 0,
+          "motion_count_total": 0,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "param_ctrl_pro_ko_seesaw_pc_pro_t02",
+            "param_ctrl_pro_ko_target_pc_pro_t02"
+          ]
+        },
+        "source_note": "Official page describes parameter controller target-following for animation production."
+      },
+      {
+        "profile_key": "ren",
+        "model": "Ren Foster",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "Cubism 5.3 rich drawing",
+          "alpha blend masks",
+          "offscreen rendering",
+          "high-spec avatar expression"
+        ],
+        "measured_structure_values": {
+          "model_count": 3,
+          "art_meshes_max": 201,
+          "parameters_max": 73,
+          "warp_deformers_max": 128,
+          "rotation_deformers_max": 22,
+          "keyform_bindings_max": 470,
+          "physics_groups_max": 16,
+          "physics_inputs_max": 33,
+          "physics_outputs_max": 20,
+          "motion_count_total": 9,
+          "expression_count_total": 15,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 1,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_ren_ren.model3",
+            "github_live2d_cubism_web_samples_samples_resources_ren_ren.model3",
+            "ren_pro_ko_ren_t01"
+          ]
+        },
+        "source_note": "Official page describes this as a Cubism 5.3 rich rendering sample using alpha blend masks and offscreen rendering."
+      }
+    ],
+    "physics": [
+      {
+        "profile_key": "haru",
+        "model": "Haru",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "arm switching",
+          "clothing changes",
+          "voice and expression testing",
+          "overall Live2D feature test"
+        ],
+        "measured_structure_values": {
+          "model_count": 3,
+          "art_meshes_max": 114,
+          "parameters_max": 42,
+          "warp_deformers_max": 53,
+          "rotation_deformers_max": 34,
+          "keyform_bindings_max": 267,
+          "physics_groups_max": 4,
+          "physics_inputs_max": 14,
+          "physics_outputs_max": 4,
+          "motion_count_total": 35,
+          "expression_count_total": 24,
+          "pose_count": 3,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_haru_haru.model3",
+            "github_live2d_cubism_web_samples_samples_resources_haru_haru.model3",
+            "haru_haru_t01"
+          ]
+        },
+        "source_note": "Official page describes Haru as supporting arm switching and clothing changes with voice files."
+      },
+      {
+        "profile_key": "hiyori",
+        "model": "Momose Hiyori",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "standard Cubism 3.0 model",
+          "deformer structure",
+          "parameter structure",
+          "hair skinning"
+        ],
+        "measured_structure_values": {
+          "model_count": 4,
+          "art_meshes_max": 149,
+          "parameters_max": 78,
+          "warp_deformers_max": 62,
+          "rotation_deformers_max": 56,
+          "keyform_bindings_max": 382,
+          "physics_groups_max": 11,
+          "physics_inputs_max": 34,
+          "physics_outputs_max": 35,
+          "motion_count_total": 30,
+          "expression_count_total": 0,
+          "pose_count": 3,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 2,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori.model3",
+            "github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori.model3",
+            "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+            "hiyori_pro_ko_hiyori_pro_t11"
+          ]
+        },
+        "source_note": "Official page describes Hiyori as a standard model for learning deformer and parameter structure, with hair skinning."
+      },
+      {
+        "profile_key": "kei",
+        "model": "Kei",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "motion sync",
+          "lip-sync presets",
+          "mouth parameter composition"
+        ],
+        "measured_structure_values": {
+          "model_count": 2,
+          "art_meshes_max": 61,
+          "parameters_max": 31,
+          "warp_deformers_max": 47,
+          "rotation_deformers_max": 2,
+          "keyform_bindings_max": 150,
+          "physics_groups_max": 6,
+          "physics_inputs_max": 18,
+          "physics_outputs_max": 7,
+          "motion_count_total": 8,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 2,
+          "example_models": [
+            "kei_ko_kei_basic_free_t02",
+            "kei_ko_kei_vowels_pro_t02"
+          ]
+        },
+        "source_note": "Official page describes Kei as a motion-sync/lip-sync sample with preset-compatible mouth parameters."
+      },
+      {
+        "profile_key": "mark",
+        "model": "Mark-kun",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "simple deformer structure",
+          "simple parameter structure",
+          "physics",
+          "eye blink",
+          "PSD availability"
+        ],
+        "measured_structure_values": {
+          "model_count": 3,
+          "art_meshes_max": 33,
+          "parameters_max": 27,
+          "warp_deformers_max": 26,
+          "rotation_deformers_max": 13,
+          "keyform_bindings_max": 90,
+          "physics_groups_max": 1,
+          "physics_inputs_max": 4,
+          "physics_outputs_max": 3,
+          "motion_count_total": 12,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_mark_mark.model3",
+            "github_live2d_cubism_web_samples_samples_resources_mark_mark.model3",
+            "mark_movie_pro_ko_mark_movie_pro_t02"
+          ]
+        },
+        "source_note": "Official page describes Mark-kun as a simple beginner model with physics, blinking, SDK introduction, and PSD availability."
+      },
+      {
+        "profile_key": "miara",
+        "model": "Miara",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "full-body avatar",
+          "voice motion",
+          "physics baseline"
+        ],
+        "measured_structure_values": {
+          "model_count": 1,
+          "art_meshes_max": 245,
+          "parameters_max": 138,
+          "warp_deformers_max": 93,
+          "rotation_deformers_max": 107,
+          "keyform_bindings_max": 467,
+          "physics_groups_max": 19,
+          "physics_inputs_max": 82,
+          "physics_outputs_max": 63,
+          "motion_count_total": 3,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 1,
+          "example_models": [
+            "miara_pro_en_miara_pro_t04"
+          ]
+        },
+        "source_note": "Official sample includes CMO3, runtime, motion, and physics; use as secondary full-body baseline."
+      },
+      {
+        "profile_key": "miku",
+        "model": "Hatsune Miku",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "twin-tail hair skinning",
+          "smooth long hair motion"
+        ],
+        "measured_structure_values": {
+          "model_count": 1,
+          "art_meshes_max": 116,
+          "parameters_max": 59,
+          "warp_deformers_max": 27,
+          "rotation_deformers_max": 38,
+          "keyform_bindings_max": 233,
+          "physics_groups_max": 13,
+          "physics_inputs_max": 37,
+          "physics_outputs_max": 51,
+          "motion_count_total": 8,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 1,
+          "example_models": [
+            "miku_pro_jp_miku_sample_t05"
+          ]
+        },
+        "source_note": "Official page describes Miku as a sample where twin-tail hair moves smoothly through skinning. Character/art style is not reusable."
+      },
+      {
+        "profile_key": "natori",
+        "model": "Natori",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "expressions",
+          "pose",
+          "motion baseline",
+          "physics baseline"
+        ],
+        "measured_structure_values": {
+          "model_count": 3,
+          "art_meshes_max": 176,
+          "parameters_max": 96,
+          "warp_deformers_max": 128,
+          "rotation_deformers_max": 52,
+          "keyform_bindings_max": 407,
+          "physics_groups_max": 11,
+          "physics_inputs_max": 34,
+          "physics_outputs_max": 12,
+          "motion_count_total": 24,
+          "expression_count_total": 33,
+          "pose_count": 3,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 1,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_natori_natori.model3",
+            "github_live2d_cubism_web_samples_samples_resources_natori_natori.model3",
+            "natori_pro_ko_natori_pro_t06"
+          ]
+        },
+        "source_note": "Official sample includes many expressions, pose data, motions, and physics."
+      },
+      {
+        "profile_key": "ren",
+        "model": "Ren Foster",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "Cubism 5.3 rich drawing",
+          "alpha blend masks",
+          "offscreen rendering",
+          "high-spec avatar expression"
+        ],
+        "measured_structure_values": {
+          "model_count": 3,
+          "art_meshes_max": 201,
+          "parameters_max": 73,
+          "warp_deformers_max": 128,
+          "rotation_deformers_max": 22,
+          "keyform_bindings_max": 470,
+          "physics_groups_max": 16,
+          "physics_inputs_max": 33,
+          "physics_outputs_max": 20,
+          "motion_count_total": 9,
+          "expression_count_total": 15,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 1,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_ren_ren.model3",
+            "github_live2d_cubism_web_samples_samples_resources_ren_ren.model3",
+            "ren_pro_ko_ren_t01"
+          ]
+        },
+        "source_note": "Official page describes this as a Cubism 5.3 rich rendering sample using alpha blend masks and offscreen rendering."
+      },
+      {
+        "profile_key": "shizuku",
+        "model": "Shizuku",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "legacy sample structure",
+          "pose and physics baseline"
+        ],
+        "measured_structure_values": {
+          "model_count": 1,
+          "art_meshes_max": 187,
+          "parameters_max": 45,
+          "warp_deformers_max": 156,
+          "rotation_deformers_max": 27,
+          "keyform_bindings_max": 358,
+          "physics_groups_max": 3,
+          "physics_inputs_max": 6,
+          "physics_outputs_max": 5,
+          "motion_count_total": 4,
+          "expression_count_total": 0,
+          "pose_count": 1,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "shizuku_shizuku_t02"
+          ]
+        },
+        "source_note": "Official sample includes runtime, motion, pose, and physics; use as secondary baseline only."
+      },
+      {
+        "profile_key": "wanko",
+        "model": "Wanko",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "touch motions",
+          "non-human avatar runtime",
+          "physics baseline"
+        ],
+        "measured_structure_values": {
+          "model_count": 3,
+          "art_meshes_max": 78,
+          "parameters_max": 25,
+          "warp_deformers_max": 28,
+          "rotation_deformers_max": 6,
+          "keyform_bindings_max": 85,
+          "physics_groups_max": 4,
+          "physics_inputs_max": 14,
+          "physics_outputs_max": 4,
+          "motion_count_total": 22,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_wanko_wanko.model3",
+            "github_live2d_cubism_web_samples_samples_resources_wanko_wanko.model3",
+            "wanko_wanko_touch_t01"
+          ]
+        },
+        "source_note": "Official sample includes touch/idle motions and physics; useful as non-human contrast only."
+      }
+    ],
+    "mask": [
+      {
+        "profile_key": "gantzert_felixander",
+        "model": "Gantzert & Felixander",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "additive drawing effects",
+          "many clipping expressions",
+          "right hand, dragon wings, thunder and fire reflection"
+        ],
+        "measured_structure_values": {
+          "model_count": 1,
+          "art_meshes_max": 249,
+          "parameters_max": 74,
+          "warp_deformers_max": 52,
+          "rotation_deformers_max": 38,
+          "keyform_bindings_max": 537,
+          "physics_groups_max": 0,
+          "physics_inputs_max": 0,
+          "physics_outputs_max": 0,
+          "motion_count_total": 6,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "gantzert_felixander_gantzert_felixander_t01"
+          ]
+        },
+        "source_note": "Official page describes additive effects and many clipping expressions for hand, wings, thunder, and fire reflection."
+      },
+      {
+        "profile_key": "ren",
+        "model": "Ren Foster",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "Cubism 5.3 rich drawing",
+          "alpha blend masks",
+          "offscreen rendering",
+          "high-spec avatar expression"
+        ],
+        "measured_structure_values": {
+          "model_count": 3,
+          "art_meshes_max": 201,
+          "parameters_max": 73,
+          "warp_deformers_max": 128,
+          "rotation_deformers_max": 22,
+          "keyform_bindings_max": 470,
+          "physics_groups_max": 16,
+          "physics_inputs_max": 33,
+          "physics_outputs_max": 20,
+          "motion_count_total": 9,
+          "expression_count_total": 15,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 1,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_ren_ren.model3",
+            "github_live2d_cubism_web_samples_samples_resources_ren_ren.model3",
+            "ren_pro_ko_ren_t01"
+          ]
+        },
+        "source_note": "Official page describes this as a Cubism 5.3 rich rendering sample using alpha blend masks and offscreen rendering."
+      },
+      {
+        "profile_key": "rice",
+        "model": "Rice Glassfield",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "extended interpolation",
+          "inverted mask",
+          "forelock and fire effects"
+        ],
+        "measured_structure_values": {
+          "model_count": 5,
+          "art_meshes_max": 183,
+          "parameters_max": 96,
+          "warp_deformers_max": 58,
+          "rotation_deformers_max": 85,
+          "keyform_bindings_max": 306,
+          "physics_groups_max": 9,
+          "physics_inputs_max": 32,
+          "physics_outputs_max": 42,
+          "motion_count_total": 16,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 2,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_rice_rice.model3",
+            "github_live2d_cubism_web_samples_samples_resources_rice_rice.model3",
+            "github_live2d_garage_cubism_web_ar_sample_assets_models_rice_rice.model3",
+            "param_ctrl_pro_ko_rice_pc_pro_t02",
+            "rice_pro_ko_rice_pro_t03"
+          ]
+        },
+        "source_note": "Official page describes Rice as useful for extended interpolation and inverted-mask expression such as forelock and fire."
+      },
+      {
+        "profile_key": "tsumiki",
+        "model": "Tsumiki",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "eyelid clipping mask",
+          "standard avatar motion"
+        ],
+        "measured_structure_values": {
+          "model_count": 1,
+          "art_meshes_max": 89,
+          "parameters_max": 46,
+          "warp_deformers_max": 67,
+          "rotation_deformers_max": 22,
+          "keyform_bindings_max": 240,
+          "physics_groups_max": 7,
+          "physics_inputs_max": 22,
+          "physics_outputs_max": 9,
+          "motion_count_total": 23,
+          "expression_count_total": 10,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "tsumiki_tsumiki_t01"
+          ]
+        },
+        "source_note": "Official page groups Tsumiki with eyelid clipping-mask learning value."
+      },
+      {
+        "profile_key": "unitychan",
+        "model": "Unity-chan",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "eyelid clipping mask",
+          "PSD layer reference",
+          "deformed character model"
+        ],
+        "measured_structure_values": {
+          "model_count": 1,
+          "art_meshes_max": 70,
+          "parameters_max": 39,
+          "warp_deformers_max": 40,
+          "rotation_deformers_max": 15,
+          "keyform_bindings_max": 140,
+          "physics_groups_max": 3,
+          "physics_inputs_max": 12,
+          "physics_outputs_max": 3,
+          "motion_count_total": 16,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 2,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "unitychan_unitychan_t01"
+          ]
+        },
+        "source_note": "Official page describes eyelid clipping masks and includes a PSD, with separate Unity-chan license rules."
+      }
+    ],
+    "psd_layering": [
+      {
+        "profile_key": "haru_greeter",
+        "model": "Haru Greeter",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "PSD material division",
+          "PSD import material structure",
+          "avatar greeting motions"
+        ],
+        "measured_structure_values": {
+          "model_count": 1,
+          "art_meshes_max": 86,
+          "parameters_max": 42,
+          "warp_deformers_max": 66,
+          "rotation_deformers_max": 31,
+          "keyform_bindings_max": 221,
+          "physics_groups_max": 4,
+          "physics_inputs_max": 14,
+          "physics_outputs_max": 4,
+          "motion_count_total": 27,
+          "expression_count_total": 0,
+          "pose_count": 1,
+          "psd_count_total": 2,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "haru_greeter_pro_jp_haru_greeter_t05"
+          ]
+        },
+        "source_note": "Official distribution contains material-division and import PSDs, making it useful for PSD layer structure study."
+      },
+      {
+        "profile_key": "haruto",
+        "model": "Haruto",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "PSD material division",
+          "paired sample character",
+          "runtime motion baseline"
+        ],
+        "measured_structure_values": {
+          "model_count": 2,
+          "art_meshes_max": 87,
+          "parameters_max": 51,
+          "warp_deformers_max": 58,
+          "rotation_deformers_max": 20,
+          "keyform_bindings_max": 215,
+          "physics_groups_max": 4,
+          "physics_inputs_max": 14,
+          "physics_outputs_max": 4,
+          "motion_count_total": 11,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 4,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "koharu_haruto_haruto_t01",
+            "param_ctrl_pro_ko_haruto_pc_pro_t02"
+          ]
+        },
+        "source_note": "Official zip contains Haruto PSD and runtime files; use as PSD/material structure reference."
+      },
+      {
+        "profile_key": "koharu",
+        "model": "Koharu",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "PSD material division",
+          "paired sample character",
+          "runtime motion baseline"
+        ],
+        "measured_structure_values": {
+          "model_count": 2,
+          "art_meshes_max": 91,
+          "parameters_max": 52,
+          "warp_deformers_max": 63,
+          "rotation_deformers_max": 20,
+          "keyform_bindings_max": 220,
+          "physics_groups_max": 5,
+          "physics_inputs_max": 16,
+          "physics_outputs_max": 5,
+          "motion_count_total": 11,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 4,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "koharu_haruto_koharu_t01",
+            "param_ctrl_pro_ko_koharu_pc_pro_t02"
+          ]
+        },
+        "source_note": "Official zip contains Koharu PSD and runtime files; use as PSD/material structure reference."
+      },
+      {
+        "profile_key": "mark",
+        "model": "Mark-kun",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "simple deformer structure",
+          "simple parameter structure",
+          "physics",
+          "eye blink",
+          "PSD availability"
+        ],
+        "measured_structure_values": {
+          "model_count": 3,
+          "art_meshes_max": 33,
+          "parameters_max": 27,
+          "warp_deformers_max": 26,
+          "rotation_deformers_max": 13,
+          "keyform_bindings_max": 90,
+          "physics_groups_max": 1,
+          "physics_inputs_max": 4,
+          "physics_outputs_max": 3,
+          "motion_count_total": 12,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_mark_mark.model3",
+            "github_live2d_cubism_web_samples_samples_resources_mark_mark.model3",
+            "mark_movie_pro_ko_mark_movie_pro_t02"
+          ]
+        },
+        "source_note": "Official page describes Mark-kun as a simple beginner model with physics, blinking, SDK introduction, and PSD availability."
+      },
+      {
+        "profile_key": "unitychan",
+        "model": "Unity-chan",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "eyelid clipping mask",
+          "PSD layer reference",
+          "deformed character model"
+        ],
+        "measured_structure_values": {
+          "model_count": 1,
+          "art_meshes_max": 70,
+          "parameters_max": 39,
+          "warp_deformers_max": 40,
+          "rotation_deformers_max": 15,
+          "keyform_bindings_max": 140,
+          "physics_groups_max": 3,
+          "physics_inputs_max": 12,
+          "physics_outputs_max": 3,
+          "motion_count_total": 16,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 2,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "unitychan_unitychan_t01"
+          ]
+        },
+        "source_note": "Official page describes eyelid clipping masks and includes a PSD, with separate Unity-chan license rules."
+      }
+    ],
+    "motion_pose": [
+      {
+        "profile_key": "chitose",
+        "model": "Chitose",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "male avatar model",
+          "right-arm switching",
+          "handwave motion"
+        ],
+        "measured_structure_values": {
+          "model_count": 1,
+          "art_meshes_max": 79,
+          "parameters_max": 33,
+          "warp_deformers_max": 54,
+          "rotation_deformers_max": 13,
+          "keyform_bindings_max": 175,
+          "physics_groups_max": 2,
+          "physics_inputs_max": 8,
+          "physics_outputs_max": 2,
+          "motion_count_total": 4,
+          "expression_count_total": 7,
+          "pose_count": 1,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "chitose_chitose_t01"
+          ]
+        },
+        "source_note": "Official page describes Chitose as a male model with right-arm switching for waving."
+      },
+      {
+        "profile_key": "epsilon",
+        "model": "Epsilon",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "standard easy-to-use model",
+          "expression effects"
+        ],
+        "measured_structure_values": {
+          "model_count": 1,
+          "art_meshes_max": 73,
+          "parameters_max": 37,
+          "warp_deformers_max": 51,
+          "rotation_deformers_max": 12,
+          "keyform_bindings_max": 169,
+          "physics_groups_max": 2,
+          "physics_inputs_max": 8,
+          "physics_outputs_max": 4,
+          "motion_count_total": 15,
+          "expression_count_total": 8,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "epsilon_epsilon_t02"
+          ]
+        },
+        "source_note": "Official page describes Epsilon as a standard easy-to-use model with expression effects."
+      },
+      {
+        "profile_key": "gantzert_felixander",
+        "model": "Gantzert & Felixander",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "additive drawing effects",
+          "many clipping expressions",
+          "right hand, dragon wings, thunder and fire reflection"
+        ],
+        "measured_structure_values": {
+          "model_count": 1,
+          "art_meshes_max": 249,
+          "parameters_max": 74,
+          "warp_deformers_max": 52,
+          "rotation_deformers_max": 38,
+          "keyform_bindings_max": 537,
+          "physics_groups_max": 0,
+          "physics_inputs_max": 0,
+          "physics_outputs_max": 0,
+          "motion_count_total": 6,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "gantzert_felixander_gantzert_felixander_t01"
+          ]
+        },
+        "source_note": "Official page describes additive effects and many clipping expressions for hand, wings, thunder, and fire reflection."
+      },
+      {
+        "profile_key": "haru",
+        "model": "Haru",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "arm switching",
+          "clothing changes",
+          "voice and expression testing",
+          "overall Live2D feature test"
+        ],
+        "measured_structure_values": {
+          "model_count": 3,
+          "art_meshes_max": 114,
+          "parameters_max": 42,
+          "warp_deformers_max": 53,
+          "rotation_deformers_max": 34,
+          "keyform_bindings_max": 267,
+          "physics_groups_max": 4,
+          "physics_inputs_max": 14,
+          "physics_outputs_max": 4,
+          "motion_count_total": 35,
+          "expression_count_total": 24,
+          "pose_count": 3,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_haru_haru.model3",
+            "github_live2d_cubism_web_samples_samples_resources_haru_haru.model3",
+            "haru_haru_t01"
+          ]
+        },
+        "source_note": "Official page describes Haru as supporting arm switching and clothing changes with voice files."
+      },
+      {
+        "profile_key": "haru_greeter",
+        "model": "Haru Greeter",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "PSD material division",
+          "PSD import material structure",
+          "avatar greeting motions"
+        ],
+        "measured_structure_values": {
+          "model_count": 1,
+          "art_meshes_max": 86,
+          "parameters_max": 42,
+          "warp_deformers_max": 66,
+          "rotation_deformers_max": 31,
+          "keyform_bindings_max": 221,
+          "physics_groups_max": 4,
+          "physics_inputs_max": 14,
+          "physics_outputs_max": 4,
+          "motion_count_total": 27,
+          "expression_count_total": 0,
+          "pose_count": 1,
+          "psd_count_total": 2,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "haru_greeter_pro_jp_haru_greeter_t05"
+          ]
+        },
+        "source_note": "Official distribution contains material-division and import PSDs, making it useful for PSD layer structure study."
+      },
+      {
+        "profile_key": "haruto",
+        "model": "Haruto",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "PSD material division",
+          "paired sample character",
+          "runtime motion baseline"
+        ],
+        "measured_structure_values": {
+          "model_count": 2,
+          "art_meshes_max": 87,
+          "parameters_max": 51,
+          "warp_deformers_max": 58,
+          "rotation_deformers_max": 20,
+          "keyform_bindings_max": 215,
+          "physics_groups_max": 4,
+          "physics_inputs_max": 14,
+          "physics_outputs_max": 4,
+          "motion_count_total": 11,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 4,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "koharu_haruto_haruto_t01",
+            "param_ctrl_pro_ko_haruto_pc_pro_t02"
+          ]
+        },
+        "source_note": "Official zip contains Haruto PSD and runtime files; use as PSD/material structure reference."
+      },
+      {
+        "profile_key": "izumi",
+        "model": "Izumi",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "multiple art styles",
+          "oblique source pose",
+          "opposite-facing motion"
+        ],
+        "measured_structure_values": {
+          "model_count": 4,
+          "art_meshes_max": 77,
+          "parameters_max": 30,
+          "warp_deformers_max": 39,
+          "rotation_deformers_max": 6,
+          "keyform_bindings_max": 171,
+          "physics_groups_max": 3,
+          "physics_inputs_max": 12,
+          "physics_outputs_max": 3,
+          "motion_count_total": 40,
+          "expression_count_total": 28,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "izumi_izumi_anime_t01",
+            "izumi_izumi_atsu_t01",
+            "izumi_izumi_illust_t01",
+            "izumi_izumi_suisai_t01"
+          ]
+        },
+        "source_note": "Official page describes four texture styles and motion from an oblique original pose toward the opposite direction."
+      },
+      {
+        "profile_key": "koharu",
+        "model": "Koharu",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "PSD material division",
+          "paired sample character",
+          "runtime motion baseline"
+        ],
+        "measured_structure_values": {
+          "model_count": 2,
+          "art_meshes_max": 91,
+          "parameters_max": 52,
+          "warp_deformers_max": 63,
+          "rotation_deformers_max": 20,
+          "keyform_bindings_max": 220,
+          "physics_groups_max": 5,
+          "physics_inputs_max": 16,
+          "physics_outputs_max": 5,
+          "motion_count_total": 11,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 4,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "koharu_haruto_koharu_t01",
+            "param_ctrl_pro_ko_koharu_pc_pro_t02"
+          ]
+        },
+        "source_note": "Official zip contains Koharu PSD and runtime files; use as PSD/material structure reference."
+      },
+      {
+        "profile_key": "mao",
+        "model": "Niziiro Mao",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "blend shapes",
+          "multiply and screen color",
+          "mouth, eyebrow, and hair additive shape differences",
+          "wide face motion range"
+        ],
+        "measured_structure_values": {
+          "model_count": 3,
+          "art_meshes_max": 262,
+          "parameters_max": 132,
+          "warp_deformers_max": 116,
+          "rotation_deformers_max": 59,
+          "keyform_bindings_max": 497,
+          "physics_groups_max": 16,
+          "physics_inputs_max": 43,
+          "physics_outputs_max": 20,
+          "motion_count_total": 23,
+          "expression_count_total": 24,
+          "pose_count": 3,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 1,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_mao_mao.model3",
+            "github_live2d_cubism_web_samples_samples_resources_mao_mao.model3",
+            "mao_pro_ko_mao_pro_t06"
+          ]
+        },
+        "source_note": "Official page describes blend shapes for mouth, eyebrow, and hair swing, plus a wide face range."
+      },
+      {
+        "profile_key": "natori",
+        "model": "Natori",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "expressions",
+          "pose",
+          "motion baseline",
+          "physics baseline"
+        ],
+        "measured_structure_values": {
+          "model_count": 3,
+          "art_meshes_max": 176,
+          "parameters_max": 96,
+          "warp_deformers_max": 128,
+          "rotation_deformers_max": 52,
+          "keyform_bindings_max": 407,
+          "physics_groups_max": 11,
+          "physics_inputs_max": 34,
+          "physics_outputs_max": 12,
+          "motion_count_total": 24,
+          "expression_count_total": 33,
+          "pose_count": 3,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 1,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_natori_natori.model3",
+            "github_live2d_cubism_web_samples_samples_resources_natori_natori.model3",
+            "natori_pro_ko_natori_pro_t06"
+          ]
+        },
+        "source_note": "Official sample includes many expressions, pose data, motions, and physics."
+      },
+      {
+        "profile_key": "nito",
+        "model": "Nito",
+        "decision": "KEEP",
+        "official_learning_target": [
+          "two-head character",
+          "multiple variants in one model",
+          "large mouth expression",
+          "limbless comical motion"
+        ],
+        "measured_structure_values": {
+          "model_count": 5,
+          "art_meshes_max": 299,
+          "parameters_max": 66,
+          "warp_deformers_max": 137,
+          "rotation_deformers_max": 145,
+          "keyform_bindings_max": 559,
+          "physics_groups_max": 0,
+          "physics_inputs_max": 0,
+          "physics_outputs_max": 0,
+          "motion_count_total": 105,
+          "expression_count_total": 0,
+          "pose_count": 5,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "nito_ni-j.model3_runtime",
+            "nito_nico.model3_runtime",
+            "nito_nietzsche.model3_runtime",
+            "nito_nipsilon.model3_runtime",
+            "nito_nito_t01"
+          ]
+        },
+        "source_note": "Official page describes Nito as a two-head character with multiple variants, large mouth expressions, and comical limb motion."
+      },
+      {
+        "profile_key": "param_ctrl",
+        "model": "Parameter Controller Sample",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "parameter controller",
+          "target following",
+          "animation efficiency"
+        ],
+        "measured_structure_values": {
+          "model_count": 2,
+          "art_meshes_max": 3,
+          "parameters_max": 27,
+          "warp_deformers_max": 0,
+          "rotation_deformers_max": 1,
+          "keyform_bindings_max": 2,
+          "physics_groups_max": 0,
+          "physics_inputs_max": 0,
+          "physics_outputs_max": 0,
+          "motion_count_total": 0,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "param_ctrl_pro_ko_seesaw_pc_pro_t02",
+            "param_ctrl_pro_ko_target_pc_pro_t02"
+          ]
+        },
+        "source_note": "Official page describes parameter controller target-following for animation production."
+      },
+      {
+        "profile_key": "rice",
+        "model": "Rice Glassfield",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "extended interpolation",
+          "inverted mask",
+          "forelock and fire effects"
+        ],
+        "measured_structure_values": {
+          "model_count": 5,
+          "art_meshes_max": 183,
+          "parameters_max": 96,
+          "warp_deformers_max": 58,
+          "rotation_deformers_max": 85,
+          "keyform_bindings_max": 306,
+          "physics_groups_max": 9,
+          "physics_inputs_max": 32,
+          "physics_outputs_max": 42,
+          "motion_count_total": 16,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 2,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_rice_rice.model3",
+            "github_live2d_cubism_web_samples_samples_resources_rice_rice.model3",
+            "github_live2d_garage_cubism_web_ar_sample_assets_models_rice_rice.model3",
+            "param_ctrl_pro_ko_rice_pc_pro_t02",
+            "rice_pro_ko_rice_pro_t03"
+          ]
+        },
+        "source_note": "Official page describes Rice as useful for extended interpolation and inverted-mask expression such as forelock and fire."
+      },
+      {
+        "profile_key": "shizuku",
+        "model": "Shizuku",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "legacy sample structure",
+          "pose and physics baseline"
+        ],
+        "measured_structure_values": {
+          "model_count": 1,
+          "art_meshes_max": 187,
+          "parameters_max": 45,
+          "warp_deformers_max": 156,
+          "rotation_deformers_max": 27,
+          "keyform_bindings_max": 358,
+          "physics_groups_max": 3,
+          "physics_inputs_max": 6,
+          "physics_outputs_max": 5,
+          "motion_count_total": 4,
+          "expression_count_total": 0,
+          "pose_count": 1,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "shizuku_shizuku_t02"
+          ]
+        },
+        "source_note": "Official sample includes runtime, motion, pose, and physics; use as secondary baseline only."
+      },
+      {
+        "profile_key": "wanko",
+        "model": "Wanko",
+        "decision": "REFERENCE_ONLY",
+        "official_learning_target": [
+          "touch motions",
+          "non-human avatar runtime",
+          "physics baseline"
+        ],
+        "measured_structure_values": {
+          "model_count": 3,
+          "art_meshes_max": 78,
+          "parameters_max": 25,
+          "warp_deformers_max": 28,
+          "rotation_deformers_max": 6,
+          "keyform_bindings_max": 85,
+          "physics_groups_max": 4,
+          "physics_inputs_max": 14,
+          "physics_outputs_max": 4,
+          "motion_count_total": 22,
+          "expression_count_total": 0,
+          "pose_count": 0,
+          "psd_count_total": 0,
+          "mask_models": 0,
+          "glue_models": 0,
+          "example_models": [
+            "github_live2d_cubism_native_samples_samples_resources_wanko_wanko.model3",
+            "github_live2d_cubism_web_samples_samples_resources_wanko_wanko.model3",
+            "wanko_wanko_touch_t01"
+          ]
+        },
+        "source_note": "Official sample includes touch/idle motions and physics; useful as non-human contrast only."
+      }
+    ]
+  },
+  "missing_profile_model_ids": [
+    "github_live2d_cubism_web_motionsync_samples_resources_kei_basic_kei_basic.model3",
+    "github_live2d_cubism_web_motionsync_samples_resources_kei_vowels_kei_vowels.model3"
+  ],
+  "new_image_generation_requirements": [
+    "완전 신규 2048 정면 단일 원본 캐릭터",
+    "눈 흰자/홍채/속눈썹이 분리되기 쉬운 크고 명확한 눈",
+    "입 라인이 작게 묻히지 않고 ParamMouthOpenY/Form 기준 keyform을 만들 수 있는 얼굴",
+    "앞머리/옆머리/뒷머리 흐름이 구분되는 헤어 실루엣",
+    "ParamAngleX/Y와 BodyAngleX/Y에서 overhang이 적도록 목/어깨/상체가 가려지지 않는 구조",
+    "초기 모델에서는 무거운 clipping/mask/rich effect를 최소화",
+    "텍스트, 라벨, 잘린 팔, 과도한 장식, 복잡한 손가락 겹침 금지"
+  ],
+  "minimal_cubism_rig_gate": {
+    "scope": [
+      "eye",
+      "mouth",
+      "hair",
+      "body_angle"
+    ],
+    "required_delta": [
+      "warp_deformers > 0",
+      "keyform_bindings > 0"
+    ],
+    "required_evidence": [
+      "before/after cmo3_structure_report.json",
+      "deformer hierarchy screenshot",
+      "eye/mouth/hair/body angle parameter extreme screenshots",
+      "draw order and overhang review note"
+    ]
+  },
+  "interpretation": [
+    "Official samples teach structure and rigging patterns only.",
+    "Do not reuse official sample images, textures, PSD layers, or character designs.",
+    "Use KEEP entries to define the minimum new-model rig checklist."
+  ]
+}

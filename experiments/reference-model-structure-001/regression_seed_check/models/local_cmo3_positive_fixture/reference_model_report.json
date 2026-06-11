@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T14:50:25.449575+00:00",
+  "id": "local_cmo3_positive_fixture",
+  "name": "Local CMO3 Structure Positive Fixture",
+  "source_url": "local:/Users/family/jason/Vtube/experiments/cmo3-structure-fixture-001/rigged_positive_fixture.cmo3",
+  "source_type": "LOCAL_FIXTURE",
+  "license_status": "OWNED_TEST_FIXTURE",
+  "analysis_mode": "FULL_STRUCTURE",
+  "official_profile_key": null,
+  "analysis_safety_notes": [],
+  "has_cmo3": true,
+  "has_moc3": false,
+  "has_model3_json": false,
+  "has_physics3_json": false,
+  "has_psd": false,
+  "local_paths": {
+    "cmo3": {
+      "path": "experiments/cmo3-structure-fixture-001/rigged_positive_fixture.cmo3",
+      "exists": true,
+      "size_bytes": 48819
+    }
+  },
+  "cmo3": {
+    "status": "PASS",
+    "returncode": 0,
+    "json": "experiments/reference-model-structure-001/regression_seed_check/models/local_cmo3_positive_fixture/cmo3_structure_report.json",
+    "markdown": "experiments/reference-model-structure-001/regression_seed_check/models/local_cmo3_positive_fixture/cmo3_structure_report.md",
+    "stdout": "[cmo3-structure] PASS\n[cmo3-structure] json: /Users/family/jason/Vtube/experiments/reference-model-structure-001/regression_seed_check/models/local_cmo3_positive_fixture/cmo3_structure_report.json\n[cmo3-structure] md:   /Users/family/jason/Vtube/experiments/reference-model-structure-001/regression_seed_check/models/local_cmo3_positive_fixture/cmo3_structure_report.md",
+    "stderr": "",
+    "cmo3_status": "PASS",
+    "counts": {
+      "art_meshes": 7,
+      "parts": 1,
+      "parameters": 23,
+      "warp_deformers": 13,
+      "rotation_deformers": 1,
+      "keyform_bindings": 23,
+      "keyform_grids": 22,
+      "glue": 0,
+      "masks": 0
+    },
+    "parameter_ids": [
+      "ParamOpacity",
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBodyAngleZ",
+      "ParamBreath",
+      "ParamEyeLOpen",
+      "ParamEyeROpen",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamBrowLY",
+      "ParamBrowRY",
+      "ParamMouthForm",
+      "ParamMouthOpenY",
+      "ParamHairFront",
+      "ParamHairSide",
+      "ParamHairBack",
+      "ParamSkirt",
+      "ParamShirt",
+      "ParamPants",
+      "ParamBust"
+    ],
+    "part_names": [
+      "Root Part"
+    ]
+  },
+  "moc3": {
+    "present": false
+  },
+  "runtime_json": {
+    "model3": {
+      "present": false
+    },
+    "physics3": {
+      "present": false
+    },
+    "cdi3": {
+      "present": false
+    },
+    "motion3_count": 0,
+    "exp3_count": 0,
+    "pose3_present": false,
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 7,
+    "parts": 1,
+    "parameters": 23,
+    "warp_deformers": 13,
+    "rotation_deformers": 1,
+    "keyform_bindings": 23,
+    "keyform_grids": 22,
+    "glue": 0,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": false,
+    "pose": false,
+    "expression": false,
+    "motion": false,
+    "physics": false
+  },
+  "structure_hints": {
+    "hair": 1,
+    "eye": 1,
+    "mouth": 1,
+    "body": 2,
+    "arm": 0
+  },
+  "reuse_decision": "KEEP",
+  "notes": [
+    "Regression fixture for real deformer/keyform detection.",
+    "Expected to detect warp deformers, one rotation deformer, and keyform bindings."
+  ],
+  "structure_report_path": "experiments/reference-model-structure-001/regression_seed_check/models/local_cmo3_positive_fixture/cmo3_structure_report.json"
+}

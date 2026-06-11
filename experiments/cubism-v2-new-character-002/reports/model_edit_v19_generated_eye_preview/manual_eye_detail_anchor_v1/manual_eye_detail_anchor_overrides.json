@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "status": "SAVED",
+  "updated_at": "2026-06-09T08:47:25.023698+00:00",
+  "project": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-002/model_edit_v19_generated_eye_preview/mini_cubism_diagnostic_project",
+  "anchors": {
+    "L": [
+      898,
+      679
+    ],
+    "R": [
+      1153,
+      679
+    ]
+  },
+  "current": {
+    "L": [
+      884.14,
+      665.24
+    ],
+    "R": [
+      1166.05,
+      665.25
+    ]
+  }
+}

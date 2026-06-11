@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T03:05:23.100233+00:00",
+  "status": "PASS",
+  "run": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence",
+  "motion_evidence": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence",
+  "best_project": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/mini_cubism_project_targeted",
+  "contact_sheet": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/review_packet/contact_sheet.png",
+  "best_motion": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/review_packet/best_motion.gif",
+  "review_summary": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/review_packet/review_summary.md"
+}

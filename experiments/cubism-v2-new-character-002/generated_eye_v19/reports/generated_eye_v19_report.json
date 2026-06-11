@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T08:33:09.115976+00:00",
+  "status": "GENERATED_EYE_V19_NORMALIZED",
+  "input": "experiments/cubism-v2-new-character-002/generated_eye_v19/raw_outputs/eye_asset_sheet_chromakey.png",
+  "normalized_layers": {
+    "eye_L_white": "experiments/cubism-v2-new-character-002/generated_eye_v19/normalized_layers/eye_L_white.png",
+    "eye_R_white": "experiments/cubism-v2-new-character-002/generated_eye_v19/normalized_layers/eye_R_white.png",
+    "eye_L_iris": "experiments/cubism-v2-new-character-002/generated_eye_v19/normalized_layers/eye_L_iris.png",
+    "eye_R_iris": "experiments/cubism-v2-new-character-002/generated_eye_v19/normalized_layers/eye_R_iris.png"
+  },
+  "contact_sheet": "experiments/cubism-v2-new-character-002/generated_eye_v19/reports/generated_eye_v19_contact_sheet.png",
+  "metrics": {
+    "eye_L_white": {
+      "source_bbox": [
+        8,
+        8,
+        467,
+        270
+      ],
+      "scale": 0.38549618320610685,
+      "paste_xy": [
+        792,
+        619
+      ],
+      "bbox_xywh": [
+        792,
+        619,
+        177,
+        101
+      ],
+      "alpha_nonzero": 12117,
+      "alpha_coverage": 0.00288892
+    },
+    "eye_R_white": {
+      "source_bbox": [
+        8,
+        8,
+        466,
+        270
+      ],
+      "scale": 0.3816793893129771,
+      "paste_xy": [
+        1083,
+        619
+      ],
+      "bbox_xywh": [
+        1083,
+        619,
+        175,
+        100
+      ],
+      "alpha_nonzero": 11879,
+      "alpha_coverage": 0.00283217
+    },
+    "eye_L_iris": {
+      "source_bbox": [
+        8,
+        8,
+        260,
+        283
+      ],
+      "scale": 0.3054545454545455,
+      "paste_xy": [
+        846,
+        624
+      ],
+      "bbox_xywh": [
+        846,
+        624,
+        77,
+        84
+      ],
+      "alpha_nonzero": 5456,
+      "alpha_coverage": 0.00130081
+    },
+    "eye_R_iris": {
+      "source_bbox": [
+        8,
+        8,
+        259,
+        283
+      ],
+      "scale": 0.3054545454545455,
+      "paste_xy": [
+        1128,
+        624
+      ],
+      "bbox_xywh": [
+        1128,
+        624,
+        77,
+        84
+      ],
+      "alpha_nonzero": 5468,
+      "alpha_coverage": 0.00130367
+    }
+  },
+  "policy": {
+    "fixed_eye_white": [
+      "eye_L_white",
+      "eye_R_white"
+    ],
+    "moving_coherent_eye_detail": [
+      "eye_L_iris",
+      "eye_R_iris"
+    ],
+    "pupil_highlight_are_baked_into_iris_layer": true
+  }
+}

@@ -1,0 +1,544 @@
+{
+  "schema_version": 1,
+  "experiment_id": "imagen-live2d-001",
+  "generated_at": "2026-06-04T08:55:55.410489+00:00",
+  "status": "READY_FOR_MANUAL_CUBISM_MVP_RIG",
+  "source_psd": "experiments/imagen-live2d-001/import_ready.psd",
+  "cubism_version_target": "Live2D Cubism Editor 5.3 FREE",
+  "official_free_limit_reference": "https://www.live2d.com/en/cubism/comparison/",
+  "psd": {
+    "canvas_size": [
+      2048,
+      2048
+    ],
+    "depth": 8,
+    "color_mode": "3",
+    "layer_count": 19,
+    "layers": [
+      {
+        "name": "back_hair",
+        "bbox": [
+          199,
+          55,
+          1844,
+          2048
+        ],
+        "visible": true
+      },
+      {
+        "name": "neck",
+        "bbox": [
+          891,
+          923,
+          1158,
+          1289
+        ],
+        "visible": true
+      },
+      {
+        "name": "clothes",
+        "bbox": [
+          499,
+          1228,
+          1548,
+          2048
+        ],
+        "visible": true
+      },
+      {
+        "name": "R_arm",
+        "bbox": [
+          192,
+          1327,
+          797,
+          2048
+        ],
+        "visible": true
+      },
+      {
+        "name": "L_arm",
+        "bbox": [
+          1250,
+          1327,
+          1851,
+          2048
+        ],
+        "visible": true
+      },
+      {
+        "name": "choker",
+        "bbox": [
+          870,
+          1172,
+          1179,
+          1522
+        ],
+        "visible": true
+      },
+      {
+        "name": "R_ear_outer",
+        "bbox": [
+          616,
+          739,
+          786,
+          938
+        ],
+        "visible": true
+      },
+      {
+        "name": "L_ear_outer",
+        "bbox": [
+          1260,
+          739,
+          1432,
+          938
+        ],
+        "visible": true
+      },
+      {
+        "name": "face_base",
+        "bbox": [
+          645,
+          114,
+          1399,
+          1137
+        ],
+        "visible": true
+      },
+      {
+        "name": "mouth_line",
+        "bbox": [
+          964,
+          958,
+          1089,
+          1053
+        ],
+        "visible": true
+      },
+      {
+        "name": "R_eye_white",
+        "bbox": [
+          745,
+          710,
+          933,
+          835
+        ],
+        "visible": true
+      },
+      {
+        "name": "L_eye_white",
+        "bbox": [
+          1117,
+          709,
+          1308,
+          835
+        ],
+        "visible": true
+      },
+      {
+        "name": "R_iris",
+        "bbox": [
+          799,
+          717,
+          912,
+          827
+        ],
+        "visible": true
+      },
+      {
+        "name": "L_iris",
+        "bbox": [
+          1142,
+          717,
+          1253,
+          826
+        ],
+        "visible": true
+      },
+      {
+        "name": "R_upper_lash",
+        "bbox": [
+          707,
+          684,
+          944,
+          832
+        ],
+        "visible": true
+      },
+      {
+        "name": "L_upper_lash",
+        "bbox": [
+          1108,
+          685,
+          1343,
+          833
+        ],
+        "visible": true
+      },
+      {
+        "name": "R_brow",
+        "bbox": [
+          744,
+          620,
+          930,
+          657
+        ],
+        "visible": true
+      },
+      {
+        "name": "L_brow",
+        "bbox": [
+          1118,
+          620,
+          1307,
+          655
+        ],
+        "visible": true
+      },
+      {
+        "name": "front_hair",
+        "bbox": [
+          560,
+          65,
+          1491,
+          841
+        ],
+        "visible": true
+      }
+    ]
+  },
+  "free_limit_audit": [
+    {
+      "name": "texture_files",
+      "used": 1,
+      "limit": 1,
+      "remaining": 0,
+      "within_limit": true
+    },
+    {
+      "name": "texture_max_px",
+      "used": 2048,
+      "limit": 2048,
+      "remaining": 0,
+      "within_limit": true
+    },
+    {
+      "name": "art_meshes_planned_one_per_layer",
+      "used": 19,
+      "limit": 100,
+      "remaining": 81,
+      "within_limit": true
+    },
+    {
+      "name": "parameters_planned",
+      "used": 8,
+      "limit": 30,
+      "remaining": 22,
+      "within_limit": true
+    },
+    {
+      "name": "deformers_planned",
+      "used": 11,
+      "limit": 50,
+      "remaining": 39,
+      "within_limit": true
+    },
+    {
+      "name": "parts_folders_planned",
+      "used": 6,
+      "limit": 30,
+      "remaining": 24,
+      "within_limit": true
+    }
+  ],
+  "part_folders": {
+    "Hair": [
+      "front_hair",
+      "back_hair"
+    ],
+    "Face": [
+      "face_base",
+      "neck"
+    ],
+    "Eyes": [
+      "L_eye_white",
+      "R_eye_white",
+      "L_iris",
+      "R_iris",
+      "L_upper_lash",
+      "R_upper_lash",
+      "L_brow",
+      "R_brow"
+    ],
+    "Mouth": [
+      "mouth_line"
+    ],
+    "Body": [
+      "clothes",
+      "L_arm",
+      "R_arm"
+    ],
+    "Accessory": [
+      "choker",
+      "L_ear_outer",
+      "R_ear_outer"
+    ]
+  },
+  "deformer_plan": [
+    {
+      "id": "Root",
+      "type": "warp",
+      "parent": null,
+      "layers": []
+    },
+    {
+      "id": "Head_X",
+      "type": "warp",
+      "parent": "Root",
+      "layers": [
+        "face_base",
+        "front_hair",
+        "back_hair",
+        "L_ear_outer",
+        "R_ear_outer"
+      ]
+    },
+    {
+      "id": "Face_Base",
+      "type": "warp",
+      "parent": "Head_X",
+      "layers": [
+        "face_base",
+        "neck"
+      ]
+    },
+    {
+      "id": "Eye_L",
+      "type": "warp",
+      "parent": "Head_X",
+      "layers": [
+        "L_eye_white",
+        "L_iris",
+        "L_upper_lash"
+      ]
+    },
+    {
+      "id": "Eye_R",
+      "type": "warp",
+      "parent": "Head_X",
+      "layers": [
+        "R_eye_white",
+        "R_iris",
+        "R_upper_lash"
+      ]
+    },
+    {
+      "id": "Mouth",
+      "type": "warp",
+      "parent": "Head_X",
+      "layers": [
+        "mouth_line"
+      ]
+    },
+    {
+      "id": "Hair_Front",
+      "type": "rotation",
+      "parent": "Head_X",
+      "layers": [
+        "front_hair"
+      ]
+    },
+    {
+      "id": "Hair_Back",
+      "type": "warp",
+      "parent": "Root",
+      "layers": [
+        "back_hair"
+      ]
+    },
+    {
+      "id": "Body",
+      "type": "warp",
+      "parent": "Root",
+      "layers": [
+        "clothes",
+        "choker",
+        "neck"
+      ]
+    },
+    {
+      "id": "Arm_L",
+      "type": "rotation",
+      "parent": "Body",
+      "layers": [
+        "L_arm"
+      ]
+    },
+    {
+      "id": "Arm_R",
+      "type": "rotation",
+      "parent": "Body",
+      "layers": [
+        "R_arm"
+      ]
+    }
+  ],
+  "parameter_plan": [
+    {
+      "id": "ParamAngleX",
+      "ko_name": "얼굴 좌우",
+      "range": [
+        -30,
+        30
+      ],
+      "keyforms": [
+        -30,
+        0,
+        30
+      ],
+      "target_layers": [
+        "face_base",
+        "front_hair",
+        "back_hair",
+        "neck",
+        "clothes"
+      ],
+      "mvp_motion": "Head/face left-right drift only; keep deformation tiny because parts are forced-cleanup quality."
+    },
+    {
+      "id": "ParamEyeLOpen",
+      "ko_name": "왼쪽 눈 깜빡임",
+      "range": [
+        0,
+        1
+      ],
+      "keyforms": [
+        0,
+        1
+      ],
+      "target_layers": [
+        "L_eye_white",
+        "L_iris",
+        "L_upper_lash"
+      ],
+      "mvp_motion": "Simple lash/white/iris squash or visibility test, not final eyelid art."
+    },
+    {
+      "id": "ParamEyeROpen",
+      "ko_name": "오른쪽 눈 깜빡임",
+      "range": [
+        0,
+        1
+      ],
+      "keyforms": [
+        0,
+        1
+      ],
+      "target_layers": [
+        "R_eye_white",
+        "R_iris",
+        "R_upper_lash"
+      ],
+      "mvp_motion": "Simple lash/white/iris squash or visibility test, not final eyelid art."
+    },
+    {
+      "id": "ParamMouthOpenY",
+      "ko_name": "입 열림",
+      "range": [
+        0,
+        1
+      ],
+      "keyforms": [
+        0,
+        1
+      ],
+      "target_layers": [
+        "mouth_line"
+      ],
+      "mvp_motion": "Tiny open/close vertical scale; current mouth_line is forced O and needs later ROI cleanup."
+    },
+    {
+      "id": "ParamHairFrontSwing",
+      "ko_name": "앞머리 흔들림",
+      "range": [
+        -1,
+        1
+      ],
+      "keyforms": [
+        -1,
+        0,
+        1
+      ],
+      "target_layers": [
+        "front_hair"
+      ],
+      "mvp_motion": "Small horizontal/rotation sway; front_hair is forced canonical extraction."
+    },
+    {
+      "id": "ParamHairBackSwing",
+      "ko_name": "뒷머리 흔들림",
+      "range": [
+        -1,
+        1
+      ],
+      "keyforms": [
+        -1,
+        0,
+        1
+      ],
+      "target_layers": [
+        "back_hair"
+      ],
+      "mvp_motion": "Small lower-hair sway only."
+    },
+    {
+      "id": "ParamArmLSwing",
+      "ko_name": "왼팔 흔들림",
+      "range": [
+        -1,
+        1
+      ],
+      "keyforms": [
+        -1,
+        0,
+        1
+      ],
+      "target_layers": [
+        "L_arm"
+      ],
+      "mvp_motion": "Optional tiny sleeve/arm sway; this layer is forced from handwear-l."
+    },
+    {
+      "id": "ParamArmRSwing",
+      "ko_name": "오른팔 흔들림",
+      "range": [
+        -1,
+        1
+      ],
+      "keyforms": [
+        -1,
+        0,
+        1
+      ],
+      "target_layers": [
+        "R_arm"
+      ],
+      "mvp_motion": "Optional tiny sleeve/arm sway; this layer is forced from handwear-r."
+    }
+  ],
+  "manual_outputs_required": {
+    "cmo3": "experiments/imagen-live2d-001/cubism_mvp_rig.cmo3",
+    "moc3_export_dir": "experiments/imagen-live2d-001/moc3_export_smoke",
+    "validation_report": "experiments/imagen-live2d-001/reports/cubism_mvp_rig_validation.json",
+    "validation_template": "experiments/imagen-live2d-001/reports/cubism_mvp_rig_validation_template.json",
+    "screenshot_dir": "experiments/imagen-live2d-001/reports/cubism_mvp_rig_evidence"
+  },
+  "missing_parameter_targets": [],
+  "missing_deformer_targets": [],
+  "quality_caveats": [
+    "This is a forced-O MVP rig smoke, not final part purity approval.",
+    "front_hair is forced from canonical dark-pixel extraction.",
+    "L_arm and R_arm are forced from handwear-l/r outputs.",
+    "mouth_line remains a likely cleanup target after rig smoke."
+  ]
+}

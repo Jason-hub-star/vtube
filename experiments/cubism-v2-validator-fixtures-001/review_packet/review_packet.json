@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T16:10:20.335427+00:00",
+  "source_manifest": "experiments/cubism-v2-validator-fixtures-001/review_manifest.fixtures.json",
+  "contact_sheets": {
+    "g1_part_taxonomy": "experiments/cubism-v2-validator-fixtures-001/review_packet/g1_part_taxonomy_contact_sheet.png",
+    "g2_structure": "experiments/cubism-v2-validator-fixtures-001/review_packet/g2_structure_contact_sheet.png"
+  },
+  "failure_contact_sheet": "experiments/cubism-v2-validator-fixtures-001/review_packet/failure_candidates_contact_sheet.png",
+  "auto_checks": [
+    {
+      "section": "g2_structure",
+      "part_id": "fixture__positive_cmo3_structure",
+      "status": "PASS",
+      "message": "fixture structure gate expectation",
+      "checks": {
+        "artmesh_count": 7,
+        "parameter_count": 23,
+        "deformer_count": 14,
+        "keyform_binding_count": 23,
+        "physics_group_count": 5
+      },
+      "source_reports": {}
+    },
+    {
+      "section": "g2_structure",
+      "part_id": "fixture__shallow_cmo3_structure",
+      "status": "REVISE",
+      "message": "fixture structure gate expectation",
+      "checks": {
+        "artmesh_count": 19,
+        "parameter_count": 27,
+        "deformer_count": 0,
+        "keyform_binding_count": 0,
+        "physics_group_count": 0
+      },
+      "source_reports": {}
+    }
+  ],
+  "failure_candidates": [
+    {
+      "part_id": "fixture__shallow_cmo3_structure",
+      "original_part_id": "front_hair",
+      "experiment_id": "mini-cubism-dedicated-model-v1-001",
+      "ko_name": "얕은 rig 구조",
+      "group": "structure",
+      "section": "g2_structure",
+      "role": "validator_fixture",
+      "side": null,
+      "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__front_hair.png",
+      "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_front hair.png",
+      "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+      "overlay_path": null,
+      "bbox": null,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "alpha_coverage": 0.0,
+      "draw_order": 300,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "앞머리만 있어야 함"
+      ],
+      "forbidden_contamination": [
+        "다른 파츠",
+        "배경",
+        "잘린 선"
+      ],
+      "suggested_generation_mode": "cubism_v2_part_cleanup",
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+      "production_candidate": true,
+      "tier": "v2_min",
+      "review_gate": "G2_STRUCTURE",
+      "simple_label": "얕은 rig 구조",
+      "simple_description": "Cubism 구조 숫자가 기대값대로 갈리는지 확인합니다.",
+      "checklist": [
+        "좋은 구조는 PASS가 나와야 합니다.",
+        "얕은 rig는 REVISE나 FAIL로 걸려야 합니다."
+      ],
+      "compare_views": {},
+      "auto_check_summary": {
+        "status": "REVISE",
+        "expected_status": "REVISE",
+        "message": "fixture structure gate expectation",
+        "checks": {
+          "artmesh_count": 19,
+          "parameter_count": 27,
+          "deformer_count": 0,
+          "keyform_binding_count": 0,
+          "physics_group_count": 0
+        }
+      },
+      "auto_issue_tags": [
+        "bad_alpha",
+        "clipping_risk",
+        "missing_part"
+      ],
+      "validator_expectation": {
+        "kind": "structure",
+        "expected_status": "REVISE"
+      },
+      "review_verdict": "REVISE",
+      "issue_tags": [
+        "bad_alpha",
+        "clipping_risk",
+        "missing_part"
+      ],
+      "human_note": "fixture structure gate expectation"
+    }
+  ]
+}

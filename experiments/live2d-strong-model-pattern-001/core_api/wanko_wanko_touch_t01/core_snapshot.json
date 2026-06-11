@@ -1,0 +1,1654 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-07T23:08:28.745Z",
+  "model_id": "wanko_wanko_touch_t01",
+  "safe_id": "wanko_wanko_touch_t01",
+  "model_name": "wanko_touch_t01",
+  "sandbox_model_name": "wanko_wanko_touch_t01",
+  "policy": {
+    "asset_reuse": "FORBIDDEN",
+    "content": "runtime IDs, counts, order, masks, and geometry bounds only"
+  },
+  "snapshot": {
+    "source": "Cubism SDK for Web / Live2DCubismCore-backed Framework snapshot",
+    "canvas": {
+      "width": 1,
+      "height": 1,
+      "pixelsPerUnit": 1200,
+      "raw": {
+        "CanvasWidth": 1200,
+        "CanvasHeight": 1200,
+        "CanvasOriginX": 600,
+        "CanvasOriginY": 600,
+        "PixelsPerUnit": 1200
+      }
+    },
+    "counts": {
+      "parameters": 25,
+      "parts": 15,
+      "drawables": 33,
+      "maskedDrawables": 0,
+      "invertedMaskDrawables": 0,
+      "offscreens": 0,
+      "maskedOffscreens": 0
+    },
+    "parameters": [
+      {
+        "index": 0,
+        "id": "PARAM_ANGLE_X",
+        "min": -30,
+        "max": 30,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -30,
+          0,
+          30
+        ]
+      },
+      {
+        "index": 1,
+        "id": "PARAM_ANGLE_Y",
+        "min": -30,
+        "max": 30,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -30,
+          0,
+          30
+        ]
+      },
+      {
+        "index": 2,
+        "id": "PARAM_ANGLE_Z",
+        "min": -30,
+        "max": 30,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -30,
+          0,
+          30
+        ]
+      },
+      {
+        "index": 3,
+        "id": "PARAM_EYE_L_OPEN",
+        "min": 0,
+        "max": 1,
+        "defaultValue": 1,
+        "value": 1,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 2,
+        "keyValues": [
+          0,
+          1
+        ]
+      },
+      {
+        "index": 4,
+        "id": "PARAM_EYE_R_OPEN",
+        "min": 0,
+        "max": 1,
+        "defaultValue": 1,
+        "value": 1,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 2,
+        "keyValues": [
+          0,
+          1
+        ]
+      },
+      {
+        "index": 5,
+        "id": "PARAM_MOUTH_FORM",
+        "min": 0,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 0,
+        "keyValues": []
+      },
+      {
+        "index": 6,
+        "id": "PARAM_MOUTH_OPEN_Y",
+        "min": 0,
+        "max": 1,
+        "defaultValue": 1,
+        "value": 1,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 4,
+        "keyValues": [
+          0,
+          0.20000000298023224,
+          0.5,
+          1
+        ]
+      },
+      {
+        "index": 7,
+        "id": "PARAM_TERE",
+        "min": 0,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 0,
+        "keyValues": []
+      },
+      {
+        "index": 8,
+        "id": "PARAM_BODY_ANGLE_X",
+        "min": -10,
+        "max": 10,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -10,
+          0,
+          10
+        ]
+      },
+      {
+        "index": 9,
+        "id": "PARAM_BODY_ANGLE_Z",
+        "min": -10,
+        "max": 10,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -10,
+          0,
+          10
+        ]
+      },
+      {
+        "index": 10,
+        "id": "PARAM_BODY_ANGLE_Y",
+        "min": -10,
+        "max": 10,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -10,
+          0,
+          10
+        ]
+      },
+      {
+        "index": 11,
+        "id": "PARAM_BREATH",
+        "min": 0,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 2,
+        "keyValues": [
+          0,
+          1
+        ]
+      },
+      {
+        "index": 12,
+        "id": "PARAM_BOWL_LID",
+        "min": -10,
+        "max": 50,
+        "defaultValue": 50,
+        "value": 50,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 4,
+        "keyValues": [
+          -10,
+          0,
+          40,
+          50
+        ]
+      },
+      {
+        "index": 13,
+        "id": "PARAM_YUGE_01",
+        "min": 0,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 2,
+        "keyValues": [
+          0,
+          1
+        ]
+      },
+      {
+        "index": 14,
+        "id": "PARAM_YUGE_02",
+        "min": 0,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 2,
+        "keyValues": [
+          0,
+          1
+        ]
+      },
+      {
+        "index": 15,
+        "id": "PARAM_EFFECT",
+        "min": 0,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 2,
+        "keyValues": [
+          0,
+          1
+        ]
+      },
+      {
+        "index": 16,
+        "id": "PARAM_EAR_L",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -1,
+          0,
+          1
+        ]
+      },
+      {
+        "index": 17,
+        "id": "PARAM_EAR_R",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -1,
+          0,
+          1
+        ]
+      },
+      {
+        "index": 18,
+        "id": "PARAM_HAND_L",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -1,
+          0,
+          1
+        ]
+      },
+      {
+        "index": 19,
+        "id": "PARAM_HAND_R",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -1,
+          0,
+          1
+        ]
+      },
+      {
+        "index": 20,
+        "id": "PARAM_SWING",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -1,
+          0,
+          1
+        ]
+      },
+      {
+        "index": 21,
+        "id": "PARAM_BOWL_SWING",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -1,
+          0,
+          1
+        ]
+      },
+      {
+        "index": 22,
+        "id": "PARAM_FACE_01",
+        "min": -1,
+        "max": 1,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -1,
+          0,
+          1
+        ]
+      },
+      {
+        "index": 23,
+        "id": "PARAM_BASE_X",
+        "min": -30,
+        "max": 30,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 3,
+        "keyValues": [
+          -30,
+          0,
+          30
+        ]
+      },
+      {
+        "index": 24,
+        "id": "PARAM_BASE_Y",
+        "min": -30,
+        "max": 30,
+        "defaultValue": 0,
+        "value": 0,
+        "type": 0,
+        "repeat": 0,
+        "keyCount": 0,
+        "keyValues": []
+      }
+    ],
+    "parts": [
+      {
+        "index": 0,
+        "id": "PARTS_01_BACKGROUND",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 1,
+        "id": "PARTS_01_BOWL",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 2,
+        "id": "PARTS_01_BODY",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 3,
+        "id": "PARTS_01_EAR_001",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 4,
+        "id": "PARTS_01_NOSE_001",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 5,
+        "id": "PARTS_01_MOUTH_001",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 6,
+        "id": "PARTS_01_BROW_001",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 7,
+        "id": "PARTS_01_EYE_BALL_001",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 8,
+        "id": "PARTS_01_EYE_001",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 9,
+        "id": "PARTS_01_FACE_001",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 10,
+        "id": "PARTS_01_HOHO",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 11,
+        "id": "PARTS_01_EFFECT",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 12,
+        "id": "PARTS_01_CORE_ITEM",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 13,
+        "id": "PARTS_01_CORE",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      },
+      {
+        "index": 14,
+        "id": "ROUGH",
+        "opacity": 1,
+        "parentPartIndex": -1,
+        "offscreenIndex": -1
+      }
+    ],
+    "drawables": [
+      {
+        "index": 0,
+        "id": "D_BACKGROUND_00",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 13,
+        "opacity": 1,
+        "parentPartIndex": 0,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 9,
+        "vertexIndexCount": 27,
+        "vertexBounds": {
+          "minX": -0.15638399124145508,
+          "minY": -0.3762586712837219,
+          "maxX": 0.19150930643081665,
+          "maxY": -0.2542957663536072,
+          "width": 0.34789329767227173,
+          "height": 0.12196290493011475
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 1,
+        "id": "D_BOWL_02",
+        "textureIndex": 0,
+        "drawOrder": 900,
+        "renderOrder": 32,
+        "opacity": 0,
+        "parentPartIndex": 1,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 27,
+        "vertexIndexCount": 108,
+        "vertexBounds": {
+          "minX": -0.5720179080963135,
+          "minY": 0.2892112135887146,
+          "maxX": -0.3437870144844055,
+          "maxY": 0.7132686972618103,
+          "width": 0.22823089361190796,
+          "height": 0.4240574836730957
+        },
+        "dynamicFlags": {
+          "visible": false,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 2,
+        "id": "D_BOWL_01",
+        "textureIndex": 0,
+        "drawOrder": 700,
+        "renderOrder": 24,
+        "opacity": 1,
+        "parentPartIndex": 1,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 21,
+        "vertexIndexCount": 72,
+        "vertexBounds": {
+          "minX": -0.191331684589386,
+          "minY": -0.32949239015579224,
+          "maxX": 0.22635748982429504,
+          "maxY": -0.0469379723072052,
+          "width": 0.41768917441368103,
+          "height": 0.28255441784858704
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 3,
+        "id": "D_BOWL_00",
+        "textureIndex": 0,
+        "drawOrder": 100,
+        "renderOrder": 0,
+        "opacity": 1,
+        "parentPartIndex": 1,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 18,
+        "vertexIndexCount": 63,
+        "vertexBounds": {
+          "minX": -0.18307331204414368,
+          "minY": -0.2505200505256653,
+          "maxX": 0.21543337404727936,
+          "maxY": -0.023533344268798828,
+          "width": 0.39850668609142303,
+          "height": 0.22698670625686646
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 4,
+        "id": "D_BODY_02",
+        "textureIndex": 0,
+        "drawOrder": 750,
+        "renderOrder": 26,
+        "opacity": 1,
+        "parentPartIndex": 2,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 12,
+        "vertexIndexCount": 39,
+        "vertexBounds": {
+          "minX": 0.03683556616306305,
+          "minY": -0.1559024453163147,
+          "maxX": 0.11150218546390533,
+          "maxY": -0.08614231646060944,
+          "width": 0.07466661930084229,
+          "height": 0.06976012885570526
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 5,
+        "id": "D_BODY_01",
+        "textureIndex": 0,
+        "drawOrder": 750,
+        "renderOrder": 25,
+        "opacity": 1,
+        "parentPartIndex": 2,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 11,
+        "vertexIndexCount": 36,
+        "vertexBounds": {
+          "minX": -0.1302044540643692,
+          "minY": -0.1520622968673706,
+          "maxX": -0.05041778087615967,
+          "maxY": -0.08038219809532166,
+          "width": 0.07978667318820953,
+          "height": 0.07168009877204895
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 6,
+        "id": "D_BODY_00",
+        "textureIndex": 0,
+        "drawOrder": 400,
+        "renderOrder": 1,
+        "opacity": 1,
+        "parentPartIndex": 2,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 35,
+        "vertexIndexCount": 156,
+        "vertexBounds": {
+          "minX": -0.1470879465341568,
+          "minY": -0.265273779630661,
+          "maxX": 0.1771801859140396,
+          "maxY": 0.023153305053710938,
+          "width": 0.3242681324481964,
+          "height": 0.28842708468437195
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 7,
+        "id": "D_EAR_01",
+        "textureIndex": 0,
+        "drawOrder": 510,
+        "renderOrder": 15,
+        "opacity": 1,
+        "parentPartIndex": 3,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 11,
+        "vertexIndexCount": 33,
+        "vertexBounds": {
+          "minX": 0.04576455056667328,
+          "minY": -0.033848803490400314,
+          "maxX": 0.16402673721313477,
+          "maxY": 0.06273464858531952,
+          "width": 0.11826218664646149,
+          "height": 0.09658345207571983
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 8,
+        "id": "D_EAR_00",
+        "textureIndex": 0,
+        "drawOrder": 490,
+        "renderOrder": 2,
+        "opacity": 1,
+        "parentPartIndex": 3,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 14,
+        "vertexIndexCount": 51,
+        "vertexBounds": {
+          "minX": -0.1504044383764267,
+          "minY": -0.03808443248271942,
+          "maxX": -0.04459119588136673,
+          "maxY": 0.04895556718111038,
+          "width": 0.10581324249505997,
+          "height": 0.0870399996638298
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 9,
+        "id": "D_NOSE_00",
+        "textureIndex": 0,
+        "drawOrder": 550,
+        "renderOrder": 22,
+        "opacity": 1,
+        "parentPartIndex": 4,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 8,
+        "vertexIndexCount": 21,
+        "vertexBounds": {
+          "minX": -0.021321609616279602,
+          "minY": -0.017593421041965485,
+          "maxX": 0.02049168199300766,
+          "maxY": 0.00971329677850008,
+          "width": 0.04181329160928726,
+          "height": 0.027306717820465565
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 10,
+        "id": "D_MOUTH_02",
+        "textureIndex": 0,
+        "drawOrder": 520,
+        "renderOrder": 16,
+        "opacity": 1,
+        "parentPartIndex": 5,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 24,
+        "vertexIndexCount": 99,
+        "vertexBounds": {
+          "minX": -0.04683768376708031,
+          "minY": -0.044009026139974594,
+          "maxX": 0.05257551744580269,
+          "maxY": 0.0024975466076284647,
+          "width": 0.099413201212883,
+          "height": 0.04650657274760306
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 11,
+        "id": "D_MOUTH_01",
+        "textureIndex": 0,
+        "drawOrder": 510,
+        "renderOrder": 14,
+        "opacity": 1,
+        "parentPartIndex": 5,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 24,
+        "vertexIndexCount": 96,
+        "vertexBounds": {
+          "minX": -0.04012875258922577,
+          "minY": -0.06783135235309601,
+          "maxX": 0.04349786788225174,
+          "maxY": -0.022178085520863533,
+          "width": 0.08362662047147751,
+          "height": 0.045653266832232475
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 12,
+        "id": "D_MOUTH_00",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 12,
+        "opacity": 1,
+        "parentPartIndex": 5,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 8,
+        "vertexIndexCount": 21,
+        "vertexBounds": {
+          "minX": -0.030677620321512222,
+          "minY": -0.05339786037802696,
+          "maxX": 0.03708016872406006,
+          "maxY": -0.01379785593599081,
+          "width": 0.06775778904557228,
+          "height": 0.03960000444203615
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 13,
+        "id": "D_EYE_02",
+        "textureIndex": 0,
+        "drawOrder": 550,
+        "renderOrder": 21,
+        "opacity": 0,
+        "parentPartIndex": 8,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 4,
+        "vertexIndexCount": 6,
+        "vertexBounds": {
+          "minX": 0.008503774181008339,
+          "minY": 0.01844998449087143,
+          "maxX": 0.03869985044002533,
+          "maxY": 0.03367709368467331,
+          "width": 0.03019607625901699,
+          "height": 0.01522710919380188
+        },
+        "dynamicFlags": {
+          "visible": false,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 14,
+        "id": "D_EYE_01",
+        "textureIndex": 0,
+        "drawOrder": 550,
+        "renderOrder": 20,
+        "opacity": 1,
+        "parentPartIndex": 8,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 10,
+        "vertexIndexCount": 30,
+        "vertexBounds": {
+          "minX": 0.026053398847579956,
+          "minY": 0.0005399256478995085,
+          "maxX": 0.05954669415950775,
+          "maxY": 0.019953269511461258,
+          "width": 0.033493295311927795,
+          "height": 0.01941334386356175
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 15,
+        "id": "D_EYE_00",
+        "textureIndex": 0,
+        "drawOrder": 550,
+        "renderOrder": 19,
+        "opacity": 1,
+        "parentPartIndex": 8,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 10,
+        "vertexIndexCount": 30,
+        "vertexBounds": {
+          "minX": -0.05991996079683304,
+          "minY": -0.0015933545073494315,
+          "maxX": -0.026213305070996284,
+          "maxY": 0.019313322380185127,
+          "width": 0.033706655725836754,
+          "height": 0.02090667688753456
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 16,
+        "id": "D_FACE_01",
+        "textureIndex": 0,
+        "drawOrder": 600,
+        "renderOrder": 23,
+        "opacity": 1,
+        "parentPartIndex": 9,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 8,
+        "vertexIndexCount": 18,
+        "vertexBounds": {
+          "minX": -0.025883294641971588,
+          "minY": -0.09185997396707535,
+          "maxX": 0.0312400721013546,
+          "maxY": -0.06583335995674133,
+          "width": 0.05712336674332619,
+          "height": 0.026026614010334015
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 17,
+        "id": "D_FACE_00",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 11,
+        "opacity": 1,
+        "parentPartIndex": 9,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 43,
+        "vertexIndexCount": 195,
+        "vertexBounds": {
+          "minX": -0.10689999908208847,
+          "minY": -0.10113997012376785,
+          "maxX": 0.12179335951805115,
+          "maxY": 0.07208666950464249,
+          "width": 0.22869335860013962,
+          "height": 0.17322663962841034
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 18,
+        "id": "D_HOHO_01",
+        "textureIndex": 0,
+        "drawOrder": 550,
+        "renderOrder": 18,
+        "opacity": 1,
+        "parentPartIndex": 10,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 8,
+        "vertexIndexCount": 21,
+        "vertexBounds": {
+          "minX": 0.030072100460529327,
+          "minY": -0.03349337354302406,
+          "maxX": 0.08425876498222351,
+          "maxY": 0.013226576149463654,
+          "width": 0.05418666452169418,
+          "height": 0.04671994969248772
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 19,
+        "id": "D_HOHO_00",
+        "textureIndex": 0,
+        "drawOrder": 550,
+        "renderOrder": 17,
+        "opacity": 1,
+        "parentPartIndex": 10,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 8,
+        "vertexIndexCount": 21,
+        "vertexBounds": {
+          "minX": -0.08418779075145721,
+          "minY": -0.037859030067920685,
+          "maxX": -0.027441177517175674,
+          "maxY": 0.01163429580628872,
+          "width": 0.05674661323428154,
+          "height": 0.049493325874209404
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 20,
+        "id": "D_EFFECT_05",
+        "textureIndex": 0,
+        "drawOrder": 800,
+        "renderOrder": 27,
+        "opacity": 0,
+        "parentPartIndex": 11,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 8,
+        "vertexIndexCount": 21,
+        "vertexBounds": {
+          "minX": -0.19915349781513214,
+          "minY": -0.08716361224651337,
+          "maxX": 0.15569524466991425,
+          "maxY": 0.2340567708015442,
+          "width": 0.3548487424850464,
+          "height": 0.32122038304805756
+        },
+        "dynamicFlags": {
+          "visible": false,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 21,
+        "id": "D_EFFECT_04",
+        "textureIndex": 0,
+        "drawOrder": 900,
+        "renderOrder": 31,
+        "opacity": 0,
+        "parentPartIndex": 11,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 9,
+        "vertexIndexCount": 24,
+        "vertexBounds": {
+          "minX": 0.005810292437672615,
+          "minY": 0.07886332273483276,
+          "maxX": 0.3578519821166992,
+          "maxY": 0.3326129913330078,
+          "width": 0.3520416896790266,
+          "height": 0.25374966859817505
+        },
+        "dynamicFlags": {
+          "visible": false,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 22,
+        "id": "D_EFFECT_03",
+        "textureIndex": 0,
+        "drawOrder": 900,
+        "renderOrder": 30,
+        "opacity": 0,
+        "parentPartIndex": 11,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 11,
+        "vertexIndexCount": 36,
+        "vertexBounds": {
+          "minX": -0.021899567916989326,
+          "minY": -0.06443360447883606,
+          "maxX": 0.3532216250896454,
+          "maxY": 0.19786712527275085,
+          "width": 0.3751211930066347,
+          "height": 0.2623007297515869
+        },
+        "dynamicFlags": {
+          "visible": false,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 23,
+        "id": "D_EFFECT_01",
+        "textureIndex": 0,
+        "drawOrder": 900,
+        "renderOrder": 29,
+        "opacity": 0,
+        "parentPartIndex": 11,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 9,
+        "vertexIndexCount": 27,
+        "vertexBounds": {
+          "minX": -0.3557559847831726,
+          "minY": 0.23527026176452637,
+          "maxX": -0.07905319333076477,
+          "maxY": 0.46753913164138794,
+          "width": 0.27670279145240784,
+          "height": 0.23226886987686157
+        },
+        "dynamicFlags": {
+          "visible": false,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 24,
+        "id": "D_EFFECT_00",
+        "textureIndex": 0,
+        "drawOrder": 900,
+        "renderOrder": 28,
+        "opacity": 0,
+        "parentPartIndex": 11,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 11,
+        "vertexIndexCount": 36,
+        "vertexBounds": {
+          "minX": -0.3576775789260864,
+          "minY": 0.33404815196990967,
+          "maxX": -0.004167023114860058,
+          "maxY": 0.620302140712738,
+          "width": 0.35351055581122637,
+          "height": 0.28625398874282837
+        },
+        "dynamicFlags": {
+          "visible": false,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 25,
+        "id": "D_REF_PT_BOWL",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 10,
+        "opacity": 1,
+        "parentPartIndex": 13,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 4,
+        "vertexIndexCount": 6,
+        "vertexBounds": {
+          "minX": -0.17433470487594604,
+          "minY": -0.3340817093849182,
+          "maxX": 0.20077066123485565,
+          "maxY": -0.19102999567985535,
+          "width": 0.3751053661108017,
+          "height": 0.14305171370506287
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 26,
+        "id": "D_REF_PT_OUCH_01",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 9,
+        "opacity": 1,
+        "parentPartIndex": 13,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 4,
+        "vertexIndexCount": 6,
+        "vertexBounds": {
+          "minX": -0.04512548819184303,
+          "minY": -0.055919330567121506,
+          "maxX": 0.0509156733751297,
+          "maxY": 0.034557316452264786,
+          "width": 0.09604116156697273,
+          "height": 0.09047664701938629
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 27,
+        "id": "D_REF_PT_SOBA_06",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 8,
+        "opacity": 1,
+        "parentPartIndex": 13,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 4,
+        "vertexIndexCount": 6,
+        "vertexBounds": {
+          "minX": -0.07475373148918152,
+          "minY": -0.20167696475982666,
+          "maxX": 0.06176621466875076,
+          "maxY": 0.11258365213871002,
+          "width": 0.13651994615793228,
+          "height": 0.3142606168985367
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 28,
+        "id": "D_REF_PT_SOBA_05",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 7,
+        "opacity": 1,
+        "parentPartIndex": 13,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 4,
+        "vertexIndexCount": 6,
+        "vertexBounds": {
+          "minX": -0.05289514735341072,
+          "minY": -0.1553792506456375,
+          "maxX": 0.18488916754722595,
+          "maxY": 0.09736297279596329,
+          "width": 0.23778431490063667,
+          "height": 0.2527422234416008
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 29,
+        "id": "D_REF_PT_SOBA_04",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 6,
+        "opacity": 1,
+        "parentPartIndex": 13,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 4,
+        "vertexIndexCount": 6,
+        "vertexBounds": {
+          "minX": -0.18814270198345184,
+          "minY": -0.13818641006946564,
+          "maxX": 0.09069393575191498,
+          "maxY": 0.0989246666431427,
+          "width": 0.2788366377353668,
+          "height": 0.23711107671260834
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 30,
+        "id": "D_REF_PT_SOBA_03",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 5,
+        "opacity": 1,
+        "parentPartIndex": 13,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 4,
+        "vertexIndexCount": 6,
+        "vertexBounds": {
+          "minX": -0.1054704338312149,
+          "minY": -0.12206042557954788,
+          "maxX": 0.09099715948104858,
+          "maxY": 0.10518082976341248,
+          "width": 0.1964675933122635,
+          "height": 0.22724125534296036
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 31,
+        "id": "D_REF_PT_SOBA_02",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 4,
+        "opacity": 1,
+        "parentPartIndex": 13,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 4,
+        "vertexIndexCount": 6,
+        "vertexBounds": {
+          "minX": -0.07448368519544601,
+          "minY": -0.13775597512722015,
+          "maxX": 0.14888477325439453,
+          "maxY": 0.07848884165287018,
+          "width": 0.22336845844984055,
+          "height": 0.21624481678009033
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      },
+      {
+        "index": 32,
+        "id": "D_REF_PT_SOBA_01",
+        "textureIndex": 0,
+        "drawOrder": 500,
+        "renderOrder": 3,
+        "opacity": 1,
+        "parentPartIndex": 13,
+        "blendMode": 0,
+        "colorBlend": 0,
+        "alphaBlend": 0,
+        "culling": true,
+        "invertedMask": false,
+        "maskCount": 0,
+        "masks": [],
+        "vertexCount": 4,
+        "vertexIndexCount": 6,
+        "vertexBounds": {
+          "minX": -0.11476191133260727,
+          "minY": -0.07115448266267776,
+          "maxX": 0.1302923858165741,
+          "maxY": 0.0948200449347496,
+          "width": 0.24505429714918137,
+          "height": 0.16597452759742737
+        },
+        "dynamicFlags": {
+          "visible": true,
+          "vertexPositionsDidChange": true,
+          "visibilityDidChange": true,
+          "opacityDidChange": true,
+          "renderOrderDidChange": true,
+          "blendColorDidChange": true
+        }
+      }
+    ],
+    "offscreens": []
+  }
+}

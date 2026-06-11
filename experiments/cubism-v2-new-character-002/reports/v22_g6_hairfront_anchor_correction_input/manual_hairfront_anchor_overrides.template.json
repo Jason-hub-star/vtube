@@ -1,0 +1,263 @@
+{
+  "schema_version": "v1",
+  "status": "TEMPLATE_READY_NO_SAVED_OVERRIDES",
+  "generated_at": "2026-06-10T02:45:23.049569+00:00",
+  "source_anchor_probe": "experiments/cubism-v2-new-character-002/reports/v22_g6_hairfront_anchor_probe/v22_g6_hairfront_anchor_probe_packet.json",
+  "source_status": "G6_HAIRFRONT_ANCHOR_PROBE_READY_REVIEW_REQUIRED_PARAM_HIDDEN",
+  "instructions": [
+    "Review each HairFront row visually before changing target_anchor.",
+    "Set saved_override true only for rows that were intentionally moved or accepted as a manual override.",
+    "Use action KEEP_CURRENT, MOVE_ANCHOR, or REGENERATE_SOURCE_CANDIDATE after review.",
+    "Do not use this template as material acceptance or ParamHairFront activation."
+  ],
+  "entries": [
+    {
+      "row_id": "hair_front_center",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_center.png",
+      "current_anchor": [
+        1024,
+        430
+      ],
+      "target_anchor": [
+        1024,
+        430
+      ],
+      "delta": [
+        0,
+        0
+      ],
+      "scale": 1.0,
+      "opacity": 1.0,
+      "motion_envelope_bbox": [
+        806,
+        221,
+        1242,
+        637
+      ],
+      "bbox": [
+        820,
+        231,
+        1228,
+        629
+      ],
+      "status": "TEMPLATE_PENDING_VISUAL_REVIEW",
+      "action": "REVIEW_THEN_KEEP_MOVE_OR_REGENERATE",
+      "saved_override": false,
+      "notes": ""
+    },
+    {
+      "row_id": "hair_front_L",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_L.png",
+      "current_anchor": [
+        884,
+        446
+      ],
+      "target_anchor": [
+        884,
+        446
+      ],
+      "delta": [
+        0,
+        0
+      ],
+      "scale": 1.0,
+      "opacity": 1.0,
+      "motion_envelope_bbox": [
+        745,
+        276,
+        1022,
+        613
+      ],
+      "bbox": [
+        759,
+        286,
+        1008,
+        605
+      ],
+      "status": "TEMPLATE_PENDING_VISUAL_REVIEW",
+      "action": "REVIEW_THEN_KEEP_MOVE_OR_REGENERATE",
+      "saved_override": false,
+      "notes": ""
+    },
+    {
+      "row_id": "hair_front_R",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_R.png",
+      "current_anchor": [
+        1160,
+        456
+      ],
+      "target_anchor": [
+        1160,
+        456
+      ],
+      "delta": [
+        0,
+        0
+      ],
+      "scale": 1.0,
+      "opacity": 1.0,
+      "motion_envelope_bbox": [
+        1001,
+        272,
+        1320,
+        638
+      ],
+      "bbox": [
+        1015,
+        282,
+        1306,
+        630
+      ],
+      "status": "TEMPLATE_PENDING_VISUAL_REVIEW",
+      "action": "REVIEW_THEN_KEEP_MOVE_OR_REGENERATE",
+      "saved_override": false,
+      "notes": ""
+    },
+    {
+      "row_id": "hair_front_side_L",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_side_L.png",
+      "current_anchor": [
+        811,
+        635
+      ],
+      "target_anchor": [
+        811,
+        635
+      ],
+      "delta": [
+        0,
+        0
+      ],
+      "scale": 1.0,
+      "opacity": 1.0,
+      "motion_envelope_bbox": [
+        701,
+        375,
+        921,
+        893
+      ],
+      "bbox": [
+        715,
+        385,
+        907,
+        885
+      ],
+      "status": "TEMPLATE_PENDING_VISUAL_REVIEW",
+      "action": "REVIEW_THEN_KEEP_MOVE_OR_REGENERATE",
+      "saved_override": false,
+      "notes": ""
+    },
+    {
+      "row_id": "hair_front_side_R",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_side_R.png",
+      "current_anchor": [
+        1286,
+        635
+      ],
+      "target_anchor": [
+        1286,
+        635
+      ],
+      "delta": [
+        0,
+        0
+      ],
+      "scale": 1.0,
+      "opacity": 1.0,
+      "motion_envelope_bbox": [
+        1211,
+        375,
+        1362,
+        893
+      ],
+      "bbox": [
+        1225,
+        385,
+        1348,
+        885
+      ],
+      "status": "TEMPLATE_PENDING_VISUAL_REVIEW",
+      "action": "REVIEW_THEN_KEEP_MOVE_OR_REGENERATE",
+      "saved_override": false,
+      "notes": ""
+    },
+    {
+      "row_id": "hair_front_tip_L",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_tip_L.png",
+      "current_anchor": [
+        760,
+        871
+      ],
+      "target_anchor": [
+        760,
+        871
+      ],
+      "delta": [
+        0,
+        0
+      ],
+      "scale": 1.0,
+      "opacity": 1.0,
+      "motion_envelope_bbox": [
+        684,
+        685,
+        835,
+        1055
+      ],
+      "bbox": [
+        698,
+        695,
+        821,
+        1047
+      ],
+      "status": "TEMPLATE_PENDING_VISUAL_REVIEW",
+      "action": "REVIEW_THEN_KEEP_MOVE_OR_REGENERATE",
+      "saved_override": false,
+      "notes": ""
+    },
+    {
+      "row_id": "hair_front_tip_R",
+      "path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_tip_R.png",
+      "current_anchor": [
+        1208,
+        884
+      ],
+      "target_anchor": [
+        1208,
+        884
+      ],
+      "delta": [
+        0,
+        0
+      ],
+      "scale": 1.0,
+      "opacity": 1.0,
+      "motion_envelope_bbox": [
+        1142,
+        685,
+        1275,
+        1082
+      ],
+      "bbox": [
+        1156,
+        695,
+        1261,
+        1074
+      ],
+      "status": "TEMPLATE_PENDING_VISUAL_REVIEW",
+      "action": "REVIEW_THEN_KEEP_MOVE_OR_REGENERATE",
+      "saved_override": false,
+      "notes": ""
+    }
+  ],
+  "locks": {
+    "v21_eye_open_lower_bound": 0.27,
+    "v21_mouth_open_y_max": 0.85,
+    "param_hair_front_status": "HIDDEN_CONTRACT_ONLY",
+    "validator_only_promotion_blocked": true,
+    "material_pass_status": "BLOCKED",
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true,
+    "not_owner_approval": true
+  }
+}

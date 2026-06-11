@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-06-09T02:31:00Z",
+  "experiment_id": "cubism-v2-new-character-002",
+  "candidate_id": "model_edit_v3_hybrid_eye_filtered_mouth_v2",
+  "status": "REVISE_MINI_CUBISM_BLOCKED",
+  "technical_validation": {
+    "keypose_png_validator": "PASS_READY_FOR_VISUAL_QA",
+    "validator_report": "experiments/cubism-v2-new-character-002/reports/model_edit_v3_hybrid/model_edit_v3_hybrid_keypose_validation_report.json"
+  },
+  "visual_findings": [
+    {
+      "area": "clean_base",
+      "status": "PASS_FOR_REVIEW",
+      "finding": "Model-edited face_base_clean removes baked eyes and mouth without the previous obvious local inpaint smear."
+    },
+    {
+      "area": "eyes",
+      "status": "PASS_FOR_DIAGNOSTIC_REVIEW",
+      "finding": "Hybrid eye filtering removes the large oval eye skin-patch boundary in clean-base assembly."
+    },
+    {
+      "area": "mouth",
+      "status": "REVISE",
+      "finding": "Mouth expression layers preserved from v0 keep the preferred contact-sheet shape but still carry visible skin-patch alpha in assembly QA."
+    }
+  ],
+  "decision": "Do not proceed to Mini Cubism diagnostic preview with the full mouth set yet. The source/front and model-edited clean base are usable; the next repair should filter or regenerate only mouth expression alpha so mouth shapes keep their v0 look without skin patches.",
+  "evidence": {
+    "contact_sheet": "experiments/cubism-v2-new-character-002/reports/model_edit_v3_hybrid/model_edit_v3_hybrid_contact_sheet.png",
+    "face_assembly_sheet": "experiments/cubism-v2-new-character-002/reports/model_edit_v3_hybrid/assembly_qa/face_assembly_qa_sheet.png",
+    "mouth_assembly_sheet": "experiments/cubism-v2-new-character-002/reports/model_edit_v3_hybrid/assembly_qa/mouth_assembly_qa_sheet.png"
+  }
+}

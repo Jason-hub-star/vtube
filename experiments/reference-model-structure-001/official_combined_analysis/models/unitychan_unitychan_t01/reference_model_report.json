@@ -1,0 +1,490 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T15:27:16.704893+00:00",
+  "id": "unitychan_unitychan_t01",
+  "name": "unitychan_t01",
+  "source_url": "https://www.live2d.com/ko/learn/sample/",
+  "source_type": "OFFICIAL_SAMPLE_ZIP",
+  "license_status": "OFFICIAL_TERMS_ACCEPTED_BY_USER",
+  "analysis_mode": "FULL_STRUCTURE",
+  "official_profile_key": "unitychan",
+  "analysis_safety_notes": [],
+  "has_cmo3": true,
+  "has_moc3": true,
+  "has_model3_json": true,
+  "has_physics3_json": true,
+  "has_psd": true,
+  "local_paths": {
+    "motion3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/idle_01.motion3.json",
+        "exists": true,
+        "size_bytes": 8119
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/idle_02.motion3.json",
+        "exists": true,
+        "size_bytes": 8895
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_01.motion3.json",
+        "exists": true,
+        "size_bytes": 6344
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_02.motion3.json",
+        "exists": true,
+        "size_bytes": 5611
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_03.motion3.json",
+        "exists": true,
+        "size_bytes": 7518
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_04.motion3.json",
+        "exists": true,
+        "size_bytes": 11503
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_05.motion3.json",
+        "exists": true,
+        "size_bytes": 10614
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_06.motion3.json",
+        "exists": true,
+        "size_bytes": 10416
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_07.motion3.json",
+        "exists": true,
+        "size_bytes": 6778
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_08.motion3.json",
+        "exists": true,
+        "size_bytes": 6659
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_09.motion3.json",
+        "exists": true,
+        "size_bytes": 9015
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_10.motion3.json",
+        "exists": true,
+        "size_bytes": 7621
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_11.motion3.json",
+        "exists": true,
+        "size_bytes": 10442
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_12.motion3.json",
+        "exists": true,
+        "size_bytes": 10828
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_13.motion3.json",
+        "exists": true,
+        "size_bytes": 9661
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/motion/m_14.motion3.json",
+        "exists": true,
+        "size_bytes": 8045
+      }
+    ],
+    "cdi3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/unitychan.cdi3.json",
+      "exists": true,
+      "size_bytes": 4330
+    },
+    "model3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/unitychan.model3.json",
+      "exists": true,
+      "size_bytes": 1496
+    },
+    "moc3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/unitychan.moc3",
+      "exists": true,
+      "size_bytes": 192832
+    },
+    "physics3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/unitychan.physics3.json",
+      "exists": true,
+      "size_bytes": 4792
+    },
+    "cmo3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/unitychan_t01.cmo3",
+      "exists": true,
+      "size_bytes": 3335550
+    },
+    "psd": [
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/License/License Logo/LUUL_LOGO_rules02.psd",
+        "exists": true,
+        "size_bytes": 390557
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/Unitychan_Live2D_2015_150424.psd",
+        "exists": true,
+        "size_bytes": 28492305
+      }
+    ]
+  },
+  "cmo3": {
+    "status": "PASS",
+    "returncode": 0,
+    "json": "experiments/reference-model-structure-001/official_combined_analysis/models/unitychan_unitychan_t01/cmo3_structure_report.json",
+    "markdown": "experiments/reference-model-structure-001/official_combined_analysis/models/unitychan_unitychan_t01/cmo3_structure_report.md",
+    "stdout": "[cmo3-structure] WARN\n[cmo3-structure] json: /Users/family/jason/Vtube/experiments/reference-model-structure-001/official_combined_analysis/models/unitychan_unitychan_t01/cmo3_structure_report.json\n[cmo3-structure] md:   /Users/family/jason/Vtube/experiments/reference-model-structure-001/official_combined_analysis/models/unitychan_unitychan_t01/cmo3_structure_report.md",
+    "stderr": "",
+    "cmo3_status": "WARN",
+    "counts": {
+      "art_meshes": 70,
+      "parts": 20,
+      "parameters": 39,
+      "warp_deformers": 40,
+      "rotation_deformers": 15,
+      "keyform_bindings": 140,
+      "keyform_grids": 145,
+      "glue": 0,
+      "masks": 0
+    },
+    "parameter_ids": [
+      "PARAM_ANGLE_X",
+      "PARAM_ANGLE_Y",
+      "PARAM_ANGLE_Z",
+      "PARAM_EYE_L_OPEN",
+      "PARAM_EYE_L_SMILE",
+      "PARAM_EYE_R_OPEN",
+      "PARAM_EYE_R_SMILE",
+      "PARAM_EYE_FORM",
+      "PARAM_EYE_BALL_X",
+      "PARAM_EYE_BALL_Y",
+      "PARAM_EYE_BALL_FORM",
+      "PARAM_BROW_L_Y",
+      "PARAM_BROW_R_Y",
+      "PARAM_BROW_L_X",
+      "PARAM_BROW_R_X",
+      "PARAM_BROW_L_ANGLE",
+      "PARAM_BROW_R_ANGLE",
+      "PARAM_BROW_L_FORM",
+      "PARAM_BROW_R_FORM",
+      "PARAM_MOUTH_FORM",
+      "PARAM_MOUTH_OPEN_Y",
+      "PARAM_CHEEK",
+      "PARAM_ARM_L_01",
+      "PARAM_ARM_L_02",
+      "PARAM_HAND_L",
+      "PARAM_ARM_R_01",
+      "PARAM_ARM_R_02",
+      "PARAM_HAND_R",
+      "PARAM_LEG_L",
+      "PARAM_LEG_R",
+      "PARAM_BODY_ANGLE_X",
+      "PARAM_BODY_ANGLE_Y",
+      "PARAM_BODY_ANGLE_Z",
+      "PARAM_BREATH",
+      "PARAM_HAIR_FLUFFY",
+      "PARAM_HAIR_FRONT",
+      "PARAM_HAIR_BACK",
+      "PARAM_BASE_X",
+      "PARAM_BASE_Y"
+    ],
+    "part_names": [
+      "Root Part",
+      "[ 下絵 ]",
+      "背景",
+      "足",
+      "体",
+      "右腕",
+      "左腕",
+      "首",
+      "後ろ髪",
+      "横髪",
+      "前髪",
+      "耳",
+      "鼻",
+      "口",
+      "まゆ毛",
+      "目玉",
+      "目",
+      "顔",
+      "頬",
+      "ラフ"
+    ]
+  },
+  "moc3": {
+    "present": true,
+    "path": "experiments/reference-model-structure-001/official_samples/extracted/unitychan/Unitychan/runtime/unitychan.moc3",
+    "size_bytes": 192832,
+    "sha256": "b618f462636df3545785efd0a3dc9300d0d9cc20e71e5ab462e014be48e24164",
+    "py_moc3_status": "PASS",
+    "parameter_count": 39,
+    "art_mesh_count": 69,
+    "parameter_ids": [
+      "PARAM_ANGLE_X",
+      "PARAM_ANGLE_Y",
+      "PARAM_ANGLE_Z",
+      "PARAM_EYE_L_OPEN",
+      "PARAM_EYE_L_SMILE",
+      "PARAM_EYE_R_OPEN",
+      "PARAM_EYE_R_SMILE",
+      "PARAM_EYE_FORM",
+      "PARAM_EYE_BALL_X",
+      "PARAM_EYE_BALL_Y",
+      "PARAM_EYE_BALL_FORM",
+      "PARAM_BROW_L_Y",
+      "PARAM_BROW_R_Y",
+      "PARAM_BROW_L_X",
+      "PARAM_BROW_R_X",
+      "PARAM_BROW_L_ANGLE",
+      "PARAM_BROW_R_ANGLE",
+      "PARAM_BROW_L_FORM",
+      "PARAM_BROW_R_FORM",
+      "PARAM_MOUTH_FORM",
+      "PARAM_MOUTH_OPEN_Y",
+      "PARAM_CHEEK",
+      "PARAM_ARM_L_01",
+      "PARAM_ARM_L_02",
+      "PARAM_HAND_L",
+      "PARAM_ARM_R_01",
+      "PARAM_ARM_R_02",
+      "PARAM_HAND_R",
+      "PARAM_LEG_L",
+      "PARAM_LEG_R",
+      "PARAM_BODY_ANGLE_X",
+      "PARAM_BODY_ANGLE_Y",
+      "PARAM_BODY_ANGLE_Z",
+      "PARAM_BREATH",
+      "PARAM_HAIR_FLUFFY",
+      "PARAM_HAIR_FRONT",
+      "PARAM_HAIR_BACK",
+      "PARAM_BASE_X",
+      "PARAM_BASE_Y"
+    ],
+    "art_mesh_ids_sample": [
+      "D_PSD_14",
+      "D_PSD_12",
+      "D_PSD_15",
+      "D_PSD_13",
+      "D_PSD_63",
+      "D_PSD_62",
+      "D_PSD_17",
+      "D_PSD_16",
+      "D_PSD_64",
+      "D_PSD_11",
+      "D_PSD_05",
+      "D_PSD_04",
+      "D_PSD_03",
+      "D_PSD_60",
+      "D_PSD_02",
+      "D_PSD_01",
+      "D_PSD_10",
+      "D_PSD_09",
+      "D_PSD_08",
+      "D_PSD_61",
+      "D_PSD_07",
+      "D_PSD_06",
+      "D_PSD_18",
+      "D_PSD_00",
+      "D_PSD_43",
+      "D_PSD_42",
+      "D_PSD_41",
+      "D_PSD_40",
+      "D_PSD_39",
+      "D_PSD_38",
+      "D_PSD_37",
+      "D_PSD_20",
+      "D_PSD_19",
+      "D_PSD_26",
+      "D_PSD_25",
+      "D_PSD_24",
+      "D_PSD_23",
+      "D_PSD_53",
+      "D_PSD_52",
+      "D_PSD_32",
+      "D_PSD_31",
+      "D_PSD_30",
+      "D_PSD_29",
+      "D_PSD_28",
+      "D_PSD_27",
+      "D_PSD_51",
+      "D_PSD_50",
+      "D_PSD_49",
+      "D_PSD_48",
+      "D_PSD_47"
+    ]
+  },
+  "runtime_json": {
+    "model3": {
+      "present": true,
+      "version": 3,
+      "moc": "unitychan.moc3",
+      "texture_count": 1,
+      "has_physics": true,
+      "has_pose": false,
+      "has_display_info": true,
+      "has_user_data": false,
+      "expression_count": 0,
+      "motion_group_count": 8,
+      "motion_count": 16,
+      "group_count": 2,
+      "parameter_ids": [
+        "PARAM_EYE_L_OPEN",
+        "PARAM_EYE_R_OPEN",
+        "PARAM_MOUTH_OPEN_Y"
+      ],
+      "file_references": {
+        "Moc": "unitychan.moc3",
+        "Textures": [
+          "unitychan.2048/texture_00.png"
+        ],
+        "Physics": "unitychan.physics3.json",
+        "DisplayInfo": "unitychan.cdi3.json",
+        "Motions": {
+          "Idle": [
+            {
+              "File": "motion/idle_01.motion3.json"
+            },
+            {
+              "File": "motion/idle_02.motion3.json"
+            },
+            {
+              "File": "motion/m_09.motion3.json"
+            }
+          ],
+          "FlickDown": [
+            {
+              "File": "motion/m_01.motion3.json"
+            },
+            {
+              "File": "motion/m_08.motion3.json"
+            }
+          ],
+          "FlickLeft": [
+            {
+              "File": "motion/m_02.motion3.json"
+            }
+          ],
+          "FlickRight": [
+            {
+              "File": "motion/m_03.motion3.json"
+            }
+          ],
+          "FlickUp": [
+            {
+              "File": "motion/m_04.motion3.json"
+            },
+            {
+              "File": "motion/m_06.motion3.json"
+            },
+            {
+              "File": "motion/m_13.motion3.json"
+            }
+          ],
+          "Shake": [
+            {
+              "File": "motion/m_05.motion3.json"
+            }
+          ],
+          "Flick3": [
+            {
+              "File": "motion/m_07.motion3.json"
+            },
+            {
+              "File": "motion/m_11.motion3.json"
+            }
+          ],
+          "Tap": [
+            {
+              "File": "motion/m_10.motion3.json"
+            },
+            {
+              "File": "motion/m_12.motion3.json"
+            },
+            {
+              "File": "motion/m_14.motion3.json"
+            }
+          ]
+        }
+      }
+    },
+    "physics3": {
+      "present": true,
+      "version": 3,
+      "physics_group_count": 3,
+      "physics_input_count": 12,
+      "physics_output_count": 3,
+      "physics_vertex_count": 6,
+      "groups": [
+        {
+          "index": 0,
+          "id": "PhysicsSetting1",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 1,
+          "id": "PhysicsSetting2",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 2,
+          "id": "PhysicsSetting3",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        }
+      ]
+    },
+    "cdi3": {
+      "present": true,
+      "parameter_display_count": 39,
+      "part_display_count": 19
+    },
+    "motion3_count": 16,
+    "exp3_count": 0,
+    "pose3_present": false,
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 70,
+    "parts": 20,
+    "parameters": 39,
+    "warp_deformers": 40,
+    "rotation_deformers": 15,
+    "keyform_bindings": 140,
+    "keyform_grids": 145,
+    "glue": 0,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": false,
+    "pose": false,
+    "expression": false,
+    "motion": true,
+    "physics": true
+  },
+  "structure_hints": {
+    "hair": 1,
+    "eye": 1,
+    "mouth": 2,
+    "body": 1,
+    "arm": 2
+  },
+  "reuse_decision": "REFERENCE_ONLY",
+  "notes": [
+    "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+    "Source zip: Unitychan.zip"
+  ],
+  "structure_report_path": "experiments/reference-model-structure-001/official_combined_analysis/models/unitychan_unitychan_t01/cmo3_structure_report.json"
+}

@@ -3,14 +3,19 @@ export function NotesPanel({ item, review, onChange, onSave, saveState }) {
   root.className = "review-panel";
 
   const h2 = document.createElement("h2");
-  h2.textContent = "검수 메모";
+  h2.textContent = "짧은 메모";
 
   const rules = document.createElement("div");
   rules.className = "rules";
-  rules.append(ruleBlock("허용 픽셀", item.allowed_features), ruleBlock("섞이면 안 되는 것", item.forbidden_contamination));
+  rules.append(ruleBlock("있어도 되는 것", item.allowed_features), ruleBlock("섞이면 안 되는 것", item.forbidden_contamination));
+
+  const guide = document.createElement("p");
+  guide.className = "decision-guide";
+  guide.textContent =
+    "좋아요는 바로 진행, 고쳐서 쓰기는 작은 수정 필요, 다시 만들기는 후보에서 빼는 뜻입니다.";
 
   const textarea = document.createElement("textarea");
-  textarea.placeholder = "짧은 메모: 예) 머리카락 픽셀이 속눈썹에 섞임";
+  textarea.placeholder = "예) 앞머리 끝이 잘렸어요 / 입 위치가 살짝 어긋나요";
   textarea.value = review.human_note || "";
   textarea.addEventListener("input", () => onChange({ human_note: textarea.value }));
 
@@ -19,15 +24,22 @@ export function NotesPanel({ item, review, onChange, onSave, saveState }) {
   const save = document.createElement("button");
   save.type = "button";
   save.className = "primary";
-  save.textContent = saveState === "saving" ? "저장 중..." : "검수 저장";
+  save.textContent = saveState === "saving" ? "저장 중..." : "저장";
   save.disabled = saveState === "saving";
   save.addEventListener("click", onSave);
   const status = document.createElement("span");
   status.className = `save-state ${saveState}`;
-  status.textContent = saveState === "saved" ? "저장됨" : saveState === "error" ? "저장 실패" : "";
+  status.textContent =
+    saveState === "saved"
+      ? "저장됨"
+      : saveState === "error"
+        ? "저장 실패"
+        : saveState === "unsaved"
+          ? "메모는 버튼으로 저장"
+          : "";
   saveRow.append(save, status);
 
-  root.append(h2, rules, textarea, saveRow);
+  root.append(h2, rules, guide, textarea, saveRow);
   return root;
 }
 

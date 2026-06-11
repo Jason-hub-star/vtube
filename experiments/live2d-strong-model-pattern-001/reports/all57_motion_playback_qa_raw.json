@@ -1,0 +1,945 @@
+{
+  "models": [
+    {
+      "rank": 1,
+      "id": "chitose_chitose_t01",
+      "safe_id": "chitose_chitose_t01",
+      "name": "chitose_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 0,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/chitose_chitose_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/chitose_chitose_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/chitose_chitose_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/chitose_chitose_t01/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 2,
+      "id": "epsilon_epsilon_t02",
+      "safe_id": "epsilon_epsilon_t02",
+      "name": "Epsilon_t02",
+      "manifest_status": "PASS",
+      "runtime_index": 1,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/epsilon_epsilon_t02/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/epsilon_epsilon_t02/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/epsilon_epsilon_t02/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/epsilon_epsilon_t02/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 3,
+      "id": "haru_greeter_pro_jp_haru_greeter_t05",
+      "safe_id": "haru_greeter_pro_jp_haru_greeter_t05",
+      "name": "haru_greeter_t05",
+      "manifest_status": "PASS",
+      "runtime_index": 2,
+      "status": "NO_MOTION_GROUP",
+      "motion_group": null,
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/haru_greeter_pro_jp_haru_greeter_t05/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/haru_greeter_pro_jp_haru_greeter_t05/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/haru_greeter_pro_jp_haru_greeter_t05/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/haru_greeter_pro_jp_haru_greeter_t05/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 4,
+      "id": "haru_haru_t01",
+      "safe_id": "haru_haru_t01",
+      "name": "haru_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 3,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/haru_haru_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/haru_haru_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/haru_haru_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/haru_haru_t01/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 5,
+      "id": "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+      "safe_id": "hiyori_movie_pro_ko_hiyori_movie_pro_t02",
+      "name": "hiyori_movie_pro_t02",
+      "manifest_status": "NO_RUNTIME",
+      "status": "NO_RUNTIME",
+      "motion_group": null,
+      "captures": {},
+      "errors": [
+        "model3_json"
+      ]
+    },
+    {
+      "rank": 6,
+      "id": "kei_ko_kei_basic_free_t02",
+      "safe_id": "kei_ko_kei_basic_free_t02",
+      "name": "kei_basic_free_t02",
+      "manifest_status": "PASS",
+      "runtime_index": 4,
+      "status": "NO_MOTION_GROUP",
+      "motion_group": null,
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/kei_ko_kei_basic_free_t02/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/kei_ko_kei_basic_free_t02/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/kei_ko_kei_basic_free_t02/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/kei_ko_kei_basic_free_t02/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 7,
+      "id": "kei_ko_kei_vowels_pro_t02",
+      "safe_id": "kei_ko_kei_vowels_pro_t02",
+      "name": "kei_vowels_pro_t02",
+      "manifest_status": "PASS",
+      "runtime_index": 5,
+      "status": "NO_MOTION_GROUP",
+      "motion_group": null,
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/kei_ko_kei_vowels_pro_t02/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/kei_ko_kei_vowels_pro_t02/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/kei_ko_kei_vowels_pro_t02/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/kei_ko_kei_vowels_pro_t02/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 8,
+      "id": "koharu_haruto_haruto_t01",
+      "safe_id": "koharu_haruto_haruto_t01",
+      "name": "haruto_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 6,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/koharu_haruto_haruto_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/koharu_haruto_haruto_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/koharu_haruto_haruto_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/koharu_haruto_haruto_t01/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 9,
+      "id": "koharu_haruto_koharu_t01",
+      "safe_id": "koharu_haruto_koharu_t01",
+      "name": "koharu_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 7,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/koharu_haruto_koharu_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/koharu_haruto_koharu_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/koharu_haruto_koharu_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/koharu_haruto_koharu_t01/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 10,
+      "id": "mao_pro_ko_mao_pro_t06",
+      "safe_id": "mao_pro_ko_mao_pro_t06",
+      "name": "mao_pro_t06",
+      "manifest_status": "PASS",
+      "runtime_index": 8,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/mao_pro_ko_mao_pro_t06/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/mao_pro_ko_mao_pro_t06/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/mao_pro_ko_mao_pro_t06/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/mao_pro_ko_mao_pro_t06/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 11,
+      "id": "mark_movie_pro_ko_mark_movie_pro_t02",
+      "safe_id": "mark_movie_pro_ko_mark_movie_pro_t02",
+      "name": "mark_movie_pro_t02",
+      "manifest_status": "NO_RUNTIME",
+      "status": "NO_RUNTIME",
+      "motion_group": null,
+      "captures": {},
+      "errors": [
+        "model3_json"
+      ]
+    },
+    {
+      "rank": 12,
+      "id": "miara_pro_en_miara_pro_t04",
+      "safe_id": "miara_pro_en_miara_pro_t04",
+      "name": "miara_pro_t04",
+      "manifest_status": "PASS",
+      "runtime_index": 9,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/miara_pro_en_miara_pro_t04/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/miara_pro_en_miara_pro_t04/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/miara_pro_en_miara_pro_t04/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/miara_pro_en_miara_pro_t04/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 13,
+      "id": "natori_pro_ko_natori_pro_t06",
+      "safe_id": "natori_pro_ko_natori_pro_t06",
+      "name": "natori_pro_t06",
+      "manifest_status": "PASS",
+      "runtime_index": 10,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/natori_pro_ko_natori_pro_t06/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/natori_pro_ko_natori_pro_t06/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/natori_pro_ko_natori_pro_t06/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/natori_pro_ko_natori_pro_t06/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 14,
+      "id": "param_ctrl_pro_ko_haruto_pc_pro_t02",
+      "safe_id": "param_ctrl_pro_ko_haruto_pc_pro_t02",
+      "name": "haruto_pc_pro_t02",
+      "manifest_status": "NO_RUNTIME",
+      "status": "NO_RUNTIME",
+      "motion_group": null,
+      "captures": {},
+      "errors": [
+        "model3_json"
+      ]
+    },
+    {
+      "rank": 15,
+      "id": "param_ctrl_pro_ko_koharu_pc_pro_t02",
+      "safe_id": "param_ctrl_pro_ko_koharu_pc_pro_t02",
+      "name": "koharu_pc_pro_t02",
+      "manifest_status": "NO_RUNTIME",
+      "status": "NO_RUNTIME",
+      "motion_group": null,
+      "captures": {},
+      "errors": [
+        "model3_json"
+      ]
+    },
+    {
+      "rank": 16,
+      "id": "param_ctrl_pro_ko_seesaw_pc_pro_t02",
+      "safe_id": "param_ctrl_pro_ko_seesaw_pc_pro_t02",
+      "name": "seesaw_pc_pro_t02",
+      "manifest_status": "NO_RUNTIME",
+      "status": "NO_RUNTIME",
+      "motion_group": null,
+      "captures": {},
+      "errors": [
+        "model3_json"
+      ]
+    },
+    {
+      "rank": 17,
+      "id": "param_ctrl_pro_ko_rice_pc_pro_t02",
+      "safe_id": "param_ctrl_pro_ko_rice_pc_pro_t02",
+      "name": "rice_pc_pro_t02",
+      "manifest_status": "NO_RUNTIME",
+      "status": "NO_RUNTIME",
+      "motion_group": null,
+      "captures": {},
+      "errors": [
+        "model3_json"
+      ]
+    },
+    {
+      "rank": 18,
+      "id": "param_ctrl_pro_ko_target_pc_pro_t02",
+      "safe_id": "param_ctrl_pro_ko_target_pc_pro_t02",
+      "name": "target_pc_pro_t02",
+      "manifest_status": "NO_RUNTIME",
+      "status": "NO_RUNTIME",
+      "motion_group": null,
+      "captures": {},
+      "errors": [
+        "model3_json"
+      ]
+    },
+    {
+      "rank": 19,
+      "id": "ren_pro_ko_ren_t01",
+      "safe_id": "ren_pro_ko_ren_t01",
+      "name": "ren_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 11,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/ren_pro_ko_ren_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/ren_pro_ko_ren_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/ren_pro_ko_ren_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/ren_pro_ko_ren_t01/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 20,
+      "id": "rice_pro_ko_rice_pro_t03",
+      "safe_id": "rice_pro_ko_rice_pro_t03",
+      "name": "rice_pro_t03",
+      "manifest_status": "PASS",
+      "runtime_index": 12,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/rice_pro_ko_rice_pro_t03/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/rice_pro_ko_rice_pro_t03/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/rice_pro_ko_rice_pro_t03/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/rice_pro_ko_rice_pro_t03/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 21,
+      "id": "shizuku_shizuku_t02",
+      "safe_id": "shizuku_shizuku_t02",
+      "name": "shizuku_t02",
+      "manifest_status": "PASS",
+      "runtime_index": 13,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/shizuku_shizuku_t02/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/shizuku_shizuku_t02/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/shizuku_shizuku_t02/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/shizuku_shizuku_t02/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 22,
+      "id": "tsumiki_tsumiki_t01",
+      "safe_id": "tsumiki_tsumiki_t01",
+      "name": "tsumiki_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 14,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/tsumiki_tsumiki_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/tsumiki_tsumiki_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/tsumiki_tsumiki_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/tsumiki_tsumiki_t01/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 23,
+      "id": "unitychan_unitychan_t01",
+      "safe_id": "unitychan_unitychan_t01",
+      "name": "unitychan_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 15,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/unitychan_unitychan_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/unitychan_unitychan_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/unitychan_unitychan_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/unitychan_unitychan_t01/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 24,
+      "id": "wanko_wanko_touch_t01",
+      "safe_id": "wanko_wanko_touch_t01",
+      "name": "wanko_touch_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 16,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/wanko_wanko_touch_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/wanko_wanko_touch_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/wanko_wanko_touch_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/wanko_wanko_touch_t01/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 25,
+      "id": "hiyori_pro_ko_hiyori_pro_t11",
+      "safe_id": "hiyori_pro_ko_hiyori_pro_t11",
+      "name": "hiyori_pro_t11",
+      "manifest_status": "PASS",
+      "runtime_index": 17,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/hiyori_pro_ko_hiyori_pro_t11/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/hiyori_pro_ko_hiyori_pro_t11/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/hiyori_pro_ko_hiyori_pro_t11/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/hiyori_pro_ko_hiyori_pro_t11/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 26,
+      "id": "miku_pro_jp_miku_sample_t05",
+      "safe_id": "miku_pro_jp_miku_sample_t05",
+      "name": "miku_sample_t05",
+      "manifest_status": "PASS",
+      "runtime_index": 18,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/miku_pro_jp_miku_sample_t05/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/miku_pro_jp_miku_sample_t05/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/miku_pro_jp_miku_sample_t05/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/miku_pro_jp_miku_sample_t05/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 27,
+      "id": "tororo_hijiki_hijiki_t01",
+      "safe_id": "tororo_hijiki_hijiki_t01",
+      "name": "hijiki_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 19,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/tororo_hijiki_hijiki_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/tororo_hijiki_hijiki_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/tororo_hijiki_hijiki_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/tororo_hijiki_hijiki_t01/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 28,
+      "id": "tororo_hijiki_tororo_t01",
+      "safe_id": "tororo_hijiki_tororo_t01",
+      "name": "tororo_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 20,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/tororo_hijiki_tororo_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/tororo_hijiki_tororo_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/tororo_hijiki_tororo_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/tororo_hijiki_tororo_t01/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 29,
+      "id": "nito_nito_t01",
+      "safe_id": "nito_nito_t01",
+      "name": "nito_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 21,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nito_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nito_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nito_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nito_t01/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 30,
+      "id": "nito_ni-j.model3_runtime",
+      "safe_id": "nito_ni_j_model3_runtime",
+      "name": "ni-j.model3",
+      "manifest_status": "PASS",
+      "runtime_index": 22,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_ni_j_model3_runtime/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_ni_j_model3_runtime/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_ni_j_model3_runtime/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_ni_j_model3_runtime/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 31,
+      "id": "nito_nico.model3_runtime",
+      "safe_id": "nito_nico_model3_runtime",
+      "name": "nico.model3",
+      "manifest_status": "PASS",
+      "runtime_index": 23,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nico_model3_runtime/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nico_model3_runtime/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nico_model3_runtime/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nico_model3_runtime/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 32,
+      "id": "nito_nietzsche.model3_runtime",
+      "safe_id": "nito_nietzsche_model3_runtime",
+      "name": "nietzsche.model3",
+      "manifest_status": "PASS",
+      "runtime_index": 24,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nietzsche_model3_runtime/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nietzsche_model3_runtime/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nietzsche_model3_runtime/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nietzsche_model3_runtime/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 33,
+      "id": "nito_nipsilon.model3_runtime",
+      "safe_id": "nito_nipsilon_model3_runtime",
+      "name": "nipsilon.model3",
+      "manifest_status": "PASS",
+      "runtime_index": 25,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nipsilon_model3_runtime/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nipsilon_model3_runtime/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nipsilon_model3_runtime/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/nito_nipsilon_model3_runtime/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 34,
+      "id": "izumi_izumi_anime_t01",
+      "safe_id": "izumi_izumi_anime_t01",
+      "name": "izumi_anime_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 26,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_anime_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_anime_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_anime_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_anime_t01/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 35,
+      "id": "izumi_izumi_atsu_t01",
+      "safe_id": "izumi_izumi_atsu_t01",
+      "name": "izumi_atsu_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 27,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_atsu_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_atsu_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_atsu_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_atsu_t01/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 36,
+      "id": "izumi_izumi_illust_t01",
+      "safe_id": "izumi_izumi_illust_t01",
+      "name": "izumi_illust_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 28,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_illust_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_illust_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_illust_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_illust_t01/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 37,
+      "id": "izumi_izumi_suisai_t01",
+      "safe_id": "izumi_izumi_suisai_t01",
+      "name": "izumi_suisai_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 29,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_suisai_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_suisai_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_suisai_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/izumi_izumi_suisai_t01/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 38,
+      "id": "gantzert_felixander_gantzert_felixander_t01",
+      "safe_id": "gantzert_felixander_gantzert_felixander_t01",
+      "name": "Gantzert_Felixander_t01",
+      "manifest_status": "PASS",
+      "runtime_index": 30,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/gantzert_felixander_gantzert_felixander_t01/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/gantzert_felixander_gantzert_felixander_t01/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/gantzert_felixander_gantzert_felixander_t01/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/gantzert_felixander_gantzert_felixander_t01/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 39,
+      "id": "github_live2d_cubism_web_samples_samples_resources_haru_haru.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_haru_haru_model3",
+      "name": "Haru",
+      "manifest_status": "PASS",
+      "runtime_index": 31,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_haru_haru_model3/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_haru_haru_model3/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_haru_haru_model3/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_haru_haru_model3/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 40,
+      "id": "github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori_model3",
+      "name": "Hiyori",
+      "manifest_status": "PASS",
+      "runtime_index": 32,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori_model3/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori_model3/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori_model3/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_hiyori_hiyori_model3/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 41,
+      "id": "github_live2d_cubism_web_samples_samples_resources_mao_mao.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_mao_mao_model3",
+      "name": "Mao",
+      "manifest_status": "PASS",
+      "runtime_index": 33,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_mao_mao_model3/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_mao_mao_model3/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_mao_mao_model3/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_mao_mao_model3/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 42,
+      "id": "github_live2d_cubism_web_samples_samples_resources_mark_mark.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_mark_mark_model3",
+      "name": "Mark",
+      "manifest_status": "PASS",
+      "runtime_index": 34,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_mark_mark_model3/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_mark_mark_model3/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_mark_mark_model3/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_mark_mark_model3/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 43,
+      "id": "github_live2d_cubism_web_samples_samples_resources_natori_natori.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_natori_natori_model3",
+      "name": "Natori",
+      "manifest_status": "PASS",
+      "runtime_index": 35,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_natori_natori_model3/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_natori_natori_model3/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_natori_natori_model3/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_natori_natori_model3/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 44,
+      "id": "github_live2d_cubism_web_samples_samples_resources_ren_ren.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_ren_ren_model3",
+      "name": "Ren",
+      "manifest_status": "PASS",
+      "runtime_index": 36,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_ren_ren_model3/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_ren_ren_model3/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_ren_ren_model3/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_ren_ren_model3/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 45,
+      "id": "github_live2d_cubism_web_samples_samples_resources_rice_rice.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_rice_rice_model3",
+      "name": "Rice",
+      "manifest_status": "PASS",
+      "runtime_index": 37,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_rice_rice_model3/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_rice_rice_model3/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_rice_rice_model3/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_rice_rice_model3/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 46,
+      "id": "github_live2d_cubism_web_samples_samples_resources_wanko_wanko.model3",
+      "safe_id": "github_live2d_cubism_web_samples_samples_resources_wanko_wanko_model3",
+      "name": "Wanko",
+      "manifest_status": "PASS",
+      "runtime_index": 38,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_wanko_wanko_model3/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_wanko_wanko_model3/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_wanko_wanko_model3/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_samples_samples_resources_wanko_wanko_model3/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 47,
+      "id": "github_live2d_cubism_native_samples_samples_resources_haru_haru.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_haru_haru_model3",
+      "name": "Haru",
+      "manifest_status": "PASS",
+      "runtime_index": 39,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_haru_haru_model3/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_haru_haru_model3/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_haru_haru_model3/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_haru_haru_model3/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 48,
+      "id": "github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori_model3",
+      "name": "Hiyori",
+      "manifest_status": "PASS",
+      "runtime_index": 40,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori_model3/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori_model3/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori_model3/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_hiyori_hiyori_model3/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 49,
+      "id": "github_live2d_cubism_native_samples_samples_resources_mao_mao.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_mao_mao_model3",
+      "name": "Mao",
+      "manifest_status": "PASS",
+      "runtime_index": 41,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_mao_mao_model3/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_mao_mao_model3/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_mao_mao_model3/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_mao_mao_model3/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 50,
+      "id": "github_live2d_cubism_native_samples_samples_resources_mark_mark.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_mark_mark_model3",
+      "name": "Mark",
+      "manifest_status": "PASS",
+      "runtime_index": 42,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "Idle",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_mark_mark_model3/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_mark_mark_model3/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_mark_mark_model3/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_mark_mark_model3/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 51,
+      "id": "github_live2d_cubism_native_samples_samples_resources_natori_natori.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_natori_natori_model3",
+      "name": "Natori",
+      "manifest_status": "PASS",
+      "runtime_index": 43,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_natori_natori_model3/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_natori_natori_model3/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_natori_natori_model3/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_natori_natori_model3/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 52,
+      "id": "github_live2d_cubism_native_samples_samples_resources_ren_ren.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_ren_ren_model3",
+      "name": "Ren",
+      "manifest_status": "PASS",
+      "runtime_index": 44,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_ren_ren_model3/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_ren_ren_model3/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_ren_ren_model3/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_ren_ren_model3/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 53,
+      "id": "github_live2d_cubism_native_samples_samples_resources_rice_rice.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_rice_rice_model3",
+      "name": "Rice",
+      "manifest_status": "PASS",
+      "runtime_index": 45,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_rice_rice_model3/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_rice_rice_model3/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_rice_rice_model3/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_rice_rice_model3/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 54,
+      "id": "github_live2d_cubism_native_samples_samples_resources_wanko_wanko.model3",
+      "safe_id": "github_live2d_cubism_native_samples_samples_resources_wanko_wanko_model3",
+      "name": "Wanko",
+      "manifest_status": "PASS",
+      "runtime_index": 46,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_wanko_wanko_model3/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_wanko_wanko_model3/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_wanko_wanko_model3/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_native_samples_samples_resources_wanko_wanko_model3/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 55,
+      "id": "github_live2d_cubism_web_motionsync_samples_resources_kei_basic_kei_basic.model3",
+      "safe_id": "github_live2d_cubism_web_motionsync_samples_resources_kei_basic_kei_basic_model3",
+      "name": "Kei_basic",
+      "manifest_status": "PASS",
+      "runtime_index": 47,
+      "status": "NO_MOTION_GROUP",
+      "motion_group": null,
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_motionsync_samples_resources_kei_basic_kei_basic_model3/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_motionsync_samples_resources_kei_basic_kei_basic_model3/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_motionsync_samples_resources_kei_basic_kei_basic_model3/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_motionsync_samples_resources_kei_basic_kei_basic_model3/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 56,
+      "id": "github_live2d_cubism_web_motionsync_samples_resources_kei_vowels_kei_vowels.model3",
+      "safe_id": "github_live2d_cubism_web_motionsync_samples_resources_kei_vowels_kei_vowels_model3",
+      "name": "Kei_vowels",
+      "manifest_status": "PASS",
+      "runtime_index": 48,
+      "status": "NO_MOTION_GROUP",
+      "motion_group": null,
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_motionsync_samples_resources_kei_vowels_kei_vowels_model3/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_motionsync_samples_resources_kei_vowels_kei_vowels_model3/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_motionsync_samples_resources_kei_vowels_kei_vowels_model3/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_cubism_web_motionsync_samples_resources_kei_vowels_kei_vowels_model3/motion_80.png"
+      },
+      "errors": []
+    },
+    {
+      "rank": 57,
+      "id": "github_live2d_garage_cubism_web_ar_sample_assets_models_rice_rice.model3",
+      "safe_id": "github_live2d_garage_cubism_web_ar_sample_assets_models_rice_rice_model3",
+      "name": "Rice",
+      "manifest_status": "PASS",
+      "runtime_index": 49,
+      "status": "MOTION_CAPTURED",
+      "motion_group": "TapBody",
+      "captures": {
+        "neutral": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_garage_cubism_web_ar_sample_assets_models_rice_rice_model3/neutral.png",
+        "motion_20": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_garage_cubism_web_ar_sample_assets_models_rice_rice_model3/motion_20.png",
+        "motion_50": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_garage_cubism_web_ar_sample_assets_models_rice_rice_model3/motion_50.png",
+        "motion_80": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/all57_motion_qa/github_live2d_garage_cubism_web_ar_sample_assets_models_rice_rice_model3/motion_80.png"
+      },
+      "errors": []
+    }
+  ]
+}

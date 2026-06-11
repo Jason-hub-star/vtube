@@ -1,0 +1,448 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T14:22:04.962195+00:00",
+  "status": "B4_HAIR_FOCUSED_REVIEW_READY_PARAMHAIRFRONT_STILL_HIDDEN",
+  "source_image": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/new_character_002_source_front.raw.png",
+  "b4_raw_image": "experiments/cubism-v2-new-character-002/v22_b4_hair_pack/raw_outputs/b4_hair_pack_reference_001.png",
+  "b4_layer_pack_report": "experiments/cubism-v2-new-character-002/reports/v22_b4_hair_pack/v22_b4_layer_pack_report.json",
+  "b4_overlay_qa_report": "experiments/cubism-v2-new-character-002/reports/v22_b4_hair_pack/v22_b4_overlay_qa_report.json",
+  "triage_report": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_anchor_corrected_auto_draft/v22_b4_b5_auto_draft_review_triage.json",
+  "corrected_candidate_report": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_anchor_corrected_auto_draft/v22_b4_b5_anchor_corrected_auto_draft_report.json",
+  "review_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b4_hair_focused_review/v22_b4_hair_focused_review.png",
+  "focus_parts": [
+    "hair_back_base",
+    "hair_back_center",
+    "hair_back_underpaint",
+    "hair_back_strand_L",
+    "hair_back_strand_R",
+    "hair_front_L",
+    "hair_front_R",
+    "hair_front_center",
+    "hair_front_side_L",
+    "hair_front_side_R",
+    "hair_front_tip_L",
+    "hair_front_tip_R"
+  ],
+  "entries": [
+    {
+      "part_id": "hair_back_base",
+      "group": "hair",
+      "triage_action": "REVIEW_DRAW_ORDER_OR_MASK",
+      "priority": 2,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_base.png",
+      "bbox": [
+        644,
+        190,
+        1404,
+        1250
+      ],
+      "crop_box": [
+        549,
+        95,
+        1499,
+        1345
+      ],
+      "alpha_coverage": 0.14233398,
+      "source_hair_support_ratio": 0.56329,
+      "source_skin_or_light_overlap_ratio": 0.424138,
+      "original_anchor_center": [
+        1024.0,
+        720.0
+      ],
+      "target_anchor": [
+        1024.0,
+        720.0
+      ],
+      "target_scale": 1.0,
+      "recommendation": "KEEP_AS_BACK_OR_UNDERPAINT_REVIEW_DRAW_ORDER_MASK"
+    },
+    {
+      "part_id": "hair_back_center",
+      "group": "hair",
+      "triage_action": "REVIEW_DRAW_ORDER_OR_MASK",
+      "priority": 2,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_center.png",
+      "bbox": [
+        837,
+        435,
+        1211,
+        1210
+      ],
+      "crop_box": [
+        742,
+        340,
+        1306,
+        1305
+      ],
+      "alpha_coverage": 0.0482862,
+      "source_hair_support_ratio": 0.233427,
+      "source_skin_or_light_overlap_ratio": 0.74999,
+      "original_anchor_center": [
+        1026.0,
+        822.5
+      ],
+      "target_anchor": [
+        1024.0,
+        822.0
+      ],
+      "target_scale": 1.0,
+      "recommendation": "KEEP_AS_BACK_OR_UNDERPAINT_REVIEW_DRAW_ORDER_MASK"
+    },
+    {
+      "part_id": "hair_back_underpaint",
+      "group": "hair",
+      "triage_action": "REVIEW_DRAW_ORDER_OR_MASK",
+      "priority": 2,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_underpaint.png",
+      "bbox": [
+        818,
+        585,
+        1229,
+        1175
+      ],
+      "crop_box": [
+        723,
+        490,
+        1324,
+        1270
+      ],
+      "alpha_coverage": 0.04447603,
+      "source_hair_support_ratio": 0.211991,
+      "source_skin_or_light_overlap_ratio": 0.772935,
+      "original_anchor_center": [
+        939.5,
+        880.0
+      ],
+      "target_anchor": [
+        1024.0,
+        880.0
+      ],
+      "target_scale": 1.0,
+      "recommendation": "KEEP_AS_BACK_OR_UNDERPAINT_REVIEW_DRAW_ORDER_MASK"
+    },
+    {
+      "part_id": "hair_back_strand_L",
+      "group": "hair",
+      "triage_action": "REVIEW_ANCHOR_AND_MASK",
+      "priority": 3,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_strand_L.png",
+      "bbox": [
+        595,
+        440,
+        855,
+        1200
+      ],
+      "crop_box": [
+        500,
+        345,
+        950,
+        1295
+      ],
+      "alpha_coverage": 0.02609921,
+      "source_hair_support_ratio": 0.862361,
+      "source_skin_or_light_overlap_ratio": 0.133777,
+      "original_anchor_center": [
+        725.0,
+        820.0
+      ],
+      "target_anchor": [
+        725.0,
+        820.0
+      ],
+      "target_scale": 1.0,
+      "recommendation": "REVIEW_ANCHOR_AND_MASK"
+    },
+    {
+      "part_id": "hair_back_strand_R",
+      "group": "hair",
+      "triage_action": "REVIEW_ANCHOR_AND_MASK",
+      "priority": 3,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_back_strand_R.png",
+      "bbox": [
+        1224,
+        450,
+        1446,
+        1210
+      ],
+      "crop_box": [
+        1129,
+        355,
+        1541,
+        1305
+      ],
+      "alpha_coverage": 0.02190447,
+      "source_hair_support_ratio": 0.947048,
+      "source_skin_or_light_overlap_ratio": 0.050653,
+      "original_anchor_center": [
+        1334.0,
+        830.0
+      ],
+      "target_anchor": [
+        1335.0,
+        830.0
+      ],
+      "target_scale": 1.0,
+      "recommendation": "REVIEW_ANCHOR_AND_MASK"
+    },
+    {
+      "part_id": "hair_front_L",
+      "group": "hair",
+      "triage_action": "REVIEW_ANCHOR_AND_MASK",
+      "priority": 3,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_L.png",
+      "bbox": [
+        759,
+        286,
+        1008,
+        605
+      ],
+      "crop_box": [
+        664,
+        191,
+        1103,
+        700
+      ],
+      "alpha_coverage": 0.01171589,
+      "source_hair_support_ratio": 0.806941,
+      "source_skin_or_light_overlap_ratio": 0.18899,
+      "original_anchor_center": [
+        881.5,
+        445.0
+      ],
+      "target_anchor": [
+        882.0,
+        445.0
+      ],
+      "target_scale": 0.96,
+      "recommendation": "FRONT_HAIR_CHILD_CANDIDATE_HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "part_id": "hair_front_R",
+      "group": "hair",
+      "triage_action": "REVIEW_ANCHOR_AND_MASK",
+      "priority": 3,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_R.png",
+      "bbox": [
+        1015,
+        282,
+        1306,
+        630
+      ],
+      "crop_box": [
+        920,
+        187,
+        1401,
+        725
+      ],
+      "alpha_coverage": 0.01713395,
+      "source_hair_support_ratio": 0.789021,
+      "source_skin_or_light_overlap_ratio": 0.193552,
+      "original_anchor_center": [
+        1160.0,
+        455.0
+      ],
+      "target_anchor": [
+        1160.0,
+        455.0
+      ],
+      "target_scale": 0.96,
+      "recommendation": "FRONT_HAIR_CHILD_CANDIDATE_HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "part_id": "hair_front_center",
+      "group": "hair",
+      "triage_action": "REVIEW_ANCHOR_AND_MASK",
+      "priority": 3,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_center.png",
+      "bbox": [
+        820,
+        231,
+        1228,
+        629
+      ],
+      "crop_box": [
+        725,
+        136,
+        1323,
+        724
+      ],
+      "alpha_coverage": 0.02321458,
+      "source_hair_support_ratio": 0.820735,
+      "source_skin_or_light_overlap_ratio": 0.165886,
+      "original_anchor_center": [
+        1024.0,
+        429.0
+      ],
+      "target_anchor": [
+        1024.0,
+        430.0
+      ],
+      "target_scale": 0.96,
+      "recommendation": "FRONT_HAIR_CHILD_CANDIDATE_HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "part_id": "hair_front_side_L",
+      "group": "hair",
+      "triage_action": "REVIEW_ANCHOR_AND_MASK",
+      "priority": 3,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_side_L.png",
+      "bbox": [
+        715,
+        385,
+        907,
+        885
+      ],
+      "crop_box": [
+        620,
+        290,
+        1002,
+        980
+      ],
+      "alpha_coverage": 0.01118851,
+      "source_hair_support_ratio": 0.816601,
+      "source_skin_or_light_overlap_ratio": 0.178608,
+      "original_anchor_center": [
+        812.0,
+        635.0
+      ],
+      "target_anchor": [
+        812.0,
+        635.0
+      ],
+      "target_scale": 0.96,
+      "recommendation": "FRONT_HAIR_CHILD_CANDIDATE_HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "part_id": "hair_front_side_R",
+      "group": "hair",
+      "triage_action": "REVIEW_ANCHOR_AND_MASK",
+      "priority": 3,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_side_R.png",
+      "bbox": [
+        1225,
+        385,
+        1348,
+        885
+      ],
+      "crop_box": [
+        1130,
+        290,
+        1443,
+        980
+      ],
+      "alpha_coverage": 0.0070703,
+      "source_hair_support_ratio": 0.994566,
+      "source_skin_or_light_overlap_ratio": 0.005337,
+      "original_anchor_center": [
+        1287.0,
+        635.0
+      ],
+      "target_anchor": [
+        1287.0,
+        635.0
+      ],
+      "target_scale": 0.96,
+      "recommendation": "FRONT_HAIR_CHILD_CANDIDATE_HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "part_id": "hair_front_tip_L",
+      "group": "hair",
+      "triage_action": "REVIEW_ANCHOR_AND_MASK",
+      "priority": 3,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_tip_L.png",
+      "bbox": [
+        698,
+        695,
+        821,
+        1047
+      ],
+      "crop_box": [
+        603,
+        600,
+        916,
+        1142
+      ],
+      "alpha_coverage": 0.00541162,
+      "source_hair_support_ratio": 0.922023,
+      "source_skin_or_light_overlap_ratio": 0.072314,
+      "original_anchor_center": [
+        760.0,
+        872.5
+      ],
+      "target_anchor": [
+        760.0,
+        873.0
+      ],
+      "target_scale": 0.96,
+      "recommendation": "FRONT_HAIR_CHILD_CANDIDATE_HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "part_id": "hair_front_tip_R",
+      "group": "hair",
+      "triage_action": "REVIEW_ANCHOR_AND_MASK",
+      "priority": 3,
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/hair_front_tip_R.png",
+      "bbox": [
+        1156,
+        695,
+        1261,
+        1074
+      ],
+      "crop_box": [
+        1061,
+        600,
+        1356,
+        1169
+      ],
+      "alpha_coverage": 0.00642014,
+      "source_hair_support_ratio": 0.606942,
+      "source_skin_or_light_overlap_ratio": 0.391676,
+      "original_anchor_center": [
+        1209.0,
+        885.0
+      ],
+      "target_anchor": [
+        1209.0,
+        885.0
+      ],
+      "target_scale": 0.96,
+      "recommendation": "FRONT_HAIR_CHILD_CANDIDATE_HUMAN_REVIEW_REQUIRED"
+    }
+  ],
+  "summary": {
+    "focus_part_count": 12,
+    "front_hair_focus_count": 7,
+    "front_hair_child_candidate_count": 7,
+    "recommendation_counts": {
+      "KEEP_AS_BACK_OR_UNDERPAINT_REVIEW_DRAW_ORDER_MASK": 3,
+      "REVIEW_ANCHOR_AND_MASK": 2,
+      "FRONT_HAIR_CHILD_CANDIDATE_HUMAN_REVIEW_REQUIRED": 7
+    },
+    "param_hair_front_unlock_status": "BLOCKED_UNTIL_HUMAN_VISUAL_AND_MOTION_QA"
+  },
+  "decision": "B4 has real independent hair_front_* candidate files, but this packet is focused review evidence only. ParamHairFront remains hidden/contract-only until front hair candidates pass human visual QA and later motion-readiness checks.",
+  "next_action": [
+    "Ask for focused review only on the B4 hair review sheet, not all 33 B4/B5 anchors.",
+    "If front hair child candidates are accepted, prepare a motion-readiness check while keeping ParamHairFront hidden until that check passes.",
+    "If front hair masks are rejected, refine mask/extraction or regenerate B4 front hair mini-pass.",
+    "Keep B5 torso/shoulder focused decision separate."
+  ],
+  "self_review": {
+    "b4_layer_pack_status": "B4_LAYER_PACK_CANDIDATE_READY_FOR_OVERLAY_QA_HUMAN_REVIEW_REQUIRED",
+    "b4_overlay_qa_status": "B4_CODEX_OVERLAY_QA_REVISE_ANCHOR_OR_EXTRACTION_HUMAN_REVIEW_REQUIRED",
+    "triage_status": "G6_B4_B5_AUTO_DRAFT_TRIAGE_REEXTRACTION_AND_FOCUSED_REVIEW_REQUIRED",
+    "focus_part_count": 12,
+    "entries_count": 12,
+    "all_focus_parts_present": true,
+    "review_sheet_exists": true,
+    "has_front_hair_children_scope": true,
+    "front_hair_child_candidate_count": 7,
+    "param_hair_front_hidden": true,
+    "has_human_required_gate": true,
+    "does_not_require_owner_review_all_33": true,
+    "validator_only_promotion_blocked": true,
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true,
+    "status": "PASS"
+  }
+}

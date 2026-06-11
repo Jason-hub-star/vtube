@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "status": "DISCARDED_VISUAL_FAIL",
+  "generated_at": "2026-06-08T15:02:27.584662+00:00",
+  "source_project": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_face_detail_rebuild_v1",
+  "output_project": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_face_base_clean_v1",
+  "method": {
+    "face_base": "OpenCV Telea inpaint over union of eye part alpha masks, eye part bboxes, and saved manual cover bbox seeds.",
+    "closed_underpaint": "Transparent full-canvas layers copied from cleaned face_base using the same side-specific eye removal masks.",
+    "dilate_px": 8,
+    "bbox_pad": 8,
+    "inpaint_radius": 7
+  },
+  "mask": {
+    "sides": {
+      "L": {
+        "selected_part_ids": [
+          "eye_L_white",
+          "eye_L_underpaint",
+          "eye_L_iris",
+          "eye_L_pupil",
+          "eye_L_highlight",
+          "eye_L_upper_lash",
+          "eye_L_lower_lash",
+          "eye_L_closed_lid"
+        ],
+        "part_union_bbox": [
+          809,
+          655,
+          201,
+          143
+        ],
+        "actual_mask_bbox": [
+          801,
+          647,
+          217,
+          159
+        ],
+        "masked_pixels": 34427
+      },
+      "R": {
+        "selected_part_ids": [
+          "eye_R_white",
+          "eye_R_underpaint",
+          "eye_R_iris",
+          "eye_R_pupil",
+          "eye_R_highlight",
+          "eye_R_upper_lash",
+          "eye_R_lower_lash",
+          "eye_R_closed_lid"
+        ],
+        "part_union_bbox": [
+          1062,
+          658,
+          201,
+          145
+        ],
+        "actual_mask_bbox": [
+          1054,
+          650,
+          217,
+          161
+        ],
+        "masked_pixels": 34861
+      }
+    },
+    "manual_eye_socket_covers": {
+      "L": [
+        878,
+        689,
+        103,
+        73
+      ],
+      "R": [
+        1078,
+        691,
+        110,
+        73
+      ]
+    },
+    "masked_pixels_total": 69288
+  },
+  "debug_masks": {
+    "full_mask": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_face_base_clean_v1/reports/face_base_clean_debug/eye_removal_mask_full.png",
+    "L_mask": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_face_base_clean_v1/reports/face_base_clean_debug/eye_removal_mask_L.png",
+    "R_mask": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_face_base_clean_v1/reports/face_base_clean_debug/eye_removal_mask_R.png"
+  },
+  "created_underpaint_parts": [
+    {
+      "id": "eye_L_closed_underpaint",
+      "display_name": "왼쪽 감은 눈 밑색",
+      "source_path": "parts/eye_L_closed_underpaint.png",
+      "original_source_path": "generated from cleaned face_base eye mask",
+      "bbox": [
+        801,
+        647,
+        217,
+        159
+      ],
+      "alpha_coverage": 0.00815654,
+      "draw_order": 1024.5,
+      "folder": "Eyes",
+      "deformer_node": "head_angle_warp",
+      "material_group": "eye_L",
+      "risk_tags": [
+        "generated_underpaint_candidate"
+      ]
+    },
+    {
+      "id": "eye_R_closed_underpaint",
+      "display_name": "오른쪽 감은 눈 밑색",
+      "source_path": "parts/eye_R_closed_underpaint.png",
+      "original_source_path": "generated from cleaned face_base eye mask",
+      "bbox": [
+        1054,
+        650,
+        217,
+        161
+      ],
+      "alpha_coverage": 0.00826716,
+      "draw_order": 1032.5,
+      "folder": "Eyes",
+      "deformer_node": "head_angle_warp",
+      "material_group": "eye_R",
+      "risk_tags": [
+        "generated_underpaint_candidate"
+      ]
+    }
+  ],
+  "decision_gate": "Do not promote until closed-eye screenshot review confirms no open-eye remnants or rectangular skin blocks.",
+  "visual_reviewed_at": "2026-06-08T15:03:57.671055+00:00",
+  "visual_failure": "OpenCV inpaint over rectangular eye union pulled hair color into the eye band, producing broad brown artifacts.",
+  "decision": "Keep as evidence only; do not promote. Build v2 with alpha-first mask and no rectangular union fill."
+}

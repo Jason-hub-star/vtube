@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T16:05:29.681579+00:00",
+  "source_manifest": "review_app/review_manifest.json",
+  "contact_sheets": {
+    "g0_concept": "experiments/cubism-v2-review-001/review_packet/g0_concept_contact_sheet.png",
+    "g1_part_taxonomy": "experiments/cubism-v2-review-001/review_packet/g1_part_taxonomy_contact_sheet.png",
+    "g2_structure": "experiments/cubism-v2-review-001/review_packet/g2_structure_contact_sheet.png",
+    "g3_motion_visual": "experiments/cubism-v2-review-001/review_packet/g3_motion_visual_contact_sheet.png"
+  },
+  "failure_contact_sheet": "experiments/cubism-v2-review-001/review_packet/failure_candidates_contact_sheet.png",
+  "auto_checks": [
+    {
+      "section": "g2_structure",
+      "part_id": "g2__cubism_structure_auto_check",
+      "status": "REVISE",
+      "message": "그림 문제가 아니라 Cubism에서 deformer/keyform/physics 보강이 필요합니다.",
+      "checks": {
+        "required_part_count": "25/25",
+        "alpha_bbox_crop": "REVISE",
+        "artmesh_count": 19,
+        "parameter_count": 27,
+        "deformer_count": 10,
+        "keyform_binding_count": 18,
+        "physics_group_count": 9,
+        "physics_target_count": 26
+      },
+      "source_reports": {
+        "cmo3_report": "experiments/imagen-live2d-001/reports/cmo3_structure_report.json",
+        "mini_validation_report": "experiments/mini-cubism-dedicated-model-v1-001/mini_cubism_project_targeted/reports/validation_report.json",
+        "physics_report": "experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/reports/physics_score_report.json"
+      }
+    }
+  ],
+  "failure_candidates": [
+    {
+      "part_id": "g2__cubism_structure_auto_check",
+      "original_part_id": "front_hair",
+      "experiment_id": "mini-cubism-dedicated-model-v1-001",
+      "ko_name": "Cubism 구조 자동검사",
+      "group": "structure",
+      "section": "g2_structure",
+      "role": "auto_check",
+      "side": null,
+      "image_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+      "source_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/raw_comfyui_output/mini_cubism_dedicated_v1_mps_640_safe_20260605_132255_9931136b_front hair.png",
+      "canonical_path": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+      "overlay_path": null,
+      "bbox": null,
+      "canvas_size": [
+        2048,
+        2048
+      ],
+      "alpha_coverage": 0.0,
+      "draw_order": 300,
+      "status": "OBSERVED",
+      "include_in_import_psd": false,
+      "allowed_features": [
+        "앞머리만 있어야 함"
+      ],
+      "forbidden_contamination": [
+        "다른 파츠",
+        "배경",
+        "잘린 선"
+      ],
+      "suggested_generation_mode": "cubism_v2_part_cleanup",
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": "See-through normalized candidate. Never include in PSD until human O review and Cubism smoke gate.",
+      "production_candidate": true,
+      "tier": "v2_min",
+      "review_gate": "G2_STRUCTURE",
+      "simple_label": "구조 자동검사",
+      "simple_description": "사람 눈검수가 아니라 Cubism 구조 숫자로 확인합니다.",
+      "checklist": [
+        "ArtMesh, Parameter가 충분한가요?",
+        "Warp/Rotation Deformer와 KeyformBinding이 있나요?",
+        "Physics group이 움직임 단계에 맞게 있나요?"
+      ],
+      "compare_views": {
+        "neutral": "/assets/experiments/mini-cubism-dedicated-model-v1-001/canonical/canonical_front_2048.png",
+        "before": "/assets/experiments/imagen-live2d-001/reports/cmo3_structure_report.json",
+        "after": "/assets/experiments/mini-cubism-dedicated-model-v1-001/mini_cubism_project_targeted/reports/validation_report.json"
+      },
+      "auto_check_summary": {
+        "status": "REVISE",
+        "message": "그림 문제가 아니라 Cubism에서 deformer/keyform/physics 보강이 필요합니다.",
+        "checks": {
+          "required_part_count": "25/25",
+          "alpha_bbox_crop": "REVISE",
+          "artmesh_count": 19,
+          "parameter_count": 27,
+          "deformer_count": 10,
+          "keyform_binding_count": 18,
+          "physics_group_count": 9,
+          "physics_target_count": 26
+        },
+        "source_reports": {
+          "cmo3_report": "experiments/imagen-live2d-001/reports/cmo3_structure_report.json",
+          "mini_validation_report": "experiments/mini-cubism-dedicated-model-v1-001/mini_cubism_project_targeted/reports/validation_report.json",
+          "physics_report": "experiments/mini-cubism-dedicated-model-v1-001/targeted_motion_evidence/reports/physics_score_report.json"
+        }
+      },
+      "auto_issue_tags": [
+        "bad_alpha",
+        "clipping_risk",
+        "missing_part"
+      ],
+      "review_verdict": "REVISE",
+      "issue_tags": [
+        "bad_alpha",
+        "clipping_risk",
+        "missing_part"
+      ],
+      "human_note": "그림 문제가 아니라 Cubism에서 deformer/keyform/physics 보강이 필요합니다."
+    }
+  ]
+}

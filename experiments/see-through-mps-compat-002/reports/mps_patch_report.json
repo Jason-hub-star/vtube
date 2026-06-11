@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "experiment_id": "see-through-mps-compat-002",
+  "generated_at": "2026-06-05T04:14:08.335645+00:00",
+  "dry_run": false,
+  "plugin_dir": "/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/custom_nodes/ComfyUI-See-through",
+  "result": {
+    "path": "/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/custom_nodes/ComfyUI-See-through/see-through/common/modules/layerdiffuse/vae.py",
+    "status": "ALREADY_PATCHED"
+  },
+  "acceptance": "Patch is only useful if mps_512_safe creates *_layers.json after rerun."
+}

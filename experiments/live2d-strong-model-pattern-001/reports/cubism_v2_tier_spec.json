@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-06T15:10:23.588545+00:00",
+  "observed_reference_ranges": {
+    "art_meshes": {
+      "min": 57,
+      "median": 88.0,
+      "max": 262,
+      "mean": 117.65
+    },
+    "parts": {
+      "min": 19,
+      "median": 24.0,
+      "max": 54,
+      "mean": 27.45
+    },
+    "parameters": {
+      "min": 25,
+      "median": 44.0,
+      "max": 138,
+      "mean": 56.4
+    },
+    "warp_deformers": {
+      "min": 27,
+      "median": 53.5,
+      "max": 128,
+      "mean": 62.35
+    },
+    "rotation_deformers": {
+      "min": 2,
+      "median": 20.0,
+      "max": 107,
+      "mean": 29.8
+    },
+    "keyform_bindings": {
+      "min": 85,
+      "median": 220.5,
+      "max": 497,
+      "mean": 253.45
+    },
+    "glue": {
+      "min": 0,
+      "median": 0.0,
+      "max": 36,
+      "mean": 7.5
+    }
+  },
+  "tiers": {
+    "v2_min": {
+      "part_count": "20-25",
+      "goal": "pass deformer/keyform/physics gate",
+      "minimums": {
+        "parameters": 12,
+        "warp_deformers": 8,
+        "keyform_bindings": 20,
+        "physics_groups": 2
+      },
+      "usage": "technical gate only; not final production target"
+    },
+    "v2_standard": {
+      "part_count": "50-70",
+      "goal": "natural eye/mouth/hair/body-angle motion",
+      "minimums": {
+        "parameters": 25,
+        "warp_deformers": 35,
+        "rotation_deformers": 8,
+        "keyform_bindings": 120,
+        "physics_groups": 4
+      },
+      "usage": "first production candidate default"
+    },
+    "v2_rich": {
+      "part_count": "90+",
+      "goal": "official-core-sample-like expression richness",
+      "minimums": {
+        "parameters": 50,
+        "warp_deformers": 60,
+        "rotation_deformers": 20,
+        "keyform_bindings": 220,
+        "physics_groups": 8
+      },
+      "recommended": "at least two of mask/pose/expression when the design needs rich interactions"
+    }
+  },
+  "category_decisions": {
+    "eye": "Use separate eye open/smile/eyeball/brow parameters; verify neutral and extreme eye screenshots.",
+    "mouth": "Use MouthOpen/Form plus vowel/lip-sync references when available; Kei is the mouth baseline.",
+    "hair": "Use front/side/back hair parameters and physics outputs; Miku/Hiyori are primary hair baselines.",
+    "body_angle": "Use AngleX/Y/Z and BodyAngleX/Y/Z as standard motion axes; avoid treating extreme sweep as natural pose.",
+    "arm": "Keep optional for v2_min, but include arm/hand/shoulder variants in v2_standard when the design needs gestures.",
+    "physics": "Require physics groups for hair/body secondary motion; use output category coverage as the main quality signal.",
+    "mask_pose_expression": "Use mask/pose/expression only when design needs it; do not force rich-sample complexity into v2_min.",
+    "psd_layering": "Use PSD/material split examples as taxonomy guidance only; do not reuse official art assets."
+  },
+  "default_choice": "v2_standard"
+}

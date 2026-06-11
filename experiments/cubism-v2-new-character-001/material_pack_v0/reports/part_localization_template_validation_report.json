@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-08T08:16:19.621335+00:00",
+  "status": "REVISE_LOCALIZATION_SPLIT_NEEDS_SEMANTIC_MASKING",
+  "inputs": {
+    "manual_overrides": "experiments/cubism-v2-new-character-001/material_pack_v0/reports/manual_semantic_overrides.json",
+    "part_localization_template": "experiments/cubism-v2-new-character-001/material_pack_v0/reports/part_localization_template.json",
+    "layer_manifest": "experiments/cubism-v2-new-character-001/material_pack_v0/layer_manifest.json",
+    "localized_manifest": "experiments/cubism-v2-new-character-001/material_pack_v0/layer_manifest.localization_template_split_v1.json"
+  },
+  "outputs": {
+    "split_report": "experiments/cubism-v2-new-character-001/material_pack_v0/reports/part_localization_split_report.json",
+    "split_contact_sheet": "experiments/cubism-v2-new-character-001/material_pack_v0/reports/part_localization_split_contact_sheet.png",
+    "localized_semantic_purity_report": "experiments/cubism-v2-new-character-001/material_pack_v0/reports/semantic_purity_localization_split/semantic_purity_gate_report.json",
+    "mini_cubism_localized_project": "experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_localized_v1",
+    "mini_cubism_validation_report": "experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_localized_v1/reports/validation_report.json"
+  },
+  "metrics": {
+    "manual_override_count": 37,
+    "template_part_count": 37,
+    "anchor_outside_roi_count": 33,
+    "localized_parts_applied": 37,
+    "localized_parts_kept": 25,
+    "semantic_status": "REVISE_G1_5_SEMANTIC_PURITY_GATE",
+    "neutral_after_bad_ratio_visible": 0.088469,
+    "underpaint_before_top_owner_pixels": 3110,
+    "underpaint_after_top_owner_pixels": 145,
+    "eye_mouth_after_status": "PASS",
+    "mini_cubism_status": "PASS",
+    "mini_cubism_counts": {
+      "parts": 62,
+      "meshes": 62,
+      "deformers": 11,
+      "parameters": 15,
+      "keyform_bindings": 22,
+      "glue": 0
+    }
+  },
+  "pass_conditions": {
+    "manual_overrides_present": true,
+    "template_generated": true,
+    "localized_split_applied": true,
+    "semantic_gate_passed": false,
+    "mini_cubism_project_validates": true,
+    "semantic_neutral_after_lte_5pct": false,
+    "semantic_underpaint_leakage_reduced": true,
+    "semantic_eye_mouth_after_pass": true,
+    "semantic_layer_alone_generated": true,
+    "semantic_owner_maps_generated": true,
+    "semantic_manifest_applied": true
+  },
+  "active_manifest_status": "ROI_GUIDED_SEMANTIC_REMASK_V1_APPLIED",
+  "localized_manifest_status": "LOCALIZATION_TEMPLATE_SPLIT_V1_APPLIED",
+  "interpretation": [
+    "Saved manual semantic labels can be converted into a reusable localization template.",
+    "The template can regenerate current-candidate layers from ROI coordinates.",
+    "The localized split opens as a Mini Cubism project, so paths/canvas/bboxes are structurally usable.",
+    "The localized split is not production-ready by itself because the G1.5 semantic/neutral score remains above threshold.",
+    "Use the template as a localization guide, then run semantic mask/underpaint repair instead of relying on raw ROI crop for final material approval."
+  ]
+}

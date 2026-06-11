@@ -1,0 +1,702 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T15:27:09.190145+00:00",
+  "id": "natori_pro_ko_natori_pro_t06",
+  "name": "natori_pro_t06",
+  "source_url": "https://www.live2d.com/ko/learn/sample/",
+  "source_type": "OFFICIAL_SAMPLE_ZIP",
+  "license_status": "OFFICIAL_TERMS_ACCEPTED_BY_USER",
+  "analysis_mode": "FULL_STRUCTURE",
+  "official_profile_key": "natori",
+  "analysis_safety_notes": [],
+  "has_cmo3": true,
+  "has_moc3": true,
+  "has_model3_json": true,
+  "has_physics3_json": true,
+  "has_psd": false,
+  "local_paths": {
+    "exp3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/exp/Angry.exp3.json",
+        "exists": true,
+        "size_bytes": 1860
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/exp/Blushing.exp3.json",
+        "exists": true,
+        "size_bytes": 1848
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/exp/Normal.exp3.json",
+        "exists": true,
+        "size_bytes": 1845
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/exp/Sad.exp3.json",
+        "exists": true,
+        "size_bytes": 1850
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/exp/Smile.exp3.json",
+        "exists": true,
+        "size_bytes": 1847
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/exp/Surprised.exp3.json",
+        "exists": true,
+        "size_bytes": 1865
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/exp/exp_01.exp3.json",
+        "exists": true,
+        "size_bytes": 1851
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/exp/exp_02.exp3.json",
+        "exists": true,
+        "size_bytes": 1853
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/exp/exp_03.exp3.json",
+        "exists": true,
+        "size_bytes": 1848
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/exp/exp_04.exp3.json",
+        "exists": true,
+        "size_bytes": 1864
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/exp/exp_05.exp3.json",
+        "exists": true,
+        "size_bytes": 1848
+      }
+    ],
+    "motion3_json": [
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/motions/mtn_00.motion3.json",
+        "exists": true,
+        "size_bytes": 15644
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/motions/mtn_01.motion3.json",
+        "exists": true,
+        "size_bytes": 19926
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/motions/mtn_02.motion3.json",
+        "exists": true,
+        "size_bytes": 22165
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/motions/mtn_03.motion3.json",
+        "exists": true,
+        "size_bytes": 25815
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/motions/mtn_04.motion3.json",
+        "exists": true,
+        "size_bytes": 23692
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/motions/mtn_05.motion3.json",
+        "exists": true,
+        "size_bytes": 23687
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/motions/mtn_06.motion3.json",
+        "exists": true,
+        "size_bytes": 21628
+      },
+      {
+        "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/motions/mtn_07.motion3.json",
+        "exists": true,
+        "size_bytes": 19460
+      }
+    ],
+    "cdi3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/natori_pro_t06.cdi3.json",
+      "exists": true,
+      "size_bytes": 13095
+    },
+    "pose3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/natori.pose3.json",
+      "exists": true,
+      "size_bytes": 480
+    },
+    "model3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/natori_pro_t06.model3.json",
+      "exists": true,
+      "size_bytes": 1969
+    },
+    "moc3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/natori_pro_t06.moc3",
+      "exists": true,
+      "size_bytes": 771072
+    },
+    "physics3_json": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/natori_pro_t06.physics3.json",
+      "exists": true,
+      "size_bytes": 15575
+    },
+    "cmo3": {
+      "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/natori_pro_t06.cmo3",
+      "exists": true,
+      "size_bytes": 18980354
+    }
+  },
+  "cmo3": {
+    "status": "PASS",
+    "returncode": 0,
+    "json": "experiments/reference-model-structure-001/official_combined_analysis/models/natori_pro_ko_natori_pro_t06/cmo3_structure_report.json",
+    "markdown": "experiments/reference-model-structure-001/official_combined_analysis/models/natori_pro_ko_natori_pro_t06/cmo3_structure_report.md",
+    "stdout": "[cmo3-structure] PASS\n[cmo3-structure] json: /Users/family/jason/Vtube/experiments/reference-model-structure-001/official_combined_analysis/models/natori_pro_ko_natori_pro_t06/cmo3_structure_report.json\n[cmo3-structure] md:   /Users/family/jason/Vtube/experiments/reference-model-structure-001/official_combined_analysis/models/natori_pro_ko_natori_pro_t06/cmo3_structure_report.md",
+    "stderr": "",
+    "cmo3_status": "PASS",
+    "counts": {
+      "art_meshes": 176,
+      "parts": 33,
+      "parameters": 96,
+      "warp_deformers": 128,
+      "rotation_deformers": 52,
+      "keyform_bindings": 407,
+      "keyform_grids": 400,
+      "glue": 11,
+      "masks": 0
+    },
+    "parameter_ids": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamEyeLOpen",
+      "ParamEyeLSmile",
+      "ParamEyeROpen",
+      "ParamEyeRSmile",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamBrowLY",
+      "ParamBrowRY",
+      "ParamBrowLX",
+      "ParamBrowRX",
+      "ParamBrowLAngle",
+      "ParamBrowRAngle",
+      "ParamBrowLForm",
+      "ParamBrowRForm",
+      "ParamMouthForm",
+      "ParamMouthOpenY",
+      "ParamCheek",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBodyAngleZ",
+      "ParamBreath",
+      "ParamHairFront",
+      "ParamHairSide",
+      "ParamHairBack",
+      "ParamEyeLForm",
+      "ParamEyeRForm",
+      "ParamMouthForm2",
+      "ParamTeethOn",
+      "ParamBrowLForm2",
+      "ParamBrowRForm2",
+      "ParamGrassWhite",
+      "ParamGrassHighlight",
+      "ParamGrassHighlightMove",
+      "ParamWaistAngleZ",
+      "ParamAllX",
+      "ParamAllY",
+      "ParamAllRotate",
+      "ParamBodyPosition",
+      "ParamLeftShoulderUp",
+      "ParamRightShoulderUp",
+      "ParamJacket",
+      "ParamArmAR01",
+      "ParamArmAR02",
+      "ParamArmAR03",
+      "ParamArmAL01",
+      "ParamArmAL02",
+      "ParamArmAL03",
+      "ParamHairFrontFuwa",
+      "ParamHairSideFuwa",
+      "ParamHairBackFuwa",
+      "ParamArmBR01",
+      "ParamArmBR02",
+      "ParamArmBR03",
+      "ParamArmBRHand01",
+      "ParamArmBRHand05",
+      "ParamArmBRHand01Roll",
+      "ParamArmBRHand05Roll1",
+      "ParamArmBRHand05Roll2",
+      "ParamArmBRHand05Roll3",
+      "ParamArmCR01",
+      "ParamArmCR02",
+      "ParamArmCR03",
+      "ParamArmCLHandRoll1",
+      "ParamArmDL01",
+      "ParamArmDL02",
+      "ParamArmDL03",
+      "ParamArmDLHand03Roll",
+      "ParamArmER01",
+      "ParamArmER02",
+      "ParamArmER03",
+      "ParamArmER04",
+      "ParamArmERHand04",
+      "ParamArmERHand06",
+      "ParamArmERHand04Roll1",
+      "ParamArmERHand04Roll2",
+      "ParamArmERHand06Roll1",
+      "ParamArmERHand06Roll2",
+      "ParamWatchSwingA1",
+      "ParamWatchSwingA2",
+      "ParamWatchAX",
+      "ParamChainWaist",
+      "ParamGlassUD",
+      "ParamWatchBOpen",
+      "ParamWatchBX",
+      "ParamWatchBSwitch",
+      "ParamEyeBallForm",
+      "ParamWatchBOpen2",
+      "ParamWatchBRoll",
+      "ParamWatchBUD",
+      "ParamWatchBLR",
+      "ParamArmAL04",
+      "ParamArmAR04",
+      "ParamWatchBChain"
+    ],
+    "part_names": [
+      "Root Part",
+      "눈썹",
+      "오른쪽 눈",
+      "왼쪽 눈",
+      "머리카락이 난 곳",
+      "그림자",
+      "코",
+      "입",
+      "쟈켓",
+      "CORE",
+      "장갑_4",
+      "장갑_6",
+      "장갑_3",
+      "장갑_2",
+      "장갑_1",
+      "장갑_5",
+      "안경",
+      "회중시계_B",
+      "앞머리",
+      "머리",
+      "상반신",
+      "하반신",
+      "왼팔 A",
+      "오른팔 A",
+      "오른팔 B",
+      "왼팔 C",
+      "왼팔D",
+      "오른팔 E",
+      "회중시계_A",
+      "오른팔 A 팔뚝",
+      "왼팔 A 전완",
+      "뒷머리",
+      "크레딧"
+    ]
+  },
+  "moc3": {
+    "present": true,
+    "path": "experiments/reference-model-structure-001/official_samples/extracted/natori_pro_ko/natori_pro_ko/runtime/natori_pro_t06.moc3",
+    "size_bytes": 771072,
+    "sha256": "8f3122e2d3b5a30f79d95078ac756e45ea5df740f3e72f461cdec793303bf94f",
+    "py_moc3_status": "PASS",
+    "parameter_count": 96,
+    "art_mesh_count": 176,
+    "parameter_ids": [
+      "ParamAngleX",
+      "ParamAngleY",
+      "ParamAngleZ",
+      "ParamEyeLOpen",
+      "ParamEyeLSmile",
+      "ParamEyeLForm",
+      "ParamEyeROpen",
+      "ParamEyeRSmile",
+      "ParamEyeRForm",
+      "ParamEyeBallX",
+      "ParamEyeBallY",
+      "ParamEyeBallForm",
+      "ParamBrowLY",
+      "ParamBrowRY",
+      "ParamBrowLX",
+      "ParamBrowRX",
+      "ParamBrowLAngle",
+      "ParamBrowRAngle",
+      "ParamBrowLForm",
+      "ParamBrowLForm2",
+      "ParamBrowRForm",
+      "ParamBrowRForm2",
+      "ParamMouthForm",
+      "ParamMouthOpenY",
+      "ParamMouthForm2",
+      "ParamTeethOn",
+      "ParamCheek",
+      "ParamGlassUD",
+      "ParamGrassWhite",
+      "ParamGrassHighlight",
+      "ParamGrassHighlightMove",
+      "ParamBodyAngleX",
+      "ParamBodyAngleY",
+      "ParamBodyAngleZ",
+      "ParamWaistAngleZ",
+      "ParamBodyPosition",
+      "ParamBreath",
+      "ParamLeftShoulderUp",
+      "ParamRightShoulderUp",
+      "ParamAllX",
+      "ParamAllY",
+      "ParamAllRotate",
+      "ParamHairFront",
+      "ParamHairSide",
+      "ParamHairBack",
+      "ParamHairFrontFuwa",
+      "ParamHairSideFuwa",
+      "ParamHairBackFuwa",
+      "ParamJacket",
+      "ParamChainWaist",
+      "ParamWatchSwingA1",
+      "ParamWatchSwingA2",
+      "ParamWatchBChain",
+      "ParamWatchAX",
+      "ParamWatchBSwitch",
+      "ParamWatchBOpen",
+      "ParamWatchBOpen2",
+      "ParamWatchBX",
+      "ParamWatchBRoll",
+      "ParamWatchBLR",
+      "ParamWatchBUD",
+      "ParamArmAL01",
+      "ParamArmAL02",
+      "ParamArmAL03",
+      "ParamArmAL04",
+      "ParamArmAR01",
+      "ParamArmAR02",
+      "ParamArmAR03",
+      "ParamArmAR04",
+      "ParamArmBR01",
+      "ParamArmBR02",
+      "ParamArmBR03",
+      "ParamArmBRHand01",
+      "ParamArmBRHand01Roll",
+      "ParamArmBRHand05",
+      "ParamArmBRHand05Roll1",
+      "ParamArmBRHand05Roll2",
+      "ParamArmBRHand05Roll3",
+      "ParamArmCR01",
+      "ParamArmCR02",
+      "ParamArmCR03",
+      "ParamArmCLHandRoll1",
+      "ParamArmDL01",
+      "ParamArmDL02",
+      "ParamArmDL03",
+      "ParamArmDLHand03Roll",
+      "ParamArmER01",
+      "ParamArmER02",
+      "ParamArmER03",
+      "ParamArmER04",
+      "ParamArmERHand04",
+      "ParamArmERHand04Roll1",
+      "ParamArmERHand04Roll2",
+      "ParamArmERHand06",
+      "ParamArmERHand06Roll1",
+      "ParamArmERHand06Roll2"
+    ],
+    "art_mesh_ids_sample": [
+      "ArtMesh2",
+      "ArtMesh3",
+      "ArtMesh4",
+      "ArtMesh5",
+      "ArtMesh8",
+      "ArtMesh11",
+      "ArtMesh12",
+      "ArtMesh16",
+      "ArtMesh18",
+      "ArtMesh19",
+      "ArtMesh20",
+      "ArtMesh22",
+      "ArtMesh23",
+      "ArtMesh24",
+      "ArtMesh25",
+      "ArtMesh26",
+      "ArtMesh27",
+      "ArtMesh28",
+      "ArtMesh30",
+      "ArtMesh31",
+      "ArtMesh32",
+      "ArtMesh33",
+      "ArtMesh34",
+      "ArtMesh35",
+      "ArtMesh36",
+      "ArtMesh37",
+      "ArtMesh53",
+      "ArtMesh54",
+      "ArtMesh55",
+      "ArtMesh56",
+      "ArtMesh57",
+      "ArtMesh58",
+      "ArtMesh59",
+      "ArtMesh60",
+      "ArtMesh61",
+      "ArtMesh62",
+      "ArtMesh63",
+      "ArtMesh64",
+      "ArtMesh66",
+      "ArtMesh67",
+      "ArtMesh68",
+      "ArtMesh69",
+      "ArtMesh76",
+      "ArtMesh77",
+      "ArtMesh78",
+      "ArtMesh79",
+      "ArtMesh80",
+      "ArtMesh83",
+      "ArtMesh84",
+      "ArtMesh85"
+    ]
+  },
+  "runtime_json": {
+    "model3": {
+      "present": true,
+      "version": 3,
+      "moc": "natori_pro_t06.moc3",
+      "texture_count": 1,
+      "has_physics": true,
+      "has_pose": true,
+      "has_display_info": true,
+      "has_user_data": false,
+      "expression_count": 11,
+      "motion_group_count": 6,
+      "motion_count": 8,
+      "group_count": 2,
+      "parameter_ids": [
+        "ParamEyeLOpen",
+        "ParamEyeROpen",
+        "ParamMouthOpenY"
+      ],
+      "file_references": {
+        "Moc": "natori_pro_t06.moc3",
+        "Textures": [
+          "natori_pro_t06.4096/texture_00.png"
+        ],
+        "Physics": "natori_pro_t06.physics3.json",
+        "Pose": "natori.pose3.json",
+        "DisplayInfo": "natori_pro_t06.cdi3.json",
+        "Expressions": [
+          {
+            "Name": "Angry",
+            "File": "exp/Angry.exp3.json"
+          },
+          {
+            "Name": "Blushing",
+            "File": "exp/Blushing.exp3.json"
+          },
+          {
+            "Name": "Normal",
+            "File": "exp/Normal.exp3.json"
+          },
+          {
+            "Name": "Sad",
+            "File": "exp/Sad.exp3.json"
+          },
+          {
+            "Name": "Smile",
+            "File": "exp/Smile.exp3.json"
+          },
+          {
+            "Name": "Surprised",
+            "File": "exp/Surprised.exp3.json"
+          },
+          {
+            "Name": "exp_01",
+            "File": "exp/exp_01.exp3.json"
+          },
+          {
+            "Name": "exp_02",
+            "File": "exp/exp_02.exp3.json"
+          },
+          {
+            "Name": "exp_03",
+            "File": "exp/exp_03.exp3.json"
+          },
+          {
+            "Name": "exp_04",
+            "File": "exp/exp_04.exp3.json"
+          },
+          {
+            "Name": "exp_05",
+            "File": "exp/exp_05.exp3.json"
+          }
+        ],
+        "Motions": {
+          "Idle": [
+            {
+              "File": "motions/mtn_00.motion3.json"
+            },
+            {
+              "File": "motions/mtn_01.motion3.json"
+            },
+            {
+              "File": "motions/mtn_02.motion3.json"
+            }
+          ],
+          "Tap": [
+            {
+              "File": "motions/mtn_03.motion3.json"
+            }
+          ],
+          "FlickUp@Head": [
+            {
+              "File": "motions/mtn_04.motion3.json"
+            }
+          ],
+          "Flick@Body": [
+            {
+              "File": "motions/mtn_05.motion3.json"
+            }
+          ],
+          "FlickDown@Body": [
+            {
+              "File": "motions/mtn_06.motion3.json"
+            }
+          ],
+          "Tap@Head": [
+            {
+              "File": "motions/mtn_07.motion3.json"
+            }
+          ]
+        }
+      }
+    },
+    "physics3": {
+      "present": true,
+      "version": 3,
+      "physics_group_count": 11,
+      "physics_input_count": 34,
+      "physics_output_count": 12,
+      "physics_vertex_count": 23,
+      "groups": [
+        {
+          "index": 0,
+          "id": "PhysicsSetting1",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 1,
+          "id": "PhysicsSetting2",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 2,
+          "id": "PhysicsSetting3",
+          "input_count": 4,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 3,
+          "id": "PhysicsSetting4",
+          "input_count": 3,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 4,
+          "id": "PhysicsSetting5",
+          "input_count": 3,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 5,
+          "id": "PhysicsSetting6",
+          "input_count": 3,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 6,
+          "id": "PhysicsSetting7",
+          "input_count": 3,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 7,
+          "id": "PhysicsSetting8",
+          "input_count": 3,
+          "output_count": 2,
+          "vertex_count": 3
+        },
+        {
+          "index": 8,
+          "id": "PhysicsSetting9",
+          "input_count": 3,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 9,
+          "id": "PhysicsSetting10",
+          "input_count": 3,
+          "output_count": 1,
+          "vertex_count": 2
+        },
+        {
+          "index": 10,
+          "id": "PhysicsSetting11",
+          "input_count": 1,
+          "output_count": 1,
+          "vertex_count": 2
+        }
+      ]
+    },
+    "cdi3": {
+      "present": true,
+      "parameter_display_count": 96,
+      "part_display_count": 32
+    },
+    "motion3_count": 8,
+    "exp3_count": 11,
+    "pose3_present": true,
+    "errors": []
+  },
+  "structure_counts": {
+    "art_meshes": 176,
+    "parts": 33,
+    "parameters": 96,
+    "warp_deformers": 128,
+    "rotation_deformers": 52,
+    "keyform_bindings": 407,
+    "keyform_grids": 400,
+    "glue": 11,
+    "masks": 0
+  },
+  "feature_presence": {
+    "mask": false,
+    "glue": true,
+    "pose": true,
+    "expression": true,
+    "motion": true,
+    "physics": true
+  },
+  "structure_hints": {
+    "hair": 1,
+    "eye": 1,
+    "mouth": 1,
+    "body": 1,
+    "arm": 2
+  },
+  "reuse_decision": "REFERENCE_ONLY",
+  "notes": [
+    "Official Live2D sample. Analyze structure and learning pattern only; do not reuse art, textures, or PSD layers.",
+    "Source zip: natori_pro_ko.zip"
+  ],
+  "structure_report_path": "experiments/reference-model-structure-001/official_combined_analysis/models/natori_pro_ko_natori_pro_t06/cmo3_structure_report.json"
+}

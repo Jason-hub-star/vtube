@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "experiment_id": "mini-cubism-pack-splitter-v0-001",
+  "generated_at": "2026-06-05T06:06:23.241429+00:00",
+  "status": "RUNTIME_PASS_REVISE_MASK",
+  "runtime_status": "PASS",
+  "quality_status": "REVISE_MASK",
+  "model_id": "cyberagent/layerd-birefnet",
+  "device": "mps",
+  "actual_hf_inference_count": 4,
+  "issue_count": 3,
+  "records": [
+    {
+      "pack_id": "hair_pack",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/layerd_birefnet/hair_pack/hair_pack_layerd_birefnet.png",
+      "bbox": [
+        303,
+        9,
+        1440,
+        1790
+      ],
+      "nonzero_alpha": 1549155,
+      "alpha_coverage": 0.36934733,
+      "issues": [],
+      "quality_status": "CANDIDATE",
+      "is_actual_hf_inference": true
+    },
+    {
+      "pack_id": "outfit_pack",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/outfit_pack/source_outfit_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/layerd_birefnet/outfit_pack/outfit_pack_layerd_birefnet.png",
+      "bbox": [
+        268,
+        362,
+        1511,
+        1461
+      ],
+      "nonzero_alpha": 1709897,
+      "alpha_coverage": 0.40767121,
+      "issues": [],
+      "quality_status": "CANDIDATE",
+      "is_actual_hf_inference": true
+    },
+    {
+      "pack_id": "accessory_pack",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/accessory_pack/source_accessory_pack.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/layerd_birefnet/accessory_pack/accessory_pack_layerd_birefnet.png",
+      "bbox": [
+        39,
+        364,
+        1822,
+        1313
+      ],
+      "nonzero_alpha": 2264891,
+      "alpha_coverage": 0.53999209,
+      "issues": [
+        "BROAD_MASK_ALPHA_COVERAGE"
+      ],
+      "quality_status": "REVISE_MASK",
+      "is_actual_hf_inference": true
+    },
+    {
+      "pack_id": "keypose_asset_pack",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/layerd_birefnet/keypose_asset_pack/keypose_asset_pack_layerd_birefnet.png",
+      "bbox": [
+        0,
+        326,
+        2048,
+        1605
+      ],
+      "nonzero_alpha": 2889421,
+      "alpha_coverage": 0.68889165,
+      "issues": [
+        "BROAD_MASK_ALPHA_COVERAGE",
+        "BBOX_NEAR_FULL_CANVAS"
+      ],
+      "quality_status": "REVISE_MASK",
+      "is_actual_hf_inference": true
+    }
+  ],
+  "contact_sheet": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/layerd_birefnet_contact_sheet.png"
+}

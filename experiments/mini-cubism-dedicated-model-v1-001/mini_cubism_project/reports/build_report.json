@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-05T02:10:03.767266+00:00",
+  "status": "BUILT_PENDING_VALIDATION",
+  "parts": 73,
+  "hair_parts": 18,
+  "eye_parts": 16,
+  "mouth_parts": 8,
+  "physics_targets": 26,
+  "active_physics_profiles": 9
+}

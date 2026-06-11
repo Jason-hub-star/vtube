@@ -1,0 +1,145 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T13:03:26.011902+00:00",
+  "review_id": "cubism-v2-new-character-002-v22-b5-body-clothing-pack-review-001",
+  "status": "B5_RAW_BODY_CLOTHING_PACK_CANDIDATE_READY_FOR_EXTRACTION_HUMAN_REVIEW_REQUIRED",
+  "source_image": "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/new_character_002_source_front.raw.png",
+  "b1_clean_base_reference": "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/raw_outputs/b1_clean_base_underpaint_reference_001.png",
+  "b5_raw_image": "experiments/cubism-v2-new-character-002/v22_b5_body_clothing_pack/raw_outputs/b5_body_clothing_pack_reference_001.png",
+  "built_in_imagegen_source": "/Users/family/.codex/generated_images/019eabbe-60d9-79b2-ae99-4e869fb2525a/ig_0acae21c1c26dfc8016a280deceaf8819187567ad354e33e72.png",
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b5_body_clothing_pack/v22_b5_body_clothing_pack_contact_sheet.png",
+  "imagegen_mode": "built_in_image_gen",
+  "image_generation": "RUN_ON_2026_06_09",
+  "prompt": "Use case: stylized-concept\nAsset type: Live2D/Cubism v2_standard B5 body and clothing material reference sheet for character material generation.\nPrimary request: Create a clean anime Live2D / Cubism B5 body and clothing material reference sheet for the same character identity: adult cute woman, long warm brown hair, soft pale skin, white ribbed off-shoulder sweater with simple shoulder straps, front-facing neutral upper-body proportions. This is a new body/clothing parts sheet, not a crop of an existing image.\nSheet contents: 17 rig-friendly material candidates: torso base, neck, left shoulder, right shoulder, simple left upper arm, simple right upper arm, front collar edge, collar shadow, chest cloth base, chest cloth shadow, left brow, right brow, subtle nose detail, left cheek blush, right cheek blush, left face shadow, right face shadow.\nStyle and identity: keep the same outfit design, color palette, line thickness, soft anime shading, and upper-body composition as the accepted source character.\nRigging requirements: body and clothing parts should be cleanly separated, symmetrical where appropriate, simple for breath and body-angle motion, with enough underpaint/back-fill coverage to avoid visible holes. Nose and cheeks must stay subtle but visible as separate material references.\nNegative prompt: no complex hands, no fingers, no large props, no jewelry, no new accessories, no hairstyle change, no labels, no typography, no guide arrows, no grids, no extra character, no side view, no extreme pose, no cropped shoulders, no perspective distortion, no source-image crop artifacts.",
+  "expected_b5_parts": [
+    "torso_base",
+    "neck",
+    "shoulder_L",
+    "shoulder_R",
+    "arm_L_upper_simple",
+    "arm_R_upper_simple",
+    "collar_front",
+    "collar_shadow",
+    "chest_cloth_base",
+    "chest_cloth_shadow",
+    "brow_L",
+    "brow_R",
+    "nose",
+    "cheek_L",
+    "cheek_R",
+    "face_shadow_L",
+    "face_shadow_R"
+  ],
+  "allowed_inputs": [
+    "experiments/cubism-v2-new-character-002/material_pack_first_v0/raw_outputs/new_character_002_source_front.raw.png",
+    "experiments/cubism-v2-new-character-002/v22_b1_clean_base_underpaint/raw_outputs/b1_clean_base_underpaint_reference_001.png",
+    "experiments/cubism-v2-new-character-002/reports/v22_64part_generation_spec/v22_64part_generation_spec.json",
+    "experiments/cubism-v2-new-character-002/reports/v22_64part_generation_input_packet/v22_64part_generation_input_packet.json",
+    "experiments/cubism-v2-new-character-002/reports/v22_b1_clean_base_underpaint/v22_b1_visual_qa_report.json"
+  ],
+  "forbidden_existing_body_clothing_assets": [
+    {
+      "path": "experiments/cubism-v2-new-character-002/material_pack_first_v0/normalized_layers",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B5_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v13_scaled_eye_mouth_preview/mini_cubism_diagnostic_project/parts",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B5_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-002/model_edit_v21_supported_rig_smoke_preview/mini_cubism_diagnostic_project/parts",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B5_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B5_INPUT"
+    },
+    {
+      "path": "experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_roi_semantic_remask_v1",
+      "exists": true,
+      "status": "FORBIDDEN_AS_B5_INPUT"
+    }
+  ],
+  "locked_success_criteria": [
+    "Do not reuse prior normalized/model_edit/body-clothing PNGs for B5 material.",
+    "Do not rely on the source lower-body crop alone; B5 must provide complete torso, neck, shoulder, arm, clothing, and face-detail references.",
+    "Body and clothing parts must support breath/body-angle motion without visible holes after extraction.",
+    "Nose, cheeks, brows, and face shadows must remain subtle but visible as separate material references.",
+    "Do not promote this raw sheet to final material without RGBA extraction, overlay QA, and human visual review."
+  ],
+  "visual_checks": [
+    {
+      "id": "new_generation_no_existing_body_clothing_asset_reuse",
+      "status": "PASS_RECORDED",
+      "evidence": "B5 raw sheet was generated via built-in imagegen after the no-existing-assets instruction; prior normalized/model_edit/body-clothing material folders are recorded as forbidden inputs."
+    },
+    {
+      "id": "same_character_outfit_style",
+      "status": "PASS_CANDIDATE",
+      "evidence": "The sheet keeps the white ribbed off-shoulder sweater, shoulder straps, soft skin shading, and simple upper-body design from the source."
+    },
+    {
+      "id": "body_clothing_scope_visible",
+      "status": "PASS_CANDIDATE",
+      "evidence": "Torso, neck, shoulders, simple sleeves/upper arms, collar, chest cloth, and cloth shadow candidates are visibly present."
+    },
+    {
+      "id": "face_detail_scope_visible",
+      "status": "PASS_CANDIDATE",
+      "evidence": "Left/right brows, subtle nose, cheek blush, and side face-shadow candidates are present as separate material references."
+    },
+    {
+      "id": "breath_body_angle_support",
+      "status": "REVIEW_VISUALLY",
+      "evidence": "The body/clothing pieces include underpaint-like coverage, but extraction/overlay QA must confirm breath and body-angle motion will not expose holes."
+    },
+    {
+      "id": "extraction_readiness",
+      "status": "REVISE_BEFORE_LAYER_PROMOTION",
+      "evidence": "The sheet is RGB on a light background and includes a full torso context pose; it must be extracted/masked before full-canvas RGBA B5 material can be claimed."
+    },
+    {
+      "id": "human_visual_review",
+      "status": "REQUIRED",
+      "evidence": "주인님 must approve outfit identity, body proportions, face-detail subtlety, and body/clothing readability before B5 is promoted beyond raw candidate."
+    }
+  ],
+  "decision": "Keep this as the v22 B5 newly generated body/clothing-pack raw candidate. It can feed B5 extraction planning, but it is not yet separated full-canvas RGBA material and does not prove body-motion or real Cubism success.",
+  "next_action": [
+    "Extract/normalize B5 components into full-canvas RGBA candidates for the 17 expected body, clothing, brow, nose, cheek, and face-shadow parts.",
+    "Run B5 contact-sheet and overlay QA against the G0 source and B1 clean-base silhouette.",
+    "Only after B1-B5 visual QA acceptance, build the 64-part manifest and continue to G1-G5 material QA."
+  ],
+  "self_review": {
+    "source_exists": true,
+    "b1_raw_exists": true,
+    "b5_raw_exists": true,
+    "built_in_imagegen_source_exists": true,
+    "source_size": [
+      1254,
+      1254
+    ],
+    "b1_raw_size": [
+      1254,
+      1254
+    ],
+    "b5_raw_size": [
+      1536,
+      1024
+    ],
+    "b5_mode": "RGB",
+    "expected_b5_part_count": 17,
+    "allowed_input_count": 5,
+    "forbidden_existing_body_clothing_asset_count": 5,
+    "visual_check_count": 7,
+    "has_human_required_gate": true,
+    "has_breath_body_angle_review_gate": true,
+    "has_face_detail_scope": true,
+    "forbidden_assets_not_output_path": true,
+    "status": "PASS"
+  }
+}

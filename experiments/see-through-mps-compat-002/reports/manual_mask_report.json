@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "experiment_id": "see-through-mps-compat-002",
+  "items": [
+    {
+      "generated_at": "2026-06-04T06:56:05.472909+00:00",
+      "source_part_id": "seethrough_mps__neck",
+      "manual_part_id": "seethrough_mps_manual__neck",
+      "mask_path": "experiments/see-through-mps-compat-002/manual_masks/seethrough_mps__neck.png",
+      "output_path": "experiments/see-through-mps-compat-002/manual_layers/seethrough_mps_manual__neck.png",
+      "bbox": [
+        921,
+        1000,
+        200,
+        135
+      ],
+      "alpha_coverage": 0.556519
+    },
+    {
+      "generated_at": "2026-06-04T07:00:06.053648+00:00",
+      "source_part_id": "seethrough_mps__neck",
+      "manual_part_id": "seethrough_mps_manual__neck",
+      "mask_path": "experiments/see-through-mps-compat-002/manual_masks/seethrough_mps__neck.png",
+      "output_path": "experiments/see-through-mps-compat-002/manual_layers/seethrough_mps_manual__neck.png",
+      "bbox": [
+        921,
+        1003,
+        200,
+        130
+      ],
+      "alpha_coverage": 0.573385
+    }
+  ],
+  "updated_at": "2026-06-04T07:00:06.053648+00:00"
+}

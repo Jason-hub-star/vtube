@@ -1,0 +1,407 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T13:55:56.263008+00:00",
+  "status": "B5_REFINED_MASK_V1_CANDIDATE_READY_FOR_OVERLAY_REVIEW",
+  "triage_report": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_anchor_corrected_auto_draft/v22_b4_b5_auto_draft_review_triage.json",
+  "auto_draft_report": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_anchor_corrected_auto_draft/v22_b4_b5_anchor_corrected_auto_draft_report.json",
+  "output_dir": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers",
+  "contact_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b5_refined_mask_v1/v22_b5_refined_mask_v1_contact_sheet.png",
+  "overlay_sheet": "experiments/cubism-v2-new-character-002/reports/v22_b5_refined_mask_v1/v22_b5_refined_mask_v1_overlay_qa.png",
+  "entries": [
+    {
+      "part_id": "torso_base",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/torso_base.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/torso_base.png",
+      "refine_status": "REFINED_MASK_V1",
+      "refine_reason": "Large body/clothing overlay includes noisy garment/skin regions; anchor alone will not make this material-ready.",
+      "bbox": [
+        592,
+        904,
+        1460,
+        1864
+      ],
+      "alpha_coverage": 0.15770555,
+      "alpha_sum_before": 152196334,
+      "alpha_sum_after": 140604686,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "neck",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/neck.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/neck.png",
+      "refine_status": "COPIED_FROM_AUTO_DRAFT",
+      "refine_reason": "",
+      "bbox": [
+        882,
+        701,
+        1167,
+        1090
+      ],
+      "alpha_coverage": 0.01887441,
+      "alpha_sum_before": 19450924,
+      "alpha_sum_after": 19450924,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "shoulder_L",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/shoulder_L.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/shoulder_L.png",
+      "refine_status": "REFINED_MASK_V1",
+      "refine_reason": "Patch-like shoulder crop overlays hair/skin area and needs refined extraction.",
+      "bbox": [
+        567,
+        1002,
+        869,
+        1224
+      ],
+      "alpha_coverage": 0.01271868,
+      "alpha_sum_before": 13367986,
+      "alpha_sum_after": 10709592,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "shoulder_R",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/shoulder_R.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/shoulder_R.png",
+      "refine_status": "REFINED_MASK_V1",
+      "refine_reason": "Patch-like shoulder crop overlays hair/skin area and needs refined extraction.",
+      "bbox": [
+        1201,
+        1000,
+        1457,
+        1226
+      ],
+      "alpha_coverage": 0.01104689,
+      "alpha_sum_before": 11525391,
+      "alpha_sum_after": 9360552,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "arm_L_upper_simple",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/arm_L_upper_simple.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/arm_L_upper_simple.png",
+      "refine_status": "REFINED_MASK_V1",
+      "refine_reason": "Sleeve/arm crop has strong internal noise and should be remasked or regenerated.",
+      "bbox": [
+        485,
+        1115,
+        695,
+        1786
+      ],
+      "alpha_coverage": 0.01823521,
+      "alpha_sum_before": 15327987,
+      "alpha_sum_after": 12403550,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "arm_R_upper_simple",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/arm_R_upper_simple.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/arm_R_upper_simple.png",
+      "refine_status": "REFINED_MASK_V1",
+      "refine_reason": "Sleeve/arm crop has strong internal noise and should be remasked or regenerated.",
+      "bbox": [
+        1334,
+        1116,
+        1521,
+        1786
+      ],
+      "alpha_coverage": 0.01637411,
+      "alpha_sum_before": 13344379,
+      "alpha_sum_after": 11551116,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "collar_front",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/collar_front.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/collar_front.png",
+      "refine_status": "COPIED_FROM_AUTO_DRAFT",
+      "refine_reason": "",
+      "bbox": [
+        748,
+        1078,
+        1300,
+        1198
+      ],
+      "alpha_coverage": 0.00627613,
+      "alpha_sum_before": 3009496,
+      "alpha_sum_after": 3009496,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "collar_shadow",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/collar_shadow.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/collar_shadow.png",
+      "refine_status": "REFINED_MASK_V1",
+      "refine_reason": "Shadow line is too thin/noisy and likely needs extraction refinement.",
+      "bbox": [
+        753,
+        1178,
+        1295,
+        1269
+      ],
+      "alpha_coverage": 0.00243759,
+      "alpha_sum_before": 1064863,
+      "alpha_sum_after": 610118,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "chest_cloth_base",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/chest_cloth_base.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/chest_cloth_base.png",
+      "refine_status": "REFINED_MASK_V1",
+      "refine_reason": "Chest cloth base includes noisy stripe/garment artifacts and needs mask refinement.",
+      "bbox": [
+        698,
+        1246,
+        1350,
+        1546
+      ],
+      "alpha_coverage": 0.01802492,
+      "alpha_sum_before": 13684093,
+      "alpha_sum_after": 11537218,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "chest_cloth_shadow",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/chest_cloth_shadow.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/chest_cloth_shadow.png",
+      "refine_status": "REFINED_MASK_V1",
+      "refine_reason": "Chest cloth shadow shape is too blocky and needs mask refinement.",
+      "bbox": [
+        733,
+        1481,
+        1288,
+        1641
+      ],
+      "alpha_coverage": 0.00590897,
+      "alpha_sum_before": 9147037,
+      "alpha_sum_after": 1532851,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "brow_L",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/brow_L.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/brow_L.png",
+      "refine_status": "COPIED_FROM_AUTO_DRAFT",
+      "refine_reason": "",
+      "bbox": [
+        779,
+        631,
+        924,
+        659
+      ],
+      "alpha_coverage": 0.00030065,
+      "alpha_sum_before": 211890,
+      "alpha_sum_after": 211890,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "brow_R",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/brow_R.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/brow_R.png",
+      "refine_status": "COPIED_FROM_AUTO_DRAFT",
+      "refine_reason": "",
+      "bbox": [
+        1103,
+        631,
+        1247,
+        659
+      ],
+      "alpha_coverage": 0.00030589,
+      "alpha_sum_before": 218017,
+      "alpha_sum_after": 218017,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "nose",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/nose.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/nose.png",
+      "refine_status": "REFINED_MASK_V1",
+      "refine_reason": "Nose candidate is too blob-like after scaling and needs smaller semantic extraction.",
+      "bbox": [
+        996,
+        747,
+        1053,
+        832
+      ],
+      "alpha_coverage": 0.00088358,
+      "alpha_sum_before": 640009,
+      "alpha_sum_after": 310889,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "cheek_L",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/cheek_L.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/cheek_L.png",
+      "refine_status": "REFINED_MASK_V1",
+      "refine_reason": "Cheek patch remains too large/oval and needs mask refinement rather than more anchor movement.",
+      "bbox": [
+        752,
+        744,
+        917,
+        844
+      ],
+      "alpha_coverage": 0.0030582,
+      "alpha_sum_before": 2494603,
+      "alpha_sum_after": 812838,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "cheek_R",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/cheek_R.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/cheek_R.png",
+      "refine_status": "REFINED_MASK_V1",
+      "refine_reason": "Cheek patch remains too large/oval and needs mask refinement rather than more anchor movement.",
+      "bbox": [
+        1129,
+        744,
+        1294,
+        844
+      ],
+      "alpha_coverage": 0.00305676,
+      "alpha_sum_before": 2506216,
+      "alpha_sum_after": 800048,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "face_shadow_L",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/face_shadow_L.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/face_shadow_L.png",
+      "refine_status": "REFINED_MASK_V1",
+      "refine_reason": "Face shadow is patch-like and too broad; this is a semantic mask issue.",
+      "bbox": [
+        719,
+        659,
+        821,
+        888
+      ],
+      "alpha_coverage": 0.0031786,
+      "alpha_sum_before": 3153603,
+      "alpha_sum_after": 1309134,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "part_id": "face_shadow_R",
+      "source_batch": "B5",
+      "input_path": "experiments/cubism-v2-new-character-002/v22_b4_b5_anchor_corrected_auto_draft/normalized_layers/face_shadow_R.png",
+      "output_path": "experiments/cubism-v2-new-character-002/v22_b5_refined_mask_v1/normalized_layers/face_shadow_R.png",
+      "refine_status": "REFINED_MASK_V1",
+      "refine_reason": "Face shadow is patch-like and too broad; this is a semantic mask issue.",
+      "bbox": [
+        1208,
+        661,
+        1291,
+        888
+      ],
+      "alpha_coverage": 0.00320244,
+      "alpha_sum_before": 3186001,
+      "alpha_sum_after": 1351915,
+      "mode": "RGBA",
+      "size": [
+        2048,
+        2048
+      ]
+    }
+  ],
+  "decision": "B5 refined-mask v1 reduces the 13 extraction-mask problem parts while preserving all gates. This is a candidate for overlay review, not material PASS.",
+  "next_action": [
+    "Review B5 refined-mask v1 overlay sheet.",
+    "Merge accepted B5 refined masks into the B4/B5 corrected candidate only after visual review.",
+    "Keep ParamHairFront hidden and keep G7/G8 blocked."
+  ],
+  "self_review": {
+    "entry_count": 17,
+    "refined_mask_count": 13,
+    "copied_from_auto_draft_count": 4,
+    "expected_refine_target_count": 13,
+    "all_layers_rgba": true,
+    "all_layers_2048": true,
+    "all_layers_nonempty": true,
+    "overlay_sheet_exists": true,
+    "contact_sheet_exists": true,
+    "validator_only_promotion_blocked": true,
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true,
+    "status": "PASS"
+  }
+}

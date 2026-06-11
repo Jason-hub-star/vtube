@@ -1,0 +1,329 @@
+{
+  "schema_version": 1,
+  "experiment_id": "mini-cubism-dedicated-model-v1-001",
+  "generated_at": "2026-06-05T04:24:22.167518+00:00",
+  "status": "REVISE_LAYER_SPLIT_BELOW_DEDICATED_FLOOR",
+  "source_layer_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+  "source_part_spec_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/part_spec_manifest.json",
+  "counts": {
+    "parts": 32,
+    "hair_parts": 9,
+    "eye_parts": 8,
+    "mouth_parts": 1,
+    "physics_targets": 13,
+    "normalized_layers": 29,
+    "production_candidates": 19
+  },
+  "required_floors": {
+    "parts": 60,
+    "hair_parts": 18,
+    "eye_parts": 16,
+    "mouth_parts": 8,
+    "physics_targets": 12
+  },
+  "failed_floors": {
+    "parts": {
+      "actual": 32,
+      "required": 60
+    },
+    "hair_parts": {
+      "actual": 9,
+      "required": 18
+    },
+    "eye_parts": {
+      "actual": 8,
+      "required": 16
+    },
+    "mouth_parts": {
+      "actual": 1,
+      "required": 8
+    }
+  },
+  "mapped_candidates": [
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__front_hair",
+      "original_part_id": "front_hair",
+      "role": "front_hair",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__front_hair.png",
+      "candidate_is_coarse": true,
+      "suggested_spec_targets": [
+        "front_bang_L",
+        "front_bang_CL",
+        "front_bang_C",
+        "front_bang_CR",
+        "front_bang_R"
+      ]
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__back_hair",
+      "original_part_id": "back_hair",
+      "role": "back_hair",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__back_hair.png",
+      "candidate_is_coarse": true,
+      "suggested_spec_targets": [
+        "back_hair_base",
+        "back_hair_L",
+        "back_hair_C",
+        "back_hair_R"
+      ]
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__R_arm",
+      "original_part_id": "R_arm",
+      "role": "seethrough_reference",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_arm.png",
+      "candidate_is_coarse": true,
+      "suggested_spec_targets": [
+        "arm_R",
+        "sleeve_R"
+      ]
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__L_arm",
+      "original_part_id": "L_arm",
+      "role": "seethrough_reference",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_arm.png",
+      "candidate_is_coarse": true,
+      "suggested_spec_targets": [
+        "arm_L",
+        "sleeve_L"
+      ]
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__L_brow",
+      "original_part_id": "L_brow",
+      "role": "seethrough_reference",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_brow.png",
+      "candidate_is_coarse": false,
+      "suggested_spec_targets": [
+        "brow_L"
+      ]
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__R_brow",
+      "original_part_id": "R_brow",
+      "role": "seethrough_reference",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_brow.png",
+      "candidate_is_coarse": false,
+      "suggested_spec_targets": [
+        "brow_R"
+      ]
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__neck",
+      "original_part_id": "neck",
+      "role": "neck",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__neck.png",
+      "candidate_is_coarse": false,
+      "suggested_spec_targets": [
+        "neck"
+      ]
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__clothes",
+      "original_part_id": "clothes",
+      "role": "clothes",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__clothes.png",
+      "candidate_is_coarse": true,
+      "suggested_spec_targets": [
+        "body_base",
+        "chest",
+        "shoulder_L",
+        "shoulder_R"
+      ]
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__choker",
+      "original_part_id": "choker",
+      "role": "accessory",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__choker.png",
+      "candidate_is_coarse": true,
+      "suggested_spec_targets": [
+        "choker_base",
+        "choker_gem"
+      ]
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__face_base",
+      "original_part_id": "face_base",
+      "role": "face",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__face_base.png",
+      "candidate_is_coarse": false,
+      "suggested_spec_targets": [
+        "face_base"
+      ]
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__mouth_line",
+      "original_part_id": "mouth_line",
+      "role": "mouth_line",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__mouth_line.png",
+      "candidate_is_coarse": false,
+      "suggested_spec_targets": [
+        "mouth_closed_line"
+      ]
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__L_upper_lash",
+      "original_part_id": "L_upper_lash",
+      "role": "seethrough_reference",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_upper_lash.png",
+      "candidate_is_coarse": false,
+      "suggested_spec_targets": [
+        "upper_lash_L"
+      ]
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__R_upper_lash",
+      "original_part_id": "R_upper_lash",
+      "role": "seethrough_reference",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_upper_lash.png",
+      "candidate_is_coarse": false,
+      "suggested_spec_targets": [
+        "upper_lash_R"
+      ]
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__L_ear_outer",
+      "original_part_id": "L_ear_outer",
+      "role": "seethrough_reference",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_ear_outer.png",
+      "candidate_is_coarse": false,
+      "suggested_spec_targets": [
+        "ear_L"
+      ]
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__R_ear_outer",
+      "original_part_id": "R_ear_outer",
+      "role": "seethrough_reference",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_ear_outer.png",
+      "candidate_is_coarse": false,
+      "suggested_spec_targets": [
+        "ear_R"
+      ]
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__R_eye_white",
+      "original_part_id": "R_eye_white",
+      "role": "seethrough_reference",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_eye_white.png",
+      "candidate_is_coarse": false,
+      "suggested_spec_targets": [
+        "eye_white_R"
+      ]
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__L_eye_white",
+      "original_part_id": "L_eye_white",
+      "role": "seethrough_reference",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_eye_white.png",
+      "candidate_is_coarse": false,
+      "suggested_spec_targets": [
+        "eye_white_L"
+      ]
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__R_iris",
+      "original_part_id": "R_iris",
+      "role": "seethrough_reference",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_iris.png",
+      "candidate_is_coarse": false,
+      "suggested_spec_targets": [
+        "iris_R"
+      ]
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__L_iris",
+      "original_part_id": "L_iris",
+      "role": "seethrough_reference",
+      "source_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_iris.png",
+      "candidate_is_coarse": false,
+      "suggested_spec_targets": [
+        "iris_L"
+      ]
+    }
+  ],
+  "mapped_spec_parts": [
+    "arm_L",
+    "arm_R",
+    "back_hair_C",
+    "back_hair_L",
+    "back_hair_R",
+    "back_hair_base",
+    "body_base",
+    "brow_L",
+    "brow_R",
+    "chest",
+    "choker_base",
+    "choker_gem",
+    "ear_L",
+    "ear_R",
+    "eye_white_L",
+    "eye_white_R",
+    "face_base",
+    "front_bang_C",
+    "front_bang_CL",
+    "front_bang_CR",
+    "front_bang_L",
+    "front_bang_R",
+    "iris_L",
+    "iris_R",
+    "mouth_closed_line",
+    "neck",
+    "shoulder_L",
+    "shoulder_R",
+    "sleeve_L",
+    "sleeve_R",
+    "upper_lash_L",
+    "upper_lash_R"
+  ],
+  "missing_spec_parts": [
+    "back_hair_tip_C",
+    "back_hair_tip_L",
+    "back_hair_tip_R",
+    "catchlight_L",
+    "catchlight_R",
+    "cheek_blush_L",
+    "cheek_blush_R",
+    "chest_shadow",
+    "ear_inner_L",
+    "ear_inner_R",
+    "face_shadow_L",
+    "face_shadow_R",
+    "front_side_lock_L",
+    "front_side_lock_R",
+    "lower_lid_L",
+    "lower_lid_R",
+    "mouth_half_inner",
+    "mouth_half_outer",
+    "mouth_open_inner",
+    "mouth_open_outer",
+    "mouth_shadow",
+    "mouth_teeth_upper",
+    "mouth_tongue",
+    "neck_shadow",
+    "pupil_L",
+    "pupil_R",
+    "ribbon_center",
+    "ribbon_loop_L",
+    "ribbon_loop_R",
+    "ribbon_tail_L",
+    "ribbon_tail_R",
+    "shoulder_frill_L",
+    "shoulder_frill_R",
+    "side_hair_L_lower",
+    "side_hair_L_upper",
+    "side_hair_R_lower",
+    "side_hair_R_upper",
+    "sleeve_frill_L",
+    "sleeve_frill_R",
+    "upper_lid_L",
+    "upper_lid_R"
+  ],
+  "interpretation": [
+    "See-through layer split succeeded, but current output is coarse candidate evidence.",
+    "Do not build the dedicated Mini Cubism rig from these layers as if it had 60+ separated parts.",
+    "Next automatic action should refine decomposition or generate dedicated keypose assets for missing eye/mouth/hair splits."
+  ]
+}

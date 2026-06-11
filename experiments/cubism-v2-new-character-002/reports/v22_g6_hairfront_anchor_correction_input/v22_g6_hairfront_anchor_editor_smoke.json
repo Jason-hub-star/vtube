@@ -1,0 +1,53 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-10T02:50:34.264502+00:00",
+  "status": "G6_HAIRFRONT_ANCHOR_EDITOR_SMOKE_PASS",
+  "source_packet": "experiments/cubism-v2-new-character-002/reports/v22_g6_hairfront_anchor_correction_input/v22_g6_hairfront_anchor_correction_input_packet.json",
+  "override_template": "experiments/cubism-v2-new-character-002/reports/v22_g6_hairfront_anchor_correction_input/manual_hairfront_anchor_overrides.template.json",
+  "smoke_override_path": "experiments/cubism-v2-new-character-002/reports/v22_g6_hairfront_anchor_correction_input/manual_hairfront_anchor_overrides.smoke.json",
+  "actual_override_path": "experiments/cubism-v2-new-character-002/reports/v22_g6_hairfront_anchor_correction_input/manual_hairfront_anchor_overrides.json",
+  "actual_override_exists": false,
+  "entry_count": 7,
+  "composite_first_row": "hair_front_center",
+  "composite_png_bytes": 559270,
+  "composite_crop_box": [
+    676,
+    91,
+    1372,
+    767
+  ],
+  "smoke_saved_override_count": 1,
+  "smoke_move_anchor_count": 0,
+  "material_acceptance_pass_count": 0,
+  "param_hairfront_activation_count": 0,
+  "owner_approval_count": 0,
+  "g5_material_acceptance_status": "BLOCKED_HAIRFRONT_EDITOR_REVIEW_REQUIRED",
+  "param_hair_front_status": "HIDDEN_CONTRACT_ONLY",
+  "g7_mini_cubism_status": "BLOCKED_UNTIL_G5_MATERIAL_ACCEPTANCE",
+  "g8_real_cubism_status": "BLOCKED_UNTIL_MATERIAL_ACCEPTANCE_AND_EDITOR_GATE",
+  "locks": {
+    "v21_eye_open_lower_bound": 0.27,
+    "v21_mouth_open_y_max": 0.85,
+    "param_hair_front_status": "HIDDEN_CONTRACT_ONLY",
+    "validator_only_promotion_blocked": true,
+    "codex_visual_not_owner_approval": true,
+    "material_pass_status": "BLOCKED",
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true,
+    "not_owner_approval": true
+  },
+  "self_review": {
+    "entry_count_is_seven": true,
+    "composite_png_nonempty": true,
+    "smoke_override_saved": true,
+    "actual_override_not_created_by_smoke": true,
+    "material_acceptance_pass_count": 0,
+    "param_hairfront_activation_count": 0,
+    "owner_approval_count": 0,
+    "param_hair_front_hidden": true,
+    "validator_only_promotion_blocked": true,
+    "mini_cubism_not_promoted": true,
+    "real_cubism_not_promoted": true,
+    "status": "PASS"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "purpose": "Reference Live2D model structure catalog. Broad public candidates may be recorded, but only safe local paths are analyzed.",
+  "models": [
+    {
+      "id": "local_cmo3_positive_fixture",
+      "name": "Local CMO3 Structure Positive Fixture",
+      "source_url": "local:/Users/family/jason/Vtube/experiments/cmo3-structure-fixture-001/rigged_positive_fixture.cmo3",
+      "source_type": "LOCAL_FIXTURE",
+      "license_status": "OWNED_TEST_FIXTURE",
+      "analysis_mode": "FULL_STRUCTURE",
+      "has_cmo3": true,
+      "has_moc3": false,
+      "has_model3_json": false,
+      "has_physics3_json": false,
+      "has_psd": false,
+      "local_paths": {
+        "cmo3": "experiments/cmo3-structure-fixture-001/rigged_positive_fixture.cmo3"
+      },
+      "structure_report_path": null,
+      "notes": [
+        "Regression fixture for real deformer/keyform detection.",
+        "Expected to detect warp deformers, one rotation deformer, and keyform bindings."
+      ],
+      "reuse_decision": "KEEP"
+    },
+    {
+      "id": "local_imagen_live2d_001",
+      "name": "Local Imagen Live2D 001 Shallow Cubism MVP",
+      "source_url": "local:/Users/family/jason/Vtube/experiments/imagen-live2d-001",
+      "source_type": "LOCAL_PROJECT_EVIDENCE",
+      "license_status": "OWNED_GENERATED_EVIDENCE",
+      "analysis_mode": "FULL_STRUCTURE",
+      "has_cmo3": true,
+      "has_moc3": true,
+      "has_model3_json": true,
+      "has_physics3_json": false,
+      "has_psd": true,
+      "local_paths": {
+        "cmo3": "experiments/imagen-live2d-001/cubism_mvp_rig.cmo3",
+        "moc3": "experiments/imagen-live2d-001/moc3_export_smoke/import_ready_candidate.moc3",
+        "model3_json": "experiments/imagen-live2d-001/moc3_export_smoke/import_ready_candidate.model3.json",
+        "cdi3_json": "experiments/imagen-live2d-001/moc3_export_smoke/import_ready_candidate.cdi3.json",
+        "psd": "experiments/imagen-live2d-001/import_ready.psd"
+      },
+      "structure_report_path": null,
+      "notes": [
+        "Current Vtube shallow Cubism evidence target.",
+        "Expected to keep ArtMesh/parameter counts but warn on missing deformer/keyform bindings."
+      ],
+      "reuse_decision": "REFERENCE_ONLY"
+    },
+    {
+      "id": "live2d_official_sample_catalog",
+      "name": "Live2D Official Sample Data Catalog",
+      "source_url": "https://www.live2d.com/en/learn/sample/",
+      "source_type": "OFFICIAL_SAMPLE_INDEX",
+      "license_status": "OFFICIAL_TERMS_REQUIRED",
+      "analysis_mode": "METADATA_ONLY",
+      "has_cmo3": true,
+      "has_moc3": true,
+      "has_model3_json": true,
+      "has_physics3_json": true,
+      "has_psd": true,
+      "local_paths": {},
+      "structure_report_path": null,
+      "notes": [
+        "Record only until individual sample downloads and terms are reviewed.",
+        "Use as priority source for future FULL_STRUCTURE entries."
+      ],
+      "reuse_decision": "IGNORE"
+    },
+    {
+      "id": "unverified_public_live2d_model_placeholder",
+      "name": "Unverified Public Live2D Model Placeholder",
+      "source_url": "https://example.invalid/public-live2d-model",
+      "source_type": "PUBLIC_MODEL_CANDIDATE",
+      "license_status": "UNKNOWN",
+      "analysis_mode": "METADATA_ONLY",
+      "has_cmo3": false,
+      "has_moc3": true,
+      "has_model3_json": true,
+      "has_physics3_json": true,
+      "has_psd": false,
+      "local_paths": {},
+      "structure_report_path": null,
+      "notes": [
+        "Safety fixture: unknown public sources must remain metadata-only.",
+        "Replace with a real URL only after provenance and license are checked."
+      ],
+      "reuse_decision": "IGNORE"
+    }
+  ]
+}

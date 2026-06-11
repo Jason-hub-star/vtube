@@ -1,0 +1,237 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-08T08:31:01.007078+00:00",
+  "status": "BUILT_CLEAN_NEUTRAL_OPACITY_CANDIDATE_V1",
+  "snapshot_manifest": "experiments/cubism-v2-new-character-001/material_pack_v0/layer_manifest.clean_neutral_opacity_candidate_v1.json",
+  "added_keyframes": [
+    {
+      "part_id": "body_underpaint",
+      "parameter_id": "ParamBodyAngleX",
+      "mode": "linear",
+      "keyframes": [
+        {
+          "value": -10,
+          "opacity": 0.45
+        },
+        {
+          "value": 0,
+          "opacity": 0
+        },
+        {
+          "value": 10,
+          "opacity": 0.45
+        }
+      ],
+      "purpose": "hide helper/underpaint patches at neutral; reveal only during angle/gaze preview"
+    },
+    {
+      "part_id": "neck_shadow_underpaint",
+      "parameter_id": "ParamBodyAngleX",
+      "mode": "linear",
+      "keyframes": [
+        {
+          "value": -10,
+          "opacity": 0.45
+        },
+        {
+          "value": 0,
+          "opacity": 0
+        },
+        {
+          "value": 10,
+          "opacity": 0.45
+        }
+      ],
+      "purpose": "hide helper/underpaint patches at neutral; reveal only during angle/gaze preview"
+    },
+    {
+      "part_id": "arm_L_underpaint",
+      "parameter_id": "ParamBodyAngleX",
+      "mode": "linear",
+      "keyframes": [
+        {
+          "value": -10,
+          "opacity": 0.45
+        },
+        {
+          "value": 0,
+          "opacity": 0
+        },
+        {
+          "value": 10,
+          "opacity": 0.45
+        }
+      ],
+      "purpose": "hide helper/underpaint patches at neutral; reveal only during angle/gaze preview"
+    },
+    {
+      "part_id": "arm_R_underpaint",
+      "parameter_id": "ParamBodyAngleX",
+      "mode": "linear",
+      "keyframes": [
+        {
+          "value": -10,
+          "opacity": 0.45
+        },
+        {
+          "value": 0,
+          "opacity": 0
+        },
+        {
+          "value": 10,
+          "opacity": 0.45
+        }
+      ],
+      "purpose": "hide helper/underpaint patches at neutral; reveal only during angle/gaze preview"
+    },
+    {
+      "part_id": "hair_back_underpaint",
+      "parameter_id": "ParamAngleX",
+      "mode": "linear",
+      "keyframes": [
+        {
+          "value": -30,
+          "opacity": 0.5
+        },
+        {
+          "value": 0,
+          "opacity": 0
+        },
+        {
+          "value": 30,
+          "opacity": 0.5
+        }
+      ],
+      "purpose": "hide helper/underpaint patches at neutral; reveal only during angle/gaze preview"
+    },
+    {
+      "part_id": "face_underpaint_L",
+      "parameter_id": "ParamAngleX",
+      "mode": "linear",
+      "keyframes": [
+        {
+          "value": -30,
+          "opacity": 0.55
+        },
+        {
+          "value": 0,
+          "opacity": 0
+        },
+        {
+          "value": 30,
+          "opacity": 0.55
+        }
+      ],
+      "purpose": "hide helper/underpaint patches at neutral; reveal only during angle/gaze preview"
+    },
+    {
+      "part_id": "face_underpaint_R",
+      "parameter_id": "ParamAngleX",
+      "mode": "linear",
+      "keyframes": [
+        {
+          "value": -30,
+          "opacity": 0.55
+        },
+        {
+          "value": 0,
+          "opacity": 0
+        },
+        {
+          "value": 30,
+          "opacity": 0.55
+        }
+      ],
+      "purpose": "hide helper/underpaint patches at neutral; reveal only during angle/gaze preview"
+    },
+    {
+      "part_id": "eye_L_underpaint",
+      "parameter_id": "ParamEyeBallX",
+      "mode": "linear",
+      "keyframes": [
+        {
+          "value": -1,
+          "opacity": 0.45
+        },
+        {
+          "value": 0,
+          "opacity": 0
+        },
+        {
+          "value": 1,
+          "opacity": 0.45
+        }
+      ],
+      "purpose": "hide helper/underpaint patches at neutral; reveal only during angle/gaze preview"
+    },
+    {
+      "part_id": "eye_R_underpaint",
+      "parameter_id": "ParamEyeBallX",
+      "mode": "linear",
+      "keyframes": [
+        {
+          "value": -1,
+          "opacity": 0.45
+        },
+        {
+          "value": 0,
+          "opacity": 0
+        },
+        {
+          "value": 1,
+          "opacity": 0.45
+        }
+      ],
+      "purpose": "hide helper/underpaint patches at neutral; reveal only during angle/gaze preview"
+    },
+    {
+      "part_id": "face_shadow_L",
+      "parameter_id": "ParamAngleX",
+      "mode": "linear",
+      "keyframes": [
+        {
+          "value": -30,
+          "opacity": 0.35
+        },
+        {
+          "value": 0,
+          "opacity": 0
+        },
+        {
+          "value": 30,
+          "opacity": 0
+        }
+      ],
+      "purpose": "hide helper/underpaint patches at neutral; reveal only during angle/gaze preview"
+    },
+    {
+      "part_id": "face_shadow_R",
+      "parameter_id": "ParamAngleX",
+      "mode": "linear",
+      "keyframes": [
+        {
+          "value": -30,
+          "opacity": 0
+        },
+        {
+          "value": 0,
+          "opacity": 0
+        },
+        {
+          "value": 30,
+          "opacity": 0.35
+        }
+      ],
+      "purpose": "hide helper/underpaint patches at neutral; reveal only during angle/gaze preview"
+    }
+  ],
+  "counts": {
+    "added_keyframes": 11,
+    "total_part_opacity_keyframes": 20
+  },
+  "interpretation": [
+    "Face blotches in Mini Cubism are likely helper underpaint/face shadow layers visible at neutral.",
+    "This candidate hides those helper layers at neutral while allowing limited visibility at angle/gaze extremes.",
+    "This is a preview/QA candidate and should be visually reviewed before promotion."
+  ]
+}

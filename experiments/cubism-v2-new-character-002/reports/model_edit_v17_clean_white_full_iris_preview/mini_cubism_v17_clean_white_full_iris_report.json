@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-09T08:14:48.430069+00:00",
+  "status": "V17_CLEAN_WHITE_FULL_IRIS_READY_FOR_VALIDATION",
+  "source_project": "experiments/cubism-v2-new-character-002/model_edit_v15_eye_nose_position_preview/mini_cubism_diagnostic_project",
+  "project": "experiments/cubism-v2-new-character-002/model_edit_v17_clean_white_full_iris_preview/mini_cubism_diagnostic_project",
+  "rebuilt_parts": {
+    "eye_L_white": {
+      "bbox_xywh": [
+        785,
+        619,
+        191,
+        101
+      ],
+      "alpha_nonzero": 15401,
+      "alpha_coverage": 0.00367188
+    },
+    "eye_L_iris": {
+      "bbox_xywh": [
+        818,
+        622,
+        134,
+        95
+      ],
+      "alpha_nonzero": 9013,
+      "alpha_coverage": 0.00214887
+    },
+    "eye_L_pupil": {
+      "bbox_xywh": [
+        815,
+        627,
+        140,
+        93
+      ],
+      "alpha_nonzero": 7497,
+      "alpha_coverage": 0.00178742
+    },
+    "eye_L_highlight": {
+      "bbox_xywh": [
+        820,
+        621,
+        133,
+        97
+      ],
+      "alpha_nonzero": 4085,
+      "alpha_coverage": 0.00097394
+    },
+    "eye_R_white": {
+      "bbox_xywh": [
+        1075,
+        619,
+        191,
+        100
+      ],
+      "alpha_nonzero": 15373,
+      "alpha_coverage": 0.00366521
+    },
+    "eye_R_iris": {
+      "bbox_xywh": [
+        1100,
+        622,
+        134,
+        94
+      ],
+      "alpha_nonzero": 8680,
+      "alpha_coverage": 0.00206947
+    },
+    "eye_R_pupil": {
+      "bbox_xywh": [
+        1098,
+        626,
+        139,
+        93
+      ],
+      "alpha_nonzero": 7486,
+      "alpha_coverage": 0.0017848
+    },
+    "eye_R_highlight": {
+      "bbox_xywh": [
+        1099,
+        621,
+        131,
+        96
+      ],
+      "alpha_nonzero": 3585,
+      "alpha_coverage": 0.00085473
+    }
+  },
+  "policy": {
+    "eye_white_moves": false,
+    "iris_pupil_highlight_move_together": true,
+    "preserve_v15_eye_height": true,
+    "preserve_nose_detail": true,
+    "preserve_v13_mouth_pattern": true,
+    "production_claim": "diagnostic only; true production eye split still needs clean source material"
+  }
+}

@@ -1,0 +1,1284 @@
+{
+  "schema_version": 1,
+  "validated_at": "2026-06-05T04:25:09.817738+00:00",
+  "experiment": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001",
+  "manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/candidate_layer_manifest.json",
+  "part_spec_manifest": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/part_spec_manifest.json",
+  "status": "REVISE_VISUAL",
+  "structural_status": "PASS",
+  "visual_status": "FAIL",
+  "counts": {
+    "parts": 73,
+    "hair_parts": 18,
+    "eye_parts": 16,
+    "mouth_parts": 8,
+    "physics_targets": 33
+  },
+  "required_counts": {
+    "parts": 70,
+    "hair_parts": 18,
+    "eye_parts": 16,
+    "mouth_parts": 8,
+    "physics_targets": 12
+  },
+  "structural_issues": {},
+  "action_counts": {
+    "KEEP_SEETHROUGH_MASK": 50,
+    "VISUAL_FAIL": 23
+  },
+  "issue_counts": {
+    "VISUAL_FAIL_DERIVATION": 23
+  },
+  "critical_visual_failures": [
+    "ear_L",
+    "ear_R",
+    "ear_inner_L",
+    "ear_inner_R",
+    "cheek_blush_L",
+    "pupil_L",
+    "pupil_R",
+    "catchlight_L",
+    "catchlight_R",
+    "upper_lid_L",
+    "upper_lid_R",
+    "lower_lid_L",
+    "lower_lid_R",
+    "brow_L",
+    "brow_R",
+    "mouth_closed_line",
+    "mouth_half_outer",
+    "mouth_half_inner",
+    "mouth_open_outer",
+    "mouth_open_inner",
+    "mouth_teeth_upper",
+    "mouth_tongue",
+    "mouth_shadow"
+  ],
+  "roi_failures": [],
+  "layer_actions": [
+    {
+      "part_id": "body_base",
+      "group": "body_anchor",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        785,
+        1040,
+        465,
+        534
+      ],
+      "alpha_coverage": 0.04553437,
+      "nonzero_alpha": 190985,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/body_base.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "neck",
+      "group": "body_anchor",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        968,
+        870,
+        105,
+        15
+      ],
+      "alpha_coverage": 0.00026917,
+      "nonzero_alpha": 1129,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/neck.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "neck_shadow",
+      "group": "body_anchor",
+      "derivation_mode": "generated_fallback_candidate",
+      "bbox": [
+        880,
+        1010,
+        289,
+        131
+      ],
+      "alpha_coverage": 0.00708652,
+      "nonzero_alpha": 29723,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/neck_shadow.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "chest",
+      "group": "body_anchor",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        793,
+        1190,
+        447,
+        384
+      ],
+      "alpha_coverage": 0.02977848,
+      "nonzero_alpha": 124900,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/chest.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "chest_shadow",
+      "group": "body_anchor",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        806,
+        1220,
+        420,
+        271
+      ],
+      "alpha_coverage": 0.02273321,
+      "nonzero_alpha": 95350,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/chest_shadow.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "shoulder_L",
+      "group": "body_anchor",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        1240,
+        1110,
+        10,
+        80
+      ],
+      "alpha_coverage": 0.00014544,
+      "nonzero_alpha": 610,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/shoulder_L.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "shoulder_R",
+      "group": "body_anchor",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        785,
+        1110,
+        26,
+        117
+      ],
+      "alpha_coverage": 0.00053692,
+      "nonzero_alpha": 2252,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/shoulder_R.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "arm_L",
+      "group": "body_anchor",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        1370,
+        1240,
+        441,
+        615
+      ],
+      "alpha_coverage": 0.03340364,
+      "nonzero_alpha": 140105,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/arm_L.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "arm_R",
+      "group": "body_anchor",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        240,
+        1240,
+        441,
+        609
+      ],
+      "alpha_coverage": 0.03438997,
+      "nonzero_alpha": 144242,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/arm_R.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "sleeve_L",
+      "group": "body_anchor",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        1260,
+        1210,
+        490,
+        471
+      ],
+      "alpha_coverage": 0.03289509,
+      "nonzero_alpha": 137972,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/sleeve_L.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "sleeve_R",
+      "group": "body_anchor",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        284,
+        1210,
+        507,
+        471
+      ],
+      "alpha_coverage": 0.03318357,
+      "nonzero_alpha": 139182,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/sleeve_R.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "face_base",
+      "group": "face_ear",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        841,
+        380,
+        354,
+        438
+      ],
+      "alpha_coverage": 0.0280242,
+      "nonzero_alpha": 117542,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/face_base.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "face_shadow_L",
+      "group": "face_ear",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        1060,
+        530,
+        135,
+        272
+      ],
+      "alpha_coverage": 0.0062685,
+      "nonzero_alpha": 26292,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/face_shadow_L.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "face_shadow_R",
+      "group": "face_ear",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        841,
+        530,
+        150,
+        280
+      ],
+      "alpha_coverage": 0.00736189,
+      "nonzero_alpha": 30878,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/face_shadow_R.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "ear_L",
+      "group": "face_ear",
+      "derivation_mode": "generated_fallback_candidate",
+      "bbox": [
+        1315,
+        620,
+        131,
+        191
+      ],
+      "alpha_coverage": 0.00467896,
+      "nonzero_alpha": 19625,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/ear_L.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "ear_R",
+      "group": "face_ear",
+      "derivation_mode": "generated_fallback_candidate",
+      "bbox": [
+        600,
+        620,
+        131,
+        191
+      ],
+      "alpha_coverage": 0.00467896,
+      "nonzero_alpha": 19625,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/ear_R.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "ear_inner_L",
+      "group": "face_ear",
+      "derivation_mode": "generated_fallback_candidate",
+      "bbox": [
+        1350,
+        660,
+        63,
+        109
+      ],
+      "alpha_coverage": 0.00128436,
+      "nonzero_alpha": 5387,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/ear_inner_L.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "ear_inner_R",
+      "group": "face_ear",
+      "derivation_mode": "generated_fallback_candidate",
+      "bbox": [
+        635,
+        660,
+        63,
+        109
+      ],
+      "alpha_coverage": 0.00128436,
+      "nonzero_alpha": 5387,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/ear_inner_R.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "cheek_blush_L",
+      "group": "face_ear",
+      "derivation_mode": "generated_fallback_candidate",
+      "bbox": [
+        1140,
+        720,
+        121,
+        57
+      ],
+      "alpha_coverage": 0.00129056,
+      "nonzero_alpha": 5413,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/cheek_blush_L.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "cheek_blush_R",
+      "group": "face_ear",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        892,
+        720,
+        19,
+        34
+      ],
+      "alpha_coverage": 8.583e-05,
+      "nonzero_alpha": 360,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/cheek_blush_R.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "front_bang_L",
+      "group": "hair_physics",
+      "derivation_mode": "generated_fallback_candidate",
+      "bbox": [
+        752,
+        277,
+        157,
+        414
+      ],
+      "alpha_coverage": 0.01121926,
+      "nonzero_alpha": 47057,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/front_bang_L.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "front_bang_CL",
+      "group": "hair_physics",
+      "derivation_mode": "generated_fallback_candidate",
+      "bbox": [
+        881,
+        239,
+        139,
+        452
+      ],
+      "alpha_coverage": 0.01089454,
+      "nonzero_alpha": 45695,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/front_bang_CL.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "front_bang_C",
+      "group": "hair_physics",
+      "derivation_mode": "generated_fallback_candidate",
+      "bbox": [
+        972,
+        211,
+        127,
+        500
+      ],
+      "alpha_coverage": 0.01095033,
+      "nonzero_alpha": 45929,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/front_bang_C.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "front_bang_CR",
+      "group": "hair_physics",
+      "derivation_mode": "generated_fallback_candidate",
+      "bbox": [
+        1056,
+        239,
+        139,
+        452
+      ],
+      "alpha_coverage": 0.01089454,
+      "nonzero_alpha": 45695,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/front_bang_CR.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "front_bang_R",
+      "group": "hair_physics",
+      "derivation_mode": "generated_fallback_candidate",
+      "bbox": [
+        1142,
+        277,
+        157,
+        414
+      ],
+      "alpha_coverage": 0.01121926,
+      "nonzero_alpha": 47057,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/front_bang_R.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "front_side_lock_L",
+      "group": "hair_physics",
+      "derivation_mode": "generated_fallback_candidate",
+      "bbox": [
+        1246,
+        512,
+        169,
+        759
+      ],
+      "alpha_coverage": 0.02223778,
+      "nonzero_alpha": 93272,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/front_side_lock_L.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "front_side_lock_R",
+      "group": "hair_physics",
+      "derivation_mode": "generated_fallback_candidate",
+      "bbox": [
+        636,
+        512,
+        169,
+        759
+      ],
+      "alpha_coverage": 0.02223778,
+      "nonzero_alpha": 93272,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/front_side_lock_R.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "side_hair_L_upper",
+      "group": "hair_physics",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        1280,
+        573,
+        257,
+        508
+      ],
+      "alpha_coverage": 0.01134515,
+      "nonzero_alpha": 47585,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/side_hair_L_upper.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "side_hair_L_lower",
+      "group": "hair_physics",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        1340,
+        860,
+        358,
+        724
+      ],
+      "alpha_coverage": 0.03508353,
+      "nonzero_alpha": 147151,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/side_hair_L_lower.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "side_hair_R_upper",
+      "group": "hair_physics",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        497,
+        551,
+        274,
+        530
+      ],
+      "alpha_coverage": 0.01253819,
+      "nonzero_alpha": 52589,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/side_hair_R_upper.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "side_hair_R_lower",
+      "group": "hair_physics",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        350,
+        860,
+        361,
+        724
+      ],
+      "alpha_coverage": 0.03696489,
+      "nonzero_alpha": 155042,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/side_hair_R_lower.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "back_hair_base",
+      "group": "hair_physics",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        500,
+        278,
+        1051,
+        1223
+      ],
+      "alpha_coverage": 0.18755651,
+      "nonzero_alpha": 786669,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/back_hair_base.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "back_hair_L",
+      "group": "hair_physics",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        1210,
+        440,
+        451,
+        1144
+      ],
+      "alpha_coverage": 0.06505227,
+      "nonzero_alpha": 272849,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/back_hair_L.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "back_hair_C",
+      "group": "hair_physics",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        760,
+        360,
+        541,
+        1222
+      ],
+      "alpha_coverage": 0.11705303,
+      "nonzero_alpha": 490956,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/back_hair_C.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "back_hair_R",
+      "group": "hair_physics",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        380,
+        440,
+        451,
+        1144
+      ],
+      "alpha_coverage": 0.06496382,
+      "nonzero_alpha": 272478,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/back_hair_R.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "back_hair_tip_L",
+      "group": "hair_physics",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        1280,
+        1330,
+        361,
+        254
+      ],
+      "alpha_coverage": 0.01667547,
+      "nonzero_alpha": 69942,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/back_hair_tip_L.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "back_hair_tip_C",
+      "group": "hair_physics",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        850,
+        1380,
+        361,
+        192
+      ],
+      "alpha_coverage": 0.00957799,
+      "nonzero_alpha": 40173,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/back_hair_tip_C.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "back_hair_tip_R",
+      "group": "hair_physics",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        410,
+        1330,
+        361,
+        254
+      ],
+      "alpha_coverage": 0.01678276,
+      "nonzero_alpha": 70392,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/back_hair_tip_R.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "eye_white_L",
+      "group": "eyes_keypose",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        1059,
+        630,
+        90,
+        51
+      ],
+      "alpha_coverage": 0.00084352,
+      "nonzero_alpha": 3538,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/eye_white_L.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "eye_white_R",
+      "group": "eyes_keypose",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        886,
+        630,
+        86,
+        51
+      ],
+      "alpha_coverage": 0.00078106,
+      "nonzero_alpha": 3276,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/eye_white_R.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "iris_L",
+      "group": "eyes_keypose",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        1120,
+        623,
+        10,
+        48
+      ],
+      "alpha_coverage": 8.559e-05,
+      "nonzero_alpha": 359,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/iris_L.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "iris_R",
+      "group": "eyes_keypose",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        906,
+        621,
+        22,
+        61
+      ],
+      "alpha_coverage": 0.00025487,
+      "nonzero_alpha": 1069,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/iris_R.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "pupil_L",
+      "group": "eyes_keypose",
+      "derivation_mode": "generated_keypose_candidate",
+      "bbox": [
+        1146,
+        646,
+        35,
+        35
+      ],
+      "alpha_coverage": 0.00022817,
+      "nonzero_alpha": 957,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/pupil_L.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "pupil_R",
+      "group": "eyes_keypose",
+      "derivation_mode": "generated_keypose_candidate",
+      "bbox": [
+        871,
+        646,
+        35,
+        35
+      ],
+      "alpha_coverage": 0.00022817,
+      "nonzero_alpha": 957,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/pupil_R.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "catchlight_L",
+      "group": "eyes_keypose",
+      "derivation_mode": "generated_keypose_candidate",
+      "bbox": [
+        1165,
+        630,
+        23,
+        23
+      ],
+      "alpha_coverage": 9.847e-05,
+      "nonzero_alpha": 413,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/catchlight_L.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "catchlight_R",
+      "group": "eyes_keypose",
+      "derivation_mode": "generated_keypose_candidate",
+      "bbox": [
+        890,
+        630,
+        23,
+        23
+      ],
+      "alpha_coverage": 9.847e-05,
+      "nonzero_alpha": 413,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/catchlight_R.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "upper_lid_L",
+      "group": "eyes_keypose",
+      "derivation_mode": "generated_keypose_candidate",
+      "bbox": [
+        1040,
+        585,
+        239,
+        63
+      ],
+      "alpha_coverage": 0.00285292,
+      "nonzero_alpha": 11966,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/upper_lid_L.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "upper_lid_R",
+      "group": "eyes_keypose",
+      "derivation_mode": "generated_keypose_candidate",
+      "bbox": [
+        765,
+        585,
+        239,
+        63
+      ],
+      "alpha_coverage": 0.00285292,
+      "nonzero_alpha": 11966,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/upper_lid_R.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "lower_lid_L",
+      "group": "eyes_keypose",
+      "derivation_mode": "generated_keypose_candidate",
+      "bbox": [
+        1057,
+        709,
+        207,
+        29
+      ],
+      "alpha_coverage": 0.00028682,
+      "nonzero_alpha": 1203,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/lower_lid_L.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "lower_lid_R",
+      "group": "eyes_keypose",
+      "derivation_mode": "generated_keypose_candidate",
+      "bbox": [
+        782,
+        709,
+        207,
+        29
+      ],
+      "alpha_coverage": 0.00028682,
+      "nonzero_alpha": 1203,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/lower_lid_R.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "upper_lash_L",
+      "group": "eyes_keypose",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        1060,
+        607,
+        120,
+        34
+      ],
+      "alpha_coverage": 0.00070405,
+      "nonzero_alpha": 2953,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/upper_lash_L.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "upper_lash_R",
+      "group": "eyes_keypose",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        858,
+        605,
+        118,
+        36
+      ],
+      "alpha_coverage": 0.0006721,
+      "nonzero_alpha": 2819,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/upper_lash_R.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "brow_L",
+      "group": "eyes_keypose",
+      "derivation_mode": "generated_fallback_candidate",
+      "bbox": [
+        1069,
+        520,
+        191,
+        35
+      ],
+      "alpha_coverage": 0.00040245,
+      "nonzero_alpha": 1688,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/brow_L.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "brow_R",
+      "group": "eyes_keypose",
+      "derivation_mode": "generated_fallback_candidate",
+      "bbox": [
+        789,
+        520,
+        191,
+        35
+      ],
+      "alpha_coverage": 0.00040245,
+      "nonzero_alpha": 1688,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/brow_R.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "mouth_closed_line",
+      "group": "mouth_keypose",
+      "derivation_mode": "generated_fallback_candidate",
+      "bbox": [
+        957,
+        848,
+        137,
+        32
+      ],
+      "alpha_coverage": 0.00023699,
+      "nonzero_alpha": 994,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/mouth_closed_line.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "mouth_half_outer",
+      "group": "mouth_keypose",
+      "derivation_mode": "generated_keypose_candidate",
+      "bbox": [
+        935,
+        812,
+        181,
+        73
+      ],
+      "alpha_coverage": 0.00247216,
+      "nonzero_alpha": 10369,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/mouth_half_outer.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "mouth_half_inner",
+      "group": "mouth_keypose",
+      "derivation_mode": "generated_keypose_candidate",
+      "bbox": [
+        976,
+        837,
+        98,
+        32
+      ],
+      "alpha_coverage": 0.00058842,
+      "nonzero_alpha": 2468,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/mouth_half_inner.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "mouth_open_outer",
+      "group": "mouth_keypose",
+      "derivation_mode": "generated_keypose_candidate",
+      "bbox": [
+        925,
+        802,
+        201,
+        125
+      ],
+      "alpha_coverage": 0.00470471,
+      "nonzero_alpha": 19733,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/mouth_open_outer.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "mouth_open_inner",
+      "group": "mouth_keypose",
+      "derivation_mode": "generated_keypose_candidate",
+      "bbox": [
+        966,
+        832,
+        118,
+        71
+      ],
+      "alpha_coverage": 0.00156736,
+      "nonzero_alpha": 6574,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/mouth_open_inner.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "mouth_teeth_upper",
+      "group": "mouth_keypose",
+      "derivation_mode": "generated_keypose_candidate",
+      "bbox": [
+        980,
+        826,
+        89,
+        27
+      ],
+      "alpha_coverage": 0.00056338,
+      "nonzero_alpha": 2363,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/mouth_teeth_upper.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "mouth_tongue",
+      "group": "mouth_keypose",
+      "derivation_mode": "generated_keypose_candidate",
+      "bbox": [
+        982,
+        872,
+        87,
+        31
+      ],
+      "alpha_coverage": 0.00050473,
+      "nonzero_alpha": 2117,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/mouth_tongue.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "mouth_shadow",
+      "group": "mouth_keypose",
+      "derivation_mode": "generated_keypose_candidate",
+      "bbox": [
+        956,
+        846,
+        139,
+        63
+      ],
+      "alpha_coverage": 0.0016396,
+      "nonzero_alpha": 6877,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/mouth_shadow.png",
+      "issues": [
+        "VISUAL_FAIL_DERIVATION"
+      ],
+      "action": "VISUAL_FAIL"
+    },
+    {
+      "part_id": "choker_base",
+      "group": "clothes_accessory_physics",
+      "derivation_mode": "generated_fallback_candidate",
+      "bbox": [
+        850,
+        1018,
+        351,
+        83
+      ],
+      "alpha_coverage": 0.0067265,
+      "nonzero_alpha": 28213,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/choker_base.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "choker_gem",
+      "group": "clothes_accessory_physics",
+      "derivation_mode": "generated_fallback_candidate",
+      "bbox": [
+        970,
+        1040,
+        111,
+        141
+      ],
+      "alpha_coverage": 0.00186944,
+      "nonzero_alpha": 7841,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/choker_gem.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "ribbon_center",
+      "group": "clothes_accessory_physics",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        944,
+        1230,
+        161,
+        151
+      ],
+      "alpha_coverage": 0.00579619,
+      "nonzero_alpha": 24311,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/ribbon_center.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "ribbon_loop_L",
+      "group": "clothes_accessory_physics",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        1090,
+        1235,
+        128,
+        171
+      ],
+      "alpha_coverage": 0.00416803,
+      "nonzero_alpha": 17482,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/ribbon_loop_L.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "ribbon_loop_R",
+      "group": "clothes_accessory_physics",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        818,
+        1235,
+        138,
+        171
+      ],
+      "alpha_coverage": 0.00455642,
+      "nonzero_alpha": 19111,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/ribbon_loop_R.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "ribbon_tail_L",
+      "group": "clothes_accessory_physics",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        1115,
+        1370,
+        109,
+        171
+      ],
+      "alpha_coverage": 0.00257444,
+      "nonzero_alpha": 10798,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/ribbon_tail_L.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "ribbon_tail_R",
+      "group": "clothes_accessory_physics",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        812,
+        1370,
+        124,
+        183
+      ],
+      "alpha_coverage": 0.00331569,
+      "nonzero_alpha": 13907,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/ribbon_tail_R.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "shoulder_frill_L",
+      "group": "clothes_accessory_physics",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        1190,
+        1130,
+        60,
+        151
+      ],
+      "alpha_coverage": 0.00142908,
+      "nonzero_alpha": 5994,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/shoulder_frill_L.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "shoulder_frill_R",
+      "group": "clothes_accessory_physics",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        785,
+        1130,
+        76,
+        151
+      ],
+      "alpha_coverage": 0.00201368,
+      "nonzero_alpha": 8446,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/shoulder_frill_R.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "sleeve_frill_L",
+      "group": "clothes_accessory_physics",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        1340,
+        1530,
+        421,
+        171
+      ],
+      "alpha_coverage": 0.01465988,
+      "nonzero_alpha": 61488,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/sleeve_frill_L.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    },
+    {
+      "part_id": "sleeve_frill_R",
+      "group": "clothes_accessory_physics",
+      "derivation_mode": "targeted_mask_from_seethrough",
+      "bbox": [
+        290,
+        1530,
+        417,
+        171
+      ],
+      "alpha_coverage": 0.01456809,
+      "nonzero_alpha": 61103,
+      "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/parts/sleeve_frill_R.png",
+      "issues": [],
+      "action": "KEEP_SEETHROUGH_MASK"
+    }
+  ],
+  "outputs": {
+    "problem_contact_sheet": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/reports/problem_contact_sheet.png",
+    "face_closeup_sheet": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/reports/face_closeup_sheet.png",
+    "review_summary": "/Users/family/jason/Vtube/experiments/mini-cubism-dedicated-model-v1-001/seethrough_70_custom_split_v2/reports/review_summary.md"
+  },
+  "interpretation": [
+    "Structural PASS does not imply visual production success.",
+    "Generated/procedural/fallback critical face, eye, or mouth parts cannot advance without style-matched visual evidence.",
+    "Face v1 procedural candidates are expected to fail this QA and remain a negative regression fixture."
+  ]
+}

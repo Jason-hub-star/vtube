@@ -1,0 +1,361 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-04T11:24:56.219972+00:00",
+  "source_project": "/Users/family/jason/Vtube/experiments/mini-cubism-v0-001/mini_cubism_project",
+  "status": "PASS",
+  "best_candidate_id": "candidate_009",
+  "best_candidate_project": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_009/mini_cubism_project",
+  "ranked_candidates": [
+    {
+      "candidate_id": "candidate_009",
+      "profile": {
+        "id": "overall_expressive",
+        "angle": 1.4,
+        "eye": 1.2,
+        "mouth": 1.35,
+        "hair": 1.35
+      },
+      "project": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_009/mini_cubism_project",
+      "validation": "PASS",
+      "pose_sweep": {
+        "status": "PASS",
+        "score": 211,
+        "summary": {
+          "status": "PASS",
+          "score": 211,
+          "counts": {
+            "PASS": 14,
+            "REVISE": 0,
+            "FAIL": 0
+          },
+          "changed_pose_count": 6,
+          "desktop_changed_poses": [
+            "angle_left",
+            "angle_right",
+            "eye_l_close",
+            "eye_r_close",
+            "hair_swing",
+            "mouth_open"
+          ]
+        },
+        "report": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_009/evidence/reports/pose_sweep_report.json",
+        "stdout": "{\n  \"ok\": true,\n  \"status\": \"PASS\",\n  \"score\": 211,\n  \"report\": \"/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_009/evidence/reports/pose_sweep_report.json\"\n}\n",
+        "stderr": ""
+      },
+      "score": 211,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "candidate_003",
+      "profile": {
+        "id": "balanced_strong",
+        "angle": 1.25,
+        "eye": 1.15,
+        "mouth": 1.2,
+        "hair": 1.25
+      },
+      "project": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_003/mini_cubism_project",
+      "validation": "PASS",
+      "pose_sweep": {
+        "status": "PASS",
+        "score": 208,
+        "summary": {
+          "status": "PASS",
+          "score": 208,
+          "counts": {
+            "PASS": 14,
+            "REVISE": 0,
+            "FAIL": 0
+          },
+          "changed_pose_count": 6,
+          "desktop_changed_poses": [
+            "angle_left",
+            "angle_right",
+            "eye_l_close",
+            "eye_r_close",
+            "hair_swing",
+            "mouth_open"
+          ]
+        },
+        "report": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_003/evidence/reports/pose_sweep_report.json",
+        "stdout": "{\n  \"ok\": true,\n  \"status\": \"PASS\",\n  \"score\": 208,\n  \"report\": \"/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_003/evidence/reports/pose_sweep_report.json\"\n}\n",
+        "stderr": ""
+      },
+      "score": 208,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "candidate_007",
+      "profile": {
+        "id": "hair_expression",
+        "angle": 0.95,
+        "eye": 1.0,
+        "mouth": 0.95,
+        "hair": 1.45
+      },
+      "project": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_007/mini_cubism_project",
+      "validation": "PASS",
+      "pose_sweep": {
+        "status": "PASS",
+        "score": 206,
+        "summary": {
+          "status": "PASS",
+          "score": 206,
+          "counts": {
+            "PASS": 14,
+            "REVISE": 0,
+            "FAIL": 0
+          },
+          "changed_pose_count": 6,
+          "desktop_changed_poses": [
+            "angle_left",
+            "angle_right",
+            "eye_l_close",
+            "eye_r_close",
+            "hair_swing",
+            "mouth_open"
+          ]
+        },
+        "report": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_007/evidence/reports/pose_sweep_report.json",
+        "stdout": "{\n  \"ok\": true,\n  \"status\": \"PASS\",\n  \"score\": 206,\n  \"report\": \"/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_007/evidence/reports/pose_sweep_report.json\"\n}\n",
+        "stderr": ""
+      },
+      "score": 206,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "candidate_002",
+      "profile": {
+        "id": "balanced_default",
+        "angle": 1.0,
+        "eye": 1.0,
+        "mouth": 1.0,
+        "hair": 1.0
+      },
+      "project": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_002/mini_cubism_project",
+      "validation": "PASS",
+      "pose_sweep": {
+        "status": "PASS",
+        "score": 205,
+        "summary": {
+          "status": "PASS",
+          "score": 205,
+          "counts": {
+            "PASS": 14,
+            "REVISE": 0,
+            "FAIL": 0
+          },
+          "changed_pose_count": 6,
+          "desktop_changed_poses": [
+            "angle_left",
+            "angle_right",
+            "eye_l_close",
+            "eye_r_close",
+            "hair_swing",
+            "mouth_open"
+          ]
+        },
+        "report": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_002/evidence/reports/pose_sweep_report.json",
+        "stdout": "{\n  \"ok\": true,\n  \"status\": \"PASS\",\n  \"score\": 205,\n  \"report\": \"/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_002/evidence/reports/pose_sweep_report.json\"\n}\n",
+        "stderr": ""
+      },
+      "score": 205,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "candidate_005",
+      "profile": {
+        "id": "head_clear_hair_soft",
+        "angle": 1.2,
+        "eye": 1.0,
+        "mouth": 1.0,
+        "hair": 0.7
+      },
+      "project": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_005/mini_cubism_project",
+      "validation": "PASS",
+      "pose_sweep": {
+        "status": "PASS",
+        "score": 205,
+        "summary": {
+          "status": "PASS",
+          "score": 205,
+          "counts": {
+            "PASS": 14,
+            "REVISE": 0,
+            "FAIL": 0
+          },
+          "changed_pose_count": 6,
+          "desktop_changed_poses": [
+            "angle_left",
+            "angle_right",
+            "eye_l_close",
+            "eye_r_close",
+            "hair_swing",
+            "mouth_open"
+          ]
+        },
+        "report": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_005/evidence/reports/pose_sweep_report.json",
+        "stdout": "{\n  \"ok\": true,\n  \"status\": \"PASS\",\n  \"score\": 205,\n  \"report\": \"/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_005/evidence/reports/pose_sweep_report.json\"\n}\n",
+        "stderr": ""
+      },
+      "score": 205,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "candidate_006",
+      "profile": {
+        "id": "eye_soft_expression",
+        "angle": 0.9,
+        "eye": 0.7,
+        "mouth": 1.1,
+        "hair": 0.9
+      },
+      "project": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_006/mini_cubism_project",
+      "validation": "PASS",
+      "pose_sweep": {
+        "status": "PASS",
+        "score": 205,
+        "summary": {
+          "status": "PASS",
+          "score": 205,
+          "counts": {
+            "PASS": 14,
+            "REVISE": 0,
+            "FAIL": 0
+          },
+          "changed_pose_count": 6,
+          "desktop_changed_poses": [
+            "angle_left",
+            "angle_right",
+            "eye_l_close",
+            "eye_r_close",
+            "hair_swing",
+            "mouth_open"
+          ]
+        },
+        "report": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_006/evidence/reports/pose_sweep_report.json",
+        "stdout": "{\n  \"ok\": true,\n  \"status\": \"PASS\",\n  \"score\": 205,\n  \"report\": \"/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_006/evidence/reports/pose_sweep_report.json\"\n}\n",
+        "stderr": ""
+      },
+      "score": 205,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "candidate_008",
+      "profile": {
+        "id": "mouth_expression",
+        "angle": 0.9,
+        "eye": 1.0,
+        "mouth": 1.45,
+        "hair": 0.95
+      },
+      "project": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_008/mini_cubism_project",
+      "validation": "PASS",
+      "pose_sweep": {
+        "status": "PASS",
+        "score": 205,
+        "summary": {
+          "status": "PASS",
+          "score": 205,
+          "counts": {
+            "PASS": 14,
+            "REVISE": 0,
+            "FAIL": 0
+          },
+          "changed_pose_count": 6,
+          "desktop_changed_poses": [
+            "angle_left",
+            "angle_right",
+            "eye_l_close",
+            "eye_r_close",
+            "hair_swing",
+            "mouth_open"
+          ]
+        },
+        "report": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_008/evidence/reports/pose_sweep_report.json",
+        "stdout": "{\n  \"ok\": true,\n  \"status\": \"PASS\",\n  \"score\": 205,\n  \"report\": \"/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_008/evidence/reports/pose_sweep_report.json\"\n}\n",
+        "stderr": ""
+      },
+      "score": 205,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "candidate_004",
+      "profile": {
+        "id": "head_subtle_mouth_clear",
+        "angle": 0.65,
+        "eye": 1.0,
+        "mouth": 1.25,
+        "hair": 0.9
+      },
+      "project": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_004/mini_cubism_project",
+      "validation": "PASS",
+      "pose_sweep": {
+        "status": "PASS",
+        "score": 203,
+        "summary": {
+          "status": "PASS",
+          "score": 203,
+          "counts": {
+            "PASS": 14,
+            "REVISE": 0,
+            "FAIL": 0
+          },
+          "changed_pose_count": 6,
+          "desktop_changed_poses": [
+            "angle_left",
+            "angle_right",
+            "eye_l_close",
+            "eye_r_close",
+            "hair_swing",
+            "mouth_open"
+          ]
+        },
+        "report": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_004/evidence/reports/pose_sweep_report.json",
+        "stdout": "{\n  \"ok\": true,\n  \"status\": \"PASS\",\n  \"score\": 203,\n  \"report\": \"/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_004/evidence/reports/pose_sweep_report.json\"\n}\n",
+        "stderr": ""
+      },
+      "score": 203,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "candidate_001",
+      "profile": {
+        "id": "balanced_weak",
+        "angle": 0.75,
+        "eye": 0.85,
+        "mouth": 0.8,
+        "hair": 0.75
+      },
+      "project": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_001/mini_cubism_project",
+      "validation": "PASS",
+      "pose_sweep": {
+        "status": "PASS",
+        "score": 202,
+        "summary": {
+          "status": "PASS",
+          "score": 202,
+          "counts": {
+            "PASS": 14,
+            "REVISE": 0,
+            "FAIL": 0
+          },
+          "changed_pose_count": 6,
+          "desktop_changed_poses": [
+            "angle_left",
+            "angle_right",
+            "eye_l_close",
+            "eye_r_close",
+            "hair_swing",
+            "mouth_open"
+          ]
+        },
+        "report": "/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_001/evidence/reports/pose_sweep_report.json",
+        "stdout": "{\n  \"ok\": true,\n  \"status\": \"PASS\",\n  \"score\": 202,\n  \"report\": \"/Users/family/jason/Vtube/experiments/mini-cubism-auto-authoring-001/candidates/candidate_001/evidence/reports/pose_sweep_report.json\"\n}\n",
+        "stderr": ""
+      },
+      "score": 202,
+      "status": "PASS"
+    }
+  ]
+}

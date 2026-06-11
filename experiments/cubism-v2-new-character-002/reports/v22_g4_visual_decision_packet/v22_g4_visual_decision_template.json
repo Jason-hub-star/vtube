@@ -1,0 +1,82 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-10T00:48:21.246491+00:00",
+  "status": "G4_VISUAL_DECISION_TEMPLATE_PENDING_REVIEW",
+  "source_packet": "experiments/cubism-v2-new-character-002/reports/v22_g4_visual_decision_packet/v22_g4_visual_decision_packet.json",
+  "instructions": "Fill visual_decision only with one of allowed_visual_decisions. No value in this template grants material PASS by itself.",
+  "allowed_visual_decisions": [
+    "PENDING_VISUAL_REVIEW",
+    "ACCEPT_VISUAL_CANDIDATE_KEEP_MATERIAL_BLOCKED",
+    "REVISE_BEFORE_G5",
+    "REGENERATE_BATCH_OR_CONTEXT"
+  ],
+  "decisions": [
+    {
+      "id": "B1_CLEAN_BASE_UNDERPAINT",
+      "title": "B1 Clean Base / Underpaint",
+      "visual_decision": "PENDING_VISUAL_REVIEW",
+      "allowed_visual_decisions": [
+        "PENDING_VISUAL_REVIEW",
+        "ACCEPT_VISUAL_CANDIDATE_KEEP_MATERIAL_BLOCKED",
+        "REVISE_BEFORE_G5",
+        "REGENERATE_BATCH_OR_CONTEXT"
+      ],
+      "review_note": ""
+    },
+    {
+      "id": "B2_EYE_PACK",
+      "title": "B2 Eye Pack",
+      "visual_decision": "PENDING_VISUAL_REVIEW",
+      "allowed_visual_decisions": [
+        "PENDING_VISUAL_REVIEW",
+        "ACCEPT_VISUAL_CANDIDATE_KEEP_MATERIAL_BLOCKED",
+        "REVISE_BEFORE_G5",
+        "REGENERATE_BATCH_OR_CONTEXT"
+      ],
+      "review_note": ""
+    },
+    {
+      "id": "B3_MOUTH_PACK_REVISION_V1",
+      "title": "B3 Mouth Pack Revision v1",
+      "visual_decision": "PENDING_VISUAL_REVIEW",
+      "allowed_visual_decisions": [
+        "PENDING_VISUAL_REVIEW",
+        "ACCEPT_VISUAL_CANDIDATE_KEEP_MATERIAL_BLOCKED",
+        "REVISE_BEFORE_G5",
+        "REGENERATE_BATCH_OR_CONTEXT"
+      ],
+      "review_note": ""
+    },
+    {
+      "id": "B4_B5_COMBINED_CONTEXT",
+      "title": "B4/B5 Combined Context Overlay",
+      "visual_decision": "PENDING_VISUAL_REVIEW",
+      "allowed_visual_decisions": [
+        "PENDING_VISUAL_REVIEW",
+        "ACCEPT_VISUAL_CANDIDATE_KEEP_MATERIAL_BLOCKED",
+        "REVISE_BEFORE_G5",
+        "REGENERATE_BATCH_OR_CONTEXT"
+      ],
+      "review_note": ""
+    },
+    {
+      "id": "G1_G2_64PART_CONTACT",
+      "title": "64-Part Contact Sheet",
+      "visual_decision": "PENDING_VISUAL_REVIEW",
+      "allowed_visual_decisions": [
+        "PENDING_VISUAL_REVIEW",
+        "ACCEPT_VISUAL_CANDIDATE_KEEP_MATERIAL_BLOCKED",
+        "REVISE_BEFORE_G5",
+        "REGENERATE_BATCH_OR_CONTEXT"
+      ],
+      "review_note": ""
+    }
+  ],
+  "locks": {
+    "material_pass_status": "BLOCKED",
+    "g5_material_acceptance_status": "BLOCKED_CONTEXT_REVIEW_NOT_OWNER_APPROVAL",
+    "param_hair_front_status": "HIDDEN_CONTRACT_ONLY",
+    "g7_mini_cubism_status": "BLOCKED",
+    "g8_real_cubism_status": "BLOCKED"
+  }
+}

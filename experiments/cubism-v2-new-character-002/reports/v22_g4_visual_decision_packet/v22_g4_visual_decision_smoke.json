@@ -1,0 +1,33 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-10T00:48:21.246776+00:00",
+  "status": "G4_VISUAL_DECISION_SMOKE_PENDING_ONLY",
+  "source_packet": "experiments/cubism-v2-new-character-002/reports/v22_g4_visual_decision_packet/v22_g4_visual_decision_packet.json",
+  "decisions": [
+    {
+      "id": "B1_CLEAN_BASE_UNDERPAINT",
+      "visual_decision": "PENDING_VISUAL_REVIEW",
+      "review_note": "smoke validation keeps all rows pending"
+    },
+    {
+      "id": "B2_EYE_PACK",
+      "visual_decision": "PENDING_VISUAL_REVIEW",
+      "review_note": "smoke validation keeps all rows pending"
+    },
+    {
+      "id": "B3_MOUTH_PACK_REVISION_V1",
+      "visual_decision": "PENDING_VISUAL_REVIEW",
+      "review_note": "smoke validation keeps all rows pending"
+    },
+    {
+      "id": "B4_B5_COMBINED_CONTEXT",
+      "visual_decision": "PENDING_VISUAL_REVIEW",
+      "review_note": "smoke validation keeps all rows pending"
+    },
+    {
+      "id": "G1_G2_64PART_CONTACT",
+      "visual_decision": "PENDING_VISUAL_REVIEW",
+      "review_note": "smoke validation keeps all rows pending"
+    }
+  ]
+}

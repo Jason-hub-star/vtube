@@ -1,0 +1,250 @@
+[
+  {
+    "id": "root_warp",
+    "type": "warp",
+    "parent_id": null,
+    "child_ids": [],
+    "bounds": [
+      0,
+      0,
+      2048,
+      2048
+    ],
+    "pivot": [
+      1024.0,
+      1024.0
+    ]
+  },
+  {
+    "id": "body_root_warp",
+    "type": "warp",
+    "parent_id": "root_warp",
+    "child_ids": [
+      "body_underpaint",
+      "neck_shadow_underpaint",
+      "torso_base",
+      "neck",
+      "shoulder_L",
+      "shoulder_R",
+      "chest_cloth_base",
+      "collar_front"
+    ],
+    "bounds": [
+      626,
+      1036,
+      1425,
+      1716
+    ],
+    "pivot": [
+      1025.5,
+      1376.0
+    ]
+  },
+  {
+    "id": "shoulder_arm_rotation",
+    "type": "rotation",
+    "parent_id": "body_root_warp",
+    "child_ids": [
+      "arm_L_underpaint",
+      "arm_R_underpaint",
+      "arm_L_upper_simple",
+      "arm_R_upper_simple"
+    ],
+    "bounds": [
+      585,
+      1176,
+      1449,
+      1772
+    ],
+    "pivot": [
+      1017.0,
+      1474.0
+    ]
+  },
+  {
+    "id": "head_angle_warp",
+    "type": "warp",
+    "parent_id": "root_warp",
+    "child_ids": [
+      "face_underpaint_L",
+      "face_underpaint_R",
+      "face_base",
+      "face_shadow_L",
+      "face_shadow_R",
+      "nose",
+      "cheek_L",
+      "cheek_R"
+    ],
+    "bounds": [
+      628,
+      313,
+      1437,
+      1772
+    ],
+    "pivot": [
+      1032.5,
+      1042.5
+    ]
+  },
+  {
+    "id": "brow_L_R_warp",
+    "type": "warp",
+    "parent_id": "head_angle_warp",
+    "child_ids": [
+      "brow_L",
+      "brow_R"
+    ],
+    "bounds": [
+      817,
+      726,
+      1295,
+      832
+    ],
+    "pivot": [
+      1056.0,
+      779.0
+    ]
+  },
+  {
+    "id": "eye_L_warp",
+    "type": "warp",
+    "parent_id": "head_angle_warp",
+    "child_ids": [
+      "eye_L_white",
+      "eye_L_underpaint",
+      "eye_L_iris",
+      "eye_L_pupil",
+      "eye_L_highlight",
+      "eye_L_upper_lash",
+      "eye_L_lower_lash",
+      "eye_L_closed_lid"
+    ],
+    "bounds": [
+      827,
+      761,
+      1055,
+      939
+    ],
+    "pivot": [
+      941.0,
+      850.0
+    ]
+  },
+  {
+    "id": "eye_R_warp",
+    "type": "warp",
+    "parent_id": "head_angle_warp",
+    "child_ids": [
+      "eye_R_white",
+      "eye_R_underpaint",
+      "eye_R_iris",
+      "eye_R_pupil",
+      "eye_R_highlight",
+      "eye_R_upper_lash",
+      "eye_R_lower_lash",
+      "eye_R_closed_lid"
+    ],
+    "bounds": [
+      1057,
+      761,
+      1285,
+      939
+    ],
+    "pivot": [
+      1171.0,
+      850.0
+    ]
+  },
+  {
+    "id": "mouth_warp",
+    "type": "warp",
+    "parent_id": "head_angle_warp",
+    "child_ids": [
+      "mouth_inner",
+      "mouth_teeth",
+      "mouth_tongue",
+      "mouth_line",
+      "mouth_upper_lip_mask",
+      "mouth_lower_lip_mask",
+      "mouth_corner_L",
+      "mouth_corner_R"
+    ],
+    "bounds": [
+      914,
+      951,
+      1157,
+      1083
+    ],
+    "pivot": [
+      1035.5,
+      1017.0
+    ]
+  },
+  {
+    "id": "front_hair_warp",
+    "type": "warp",
+    "parent_id": "head_angle_warp",
+    "child_ids": [
+      "hair_front_center",
+      "hair_front_L",
+      "hair_front_R",
+      "hair_front_side_L",
+      "hair_front_side_R",
+      "hair_front_tip_L",
+      "hair_front_tip_R"
+    ],
+    "bounds": [
+      707,
+      359,
+      1350,
+      1281
+    ],
+    "pivot": [
+      1028.5,
+      820.0
+    ]
+  },
+  {
+    "id": "side_hair_L_R_warp",
+    "type": "warp",
+    "parent_id": "head_angle_warp",
+    "child_ids": [
+      "hair_side_L_outer",
+      "hair_side_L_inner",
+      "hair_side_R_outer",
+      "hair_side_R_inner"
+    ],
+    "bounds": [
+      624,
+      526,
+      1426,
+      1366
+    ],
+    "pivot": [
+      1025.0,
+      946.0
+    ]
+  },
+  {
+    "id": "back_hair_warp",
+    "type": "warp",
+    "parent_id": "root_warp",
+    "child_ids": [
+      "hair_back_base",
+      "hair_back_underpaint",
+      "hair_back_strand_L",
+      "hair_back_strand_R",
+      "hair_back_center"
+    ],
+    "bounds": [
+      628,
+      319,
+      1425,
+      1324
+    ],
+    "pivot": [
+      1026.5,
+      821.5
+    ]
+  }
+]

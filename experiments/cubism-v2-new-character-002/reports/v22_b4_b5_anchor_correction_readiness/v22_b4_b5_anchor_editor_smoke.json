@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-09T13:37:54.211421+00:00",
+  "status": "PASS_V22_B4_B5_ANCHOR_EDITOR_API_SMOKE",
+  "state_target_count": 33,
+  "source_exists": true,
+  "all_target_layers_exist": true,
+  "smoke_override_path": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_anchor_correction_readiness/manual_anchor_overrides_smoke.json",
+  "saved_part_id": "torso_base",
+  "main_override_path_untouched": "experiments/cubism-v2-new-character-002/reports/v22_b4_b5_anchor_correction_readiness/manual_anchor_overrides.json",
+  "self_review": {
+    "has_drag_zoom_editor": true,
+    "api_state_pass": true,
+    "api_save_pass": true,
+    "target_count": 33,
+    "status": "PASS"
+  }
+}

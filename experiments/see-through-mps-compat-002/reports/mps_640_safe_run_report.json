@@ -1,0 +1,75 @@
+{
+  "case_id": "mps_640_safe",
+  "started_at": "2026-06-04T06:06:55.068556+00:00",
+  "settings": {
+    "case_id": "mps_640_safe",
+    "input_image": "canonical_front_mps_640.png",
+    "resolution": 640,
+    "steps": 12,
+    "depth_resolution": 512,
+    "env": {
+      "PYTORCH_ENABLE_MPS_FALLBACK": "1",
+      "PYTORCH_MPS_LOW_WATERMARK_RATIO": "0.90",
+      "PYTORCH_MPS_HIGH_WATERMARK_RATIO": "1.30"
+    },
+    "status": "READY_TO_RUN",
+    "risk": "target practical smoke if 512 produces layers"
+  },
+  "copied_input": {
+    "source": "experiments/see-through-mps-compat-002/input/canonical_front_mps_640.png",
+    "target": "experiments/see-through-layer-decomp-001/external_repos/ComfyUI/input/canonical_front_mps_640.png"
+  },
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/Users/family/jason/Vtube/scripts/run_comfyui_seethrough_prompt.py",
+    "--experiment-id",
+    "see-through-mps-compat-002",
+    "--experiment-dir",
+    "experiments/see-through-layer-decomp-001",
+    "--output-dir",
+    "experiments/see-through-layer-decomp-001/external_repos/ComfyUI/output",
+    "--report-path",
+    "experiments/see-through-mps-compat-002/reports/mps_640_safe_inference_report.json",
+    "--client-id",
+    "vtube-mps_640_safe",
+    "--base-url",
+    "http://127.0.0.1:8188",
+    "--timeout",
+    "5400",
+    "--server-timeout",
+    "90",
+    "--poll-interval",
+    "10",
+    "--input-image",
+    "canonical_front_mps_640.png",
+    "--resolution",
+    "640",
+    "--steps",
+    "12",
+    "--depth-resolution",
+    "512",
+    "--filename-prefix",
+    "white_wolf_goth_mps_640_safe"
+  ],
+  "dry_run": false,
+  "returncode": 0,
+  "stdout_tail": "{\n  \"status\": \"COMPLETED\",\n  \"prompt_id\": \"46147895-4e4a-48e9-a288-8070bfb52143\",\n  \"layers_json\": [\n    \"/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_layers.json\"\n  ],\n  \"last_error\": null\n}\n",
+  "stderr_tail": "",
+  "status": "PASS_RUNNER",
+  "normalize": {
+    "status": "PASS_NORMALIZED",
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "/Users/family/jason/Vtube/scripts/normalize_seethrough_outputs.py",
+      "--experiment-id",
+      "see-through-mps-compat-002",
+      "--experiment-dir",
+      "experiments/see-through-mps-compat-002",
+      "--layers-json",
+      "/Users/family/jason/Vtube/experiments/see-through-layer-decomp-001/external_repos/ComfyUI/output/white_wolf_goth_mps_640_safe_20260604_151337_63749f8a_layers.json"
+    ],
+    "returncode": 0,
+    "stdout_tail": "{\n  \"layers\": 29,\n  \"manifest\": \"experiments/see-through-mps-compat-002/layer_manifest.json\"\n}\n",
+    "stderr_tail": ""
+  }
+}

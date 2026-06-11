@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "experiment_id": "mini-cubism-hair-face-motion-v1-001",
+  "generated_at": "2026-06-05T13:50:09.262416+00:00",
+  "status": "PASS",
+  "base_source": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/base_mannequin/canonical_base.png",
+  "hair_source": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hf_actual/birefnet_hr/hair_pack/hair_pack_birefnet_hr.png",
+  "base_bbox": [
+    654,
+    44,
+    740,
+    1980
+  ],
+  "source_hair_bbox": [
+    302,
+    8,
+    1442,
+    1792
+  ],
+  "target_height": 1050,
+  "target_top": 18,
+  "target_center_x": 1024,
+  "fit_scale": 0.5859,
+  "fitted_bbox": [
+    602,
+    18,
+    845,
+    1050
+  ],
+  "fitted_alpha_coverage": 0.0976088,
+  "output_path": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_fit_v1/hair_fit_birefnet_hr.png",
+  "contact_sheet": "/Users/family/jason/Vtube/experiments/mini-cubism-hair-face-motion-v1-001/hair_fit_v1/reports/hair_fit_contact_sheet.png"
+}

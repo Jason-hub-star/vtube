@@ -1,0 +1,572 @@
+{
+  "schema_version": 1,
+  "experiment_id": "mini-cubism-dedicated-model-v1-001",
+  "generated_at": "2026-06-05T04:25:17.107493+00:00",
+  "source_manifest": "experiments/mini-cubism-dedicated-model-v1-001/layer_manifest.json",
+  "contact_sheet": "experiments/mini-cubism-dedicated-model-v1-001/reports/mps_candidate_contact_sheet.png",
+  "counts": {
+    "total": 29,
+    "review_priority": 18,
+    "review_high_risk": 1,
+    "reference_review": 3,
+    "empty": 7,
+    "practical_gate_targets": 11
+  },
+  "practical_success_gate": "Human review must mark at least 5 hair/face/eye/mouth candidates as O or REVISE.",
+  "items": [
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__choker",
+      "original_part_id": "choker",
+      "role": "accessory",
+      "side": null,
+      "bbox": [
+        928,
+        826,
+        185,
+        172
+      ],
+      "alpha_coverage": 0.345129,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "production_candidate"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__choker.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__back_hair",
+      "original_part_id": "back_hair",
+      "role": "back_hair",
+      "side": null,
+      "bbox": [
+        349,
+        280,
+        1348,
+        1303
+      ],
+      "alpha_coverage": 0.496118,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__back_hair.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__clothes",
+      "original_part_id": "clothes",
+      "role": "clothes",
+      "side": null,
+      "bbox": [
+        786,
+        867,
+        462,
+        705
+      ],
+      "alpha_coverage": 0.770977,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "production_candidate"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__clothes.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__face_base",
+      "original_part_id": "face_base",
+      "role": "face",
+      "side": null,
+      "bbox": [
+        843,
+        381,
+        351,
+        436
+      ],
+      "alpha_coverage": 0.756717,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__face_base.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__mouth_line",
+      "original_part_id": "mouth_line",
+      "role": "mouth_line",
+      "side": null,
+      "bbox": [
+        965,
+        729,
+        103,
+        80
+      ],
+      "alpha_coverage": 0.726214,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__mouth_line.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__neck",
+      "original_part_id": "neck",
+      "role": "neck",
+      "side": null,
+      "bbox": [
+        960,
+        665,
+        119,
+        219
+      ],
+      "alpha_coverage": 0.871379,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "production_candidate"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__neck.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__L_arm",
+      "original_part_id": "L_arm",
+      "role": "seethrough_reference",
+      "side": "L",
+      "bbox": [
+        1169,
+        901,
+        694,
+        952
+      ],
+      "alpha_coverage": 0.330961,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "production_candidate"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_arm.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__L_brow",
+      "original_part_id": "L_brow",
+      "role": "seethrough_reference",
+      "side": "L",
+      "bbox": [
+        1056,
+        583,
+        90,
+        12
+      ],
+      "alpha_coverage": 0.506481,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_brow.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__L_ear_outer",
+      "original_part_id": "L_ear_outer",
+      "role": "seethrough_reference",
+      "side": "L",
+      "bbox": [
+        1139,
+        634,
+        77,
+        99
+      ],
+      "alpha_coverage": 0.600289,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "production_candidate"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_ear_outer.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__L_eye_white",
+      "original_part_id": "L_eye_white",
+      "role": "seethrough_reference",
+      "side": "L",
+      "bbox": [
+        1061,
+        630,
+        86,
+        51
+      ],
+      "alpha_coverage": 0.732786,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_eye_white.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__L_iris",
+      "original_part_id": "L_iris",
+      "role": "seethrough_reference",
+      "side": "L",
+      "bbox": [
+        1072,
+        623,
+        56,
+        56
+      ],
+      "alpha_coverage": 0.774235,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_iris.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__L_upper_lash",
+      "original_part_id": "L_upper_lash",
+      "role": "seethrough_reference",
+      "side": "L",
+      "bbox": [
+        1060,
+        609,
+        116,
+        71
+      ],
+      "alpha_coverage": 0.318966,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__L_upper_lash.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__R_arm",
+      "original_part_id": "R_arm",
+      "role": "seethrough_reference",
+      "side": "R",
+      "bbox": [
+        174,
+        900,
+        693,
+        949
+      ],
+      "alpha_coverage": 0.332391,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "production_candidate"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_arm.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__R_brow",
+      "original_part_id": "R_brow",
+      "role": "seethrough_reference",
+      "side": "R",
+      "bbox": [
+        882,
+        582,
+        96,
+        15
+      ],
+      "alpha_coverage": 0.577778,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_brow.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__R_ear_outer",
+      "original_part_id": "R_ear_outer",
+      "role": "seethrough_reference",
+      "side": "R",
+      "bbox": [
+        820,
+        633,
+        77,
+        100
+      ],
+      "alpha_coverage": 0.582987,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "production_candidate"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_ear_outer.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__R_eye_white",
+      "original_part_id": "R_eye_white",
+      "role": "seethrough_reference",
+      "side": "R",
+      "bbox": [
+        886,
+        632,
+        83,
+        49
+      ],
+      "alpha_coverage": 0.72535,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_eye_white.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__R_iris",
+      "original_part_id": "R_iris",
+      "role": "seethrough_reference",
+      "side": "R",
+      "bbox": [
+        906,
+        623,
+        56,
+        59
+      ],
+      "alpha_coverage": 0.79207,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_iris.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__R_upper_lash",
+      "original_part_id": "R_upper_lash",
+      "role": "seethrough_reference",
+      "side": "R",
+      "bbox": [
+        858,
+        607,
+        121,
+        73
+      ],
+      "alpha_coverage": 0.305219,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_PRIORITY",
+      "triage_notes": [
+        "practical_gate_target",
+        "production_candidate"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__R_upper_lash.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__raw_bottomwear",
+      "original_part_id": "raw_bottomwear",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": [
+        519,
+        1469,
+        996,
+        386
+      ],
+      "alpha_coverage": 0.7123,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "REVIEW_HIGH_RISK",
+      "triage_notes": [
+        "unmapped_raw_layer"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__raw_bottomwear.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__ear_inner",
+      "original_part_id": "ear_inner",
+      "role": "ears",
+      "side": null,
+      "bbox": [
+        871,
+        719,
+        295,
+        78
+      ],
+      "alpha_coverage": 0.128205,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "REFERENCE_REVIEW",
+      "triage_notes": [],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__ear_inner.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__headwear_reference",
+      "original_part_id": "headwear_reference",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": [
+        649,
+        373,
+        741,
+        454
+      ],
+      "alpha_coverage": 0.187269,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "REFERENCE_REVIEW",
+      "triage_notes": [
+        "reference_only_mapping"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__headwear_reference.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__nose_reference",
+      "original_part_id": "nose_reference",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": [
+        1000,
+        680,
+        22,
+        26
+      ],
+      "alpha_coverage": 0.758741,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "REFERENCE_REVIEW",
+      "triage_notes": [
+        "reference_only_mapping"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__nose_reference.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__front_hair",
+      "original_part_id": "front_hair",
+      "role": "front_hair",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": true,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__front_hair.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__object_reference",
+      "original_part_id": "object_reference",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__object_reference.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__raw_eyewear",
+      "original_part_id": "raw_eyewear",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__raw_eyewear.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__raw_footwear",
+      "original_part_id": "raw_footwear",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__raw_footwear.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__raw_legwear",
+      "original_part_id": "raw_legwear",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__raw_legwear.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__tail_reference",
+      "original_part_id": "tail_reference",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__tail_reference.png"
+    },
+    {
+      "layer_name": "mini_cubism_dedicated_model_v1_001__wings_reference",
+      "original_part_id": "wings_reference",
+      "role": "seethrough_reference",
+      "side": null,
+      "bbox": null,
+      "alpha_coverage": 0.0,
+      "production_candidate": false,
+      "include_in_import_psd": false,
+      "triage_status": "X_CANDIDATE_EMPTY",
+      "triage_notes": [
+        "empty alpha"
+      ],
+      "image_path": "experiments/mini-cubism-dedicated-model-v1-001/normalized_layers/mini_cubism_dedicated_model_v1_001__wings_reference.png"
+    }
+  ]
+}

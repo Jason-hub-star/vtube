@@ -1,0 +1,265 @@
+{
+  "schema_version": 1,
+  "status": "PASS_NEUTRAL_REPAIR_V1",
+  "generated_at": "2026-06-08T06:49:15.195971+00:00",
+  "canonical": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/canonical/candidate_002_2048_rgba.png",
+  "manifest": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/layer_manifest.json",
+  "manifest_backup": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/layer_manifest.before_neutral_repair_v1.json",
+  "hidden_at_neutral": [
+    "eye_L_closed_lid",
+    "eye_R_closed_lid",
+    "mouth_corner_L",
+    "mouth_corner_R",
+    "mouth_inner",
+    "mouth_lower_lip_mask",
+    "mouth_teeth",
+    "mouth_tongue",
+    "mouth_upper_lip_mask"
+  ],
+  "problem_part_contributions": {
+    "basis": "before_all_visible draw-order composite; bad/extra pixels are attributed to the current top owner, missing pixels are attributed to layers whose bbox contains the missing region",
+    "top_20": [
+      {
+        "part_id": "hair_back_underpaint",
+        "draw_order": 146,
+        "source_type": "UNDERPAINT",
+        "alpha_pixels": 522200,
+        "bad_owned_pixels": 135357,
+        "extra_owned_pixels": 67244,
+        "missing_in_bbox_pixels": 1750,
+        "problem_score_pixels": 204351
+      },
+      {
+        "part_id": "body_underpaint",
+        "draw_order": 1,
+        "source_type": "UNDERPAINT",
+        "alpha_pixels": 154524,
+        "bad_owned_pixels": 45109,
+        "extra_owned_pixels": 43455,
+        "missing_in_bbox_pixels": 531,
+        "problem_score_pixels": 89095
+      },
+      {
+        "part_id": "chest_cloth_base",
+        "draw_order": 463,
+        "source_type": "SOURCE_CUT",
+        "alpha_pixels": 114990,
+        "bad_owned_pixels": 35240,
+        "extra_owned_pixels": 105,
+        "missing_in_bbox_pixels": 10934,
+        "problem_score_pixels": 46279
+      },
+      {
+        "part_id": "torso_base",
+        "draw_order": 202,
+        "source_type": "SOURCE_CUT",
+        "alpha_pixels": 159587,
+        "bad_owned_pixels": 1994,
+        "extra_owned_pixels": 0,
+        "missing_in_bbox_pixels": 33884,
+        "problem_score_pixels": 35878
+      },
+      {
+        "part_id": "arm_R_underpaint",
+        "draw_order": 10,
+        "source_type": "UNDERPAINT",
+        "alpha_pixels": 48098,
+        "bad_owned_pixels": 17790,
+        "extra_owned_pixels": 17403,
+        "missing_in_bbox_pixels": 215,
+        "problem_score_pixels": 35408
+      },
+      {
+        "part_id": "face_base",
+        "draw_order": 611,
+        "source_type": "SOURCE_CUT",
+        "alpha_pixels": 98152,
+        "bad_owned_pixels": 20836,
+        "extra_owned_pixels": 41,
+        "missing_in_bbox_pixels": 0,
+        "problem_score_pixels": 20877
+      },
+      {
+        "part_id": "arm_L_upper_simple",
+        "draw_order": 307,
+        "source_type": "SOURCE_CUT",
+        "alpha_pixels": 93880,
+        "bad_owned_pixels": 6138,
+        "extra_owned_pixels": 16,
+        "missing_in_bbox_pixels": 10837,
+        "problem_score_pixels": 16991
+      },
+      {
+        "part_id": "neck",
+        "draw_order": 203,
+        "source_type": "SOURCE_CUT",
+        "alpha_pixels": 36868,
+        "bad_owned_pixels": 15479,
+        "extra_owned_pixels": 28,
+        "missing_in_bbox_pixels": 0,
+        "problem_score_pixels": 15507
+      },
+      {
+        "part_id": "hair_back_base",
+        "draw_order": 145,
+        "source_type": "SOURCE_CUT",
+        "alpha_pixels": 252828,
+        "bad_owned_pixels": 111,
+        "extra_owned_pixels": 0,
+        "missing_in_bbox_pixels": 14497,
+        "problem_score_pixels": 14608
+      },
+      {
+        "part_id": "collar_front",
+        "draw_order": 1761,
+        "source_type": "SOURCE_CUT",
+        "alpha_pixels": 12526,
+        "bad_owned_pixels": 9454,
+        "extra_owned_pixels": 229,
+        "missing_in_bbox_pixels": 0,
+        "problem_score_pixels": 9683
+      },
+      {
+        "part_id": "hair_side_L_outer",
+        "draw_order": 1557,
+        "source_type": "SOURCE_CUT",
+        "alpha_pixels": 68532,
+        "bad_owned_pixels": 1049,
+        "extra_owned_pixels": 0,
+        "missing_in_bbox_pixels": 6430,
+        "problem_score_pixels": 7479
+      },
+      {
+        "part_id": "hair_side_R_outer",
+        "draw_order": 1559,
+        "source_type": "SOURCE_CUT",
+        "alpha_pixels": 64529,
+        "bad_owned_pixels": 1142,
+        "extra_owned_pixels": 0,
+        "missing_in_bbox_pixels": 5449,
+        "problem_score_pixels": 6591
+      },
+      {
+        "part_id": "hair_back_strand_L",
+        "draw_order": 147,
+        "source_type": "SOURCE_CUT",
+        "alpha_pixels": 49338,
+        "bad_owned_pixels": 0,
+        "extra_owned_pixels": 0,
+        "missing_in_bbox_pixels": 6338,
+        "problem_score_pixels": 6338
+      },
+      {
+        "part_id": "face_shadow_R",
+        "draw_order": 713,
+        "source_type": "SOURCE_CUT",
+        "alpha_pixels": 28484,
+        "bad_owned_pixels": 6248,
+        "extra_owned_pixels": 4,
+        "missing_in_bbox_pixels": 0,
+        "problem_score_pixels": 6252
+      },
+      {
+        "part_id": "hair_front_side_L",
+        "draw_order": 1653,
+        "source_type": "SOURCE_CUT",
+        "alpha_pixels": 73846,
+        "bad_owned_pixels": 6000,
+        "extra_owned_pixels": 0,
+        "missing_in_bbox_pixels": 0,
+        "problem_score_pixels": 6000
+      },
+      {
+        "part_id": "arm_L_underpaint",
+        "draw_order": 9,
+        "source_type": "UNDERPAINT",
+        "alpha_pixels": 56657,
+        "bad_owned_pixels": 3362,
+        "extra_owned_pixels": 1422,
+        "missing_in_bbox_pixels": 1156,
+        "problem_score_pixels": 5940
+      },
+      {
+        "part_id": "shoulder_R",
+        "draw_order": 206,
+        "source_type": "SOURCE_CUT",
+        "alpha_pixels": 52382,
+        "bad_owned_pixels": 4441,
+        "extra_owned_pixels": 102,
+        "missing_in_bbox_pixels": 1365,
+        "problem_score_pixels": 5908
+      },
+      {
+        "part_id": "arm_R_upper_simple",
+        "draw_order": 308,
+        "source_type": "SOURCE_CUT",
+        "alpha_pixels": 60268,
+        "bad_owned_pixels": 2897,
+        "extra_owned_pixels": 8,
+        "missing_in_bbox_pixels": 2566,
+        "problem_score_pixels": 5471
+      },
+      {
+        "part_id": "shoulder_L",
+        "draw_order": 205,
+        "source_type": "SOURCE_CUT",
+        "alpha_pixels": 53846,
+        "bad_owned_pixels": 4029,
+        "extra_owned_pixels": 98,
+        "missing_in_bbox_pixels": 1308,
+        "problem_score_pixels": 5435
+      },
+      {
+        "part_id": "hair_back_strand_R",
+        "draw_order": 148,
+        "source_type": "SOURCE_CUT",
+        "alpha_pixels": 46281,
+        "bad_owned_pixels": 0,
+        "extra_owned_pixels": 0,
+        "missing_in_bbox_pixels": 5397,
+        "problem_score_pixels": 5397
+      }
+    ]
+  },
+  "scores": {
+    "before_all_visible": {
+      "visible_pixels": 959971,
+      "bad_pixels": 430426,
+      "bad_ratio_visible": 0.448374,
+      "missing_pixels": 77449,
+      "extra_pixels": 130870
+    },
+    "before_neutral_visibility_only": {
+      "visible_pixels": 959971,
+      "bad_pixels": 426025,
+      "bad_ratio_visible": 0.443789,
+      "missing_pixels": 77449,
+      "extra_pixels": 130870
+    },
+    "after_repair": {
+      "visible_pixels": 829101,
+      "bad_pixels": 0,
+      "bad_ratio_visible": 0.0,
+      "missing_pixels": 0,
+      "extra_pixels": 0
+    },
+    "target_primary": {
+      "bad_ratio_visible_lte": 0.1
+    },
+    "target_good": {
+      "bad_ratio_visible_lte": 0.05
+    }
+  },
+  "outputs": {
+    "neutral_composite_before": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/neutral_repair/neutral_composite_before.png",
+    "neutral_diff_overlay_before": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/neutral_repair/neutral_diff_overlay_before.png",
+    "neutral_composite_after": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/neutral_repair/neutral_composite_after.png",
+    "neutral_diff_overlay_after": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/reports/neutral_repair/neutral_diff_overlay_after.png",
+    "repaired_layer_dir": "/Users/family/jason/Vtube/experiments/cubism-v2-new-character-001/material_pack_v0/production_layers_neutral_repair_v1"
+  },
+  "remaining_interpretation": [
+    "Neutral composite repair is a pre-rig material gate, not final Cubism ArtMesh quality.",
+    "Auxiliary mouth/blink parts remain available for parameter-driven poses but are hidden at neutral.",
+    "The repaired material pack should be re-opened in Mini Cubism and re-smoked before real Cubism authoring."
+  ]
+}

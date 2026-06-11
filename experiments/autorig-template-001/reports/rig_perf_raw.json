@@ -1,0 +1,32 @@
+{
+  "scales": {
+    "1.0": {
+      "neutral": 136,
+      "head_turn": 110.7,
+      "nod": 105.4,
+      "tilt": 129.8,
+      "gaze_turn": 114.1,
+      "blink": 124.9,
+      "mouth": 149.2,
+      "combo": 127.1,
+      "physics_step": 125.2
+    },
+    "0.55": {
+      "neutral": 203.3,
+      "head_turn": 118.5,
+      "nod": 117.9,
+      "tilt": 127.1,
+      "gaze_turn": 137.9,
+      "blink": 189.9,
+      "mouth": 213.8,
+      "combo": 102.9,
+      "physics_step": 118.4
+    }
+  },
+  "replay": {
+    "frames": 175,
+    "wall_s": 9.9,
+    "effective_fps": 18
+  },
+  "errors": []
+}

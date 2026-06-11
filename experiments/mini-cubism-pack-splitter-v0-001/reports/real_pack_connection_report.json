@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "experiment_id": "mini-cubism-pack-splitter-v0-001",
+  "generated_at": "2026-06-05T05:26:41.054040+00:00",
+  "status": "REAL_PACK_ASSETS_CONNECTED_PENDING_HF_PROBE",
+  "pack_metrics": {
+    "hair_pack": {
+      "source": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack.png",
+      "versioned_source": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_hair_pack_real_v1.png",
+      "raw_alpha": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/hair_pack/source_originals/hair_pack_real_v1_alpha_raw.png",
+      "alpha_bbox": [
+        309,
+        14,
+        1429,
+        1780
+      ],
+      "nonzero_alpha": 1126044,
+      "canvas_size": [
+        2048,
+        2048
+      ]
+    },
+    "outfit_pack": {
+      "source": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/outfit_pack/source_outfit_pack.png",
+      "versioned_source": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/outfit_pack/source_outfit_pack_real_v1.png",
+      "raw_alpha": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/outfit_pack/source_originals/outfit_pack_real_v1_alpha_raw.png",
+      "alpha_bbox": [
+        274,
+        371,
+        1500,
+        1446
+      ],
+      "nonzero_alpha": 1115222,
+      "canvas_size": [
+        2048,
+        2048
+      ]
+    },
+    "accessory_pack": {
+      "source": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/accessory_pack/source_accessory_pack.png",
+      "versioned_source": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/accessory_pack/source_accessory_pack_real_v1.png",
+      "raw_alpha": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/accessory_pack/source_originals/accessory_pack_real_v1_alpha_raw.png",
+      "alpha_bbox": [
+        199,
+        448,
+        1650,
+        1151
+      ],
+      "nonzero_alpha": 405704,
+      "canvas_size": [
+        2048,
+        2048
+      ]
+    },
+    "keypose_asset_pack": {
+      "source": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_guide.png",
+      "versioned_source": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_keypose_pack_real_v1.png",
+      "raw_alpha": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/keypose_asset_pack/source_originals/keypose_pack_real_v1_alpha_raw.png",
+      "alpha_bbox": [
+        174,
+        400,
+        1700,
+        1248
+      ],
+      "nonzero_alpha": 254349,
+      "canvas_size": [
+        2048,
+        2048
+      ]
+    }
+  },
+  "source_contact_sheet": "/Users/family/jason/Vtube/experiments/mini-cubism-pack-splitter-v0-001/reports/real_pack_sources_contact_sheet.png",
+  "next_action": "Run actual HF inference starting with LayerD / cyberagent/layerd-birefnet, then SAM2 ROI refinement and QA contact sheet."
+}

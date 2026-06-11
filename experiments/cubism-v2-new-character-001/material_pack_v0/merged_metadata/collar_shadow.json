@@ -1,0 +1,41 @@
+{
+  "part_id": "collar_shadow",
+  "layer_name": "62_collar_shadow",
+  "label_ko": "깃 그림자",
+  "group": "clothing",
+  "feasibility": "SIMPLIFY_OR_MERGE",
+  "source_type": "MERGED_METADATA",
+  "source_bbox": [
+    350,
+    900,
+    390,
+    90
+  ],
+  "bbox": [
+    831,
+    1200,
+    390,
+    90
+  ],
+  "draw_order_band": "clothing_mid",
+  "draw_order": 462,
+  "deformer_node": "body_root_warp",
+  "parameters": [
+    "ParamBodyAngleX"
+  ],
+  "physics_groups": [],
+  "risk_tags": [],
+  "status": "MERGED_METADATA_ONLY",
+  "include_in_import_psd": false,
+  "output_path": null,
+  "merged_into": "collar_front",
+  "notes": "처음 PSD에서는 독립 파츠보다 기본 의상 레이어에 병합하고 metadata로만 추적한다.",
+  "mask_shape": "rounded",
+  "color_condition": "light",
+  "fallback_color": [
+    247,
+    229,
+    218
+  ],
+  "metadata_path": "experiments/cubism-v2-new-character-001/material_pack_v0/merged_metadata/collar_shadow.json"
+}
