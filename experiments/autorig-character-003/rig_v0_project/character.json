@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project_kind": "mini_cubism_v0",
   "experiment_id": "autorig-rig-v0",
-  "generated_at": "2026-06-11T11:56:56.884629+00:00",
+  "generated_at": "2026-06-11T12:11:52.468874+00:00",
   "source_selection": {
     "visible_layers": "experiments/autorig-character-003/seethrough_true_reskinned/reskin_manifest.json",
     "hidden_layers": [
@@ -39234,11 +39234,7 @@
         "cols": 5,
         "rows": 6
       },
-      "pin_edges": [
-        "bottom",
-        "left",
-        "right"
-      ]
+      "edge_pinned": true
     },
     {
       "id": "eye_L_warp",
@@ -39798,42 +39794,6 @@
       }
     },
     {
-      "parameter_id": "ParamBodyAngleX",
-      "key_value": -10,
-      "target_id": "upper_warp",
-      "delta_type": "deformer_transform",
-      "deltas": {
-        "translate": [
-          -8,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0
-        ],
-        "rotate": 0,
-        "opacity": 1
-      }
-    },
-    {
-      "parameter_id": "ParamBodyAngleX",
-      "key_value": 10,
-      "target_id": "upper_warp",
-      "delta_type": "deformer_transform",
-      "deltas": {
-        "translate": [
-          8,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0
-        ],
-        "rotate": 0,
-        "opacity": 1
-      }
-    },
-    {
       "parameter_id": "ParamBodyAngleY",
       "key_value": -10,
       "target_id": "upper_warp",
@@ -39841,7 +39801,7 @@
       "deltas": {
         "translate": [
           0.0,
-          -5
+          -8
         ],
         "scale": [
           1.0,
@@ -39859,7 +39819,7 @@
       "deltas": {
         "translate": [
           0.0,
-          5
+          8
         ],
         "scale": [
           1.0,
@@ -40032,42 +39992,6 @@
       }
     },
     {
-      "parameter_id": "ParamBodyAngleX",
-      "key_value": -10,
-      "target_id": "back_hair_warp",
-      "delta_type": "deformer_transform",
-      "deltas": {
-        "translate": [
-          -8,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0
-        ],
-        "rotate": 0,
-        "opacity": 1
-      }
-    },
-    {
-      "parameter_id": "ParamBodyAngleX",
-      "key_value": 10,
-      "target_id": "back_hair_warp",
-      "delta_type": "deformer_transform",
-      "deltas": {
-        "translate": [
-          8,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0
-        ],
-        "rotate": 0,
-        "opacity": 1
-      }
-    },
-    {
       "parameter_id": "ParamBodyAngleY",
       "key_value": -10,
       "target_id": "back_hair_warp",
@@ -40075,7 +39999,7 @@
       "deltas": {
         "translate": [
           0.0,
-          -5
+          -8
         ],
         "scale": [
           1.0,
@@ -40093,7 +40017,7 @@
       "deltas": {
         "translate": [
           0.0,
-          5
+          8
         ],
         "scale": [
           1.0,
@@ -40129,7 +40053,7 @@
       "deltas": {
         "translate": [
           0.0,
-          -5
+          -8
         ],
         "scale": [
           1.0,
@@ -40147,7 +40071,7 @@
       "deltas": {
         "translate": [
           0.0,
-          5
+          8
         ],
         "scale": [
           1.0,
@@ -40513,7 +40437,7 @@
           1.0,
           1.0
         ],
-        "rotate": -0.53,
+        "rotate": -1.19,
         "opacity": 1
       }
     },
@@ -40531,7 +40455,79 @@
           1.0,
           1.0
         ],
-        "rotate": 0.53,
+        "rotate": 1.19,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBodyAngleX",
+      "key_value": -10,
+      "target_id": "upper_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          -18,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBodyAngleX",
+      "key_value": 10,
+      "target_id": "upper_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          18,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBodyAngleX",
+      "key_value": -10,
+      "target_id": "back_hair_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          -18,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBodyAngleX",
+      "key_value": 10,
+      "target_id": "back_hair_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          18,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
         "opacity": 1
       }
     },
@@ -40549,7 +40545,7 @@
           1.0,
           1.0
         ],
-        "rotate": -1.5,
+        "rotate": -2.2,
         "opacity": 1
       }
     },
@@ -40567,7 +40563,7 @@
           1.0,
           1.0
         ],
-        "rotate": 1.5,
+        "rotate": 2.2,
         "opacity": 1
       }
     },
@@ -40578,7 +40574,7 @@
       "delta_type": "deformer_transform",
       "deltas": {
         "translate": [
-          -22.7,
+          -33.4,
           0.0
         ],
         "scale": [
@@ -40596,7 +40592,7 @@
       "delta_type": "deformer_transform",
       "deltas": {
         "translate": [
-          22.7,
+          33.4,
           0.0
         ],
         "scale": [
@@ -40614,7 +40610,7 @@
       "delta_type": "deformer_transform",
       "deltas": {
         "translate": [
-          -22.7,
+          -33.4,
           0.0
         ],
         "scale": [
@@ -40632,7 +40628,7 @@
       "delta_type": "deformer_transform",
       "deltas": {
         "translate": [
-          22.7,
+          33.4,
           0.0
         ],
         "scale": [

@@ -63,10 +63,9 @@ def build_keyform_bindings() -> list[dict]:
         binding_r("ParamAngleZ", 30, "head_angle_warp", rotate=10),
         # CHAIN-001 upper_warp = 공식 首の位置: 몸 스웨이·호흡이 머리·목·뒷머리를 통째로 운반
         # (진폭은 body_warp와 동일 — 목 경계 상대 슬립 0)
-        binding("ParamBodyAngleX", -10, "upper_warp", tx=-8),
-        binding("ParamBodyAngleX", 10, "upper_warp", tx=8),
-        binding("ParamBodyAngleY", -10, "upper_warp", ty=-5),
-        binding("ParamBodyAngleY", 10, "upper_warp", ty=5),
+        # BodyAngleX 운반(tx)은 빌더가 sway_px로 부여 (몸 진자 회전의 접합부 실효 변위와 결합)
+        binding("ParamBodyAngleY", -10, "upper_warp", ty=-8),
+        binding("ParamBodyAngleY", 10, "upper_warp", ty=8),
         binding("ParamBreath", 1, "upper_warp", ty=-2),
         # CHAIN-001 뒷머리 감쇠 추종 (head ±22의 60%) + 갸우뚱 호 + 흔들림 파라미터
         binding("ParamAngleX", -30, "back_hair_warp", tx=-13),
@@ -77,16 +76,14 @@ def build_keyform_bindings() -> list[dict]:
         binding_r("ParamAngleZ", 30, "back_hair_warp", rotate=5),
         binding("ParamHairBack", -1, "back_hair_warp", tx=-10),
         binding("ParamHairBack", 1, "back_hair_warp", tx=10),
-        # 뒷머리 몸 탑승 (upper 미소속이라 자체 바인딩 — 전체 균일이라 내부 시어 없음)
-        binding("ParamBodyAngleX", -10, "back_hair_warp", tx=-8),
-        binding("ParamBodyAngleX", 10, "back_hair_warp", tx=8),
-        binding("ParamBodyAngleY", -10, "back_hair_warp", ty=-5),
-        binding("ParamBodyAngleY", 10, "back_hair_warp", ty=5),
+        # 뒷머리 몸 탑승 (upper 미소속이라 자체 바인딩 — 전체 균일이라 내부 시어 없음; X는 빌더)
+        binding("ParamBodyAngleY", -10, "back_hair_warp", ty=-8),
+        binding("ParamBodyAngleY", 10, "back_hair_warp", ty=8),
         binding("ParamBreath", 1, "back_hair_warp", ty=-2),
         # BODY-SWAY-001 v3: body_warp의 BodyAngleX는 빌더가 기하 계산으로 부여 —
         # 골반 피벗 진자 회전 (균일 평행이동은 "종이인형 슬라이드" — 유기성 부재 판정)
-        binding("ParamBodyAngleY", -10, "body_warp", ty=-5),
-        binding("ParamBodyAngleY", 10, "body_warp", ty=5),
+        binding("ParamBodyAngleY", -10, "body_warp", ty=-8),
+        binding("ParamBodyAngleY", 10, "body_warp", ty=8),
         binding("ParamBreath", 1, "body_warp", ty=-2, sy=1.012),
         binding("ParamEyeBallX", -1, "L_iris", tx=-7.5),
         binding("ParamEyeBallX", 1, "L_iris", tx=7.5),

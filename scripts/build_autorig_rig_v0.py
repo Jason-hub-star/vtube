@@ -388,7 +388,10 @@ def main() -> int:
         {"id": "head_angle_warp", "type": "warp", "parent_id": "upper_warp", "child_ids": children.get("head_angle_warp", []), "bounds": head_bounds, "pivot": center(head_bounds), "lattice": {"cols": 7, "rows": 7}, "edge_pinned": True},
         # 목 = head 자식 (머리 격자 페이드 → 위는 머리, 아래로 갈수록 감쇠하는 그라데이션)
         # 몸 추종은 upper_warp 상속 (자체 BodyAngle 바인딩은 이중 적용이라 제거 — CHAIN-001)
-        {"id": "neck_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("neck_warp", []), "bounds": neck_bounds, "pivot": center(neck_bounds), "lattice": {"cols": 5, "rows": 6}, "pin_edges": ["bottom", "left", "right"]},
+        # NECK-PIN-001: 위 가장자리도 핀 — 공식 首の曲面 구조 (양끝 고정, 중간만 휨).
+        # 위가 자유로우면 목 자체 바인딩(±5)이 face_base 소유의 윗목 픽셀과 경계에서 어긋난다
+        # (주인님 리그 모드 스크린샷: 목 중앙 가로 분리선 = 참수선)
+        {"id": "neck_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("neck_warp", []), "bounds": neck_bounds, "pivot": center(neck_bounds), "lattice": {"cols": 5, "rows": 6}, "edge_pinned": True},
         {"id": "eye_L_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("eye_L_warp", []), "bounds": eye_l_bounds, "pivot": center(eye_l_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
         {"id": "eye_R_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("eye_R_warp", []), "bounds": eye_r_bounds, "pivot": center(eye_r_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
         {"id": "mouth_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("mouth_warp", []), "bounds": mouth_bounds, "pivot": center(mouth_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
@@ -418,12 +421,18 @@ def main() -> int:
     frac = (junction_y - row_ys[seg]) / max(row_ys[seg + 1] - row_ys[seg], 1)
     arm_of = lambda i: 0.0 if i in (0, 4) else body_pivot[1] - row_ys[i]  # noqa: E731 — 핀 행은 변위 0
     eff_arm = max(arm_of(seg) * (1 - frac) + arm_of(seg + 1) * frac, 1.0)
-    sway_deg = round(math.degrees(math.asin(min(8 / eff_arm, 0.5))), 2)
-    tilt_deg = 1.5
+    # SHOULDER-TRACK-001 v2: 진폭 상향 — 풀 스웨이 8px는 2048 캔버스에서 비가시 (주인님 "작동 안 함")
+    sway_px = 18
+    sway_deg = round(math.degrees(math.asin(min(sway_px / eff_arm, 0.5))), 2)
+    tilt_deg = 2.2
     dx_carry = round(eff_arm * math.sin(math.radians(tilt_deg)), 1)
     keyform_bindings += [
         binding_r("ParamBodyAngleX", -10, "body_warp", rotate=-sway_deg),
         binding_r("ParamBodyAngleX", 10, "body_warp", rotate=sway_deg),
+        binding("ParamBodyAngleX", -10, "upper_warp", tx=-sway_px),
+        binding("ParamBodyAngleX", 10, "upper_warp", tx=sway_px),
+        binding("ParamBodyAngleX", -10, "back_hair_warp", tx=-sway_px),
+        binding("ParamBodyAngleX", 10, "back_hair_warp", tx=sway_px),
         binding_r("ParamBodyAngleZ", -10, "body_warp", rotate=-tilt_deg),
         binding_r("ParamBodyAngleZ", 10, "body_warp", rotate=tilt_deg),
         binding("ParamBodyAngleZ", -10, "upper_warp", tx=-dx_carry),
