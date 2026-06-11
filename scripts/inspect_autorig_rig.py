@@ -446,6 +446,7 @@ def main() -> int:
     parser.add_argument("--dynamic-sample-limit", type=int, default=None)
     parser.add_argument("--focus-part", action="append", default=[])
     parser.add_argument("--compare", type=Path, default=None, help="Compare --project against another project directory.")
+    parser.add_argument("--fail-on-dead", action="store_true", help="동적 스윕에서 무반응 상태(Δ<0.05) 발견 시 비정상 종료 — 파이프라인 P5 게이트용")
     args = parser.parse_args()
     project = args.project if args.project.is_absolute() else ROOT / args.project
     character_path = args.character or project / "character.json"
@@ -490,7 +491,8 @@ def main() -> int:
         output_names += ["dynamic_motion_report.json"]
     write_json(out_dir / "summary.json", {"generated_at": now_iso(), "project": rel(project), "outputs": {name: rel(out_dir / name) for name in output_names}, "tooling": tooling})
     write_summary(out_dir / "summary.md", context, tooling, junctions, focus, compare)
-    print(json.dumps({"ok": True, "out_dir": str(out_dir), "counts": context["counts"], "dynamic": bool(dynamic), "focus_parts": focus_parts, "compare": bool(compare)}, ensure_ascii=False, indent=2))
-    return 0
+    dead = [f"{s['parameter_id']}/{s['label']}" for s in (dynamic or {}).get("states", []) if s.get("pixel_delta_mean_abs", 1) < 0.05]
+    print(json.dumps({"ok": not (args.fail_on_dead and dead), "out_dir": str(out_dir), "counts": context["counts"], "dynamic": bool(dynamic), "dead_states": dead, "focus_parts": focus_parts, "compare": bool(compare)}, ensure_ascii=False, indent=2))
+    return 1 if (args.fail_on_dead and dead) else 0
 if __name__ == "__main__":
     raise SystemExit(main())

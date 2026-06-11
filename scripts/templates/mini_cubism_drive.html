@@ -304,19 +304,36 @@ async function runWebcam() {
     return landmarker;
   }
 
-  function drawDots(result) {
+  function drawDots(result, poseResult) {
     overlay.width = video.videoWidth || overlay.clientWidth;
     overlay.height = video.videoHeight || overlay.clientHeight;
     ctx.clearRect(0, 0, overlay.width, overlay.height);
     const landmarks = result.faceLandmarks?.[0];
-    if (!landmarks) return;
-    ctx.fillStyle = "#3182f6";
-    for (const idx of [1, 10, 33, 61, 152, 263, 291]) {
-      const point = landmarks[idx];
-      if (!point) continue;
+    if (landmarks) {
+      ctx.fillStyle = "#3182f6";
+      for (const idx of [1, 10, 33, 61, 152, 263, 291]) {
+        const point = landmarks[idx];
+        if (!point) continue;
+        ctx.beginPath();
+        ctx.arc(point.x * overlay.width, point.y * overlay.height, 4, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+    // SHOULDER-TRACK-001: 어깨 점 2개 + 어깨선 (주황) — 인식 여부를 한눈에
+    const ps = poseResult?.landmarks?.[0];
+    if (ps && ps[11] && ps[12]) {
+      ctx.strokeStyle = "#f59e0b";
+      ctx.lineWidth = 3;
       ctx.beginPath();
-      ctx.arc(point.x * overlay.width, point.y * overlay.height, 4, 0, Math.PI * 2);
-      ctx.fill();
+      ctx.moveTo(ps[12].x * overlay.width, ps[12].y * overlay.height);
+      ctx.lineTo(ps[11].x * overlay.width, ps[11].y * overlay.height);
+      ctx.stroke();
+      ctx.fillStyle = "#f59e0b";
+      for (const p of [ps[11], ps[12]]) {
+        ctx.beginPath();
+        ctx.arc(p.x * overlay.width, p.y * overlay.height, 6, 0, Math.PI * 2);
+        ctx.fill();
+      }
     }
   }
 
@@ -326,7 +343,7 @@ async function runWebcam() {
       const now = performance.now();
       const result = landmarker.detectForVideo(video, now);
       const poseResult = poseLandmarker ? poseLandmarker.detectForVideo(video, now) : null;
-      drawDots(result);
+      drawDots(result, poseResult);
       const channels = rawChannels(result, poseResult, now);
       if (channels) {
         latestRaw = channels;

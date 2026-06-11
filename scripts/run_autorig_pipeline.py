@@ -214,6 +214,10 @@ def main() -> int:
         sh(writer, "P5", "blink_keyforms", [
             "python3", "scripts/validate_blink_keyforms.py", "--project", str(exp / "rig_v0_project"),
             "--arap-config", str(bake_config), "--out-dir", str(exp / "reports" / "blink_keyforms")])
+        sh(writer, "P5", "rig_inspector", [
+            "python3", "scripts/inspect_autorig_rig.py", "--project", str(exp / "rig_v0_project"),
+            "--out-dir", str(exp / "reports" / "rig_inspector"),
+            "--dynamic", "--renderer", "pixi", "--fail-on-dead"])
         sh(writer, "P5", "perf", [
             "python3", "scripts/run_rig_perf_test.py", "--project", str(exp / "rig_v0_project"),
             "--out-dir", str(exp / "reports")])

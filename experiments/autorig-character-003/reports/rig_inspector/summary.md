@@ -1,6 +1,6 @@
 # AUTORIG Rig Inspector Summary
 
-Generated: 2026-06-11T13:27:06.531634+00:00
+Generated: 2026-06-11T13:39:49.595382+00:00
 Project: `experiments/autorig-character-003/rig_v0_project`
 
 ## Counts
