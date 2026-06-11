@@ -45,6 +45,14 @@ Mouth region only — do not draw the chin or the face outline."
 ```
 
 - 시트 셀 규약: 2×2 @ 1024px, interior는 (2,2) 셀 — `place_mouth_interior.py --cell` 기본값.
+- **004 부품형 입 (MOUTH-PARTS-001 예약 — 잔상 근본 해결)**: 4상태 크로스페이드/스냅은
+  "다른 작화의 교체"라는 구조적 한계(반투명/팝 이빨)가 있다. 004부터는 wide 셀(2,2)에서
+  **부품 분리 추출**해 공식 구조로 리깅: 윗입술·아랫입술 스트로크(정점 키폼으로 개폐 —
+  닫힘 위치는 원본 입선 실측) + 입안·이빨·혀(입술 개구 마스크로 클리핑 — 눈 클리핑 기계 재사용).
+  매 프레임 그림이 한 벌이라 잔상이 구조적으로 불가능. 생성 조건 추가: wide 셀은
+  윗입술/아랫입술 스트로크가 끊기지 않게, 입안은 진한 단색으로 채워서, 이빨·혀는
+  구분 가능한 색으로 (separable parts: distinct upper lip stroke, lower lip stroke,
+  dark interior fill, teeth, tongue).
 - 알려진 생성 특성: 셀에 입만 아니라 **얼굴 윤곽선(턱 V)이 통째로 딸려온다** — 추출기가 연결성분 분리로 자동 제거하므로 재생성 사유 아님. 프롬프트에 "mouth region only, do not draw the chin or face outline"을 넣으면 줄어들지만 보장은 안 됨.
 - 검수: 추출 후 4상태의 입꼬리 x좌표 편차 < 입폭 5% (extract가 공유 배치로 흡수하지만 생성 단계에서 맞을수록 좋음).
 

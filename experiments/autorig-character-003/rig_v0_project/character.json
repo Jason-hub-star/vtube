@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project_kind": "mini_cubism_v0",
   "experiment_id": "autorig-rig-v0",
-  "generated_at": "2026-06-11T11:05:48.200611+00:00",
+  "generated_at": "2026-06-11T11:15:13.698779+00:00",
   "source_selection": {
     "visible_layers": "experiments/autorig-character-003/seethrough_true_reskinned/reskin_manifest.json",
     "hidden_layers": [
@@ -40908,15 +40908,11 @@
           "opacity": 1.0
         },
         {
-          "value": 0.22,
-          "opacity": 0.88
+          "value": 0.24,
+          "opacity": 1.0
         },
         {
-          "value": 0.4,
-          "opacity": 0.3
-        },
-        {
-          "value": 0.55,
+          "value": 0.245,
           "opacity": 0.0
         },
         {
@@ -40935,19 +40931,19 @@
           "opacity": 0.0
         },
         {
-          "value": 0.18,
-          "opacity": 0.2
+          "value": 0.24,
+          "opacity": 0.0
         },
         {
-          "value": 0.35,
-          "opacity": 0.9
+          "value": 0.245,
+          "opacity": 1.0
         },
         {
-          "value": 0.55,
-          "opacity": 0.4
+          "value": 0.47,
+          "opacity": 1.0
         },
         {
-          "value": 0.68,
+          "value": 0.475,
           "opacity": 0.0
         },
         {
@@ -40966,19 +40962,19 @@
           "opacity": 0.0
         },
         {
-          "value": 0.38,
+          "value": 0.47,
           "opacity": 0.0
         },
         {
-          "value": 0.58,
-          "opacity": 0.95
+          "value": 0.475,
+          "opacity": 1.0
         },
         {
-          "value": 0.78,
-          "opacity": 0.35
+          "value": 0.72,
+          "opacity": 1.0
         },
         {
-          "value": 0.9,
+          "value": 0.725,
           "opacity": 0.0
         },
         {
@@ -40997,12 +40993,12 @@
           "opacity": 0.0
         },
         {
-          "value": 0.65,
+          "value": 0.72,
           "opacity": 0.0
         },
         {
-          "value": 0.82,
-          "opacity": 0.72
+          "value": 0.725,
+          "opacity": 1.0
         },
         {
           "value": 1.0,

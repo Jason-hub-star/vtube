@@ -163,12 +163,15 @@ def build_opacity_curves(use_arap: bool, use_mouth_states: bool, use_mouth_warp:
                     part_opacity_keyframes.append(curve(pid, param, open_curve))
             part_opacity_keyframes.append(curve(f"eye_{side}_closed_lid", param, closed_curve))
     if use_mouth_states:
-        # v21 최종 패턴 커브 그대로 이식 (mouth_closed_smile/small_open/mid_teeth/wide_teeth_tongue)
+        # MOUTH-SNAP-001: 겹침 없는 하드 밴드 — 크로스페이드(다른 작화 두 장의 투명도 혼합 =
+        # 반투명 이빨 잔상)는 원리적 한계라 폐기. 경계값(0.24/0.47/0.72)에서 양쪽 상태가
+        # 같은 H(v) 높이로 워프돼 있어(attach_mouth_height_keyforms) 윤곽은 연속, 내용만 스왑.
+        # 근본 해결(부품형 입 — 입술 키폼 + 입안 클리핑)은 004 MOUTH-PARTS-001.
         part_opacity_keyframes += [
-            curve("mouth_line", "ParamMouthOpenY", [(0.0, 1.0), (0.22, 0.88), (0.4, 0.3), (0.55, 0.0), (1.0, 0.0)]),
-            curve("mouth_state_small", "ParamMouthOpenY", [(0.0, 0.0), (0.18, 0.2), (0.35, 0.9), (0.55, 0.4), (0.68, 0.0), (1.0, 0.0)]),
-            curve("mouth_state_mid", "ParamMouthOpenY", [(0.0, 0.0), (0.38, 0.0), (0.58, 0.95), (0.78, 0.35), (0.9, 0.0), (1.0, 0.0)]),
-            curve("mouth_state_wide", "ParamMouthOpenY", [(0.0, 0.0), (0.65, 0.0), (0.82, 0.72), (1.0, 1.0)]),
+            curve("mouth_line", "ParamMouthOpenY", [(0.0, 1.0), (0.24, 1.0), (0.245, 0.0), (1.0, 0.0)]),
+            curve("mouth_state_small", "ParamMouthOpenY", [(0.0, 0.0), (0.24, 0.0), (0.245, 1.0), (0.47, 1.0), (0.475, 0.0), (1.0, 0.0)]),
+            curve("mouth_state_mid", "ParamMouthOpenY", [(0.0, 0.0), (0.47, 0.0), (0.475, 1.0), (0.72, 1.0), (0.725, 0.0), (1.0, 0.0)]),
+            curve("mouth_state_wide", "ParamMouthOpenY", [(0.0, 0.0), (0.72, 0.0), (0.725, 1.0), (1.0, 1.0)]),
         ]
     elif use_mouth_warp:
         # 워프 패치 t ↔ MouthOpenY 매핑: v = t * 0.85
