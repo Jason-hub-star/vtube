@@ -53,23 +53,6 @@ def lid_lines(bbox: tuple[int, int, int, int], x: float, lower_rise: float = 0.2
     return up, low, closed, lid_low_closed
 
 
-def smile_lines(bbox: tuple[int, int, int, int], x: float) -> tuple[float, float]:
-    """눈웃음(^^) 닫힘 경계 — 위로 볼록한 ∩ 아치 (EXPR-001).
-
-    깜빡임과 반대로 중앙이 높다 (볼이 눈을 밀어올리는 형상): 중앙 28%/35%, 꼬리 45%.
-    반환: (smile_lid, smile_lid_low).
-    """
-    x0, lash_top, x1, y1 = bbox
-    h = y1 - lash_top
-    cx = (x0 + x1) / 2
-    half = max((x1 - x0) / 2, 1e-6)
-    ratio = min(1.0, abs((x - cx) / half))
-    arc = float(np.sqrt(max(0.0, 1.0 - ratio * ratio)))
-    lid = lash_top + h * (0.45 - 0.17 * arc)
-    lid_low = lash_top + h * (0.45 - 0.10 * arc)
-    return lid, lid_low
-
-
 def blink_mesh(
     part_id: str,
     parameter_id: str,
@@ -82,7 +65,6 @@ def blink_mesh(
     pad: int = 26,
     x_step: int = 4,  # 컬럼 샘플 간격 — 타원 곡선의 선형 근사 오차 (10px는 눈꼬리에서 1~3px 어긋남)
     closed_value: float = 0.27,
-    mode: str = "blink",  # "blink"(아래볼록 감김, EyeOpen 역방향) | "smile"(∩ 눈웃음, EyeSmile 정방향)
 ) -> dict:
     """깜빡임 정점 키폼 메시 (EYE-NATURAL-002) — 크로스페이드 잔상 해소.
 
@@ -104,8 +86,6 @@ def blink_mesh(
     for x in xs:
         if x0 <= x <= x1:
             up, low, closed, lid_lowc = lid_lines(bbox, x, lower_rise)
-            if mode == "smile":
-                closed, lid_lowc = smile_lines(bbox, x)
         else:  # 패드 영역 — 워프 무영향 (항등)
             up = low = closed = lid_lowc = lash_top + h * 0.45
         open_cols.append([py0, y0, up, max(low, up + eps), yb, py1])
@@ -126,12 +106,10 @@ def blink_mesh(
         "mesh_path": f"meshes/{part_id}.json",
         "vertex_keyforms": {
             "parameter_id": parameter_id,
-            # blink: EyeOpen 역방향 (1=열림), smile: EyeSmile 정방향 (1=감김)
-            "keys": (
-                [{"value": 0.0, "vertices": verts_open}, {"value": 1.0, "vertices": verts_closed}]
-                if mode == "smile" else
-                [{"value": closed_value, "vertices": verts_closed}, {"value": 1.0, "vertices": verts_open}]
-            ),
+            "keys": [
+                {"value": closed_value, "vertices": verts_closed},
+                {"value": 1.0, "vertices": verts_open},
+            ],
         },
     }
 

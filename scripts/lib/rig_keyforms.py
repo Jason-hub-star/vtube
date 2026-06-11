@@ -25,10 +25,6 @@ def build_parameters() -> list[dict]:
         {"id": "ParamHairFront", "min": -1, "max": 1, "default": 0, "key_values": [-1, 0, 1]},
         {"id": "ParamHairBack", "min": -1, "max": 1, "default": 0, "key_values": [-1, 0, 1]},
         {"id": "ParamMouthOpenY", "min": 0, "max": 0.85, "default": 0.0, "key_values": [0, 0.5, 0.85]},
-        # EXPR-001 표정 파라미터 (트래킹 자동 + 프리셋 병행 — 주인님 선택 2026-06-11)
-        {"id": "ParamEyeSmile", "min": 0, "max": 1, "default": 0, "key_values": [0, 1]},
-        {"id": "ParamCheek", "min": 0, "max": 1, "default": 0, "key_values": [0, 1]},
-        {"id": "ParamMouthForm", "min": -1, "max": 1, "default": 0, "key_values": [-1, 0, 1]},
     ]
 
 
@@ -121,11 +117,6 @@ def build_opacity_curves(use_arap: bool, use_mouth_states: bool, use_mouth_warp:
         for side in ("L", "R"):
             part_opacity_keyframes.append(
                 curve(f"eye_{side}_blink", f"ParamEye{side}Open", [(0.27, 1.0), (0.97, 1.0), (1.0, 0.0)]))
-            # 눈웃음 패치 (EXPR-001): 페이드는 워프≈항등인 0~0.06 구간에만 — 잔상 원리 동일
-            part_opacity_keyframes.append(
-                curve(f"eye_{side}_smile", "ParamEyeSmile", [(0.0, 0.0), (0.06, 1.0), (1.0, 1.0)]))
-    if "cheek_blush" in bbox_by_id:
-        part_opacity_keyframes.append(curve("cheek_blush", "ParamCheek", [(0.0, 0.0), (1.0, 0.9)]))
     else:
         open_curve = [(0.27, 0.0), (0.5, 0.55), (0.8, 0.95), (1.0, 1.0)]
         closed_curve = [(0.27, 1.0), (0.5, 0.35), (0.65, 0.0), (1.0, 0.0)]

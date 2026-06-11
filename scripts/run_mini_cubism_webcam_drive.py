@@ -73,7 +73,6 @@ DRIVE_HTML = """<!doctype html>
       <button id="startBtn">시작할게요</button>
       <button id="calibrateBtn" class="secondary" disabled>중립 보정</button>
     </div>
-    <div class="row" id="exprRow"></div>
     <div class="chips">
       <span class="chip">카메라 <b id="cameraState">꺼짐</b></span>
       <span class="chip">얼굴 <b id="faceState">-</b></span>
@@ -97,54 +96,15 @@ const overlay = document.getElementById("overlay");
 const ctx = overlay.getContext("2d");
 const frame = document.getElementById("model");
 const els = Object.fromEntries(
-  ["startBtn", "calibrateBtn", "exprRow", "cameraState", "faceState", "fpsState", "appliedState", "frameState", "paramGrid", "modeLabel", "camBox"]
+  ["startBtn", "calibrateBtn", "cameraState", "faceState", "fpsState", "appliedState", "frameState", "paramGrid", "modeLabel", "camBox"]
     .map((id) => [id, document.getElementById(id)])
 );
 
 const keyParams = [
   "ParamAngleX", "ParamAngleY", "ParamAngleZ", "ParamEyeLOpen", "ParamEyeROpen",
   "ParamEyeBallX", "ParamEyeBallY", "ParamMouthOpenY", "ParamMouthForm",
-  "ParamEyeSmile", "ParamCheek", "ParamBodyAngleX", "ParamBodyAngleY", "ParamBreath",
+  "ParamBodyAngleX", "ParamBodyAngleY", "ParamBreath",
 ];
-
-// ---------- 표정 프리셋 (EXPR-001: 수동 발동 — 트래킹 자동은 convert()가 병행) ----------
-const EXPRESSIONS = __EXPRESSIONS__;
-const exprActive = new Map(); // id → {preset, weight, target}
-let exprLastTick = performance.now();
-(EXPRESSIONS.presets || []).forEach((preset, i) => {
-  const btn = document.createElement("button");
-  btn.className = "secondary";
-  btn.textContent = `${preset.label} (${i + 1})`;
-  btn.addEventListener("click", () => toggleExpression(preset, btn));
-  els.exprRow.appendChild(btn);
-  preset._btn = btn;
-});
-function toggleExpression(preset, btn) {
-  const entry = exprActive.get(preset.id) || { preset, weight: 0, target: 0 };
-  entry.target = entry.target > 0 ? 0 : 1;
-  exprActive.set(preset.id, entry);
-  btn.style.background = entry.target > 0 ? "#3182f6" : "";
-  btn.style.color = entry.target > 0 ? "#fff" : "";
-}
-window.addEventListener("keydown", (e) => {
-  const idx = Number(e.key) - 1;
-  const preset = (EXPRESSIONS.presets || [])[idx];
-  if (preset && !e.repeat) toggleExpression(preset, preset._btn);
-});
-function blendExpressions(outputs) {
-  const now = performance.now();
-  const dt = Math.min(100, now - exprLastTick);
-  exprLastTick = now;
-  for (const [id, entry] of exprActive) {
-    const step = dt / Math.max(entry.preset.fade_ms || 200, 16);
-    entry.weight = Math.max(0, Math.min(1, entry.weight + (entry.target > 0 ? step : -step)));
-    if (entry.weight <= 0 && entry.target === 0) { exprActive.delete(id); continue; }
-    for (const [param, value] of Object.entries(entry.preset.params || {})) {
-      outputs[param] = (outputs[param] ?? 0) * (1 - entry.weight) + value * entry.weight;
-    }
-  }
-  return outputs;
-}
 const paramEls = new Map();
 for (const param of keyParams) {
   const card = document.createElement("div");
@@ -198,7 +158,6 @@ function rawChannels(result, nowMs) {
     jawOpen: b("jawOpen"),
     mouthSmileLeft: b("mouthSmileLeft"), mouthSmileRight: b("mouthSmileRight"),
     mouthFrownLeft: b("mouthFrownLeft"), mouthFrownRight: b("mouthFrownRight"),
-    eyeSquintLeft: b("eyeSquintLeft"), eyeSquintRight: b("eyeSquintRight"),
     time: (nowMs % 4000) / 4000,
   };
 }
@@ -211,17 +170,12 @@ function convert(ch) {
     ParamAngleX: clamp(normalizeCentered(headYaw, -25, 25) * 30, -30, 30),
     ParamAngleY: clamp(normalizeCentered(headPitch, -20, 20) * 30, -30, 30),
     ParamAngleZ: clamp(normalizeCentered(headRoll, -25, 25) * 30, -30, 30),
-    // 열림 데드존: eyeBlink는 눈을 떠도 0이 안 된다 (실측 0.06~0.15) — 그대로 쓰면
-    // EyeOpen이 1.0에 못 닿아 깜빡임 패치가 상시 걸치고 노이즈가 꺼풀을 떨게 한다
-    ParamEyeLOpen: clamp(1 - remapDeadzone(ch.eyeBlinkLeft, 0.12, 0.75), 0, 1),
-    ParamEyeROpen: clamp(1 - remapDeadzone(ch.eyeBlinkRight, 0.12, 0.75), 0, 1),
+    ParamEyeLOpen: clamp(1 - ch.eyeBlinkLeft, 0, 1),
+    ParamEyeROpen: clamp(1 - ch.eyeBlinkRight, 0, 1),
     ParamEyeBallX: clamp(ch.eye_gaze_x, -1, 1),
     ParamEyeBallY: clamp(ch.eye_gaze_y, -1, 1),
     ParamMouthOpenY: clamp(remapDeadzone(ch.jawOpen, 0.08, 0.85), 0, 1),
     ParamMouthForm: clamp(avg(ch.mouthSmileLeft, ch.mouthSmileRight) - avg(ch.mouthFrownLeft, ch.mouthFrownRight), -1, 1),
-    // EXPR-001 자동 표정: 웃으며 가늘게 뜨면 눈웃음, 활짝 웃으면 옅은 홍조
-    ParamEyeSmile: clamp(remapDeadzone(avg(ch.eyeSquintLeft ?? 0, ch.eyeSquintRight ?? 0) + avg(ch.mouthSmileLeft, ch.mouthSmileRight) * 0.3, 0.35, 0.85), 0, 1),
-    ParamCheek: clamp(remapDeadzone(avg(ch.mouthSmileLeft, ch.mouthSmileRight), 0.55, 0.9), 0, 1) * 0.7,
     ParamBodyAngleX: clamp(normalizeCentered(headYaw, -25, 25) * 10 * 0.65, -10, 10),
     ParamBodyAngleY: clamp(normalizeCentered(headPitch, -20, 20) * 10 * 0.45, -10, 10),
     ParamBreath: clamp(0.5 + 0.5 * Math.sin(ch.time * Math.PI * 2), 0, 1),
@@ -241,39 +195,7 @@ async function probe() {
   return null;
 }
 
-// ---------- 안정화 (TREMBLE-001) ----------
-// 눈: 3상태 히스테리시스 — open(1.0 고정: 노이즈 0.8~0.95가 꺼풀을 못 흔든다) →
-// v<0.7에 blink(즉각 추적: 깜빡임 지연 금지) → v>0.8에 opening(이징 복귀: 스냅 팝 방지).
-// 표정: 느린 신호라 강평활 — 데드존 경계의 깜빡거림 제거.
-const eyeStab = { ParamEyeLOpen: { mode: "open", val: 1 }, ParamEyeROpen: { mode: "open", val: 1 } };
-const exprStab = { ParamEyeSmile: 0, ParamCheek: 0, ParamMouthForm: 0 };
-function stabilize(outputs) {
-  for (const [id, s] of Object.entries(eyeStab)) {
-    const v = outputs[id];
-    if (v === undefined) continue;
-    if (s.mode === "open") {
-      s.val = 1;
-      if (v < 0.7) { s.mode = "blink"; s.val = v; }
-    } else if (s.mode === "blink") {
-      s.val = v < s.val ? v : s.val * 0.5 + v * 0.5;
-      if (v > 0.8) s.mode = "opening";
-    } else { // opening
-      s.val += (1 - s.val) * 0.45;
-      if (v < 0.7) s.mode = "blink";
-      else if (s.val > 0.96) { s.mode = "open"; s.val = 1; }
-    }
-    outputs[id] = s.val;
-  }
-  for (const id of Object.keys(exprStab)) {
-    if (outputs[id] === undefined) continue;
-    exprStab[id] = exprStab[id] * 0.85 + outputs[id] * 0.15;
-    outputs[id] = Math.abs(exprStab[id]) < 0.04 ? 0 : exprStab[id];
-  }
-  return outputs;
-}
-
 function apply(outputs) {
-  outputs = blendExpressions(stabilize({ ...outputs }));
   const win = frame.contentWindow;
   if (!win?.__miniProbe) return;
   if (win.__miniProject?.physics_profiles?.length) win.__miniStepPhysics?.(1 / 30); // 물리 스프링 라이브 스테핑 (프로파일 있을 때만 — 불필요한 리드로 방지)
@@ -457,11 +379,7 @@ class DriveHandler(mcps.MiniCubismHandler):
         path = unquote(parsed.path)
         if path == "/drive":
             model_src = self.server.model_src  # type: ignore[attr-defined]
-            # EXPR-001: 프로젝트 표정 프리셋 주입 (없으면 빈 목록 — 구 프로젝트 호환)
-            expr_path: Path = self.server.project / "expressions.json"  # type: ignore[attr-defined]
-            expressions = expr_path.read_text(encoding="utf-8") if expr_path.exists() else '{"presets": []}'
-            data = (DRIVE_HTML.replace("__MODEL_SRC__", model_src)
-                    .replace("__EXPRESSIONS__", expressions)).encode("utf-8")
+            data = DRIVE_HTML.replace("__MODEL_SRC__", model_src).encode("utf-8")
             self.send_response(HTTPStatus.OK)
             self.send_header("Content-Type", "text/html; charset=utf-8")
             self.send_header("Content-Length", str(len(data)))

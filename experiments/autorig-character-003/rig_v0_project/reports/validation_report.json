@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "validated_at": "2026-06-11T09:44:12.656801+00:00",
+  "validated_at": "2026-06-11T10:10:13.887539+00:00",
   "project": "/Users/family/jason/Vtube/experiments/autorig-character-003/rig_v0_project",
   "status": "PASS",
   "counts": {
-    "parts": 39,
-    "meshes": 39,
+    "parts": 36,
+    "meshes": 36,
     "deformers": 10,
-    "parameters": 18,
+    "parameters": 15,
     "keyform_bindings": 53,
     "glue": 0
   }
