@@ -29,7 +29,7 @@ Updated: 2026-06-11 (CHAIN-001 — strong20 체인 이식 + 어깨 가닥 분리
 | 자체 런타임 (mini_cubism 계보) | 주입 API 완비 | `__miniProbe` (waitReady/setParameterValues/canvasHash) 추가 |
 | **관제탑 대시보드** | **완성 (2026-06-11)** | 이벤트 JSONL 컨벤션(`scripts/autorig_events.py`) + 서버(8095, macOS 알림) + 토스스타일 UI(타임라인/피드/게이트 드래그 수정/QA/로그) + 시뮬레이터. 스모크: 파이썬 18/18, 브라우저 8/8 PASS |
 | **소재 (하이브리드 레시피)** | **VERIFIED** | 진짜 마스터 분해+원본 재스킨(가시) + 동일세션 시트(숨은) — `vtube-hybrid-material-recipe` 하니스화. 전체 슬롯 생성은 기하 비정합으로 DISCARDED |
-| **자동 리깅 (rig v1.4)** | **CHAIN-001 완료 (2026-06-11)** | strong20 체인 이식: upper_warp(머리-몸 탑승, 접합부 등변위 원리)·뒷머리 감쇠 추종+HairBack·어깨 가닥 분리(`split_shoulder_hair.py`)·입 V선 연결성분 방어. 잔존: 트인 목 미세 접합 → 004부터 초커 기본(스펙 9번) |
+| **자동 리깅 (rig v1.5)** | **EYE-NATURAL-001 완료 (2026-06-11)** | CHAIN-001(upper_warp 머리-몸 탑승·접합부 등변위·뒷머리 추종·어깨 가닥 분리) + 눈 상하 감김: 커튼 워프에 아랫꺼풀 20% 상승(`lower_rise`) — 공식 모델(하루토 下まつげ) 패턴, 눈바닥 밴드 ~50% 피부 대체 실측. 잔존: 트인 목 미세 접합 → 004부터 초커 기본(스펙 9번) |
 | **렌더 백엔드 (PIXI-RENDER-001)** | **완료 (2026-06-11)** | PixiJS v8 WebGL 기본(`?renderer=pixi`) — 풀해상도 상태 전환 ~1ms·실효 60fps (canvas2d 대비 ~100×). canvas 폴백 유지. verify 5/5 양 백엔드 PASS |
 | AUTORIG-TEMPLATE-SPEC-001 | 완료 | 생성 목록 확정: 마스터 1장 + 입 4상태 시트 1장 (`docs/ref/AUTORIG-MASTER-SPEC.md`) |
 | AUTORIG-PIPELINE-CLI-001 | **완료 (2026-06-11)** | `run_autorig_pipeline.py` 원커맨드 — 003 풀런 76분(순수 연산 ~22분), H1/H1.5/H2 관제탑 게이트, 캐릭터-무관성 실증 |

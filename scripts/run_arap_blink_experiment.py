@@ -35,16 +35,28 @@ def eye_bbox_from_layer(path: Path) -> tuple[int, int, int, int]:
     return int(xs.min()), int(ys.min()), int(xs.max()) + 1, int(ys.max()) + 1
 
 
-def curtain_warp(image: np.ndarray, bbox: tuple[int, int, int, int], t: float, skin_band: float = 0.9) -> np.ndarray:
-    """아몬드형 눈에 맞춘 커튼 워프 (공식 모델 관찰 반영, ARAP-EXP-001 v2).
+def curtain_warp(
+    image: np.ndarray,
+    bbox: tuple[int, int, int, int],
+    t: float,
+    skin_band: float = 0.9,
+    lower_rise: float = 0.2,
+    lower_band: float = 0.35,
+) -> np.ndarray:
+    """아몬드형 눈에 맞춘 커튼 워프 (공식 모델 관찰 반영, EYE-NATURAL-001 v3).
 
     - 윗눈꺼풀이 주도 (top-down), 눈꼬리 양끝은 고정점
     - 닫힌 선은 바닥이 아니라 눈 높이 ~63% 지점의 "아래로 볼록한 아치"
     - 컬럼별로 윗곡선 up_x → 닫힘 아치 closed_x 로 보간
+    - 아랫꺼풀도 컬럼 높이의 lower_rise 비율만큼 상승 (공식 패턴: 위 ~80% + 아래 ~20%가
+      중심 아래에서 만남 — koharu_haruto의 下まつげ 독립 파트 구조 등가).
+      눈 아래 피부 밴드 [low_x, yb]가 따라 늘어나 아랫속눈썹이 함께 올라온다.
+      lower_rise=0이면 기존(v2, 아랫꺼풀 고정) 동작과 동일.
     """
     x0, lash_top, x1, y1 = bbox
     h = y1 - lash_top
     y0 = max(0, lash_top - round(h * skin_band))
+    yb = min(image.shape[0], y1 + round(h * lower_band))  # 아래 피부 밴드 끝 (변위 0 고정점)
     out = image.copy()
     cx = (x0 + x1) / 2
     half = max((x1 - x0) / 2, 1e-6)
@@ -55,21 +67,27 @@ def curtain_warp(image: np.ndarray, bbox: tuple[int, int, int, int], t: float, s
         low_x = lash_top + h * (0.45 + 0.55 * arc)           # 아랫곡선 (중앙=바닥, 꼬리=45%)
         closed_x = lash_top + h * (0.45 + 0.28 * arc)        # 닫힘 아치 (중앙=73%, 꼬리=45%)
         lid = up_x + t * (closed_x - up_x)
-        if lid - up_x < 0.5:
+        # 아랫꺼풀: 컬럼 눈높이(low_x-up_x)의 lower_rise 비율만큼 상승 — 항상 closed_x 아래에 머묾
+        lid_low = low_x - t * lower_rise * (low_x - up_x)
+        if lid - up_x < 0.5 and low_x - lid_low < 0.5:
             continue
-        ys_out = np.arange(y0, int(round(low_x)), dtype=np.float64)
+        ys_out = np.arange(y0, yb, dtype=np.float64)
         src = np.empty_like(ys_out)
         upper = ys_out <= lid
+        middle = (~upper) & (ys_out <= lid_low)
+        below = ys_out > lid_low
         denom_u = max(lid - y0, 1e-6)
         src[upper] = y0 + (ys_out[upper] - y0) * ((up_x - y0) / denom_u)
-        denom_l = max(low_x - lid, 1e-6)
-        src[~upper] = up_x + (ys_out[~upper] - lid) * ((low_x - up_x) / denom_l)
+        denom_m = max(lid_low - lid, 1e-6)
+        src[middle] = up_x + (ys_out[middle] - lid) * ((low_x - up_x) / denom_m)
+        denom_b = max(yb - lid_low, 1e-6)
+        src[below] = low_x + (ys_out[below] - lid_low) * ((yb - low_x) / denom_b)
         src_idx = np.clip(src, 0, image.shape[0] - 1)
         lo = np.floor(src_idx).astype(int)
         hi = np.minimum(lo + 1, image.shape[0] - 1)
         frac = (src_idx - lo)[:, None]
         column = image[:, x, :].astype(np.float64)
-        out[y0 : int(round(low_x)), x, :] = (column[lo] * (1 - frac) + column[hi] * frac).astype(image.dtype)
+        out[y0:yb, x, :] = (column[lo] * (1 - frac) + column[hi] * frac).astype(image.dtype)
     return out
 
 

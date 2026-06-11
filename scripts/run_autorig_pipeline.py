@@ -163,7 +163,9 @@ def main() -> int:
             "assembly": rel(exp / "reports" / "full_assembly" / "assembly.png"),
             "eye_white_L": rel(reskin_dir / "L_eye_white.png"),
             "eye_white_R": rel(reskin_dir / "R_eye_white.png"),
-            "t_steps": [0.25, 0.5, 0.75, 1.0], "patch_pad": 26, "skin_band": 0.9})
+            "t_steps": [0.25, 0.5, 0.75, 1.0], "patch_pad": 26, "skin_band": 0.9,
+            # EYE-NATURAL-001: 윗꺼풀 하강 + 아랫꺼풀 20% 상승 (공식 모델 패턴)
+            "lower_rise": 0.2, "lower_band": 0.35})
         sh(writer, "P3", "arap_bake", [
             "python3", "scripts/bake_arap_blink_layers.py", "--config", str(bake_config),
             "--out-dir", str(exp / "arap_blink_layers")])

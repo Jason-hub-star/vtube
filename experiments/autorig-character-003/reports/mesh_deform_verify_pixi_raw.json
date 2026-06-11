@@ -5,20 +5,20 @@
   },
   "hashes": {
     "head_turn": 166817877,
-    "nod": 1856041391,
-    "tilt": 2651487530,
-    "gaze_turn": 4046208836,
-    "combo": 2126309631
+    "nod": 3103839810,
+    "tilt": 213939451,
+    "gaze_turn": 3655699875,
+    "combo": 3161625242
   },
   "neck": {
     "head_max": 0
   },
   "timing": {
-    "head_turn": 1.7,
+    "head_turn": 2.5,
     "nod": 1,
-    "tilt": 0.7,
-    "gaze_turn": 1,
-    "combo": 1.4
+    "tilt": 1.1,
+    "gaze_turn": 0.8,
+    "combo": 1.3
   },
   "errors": [],
   "backend": "pixi"

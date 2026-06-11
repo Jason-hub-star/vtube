@@ -30,7 +30,9 @@ DEFAULT_CONFIG = {
     "t_steps": [0.25, 0.5, 0.75, 1.0],
     "patch_pad": 26,
     "skin_band": 0.9,
-    "notes": "워프 형태(아치 깊이 등)는 run_arap_blink_experiment.curtain_warp의 0.45/0.28/0.55 상수 — 조정 후 본 스크립트 재실행",
+    "lower_rise": 0.2,
+    "lower_band": 0.35,
+    "notes": "워프 형태(아치 깊이 등)는 run_arap_blink_experiment.curtain_warp의 0.45/0.28/0.55 상수 — 조정 후 본 스크립트 재실행. lower_rise=아랫꺼풀 상승 비율(EYE-NATURAL-001, 0이면 구형 셔터식)",
 }
 
 
@@ -54,13 +56,18 @@ def main() -> int:
         bbox = eye_bbox_from_layer(ROOT / config[f"eye_white_{side}"])
         x0, lash_top, x1, y1 = bbox
         h = y1 - lash_top
-        # 패치 크롭: 위쪽 피부 밴드 포함 (워프 영향 영역 전체)
+        # 패치 크롭: 위쪽 피부 밴드 + 아래 피부 밴드(아랫꺼풀 상승 영향권) 포함
         py0 = max(0, lash_top - round(h * float(config["skin_band"])) - pad)
-        py1 = min(base.shape[0], y1 + pad)
+        py1 = min(base.shape[0], y1 + round(h * float(config.get("lower_band", 0.35))) + pad)
         px0 = max(0, x0 - pad)
         px1 = min(base.shape[1], x1 + pad)
         for t in config["t_steps"]:
-            warped = curtain_warp(base, bbox, float(t), skin_band=float(config["skin_band"]))
+            warped = curtain_warp(
+                base, bbox, float(t),
+                skin_band=float(config["skin_band"]),
+                lower_rise=float(config.get("lower_rise", 0.2)),
+                lower_band=float(config.get("lower_band", 0.35)),
+            )
             canvas = np.zeros_like(base)
             canvas[py0:py1, px0:px1] = warped[py0:py1, px0:px1]
             name = f"eye_{side}_arap_{int(round(t * 100)):03d}.png"

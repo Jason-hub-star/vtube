@@ -1,0 +1,14 @@
+{
+  "test_id": "ARAP-EXP-001",
+  "generated_at": "2026-06-11T07:51:36.672294+00:00",
+  "method": "column-wise curtain warp on the neutral assembly — original pixels only, zero generated pixels",
+  "t_steps": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "strip": "experiments/autorig-character-003/reports/eye_natural_001/strip_lowerlid/blink_strip.png",
+  "verdict": "PENDING_HUMAN_REVIEW"
+}

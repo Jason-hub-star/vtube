@@ -3,6 +3,15 @@
 작성일: 2026-06-02
 최신 정리일: 2026-06-10
 
+## 2026-06-11 EYE-NATURAL-001 — 눈 상하 감김 (아랫꺼풀 상승, 공식 모델 패턴)
+
+- 배경: 기존 커튼 워프(ARAP-EXP-001 v2)는 윗꺼풀만 닫힘 아치로 하강 — 아랫꺼풀 고정 셔터식. 공식 모델 실측 근거: strong20 코퍼스에서 koharu_haruto가 `_右下まつげ`/`_左下まつげ`(아랫속눈썹)를 독립 파트로 분리, miara_pro는 Eyelid/Eyelid Shadow 파트 — 감을 때 아래에서도 올라와 중심 아래에서 만나는 구조.
+- 구현 (`run_arap_blink_experiment.curtain_warp` v3): 컬럼별 아랫꺼풀선 `lid_low = low_x − t·lower_rise·(low_x−up_x)` (lower_rise=0.2, 눈꼬리는 컬럼 눈높이 0이라 자동 고정점) + 눈 아래 피부 밴드 [low_x, y1+0.35h]가 따라 늘어나 아랫속눈썹 동반 상승. 3밴드 리매핑(위 피부 스트레치/눈 압축/아래 피부 스트레치). lower_rise=0이면 구형과 동일 (하위 호환). 베이크 패치 크롭도 아래 밴드만큼 확장.
+- 기하 보장: lid_low ≥ 닫힘 아치 항상 성립 (0.45+0.35a > 0.45+0.28a) — t=1에서 눈 밴드가 7%a 높이로 남아 닫힘 속눈썹 선 보존.
+- 검증: 003 재베이크 8레이어 → 눈바닥 18% 밴드에서 베이크 픽셀 ~50%가 피부로 대체 (t=100, L 48.4%/R 49.6% — 구형은 0%), 아래밴드(y1 이하)도 t 단조 증가 변화. 리그 리빌드(42파트·53바인딩 동일) validator PASS + mesh verify canvas·pixi 5/5. 스트립: `experiments/autorig-character-003/reports/eye_natural_001/strip_lowerlid/blink_strip.png`.
+- 래칫: 파이프라인 P3 베이크 설정에 lower_rise/lower_band 명시 (004부터 자동 상속), FACIAL-TEST-CHECKLIST에 상하 감김 행 추가 (셔터식이면 FAIL).
+- 교훈: 깜빡임 자연스러움의 핵심은 닫힘 위치(중심 아래 아치)와 **양방향 운동** — 레퍼런스는 외부가 아니라 이미 보유한 strong20 코퍼스의 파트 구조에서 확보.
+
 ## 2026-06-11 정비 패키지 — git 위생·빌더 분리·INDEX core·에러 규칙
 
 - **git 위생 (최대 리스크 해소)**: 사이드 브랜치(codex/...)에 63커밋 + 미커밋 522파일로 떠 있던 상태를 정리 — ignore 정책 확장(외부 샌드박스/node_modules/공식 샘플 모델/바이너리/gif), 미추적 스크립트 224개 + 증거 JSON/MD 코퍼스 커밋, main fast-forward 머지, 우분투發 CUDA 조사 커밋 합류, origin 푸시. 백업: `backup/pre-merge-20260611`.
