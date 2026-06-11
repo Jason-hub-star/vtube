@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """AUTORIG Rig Inspector: graph, influence, junction scores, and AI context."""
-
 from __future__ import annotations
-
 import argparse
 import csv
 import json
@@ -13,126 +11,17 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 from typing import Any
-
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.vtube_image import bbox_contact, bbox_gap  # noqa: E402
 from lib.vtube_io import ROOT, load_json, now_iso, rel, write_json  # noqa: E402
 from lib.vtube_proc import terminate, wait_for_server  # noqa: E402
 from mini_cubism_preview_server import default_mini_rig  # noqa: E402
-
 PLAYWRIGHT = ROOT / "experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/TypeScript/Demo/node_modules/playwright"
+NODE_DYNAMIC_TEMPLATE = ROOT / "scripts/templates/rig_inspector_dynamic_runner.js"
 INTERESTING_GROUPS = ("neck", "body", "head", "hair", "shoulder", "clothes", "cloth")
-
-NODE_DYNAMIC = r"""
-const fs = require("fs");
-const config = JSON.parse(fs.readFileSync(process.argv[2], "utf8"));
-const { chromium } = require(config.playwright);
-
-function slug(text) { return String(text).replace(/[^a-zA-Z0-9_-]/g, "_"); }
-function decodeBase64(raw) {
-  const bin = atob(raw);
-  const out = new Uint8Array(bin.length);
-  for (let i = 0; i < bin.length; i += 1) out[i] = bin.charCodeAt(i);
-  return out;
-}
-async function sampleTiles(page) {
-  return await page.evaluate((tiles) => {
-    const result = [];
-    for (const tile of tiles) {
-      const raw = window.__miniProbe.regionPixelsBase64(tile.x, tile.y, tile.w, tile.h);
-      result.push({ tile, raw });
-    }
-    return result;
-  }, config.tiles);
-}
-function tileDelta(a, b) {
-  let total = 0;
-  let count = 0;
-  let changed = 0;
-  for (let i = 0; i < a.length && i < b.length; i += 16) {
-    const d = Math.abs(a[i] - b[i]) + Math.abs(a[i + 1] - b[i + 1]) + Math.abs(a[i + 2] - b[i + 2]) + Math.abs(a[i + 3] - b[i + 3]);
-    total += d / 4;
-    count += 1;
-    if (d > 12) changed += 1;
-  }
-  return { mean_abs: count ? total / count : 0, changed_ratio: count ? changed / count : 0 };
-}
-
-(async () => {
-  const out = { generated_at: new Date().toISOString(), renderer_requested: config.renderer, backend: null, neutral_hash: null, states: [], errors: [] };
-  let browser = null;
-  try {
-    browser = await chromium.launch({ headless: true, args: config.launch_args || [] });
-    const page = await browser.newPage({ viewport: { width: 1500, height: 1000 } });
-    await page.goto(config.base + config.query, { waitUntil: "load", timeout: 30000 });
-    await page.waitForFunction(() => window.__miniProbe, null, { timeout: 20000 });
-    await page.evaluate(() => window.__miniProbe.waitReady(20000));
-    await page.evaluate(() => window.__miniClearSelection && window.__miniClearSelection());
-    out.backend = await page.evaluate(() => window.__miniBackend ? window.__miniBackend() : "canvas");
-    await page.evaluate((defaults) => window.__miniSetParameters(defaults), config.defaults);
-    out.neutral_hash = await page.evaluate(() => window.__miniProbe.canvasHash());
-    const neutralTiles = (await sampleTiles(page)).map((item) => ({ tile: item.tile, bytes: decodeBase64(item.raw) }));
-    await page.screenshot({ path: `${config.captures}/dynamic_neutral.png` });
-    for (const state of config.states) {
-      const values = { ...config.defaults, [state.parameter_id]: state.value };
-      await page.evaluate((payload) => window.__miniSetParameters(payload), values);
-      const hash = await page.evaluate(() => window.__miniProbe.canvasHash());
-      const tiles = await sampleTiles(page);
-      let mean = 0;
-      let ratio = 0;
-      for (let i = 0; i < tiles.length; i += 1) {
-        const d = tileDelta(neutralTiles[i].bytes, decodeBase64(tiles[i].raw));
-        mean += d.mean_abs;
-        ratio += d.changed_ratio;
-      }
-      const capture = `${config.captures}/dynamic_${slug(state.parameter_id)}_${slug(state.label)}.png`;
-      await page.screenshot({ path: capture });
-      out.states.push({
-        parameter_id: state.parameter_id,
-        label: state.label,
-        value: state.value,
-        canvas_hash: hash,
-        pixel_delta_mean_abs: tiles.length ? mean / tiles.length : 0,
-        changed_sample_ratio: tiles.length ? ratio / tiles.length : 0,
-        capture,
-      });
-    }
-  } catch (error) {
-    out.errors.push(String(error && error.stack ? error.stack : error));
-  } finally {
-    if (browser) await browser.close();
-    fs.writeFileSync(config.out, JSON.stringify(out, null, 2));
-  }
-})();
-"""
-
-
-def bbox_gap(a: list[float], b: list[float]) -> float:
-    ax0, ay0, aw, ah = a
-    bx0, by0, bw, bh = b
-    ax1, ay1 = ax0 + aw, ay0 + ah
-    bx1, by1 = bx0 + bw, by0 + bh
-    dx = max(bx0 - ax1, ax0 - bx1, 0)
-    dy = max(by0 - ay1, ay0 - by1, 0)
-    return math.hypot(dx, dy)
-
-
-def bbox_contact(a: list[float], b: list[float], tolerance: float = 24) -> float:
-    ax0, ay0, aw, ah = a
-    bx0, by0, bw, bh = b
-    ax1, ay1 = ax0 + aw, ay0 + ah
-    bx1, by1 = bx0 + bw, by0 + bh
-    x_overlap = max(0, min(ax1, bx1) - max(ax0, bx0))
-    y_overlap = max(0, min(ay1, by1) - max(ay0, by0))
-    vertical_touch = abs(ax1 - bx0) <= tolerance or abs(bx1 - ax0) <= tolerance
-    horizontal_touch = abs(ay1 - by0) <= tolerance or abs(by1 - ay0) <= tolerance
-    return max(y_overlap if vertical_touch else 0, x_overlap if horizontal_touch else 0, min(x_overlap, y_overlap))
-
-
 def interesting(part_id: str) -> bool:
     low = part_id.lower()
     return any(group in low for group in INTERESTING_GROUPS)
-
-
 def delta_magnitude(deltas: dict[str, Any] | None) -> float:
     d = deltas or {}
     translate = d.get("translate") or [0, 0]
@@ -145,8 +34,6 @@ def delta_magnitude(deltas: dict[str, Any] | None) -> float:
         + abs(float(scale[1] if scale[1] is not None else 1) - 1) * 80
         + abs(float(d.get("opacity", 1)) - 1) * 60
     )
-
-
 def delta_vector(deltas: dict[str, Any] | None) -> tuple[float, float, float, float, float]:
     d = deltas or {}
     translate = d.get("translate") or [0, 0]
@@ -158,13 +45,9 @@ def delta_vector(deltas: dict[str, Any] | None) -> tuple[float, float, float, fl
         float(scale[0] if scale[0] is not None else 1) - 1,
         float(scale[1] if scale[1] is not None else 1) - 1,
     )
-
-
 def vec_distance(a: tuple[float, ...], b: tuple[float, ...]) -> float:
     weights = (1, 1, 2, 80, 80)
     return sum(abs((a[i] - b[i]) * weights[i]) for i in range(len(weights)))
-
-
 def effective_bindings(character: dict[str, Any], rig: dict[str, Any]) -> list[dict[str, Any]]:
     base = character.get("keyform_bindings") or []
     overrides = rig.get("keyform_overrides") or []
@@ -172,8 +55,6 @@ def effective_bindings(character: dict[str, Any], rig: dict[str, Any]) -> list[d
         return list(base)
     override_keys = {(b.get("parameter_id"), b.get("target_id"), b.get("key_value")) for b in overrides}
     return [b for b in base if (b.get("parameter_id"), b.get("target_id"), b.get("key_value")) not in override_keys] + overrides
-
-
 class Inspector:
     def __init__(self, project: Path, character: dict[str, Any], rig: dict[str, Any]) -> None:
         self.project = project
@@ -192,7 +73,6 @@ class Inspector:
         self.children_by_deformer: dict[str | None, list[str]] = defaultdict(list)
         for deformer in self.deformers.values():
             self.children_by_deformer[deformer.get("parent_id")].append(deformer["id"])
-
     def primary_deformer(self, part_id: str) -> str | None:
         for preferred in ("Eye_L", "Eye_R", "Mouth", "Hair_Front", "Hair_Back"):
             d = self.deformers.get(preferred)
@@ -204,7 +84,6 @@ class Inspector:
                     return "Head_X"
                 return deformer["id"]
         return None
-
     def deformer_chain(self, deformer_id: str | None) -> list[str]:
         chain: list[str] = []
         current = self.deformers.get(deformer_id or "")
@@ -214,23 +93,19 @@ class Inspector:
             chain.insert(0, current["id"])
             current = self.deformers.get(current.get("parent_id"))
         return chain
-
     def part_chain(self, part_id: str) -> list[str]:
         return self.deformer_chain(self.primary_deformer(part_id))
-
     def subtree_parts(self, deformer_id: str) -> set[str]:
         out = set(self.deformers.get(deformer_id, {}).get("child_ids") or [])
         for child in self.children_by_deformer.get(deformer_id, []):
             out |= self.subtree_parts(child)
         return out
-
     def binding_vector_for_target(self, target_id: str, parameter_id: str) -> tuple[float, float, float, float, float]:
         rows = self.bindings_by_target_param.get((target_id, parameter_id), [])
         if not rows:
             return (0, 0, 0, 0, 0)
         row = max(rows, key=lambda item: delta_magnitude(item.get("deltas")))
         return delta_vector(row.get("deltas"))
-
     def part_vector_for_param(self, part_id: str, parameter_id: str) -> tuple[float, float, float, float, float]:
         targets = self.part_chain(part_id) + [part_id]
         result = [0.0, 0.0, 0.0, 0.0, 0.0]
@@ -239,7 +114,16 @@ class Inspector:
             for i, value in enumerate(vec):
                 result[i] += value
         return tuple(result)  # type: ignore[return-value]
-
+    def resolve_parts(self, queries: list[str]) -> list[str]:
+        out: list[str] = []
+        for query in queries:
+            if query in self.parts:
+                out.append(query)
+            else:
+                out.extend(pid for pid in sorted(self.parts) if query.lower() in pid.lower())
+        return sorted(dict.fromkeys(out))
+    def param_ids_for_parts(self, part_ids: list[str]) -> set[str]:
+        return {pid for part_id in part_ids for pid in self.parameters if self.part_vector_for_param(part_id, pid) != (0, 0, 0, 0, 0)}
     def influence_rows(self) -> list[dict[str, Any]]:
         rows = []
         physics_by_param: dict[str, set[str]] = defaultdict(set)
@@ -269,7 +153,6 @@ class Inspector:
                 "parts": "|".join(sorted(indirect_parts)),
             })
         return rows
-
     def part_chain_rows(self) -> list[dict[str, Any]]:
         direct_counts = defaultdict(int)
         for binding in self.bindings:
@@ -295,7 +178,6 @@ class Inspector:
                 "triangle_count": len(mesh.get("triangles") or []),
             })
         return rows
-
     def junction_rows(self) -> list[dict[str, Any]]:
         rows = []
         parts = list(self.parts.values())
@@ -338,8 +220,6 @@ class Inspector:
                     "physics_b": int(b["id"] in physics_parts),
                 })
         return sorted(rows, key=lambda row: row["score"], reverse=True)
-
-
 def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     fields = list(rows[0].keys()) if rows else ["empty"]
@@ -347,12 +227,8 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
         writer = csv.DictWriter(handle, fieldnames=fields)
         writer.writeheader()
         writer.writerows(rows)
-
-
 def dot_escape(text: str) -> str:
     return str(text).replace("\\", "\\\\").replace('"', '\\"')
-
-
 def write_graph(out_dir: Path, inspector: Inspector, influence: list[dict[str, Any]]) -> dict[str, Any]:
     lines = ["digraph rig {", '  graph [rankdir=LR, bgcolor="white"];', '  node [shape=box, style="rounded,filled", fontname="Helvetica"];']
     for deformer in inspector.deformers.values():
@@ -383,31 +259,51 @@ def write_graph(out_dir: Path, inspector: Inspector, influence: list[dict[str, A
         result = subprocess.run([dot_bin, "-Tsvg", str(dot_path), "-o", str(svg_path)], capture_output=True, text=True, check=False)
         return {"graphviz_available": True, "svg_created": result.returncode == 0, "svg": rel(svg_path) if result.returncode == 0 else None, "stderr": result.stderr[-1000:]}
     return {"graphviz_available": False, "svg_created": False, "svg": None}
-
-
-def dynamic_tiles(canvas: list[int]) -> list[dict[str, int]]:
+def dynamic_tiles(canvas: list[int], parts: list[dict[str, Any]] | None = None) -> list[dict[str, int]]:
     width, height = int(canvas[0]), int(canvas[1])
     tiles = []
     for y in (0.28, 0.42, 0.56, 0.70):
         for x in (0.32, 0.44, 0.56, 0.68):
             tiles.append({"x": max(0, int(width * x) - 32), "y": max(0, int(height * y) - 32), "w": 64, "h": 64})
-    return tiles
-
-
-def run_dynamic(project: Path, out_dir: Path, character: dict[str, Any], renderer: str, port: int) -> dict[str, Any]:
+    # 고정 격자는 소형 부위(눈·입·눈썹)와 평탄 영역 변화를 놓친다 (003 실측: 해시는 전부
+    # 변하는데 Δ=0 보고) — 파라미터 영향 파트의 bbox 중심 타일을 추가
+    seen: set[tuple[int, int]] = set()
+    for part in parts or []:
+        pid = str(part.get("id", "")).lower()
+        if not any(k in pid for k in ("eye", "iris", "mouth", "brow", "neck", "hair", "shoulder", "clothes")):
+            continue
+        x, y, w, h = part.get("bbox", [0, 0, 0, 0])
+        if w <= 4:
+            continue
+        cx, cy = int(x + w / 2), int(y + h / 2)
+        key = (cx // 48, cy // 48)
+        if key in seen:
+            continue
+        seen.add(key)
+        tiles.append({"x": max(0, cx - 32), "y": max(0, cy - 32), "w": 64, "h": 64})
+    return tiles[:48]
+def run_dynamic(project: Path, out_dir: Path, character: dict[str, Any], renderer: str, port: int, sample_limit: int | None = None, priority_params: set[str] | None = None) -> dict[str, Any]:
     captures = out_dir / "dynamic_captures"
     captures.mkdir(parents=True, exist_ok=True)
     defaults = {p["id"]: p.get("default", 0) for p in character.get("parameters", [])}
+    # 물리 소유 파라미터(스프링 output): 직접 주입은 물리 티커가 한 프레임 내 덮어써서
+    # "무반응"으로 오판된다 (BODY-SWAY-001 소유권) — 입력 채널(Track*) 상태로만 측정.
+    physics_owned = sorted({p.get("output_parameter") for p in character.get("physics_profiles", []) if p.get("output_parameter")})
     states = []
     for param in character.get("parameters", []):
+        if param["id"] in physics_owned:
+            continue
         values = [param.get("min"), param.get("max")]
         for label, value in zip(("min", "max"), values):
             if value is not None and float(value) != float(param.get("default", 0)):
                 states.append({"parameter_id": param["id"], "label": label, "value": value})
+    if sample_limit is not None:
+        priority_params = priority_params or set()
+        states = sorted(states, key=lambda s: (s["parameter_id"] not in priority_params, s["parameter_id"], s["label"]))[:max(0, sample_limit)]
     config_path = out_dir / "dynamic_config.json"
     raw_path = out_dir / "dynamic_motion_report.json"
     runner_path = out_dir / "dynamic_runner.js"
-    runner_path.write_text(NODE_DYNAMIC, encoding="utf-8")
+    runner_path.write_text(NODE_DYNAMIC_TEMPLATE.read_text(encoding="utf-8"), encoding="utf-8")
     write_json(config_path, {
         "playwright": str(PLAYWRIGHT),
         "base": f"http://127.0.0.1:{port}/",
@@ -416,7 +312,7 @@ def run_dynamic(project: Path, out_dir: Path, character: dict[str, Any], rendere
         "launch_args": ["--use-angle=swiftshader"] if renderer == "pixi" else [],
         "defaults": defaults,
         "states": states,
-        "tiles": dynamic_tiles(character.get("canvas_size") or [2048, 2048]),
+        "tiles": dynamic_tiles(character.get("canvas_size") or [2048, 2048], character.get("parts")),
         "captures": str(captures),
         "out": str(raw_path),
     })
@@ -433,9 +329,43 @@ def run_dynamic(project: Path, out_dir: Path, character: dict[str, Any], rendere
         write_json(raw_path, {"generated_at": now_iso(), "renderer_requested": renderer, "states": [], "errors": [str(error)]})
     finally:
         terminate(server)
-    return load_json(raw_path)
-
-
+    report = load_json(raw_path)
+    report["dynamic_sample_limit"] = sample_limit
+    report["configured_states"] = len(states)
+    report["physics_owned_parameters"] = physics_owned  # 직접 측정 제외 — Track* 입력 채널로 검증
+    write_json(raw_path, report)
+    return report
+def focus_report(inspector: Inspector, focus_parts: list[str], influence: list[dict[str, Any]], chains: list[dict[str, Any]], junctions: list[dict[str, Any]]) -> dict[str, Any]:
+    focus_set = set(focus_parts)
+    params = inspector.param_ids_for_parts(focus_parts)
+    return {
+        "queries_resolved": focus_parts,
+        "parameters": [row for row in influence if row["parameter_id"] in params],
+        "part_chains": [row for row in chains if row["part_id"] in focus_set],
+        "junction_scores": [row for row in junctions if row["part_a"] in focus_set or row["part_b"] in focus_set],
+        "related_parts": sorted({row["part_a"] if row["part_b"] in focus_set else row["part_b"] for row in junctions if row["part_a"] in focus_set or row["part_b"] in focus_set}),
+    }
+def compare_report(left: dict[str, Any], right: dict[str, Any], left_j: list[dict[str, Any]], right_j: list[dict[str, Any]]) -> dict[str, Any]:
+    def ids(ctx: dict[str, Any], key: str) -> set[str]:
+        return {item["id"] for item in ctx[key]}
+    def pair_key(row: dict[str, Any]) -> str:
+        return "|".join(sorted([row["part_a"], row["part_b"]]))
+    right_by_pair = {pair_key(row): row for row in right_j}
+    deltas = []
+    for key, row in {pair_key(row): row for row in left_j}.items():
+        other = right_by_pair.get(key)
+        if other:
+            deltas.append({"pair": key, "left_score": row["score"], "right_score": other["score"], "delta": round(row["score"] - other["score"], 3)})
+    return {
+        "left_project": left["project"],
+        "right_project": right["project"],
+        "count_delta": {k: left["counts"].get(k, 0) - right["counts"].get(k, 0) for k in sorted(set(left["counts"]) | set(right["counts"]))},
+        "parts_added_in_left": sorted(ids(left, "parts") - ids(right, "parts")),
+        "parts_missing_in_left": sorted(ids(right, "parts") - ids(left, "parts")),
+        "parameters_added_in_left": sorted(ids(left, "parameters") - ids(right, "parameters")),
+        "parameters_missing_in_left": sorted(ids(right, "parameters") - ids(left, "parameters")),
+        "junction_score_deltas": sorted(deltas, key=lambda row: abs(row["delta"]), reverse=True)[:80],
+    }
 def ai_context(inspector: Inspector, influence: list[dict[str, Any]], chains: list[dict[str, Any]], junctions: list[dict[str, Any]], dynamic: dict[str, Any] | None) -> dict[str, Any]:
     mesh_metrics = {pid: {"vertex_count": len((mesh or {}).get("vertices") or []), "triangle_count": len((mesh or {}).get("triangles") or [])} for pid, mesh in inspector.meshes.items()}
     return {
@@ -463,9 +393,7 @@ def ai_context(inspector: Inspector, influence: list[dict[str, Any]], chains: li
             "errors": dynamic.get("errors", []) if dynamic else [],
         },
     }
-
-
-def write_summary(path: Path, context: dict[str, Any], tooling: dict[str, Any], junctions: list[dict[str, Any]]) -> None:
+def write_summary(path: Path, context: dict[str, Any], tooling: dict[str, Any], junctions: list[dict[str, Any]], focus: dict[str, Any] | None = None, compare: dict[str, Any] | None = None) -> None:
     counts = context["counts"]
     lines = [
         "# AUTORIG Rig Inspector Summary",
@@ -487,6 +415,8 @@ def write_summary(path: Path, context: dict[str, Any], tooling: dict[str, Any], 
         f"- Graphviz available: `{tooling.get('graphviz_available')}`",
         f"- SVG created: `{tooling.get('svg_created')}`",
         f"- Dynamic states measured: `{context['dynamic_summary']['states']}`",
+        f"- Focus parts: `{len(focus.get('queries_resolved', [])) if focus else 0}`",
+        f"- Compare target: `{compare.get('right_project') if compare else ''}`",
         "",
         "## Highest Junction Scores",
         "",
@@ -495,9 +425,15 @@ def write_summary(path: Path, context: dict[str, Any], tooling: dict[str, Any], 
     ]
     for row in junctions[:20]:
         lines.append(f"| {row['score']} | `{row['part_a']}` | `{row['part_b']}` | {row['bbox_gap']} | {row['contact_length']} |")
+    if focus:
+        lines += ["", "## Focus Parts", "", "| part_id | chain | direct_bindings | physics_profiles |", "|---|---|---:|---:|"]
+        for row in focus["part_chains"]:
+            lines.append(f"| `{row['part_id']}` | `{row['deformer_chain']}` | {row['direct_binding_count']} | {row['physics_profile_count']} |")
+    if compare:
+        lines += ["", "## Compare Counts", "", "| item | left_minus_right |", "|---|---:|"]
+        for key, value in compare["count_delta"].items():
+            lines.append(f"| {key} | {value} |")
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-
-
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--project", required=True, type=Path)
@@ -507,33 +443,54 @@ def main() -> int:
     parser.add_argument("--dynamic", action="store_true")
     parser.add_argument("--renderer", choices=["canvas", "pixi"], default="canvas")
     parser.add_argument("--port", type=int, default=8074)
+    parser.add_argument("--dynamic-sample-limit", type=int, default=None)
+    parser.add_argument("--focus-part", action="append", default=[])
+    parser.add_argument("--compare", type=Path, default=None, help="Compare --project against another project directory.")
     args = parser.parse_args()
-
     project = args.project if args.project.is_absolute() else ROOT / args.project
     character_path = args.character or project / "character.json"
     rig_path = args.mini_rig or project / "mini_rig.json"
     out_dir = args.out_dir if args.out_dir.is_absolute() else ROOT / args.out_dir
     out_dir.mkdir(parents=True, exist_ok=True)
-
     character = load_json(character_path)
     rig = load_json(rig_path, default=default_mini_rig())
     inspector = Inspector(project.resolve(), character, rig)
-
     influence = inspector.influence_rows()
     chains = inspector.part_chain_rows()
     junctions = inspector.junction_rows()
+    focus_parts = inspector.resolve_parts(args.focus_part)
+    focus = focus_report(inspector, focus_parts, influence, chains, junctions) if focus_parts else None
     write_csv(out_dir / "parameter_influence.csv", influence)
     write_csv(out_dir / "part_chain.csv", chains)
     write_csv(out_dir / "junction_risk_scores.csv", junctions)
+    if focus:
+        write_json(out_dir / "focus_part_report.json", focus)
+        write_csv(out_dir / "focus_junction_scores.csv", focus["junction_scores"])
     tooling = write_graph(out_dir, inspector, influence)
-    dynamic = run_dynamic(project.resolve(), out_dir, character, args.renderer, args.port) if args.dynamic else None
+    dynamic = run_dynamic(project.resolve(), out_dir, character, args.renderer, args.port, args.dynamic_sample_limit, inspector.param_ids_for_parts(focus_parts)) if args.dynamic else None
     context = ai_context(inspector, influence, chains, junctions, dynamic)
+    context["focus_parts"] = focus_parts
+    context["dynamic_sample_limit"] = args.dynamic_sample_limit
+    compare = None
+    if args.compare:
+        right_project = args.compare if args.compare.is_absolute() else ROOT / args.compare
+        right = Inspector(right_project.resolve(), load_json(right_project / "character.json"), load_json(right_project / "mini_rig.json", default=default_mini_rig()))
+        right_influence, right_chains, right_junctions = right.influence_rows(), right.part_chain_rows(), right.junction_rows()
+        right_context = ai_context(right, right_influence, right_chains, right_junctions, None)
+        compare = compare_report(context, right_context, junctions, right_junctions)
+        write_json(out_dir / "compare_report.json", compare)
+        write_csv(out_dir / "compare_junction_score_deltas.csv", compare["junction_score_deltas"])
     write_json(out_dir / "ai_rig_context.json", context)
-    write_json(out_dir / "summary.json", {"generated_at": now_iso(), "project": rel(project), "outputs": {name: rel(out_dir / name) for name in ["rig_graph.dot", "parameter_influence.csv", "part_chain.csv", "junction_risk_scores.csv", "ai_rig_context.json", "summary.md"]}, "tooling": tooling})
-    write_summary(out_dir / "summary.md", context, tooling, junctions)
-    print(json.dumps({"ok": True, "out_dir": str(out_dir), "counts": context["counts"], "dynamic": bool(dynamic)}, ensure_ascii=False, indent=2))
+    output_names = ["rig_graph.dot", "parameter_influence.csv", "part_chain.csv", "junction_risk_scores.csv", "ai_rig_context.json", "summary.md"]
+    if focus:
+        output_names += ["focus_part_report.json", "focus_junction_scores.csv"]
+    if compare:
+        output_names += ["compare_report.json", "compare_junction_score_deltas.csv"]
+    if dynamic:
+        output_names += ["dynamic_motion_report.json"]
+    write_json(out_dir / "summary.json", {"generated_at": now_iso(), "project": rel(project), "outputs": {name: rel(out_dir / name) for name in output_names}, "tooling": tooling})
+    write_summary(out_dir / "summary.md", context, tooling, junctions, focus, compare)
+    print(json.dumps({"ok": True, "out_dir": str(out_dir), "counts": context["counts"], "dynamic": bool(dynamic), "focus_parts": focus_parts, "compare": bool(compare)}, ensure_ascii=False, indent=2))
     return 0
-
-
 if __name__ == "__main__":
     raise SystemExit(main())

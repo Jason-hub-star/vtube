@@ -111,3 +111,26 @@ def image_diff_metrics(base_path: Path, target_path: Path, threshold: int = 18) 
             "max_delta": max((level for level, count in enumerate(hist) if count), default=0),
             "changed_bbox": bbox,
         }
+
+
+def bbox_gap(a: list, b: list) -> float:
+    """두 bbox([x,y,w,h]) 사이 최단 거리 (겹치면 0) — rig inspector 인접도."""
+    import math
+    ax0, ay0, aw, ah = a
+    bx0, by0, bw, bh = b
+    dx = max(bx0 - (ax0 + aw), ax0 - (bx0 + bw), 0)
+    dy = max(by0 - (ay0 + ah), ay0 - (by0 + bh), 0)
+    return math.hypot(dx, dy)
+
+
+def bbox_contact(a: list, b: list, tolerance: float = 24) -> float:
+    """두 bbox의 접촉 길이 추정 — 변이 tolerance 안에서 만나는 구간."""
+    ax0, ay0, aw, ah = a
+    bx0, by0, bw, bh = b
+    ax1, ay1 = ax0 + aw, ay0 + ah
+    bx1, by1 = bx0 + bw, by0 + bh
+    x_overlap = max(0, min(ax1, bx1) - max(ax0, bx0))
+    y_overlap = max(0, min(ay1, by1) - max(ay0, by0))
+    vertical_touch = abs(ax1 - bx0) <= tolerance or abs(bx1 - ax0) <= tolerance
+    horizontal_touch = abs(ay1 - by0) <= tolerance or abs(by1 - ay0) <= tolerance
+    return max(y_overlap if vertical_touch else 0, x_overlap if horizontal_touch else 0, min(x_overlap, y_overlap))

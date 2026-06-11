@@ -1,0 +1,361 @@
+{
+  "playwright": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/TypeScript/Demo/node_modules/playwright",
+  "base": "http://127.0.0.1:8074/",
+  "query": "?renderer=pixi",
+  "renderer": "pixi",
+  "launch_args": [
+    "--use-angle=swiftshader"
+  ],
+  "defaults": {
+    "ParamAngleX": 0,
+    "ParamAngleY": 0,
+    "ParamAngleZ": 0,
+    "ParamBodyAngleX": 0,
+    "ParamBodyAngleY": 0,
+    "ParamBodyAngleZ": 0,
+    "ParamBodyTrackX": 0,
+    "ParamBodyTrackZ": 0,
+    "ParamBreath": 0,
+    "ParamEyeBallX": 0,
+    "ParamEyeBallY": 0,
+    "ParamEyeLOpen": 1,
+    "ParamEyeROpen": 1,
+    "ParamBrowLY": 0,
+    "ParamBrowRY": 0,
+    "ParamHairFront": 0,
+    "ParamHairBack": 0,
+    "ParamMouthOpenY": 0.0,
+    "ParamEyeSmile": 0
+  },
+  "states": [
+    {
+      "parameter_id": "ParamAngleX",
+      "label": "min",
+      "value": -30
+    },
+    {
+      "parameter_id": "ParamAngleX",
+      "label": "max",
+      "value": 30
+    },
+    {
+      "parameter_id": "ParamAngleY",
+      "label": "min",
+      "value": -30
+    },
+    {
+      "parameter_id": "ParamAngleY",
+      "label": "max",
+      "value": 30
+    },
+    {
+      "parameter_id": "ParamAngleZ",
+      "label": "min",
+      "value": -30
+    },
+    {
+      "parameter_id": "ParamAngleZ",
+      "label": "max",
+      "value": 30
+    },
+    {
+      "parameter_id": "ParamBodyAngleY",
+      "label": "min",
+      "value": -10
+    },
+    {
+      "parameter_id": "ParamBodyAngleY",
+      "label": "max",
+      "value": 10
+    },
+    {
+      "parameter_id": "ParamBodyTrackX",
+      "label": "min",
+      "value": -1
+    },
+    {
+      "parameter_id": "ParamBodyTrackX",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamBodyTrackZ",
+      "label": "min",
+      "value": -1
+    },
+    {
+      "parameter_id": "ParamBodyTrackZ",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamBreath",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamEyeBallX",
+      "label": "min",
+      "value": -1
+    },
+    {
+      "parameter_id": "ParamEyeBallX",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamEyeBallY",
+      "label": "min",
+      "value": -1
+    },
+    {
+      "parameter_id": "ParamEyeBallY",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamEyeLOpen",
+      "label": "min",
+      "value": 0.27
+    },
+    {
+      "parameter_id": "ParamEyeROpen",
+      "label": "min",
+      "value": 0.27
+    },
+    {
+      "parameter_id": "ParamBrowLY",
+      "label": "min",
+      "value": -1
+    },
+    {
+      "parameter_id": "ParamBrowLY",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamBrowRY",
+      "label": "min",
+      "value": -1
+    },
+    {
+      "parameter_id": "ParamBrowRY",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamHairFront",
+      "label": "min",
+      "value": -1
+    },
+    {
+      "parameter_id": "ParamHairFront",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamHairBack",
+      "label": "min",
+      "value": -1
+    },
+    {
+      "parameter_id": "ParamHairBack",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamMouthOpenY",
+      "label": "max",
+      "value": 0.85
+    },
+    {
+      "parameter_id": "ParamEyeSmile",
+      "label": "max",
+      "value": 1
+    }
+  ],
+  "tiles": [
+    {
+      "x": 623,
+      "y": 541,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 869,
+      "y": 541,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1114,
+      "y": 541,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1360,
+      "y": 541,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 623,
+      "y": 828,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 869,
+      "y": 828,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1114,
+      "y": 828,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1360,
+      "y": 828,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 623,
+      "y": 1114,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 869,
+      "y": 1114,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1114,
+      "y": 1114,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1360,
+      "y": 1114,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 623,
+      "y": 1401,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 869,
+      "y": 1401,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1114,
+      "y": 1401,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1360,
+      "y": 1401,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 660,
+      "y": 960,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1316,
+      "y": 961,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 988,
+      "y": 1017,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 990,
+      "y": 1519,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 988,
+      "y": 1068,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 988,
+      "y": 838,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 827,
+      "y": 633,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1150,
+      "y": 632,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 843,
+      "y": 635,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 825,
+      "y": 522,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1154,
+      "y": 520,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 787,
+      "y": 575,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 991,
+      "y": 534,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1196,
+      "y": 557,
+      "w": 64,
+      "h": 64
+    }
+  ],
+  "captures": "/Users/family/jason/Vtube/experiments/autorig-character-003/reports/rig_inspector/dynamic_captures",
+  "out": "/Users/family/jason/Vtube/experiments/autorig-character-003/reports/rig_inspector/dynamic_motion_report.json"
+}

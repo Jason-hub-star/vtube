@@ -12,7 +12,7 @@ Updated: 2026-06-11 · 총 292개 · `python3 scripts/build_scripts_index.py`로
 |---|---:|---|
 | `lib/__init__.py` | 13 | Vtube 공유 라이브러리. |
 | `lib/rig_keyforms.py` | 248 | 리그 키폼 데이터 빌더 — build_autorig_rig_v0에서 기계적 분리 (2026-06-11 정비, 500줄 룰). |
-| `lib/vtube_image.py` | 113 | 이미지 공통 유틸: 알파크롭 썸네일, 컨택트시트, 픽셀 diff. (build_contact_sheet 26벌 복붙의 단일 원본) |
+| `lib/vtube_image.py` | 136 | 이미지 공통 유틸: 알파크롭 썸네일, 컨택트시트, 픽셀 diff. (build_contact_sheet 26벌 복붙의 단일 원본) |
 | `lib/vtube_io.py` | 41 | 경로/JSON 입출력 공통 유틸. (기존 258개 스크립트에 rel 151벌, load_json 145벌이 복붙되어 있던 것의 단일 원본) |
 | `lib/vtube_proc.py` | 29 | 프로세스/포트 공통 유틸. (wait_for_server 17벌 복붙의 단일 원본) |
 | `lib/vtube_server.py` | 60 | 로컬 HTTP 서버 공통 베이스. (ThreadingHTTPServer 보일러플레이트 13벌 복붙의 단일 원본) |
@@ -41,7 +41,7 @@ Updated: 2026-06-11 · 총 292개 · `python3 scripts/build_scripts_index.py`로
 | `run_face_tracking_synthetic_parameter_smoke.py` | 354 | Run T0 synthetic face-tracking to Cubism parameter conversion smoke. |
 | `run_face_tracking_webcam_probe_server.py` | 333 | Serve a local MediaPipe webcam probe and save T1 face-tracking reports. |
 | `run_live2d_webcam_parameter_drive.py` | 411 | Drive a Live2D Web model with the saved T1 webcam Cubism parameter stream. |
-| `run_mini_cubism_webcam_drive.py` ⭐ ⚠️ | 508 | T3: 웹캠/재생 트래킹 스트림으로 Mini Cubism 런타임을 구동하는 드라이브 서버. |
+| `run_mini_cubism_webcam_drive.py` ⭐ | 104 | T3: 웹캠/재생 트래킹 스트림으로 Mini Cubism 런타임을 구동하는 드라이브 서버. |
 | `run_mini_cubism_webcam_drive_smoke.py` | 279 | T3-a/b 스모크: 합성 파라미터 + 저장된 T1 스트림 재생으로 Mini Cubism 드라이브를 검증한다. |
 
 ## servers-editors — 로컬 서버·에디터·플레이어 (9)
@@ -331,7 +331,7 @@ Updated: 2026-06-11 · 총 292개 · `python3 scripts/build_scripts_index.py`로
 | `compose_reskin_assembly.py` ⭐ | 53 | 재스킨 레이어를 draw_order 순으로 합성해 어셈블리 PNG를 만든다. |
 | `extract_mouth_states.py` ⭐ | 176 | v21 최종 입 성공패턴용 상태 스프라이트 추출: 4상태 시트 → 풀캔버스 레이어 4장. |
 | `force_imagen_front_hair_arms_pass.py` | 254 | Force-promote Imagen front hair and both arms for MVP PSD progression. |
-| `inspect_autorig_rig.py` ⚠️ | 539 | AUTORIG Rig Inspector: graph, influence, junction scores, and AI context. |
+| `inspect_autorig_rig.py` | 496 | AUTORIG Rig Inspector: graph, influence, junction scores, and AI context. |
 | `map_mini_cubism_dedicated_layers.py` | 161 | Gate See-through layers against the Mini Cubism dedicated v1 taxonomy. |
 | `mini_cubism_preview_server.py` ⭐ | 229 | Serve the Mini Cubism v0 preview app and project files. |
 | `mouth_apply_delta_001.py` | 392 | Apply saved mouth manual delta to new generated mouth sheets. |
