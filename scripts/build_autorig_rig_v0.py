@@ -406,15 +406,17 @@ def main() -> int:
     # 부분 겹침 회전을 직접 주면 내부 시어, CHAIN-001 교훈)
     tilt_rad = math.radians(1.5)
     body_pivot_y = center(body_bounds)[1]
-    dx_upper = round((body_pivot_y - center(upper_bounds)[1]) * math.sin(tilt_rad), 1)
-    dx_hair = round((body_pivot_y - center(head_bounds)[1]) * math.sin(tilt_rad), 1)
+    # 등변위 기준점 = 접합부 (목 하단) — CHAIN-001 v3: "목·가슴이 접합부에서 같은 변위로
+    # 만난다". 운반 변위를 머리 높이로 잡으면 접합부에서 회전분과 어긋난다 (참수 사건).
+    junction_y = neck_bounds[1] + neck_bounds[3]
+    dx_carry = round((body_pivot_y - junction_y) * math.sin(tilt_rad), 1)
     keyform_bindings += [
         binding_r("ParamBodyAngleZ", -10, "body_warp", rotate=-1.5),
         binding_r("ParamBodyAngleZ", 10, "body_warp", rotate=1.5),
-        binding("ParamBodyAngleZ", -10, "upper_warp", tx=-dx_upper),
-        binding("ParamBodyAngleZ", 10, "upper_warp", tx=dx_upper),
-        binding("ParamBodyAngleZ", -10, "back_hair_warp", tx=-dx_hair),
-        binding("ParamBodyAngleZ", 10, "back_hair_warp", tx=dx_hair),
+        binding("ParamBodyAngleZ", -10, "upper_warp", tx=-dx_carry),
+        binding("ParamBodyAngleZ", 10, "upper_warp", tx=dx_carry),
+        binding("ParamBodyAngleZ", -10, "back_hair_warp", tx=-dx_carry),
+        binding("ParamBodyAngleZ", 10, "back_hair_warp", tx=dx_carry),
     ]
 
     part_opacity_keyframes = build_opacity_curves(use_arap, use_mouth_states, use_mouth_warp, bbox_by_id)

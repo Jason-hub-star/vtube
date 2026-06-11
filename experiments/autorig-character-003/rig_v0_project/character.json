@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project_kind": "mini_cubism_v0",
   "experiment_id": "autorig-rig-v0",
-  "generated_at": "2026-06-11T11:27:04.120491+00:00",
+  "generated_at": "2026-06-11T11:36:32.305307+00:00",
   "source_selection": {
     "visible_layers": "experiments/autorig-character-003/seethrough_true_reskinned/reskin_manifest.json",
     "hidden_layers": [
@@ -40113,7 +40113,7 @@
           1.0,
           1.0
         ],
-        "rotate": -1.2,
+        "rotate": 0,
         "opacity": 1
       }
     },
@@ -40131,7 +40131,7 @@
           1.0,
           1.0
         ],
-        "rotate": 1.2,
+        "rotate": 0,
         "opacity": 1
       }
     },
@@ -40556,7 +40556,7 @@
       "delta_type": "deformer_transform",
       "deltas": {
         "translate": [
-          -16.9,
+          -4.2,
           0.0
         ],
         "scale": [
@@ -40574,7 +40574,7 @@
       "delta_type": "deformer_transform",
       "deltas": {
         "translate": [
-          16.9,
+          4.2,
           0.0
         ],
         "scale": [
@@ -40592,7 +40592,7 @@
       "delta_type": "deformer_transform",
       "deltas": {
         "translate": [
-          -18.6,
+          -4.2,
           0.0
         ],
         "scale": [
@@ -40610,7 +40610,7 @@
       "delta_type": "deformer_transform",
       "deltas": {
         "translate": [
-          18.6,
+          4.2,
           0.0
         ],
         "scale": [

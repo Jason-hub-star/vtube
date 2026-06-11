@@ -79,8 +79,10 @@ def build_keyform_bindings() -> list[dict]:
         binding("ParamBodyAngleY", -10, "back_hair_warp", ty=-5),
         binding("ParamBodyAngleY", 10, "back_hair_warp", ty=5),
         binding("ParamBreath", 1, "back_hair_warp", ty=-2),
-        binding_r("ParamBodyAngleX", -10, "body_warp", tx=-8, rotate=-1.2),
-        binding_r("ParamBodyAngleX", 10, "body_warp", tx=8, rotate=1.2),
+        # BODY-SWAY-001: rotate ±1.2 제거 — 운반(upper/back_hair)은 tx만이라 회전분이 접합부
+        # 슬립이 됐다 (상시 스웨이로 노출, "참수" 보고). 몸 기울기는 BodyAngleZ가 전담.
+        binding("ParamBodyAngleX", -10, "body_warp", tx=-8),
+        binding("ParamBodyAngleX", 10, "body_warp", tx=8),
         binding("ParamBodyAngleY", -10, "body_warp", ty=-5),
         binding("ParamBodyAngleY", 10, "body_warp", ty=5),
         binding("ParamBreath", 1, "body_warp", ty=-2, sy=1.012),
