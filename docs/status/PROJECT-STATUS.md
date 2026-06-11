@@ -52,7 +52,7 @@ Updated: 2026-06-11 (PIXI-RENDER-001 — WebGL 렌더 백엔드, 풀해상도 60
 1. **주인님 pixi 육안 판정** — 프리뷰(8062 `?renderer=pixi`)·드라이브(8063, 기본 pixi)에서 끊김/눈 클리핑/목 확인.
 2. `AUTORIG-PLAYER-001` — 사용자 산출물(웹 링크·OBS 브라우저 소스·투명 모드 `?transparent=1`·오픈 ZIP).
 3. `AUTORIG-ANCHOR-DETECT-001` — 임의 업로드 PNG 앵커 자동 검출 + rembg 입력 전처리 (프로덕션 갭).
-4. 분해 풀해상도화 (Ubuntu CUDA 런북) + 키폼 사다리 (목 접합 근본 개선).
+4. 분해 풀해상도화 (CUDA 런북은 `docs/archive/2026-06-08-superseded-plans/`에 보존 — 재개 시 꺼내 갱신) + 키폼 사다리 (목 접합 근본 개선).
 
 ## Rules
 
