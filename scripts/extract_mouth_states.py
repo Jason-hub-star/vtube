@@ -90,25 +90,42 @@ def main() -> int:
         content = (dist > 48) & (rgba[..., 3] > 64)
         mid = content[:, int(fw * 0.2) : int(fw * 0.8)]
         rows = np.where(mid.any(axis=1))[0]
+        # 생성 셀에 캐릭터 턱선 스트로크가 딸려오는 경우(003 이중 턱선 V 사건):
+        # 입술 블록 아래로 분리된 "가늘고 어두운" 블록은 턱선으로 보고 콘텐츠에서 제외 —
+        # rows.max()를 그대로 쓰면 패치 턱선까지 불투명해져 원본 턱선과 이중선이 된다
+        stroke_top = None
+        if len(rows):
+            split = np.where(np.diff(rows) > 10)[0]
+            runs = np.split(rows, split + 1)
+            last = runs[-1]
+            if len(runs) > 1 and len(last) <= max(6, fh // 8):
+                band = rgba[int(last.min()) : int(last.max()) + 1, int(fw * 0.2) : int(fw * 0.8), :3].astype(np.float64)
+                if band.mean() < skin_med.mean() * 0.75:
+                    stroke_top = int(last.min())
+                    rows = np.concatenate(runs[:-1])
         lip_top = int(rows.min()) if len(rows) else int(fh * 0.15)
         lip_bottom = int(rows.max()) if len(rows) else int(fh * 0.55)
         cols = np.where(content[lip_top : lip_bottom + 1].any(axis=0))[0]
         lip_x0 = int(cols.min()) if len(cols) else int(fw * 0.2)
         lip_x1 = int(cols.max()) if len(cols) else int(fw * 0.8)
 
-        def ramp_1d(size: int, keep0: int, keep1: int, soft: int) -> np.ndarray:
+        def ramp_1d(size: int, keep0: int, keep1: int, soft: int, soft_end: int | None = None) -> np.ndarray:
             r = np.zeros(size, dtype=np.float64)
             r[max(0, keep0) : min(size, keep1)] = 1.0
             a0 = max(0, keep0 - soft)
             if keep0 > a0:
                 r[a0:keep0] = np.linspace(0.0, 1.0, keep0 - a0)
-            b1 = min(size, keep1 + soft)
+            b1 = min(size, keep1 + (soft if soft_end is None else soft_end))
             if b1 > keep1:
                 r[keep1:b1] = np.linspace(1.0, 0.0, b1 - keep1)
             return r
 
         # 사방 밀착: 입술 콘텐츠 + 최소 마진만 불투명, 그 밖은 짧은 페이드 (원본 턱선·뺨·인중 노출)
-        ry = ramp_1d(fh, lip_top - max(6, fh // 30), lip_bottom + 3, max(8, fh // 20))
+        # 패치 내 턱선이 검출됐으면 하단 페이드가 그 위에서 완전히 끝나도록 소프트 길이 클램프
+        soft_bottom = max(8, fh // 20)
+        if stroke_top is not None:
+            soft_bottom = max(3, min(soft_bottom, stroke_top - (lip_bottom + 3) - 4))
+        ry = ramp_1d(fh, lip_top - max(6, fh // 30), lip_bottom + 3, max(8, fh // 20), soft_bottom)
         rx = ramp_1d(fw, lip_x0 - 8, lip_x1 + 8, 16)
         rgba[..., 3] = (rgba[..., 3].astype(np.float64) * ry[:, None] * rx[None, :]).astype(np.uint8)
         patch = Image.fromarray(rgba, "RGBA")
