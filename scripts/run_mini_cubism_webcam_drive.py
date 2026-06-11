@@ -97,7 +97,7 @@ const overlay = document.getElementById("overlay");
 const ctx = overlay.getContext("2d");
 const frame = document.getElementById("model");
 const els = Object.fromEntries(
-  ["startBtn", "calibrateBtn", "cameraState", "faceState", "fpsState", "appliedState", "frameState", "paramGrid", "modeLabel", "camBox"]
+  ["startBtn", "calibrateBtn", "exprRow", "cameraState", "faceState", "fpsState", "appliedState", "frameState", "paramGrid", "modeLabel", "camBox"]
     .map((id) => [id, document.getElementById(id)])
 );
 
