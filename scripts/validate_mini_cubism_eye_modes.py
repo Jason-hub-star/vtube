@@ -31,6 +31,7 @@ LEFT_EYE_PARTS = [
     "eye_L_highlight",
     "eye_L_upper_lash",
     "eye_L_lower_lash",
+    "eye_L_closed_underpaint",
     "eye_L_closed_lid",
 ]
 RIGHT_EYE_PARTS = [
@@ -41,6 +42,7 @@ RIGHT_EYE_PARTS = [
     "eye_R_highlight",
     "eye_R_upper_lash",
     "eye_R_lower_lash",
+    "eye_R_closed_underpaint",
     "eye_R_closed_lid",
 ]
 DEFAULT_PROJECT = (
@@ -300,7 +302,7 @@ def part_opacity(project: dict[str, Any], parameters: dict[str, float], part_id:
 def eye_open_detail_opacity(project: dict[str, Any], parameters: dict[str, float], part_id: str) -> float:
     if not (part_id.startswith("eye_L_") or part_id.startswith("eye_R_")):
         return 1.0
-    if part_id.endswith("_closed_lid"):
+    if part_id.endswith("_closed_lid") or part_id.endswith("_closed_underpaint"):
         return 1.0
     covers = (project.get("_mini_rig") or {}).get("eye_socket_covers") or {}
     if not covers.get("enabled"):

@@ -1,0 +1,323 @@
+#!/usr/bin/env python3
+"""Write the clean-socket/keypose requirements and Imagen prompt plan."""
+
+from __future__ import annotations
+
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT_DIR = ROOT / "experiments/cubism-v2-new-character-001/reports/clean_socket_keypose_requirements"
+
+
+REQUIRED_ASSETS: list[dict[str, Any]] = [
+    {
+        "asset_id": "face_base_clean",
+        "group": "face",
+        "ko": "눈/입 잔상이 없는 얼굴 기본",
+        "kind": "clean_base",
+        "required": True,
+        "reason": "EyeOpen/MouthOpen keyposes cannot hide baked open eyes or mouth pixels in face_base.",
+        "param_targets": ["ParamEyeLOpen", "ParamEyeROpen", "ParamMouthOpenY", "ParamMouthForm"],
+    },
+    {
+        "asset_id": "eye_L_clean_socket",
+        "group": "eye_L",
+        "ko": "왼눈 깨끗한 눈구멍/피부 밑색",
+        "kind": "clean_socket",
+        "required": True,
+        "reason": "Closed eyelid must reveal skin/underpaint, not the original open eye.",
+        "param_targets": ["ParamEyeLOpen"],
+    },
+    {
+        "asset_id": "eye_R_clean_socket",
+        "group": "eye_R",
+        "ko": "오른눈 깨끗한 눈구멍/피부 밑색",
+        "kind": "clean_socket",
+        "required": True,
+        "reason": "Closed eyelid must reveal skin/underpaint, not the original open eye.",
+        "param_targets": ["ParamEyeROpen"],
+    },
+    {
+        "asset_id": "eye_L_half_closed_lid",
+        "group": "eye_L",
+        "ko": "왼눈 반쯤 감은 눈꺼풀",
+        "kind": "eye_keypose",
+        "required": True,
+        "reason": "A mid keypose reduces eyelid squash artifacts between open and closed.",
+        "param_targets": ["ParamEyeLOpen=0.5"],
+    },
+    {
+        "asset_id": "eye_R_half_closed_lid",
+        "group": "eye_R",
+        "ko": "오른눈 반쯤 감은 눈꺼풀",
+        "kind": "eye_keypose",
+        "required": True,
+        "reason": "A mid keypose reduces eyelid squash artifacts between open and closed.",
+        "param_targets": ["ParamEyeROpen=0.5"],
+    },
+    {
+        "asset_id": "eye_L_mostly_closed_lid",
+        "group": "eye_L",
+        "ko": "왼눈 거의 감은 눈꺼풀",
+        "kind": "eye_keypose",
+        "required": True,
+        "reason": "Mostly-closed keypose prevents sudden popping near blink completion.",
+        "param_targets": ["ParamEyeLOpen=0.2"],
+    },
+    {
+        "asset_id": "eye_R_mostly_closed_lid",
+        "group": "eye_R",
+        "ko": "오른눈 거의 감은 눈꺼풀",
+        "kind": "eye_keypose",
+        "required": True,
+        "reason": "Mostly-closed keypose prevents sudden popping near blink completion.",
+        "param_targets": ["ParamEyeROpen=0.2"],
+    },
+    {
+        "asset_id": "eye_L_closed_lid",
+        "group": "eye_L",
+        "ko": "왼눈 완전히 감은 눈꺼풀/감은 눈 선",
+        "kind": "eye_keypose",
+        "required": True,
+        "reason": "Closed state is the final EyeOpen=0 target.",
+        "param_targets": ["ParamEyeLOpen=0"],
+    },
+    {
+        "asset_id": "eye_R_closed_lid",
+        "group": "eye_R",
+        "ko": "오른눈 완전히 감은 눈꺼풀/감은 눈 선",
+        "kind": "eye_keypose",
+        "required": True,
+        "reason": "Closed state is the final EyeOpen=0 target.",
+        "param_targets": ["ParamEyeROpen=0"],
+    },
+    {
+        "asset_id": "eye_L_closed_underpaint",
+        "group": "eye_L",
+        "ko": "왼눈 닫힘용 피부 밑색",
+        "kind": "underpaint",
+        "required": True,
+        "reason": "Covers the eye socket under closed lids without using visible rectangular patches.",
+        "param_targets": ["ParamEyeLOpen"],
+    },
+    {
+        "asset_id": "eye_R_closed_underpaint",
+        "group": "eye_R",
+        "ko": "오른눈 닫힘용 피부 밑색",
+        "kind": "underpaint",
+        "required": True,
+        "reason": "Covers the eye socket under closed lids without using visible rectangular patches.",
+        "param_targets": ["ParamEyeROpen"],
+    },
+    {
+        "asset_id": "mouth_base_clean",
+        "group": "mouth",
+        "ko": "입 잔상이 없는 깨끗한 입 주변 피부/입 베이스",
+        "kind": "clean_socket",
+        "required": True,
+        "reason": "MouthOpen keyposes cannot hide baked neutral/open mouth pixels naturally.",
+        "param_targets": ["ParamMouthOpenY", "ParamMouthForm"],
+    },
+    {
+        "asset_id": "mouth_closed_smile",
+        "group": "mouth",
+        "ko": "닫힌 미소 입",
+        "kind": "mouth_keypose",
+        "required": True,
+        "reason": "Closed/smile state is the neutral mouth keypose.",
+        "param_targets": ["ParamMouthOpenY=0", "ParamMouthForm>0"],
+    },
+    {
+        "asset_id": "mouth_small_open",
+        "group": "mouth",
+        "ko": "작게 열린 입",
+        "kind": "mouth_keypose",
+        "required": True,
+        "reason": "Small-open state provides a stable in-between for speech.",
+        "param_targets": ["ParamMouthOpenY=0.3"],
+    },
+    {
+        "asset_id": "mouth_wide_open",
+        "group": "mouth",
+        "ko": "크게 열린 입",
+        "kind": "mouth_keypose",
+        "required": True,
+        "reason": "Wide-open state is needed for jaw-open and vowel extremes.",
+        "param_targets": ["ParamMouthOpenY=0.8-1.0"],
+    },
+    {
+        "asset_id": "mouth_o_vowel",
+        "group": "mouth",
+        "ko": "O 발음 입",
+        "kind": "mouth_keypose",
+        "required": True,
+        "reason": "Round-mouth state maps to MouthForm negative values.",
+        "param_targets": ["ParamMouthOpenY=0.5", "ParamMouthForm<0"],
+    },
+    {
+        "asset_id": "mouth_inner",
+        "group": "mouth",
+        "ko": "입 안쪽",
+        "kind": "mouth_detail",
+        "required": True,
+        "reason": "Open mouth needs inner dark material behind teeth/tongue.",
+        "param_targets": ["ParamMouthOpenY"],
+    },
+    {
+        "asset_id": "mouth_teeth",
+        "group": "mouth",
+        "ko": "치아",
+        "kind": "mouth_detail",
+        "required": True,
+        "reason": "Teeth should be an independent detail layer for open-mouth poses.",
+        "param_targets": ["ParamMouthOpenY"],
+    },
+    {
+        "asset_id": "mouth_tongue",
+        "group": "mouth",
+        "ko": "혀",
+        "kind": "mouth_detail",
+        "required": True,
+        "reason": "Tongue should be independent for wide/open vowel poses.",
+        "param_targets": ["ParamMouthOpenY", "ParamMouthForm"],
+    },
+]
+
+
+PROMPT_PLAN = {
+    "common_constraints": [
+        "Use the selected character reference exactly: same identity, same face proportions, same anime rendering style, same front-facing camera, same lighting.",
+        "Generate Live2D/Cubism material, not a new character design and not a sprite sheet.",
+        "No labels, no guides, no text, no colored boxes, no extra face marks, no new accessories.",
+        "Prefer transparent background/full-canvas layer output when possible.",
+        "If the image model cannot output a true layer, generate a clean high-resolution reference and route it through the normalization/alpha validation step before use.",
+    ],
+    "eye_clean_socket_prompt": "Create clean eye-socket skin material for the specified left/right eye area. Remove iris, pupil, white of eye, highlight, and open-eye lash artifacts. Preserve surrounding skin gradient, blush, eyelid fold, and hair occlusion style. Output only the clean material needed under closed eyelids.",
+    "eye_keypose_prompt": "Create a style-matched eyelid keypose for the specified eye: half closed, mostly closed, or fully closed. Preserve the original character style, lash thickness, eyelid curve, and left/right symmetry. Do not include the open iris/pupil/eye white.",
+    "mouth_clean_socket_prompt": "Create clean mouth-base material around the mouth area. Remove baked mouth line/open-mouth remnants while preserving face shading, chin, blush, and surrounding skin style.",
+    "mouth_keypose_prompt": "Create a style-matched mouth keypose for the specified state: closed smile, small open, wide open, or O vowel. Preserve the original mouth position, line style, lip softness, and anime shading.",
+    "detail_prompt": "Create separate mouth detail material for mouth_inner, teeth, or tongue. Keep it style-matched and usable as an independent Cubism layer.",
+}
+
+
+VALIDATION_POLICY = {
+    "current_material_pack_canvas": [2048, 2048],
+    "required_png_mode": "RGBA",
+    "full_canvas_policy": "For the current material_pack_v0 pipeline, generated assets must be normalized to 2048x2048 full-canvas PNG before PSD/Mini Cubism use.",
+    "resize_decision": [
+        "If output is already 2048x2048 RGBA and aligned to the original canvas, do not resize.",
+        "If output is not 2048x2048, do not stretch-resize directly. Normalize by preserving aspect ratio and placing into a 2048x2048 transparent canvas using ROI/anchor evidence.",
+        "If output is an RGB full illustration instead of an RGBA layer, alpha extraction/masking is required before it can become a material layer.",
+        "If output is a crop, keep the raw crop as reference and create a separate normalized full-canvas candidate with bbox/anchor metadata.",
+    ],
+    "must_fail_visual_conditions": [
+        "Open-eye pixels visible under closed eyelid.",
+        "Neutral/open state changed by a closed-only underpaint.",
+        "Rectangular skin patch visible.",
+        "Mouth closed/open state shows baked remnants from another mouth state.",
+    ],
+}
+
+
+def write_json(path: Path, payload: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
+
+
+def markdown(payload: dict[str, Any]) -> str:
+    lines = [
+        "# Cubism v2 Clean Socket + Keypose Requirements",
+        "",
+        f"- status: `{payload['status']}`",
+        f"- generated_at: `{payload['generated_at']}`",
+        "- decision: clean sockets and half/mostly/closed eye keyposes are now material requirements before rig tuning.",
+        "",
+        "## Required Assets",
+        "",
+        "| asset_id | group | kind | Korean | parameter target | reason |",
+        "|---|---|---|---|---|---|",
+    ]
+    for item in payload["required_assets"]:
+        lines.append(
+            "| {asset_id} | {group} | {kind} | {ko} | {params} | {reason} |".format(
+                asset_id=item["asset_id"],
+                group=item["group"],
+                kind=item["kind"],
+                ko=item["ko"],
+                params=", ".join(item["param_targets"]),
+                reason=item["reason"],
+            )
+        )
+    lines += [
+        "",
+        "## Imagen Prompt Plan",
+        "",
+        "### Common Constraints",
+        "",
+    ]
+    for row in payload["prompt_plan"]["common_constraints"]:
+        lines.append(f"- {row}")
+    lines += [
+        "",
+        "### Prompt Templates",
+        "",
+    ]
+    for key, value in payload["prompt_plan"].items():
+        if key == "common_constraints":
+            continue
+        lines.append(f"- `{key}`: {value}")
+    lines += [
+        "",
+        "## Resize / Normalization Policy",
+        "",
+        f"- Current material pack canvas: `{payload['validation_policy']['current_material_pack_canvas']}`",
+        f"- Required PNG mode: `{payload['validation_policy']['required_png_mode']}`",
+        f"- Policy: {payload['validation_policy']['full_canvas_policy']}",
+        "",
+        "### Resize Decision",
+        "",
+    ]
+    for row in payload["validation_policy"]["resize_decision"]:
+        lines.append(f"- {row}")
+    lines += [
+        "",
+        "### Visual Fail Conditions",
+        "",
+    ]
+    for row in payload["validation_policy"]["must_fail_visual_conditions"]:
+        lines.append(f"- {row}")
+    lines.append("")
+    return "\n".join(lines)
+
+
+def main() -> int:
+    payload = {
+        "schema_version": 1,
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "status": "PASS_REQUIREMENTS_READY",
+        "source_evidence": {
+            "live2d_keypose_spec": str(ROOT / "experiments/live2d-keypose-spec-001/reports/live2d_keypose_spec.md"),
+            "g1_material_planning_packet": str(
+                ROOT / "experiments/cubism-v2-new-character-001/reports/g1_material_planning_packet.md"
+            ),
+            "eye_close_failure_evidence": str(
+                ROOT / "experiments/cubism-v2-new-character-001/material_pack_v0/mini_cubism_project_material_closed_underpaint_manual_bbox_v1/reports/eye_mode_validation/eye_close_review_crop.png"
+            ),
+        },
+        "required_assets": REQUIRED_ASSETS,
+        "prompt_plan": PROMPT_PLAN,
+        "validation_policy": VALIDATION_POLICY,
+    }
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    write_json(OUT_DIR / "clean_socket_keypose_requirements.json", payload)
+    (OUT_DIR / "clean_socket_keypose_requirements.md").write_text(markdown(payload), encoding="utf-8")
+    print(json.dumps({"ok": True, "out_dir": str(OUT_DIR), "assets": len(REQUIRED_ASSETS)}, ensure_ascii=False, indent=2))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

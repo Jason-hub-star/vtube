@@ -9,6 +9,7 @@ rules used by the local review UI.
 from __future__ import annotations
 
 import json
+import argparse
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -19,16 +20,65 @@ CUBISM_PACK = ROOT / "experiments" / "cubism-material-pack-001"
 SOURCE_MANIFEST = CUBISM_PACK / "layer_manifest.json"
 CONCEPT_EXP = ROOT / "experiments" / "concept-regeneration-001"
 CONCEPT_MANIFEST = CONCEPT_EXP / "layer_manifest.json"
-SEETHROUGH_EXP = ROOT / "experiments" / "see-through-layer-decomp-001"
-SEETHROUGH_MANIFEST = SEETHROUGH_EXP / "layer_manifest.json"
 OUT_MANIFEST = ROOT / "review_app" / "review_manifest.json"
 PART_GENERATION_MANIFEST = ROOT / "experiments" / "part-purity-001" / "part_generation_manifest.json"
 CONCEPT_GENERATION_MANIFEST = CONCEPT_EXP / "part_generation_manifest.json"
-SEETHROUGH_GENERATION_MANIFEST = SEETHROUGH_EXP / "part_generation_manifest.json"
 SCHEMA_DOC = ROOT / "docs" / "ref" / "LIVE2D-PART-SCHEMA.md"
 
 CANONICAL_PATH = ROOT / "experiments" / "production-canvas-2048-001" / "canonical" / "canonical_front_2048.png"
 OVERLAY_DIR = CUBISM_PACK / "reference_pack" / "overlays"
+
+LAYER_DECOMP_EXPERIMENTS = [
+    {
+        "experiment_id": "see-through-layer-decomp-001",
+        "section": "seethrough_candidates",
+        "manifest": ROOT / "experiments" / "see-through-layer-decomp-001" / "layer_manifest.json",
+        "generation_manifest": ROOT / "experiments" / "see-through-layer-decomp-001" / "part_generation_manifest.json",
+        "gate": "See-through candidates remain PSD-excluded until human O review and gated PSD rebuild.",
+    },
+    {
+        "experiment_id": "see-through-mps-compat-002",
+        "section": "mps_compat_candidates",
+        "manifest": ROOT / "experiments" / "see-through-mps-compat-002" / "layer_manifest.json",
+        "generation_manifest": ROOT / "experiments" / "see-through-mps-compat-002" / "part_generation_manifest.json",
+        "gate": "Mac MPS compatibility candidates are smoke evidence first; keep PSD-excluded until human O review and Cubism gate.",
+    },
+    {
+        "experiment_id": "imagen-live2d-001",
+        "section": "imagen_live2d_candidates",
+        "manifest": ROOT / "experiments" / "imagen-live2d-001" / "layer_manifest.json",
+        "generation_manifest": ROOT / "experiments" / "imagen-live2d-001" / "part_generation_manifest.json",
+        "gate": "Imagen-generated character candidates must pass human review, ROI cleanup if needed, and Cubism import smoke before rigging.",
+    },
+    {
+        "experiment_id": "mini-cubism-dedicated-model-v1-001",
+        "section": "mini_cubism_dedicated_candidates",
+        "manifest": ROOT / "experiments" / "mini-cubism-dedicated-model-v1-001" / "layer_manifest.json",
+        "generation_manifest": ROOT / "experiments" / "mini-cubism-dedicated-model-v1-001" / "part_generation_manifest.json",
+        "gate": "Dedicated Mini Cubism candidates are See-through layer split evidence only; map to the 73-part taxonomy before rig build claims.",
+    },
+    {
+        "experiment_id": "layerdivider-compat-001",
+        "section": "layerdivider_candidates",
+        "manifest": ROOT / "experiments" / "layerdivider-compat-001" / "layer_manifest.json",
+        "generation_manifest": ROOT / "experiments" / "layerdivider-compat-001" / "part_generation_manifest.json",
+        "gate": "LayerDivider output is segmentation/reference evidence unless review proves a schema-clean production candidate.",
+    },
+    {
+        "experiment_id": "qwen-layer-compat-001",
+        "section": "qwen_layer_candidates",
+        "manifest": ROOT / "experiments" / "qwen-layer-compat-001" / "layer_manifest.json",
+        "generation_manifest": ROOT / "experiments" / "qwen-layer-compat-001" / "part_generation_manifest.json",
+        "gate": "Qwen layered output is evaluated as PSD/PNG candidate evidence, not production success.",
+    },
+    {
+        "experiment_id": "vtuber2d-ai-compat-001",
+        "section": "vtuber2d_ai_candidates",
+        "manifest": ROOT / "experiments" / "vtuber2d-ai-compat-001" / "layer_manifest.json",
+        "generation_manifest": ROOT / "experiments" / "vtuber2d-ai-compat-001" / "part_generation_manifest.json",
+        "gate": "VTuber2D.AI output is external reference evidence until licensing, layer purity, and Cubism import are reviewed.",
+    },
+]
 
 
 PART_RULES: dict[str, dict[str, Any]] = {
@@ -242,6 +292,18 @@ PART_RULES: dict[str, dict[str, Any]] = {
         "allowed_features": ["gold ornaments only"],
         "forbidden_contamination": ["choker", "clothes", "skin", "hair"],
     },
+    "L_arm": {
+        "ko_name": "왼쪽 팔",
+        "group": "body",
+        "allowed_features": ["left arm, sleeve, or visible arm-side silhouette only"],
+        "forbidden_contamination": ["face", "hair", "right_arm", "background"],
+    },
+    "R_arm": {
+        "ko_name": "오른쪽 팔",
+        "group": "body",
+        "allowed_features": ["right arm, sleeve, or visible arm-side silhouette only"],
+        "forbidden_contamination": ["face", "hair", "left_arm", "background"],
+    },
 }
 
 
@@ -270,6 +332,13 @@ ISSUE_TAGS = [
     "semantic_too_coarse",
     "depth_order_wrong",
 ]
+
+TRIAGE_PRIORITY = {
+    "REVIEW_PRIORITY": 0,
+    "REVIEW_HIGH_RISK": 1,
+    "REFERENCE_REVIEW": 2,
+    "X_CANDIDATE_EMPTY": 3,
+}
 
 
 def rel(path: str | Path | None) -> str | None:
@@ -347,11 +416,22 @@ def build_item(layer: dict[str, Any], section: str) -> dict[str, Any]:
             ["production layer pixels", "guide overlay pixels"],
         ),
         "suggested_generation_mode": suggested_mode(layer, section),
+        "triage_status": layer.get("triage_status"),
+        "triage_notes": layer.get("triage_notes", []),
+        "production_candidate": bool(layer.get("production_candidate", layer.get("status") == "OBSERVED")),
     }
 
 
 def suggested_mode(layer: dict[str, Any], section: str) -> str:
-    if section == "seethrough_candidates":
+    if section in {
+        "seethrough_candidates",
+        "mps_compat_candidates",
+        "imagen_live2d_candidates",
+        "mini_cubism_dedicated_candidates",
+        "layerdivider_candidates",
+        "qwen_layer_candidates",
+        "vtuber2d_ai_candidates",
+    }:
         return "seethrough_cleanup_or_schema_remap"
     if section in {"reference_mouth", "reference_blink"}:
         return "reference_regeneration"
@@ -384,7 +464,46 @@ def build_generation_targets(items: list[dict[str, Any]]) -> list[dict[str, Any]
     return targets
 
 
+def enrich_triage_items(items: list[dict[str, Any]], experiment_id: str) -> None:
+    triage_path = ROOT / "experiments" / experiment_id / "reports" / "mps_candidate_triage_report.json"
+    if not triage_path.exists():
+        return
+    triage = json.loads(triage_path.read_text())
+    triage_by_name = {item["layer_name"]: item for item in triage.get("items", [])}
+    for item in items:
+        source = triage_by_name.get(item["part_id"])
+        if not source:
+            continue
+        item["triage_status"] = source.get("triage_status")
+        item["triage_notes"] = source.get("triage_notes", [])
+        item["production_candidate"] = bool(source.get("production_candidate"))
+        item["practical_gate_target"] = "practical_gate_target" in item["triage_notes"]
+    items.sort(
+        key=lambda item: (
+            TRIAGE_PRIORITY.get(item.get("triage_status"), 9),
+            0 if item.get("practical_gate_target") else 1,
+            item.get("group") or "",
+            item["part_id"],
+        )
+    )
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Build the local part-purity review manifest.")
+    parser.add_argument(
+        "--mps-only",
+        action="store_true",
+        help="Build a focused Mac MPS See-through review manifest instead of the full legacy review surface.",
+    )
+    parser.add_argument(
+        "--experiment-id",
+        help="Build a focused layer-decomposition review manifest for one experiment, e.g. imagen-live2d-001.",
+    )
+    return parser.parse_args()
+
+
 def main() -> int:
+    args = parse_args()
     source = json.loads(SOURCE_MANIFEST.read_text())
     layers = source["layers"]
 
@@ -440,23 +559,71 @@ def main() -> int:
             for layer in concept_source.get("layers", [])
         ]
 
-    if SEETHROUGH_MANIFEST.exists():
-        seethrough_source = json.loads(SEETHROUGH_MANIFEST.read_text())
-        sections["seethrough_candidates"] = [
-            build_item(layer, "seethrough_candidates")
-            for layer in seethrough_source.get("layers", [])
-        ]
+    layer_decomp_items_by_experiment: dict[str, list[dict[str, Any]]] = {}
+    for experiment in LAYER_DECOMP_EXPERIMENTS:
+        manifest_path = experiment["manifest"]
+        if not manifest_path.exists():
+            continue
+        source = json.loads(manifest_path.read_text())
+        section = experiment["section"]
+        sections[section] = [build_item(layer, section) for layer in source.get("layers", [])]
+        if section in {"mps_compat_candidates", "mini_cubism_dedicated_candidates"}:
+            enrich_triage_items(sections[section], experiment["experiment_id"])
+        layer_decomp_items_by_experiment[experiment["experiment_id"]] = sections[section]
+
+    focus_experiment = args.experiment_id or ("see-through-mps-compat-002" if args.mps_only else None)
+    mode = "mps_only" if args.mps_only else ("experiment_only" if focus_experiment else "full")
+    focused_config = None
+    if focus_experiment:
+        focused_config = next((experiment for experiment in LAYER_DECOMP_EXPERIMENTS if experiment["experiment_id"] == focus_experiment), None)
+        if not focused_config:
+            raise SystemExit(f"FAIL: unknown experiment-id: {focus_experiment}")
+        focused_items = sections.get(focused_config["section"])
+        if not focused_items:
+            raise SystemExit(f"FAIL: {focus_experiment} layer manifest is missing")
+        sections = {focused_config["section"]: focused_items}
+        layer_decomp_items_by_experiment = {focus_experiment: focused_items}
 
     all_items = [item for values in sections.values() for item in values]
     manifest = {
         "schema_version": 1,
-        "experiment_id": "part-purity-001",
+        "experiment_id": focus_experiment or "part-purity-001",
+        "mode": mode,
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source_layer_manifest": rel(SOURCE_MANIFEST),
         "source_schema_doc": rel(SCHEMA_DOC),
         "review_outputs": {
-            "part_visual_review": "experiments/part-purity-001/reports/part_visual_review.json",
-            "ai_fix_queue": "experiments/part-purity-001/reports/ai_fix_queue.json",
+            "part_visual_review": (
+                f"experiments/{focus_experiment}/reports/part_visual_review.json"
+                if focus_experiment
+                else "experiments/part-purity-001/reports/part_visual_review.json"
+            ),
+            "ai_fix_queue": (
+                f"experiments/{focus_experiment}/reports/ai_fix_queue.json"
+                if focus_experiment
+                else "experiments/part-purity-001/reports/ai_fix_queue.json"
+            ),
+        },
+        "ui": {
+            "title": "Imagen Live2D 후보 검수"
+            if focus_experiment == "imagen-live2d-001"
+            else ("Mini Cubism 전용 모델 레이어 후보 검수" if focus_experiment == "mini-cubism-dedicated-model-v1-001" else "Mac MPS See-through 후보 검수"),
+            "subtitle": "Imagen canonical에서 분해한 후보를 보고, O 저장 시 PSD 후보에 자동 반영합니다."
+            if focus_experiment == "imagen-live2d-001"
+            else (
+                "전용 canonical에서 분해한 후보를 보고, 73-part taxonomy 매핑 전 후보 품질만 판정합니다."
+                if focus_experiment == "mini-cubism-dedicated-model-v1-001"
+                else "640 MPS 후보와 cleanup 후보를 보고, O 저장 시 PSD 후보에 자동 반영합니다."
+            ),
+            "primary_section": focused_config["section"] if focused_config else "mps_compat_candidates",
+            "practical_gate_target": 5,
+            "contact_sheet": f"/assets/experiments/{focus_experiment}/reports/mps_candidate_contact_sheet.png",
+        }
+        if focus_experiment
+        else {
+            "title": "Live2D 파츠 순도 검수",
+            "subtitle": "PSD용 파츠와 입/눈 참고 이미지를 분리해서 보고, O/X/수정 판정을 저장합니다.",
+            "primary_section": "production_parts",
         },
         "issue_tags": ISSUE_TAGS,
         "sections": sections,
@@ -466,58 +633,67 @@ def main() -> int:
     OUT_MANIFEST.parent.mkdir(parents=True, exist_ok=True)
     OUT_MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
 
-    PART_GENERATION_MANIFEST.parent.mkdir(parents=True, exist_ok=True)
-    part_purity_items = [item for item in all_items if item.get("experiment_id") != "concept-regeneration-001"]
-    generation_manifest = {
-        "schema_version": 1,
-        "experiment_id": "part-purity-001",
-        "generated_at": manifest["generated_at"],
-        "source_review_manifest": "review_app/review_manifest.json",
-        "targets": build_generation_targets(part_purity_items),
-    }
-    PART_GENERATION_MANIFEST.write_text(json.dumps(generation_manifest, ensure_ascii=False, indent=2) + "\n")
+    concept_items = []
+    if not args.mps_only:
+        PART_GENERATION_MANIFEST.parent.mkdir(parents=True, exist_ok=True)
+        part_purity_items = [item for item in all_items if item.get("experiment_id") != "concept-regeneration-001"]
+        generation_manifest = {
+            "schema_version": 1,
+            "experiment_id": "part-purity-001",
+            "generated_at": manifest["generated_at"],
+            "source_review_manifest": "review_app/review_manifest.json",
+            "targets": build_generation_targets(part_purity_items),
+        }
+        PART_GENERATION_MANIFEST.write_text(json.dumps(generation_manifest, ensure_ascii=False, indent=2) + "\n")
 
-    concept_items = [item for item in all_items if item.get("experiment_id") == "concept-regeneration-001"]
-    if concept_items:
-        CONCEPT_GENERATION_MANIFEST.write_text(
+        concept_items = [item for item in all_items if item.get("experiment_id") == "concept-regeneration-001"]
+        if concept_items:
+            CONCEPT_GENERATION_MANIFEST.write_text(
+                json.dumps(
+                    {
+                        "schema_version": 1,
+                        "experiment_id": "concept-regeneration-001",
+                        "generated_at": manifest["generated_at"],
+                        "source_review_manifest": "review_app/review_manifest.json",
+                        "targets": build_generation_targets(concept_items),
+                    },
+                    ensure_ascii=False,
+                    indent=2,
+                )
+                + "\n"
+            )
+
+    written_layer_decomp_manifests = []
+    for experiment in LAYER_DECOMP_EXPERIMENTS:
+        items = layer_decomp_items_by_experiment.get(experiment["experiment_id"], [])
+        if not items:
+            continue
+        generation_manifest_path = experiment["generation_manifest"]
+        generation_manifest_path.parent.mkdir(parents=True, exist_ok=True)
+        generation_manifest_path.write_text(
             json.dumps(
                 {
                     "schema_version": 1,
-                    "experiment_id": "concept-regeneration-001",
+                    "experiment_id": experiment["experiment_id"],
                     "generated_at": manifest["generated_at"],
                     "source_review_manifest": "review_app/review_manifest.json",
-                    "targets": build_generation_targets(concept_items),
+                    "targets": build_generation_targets(items),
+                    "gate": experiment["gate"],
                 },
                 ensure_ascii=False,
                 indent=2,
             )
             + "\n"
         )
-
-    seethrough_items = [item for item in all_items if item.get("experiment_id") == "see-through-layer-decomp-001"]
-    if seethrough_items:
-        SEETHROUGH_GENERATION_MANIFEST.write_text(
-            json.dumps(
-                {
-                    "schema_version": 1,
-                    "experiment_id": "see-through-layer-decomp-001",
-                    "generated_at": manifest["generated_at"],
-                    "source_review_manifest": "review_app/review_manifest.json",
-                    "targets": build_generation_targets(seethrough_items),
-                    "gate": "See-through candidates remain PSD-excluded until human O review and gated PSD rebuild.",
-                },
-                ensure_ascii=False,
-                indent=2,
-            )
-            + "\n"
-        )
+        written_layer_decomp_manifests.append(generation_manifest_path)
 
     print(f"Wrote {OUT_MANIFEST.relative_to(ROOT)}")
-    print(f"Wrote {PART_GENERATION_MANIFEST.relative_to(ROOT)}")
+    if not args.mps_only:
+        print(f"Wrote {PART_GENERATION_MANIFEST.relative_to(ROOT)}")
     if concept_items:
         print(f"Wrote {CONCEPT_GENERATION_MANIFEST.relative_to(ROOT)}")
-    if seethrough_items:
-        print(f"Wrote {SEETHROUGH_GENERATION_MANIFEST.relative_to(ROOT)}")
+    for path in written_layer_decomp_manifests:
+        print(f"Wrote {path.relative_to(ROOT)}")
     print(json.dumps(manifest["counts"], ensure_ascii=False))
     return 0
 

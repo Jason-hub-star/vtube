@@ -4,8 +4,11 @@
 from __future__ import annotations
 
 import argparse
+import base64
 import json
 import mimetypes
+import subprocess
+import sys
 from datetime import datetime, timezone
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -19,6 +22,7 @@ REPORT_DIR = ROOT / "experiments" / "part-purity-001" / "reports"
 REVIEW_PATH = REPORT_DIR / "part_visual_review.json"
 FIX_QUEUE_PATH = REPORT_DIR / "ai_fix_queue.json"
 MANIFEST_PATH = APP_DIR / "review_manifest.json"
+PSD_AUTO_BUILD_EXPERIMENTS = {"see-through-mps-compat-002", "imagen-live2d-001"}
 
 NEGATIVE_PROMPT_HINTS = {
     "hair_mixed": "no hair strands, no bangs, no side hair, no hair shadow",
@@ -64,13 +68,18 @@ def experiment_report_paths(experiment_id: str) -> tuple[Path, Path]:
 
 
 def manifest_experiment_ids() -> list[str]:
-    ids = {"part-purity-001"}
-    for item in manifest_items_by_id().values():
-        ids.add(item.get("experiment_id", "part-purity-001"))
+    manifest = load_manifest()
+    ids = set()
+    if manifest.get("mode") != "mps_only":
+        ids.add("part-purity-001")
+    for section_items in manifest.get("sections", {}).values():
+        for item in section_items:
+            ids.add(item.get("experiment_id", "part-purity-001"))
     return sorted(ids)
 
 
 def load_combined_review() -> dict:
+    visible_ids = set(manifest_items_by_id())
     combined = {
         "schema_version": 1,
         "experiment_id": "combined-review",
@@ -79,16 +88,23 @@ def load_combined_review() -> dict:
     for experiment_id in manifest_experiment_ids():
         review_path, _ = experiment_report_paths(experiment_id)
         review = load_json(review_path, {"reviews": {}})
-        combined["reviews"].update(review.get("reviews", {}))
+        combined["reviews"].update(
+            {
+                part_id: value
+                for part_id, value in review.get("reviews", {}).items()
+                if part_id in visible_ids
+            }
+        )
     return combined
 
 
 def load_combined_fix_queue() -> dict:
+    visible_ids = set(manifest_items_by_id())
     items = []
     for experiment_id in manifest_experiment_ids():
         _, fix_queue_path = experiment_report_paths(experiment_id)
         queue = load_json(fix_queue_path, {"items": []})
-        items.extend(queue.get("items", []))
+        items.extend([item for item in queue.get("items", []) if item.get("part_id") in visible_ids])
     return {
         "schema_version": 1,
         "experiment_id": "combined-review",
@@ -167,6 +183,98 @@ def build_fix_queue(review_doc: dict, experiment_id: str, review_path: Path) -> 
     }
 
 
+def cubism_python() -> str:
+    venv_python = ROOT / ".venv-cubism" / "bin" / "python"
+    return str(venv_python) if venv_python.exists() else sys.executable
+
+
+def auto_build_psd_candidate(experiment_id: str) -> dict | None:
+    if experiment_id not in PSD_AUTO_BUILD_EXPERIMENTS:
+        return None
+    cmd = [
+        cubism_python(),
+        str(ROOT / "scripts" / "build_seethrough_psd_candidate.py"),
+        "--experiment-id",
+        experiment_id,
+    ]
+    completed = subprocess.run(cmd, cwd=ROOT, text=True, capture_output=True, timeout=120)
+    report_path = ROOT / "experiments" / experiment_id / "reports" / "psd_candidate_gate_report.json"
+    report = load_json(report_path, {}) if report_path.exists() else {}
+    return {
+        "experiment_id": experiment_id,
+        "command": cmd,
+        "returncode": completed.returncode,
+        "stdout_tail": completed.stdout[-2000:],
+        "stderr_tail": completed.stderr[-2000:],
+        "status": report.get("status", "BUILD_FAILED" if completed.returncode else "UNKNOWN"),
+        "accepted_layer_count": report.get("accepted_layer_count"),
+        "psd_candidate": report.get("psd_candidate"),
+    }
+
+
+def rebuild_review_manifest_mps() -> dict:
+    cmd = [
+        sys.executable,
+        str(ROOT / "scripts" / "build_review_manifest.py"),
+        "--mps-only",
+    ]
+    completed = subprocess.run(cmd, cwd=ROOT, text=True, capture_output=True, timeout=120)
+    return {
+        "command": cmd,
+        "returncode": completed.returncode,
+        "stdout_tail": completed.stdout[-2000:],
+        "stderr_tail": completed.stderr[-2000:],
+    }
+
+
+def decode_data_url(data_url: str) -> bytes:
+    prefix = "data:image/png;base64,"
+    if not data_url.startswith(prefix):
+        raise ValueError("mask_data_url must be a PNG data URL")
+    return base64.b64decode(data_url.removeprefix(prefix), validate=True)
+
+
+def save_manual_mask(payload: dict) -> dict:
+    part_id = payload.get("part_id")
+    experiment_id = payload.get("experiment_id") or manifest_items_by_id().get(part_id, {}).get("experiment_id")
+    mask_data_url = payload.get("mask_data_url")
+    if not part_id:
+        raise ValueError("part_id is required")
+    if experiment_id != "see-through-mps-compat-002":
+        raise ValueError("manual masks are currently enabled only for see-through-mps-compat-002")
+    if not mask_data_url:
+        raise ValueError("mask_data_url is required")
+
+    mask_dir = ROOT / "experiments" / experiment_id / "manual_masks"
+    mask_dir.mkdir(parents=True, exist_ok=True)
+    safe_part_id = "".join(char if char.isalnum() or char in "._-" else "_" for char in part_id)
+    mask_path = mask_dir / f"{safe_part_id}.png"
+    mask_path.write_bytes(decode_data_url(mask_data_url))
+
+    cmd = [
+        cubism_python(),
+        str(ROOT / "scripts" / "apply_mps_manual_mask.py"),
+        "--experiment-id",
+        experiment_id,
+        "--part-id",
+        part_id,
+        "--mask-path",
+        str(mask_path),
+    ]
+    completed = subprocess.run(cmd, cwd=ROOT, text=True, capture_output=True, timeout=120)
+    if completed.returncode != 0:
+        raise RuntimeError(completed.stderr.strip() or completed.stdout.strip() or "manual mask apply failed")
+    apply_result = json.loads(completed.stdout)
+    manifest_build = rebuild_review_manifest_mps()
+    if manifest_build["returncode"] != 0:
+        raise RuntimeError(manifest_build["stderr_tail"] or manifest_build["stdout_tail"] or "manifest rebuild failed")
+    return {
+        "ok": True,
+        "manual_mask": apply_result,
+        "manifest_build": manifest_build,
+    }
+
+
 def save_experiment_review(experiment_id: str, incoming: dict) -> dict:
     review_path, fix_queue_path = experiment_report_paths(experiment_id)
     review_path.parent.mkdir(parents=True, exist_ok=True)
@@ -189,15 +297,20 @@ def save_experiment_review(experiment_id: str, incoming: dict) -> dict:
         "source_manifest": "review_app/review_manifest.json",
         "reviews": reviews,
     }
+    for metadata_key in ["review_session", "note"]:
+        if metadata_key in existing:
+            review_doc[metadata_key] = existing[metadata_key]
     review_path.write_text(json.dumps(review_doc, ensure_ascii=False, indent=2) + "\n")
     fix_queue = build_fix_queue(review_doc, experiment_id, review_path)
     fix_queue_path.write_text(json.dumps(fix_queue, ensure_ascii=False, indent=2) + "\n")
+    psd_candidate_build = auto_build_psd_candidate(experiment_id)
     return {
         "experiment_id": experiment_id,
         "review_path": str(review_path.relative_to(ROOT)),
         "fix_queue_path": str(fix_queue_path.relative_to(ROOT)),
         "review_count": len(reviews),
         "fix_queue_count": len(fix_queue["items"]),
+        "psd_candidate_build": psd_candidate_build,
     }
 
 
@@ -261,13 +374,13 @@ class ReviewHandler(BaseHTTPRequestHandler):
 
     def do_POST(self) -> None:
         parsed = urlparse(self.path)
-        if parsed.path != "/api/save-review":
+        if parsed.path not in {"/api/save-review", "/api/save-mask"}:
             self.send_error(HTTPStatus.NOT_FOUND)
             return
         try:
             length = int(self.headers.get("Content-Length", "0"))
             payload = json.loads(self.rfile.read(length) or b"{}")
-            result = save_review(payload)
+            result = save_manual_mask(payload) if parsed.path == "/api/save-mask" else save_review(payload)
         except Exception as exc:  # noqa: BLE001
             self.send_json({"ok": False, "error": str(exc)}, status=HTTPStatus.BAD_REQUEST)
             return
