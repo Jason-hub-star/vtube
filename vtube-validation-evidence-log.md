@@ -3,6 +3,15 @@
 작성일: 2026-06-02
 최신 정리일: 2026-06-10
 
+## 2026-06-11 CHAIN-001 — 뒷머리·목·몸 체인 개선 (strong20 공식 구조 이식)
+
+- 주인님 발견: 뒷머리가 머리를 안 따라감(물리 찰랑임만), 몸 스웨이 시 머리-몸 분리감. 실측: back_hair_warp가 root 자식 + Angle/HairBack 바인딩 0개.
+- strong20 재분석 (haru_greeter/haruto 디포머 체인 실측): ① 뒷머리 = 얼굴 체인 자식(後ろ髪の曲面 ← AngleX/Y) → AngleZ 워프 → 揺れ 워프(ParamHairBack, 물리 구동) ② 머리가 몸 체인 위에 중첩(首の位置 ← BodyAngleX가 얼굴 전체 운반) ③ 목 ← AngleZ(首の曲面) ④ 물리 출력 1위 = body_angle 123개.
+- 이식 (`build_autorig_rig_v0.py`): **upper_warp 신설**(首の位置 등가 — 비고정 3x3, head∪neck∪back_hair 경계; head_angle_warp가 edge-pin 의사3D라 몸 추종 직접 바인딩 불가 → 상위 워프로 통째 탑승) + head/back_hair 부모를 upper로, neck의 BodyAngle/Breath 바인딩 제거(이중 적용 방지) + neck AngleZ ±3 + back_hair 감쇠 추종(AngleX ±13=60%·AngleY ±7·AngleZ ±5, 핀 해제 — 하단 스윕은 몸 뒤 draw order라 안전, pivot=head) + ParamHairBack ±10 신설 + HairFront 음수 키 보강.
+- 파이프라인 갭 봉합: 원커맨드 P3에 split_neck_skin 스테이지 + P4 --neck-split-dir (H2 수동 추가분이 파이프라인에 없어 003 최종 상태 재현 불가였음).
+- 검증: validator PASS, mesh verify canvas·pixi 5/5, 수치 스모크 — AngleX=30 뒷머리 실루엣 변화 0→27.7, BodyAngleX=10 얼굴 변화 0→9.75(탑승), HairBack=1 뒷머리 43.6/얼굴 2.1. eye cover 설정 리빌드 보존 확인.
+- 교훈: **부위가 안 움직이면 디포머 "부모 체인"부터 본다 — 바인딩이 아니라 소속이 끊긴 것일 수 있다.** edge-pin 워프엔 전역 이동 바인딩을 직접 넣지 말고 비고정 상위 워프를 끼운다.
+
 ## 2026-06-11 입 패치 V선 사건 — 생성 셀의 얼굴 윤곽 스트로크, 연결성분 분리로 해결
 
 - 증상 (주인님 보고): 입을 벌리면 턱에 V 모양 선. canvas/pixi 양 백엔드 비교로 렌더러 무관 = 소재 확정. 닫힘/벌림 픽셀 차이맵으로 V 픽셀 좌표 추출 → 입 상태 패치 알파 내부로 특정.

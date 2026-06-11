@@ -323,19 +323,33 @@ def main() -> int:
         print(f"[경고] 명명 규칙 미매칭 → body_warp 폴백: {unmatched_parts} (deformer_of 패턴 확인 필요)")
 
     neck_bounds = pad_bounds(union_bbox("neck", "neck_skin", "choker", "neck_under"), 30)
+    # CHAIN-001: 공식 "首の位置" 등가 — 머리·목·뒷머리가 몸 스웨이에 통째로 탑승하는 비고정 상위 워프.
+    # head_angle_warp는 edge-pin(의사3D)이라 몸 추종을 직접 바인딩하면 윤곽이 안 움직인다.
+    def union_bounds(*bs):
+        x0 = min(b[0] for b in bs)
+        y0 = min(b[1] for b in bs)
+        x1 = max(b[0] + b[2] for b in bs)
+        y1 = max(b[1] + b[3] for b in bs)
+        return [x0, y0, x1 - x0, y1 - y0]
+
+    upper_bounds = pad_bounds(union_bounds(head_bounds, neck_bounds, back_hair_bounds), 40)
     deformers = [
         # lattice/edge_pinned: FFD 격자 (공식 워프 메커니즘). edge_pinned=경계 연결, false=전역 이동.
         {"id": "root_warp", "type": "warp", "parent_id": None, "child_ids": children.get("root_warp", []), "bounds": [0, 0, CANVAS, CANVAS], "pivot": [1024, 1024], "lattice": {"cols": 3, "rows": 3}, "edge_pinned": False},
         {"id": "body_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("body_warp", []), "bounds": body_bounds, "pivot": center(body_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
-        {"id": "head_angle_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("head_angle_warp", []), "bounds": head_bounds, "pivot": center(head_bounds), "lattice": {"cols": 7, "rows": 7}, "edge_pinned": True},
+        {"id": "upper_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("upper_warp", []), "bounds": upper_bounds, "pivot": center(upper_bounds), "lattice": {"cols": 3, "rows": 3}, "edge_pinned": False},
+        {"id": "head_angle_warp", "type": "warp", "parent_id": "upper_warp", "child_ids": children.get("head_angle_warp", []), "bounds": head_bounds, "pivot": center(head_bounds), "lattice": {"cols": 7, "rows": 7}, "edge_pinned": True},
         # 목 = head 자식 (머리 격자 페이드 → 위는 머리, 아래로 갈수록 감쇠하는 그라데이션)
-        # + 몸 추종은 자체 바인딩으로 보충 (BodyAngle/Breath — body 체인에서 빠진 몫)
+        # 몸 추종은 upper_warp 상속 (자체 BodyAngle 바인딩은 이중 적용이라 제거 — CHAIN-001)
         {"id": "neck_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("neck_warp", []), "bounds": neck_bounds, "pivot": center(neck_bounds), "lattice": {"cols": 5, "rows": 6}, "pin_edges": ["bottom", "left", "right"]},
         {"id": "eye_L_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("eye_L_warp", []), "bounds": eye_l_bounds, "pivot": center(eye_l_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
         {"id": "eye_R_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("eye_R_warp", []), "bounds": eye_r_bounds, "pivot": center(eye_r_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
         {"id": "mouth_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("mouth_warp", []), "bounds": mouth_bounds, "pivot": center(mouth_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
         {"id": "front_hair_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("front_hair_warp", []), "bounds": hair_bounds, "pivot": center(hair_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
-        {"id": "back_hair_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("back_hair_warp", []), "bounds": back_hair_bounds, "pivot": center(back_hair_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
+        # 뒷머리 = upper 자식 + 통짜 머리 감쇠 추종 (공식: 後ろ髪の曲面 ← AngleX/Y, 얼굴 체인 소속).
+        # 실루엣이 움직여야 체감이라 핀 해제 — 하단 스윕은 몸 뒤 draw order라 안전.
+        # pivot은 head 피벗: AngleZ 회전 호가 목을 중심으로 그려진다.
+        {"id": "back_hair_warp", "type": "warp", "parent_id": "upper_warp", "child_ids": children.get("back_hair_warp", []), "bounds": back_hair_bounds, "pivot": center(head_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": False},
     ]
 
     parameters = [
@@ -352,6 +366,7 @@ def main() -> int:
         {"id": "ParamBrowLY", "min": -1, "max": 1, "default": 0, "key_values": [-1, 0, 1]},
         {"id": "ParamBrowRY", "min": -1, "max": 1, "default": 0, "key_values": [-1, 0, 1]},
         {"id": "ParamHairFront", "min": -1, "max": 1, "default": 0, "key_values": [-1, 0, 1]},
+        {"id": "ParamHairBack", "min": -1, "max": 1, "default": 0, "key_values": [-1, 0, 1]},
         {"id": "ParamMouthOpenY", "min": 0, "max": 0.85, "default": 0.0, "key_values": [0, 0.5, 0.85]},
     ]
 
@@ -369,18 +384,31 @@ def main() -> int:
         binding("ParamAngleX", 30, "head_angle_warp", tx=22),
         binding("ParamAngleY", -30, "head_angle_warp", ty=-12),
         binding("ParamAngleY", 30, "head_angle_warp", ty=12),
-        # 목 자체 바인딩: 머리 35% 기본 추종 + 몸 추종 복제 (head 체인이라 body 몫을 직접 받는다)
+        # 목 자체 바인딩: 머리 미세 추종 (몸 추종은 upper_warp 상속 — CHAIN-001에서 이중 적용 제거)
         binding("ParamAngleX", -30, "neck_warp", tx=-5),
         binding("ParamAngleX", 30, "neck_warp", tx=5),
         binding("ParamAngleY", -30, "neck_warp", ty=-3),
         binding("ParamAngleY", 30, "neck_warp", ty=3),
-        binding("ParamBodyAngleX", -10, "neck_warp", tx=-8),
-        binding("ParamBodyAngleX", 10, "neck_warp", tx=8),
-        binding("ParamBodyAngleY", -10, "neck_warp", ty=-5),
-        binding("ParamBodyAngleY", 10, "neck_warp", ty=5),
-        binding("ParamBreath", 1, "neck_warp", ty=-2),
+        binding_r("ParamAngleZ", -30, "neck_warp", rotate=-3),  # 공식 首の曲面: 갸우뚱 목 동조
+        binding_r("ParamAngleZ", 30, "neck_warp", rotate=3),
         binding_r("ParamAngleZ", -30, "head_angle_warp", rotate=-10),
         binding_r("ParamAngleZ", 30, "head_angle_warp", rotate=10),
+        # CHAIN-001 upper_warp = 공식 首の位置: 몸 스웨이·호흡이 머리·목·뒷머리를 통째로 운반
+        # (진폭은 body_warp와 동일 — 목 경계 상대 슬립 0)
+        binding("ParamBodyAngleX", -10, "upper_warp", tx=-8),
+        binding("ParamBodyAngleX", 10, "upper_warp", tx=8),
+        binding("ParamBodyAngleY", -10, "upper_warp", ty=-5),
+        binding("ParamBodyAngleY", 10, "upper_warp", ty=5),
+        binding("ParamBreath", 1, "upper_warp", ty=-2),
+        # CHAIN-001 뒷머리 감쇠 추종 (head ±22의 60%) + 갸우뚱 호 + 흔들림 파라미터
+        binding("ParamAngleX", -30, "back_hair_warp", tx=-13),
+        binding("ParamAngleX", 30, "back_hair_warp", tx=13),
+        binding("ParamAngleY", -30, "back_hair_warp", ty=-7),
+        binding("ParamAngleY", 30, "back_hair_warp", ty=7),
+        binding_r("ParamAngleZ", -30, "back_hair_warp", rotate=-5),
+        binding_r("ParamAngleZ", 30, "back_hair_warp", rotate=5),
+        binding("ParamHairBack", -1, "back_hair_warp", tx=-10),
+        binding("ParamHairBack", 1, "back_hair_warp", tx=10),
         binding_r("ParamBodyAngleX", -10, "body_warp", tx=-8, rotate=-1.2),
         binding_r("ParamBodyAngleX", 10, "body_warp", tx=8, rotate=1.2),
         binding("ParamBodyAngleY", -10, "body_warp", ty=-5),
@@ -401,6 +429,7 @@ def main() -> int:
         # 깜빡임 형태는 ARAP 패치가 담당, 워프는 미세 눌림만 (validator: 파라미터당 바인딩 필수)
         binding("ParamEyeLOpen", 0.27, "eye_L_warp", sy=0.97),
         binding("ParamEyeROpen", 0.27, "eye_R_warp", sy=0.97),
+        binding("ParamHairFront", -1, "front_hair_warp", tx=-10),  # 음수 키 부재 시 -1쪽이 무동작이었다 (CHAIN-001 정비)
         binding("ParamHairFront", 1, "front_hair_warp", tx=10),
         binding("ParamMouthOpenY", 0.5, "mouth_warp", ty=0.8, sy=1.01),
         binding("ParamMouthOpenY", 0.85, "mouth_warp", ty=1.6, sy=1.02),

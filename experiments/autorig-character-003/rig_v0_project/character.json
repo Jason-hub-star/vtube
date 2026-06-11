@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project_kind": "mini_cubism_v0",
   "experiment_id": "autorig-rig-v0",
-  "generated_at": "2026-06-10T17:51:30.347180+00:00",
+  "generated_at": "2026-06-11T05:23:47.837807+00:00",
   "source_selection": {
     "visible_layers": "experiments/autorig-character-003/seethrough_true_reskinned/reskin_manifest.json",
     "hidden_layers": [
@@ -278,12 +278,12 @@
       "source_path": "parts/mouth_state_small.png",
       "original_source_path": "experiments/autorig-character-003/mouth_states/mouth_state_small.png",
       "bbox": [
-        910,
+        978,
         865,
-        222,
-        112
+        85,
+        33
       ],
-      "alpha_coverage": 0.004249,
+      "alpha_coverage": 0.000667,
       "draw_order": 412,
       "folder": "Mouth",
       "deformer_node": "mouth_warp"
@@ -294,12 +294,12 @@
       "source_path": "parts/mouth_state_mid.png",
       "original_source_path": "experiments/autorig-character-003/mouth_states/mouth_state_mid.png",
       "bbox": [
-        910,
+        975,
         864,
-        222,
-        113
+        91,
+        42
       ],
-      "alpha_coverage": 0.004291,
+      "alpha_coverage": 0.000909,
       "draw_order": 414,
       "folder": "Mouth",
       "deformer_node": "mouth_warp"
@@ -326,12 +326,12 @@
       "source_path": "parts/mouth_state_wide.png",
       "original_source_path": "experiments/autorig-character-003/mouth_states/mouth_state_wide.png",
       "bbox": [
-        910,
+        972,
         849,
-        222,
-        128
+        95,
+        81
       ],
-      "alpha_coverage": 0.005094,
+      "alpha_coverage": 0.001829,
       "draw_order": 416,
       "folder": "Mouth",
       "deformer_node": "mouth_warp"
@@ -8813,84 +8813,84 @@
       "part_id": "mouth_state_small",
       "vertices": [
         [
-          910.0,
+          978.0,
           865.0
         ],
         [
-          965.5,
+          999.2,
           865.0
         ],
         [
-          1021.0,
+          1020.5,
           865.0
         ],
         [
-          1076.5,
+          1041.8,
           865.0
         ],
         [
-          1132.0,
+          1063.0,
           865.0
         ],
         [
-          910.0,
-          902.3
+          978.0,
+          876.0
         ],
         [
-          965.5,
-          902.3
+          999.2,
+          876.0
         ],
         [
-          1021.0,
-          902.3
+          1020.5,
+          876.0
         ],
         [
-          1076.5,
-          902.3
+          1041.8,
+          876.0
         ],
         [
-          1132.0,
-          902.3
+          1063.0,
+          876.0
         ],
         [
-          910.0,
-          939.7
+          978.0,
+          887.0
         ],
         [
-          965.5,
-          939.7
+          999.2,
+          887.0
         ],
         [
-          1021.0,
-          939.7
+          1020.5,
+          887.0
         ],
         [
-          1076.5,
-          939.7
+          1041.8,
+          887.0
         ],
         [
-          1132.0,
-          939.7
+          1063.0,
+          887.0
         ],
         [
-          910.0,
-          977.0
+          978.0,
+          898.0
         ],
         [
-          965.5,
-          977.0
+          999.2,
+          898.0
         ],
         [
-          1021.0,
-          977.0
+          1020.5,
+          898.0
         ],
         [
-          1076.5,
-          977.0
+          1041.8,
+          898.0
         ],
         [
-          1132.0,
-          977.0
+          1063.0,
+          898.0
         ]
       ],
       "triangles": [
@@ -9017,84 +9017,84 @@
       ],
       "uvs": [
         [
-          0.444336,
+          0.477539,
           0.422363
         ],
         [
-          0.471436,
+          0.487891,
           0.422363
         ],
         [
-          0.498535,
+          0.498291,
           0.422363
         ],
         [
-          0.525635,
+          0.508691,
           0.422363
         ],
         [
-          0.552734,
+          0.519043,
           0.422363
         ],
         [
-          0.444336,
-          0.440576
+          0.477539,
+          0.427734
         ],
         [
-          0.471436,
-          0.440576
+          0.487891,
+          0.427734
         ],
         [
-          0.498535,
-          0.440576
+          0.498291,
+          0.427734
         ],
         [
-          0.525635,
-          0.440576
+          0.508691,
+          0.427734
         ],
         [
-          0.552734,
-          0.440576
+          0.519043,
+          0.427734
         ],
         [
-          0.444336,
-          0.458838
+          0.477539,
+          0.433105
         ],
         [
-          0.471436,
-          0.458838
+          0.487891,
+          0.433105
         ],
         [
-          0.498535,
-          0.458838
+          0.498291,
+          0.433105
         ],
         [
-          0.525635,
-          0.458838
+          0.508691,
+          0.433105
         ],
         [
-          0.552734,
-          0.458838
+          0.519043,
+          0.433105
         ],
         [
-          0.444336,
-          0.477051
+          0.477539,
+          0.438477
         ],
         [
-          0.471436,
-          0.477051
+          0.487891,
+          0.438477
         ],
         [
-          0.498535,
-          0.477051
+          0.498291,
+          0.438477
         ],
         [
-          0.525635,
-          0.477051
+          0.508691,
+          0.438477
         ],
         [
-          0.552734,
-          0.477051
+          0.519043,
+          0.438477
         ]
       ],
       "mesh_path": "meshes/mouth_state_small.json"
@@ -9103,84 +9103,84 @@
       "part_id": "mouth_state_mid",
       "vertices": [
         [
-          910.0,
+          975.0,
           864.0
         ],
         [
-          965.5,
+          997.8,
           864.0
         ],
         [
-          1021.0,
+          1020.5,
           864.0
         ],
         [
-          1076.5,
+          1043.2,
           864.0
         ],
         [
-          1132.0,
+          1066.0,
           864.0
         ],
         [
-          910.0,
-          901.7
+          975.0,
+          878.0
         ],
         [
-          965.5,
-          901.7
+          997.8,
+          878.0
         ],
         [
-          1021.0,
-          901.7
+          1020.5,
+          878.0
         ],
         [
-          1076.5,
-          901.7
+          1043.2,
+          878.0
         ],
         [
-          1132.0,
-          901.7
+          1066.0,
+          878.0
         ],
         [
-          910.0,
-          939.3
+          975.0,
+          892.0
         ],
         [
-          965.5,
-          939.3
+          997.8,
+          892.0
         ],
         [
-          1021.0,
-          939.3
+          1020.5,
+          892.0
         ],
         [
-          1076.5,
-          939.3
+          1043.2,
+          892.0
         ],
         [
-          1132.0,
-          939.3
+          1066.0,
+          892.0
         ],
         [
-          910.0,
-          977.0
+          975.0,
+          906.0
         ],
         [
-          965.5,
-          977.0
+          997.8,
+          906.0
         ],
         [
-          1021.0,
-          977.0
+          1020.5,
+          906.0
         ],
         [
-          1076.5,
-          977.0
+          1043.2,
+          906.0
         ],
         [
-          1132.0,
-          977.0
+          1066.0,
+          906.0
         ]
       ],
       "triangles": [
@@ -9307,84 +9307,84 @@
       ],
       "uvs": [
         [
-          0.444336,
+          0.476074,
           0.421875
         ],
         [
-          0.471436,
+          0.487207,
           0.421875
         ],
         [
-          0.498535,
+          0.498291,
           0.421875
         ],
         [
-          0.525635,
+          0.509375,
           0.421875
         ],
         [
-          0.552734,
+          0.520508,
           0.421875
         ],
         [
-          0.444336,
-          0.440283
+          0.476074,
+          0.428711
         ],
         [
-          0.471436,
-          0.440283
+          0.487207,
+          0.428711
         ],
         [
-          0.498535,
-          0.440283
+          0.498291,
+          0.428711
         ],
         [
-          0.525635,
-          0.440283
+          0.509375,
+          0.428711
         ],
         [
-          0.552734,
-          0.440283
+          0.520508,
+          0.428711
         ],
         [
-          0.444336,
-          0.458643
+          0.476074,
+          0.435547
         ],
         [
-          0.471436,
-          0.458643
+          0.487207,
+          0.435547
         ],
         [
-          0.498535,
-          0.458643
+          0.498291,
+          0.435547
         ],
         [
-          0.525635,
-          0.458643
+          0.509375,
+          0.435547
         ],
         [
-          0.552734,
-          0.458643
+          0.520508,
+          0.435547
         ],
         [
-          0.444336,
-          0.477051
+          0.476074,
+          0.442383
         ],
         [
-          0.471436,
-          0.477051
+          0.487207,
+          0.442383
         ],
         [
-          0.498535,
-          0.477051
+          0.498291,
+          0.442383
         ],
         [
-          0.525635,
-          0.477051
+          0.509375,
+          0.442383
         ],
         [
-          0.552734,
-          0.477051
+          0.520508,
+          0.442383
         ]
       ],
       "mesh_path": "meshes/mouth_state_mid.json"
@@ -9683,84 +9683,84 @@
       "part_id": "mouth_state_wide",
       "vertices": [
         [
-          910.0,
+          972.0,
           849.0
         ],
         [
-          965.5,
+          995.8,
           849.0
         ],
         [
-          1021.0,
+          1019.5,
           849.0
         ],
         [
-          1076.5,
+          1043.2,
           849.0
         ],
         [
-          1132.0,
+          1067.0,
           849.0
         ],
         [
-          910.0,
-          891.7
+          972.0,
+          876.0
         ],
         [
-          965.5,
-          891.7
+          995.8,
+          876.0
         ],
         [
-          1021.0,
-          891.7
+          1019.5,
+          876.0
         ],
         [
-          1076.5,
-          891.7
+          1043.2,
+          876.0
         ],
         [
-          1132.0,
-          891.7
+          1067.0,
+          876.0
         ],
         [
-          910.0,
-          934.3
+          972.0,
+          903.0
         ],
         [
-          965.5,
-          934.3
+          995.8,
+          903.0
         ],
         [
-          1021.0,
-          934.3
+          1019.5,
+          903.0
         ],
         [
-          1076.5,
-          934.3
+          1043.2,
+          903.0
         ],
         [
-          1132.0,
-          934.3
+          1067.0,
+          903.0
         ],
         [
-          910.0,
-          977.0
+          972.0,
+          930.0
         ],
         [
-          965.5,
-          977.0
+          995.8,
+          930.0
         ],
         [
-          1021.0,
-          977.0
+          1019.5,
+          930.0
         ],
         [
-          1076.5,
-          977.0
+          1043.2,
+          930.0
         ],
         [
-          1132.0,
-          977.0
+          1067.0,
+          930.0
         ]
       ],
       "triangles": [
@@ -9887,84 +9887,84 @@
       ],
       "uvs": [
         [
-          0.444336,
+          0.474609,
           0.414551
         ],
         [
-          0.471436,
+          0.48623,
           0.414551
         ],
         [
-          0.498535,
+          0.497803,
           0.414551
         ],
         [
-          0.525635,
+          0.509375,
           0.414551
         ],
         [
-          0.552734,
+          0.520996,
           0.414551
         ],
         [
-          0.444336,
-          0.4354
+          0.474609,
+          0.427734
         ],
         [
-          0.471436,
-          0.4354
+          0.48623,
+          0.427734
         ],
         [
-          0.498535,
-          0.4354
+          0.497803,
+          0.427734
         ],
         [
-          0.525635,
-          0.4354
+          0.509375,
+          0.427734
         ],
         [
-          0.552734,
-          0.4354
+          0.520996,
+          0.427734
         ],
         [
-          0.444336,
-          0.456201
+          0.474609,
+          0.440918
         ],
         [
-          0.471436,
-          0.456201
+          0.48623,
+          0.440918
         ],
         [
-          0.498535,
-          0.456201
+          0.497803,
+          0.440918
         ],
         [
-          0.525635,
-          0.456201
+          0.509375,
+          0.440918
         ],
         [
-          0.552734,
-          0.456201
+          0.520996,
+          0.440918
         ],
         [
-          0.444336,
-          0.477051
+          0.474609,
+          0.454102
         ],
         [
-          0.471436,
-          0.477051
+          0.48623,
+          0.454102
         ],
         [
-          0.498535,
-          0.477051
+          0.497803,
+          0.454102
         ],
         [
-          0.525635,
-          0.477051
+          0.509375,
+          0.454102
         ],
         [
-          0.552734,
-          0.477051
+          0.520996,
+          0.454102
         ]
       ],
       "mesh_path": "meshes/mouth_state_wide.json"
@@ -16798,9 +16798,30 @@
       "edge_pinned": true
     },
     {
-      "id": "head_angle_warp",
+      "id": "upper_warp",
       "type": "warp",
       "parent_id": "root_warp",
+      "child_ids": [],
+      "bounds": [
+        237,
+        0,
+        1567,
+        2032
+      ],
+      "pivot": [
+        1020,
+        1016
+      ],
+      "lattice": {
+        "cols": 3,
+        "rows": 3
+      },
+      "edge_pinned": false
+    },
+    {
+      "id": "head_angle_warp",
+      "type": "warp",
+      "parent_id": "upper_warp",
       "child_ids": [
         "raw_footwear",
         "raw_legwear",
@@ -16971,7 +16992,7 @@
     {
       "id": "back_hair_warp",
       "type": "warp",
-      "parent_id": "root_warp",
+      "parent_id": "upper_warp",
       "child_ids": [
         "hair_back_L",
         "hair_back_R"
@@ -16983,14 +17004,14 @@
         1992
       ],
       "pivot": [
-        1020,
-        996
+        1022,
+        629
       ],
       "lattice": {
         "cols": 5,
         "rows": 5
       },
-      "edge_pinned": true
+      "edge_pinned": false
     }
   ],
   "parameters": [
@@ -17127,6 +17148,17 @@
     },
     {
       "id": "ParamHairFront",
+      "min": -1,
+      "max": 1,
+      "default": 0,
+      "key_values": [
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "ParamHairBack",
       "min": -1,
       "max": 1,
       "default": 0,
@@ -17294,92 +17326,38 @@
       }
     },
     {
-      "parameter_id": "ParamBodyAngleX",
-      "key_value": -10,
+      "parameter_id": "ParamAngleZ",
+      "key_value": -30,
       "target_id": "neck_warp",
       "delta_type": "deformer_transform",
       "deltas": {
         "translate": [
-          -8,
+          0.0,
           0.0
         ],
         "scale": [
           1.0,
           1.0
         ],
-        "rotate": 0,
+        "rotate": -3,
         "opacity": 1
       }
     },
     {
-      "parameter_id": "ParamBodyAngleX",
-      "key_value": 10,
+      "parameter_id": "ParamAngleZ",
+      "key_value": 30,
       "target_id": "neck_warp",
       "delta_type": "deformer_transform",
       "deltas": {
         "translate": [
-          8,
+          0.0,
           0.0
         ],
         "scale": [
           1.0,
           1.0
         ],
-        "rotate": 0,
-        "opacity": 1
-      }
-    },
-    {
-      "parameter_id": "ParamBodyAngleY",
-      "key_value": -10,
-      "target_id": "neck_warp",
-      "delta_type": "deformer_transform",
-      "deltas": {
-        "translate": [
-          0.0,
-          -5
-        ],
-        "scale": [
-          1.0,
-          1.0
-        ],
-        "rotate": 0,
-        "opacity": 1
-      }
-    },
-    {
-      "parameter_id": "ParamBodyAngleY",
-      "key_value": 10,
-      "target_id": "neck_warp",
-      "delta_type": "deformer_transform",
-      "deltas": {
-        "translate": [
-          0.0,
-          5
-        ],
-        "scale": [
-          1.0,
-          1.0
-        ],
-        "rotate": 0,
-        "opacity": 1
-      }
-    },
-    {
-      "parameter_id": "ParamBreath",
-      "key_value": 1,
-      "target_id": "neck_warp",
-      "delta_type": "deformer_transform",
-      "deltas": {
-        "translate": [
-          0.0,
-          -2
-        ],
-        "scale": [
-          1.0,
-          1.0
-        ],
-        "rotate": 0,
+        "rotate": 3,
         "opacity": 1
       }
     },
@@ -17416,6 +17394,240 @@
           1.0
         ],
         "rotate": 10,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBodyAngleX",
+      "key_value": -10,
+      "target_id": "upper_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          -8,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBodyAngleX",
+      "key_value": 10,
+      "target_id": "upper_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          8,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBodyAngleY",
+      "key_value": -10,
+      "target_id": "upper_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          -5
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBodyAngleY",
+      "key_value": 10,
+      "target_id": "upper_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          5
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBreath",
+      "key_value": 1,
+      "target_id": "upper_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          -2
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleX",
+      "key_value": -30,
+      "target_id": "back_hair_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          -13,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleX",
+      "key_value": 30,
+      "target_id": "back_hair_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          13,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleY",
+      "key_value": -30,
+      "target_id": "back_hair_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          -7
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleY",
+      "key_value": 30,
+      "target_id": "back_hair_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          7
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleZ",
+      "key_value": -30,
+      "target_id": "back_hair_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": -5,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleZ",
+      "key_value": 30,
+      "target_id": "back_hair_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 5,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamHairBack",
+      "key_value": -1,
+      "target_id": "back_hair_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          -10,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamHairBack",
+      "key_value": 1,
+      "target_id": "back_hair_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          10,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
         "opacity": 1
       }
     },
@@ -17756,6 +17968,24 @@
         "scale": [
           1.0,
           0.97
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamHairFront",
+      "key_value": -1,
+      "target_id": "front_hair_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          -10,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
         ],
         "rotate": 0,
         "opacity": 1
