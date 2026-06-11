@@ -378,10 +378,12 @@ def main() -> int:
     head_cy = head_bounds[1] + head_bounds[3] // 2
     if body_bounds[1] > head_cy:
         body_bounds = [body_bounds[0], head_cy, body_bounds[2], body_bounds[3] + (body_bounds[1] - head_cy)]
+    # BODY-SWAY-001 v3: 몸 피벗 = 골반(바닥 중앙) — BodyAngleX/Z 진자 회전의 축
+    body_pivot = [center(body_bounds)[0], body_bounds[1] + body_bounds[3]]
     deformers = [
         # lattice/edge_pinned: FFD 격자 (공식 워프 메커니즘). edge_pinned=경계 연결, false=전역 이동.
         {"id": "root_warp", "type": "warp", "parent_id": None, "child_ids": children.get("root_warp", []), "bounds": [0, 0, CANVAS, CANVAS], "pivot": [1024, 1024], "lattice": {"cols": 3, "rows": 3}, "edge_pinned": False},
-        {"id": "body_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("body_warp", []), "bounds": body_bounds, "pivot": center(body_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
+        {"id": "body_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("body_warp", []), "bounds": body_bounds, "pivot": body_pivot, "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
         {"id": "upper_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("upper_warp", []), "bounds": upper_bounds, "pivot": center(upper_bounds), "lattice": {"cols": 3, "rows": 3}, "edge_pinned": False},
         {"id": "head_angle_warp", "type": "warp", "parent_id": "upper_warp", "child_ids": children.get("head_angle_warp", []), "bounds": head_bounds, "pivot": center(head_bounds), "lattice": {"cols": 7, "rows": 7}, "edge_pinned": True},
         # 목 = head 자식 (머리 격자 페이드 → 위는 머리, 아래로 갈수록 감쇠하는 그라데이션)
@@ -404,15 +406,26 @@ def main() -> int:
     # BODY-SWAY-001 BodyAngleZ 기울기: body는 자기 피벗 회전, 운반 대상(upper·뒷머리)은
     # "그 회전이 자기 높이에 만드는 수평 변위"만큼 균일 tx (X 스웨이의 운반 패턴과 동형 —
     # 부분 겹침 회전을 직접 주면 내부 시어, CHAIN-001 교훈)
-    tilt_rad = math.radians(1.5)
-    body_pivot_y = center(body_bounds)[1]
-    # 등변위 기준점 = 접합부 (목 하단) — CHAIN-001 v3: "목·가슴이 접합부에서 같은 변위로
-    # 만난다". 운반 변위를 머리 높이로 잡으면 접합부에서 회전분과 어긋난다 (참수 사건).
+    # BODY-SWAY-001 v3: 몸 = 골반(바닥 중앙) 피벗 진자 — 골반 0 → 가슴·어깨로 갈수록
+    # 크게 기우는 높이 그라데이션 (균일 평행이동은 유기성 부재 — "종이인형" 판정).
+    # 등변위 기준점 = 접합부(목 하단): X 회전각은 접합부 변위가 정확히 ±8이 되게 역산,
+    # 운반(upper/back_hair)은 그 ±8을 균일 tx로 — 접합부 일치가 구조적으로 보장된다.
     junction_y = neck_bounds[1] + neck_bounds[3]
-    dx_carry = round((body_pivot_y - junction_y) * math.sin(tilt_rad), 1)
+    # 접합부 실효 변위로 각도 역산: body 격자는 edge-pin이라 접합부 변위가
+    # "핀 행(0)과 내부 행(풀 회전 변위) 사이 보간"이다 — 이 보간 계수까지 넣어 정확히 ±8.
+    row_ys = [body_bounds[1] + body_bounds[3] * i / 4 for i in range(5)]
+    seg = next(i for i in range(4) if row_ys[i] <= junction_y <= row_ys[i + 1])
+    frac = (junction_y - row_ys[seg]) / max(row_ys[seg + 1] - row_ys[seg], 1)
+    arm_of = lambda i: 0.0 if i in (0, 4) else body_pivot[1] - row_ys[i]  # noqa: E731 — 핀 행은 변위 0
+    eff_arm = max(arm_of(seg) * (1 - frac) + arm_of(seg + 1) * frac, 1.0)
+    sway_deg = round(math.degrees(math.asin(min(8 / eff_arm, 0.5))), 2)
+    tilt_deg = 1.5
+    dx_carry = round(eff_arm * math.sin(math.radians(tilt_deg)), 1)
     keyform_bindings += [
-        binding_r("ParamBodyAngleZ", -10, "body_warp", rotate=-1.5),
-        binding_r("ParamBodyAngleZ", 10, "body_warp", rotate=1.5),
+        binding_r("ParamBodyAngleX", -10, "body_warp", rotate=-sway_deg),
+        binding_r("ParamBodyAngleX", 10, "body_warp", rotate=sway_deg),
+        binding_r("ParamBodyAngleZ", -10, "body_warp", rotate=-tilt_deg),
+        binding_r("ParamBodyAngleZ", 10, "body_warp", rotate=tilt_deg),
         binding("ParamBodyAngleZ", -10, "upper_warp", tx=-dx_carry),
         binding("ParamBodyAngleZ", 10, "upper_warp", tx=dx_carry),
         binding("ParamBodyAngleZ", -10, "back_hair_warp", tx=-dx_carry),

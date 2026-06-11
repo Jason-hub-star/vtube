@@ -4,23 +4,23 @@
     "sprite": 1235896456
   },
   "hashes": {
-    "head_turn": 2509813794,
-    "nod": 626029223,
-    "tilt": 3807527268,
-    "gaze_turn": 3843738135,
-    "combo": 3336883634,
-    "body_tilt": 2276830135
+    "head_turn": 1210773508,
+    "nod": 1863132689,
+    "tilt": 2762962030,
+    "gaze_turn": 1099983502,
+    "combo": 113772182,
+    "body_tilt": 419574738
   },
   "neck": {
     "head_max": 0
   },
   "timing": {
-    "head_turn": 2.5,
-    "nod": 2.4,
-    "tilt": 2.4,
-    "gaze_turn": 1.4,
-    "combo": 1.8,
-    "body_tilt": 2
+    "head_turn": 3.3,
+    "nod": 2.7,
+    "tilt": 4.2,
+    "gaze_turn": 3,
+    "combo": 3.6,
+    "body_tilt": 2.7
   },
   "errors": [],
   "backend": "pixi"

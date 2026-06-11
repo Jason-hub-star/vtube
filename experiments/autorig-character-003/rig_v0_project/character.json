@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project_kind": "mini_cubism_v0",
   "experiment_id": "autorig-rig-v0",
-  "generated_at": "2026-06-11T11:36:32.305307+00:00",
+  "generated_at": "2026-06-11T11:42:06.537587+00:00",
   "source_selection": {
     "visible_layers": "experiments/autorig-character-003/seethrough_true_reskinned/reskin_manifest.json",
     "hidden_layers": [
@@ -39149,7 +39149,7 @@
       ],
       "pivot": [
         1022,
-        1338
+        2048
       ],
       "lattice": {
         "cols": 5,
@@ -40100,42 +40100,6 @@
       }
     },
     {
-      "parameter_id": "ParamBodyAngleX",
-      "key_value": -10,
-      "target_id": "body_warp",
-      "delta_type": "deformer_transform",
-      "deltas": {
-        "translate": [
-          -8,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0
-        ],
-        "rotate": 0,
-        "opacity": 1
-      }
-    },
-    {
-      "parameter_id": "ParamBodyAngleX",
-      "key_value": 10,
-      "target_id": "body_warp",
-      "delta_type": "deformer_transform",
-      "deltas": {
-        "translate": [
-          8,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0
-        ],
-        "rotate": 0,
-        "opacity": 1
-      }
-    },
-    {
       "parameter_id": "ParamBodyAngleY",
       "key_value": -10,
       "target_id": "body_warp",
@@ -40514,6 +40478,42 @@
       }
     },
     {
+      "parameter_id": "ParamBodyAngleX",
+      "key_value": -10,
+      "target_id": "body_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": -0.53,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBodyAngleX",
+      "key_value": 10,
+      "target_id": "body_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0.53,
+        "opacity": 1
+      }
+    },
+    {
       "parameter_id": "ParamBodyAngleZ",
       "key_value": -10,
       "target_id": "body_warp",
@@ -40556,7 +40556,7 @@
       "delta_type": "deformer_transform",
       "deltas": {
         "translate": [
-          -4.2,
+          -22.7,
           0.0
         ],
         "scale": [
@@ -40574,7 +40574,7 @@
       "delta_type": "deformer_transform",
       "deltas": {
         "translate": [
-          4.2,
+          22.7,
           0.0
         ],
         "scale": [
@@ -40592,7 +40592,7 @@
       "delta_type": "deformer_transform",
       "deltas": {
         "translate": [
-          -4.2,
+          -22.7,
           0.0
         ],
         "scale": [
@@ -40610,7 +40610,7 @@
       "delta_type": "deformer_transform",
       "deltas": {
         "translate": [
-          4.2,
+          22.7,
           0.0
         ],
         "scale": [
