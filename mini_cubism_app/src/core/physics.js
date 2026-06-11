@@ -1,7 +1,7 @@
 // 스프링-댐퍼 물리.
 
 import { draw } from "../core/draw.js";
-import { identityTransform } from "../core/rig.js";
+import { identityTransform, setParameterValue } from "../core/rig.js";
 import { state } from "../core/state.js";
 import { clamp } from "../core/utils.js";
 
@@ -36,8 +36,15 @@ function stepPhysics(dt = 1 / 30) {
       const limit = profile.max_offset?.[axis] ?? 30;
       item.offset[axis] = clamp(item.offset[axis], -limit, limit);
     }
+    // BODY-SWAY-001 파라미터 스프링: 출력이 파트 오프셋이 아니라 파라미터 (공식 body_angle 패턴)
+    if (profile.output_parameter) setParameterValue(profile.output_parameter, item.offset[0]);
   }
   draw();
+}
+
+// 물리가 소유한 파라미터 — 트래킹 직주입이 스프링 출력을 덮어쓰지 않게 한다
+function physicsOwnedParameters() {
+  return new Set((state.project?.physics_profiles || []).map((p) => p.output_parameter).filter(Boolean));
 }
 
 function physicsTargetOffset(project, profile) {
@@ -71,4 +78,4 @@ function physicsTransformForPart(partId) {
 }
 
 
-export { initPhysicsState, resetPhysics, stepPhysics, physicsTargetOffset, physicsTransformForPart };
+export { initPhysicsState, resetPhysics, stepPhysics, physicsTargetOffset, physicsTransformForPart, physicsOwnedParameters };

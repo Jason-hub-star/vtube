@@ -17,6 +17,7 @@
 from __future__ import annotations
 
 import argparse
+import math
 import shutil
 import sys
 from pathlib import Path
@@ -25,7 +26,7 @@ import numpy as np
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from lib.rig_keyforms import attach_mouth_height_keyforms, build_keyform_bindings, build_opacity_curves, build_parameters, build_physics_profiles  # noqa: E402
+from lib.rig_keyforms import attach_mouth_height_keyforms, binding, binding_r, build_keyform_bindings, build_opacity_curves, build_parameters, build_physics_profiles  # noqa: E402
 from lib.vtube_io import ROOT, load_json, now_iso, rel, write_json  # noqa: E402
 from run_arap_blink_experiment import blink_mesh, eye_bbox_from_layer  # noqa: E402
 
@@ -400,6 +401,21 @@ def main() -> int:
     # 파라미터/바인딩/커브/물리 수치는 lib/rig_keyforms.py (2026-06-11 500줄 룰 분리)
     parameters = build_parameters()
     keyform_bindings = build_keyform_bindings()
+    # BODY-SWAY-001 BodyAngleZ 기울기: body는 자기 피벗 회전, 운반 대상(upper·뒷머리)은
+    # "그 회전이 자기 높이에 만드는 수평 변위"만큼 균일 tx (X 스웨이의 운반 패턴과 동형 —
+    # 부분 겹침 회전을 직접 주면 내부 시어, CHAIN-001 교훈)
+    tilt_rad = math.radians(1.5)
+    body_pivot_y = center(body_bounds)[1]
+    dx_upper = round((body_pivot_y - center(upper_bounds)[1]) * math.sin(tilt_rad), 1)
+    dx_hair = round((body_pivot_y - center(head_bounds)[1]) * math.sin(tilt_rad), 1)
+    keyform_bindings += [
+        binding_r("ParamBodyAngleZ", -10, "body_warp", rotate=-1.5),
+        binding_r("ParamBodyAngleZ", 10, "body_warp", rotate=1.5),
+        binding("ParamBodyAngleZ", -10, "upper_warp", tx=-dx_upper),
+        binding("ParamBodyAngleZ", 10, "upper_warp", tx=dx_upper),
+        binding("ParamBodyAngleZ", -10, "back_hair_warp", tx=-dx_hair),
+        binding("ParamBodyAngleZ", 10, "back_hair_warp", tx=dx_hair),
+    ]
 
     part_opacity_keyframes = build_opacity_curves(use_arap, use_mouth_states, use_mouth_warp, bbox_by_id)
 

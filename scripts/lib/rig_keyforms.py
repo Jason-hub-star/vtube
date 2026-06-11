@@ -15,6 +15,7 @@ def build_parameters() -> list[dict]:
         {"id": "ParamAngleZ", "min": -30, "max": 30, "default": 0, "key_values": [-30, 0, 30]},
         {"id": "ParamBodyAngleX", "min": -10, "max": 10, "default": 0, "key_values": [-10, 0, 10]},
         {"id": "ParamBodyAngleY", "min": -10, "max": 10, "default": 0, "key_values": [-10, 0, 10]},
+        {"id": "ParamBodyAngleZ", "min": -10, "max": 10, "default": 0, "key_values": [-10, 0, 10]},  # BODY-SWAY-001 몸 기울기
         {"id": "ParamBreath", "min": 0, "max": 1, "default": 0, "key_values": [0, 1]},
         {"id": "ParamEyeBallX", "min": -1, "max": 1, "default": 0, "key_values": [-1, 0, 1]},
         {"id": "ParamEyeBallY", "min": -1, "max": 1, "default": 0, "key_values": [-1, 0, 1]},
@@ -192,10 +193,29 @@ def build_opacity_curves(use_arap: bool, use_mouth_states: bool, use_mouth_warp:
     return part_opacity_keyframes
 
 
+def build_body_sway_springs() -> list[dict]:
+    """BODY-SWAY-001: 파라미터 스프링 — 출력이 파트가 아니라 BodyAngle 파라미터를 구동.
+
+    strong20 실측 1위 패턴(물리 출력 카테고리 body_angle 123개)의 이식. 머리 움직임의
+    잔여 에너지가 스프링-댐퍼를 거쳐 몸을 반 박자 늦게 따라가게 하고(follow-through),
+    멈추면 잔진동이 천천히 가라앉는다. Breath 입력으로 정지 상태에도 미세 스웨이.
+    output_parameter가 있는 프로파일은 런타임 stepPhysics가 매 스텝 해당 파라미터에
+    offset[0]을 쓴다 — BodyAngle 바인딩(body/upper/back_hair)이 전부 자동 동행.
+    """
+    return [
+        {"id": "body_sway_spring", "targets": [], "output_parameter": "ParamBodyAngleX",
+         "stiffness": 0.05, "damping": 0.92, "drag": 0.0, "max_offset": [10, 0],
+         "input_weights": {"ParamAngleX": [7.0, 0], "ParamBreath": [1.2, 0]}},
+        {"id": "body_tilt_spring", "targets": [], "output_parameter": "ParamBodyAngleZ",
+         "stiffness": 0.045, "damping": 0.93, "drag": 0.0, "max_offset": [8, 0],
+         "input_weights": {"ParamAngleZ": [5.0, 0], "ParamBreath": [-0.8, 0]}},
+    ]
+
+
 def build_physics_profiles(use_hair_chunks: bool, bbox_by_id: dict) -> list[dict]:
     # Phase C: 물리 스프링 — v0-3 검증 프로파일 이식 (덩어리 사용 시)
     if not use_hair_chunks:
-        return []
+        return build_body_sway_springs()
     physics_profiles = [
         {
             "id": "front_hair_soft_spring",
@@ -222,4 +242,4 @@ def build_physics_profiles(use_hair_chunks: bool, bbox_by_id: dict) -> list[dict
             "part_weights": {"choker": 0.35, "earwear": 0.9},
         },
     ]
-    return [p for p in physics_profiles if p["targets"]]
+    return [p for p in physics_profiles if p["targets"]] + build_body_sway_springs()

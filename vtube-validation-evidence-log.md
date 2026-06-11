@@ -3,6 +3,15 @@
 작성일: 2026-06-02
 최신 정리일: 2026-06-10
 
+## 2026-06-11 BODY-SWAY-001 — 몸 모션 1단: 파라미터 스프링 아이들 스웨이 + BodyAngleZ 기울기
+
+- 문제: 몸이 "머리 요의 65% 즉시 복사"뿐 — 즉시 추종(판때기), 정지 시 완전 정지, 기울기 축 부재.
+- **파라미터 스프링** (strong20 1위 패턴 — 물리 출력 body_angle 123개의 이식): 스프링 출력이 파트가 아니라 파라미터를 구동. `build_body_sway_springs()` — body_sway_spring(AngleX 7.0 + Breath 1.2 → ParamBodyAngleX, stiffness 0.05/damping 0.92), body_tilt_spring(AngleZ 5.0 + Breath −0.8 → ParamBodyAngleZ). 런타임 stepPhysics가 매 스텝 output_parameter에 기록 — BodyAngle 바인딩 전체(body/upper/back_hair)가 자동 동행, 접합부 등변위 보존.
+- **소유권 차단**: `physicsOwnedParameters()` — 트래킹/재생의 직주입(yaw×0.65)이 스프링 출력을 덮어쓰지 않게 probe.setParameterValues에서 무시 (구 스트림 호환). 슬라이더(수동)는 그대로.
+- **ParamBodyAngleZ 신설** (17종): body_warp rotate ±1.5° + 운반 대상은 "그 회전이 자기 높이에 만드는 수평 변위"만큼 균일 tx (upper/back_hair — 빌더가 피벗 거리에서 산출; 부분 겹침 회전 직접 부여는 내부 시어, CHAIN-001 교훈 준수).
+- 검증: validator PASS(59바인딩), pixi verify 6/6(body_tilt 상태 추가), 동역학 스모크 — AngleX 30 입력 시 출렁이며 ~7.0 안착(지연 추종), 해제 시 −3.8 오버슈트 후 감쇠(잔여 에너지 스웨이), Breath만으로 정지 시 미세 스웨이, 직주입 차단 확인.
+- 다음 단계 (별건): ③ MediaPipe Pose 어깨 실측 추적 — 노이즈 리스크라 강평활·히스테리시스 전제.
+
 ## 2026-06-11 MOUTH-SNAP-001 — 입 잔상 해소: 하드 밴드 스냅 (크로스페이드 폐기) + 004 부품형 입 예약
 
 - 주인님 보고: 기하 정렬 후에도 잔상 — 원인은 윤곽이 아니라 **내용 혼합** (small/mid가 50/50 겹칠 때 반투명 이빨이 입술 위로 비침). 서로 다른 작화 두 장의 투명도 혼합은 원리적 한계.

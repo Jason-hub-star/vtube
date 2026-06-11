@@ -1,7 +1,7 @@
 // 자동화/주입 API (__miniProbe, __miniSetParameters 등). T2/T3 계약.
 
 import { draw } from "./core/draw.js";
-import { resetPhysics, stepPhysics } from "./core/physics.js";
+import { physicsOwnedParameters, resetPhysics, stepPhysics } from "./core/physics.js";
 import { partOpacity, setParameterValue } from "./core/rig.js";
 import { state } from "./core/state.js";
 import { render, syncParameterControls } from "./ui/components.js";
@@ -58,8 +58,11 @@ function exposeAutomationApi() {
     setParameterValues(values = {}) {
       const applied = [];
       const missing = [];
+      const owned = physicsOwnedParameters(); // BODY-SWAY-001: 스프링 소유 파라미터는 트래킹 직주입 무시
       for (const [parameterId, value] of Object.entries(values)) {
-        if (state.project?.parameters?.some((item) => item.id === parameterId)) {
+        if (owned.has(parameterId)) {
+          applied.push(parameterId);
+        } else if (state.project?.parameters?.some((item) => item.id === parameterId)) {
           setParameterValue(parameterId, value);
           applied.push(parameterId);
         } else {
