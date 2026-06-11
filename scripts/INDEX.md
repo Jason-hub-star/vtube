@@ -1,6 +1,6 @@
 # scripts/ 인덱스
 
-Updated: 2026-06-11 · 총 287개 · `python3 scripts/build_scripts_index.py`로 재생성
+Updated: 2026-06-11 · 총 288개 · `python3 scripts/build_scripts_index.py`로 재생성
 
 새 스크립트를 만들기 전에 이 인덱스에서 기존 것을 먼저 찾는다.
 코드 규칙: `docs/ref/AUTORIG-PIPELINE-V1.md`의 '코드 규칙' 절 (lib 사용 의무, 캐릭터 하드코딩 금지, 500줄 상한).
@@ -23,11 +23,11 @@ Updated: 2026-06-11 · 총 287개 · `python3 scripts/build_scripts_index.py`로
 | `build_asset_dashboard.py` | 237 | Vtube 자산 대시보드 생성기. |
 | `build_autorig_current_candidates_002.py` | 119 | AUTORIG current-candidates manifest for cubism-v2-new-character-002. |
 | `build_autorig_full_assembly.py` | 127 | 모든 시트의 정규화 레이어를 모아 전신 조립 합성을 만든다 (검수 단위 규칙). |
-| `build_autorig_rig_v0.py` ⚠️ | 531 | P3 자동 리깅 v0: 하이브리드 레이어 → mini_cubism 리그(character.json) 자동 생성. |
+| `build_autorig_rig_v0.py` ⚠️ | 584 | P3 자동 리깅 v0: 하이브리드 레이어 → mini_cubism 리그(character.json) 자동 생성. |
 | `build_autorig_template_spec.py` | 200 | AUTORIG-TEMPLATE-SPEC-001: 64-part를 고정 슬롯 시트에 매핑하는 템플릿 스펙 생성. |
 | `build_scripts_index.py` | 94 | scripts/INDEX.md 자동 생성 — 258개 스크립트를 카테고리·설명·LOC로 색인한다. |
 | `run_autorig_control_tower.py` | 262 | AUTORIG 관제탑 서버 — runs/<run_id>/events.jsonl을 읽어 대시보드에 공급한다. |
-| `run_autorig_pipeline.py` | 230 | AUTORIG 원커맨드 파이프라인 — "자동화파이프라인 시작". |
+| `run_autorig_pipeline.py` | 241 | AUTORIG 원커맨드 파이프라인 — "자동화파이프라인 시작". |
 | `run_autorig_sheet_pilot.py` | 300 | AUTORIG 슬롯 시트 파일럿: 시트 1장을 생성→점유율 QA→결정론적 추출→배치→조립 합성. |
 | `simulate_autorig_run.py` | 153 | AUTORIG 가짜 런 시뮬레이터 — 관제탑 개발/스모크용. |
 
@@ -305,7 +305,7 @@ Updated: 2026-06-11 · 총 287개 · `python3 scripts/build_scripts_index.py`로
 | `export_rigger_handoff.py` | 8 | CLI wrapper for exporting the Cubism rigger handoff. |
 | `prepare_concept_psd_smoke_parts.py` | 192 | Prepare clean technical-smoke parts for concept PSD import testing. |
 
-## legacy-misc — 기타·레거시 (37)
+## legacy-misc — 기타·레거시 (38)
 
 | 파일 | LOC | 설명 |
 |---|---:|---|
@@ -325,7 +325,7 @@ Updated: 2026-06-11 · 총 287개 · `python3 scripts/build_scripts_index.py`로
 | `build_review_manifest.py` ⚠️ | 702 | Build the unified part-purity review manifest. |
 | `build_roi_cleanup_candidates.py` | 386 | Build ROI-focused cleanup candidates for MPS See-through parts. |
 | `compose_reskin_assembly.py` | 53 | 재스킨 레이어를 draw_order 순으로 합성해 어셈블리 PNG를 만든다. |
-| `extract_mouth_states.py` | 155 | v21 최종 입 성공패턴용 상태 스프라이트 추출: 4상태 시트 → 풀캔버스 레이어 4장. |
+| `extract_mouth_states.py` | 176 | v21 최종 입 성공패턴용 상태 스프라이트 추출: 4상태 시트 → 풀캔버스 레이어 4장. |
 | `force_imagen_front_hair_arms_pass.py` | 254 | Force-promote Imagen front hair and both arms for MVP PSD progression. |
 | `map_mini_cubism_dedicated_layers.py` | 161 | Gate See-through layers against the Mini Cubism dedicated v1 taxonomy. |
 | `mini_cubism_preview_server.py` | 229 | Serve the Mini Cubism v0 preview app and project files. |
@@ -345,5 +345,6 @@ Updated: 2026-06-11 · 총 287개 · `python3 scripts/build_scripts_index.py`로
 | `split_hair_chunks.py` | 123 | HAIR-SPLIT-001: 머리카락 통짜 레이어를 물리용 덩어리로 분할한다. |
 | `split_mini_cubism_app.py` | 149 | AUTORIG-RUNTIME-SPLIT-001: mini_cubism_app/src/app.js(1,673줄 모놀리스)를 ES 모듈로 분할한다. |
 | `split_neck_skin.py` | 99 | 목 피부 분리 — 분해가 목을 clothes에 합쳐놓은 경우, 목 기둥을 잘라 별도 파트로. |
+| `split_shoulder_hair.py` | 110 | 어깨 위 머리카락 분리 — 분해가 가닥을 clothes에 구워놓은 경우 (CHAIN-001 후속). |
 | `tune_mini_cubism_keyforms.py` | 211 | Generate and rank conservative Mini Cubism keyform tuning candidates. |
 

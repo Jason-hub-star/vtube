@@ -1,24 +1,24 @@
 {
   "neutral": {
-    "mesh": 4014230294,
-    "sprite": 4014230294
+    "mesh": 1235896456,
+    "sprite": 1235896456
   },
   "hashes": {
-    "head_turn": 4080302991,
-    "nod": 3415836736,
-    "tilt": 797513214,
-    "gaze_turn": 738056567,
-    "combo": 2624548370
+    "head_turn": 166817877,
+    "nod": 1856041391,
+    "tilt": 2651487530,
+    "gaze_turn": 4046208836,
+    "combo": 2126309631
   },
   "neck": {
     "head_max": 0
   },
   "timing": {
-    "head_turn": 3,
-    "nod": 2,
-    "tilt": 2,
-    "gaze_turn": 2.1,
-    "combo": 2.5
+    "head_turn": 1.7,
+    "nod": 1,
+    "tilt": 0.7,
+    "gaze_turn": 1,
+    "combo": 1.4
   },
   "errors": [],
   "backend": "pixi"

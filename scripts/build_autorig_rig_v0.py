@@ -57,6 +57,8 @@ def deformer_of(pid: str) -> str:
         return "front_hair_warp"
     if pid.startswith("hair_back_"):
         return "back_hair_warp"
+    if pid == "shoulder_hair":
+        return "back_hair_warp"  # clothes에서 분리한 어깨 가닥 — 머리 본체와 함께 움직인다
     if "hair" in pid:
         return "root_warp"  # 통짜 hair (덩어리 미사용 시)
     if pid == "neck_under":
@@ -125,6 +127,7 @@ def main() -> int:
     parser.add_argument("--hair-chunks-dir", type=Path, default=None, help="머리 덩어리 5장 (front L/C/R + back L/R) — 통짜 hair 치환 + 물리 스프링 활성")
     parser.add_argument("--hidden-neck-dir", type=Path, default=None, help="숨은 목 (neck_under.png) — 목 분리 이음새 방지")
     parser.add_argument("--neck-split-dir", type=Path, default=None, help="목 피부 분리 (neck_skin + clothes_trimmed) — 분해가 목을 clothes에 합친 경우")
+    parser.add_argument("--shoulder-hair-dir", type=Path, default=None, help="어깨 가닥 분리 (shoulder_hair + clothes_filled) — 분해가 머리카락을 clothes에 구운 경우")
     parser.add_argument("--out-dir", type=Path, required=True)
     parser.add_argument("--experiment-id", default="autorig-rig-v0")
     args = parser.parse_args()
@@ -138,19 +141,26 @@ def main() -> int:
     (out / "meshes").mkdir(parents=True, exist_ok=True)
 
     use_neck_split = args.neck_split_dir is not None and (args.neck_split_dir / "neck_skin.png").exists()
+    use_shoulder = args.shoulder_hair_dir is not None and (args.shoulder_hair_dir / "shoulder_hair.png").exists()
     reskin = load_json(args.reskin_manifest)
     sources: list[tuple[str, Path, int]] = []  # (part_id, path, draw_order)
     clothes_order = 210
     for layer in sorted(reskin["layers"], key=lambda x: x["draw_order"]):
         if use_hair_chunks and layer["part_id"] in ("front_hair", "back_hair"):
             continue  # 덩어리로 치환
-        if use_neck_split and layer["part_id"] == "clothes":
+        if layer["part_id"] == "clothes" and (use_neck_split or use_shoulder):
             clothes_order = layer["draw_order"]
-            sources.append(("clothes", args.neck_split_dir / "clothes_trimmed.png", clothes_order))
+            # 분리 체인: clothes → (목 분리) clothes_trimmed → (어깨 가닥 분리) clothes_filled
+            clothes_path = args.shoulder_hair_dir / "clothes_filled.png" if use_shoulder \
+                else args.neck_split_dir / "clothes_trimmed.png"
+            sources.append(("clothes", clothes_path, clothes_order))
             continue
         sources.append((layer["part_id"], ROOT / layer["path"], layer["draw_order"]))
     if use_neck_split:
         sources.append(("neck_skin", args.neck_split_dir / "neck_skin.png", clothes_order + 1))
+    if use_shoulder:
+        # 어깨 가닥은 목 피부 위에 그려진다 (마스터에서 최전면 — clothes+2)
+        sources.append(("shoulder_hair", args.shoulder_hair_dir / "shoulder_hair.png", clothes_order + 2))
     if use_hair_chunks:
         for name, order in (("hair_back_L", 100), ("hair_back_R", 101),
                             ("hair_front_L", 700), ("hair_front_C", 701), ("hair_front_R", 702)):
@@ -250,7 +260,7 @@ def main() -> int:
                 "deformer_node": deformer_of(pid),
             }
         )
-        big = pid in ("face_base", "back_hair", "front_hair", "clothes") or pid.startswith(("hair_front_", "hair_back_"))
+        big = pid in ("face_base", "back_hair", "front_hair", "clothes", "shoulder_hair") or pid.startswith(("hair_front_", "hair_back_"))
         if pid in ("face_base", "clothes", "neck_skin"):
             cols = rows = 9  # 목-어깨 접합부를 지나는 파트 — fade 보간이 고와야 분리가 안 보인다
         else:
@@ -513,11 +523,11 @@ def main() -> int:
             },
             {
                 "id": "back_hair_heavy_spring",
-                "targets": ["hair_back_L", "hair_back_R"],
+                "targets": ["hair_back_L", "hair_back_R"] + (["shoulder_hair"] if "shoulder_hair" in bbox_by_id else []),
                 "anchor": "top_center", "mass": 1.4, "stiffness": 0.08, "damping": 0.88, "drag": 0.04,
                 "max_offset": [24, 34], "rotate_factor": 0.03,
                 "input_weights": {"ParamAngleX": [-18, 8], "ParamAngleY": [0, 8], "ParamBodyAngleX": [-6, 3]},
-                "part_weights": {"hair_back_L": 1.0, "hair_back_R": 1.0},
+                "part_weights": {"hair_back_L": 1.0, "hair_back_R": 1.0, "shoulder_hair": 0.7},
             },
             {
                 "id": "accessory_quick_spring",

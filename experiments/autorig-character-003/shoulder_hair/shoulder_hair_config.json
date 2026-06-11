@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-06-11T06:03:57.687711+00:00",
+  "split": true,
+  "pixels": 28605,
+  "bbox": [
+    584,
+    1111,
+    1524,
+    1966
+  ],
+  "integrity": {
+    "status": "PASS",
+    "strong_ratio": 0.00196,
+    "mean_delta": 0.518
+  },
+  "outputs": [
+    "experiments/autorig-character-003/shoulder_hair/shoulder_hair.png",
+    "experiments/autorig-character-003/shoulder_hair/clothes_filled.png"
+  ]
+}

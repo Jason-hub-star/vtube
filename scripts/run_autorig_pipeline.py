@@ -174,6 +174,11 @@ def main() -> int:
             "python3", "scripts/split_neck_skin.py", "--clothes", str(reskin_dir / "clothes.png"),
             "--mouth-line", str(mouth_line), "--master", str(args.master),
             "--out-dir", str(exp / "neck_split")])
+        sh(writer, "P3", "shoulder_hair", [
+            "python3", "scripts/split_shoulder_hair.py",
+            "--clothes", str(exp / "neck_split" / "clothes_trimmed.png"),
+            "--hair-ref", str(exp / "hair_chunks" / "hair_back_L.png"),
+            "--out-dir", str(exp / "shoulder_hair")])
         sh(writer, "P3", "hidden_neck", [
             "python3", "scripts/build_hidden_neck.py", "--master", str(args.master),
             "--mouth-line", str(mouth_line), "--clothes", str(reskin_dir / "clothes.png"),
@@ -190,6 +195,7 @@ def main() -> int:
             "--hair-chunks-dir", str(exp / "hair_chunks"),
             "--hidden-neck-dir", str(exp / "hidden_neck"),
             "--neck-split-dir", str(exp / "neck_split"),
+            "--shoulder-hair-dir", str(exp / "shoulder_hair"),
             "--out-dir", str(exp / "rig_v0_project")])
         writer.artifact_created(rel(exp / "rig_v0_project" / "character.json"), label="rig", stage="P4")
         writer.stage_completed("P4")
