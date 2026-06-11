@@ -1,0 +1,30 @@
+- generic [ref=e2] [box=0,0,1454,820]:
+  - complementary [ref=e3] [box=0,0,280,2139]:
+    - generic [ref=e4] [box=0,0,279,100]:
+      - heading "눈/입 수동 정렬" [level=1] [ref=e5] [box=16,16,247,23]
+      - generic [ref=e6] [box=16,45,247,38]: 얼굴 위에서 중심점을 찍고 크기를 줄여 저장합니다.
+    - generic [ref=e7] [box=0,100,279,148]:
+      - button "왼쪽 눈" [ref=e41] [cursor=pointer] [box=12,112,255,36]
+      - button "오른쪽 눈" [ref=e42] [cursor=pointer] [box=12,156,255,36]
+      - button "입" [ref=e43] [cursor=pointer] [box=12,200,255,36]
+  - main [ref=e8] [box=280,0,2078,2139]:
+    - generic [ref=e9] [box=280,0,2078,61]:
+      - generic [ref=e10] [box=294,20,337,19]: 클릭 중심 이동 · 드래그 미세 이동 · 스케일은 오른쪽 슬라이더
+      - generic [ref=e11] [box=2169,12,175,36]
+  - generic [ref=e16] [box=2358,0,330,2139]:
+    - generic [ref=e17] [box=2359,0,329,77]:
+      - generic [ref=e18] [box=2373,14,301,21]: 왼쪽 눈
+      - generic [ref=e44] [box=2373,44,301,19]: eye_L_open / center 880, 687 / scale 0.78
+    - generic [ref=e19] [box=2359,77,329,284]:
+      - generic [ref=e20] [box=2373,91,301,21]: 정렬값
+      - generic [ref=e21] [box=2373,121,301,68]
+      - generic [ref=e28] [box=2373,189,301,41]
+      - generic [ref=e31] [box=2373,240,301,60]
+      - button "현재 그룹 저장" [ref=e34] [cursor=pointer] [box=2373,310,101,36]
+      - button "전체 저장" [ref=e35] [cursor=pointer] [box=2478,310,74,36]
+    - generic [ref=e36] [box=2359,361,329,113]:
+      - generic [ref=e37] [box=2373,375,301,21]: 적용 파츠
+      - generic [ref=e46] [box=2373,404,301,54]: eye_L_clean_socket, eye_L_closed_underpaint, eye_L_open, eye_L_half_closed_lid, eye_L_mostly_closed_lid, eye_L_closed_lid
+    - generic [ref=e38] [box=2359,473,329,77]:
+      - generic [ref=e39] [box=2373,487,301,21]: 저장 상태
+      - generic [ref=e40] [box=2373,517,301,19]: 아직 저장 전

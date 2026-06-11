@@ -1,0 +1,121 @@
+- main [ref=e2] [box=0,0,1454,768]:
+  - generic [ref=e3] [box=14,14,1426,97]:
+    - generic [ref=e4] [box=31,31,416,63]:
+      - heading "Cubism v2 쉬운 검수" [level=1] [ref=e5] [box=31,31,416,36]
+      - paragraph [ref=e6] [box=31,71,416,23]: 캐릭터, 파츠, 구조, 움직임을 차례대로 보고 실패 후보만 다시 모읍니다.
+    - generic [ref=e7] [box=652,61,771,33]:
+      - generic [ref=e8] [box=652,61,87,33]: 최소형 검수
+      - generic [ref=e9] [box=745,61,80,33]: 확인 0/36
+      - generic [ref=e10] [box=832,61,91,33]: 다시 볼 것 0
+      - generic [ref=e11] [box=930,61,126,33]: 캐릭터 고르기 6개
+      - generic [ref=e12] [box=1064,61,109,33]: 파츠 확인 25개
+      - generic [ref=e13] [box=1179,61,124,33]: 구조 자동검사 1개
+      - generic [ref=e14] [box=1310,61,113,33]: 움직임 확인 4개
+  - complementary [ref=e15] [box=14,125,320,630]:
+    - generic [ref=e16] [box=15,126,318,103]:
+      - button "캐릭터 고르기 6개" [ref=e17] [cursor=pointer] [box=25,136,146,38]
+      - button "파츠 확인 25개" [ref=e18] [cursor=pointer] [box=177,136,146,38]
+      - button "구조 자동검사 1개" [ref=e19] [cursor=pointer] [box=25,180,146,38]
+      - button "움직임 확인 4개" [ref=e20] [cursor=pointer] [box=177,180,146,38]
+    - generic [ref=e21] [box=15,229,318,159]:
+      - combobox [ref=e22] [box=25,239,145,40]:
+        - option "단계 전체" [selected] [box=0,0,0,0]
+        - option "최소형" [box=0,0,0,0]
+        - option "표준형" [box=0,0,0,0]
+        - option "풍부형" [box=0,0,0,0]
+      - combobox [ref=e23] [box=178,239,145,40]:
+        - option "검수 전체" [selected] [box=0,0,0,0]
+        - option "캐릭터 고르기" [box=0,0,0,0]
+        - option "파츠 확인" [box=0,0,0,0]
+        - option "구조 자동검사" [box=0,0,0,0]
+        - option "움직임 확인" [box=0,0,0,0]
+      - searchbox "이름 검색" [ref=e24] [box=25,286,298,43]
+      - combobox [ref=e25] [box=25,337,145,40]:
+        - option "전체" [selected] [box=0,0,0,0]
+        - option "아직 안 봄" [box=0,0,0,0]
+        - option "좋아요" [box=0,0,0,0]
+        - option "다시 만들기" [box=0,0,0,0]
+        - option "고쳐서 쓰기" [box=0,0,0,0]
+        - option "참고만" [box=0,0,0,0]
+      - combobox [ref=e26] [box=178,337,145,40]:
+        - option "문제 전체" [selected] [box=0,0,0,0]
+        - option "파츠 없음" [box=0,0,0,0]
+        - option "테두리 지저분함" [box=0,0,0,0]
+        - option "위치 안 맞음" [box=0,0,0,0]
+        - option "그림체 다름" [box=0,0,0,0]
+        - option "밑색 없음" [box=0,0,0,0]
+        - option "마스크 위험" [box=0,0,0,0]
+        - option "앞뒤 순서 문제" [box=0,0,0,0]
+        - option "튀어나온 부분 문제" [box=0,0,0,0]
+    - generic [ref=e27] [box=15,387,318,366]:
+      - button "캐릭터 후보 1 캐릭터 고르기 · 머리카락 · 우선 검수 아직 안 봄" [ref=e28] [cursor=pointer] [box=23,395,302,71]:
+        - generic [ref=e29] [box=34,406,206,23]: 캐릭터 후보 1
+        - generic [ref=e30] [box=34,433,206,23]: 캐릭터 고르기 · 머리카락 · 우선 검수
+        - generic [ref=e31] [box=248,417,66,28]: 아직 안 봄
+      - button "캐릭터 후보 2 캐릭터 고르기 · 귀 · 참고 판단 아직 안 봄" [ref=e32] [cursor=pointer] [box=23,473,302,71]:
+        - generic [ref=e33] [box=34,484,206,23]: 캐릭터 후보 2
+        - generic [ref=e34] [box=34,511,206,23]: 캐릭터 고르기 · 귀 · 참고 판단
+        - generic [ref=e35] [box=248,495,66,28]: 아직 안 봄
+      - button "캐릭터 후보 3 캐릭터 고르기 · 귀 · 참고 판단 아직 안 봄" [ref=e36] [cursor=pointer] [box=23,551,302,71]:
+        - generic [ref=e37] [box=34,562,206,23]: 캐릭터 후보 3
+        - generic [ref=e38] [box=34,589,206,23]: 캐릭터 고르기 · 귀 · 참고 판단
+        - generic [ref=e39] [box=248,573,66,28]: 아직 안 봄
+      - button "캐릭터 후보 4 캐릭터 고르기 · 얼굴 · 참고 판단 아직 안 봄" [ref=e40] [cursor=pointer] [box=23,629,302,71]:
+        - generic [ref=e41] [box=34,640,206,23]: 캐릭터 후보 4
+        - generic [ref=e42] [box=34,667,206,23]: 캐릭터 고르기 · 얼굴 · 참고 판단
+        - generic [ref=e43] [box=248,651,66,28]: 아직 안 봄
+      - button "캐릭터 후보 5 캐릭터 고르기 · 얼굴 · 참고 판단 아직 안 봄" [ref=e44] [cursor=pointer] [box=23,707,302,71]:
+        - generic [ref=e45] [box=34,718,206,23]: 캐릭터 후보 5
+        - generic [ref=e46] [box=34,745,206,23]: 캐릭터 고르기 · 얼굴 · 참고 판단
+        - generic [ref=e47] [box=248,729,66,28]: 아직 안 봄
+      - button "캐릭터 후보 6 캐릭터 고르기 · 얼굴 · 참고 판단 아직 안 봄" [ref=e48] [cursor=pointer] [box=23,785,302,71]:
+        - generic [ref=e49] [box=34,796,206,23]: 캐릭터 후보 6
+        - generic [ref=e50] [box=34,823,206,23]: 캐릭터 고르기 · 얼굴 · 참고 판단
+        - generic [ref=e51] [box=248,807,66,28]: 아직 안 봄
+  - main [ref=e52] [box=348,125,778,630]:
+    - generic [ref=e53] [box=348,125,778,440]:
+      - generic [ref=e54] [box=363,140,748,82]:
+        - generic [ref=e55] [box=363,140,257,82]
+        - generic [ref=e58] [box=636,140,475,82]
+      - generic [ref=e66] [box=363,234,748,116]:
+        - strong [ref=e67] [box=376,245,722,23]: 캐릭터가 버튜버로 만들기 좋은지 먼저 고릅니다.
+        - list [ref=e68] [box=376,271,722,68]
+      - generic [ref=e72] [box=363,362,748,123]:
+        - generic [ref=e73] [box=695,381,85,85]
+        - generic [ref=e77] [box=382,421,710,45]: 알파가 비어 있거나 bbox가 없습니다. 보통 X 또는 참고용 후보입니다.
+      - generic [ref=e78] [box=363,497,748,53]:
+        - term [ref=e79] [box=363,497,181,23]: 검수 단계
+        - definition [ref=e80] [box=552,497,181,23]: 캐릭터 고르기
+        - term [ref=e81] [box=741,497,181,23]: 파츠 영역
+        - definition [ref=e82] [box=930,497,181,23]: 없음
+        - term [ref=e83] [box=363,527,181,23]: 투명도
+        - definition [ref=e84] [box=552,527,181,23]: "0"
+        - term [ref=e85] [box=741,527,181,23]: PSD
+        - definition [ref=e86] [box=930,527,181,23]: 제외
+    - generic [ref=e87] [box=348,579,778,176]:
+      - heading "오늘의 판정" [level=2] [ref=e88] [box=361,592,752,24]
+      - generic [ref=e89] [box=361,626,752,65]:
+        - generic [ref=e90] [box=361,626,752,38]
+        - paragraph [ref=e95] [box=361,671,752,20]: 버튼을 누르면 바로 저장됩니다.
+      - generic [ref=e96] [box=361,700,752,74]:
+        - generic [ref=e97] [box=361,711,752,34]
+        - paragraph [ref=e100] [box=361,754,752,20]: 필요한 영역만 직접 칠해서 manual 후보를 만들 수 있습니다.
+      - heading "무슨 문제가 있나요?" [level=2] [ref=e101] [box=361,784,752,24]
+      - generic [ref=e102] [box=361,818,752,80]:
+        - generic "필수 파츠가 빠졌거나 거의 보이지 않아요." [ref=e103] [box=361,818,101,37]
+        - generic "투명 배경 가장자리에 찌꺼기나 잘림이 있어요." [ref=e106] [box=469,818,140,37]
+        - generic "파츠가 원래 자리에서 밀렸어요." [ref=e109] [box=616,818,118,37]
+        - generic "다른 파츠와 선, 색, 비율이 달라 보여요." [ref=e112] [box=741,818,114,37]
+        - generic "움직이면 뒤가 비어 보일 수 있어요." [ref=e115] [box=861,818,101,37]
+        - generic "눈꺼풀, 앞머리, 장식처럼 마스크가 까다로운 부분이에요." [ref=e118] [box=969,818,114,37]
+        - generic "앞에 있어야 할 파츠와 뒤에 있어야 할 파츠가 헷갈려요." [ref=e121] [box=361,861,131,37]
+        - generic "파츠 끝이 몸 밖으로 어색하게 튀어나와요." [ref=e124] [box=499,861,157,37]
+      - generic [ref=e127] [box=361,908,752,298]:
+        - heading "짧은 메모" [level=2] [ref=e128] [box=361,908,752,24]
+        - generic [ref=e129] [box=361,942,752,67]
+        - paragraph [ref=e136] [box=361,1019,752,43]: 좋아요는 바로 진행, 고쳐서 쓰기는 작은 수정 필요, 다시 만들기는 후보에서 빼는 뜻입니다.
+        - textbox "예) 앞머리 끝이 잘렸어요 / 입 위치가 살짝 어긋나요" [ref=e137] [box=361,1071,752,88]
+        - button "저장" [ref=e139] [cursor=pointer] [box=361,1169,56,36]
+  - generic [ref=e140] [box=1140,125,300,630]:
+    - heading "다시 볼 것 0개" [level=2] [ref=e141] [box=1151,136,278,33]
+    - paragraph [ref=e142] [box=1151,184,278,23]: 아직 다시 볼 후보가 없습니다.

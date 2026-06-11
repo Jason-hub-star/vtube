@@ -5,27 +5,25 @@ This project is an evidence-driven 2D VTuber production workspace.
 ## Read First
 
 1. `/Users/family/jason/Vtube/docs/status/PROJECT-STATUS.md`
-2. `/Users/family/jason/Vtube/2d-vtuber-ai-tool-plan.md`
-3. `/Users/family/jason/Vtube/vtube-validation-evidence-log.md`
-4. `/Users/family/jason/Vtube/experiments/live2d-keypose-spec-001/reports/live2d_keypose_spec.md`
+2. `/Users/family/jason/Vtube/docs/INDEX.md` — 문서 지도 (필요한 것만 골라 읽기)
+3. `/Users/family/jason/Vtube/docs/ref/AUTORIG-PIPELINE-V1.md`
+
+Do not read the full `vtube-validation-evidence-log.md` (5000+ lines); grep it for the topic at hand.
 
 ## Current Direction
 
-The current production target is Live2D/Cubism rigging:
+**AUTORIG (2026-06-10 피벗)**: 자체 에디터/런타임 + AI 자동리깅. Cubism Editor 수동 저작 폐기, Cubism 파라미터 ID 표준은 유지.
 
-- PSD-separated parts
-- Cubism ArtMesh and Deformer setup
-- standard Live2D parameters
-- Cubism keyforms
+- 입력: 마스터 1장 + 입 4상태 시트 1장 (`docs/ref/AUTORIG-MASTER-SPEC.md`)
+- 원커맨드: `scripts/run_autorig_pipeline.py` (P0~H2, 관제탑 게이트 — 003 풀런 실증)
+- 런타임: `mini_cubism_app/` — PixiJS v8 WebGL 기본(풀해상도 60fps) + canvas2d 폴백
+- 픽셀 좌표는 결정론적 도구만 사용. LLM 비전 좌표 추측 금지.
 
 Current mouth and blink PNG experiments are placement and key-pose evidence. They are not the final production runtime method.
 
-## Current Next Tests
+## Current Next Work
 
-1. `PSD-LAYER-SCHEMA-001`
-2. `LIVE2D-PARAM-MAP-001`
-3. `CUBISM-IMPORT-CHECKLIST-001`
-4. `RIG-REFERENCE-PACK-001`
+`CLAUDE.md`의 "Current Next Work" 목록이 SSOT (PLAYER → ANCHOR-DETECT → RIG-SCHEMA → EDITOR).
 
 ## Evidence Rules
 

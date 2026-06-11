@@ -1,0 +1,131 @@
+- generic [ref=e4] [box=0,0,1454,820]:
+  - complementary [ref=e5] [box=0,0,280,820]:
+    - generic [ref=e6] [box=0,0,279,84]:
+      - heading "Mini Cubism v0" [level=1] [ref=e7] [box=16,16,247,23]
+      - paragraph [ref=e8] [box=16,39,247,28]: cubism-v2-new-character-002/model_edit_v4_strict_mouth
+    - generic [ref=e9] [box=0,84,279,98]:
+      - heading "Face 1" [level=2] [ref=e10] [box=16,100,247,14]
+      - button "face_base_clean 100" [ref=e11] [cursor=pointer] [box=16,124,247,35]:
+        - generic [ref=e12] [box=26,132,206,19]: face_base_clean
+        - generic [ref=e13] [box=232,132,21,19]: "100"
+    - generic [ref=e14] [box=0,182,279,549]:
+      - heading "Eyes 12" [level=2] [ref=e15] [box=16,198,247,14]
+      - button "eye_L_clean_socket 180" [ref=e16] [cursor=pointer] [box=16,222,247,35]:
+        - generic [ref=e17] [box=26,230,206,19]: eye_L_clean_socket
+        - generic [ref=e18] [box=232,230,21,19]: "180"
+      - button "eye_R_clean_socket 181" [ref=e19] [cursor=pointer] [box=16,263,247,35]:
+        - generic [ref=e20] [box=26,271,208,19]: eye_R_clean_socket
+        - generic [ref=e21] [box=234,271,19,19]: "181"
+      - button "eye_L_closed_underpaint 190" [ref=e22] [cursor=pointer] [box=16,304,247,35]:
+        - generic [ref=e23] [box=26,312,206,19]: eye_L_closed_underpaint
+        - generic [ref=e24] [box=232,312,21,19]: "190"
+      - button "eye_R_closed_underpaint 191" [ref=e25] [cursor=pointer] [box=16,345,247,35]:
+        - generic [ref=e26] [box=26,353,208,19]: eye_R_closed_underpaint
+        - generic [ref=e27] [box=234,353,19,19]: "191"
+      - button "eye_L_open 300" [ref=e28] [cursor=pointer] [box=16,386,247,35]:
+        - generic [ref=e29] [box=26,394,204,19]: eye_L_open
+        - generic [ref=e30] [box=230,394,23,19]: "300"
+      - button "eye_R_open 301" [ref=e31] [cursor=pointer] [box=16,427,247,35]:
+        - generic [ref=e32] [box=26,435,206,19]: eye_R_open
+        - generic [ref=e33] [box=232,435,21,19]: "301"
+      - button "eye_L_half_closed_lid 310" [ref=e34] [cursor=pointer] [box=16,468,247,35]:
+        - generic [ref=e35] [box=26,476,206,19]: eye_L_half_closed_lid
+        - generic [ref=e36] [box=232,476,21,19]: "310"
+      - button "eye_R_half_closed_lid 311" [ref=e37] [cursor=pointer] [box=16,509,247,35]:
+        - generic [ref=e38] [box=26,517,208,19]: eye_R_half_closed_lid
+        - generic [ref=e39] [box=234,517,19,19]: "311"
+      - button "eye_L_mostly_closed_lid 320" [ref=e40] [cursor=pointer] [box=16,550,247,35]:
+        - generic [ref=e41] [box=26,558,205,19]: eye_L_mostly_closed_lid
+        - generic [ref=e42] [box=231,558,22,19]: "320"
+      - button "eye_R_mostly_closed_lid 321" [ref=e43] [cursor=pointer] [box=16,591,247,35]:
+        - generic [ref=e44] [box=26,599,207,19]: eye_R_mostly_closed_lid
+        - generic [ref=e45] [box=233,599,20,19]: "321"
+      - button "eye_L_closed_lid 330" [ref=e46] [cursor=pointer] [box=16,632,247,35]:
+        - generic [ref=e47] [box=26,640,204,19]: eye_L_closed_lid
+        - generic [ref=e48] [box=230,640,23,19]: "330"
+      - button "eye_R_closed_lid 331" [ref=e49] [cursor=pointer] [box=16,673,247,35]:
+        - generic [ref=e50] [box=26,681,206,19]: eye_R_closed_lid
+        - generic [ref=e51] [box=232,681,21,19]: "331"
+    - generic [ref=e52] [box=0,731,279,385]:
+      - heading "Mouth 8" [level=2] [ref=e53] [box=16,747,247,14]
+      - button "mouth_base_clean 390" [ref=e54] [cursor=pointer] [box=16,771,247,35]:
+        - generic [ref=e55] [box=26,779,204,19]: mouth_base_clean
+        - generic [ref=e56] [box=230,779,23,19]: "390"
+      - button "mouth_closed_smile 400" [ref=e57] [cursor=pointer] [box=16,812,247,35]:
+        - generic [ref=e58] [box=26,820,204,19]: mouth_closed_smile
+        - generic [ref=e59] [box=230,820,23,19]: "400"
+      - button "mouth_small_open 410" [ref=e60] [cursor=pointer] [box=16,853,247,35]:
+        - generic [ref=e61] [box=26,861,206,19]: mouth_small_open
+        - generic [ref=e62] [box=232,861,21,19]: "410"
+      - button "mouth_wide_open 420" [ref=e63] [cursor=pointer] [box=16,894,247,35]:
+        - generic [ref=e64] [box=26,902,204,19]: mouth_wide_open
+        - generic [ref=e65] [box=230,902,23,19]: "420"
+      - button "mouth_o_vowel 430" [ref=e66] [cursor=pointer] [box=16,935,247,35]:
+        - generic [ref=e67] [box=26,943,204,19]: mouth_o_vowel
+        - generic [ref=e68] [box=230,943,23,19]: "430"
+      - button "mouth_inner 440" [ref=e69] [cursor=pointer] [box=16,976,247,35]:
+        - generic [ref=e70] [box=26,984,204,19]: mouth_inner
+        - generic [ref=e71] [box=230,984,23,19]: "440"
+      - button "mouth_teeth 450" [ref=e72] [cursor=pointer] [box=16,1017,247,35]:
+        - generic [ref=e73] [box=26,1025,204,19]: mouth_teeth
+        - generic [ref=e74] [box=230,1025,23,19]: "450"
+      - button "mouth_tongue 460" [ref=e75] [cursor=pointer] [box=16,1058,247,35]:
+        - generic [ref=e76] [box=26,1066,204,19]: mouth_tongue
+        - generic [ref=e77] [box=230,1066,23,19]: "460"
+  - main [ref=e78] [box=280,0,854,820]:
+    - generic [ref=e79] [box=280,0,854,58]:
+      - button "Preview" [ref=e80] [cursor=pointer] [box=294,12,83,34]
+      - button "Rig" [ref=e81] [cursor=pointer] [box=385,12,49,34]
+      - button "Mesh" [ref=e82] [cursor=pointer] [box=442,12,66,34]
+      - button "Deformers" [ref=e83] [cursor=pointer] [box=516,12,102,34]
+      - button "Clip" [ref=e84] [cursor=pointer] [box=626,12,54,34]
+      - generic [ref=e85] [box=688,14,67,30]: 21 parts
+      - generic [ref=e86] [box=764,14,91,30]: 6 deformers
+      - generic [ref=e87] [box=863,14,81,30]: 6 bindings
+  - complementary [ref=e90] [box=1134,0,320,820]:
+    - generic [ref=e91] [box=1135,0,319,513]:
+      - heading "Parameters" [level=2] [ref=e92] [box=1151,16,287,14]
+      - generic [ref=e93] [box=1151,40,287,43]:
+        - generic [ref=e94] [box=1151,40,225,15]: Angle X
+        - status "Angle X" [ref=e95] [box=1384,41,54,14]: "0.00"
+        - slider [ref=e96] [box=1153,65,287,16]: "0"
+      - generic [ref=e97] [box=1151,97,287,43]:
+        - generic [ref=e98] [box=1151,97,225,15]: Eye L
+        - status "Eye L" [ref=e99] [box=1384,98,54,14]: "1.00"
+        - slider [ref=e100] [box=1153,122,287,16]: "1"
+      - generic [ref=e101] [box=1151,154,287,43]:
+        - generic [ref=e102] [box=1151,154,225,15]: Eye R
+        - status "Eye R" [ref=e103] [box=1384,155,54,14]: "1.00"
+        - slider [ref=e104] [box=1153,179,287,16]: "1"
+      - generic [ref=e105] [box=1151,211,287,43]:
+        - generic [ref=e106] [box=1151,211,225,15]: Eye Ball X
+        - status "Eye Ball X" [ref=e107] [box=1384,212,54,14]: "0.00"
+        - slider [ref=e108] [box=1153,236,287,16]: "0"
+      - generic [ref=e109] [box=1151,268,287,43]:
+        - generic [ref=e110] [box=1151,268,225,15]: Eye Ball Y
+        - status "Eye Ball Y" [ref=e111] [box=1384,269,54,14]: "0.00"
+        - slider [ref=e112] [box=1153,293,287,16]: "0"
+      - generic [ref=e113] [box=1151,325,287,43]:
+        - generic [ref=e114] [box=1151,325,225,15]: Mouth
+        - status "Mouth" [ref=e115] [box=1384,326,54,14]: "0.00"
+        - slider [ref=e116] [box=1153,350,287,16]: "0"
+      - generic [ref=e117] [box=1151,382,287,43]:
+        - generic [ref=e118] [box=1151,382,225,15]: Mouth Form
+        - status "Mouth Form" [ref=e119] [box=1384,383,54,14]: "0.00"
+        - slider [ref=e120] [box=1153,407,287,16]: "0"
+      - generic [ref=e121] [box=1151,439,287,43]:
+        - generic [ref=e122] [box=1151,439,225,15]: Hair Front
+        - status "Hair Front" [ref=e123] [box=1384,440,54,14]: "0.00"
+        - slider [ref=e124] [box=1153,464,287,16]: "0"
+    - generic [ref=e125] [box=1135,513,319,134]:
+      - heading "Selected" [level=2] [ref=e126] [box=1151,529,287,14]
+      - generic [ref=e127] [box=1151,553,287,77]:
+        - term [ref=e128] [box=1151,553,70,14]: Part
+        - definition [ref=e129] [box=1231,553,207,14]: face_base_clean
+        - term [ref=e130] [box=1151,574,70,14]: Folder
+        - definition [ref=e131] [box=1231,574,207,14]: Face
+        - term [ref=e132] [box=1151,595,70,14]: BBox
+        - definition [ref=e133] [box=1231,595,207,14]: 308, 19, 1432, 2029
+        - term [ref=e134] [box=1151,616,70,14]: Alpha
+        - definition [ref=e135] [box=1231,616,207,14]: "0.50843525"
+    - generic [ref=e136] [box=1135,647,319,75]: v0 validates local mesh/deformer/keyform preview only. Glue remains an empty fixture-backed placeholder.

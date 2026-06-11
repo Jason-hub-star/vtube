@@ -1,0 +1,22 @@
+- generic [ref=e2] [box=0,0,1454,820]:
+  - complementary [ref=e3] [box=0,0,280,2139]:
+    - generic [ref=e4] [box=0,0,279,100]:
+      - heading "눈/입 수동 정렬" [level=1] [ref=e5] [box=16,16,247,23]
+      - generic [ref=e6] [box=16,45,247,38]: 얼굴 위에서 중심점을 찍고 크기를 줄여 저장합니다.
+  - main [ref=e8] [box=280,0,2078,2139]:
+    - generic [ref=e9] [box=280,0,2078,61]:
+      - generic [ref=e10] [box=294,20,337,19]: 클릭 중심 이동 · 드래그 미세 이동 · 스케일은 오른쪽 슬라이더
+      - generic [ref=e11] [box=2169,12,175,36]
+  - generic [ref=e16] [box=2358,0,330,2139]:
+    - generic [ref=e18] [box=2373,14,301,19]: "-"
+    - generic [ref=e19] [box=2359,57,329,284]:
+      - generic [ref=e20] [box=2373,71,301,21]: 정렬값
+      - generic [ref=e21] [box=2373,101,301,68]
+      - generic [ref=e28] [box=2373,169,301,41]
+      - generic [ref=e31] [box=2373,220,301,60]
+      - button "현재 그룹 저장" [ref=e34] [cursor=pointer] [box=2373,290,101,36]
+      - button "전체 저장" [ref=e35] [cursor=pointer] [box=2478,290,74,36]
+    - generic [ref=e37] [box=2373,355,301,21]: 적용 파츠
+    - generic [ref=e38] [box=2359,399,329,77]:
+      - generic [ref=e39] [box=2373,413,301,21]: 저장 상태
+      - generic [ref=e40] [box=2373,443,301,19]: 아직 저장 전

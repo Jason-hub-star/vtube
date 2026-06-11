@@ -29,7 +29,7 @@ When a useful reusable harness is discovered during work:
 
 - Start with `/Users/family/jason/Vtube/docs/status/PROJECT-STATUS.md`.
 - Use `/Users/family/jason/Vtube/vtube-validation-evidence-log.md` for detailed evidence status.
-- Keep current direction aligned with Live2D/Cubism production, not PNG frame-swap production.
+- Keep current direction aligned with **AUTORIG (자체 에디터/런타임 + AI 자동리깅, 2026-06-10 피벗)** — Cubism Editor 수동 저작도, PNG frame-swap도 아니다. Cubism 파라미터 ID 표준은 유지.
 - Never delete evidence JSON, QA reports, generated asset manifests, or manual review JSON unless 주인님 explicitly asks.
 - Archive superseded plans under `/Users/family/jason/Vtube/docs/archive/`.
 - Keep screenshot review, human review, and numeric ROI/bbox evidence separate.
