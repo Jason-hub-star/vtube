@@ -1,0 +1,134 @@
+{
+  "experiment_id": "see-through-layer-decomp-001",
+  "report_type": "ubuntu_cuda_environment_survey",
+  "status": "BLOCKED_INSUFFICIENT_HW_FOR_PRIMARY_DISK",
+  "decision": "SURVEY_ONLY_NO_RUN",
+  "generated_at": "2026-06-04T13:47:12+09:00",
+  "generated_on": {
+    "hostname": "jason-System-Product-Name",
+    "workspace_root": "/home/jason/vtube",
+    "note": "Clone of https://github.com/Jason-hub-star/vtube.git on Linux host, not the canonical /Users/family/jason/Vtube Mac workspace"
+  },
+  "runbook_reference": "docs/ref/UBUNTU-CUDA-SEETHROUGH-RUNBOOK.md",
+  "host_environment": {
+    "os": "Ubuntu 24.04.4 LTS (Noble Numbat)",
+    "kernel": "6.17.0-29-generic",
+    "cpu": {
+      "model": "Intel(R) Core(TM) i5-14400F",
+      "sockets": 1,
+      "cores_per_socket": 10,
+      "threads_per_core": 2
+    },
+    "ram_total_gib": 15,
+    "ram_available_gib": 12,
+    "gpu": {
+      "model": "NVIDIA GeForce RTX 5060",
+      "architecture": "Blackwell (sm_120)",
+      "vram_total_mib": 8151,
+      "vram_used_mib_at_survey": 527,
+      "nvidia_driver": "595.58.03",
+      "cuda_runtime_reported_by_smi": "13.2"
+    },
+    "python": {
+      "default_python3": "3.12.3",
+      "python3_11_present": false
+    },
+    "nvcc_present": false,
+    "disks": [
+      {
+        "mount": "/",
+        "device": "/dev/nvme0n1p5",
+        "size": "39G",
+        "used": "31G",
+        "avail": "6.8G",
+        "use_pct": 82
+      },
+      {
+        "mount": "/data",
+        "device": "/dev/nvme0n1p2",
+        "size": "429G",
+        "used": "7.4G",
+        "avail": "400G",
+        "use_pct": 2
+      },
+      {
+        "mount": "/boot/efi",
+        "device": "/dev/nvme0n1p1",
+        "size": "196M",
+        "used": "38M",
+        "avail": "159M",
+        "use_pct": 20
+      }
+    ]
+  },
+  "runbook_requirements_vs_host": [
+    {
+      "requirement": "GPU VRAM 24GB minimum, 48GB+ preferred",
+      "host": "RTX 5060 8GB",
+      "verdict": "FAIL",
+      "note": "Below even the 'Avoid for first run: T4 16GB' warning line in the runbook"
+    },
+    {
+      "requirement": "RAM 32GB minimum",
+      "host": "15GB total / 12GB available",
+      "verdict": "FAIL"
+    },
+    {
+      "requirement": "Disk 60GB+ free",
+      "host": "/ has 6.8GB free (FAIL), but /data has 400GB free (PASS if workspace relocated)",
+      "verdict": "CONDITIONAL_PASS_VIA_DATA_PARTITION"
+    },
+    {
+      "requirement": "Ubuntu 22.04 or 24.04",
+      "host": "Ubuntu 24.04.4",
+      "verdict": "PASS"
+    },
+    {
+      "requirement": "Python 3.11 or 3.12",
+      "host": "Python 3.12.3",
+      "verdict": "PASS"
+    },
+    {
+      "requirement": "CUDA PyTorch wheel available",
+      "host": "Driver 595 / CUDA 13.2; needs cu128 wheel; sm_120 (Blackwell) requires recent PyTorch nightly or 2.5+ with cu128",
+      "verdict": "PASS_WITH_WHEEL_CAVEAT"
+    }
+  ],
+  "blocking_factors": [
+    "RTX 5060 8GB VRAM is below the runbook minimum (24GB) and below the explicit 'avoid' threshold (T4 16GB).",
+    "System RAM 15GB is under the 32GB minimum; OOM risk during model load.",
+    "Primary disk (/) has only 6.8GB free, which is insufficient for PyTorch CUDA wheels plus model weights."
+  ],
+  "mitigations_not_applied": [
+    "Workspace and ComfyUI venv could be moved to /data (400GB free) instead of $HOME on /, but this survey was scoped to report-only per 주인님 instruction.",
+    "Trying --resolution 1024 --steps 20 --depth-resolution 512 might fit 8GB VRAM, but is not in the 'first baseline' path of the runbook.",
+    "quant_mode=nf4 / group_offload=true are second-experiment options only, per runbook lines 192-193."
+  ],
+  "recommended_next_steps": [
+    "Do not run inference on this host as the primary CUDA See-through machine.",
+    "Either: (a) obtain a 24GB+ VRAM machine per runbook 'Recommended Ubuntu Machine' section, or (b) explicitly downgrade target to a low-resolution evidence experiment (1024/512) on this 8GB host, tracked as a separate second-class report — not the production baseline.",
+    "If (b) is chosen later, relocate workspace to /data before any pip install; the / partition cannot hold PyTorch CUDA wheels.",
+    "Verify PyTorch + cu128 actually supports sm_120 (Blackwell) at install time; if not, fall back to nightly per pytorch.org instructions."
+  ],
+  "files_inspected": [
+    "CLAUDE.md",
+    "AGENTS.md",
+    "docs/status/PROJECT-STATUS.md",
+    "docs/ref/UBUNTU-CUDA-SEETHROUGH-RUNBOOK.md"
+  ],
+  "commands_run": [
+    "nvidia-smi",
+    "python3 --version",
+    "df -h",
+    "free -h",
+    "cat /etc/os-release",
+    "uname -r",
+    "lscpu",
+    "lsblk",
+    "nvcc --version (not installed)"
+  ],
+  "no_install_performed": true,
+  "no_inference_performed": true,
+  "no_ssot_doc_changes": true,
+  "follow_up_label_suggestion": "BLOCKED_INSUFFICIENT_VRAM_RTX5060_8GB"
+}
