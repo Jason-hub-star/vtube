@@ -16,6 +16,10 @@ def build_parameters() -> list[dict]:
         {"id": "ParamBodyAngleX", "min": -10, "max": 10, "default": 0, "key_values": [-10, 0, 10]},
         {"id": "ParamBodyAngleY", "min": -10, "max": 10, "default": 0, "key_values": [-10, 0, 10]},
         {"id": "ParamBodyAngleZ", "min": -10, "max": 10, "default": 0, "key_values": [-10, 0, 10]},  # BODY-SWAY-001 몸 기울기
+        # SHOULDER-TRACK-001 입력 채널 — 디포머 무바인딩, 몸 스프링의 입력 전용
+        # (트래킹이 자유롭게 쓰고, 스프링이 노이즈를 거른 뒤 BodyAngle을 구동)
+        {"id": "ParamBodyTrackX", "min": -1, "max": 1, "default": 0, "key_values": [-1, 0, 1]},
+        {"id": "ParamBodyTrackZ", "min": -1, "max": 1, "default": 0, "key_values": [-1, 0, 1]},
         {"id": "ParamBreath", "min": 0, "max": 1, "default": 0, "key_values": [0, 1]},
         {"id": "ParamEyeBallX", "min": -1, "max": 1, "default": 0, "key_values": [-1, 0, 1]},
         {"id": "ParamEyeBallY", "min": -1, "max": 1, "default": 0, "key_values": [-1, 0, 1]},
@@ -202,13 +206,15 @@ def build_body_sway_springs() -> list[dict]:
     output_parameter가 있는 프로파일은 런타임 stepPhysics가 매 스텝 해당 파라미터에
     offset[0]을 쓴다 — BodyAngle 바인딩(body/upper/back_hair)이 전부 자동 동행.
     """
+    # SHOULDER-TRACK-001: 입력 = ParamBodyTrack* (어깨 실측, 없으면 드라이브가 머리 기반 폴백 주입).
+    # 강성을 올려 1:1에 가깝게 — 스프링은 지연 추종 연출 + Pose 노이즈 필터 역할만.
     return [
         {"id": "body_sway_spring", "targets": [], "output_parameter": "ParamBodyAngleX",
-         "stiffness": 0.05, "damping": 0.92, "drag": 0.0, "max_offset": [10, 0],
-         "input_weights": {"ParamAngleX": [7.0, 0], "ParamBreath": [1.2, 0]}},
+         "stiffness": 0.12, "damping": 0.85, "drag": 0.0, "max_offset": [10, 0],
+         "input_weights": {"ParamBodyTrackX": [9.0, 0], "ParamBreath": [1.2, 0]}},
         {"id": "body_tilt_spring", "targets": [], "output_parameter": "ParamBodyAngleZ",
-         "stiffness": 0.045, "damping": 0.93, "drag": 0.0, "max_offset": [8, 0],
-         "input_weights": {"ParamAngleZ": [5.0, 0], "ParamBreath": [-0.8, 0]}},
+         "stiffness": 0.10, "damping": 0.86, "drag": 0.0, "max_offset": [8, 0],
+         "input_weights": {"ParamBodyTrackZ": [8.0, 0], "ParamBreath": [-0.8, 0]}},
     ]
 
 

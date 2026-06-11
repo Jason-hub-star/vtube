@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project_kind": "mini_cubism_v0",
   "experiment_id": "autorig-rig-v0",
-  "generated_at": "2026-06-11T11:42:06.537587+00:00",
+  "generated_at": "2026-06-11T11:56:56.884629+00:00",
   "source_selection": {
     "visible_layers": "experiments/autorig-character-003/seethrough_true_reskinned/reskin_manifest.json",
     "hidden_layers": [
@@ -39439,6 +39439,28 @@
       ]
     },
     {
+      "id": "ParamBodyTrackX",
+      "min": -1,
+      "max": 1,
+      "default": 0,
+      "key_values": [
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "ParamBodyTrackZ",
+      "min": -1,
+      "max": 1,
+      "default": 0,
+      "key_values": [
+        -1,
+        0,
+        1
+      ]
+    },
+    {
       "id": "ParamBreath",
       "min": 0,
       "max": 1,
@@ -40731,16 +40753,16 @@
       "id": "body_sway_spring",
       "targets": [],
       "output_parameter": "ParamBodyAngleX",
-      "stiffness": 0.05,
-      "damping": 0.92,
+      "stiffness": 0.12,
+      "damping": 0.85,
       "drag": 0.0,
       "max_offset": [
         10,
         0
       ],
       "input_weights": {
-        "ParamAngleX": [
-          7.0,
+        "ParamBodyTrackX": [
+          9.0,
           0
         ],
         "ParamBreath": [
@@ -40753,16 +40775,16 @@
       "id": "body_tilt_spring",
       "targets": [],
       "output_parameter": "ParamBodyAngleZ",
-      "stiffness": 0.045,
-      "damping": 0.93,
+      "stiffness": 0.1,
+      "damping": 0.86,
       "drag": 0.0,
       "max_offset": [
         8,
         0
       ],
       "input_weights": {
-        "ParamAngleZ": [
-          5.0,
+        "ParamBodyTrackZ": [
+          8.0,
           0
         ],
         "ParamBreath": [

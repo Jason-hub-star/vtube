@@ -76,6 +76,7 @@ DRIVE_HTML = """<!doctype html>
     <div class="chips">
       <span class="chip">카메라 <b id="cameraState">꺼짐</b></span>
       <span class="chip">얼굴 <b id="faceState">-</b></span>
+      <span class="chip">어깨 <b id="shoulderState">-</b></span>
       <span class="chip">FPS <b id="fpsState">0</b></span>
       <span class="chip">적용 파라미터 <b id="appliedState">0</b></span>
       <span class="chip">프레임 <b id="frameState">0</b></span>
@@ -96,14 +97,14 @@ const overlay = document.getElementById("overlay");
 const ctx = overlay.getContext("2d");
 const frame = document.getElementById("model");
 const els = Object.fromEntries(
-  ["startBtn", "calibrateBtn", "cameraState", "faceState", "fpsState", "appliedState", "frameState", "paramGrid", "modeLabel", "camBox"]
+  ["startBtn", "calibrateBtn", "cameraState", "faceState", "shoulderState", "fpsState", "appliedState", "frameState", "paramGrid", "modeLabel", "camBox"]
     .map((id) => [id, document.getElementById(id)])
 );
 
 const keyParams = [
   "ParamAngleX", "ParamAngleY", "ParamAngleZ", "ParamEyeLOpen", "ParamEyeROpen",
   "ParamEyeBallX", "ParamEyeBallY", "ParamMouthOpenY", "ParamMouthForm",
-  "ParamBodyAngleX", "ParamBodyAngleY", "ParamBreath",
+  "ParamBodyTrackX", "ParamBodyTrackZ", "ParamBodyAngleY", "ParamBreath",
 ];
 const paramEls = new Map();
 for (const param of keyParams) {
@@ -123,8 +124,9 @@ function avg(...vs) { return vs.reduce((a, b) => a + b, 0) / vs.length; }
 
 let neutral = null;
 let latestRaw = null;
+let shoulderAuto = null; // 첫 유효 어깨 샘플 = 임시 중립 (보정 버튼이 정밀값으로 대체)
 
-function rawChannels(result, nowMs) {
+function rawChannels(result, poseResult, nowMs) {
   const landmarks = result.faceLandmarks?.[0];
   const cats = result.faceBlendshapes?.[0]?.categories ?? [];
   const blends = new Map(cats.map((c) => [c.categoryName, c.score]));
@@ -147,7 +149,27 @@ function rawChannels(result, nowMs) {
   const pitchDeg = clamp(((eyeCenterY - nose.y) / faceHeight) * 46, -20, 20);
   const gazeX = clamp(avg(b("eyeLookOutRight"), b("eyeLookInLeft")) - avg(b("eyeLookInRight"), b("eyeLookOutLeft")), -1, 1);
   const gazeY = clamp(avg(b("eyeLookUpLeft"), b("eyeLookUpRight")) - avg(b("eyeLookDownLeft"), b("eyeLookDownRight")), -1, 1);
+  // SHOULDER-TRACK-001: Pose 11/12 = 어깨 (이미지좌표: 12=화면왼쪽, 11=화면오른쪽 — 눈 규약과 동일 방향)
+  let sCh = { shoulder_ok: false };
+  const ps = poseResult?.landmarks?.[0];
+  if (ps && ps[11] && ps[12] && Math.min(ps[11].visibility ?? 1, ps[12].visibility ?? 1) > 0.5) {
+    const sdx = ps[11].x - ps[12].x;
+    const sdy = ps[11].y - ps[12].y;
+    const rollRaw = Math.atan2(sdy, sdx) * 180 / Math.PI;
+    const cxRaw = (ps[11].x + ps[12].x) / 2;
+    const cyRaw = (ps[11].y + ps[12].y) / 2;
+    if (!shoulderAuto) shoulderAuto = { roll: rollRaw, cx: cxRaw, cy: cyRaw };
+    sCh = {
+      shoulder_ok: true,
+      shoulder_roll_raw: rollRaw, shoulder_cx_raw: cxRaw, shoulder_cy_raw: cyRaw,
+      shoulder_width: Math.max(Math.abs(sdx), 0.06),
+      shoulder_roll: rollRaw - (neutral?.shoulder_roll_raw ?? shoulderAuto.roll),
+      shoulder_cx: cxRaw - (neutral?.shoulder_cx_raw ?? shoulderAuto.cx),
+      shoulder_cy: cyRaw - (neutral?.shoulder_cy_raw ?? shoulderAuto.cy),
+    };
+  }
   return {
+    ...sCh,
     head_yaw_raw: yawDeg, head_pitch_raw: pitchDeg, head_roll_raw: rollDeg,
     head_yaw: yawDeg - (neutral?.head_yaw_raw ?? 0),
     head_pitch: pitchDeg - (neutral?.head_pitch_raw ?? 0),
@@ -176,10 +198,26 @@ function convert(ch) {
     ParamEyeBallY: clamp(ch.eye_gaze_y, -1, 1),
     ParamMouthOpenY: clamp(remapDeadzone(ch.jawOpen, 0.08, 0.85), 0, 1),
     ParamMouthForm: clamp(avg(ch.mouthSmileLeft, ch.mouthSmileRight) - avg(ch.mouthFrownLeft, ch.mouthFrownRight), -1, 1),
-    ParamBodyAngleX: clamp(normalizeCentered(headYaw, -25, 25) * 10 * 0.65, -10, 10),
-    ParamBodyAngleY: clamp(normalizeCentered(headPitch, -20, 20) * 10 * 0.45, -10, 10),
+    // SHOULDER-TRACK-001: 어깨 실측 1:1 (Pose) — 없으면 머리 기반 폴백.
+    // BodyAngleX/Z는 스프링 소유라 BodyTrack 입력 채널로 보낸다 (스프링이 노이즈 필터+지연 추종).
+    ParamBodyTrackX: ch.shoulder_ok
+      ? clamp((ch.shoulder_cx / ch.shoulder_width) * 2.2, -1, 1)
+      : clamp(normalizeCentered(headYaw, -25, 25) * 0.65, -1, 1),
+    ParamBodyTrackZ: ch.shoulder_ok
+      ? clamp(ch.shoulder_roll / 18, -1, 1)
+      : clamp(normalizeCentered(headRoll, -25, 25) * 0.4, -1, 1),
+    ParamBodyAngleY: ch.shoulder_ok
+      ? smoothBodyY(clamp((ch.shoulder_cy / ch.shoulder_width) * 14, -10, 10))
+      : clamp(normalizeCentered(headPitch, -20, 20) * 10 * 0.45, -10, 10),
     ParamBreath: clamp(0.5 + 0.5 * Math.sin(ch.time * Math.PI * 2), 0, 1),
   };
+}
+
+// 어깨 상하(BodyAngleY)는 직결이라 가벼운 평활로 Pose 지터 흡수 (X/Z는 스프링이 거른다)
+let bodyYState = 0;
+function smoothBodyY(v) {
+  bodyYState = bodyYState * 0.7 + v * 0.3;
+  return bodyYState;
 }
 
 async function probe() {
@@ -254,8 +292,9 @@ async function runReplay() {
 
 // ---------- 웹캠 모드 ----------
 async function runWebcam() {
-  const { FaceLandmarker, FilesetResolver } = await import("https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14");
+  const { FaceLandmarker, PoseLandmarker, FilesetResolver } = await import("https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14");
   let landmarker = null;
+  let poseLandmarker = null; // SHOULDER-TRACK-001: 어깨 실측 (실패 시 머리 기반 폴백)
   let lastVideoTime = -1;
   let frames = 0;
   let fpsWindowStart = performance.now();
@@ -277,6 +316,24 @@ async function runWebcam() {
     } catch (e) {
       console.warn("GPU delegate 실패 — CPU 폴백:", e);
       landmarker = await FaceLandmarker.createFromOptions(fileset, options("CPU"));
+    }
+    const poseOptions = (delegate) => ({
+      baseOptions: {
+        modelAssetPath: "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_lite/float16/latest/pose_landmarker_lite.task",
+        delegate,
+      },
+      runningMode: "VIDEO",
+      numPoses: 1,
+    });
+    try {
+      poseLandmarker = await PoseLandmarker.createFromOptions(fileset, poseOptions("GPU"));
+    } catch (e) {
+      try {
+        poseLandmarker = await PoseLandmarker.createFromOptions(fileset, poseOptions("CPU"));
+      } catch (e2) {
+        console.warn("Pose 랜드마커 로드 실패 — 머리 기반 폴백:", e2);
+        poseLandmarker = null;
+      }
     }
     return landmarker;
   }
@@ -302,11 +359,13 @@ async function runWebcam() {
       lastVideoTime = video.currentTime;
       const now = performance.now();
       const result = landmarker.detectForVideo(video, now);
+      const poseResult = poseLandmarker ? poseLandmarker.detectForVideo(video, now) : null;
       drawDots(result);
-      const channels = rawChannels(result, now);
+      const channels = rawChannels(result, poseResult, now);
       if (channels) {
         latestRaw = channels;
         els.faceState.textContent = "인식";
+        els.shoulderState.textContent = channels.shoulder_ok ? "인식" : "없음";
         apply(convert(channels));
       } else {
         els.faceState.textContent = "없음";
@@ -352,7 +411,14 @@ async function runWebcam() {
       await new Promise((resolve) => setTimeout(resolve, 60));
     }
     const mean = (key) => samples.reduce((acc, item) => acc + (item[key] ?? 0), 0) / Math.max(samples.length, 1);
+    // 어깨 중립은 어깨가 인식된 샘플로만 (Pose 미인식 중 보정해도 0으로 오염되지 않게)
+    const sSamples = samples.filter((item) => item.shoulder_ok);
+    const sMean = (key) => sSamples.reduce((acc, item) => acc + (item[key] ?? 0), 0) / Math.max(sSamples.length, 1);
+    const shoulderNeutral = sSamples.length
+      ? { shoulder_roll_raw: sMean("shoulder_roll_raw"), shoulder_cx_raw: sMean("shoulder_cx_raw"), shoulder_cy_raw: sMean("shoulder_cy_raw") }
+      : {};
     neutral = {
+      ...shoulderNeutral,
       head_yaw_raw: mean("head_yaw_raw"),
       head_pitch_raw: mean("head_pitch_raw"),
       head_roll_raw: mean("head_roll_raw"),
