@@ -25,14 +25,14 @@ Updated: 2026-06-11 (CHAIN-001 — strong20 체인 이식 + 어깨 가닥 분리
 |---|---:|---|
 | 레퍼런스 분석·성공 패턴 (57모델) | 100% | 완료, AUTORIG 품질 사다리 기준치로 사용 |
 | character-002 64-part 후보 | 기술 PASS | 주인님 시각 판정: 오염 多 → 템플릿 방식으로 재생성 예정 (소재만 폐기, 스펙·증거 유지) |
-| 트래킹 (MediaPipe→Cubism 파라미터) | **T3 PASS (2026-06-11)** | **체인 끝단 최초 연결**: T1 스트림 → `__miniProbe` → 자체 Mini Cubism 런타임(v21). 합성 12샘플 + 175프레임 재생 스모크 PASS. `scripts/run_mini_cubism_webcam_drive.py` (실웹캠 /drive 페이지 포함) |
+| 트래킹 (MediaPipe→Cubism 파라미터) | **얼굴+어깨 실측 (주인님 승인 2026-06-11)** | Face 랜드마커 + **Pose 어깨 1:1 매핑**(SHOULDER-TRACK-001: 기울기→BodyZ·이동→BodyX·으쓱→BodyY, 자동/버튼 캘리브레이션, 머리 기반 폴백). 오버레이 점 9개(얼굴 7 파랑+어깨 2 주황+어깨선). 페이지는 `scripts/templates/mini_cubism_drive.html` (서버 분리) |
 | 자체 런타임 (mini_cubism 계보) | 주입 API 완비 | `__miniProbe` (waitReady/setParameterValues/canvasHash) 추가 |
 | **관제탑 대시보드** | **완성 (2026-06-11)** | 이벤트 JSONL 컨벤션(`scripts/autorig_events.py`) + 서버(8095, macOS 알림) + 토스스타일 UI(타임라인/피드/게이트 드래그 수정/QA/로그) + 시뮬레이터. 스모크: 파이썬 18/18, 브라우저 8/8 PASS |
 | **소재 (하이브리드 레시피)** | **VERIFIED** | 진짜 마스터 분해+원본 재스킨(가시) + 동일세션 시트(숨은) — `vtube-hybrid-material-recipe` 하니스화. 전체 슬롯 생성은 기하 비정합으로 DISCARDED |
-| **자동 리깅 (rig v1.6)** | **EYE-NATURAL-002 완료 (2026-06-11)** | CHAIN-001(머리-몸 체인) + 눈 상하 감김(아랫꺼풀 20% 상승, 하루토 下まつげ 패턴) + **깜빡임 정점 키폼**: 크로스페이드 4단계(잔상 어지러움) 폐기 → 패치 1장 + 키폼 2개 연속 보간(공식 키폼 등가, 런타임 `vertex_keyforms`). 잔상 0 수치 입증(`validate_blink_keyforms.py`, 기준 워프 대비 worst mean 2.2). 잔존: 트인 목 미세 접합 → 004부터 초커 기본(스펙 9번) |
+| **자동 리깅 (rig v1.9)** | **몸·목·입 사이클 완료 (2026-06-11)** | 눈: 상하 감김+정점 키폼(잔상 0 입증) · 입: 높이 키폼 정렬+하드 밴드 스냅(잔상 해소 — 근본은 004 부품형 입) · 몸: 골반 진자 스웨이(공식 体の回転 패턴, 접합부 등변위 픽셀 실측 18px 균일)+파라미터 스프링(BodyAngleX/Z 물리 소유)+어깨 실측 입력 · 목: 首の曲面 전가장자리 핀(참수선 해소, 주인님 스크린샷 진단) · 건강검진: 인스펙터 무반응 0건. 눈웃음 워프(EXPR-002 곡선 A)는 폴백 — 표정은 004 생성 시트. 잔존 갭: 입꼬리 파라미터·팔·옷 물리·각도 폼·눈썹 모양 |
 | **렌더 백엔드 (PIXI-RENDER-001)** | **완료 (2026-06-11)** | PixiJS v8 WebGL 기본(`?renderer=pixi`) — 풀해상도 상태 전환 ~1ms·실효 60fps (canvas2d 대비 ~100×). canvas 폴백 유지. verify 5/5 양 백엔드 PASS |
 | AUTORIG-TEMPLATE-SPEC-001 | 완료 (2026-06-11 개정) | 생성 목록: 마스터 + 입 시트 + **눈 표정 시트(눈웃음·윙크·놀람·반개·><·하트눈) + 액센트 시트(홍조·그늘·눈물·땀)** — 표정은 워프가 아니라 동일세션 생성 작화 (`docs/ref/AUTORIG-MASTER-SPEC.md` §3.2~3.4) |
-| AUTORIG-PIPELINE-CLI-001 | **완료 (2026-06-11)** | `run_autorig_pipeline.py` 원커맨드 — 003 풀런 76분(순수 연산 ~22분), H1/H1.5/H2 관제탑 게이트, 캐릭터-무관성 실증 |
+| AUTORIG-PIPELINE-CLI-001 | **완료 (2026-06-11)** | `run_autorig_pipeline.py` 원커맨드 — 003 풀런 76분(순수 연산 ~22분), H1/H1.5/H2 관제탑 게이트. **P5 자동 검증 5종**: validator·mesh verify·blink 잔상·perf·**rig 인스펙터(무반응 게이트)** |
 | AUTORIG-ANCHOR-DETECT-001 | 0% | 프로덕션 갭 (임의 업로드 PNG 앵커 검출) |
 
 ## Production Direction
