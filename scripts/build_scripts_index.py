@@ -51,6 +51,24 @@ def categorize(rel_name: str) -> str:
     return "legacy-misc"
 
 
+def core_scripts() -> set[str]:
+    """현행 원커맨드 파이프라인이 호출하는 스크립트 + 상시 도구 = CORE (⭐).
+
+    run_autorig_pipeline.py에서 동적으로 추출 — 파이프라인이 바뀌면 INDEX도 따라온다.
+    260여 개 레거시 증거 스크립트와 한 평면에 있으므로, 다음 작업자가 현행 경로를
+    오선택하지 않게 표시한다.
+    """
+    core = {
+        "run_autorig_pipeline.py", "mini_cubism_preview_server.py",
+        "run_mesh_deform_verify.py", "run_rig_perf_test.py",
+        "autorig_events.py", "build_scripts_index.py",
+    }
+    pipeline = SCRIPTS / "run_autorig_pipeline.py"
+    if pipeline.exists():
+        core |= set(re.findall(r"scripts/([a-z_0-9]+\.py)", pipeline.read_text(encoding="utf-8")))
+    return core
+
+
 def main() -> int:
     entries: dict[str, list[tuple[str, int, str]]] = {key: [] for key, _, _ in CATEGORIES}
     files = sorted(SCRIPTS.rglob("*.py")) + sorted(SCRIPTS.glob("*.mjs"))
@@ -70,8 +88,10 @@ def main() -> int:
         "",
         "새 스크립트를 만들기 전에 이 인덱스에서 기존 것을 먼저 찾는다.",
         "코드 규칙: `docs/ref/AUTORIG-PIPELINE-V1.md`의 '코드 규칙' 절 (lib 사용 의무, 캐릭터 하드코딩 금지, 500줄 상한).",
+        "⭐ = **현행 원커맨드 파이프라인 핵심** (run_autorig_pipeline 호출 체인 + 상시 도구) — 나머지는 레거시 증거 스크립트.",
         "",
     ]
+    core = core_scripts()
     for key, _, label in CATEGORIES:
         items = entries[key]
         if not items:
@@ -81,7 +101,7 @@ def main() -> int:
         lines.append("| 파일 | LOC | 설명 |")
         lines.append("|---|---:|---|")
         for rel_name, loc, desc in sorted(items):
-            flag = " ⚠️" if loc >= 500 else ""
+            flag = (" ⭐" if rel_name in core else "") + (" ⚠️" if loc >= 500 else "")
             lines.append(f"| `{rel_name}`{flag} | {loc} | {desc} |")
         lines.append("")
     out = SCRIPTS / "INDEX.md"
