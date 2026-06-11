@@ -37,8 +37,8 @@ const { chromium } = require(config.pw);
     out.neutral.mesh = await page.evaluate(() => { window.__miniRig().render_mode='mesh'; window.__miniSetParameters({}); return window.__miniProbe.canvasHash(); });
     out.neutral.sprite = await page.evaluate(() => { window.__miniRig().render_mode='sprite'; window.__miniSetParameters({}); return window.__miniProbe.canvasHash(); });
     await page.evaluate(() => { window.__miniRig().render_mode='mesh'; window.__miniSetParameters({}); });
-    const reset = { ParamAngleX:0, ParamAngleY:0, ParamAngleZ:0, ParamMouthOpenY:0, ParamEyeLOpen:1, ParamEyeROpen:1, ParamEyeBallX:0 };
-    const states = { head_turn:{ParamAngleX:30}, nod:{ParamAngleY:-30}, tilt:{ParamAngleZ:30}, gaze_turn:{ParamAngleX:30,ParamEyeBallX:1}, combo:{ParamAngleX:25,ParamAngleY:-15,ParamMouthOpenY:0.6} };
+    const reset = { ParamAngleX:0, ParamAngleY:0, ParamAngleZ:0, ParamMouthOpenY:0, ParamEyeLOpen:1, ParamEyeROpen:1, ParamEyeBallX:0, ParamEyeSmile:0, ParamCheek:0, ParamMouthForm:0 };
+    const states = { head_turn:{ParamAngleX:30}, nod:{ParamAngleY:-30}, tilt:{ParamAngleZ:30}, gaze_turn:{ParamAngleX:30,ParamEyeBallX:1}, combo:{ParamAngleX:25,ParamAngleY:-15,ParamMouthOpenY:0.6}, smile:{ParamEyeSmile:1,ParamCheek:1,ParamMouthForm:0.8} };
     for (const [name, vals] of Object.entries(states)) {
       await page.evaluate((v) => window.__miniSetParameters(v), { ...reset, ...vals }); // 워밍업
       const t = await page.evaluate((v) => { const t0=performance.now(); window.__miniSetParameters(v); return performance.now()-t0; }, { ...reset, ...vals });

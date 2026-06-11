@@ -29,7 +29,7 @@ Updated: 2026-06-11 (CHAIN-001 — strong20 체인 이식 + 어깨 가닥 분리
 | 자체 런타임 (mini_cubism 계보) | 주입 API 완비 | `__miniProbe` (waitReady/setParameterValues/canvasHash) 추가 |
 | **관제탑 대시보드** | **완성 (2026-06-11)** | 이벤트 JSONL 컨벤션(`scripts/autorig_events.py`) + 서버(8095, macOS 알림) + 토스스타일 UI(타임라인/피드/게이트 드래그 수정/QA/로그) + 시뮬레이터. 스모크: 파이썬 18/18, 브라우저 8/8 PASS |
 | **소재 (하이브리드 레시피)** | **VERIFIED** | 진짜 마스터 분해+원본 재스킨(가시) + 동일세션 시트(숨은) — `vtube-hybrid-material-recipe` 하니스화. 전체 슬롯 생성은 기하 비정합으로 DISCARDED |
-| **자동 리깅 (rig v1.6)** | **EYE-NATURAL-002 완료 (2026-06-11)** | CHAIN-001(머리-몸 체인) + 눈 상하 감김(아랫꺼풀 20% 상승, 하루토 下まつげ 패턴) + **깜빡임 정점 키폼**: 크로스페이드 4단계(잔상 어지러움) 폐기 → 패치 1장 + 키폼 2개 연속 보간(공식 키폼 등가, 런타임 `vertex_keyforms`). 잔상 0 수치 입증(`validate_blink_keyforms.py`, 기준 워프 대비 worst mean 2.2). 잔존: 트인 목 미세 접합 → 004부터 초커 기본(스펙 9번) |
+| **자동 리깅 (rig v1.7)** | **EXPR-001 완료 (2026-06-11)** | CHAIN-001(머리-몸 체인) + 눈 상하 감김 + 깜빡임 정점 키폼(잔상 0 입증, `validate_blink_keyforms.py`) + **표정 1차**: 눈웃음(∩ 키폼)·볼 홍조(절차 오버레이)·입꼬리(MouthForm ±1 키폼) + `expressions.json` 프리셋(미소/윙크L/R) — 드라이브 페이지 버튼·단축키 + 트래킹 자동(squint→EyeSmile, smile→Cheek). 파라미터 18종. 잔존: 트인 목 미세 접합 → 004부터 초커 기본(스펙 9번) |
 | **렌더 백엔드 (PIXI-RENDER-001)** | **완료 (2026-06-11)** | PixiJS v8 WebGL 기본(`?renderer=pixi`) — 풀해상도 상태 전환 ~1ms·실효 60fps (canvas2d 대비 ~100×). canvas 폴백 유지. verify 5/5 양 백엔드 PASS |
 | AUTORIG-TEMPLATE-SPEC-001 | 완료 | 생성 목록 확정: 마스터 1장 + 입 4상태 시트 1장 (`docs/ref/AUTORIG-MASTER-SPEC.md`) |
 | AUTORIG-PIPELINE-CLI-001 | **완료 (2026-06-11)** | `run_autorig_pipeline.py` 원커맨드 — 003 풀런 76분(순수 연산 ~22분), H1/H1.5/H2 관제탑 게이트, 캐릭터-무관성 실증 |

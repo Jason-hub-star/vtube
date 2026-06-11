@@ -25,6 +25,7 @@ import numpy as np
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.expr_assets import attach_mouth_form_keyforms, make_cheek_blush  # noqa: E402
 from lib.rig_keyforms import build_keyform_bindings, build_opacity_curves, build_parameters, build_physics_profiles  # noqa: E402
 from lib.vtube_io import ROOT, load_json, now_iso, rel, write_json  # noqa: E402
 from run_arap_blink_experiment import blink_mesh, eye_bbox_from_layer  # noqa: E402
@@ -37,7 +38,7 @@ def folder_of(pid: str) -> str:
         return "Eye"
     if "mouth" in pid:
         return "Mouth"
-    if "brow" in pid or "face" in pid or "nose" in pid or "ear" in pid:
+    if "brow" in pid or "face" in pid or "nose" in pid or "ear" in pid or "cheek" in pid:
         return "Face"
     if "hair" in pid:
         return "Hair"
@@ -53,7 +54,7 @@ def deformer_of(pid: str) -> str:
         return "mouth_warp"
     if pid == "front_hair":
         return "front_hair_warp"
-    if "brow" in pid or "face" in pid or "nose" in pid or "ear" in pid:
+    if "brow" in pid or "face" in pid or "nose" in pid or "ear" in pid or pid == "cheek_blush":
         return "head_angle_warp"
     if pid.startswith("hair_front_"):
         return "front_hair_warp"
@@ -196,6 +197,9 @@ def main() -> int:
         blink_cfg = load_json(args.arap_eye_dir / "arap_blink_config.json")
         for order, side in ((536, "L"), (537, "R")):
             hidden.append((f"eye_{side}_blink", args.arap_eye_dir / f"eye_{side}_arap_000.png", order))
+        # EXPR-001 눈웃음: 같은 항등 패치, ∩ 키폼만 다름 — 깜빡임 위에 그림 (스마일 중 깜빡임 가림)
+        for order, side in ((538, "L"), (539, "R")):
+            hidden.append((f"eye_{side}_smile", args.arap_eye_dir / f"eye_{side}_arap_000.png", order))
     else:
         if args.hidden_eye_dir is None:
             raise SystemExit("--arap-eye-dir 없이는 --hidden-eye-dir가 필요해요")
@@ -207,6 +211,13 @@ def main() -> int:
         if not path.exists():
             raise SystemExit(f"숨은 레이어 없음: {path}")
         sources.append((pid, path, order))
+    if use_arap:
+        # EXPR-001 볼 홍조: 얼굴 바로 위 — 위치는 눈 bbox에서 결정론 파생
+        face_src = next((s for s in sources if s[0] == "face_base"), None)
+        if face_src is not None:
+            blush_src = out / "cheek_blush_src.png"
+            make_cheek_blush(face_src[1], [eye_bbox_from_layer(ROOT / blink_cfg[f"eye_white_{s}"]) for s in ("L", "R")], blush_src)
+            sources.append(("cheek_blush", blush_src, face_src[2] + 1))
     sources.sort(key=lambda s: s[2])
 
     # v0.1: 생성 입 내부를 "원본 mouth_line bbox"에서 파생한 위치/크기로 재정합한다.
@@ -262,16 +273,18 @@ def main() -> int:
                 "deformer_node": deformer_of(pid),
             }
         )
-        if use_arap and pid.endswith("_blink"):
-            # EYE-NATURAL-002: 경계 곡선 행 정점 키폼 메시 — 일반 격자/컬링 비적용
-            side = "L" if pid == "eye_L_blink" else "R"
+        if use_arap and (pid.endswith("_blink") or pid.endswith("_smile")):
+            # EYE-NATURAL-002/EXPR-001: 경계 곡선 행 정점 키폼 메시 — 일반 격자/컬링 비적용
+            side = "L" if pid.startswith("eye_L") else "R"
+            smile = pid.endswith("_smile")
             eye_bbox = eye_bbox_from_layer(ROOT / blink_cfg[f"eye_white_{side}"])
             mesh = blink_mesh(
-                pid, f"ParamEye{side}Open", eye_bbox,
+                pid, "ParamEyeSmile" if smile else f"ParamEye{side}Open", eye_bbox,
                 skin_band=float(blink_cfg.get("skin_band", 0.9)),
                 lower_rise=float(blink_cfg.get("lower_rise", 0.2)),
                 lower_band=float(blink_cfg.get("lower_band", 0.35)),
-                canvas=CANVAS, pad=int(blink_cfg.get("patch_pad", 26)))
+                canvas=CANVAS, pad=int(blink_cfg.get("patch_pad", 26)),
+                mode="smile" if smile else "blink")
             meshes.append(mesh)
             write_json(out / mesh["mesh_path"], mesh)
             continue
@@ -282,6 +295,9 @@ def main() -> int:
             cols = rows = 6 if big else 5
             rows = rows if big else 4
         mesh = grid_mesh(pid, bbox, cols, rows)
+        if pid == "mouth_line":
+            mesh = grid_mesh(pid, bbox, 9, 5)  # 입꼬리 곡선이 곱게 휘려면 가로 분해능 필요
+            attach_mouth_form_keyforms(mesh, bbox)
         # 렌더 비용 절감: 알파가 완전히 빈 삼각형 제거 (bbox 모서리 투명 영역)
         part_alpha = np.asarray(Image.open(dest).convert("RGBA"))[..., 3]
         def tri_active(tri):
@@ -428,6 +444,15 @@ def main() -> int:
         "notes": ["autorig v0"],
     }
     write_json(out / "mini_rig.json", mini_rig)
+    # EXPR-001 표정 프리셋 (수동 발동용 — 트래킹 자동은 드라이브 convert()가 담당)
+    presets = [
+        {"id": "wink_L", "label": "윙크 L", "fade_ms": 120, "params": {"ParamEyeLOpen": 0.27}},
+        {"id": "wink_R", "label": "윙크 R", "fade_ms": 120, "params": {"ParamEyeROpen": 0.27}},
+    ]
+    if use_arap:
+        presets.insert(0, {"id": "smile", "label": "미소", "fade_ms": 220,
+                           "params": {"ParamEyeSmile": 1.0, "ParamCheek": 1.0, "ParamMouthForm": 0.8}})
+    write_json(out / "expressions.json", {"generated_at": now_iso(), "presets": presets})
     print(f"rig: parts={len(parts)} meshes={len(meshes)} deformers={len(deformers)} params={len(parameters)} bindings={len(keyform_bindings)} opacity_curves={len(part_opacity_keyframes)}")
     print(f"project: {out}")
     return 0
