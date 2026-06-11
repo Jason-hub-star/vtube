@@ -88,24 +88,28 @@ def main() -> int:
         skin_med = np.median(rgba[: max(6, fh // 10), :, :3].reshape(-1, 3).astype(np.float64), axis=0)
         dist = np.sqrt(((rgba[..., :3].astype(np.float64) - skin_med) ** 2).sum(axis=-1))
         content = (dist > 48) & (rgba[..., 3] > 64)
-        mid = content[:, int(fw * 0.2) : int(fw * 0.8)]
-        rows = np.where(mid.any(axis=1))[0]
-        # 생성 셀에 캐릭터 턱선 스트로크가 딸려오는 경우(003 이중 턱선 V 사건):
-        # 입술 블록 아래로 분리된 "가늘고 어두운" 블록은 턱선으로 보고 콘텐츠에서 제외 —
-        # rows.max()를 그대로 쓰면 패치 턱선까지 불투명해져 원본 턱선과 이중선이 된다
-        stroke_top = None
-        if len(rows):
-            split = np.where(np.diff(rows) > 10)[0]
-            runs = np.split(rows, split + 1)
-            last = runs[-1]
-            if len(runs) > 1 and len(last) <= max(6, fh // 8):
-                band = rgba[int(last.min()) : int(last.max()) + 1, int(fw * 0.2) : int(fw * 0.8), :3].astype(np.float64)
-                if band.mean() < skin_med.mean() * 0.75:
-                    stroke_top = int(last.min())
-                    rows = np.concatenate(runs[:-1])
+        # 입술 성분 분리 (003 이중 턱선 V 사건): 생성 셀마다 캐릭터 얼굴 윤곽 V 스트로크가
+        # 통째로 딸려 들어오는데, 입술 블롭과는 항상 "분리된 연결 성분"이다 — 중앙 시드에서
+        # flood-grow한 성분만 입술 콘텐츠로 인정한다. (행 갭·폭 프로파일·컬럼 컷은 전부 실패:
+        # V팔은 대각이라 행이 연속이고, 아펙스는 수평이라 행 폭이 넓다)
+        content[0, :] = content[-1, :] = content[:, 0] = content[:, -1] = False  # roll 랩 누설 가드
+        seed = np.zeros_like(content)
+        seed[: int(fh * 0.75), int(fw * 0.40) : int(fw * 0.60)] = content[: int(fh * 0.75), int(fw * 0.40) : int(fw * 0.60)]
+        grown = seed
+        while True:
+            nxt = (grown | np.roll(grown, 1, 0) | np.roll(grown, -1, 0) | np.roll(grown, 1, 1) | np.roll(grown, -1, 1)) & content
+            if nxt.sum() == grown.sum():
+                break
+            grown = nxt
+        if grown[:, 1].any() or grown[:, -2].any():
+            print(f"[warn] {name}: 입술 성분이 패치 가장자리에 닿음 — 윤곽 스트로크 누설 의심")
+        rows = np.where(grown[:, int(fw * 0.2) : int(fw * 0.8)].any(axis=1))[0]
         lip_top = int(rows.min()) if len(rows) else int(fh * 0.15)
         lip_bottom = int(rows.max()) if len(rows) else int(fh * 0.55)
-        cols = np.where(content[lip_top : lip_bottom + 1].any(axis=0))[0]
+        below = np.where(content[:, int(fw * 0.2) : int(fw * 0.8)].any(axis=1))[0]
+        below = below[below > lip_bottom + 3]
+        stroke_top = int(below.min()) if len(below) else None  # 윤곽 스트로크 시작 — 하단 페이드 클램프용
+        cols = np.where(grown[lip_top : lip_bottom + 1].any(axis=0))[0]
         lip_x0 = int(cols.min()) if len(cols) else int(fw * 0.2)
         lip_x1 = int(cols.max()) if len(cols) else int(fw * 0.8)
 

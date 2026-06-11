@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T04:38:50.251936+00:00",
+  "generated_at": "2026-06-11T05:03:35.939742+00:00",
   "status": "PASS",
   "renderer": "pixi",
   "checks": {
@@ -10,11 +10,11 @@
     "no_errors": true
   },
   "timing_ms": {
-    "head_turn": 2.2,
-    "nod": 2.6,
-    "tilt": 2.6,
-    "gaze_turn": 1.6,
-    "combo": 3.1
+    "head_turn": 4.6,
+    "nod": 5.1,
+    "tilt": 2.4,
+    "gaze_turn": 2,
+    "combo": 4.4
   },
   "raw": "experiments/autorig-character-003/reports/mesh_deform_verify_pixi_raw.json"
 }

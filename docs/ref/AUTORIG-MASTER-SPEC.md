@@ -42,6 +42,7 @@ In the bottom-right cell include the full mouth interior. Same art style, same s
 ```
 
 - 시트 셀 규약: 2×2 @ 1024px, interior는 (2,2) 셀 — `place_mouth_interior.py --cell` 기본값.
+- 알려진 생성 특성: 셀에 입만 아니라 **얼굴 윤곽선(턱 V)이 통째로 딸려온다** — 추출기가 연결성분 분리로 자동 제거하므로 재생성 사유 아님. 프롬프트에 "mouth region only, do not draw the chin or face outline"을 넣으면 줄어들지만 보장은 안 됨.
 - 검수: 추출 후 4상태의 입꼬리 x좌표 편차 < 입폭 5% (extract가 공유 배치로 흡수하지만 생성 단계에서 맞을수록 좋음).
 
 ## 4. P0 자동 검증 (`scripts/validate_master_image.py`)
