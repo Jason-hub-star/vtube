@@ -31,3 +31,19 @@ experiments/**/cache/
 
 # AUTORIG run logs/artifacts
 runs/
+
+# === 2026-06-11 정비: 추적 제외 정책 확장 ===
+# 외부 SDK 샌드박스/노드 의존성 (재현 가능, 라이선스상 커밋 부적절)
+experiments/**/probe_sandbox/
+experiments/**/node_modules/
+# 레퍼런스 모델 바이너리 (외부 다운로드)
+*.moc3
+*.wav
+*.psd
+*.cmo3
+*.node
+*.map
+# 대형 레거시 프리뷰 스냅샷 (아카이브 폴더에 보존, git 추적 불필요)
+experiments/archive/legacy-review-previews-*/
+# 테스트 러너 상태
+test-results/
