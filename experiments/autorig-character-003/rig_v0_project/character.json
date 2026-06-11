@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project_kind": "mini_cubism_v0",
   "experiment_id": "autorig-rig-v0",
-  "generated_at": "2026-06-11T05:37:28.760204+00:00",
+  "generated_at": "2026-06-11T05:45:40.103617+00:00",
   "source_selection": {
     "visible_layers": "experiments/autorig-character-003/seethrough_true_reskinned/reskin_manifest.json",
     "hidden_layers": [
@@ -16783,13 +16783,13 @@
       ],
       "bounds": [
         347,
-        1015,
+        629,
         1351,
-        1033
+        1419
       ],
       "pivot": [
         1022,
-        1532
+        1338
       ],
       "lattice": {
         "cols": 5,
@@ -16814,11 +16814,9 @@
       ],
       "lattice": {
         "cols": 3,
-        "rows": 5
+        "rows": 3
       },
-      "pin_edges": [
-        "bottom"
-      ]
+      "edge_pinned": false
     },
     {
       "id": "head_angle_warp",
@@ -16994,7 +16992,7 @@
     {
       "id": "back_hair_warp",
       "type": "warp",
-      "parent_id": "upper_warp",
+      "parent_id": "root_warp",
       "child_ids": [
         "hair_back_L",
         "hair_back_R"
@@ -17624,6 +17622,96 @@
         "translate": [
           10,
           0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBodyAngleX",
+      "key_value": -10,
+      "target_id": "back_hair_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          -8,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBodyAngleX",
+      "key_value": 10,
+      "target_id": "back_hair_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          8,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBodyAngleY",
+      "key_value": -10,
+      "target_id": "back_hair_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          -5
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBodyAngleY",
+      "key_value": 10,
+      "target_id": "back_hair_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          5
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamBreath",
+      "key_value": 1,
+      "target_id": "back_hair_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          -2
         ],
         "scale": [
           1.0,
