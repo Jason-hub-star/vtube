@@ -1,0 +1,58 @@
+{
+  "test_id": "CLOTH-PHYS-001-drape-and-junction",
+  "generated_at": "2026-06-11T15:25:53.884402+00:00",
+  "renderer": "pixi",
+  "claim": "옷 밑단은 몸 스웨이를 스프링만큼 늦게 따르고(A/B 분리 증명), 목 접합(가중~0)은 등변위",
+  "physics": {
+    "clothes_spring_offset": [
+      -9.000004021294394,
+      0
+    ],
+    "body_angle_x_settled": 8.999999993264211
+  },
+  "shifts_px": {
+    "active": {
+      "neck": 13.79,
+      "clothes_top": 14.69,
+      "hem": -6.12
+    },
+    "control": {
+      "neck": 13.93,
+      "clothes_top": 16.14,
+      "hem": 1.97
+    }
+  },
+  "profile_std": {
+    "active": {
+      "neck": 29.79,
+      "clothes_top": 7.14,
+      "hem": 2.56
+    },
+    "control": {
+      "neck": 29.79,
+      "clothes_top": 7.14,
+      "hem": 2.56
+    }
+  },
+  "band_weights": {
+    "clothes_top": 0.158,
+    "hem": 0.88
+  },
+  "slip_px": 0.52,
+  "drape_effect_px": 8.09,
+  "expected_effect_px": 7.92,
+  "checks": {
+    "spring_active": true,
+    "sway_visible": true,
+    "junction_slip": true,
+    "drape_pixel_effect": true,
+    "control_consistency": true
+  },
+  "thresholds": {
+    "spring_active_px": 3.0,
+    "junction_slip_px": 1.5,
+    "effect_match_px": 2.5,
+    "profile_std_min": 2.0
+  },
+  "status": "PASS"
+}

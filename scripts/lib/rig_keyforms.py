@@ -236,6 +236,20 @@ def build_physics_profiles(use_hair_chunks: bool, bbox_by_id: dict) -> list[dict
             "input_weights": {"ParamAngleX": [-18, 8], "ParamAngleY": [0, 8], "ParamBodyAngleX": [-6, 3]},
             "part_weights": {"hair_back_L": 1.0, "hair_back_R": 1.0, "shoulder_hair": 0.7},
         },
+        # CLOTH-PHYS-001: 옷 드레이프 — 공식 스커트 그룹 실측 정박 (all57 분석):
+        # 입력 = BodyAngleX(X)+BodyAngleZ(Angle) weight 100/100 (Hiyori·koharu·tsumiki·miara·Rice 6모델 균일).
+        # Breath 직접 입력은 공식 선례 0건 — body_sway_spring 체이닝으로 간접 전달된다.
+        # 반응 속도: 공식 스커트 Delay 0.6 vs 뒷머리 0.8 → 뒷머리 stiffness 0.08 × 0.75 = 0.06.
+        # 진폭: 공식 반경×Mobility 비율(10×0.9/15×0.95≈0.63) × 뒷머리 24px ≈ 15px → 14px 보수 시작.
+        # damping/mass는 엔진 고유 상수(공식 대응물 없음) — H2-mini 육안 게이트에서 튜닝.
+        {
+            "id": "clothes_drape_spring",
+            "targets": ["clothes"] if "clothes" in bbox_by_id else [],
+            "anchor": "top_center", "mass": 1.6, "stiffness": 0.06, "damping": 0.90, "drag": 0.04,
+            "max_offset": [14, 6], "rotate_factor": 0.0,
+            "input_weights": {"ParamBodyAngleX": [-10, 0], "ParamBodyAngleZ": [-10, 0]},
+            "part_weights": {"clothes": 1.0},
+        },
         {
             "id": "accessory_quick_spring",
             "targets": [pid for pid in ("choker", "earwear") if pid in bbox_by_id],

@@ -155,6 +155,8 @@ digraph rig {
   "phys:back_hair_heavy_spring" -> "p:hair_back_L" [color="#0ca678"];
   "phys:back_hair_heavy_spring" -> "p:hair_back_R" [color="#0ca678"];
   "phys:back_hair_heavy_spring" -> "p:shoulder_hair" [color="#0ca678"];
+  "phys:clothes_drape_spring" [label="clothes_drape_spring", fillcolor="#e6fcf5"];
+  "phys:clothes_drape_spring" -> "p:clothes" [color="#0ca678"];
   "phys:accessory_quick_spring" [label="accessory_quick_spring", fillcolor="#e6fcf5"];
   "phys:accessory_quick_spring" -> "p:choker" [color="#0ca678"];
   "phys:body_sway_spring" [label="body_sway_spring", fillcolor="#e6fcf5"];

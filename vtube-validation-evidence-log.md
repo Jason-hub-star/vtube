@@ -3,6 +3,16 @@
 작성일: 2026-06-02
 최신 정리일: 2026-06-10
 
+## 2026-06-12 CLOTH-PHYS-001 — 옷 드레이프 스프링 (공식 스커트 그룹 정박 + A/B 픽셀 증명)
+
+- 주인님 질문 "근거가 있는 플랜인가"로 플랜을 근거 장부로 재검증 후 진행 — 구조는 코드 실측, 상수는 공식 데이터 정박으로 격상.
+- **공식 정박 (all57 physics3.json 실측)**: 몸통 옷 그룹 6모델(Hiyori·koharu·tsumiki·miara·Rice) 입력 균일 = BodyAngleX(X)+BodyAngleZ(Angle) weight 100/100. Breath 직접 입력 선례 0건 → 삭제 (body_sway_spring 체이닝으로 간접 전달 — stepPhysics 리스트 순회 순서 실측, 1스텝 지연). 반응속도: 공식 스커트 Delay 0.6 vs 뒷머리 0.8 → stiffness 0.08×0.75=0.06. 진폭: 반경×Mobility 비율 ≈0.63 × 24px ≈ 15px → max_offset 14. damping 0.90/mass 1.6은 엔진 고유 상수(공식 대응물 없음) — H2 육안 튜닝 대상으로 명시.
+- 구현: `build_vertex_weights`에 clothes 추가(root_to_tip — 상단 가중 0이라 목 접합 등변위 구조 보장) + `clothes_drape_spring` 프로파일. 런타임 무수정 (physicsVertexOffsets 기존 경로). 03 리빌드 시 **--shoulder-hair-dir 누락으로 파트 37 회귀** — 파이프라인 P4 커맨드가 SSOT, 구 플랜 커맨드 복붙 금지.
+- **검증기 `validate_clothes_physics.py` (P5 6종째 편입)**: A/B 대조 — 옷 스프링·가중만 제거한 컨트롤 프로젝트를 하드링크로 즉석 생성(심링크는 서버 safe_join 403), 동일 측정 2회. 골반 진자 때문에 밑단은 스프링 없이도 덜 움직이므로 스프링 픽셀 기여는 (컨트롤-활성) 차로만 분리된다.
+- **측정기 결함 2건 발견·수정** (RIG-HEALTH 교훈 재확인 — 도구부터 의심): ① 밴드 안의 스프링 비대상 파트(팔 실루엣 강엣지)가 SSD를 지배해 옷 주름 7px 이동을 0.4px로 오측정 — active/control displaced 픽셀 직접 diff(max 210)로 물리 정상을 확인한 뒤 밴드 x창을 팔 안쪽 순수 옷 영역으로 제한. ② 헤드리스 벽시계 대기는 타이머 스로틀로 비결정(런마다 오프셋 -7.9/-8.6/-13) — `__miniStepPhysics` 직접 120스텝 + 밴드·스냅샷 단일 evaluate(동일 프레임)로 결정론화. 매 스텝 draw() 동기 호출이라 스텝 과대 설정 금지(300스텝×2 = 180s 타임아웃).
+- **최종 PASS (pixi)**: 스프링 정착 -9.000004 (이론 정확값 -9.0), BodyAngleX 9.0, 접합 슬립 0.52px(≤1.5), 드레이프 픽셀 효과 8.09px ≈ 기대 7.92px(오차 0.17), 컨트롤 일관성 0.14px. P5 기존 4종(validator·mesh 6/6·blink strong 2%·인스펙터 무반응 0) 무회귀.
+- 한계: clothes 통짜라 밑단 전체 드레이프만 — 리본 개별 찰랑임은 004 분리 가능 작화 필요 (MASTER-SPEC §1 조건 10 추가). 육안 게이트(드라이브 8063): 몸 스웨이 후 밑단 반 박자 잔출렁 확인은 주인님 판정 대기.
+
 ## 2026-06-11 RIG-HEALTH-001 — 인스펙터 기반 리깅 건강도 전수 검사 (무반응 0건)
 
 - 도구: `inspect_autorig_rig.py` (그래프/영향도/접합 위험 점수/동적 스윕) — 003 풀 검사.

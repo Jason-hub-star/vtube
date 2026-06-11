@@ -1,0 +1,26 @@
+{
+  "pw": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/TypeScript/Demo/node_modules/playwright",
+  "url": "http://127.0.0.1:8071/?renderer=pixi",
+  "bands": {
+    "neck": [
+      854,
+      1076,
+      332,
+      48
+    ],
+    "clothes_top": [
+      854,
+      1157,
+      332,
+      110
+    ],
+    "hem": [
+      738,
+      1879,
+      563,
+      99
+    ]
+  },
+  "settle_steps": 120,
+  "out": "/Users/family/jason/Vtube/experiments/autorig-character-003/reports/clothes_physics/clothes_physics_raw_active.json"
+}

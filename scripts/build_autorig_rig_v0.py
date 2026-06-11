@@ -72,9 +72,13 @@ def deformer_of(pid: str) -> str:
 
 
 def build_vertex_weights(meshes: list[dict], bbox_by_id: dict) -> list[dict]:
-    """물리 정점 가중 (v0-3 검증 포맷) — 머리 덩어리: 뿌리(상단) 0 → 끝(하단) 1."""
+    """물리 정점 가중 (v0-3 검증 포맷) — 뿌리(상단) 0 → 끝(하단) 1.
+
+    CLOTH-PHYS-001: clothes 포함 — 상단(목 접합)이 가중 0이라 neck_skin과의
+    등변위가 보장되고, 밑단만 드레이프 스프링을 탄다.
+    """
     out = []
-    for pid in ("hair_front_L", "hair_front_C", "hair_front_R", "hair_back_L", "hair_back_R"):
+    for pid in ("hair_front_L", "hair_front_C", "hair_front_R", "hair_back_L", "hair_back_R", "clothes"):
         if pid not in bbox_by_id:
             continue
         x, y, w, h = bbox_by_id[pid]

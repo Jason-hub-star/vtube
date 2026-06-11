@@ -218,6 +218,9 @@ def main() -> int:
             "python3", "scripts/inspect_autorig_rig.py", "--project", str(exp / "rig_v0_project"),
             "--out-dir", str(exp / "reports" / "rig_inspector"),
             "--dynamic", "--renderer", "pixi", "--fail-on-dead"])
+        sh(writer, "P5", "clothes_physics", [
+            "python3", "scripts/validate_clothes_physics.py", "--project", str(exp / "rig_v0_project"),
+            "--out-dir", str(exp / "reports" / "clothes_physics")])
         sh(writer, "P5", "perf", [
             "python3", "scripts/run_rig_perf_test.py", "--project", str(exp / "rig_v0_project"),
             "--out-dir", str(exp / "reports")])
