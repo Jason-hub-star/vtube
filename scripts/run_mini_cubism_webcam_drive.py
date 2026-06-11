@@ -429,6 +429,9 @@ async function runWebcam() {
   });
 }
 
+// 검증 훅: 합성 랜드마크로 어깨→채널→매핑→모델 경로를 카메라 없이 검사 (SHOULDER-TRACK-001)
+window.__driveTest = { rawChannels, convert, apply };
+
 if (REPLAY) runReplay();
 else runWebcam();
 </script>
