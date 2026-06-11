@@ -14,11 +14,11 @@
     "head_max": 0
   },
   "timing": {
-    "head_turn": 72.4,
-    "nod": 73.5,
-    "tilt": 82.5,
-    "gaze_turn": 72.5,
-    "combo": 73.7
+    "head_turn": 73.2,
+    "nod": 75.1,
+    "tilt": 83.9,
+    "gaze_turn": 73.5,
+    "combo": 74.5
   },
   "errors": [],
   "backend": "canvas"

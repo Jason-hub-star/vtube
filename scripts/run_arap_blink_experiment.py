@@ -35,6 +35,85 @@ def eye_bbox_from_layer(path: Path) -> tuple[int, int, int, int]:
     return int(xs.min()), int(ys.min()), int(xs.max()) + 1, int(ys.max()) + 1
 
 
+def lid_lines(bbox: tuple[int, int, int, int], x: float, lower_rise: float = 0.2) -> tuple[float, float, float, float]:
+    """컬럼 x의 꺼풀 경계 (열림 up/low, 닫힘 closed/lid_low) — 워프·메시 키폼 공용 SSOT 수식.
+
+    반환: (up, low, closed, lid_low_closed). 눈꼬리(arc=0)는 네 값이 같아 자동 고정점.
+    """
+    x0, lash_top, x1, y1 = bbox
+    h = y1 - lash_top
+    cx = (x0 + x1) / 2
+    half = max((x1 - x0) / 2, 1e-6)
+    ratio = min(1.0, abs((x - cx) / half))
+    arc = float(np.sqrt(max(0.0, 1.0 - ratio * ratio)))  # 중앙 1, 눈꼬리 0
+    up = lash_top + h * 0.45 * (1.0 - arc)               # 윗곡선 (중앙=top, 꼬리=45%)
+    low = lash_top + h * (0.45 + 0.55 * arc)             # 아랫곡선 (중앙=바닥, 꼬리=45%)
+    closed = lash_top + h * (0.45 + 0.28 * arc)          # 닫힘 아치 (중앙=73%, 꼬리=45%)
+    lid_low_closed = low - lower_rise * (low - up)       # 닫힘 아랫꺼풀 (항상 closed 아래)
+    return up, low, closed, lid_low_closed
+
+
+def blink_mesh(
+    part_id: str,
+    parameter_id: str,
+    bbox: tuple[int, int, int, int],
+    *,
+    skin_band: float = 0.9,
+    lower_rise: float = 0.2,
+    lower_band: float = 0.35,
+    canvas: int = 2048,
+    pad: int = 26,
+    x_step: int = 4,  # 컬럼 샘플 간격 — 타원 곡선의 선형 근사 오차 (10px는 눈꼬리에서 1~3px 어긋남)
+    closed_value: float = 0.27,
+) -> dict:
+    """깜빡임 정점 키폼 메시 (EYE-NATURAL-002) — 크로스페이드 잔상 해소.
+
+    워프가 세로 구간별 선형이므로 경계 곡선 4줄(위 피부 시작/윗꺼풀/아랫꺼풀/아래 피부 끝)에
+    정점 행을 두면 메시 선형 보간이 워프를 그대로 재현한다. 꺼풀선이 t에 선형이라
+    키폼은 열림(EyeOpen=1)/닫힘(=closed_value) 2개로 전 구간이 정확하다 (공식 키폼 등가).
+    """
+    x0, lash_top, x1, y1 = bbox
+    h = y1 - lash_top
+    y0 = max(0, lash_top - round(h * skin_band))
+    yb = min(canvas, y1 + round(h * lower_band))
+    py0 = max(0, y0 - pad)
+    py1 = min(canvas, yb + pad)
+    px0 = max(0, x0 - pad)
+    px1 = min(canvas, x1 + pad)
+    xs = sorted({px0, px1, x0, x1, *range(x0, x1, x_step)})
+    eps = 0.5  # 눈꼬리 퇴화 행 분리 (0높이 삼각형 방지)
+    open_cols, closed_cols = [], []
+    for x in xs:
+        if x0 <= x <= x1:
+            up, low, closed, lid_lowc = lid_lines(bbox, x, lower_rise)
+        else:  # 패드 영역 — 워프 무영향 (항등)
+            up = low = closed = lid_lowc = lash_top + h * 0.45
+        open_cols.append([py0, y0, up, max(low, up + eps), yb, py1])
+        closed_cols.append([py0, y0, closed, max(lid_lowc, closed + eps), yb, py1])
+    cols, rows = len(xs), 6
+    rnd = lambda v: round(float(v), 1)  # noqa: E731
+    verts_open = [[rnd(xs[c]), rnd(open_cols[c][r])] for r in range(rows) for c in range(cols)]
+    verts_closed = [[rnd(xs[c]), rnd(closed_cols[c][r])] for r in range(rows) for c in range(cols)]
+    triangles = []
+    for r in range(rows - 1):
+        for c in range(cols - 1):
+            i = r * cols + c
+            triangles.append([i, i + cols, i + 1])
+            triangles.append([i + 1, i + cols, i + cols + 1])
+    uvs = [[round(v[0] / canvas, 6), round(v[1] / canvas, 6)] for v in verts_open]
+    return {
+        "part_id": part_id, "vertices": verts_open, "triangles": triangles, "uvs": uvs,
+        "mesh_path": f"meshes/{part_id}.json",
+        "vertex_keyforms": {
+            "parameter_id": parameter_id,
+            "keys": [
+                {"value": closed_value, "vertices": verts_closed},
+                {"value": 1.0, "vertices": verts_open},
+            ],
+        },
+    }
+
+
 def curtain_warp(
     image: np.ndarray,
     bbox: tuple[int, int, int, int],
@@ -58,17 +137,11 @@ def curtain_warp(
     y0 = max(0, lash_top - round(h * skin_band))
     yb = min(image.shape[0], y1 + round(h * lower_band))  # 아래 피부 밴드 끝 (변위 0 고정점)
     out = image.copy()
-    cx = (x0 + x1) / 2
-    half = max((x1 - x0) / 2, 1e-6)
     for x in range(x0, x1):
-        ratio = (x - cx) / half
-        arc = float(np.sqrt(max(0.0, 1.0 - ratio * ratio)))  # 중앙 1, 눈꼬리 0
-        up_x = lash_top + h * 0.45 * (1.0 - arc)             # 윗곡선 (중앙=top, 꼬리=45%)
-        low_x = lash_top + h * (0.45 + 0.55 * arc)           # 아랫곡선 (중앙=바닥, 꼬리=45%)
-        closed_x = lash_top + h * (0.45 + 0.28 * arc)        # 닫힘 아치 (중앙=73%, 꼬리=45%)
+        up_x, low_x, closed_x, lid_lowc = lid_lines(bbox, x, lower_rise)
         lid = up_x + t * (closed_x - up_x)
-        # 아랫꺼풀: 컬럼 눈높이(low_x-up_x)의 lower_rise 비율만큼 상승 — 항상 closed_x 아래에 머묾
-        lid_low = low_x - t * lower_rise * (low_x - up_x)
+        # 아랫꺼풀: lower_rise 비율만큼 상승 — 항상 closed_x 아래에 머묾 (lid_lines SSOT)
+        lid_low = low_x + t * (lid_lowc - low_x)
         if lid - up_x < 0.5 and low_x - lid_low < 0.5:
             continue
         ys_out = np.arange(y0, yb, dtype=np.float64)

@@ -111,16 +111,12 @@ def curve(part, param, points):
 def build_opacity_curves(use_arap: bool, use_mouth_states: bool, use_mouth_warp: bool, bbox_by_id: dict) -> list[dict]:
     part_opacity_keyframes = []
     if use_arap:
-        # 워프 패치 t ↔ EyeOpen 값 매핑: v = 1 - t·(1-0.27)
-        v25, v50, v75, v100 = 0.8175, 0.635, 0.4525, 0.27
+        # EYE-NATURAL-002: 깜빡임 패치 1장 + 정점 키폼 (메시 vertex_keyforms가 감김 담당).
+        # 완전 열림(v=1)에서만 숨김 — 0.97~1.0 페이드 구간은 워프 t≤0.04 ≈ 항등이라
+        # 밑의 생눈과 픽셀이 같아 전환이 보이지 않는다 (크로스페이드 잔상 폐기).
         for side in ("L", "R"):
-            param = f"ParamEye{side}Open"
-            part_opacity_keyframes += [
-                curve(f"eye_{side}_arap_025", param, [(v50, 0.0), (v25, 1.0), (1.0, 0.0)]),
-                curve(f"eye_{side}_arap_050", param, [(v75, 0.0), (v50, 1.0), (v25, 0.0)]),
-                curve(f"eye_{side}_arap_075", param, [(v100, 0.0), (v75, 1.0), (v50, 0.0)]),
-                curve(f"eye_{side}_arap_100", param, [(v100, 1.0), (v75, 0.0), (1.0, 0.0)]),
-            ]
+            part_opacity_keyframes.append(
+                curve(f"eye_{side}_blink", f"ParamEye{side}Open", [(0.27, 1.0), (0.97, 1.0), (1.0, 0.0)]))
     else:
         open_curve = [(0.27, 0.0), (0.5, 0.55), (0.8, 0.95), (1.0, 1.0)]
         closed_curve = [(0.27, 1.0), (0.5, 0.35), (0.65, 0.0), (1.0, 0.0)]

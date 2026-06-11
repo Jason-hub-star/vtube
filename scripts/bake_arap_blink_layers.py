@@ -61,6 +61,12 @@ def main() -> int:
         py1 = min(base.shape[0], y1 + round(h * float(config.get("lower_band", 0.35))) + pad)
         px0 = max(0, x0 - pad)
         px1 = min(base.shape[1], x1 + pad)
+        # t=0 항등 패치: 정점 키폼 메시(EYE-NATURAL-002)의 텍스처 — 중립 픽셀 그대로
+        neutral = np.zeros_like(base)
+        neutral[py0:py1, px0:px1] = base[py0:py1, px0:px1]
+        name0 = f"eye_{side}_arap_000.png"
+        Image.fromarray(neutral, "RGBA").save(out / name0)
+        baked.append(name0)
         for t in config["t_steps"]:
             warped = curtain_warp(
                 base, bbox, float(t),

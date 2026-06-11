@@ -200,7 +200,7 @@ function partOpacity(project, part) {
 
 function eyeOpenDetailOpacity(project, part) {
   if (!part.id.startsWith("eye_L_") && !part.id.startsWith("eye_R_")) return 1;
-  if (part.id.endsWith("_closed_lid") || part.id.endsWith("_closed_underpaint")) return 1;
+  if (part.id.endsWith("_closed_lid") || part.id.endsWith("_closed_underpaint") || part.id.endsWith("_blink")) return 1;
   const side = part.id.startsWith("eye_L_") ? "L" : "R";
   const covers = state.rig?.eye_socket_covers;
   if (!covers?.enabled) return 1;
@@ -453,11 +453,34 @@ function physicsVertexOffsets(partId, vertexCount) {
   return offsets;
 }
 
+// EYE-NATURAL-002: 정점 키폼 — 파라미터 값에 따라 메시 기준 정점 자체를 보간 (공식 키폼 등가).
+// 크로스페이드(레이어 겹침 잔상)와 달리 한 장의 텍스처 위 정점이 연속 이동 — 잔상 원리적 0.
+function keyformBaseVertices(project, mesh) {
+  const spec = mesh.vertex_keyforms;
+  if (!spec?.keys?.length) return mesh.vertices;
+  const param = project.parameters.find((item) => item.id === spec.parameter_id);
+  const value = state.parameters[spec.parameter_id] ?? param?.default ?? 0;
+  const keys = [...spec.keys].sort((a, b) => a.value - b.value);
+  if (value <= keys[0].value) return keys[0].vertices;
+  if (value >= keys[keys.length - 1].value) return keys[keys.length - 1].vertices;
+  for (let k = 0; k < keys.length - 1; k += 1) {
+    if (value >= keys[k].value && value <= keys[k + 1].value) {
+      const span = keys[k + 1].value - keys[k].value || 1;
+      const t = clamp((value - keys[k].value) / span, 0, 1);
+      return keys[k].vertices.map(([ax, ay], i) => {
+        const [bx, by] = keys[k + 1].vertices[i];
+        return [lerp(ax, bx, t), lerp(ay, by, t)];
+      });
+    }
+  }
+  return mesh.vertices;
+}
+
 function deformedVertices(project, part, mesh) {
   const chain = deformerChain(project, part.id).filter((d) => d.parent_id !== undefined); // 전체 체인 (root 포함 — root는 바인딩 없으면 항등)
   const partRigid = bindingTransform(project, part.id); // 파트 직접 바인딩(눈썹/홍채류)은 강체 적용
   const physics = physicsVertexOffsets(part.id, mesh.vertices.length);
-  return mesh.vertices.map(([vx, vy], i) => {
+  return keyformBaseVertices(project, mesh).map(([vx, vy], i) => {
     let dx = 0;
     let dy = 0;
     for (const deformer of chain) {

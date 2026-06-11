@@ -1,6 +1,6 @@
 # scripts/ 인덱스
 
-Updated: 2026-06-11 · 총 289개 · `python3 scripts/build_scripts_index.py`로 재생성
+Updated: 2026-06-11 · 총 290개 · `python3 scripts/build_scripts_index.py`로 재생성
 
 새 스크립트를 만들기 전에 이 인덱스에서 기존 것을 먼저 찾는다.
 코드 규칙: `docs/ref/AUTORIG-PIPELINE-V1.md`의 '코드 규칙' 절 (lib 사용 의무, 캐릭터 하드코딩 금지, 500줄 상한).
@@ -11,7 +11,7 @@ Updated: 2026-06-11 · 총 289개 · `python3 scripts/build_scripts_index.py`로
 | 파일 | LOC | 설명 |
 |---|---:|---|
 | `lib/__init__.py` | 13 | Vtube 공유 라이브러리. |
-| `lib/rig_keyforms.py` | 190 | 리그 키폼 데이터 빌더 — build_autorig_rig_v0에서 기계적 분리 (2026-06-11 정비, 500줄 룰). |
+| `lib/rig_keyforms.py` | 186 | 리그 키폼 데이터 빌더 — build_autorig_rig_v0에서 기계적 분리 (2026-06-11 정비, 500줄 룰). |
 | `lib/vtube_image.py` | 113 | 이미지 공통 유틸: 알파크롭 썸네일, 컨택트시트, 픽셀 diff. (build_contact_sheet 26벌 복붙의 단일 원본) |
 | `lib/vtube_io.py` | 41 | 경로/JSON 입출력 공통 유틸. (기존 258개 스크립트에 rel 151벌, load_json 145벌이 복붙되어 있던 것의 단일 원본) |
 | `lib/vtube_proc.py` | 29 | 프로세스/포트 공통 유틸. (wait_for_server 17벌 복붙의 단일 원본) |
@@ -25,11 +25,11 @@ Updated: 2026-06-11 · 총 289개 · `python3 scripts/build_scripts_index.py`로
 | `build_asset_dashboard.py` | 237 | Vtube 자산 대시보드 생성기. |
 | `build_autorig_current_candidates_002.py` | 119 | AUTORIG current-candidates manifest for cubism-v2-new-character-002. |
 | `build_autorig_full_assembly.py` | 127 | 모든 시트의 정규화 레이어를 모아 전신 조립 합성을 만든다 (검수 단위 규칙). |
-| `build_autorig_rig_v0.py` ⭐ | 423 | P3 자동 리깅 v0: 하이브리드 레이어 → mini_cubism 리그(character.json) 자동 생성. |
+| `build_autorig_rig_v0.py` ⭐ | 437 | P3 자동 리깅 v0: 하이브리드 레이어 → mini_cubism 리그(character.json) 자동 생성. |
 | `build_autorig_template_spec.py` | 200 | AUTORIG-TEMPLATE-SPEC-001: 64-part를 고정 슬롯 시트에 매핑하는 템플릿 스펙 생성. |
 | `build_scripts_index.py` ⭐ | 114 | scripts/INDEX.md 자동 생성 — 258개 스크립트를 카테고리·설명·LOC로 색인한다. |
 | `run_autorig_control_tower.py` | 262 | AUTORIG 관제탑 서버 — runs/<run_id>/events.jsonl을 읽어 대시보드에 공급한다. |
-| `run_autorig_pipeline.py` ⭐ | 241 | AUTORIG 원커맨드 파이프라인 — "자동화파이프라인 시작". |
+| `run_autorig_pipeline.py` ⭐ | 246 | AUTORIG 원커맨드 파이프라인 — "자동화파이프라인 시작". |
 | `run_autorig_sheet_pilot.py` | 300 | AUTORIG 슬롯 시트 파일럿: 시트 1장을 생성→점유율 QA→결정론적 추출→배치→조립 합성. |
 | `simulate_autorig_run.py` | 153 | AUTORIG 가짜 런 시뮬레이터 — 관제탑 개발/스모크용. |
 
@@ -58,7 +58,7 @@ Updated: 2026-06-11 · 총 289개 · `python3 scripts/build_scripts_index.py`로
 | `run_v22_b4_b5_focused_owner_review_server_002.py` | 392 | Serve a focused owner-review UI for v22 B4/B5 primary decisions. |
 | `run_v22_g6_hairfront_anchor_editor_002.py` | 431 | Serve a G6 HairFront anchor editor for Character 002 v22. |
 
-## validators-qa — 검증·QA·스모크 (22)
+## validators-qa — 검증·QA·스모크 (23)
 
 | 파일 | LOC | 설명 |
 |---|---:|---|
@@ -73,6 +73,7 @@ Updated: 2026-06-11 · 총 289개 · `python3 scripts/build_scripts_index.py`로
 | `run_misc_pack_model_probes.py` | 193 | Probe miscellaneous HF vision models for Mini Cubism pack splitter. |
 | `score_mini_cubism_physics.py` | 213 | Score Mini Cubism Physics v0.3 motion evidence. |
 | `smoke_test_control_tower.py` | 241 | 관제탑 다각도 스모크 (파이썬 측). |
+| `validate_blink_keyforms.py` ⭐ | 148 | EYE-NATURAL-002 검증: 정점 키폼 깜빡임이 기준 커튼 워프와 픽셀 일치하는지 (잔상 0 증명). |
 | `validate_cubism_psd_inputs.py` | 8 | CLI wrapper for validating the Cubism material pack. |
 | `validate_cubism_v2_keypose_pngs.py` | 189 | Validate clean-socket/keypose PNG outputs for the current Cubism v2 material pack. |
 | `validate_cubism_v2_material_assets.py` | 165 | Validate the Cubism v2 material asset draft. |
@@ -312,7 +313,7 @@ Updated: 2026-06-11 · 총 289개 · `python3 scripts/build_scripts_index.py`로
 | 파일 | LOC | 설명 |
 |---|---:|---|
 | `apply_mps_manual_mask.py` | 193 | Apply a human-painted review mask to a Mac MPS See-through candidate. |
-| `bake_arap_blink_layers.py` ⭐ | 78 | ARAP 깜빡임 프레임을 리그용 inbetween 레이어로 굽는다 (런타임 무수정 통합). |
+| `bake_arap_blink_layers.py` ⭐ | 91 | ARAP 깜빡임 프레임을 리그용 inbetween 레이어로 굽는다 (런타임 무수정 통합). |
 | `bake_mouth_open_layers.py` | 68 | 입 벌림 워프 프레임을 리그용 레이어로 굽는다 (깜빡임 베이크와 동일 구조). |
 | `blink_apply_review_001.py` | 295 | Apply saved blink review placement to staged blink layers. |
 | `blink_stage_001.py` ⚠️ | 662 | Create and validate staged blink full-canvas layers. |
@@ -336,7 +337,7 @@ Updated: 2026-06-11 · 총 289개 · `python3 scripts/build_scripts_index.py`로
 | `production_canvas_2048_smoke.py` ⚠️ | 983 | 2048 production canvas smoke tests for Vtube layer candidates. |
 | `review_app_server.py` | 431 | Local server for the unified part-purity review UI. |
 | `review_server_2048.py` | 61 | Local review server that saves manual Vtube adjustment evidence. |
-| `run_arap_blink_experiment.py` | 127 | ARAP-EXP-001: 원본 픽셀만으로 눈꺼풀 감김(깜빡임)을 만드는 메시 워프 실험. |
+| `run_arap_blink_experiment.py` | 218 | ARAP-EXP-001: 원본 픽셀만으로 눈꺼풀 감김(깜빡임)을 만드는 메시 워프 실험. |
 | `run_live2d_core_api_extractor.py` | 320 | Extract Core-backed runtime structure from the Live2D strong model sandbox. |
 | `run_mesh_deform_verify.py` ⭐ | 114 | MESH-DEFORM 검증 스모크: 중립 항등성 / 변형 상태 상이 / 목 이음새 / 렌더 시간. |
 | `run_mouth_open_experiment.py` | 149 | MOUTH-EXP-001: 원본 픽셀 워프로 입 벌림을 단계화한다 (깜빡임 공식의 재적용). |

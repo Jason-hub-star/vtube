@@ -27,6 +27,7 @@ from PIL import Image
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from lib.rig_keyforms import build_keyform_bindings, build_opacity_curves, build_parameters, build_physics_profiles  # noqa: E402
 from lib.vtube_io import ROOT, load_json, now_iso, rel, write_json  # noqa: E402
+from run_arap_blink_experiment import blink_mesh, eye_bbox_from_layer  # noqa: E402
 
 CANVAS = 2048
 
@@ -188,13 +189,13 @@ def main() -> int:
             ("mouth_teeth", args.hidden_mouth_dir / "mouth_teeth.png", 406),
             ("mouth_tongue", args.hidden_mouth_dir / "mouth_tongue.png", 407),
         ]
+    blink_cfg = {}
     if use_arap:
-        # 픽셀-가이드 원칙: 깜빡임은 원본 워프 패치 (생성 감은꺼풀 미사용)
-        order = 536
-        for side in ("L", "R"):
-            for step in ("025", "050", "075", "100"):
-                hidden.append((f"eye_{side}_arap_{step}", args.arap_eye_dir / f"eye_{side}_arap_{step}.png", order))
-                order += 1
+        # 픽셀-가이드 원칙: 깜빡임은 원본 항등 패치 1장 + 정점 키폼 2개 (EYE-NATURAL-002)
+        # — 구 4단계 크로스페이드는 전환 구간 겹침 잔상(주인님 보고: 어지러움)으로 폐기
+        blink_cfg = load_json(args.arap_eye_dir / "arap_blink_config.json")
+        for order, side in ((536, "L"), (537, "R")):
+            hidden.append((f"eye_{side}_blink", args.arap_eye_dir / f"eye_{side}_arap_000.png", order))
     else:
         if args.hidden_eye_dir is None:
             raise SystemExit("--arap-eye-dir 없이는 --hidden-eye-dir가 필요해요")
@@ -261,6 +262,19 @@ def main() -> int:
                 "deformer_node": deformer_of(pid),
             }
         )
+        if use_arap and pid.endswith("_blink"):
+            # EYE-NATURAL-002: 경계 곡선 행 정점 키폼 메시 — 일반 격자/컬링 비적용
+            side = "L" if pid == "eye_L_blink" else "R"
+            eye_bbox = eye_bbox_from_layer(ROOT / blink_cfg[f"eye_white_{side}"])
+            mesh = blink_mesh(
+                pid, f"ParamEye{side}Open", eye_bbox,
+                skin_band=float(blink_cfg.get("skin_band", 0.9)),
+                lower_rise=float(blink_cfg.get("lower_rise", 0.2)),
+                lower_band=float(blink_cfg.get("lower_band", 0.35)),
+                canvas=CANVAS, pad=int(blink_cfg.get("patch_pad", 26)))
+            meshes.append(mesh)
+            write_json(out / mesh["mesh_path"], mesh)
+            continue
         big = pid in ("face_base", "back_hair", "front_hair", "clothes", "shoulder_hair") or pid.startswith(("hair_front_", "hair_back_"))
         if pid in ("face_base", "clothes", "neck_skin"):
             cols = rows = 9  # 목-어깨 접합부를 지나는 파트 — fade 보간이 고와야 분리가 안 보인다

@@ -89,6 +89,17 @@ function exposeAutomationApi() {
       for (let i = 3; i < data.length; i += 4) if (data[i] < threshold) count += 1;
       return count;
     },
+    // 영역 RGBA 픽셀 base64 (렌더 정확성 검증용 — EYE-NATURAL-002) — 백엔드 무관 계약
+    regionPixelsBase64(x, y, w, h) {
+      const data = probePixels([x, y, w, h]);
+      if (!data) return null;
+      let binary = "";
+      const chunk = 0x8000;
+      for (let i = 0; i < data.length; i += chunk) {
+        binary += String.fromCharCode.apply(null, Array.from(data.slice(i, i + chunk)));
+      }
+      return btoa(binary);
+    },
   };
 }
 

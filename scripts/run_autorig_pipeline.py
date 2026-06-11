@@ -202,13 +202,16 @@ def main() -> int:
         writer.artifact_created(rel(exp / "rig_v0_project" / "character.json"), label="rig", stage="P4")
         writer.stage_completed("P4")
 
-        # ---- P5 검증 3종 ------------------------------------------------------
-        writer.stage_started("P5", "자동 검증 (validator·mesh·perf)")
+        # ---- P5 검증 4종 ------------------------------------------------------
+        writer.stage_started("P5", "자동 검증 (validator·mesh·blink·perf)")
         sh(writer, "P5", "validator", [
             "python3", "scripts/validate_mini_cubism_project.py", "--project", str(exp / "rig_v0_project")])
         sh(writer, "P5", "mesh_verify", [
             "python3", "scripts/run_mesh_deform_verify.py", "--project", str(exp / "rig_v0_project"),
             "--out-dir", str(exp / "reports")])
+        sh(writer, "P5", "blink_keyforms", [
+            "python3", "scripts/validate_blink_keyforms.py", "--project", str(exp / "rig_v0_project"),
+            "--arap-config", str(bake_config), "--out-dir", str(exp / "reports" / "blink_keyforms")])
         sh(writer, "P5", "perf", [
             "python3", "scripts/run_rig_perf_test.py", "--project", str(exp / "rig_v0_project"),
             "--out-dir", str(exp / "reports")])
