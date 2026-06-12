@@ -107,11 +107,28 @@ def main() -> int:
     if lacking:
         return give_up(f"부품 픽셀 부족: { {k: counts[k] for k in lacking} }")
 
-    # 공유 변환: 콘텐츠 폭 → 원본 입선 폭 (0.97), 콘텐츠 상단 → 입선 상단
+    # 공유 변환: 콘텐츠 폭 → 원본 입선 폭 (0.97). 세로 정렬은 "윗입술 중심 = 입선 중심" —
+    # 미소 곡선은 입꼬리가 올라가 bbox 상단이 꼬리 높이라, 상단 정렬은 열리는 입이
+    # 미소선 위에 생성되는 어색함 (004 H2 3차 주인님 실측). 중심은 중앙 30% 컬럼 실측.
     mx0, my0, mx1, my1 = layer_bbox(args.mouth_line)
+    line_alpha = np.asarray(Image.open(args.mouth_line).convert("RGBA"))[..., 3] > 8
+    centers = []
+    for cx_ in range(int(mx0 + (mx1 - mx0) * 0.35), int(mx0 + (mx1 - mx0) * 0.65)):
+        ys_ = np.where(line_alpha[:, cx_])[0]
+        if len(ys_):
+            centers.append((ys_.min() + ys_.max()) / 2)
+    line_center_y = float(np.mean(centers)) if centers else (my0 + my1) / 2
     x0, y0, x1, y1 = mask_bbox(mask)
     scale = ((mx1 - mx0) * SCALE_MARGIN) / (x1 - x0)
     dst_x = (mx0 + mx1) / 2
+    ul_centers = []
+    ul_mask = parts_mask["upper_lip"]
+    for cx_ in range(int(x0 + (x1 - x0) * 0.35), int(x0 + (x1 - x0) * 0.65)):
+        ys_ = np.where(ul_mask[:, cx_])[0]
+        if len(ys_):
+            ul_centers.append((ys_.min() + ys_.max()) / 2)
+    ul_cy = float(np.mean(ul_centers)) if ul_centers else float(y0)
+    paste_y = round(line_center_y - (ul_cy - y0) * scale)
     interior_fill = np.median(rgb[interior_dark], axis=0).astype(np.uint8)
 
     written, part_boxes = [], {}
@@ -127,7 +144,7 @@ def main() -> int:
         new_size = (max(1, round(crop.width * scale)), max(1, round(crop.height * scale)))
         crop = crop.resize(new_size, Image.LANCZOS)
         canvas = Image.new("RGBA", (CANVAS, CANVAS), (0, 0, 0, 0))
-        canvas.alpha_composite(crop, (round(dst_x - crop.width / 2), round(my0)))
+        canvas.alpha_composite(crop, (round(dst_x - crop.width / 2), paste_y))
         path = out / f"mouth_parts_{name}.png"
         canvas.save(path)
         written.append(path.name)
@@ -138,7 +155,8 @@ def main() -> int:
 
     write_json(out / "mouth_parts_manifest.json", {
         "generated_at": now_iso(), "ok": True, "sheet": rel(args.sheet),
-        "scale": round(scale, 5), "anchor_y": int(my0), "split_y_cell": split_y,
+        # anchor_y = 윗입술이 앉는 입선 중심 — 리그 붕괴 앵커와 동일해야 v→0이 입선 위로 수렴
+        "scale": round(scale, 5), "anchor_y": round(line_center_y), "split_y_cell": split_y,
         "mouth_line_bbox": [mx0, my0, mx1, my1], "parts": part_boxes, "written": written,
     })
     print(f"mouth_parts: {written} -> {rel(out)}")

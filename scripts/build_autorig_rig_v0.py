@@ -301,8 +301,10 @@ def main() -> int:
         write_json(out / mesh["mesh_path"], mesh)
 
     if use_mouth_parts:
-        # MOUTH-PARTS-001: 부품 전체를 공통 앵커(입선 상단)·공통 H(v)로 연속 개폐
-        for pid in attach_mouth_parts_keyforms(meshes, bbox_by_id, float(mouth_ref_bbox[1])):
+        # MOUTH-PARTS-001: 공통 앵커 = 입선 중심(추출기 manifest와 동일 기준) — v→0이
+        # 미소선 위로 수렴해야 교대 잔상이 없다 (bbox 상단은 미소 곡선의 입꼬리 높이 — H2 3차)
+        anchor_y = float(mouth_parts_manifest.get("anchor_y", mouth_ref_bbox[1]))
+        for pid in attach_mouth_parts_keyforms(meshes, bbox_by_id, anchor_y):
             mesh = next(m for m in meshes if m["part_id"] == pid)
             write_json(out / mesh["mesh_path"], mesh)
     elif use_mouth_states:
