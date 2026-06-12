@@ -5474,3 +5474,28 @@ notes:
   - 리본 개별 물리: 분해 슬롯에 리본 미분리 — 보류 (FACIAL-TEST-CHECKLIST 보류 항목 기재)
   - H2: 주인님 육안 — http://127.0.0.1:8062 (리깅 앱) / http://127.0.0.1:8063/drive (웹캠)
 ```
+
+## AUTORIG-CHARACTER-004-HEAD-Z-PIVOT-001
+
+```yaml
+id: AUTORIG-CHARACTER-004-HEAD-Z-PIVOT-001
+date: 2026-06-12
+owner: Claude
+status: P5_ALL_PASS_H2_WAITING
+hypothesis: AngleZ를 edge-pin 격자에 넣으면 실루엣 고정+얼굴 내부 시어만 남아 회전축이 읽히지 않는다(주인님 H2 "기울임 기준점이 목 같다"). 비핀 전용 회전 디포머(피벗=턱 관절)로 머리 강체 까딱 + 목 고정이 된다.
+input:
+  - 주인님 H2 육안 피드백 2건 (어깨 좌우 떨림 / 머리 기울임 기준점)
+  - 구 런 H2 rework 박제: runs/autorig-character-004_20260612_222226
+output:
+  - scripts/build_autorig_rig_v0.py (head_z_warp 삽입 — 비핀 2×2, 피벗=[face_cx, 턱 관절], 머리 서브트리 union bounds; neck_warp 재부모화 head→upper; back_hair 피벗 동축화)
+  - scripts/lib/rig_keyforms.py (AngleZ ±10 바인딩 head_angle_warp→head_z_warp 이동)
+  - scripts/templates/mini_cubism_drive.html (선행 커밋 f446925 — 어깨 X/Z 데드존±5%+EMA)
+  - 런: runs/autorig-character-004_20260612_231632 — P5 전부 PASS (목 밴드·접합 무회귀 포함)
+metric:
+  - 회전 변위장은 좌표 선형 → 2×2 비핀 격자 보간 = 정확한 강체 회전
+  - 인스펙터 AngleZ max 캡처: 머리 전체 동축 기울임 + 목/초커 수직 유지 (시각 확인)
+  - 어깨 무회귀: 트래킹 매퍼 QA 지터 0 PASS (드라이브 매핑 변경 없음)
+notes:
+  - 목 미세 추종은 자체 바인딩(±5/±3/±3, NECK-PIN 핀 격자)만 — "거의 고정 + 살짝 늘어남"
+  - H2 재판정 대기: 8062(슬라이더 AngleZ) / 8063(웹캠 갸웃)
+```

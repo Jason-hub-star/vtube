@@ -372,18 +372,33 @@ def main() -> int:
         body_bounds = [body_bounds[0], head_cy, body_bounds[2], body_bounds[3] + (body_bounds[1] - head_cy)]
     # BODY-SWAY-001 v3: 몸 피벗 = 골반(바닥 중앙) — BodyAngleX/Z 진자 회전의 축
     body_pivot = [center(body_bounds)[0], body_bounds[1] + body_bounds[3]]
+    # HEAD-Z-PIVOT-001 (004 H2 주인님 실측: "기울임 기준점이 목 같다"): AngleZ를 edge-pin 격자에
+    # 넣으면 실루엣 고정 + 얼굴 내부 시어만 남아 회전축이 읽히지 않는다 → 비핀 전용 회전 디포머.
+    # 피벗 = 머리-목 관절(턱 아래) — 머리 전체가 강체로 까딱이고, 피벗 근처(턱·윗목)는 변위 ≈ 0
+    # 이라 목이 사실상 고정된다. 회전 변위장은 좌표에 선형이라 2×2 격자 보간으로도 정확하다.
+    face_bb = bbox_by_id.get("face_base", head_bounds)
+    chin_joint_y = mouth_ref_bbox[1] + mouth_ref_bbox[3] + 0.5 * max(
+        (face_bb[1] + face_bb[3]) - (mouth_ref_bbox[1] + mouth_ref_bbox[3]), 0) if mouth_ref_bbox else head_bounds[1] + head_bounds[3]
+    head_z_pivot = [center(head_bounds)[0], round(chin_joint_y)]
+    head_subtree = (children.get("head_angle_warp", []) + children.get("eye_L_warp", [])
+                    + children.get("eye_R_warp", []) + children.get("mouth_warp", [])
+                    + children.get("front_hair_warp", []))
+    head_z_bounds = pad_bounds(union_bbox(*head_subtree), 40) if head_subtree else head_bounds
     deformers = [
         # lattice/edge_pinned: FFD 격자 (공식 워프 메커니즘). edge_pinned=경계 연결, false=전역 이동.
         {"id": "root_warp", "type": "warp", "parent_id": None, "child_ids": children.get("root_warp", []), "bounds": [0, 0, CANVAS, CANVAS], "pivot": [1024, 1024], "lattice": {"cols": 3, "rows": 3}, "edge_pinned": False},
         {"id": "body_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("body_warp", []), "bounds": body_bounds, "pivot": body_pivot, "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
         {"id": "upper_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("upper_warp", []), "bounds": upper_bounds, "pivot": center(upper_bounds), "lattice": {"cols": 3, "rows": 3}, "edge_pinned": False},
-        {"id": "head_angle_warp", "type": "warp", "parent_id": "upper_warp", "child_ids": children.get("head_angle_warp", []), "bounds": head_bounds, "pivot": center(head_bounds), "lattice": {"cols": 7, "rows": 7}, "edge_pinned": True},
-        # 목 = head 자식 (머리 격자 페이드 → 위는 머리, 아래로 갈수록 감쇠하는 그라데이션)
-        # 몸 추종은 upper_warp 상속 (자체 BodyAngle 바인딩은 이중 적용이라 제거 — CHAIN-001)
+        # HEAD-Z-PIVOT-001: 머리 강체 기울임 전용 (AngleZ ±10) — 머리 서브트리 전체를 턱 관절
+        # 피벗으로 회전. 목은 이 체인 밖(upper 자식)이라 고정 — 자체 바인딩(±3 핀 격자)만 "살짝 늘어남".
+        {"id": "head_z_warp", "type": "warp", "parent_id": "upper_warp", "child_ids": [], "bounds": head_z_bounds, "pivot": head_z_pivot, "lattice": {"cols": 2, "rows": 2}, "edge_pinned": False},
+        {"id": "head_angle_warp", "type": "warp", "parent_id": "head_z_warp", "child_ids": children.get("head_angle_warp", []), "bounds": head_bounds, "pivot": center(head_bounds), "lattice": {"cols": 7, "rows": 7}, "edge_pinned": True},
+        # 목 = upper 자식 (HEAD-Z-PIVOT-001에서 head 체인 밖으로 — 머리 기울임에 목이 끌려가지 않게).
+        # 머리 미세 추종은 목 자체 바인딩(±5/±3/±3)이 담당, 몸 추종은 upper_warp 상속 (CHAIN-001).
         # NECK-PIN-001: 위 가장자리도 핀 — 공식 首の曲面 구조 (양끝 고정, 중간만 휨).
         # 위가 자유로우면 목 자체 바인딩(±5)이 face_base 소유의 윗목 픽셀과 경계에서 어긋난다
         # (주인님 리그 모드 스크린샷: 목 중앙 가로 분리선 = 참수선)
-        {"id": "neck_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("neck_warp", []), "bounds": neck_bounds, "pivot": center(neck_bounds), "lattice": {"cols": 5, "rows": 6}, "edge_pinned": True},
+        {"id": "neck_warp", "type": "warp", "parent_id": "upper_warp", "child_ids": children.get("neck_warp", []), "bounds": neck_bounds, "pivot": center(neck_bounds), "lattice": {"cols": 5, "rows": 6}, "edge_pinned": True},
         {"id": "eye_L_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("eye_L_warp", []), "bounds": eye_l_bounds, "pivot": center(eye_l_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
         {"id": "eye_R_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("eye_R_warp", []), "bounds": eye_r_bounds, "pivot": center(eye_r_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
         {"id": "mouth_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("mouth_warp", []), "bounds": mouth_bounds, "pivot": center(mouth_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
@@ -391,8 +406,8 @@ def main() -> int:
         # 뒷머리 = 통짜 머리 감쇠 추종 (공식: 後ろ髪の曲面 ← AngleX/Y, 얼굴 체인 소속).
         # 부모는 root (upper 자식이면 upper bounds와 부분 겹침 → 머리카락 내부 시어) —
         # 몸 추종은 자체 BodyAngle 바인딩으로 균일하게. 핀 해제: 실루엣이 움직여야 체감,
-        # 하단 스윕은 몸 뒤 draw order라 안전. pivot은 head 피벗 (AngleZ 호가 목 중심).
-        {"id": "back_hair_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("back_hair_warp", []), "bounds": back_hair_bounds, "pivot": center(head_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": False},
+        # 하단 스윕은 몸 뒤 draw order라 안전. pivot은 턱 관절 (HEAD-Z-PIVOT-001 — 머리와 동축 호).
+        {"id": "back_hair_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("back_hair_warp", []), "bounds": back_hair_bounds, "pivot": head_z_pivot, "lattice": {"cols": 5, "rows": 5}, "edge_pinned": False},
     ]
 
     # 파라미터/바인딩/커브/물리 수치는 lib/rig_keyforms.py (2026-06-11 500줄 룰 분리)

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project_kind": "mini_cubism_v0",
   "experiment_id": "autorig-rig-v0",
-  "generated_at": "2026-06-12T13:23:07.537511+00:00",
+  "generated_at": "2026-06-12T14:17:15.791515+00:00",
   "source_selection": {
     "visible_layers": "experiments/autorig-character-004/seethrough_true_reskinned/reskin_manifest.json",
     "hidden_layers": [
@@ -38848,9 +38848,30 @@
       "edge_pinned": false
     },
     {
-      "id": "head_angle_warp",
+      "id": "head_z_warp",
       "type": "warp",
       "parent_id": "upper_warp",
+      "child_ids": [],
+      "bounds": [
+        464,
+        53,
+        1113,
+        1995
+      ],
+      "pivot": [
+        1016,
+        573
+      ],
+      "lattice": {
+        "cols": 2,
+        "rows": 2
+      },
+      "edge_pinned": false
+    },
+    {
+      "id": "head_angle_warp",
+      "type": "warp",
+      "parent_id": "head_z_warp",
       "child_ids": [
         "raw_footwear",
         "raw_legwear",
@@ -38893,7 +38914,7 @@
     {
       "id": "neck_warp",
       "type": "warp",
-      "parent_id": "head_angle_warp",
+      "parent_id": "upper_warp",
       "child_ids": [
         "neck",
         "neck_skin",
@@ -39039,7 +39060,7 @@
       ],
       "pivot": [
         1016,
-        364
+        573
       ],
       "lattice": {
         "cols": 5,
@@ -39507,7 +39528,7 @@
     {
       "parameter_id": "ParamAngleZ",
       "key_value": -30,
-      "target_id": "head_angle_warp",
+      "target_id": "head_z_warp",
       "delta_type": "deformer_transform",
       "deltas": {
         "translate": [
@@ -39525,7 +39546,7 @@
     {
       "parameter_id": "ParamAngleZ",
       "key_value": 30,
-      "target_id": "head_angle_warp",
+      "target_id": "head_z_warp",
       "delta_type": "deformer_transform",
       "deltas": {
         "translate": [

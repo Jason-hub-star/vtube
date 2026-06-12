@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T13:24:58.520378+00:00",
+  "generated_at": "2026-06-12T14:20:15.183334+00:00",
   "project": "/Users/family/jason/Vtube/experiments/autorig-character-004/rig_v0_project",
   "status": "PASS",
   "checks": [
@@ -22,6 +22,11 @@
       "name": "shared_h_across_parts",
       "ok": true,
       "detail": "부품 간 h 산포 0.0036"
+    },
+    {
+      "name": "shared_anchor_across_parts",
+      "ok": true,
+      "detail": "부품 간 앵커 산포 0.17px"
     },
     {
       "name": "clip_leak_teeth",

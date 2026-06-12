@@ -79,8 +79,10 @@ def build_keyform_bindings() -> list[dict]:
         binding("ParamAngleY", 30, "neck_warp", ty=3),
         binding_r("ParamAngleZ", -30, "neck_warp", rotate=-3),  # 공식 首の曲面: 갸우뚱 목 동조
         binding_r("ParamAngleZ", 30, "neck_warp", rotate=3),
-        binding_r("ParamAngleZ", -30, "head_angle_warp", rotate=-10),
-        binding_r("ParamAngleZ", 30, "head_angle_warp", rotate=10),
+        # HEAD-Z-PIVOT-001: Z 기울임은 전용 비핀 회전 디포머 (edge-pin 격자에 넣으면
+        # 실루엣 고정 + 내부 시어 — 004 H2 "기준점이 목" 판정). 피벗 = 턱 관절.
+        binding_r("ParamAngleZ", -30, "head_z_warp", rotate=-10),
+        binding_r("ParamAngleZ", 30, "head_z_warp", rotate=10),
         # CHAIN-001 upper_warp = 공식 首の位置: 몸 스웨이·호흡이 머리·목·뒷머리를 통째로 운반
         # (진폭은 body_warp와 동일 — 목 경계 상대 슬립 0)
         # BodyAngleX 운반(tx)은 빌더가 sway_px로 부여 (몸 진자 회전의 접합부 실효 변위와 결합)
