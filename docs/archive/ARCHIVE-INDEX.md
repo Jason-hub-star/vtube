@@ -10,6 +10,7 @@ This folder preserves useful old planning context that should not be treated as 
 
 | File | Reason | Current Replacement |
 |---|---|---|
+| `2026-06-12-root-legacy-screenshots/` (PNG 47장, 15MB) | 루트에 흩어져 있던 구 세션 스크린샷 (cubism-v2 리뷰 UI·mini-cubism 프리뷰·part-purity 등 피벗 이전 시대) — 004 시작 전 정리 (주인님 요청) | 현행 증거는 각 `experiments/<id>/reports/` |
 | `2026-06-03-legacy-2d-vtuber-ai-tool-plan.md` | Superseded by Live2D/Cubism production direction (그 후속 plan도 2026-06-11 아카이브됨) | `/Users/family/jason/Vtube/docs/status/PROJECT-STATUS.md` and `/Users/family/jason/Vtube/docs/INDEX.md` |
 | `/Users/family/jason/Vtube/experiments/archive/legacy-review-previews-20260604/` | Old standalone HTML review previews confuse the current part-purity review flow | `/Users/family/jason/Vtube/review_app/index.html` focused on `imagen-live2d-001` |
 | `2026-06-08-superseded-plans/` | Mini Cubism, old See-through/layer-decomp, White Wolf, v1 part-purity/schema, and stale handoff docs are no longer the active production plan | `/Users/family/jason/Vtube/experiments/reference-model-structure-001/reports/cubism_v2_new_model_v2_standard_part_spec.md` and `/Users/family/jason/Vtube/docs/status/NEXT-AGENT-HANDOFF.md` |
