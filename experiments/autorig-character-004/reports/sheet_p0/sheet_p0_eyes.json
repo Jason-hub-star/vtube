@@ -1,0 +1,109 @@
+{
+  "test_id": "SHEET-P0",
+  "generated_at": "2026-06-12T10:21:33.006613+00:00",
+  "sheet": "experiments/autorig-character-004/generated/eyes.png",
+  "kind": "eyes",
+  "bg_magenta_ratio": 0.9697,
+  "cells": [
+    {
+      "cell": "r1c1",
+      "content_ratio": 0.0276,
+      "bbox": [
+        0,
+        473,
+        477,
+        678
+      ],
+      "bbox_width": 477,
+      "pair": {
+        "width": 477.0,
+        "gap": 325.7658646026872
+      },
+      "width_dev": 0.001
+    },
+    {
+      "cell": "r1c2",
+      "content_ratio": 0.0541,
+      "bbox": [
+        0,
+        473,
+        478,
+        686
+      ],
+      "bbox_width": 478,
+      "pair": {
+        "width": 478.0,
+        "gap": 320.73699760988177
+      },
+      "width_dev": 0.001
+    },
+    {
+      "cell": "r1c3",
+      "content_ratio": 0.097,
+      "bbox": [
+        0,
+        473,
+        478,
+        705
+      ],
+      "bbox_width": 478,
+      "pair": {
+        "width": 478.0,
+        "gap": 309.7973405170317
+      },
+      "width_dev": 0.001
+    },
+    {
+      "cell": "r2c1",
+      "content_ratio": 0.0581,
+      "bbox": [
+        0,
+        27,
+        477,
+        229
+      ],
+      "bbox_width": 477,
+      "pair": {
+        "width": 477.0,
+        "gap": 319.0725533134882
+      },
+      "width_dev": 0.001
+    },
+    {
+      "cell": "r2c2",
+      "content_ratio": 0.0348,
+      "bbox": [
+        18,
+        35,
+        473,
+        245
+      ],
+      "bbox_width": 455,
+      "pair": {
+        "width": 455.0,
+        "gap": 296.39621658387654
+      },
+      "width_dev": 0.047
+    },
+    {
+      "cell": "r2c3",
+      "content_ratio": 0.0737,
+      "bbox": [
+        0,
+        27,
+        478,
+        236
+      ],
+      "bbox_width": 478,
+      "pair": {
+        "width": 478.0,
+        "gap": 303.8029975274618
+      },
+      "width_dev": 0.001
+    }
+  ],
+  "failures": [
+    "r2c2: 좌우 눈 간격 편차 5.7% > 5%"
+  ],
+  "status": "FAIL"
+}

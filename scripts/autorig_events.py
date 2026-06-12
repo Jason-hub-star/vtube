@@ -73,6 +73,17 @@ class EventWriter:
 
     def stage_completed(self, stage: str) -> None:
         self.emit("stage_completed", stage=stage)
+        self._refresh_progress_html()
+
+    def _refresh_progress_html(self) -> None:
+        """PROGRESS-SHARING-STRATEGY: 단계 완료마다 정적 progress.html 재생성 (실패 무해)."""
+        import subprocess
+        try:
+            subprocess.Popen(
+                ["python3", str(ROOT / "scripts/build_progress_html.py"), "--run-id", self.run_id],
+                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        except Exception:
+            pass
 
     def stage_failed(self, stage: str, error: str) -> None:
         self.emit("stage_failed", stage=stage, error=error)
