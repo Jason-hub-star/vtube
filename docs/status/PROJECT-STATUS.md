@@ -1,6 +1,6 @@
 # Vtube Project Status
 
-Updated: 2026-06-12 (004 위벨 풀런 P5 올PASS·H2 대기 — 부품형 입 MOUTH-PARTS-001 + 눈표정 6종 EXPR-003 + 액센트 4종)
+Updated: 2026-06-12 (004 위벨 — 부품형 입·표정 6종·액센트 + H2 피드백 2라운드 반영: HEAD-Z-PIVOT·RIG-COHESION 유기성 게이트 신설, P5 9게이트 올PASS·H2 재판정 대기)
 
 ## Current Phase
 
@@ -29,10 +29,10 @@ Updated: 2026-06-12 (004 위벨 풀런 P5 올PASS·H2 대기 — 부품형 입 M
 | 자체 런타임 (mini_cubism 계보) | 주입 API 완비 | `__miniProbe` (waitReady/setParameterValues/canvasHash) 추가 |
 | **관제탑 대시보드** | **완성 (2026-06-11)** | 이벤트 JSONL 컨벤션(`scripts/autorig_events.py`) + 서버(8095, macOS 알림) + 토스스타일 UI(타임라인/피드/게이트 드래그 수정/QA/로그) + 시뮬레이터. 스모크: 파이썬 18/18, 브라우저 8/8 PASS |
 | **소재 (하이브리드 레시피)** | **VERIFIED** | 진짜 마스터 분해+원본 재스킨(가시) + 동일세션 시트(숨은) — `vtube-hybrid-material-recipe` 하니스화. 전체 슬롯 생성은 기하 비정합으로 DISCARDED |
-| **자동 리깅 (rig v1.11)** | **몸·목·입·옷 사이클 완료 (2026-06-12)** | 눈: 상하 감김+정점 키폼(잔상 0 입증) · 입: 높이 키폼 정렬+하드 밴드 스냅(잔상 해소 — 근본은 004 부품형 입) + **MouthForm 파라미터(20종째 — 입꼬리 워프 근사, 트래킹 mouthSmile/Frown 연동, MouthOpenY 0..1 개편)** · 몸: 골반 진자 스웨이(공식 体の回転 패턴, 접합부 등변위 픽셀 실측 18px 균일)+파라미터 스프링(BodyAngleX/Z 물리 소유)+어깨 실측 입력 · 목: 首の曲面 전가장자리 핀(참수선 해소, 주인님 스크린샷 진단) · **옷: 드레이프 스프링(CLOTH-PHYS-001 — 공식 스커트 그룹 실측 정박: 입력 BodyAngleX/Z 100/100, Delay 0.6 비율, A/B 픽셀 증명 8.09≈기대 7.92px, 접합 슬립 0.52px)** · 건강검진: 인스펙터 무반응 0건. 눈웃음 워프(EXPR-002 곡선 A)는 폴백 — 표정은 004 생성 시트. 잔존 갭: 입꼬리 형태 변형(MouthForm은 워프 근사 — 본격화는 004 부품형 입)·팔·각도 폼·눈썹 모양·리본 개별 찰랑(004 분리 작화 필요) |
+| **자동 리깅 (rig v1.11)** | **몸·목·입·옷 사이클 완료 (2026-06-12)** | 눈: 상하 감김+정점 키폼(잔상 0 입증) · 입: 높이 키폼 정렬+하드 밴드 스냅(잔상 해소 — 근본은 004 부품형 입) + **MouthForm 파라미터(20종째 — 입꼬리 워프 근사, 트래킹 mouthSmile/Frown 연동, MouthOpenY 0..1 개편)** · 몸: 골반 진자 스웨이(공식 体の回転 패턴, 접합부 등변위 픽셀 실측 18px 균일)+파라미터 스프링(BodyAngleX/Z 물리 소유)+어깨 실측 입력 · 목: 首の曲面 전가장자리 핀(참수선 해소, 주인님 스크린샷 진단) · **옷: 드레이프 스프링(CLOTH-PHYS-001 — 공식 스커트 그룹 실측 정박: 입력 BodyAngleX/Z 100/100, Delay 0.6 비율, A/B 픽셀 증명 8.09≈기대 7.92px, 접합 슬립 0.52px)** · 건강검진: 인스펙터 무반응 0건. 눈웃음 워프(EXPR-002)·입꼬리·표정은 004에서 부품형 입·표정 시트로 대체 완료. 잔존 갭: 팔 리깅·각도 폼 ±30·눈썹 모양 변형·리본 개별 찰랑(분해 슬롯에 리본 미분리)·분해 풀해상도화 |
 | **렌더 백엔드 (PIXI-RENDER-001)** | **완료 (2026-06-11)** | PixiJS v8 WebGL 기본(`?renderer=pixi`) — 풀해상도 상태 전환 ~1ms·실효 60fps (canvas2d 대비 ~100×). canvas 폴백 유지. verify 5/5 양 백엔드 PASS |
 | AUTORIG-TEMPLATE-SPEC-001 | 완료 (2026-06-11 개정) | 생성 목록: 마스터 + 입 시트 + **눈 표정 시트(눈웃음·윙크·놀람·반개·><·하트눈) + 액센트 시트(홍조·그늘·눈물·땀)** — 표정은 워프가 아니라 동일세션 생성 작화 (`docs/ref/AUTORIG-MASTER-SPEC.md` §3.2~3.4) |
-| AUTORIG-PIPELINE-CLI-001 | **완료 (2026-06-11)** | `run_autorig_pipeline.py` 원커맨드 — 003 풀런 76분(순수 연산 ~22분), H1/H1.5/H2 관제탑 게이트. **P5 자동 검증 7종**: validator·mesh verify·blink 잔상·perf·rig 인스펙터(무반응 게이트)·옷 물리 A/B(`validate_clothes_physics.py`)·**트래킹 매퍼 QA**(`run_autorig_tracking_mapper_qa.py --quick` — 저장 스트림 재생→스키마/범위/주입/리얼리즘/지터/렌더 6검사) |
+| AUTORIG-PIPELINE-CLI-001 | **완료 (2026-06-11)** | `run_autorig_pipeline.py` 원커맨드 — 003 풀런 76분(순수 연산 ~22분), H1/H1.5/H2 관제탑 게이트. **P5 자동 검증 9게이트** (004 확장): validator·mesh verify·blink 잔상·perf·rig 인스펙터(무반응 — tile_max 판정)·옷 물리 A/B·트래킹 매퍼 QA(6검사)·**부품형 입 구조 검사**(`validate_mouth_parts_keyforms.py`)·**유기성 게이트**(`analyze_rig_cohesion.py` — 인접 16쌍 이음새 상대변위). 시트 P0(`validate_generated_sheets.py`)는 생성 직후 |
 | AUTORIG-ANCHOR-DETECT-001 | 0% | 프로덕션 갭 (임의 업로드 PNG 앵커 검출) |
 
 ## Production Direction
@@ -50,14 +50,17 @@ Updated: 2026-06-12 (004 위벨 풀런 P5 올PASS·H2 대기 — 부품형 입 M
 ## AUTORIG-CHARACTER-004 (위벨) — 2026-06-12
 
 - 생성: gpt-image-2 API 4장(마스터+입+눈표정+액센트) $0.87, H1 승인. 시트 P0 검증기 신설 (입=하드 게이트).
-- 풀런: `runs/autorig-character-004_20260612_222226` — P0~P5 전부 PASS, **H2 주인님 육안 대기** (리깅 앱 8062 / 웹캠 드라이브 8063).
-- 신규 리깅: **부품형 입**(입술 정점 키폼 연속 개폐+입안 클리핑, 잔상 구조 검사 PASS — 실패 시 4상태 폴백 경로 유지) · **눈 표정 6종**(ParamEyeExpr 1~6, 스킨 플레이트 + 기본 눈 자동 숨김) · **액센트 4종**(Cheek/Gloom/Tear/Sweat) · MouthForm 입선 입꼬리 키폼 ±7px.
-- 004 래칫(전부 003 무회귀 실측): 어깨가닥 색도 판별+과대분리 가드 / 인스펙터 무반응 판정 tile_max화+표정·액센트 타일 / 옷 물리 접합 슬립 A/B 차분화(004 0.31px·003 0.11px).
-- 상세: evidence log `AUTORIG-CHARACTER-004-FULLRUN-MOUTH-PARTS-EXPR-001`.
+- 신규 리깅: **부품형 입**(입술 정점 키폼 연속 개폐+입안 클리핑, 실패 시 4상태 폴백) · **눈 표정 6종**(ParamEyeExpr, 스킨 플레이트+기본 눈 자동 숨김) · **액센트 4종**(Cheek/Gloom/Tear/Sweat) · MouthForm 입선 입꼬리 키폼.
+- **H2 피드백 2라운드 반영 (주인님 육안 → 수치 박제)**:
+  - 어깨 좌우 떨림 → 드라이브 어깨 X/Z 데드존±5%+EMA (입력 지터 91%↓, 트래킹 QA 지터 0)
+  - 기울임 기준점 어색 → **HEAD-Z-PIVOT-001**: 비핀 전용 회전 디포머(피벗=턱 관절), 목은 체인 분리로 고정
+  - 치마·하체 동반+분리 / 앞뒷머리 어긋남 → **RIG-COHESION-001**: 유기성 분석기(`analyze_rig_cohesion.py`, 16쌍×9파라미터 이음새 상대변위) 신설·P5 게이트화. 잠복 버그 3건 검거: `'ear' in pid`가 `~wear`에 오매칭(하의가 얼굴 디포머 소속, 134px→0) / 뒷머리 Z 반각(29px→0) / Breath 골반 스케일 슬립(13px→2px)
+- 최신 풀런: `runs/autorig-character-004_20260612_233908` — **P5 9게이트 전부 PASS**, **H2 재판정 대기** (리깅 앱 8062 / 웹캠 8063).
+- 상세: evidence log `AUTORIG-CHARACTER-004-FULLRUN-MOUTH-PARTS-EXPR-001` · `-HEAD-Z-PIVOT-001` · `AUTORIG-RIG-COHESION-001`.
 
 ## Next Actions
 
-1. **004 H2 육안 판정** — FACIAL-TEST-CHECKLIST (표정 6종·부품입·액센트 행 신설) → 합격 시 rig v2.0 박제.
+1. **004 H2 재판정** — FACIAL-TEST-CHECKLIST (표정 6종·부품입·액센트 행 신설) → 합격 시 rig v2.0 박제. 잔여 튜닝 후보: 치마 드레이프 진폭 ±9px(공식 정박 — 주인님 체감으로 결정).
 2. `AUTORIG-PLAYER-001` — 사용자 산출물(웹 링크·OBS 브라우저 소스·투명 모드 `?transparent=1`·오픈 ZIP).
 3. `AUTORIG-ANCHOR-DETECT-001` — 임의 업로드 PNG 앵커 자동 검출 + rembg 입력 전처리 (프로덕션 갭).
 4. 분해 풀해상도화 (CUDA 런북은 `docs/archive/2026-06-08-superseded-plans/`에 보존 — 재개 시 꺼내 갱신) + 키폼 사다리 (목 접합 근본 개선).

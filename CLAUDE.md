@@ -49,7 +49,7 @@ sed -n '1,220p' /Users/family/jason/jason-agent-harness-template/harnesses/vtube
 
 ## Current Next Work
 
-1. `AUTORIG-CHARACTER-004` — 초커 기본 마스터 재생성 풀런 (003의 알려진 문제 전부 코드 박제 완료 — 래칫 검증)
+1. `AUTORIG-CHARACTER-004` — 위벨 풀런 **H2 재판정 대기** (부품형 입·표정 6종·액센트 리깅 완료, H2 피드백 2라운드 반영 — HEAD-Z-PIVOT·RIG-COHESION 유기성 게이트 신설, P5 9게이트 PASS)
 2. `AUTORIG-PLAYER-001` — 사용자 산출물 (웹 링크·OBS 브라우저 소스·투명 모드 `?transparent=1`·오픈 ZIP)
 3. `AUTORIG-ANCHOR-DETECT-001` — 임의 업로드 PNG 앵커 자동 검출 + rembg 입력 전처리 (프로덕션 갭)
 4. `AUTORIG-RIG-SCHEMA-001` — rig JSON 스키마 확정 (mini_rig.json: 메시/디포머/pin_edges/물리)
