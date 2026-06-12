@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T14:43:12.542Z",
+  "generated_at": "2026-06-12T17:09:43.365Z",
   "renderer_requested": "pixi",
   "renderer_backend": "pixi",
   "report": {
@@ -148,7 +148,7 @@
         },
         "done": true
       },
-      "canvas_hash": 2763657814,
+      "canvas_hash": 135977303,
       "backend": "pixi"
     },
     {
@@ -225,7 +225,7 @@
         },
         "done": true
       },
-      "canvas_hash": 685053429,
+      "canvas_hash": 1118114925,
       "backend": "pixi"
     },
     {
@@ -302,7 +302,7 @@
         },
         "done": true
       },
-      "canvas_hash": 3733141528,
+      "canvas_hash": 3376898246,
       "backend": "pixi"
     }
   ],

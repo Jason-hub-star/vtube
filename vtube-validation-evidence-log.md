@@ -5523,3 +5523,24 @@ notes:
   - 물리 스프링 과도 지연은 분석 범위 밖 (정착 오프셋은 clothes A/B가 측정 — drape ±9px는 유지, H2 재판정 항목)
   - H2 재판정: 8062/8063 — 까딱 시 하체 정지 + 앞/뒷머리 동행 확인
 ```
+
+## AUTORIG-CHARACTER-004-MOUTH-ANCHOR-001
+
+```yaml
+id: AUTORIG-CHARACTER-004-MOUTH-ANCHOR-001
+date: 2026-06-13
+owner: Claude
+status: P5_ALL_PASS_H2_WAITING
+hypothesis: 부품 입이 "미소선 위에 생성되어 열린다"(주인님 H2 3차) — 정렬 기준이 입선 bbox 상단인데 미소 곡선은 입꼬리가 올라가 bbox 상단=꼬리 높이라서 윗입술이 미소 중심보다 ~19px 위에 앉는다.
+input:
+  - 주인님 H2 육안 피드백 3차
+output:
+  - extract_mouth_parts.py (윗입술 중심·입선 중심을 중앙 30% 컬럼 실측으로 정합, manifest anchor_y 박제 510→529)
+  - build_autorig_rig_v0.py (붕괴 앵커 = manifest anchor_y — v→0이 미소선 위로 수렴)
+  - 런: runs/autorig-character-004_20260613_000729 — P5 9게이트 전부 PASS
+metric:
+  - 개폐 시뮬 합성(v 0/0.2/0.5/1.0): 윗입술이 미소선 중심에 앉아 아래로만 벌어짐 (시각 확인)
+  - mouth_parts 구조 검사 PASS (공통 앵커 산포 검사 포함), cohesion 204행 fail 0
+notes:
+  - H2 재판정 대기 (8062/8063) — 누적 반영: 어깨 데드존 / HEAD-Z-PIVOT / RIG-COHESION 3건 / MOUTH-ANCHOR
+```

@@ -5,22 +5,22 @@
   },
   "hashes": {
     "head_turn": 3185259597,
-    "nod": 3746739402,
-    "tilt": 414233932,
-    "gaze_turn": 3099637250,
-    "combo": 133891023,
-    "body_tilt": 549323350
+    "nod": 1667711560,
+    "tilt": 587701372,
+    "gaze_turn": 984787858,
+    "combo": 212791180,
+    "body_tilt": 1836000043
   },
   "neck": {
     "head_max": 0
   },
   "timing": {
-    "head_turn": 83.1,
-    "nod": 76.9,
-    "tilt": 70.2,
-    "gaze_turn": 73.1,
-    "combo": 408.9,
-    "body_tilt": 87.2
+    "head_turn": 72.9,
+    "nod": 72.1,
+    "tilt": 66.3,
+    "gaze_turn": 73,
+    "combo": 656.9,
+    "body_tilt": 86
   },
   "errors": [],
   "backend": "canvas"

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T14:42:03.304064+00:00",
+  "generated_at": "2026-06-12T15:41:09.045120+00:00",
   "project": "/Users/family/jason/Vtube/experiments/autorig-character-004/rig_v0_project",
   "status": "PASS",
   "checks": [
@@ -16,7 +16,7 @@
     {
       "name": "uniform_vertical_scale",
       "ok": true,
-      "detail": "세로 선형 잔차 max 0.031px, x 이동 0.000px"
+      "detail": "세로 선형 잔차 max 0.041px, x 이동 0.000px"
     },
     {
       "name": "shared_h_across_parts",
@@ -26,7 +26,7 @@
     {
       "name": "shared_anchor_across_parts",
       "ok": true,
-      "detail": "부품 간 앵커 산포 0.17px"
+      "detail": "부품 간 앵커 산포 0.24px"
     },
     {
       "name": "clip_leak_teeth",

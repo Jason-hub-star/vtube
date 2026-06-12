@@ -1,6 +1,6 @@
 {
   "project": "experiments/autorig-character-004/rig_v0_project",
-  "generated_at": "2026-06-12T14:41:59.677359+00:00",
+  "generated_at": "2026-06-12T15:41:05.202155+00:00",
   "counts": {
     "parts": 50,
     "meshes": 50,
@@ -463,7 +463,7 @@
         931,
         470,
         188,
-        148
+        166
       ],
       "lattice": {
         "cols": 5,
@@ -754,7 +754,7 @@
       "draw_order": 411,
       "bbox": [
         972,
-        511,
+        529,
         105,
         67
       ],
@@ -768,7 +768,7 @@
       "draw_order": 412,
       "bbox": [
         991,
-        541,
+        559,
         67,
         29
       ],
@@ -782,7 +782,7 @@
       "draw_order": 413,
       "bbox": [
         977,
-        511,
+        529,
         95,
         15
       ],
@@ -796,7 +796,7 @@
       "draw_order": 414,
       "bbox": [
         987,
-        550,
+        568,
         76,
         28
       ],
@@ -824,7 +824,7 @@
       "draw_order": 415,
       "bbox": [
         978,
-        510,
+        528,
         93,
         11
       ],
@@ -1979,7 +1979,7 @@
       "deformer_chain": "root_warp>upper_warp>head_z_warp>head_angle_warp>mouth_warp",
       "direct_binding_count": 0,
       "physics_profile_count": 0,
-      "bbox": "[972, 511, 105, 67]",
+      "bbox": "[972, 529, 105, 67]",
       "vertex_count": 20,
       "triangle_count": 24
     },
@@ -1991,7 +1991,7 @@
       "deformer_chain": "root_warp>upper_warp>head_z_warp>head_angle_warp>mouth_warp",
       "direct_binding_count": 0,
       "physics_profile_count": 0,
-      "bbox": "[987, 550, 76, 28]",
+      "bbox": "[987, 568, 76, 28]",
       "vertex_count": 20,
       "triangle_count": 24
     },
@@ -2003,7 +2003,7 @@
       "deformer_chain": "root_warp>upper_warp>head_z_warp>head_angle_warp>mouth_warp",
       "direct_binding_count": 0,
       "physics_profile_count": 0,
-      "bbox": "[977, 511, 95, 15]",
+      "bbox": "[977, 529, 95, 15]",
       "vertex_count": 20,
       "triangle_count": 24
     },
@@ -2015,7 +2015,7 @@
       "deformer_chain": "root_warp>upper_warp>head_z_warp>head_angle_warp>mouth_warp",
       "direct_binding_count": 0,
       "physics_profile_count": 0,
-      "bbox": "[991, 541, 67, 29]",
+      "bbox": "[991, 559, 67, 29]",
       "vertex_count": 20,
       "triangle_count": 24
     },
@@ -2027,7 +2027,7 @@
       "deformer_chain": "root_warp>upper_warp>head_z_warp>head_angle_warp>mouth_warp",
       "direct_binding_count": 0,
       "physics_profile_count": 0,
-      "bbox": "[978, 510, 93, 11]",
+      "bbox": "[978, 528, 93, 11]",
       "vertex_count": 20,
       "triangle_count": 24
     },
@@ -2363,7 +2363,7 @@
       "part_a": "clothes",
       "part_b": "mouth_parts_lower_lip",
       "score": 74.362,
-      "bbox_gap": 80.0,
+      "bbox_gap": 62.0,
       "contact_length": 0,
       "draw_order_gap": 204.0,
       "shared_chain_depth": 1,
@@ -2374,9 +2374,22 @@
     },
     {
       "part_a": "clothes",
+      "part_b": "mouth_parts_tongue",
+      "score": 74.282,
+      "bbox_gap": 70.0,
+      "contact_length": 0,
+      "draw_order_gap": 202.0,
+      "shared_chain_depth": 1,
+      "chain_a": "root_warp>body_warp",
+      "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp>mouth_warp",
+      "physics_a": 1,
+      "physics_b": 0
+    },
+    {
+      "part_a": "clothes",
       "part_b": "mouth_parts_interior",
       "score": 74.242,
-      "bbox_gap": 80.0,
+      "bbox_gap": 62.0,
       "contact_length": 0,
       "draw_order_gap": 201.0,
       "shared_chain_depth": 1,
@@ -2428,7 +2441,7 @@
       "part_a": "neck_under",
       "part_b": "mouth_parts_lower_lip",
       "score": 62.802,
-      "bbox_gap": 50.0,
+      "bbox_gap": 32.0,
       "contact_length": 0,
       "draw_order_gap": 215.0,
       "shared_chain_depth": 1,
@@ -2441,7 +2454,7 @@
       "part_a": "neck_under",
       "part_b": "mouth_parts_tongue",
       "score": 62.722,
-      "bbox_gap": 58.0,
+      "bbox_gap": 40.0,
       "contact_length": 0,
       "draw_order_gap": 213.0,
       "shared_chain_depth": 1,
@@ -2454,7 +2467,7 @@
       "part_a": "neck_under",
       "part_b": "mouth_parts_interior",
       "score": 62.682,
-      "bbox_gap": 50.0,
+      "bbox_gap": 32.0,
       "contact_length": 0,
       "draw_order_gap": 212.0,
       "shared_chain_depth": 1,
@@ -2610,7 +2623,7 @@
       "part_a": "choker",
       "part_b": "mouth_parts_lower_lip",
       "score": 56.993,
-      "bbox_gap": 65.0,
+      "bbox_gap": 47.0,
       "contact_length": 0,
       "draw_order_gap": 184.0,
       "shared_chain_depth": 2,
@@ -2623,7 +2636,7 @@
       "part_a": "choker",
       "part_b": "mouth_parts_tongue",
       "score": 56.913,
-      "bbox_gap": 73.0,
+      "bbox_gap": 55.0,
       "contact_length": 0,
       "draw_order_gap": 182.0,
       "shared_chain_depth": 2,
@@ -2636,7 +2649,7 @@
       "part_a": "choker",
       "part_b": "mouth_parts_interior",
       "score": 56.873,
-      "bbox_gap": 65.0,
+      "bbox_gap": 47.0,
       "contact_length": 0,
       "draw_order_gap": 181.0,
       "shared_chain_depth": 2,
@@ -2935,7 +2948,7 @@
       "part_a": "neck_skin",
       "part_b": "mouth_parts_lower_lip",
       "score": 45.753,
-      "bbox_gap": 62.0,
+      "bbox_gap": 44.0,
       "contact_length": 0,
       "draw_order_gap": 203.0,
       "shared_chain_depth": 2,
@@ -2961,7 +2974,7 @@
       "part_a": "neck_skin",
       "part_b": "mouth_parts_tongue",
       "score": 45.673,
-      "bbox_gap": 70.0,
+      "bbox_gap": 52.0,
       "contact_length": 0,
       "draw_order_gap": 201.0,
       "shared_chain_depth": 2,
@@ -2974,7 +2987,7 @@
       "part_a": "neck_skin",
       "part_b": "mouth_parts_interior",
       "score": 45.633,
-      "bbox_gap": 62.0,
+      "bbox_gap": 44.0,
       "contact_length": 0,
       "draw_order_gap": 200.0,
       "shared_chain_depth": 2,
@@ -3343,19 +3356,6 @@
       "draw_order_gap": 162.0,
       "shared_chain_depth": 4,
       "chain_a": "root_warp>upper_warp>head_z_warp>head_angle_warp>eye_L_warp",
-      "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp>front_hair_warp",
-      "physics_a": 0,
-      "physics_b": 1
-    },
-    {
-      "part_a": "L_brow",
-      "part_b": "hair_front_R",
-      "score": 37.83,
-      "bbox_gap": 0.0,
-      "contact_length": 13,
-      "draw_order_gap": 162.0,
-      "shared_chain_depth": 4,
-      "chain_a": "root_warp>upper_warp>head_z_warp>head_angle_warp",
       "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp>front_hair_warp",
       "physics_a": 0,
       "physics_b": 1

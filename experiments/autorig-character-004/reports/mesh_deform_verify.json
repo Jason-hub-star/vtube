@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T14:40:06.245147+00:00",
+  "generated_at": "2026-06-12T15:08:29.231107+00:00",
   "status": "PASS",
   "renderer": "canvas",
   "checks": {
@@ -10,12 +10,12 @@
     "no_errors": true
   },
   "timing_ms": {
-    "head_turn": 83.1,
-    "nod": 76.9,
-    "tilt": 70.2,
-    "gaze_turn": 73.1,
-    "combo": 408.9,
-    "body_tilt": 87.2
+    "head_turn": 72.9,
+    "nod": 72.1,
+    "tilt": 66.3,
+    "gaze_turn": 73,
+    "combo": 656.9,
+    "body_tilt": 86
   },
   "raw": "experiments/autorig-character-004/reports/mesh_deform_verify_raw.json"
 }

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-12T13:22:56.926191+00:00",
+  "generated_at": "2026-06-12T15:07:59.386320+00:00",
   "ok": true,
   "sheet": "experiments/autorig-character-004/generated/mouth.png",
   "scale": 0.18219,
-  "anchor_y": 510,
+  "anchor_y": 529,
   "split_y_cell": 390,
   "mouth_line_bbox": [
     971,
