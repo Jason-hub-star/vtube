@@ -58,7 +58,6 @@ def main() -> int:
 
         # 공통 붕괴비 h(v): 모든 부품·정점에서 (key_y - anchor)/(base_y - anchor) 동일
         if same_keys:
-            anchor = None
             max_dev = 0.0
             x_moved = 0.0
             for pid in MOUTH_PART_IDS:
@@ -66,27 +65,32 @@ def main() -> int:
                 for key in specs[pid]["keys"]:
                     kv = np.asarray(key["vertices"], dtype=float)
                     x_moved = max(x_moved, float(np.abs(kv[:, 0] - base[:, 0]).max()))
-                    # 앵커 추정: 첫 키(v=0)의 h로 역산 — h = (ky-a)/(by-a) 가 모든 정점 공통이면
-                    # a = (ky - h*by)/(1-h). 부품 간 공통 검증은 h 산포로 본다.
+                    # 선형성 검사: spread = key_y - base_y 가 base_y에 대해 선형이면
+                    # 균일 세로 스케일 (앵커 공통 여부는 아래 부품 간 기울기 산포가 판정)
                     spread = kv[:, 1] - base[:, 1]
-                    denom = base[:, 1] - base[:, 1].min() + 1e-9
-                    # 선형성 검사: spread 는 base_y에 대해 선형 (균일 세로 스케일의 필요충분)
                     fit = np.polyfit(base[:, 1], spread, 1)
                     resid = float(np.abs(spread - np.polyval(fit, base[:, 1])).max())
                     max_dev = max(max_dev, resid)
-                    _ = anchor, denom
             check("uniform_vertical_scale", max_dev <= 0.6 and x_moved <= 0.01,
                   f"세로 선형 잔차 max {max_dev:.3f}px, x 이동 {x_moved:.3f}px")
-            # 부품 간 공통 h: 각 키에서 부품별 기울기(1-h) 일치
+            # 부품 간 공통 h + 공통 앵커: spread = (h-1)·(base_y - anchor) 이므로
+            # 기울기(h-1)만 같고 앵커가 다르면 키 v에서 부품 간 일정 오프셋 = 이음새 —
+            # 절편에서 앵커를 역산해 산포까지 검사한다 (자기리뷰: 기울기 단독 검사의 구멍)
             slopes_by_v: dict[float, list[float]] = {}
+            anchors_by_v: dict[float, list[float]] = {}
             for pid in MOUTH_PART_IDS:
                 base = np.asarray(meshes[pid]["vertices"], dtype=float)
                 for key in specs[pid]["keys"]:
                     kv = np.asarray(key["vertices"], dtype=float)
-                    fit = np.polyfit(base[:, 1], kv[:, 1] - base[:, 1], 1)
-                    slopes_by_v.setdefault(key["value"], []).append(float(fit[0]))
+                    slope, intercept = np.polyfit(base[:, 1], kv[:, 1] - base[:, 1], 1)
+                    slopes_by_v.setdefault(key["value"], []).append(float(slope))
+                    if abs(slope) > 1e-4:
+                        anchors_by_v.setdefault(key["value"], []).append(float(-intercept / slope))
             slope_dev = max(max(s) - min(s) for s in slopes_by_v.values())
             check("shared_h_across_parts", slope_dev <= 0.01, f"부품 간 h 산포 {slope_dev:.4f}")
+            anchor_devs = [max(a) - min(a) for a in anchors_by_v.values() if len(a) >= 2]
+            anchor_dev = max(anchor_devs) if anchor_devs else 0.0
+            check("shared_anchor_across_parts", anchor_dev <= 1.5, f"부품 간 앵커 산포 {anchor_dev:.2f}px")
 
         # 알파 포함관계: 이빨/혀 ⊆ 입안 1px 팽창 (클립 누출 0)
         interior_a = np.asarray(Image.open(project / "parts/mouth_parts_interior.png").convert("RGBA"))[..., 3] > 8

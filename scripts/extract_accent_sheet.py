@@ -69,7 +69,6 @@ def main() -> int:
             # 볼 패치를 좌/우 따로 각 눈 중심 x의 볼 라인에 배치 (쌍 간격 매핑은 패치가
             # 세로로 길어 눈을 침범 — 004 1차 합성 판정). 폭 = 눈 폭 95%, 공통 스케일.
             mid = (x0 + x1) // 2
-            halves = []
             for sl in (mask[:, :mid], mask[:, mid:]):
                 if not sl.any():
                     raise SystemExit("blush: 좌/우 분리 실패")
