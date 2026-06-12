@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-06-12T13:22:59.256148+00:00",
+  "sheet": "experiments/autorig-character-004/generated/accent.png",
+  "accents": [
+    "blush",
+    "gloom",
+    "tear",
+    "sweat"
+  ],
+  "placements": {
+    "blush": {
+      "scale": 0.2659,
+      "dst": [
+        924,
+        478
+      ]
+    },
+    "gloom": {
+      "scale": 0.3195,
+      "dst": [
+        1016,
+        123
+      ]
+    },
+    "tear": {
+      "scale": 0.113,
+      "dst": [
+        1162,
+        425
+      ]
+    },
+    "sweat": {
+      "scale": 0.1265,
+      "dst": [
+        1193,
+        288
+      ]
+    }
+  },
+  "written": [
+    "accent_blush.png",
+    "accent_gloom.png",
+    "accent_tear.png",
+    "accent_sweat.png"
+  ]
+}

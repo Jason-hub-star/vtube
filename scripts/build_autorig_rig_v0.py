@@ -26,7 +26,7 @@ import numpy as np
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from lib.rig_keyforms import attach_mouth_height_keyforms, binding, binding_r, build_keyform_bindings, build_opacity_curves, build_parameters, build_physics_profiles  # noqa: E402
+from lib.rig_keyforms import EXPRESSION_NAMES, attach_mouth_height_keyforms, attach_mouth_parts_keyforms, attach_mouthform_line_keyforms, binding, binding_r, build_keyform_bindings, build_opacity_curves, build_parameters, build_physics_profiles  # noqa: E402
 from lib.vtube_io import ROOT, load_json, now_iso, rel, write_json  # noqa: E402
 from run_arap_blink_experiment import blink_mesh, eye_bbox_from_layer  # noqa: E402
 
@@ -34,6 +34,8 @@ CANVAS = 2048
 
 # 파트 → 폴더/디포머 배정 규칙
 def folder_of(pid: str) -> str:
+    if pid.startswith("accent_"):
+        return "Face"
     if "eye" in pid or "iris" in pid or "lash" in pid:
         return "Eye"
     if "mouth" in pid:
@@ -46,6 +48,8 @@ def folder_of(pid: str) -> str:
 
 
 def deformer_of(pid: str) -> str:
+    if pid.startswith("eye_expr_") or pid.startswith("accent_"):
+        return "head_angle_warp"  # 표정/액센트 오버레이 — 얼굴 통째 추종 (004 EXPR-003)
     if pid.startswith("L_") and ("eye" in pid or "iris" in pid or "lash" in pid) or pid.startswith("eye_L_"):
         return "eye_L_warp"
     if pid.startswith("R_") and ("eye" in pid or "iris" in pid or "lash" in pid) or pid.startswith("eye_R_"):
@@ -131,6 +135,9 @@ def main() -> int:
     parser.add_argument("--arap-eye-dir", type=Path, default=None, help="ARAP 깜빡임 패치 디렉토리 (지정 시 생성 감은꺼풀 대신 원본 워프 5단계)")
     parser.add_argument("--warp-mouth-dir", type=Path, default=None, help="입 워프 패치 디렉토리 (지정 시 내부 3레이어 스왑 대신 원본 워프 5단계)")
     parser.add_argument("--mouth-states-dir", type=Path, default=None, help="v21 최종 패턴: 풀 입 상태 스프라이트 4장 (closed/small/mid/wide) — warp보다 우선")
+    parser.add_argument("--mouth-parts-dir", type=Path, default=None, help="MOUTH-PARTS-001 부품형 입 5부품 — manifest ok=true면 states보다 우선, 아니면 자동 폴백")
+    parser.add_argument("--eye-expr-dir", type=Path, default=None, help="EXPR-003 눈 표정 오버레이 6장 (eye_expr_manifest.json)")
+    parser.add_argument("--accent-dir", type=Path, default=None, help="액센트 오버레이 4장 (accent_manifest.json)")
     parser.add_argument("--hair-chunks-dir", type=Path, default=None, help="머리 덩어리 5장 (front L/C/R + back L/R) — 통짜 hair 치환 + 물리 스프링 활성")
     parser.add_argument("--hidden-neck-dir", type=Path, default=None, help="숨은 목 (neck_under.png) — 목 분리 이음새 방지")
     parser.add_argument("--neck-split-dir", type=Path, default=None, help="목 피부 분리 (neck_skin + clothes_trimmed) — 분해가 목을 clothes에 합친 경우")
@@ -139,9 +146,16 @@ def main() -> int:
     parser.add_argument("--experiment-id", default="autorig-rig-v0")
     args = parser.parse_args()
     use_arap = args.arap_eye_dir is not None and args.arap_eye_dir.exists()
-    use_mouth_states = args.mouth_states_dir is not None and args.mouth_states_dir.exists()
+    # 부품형 입 (MOUTH-PARTS-001): 추출기가 ok=true를 박제한 경우에만 — 아니면 4상태 스냅 폴백
+    mouth_parts_manifest = {}
+    if args.mouth_parts_dir is not None and (args.mouth_parts_dir / "mouth_parts_manifest.json").exists():
+        mouth_parts_manifest = load_json(args.mouth_parts_dir / "mouth_parts_manifest.json")
+    use_mouth_parts = bool(mouth_parts_manifest.get("ok"))
+    use_mouth_states = (not use_mouth_parts) and args.mouth_states_dir is not None and args.mouth_states_dir.exists()
     use_hair_chunks = args.hair_chunks_dir is not None and args.hair_chunks_dir.exists()
-    use_mouth_warp = (not use_mouth_states) and args.warp_mouth_dir is not None and args.warp_mouth_dir.exists()
+    use_mouth_warp = (not use_mouth_parts) and (not use_mouth_states) and args.warp_mouth_dir is not None and args.warp_mouth_dir.exists()
+    use_eye_expr = args.eye_expr_dir is not None and (args.eye_expr_dir / "eye_expr_manifest.json").exists()
+    use_accents = args.accent_dir is not None and (args.accent_dir / "accent_manifest.json").exists()
 
     out = args.out_dir if args.out_dir.is_absolute() else ROOT / args.out_dir
     (out / "parts").mkdir(parents=True, exist_ok=True)
@@ -176,7 +190,12 @@ def main() -> int:
     hidden = []
     if args.hidden_neck_dir is not None and (args.hidden_neck_dir / "neck_under.png").exists():
         hidden.append(("neck_under", args.hidden_neck_dir / "neck_under.png", 199))  # 원본 목(200) 바로 뒤
-    if use_mouth_states:
+    if use_mouth_parts:
+        # MOUTH-PARTS-001: 부품형 입 — 입안(클립 마스크 겸) 위에 혀/이빨, 입술이 덮는다.
+        # closed는 여전히 원본 mouth_line (픽셀-가이드 원칙) — 0.08~0.14에서 부품으로 교대.
+        for i, name in enumerate(("interior", "tongue", "teeth", "lower_lip", "upper_lip")):
+            hidden.append((f"mouth_parts_{name}", args.mouth_parts_dir / f"mouth_parts_{name}.png", 411 + i))
+    elif use_mouth_states:
         # v21 최종 입 성공패턴: 풀 상태 스프라이트 크로스페이드 (분리 내부 레이어 폐기)
         # closed 상태는 원본 mouth_line이 담당 (픽셀-가이드 원칙: 중립은 100% 원본)
         for i, name in enumerate(("small", "mid", "wide")):
@@ -211,6 +230,13 @@ def main() -> int:
             ("eye_L_closed_lid", args.hidden_eye_dir / "eye_L_closed_lid.png", 545),
             ("eye_R_closed_lid", args.hidden_eye_dir / "eye_R_closed_lid.png", 546),
         ]
+    if use_eye_expr:
+        # EXPR-003: 깜빡임/눈웃음 패치(536~539) 위, 앞머리(700) 아래 — 활성 시 기본 눈은 곡선이 숨김
+        for k, name in enumerate(EXPRESSION_NAMES):
+            hidden.append((f"eye_expr_{name}", args.eye_expr_dir / f"eye_expr_{name}.png", 560 + k))
+    if use_accents:
+        for name, order in (("blush", 590), ("tear", 592), ("gloom", 710), ("sweat", 712)):
+            hidden.append((f"accent_{name}", args.accent_dir / f"accent_{name}.png", order))
     for pid, path, order in hidden:
         if not path.exists():
             raise SystemExit(f"숨은 레이어 없음: {path}")
@@ -313,11 +339,20 @@ def main() -> int:
         meshes.append(mesh)
         write_json(out / mesh["mesh_path"], mesh)
 
-    if use_mouth_states:
+    if use_mouth_parts:
+        # MOUTH-PARTS-001: 부품 전체를 공통 앵커(입선 상단)·공통 H(v)로 연속 개폐
+        for pid in attach_mouth_parts_keyforms(meshes, bbox_by_id, float(mouth_ref_bbox[1])):
+            mesh = next(m for m in meshes if m["part_id"] == pid)
+            write_json(out / mesh["mesh_path"], mesh)
+    elif use_mouth_states:
         # MOUTH-KEYFORM-001: 상태 스프라이트를 공통 입높이로 워프 — 크로스페이드 교차점 윤곽 정렬
         for pid in attach_mouth_height_keyforms(meshes, bbox_by_id):
             mesh = next(m for m in meshes if m["part_id"] == pid)
             write_json(out / mesh["mesh_path"], mesh)
+    # MouthForm 입꼬리 정점 키폼 — 닫힌 입선 전담 (열린 입 Form은 mouth_warp 근사 유지)
+    for pid in attach_mouthform_line_keyforms(meshes, bbox_by_id):
+        mesh = next(m for m in meshes if m["part_id"] == pid)
+        write_json(out / mesh["mesh_path"], mesh)
 
     def union_bbox(*pids: str) -> list[int]:
         # 빈 파트(알파 0 → [0,0,4,4])는 제외 — 원점으로 bounds가 끌려가는 것 방지
@@ -337,7 +372,7 @@ def main() -> int:
 
     eye_l_bounds = pad_bounds(union_bbox("L_eye_white", "L_iris", "L_upper_lash", "eye_L_closed_lid"), 30)
     eye_r_bounds = pad_bounds(union_bbox("R_eye_white", "R_iris", "R_upper_lash", "eye_R_closed_lid"), 30)
-    mouth_bounds = pad_bounds(union_bbox("mouth_line", "mouth_inner", "mouth_teeth"), 40)
+    mouth_bounds = pad_bounds(union_bbox("mouth_line", "mouth_inner", "mouth_teeth", "mouth_parts_interior"), 40)
     head_bounds = pad_bounds(union_bbox("face_base", "front_hair", "L_brow", "R_brow", "mouth_line"), 60)  # 하향 연장 금지: 턱은 가장자리 핀 근처라 적게 움직여야 목이 따라갈 수 있다 (공식 의사3D)
     if use_hair_chunks:
         hair_bounds = pad_bounds(union_bbox("hair_front_L", "hair_front_C", "hair_front_R"), 30)
@@ -408,7 +443,7 @@ def main() -> int:
     ]
 
     # 파라미터/바인딩/커브/물리 수치는 lib/rig_keyforms.py (2026-06-11 500줄 룰 분리)
-    parameters = build_parameters()
+    parameters = build_parameters(use_eye_expr=use_eye_expr, use_accents=use_accents)
     keyform_bindings = build_keyform_bindings()
     # BODY-SWAY-001 BodyAngleZ 기울기: body는 자기 피벗 회전, 운반 대상(upper·뒷머리)은
     # "그 회전이 자기 높이에 만드는 수평 변위"만큼 균일 tx (X 스웨이의 운반 패턴과 동형 —
@@ -445,7 +480,9 @@ def main() -> int:
         binding("ParamBodyAngleZ", 10, "back_hair_warp", tx=dx_carry),
     ]
 
-    part_opacity_keyframes = build_opacity_curves(use_arap, use_mouth_states, use_mouth_warp, bbox_by_id)
+    part_opacity_keyframes = build_opacity_curves(use_arap, use_mouth_states, use_mouth_warp, bbox_by_id,
+                                                  use_mouth_parts=use_mouth_parts, use_eye_expr=use_eye_expr,
+                                                  use_accents=use_accents)
 
     physics_profiles = build_physics_profiles(use_hair_chunks, bbox_by_id)
 
@@ -478,7 +515,11 @@ def main() -> int:
         "project_kind": "mini_cubism_rig_v0",
         "mesh_overrides": {},
         "keyform_overrides": [],
-        "clipping": {"enabled": True, "pairs": {"L_eye_white": ["L_iris"], "R_eye_white": ["R_iris"]}},
+        "clipping": {"enabled": True, "pairs": {
+            "L_eye_white": ["L_iris"], "R_eye_white": ["R_iris"],
+            # MOUTH-PARTS-001: 이빨/혀는 솔리드 입안에 클리핑 — 마스크 메시도 키폼을 따라간다 (draw_pixi)
+            **({"mouth_parts_interior": ["mouth_parts_teeth", "mouth_parts_tongue"]} if use_mouth_parts else {}),
+        }},
         "eye_socket_covers": {"enabled": False},
         "render_mode": "mesh",  # MESH-DEFORM-001 (sprite로 바꾸면 폴백)
         "notes": ["autorig v0"],

@@ -22,11 +22,11 @@ function tileDelta(a,b){let total=0,count=0,changed=0;for(let i=0;i<a.length&&i<
     for(const state of config.states){
       await page.evaluate((payload)=>window.__miniSetParameters(payload),{...config.defaults,[state.parameter_id]:state.value});
       const hash=await page.evaluate(()=>window.__miniProbe.canvasHash()),tiles=await sampleTiles(page);
-      let mean=0,ratio=0;
-      for(let i=0;i<tiles.length;i+=1){const d=tileDelta(neutralTiles[i].bytes,decodeBase64(tiles[i].raw));mean+=d.mean_abs;ratio+=d.changed_ratio;}
+      let mean=0,ratio=0,tmax=0;
+      for(let i=0;i<tiles.length;i+=1){const d=tileDelta(neutralTiles[i].bytes,decodeBase64(tiles[i].raw));mean+=d.mean_abs;ratio+=d.changed_ratio;tmax=Math.max(tmax,d.mean_abs);}
       const capture=`${config.captures}/dynamic_${slug(state.parameter_id)}_${slug(state.label)}.png`;
       await page.screenshot({path:capture});
-      out.states.push({parameter_id:state.parameter_id,label:state.label,value:state.value,canvas_hash:hash,pixel_delta_mean_abs:tiles.length?mean/tiles.length:0,changed_sample_ratio:tiles.length?ratio/tiles.length:0,capture});
+      out.states.push({parameter_id:state.parameter_id,label:state.label,value:state.value,canvas_hash:hash,pixel_delta_mean_abs:tiles.length?mean/tiles.length:0,pixel_delta_tile_max:tmax,changed_sample_ratio:tiles.length?ratio/tiles.length:0,capture});
     }
   }catch(error){out.errors.push(String(error&&error.stack?error.stack:error));}
   finally{if(browser)await browser.close();fs.writeFileSync(config.out,JSON.stringify(out,null,2));}

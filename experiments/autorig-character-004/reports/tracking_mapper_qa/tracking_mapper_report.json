@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-12T13:26:14.924491+00:00",
+  "status": "PASS",
+  "quick": true,
+  "project": "experiments/autorig-character-004/rig_v0_project",
+  "stream": "experiments/reference-model-structure-001/reports/face_tracking_webcam_probe_raw.json",
+  "renderer_requested": "pixi",
+  "renderer_backend": "pixi",
+  "checks": [
+    {
+      "check": "stream_schema",
+      "status": "PASS",
+      "value": 48,
+      "missing_required": []
+    },
+    {
+      "check": "mapping_range",
+      "status": "PASS",
+      "value": 0,
+      "missing_project": []
+    },
+    {
+      "check": "runtime_injection",
+      "status": "PASS",
+      "value": 48,
+      "applied_median": 13.0,
+      "missing_union": []
+    },
+    {
+      "check": "response_realism",
+      "status": "PASS",
+      "value": 26.7083,
+      "spans": {
+        "ParamAngleX": 26.708279,
+        "ParamAngleY": 3.035772,
+        "ParamAngleZ": 36.864115,
+        "ParamEyeLOpen": 0.164599,
+        "ParamEyeROpen": 0.171372,
+        "ParamEyeBallX": 0.857209,
+        "ParamEyeBallY": 0.350762,
+        "ParamMouthOpenY": 0.253706,
+        "ParamMouthForm": 0.851614
+      }
+    },
+    {
+      "check": "jitter",
+      "status": "PASS",
+      "value": 0,
+      "failed_parameters": []
+    },
+    {
+      "check": "render_evidence",
+      "status": "PASS",
+      "value": 3,
+      "errors": []
+    }
+  ],
+  "scores": {
+    "frame_count": 48,
+    "runtime_frames_applied": 48,
+    "applied_median": 13.0,
+    "distinct_visual_states": 3,
+    "ParamAngleX_span": 26.708279,
+    "ParamMouthOpenY_span": 0.253706,
+    "eye_open_span": 0.171372
+  },
+  "outputs": {
+    "parameter_response": "experiments/autorig-character-004/reports/tracking_mapper_qa/parameter_response.csv",
+    "parameter_range_report": "experiments/autorig-character-004/reports/tracking_mapper_qa/parameter_range_report.csv",
+    "jitter_score": "experiments/autorig-character-004/reports/tracking_mapper_qa/jitter_score.csv",
+    "contact_sheet": "experiments/autorig-character-004/reports/tracking_mapper_qa/tracking_replay_contact_sheet.png",
+    "gif": "experiments/autorig-character-004/reports/tracking_mapper_qa/tracking_replay.gif",
+    "playwright_raw": "experiments/autorig-character-004/reports/tracking_mapper_qa/playwright_raw.json"
+  }
+}

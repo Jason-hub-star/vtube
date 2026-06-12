@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-06-12T13:27:52.506413+00:00",
+  "test_id": "rig_perf_test",
+  "renderer": "canvas",
+  "render_ms_median": {
+    "1.0": {
+      "backend": "canvas",
+      "neutral": 100.5,
+      "head_turn": 72.1,
+      "nod": 70.4,
+      "tilt": 73.4,
+      "gaze_turn": 71.6,
+      "blink": 151.9,
+      "mouth": 222.2,
+      "combo": 200.4,
+      "physics_step": 389.2,
+      "raf_fps": 1
+    },
+    "0.55": {
+      "backend": "canvas",
+      "neutral": 170.9,
+      "head_turn": 93.4,
+      "nod": 94.5,
+      "tilt": 94.9,
+      "gaze_turn": 93.9,
+      "blink": 200.1,
+      "mouth": 272.3,
+      "combo": 202.8,
+      "physics_step": 415,
+      "raf_fps": 1
+    }
+  },
+  "replay": {
+    "frames": 175,
+    "wall_s": 9.77,
+    "effective_fps": 18
+  },
+  "errors": []
+}

@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-06-12T13:24:58.520378+00:00",
+  "project": "/Users/family/jason/Vtube/experiments/autorig-character-004/rig_v0_project",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "parts_present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "uniform_keyform_keys",
+      "ok": true,
+      "detail": "키 세트: [(0.0, 0.25, 0.55, 1.0)]"
+    },
+    {
+      "name": "uniform_vertical_scale",
+      "ok": true,
+      "detail": "세로 선형 잔차 max 0.031px, x 이동 0.000px"
+    },
+    {
+      "name": "shared_h_across_parts",
+      "ok": true,
+      "detail": "부품 간 h 산포 0.0036"
+    },
+    {
+      "name": "clip_leak_teeth",
+      "ok": true,
+      "detail": "누출 0px"
+    },
+    {
+      "name": "clip_leak_tongue",
+      "ok": true,
+      "detail": "누출 0px"
+    },
+    {
+      "name": "vertical_continuity",
+      "ok": true,
+      "detail": "중앙 컬럼 최악 내부 갭 0px"
+    },
+    {
+      "name": "swap_curves_present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mouthform_corner_keyforms",
+      "ok": true,
+      "detail": "꼬리 진폭 max 7.0px, 중앙 0.00px"
+    }
+  ]
+}

@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """AUTORIG 원커맨드 파이프라인 — "자동화파이프라인 시작".
 
-재료 2장(마스터 + 입 4상태 시트)을 받으면 P0~H2 전 단계를 자동 수행한다.
+재료(마스터 + 입 4상태 시트, 선택: 눈 표정 시트·액센트 시트)를 받으면 P0~H2 전 단계를 자동 수행한다.
+004 사이클부터: 시트 P0 검증, 부품형 입(MOUTH-PARTS-001, 실패 시 4상태 폴백), 표정/액센트 오버레이.
 검증된 단계 스크립트들을 subprocess로 호출하고(재작성 금지), autorig_events로
 관제탑(8095)에 실시간 송출, 게이트(H1.5/H2)에서 주인님 판정을 대기한다.
 
@@ -64,6 +65,8 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--master", type=Path, required=True, help="2048 마스터 PNG")
     parser.add_argument("--mouth-sheet", type=Path, required=True, help="입 4상태 시트 (interior 셀 포함)")
+    parser.add_argument("--eye-expr-sheet", type=Path, default=None, help="눈 표정 시트 2×3 (EXPR-003) — 지정 시 표정 오버레이 추출·리깅")
+    parser.add_argument("--accent-sheet", type=Path, default=None, help="액센트 시트 2×2 — 지정 시 액센트 오버레이 추출·리깅")
     parser.add_argument("--experiment-id", required=True, help="예: autorig-character-003")
     parser.add_argument("--resolution", type=int, default=640)
     parser.add_argument("--steps", type=int, default=12)
@@ -97,6 +100,22 @@ def main() -> int:
             "python3", "scripts/validate_master_image.py", "--master", str(args.master),
             "--out", str(exp / "reports" / "p0_master_validation.json")])
         writer.qa_result("p0_master", "PASS", stage="P0")
+        # 시트 P0 (MASTER-SPEC §3.4): 입 시트는 정렬이 리깅 좌표를 좌우 → 하드 게이트.
+        # 눈/액센트 시트는 H1 육안 게이트가 후속 판정 → 증거 기록만 (경계선 오탐 허용 — 004 ><칸 사례)
+        sheet_checks = [("mouth", args.mouth_sheet, True),
+                        ("eyes", args.eye_expr_sheet, False), ("accent", args.accent_sheet, False)]
+        for kind, sheet, hard in sheet_checks:
+            if sheet is None:
+                continue
+            cmd = ["python3", "scripts/validate_generated_sheets.py", "--sheet", str(sheet),
+                   "--kind", kind, "--out-dir", str(exp / "reports" / "sheet_p0")]
+            if hard:
+                sh(writer, "P0", f"sheet_p0_{kind}", cmd)
+                writer.qa_result(f"sheet_p0_{kind}", "PASS", stage="P0")
+            else:
+                proc = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True, timeout=600)
+                status = "PASS" if proc.returncode == 0 else "WARN"
+                writer.qa_result(f"sheet_p0_{kind}", status, detail=proc.stdout[-200:].strip(), stage="P0")
         writer.stage_completed("P0")
 
         # ---- P1 분해 --------------------------------------------------------
@@ -157,6 +176,32 @@ def main() -> int:
             "--mouth-line", str(mouth_line),
             "--assembly", str(exp / "reports" / "full_assembly" / "assembly.png"),
             "--out-dir", str(exp / "mouth_states")])
+        # MOUTH-PARTS-001 부품형 입 — 분류 실패(exit 3)는 4상태 스냅 폴백 (위 mouth_states가 보험)
+        mouth_parts_dir = exp / "mouth_parts"
+        writer.log("mouth_parts: extract_mouth_parts.py (실패 시 4상태 폴백)")
+        proc = subprocess.run([
+            "python3", "scripts/extract_mouth_parts.py", "--sheet", str(args.mouth_sheet),
+            "--mouth-line", str(mouth_line), "--out-dir", str(mouth_parts_dir)],
+            cwd=ROOT, capture_output=True, text=True, timeout=600)
+        if proc.returncode == 0:
+            use_mouth_parts = True
+            writer.qa_result("mouth_parts_extract", "PASS", stage="P3")
+        elif proc.returncode == 3:
+            use_mouth_parts = False
+            writer.qa_result("mouth_parts_extract", "WARN", detail=f"폴백: {proc.stdout[-160:].strip()}", stage="P3")
+        else:
+            writer.stage_failed("P3", f"mouth_parts 실패 (exit {proc.returncode}): {(proc.stdout + proc.stderr)[-400:]}")
+            raise SystemExit(f"[P3] mouth_parts 실패:\n{(proc.stdout + proc.stderr)[-2000:]}")
+        if args.eye_expr_sheet is not None:
+            sh(writer, "P3", "eye_expr", [
+                "python3", "scripts/extract_eye_expression_sheet.py", "--sheet", str(args.eye_expr_sheet),
+                "--reskin-dir", str(reskin_dir),
+                "--assembly", str(exp / "reports" / "full_assembly" / "assembly.png"),
+                "--out-dir", str(exp / "eye_expr")])
+        if args.accent_sheet is not None:
+            sh(writer, "P3", "accent", [
+                "python3", "scripts/extract_accent_sheet.py", "--sheet", str(args.accent_sheet),
+                "--reskin-dir", str(reskin_dir), "--out-dir", str(exp / "accents")])
         bake_config = exp / "arap_blink_layers" / "arap_blink_config.json"
         bake_config.parent.mkdir(parents=True, exist_ok=True)
         write_json(bake_config, {
@@ -191,7 +236,7 @@ def main() -> int:
 
         # ---- P4 리그 빌드 ----------------------------------------------------
         writer.stage_started("P4", "자동 리깅")
-        sh(writer, "P4", "build_rig", [
+        build_cmd = [
             "python3", "scripts/build_autorig_rig_v0.py",
             "--reskin-manifest", str(reskin_dir / "reskin_manifest.json"),
             "--arap-eye-dir", str(exp / "arap_blink_layers"),
@@ -200,7 +245,14 @@ def main() -> int:
             "--hidden-neck-dir", str(exp / "hidden_neck"),
             "--neck-split-dir", str(exp / "neck_split"),
             "--shoulder-hair-dir", str(exp / "shoulder_hair"),
-            "--out-dir", str(exp / "rig_v0_project")])
+            "--out-dir", str(exp / "rig_v0_project")]
+        if use_mouth_parts:
+            build_cmd += ["--mouth-parts-dir", str(mouth_parts_dir)]
+        if args.eye_expr_sheet is not None:
+            build_cmd += ["--eye-expr-dir", str(exp / "eye_expr")]
+        if args.accent_sheet is not None:
+            build_cmd += ["--accent-dir", str(exp / "accents")]
+        sh(writer, "P4", "build_rig", build_cmd)
         writer.artifact_created(rel(exp / "rig_v0_project" / "character.json"), label="rig", stage="P4")
         writer.stage_completed("P4")
 
@@ -218,6 +270,11 @@ def main() -> int:
             "python3", "scripts/inspect_autorig_rig.py", "--project", str(exp / "rig_v0_project"),
             "--out-dir", str(exp / "reports" / "rig_inspector"),
             "--dynamic", "--renderer", "pixi", "--fail-on-dead"])
+        if use_mouth_parts:
+            sh(writer, "P5", "mouth_parts_keyforms", [
+                "python3", "scripts/validate_mouth_parts_keyforms.py",
+                "--project", str(exp / "rig_v0_project"),
+                "--out-dir", str(exp / "reports" / "mouth_parts")])
         sh(writer, "P5", "clothes_physics", [
             "python3", "scripts/validate_clothes_physics.py", "--project", str(exp / "rig_v0_project"),
             "--out-dir", str(exp / "reports" / "clothes_physics")])

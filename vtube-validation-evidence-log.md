@@ -5442,3 +5442,35 @@ metric:
 decision: HairFront drag/zoom editor smoke passes and save-path plumbing is verified using a smoke override file only. Real manual override JSON is still absent, so no correction has been applied and material/G7/G8 remain blocked.
 next_action: Run the editor for real review, save `manual_hairfront_anchor_overrides.json` only after deliberate visual placement, then rebuild shifted full-canvas HairFront PNGs and rerun QA.
 ```
+
+## AUTORIG-CHARACTER-004-FULLRUN-MOUTH-PARTS-EXPR-001
+
+```yaml
+id: AUTORIG-CHARACTER-004-FULLRUN-MOUTH-PARTS-EXPR-001
+date: 2026-06-12
+owner: Claude
+status: P5_ALL_PASS_H2_WAITING
+hypothesis: 위벨(004) 생성 4장에서 부품형 입(MOUTH-PARTS-001)·눈표정 6종(EXPR-003)·액센트 4종을 결정론 추출·리깅하면 P5 전 게이트를 무회귀 통과한다.
+input:
+  - experiments/autorig-character-004/generated/{master,mouth,eyes,accent}.png  # gpt-image-2 4장 $0.87, H1 승인
+  - 분해 재사용: autorig-character-004_seethrough_20260612_193935_b6bc3768_layers.json (P1 13분 1회)
+output:
+  - scripts/extract_mouth_parts.py + scripts/extract_eye_expression_sheet.py + scripts/extract_accent_sheet.py + scripts/lib/sheet_overlay.py
+  - scripts/validate_mouth_parts_keyforms.py (P5 8번째 게이트)
+  - scripts/build_autorig_rig_v0.py + scripts/lib/rig_keyforms.py (ParamEyeExpr 1~6·ParamCheek/Gloom/Tear/Sweat·입술 키폼·입안 클리핑·MouthForm 입선 입꼬리 키폼)
+  - experiments/autorig-character-004/rig_v0_project (parts 50, params 25, bindings 61)
+  - 런: runs/autorig-character-004_20260612_222226 (H1_5 승인 근거 박제: 어셈블리=마스터 시각 동일 + p2 PASS)
+metric:
+  - p5: validator/mesh6종/blink/mouth_parts/rig_inspector/clothes_physics/tracking_mapper/perf 전부 PASS
+  - mouth_parts: 부품 5종 분리 (interior 142k/tongue 42k/teeth 20k px), 클립 누출 0px, 공통 H(v) 산포 0.0036, 윤곽 갭 0px
+  - sheet_p0: mouth PASS / accent PASS / eyes WARN(><칸 간격 5.7%>5% — H1 육안 승인 박제)
+  - cost_usd: 0.87 (4장, 재생성 0회)
+ratchet:  # 004에서 코드에 박은 일반화 수정 (전부 003 무회귀 실측)
+  - split_shoulder_hair: 색도(chromaticity) 판별 + 과대분리 가드 — 검은 드레스(50,50,55) vs 암녹 머리(65,66,36) RGB거리 29<60 전체 오분류 사건. 003 재실행 28138px PASS(기존 28605)
+  - inspect_autorig_rig: 무반응 판정을 pixel_delta_tile_max(>=0.5)로 — 타일 평균은 타일 수에 희석(볼터치/눈물/땀 커버 0개 Δ=0 오탐). accent/expr 키워드 타일 + 입꼬리 끝점 타일 추가
+  - validate_clothes_physics: 접합 슬립을 A/B 차분(컨트롤 콘텐츠 편향 제거) + 부호 수정(-offset×w) + 절대 접합 가드 4px. 004 slip 2.85→0.31 PASS, 003 0.11 PASS
+notes:
+  - MouthForm 열린 입 본격 변형은 런타임 1메시 1파라미터 제약으로 보류 (닫힌 입선 입꼬리 키폼 ±7px만 본격화)
+  - 리본 개별 물리: 분해 슬롯에 리본 미분리 — 보류 (FACIAL-TEST-CHECKLIST 보류 항목 기재)
+  - H2: 주인님 육안 — http://127.0.0.1:8062 (리깅 앱) / http://127.0.0.1:8063/drive (웹캠)
+```

@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-06-12T13:22:27.278100+00:00",
+  "master": "experiments/autorig-character-004/generated/master.png",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "size",
+      "ok": true,
+      "value": [
+        2048,
+        2048
+      ],
+      "rule": "정사각 ≥1024"
+    },
+    {
+      "name": "figure_width",
+      "ok": true,
+      "value": 0.507,
+      "rule": "≥0.35 (상반신 구도)"
+    },
+    {
+      "name": "head_margin",
+      "ok": true,
+      "value": 0.015,
+      "rule": "≤0.25"
+    },
+    {
+      "name": "single_figure",
+      "ok": true,
+      "value": 0,
+      "rule": "인물 영역 중간 공백 < 폭 18%"
+    }
+  ]
+}

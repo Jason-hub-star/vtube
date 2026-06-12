@@ -1,0 +1,375 @@
+{
+  "generated_at": "2026-06-12T13:23:24.755Z",
+  "renderer_requested": "pixi",
+  "backend": "pixi",
+  "neutral_hash": 3096303395,
+  "states": [
+    {
+      "parameter_id": "ParamEyeExpr",
+      "label": "max",
+      "value": 6,
+      "canvas_hash": 2584753713,
+      "pixel_delta_mean_abs": 5.66881103515625,
+      "pixel_delta_tile_max": 63.939208984375,
+      "changed_sample_ratio": 0.10582682291666666,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamEyeExpr_max.png"
+    },
+    {
+      "parameter_id": "ParamCheek",
+      "label": "max",
+      "value": 1,
+      "canvas_hash": 3394901200,
+      "pixel_delta_mean_abs": 1.2961629231770833,
+      "pixel_delta_tile_max": 22.525390625,
+      "changed_sample_ratio": 0.043359375,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamCheek_max.png"
+    },
+    {
+      "parameter_id": "ParamGloom",
+      "label": "max",
+      "value": 1,
+      "canvas_hash": 3394322495,
+      "pixel_delta_mean_abs": 1.90465087890625,
+      "pixel_delta_tile_max": 30.2666015625,
+      "changed_sample_ratio": 0.08001302083333334,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamGloom_max.png"
+    },
+    {
+      "parameter_id": "ParamTear",
+      "label": "max",
+      "value": 1,
+      "canvas_hash": 4210222393,
+      "pixel_delta_mean_abs": 0.19161376953125,
+      "pixel_delta_tile_max": 6.946533203125,
+      "changed_sample_ratio": 0.008414713541666667,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamTear_max.png"
+    },
+    {
+      "parameter_id": "ParamSweat",
+      "label": "max",
+      "value": 1,
+      "canvas_hash": 2579598496,
+      "pixel_delta_mean_abs": 0.0806884765625,
+      "pixel_delta_tile_max": 4.84130859375,
+      "changed_sample_ratio": 0.001025390625,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamSweat_max.png"
+    },
+    {
+      "parameter_id": "ParamAngleX",
+      "label": "min",
+      "value": -30,
+      "canvas_hash": 2583426024,
+      "pixel_delta_mean_abs": 19.14324951171875,
+      "pixel_delta_tile_max": 60.640625,
+      "changed_sample_ratio": 0.41725260416666665,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamAngleX_min.png"
+    },
+    {
+      "parameter_id": "ParamAngleX",
+      "label": "max",
+      "value": 30,
+      "canvas_hash": 480075940,
+      "pixel_delta_mean_abs": 19.5045166015625,
+      "pixel_delta_tile_max": 65.5234375,
+      "changed_sample_ratio": 0.4193033854166667,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamAngleX_max.png"
+    },
+    {
+      "parameter_id": "ParamAngleY",
+      "label": "min",
+      "value": -30,
+      "canvas_hash": 1168267654,
+      "pixel_delta_mean_abs": 16.7286376953125,
+      "pixel_delta_tile_max": 51.733642578125,
+      "changed_sample_ratio": 0.39401041666666664,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamAngleY_min.png"
+    },
+    {
+      "parameter_id": "ParamAngleY",
+      "label": "max",
+      "value": 30,
+      "canvas_hash": 1432316271,
+      "pixel_delta_mean_abs": 12.9814208984375,
+      "pixel_delta_tile_max": 57.0888671875,
+      "changed_sample_ratio": 0.3597493489583333,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamAngleY_max.png"
+    },
+    {
+      "parameter_id": "ParamAngleZ",
+      "label": "min",
+      "value": -30,
+      "canvas_hash": 2688568166,
+      "pixel_delta_mean_abs": 16.332425944010417,
+      "pixel_delta_tile_max": 64.018798828125,
+      "changed_sample_ratio": 0.39573567708333335,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamAngleZ_min.png"
+    },
+    {
+      "parameter_id": "ParamAngleZ",
+      "label": "max",
+      "value": 30,
+      "canvas_hash": 2623695037,
+      "pixel_delta_mean_abs": 16.304646809895832,
+      "pixel_delta_tile_max": 61.12060546875,
+      "changed_sample_ratio": 0.38982747395833334,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamAngleZ_max.png"
+    },
+    {
+      "parameter_id": "ParamBodyAngleY",
+      "label": "min",
+      "value": -10,
+      "canvas_hash": 984342847,
+      "pixel_delta_mean_abs": 12.920731608072916,
+      "pixel_delta_tile_max": 38.78564453125,
+      "changed_sample_ratio": 0.384814453125,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamBodyAngleY_min.png"
+    },
+    {
+      "parameter_id": "ParamBodyAngleY",
+      "label": "max",
+      "value": 10,
+      "canvas_hash": 462364653,
+      "pixel_delta_mean_abs": 12.73328857421875,
+      "pixel_delta_tile_max": 45.089111328125,
+      "changed_sample_ratio": 0.386865234375,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamBodyAngleY_max.png"
+    },
+    {
+      "parameter_id": "ParamBodyTrackX",
+      "label": "min",
+      "value": -1,
+      "canvas_hash": 1497464018,
+      "pixel_delta_mean_abs": 12.92515869140625,
+      "pixel_delta_tile_max": 38.8408203125,
+      "changed_sample_ratio": 0.377099609375,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamBodyTrackX_min.png"
+    },
+    {
+      "parameter_id": "ParamBodyTrackX",
+      "label": "max",
+      "value": 1,
+      "canvas_hash": 110648451,
+      "pixel_delta_mean_abs": 8.453291829427084,
+      "pixel_delta_tile_max": 24.779541015625,
+      "changed_sample_ratio": 0.32257486979166666,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamBodyTrackX_max.png"
+    },
+    {
+      "parameter_id": "ParamBodyTrackZ",
+      "label": "min",
+      "value": -1,
+      "canvas_hash": 687770919,
+      "pixel_delta_mean_abs": 4.667122395833333,
+      "pixel_delta_tile_max": 33.00439453125,
+      "changed_sample_ratio": 0.21165364583333332,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamBodyTrackZ_min.png"
+    },
+    {
+      "parameter_id": "ParamBodyTrackZ",
+      "label": "max",
+      "value": 1,
+      "canvas_hash": 2095196488,
+      "pixel_delta_mean_abs": 20.4893310546875,
+      "pixel_delta_tile_max": 59.9677734375,
+      "changed_sample_ratio": 0.45794270833333334,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamBodyTrackZ_max.png"
+    },
+    {
+      "parameter_id": "ParamBreath",
+      "label": "max",
+      "value": 1,
+      "canvas_hash": 4254736307,
+      "pixel_delta_mean_abs": 19.468680826822915,
+      "pixel_delta_tile_max": 59.356201171875,
+      "changed_sample_ratio": 0.46902669270833336,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamBreath_max.png"
+    },
+    {
+      "parameter_id": "ParamEyeBallX",
+      "label": "min",
+      "value": -1,
+      "canvas_hash": 1285096322,
+      "pixel_delta_mean_abs": 4.523600260416667,
+      "pixel_delta_tile_max": 21.34521484375,
+      "changed_sample_ratio": 0.23857421875,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamEyeBallX_min.png"
+    },
+    {
+      "parameter_id": "ParamEyeBallX",
+      "label": "max",
+      "value": 1,
+      "canvas_hash": 444435511,
+      "pixel_delta_mean_abs": 3.7897705078125,
+      "pixel_delta_tile_max": 24.677734375,
+      "changed_sample_ratio": 0.20615234375,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamEyeBallX_max.png"
+    },
+    {
+      "parameter_id": "ParamEyeBallY",
+      "label": "min",
+      "value": -1,
+      "canvas_hash": 721315629,
+      "pixel_delta_mean_abs": 1.22415771484375,
+      "pixel_delta_tile_max": 14.327880859375,
+      "changed_sample_ratio": 0.05716145833333333,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamEyeBallY_min.png"
+    },
+    {
+      "parameter_id": "ParamEyeBallY",
+      "label": "max",
+      "value": 1,
+      "canvas_hash": 4286846530,
+      "pixel_delta_mean_abs": 0.8881917317708333,
+      "pixel_delta_tile_max": 15.136474609375,
+      "changed_sample_ratio": 0.024348958333333334,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamEyeBallY_max.png"
+    },
+    {
+      "parameter_id": "ParamEyeLOpen",
+      "label": "min",
+      "value": 0.27,
+      "canvas_hash": 2764742124,
+      "pixel_delta_mean_abs": 3.1455810546875,
+      "pixel_delta_tile_max": 61.934326171875,
+      "changed_sample_ratio": 0.055094401041666664,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamEyeLOpen_min.png"
+    },
+    {
+      "parameter_id": "ParamEyeROpen",
+      "label": "min",
+      "value": 0.27,
+      "canvas_hash": 3306744276,
+      "pixel_delta_mean_abs": 1.821337890625,
+      "pixel_delta_tile_max": 54.29345703125,
+      "changed_sample_ratio": 0.039713541666666664,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamEyeROpen_min.png"
+    },
+    {
+      "parameter_id": "ParamBrowLY",
+      "label": "min",
+      "value": -1,
+      "canvas_hash": 964285151,
+      "pixel_delta_mean_abs": 0.10213623046875,
+      "pixel_delta_tile_max": 3.302490234375,
+      "changed_sample_ratio": 0.00380859375,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamBrowLY_min.png"
+    },
+    {
+      "parameter_id": "ParamBrowLY",
+      "label": "max",
+      "value": 1,
+      "canvas_hash": 1677704829,
+      "pixel_delta_mean_abs": 0.08428141276041666,
+      "pixel_delta_tile_max": 3.0146484375,
+      "changed_sample_ratio": 0.0032552083333333335,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamBrowLY_max.png"
+    },
+    {
+      "parameter_id": "ParamBrowRY",
+      "label": "min",
+      "value": -1,
+      "canvas_hash": 3408412553,
+      "pixel_delta_mean_abs": 0.09369710286458334,
+      "pixel_delta_tile_max": 3.49755859375,
+      "changed_sample_ratio": 0.0033365885416666665,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamBrowRY_min.png"
+    },
+    {
+      "parameter_id": "ParamBrowRY",
+      "label": "max",
+      "value": 1,
+      "canvas_hash": 895468005,
+      "pixel_delta_mean_abs": 0.05587158203125,
+      "pixel_delta_tile_max": 2.652587890625,
+      "changed_sample_ratio": 0.002099609375,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamBrowRY_max.png"
+    },
+    {
+      "parameter_id": "ParamHairFront",
+      "label": "min",
+      "value": -1,
+      "canvas_hash": 1059781725,
+      "pixel_delta_mean_abs": 6.088614908854167,
+      "pixel_delta_tile_max": 31.57421875,
+      "changed_sample_ratio": 0.16072591145833334,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamHairFront_min.png"
+    },
+    {
+      "parameter_id": "ParamHairFront",
+      "label": "max",
+      "value": 1,
+      "canvas_hash": 2188591749,
+      "pixel_delta_mean_abs": 3.70009765625,
+      "pixel_delta_tile_max": 26.6455078125,
+      "changed_sample_ratio": 0.13458658854166666,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamHairFront_max.png"
+    },
+    {
+      "parameter_id": "ParamHairBack",
+      "label": "min",
+      "value": -1,
+      "canvas_hash": 685136637,
+      "pixel_delta_mean_abs": 7.924072265625,
+      "pixel_delta_tile_max": 48.7373046875,
+      "changed_sample_ratio": 0.20003255208333334,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamHairBack_min.png"
+    },
+    {
+      "parameter_id": "ParamHairBack",
+      "label": "max",
+      "value": 1,
+      "canvas_hash": 2054417036,
+      "pixel_delta_mean_abs": 3.5800130208333334,
+      "pixel_delta_tile_max": 47.51171875,
+      "changed_sample_ratio": 0.07047526041666667,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamHairBack_max.png"
+    },
+    {
+      "parameter_id": "ParamMouthOpenY",
+      "label": "max",
+      "value": 1,
+      "canvas_hash": 174930838,
+      "pixel_delta_mean_abs": 4.044881184895833,
+      "pixel_delta_tile_max": 66.56298828125,
+      "changed_sample_ratio": 0.0517578125,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamMouthOpenY_max.png"
+    },
+    {
+      "parameter_id": "ParamMouthForm",
+      "label": "min",
+      "value": -1,
+      "canvas_hash": 3782523090,
+      "pixel_delta_mean_abs": 0.07367350260416666,
+      "pixel_delta_tile_max": 1.07275390625,
+      "changed_sample_ratio": 0.00419921875,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamMouthForm_min.png"
+    },
+    {
+      "parameter_id": "ParamMouthForm",
+      "label": "max",
+      "value": 1,
+      "canvas_hash": 1596563091,
+      "pixel_delta_mean_abs": 0.07060953776041666,
+      "pixel_delta_tile_max": 1.116943359375,
+      "changed_sample_ratio": 0.004361979166666667,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamMouthForm_max.png"
+    },
+    {
+      "parameter_id": "ParamEyeSmile",
+      "label": "max",
+      "value": 1,
+      "canvas_hash": 385399913,
+      "pixel_delta_mean_abs": 3.8538777669270834,
+      "pixel_delta_tile_max": 46.671875,
+      "changed_sample_ratio": 0.08896484375,
+      "capture": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures/dynamic_ParamEyeSmile_max.png"
+    }
+  ],
+  "errors": [],
+  "dynamic_sample_limit": null,
+  "configured_states": 36,
+  "physics_owned_parameters": [
+    "ParamBodyAngleX",
+    "ParamBodyAngleZ"
+  ]
+}

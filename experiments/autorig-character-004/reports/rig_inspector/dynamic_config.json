@@ -1,0 +1,582 @@
+{
+  "playwright": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/TypeScript/Demo/node_modules/playwright",
+  "base": "http://127.0.0.1:8074/",
+  "query": "?renderer=pixi",
+  "renderer": "pixi",
+  "launch_args": [
+    "--use-angle=swiftshader"
+  ],
+  "defaults": {
+    "ParamEyeExpr": 0,
+    "ParamCheek": 0,
+    "ParamGloom": 0,
+    "ParamTear": 0,
+    "ParamSweat": 0,
+    "ParamAngleX": 0,
+    "ParamAngleY": 0,
+    "ParamAngleZ": 0,
+    "ParamBodyAngleX": 0,
+    "ParamBodyAngleY": 0,
+    "ParamBodyAngleZ": 0,
+    "ParamBodyTrackX": 0,
+    "ParamBodyTrackZ": 0,
+    "ParamBreath": 0,
+    "ParamEyeBallX": 0,
+    "ParamEyeBallY": 0,
+    "ParamEyeLOpen": 1,
+    "ParamEyeROpen": 1,
+    "ParamBrowLY": 0,
+    "ParamBrowRY": 0,
+    "ParamHairFront": 0,
+    "ParamHairBack": 0,
+    "ParamMouthOpenY": 0.0,
+    "ParamMouthForm": 0.0,
+    "ParamEyeSmile": 0
+  },
+  "states": [
+    {
+      "parameter_id": "ParamEyeExpr",
+      "label": "max",
+      "value": 6
+    },
+    {
+      "parameter_id": "ParamCheek",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamGloom",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamTear",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamSweat",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamAngleX",
+      "label": "min",
+      "value": -30
+    },
+    {
+      "parameter_id": "ParamAngleX",
+      "label": "max",
+      "value": 30
+    },
+    {
+      "parameter_id": "ParamAngleY",
+      "label": "min",
+      "value": -30
+    },
+    {
+      "parameter_id": "ParamAngleY",
+      "label": "max",
+      "value": 30
+    },
+    {
+      "parameter_id": "ParamAngleZ",
+      "label": "min",
+      "value": -30
+    },
+    {
+      "parameter_id": "ParamAngleZ",
+      "label": "max",
+      "value": 30
+    },
+    {
+      "parameter_id": "ParamBodyAngleY",
+      "label": "min",
+      "value": -10
+    },
+    {
+      "parameter_id": "ParamBodyAngleY",
+      "label": "max",
+      "value": 10
+    },
+    {
+      "parameter_id": "ParamBodyTrackX",
+      "label": "min",
+      "value": -1
+    },
+    {
+      "parameter_id": "ParamBodyTrackX",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamBodyTrackZ",
+      "label": "min",
+      "value": -1
+    },
+    {
+      "parameter_id": "ParamBodyTrackZ",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamBreath",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamEyeBallX",
+      "label": "min",
+      "value": -1
+    },
+    {
+      "parameter_id": "ParamEyeBallX",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamEyeBallY",
+      "label": "min",
+      "value": -1
+    },
+    {
+      "parameter_id": "ParamEyeBallY",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamEyeLOpen",
+      "label": "min",
+      "value": 0.27
+    },
+    {
+      "parameter_id": "ParamEyeROpen",
+      "label": "min",
+      "value": 0.27
+    },
+    {
+      "parameter_id": "ParamBrowLY",
+      "label": "min",
+      "value": -1
+    },
+    {
+      "parameter_id": "ParamBrowLY",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamBrowRY",
+      "label": "min",
+      "value": -1
+    },
+    {
+      "parameter_id": "ParamBrowRY",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamHairFront",
+      "label": "min",
+      "value": -1
+    },
+    {
+      "parameter_id": "ParamHairFront",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamHairBack",
+      "label": "min",
+      "value": -1
+    },
+    {
+      "parameter_id": "ParamHairBack",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamMouthOpenY",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamMouthForm",
+      "label": "min",
+      "value": -1
+    },
+    {
+      "parameter_id": "ParamMouthForm",
+      "label": "max",
+      "value": 1
+    },
+    {
+      "parameter_id": "ParamEyeSmile",
+      "label": "max",
+      "value": 1
+    }
+  ],
+  "tiles": [
+    {
+      "x": 623,
+      "y": 541,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 869,
+      "y": 541,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1114,
+      "y": 541,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1360,
+      "y": 541,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 623,
+      "y": 828,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 869,
+      "y": 828,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1114,
+      "y": 828,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1360,
+      "y": 828,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 623,
+      "y": 1114,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 869,
+      "y": 1114,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1114,
+      "y": 1114,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1360,
+      "y": 1114,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 623,
+      "y": 1401,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 869,
+      "y": 1401,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1114,
+      "y": 1401,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1360,
+      "y": 1401,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 922,
+      "y": 329,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 823,
+      "y": 329,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1021,
+      "y": 329,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1203,
+      "y": 454,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1104,
+      "y": 454,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1302,
+      "y": 454,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 993,
+      "y": 621,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 960,
+      "y": 621,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1026,
+      "y": 621,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1003,
+      "y": 562,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 961,
+      "y": 562,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1045,
+      "y": 562,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1006,
+      "y": 982,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 862,
+      "y": 982,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1150,
+      "y": 982,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 993,
+      "y": 673,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 947,
+      "y": 673,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1038,
+      "y": 673,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1198,
+      "y": 717,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 993,
+      "y": 488,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 943,
+      "y": 488,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1042,
+      "y": 488,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 992,
+      "y": 512,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 944,
+      "y": 512,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1040,
+      "y": 512,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 891,
+      "y": 376,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1094,
+      "y": 367,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1059,
+      "y": 355,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1129,
+      "y": 355,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 856,
+      "y": 365,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 888,
+      "y": 291,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1088,
+      "y": 283,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1083,
+      "y": 337,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 993,
+      "y": 445,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 921,
+      "y": 445,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1065,
+      "y": 445,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1130,
+      "y": 431,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 867,
+      "y": 296,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 817,
+      "y": 296,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 981,
+      "y": 296,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1045,
+      "y": 296,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 1146,
+      "y": 259,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 984,
+      "y": 226,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 947,
+      "y": 226,
+      "w": 64,
+      "h": 64
+    }
+  ],
+  "captures": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_captures",
+  "out": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/rig_inspector/dynamic_motion_report.json"
+}

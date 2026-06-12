@@ -1,0 +1,123 @@
+{
+  "generated_at": "2026-06-12T13:22:58.404933+00:00",
+  "sheet": "experiments/autorig-character-004/generated/eyes.png",
+  "target_span": 203.0,
+  "target_mid": [
+    1025.0,
+    404.0
+  ],
+  "plate_box": [
+    838,
+    291,
+    1211,
+    447
+  ],
+  "expressions": [
+    "smile",
+    "wink",
+    "surprise",
+    "jito",
+    "squeeze",
+    "heart"
+  ],
+  "cells": {
+    "smile": {
+      "scale": 0.5539,
+      "cell_span": 366.5,
+      "bands": 3,
+      "eye_centers": [
+        [
+          180,
+          768
+        ],
+        [
+          546,
+          768
+        ]
+      ]
+    },
+    "wink": {
+      "scale": 0.5734,
+      "cell_span": 354.0,
+      "bands": 3,
+      "eye_centers": [
+        [
+          174,
+          768
+        ],
+        [
+          528,
+          772
+        ]
+      ]
+    },
+    "surprise": {
+      "scale": 0.5726,
+      "cell_span": 354.5,
+      "bands": 2,
+      "eye_centers": [
+        [
+          148,
+          781
+        ],
+        [
+          502,
+          781
+        ]
+      ]
+    },
+    "jito": {
+      "scale": 0.5615,
+      "cell_span": 361.5,
+      "bands": 3,
+      "eye_centers": [
+        [
+          182,
+          318
+        ],
+        [
+          543,
+          318
+        ]
+      ]
+    },
+    "squeeze": {
+      "scale": 0.7,
+      "cell_span": 290.0,
+      "bands": 2,
+      "eye_centers": [
+        [
+          202,
+          348
+        ],
+        [
+          492,
+          348
+        ]
+      ]
+    },
+    "heart": {
+      "scale": 0.6042,
+      "cell_span": 336.0,
+      "bands": 2,
+      "eye_centers": [
+        [
+          158,
+          325
+        ],
+        [
+          494,
+          325
+        ]
+      ]
+    }
+  },
+  "written": [
+    "eye_expr_smile.png",
+    "eye_expr_wink.png",
+    "eye_expr_surprise.png",
+    "eye_expr_jito.png",
+    "eye_expr_squeeze.png",
+    "eye_expr_heart.png"
+  ]
+}

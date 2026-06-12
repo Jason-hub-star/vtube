@@ -1,6 +1,6 @@
 # Vtube Project Status
 
-Updated: 2026-06-11 (CHAIN-001 — strong20 체인 이식 + 어깨 가닥 분리 + 입 V선 방어)
+Updated: 2026-06-12 (004 위벨 풀런 P5 올PASS·H2 대기 — 부품형 입 MOUTH-PARTS-001 + 눈표정 6종 EXPR-003 + 액센트 4종)
 
 ## Current Phase
 
@@ -47,9 +47,17 @@ Updated: 2026-06-11 (CHAIN-001 — strong20 체인 이식 + 어깨 가닥 분리
 - 시행착오 이력과 상태 관리(VERIFIED/DISCARDED 등)는 `vtube-validation-evidence-log.md`.
 - 실험별 증거는 각 `experiments/<id>/reports/`.
 
+## AUTORIG-CHARACTER-004 (위벨) — 2026-06-12
+
+- 생성: gpt-image-2 API 4장(마스터+입+눈표정+액센트) $0.87, H1 승인. 시트 P0 검증기 신설 (입=하드 게이트).
+- 풀런: `runs/autorig-character-004_20260612_222226` — P0~P5 전부 PASS, **H2 주인님 육안 대기** (리깅 앱 8062 / 웹캠 드라이브 8063).
+- 신규 리깅: **부품형 입**(입술 정점 키폼 연속 개폐+입안 클리핑, 잔상 구조 검사 PASS — 실패 시 4상태 폴백 경로 유지) · **눈 표정 6종**(ParamEyeExpr 1~6, 스킨 플레이트 + 기본 눈 자동 숨김) · **액센트 4종**(Cheek/Gloom/Tear/Sweat) · MouthForm 입선 입꼬리 키폼 ±7px.
+- 004 래칫(전부 003 무회귀 실측): 어깨가닥 색도 판별+과대분리 가드 / 인스펙터 무반응 판정 tile_max화+표정·액센트 타일 / 옷 물리 접합 슬립 A/B 차분화(004 0.31px·003 0.11px).
+- 상세: evidence log `AUTORIG-CHARACTER-004-FULLRUN-MOUTH-PARTS-EXPR-001`.
+
 ## Next Actions
 
-1. **AUTORIG-CHARACTER-004 풀런** — 초커 기본 적용 마스터 재생성 → 원커맨드 (이번 세션 규칙 전부 자동 상속, FACIAL-TEST-CHECKLIST로 H2).
+1. **004 H2 육안 판정** — FACIAL-TEST-CHECKLIST (표정 6종·부품입·액센트 행 신설) → 합격 시 rig v2.0 박제.
 2. `AUTORIG-PLAYER-001` — 사용자 산출물(웹 링크·OBS 브라우저 소스·투명 모드 `?transparent=1`·오픈 ZIP).
 3. `AUTORIG-ANCHOR-DETECT-001` — 임의 업로드 PNG 앵커 자동 검출 + rembg 입력 전처리 (프로덕션 갭).
 4. 분해 풀해상도화 (CUDA 런북은 `docs/archive/2026-06-08-superseded-plans/`에 보존 — 재개 시 꺼내 갱신) + 키폼 사다리 (목 접합 근본 개선).

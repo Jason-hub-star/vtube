@@ -144,9 +144,16 @@ def main() -> int:
     l_arm = mesh_bbox("L_arm")
     hem_x0 = r_arm[0] + r_arm[2] + 20
     hem_x1 = l_arm[0] - 20
+    # 옷 상단 밴드: 고정 "neck_skin 바로 아래"는 노출 어깨/끈 의상(004 위벨)에서 맨살·가는 끈이
+    # 지배해 — 그 픽셀들은 옷 가중 공식 대상이 아니라 — 접합 슬립이 과측정된다(2.85px 오탐).
+    # 옷 알파가 실제로 밀집한 첫 행(x창 폭 30% 이상)으로 내린다. 고깃 의상(003)은 그 행이
+    # 원래 위치와 같아 무회귀.
+    cl_alpha = np.asarray(Image.open(project_dir / "parts/clothes.png").convert("RGBA"))[..., 3] > 64
+    dense_rows = np.where(cl_alpha[:, x0:x0 + xw].sum(axis=1) >= xw * 0.30)[0]
+    clothes_top_y = max(int(dense_rows.min()) + 4 if len(dense_rows) else 0, ns[1] + ns[3] + 8)
     bands = {
         "neck": [x0, int(ns[1] + ns[3] * 0.25), xw, max(30, int(ns[3] * 0.5))],
-        "clothes_top": [x0, ns[1] + ns[3] + 8, xw, 110],
+        "clothes_top": [x0, clothes_top_y, xw, 110],
         "hem": [hem_x0, hem_y, hem_x1 - hem_x0, min(hem_h, canvas_h - hem_y)],
     }
     hem_center_w = (bands["hem"][1] + bands["hem"][3] / 2 - cl[1]) / max(cl[3], 1)
@@ -206,13 +213,20 @@ def main() -> int:
     spring = active["raw"]["displaced"]["__snapshot"]["physics"].get("clothes_drape_spring")
     body_angle = active["raw"]["displaced"]["__snapshot"]["parameters"].get("ParamBodyAngleX")
     offset_x = float(spring["offset"][0]) if spring else 0.0
-    slip = abs(active["shifts"]["neck"] - active["shifts"]["clothes_top"] - offset_x * top_center_w)
+    # 접합 슬립도 A/B 차분으로 — 단일 런의 (목-옷) 프로파일 차는 의상 콘텐츠 편향을 포함한다
+    # (004 실측: 스프링 제거 컨트롤에서도 1.27px 차 = 노출 어깨 의상의 혼합 콘텐츠 편향).
+    # 컨트롤 편향을 빼면 순수 스프링 기여만 남아 offset×가중과 직접 비교된다 (드레이프 검사와 동일 원리).
+    content_bias = ctrl["shifts"]["neck"] - ctrl["shifts"]["clothes_top"]
+    # 스프링 오프셋(-x)은 옷을 스웨이 반대로 끌어 (목-옷) 차를 +|offset|×가중 만큼 늘린다
+    expected_spring_diff = -offset_x * top_center_w
+    slip = abs((active["shifts"]["neck"] - active["shifts"]["clothes_top"]) - content_bias - expected_spring_diff)
+    junction_gap = abs(active["shifts"]["neck"] - active["shifts"]["clothes_top"])
     drape_effect = ctrl["shifts"]["hem"] - active["shifts"]["hem"]
     expected_effect = -offset_x * hem_center_w
     checks = {
         "spring_active": abs(offset_x) >= 3.0,
         "sway_visible": abs(active["shifts"]["neck"]) >= 5.0,
-        "junction_slip": slip <= 1.5,
+        "junction_slip": slip <= 1.5 and junction_gap <= 4.0,  # 차분 슬립 + 절대 접합 가드(참수 무회귀)
         "drape_pixel_effect": abs(drape_effect - expected_effect) <= 2.5 and abs(drape_effect) >= 3.0,
         "control_consistency": abs(active["shifts"]["neck"] - ctrl["shifts"]["neck"]) <= 1.5,
     }
@@ -231,6 +245,8 @@ def main() -> int:
                         "control": {k: round(v, 2) for k, v in ctrl["stds"].items()}},
         "band_weights": {"clothes_top": round(top_center_w, 3), "hem": round(hem_center_w, 3)},
         "slip_px": round(slip, 2),
+        "junction_gap_px": round(junction_gap, 2),
+        "content_bias_px": round(content_bias, 2),
         "drape_effect_px": round(drape_effect, 2),
         "expected_effect_px": round(expected_effect, 2),
         "checks": checks,

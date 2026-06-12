@@ -1,0 +1,71 @@
+{
+  "test_id": "EYE-NATURAL-002-keyform-exactness",
+  "generated_at": "2026-06-12T13:23:23.930318+00:00",
+  "renderer": "pixi",
+  "claim": "임의 중간 v에서 렌더 = 기준 curtain_warp(t) 단일 프레임 (크로스페이드 잔상 0)",
+  "values": [
+    0.9,
+    0.72,
+    0.51,
+    0.35
+  ],
+  "rows": [
+    {
+      "v": 0.9,
+      "side": "L",
+      "mean_delta": 1.844,
+      "strong_ratio": 0.00036
+    },
+    {
+      "v": 0.9,
+      "side": "R",
+      "mean_delta": 1.753,
+      "strong_ratio": 0.0
+    },
+    {
+      "v": 0.72,
+      "side": "L",
+      "mean_delta": 3.717,
+      "strong_ratio": 0.00344
+    },
+    {
+      "v": 0.72,
+      "side": "R",
+      "mean_delta": 3.911,
+      "strong_ratio": 0.00857
+    },
+    {
+      "v": 0.51,
+      "side": "L",
+      "mean_delta": 3.419,
+      "strong_ratio": 0.00652
+    },
+    {
+      "v": 0.51,
+      "side": "R",
+      "mean_delta": 3.591,
+      "strong_ratio": 0.00448
+    },
+    {
+      "v": 0.35,
+      "side": "L",
+      "mean_delta": 2.61,
+      "strong_ratio": 0.00417
+    },
+    {
+      "v": 0.35,
+      "side": "R",
+      "mean_delta": 3.285,
+      "strong_ratio": 0.00838
+    }
+  ],
+  "worst": {
+    "mean_delta": 3.911,
+    "strong_ratio": 0.00857
+  },
+  "thresholds": {
+    "mean_delta": 4.0,
+    "strong_ratio": 0.02
+  },
+  "status": "PASS"
+}

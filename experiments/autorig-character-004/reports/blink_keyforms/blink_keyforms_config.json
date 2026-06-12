@@ -1,0 +1,25 @@
+{
+  "pw": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/TypeScript/Demo/node_modules/playwright",
+  "url": "http://127.0.0.1:8069/?renderer=pixi",
+  "values": [
+    0.9,
+    0.72,
+    0.51,
+    0.35
+  ],
+  "regions": {
+    "L": [
+      1082,
+      374,
+      89,
+      62
+    ],
+    "R": [
+      880,
+      384,
+      87,
+      59
+    ]
+  },
+  "out": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/blink_keyforms/blink_keyforms_raw.json"
+}

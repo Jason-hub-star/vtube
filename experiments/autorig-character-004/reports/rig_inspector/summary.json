@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-06-12T13:24:58.060947+00:00",
+  "project": "experiments/autorig-character-004/rig_v0_project",
+  "outputs": {
+    "rig_graph.dot": "experiments/autorig-character-004/reports/rig_inspector/rig_graph.dot",
+    "parameter_influence.csv": "experiments/autorig-character-004/reports/rig_inspector/parameter_influence.csv",
+    "part_chain.csv": "experiments/autorig-character-004/reports/rig_inspector/part_chain.csv",
+    "junction_risk_scores.csv": "experiments/autorig-character-004/reports/rig_inspector/junction_risk_scores.csv",
+    "ai_rig_context.json": "experiments/autorig-character-004/reports/rig_inspector/ai_rig_context.json",
+    "summary.md": "experiments/autorig-character-004/reports/rig_inspector/summary.md",
+    "dynamic_motion_report.json": "experiments/autorig-character-004/reports/rig_inspector/dynamic_motion_report.json"
+  },
+  "tooling": {
+    "graphviz_available": false,
+    "svg_created": false,
+    "svg": null
+  }
+}

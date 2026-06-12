@@ -23,6 +23,11 @@ from lib.vtube_io import ROOT, now_iso, rel, write_json  # noqa: E402
 
 COLOR_DIST = 60      # 머리카락 중앙값 색과의 거리 임계
 LUM_MAX = 150        # 피부 그림자 오분류 방지 (머리카락은 어둡다)
+# 004 위벨 사건: 검은 드레스(50,50,55) vs 암녹 머리(65,66,36) RGB 거리 29 < 60 →
+# 드레스 전체(18.7만px)가 머리로 오분류. 명도 불변 색도(chromaticity) 판별을 추가한다.
+CHROMA_DIST = 0.10   # 정규화 색도 거리 임계 (004 실측: 머리-드레스 0.169, 머리 내부 분산 << 0.10)
+LUM_MIN = 25         # 근흑색은 색도가 노이즈 — 머리 인정 제외
+MAX_CLOTHES_RATIO = 0.25  # 가드: 가시 의상의 25% 초과 분리 = 색 누수 — 분리 포기(의상 통짜 유지)
 DENSITY = 0.35       # 5px 박스 밀도 — 고립 스펙클 제거 (가닥은 두껍다)
 FILL_DILATE = 4      # 재도색 범위 (가닥 + 번짐 여유)
 FILL_SIGMA = 14      # 정규화 블러 필드 시그마
@@ -56,7 +61,11 @@ def main() -> int:
     alpha = clothes[..., 3]
     dist = np.sqrt(((rgb - hair_med) ** 2).sum(-1))
     lum = rgb.mean(-1)
-    raw = (alpha > 100) & (dist < COLOR_DIST) & (lum < LUM_MAX)
+    # 색도 판별 (명도 불변): 어두운 의상과 어두운 머리를 색상으로 가른다 (004 래칫)
+    chroma = rgb / np.maximum(rgb.sum(-1, keepdims=True), 1e-6)
+    hair_chroma = hair_med / max(float(hair_med.sum()), 1e-6)
+    cdist = np.sqrt(((chroma - hair_chroma) ** 2).sum(-1))
+    raw = (alpha > 100) & (dist < COLOR_DIST) & (lum < LUM_MAX) & (lum > LUM_MIN) & (cdist < CHROMA_DIST)
     # 밀도 필터: 가닥(두꺼움)은 살리고 그림자 가장자리 스펙클은 버린다
     density = blur_f(raw.astype(np.float64), 2.5)
     mask = raw & (density > DENSITY)
@@ -64,6 +73,13 @@ def main() -> int:
     if count < 500:
         print(f"shoulder_hair: 가닥 픽셀 {count} < 500 — 분리 불필요 (산출 없음)")
         write_json(out / "shoulder_hair_config.json", {"generated_at": now_iso(), "pixels": count, "split": False})
+        return 0
+    visible_n = int((alpha > 100).sum())
+    if count > visible_n * MAX_CLOTHES_RATIO:
+        print(f"shoulder_hair: {count}px > 의상 {visible_n}px의 {MAX_CLOTHES_RATIO:.0%} — 색 누수 가드, 분리 포기")
+        write_json(out / "shoulder_hair_config.json", {
+            "generated_at": now_iso(), "pixels": count, "split": False,
+            "reason": f"color_leak_guard: {count}/{visible_n}"})
         return 0
 
     # shoulder_hair 파트: 가닥 픽셀 + 소프트 페더 (재합성 시 원본과 일치하도록 코어는 불투명)

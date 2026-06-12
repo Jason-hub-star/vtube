@@ -270,18 +270,26 @@ def dynamic_tiles(canvas: list[int], parts: list[dict[str, Any]] | None = None) 
     seen: set[tuple[int, int]] = set()
     for part in parts or []:
         pid = str(part.get("id", "")).lower()
-        if not any(k in pid for k in ("eye", "iris", "mouth", "brow", "neck", "hair", "shoulder", "clothes")):
+        if not any(k in pid for k in ("eye", "iris", "mouth", "brow", "neck", "hair", "shoulder", "clothes", "accent", "expr")):
             continue
         x, y, w, h = part.get("bbox", [0, 0, 0, 0])
         if w <= 4:
             continue
-        cx, cy = int(x + w / 2), int(y + h / 2)
-        key = (cx // 48, cy // 48)
-        if key in seen:
-            continue
-        seen.add(key)
-        tiles.append({"x": max(0, cx - 32), "y": max(0, cy - 32), "w": 64, "h": 64})
-    return tiles[:48]
+        # 004 실측: 중심 1점은 빈 중앙(볼터치 좌/우 쌍의 bbox 중심 = 콧등)과 끝점 변형
+        # (MouthForm 입꼬리 — 중앙은 의도적 고정)을 놓친다 → 가로 분할점 + 입꼬리 끝점 추가
+        points = [(0.5, 0.5)]
+        if w > 120:
+            points += [(0.25, 0.5), (0.75, 0.5)]
+        if "mouth" in pid:
+            points += [(0.04, 0.5), (0.96, 0.5)]
+        for fx, fy in points:
+            cx, cy = int(x + w * fx), int(y + h * fy)
+            key = (cx // 48, cy // 48)
+            if key in seen:
+                continue
+            seen.add(key)
+            tiles.append({"x": max(0, cx - 32), "y": max(0, cy - 32), "w": 64, "h": 64})
+    return tiles[:64]
 def run_dynamic(project: Path, out_dir: Path, character: dict[str, Any], renderer: str, port: int, sample_limit: int | None = None, priority_params: set[str] | None = None) -> dict[str, Any]:
     captures = out_dir / "dynamic_captures"
     captures.mkdir(parents=True, exist_ok=True)
@@ -491,7 +499,13 @@ def main() -> int:
         output_names += ["dynamic_motion_report.json"]
     write_json(out_dir / "summary.json", {"generated_at": now_iso(), "project": rel(project), "outputs": {name: rel(out_dir / name) for name in output_names}, "tooling": tooling})
     write_summary(out_dir / "summary.md", context, tooling, junctions, focus, compare)
-    dead = [f"{s['parameter_id']}/{s['label']}" for s in (dynamic or {}).get("states", []) if s.get("pixel_delta_mean_abs", 1) < 0.05]
+    # 무반응 판정: 타일별 최대 델타 기준 — 전 타일 평균은 타일 수에 희석된다 (004 실측:
+    # 볼터치/눈물/땀은 커버 타일 0개로 Δ=0, 타일을 늘리면 BrowLY 0.064가 희석 사망). 구 리포트 폴백 유지.
+    def is_dead(s: dict) -> bool:
+        if "pixel_delta_tile_max" in s:
+            return s["pixel_delta_tile_max"] < 0.5
+        return s.get("pixel_delta_mean_abs", 1) < 0.05
+    dead = [f"{s['parameter_id']}/{s['label']}" for s in (dynamic or {}).get("states", []) if is_dead(s)]
     print(json.dumps({"ok": not (args.fail_on_dead and dead), "out_dir": str(out_dir), "counts": context["counts"], "dynamic": bool(dynamic), "dead_states": dead, "focus_parts": focus_parts, "compare": bool(compare)}, ensure_ascii=False, indent=2))
     return 1 if (args.fail_on_dead and dead) else 0
 if __name__ == "__main__":

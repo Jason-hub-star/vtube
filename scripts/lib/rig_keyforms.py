@@ -8,8 +8,27 @@
 from __future__ import annotations
 
 
-def build_parameters() -> list[dict]:
-    return [
+# 004 사이클: 표정 시트(EXPR-003)·액센트 시트 셀 이름 — 추출기와 곡선·파트 명명의 SSOT
+EXPRESSION_NAMES = ("smile", "wink", "surprise", "jito", "squeeze", "heart")
+ACCENT_PARAMS = {"blush": "ParamCheek", "gloom": "ParamGloom", "tear": "ParamTear", "sweat": "ParamSweat"}
+MOUTH_PART_IDS = ("mouth_parts_interior", "mouth_parts_teeth", "mouth_parts_tongue",
+                  "mouth_parts_upper_lip", "mouth_parts_lower_lip")
+# 표정 활성 시 숨길 기본 눈 계열 (존재하는 것만 곡선 부착)
+BASE_EYE_PART_IDS = ("L_eye_white", "R_eye_white", "L_iris", "R_iris",
+                     "L_upper_lash", "R_upper_lash", "L_lower_lash", "R_lower_lash",
+                     "L_brow", "R_brow", "eye_L_blink", "eye_R_blink", "eye_L_smile", "eye_R_smile")
+
+
+def build_parameters(use_eye_expr: bool = False, use_accents: bool = False) -> list[dict]:
+    extra = []
+    if use_eye_expr:
+        # 표정 셀렉터: 0=없음, k=EXPRESSION_NAMES[k-1] (하드 밴드 — MOUTH-SNAP 패턴)
+        extra.append({"id": "ParamEyeExpr", "min": 0, "max": 6, "default": 0,
+                      "key_values": [0, 1, 2, 3, 4, 5, 6]})
+    if use_accents:
+        for param in ("ParamCheek", "ParamGloom", "ParamTear", "ParamSweat"):
+            extra.append({"id": param, "min": 0, "max": 1, "default": 0, "key_values": [0, 1]})
+    return extra + [
         {"id": "ParamAngleX", "min": -30, "max": 30, "default": 0, "key_values": [-30, 0, 30]},
         {"id": "ParamAngleY", "min": -30, "max": 30, "default": 0, "key_values": [-30, 0, 30]},
         {"id": "ParamAngleZ", "min": -30, "max": 30, "default": 0, "key_values": [-30, 0, 30]},
@@ -140,13 +159,83 @@ def attach_mouth_height_keyforms(meshes: list[dict], bbox_by_id: dict) -> list[s
     return attached
 
 
+def attach_mouth_parts_keyforms(meshes: list[dict], bbox_by_id: dict, anchor_y: float) -> list[str]:
+    """부품형 입 연속 개폐 (MOUTH-PARTS-001) — 공통 앵커(입선 상단) 세로 스케일 H(v).
+
+    모든 부품이 같은 H(v)·같은 앵커를 공유 → 어느 v에서든 부품 간 상대 기하가 불변이라
+    입술 윤곽 연속·입안 클립 정합이 구조적으로 보장된다 (검증은 validate_mouth_parts_keyforms).
+    v=0 의 0.04는 '닫힌 입선 두께로 붕괴' — mouth_line 크로스페이드(0.08~0.14)와 겹치는
+    구간에서 기하가 거의 같아 잔상이 원리적으로 작다.
+    """
+    H = [(0.0, 0.04), (0.25, 0.30), (0.55, 0.62), (1.0, 1.0)]
+    attached = []
+    for pid in MOUTH_PART_IDS:
+        mesh = next((m for m in meshes if m["part_id"] == pid), None)
+        if mesh is None or pid not in bbox_by_id:
+            continue
+        keys = [{"value": v,
+                 "vertices": [[x, round(anchor_y + (y - anchor_y) * h, 1)] for x, y in mesh["vertices"]]}
+                for v, h in H]
+        mesh["vertex_keyforms"] = {"parameter_id": "ParamMouthOpenY", "keys": keys}
+        attached.append(pid)
+    return attached
+
+
+def attach_mouthform_line_keyforms(meshes: list[dict], bbox_by_id: dict) -> list[str]:
+    """MouthForm 입꼬리 정점 키폼 — 닫힌 입선의 꼬리만 올리고(+1)/내린다(-1).
+
+    정점 키폼은 메시당 파라미터 1개 (런타임 keyformBaseVertices 계약) — 부품형 입은
+    MouthOpenY를 쓰므로, Form의 정점 키폼은 닫힌 mouth_line 전담. 열린 입의 Form은
+    기존 mouth_warp 디포머 바인딩 근사 유지.
+    """
+    mesh = next((m for m in meshes if m["part_id"] == "mouth_line"), None)
+    if mesh is None or "mouth_line" not in bbox_by_id:
+        return []
+    x, _y, w, _h = bbox_by_id["mouth_line"]
+    cx = x + w / 2
+    keys = []
+    for v, amp in ((-1, 6.0), (0, 0.0), (1, -7.0)):  # 화면 y는 아래가 + — 음수 amp가 입꼬리 올림
+        keys.append({"value": v, "vertices": [
+            [vx, round(vy + amp * (abs(vx - cx) / max(w / 2, 1)) ** 1.6, 1)] for vx, vy in mesh["vertices"]]})
+    mesh["vertex_keyforms"] = {"parameter_id": "ParamMouthForm", "keys": keys}
+    return ["mouth_line"]
+
+
 def curve(part, param, points):
     return {"part_id": part, "parameter_id": param, "mode": "linear",
             "keyframes": [{"value": v, "opacity": o} for v, o in points]}
 
 
-def build_opacity_curves(use_arap: bool, use_mouth_states: bool, use_mouth_warp: bool, bbox_by_id: dict) -> list[dict]:
+def build_opacity_curves(use_arap: bool, use_mouth_states: bool, use_mouth_warp: bool, bbox_by_id: dict,
+                         use_mouth_parts: bool = False, use_eye_expr: bool = False,
+                         use_accents: bool = False) -> list[dict]:
     part_opacity_keyframes = []
+    if use_eye_expr:
+        # EXPR-003 표정 셀렉터: k 밴드에서 해당 오버레이만 표시 + 기본 눈 계열 숨김
+        # (런타임은 파트별 곡선을 곱연산 — rig.js partOpacity — 이라 기존 깜빡임 곡선과 합성 가능)
+        for k, name in enumerate(EXPRESSION_NAMES, start=1):
+            part_opacity_keyframes.append(curve(
+                f"eye_expr_{name}", "ParamEyeExpr",
+                [(k - 0.55, 0.0), (k - 0.45, 1.0), (k + 0.45, 1.0), (k + 0.55, 0.0)]))
+        hide = [(0.0, 1.0), (0.45, 1.0), (0.55, 0.0), (6.0, 0.0)]
+        for pid in BASE_EYE_PART_IDS:
+            if pid in bbox_by_id:
+                part_opacity_keyframes.append(curve(pid, "ParamEyeExpr", hide))
+    if use_accents:
+        for name, param in ACCENT_PARAMS.items():
+            if f"accent_{name}" in bbox_by_id:
+                peak = 0.92 if name == "gloom" else 1.0  # 그늘은 살짝 투명 — 머리 위 오버레이
+                part_opacity_keyframes.append(curve(f"accent_{name}", param, [(0.0, 0.0), (1.0, peak)]))
+    if use_mouth_parts:
+        # MOUTH-PARTS-001: 닫힘은 원본 입선, 0.08~0.14에서 부품 입으로 교대 —
+        # 이 구간 부품은 입선 두께로 붕괴돼 있어(attach_mouth_parts_keyforms H(0)=0.04)
+        # 교차 기하가 거의 같다. 이후는 정점 키폼 연속 개폐 (스왑·크로스페이드 없음 = 잔상 원리적 0).
+        part_opacity_keyframes.append(
+            curve("mouth_line", "ParamMouthOpenY", [(0.0, 1.0), (0.08, 1.0), (0.14, 0.0), (1.0, 0.0)]))
+        for pid in MOUTH_PART_IDS:
+            if pid in bbox_by_id:
+                part_opacity_keyframes.append(
+                    curve(pid, "ParamMouthOpenY", [(0.0, 0.0), (0.08, 0.0), (0.14, 1.0), (1.0, 1.0)]))
     if use_arap:
         # EYE-NATURAL-002: 깜빡임 패치 1장 + 정점 키폼 (메시 vertex_keyforms가 감김 담당).
         # 완전 열림(v=1)에서만 숨김 — 0.97~1.0 페이드 구간은 워프 t≤0.04 ≈ 항등이라
@@ -167,7 +256,9 @@ def build_opacity_curves(use_arap: bool, use_mouth_states: bool, use_mouth_warp:
                 if pid in bbox_by_id:
                     part_opacity_keyframes.append(curve(pid, param, open_curve))
             part_opacity_keyframes.append(curve(f"eye_{side}_closed_lid", param, closed_curve))
-    if use_mouth_states:
+    if use_mouth_parts:
+        pass  # 위에서 처리 (부품형 입이 상태 스왑 곡선을 대체)
+    elif use_mouth_states:
         # MOUTH-SNAP-001: 겹침 없는 하드 밴드 — 크로스페이드(다른 작화 두 장의 투명도 혼합 =
         # 반투명 이빨 잔상)는 원리적 한계라 폐기. 경계값(0.24/0.47/0.72)에서 양쪽 상태가
         # 같은 H(v) 높이로 워프돼 있어(attach_mouth_height_keyforms) 윤곽은 연속, 내용만 스왑.
