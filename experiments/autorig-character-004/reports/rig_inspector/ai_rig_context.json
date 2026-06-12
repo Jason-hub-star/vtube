@@ -1,6 +1,6 @@
 {
   "project": "experiments/autorig-character-004/rig_v0_project",
-  "generated_at": "2026-06-12T14:20:14.576254+00:00",
+  "generated_at": "2026-06-12T14:41:59.677359+00:00",
   "counts": {
     "parts": 50,
     "meshes": 50,
@@ -305,6 +305,9 @@
       "parent_id": "root_warp",
       "child_ids": [
         "neck_under",
+        "raw_footwear",
+        "raw_legwear",
+        "raw_bottomwear",
         "clothes",
         "R_arm",
         "L_arm"
@@ -340,10 +343,10 @@
       "parent_id": "upper_warp",
       "child_ids": [],
       "bounds": [
-        464,
+        760,
         53,
-        1113,
-        1995
+        526,
+        602
       ],
       "lattice": {
         "cols": 2,
@@ -354,9 +357,6 @@
       "id": "head_angle_warp",
       "parent_id": "head_z_warp",
       "child_ids": [
-        "raw_footwear",
-        "raw_legwear",
-        "raw_bottomwear",
         "R_ear_outer",
         "L_ear_outer",
         "face_base",
@@ -568,7 +568,7 @@
     },
     {
       "id": "raw_footwear",
-      "folder": "Face",
+      "folder": "Body",
       "draw_order": 203,
       "bbox": [
         0,
@@ -576,13 +576,13 @@
         4,
         4
       ],
-      "deformer_node": "head_angle_warp",
+      "deformer_node": "body_warp",
       "vertex_count": 20,
       "triangle_count": 24
     },
     {
       "id": "raw_legwear",
-      "folder": "Face",
+      "folder": "Body",
       "draw_order": 204,
       "bbox": [
         0,
@@ -590,13 +590,13 @@
         4,
         4
       ],
-      "deformer_node": "head_angle_warp",
+      "deformer_node": "body_warp",
       "vertex_count": 20,
       "triangle_count": 24
     },
     {
       "id": "raw_bottomwear",
-      "folder": "Face",
+      "folder": "Body",
       "draw_order": 205,
       "bbox": [
         504,
@@ -604,7 +604,7 @@
         1033,
         764
       ],
-      "deformer_node": "head_angle_warp",
+      "deformer_node": "body_warp",
       "vertex_count": 20,
       "triangle_count": 23
     },
@@ -1218,12 +1218,12 @@
       "max": 30,
       "default": 0,
       "target_count": 3,
-      "part_influence_count": 46,
+      "part_influence_count": 43,
       "deformer_influence_count": 3,
       "physics_influence_count": 3,
       "direct_delta_magnitude": 80.0,
       "targets": "back_hair_warp|head_angle_warp|neck_warp",
-      "parts": "L_brow|L_ear_outer|L_eye_white|L_iris|L_upper_lash|R_brow|R_ear_outer|R_eye_white|R_iris|R_upper_lash|accent_blush|accent_gloom|accent_sweat|accent_tear|choker|ear_inner|eye_L_blink|eye_L_smile|eye_R_blink|eye_R_smile|eye_expr_heart|eye_expr_jito|eye_expr_smile|eye_expr_squeeze|eye_expr_surprise|eye_expr_wink|face_base|hair_back_L|hair_back_R|hair_front_C|hair_front_L|hair_front_R|mouth_line|mouth_parts_interior|mouth_parts_lower_lip|mouth_parts_teeth|mouth_parts_tongue|mouth_parts_upper_lip|neck|neck_skin|nose_reference|raw_bottomwear|raw_eyewear|raw_footwear|raw_legwear|shoulder_hair"
+      "parts": "L_brow|L_ear_outer|L_eye_white|L_iris|L_upper_lash|R_brow|R_ear_outer|R_eye_white|R_iris|R_upper_lash|accent_blush|accent_gloom|accent_sweat|accent_tear|choker|ear_inner|eye_L_blink|eye_L_smile|eye_R_blink|eye_R_smile|eye_expr_heart|eye_expr_jito|eye_expr_smile|eye_expr_squeeze|eye_expr_surprise|eye_expr_wink|face_base|hair_back_L|hair_back_R|hair_front_C|hair_front_L|hair_front_R|mouth_line|mouth_parts_interior|mouth_parts_lower_lip|mouth_parts_teeth|mouth_parts_tongue|mouth_parts_upper_lip|neck|neck_skin|nose_reference|raw_eyewear|shoulder_hair"
     },
     {
       "parameter_id": "ParamAngleY",
@@ -1231,12 +1231,12 @@
       "max": 30,
       "default": 0,
       "target_count": 3,
-      "part_influence_count": 46,
+      "part_influence_count": 43,
       "deformer_influence_count": 3,
       "physics_influence_count": 2,
       "direct_delta_magnitude": 44.0,
       "targets": "back_hair_warp|head_angle_warp|neck_warp",
-      "parts": "L_brow|L_ear_outer|L_eye_white|L_iris|L_upper_lash|R_brow|R_ear_outer|R_eye_white|R_iris|R_upper_lash|accent_blush|accent_gloom|accent_sweat|accent_tear|choker|ear_inner|eye_L_blink|eye_L_smile|eye_R_blink|eye_R_smile|eye_expr_heart|eye_expr_jito|eye_expr_smile|eye_expr_squeeze|eye_expr_surprise|eye_expr_wink|face_base|hair_back_L|hair_back_R|hair_front_C|hair_front_L|hair_front_R|mouth_line|mouth_parts_interior|mouth_parts_lower_lip|mouth_parts_teeth|mouth_parts_tongue|mouth_parts_upper_lip|neck|neck_skin|nose_reference|raw_bottomwear|raw_eyewear|raw_footwear|raw_legwear|shoulder_hair"
+      "parts": "L_brow|L_ear_outer|L_eye_white|L_iris|L_upper_lash|R_brow|R_ear_outer|R_eye_white|R_iris|R_upper_lash|accent_blush|accent_gloom|accent_sweat|accent_tear|choker|ear_inner|eye_L_blink|eye_L_smile|eye_R_blink|eye_R_smile|eye_expr_heart|eye_expr_jito|eye_expr_smile|eye_expr_squeeze|eye_expr_surprise|eye_expr_wink|face_base|hair_back_L|hair_back_R|hair_front_C|hair_front_L|hair_front_R|mouth_line|mouth_parts_interior|mouth_parts_lower_lip|mouth_parts_teeth|mouth_parts_tongue|mouth_parts_upper_lip|neck|neck_skin|nose_reference|raw_eyewear|shoulder_hair"
     },
     {
       "parameter_id": "ParamAngleZ",
@@ -1244,12 +1244,12 @@
       "max": 30,
       "default": 0,
       "target_count": 3,
-      "part_influence_count": 46,
+      "part_influence_count": 43,
       "deformer_influence_count": 3,
       "physics_influence_count": 0,
-      "direct_delta_magnitude": 72.0,
+      "direct_delta_magnitude": 92.0,
       "targets": "back_hair_warp|head_z_warp|neck_warp",
-      "parts": "L_brow|L_ear_outer|L_eye_white|L_iris|L_upper_lash|R_brow|R_ear_outer|R_eye_white|R_iris|R_upper_lash|accent_blush|accent_gloom|accent_sweat|accent_tear|choker|ear_inner|eye_L_blink|eye_L_smile|eye_R_blink|eye_R_smile|eye_expr_heart|eye_expr_jito|eye_expr_smile|eye_expr_squeeze|eye_expr_surprise|eye_expr_wink|face_base|hair_back_L|hair_back_R|hair_front_C|hair_front_L|hair_front_R|mouth_line|mouth_parts_interior|mouth_parts_lower_lip|mouth_parts_teeth|mouth_parts_tongue|mouth_parts_upper_lip|neck|neck_skin|nose_reference|raw_bottomwear|raw_eyewear|raw_footwear|raw_legwear|shoulder_hair"
+      "parts": "L_brow|L_ear_outer|L_eye_white|L_iris|L_upper_lash|R_brow|R_ear_outer|R_eye_white|R_iris|R_upper_lash|accent_blush|accent_gloom|accent_sweat|accent_tear|choker|ear_inner|eye_L_blink|eye_L_smile|eye_R_blink|eye_R_smile|eye_expr_heart|eye_expr_jito|eye_expr_smile|eye_expr_squeeze|eye_expr_surprise|eye_expr_wink|face_base|hair_back_L|hair_back_R|hair_front_C|hair_front_L|hair_front_R|mouth_line|mouth_parts_interior|mouth_parts_lower_lip|mouth_parts_teeth|mouth_parts_tongue|mouth_parts_upper_lip|neck|neck_skin|nose_reference|raw_eyewear|shoulder_hair"
     },
     {
       "parameter_id": "ParamBodyAngleX",
@@ -1325,7 +1325,7 @@
       "part_influence_count": 50,
       "deformer_influence_count": 3,
       "physics_influence_count": 2,
-      "direct_delta_magnitude": 6.96,
+      "direct_delta_magnitude": 6.16,
       "targets": "back_hair_warp|body_warp|upper_warp",
       "parts": "L_arm|L_brow|L_ear_outer|L_eye_white|L_iris|L_upper_lash|R_arm|R_brow|R_ear_outer|R_eye_white|R_iris|R_upper_lash|accent_blush|accent_gloom|accent_sweat|accent_tear|choker|clothes|ear_inner|eye_L_blink|eye_L_smile|eye_R_blink|eye_R_smile|eye_expr_heart|eye_expr_jito|eye_expr_smile|eye_expr_squeeze|eye_expr_surprise|eye_expr_wink|face_base|hair_back_L|hair_back_R|hair_front_C|hair_front_L|hair_front_R|mouth_line|mouth_parts_interior|mouth_parts_lower_lip|mouth_parts_teeth|mouth_parts_tongue|mouth_parts_upper_lip|neck|neck_skin|neck_under|nose_reference|raw_bottomwear|raw_eyewear|raw_footwear|raw_legwear|shoulder_hair"
     },
@@ -2081,10 +2081,10 @@
     },
     {
       "part_id": "raw_bottomwear",
-      "folder": "Face",
+      "folder": "Body",
       "draw_order": 205,
-      "primary_deformer": "head_angle_warp",
-      "deformer_chain": "root_warp>upper_warp>head_z_warp>head_angle_warp",
+      "primary_deformer": "body_warp",
+      "deformer_chain": "root_warp>body_warp",
       "direct_binding_count": 0,
       "physics_profile_count": 0,
       "bbox": "[504, 1284, 1033, 764]",
@@ -2105,10 +2105,10 @@
     },
     {
       "part_id": "raw_footwear",
-      "folder": "Face",
+      "folder": "Body",
       "draw_order": 203,
-      "primary_deformer": "head_angle_warp",
-      "deformer_chain": "root_warp>upper_warp>head_z_warp>head_angle_warp",
+      "primary_deformer": "body_warp",
+      "deformer_chain": "root_warp>body_warp",
       "direct_binding_count": 0,
       "physics_profile_count": 0,
       "bbox": "[0, 0, 4, 4]",
@@ -2117,10 +2117,10 @@
     },
     {
       "part_id": "raw_legwear",
-      "folder": "Face",
+      "folder": "Body",
       "draw_order": 204,
-      "primary_deformer": "head_angle_warp",
-      "deformer_chain": "root_warp>upper_warp>head_z_warp>head_angle_warp",
+      "primary_deformer": "body_warp",
+      "deformer_chain": "root_warp>body_warp",
       "direct_binding_count": 0,
       "physics_profile_count": 0,
       "bbox": "[0, 0, 4, 4]",
@@ -2323,7 +2323,7 @@
     {
       "part_a": "neck_under",
       "part_b": "hair_front_L",
-      "score": 80.115,
+      "score": 80.015,
       "bbox_gap": 65.0,
       "contact_length": 0,
       "draw_order_gap": 501.0,
@@ -2336,7 +2336,7 @@
     {
       "part_a": "neck_under",
       "part_b": "hair_front_C",
-      "score": 80.115,
+      "score": 80.015,
       "bbox_gap": 65.0,
       "contact_length": 0,
       "draw_order_gap": 502.0,
@@ -2349,7 +2349,7 @@
     {
       "part_a": "neck_under",
       "part_b": "hair_front_R",
-      "score": 80.115,
+      "score": 80.015,
       "bbox_gap": 145.0,
       "contact_length": 0,
       "draw_order_gap": 503.0,
@@ -2362,7 +2362,7 @@
     {
       "part_a": "clothes",
       "part_b": "mouth_parts_lower_lip",
-      "score": 74.451,
+      "score": 74.362,
       "bbox_gap": 80.0,
       "contact_length": 0,
       "draw_order_gap": 204.0,
@@ -2375,7 +2375,7 @@
     {
       "part_a": "clothes",
       "part_b": "mouth_parts_interior",
-      "score": 74.331,
+      "score": 74.242,
       "bbox_gap": 80.0,
       "contact_length": 0,
       "draw_order_gap": 201.0,
@@ -2388,7 +2388,7 @@
     {
       "part_a": "clothes",
       "part_b": "face_base",
-      "score": 71.741,
+      "score": 71.627,
       "bbox_gap": 43.0,
       "contact_length": 0,
       "draw_order_gap": 109.0,
@@ -2401,7 +2401,7 @@
     {
       "part_a": "clothes",
       "part_b": "hair_front_L",
-      "score": 68.115,
+      "score": 68.015,
       "bbox_gap": 95.0,
       "contact_length": 0,
       "draw_order_gap": 490.0,
@@ -2414,7 +2414,7 @@
     {
       "part_a": "clothes",
       "part_b": "hair_front_C",
-      "score": 68.115,
+      "score": 68.015,
       "bbox_gap": 95.0,
       "contact_length": 0,
       "draw_order_gap": 491.0,
@@ -2425,22 +2425,9 @@
       "physics_b": 1
     },
     {
-      "part_a": "raw_bottomwear",
-      "part_b": "clothes",
-      "score": 63.281,
-      "bbox_gap": 0.0,
-      "contact_length": 86,
-      "draw_order_gap": 5.0,
-      "shared_chain_depth": 1,
-      "chain_a": "root_warp>upper_warp>head_z_warp>head_angle_warp",
-      "chain_b": "root_warp>body_warp",
-      "physics_a": 0,
-      "physics_b": 1
-    },
-    {
       "part_a": "neck_under",
       "part_b": "mouth_parts_lower_lip",
-      "score": 62.891,
+      "score": 62.802,
       "bbox_gap": 50.0,
       "contact_length": 0,
       "draw_order_gap": 215.0,
@@ -2453,7 +2440,7 @@
     {
       "part_a": "neck_under",
       "part_b": "mouth_parts_tongue",
-      "score": 62.811,
+      "score": 62.722,
       "bbox_gap": 58.0,
       "contact_length": 0,
       "draw_order_gap": 213.0,
@@ -2466,7 +2453,7 @@
     {
       "part_a": "neck_under",
       "part_b": "mouth_parts_interior",
-      "score": 62.771,
+      "score": 62.682,
       "bbox_gap": 50.0,
       "contact_length": 0,
       "draw_order_gap": 212.0,
@@ -2516,6 +2503,32 @@
       "physics_b": 1
     },
     {
+      "part_a": "hair_back_L",
+      "part_b": "R_arm",
+      "score": 60.565,
+      "bbox_gap": 34.0,
+      "contact_length": 0,
+      "draw_order_gap": 120.0,
+      "shared_chain_depth": 1,
+      "chain_a": "root_warp>back_hair_warp",
+      "chain_b": "root_warp>body_warp",
+      "physics_a": 1,
+      "physics_b": 0
+    },
+    {
+      "part_a": "hair_back_L",
+      "part_b": "L_arm",
+      "score": 60.565,
+      "bbox_gap": 74.632,
+      "contact_length": 0,
+      "draw_order_gap": 120.0,
+      "shared_chain_depth": 1,
+      "chain_a": "root_warp>back_hair_warp",
+      "chain_b": "root_warp>body_warp",
+      "physics_a": 1,
+      "physics_b": 0
+    },
+    {
       "part_a": "neck",
       "part_b": "hair_front_L",
       "score": 59.9,
@@ -2529,35 +2542,9 @@
       "physics_b": 1
     },
     {
-      "part_a": "hair_back_L",
-      "part_b": "R_arm",
-      "score": 59.415,
-      "bbox_gap": 34.0,
-      "contact_length": 0,
-      "draw_order_gap": 120.0,
-      "shared_chain_depth": 1,
-      "chain_a": "root_warp>back_hair_warp",
-      "chain_b": "root_warp>body_warp",
-      "physics_a": 1,
-      "physics_b": 0
-    },
-    {
-      "part_a": "hair_back_L",
-      "part_b": "L_arm",
-      "score": 59.415,
-      "bbox_gap": 74.632,
-      "contact_length": 0,
-      "draw_order_gap": 120.0,
-      "shared_chain_depth": 1,
-      "chain_a": "root_warp>back_hair_warp",
-      "chain_b": "root_warp>body_warp",
-      "physics_a": 1,
-      "physics_b": 0
-    },
-    {
       "part_a": "neck_under",
       "part_b": "choker",
-      "score": 58.69,
+      "score": 58.576,
       "bbox_gap": 0.0,
       "contact_length": 26,
       "draw_order_gap": 31.0,
@@ -2581,32 +2568,6 @@
       "physics_b": 1
     },
     {
-      "part_a": "hair_back_L",
-      "part_b": "R_ear_outer",
-      "score": 57.68,
-      "bbox_gap": 0.0,
-      "contact_length": 90,
-      "draw_order_gap": 217.0,
-      "shared_chain_depth": 1,
-      "chain_a": "root_warp>back_hair_warp",
-      "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp",
-      "physics_a": 1,
-      "physics_b": 0
-    },
-    {
-      "part_a": "hair_back_R",
-      "part_b": "L_ear_outer",
-      "score": 57.68,
-      "bbox_gap": 0.0,
-      "contact_length": 90,
-      "draw_order_gap": 217.0,
-      "shared_chain_depth": 1,
-      "chain_a": "root_warp>back_hair_warp",
-      "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp",
-      "physics_a": 1,
-      "physics_b": 0
-    },
-    {
       "part_a": "neck",
       "part_b": "hair_front_C",
       "score": 57.45,
@@ -2618,6 +2579,32 @@
       "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp>front_hair_warp",
       "physics_a": 0,
       "physics_b": 1
+    },
+    {
+      "part_a": "hair_back_L",
+      "part_b": "neck_under",
+      "score": 57.175,
+      "bbox_gap": 0.0,
+      "contact_length": 51,
+      "draw_order_gap": 99.0,
+      "shared_chain_depth": 1,
+      "chain_a": "root_warp>back_hair_warp",
+      "chain_b": "root_warp>body_warp",
+      "physics_a": 1,
+      "physics_b": 0
+    },
+    {
+      "part_a": "hair_back_R",
+      "part_b": "neck_under",
+      "score": 57.135,
+      "bbox_gap": 0.0,
+      "contact_length": 51,
+      "draw_order_gap": 98.0,
+      "shared_chain_depth": 1,
+      "chain_a": "root_warp>back_hair_warp",
+      "chain_b": "root_warp>body_warp",
+      "physics_a": 1,
+      "physics_b": 0
     },
     {
       "part_a": "choker",
@@ -2660,21 +2647,47 @@
     },
     {
       "part_a": "hair_back_L",
-      "part_b": "neck_under",
-      "score": 56.025,
+      "part_b": "R_ear_outer",
+      "score": 56.43,
       "bbox_gap": 0.0,
-      "contact_length": 51,
-      "draw_order_gap": 99.0,
+      "contact_length": 90,
+      "draw_order_gap": 217.0,
       "shared_chain_depth": 1,
       "chain_a": "root_warp>back_hair_warp",
-      "chain_b": "root_warp>body_warp",
+      "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp",
       "physics_a": 1,
       "physics_b": 0
     },
     {
+      "part_a": "hair_back_R",
+      "part_b": "L_ear_outer",
+      "score": 56.43,
+      "bbox_gap": 0.0,
+      "contact_length": 90,
+      "draw_order_gap": 217.0,
+      "shared_chain_depth": 1,
+      "chain_a": "root_warp>back_hair_warp",
+      "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp",
+      "physics_a": 1,
+      "physics_b": 0
+    },
+    {
+      "part_a": "neck_under",
+      "part_b": "shoulder_hair",
+      "score": 56.285,
+      "bbox_gap": 124.31,
+      "contact_length": 0,
+      "draw_order_gap": 13.0,
+      "shared_chain_depth": 1,
+      "chain_a": "root_warp>body_warp",
+      "chain_b": "root_warp>back_hair_warp",
+      "physics_a": 0,
+      "physics_b": 1
+    },
+    {
       "part_a": "neck",
       "part_b": "clothes",
-      "score": 56.0,
+      "score": 55.886,
       "bbox_gap": 0.0,
       "contact_length": 63,
       "draw_order_gap": 10.0,
@@ -2686,21 +2699,8 @@
     },
     {
       "part_a": "hair_back_R",
-      "part_b": "neck_under",
-      "score": 55.985,
-      "bbox_gap": 0.0,
-      "contact_length": 51,
-      "draw_order_gap": 98.0,
-      "shared_chain_depth": 1,
-      "chain_a": "root_warp>back_hair_warp",
-      "chain_b": "root_warp>body_warp",
-      "physics_a": 1,
-      "physics_b": 0
-    },
-    {
-      "part_a": "hair_back_R",
       "part_b": "hair_front_L",
-      "score": 55.889,
+      "score": 54.778,
       "bbox_gap": 39.0,
       "contact_length": 0,
       "draw_order_gap": 599.0,
@@ -2711,9 +2711,22 @@
       "physics_b": 1
     },
     {
+      "part_a": "shoulder_hair",
+      "part_b": "L_arm",
+      "score": 54.585,
+      "bbox_gap": 0.0,
+      "contact_length": 30,
+      "draw_order_gap": 8.0,
+      "shared_chain_depth": 1,
+      "chain_a": "root_warp>back_hair_warp",
+      "chain_b": "root_warp>body_warp",
+      "physics_a": 1,
+      "physics_b": 0
+    },
+    {
       "part_a": "hair_back_L",
       "part_b": "L_ear_outer",
-      "score": 55.32,
+      "score": 54.07,
       "bbox_gap": 4.0,
       "contact_length": 138,
       "draw_order_gap": 218.0,
@@ -2725,34 +2738,8 @@
     },
     {
       "part_a": "neck_under",
-      "part_b": "shoulder_hair",
-      "score": 55.135,
-      "bbox_gap": 124.31,
-      "contact_length": 0,
-      "draw_order_gap": 13.0,
-      "shared_chain_depth": 1,
-      "chain_a": "root_warp>body_warp",
-      "chain_b": "root_warp>back_hair_warp",
-      "physics_a": 0,
-      "physics_b": 1
-    },
-    {
-      "part_a": "hair_back_R",
       "part_b": "face_base",
-      "score": 53.72,
-      "bbox_gap": 0.0,
-      "contact_length": 170,
-      "draw_order_gap": 218.0,
-      "shared_chain_depth": 1,
-      "chain_a": "root_warp>back_hair_warp",
-      "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp",
-      "physics_a": 1,
-      "physics_b": 0
-    },
-    {
-      "part_a": "neck_under",
-      "part_b": "face_base",
-      "score": 53.581,
+      "score": 53.467,
       "bbox_gap": 13.0,
       "contact_length": 132,
       "draw_order_gap": 120.0,
@@ -2763,22 +2750,9 @@
       "physics_b": 0
     },
     {
-      "part_a": "shoulder_hair",
-      "part_b": "L_arm",
-      "score": 53.435,
-      "bbox_gap": 0.0,
-      "contact_length": 30,
-      "draw_order_gap": 8.0,
-      "shared_chain_depth": 1,
-      "chain_a": "root_warp>back_hair_warp",
-      "chain_b": "root_warp>body_warp",
-      "physics_a": 1,
-      "physics_b": 0
-    },
-    {
       "part_a": "clothes",
       "part_b": "neck_skin",
-      "score": 53.19,
+      "score": 53.076,
       "bbox_gap": 0.0,
       "contact_length": 112,
       "draw_order_gap": 1.0,
@@ -2791,7 +2765,7 @@
     {
       "part_a": "hair_back_L",
       "part_b": "neck_skin",
-      "score": 51.623,
+      "score": 52.873,
       "bbox_gap": 0.0,
       "contact_length": 48,
       "draw_order_gap": 111.0,
@@ -2802,12 +2776,12 @@
       "physics_b": 0
     },
     {
-      "part_a": "hair_back_L",
+      "part_a": "hair_back_R",
       "part_b": "face_base",
-      "score": 51.26,
+      "score": 52.47,
       "bbox_gap": 0.0,
-      "contact_length": 327,
-      "draw_order_gap": 219.0,
+      "contact_length": 170,
+      "draw_order_gap": 218.0,
       "shared_chain_depth": 1,
       "chain_a": "root_warp>back_hair_warp",
       "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp",
@@ -2816,21 +2790,8 @@
     },
     {
       "part_a": "hair_back_R",
-      "part_b": "hair_front_C",
-      "score": 50.689,
-      "bbox_gap": 0.0,
-      "contact_length": 104,
-      "draw_order_gap": 600.0,
-      "shared_chain_depth": 1,
-      "chain_a": "root_warp>back_hair_warp",
-      "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp>front_hair_warp",
-      "physics_a": 1,
-      "physics_b": 1
-    },
-    {
-      "part_a": "hair_back_R",
       "part_b": "neck_skin",
-      "score": 50.083,
+      "score": 51.333,
       "bbox_gap": 0.0,
       "contact_length": 78,
       "draw_order_gap": 110.0,
@@ -2843,7 +2804,7 @@
     {
       "part_a": "neck",
       "part_b": "shoulder_hair",
-      "score": 50.063,
+      "score": 51.313,
       "bbox_gap": 89.0,
       "contact_length": 0,
       "draw_order_gap": 12.0,
@@ -2852,6 +2813,58 @@
       "chain_b": "root_warp>back_hair_warp",
       "physics_a": 0,
       "physics_b": 1
+    },
+    {
+      "part_a": "neck_skin",
+      "part_b": "shoulder_hair",
+      "score": 50.873,
+      "bbox_gap": 92.0,
+      "contact_length": 0,
+      "draw_order_gap": 1.0,
+      "shared_chain_depth": 1,
+      "chain_a": "root_warp>upper_warp>neck_warp",
+      "chain_b": "root_warp>back_hair_warp",
+      "physics_a": 0,
+      "physics_b": 1
+    },
+    {
+      "part_a": "hair_back_R",
+      "part_b": "neck",
+      "score": 50.743,
+      "bbox_gap": 0.0,
+      "contact_length": 81,
+      "draw_order_gap": 99.0,
+      "shared_chain_depth": 1,
+      "chain_a": "root_warp>back_hair_warp",
+      "chain_b": "root_warp>upper_warp>neck_warp",
+      "physics_a": 1,
+      "physics_b": 0
+    },
+    {
+      "part_a": "hair_back_R",
+      "part_b": "L_arm",
+      "score": 50.375,
+      "bbox_gap": 0.0,
+      "contact_length": 203,
+      "draw_order_gap": 119.0,
+      "shared_chain_depth": 1,
+      "chain_a": "root_warp>back_hair_warp",
+      "chain_b": "root_warp>body_warp",
+      "physics_a": 1,
+      "physics_b": 0
+    },
+    {
+      "part_a": "hair_back_L",
+      "part_b": "face_base",
+      "score": 50.01,
+      "bbox_gap": 0.0,
+      "contact_length": 327,
+      "draw_order_gap": 219.0,
+      "shared_chain_depth": 1,
+      "chain_a": "root_warp>back_hair_warp",
+      "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp",
+      "physics_a": 1,
+      "physics_b": 0
     },
     {
       "part_a": "choker",
@@ -2867,9 +2880,22 @@
       "physics_b": 0
     },
     {
+      "part_a": "hair_back_R",
+      "part_b": "hair_front_C",
+      "score": 49.578,
+      "bbox_gap": 0.0,
+      "contact_length": 104,
+      "draw_order_gap": 600.0,
+      "shared_chain_depth": 1,
+      "chain_a": "root_warp>back_hair_warp",
+      "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp>front_hair_warp",
+      "physics_a": 1,
+      "physics_b": 1
+    },
+    {
       "part_a": "hair_back_L",
       "part_b": "hair_front_R",
-      "score": 49.689,
+      "score": 48.578,
       "bbox_gap": 0.0,
       "contact_length": 124,
       "draw_order_gap": 602.0,
@@ -2880,81 +2906,29 @@
       "physics_b": 1
     },
     {
-      "part_a": "neck_skin",
-      "part_b": "shoulder_hair",
-      "score": 49.623,
-      "bbox_gap": 92.0,
-      "contact_length": 0,
-      "draw_order_gap": 1.0,
-      "shared_chain_depth": 1,
-      "chain_a": "root_warp>upper_warp>neck_warp",
-      "chain_b": "root_warp>back_hair_warp",
-      "physics_a": 0,
-      "physics_b": 1
-    },
-    {
-      "part_a": "hair_back_R",
-      "part_b": "neck",
-      "score": 49.493,
+      "part_a": "hair_back_L",
+      "part_b": "clothes",
+      "score": 46.665,
       "bbox_gap": 0.0,
-      "contact_length": 81,
-      "draw_order_gap": 99.0,
-      "shared_chain_depth": 1,
-      "chain_a": "root_warp>back_hair_warp",
-      "chain_b": "root_warp>upper_warp>neck_warp",
-      "physics_a": 1,
-      "physics_b": 0
-    },
-    {
-      "part_a": "hair_back_R",
-      "part_b": "L_arm",
-      "score": 49.225,
-      "bbox_gap": 0.0,
-      "contact_length": 203,
-      "draw_order_gap": 119.0,
+      "contact_length": 30,
+      "draw_order_gap": 110.0,
       "shared_chain_depth": 1,
       "chain_a": "root_warp>back_hair_warp",
       "chain_b": "root_warp>body_warp",
-      "physics_a": 1,
-      "physics_b": 0
-    },
-    {
-      "part_a": "hair_back_R",
-      "part_b": "hair_front_R",
-      "score": 46.389,
-      "bbox_gap": 0.0,
-      "contact_length": 190,
-      "draw_order_gap": 601.0,
-      "shared_chain_depth": 1,
-      "chain_a": "root_warp>back_hair_warp",
-      "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp>front_hair_warp",
       "physics_a": 1,
       "physics_b": 1
     },
     {
       "part_a": "hair_back_L",
-      "part_b": "hair_front_L",
-      "score": 45.939,
+      "part_b": "neck",
+      "score": 46.483,
       "bbox_gap": 0.0,
-      "contact_length": 199,
-      "draw_order_gap": 600.0,
+      "contact_length": 167,
+      "draw_order_gap": 100.0,
       "shared_chain_depth": 1,
       "chain_a": "root_warp>back_hair_warp",
-      "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp>front_hair_warp",
+      "chain_b": "root_warp>upper_warp>neck_warp",
       "physics_a": 1,
-      "physics_b": 1
-    },
-    {
-      "part_a": "raw_bottomwear",
-      "part_b": "L_arm",
-      "score": 45.831,
-      "bbox_gap": 0.0,
-      "contact_length": 203,
-      "draw_order_gap": 15.0,
-      "shared_chain_depth": 1,
-      "chain_a": "root_warp>upper_warp>head_z_warp>head_angle_warp",
-      "chain_b": "root_warp>body_warp",
-      "physics_a": 0,
       "physics_b": 0
     },
     {
@@ -2980,19 +2954,6 @@
       "shared_chain_depth": 2,
       "chain_a": "root_warp>upper_warp>neck_warp",
       "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp>mouth_warp",
-      "physics_a": 0,
-      "physics_b": 0
-    },
-    {
-      "part_a": "raw_bottomwear",
-      "part_b": "R_arm",
-      "score": 45.681,
-      "bbox_gap": 0.0,
-      "contact_length": 206,
-      "draw_order_gap": 15.0,
-      "shared_chain_depth": 1,
-      "chain_a": "root_warp>upper_warp>head_z_warp>head_angle_warp",
-      "chain_b": "root_warp>body_warp",
       "physics_a": 0,
       "physics_b": 0
     },
@@ -3023,19 +2984,6 @@
       "physics_b": 0
     },
     {
-      "part_a": "hair_back_L",
-      "part_b": "clothes",
-      "score": 45.515,
-      "bbox_gap": 0.0,
-      "contact_length": 30,
-      "draw_order_gap": 110.0,
-      "shared_chain_depth": 1,
-      "chain_a": "root_warp>back_hair_warp",
-      "chain_b": "root_warp>body_warp",
-      "physics_a": 1,
-      "physics_b": 1
-    },
-    {
       "part_a": "neck",
       "part_b": "mouth_parts_teeth",
       "score": 45.403,
@@ -3049,9 +2997,22 @@
       "physics_b": 0
     },
     {
+      "part_a": "hair_back_R",
+      "part_b": "hair_front_R",
+      "score": 45.278,
+      "bbox_gap": 0.0,
+      "contact_length": 190,
+      "draw_order_gap": 601.0,
+      "shared_chain_depth": 1,
+      "chain_a": "root_warp>back_hair_warp",
+      "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp>front_hair_warp",
+      "physics_a": 1,
+      "physics_b": 1
+    },
+    {
       "part_a": "neck_under",
       "part_b": "neck_skin",
-      "score": 45.28,
+      "score": 45.166,
       "bbox_gap": 0.0,
       "contact_length": 39,
       "draw_order_gap": 12.0,
@@ -3059,19 +3020,6 @@
       "chain_a": "root_warp>body_warp",
       "chain_b": "root_warp>upper_warp>neck_warp",
       "physics_a": 0,
-      "physics_b": 0
-    },
-    {
-      "part_a": "hair_back_L",
-      "part_b": "neck",
-      "score": 45.233,
-      "bbox_gap": 0.0,
-      "contact_length": 167,
-      "draw_order_gap": 100.0,
-      "shared_chain_depth": 1,
-      "chain_a": "root_warp>back_hair_warp",
-      "chain_b": "root_warp>upper_warp>neck_warp",
-      "physics_a": 1,
       "physics_b": 0
     },
     {
@@ -3089,11 +3037,11 @@
     },
     {
       "part_a": "hair_back_L",
-      "part_b": "hair_front_C",
-      "score": 44.889,
+      "part_b": "hair_front_L",
+      "score": 44.828,
       "bbox_gap": 0.0,
-      "contact_length": 257,
-      "draw_order_gap": 601.0,
+      "contact_length": 199,
+      "draw_order_gap": 600.0,
       "shared_chain_depth": 1,
       "chain_a": "root_warp>back_hair_warp",
       "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp>front_hair_warp",
@@ -3129,7 +3077,7 @@
     {
       "part_a": "neck_under",
       "part_b": "neck",
-      "score": 44.24,
+      "score": 44.126,
       "bbox_gap": 0.0,
       "contact_length": 51,
       "draw_order_gap": 1.0,
@@ -3138,6 +3086,32 @@
       "chain_b": "root_warp>upper_warp>neck_warp",
       "physics_a": 0,
       "physics_b": 0
+    },
+    {
+      "part_a": "hair_back_L",
+      "part_b": "hair_front_C",
+      "score": 43.778,
+      "bbox_gap": 0.0,
+      "contact_length": 257,
+      "draw_order_gap": 601.0,
+      "shared_chain_depth": 1,
+      "chain_a": "root_warp>back_hair_warp",
+      "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp>front_hair_warp",
+      "physics_a": 1,
+      "physics_b": 1
+    },
+    {
+      "part_a": "hair_back_L",
+      "part_b": "choker",
+      "score": 42.733,
+      "bbox_gap": 0.0,
+      "contact_length": 26,
+      "draw_order_gap": 130.0,
+      "shared_chain_depth": 1,
+      "chain_a": "root_warp>back_hair_warp",
+      "chain_b": "root_warp>upper_warp>neck_warp",
+      "physics_a": 1,
+      "physics_b": 1
     },
     {
       "part_a": "neck",
@@ -3153,6 +3127,32 @@
       "physics_b": 0
     },
     {
+      "part_a": "hair_back_R",
+      "part_b": "choker",
+      "score": 42.693,
+      "bbox_gap": 0.0,
+      "contact_length": 26,
+      "draw_order_gap": 129.0,
+      "shared_chain_depth": 1,
+      "chain_a": "root_warp>back_hair_warp",
+      "chain_b": "root_warp>upper_warp>neck_warp",
+      "physics_a": 1,
+      "physics_b": 1
+    },
+    {
+      "part_a": "clothes",
+      "part_b": "shoulder_hair",
+      "score": 41.595,
+      "bbox_gap": 0.0,
+      "contact_length": 45,
+      "draw_order_gap": 2.0,
+      "shared_chain_depth": 1,
+      "chain_a": "root_warp>body_warp",
+      "chain_b": "root_warp>back_hair_warp",
+      "physics_a": 1,
+      "physics_b": 1
+    },
+    {
       "part_a": "neck",
       "part_b": "nose_reference",
       "score": 41.564,
@@ -3166,54 +3166,15 @@
       "physics_b": 0
     },
     {
-      "part_a": "hair_back_L",
-      "part_b": "choker",
-      "score": 41.483,
-      "bbox_gap": 0.0,
-      "contact_length": 26,
-      "draw_order_gap": 130.0,
-      "shared_chain_depth": 1,
-      "chain_a": "root_warp>back_hair_warp",
-      "chain_b": "root_warp>upper_warp>neck_warp",
-      "physics_a": 1,
-      "physics_b": 1
-    },
-    {
-      "part_a": "hair_back_R",
-      "part_b": "choker",
-      "score": 41.443,
-      "bbox_gap": 0.0,
-      "contact_length": 26,
-      "draw_order_gap": 129.0,
-      "shared_chain_depth": 1,
-      "chain_a": "root_warp>back_hair_warp",
-      "chain_b": "root_warp>upper_warp>neck_warp",
-      "physics_a": 1,
-      "physics_b": 1
-    },
-    {
       "part_a": "clothes",
       "part_b": "choker",
-      "score": 40.75,
+      "score": 40.636,
       "bbox_gap": 0.0,
       "contact_length": 136,
       "draw_order_gap": 20.0,
       "shared_chain_depth": 1,
       "chain_a": "root_warp>body_warp",
       "chain_b": "root_warp>upper_warp>neck_warp",
-      "physics_a": 1,
-      "physics_b": 1
-    },
-    {
-      "part_a": "clothes",
-      "part_b": "shoulder_hair",
-      "score": 40.445,
-      "bbox_gap": 0.0,
-      "contact_length": 45,
-      "draw_order_gap": 2.0,
-      "shared_chain_depth": 1,
-      "chain_a": "root_warp>body_warp",
-      "chain_b": "root_warp>back_hair_warp",
       "physics_a": 1,
       "physics_b": 1
     },
@@ -3356,6 +3317,45 @@
       "draw_order_gap": 164.0,
       "shared_chain_depth": 4,
       "chain_a": "root_warp>upper_warp>head_z_warp>head_angle_warp>eye_L_warp",
+      "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp>front_hair_warp",
+      "physics_a": 0,
+      "physics_b": 1
+    },
+    {
+      "part_a": "eye_R_smile",
+      "part_b": "hair_front_R",
+      "score": 37.898,
+      "bbox_gap": 35.0,
+      "contact_length": 0,
+      "draw_order_gap": 163.0,
+      "shared_chain_depth": 4,
+      "chain_a": "root_warp>upper_warp>head_z_warp>head_angle_warp>eye_R_warp",
+      "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp>front_hair_warp",
+      "physics_a": 0,
+      "physics_b": 1
+    },
+    {
+      "part_a": "eye_L_smile",
+      "part_b": "hair_front_L",
+      "score": 37.858,
+      "bbox_gap": 57.0,
+      "contact_length": 0,
+      "draw_order_gap": 162.0,
+      "shared_chain_depth": 4,
+      "chain_a": "root_warp>upper_warp>head_z_warp>head_angle_warp>eye_L_warp",
+      "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp>front_hair_warp",
+      "physics_a": 0,
+      "physics_b": 1
+    },
+    {
+      "part_a": "L_brow",
+      "part_b": "hair_front_R",
+      "score": 37.83,
+      "bbox_gap": 0.0,
+      "contact_length": 13,
+      "draw_order_gap": 162.0,
+      "shared_chain_depth": 4,
+      "chain_a": "root_warp>upper_warp>head_z_warp>head_angle_warp",
       "chain_b": "root_warp>upper_warp>head_z_warp>head_angle_warp>front_hair_warp",
       "physics_a": 0,
       "physics_b": 1

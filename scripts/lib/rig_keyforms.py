@@ -94,8 +94,10 @@ def build_keyform_bindings() -> list[dict]:
         binding("ParamAngleX", 30, "back_hair_warp", tx=13),
         binding("ParamAngleY", -30, "back_hair_warp", ty=-7),
         binding("ParamAngleY", 30, "back_hair_warp", ty=7),
-        binding_r("ParamAngleZ", -30, "back_hair_warp", rotate=-5),
-        binding_r("ParamAngleZ", 30, "back_hair_warp", rotate=5),
+        # HEAD-Z-PIVOT-001 후속 (RIG-COHESION-001 실측: ±5는 앞/뒷머리 29px 어긋남):
+        # Z 회전은 머리와 완전 동률 — 피벗 동일(턱 관절)이라 정적 어긋남 0, 지연은 물리 스프링 담당
+        binding_r("ParamAngleZ", -30, "back_hair_warp", rotate=-10),
+        binding_r("ParamAngleZ", 30, "back_hair_warp", rotate=10),
         binding("ParamHairBack", -1, "back_hair_warp", tx=-10),
         binding("ParamHairBack", 1, "back_hair_warp", tx=10),
         # 뒷머리 몸 탑승 (upper 미소속이라 자체 바인딩 — 전체 균일이라 내부 시어 없음; X는 빌더)
@@ -106,7 +108,9 @@ def build_keyform_bindings() -> list[dict]:
         # 골반 피벗 진자 회전 (균일 평행이동은 "종이인형 슬라이드" — 유기성 부재 판정)
         binding("ParamBodyAngleY", -10, "body_warp", ty=-8),
         binding("ParamBodyAngleY", 10, "body_warp", ty=8),
-        binding("ParamBreath", 1, "body_warp", ty=-2, sy=1.012),
+        # RIG-COHESION-001: sy 1.012는 골반 피벗 스케일이라 가슴 높이에서 ~13px 상승 —
+        # 목·어깨가닥 접합 슬립의 주범. 호흡은 ty 중심 + 미세 sy (접합 슬립 ≤3px)
+        binding("ParamBreath", 1, "body_warp", ty=-2, sy=1.002),
         binding("ParamEyeBallX", -1, "L_iris", tx=-7.5),
         binding("ParamEyeBallX", 1, "L_iris", tx=7.5),
         binding("ParamEyeBallX", -1, "R_iris", tx=-7.5),

@@ -1,6 +1,6 @@
 {
   "test_id": "EYE-NATURAL-002-keyform-exactness",
-  "generated_at": "2026-06-12T14:17:36.170198+00:00",
+  "generated_at": "2026-06-12T14:40:13.178843+00:00",
   "renderer": "pixi",
   "claim": "임의 중간 v에서 렌더 = 기준 curtain_warp(t) 단일 프레임 (크로스페이드 잔상 0)",
   "values": [

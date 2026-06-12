@@ -5499,3 +5499,27 @@ notes:
   - 목 미세 추종은 자체 바인딩(±5/±3/±3, NECK-PIN 핀 격자)만 — "거의 고정 + 살짝 늘어남"
   - H2 재판정 대기: 8062(슬라이더 AngleZ) / 8063(웹캠 갸웃)
 ```
+
+## AUTORIG-RIG-COHESION-001
+
+```yaml
+id: AUTORIG-RIG-COHESION-001
+date: 2026-06-12
+owner: Claude
+status: P5_GATE_ADDED_ALL_PASS_H2_WAITING
+hypothesis: 주인님 H2 "머리 이동 시 치마·하체 동반+분리, 앞/뒷머리 어긋남, 유기성 전수 재분석 필요" — 런타임 동일 수식의 결정론 재현으로 인접 부위 쌍 상대 변위를 전수 측정하면 원인이 수치로 나온다.
+input:
+  - 주인님 H2 육안 피드백 (2026-06-12 2차)
+output:
+  - scripts/analyze_rig_cohesion.py (신규 — rig.js deformedVertices 동일 수식 재현, 실제 이음새 픽셀에서 16쌍×9파라미터 min/max 상대 변위 매트릭스, --check P5 게이트)
+  - run_autorig_pipeline.py P5에 rig_cohesion 게이트 등록 (래칫)
+  - 런: runs/autorig-character-004_20260612_233908 — P5 전부 PASS (cohesion 204행 fail 0)
+metric:
+  - "발견 1 (메가버그): deformer_of의 'ear' in pid가 raw_bottomwear/legwear/footwear의 'wear'에 오매칭 — 하의 전체가 head_angle_warp 소속. 구 구조에선 head bounds 밖이라 변위 0으로 잠복, HEAD-Z-PIVOT-001 bounds 확장으로 발현 (clothes|하의 AngleZ 상대 134px). 토큰 매칭 is_ear()로 수정 → 0px"
+  - "발견 2: 뒷머리 AngleZ ±5 vs 머리 ±10 — 앞/뒷머리 29px 어긋남 → 동률 ±10(피벗 동일)로 0px, 유기 지연은 물리 스프링 유지"
+  - "발견 3: Breath body sy 1.012가 골반 피벗 스케일 — 가슴 접합 13px 슬립 → sy 1.002 (≈2px)"
+  - 의도 모션은 허용치로 분리 박제 (HairFront/Back 수동 스윙 ±10 사양, 어깨가닥이 옷 위를 쓸기, CHAIN-001 균일 운반 근사 ≤7px)
+notes:
+  - 물리 스프링 과도 지연은 분석 범위 밖 (정착 오프셋은 clothes A/B가 측정 — drape ±9px는 유지, H2 재판정 항목)
+  - H2 재판정: 8062/8063 — 까딱 시 하체 정지 + 앞/뒷머리 동행 확인
+```

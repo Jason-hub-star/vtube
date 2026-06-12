@@ -1,6 +1,6 @@
 {
   "playwright": "/Users/family/jason/Vtube/experiments/live2d-strong-model-pattern-001/probe_sandbox/strong20/Samples/TypeScript/Demo/node_modules/playwright",
-  "url": "http://127.0.0.1:59134/drive?replay=1&auto=1&speed=16",
+  "url": "http://127.0.0.1:60291/drive?replay=1&auto=1&speed=16",
   "captures_dir": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/tracking_mapper_qa/captures",
   "out": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/tracking_mapper_qa/playwright_raw.json",
   "renderer": "pixi",

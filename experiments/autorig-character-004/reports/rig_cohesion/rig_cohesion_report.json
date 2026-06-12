@@ -1,0 +1,189 @@
+{
+  "generated_at": "2026-06-12T14:42:02.820564+00:00",
+  "project": "/Users/family/jason/Vtube/experiments/autorig-character-004/rig_v0_project",
+  "status": "PASS",
+  "checked_rows": 204,
+  "failures": [],
+  "worst": [
+    {
+      "pair": "shoulder_hair|clothes",
+      "param": "ParamAngleZ",
+      "value": -30,
+      "mean_px": 47.71,
+      "max_px": 52.11,
+      "limit_px": 55.0,
+      "ok": true
+    },
+    {
+      "pair": "shoulder_hair|clothes",
+      "param": "ParamAngleZ",
+      "value": 30,
+      "mean_px": 47.71,
+      "max_px": 52.11,
+      "limit_px": 55.0,
+      "ok": true
+    },
+    {
+      "pair": "shoulder_hair|clothes",
+      "param": "ParamAngleX",
+      "value": -30,
+      "mean_px": 13.0,
+      "max_px": 13.0,
+      "limit_px": 14.0,
+      "ok": true
+    },
+    {
+      "pair": "shoulder_hair|clothes",
+      "param": "ParamAngleX",
+      "value": 30,
+      "mean_px": 13.0,
+      "max_px": 13.0,
+      "limit_px": 14.0,
+      "ok": true
+    },
+    {
+      "pair": "hair_front_L|hair_back_L",
+      "param": "ParamHairBack",
+      "value": -1,
+      "mean_px": 10.0,
+      "max_px": 10.0,
+      "limit_px": 12.0,
+      "ok": true
+    },
+    {
+      "pair": "hair_front_L|hair_back_L",
+      "param": "ParamHairBack",
+      "value": 1,
+      "mean_px": 10.0,
+      "max_px": 10.0,
+      "limit_px": 12.0,
+      "ok": true
+    },
+    {
+      "pair": "hair_front_R|hair_back_R",
+      "param": "ParamHairBack",
+      "value": -1,
+      "mean_px": 10.0,
+      "max_px": 10.0,
+      "limit_px": 12.0,
+      "ok": true
+    },
+    {
+      "pair": "hair_front_R|hair_back_R",
+      "param": "ParamHairBack",
+      "value": 1,
+      "mean_px": 10.0,
+      "max_px": 10.0,
+      "limit_px": 12.0,
+      "ok": true
+    },
+    {
+      "pair": "hair_back_L|face_base",
+      "param": "ParamHairBack",
+      "value": -1,
+      "mean_px": 10.0,
+      "max_px": 10.0,
+      "limit_px": 12.0,
+      "ok": true
+    },
+    {
+      "pair": "hair_back_L|face_base",
+      "param": "ParamHairBack",
+      "value": 1,
+      "mean_px": 10.0,
+      "max_px": 10.0,
+      "limit_px": 12.0,
+      "ok": true
+    },
+    {
+      "pair": "hair_back_R|face_base",
+      "param": "ParamHairBack",
+      "value": -1,
+      "mean_px": 10.0,
+      "max_px": 10.0,
+      "limit_px": 12.0,
+      "ok": true
+    },
+    {
+      "pair": "hair_back_R|face_base",
+      "param": "ParamHairBack",
+      "value": 1,
+      "mean_px": 10.0,
+      "max_px": 10.0,
+      "limit_px": 12.0,
+      "ok": true
+    },
+    {
+      "pair": "shoulder_hair|clothes",
+      "param": "ParamHairBack",
+      "value": -1,
+      "mean_px": 10.0,
+      "max_px": 10.0,
+      "limit_px": 12.0,
+      "ok": true
+    },
+    {
+      "pair": "shoulder_hair|clothes",
+      "param": "ParamHairBack",
+      "value": 1,
+      "mean_px": 10.0,
+      "max_px": 10.0,
+      "limit_px": 12.0,
+      "ok": true
+    },
+    {
+      "pair": "shoulder_hair|clothes",
+      "param": "ParamBodyAngleZ",
+      "value": 10,
+      "mean_px": 9.24,
+      "max_px": 10.47,
+      "limit_px": 10.0,
+      "ok": true
+    },
+    {
+      "pair": "hair_front_C|face_base",
+      "param": "ParamHairFront",
+      "value": -1,
+      "mean_px": 9.07,
+      "max_px": 10.0,
+      "limit_px": 12.0,
+      "ok": true
+    },
+    {
+      "pair": "hair_front_C|face_base",
+      "param": "ParamHairFront",
+      "value": 1,
+      "mean_px": 9.07,
+      "max_px": 10.0,
+      "limit_px": 12.0,
+      "ok": true
+    },
+    {
+      "pair": "hair_back_L|face_base",
+      "param": "ParamAngleX",
+      "value": -30,
+      "mean_px": 8.57,
+      "max_px": 9.0,
+      "limit_px": 12.0,
+      "ok": true
+    },
+    {
+      "pair": "hair_back_L|face_base",
+      "param": "ParamAngleX",
+      "value": 30,
+      "mean_px": 8.57,
+      "max_px": 9.0,
+      "limit_px": 12.0,
+      "ok": true
+    },
+    {
+      "pair": "hair_back_R|face_base",
+      "param": "ParamAngleX",
+      "value": -30,
+      "mean_px": 8.48,
+      "max_px": 9.0,
+      "limit_px": 12.0,
+      "ok": true
+    }
+  ]
+}

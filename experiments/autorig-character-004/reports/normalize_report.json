@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "experiment_id": "autorig-character-004",
-  "generated_at": "2026-06-12T14:16:39.276984+00:00",
+  "generated_at": "2026-06-12T14:39:15.117543+00:00",
   "source_layers_json": "experiments/see-through-layer-decomp-001/external_repos/ComfyUI/output/autorig-character-004_seethrough_20260612_193935_b6bc3768_layers.json",
   "source_canvas_size": [
     640,

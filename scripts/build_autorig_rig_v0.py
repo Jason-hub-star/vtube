@@ -34,6 +34,12 @@ from run_arap_blink_experiment import blink_mesh, eye_bbox_from_layer  # noqa: E
 CANVAS = 2048
 
 # 파트 → 폴더/디포머 배정 규칙
+def is_ear(pid: str) -> bool:
+    """귀 토큰 매칭 — 'ear' in pid는 bottomwear/legwear/footwear의 'wear'에 오매칭된다
+    (RIG-COHESION-001: 하체 전부가 얼굴 디포머에 박혀 머리 까딱에 134px 동반 회전 사건)."""
+    return pid.startswith("ear") or "_ear" in pid
+
+
 def folder_of(pid: str) -> str:
     if pid.startswith("accent_"):
         return "Face"
@@ -41,7 +47,7 @@ def folder_of(pid: str) -> str:
         return "Eye"
     if "mouth" in pid:
         return "Mouth"
-    if "brow" in pid or "face" in pid or "nose" in pid or "ear" in pid:
+    if "brow" in pid or "face" in pid or "nose" in pid or is_ear(pid):
         return "Face"
     if "hair" in pid:
         return "Hair"
@@ -59,7 +65,9 @@ def deformer_of(pid: str) -> str:
         return "mouth_warp"
     if pid == "front_hair":
         return "front_hair_warp"
-    if "brow" in pid or "face" in pid or "nose" in pid or "ear" in pid:
+    if "eyewear" in pid or "earwear" in pid:
+        return "head_angle_warp"  # 안경·귀걸이 = 얼굴 부착 액세서리
+    if "brow" in pid or "face" in pid or "nose" in pid or is_ear(pid):
         return "head_angle_warp"
     if pid.startswith("hair_front_"):
         return "front_hair_warp"

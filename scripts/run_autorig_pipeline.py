@@ -270,6 +270,10 @@ def main() -> int:
             "python3", "scripts/inspect_autorig_rig.py", "--project", str(exp / "rig_v0_project"),
             "--out-dir", str(exp / "reports" / "rig_inspector"),
             "--dynamic", "--renderer", "pixi", "--fail-on-dead"])
+        sh(writer, "P5", "rig_cohesion", [
+            "python3", "scripts/analyze_rig_cohesion.py",
+            "--project", str(exp / "rig_v0_project"),
+            "--out-dir", str(exp / "reports" / "rig_cohesion"), "--check"])
         if use_mouth_parts:
             sh(writer, "P5", "mouth_parts_keyforms", [
                 "python3", "scripts/validate_mouth_parts_keyforms.py",

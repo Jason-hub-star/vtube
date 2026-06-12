@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project_kind": "mini_cubism_v0",
   "experiment_id": "autorig-rig-v0",
-  "generated_at": "2026-06-12T14:17:15.791515+00:00",
+  "generated_at": "2026-06-12T14:39:52.993182+00:00",
   "source_selection": {
     "visible_layers": "experiments/autorig-character-004/seethrough_true_reskinned/reskin_manifest.json",
     "hidden_layers": [
@@ -93,8 +93,8 @@
       ],
       "alpha_coverage": 0.0,
       "draw_order": 203,
-      "folder": "Face",
-      "deformer_node": "head_angle_warp"
+      "folder": "Body",
+      "deformer_node": "body_warp"
     },
     {
       "id": "raw_legwear",
@@ -109,8 +109,8 @@
       ],
       "alpha_coverage": 0.0,
       "draw_order": 204,
-      "folder": "Face",
-      "deformer_node": "head_angle_warp"
+      "folder": "Body",
+      "deformer_node": "body_warp"
     },
     {
       "id": "raw_bottomwear",
@@ -125,8 +125,8 @@
       ],
       "alpha_coverage": 0.133869,
       "draw_order": 205,
-      "folder": "Face",
-      "deformer_node": "head_angle_warp"
+      "folder": "Body",
+      "deformer_node": "body_warp"
     },
     {
       "id": "clothes",
@@ -38806,6 +38806,9 @@
       "parent_id": "root_warp",
       "child_ids": [
         "neck_under",
+        "raw_footwear",
+        "raw_legwear",
+        "raw_bottomwear",
         "clothes",
         "R_arm",
         "L_arm"
@@ -38853,10 +38856,10 @@
       "parent_id": "upper_warp",
       "child_ids": [],
       "bounds": [
-        464,
+        760,
         53,
-        1113,
-        1995
+        526,
+        602
       ],
       "pivot": [
         1016,
@@ -38873,9 +38876,6 @@
       "type": "warp",
       "parent_id": "head_z_warp",
       "child_ids": [
-        "raw_footwear",
-        "raw_legwear",
-        "raw_bottomwear",
         "R_ear_outer",
         "L_ear_outer",
         "face_base",
@@ -39701,7 +39701,7 @@
           1.0,
           1.0
         ],
-        "rotate": -5,
+        "rotate": -10,
         "opacity": 1
       }
     },
@@ -39719,7 +39719,7 @@
           1.0,
           1.0
         ],
-        "rotate": 5,
+        "rotate": 10,
         "opacity": 1
       }
     },
@@ -39861,7 +39861,7 @@
         ],
         "scale": [
           1.0,
-          1.012
+          1.002
         ],
         "rotate": 0,
         "opacity": 1
