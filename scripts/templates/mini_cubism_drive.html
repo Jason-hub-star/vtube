@@ -166,12 +166,12 @@ function convert(ch) {
     ParamMouthForm: clamp(avg(ch.mouthSmileLeft, ch.mouthSmileRight) - avg(ch.mouthFrownLeft, ch.mouthFrownRight), -1, 1),
     // SHOULDER-TRACK-001: 어깨 실측 1:1 (Pose) — 없으면 머리 기반 폴백.
     // BodyAngleX/Z는 스프링 소유라 BodyTrack 입력 채널로 보낸다 (스프링이 노이즈 필터+지연 추종).
-    ParamBodyTrackX: ch.shoulder_ok
+    ParamBodyTrackX: smoothTrack("x", ch.shoulder_ok
       ? clamp((ch.shoulder_cx / ch.shoulder_width) * 2.2, -1, 1)
-      : clamp(normalizeCentered(headYaw, -25, 25) * 0.65, -1, 1),
-    ParamBodyTrackZ: ch.shoulder_ok
+      : clamp(normalizeCentered(headYaw, -25, 25) * 0.65, -1, 1)),
+    ParamBodyTrackZ: smoothTrack("z", ch.shoulder_ok
       ? clamp(ch.shoulder_roll / 18, -1, 1)
-      : clamp(normalizeCentered(headRoll, -25, 25) * 0.4, -1, 1),
+      : clamp(normalizeCentered(headRoll, -25, 25) * 0.4, -1, 1)),
     ParamBodyAngleY: ch.shoulder_ok
       ? smoothBodyY(clamp((ch.shoulder_cy / ch.shoulder_width) * 14, -10, 10))
       : clamp(normalizeCentered(headPitch, -20, 20) * 10 * 0.45, -10, 10),
@@ -179,11 +179,21 @@ function convert(ch) {
   };
 }
 
-// 어깨 상하(BodyAngleY)는 직결이라 가벼운 평활로 Pose 지터 흡수 (X/Z는 스프링이 거른다)
+// 어깨 상하(BodyAngleY)는 직결이라 가벼운 평활로 Pose 지터 흡수
 let bodyYState = 0;
 function smoothBodyY(v) {
   bodyYState = bodyYState * 0.7 + v * 0.3;
   return bodyYState;
+}
+
+// 어깨 좌우/기울기(BodyTrackX/Z): 데드존(±5% 잔떨림 무시) + EMA.
+// 스프링 필터만으로는 게인 2.2 고주파 지터가 남는다 (004 H2 주인님 실측: 어깨 좌우 떨림) —
+// 데드존이 정지 시 미세 노이즈를 0으로, EMA(~3프레임)가 이동 중 떨림을 거른다. 큰 동작 1:1 유지.
+const trackState = { x: 0, z: 0 };
+function smoothTrack(axis, v) {
+  const target = Math.sign(v) * remapDeadzone(Math.abs(v), 0.05, 1);
+  trackState[axis] = trackState[axis] * 0.7 + target * 0.3;
+  return trackState[axis];
 }
 
 async function probe() {
