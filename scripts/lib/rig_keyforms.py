@@ -150,6 +150,14 @@ def build_keyform_bindings() -> list[dict]:
         binding("ParamMouthOpenY", 1, "mouth_warp", ty=1.6, sy=1.02),
         binding("ParamMouthForm", -1, "mouth_warp", ty=0.5, sx=0.96, sy=0.99),
         binding("ParamMouthForm", 1, "mouth_warp", ty=-0.3, sx=1.08, sy=1.01),
+        # ANGLE-FORESHORTEN-001 라운드2: 2D 착시 정교화 (Izumi 비대칭 원근 근사).
+        # 먼 눈 좁히기 — 돌아가는 쪽(먼) 눈만 가로 압축. +30=eye_R(image-left)이 먼 눈,
+        # -30=eye_L(image-right)이 먼 눈. 회전 방향따라 비대칭이 뒤집힘(8062 캡처 좌우 확인).
+        binding("ParamAngleX", 30, "eye_R_warp", sx=0.82),
+        binding("ParamAngleX", -30, "eye_L_warp", sx=0.82),
+        # 입 패럴랙스 — 입이 머리 윤곽(±22)보다 더 쏠림(±6 추가) = 앞면 입체 단서.
+        binding("ParamAngleX", 30, "mouth_warp", tx=6),
+        binding("ParamAngleX", -30, "mouth_warp", tx=-6),
     ]
 
 
