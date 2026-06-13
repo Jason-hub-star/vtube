@@ -123,7 +123,7 @@ def main() -> int:
     x0, y0, x1, y1 = mask_bbox(mask)
     scale = ((mx1 - mx0) * SCALE_MARGIN) / (x1 - x0)
     dst_x = (mx0 + mx1) / 2
-    OVERLAP = 8  # 미소선이 입안 윗경계를 덮는 겹침 — 윗입술↔입안 이음새 0
+    OVERLAP = 11  # 미소선이 입안 윗경계를 덮는 겹침 — 윗입술↔입안 이음새 0 (미소곡선 입안은 중앙이 살짝 처져 8px로는 3px 갭)
     iy = np.where(parts_mask["interior"].any(axis=1))[0]
     interior_top_cell = float(iy.min()) if len(iy) else float(y0)
     paste_y = round((line_bottom_y - OVERLAP) - (interior_top_cell - y0) * scale)

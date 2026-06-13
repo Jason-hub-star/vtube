@@ -1,93 +1,30 @@
 {
-  "generated_at": "2026-06-12T10:21:09.059335+00:00",
+  "generated_at": "2026-06-13T10:05:20.966198+00:00",
   "model": "gpt-image-2",
   "quality": "high",
   "character": "uebel (Sousou no Frieren)",
   "requests": [
-    {
-      "kind": "master",
-      "attempt": 0,
-      "fallback_used": false,
-      "quality": "high",
-      "usage": {
-        "input_tokens": 127,
-        "input_tokens_details": {
-          "image_tokens": 0,
-          "text_tokens": 127
-        },
-        "output_tokens": 7024,
-        "output_tokens_details": {
-          "image_tokens": 7024,
-          "text_tokens": 0
-        },
-        "total_tokens": 7151
-      },
-      "estimated_usd": 0.2114,
-      "out": "experiments/autorig-character-004/generated/master.png"
-    },
     {
       "kind": "mouth",
       "attempt": 0,
       "fallback_used": false,
       "quality": "high",
       "usage": {
-        "input_tokens": 1166,
+        "input_tokens": 1337,
         "input_tokens_details": {
           "image_tokens": 1024,
-          "text_tokens": 142
+          "text_tokens": 313
         },
         "output_tokens": 7024,
         "output_tokens_details": {
           "image_tokens": 7024,
           "text_tokens": 0
         },
-        "total_tokens": 8190
+        "total_tokens": 8361
       },
-      "estimated_usd": 0.2196,
+      "estimated_usd": 0.2205,
       "out": "experiments/autorig-character-004/generated/mouth.png"
-    },
-    {
-      "kind": "eyes",
-      "attempt": 0,
-      "fallback_used": false,
-      "quality": "high",
-      "usage": {
-        "input_tokens": 1202,
-        "input_tokens_details": {
-          "image_tokens": 1024,
-          "text_tokens": 178
-        },
-        "output_tokens": 7024,
-        "output_tokens_details": {
-          "image_tokens": 7024,
-          "text_tokens": 0
-        },
-        "total_tokens": 8226
-      },
-      "estimated_usd": 0.2198,
-      "out": "experiments/autorig-character-004/generated/eyes.png"
-    },
-    {
-      "kind": "accent",
-      "attempt": 0,
-      "fallback_used": false,
-      "quality": "high",
-      "usage": {
-        "input_tokens": 1127,
-        "input_tokens_details": {
-          "image_tokens": 1024,
-          "text_tokens": 103
-        },
-        "output_tokens": 7024,
-        "output_tokens_details": {
-          "image_tokens": 7024,
-          "text_tokens": 0
-        },
-        "total_tokens": 8151
-      },
-      "estimated_usd": 0.2194,
-      "out": "experiments/autorig-character-004/generated/accent.png"
     }
   ],
-  "total_estimated_usd": 0.8702
+  "total_estimated_usd": 0.2205
 }
