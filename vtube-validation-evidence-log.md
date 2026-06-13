@@ -5622,3 +5622,25 @@ notes:
   - 이 정비는 입 풀런(MOUTH-LIP-PARTS, H2 대기)과 독립 — 입 H2 판정 후 정비 코드로 통합 풀런
   - 교훈 박제: 캐릭터 특성은 "생성 입력"으로 받아야 한다. 입 5번 삽질은 사후 리깅 튜닝으로 때운 방법론 미스.
 ```
+
+## AUTORIG-ANGLE-SWAP-001
+
+```yaml
+id: AUTORIG-ANGLE-SWAP-001
+date: 2026-06-13
+owner: Claude (Opus)
+status: VERIFIED_DIRECTION_RUNTIME_RENDER
+hypothesis: 위벨 끄덕임/옆모습이 의사3D 격자라 평면적 — 공식은 39워프·143키폼 메시 변형이라 자동리깅 불가. 우리 강점(AI 생성 쌈)으로 각도별 작화를 생성해 ParamAngleX opacity 스왑하면 옆모습 회전이 런타임 코드 변경 없이 된다. (주인님 "각도별 PNG 생성, 애초에 png 아닌가" 통찰 → 웹검색으로 IPAdapter/ControlNet 업계표준 확인했으나 gpt-image-2만으로 충분)
+output:
+  - 각도 시트 생성: gpt-image-2 5각도(정면~좌측면 20도간격) $0.22, 정합 완벽 (angle_test/angle5_sheet.png)
+  - scripts/extract_angle_sheet.py (신규 — 1×5 셀분리, 가장자리연결 흰배경 제거, 머리중심 정렬)
+  - scripts/build_angle_swap_project.py (신규 — 5 sprite 파트 + ParamAngleX opacity 스왑, 입 4상태 curve 이식)
+  - experiments/autorig-character-004/angle_swap_project (미니 프로젝트)
+metric:
+  - 자체 런타임 헤드리스 캡처(8064): ParamAngleX 0→-40→-80에서 정면→3/4→완전측면 회전 작동, 콘솔에러 0
+  - 런타임(rig.js partOpacity, draw_pixi sprite 폴백) 코드 변경 0 — 임의 파라미터 opacity 곡선·메시없는 sprite 이미 지원
+notes:
+  - 핵심 입증: 메시 변형으로 불가능한 옆모습이 각도 작화 스왑으로 자체 런타임에서 회전
+  - 범위: 좌향 5각도·표정없음 검증 전용. 후속: 우향 미러 / 끄덕임 상하(AngleY) / 하이브리드(작은각도 메시+큰각도 작화) / 본체 통합
+  - 도구 결론: gpt-image-2 다각도 시트가 최적 (SV3D/Zero123 사물용 부적합, Anisora는 연속회전 필요시 다음카드)
+```
