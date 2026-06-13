@@ -397,11 +397,13 @@ def build_physics_profiles(use_hair_chunks: bool, bbox_by_id: dict) -> list[dict
         },
         {
             "id": "back_hair_heavy_spring",
-            "targets": ["hair_back_L", "hair_back_R"] + (["shoulder_hair"] if "shoulder_hair" in bbox_by_id else []),
+            # ANGLE-FORESHORTEN-001: shoulder_hair는 upper_warp(몸추종)로 이동했으므로 머리카락
+            # 물리에서 제외 — 디포머(몸)/물리(머리) 모순 방지. 어깨 앵커라 정적이 자연스럽다.
+            "targets": ["hair_back_L", "hair_back_R"],
             "anchor": "top_center", "mass": 1.4, "stiffness": 0.08, "damping": 0.88, "drag": 0.04,
             "max_offset": [24, 34], "rotate_factor": 0.03,
             "input_weights": {"ParamAngleX": [-18, 8], "ParamAngleY": [0, 8], "ParamBodyAngleX": [-6, 3]},
-            "part_weights": {"hair_back_L": 1.0, "hair_back_R": 1.0, "shoulder_hair": 0.7},
+            "part_weights": {"hair_back_L": 1.0, "hair_back_R": 1.0},
         },
         # CLOTH-PHYS-001: 옷 드레이프 — 공식 스커트 그룹 실측 정박 (all57 분석):
         # 입력 = BodyAngleX(X)+BodyAngleZ(Angle) weight 100/100 (Hiyori·koharu·tsumiki·miara·Rice 6모델 균일).

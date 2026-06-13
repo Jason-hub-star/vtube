@@ -41305,8 +41305,7 @@
       "id": "back_hair_heavy_spring",
       "targets": [
         "hair_back_L",
-        "hair_back_R",
-        "shoulder_hair"
+        "hair_back_R"
       ],
       "anchor": "top_center",
       "mass": 1.4,
@@ -41334,8 +41333,7 @@
       },
       "part_weights": {
         "hair_back_L": 1.0,
-        "hair_back_R": 1.0,
-        "shoulder_hair": 0.7
+        "hair_back_R": 1.0
       }
     },
     {
