@@ -93,6 +93,12 @@ def build_keyform_bindings() -> list[dict]:
         # 실루엣 고정 + 내부 시어 — 004 H2 "기준점이 목" 판정). 피벗 = 턱 관절.
         binding_r("ParamAngleZ", -30, "head_z_warp", rotate=-10),
         binding_r("ParamAngleZ", 30, "head_z_warp", rotate=10),
+        # ANGLE-FORESHORTEN-001: 돌릴 때 머리 윤곽을 가로 12% 압축 = 원근 단축(foreshortening).
+        # edge-pin head_angle_warp는 윤곽 고정이라 sx 무효 → 비핀 head_z_warp(얼굴+앞머리)에
+        # 부여, back_hair_warp도 동기 압축(아래)해야 앞/뒷머리 이음새 유지. 어깨가닥은 압축 제외
+        # (deformer_of → upper_warp). Izumi 분석 근거(각도=메시 원근변형). 8062 캡처·정합 PASS 확인.
+        binding("ParamAngleX", -30, "head_z_warp", sx=0.88),
+        binding("ParamAngleX", 30, "head_z_warp", sx=0.88),
         # CHAIN-001 upper_warp = 공식 首の位置: 몸 스웨이·호흡이 머리·목·뒷머리를 통째로 운반
         # (진폭은 body_warp와 동일 — 목 경계 상대 슬립 0)
         # BodyAngleX 운반(tx)은 빌더가 sway_px로 부여 (몸 진자 회전의 접합부 실효 변위와 결합)
@@ -100,8 +106,10 @@ def build_keyform_bindings() -> list[dict]:
         binding("ParamBodyAngleY", 10, "upper_warp", ty=8),
         binding("ParamBreath", 1, "upper_warp", ty=-2),
         # CHAIN-001 뒷머리 감쇠 추종 (head ±22의 60%) + 갸우뚱 호 + 흔들림 파라미터
-        binding("ParamAngleX", -30, "back_hair_warp", tx=-13),
-        binding("ParamAngleX", 30, "back_hair_warp", tx=13),
+        # ANGLE-FORESHORTEN-001: 뒷머리도 head_z_warp와 동기 가로압축(sx=0.88) — 안 하면
+        # 앞머리·얼굴만 좁아져 뒷머리 이음새 29px 터짐(정합 FAIL). 둘 다 턱관절 피벗이라 동축.
+        binding("ParamAngleX", -30, "back_hair_warp", tx=-13, sx=0.88),
+        binding("ParamAngleX", 30, "back_hair_warp", tx=13, sx=0.88),
         binding("ParamAngleY", -30, "back_hair_warp", ty=-7),
         binding("ParamAngleY", 30, "back_hair_warp", ty=7),
         # HEAD-Z-PIVOT-001 후속 (RIG-COHESION-001 실측: ±5는 앞/뒷머리 29px 어긋남):

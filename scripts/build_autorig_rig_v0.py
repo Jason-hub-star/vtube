@@ -74,7 +74,9 @@ def deformer_of(pid: str) -> str:
     if pid.startswith("hair_back_"):
         return "back_hair_warp"
     if pid == "shoulder_hair":
-        return "back_hair_warp"  # clothes에서 분리한 어깨 가닥 — 머리 본체와 함께 움직인다
+        # ANGLE-FORESHORTEN-001: 어깨 가닥은 어깨에 닿아있어 머리 foreshortening(sx)에
+        # 끌려가면 옷과 22~41px 뜯어진다(정합 FAIL). 몸추종 upper_warp로 빼서 압축 제외.
+        return "upper_warp"
     if "hair" in pid:
         return "root_warp"  # 통짜 hair (덩어리 미사용 시)
     if pid == "neck_under":

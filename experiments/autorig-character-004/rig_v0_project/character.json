@@ -174,7 +174,7 @@
       "alpha_coverage": 0.000387,
       "draw_order": 212,
       "folder": "Hair",
-      "deformer_node": "back_hair_warp"
+      "deformer_node": "upper_warp"
     },
     {
       "id": "R_arm",
@@ -38488,7 +38488,9 @@
       "id": "upper_warp",
       "type": "warp",
       "parent_id": "root_warp",
-      "child_ids": [],
+      "child_ids": [
+        "shoulder_hair"
+      ],
       "bounds": [
         725,
         13,
@@ -38704,8 +38706,7 @@
       "parent_id": "root_warp",
       "child_ids": [
         "hair_back_L",
-        "hair_back_R",
-        "shoulder_hair"
+        "hair_back_R"
       ],
       "bounds": [
         727,
@@ -39281,7 +39282,7 @@
           0.0
         ],
         "scale": [
-          1.0,
+          0.88,
           1.0
         ],
         "rotate": 0,
@@ -39299,7 +39300,7 @@
           0.0
         ],
         "scale": [
-          1.0,
+          0.88,
           1.0
         ],
         "rotate": 0,
@@ -40092,6 +40093,42 @@
         ],
         "scale": [
           1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleX",
+      "key_value": -30,
+      "target_id": "head_z_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.88,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleX",
+      "key_value": 30,
+      "target_id": "head_z_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.88,
           1.0
         ],
         "rotate": 0,

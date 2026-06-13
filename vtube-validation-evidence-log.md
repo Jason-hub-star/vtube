@@ -5669,3 +5669,26 @@ notes:
   - 알려진 한계: 작화는 머리+가슴 크롭 → 측면 회전 시 하체/치마 사라짐(버스트업 뷰 무방). changedRatio는 neutral 포즈 부재로 0(무의미) — 판정은 이미지로
   - 후속(미검증): 끄덕임 AngleY 시트 / 하이브리드(작은각도 메시+큰각도 작화) / 트래킹 yaw 게인 ±80 확장(웹캠 풀턴 도달)
 ```
+
+## AUTORIG-ANGLE-FORESHORTEN-001
+
+```yaml
+id: AUTORIG-ANGLE-FORESHORTEN-001
+date: 2026-06-13
+owner: Claude (Opus)
+status: VERIFIED_RUNTIME_RENDER
+hypothesis: 머리 회전(ParamAngleX ±30)이 평면적인 건 edge-pin 내부시어+평행이동(tx)뿐이고 원근 단축(foreshortening)이 없어서다. Izumi 분석(각도=메시 원근변형, 顔/頬/鼻/耳 분리) 근거로, 돌릴 때 머리 윤곽을 가로 압축하면 입체감이 오른다.
+output:
+  - rig_keyforms.build_keyform_bindings: head_z_warp(비핀, 얼굴+앞머리) AngleX ±30 sx=0.88 추가, back_hair_warp 동기 sx=0.88(둘 다 턱관절 피벗 동축)
+  - build_autorig_rig_v0.deformer_of: shoulder_hair를 back_hair_warp→upper_warp로 이동(머리 압축 제외)
+  - 비교 이미지: experiments/autorig-character-004/reports/foreshorten_experiment/ (01 baseline, 03 A1 final)
+metric:
+  - 8062 헤드리스 캡처(pose_sweep): ±30에서 머리 윤곽 가로 압축 = 회전 입체감↑, 중립(0) 풀폭 무회귀, 좌우 대칭
+  - 정합 검사(analyze_rig_cohesion --check): PASS (rows 204, fail 0), pose_sweep PASS score 175
+  - edge-pin head_angle_warp에 sx는 무효(윤곽 고정) → 비핀 부모에 부여해야 함을 실증
+notes:
+  - 핵심 시행착오: head_z_warp만 sx → 앞머리/얼굴만 좁아져 뒷머리 이음새 29px FAIL. back_hair_warp 동기 sx로 해소.
+  - 그 다음 shoulder_hair(어깨가닥)가 머리와 같이 압축돼 옷과 22~41px FAIL → upper_warp로 분리(어깨 앵커 유지). 정합 게이트가 두 단계 다 옳게 잡음.
+  - 한계: 자동리깅의 균일 sx는 대칭 압축(Izumi의 비대칭 손키폼 원근과 다름). ±30 내 입체감 개선이지 옆모습은 아님(옆모습은 ABANDONED).
+  - 후속 후보: 볼(頬) 파츠 분리(비대칭 원근), 눈썹 모양변형, 팔 리깅.
+```
