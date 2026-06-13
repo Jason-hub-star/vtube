@@ -27,14 +27,14 @@ from lib.vtube_io import ROOT, now_iso  # noqa: E402
 
 POSES = [
     {"name": "front_0", "parameters": {"ParamAngleX": 0}},
-    {"name": "front_mouth_open", "parameters": {"ParamAngleX": 0, "ParamMouthOpenY": 1}},
-    {"name": "L_live_14", "parameters": {"ParamAngleX": -14}},
-    {"name": "L_cross_20", "parameters": {"ParamAngleX": -20}},
-    {"name": "L_art_40", "parameters": {"ParamAngleX": -40}},
-    {"name": "L_art_80", "parameters": {"ParamAngleX": -80}},
-    {"name": "R_cross_20", "parameters": {"ParamAngleX": 20}},
-    {"name": "R_art_40", "parameters": {"ParamAngleX": 40}},
-    {"name": "R_art_80", "parameters": {"ParamAngleX": 80}},
+    {"name": "L20_live_mouth", "parameters": {"ParamAngleX": -20, "ParamMouthOpenY": 1}},
+    {"name": "L26_live_edge", "parameters": {"ParamAngleX": -26}},
+    {"name": "L40_art", "parameters": {"ParamAngleX": -40}},
+    {"name": "L60_art", "parameters": {"ParamAngleX": -60}},
+    {"name": "L80_art", "parameters": {"ParamAngleX": -80}},
+    {"name": "R20_live", "parameters": {"ParamAngleX": 20}},
+    {"name": "R40_art", "parameters": {"ParamAngleX": 40}},
+    {"name": "R80_art", "parameters": {"ParamAngleX": 80}},
 ]
 VIEWPORT = {"name": "desktop", "width": 1440, "height": 1000}
 

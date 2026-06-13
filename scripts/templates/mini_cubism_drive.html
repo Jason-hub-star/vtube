@@ -150,12 +150,31 @@ function rawChannels(result, poseResult, nowMs) {
   };
 }
 
+// ANGLE-SWAP-002: ParamAngleX를 프로젝트 범위(±30 원본 / ±80 각도작화 통합)에 맞춰 매핑.
+// 하이브리드 이즈드 곡선: 중앙 작은 회전은 공식 ±30 느낌(gain~1.2/deg, 라이브 메시밴드),
+// 의도적 큰 회전만 가속해 max(±80) 옆모습 작화 도달. 레퍼런스 프로브(평소 중앙·가끔 큰턴) 근거.
+function angleXMax() {
+  const p = frame?.contentWindow?.__miniProject?.parameters?.find((x) => x.id === "ParamAngleX");
+  return p && Number.isFinite(p.max) ? Math.abs(p.max) : 30;
+}
+let angleXState = 0;
+function mapAngleX(yawDeg) {
+  const axMax = angleXMax();
+  const n = normalizeCentered(clamp(yawDeg, -25, 25), -25, 25);  // [-1,1]
+  const a = Math.abs(n), n0 = 0.45, liveDeg = Math.min(14, axMax);
+  const out = a <= n0 ? (a / n0) * liveDeg
+                      : liveDeg + ((a - n0) / (1 - n0)) * (axMax - liveDeg);
+  const target = Math.sign(n) * clamp(out, 0, axMax);
+  angleXState = angleXState * 0.7 + target * 0.3;  // 경량 EMA(~3프레임) — 증폭 구간 지터 억제
+  return clamp(angleXState, -axMax, axMax);
+}
+
 function convert(ch) {
   const headYaw = clamp(ch.head_yaw, -25, 25);
   const headPitch = clamp(ch.head_pitch, -20, 20);
   const headRoll = clamp(ch.head_roll, -25, 25);
   return {
-    ParamAngleX: clamp(normalizeCentered(headYaw, -25, 25) * 30, -30, 30),
+    ParamAngleX: mapAngleX(headYaw),
     ParamAngleY: clamp(normalizeCentered(headPitch, -20, 20) * 30, -30, 30),
     ParamAngleZ: clamp(normalizeCentered(headRoll, -25, 25) * 30, -30, 30),
     ParamEyeLOpen: clamp(1 - ch.eyeBlinkLeft, 0, 1),

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-13T13:13:40.092754+00:00",
+  "generated_at": "2026-06-13T13:39:39.358586+00:00",
   "project": "/Users/family/jason/Vtube/experiments/autorig-character-004/rig_v0_angle_project",
-  "url": "http://127.0.0.1:55839/",
+  "url": "http://127.0.0.1:56277/",
   "poses": [
     {
       "pose": "front_0",
@@ -12,69 +12,69 @@
       "screenshot": "desktop_front_0.png"
     },
     {
-      "pose": "front_mouth_open",
+      "pose": "L20_live_mouth",
       "params": {
-        "ParamAngleX": 0,
+        "ParamAngleX": -20,
         "ParamMouthOpenY": 1
       },
       "changedRatio": 0,
-      "screenshot": "desktop_front_mouth_open.png"
+      "screenshot": "desktop_L20_live_mouth.png"
     },
     {
-      "pose": "L_live_14",
+      "pose": "L26_live_edge",
       "params": {
-        "ParamAngleX": -14
+        "ParamAngleX": -26
       },
       "changedRatio": 0,
-      "screenshot": "desktop_L_live_14.png"
+      "screenshot": "desktop_L26_live_edge.png"
     },
     {
-      "pose": "L_cross_20",
-      "params": {
-        "ParamAngleX": -20
-      },
-      "changedRatio": 0,
-      "screenshot": "desktop_L_cross_20.png"
-    },
-    {
-      "pose": "L_art_40",
+      "pose": "L40_art",
       "params": {
         "ParamAngleX": -40
       },
       "changedRatio": 0,
-      "screenshot": "desktop_L_art_40.png"
+      "screenshot": "desktop_L40_art.png"
     },
     {
-      "pose": "L_art_80",
+      "pose": "L60_art",
+      "params": {
+        "ParamAngleX": -60
+      },
+      "changedRatio": 0,
+      "screenshot": "desktop_L60_art.png"
+    },
+    {
+      "pose": "L80_art",
       "params": {
         "ParamAngleX": -80
       },
       "changedRatio": 0,
-      "screenshot": "desktop_L_art_80.png"
+      "screenshot": "desktop_L80_art.png"
     },
     {
-      "pose": "R_cross_20",
+      "pose": "R20_live",
       "params": {
         "ParamAngleX": 20
       },
       "changedRatio": 0,
-      "screenshot": "desktop_R_cross_20.png"
+      "screenshot": "desktop_R20_live.png"
     },
     {
-      "pose": "R_art_40",
+      "pose": "R40_art",
       "params": {
         "ParamAngleX": 40
       },
       "changedRatio": 0,
-      "screenshot": "desktop_R_art_40.png"
+      "screenshot": "desktop_R40_art.png"
     },
     {
-      "pose": "R_art_80",
+      "pose": "R80_art",
       "params": {
         "ParamAngleX": 80
       },
       "changedRatio": 0,
-      "screenshot": "desktop_R_art_80.png"
+      "screenshot": "desktop_R80_art.png"
     }
   ]
 }

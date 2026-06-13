@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-06-13T13:33:09.169788+00:00",
+  "parts_dir": "experiments/autorig-character-004/angle_swap_project/parts",
+  "written": [
+    "head_angle_2_lid.png",
+    "head_angle_4_lid.png"
+  ],
+  "method": "절차적 눈꺼풀(피부색 채움+속눈썹선), ParamEyeLOpen 역수 opacity 스왑",
+  "cells": [
+    {
+      "part": "head_angle_2.png",
+      "eye_detected": true,
+      "eye_bbox": [
+        871,
+        526,
+        1040,
+        618
+      ],
+      "skin_rgb": [
+        98,
+        101,
+        64
+      ],
+      "lid": "head_angle_2_lid.png"
+    },
+    {
+      "part": "head_angle_4.png",
+      "eye_detected": true,
+      "eye_bbox": [
+        912,
+        556,
+        931,
+        597
+      ],
+      "skin_rgb": [
+        233,
+        203,
+        183
+      ],
+      "lid": "head_angle_4_lid.png"
+    }
+  ]
+}

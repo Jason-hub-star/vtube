@@ -1,5 +1,5 @@
 {
-  "url": "http://127.0.0.1:55839/",
+  "url": "http://127.0.0.1:56277/",
   "outDir": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/angle_swap_capture/screenshots",
   "resultPath": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/angle_swap_capture/screenshots/playwright_result.json",
   "poses": [
@@ -10,50 +10,50 @@
       }
     },
     {
-      "name": "front_mouth_open",
+      "name": "L20_live_mouth",
       "parameters": {
-        "ParamAngleX": 0,
+        "ParamAngleX": -20,
         "ParamMouthOpenY": 1
       }
     },
     {
-      "name": "L_live_14",
+      "name": "L26_live_edge",
       "parameters": {
-        "ParamAngleX": -14
+        "ParamAngleX": -26
       }
     },
     {
-      "name": "L_cross_20",
-      "parameters": {
-        "ParamAngleX": -20
-      }
-    },
-    {
-      "name": "L_art_40",
+      "name": "L40_art",
       "parameters": {
         "ParamAngleX": -40
       }
     },
     {
-      "name": "L_art_80",
+      "name": "L60_art",
+      "parameters": {
+        "ParamAngleX": -60
+      }
+    },
+    {
+      "name": "L80_art",
       "parameters": {
         "ParamAngleX": -80
       }
     },
     {
-      "name": "R_cross_20",
+      "name": "R20_live",
       "parameters": {
         "ParamAngleX": 20
       }
     },
     {
-      "name": "R_art_40",
+      "name": "R40_art",
       "parameters": {
         "ParamAngleX": 40
       }
     },
     {
-      "name": "R_art_80",
+      "name": "R80_art",
       "parameters": {
         "ParamAngleX": 80
       }

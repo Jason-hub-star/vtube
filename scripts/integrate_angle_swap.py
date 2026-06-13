@@ -37,18 +37,22 @@ CANVAS = 2048
 HEAD_BAND_PX = 220        # 머리꼭대기 아래 절대 밴드(머리 폭/중심 실측용)
 MIN_COMPONENT_RATIO = 0.05  # 최대 컴포넌트 대비 이 비율 미만 알파 덩어리는 제거(유령 파편)
 ANGLE_MAX = 80.0          # 완전 측면 (정면=0). 좌=-, 우=+
-LIVE_HALF = 14.0          # 라이브 리그 풀가시 반폭 (|X|≤14 → 표정 살아있음)
-EPS = 1.5                 # 밴드 경계 램프(도) — 작을수록 빠른 스왑, 유령 최소
-# 작화 밴드 경계(절대각): 라이브↔a1=16, a1↔a2=32, a2↔a3=48, a3↔a4=64, a4 끝=80
-BAND_EDGES = [16.0, 32.0, 48.0, 64.0, ANGLE_MAX]
+# 라이브 변형 리그(본체 메시 ParamAngleX 키폼 ±30)를 풀범위로 살림 — 평소 회전=살아있는
+# 변형+표정. 작화는 메시가 못 가는 극단(±34 너머)에만. 사진스왑 체감 최소화.
+LIVE_FULL = 26.0          # 라이브 풀가시 반폭 (|X|≤26 → 메시 변형+표정 라이브)
+LIVE_FADE = 34.0          # 이 너머 라이브 0 → 작화가 받음
+EPS = 1.5                 # 밴드 경계 램프(도)
+# 작화: 극단 각도만 (40/60/80°). 밴드 경계(절대각): 라이브↔a2=34, a2↔a3=50, a3↔a4=66, a4=80
+ARTWORK_ANGLES = [2, 3, 4]            # a1(20°)은 라이브 메시가 커버 → 작화 미사용
+ARTWORK_EDGES = [LIVE_FADE, 50.0, 66.0, ANGLE_MAX]
 ANGLE_DRAW_BASE = 800     # 본체 top draw_order(712)보다 위 → 옆모습이 정면 위에 덮임
 
 
 def live_crossfade_curve(pid: str) -> dict:
-    """라이브 파트: 중앙 ±LIVE_HALF 풀가시, ±16에서 0 (양방향 대칭)."""
-    h = LIVE_HALF
-    pts = [(-ANGLE_MAX, 0.0), (-(h + EPS), 0.0), (-h, 1.0),
-           (h, 1.0), (h + EPS, 0.0), (ANGLE_MAX, 0.0)]
+    """라이브 파트: 중앙 ±LIVE_FULL 풀가시, ±LIVE_FADE에서 0 (양방향 대칭)."""
+    f, z = LIVE_FULL, LIVE_FADE
+    pts = [(-ANGLE_MAX, 0.0), (-z, 0.0), (-f, 1.0),
+           (f, 1.0), (z, 0.0), (ANGLE_MAX, 0.0)]
     return curve(pid, "ParamAngleX", pts)
 
 
@@ -95,15 +99,15 @@ def align_angle_png(src: Path, scale: float, dst_anchor: tuple[float, float]) ->
 
 def build_angle_parts(angle_parts_dir: Path, out_parts: Path,
                       scale: float, dst_anchor: tuple[float, float]) -> tuple[list, list, list]:
-    """좌4(head_angle_1..4)+우4(head_angle_right_1..4) sprite 파트/메시/밴드 곡선.
-    각 작화를 본체 머리 앵커·크기에 정렬하고 유령 파편 제거 후 배치."""
+    """극단 각도 작화(좌 a2..a4 + 우 미러)만 sprite 파트로. a1(20°)은 라이브 메시가 커버.
+    각 작화를 본체 머리 앵커·크기에 정렬하고 유령 파편 제거 후 ±34 너머 밴드에 배치."""
     parts, meshes, opacity = [], [], []
     order = ANGLE_DRAW_BASE
     # (접두, 부호, 소스파일포맷)
     sides = [("angle_left", -1.0, "head_angle_{}.png"),
              ("angle_right", +1.0, "head_angle_right_{}.png")]
     for prefix, sign, fmt in sides:
-        for k in range(1, 5):  # a1..a4
+        for j, k in enumerate(ARTWORK_ANGLES):  # a2,a3,a4 → 밴드 슬롯 0,1,2
             src = angle_parts_dir / fmt.format(k)
             if not src.exists():
                 raise SystemExit(f"각도 작화 없음: {src} — extract/mirror 먼저")
@@ -119,7 +123,7 @@ def build_angle_parts(angle_parts_dir: Path, out_parts: Path,
                 "deformer_node": None})
             meshes.append({"part_id": pid, "vertices": [], "triangles": [], "uvs": [],
                            "mesh_path": f"meshes/{pid}.json"})
-            lo, hi = BAND_EDGES[k - 1], BAND_EDGES[k]   # |X| 밴드
+            lo, hi = ARTWORK_EDGES[j], ARTWORK_EDGES[j + 1]   # |X| 밴드
             opacity.append(band_curve(pid, sign * hi, sign * lo) if sign < 0
                            else band_curve(pid, sign * lo, sign * hi))
     return parts, meshes, opacity
@@ -185,11 +189,11 @@ def main() -> int:
     char["generated_at"] = now_iso()
     char.setdefault("notes", []).append(
         "ANGLE-SWAP-002 통합 — 좌4+우4 각도 작화 sprite, ParamAngleX ±80, "
-        f"라이브밴드 |X|≤{LIVE_HALF} 크로스페이드, 작화밴드 {BAND_EDGES}")
+        f"라이브밴드 |X|≤{LIVE_FULL}(±{LIVE_FADE} 페이드)=메시변형+표정, 작화밴드 {ARTWORK_EDGES}(극단 40/60/80°)")
     write_json(out / "character.json", char)
 
     print(f"통합 완료: {len(live_ids)}라이브 + {len(angle_parts_out)}작화 = {len(char['parts'])}파트")
-    print(f"  ParamAngleX ±{ANGLE_MAX:.0f}, 라이브밴드 ±{LIVE_HALF:.0f}, 작화밴드 {BAND_EDGES}")
+    print(f"  ParamAngleX ±{ANGLE_MAX:.0f}, 라이브밴드 ±{LIVE_FULL:.0f}(±{LIVE_FADE:.0f}페이드), 작화밴드 {ARTWORK_EDGES}")
     print(f"  띄우기: python3 scripts/mini_cubism_preview_server.py --project {args.out} --port 8065")
     return 0
 
