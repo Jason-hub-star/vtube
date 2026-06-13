@@ -123,10 +123,12 @@ def main() -> int:
     x0, y0, x1, y1 = mask_bbox(mask)
     scale = ((mx1 - mx0) * SCALE_MARGIN) / (x1 - x0)
     dst_x = (mx0 + mx1) / 2
-    OVERLAP = 11  # 미소선이 입안 윗경계를 덮는 겹침 — 윗입술↔입안 이음새 0 (미소곡선 입안은 중앙이 살짝 처져 8px로는 3px 갭)
+    # OVERLAP 자동 (AUTORIG-TEMPLATE-001): 미소선 높이에 비례 — 입 모양·크기 다른 캐릭터 적응.
+    # 미소선이 입안 윗경계를 덮는 겹침 (윗입술↔입안 이음새 0). 위벨 높이 20px → 11px (무회귀).
+    overlap = max(4, round((my1 - my0) * 0.55))
     iy = np.where(parts_mask["interior"].any(axis=1))[0]
     interior_top_cell = float(iy.min()) if len(iy) else float(y0)
-    paste_y = round((line_bottom_y - OVERLAP) - (interior_top_cell - y0) * scale)
+    paste_y = round((line_bottom_y - overlap) - (interior_top_cell - y0) * scale)
     interior_fill = np.median(rgb[interior_dark], axis=0).astype(np.uint8)
 
     written, part_boxes = [], {}
@@ -156,7 +158,7 @@ def main() -> int:
         # anchor_y = 입안 상단(미소선 바로 아래) — H(v) 세로 스케일의 고정점.
         # 미소선 중심이 아니라 입안 상단이어야 윗부분이 고정되고 아래로만 펼쳐진다 = 윗입술 고정
         # (중심 앵커는 입안이 위로도 올라가 미소선을 어둡게 덮어 미소선이 묻혔다 — H2 5차 진단).
-        "scale": round(scale, 5), "anchor_y": round(line_bottom_y - OVERLAP), "split_y_cell": split_y,
+        "scale": round(scale, 5), "anchor_y": round(line_bottom_y - overlap), "split_y_cell": split_y,
         "mouth_line_bbox": [mx0, my0, mx1, my1], "parts": part_boxes, "written": written,
     })
     print(f"mouth_parts: {written} -> {rel(out)}")

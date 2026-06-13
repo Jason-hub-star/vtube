@@ -23,7 +23,9 @@ from PIL import Image
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from lib.vtube_io import ROOT, now_iso, rel, write_json  # noqa: E402
 
-NECK_HEIGHT_PX = 130   # 턱선 아래 목 기둥 높이 (이 아래는 가슴 = clothes 잔류)
+# AUTORIG-TEMPLATE-001: 목 높이를 입폭(얼굴 크기 대리)에 비례 — 미니/거구 캐릭터 적응.
+# 위벨 입폭 107 × 1.2 ≈ 128 ≈ 기존 고정 130 (무회귀 근사).
+NECK_HEIGHT_RATIO = 1.2
 NECK_HALF_W_RATIO = 0.85  # 입폭 대비 목 반폭 (목 측면 윤곽 포함하도록 넉넉히)
 TAIL_PX = 28           # 세로 꼬리 (틈 커버)
 
@@ -52,7 +54,8 @@ def main() -> int:
     search = master[int(my1 + 12) : int(my1 + mouth_w), int(mouth_cx - mouth_w * 0.25) : int(mouth_cx + mouth_w * 0.25), :3]
     chin_line_y = int(my1 + 12 + int(np.argmin(search.mean(axis=(1, 2)))))
 
-    cut_y = chin_line_y + NECK_HEIGHT_PX  # 목/가슴 경계
+    neck_height = round(mouth_w * NECK_HEIGHT_RATIO)
+    cut_y = chin_line_y + neck_height  # 목/가슴 경계
     half_w = round(mouth_w * NECK_HALF_W_RATIO)
     x0 = int(mouth_cx - half_w)
     x1 = int(mouth_cx + half_w)
@@ -87,7 +90,7 @@ def main() -> int:
     write_json(out / "neck_split_config.json", {
         "generated_at": now_iso(),
         "chin_line_y": chin_line_y, "cut_y": cut_y, "x_range": [x0, x1],
-        "neck_height_px": NECK_HEIGHT_PX, "tail_px": TAIL_PX,
+        "neck_height_px": neck_height, "tail_px": TAIL_PX,
         "outputs": [rel(out / "neck_skin.png"), rel(out / "clothes_trimmed.png")],
     })
     a = neck_skin[..., 3]

@@ -1,0 +1,29 @@
+# AUTORIG 캐릭터 스펙 (AUTORIG-TEMPLATE-001) — 위벨 (장송의 프리렌)
+# 기존 generate_master_sheets.py 하드코딩 프롬프트를 이관한 첫 스펙 (무회귀 기준).
+# 캐릭터 추가 시 이 파일만 복사·수정하면 코드를 건드리지 않는다.
+id: autorig-character-004
+name: "Übel (Sousou no Frieren)"          # generation_log 기록용
+ip_named: "Übel from Sousou no Frieren (Frieren: Beyond Journey's End)"  # 1차 프롬프트(이름 직지정)
+ip_desc: >-                                # IP 거부 시 폴백(외형 서술형)
+  an anime female mage character with layered dark-green hair (shoulder length, slightly
+  messy, two long thin side strands), sharp green eyes with narrow pupils, a faint
+  mischievous smile, wearing a modest black dress with white trim
+
+appearance:
+  hair: "layered dark-green, shoulder length, slightly messy, two long thin side strands"
+  eyes: "sharp green eyes with narrow pupils"
+  outfit: "modest black dress with white trim, thin dark choker"
+
+# ★ 표정 성격 — 입/눈 시트 생성에 주입 (사후 리깅 튜닝 삽질 차단의 핵심).
+# 위벨은 차분·냉정·절제 → 입을 활짝 안 벌리고 미소를 절제. 다른 캐릭터는 여기만 바꾸면 됨
+# (예: 활발한 캐릭터 = "cheerful and expressive; opens the mouth wide and bright when talking").
+expression_style: >-
+  calm, cool and reserved with a gentle subtle smile — never grins or opens the mouth wide;
+  keep every mouth opening gentle and reserved, corners gently raised in a faint smile
+
+# ★ 색 적응 힌트 (split_shoulder_hair 임계 자동화) — 생성·재스킨 후 실측이 최종, 여기는 폴백 힌트.
+colors:
+  hair_rgb: [65, 66, 36]       # 암녹 머리
+  clothing_rgb: [50, 50, 55]   # 검은 드레스 (RGB거리 29 — 004 오분류 사고의 두 색)
+
+constraints: [neck_visible, choker_thin, ribbons_separable]

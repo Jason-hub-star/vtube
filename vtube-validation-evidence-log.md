@@ -5568,3 +5568,57 @@ notes:
   - 시트 윗입술 부품(upper_lip)은 추출은 유지(4상태 폴백 호환)하되 리그에서만 제외
   - H2 재판정 대기 — 누적: 어깨 데드존 / HEAD-Z-PIVOT / RIG-COHESION 3건 / MOUTH-ANCHOR / MOUTH-LIP-RIDE
 ```
+
+## AUTORIG-CHARACTER-004-MOUTH-LIP-PARTS-001
+
+```yaml
+id: AUTORIG-CHARACTER-004-MOUTH-LIP-PARTS-001
+date: 2026-06-13
+owner: Claude (Opus)
+status: P5_VALIDATED_FULLRUN_RUNNING
+hypothesis: "입이 있는 그대로 안 열림"(주인님 H2 5차) — 마스터 입은 '다문 선 한 줄'이라 윗입술로 쓰면 그 선이 위에 남고 밑에 새 입이 열린다(부분적으로 마스터 PNG 문제). 시트 부품을 진짜 입술(윗입술 고정+아랫입술 하강)로 리깅하면 미소가 그대로 열린다.
+decision: 주인님 선택 "입 시트로 일관 처리" (마스터 입선 대신 시트 윗/아랫입술)
+diagnosis_evidence:
+  - "마스터 입 = 가는 미소 곡선 한 줄(높이 20px), 윗입술/아랫입술 구분·두께 없음 = 다문 경계선"
+  - "시트 부품: lower_lip이 위벨 미소 곡선 그 자체(밝은 ∪자, 38px), upper_lip은 가는 윗입술 선(9px)"
+output:
+  - 입시트 위벨 컨셉 재생성 (활짝→차분한 미소, 입꼬리 곡선 유지) — $0.44
+  - build_autorig_rig_v0.py (mouth_line은 위치참조 유지+opacity 0 숨김, 시트 upper_lip 윗입술 추가 draw_order 408)
+  - lib/rig_keyforms.py (MOUTH_CAVITY_IDS 신설: 입안 3종 페이드; lower_lip 항상켜짐+H(v); upper_lip 고정+MouthForm; mouth_line opacity 0)
+  - validate_mouth_parts_keyforms.py (lip_parts_structure 검사, MouthForm을 upper_lip에서)
+  - 런: runs/autorig-character-004_20260613_193420
+metric:
+  - 실제 런타임 캡처(인스펙터): 닫힘=위벨 미소(윗입술+아랫입술 만남), 열림=윗입술 미소 고정·아랫입술 하강·입안 드러남
+  - mouth_parts 검증 10/10 PASS (윗입술 고정·입안 페이드·입선 숨김·클립누출 0·연속성 0)
+process_note: 반복 실패 5회 — 매번 내 합성 시뮬을 믿고 "됐다" 오판. 실제 런타임 캡처로만 판정해야 함을 학습. 주인님 캐릭터 컨셉(차분한 미소) 정보가 결정적이었다.
+notes:
+  - H2 재판정 대기 (8062/8063)
+```
+
+## AUTORIG-TEMPLATE-001
+
+```yaml
+id: AUTORIG-TEMPLATE-001
+date: 2026-06-13
+owner: Claude (Opus)
+status: VERIFIED_NO_REGRESSION
+hypothesis: 캐릭터 특성을 코드 상수+사후 튜닝이 아니라 "스펙 파일+자동 실측"으로 다루면, 005부터 코드를 건드리지 않고 캐릭터를 추가하고 입 같은 사후 삽질을 구조적으로 차단한다. (주인님 메타 질문 "템플릿화 안 되는 방식 고수 중인가" + "마스터 생성 강화·캐릭터 스펙 분리" 요청)
+output:
+  - characters/autorig-character-004.yaml (신규 — 위벨 스펙, 기존 프롬프트 이관=무회귀 기준)
+  - scripts/lib/character_spec.py (신규 — yaml 로드/검증/색 힌트)
+  - generate_master_sheets.py (프롬프트 템플릿 + 스펙 변수 주입, --character-spec, --print-prompts, expression_style을 입/눈 시트에 주입)
+  - split_shoulder_hair.py (COLOR_DIST 고정 60 → min(60, 머리-의상 실측거리×0.5) 자동)
+  - extract_mouth_parts.py (OVERLAP 고정 11 → 미소선 높이×0.55 자동)
+  - split_neck_skin.py (NECK_HEIGHT 고정 130 → 입폭×1.2 자동)
+  - docs/ref/AUTORIG-MASTER-SPEC.md (조건 11 표정 일관성 + §1.5 캐릭터 스펙)
+metric:
+  - 생성 무회귀: master 프롬프트 위벨 동일, mouth는 expression_style 주입(의미 동등)
+  - 신규 캐릭터 0-코드: 가상 005(활발/핑크/흰옷) 스펙으로 코드 0줄 수정해 "opens mouth wide" 프롬프트 생성 + 필드 누락 방어
+  - 색 자동: 004 검은드레스 오분류 무재발(99px<500 안전), 003 무회귀(28138px PASS)
+  - OVERLAP 자동: 004 anchor 518, 입 구조 검증 연속성 갭 0 PASS
+  - neck 자동: 004 입폭108×1.2=130 (고정 130 무회귀)
+notes:
+  - 범위: 주인님 "튜닝 자동화까지" 선택. 신체/머리 sway·head tx(3D)는 H2 육안이 충분히 잡으므로 보류(백로그)
+  - 이 정비는 입 풀런(MOUTH-LIP-PARTS, H2 대기)과 독립 — 입 H2 판정 후 정비 코드로 통합 풀런
+  - 교훈 박제: 캐릭터 특성은 "생성 입력"으로 받아야 한다. 입 5번 삽질은 사후 리깅 튜닝으로 때운 방법론 미스.
+```

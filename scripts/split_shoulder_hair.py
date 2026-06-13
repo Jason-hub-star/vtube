@@ -21,10 +21,13 @@ from PIL import Image, ImageFilter
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from lib.vtube_io import ROOT, now_iso, rel, write_json  # noqa: E402
 
-COLOR_DIST = 60      # 머리카락 중앙값 색과의 거리 임계
+# AUTORIG-TEMPLATE-001: COLOR_DIST를 머리-의상 색 거리에서 자동 산출 (캐릭터 색 무관 적응).
+# 004 위벨 사건: 검은 드레스(50,50,55) vs 암녹 머리(65,66,36) RGB 거리 29 — 고정 60으로는
+# 드레스 18.7만px가 머리로 오분류. 임계 = 머리-의상 거리 × 비율로 두면 색이 가까운 캐릭터도 안전.
+COLOR_DIST_MAX = 60    # 자동 임계 상한 (색 거리가 매우 큰 캐릭터의 캡)
+COLOR_DIST_RATIO = 0.5  # 임계 = min(상한, 머리-의상 색 거리 × 0.5) — 머리는 안, 의상은 밖
 LUM_MAX = 150        # 피부 그림자 오분류 방지 (머리카락은 어둡다)
-# 004 위벨 사건: 검은 드레스(50,50,55) vs 암녹 머리(65,66,36) RGB 거리 29 < 60 →
-# 드레스 전체(18.7만px)가 머리로 오분류. 명도 불변 색도(chromaticity) 판별을 추가한다.
+# 명도 불변 색도(chromaticity) 판별 — 어두운 의상과 어두운 머리를 색상으로 가른다 (004 래칫)
 CHROMA_DIST = 0.10   # 정규화 색도 거리 임계 (004 실측: 머리-드레스 0.169, 머리 내부 분산 << 0.10)
 LUM_MIN = 25         # 근흑색은 색도가 노이즈 — 머리 인정 제외
 MAX_CLOTHES_RATIO = 0.25  # 가드: 가시 의상의 25% 초과 분리 = 색 누수 — 분리 포기(의상 통짜 유지)
@@ -59,13 +62,17 @@ def main() -> int:
 
     rgb = clothes[..., :3].astype(np.float64)
     alpha = clothes[..., 3]
+    # 색 임계 자동: 머리색(실측)과 의상색(실측)의 거리에서 — 검은드레스처럼 가까운 색도 안전 분리
+    clothes_med = np.median(rgb[alpha > 100], axis=0)
+    hair_clothes_dist = float(np.sqrt(((hair_med - clothes_med) ** 2).sum()))
+    color_dist = min(COLOR_DIST_MAX, hair_clothes_dist * COLOR_DIST_RATIO)
     dist = np.sqrt(((rgb - hair_med) ** 2).sum(-1))
     lum = rgb.mean(-1)
     # 색도 판별 (명도 불변): 어두운 의상과 어두운 머리를 색상으로 가른다 (004 래칫)
     chroma = rgb / np.maximum(rgb.sum(-1, keepdims=True), 1e-6)
     hair_chroma = hair_med / max(float(hair_med.sum()), 1e-6)
     cdist = np.sqrt(((chroma - hair_chroma) ** 2).sum(-1))
-    raw = (alpha > 100) & (dist < COLOR_DIST) & (lum < LUM_MAX) & (lum > LUM_MIN) & (cdist < CHROMA_DIST)
+    raw = (alpha > 100) & (dist < color_dist) & (lum < LUM_MAX) & (lum > LUM_MIN) & (cdist < CHROMA_DIST)
     # 밀도 필터: 가닥(두꺼움)은 살리고 그림자 가장자리 스펙클은 버린다
     density = blur_f(raw.astype(np.float64), 2.5)
     mask = raw & (density > DENSITY)

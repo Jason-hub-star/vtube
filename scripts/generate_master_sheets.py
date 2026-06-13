@@ -1,20 +1,22 @@
 #!/usr/bin/env python3
-"""AUTORIG 004+ 생성: gpt-image-2 API로 마스터 + 시트 3장 (입/눈표정/액센트).
+"""AUTORIG 생성: gpt-image-2 API로 마스터 + 시트 3장 (입/눈표정/액센트).
 
 Codex 구독 종료 대체 — Codex CLI의 이미지 생성과 동일 모델(gpt-image-2)을 API로 직접 호출.
 "동일 세션" 정체성 유지의 API 등가물 = 시트 3장을 images/edits에 마스터를 참조로 넣어 생성.
 
+AUTORIG-TEMPLATE-001: 캐릭터 외형·표정 성격은 characters/<id>.yaml(--character-spec)에서 주입.
+프롬프트 *템플릿*(구조 고정)은 여기 유지, 캐릭터 *변수*만 스펙에서 치환 → 캐릭터 추가 시 코드 불변.
+
 - 키: ~/.config/vtube/openai_api_key (저장소 밖, 600) — 코드/로그/산출물에 키 비노출.
-- 프롬프트: docs/ref/AUTORIG-MASTER-SPEC.md §2(마스터)/§3(입)/§3.2(눈표정)/§3.3(액센트)
-  + 조건 9(얇은 초커)/조건 10(리본·옷자락 분리 작화)/§3 wide 셀 부품 분리 조건.
-- IP 폴백: 캐릭터 이름 직지정이 거부되면 외형 서술형 프롬프트로 1회 자동 재시도.
+- 프롬프트: docs/ref/AUTORIG-MASTER-SPEC.md §2(마스터)/§3(입)/§3.2(눈표정)/§3.3(액센트).
+- IP 폴백: 스펙 ip_named 거부 시 ip_desc(외형 서술형)로 1회 자동 재시도.
 - 1024² high 생성 → LANCZOS 2048 업스케일 (스펙 §1 조건 7 — 결정론 업스케일 허용).
 - 비용: 요청별 usage 토큰과 달러 추정을 generation_log.json에 기록.
 
 사용:
-  python3 scripts/generate_master_sheets.py --out-dir experiments/autorig-character-004/generated
-  python3 scripts/generate_master_sheets.py --dry-run   # low 품질 마스터 1장으로 API 왕복 검증
+  python3 scripts/generate_master_sheets.py --character-spec characters/autorig-character-004.yaml
   python3 scripts/generate_master_sheets.py --only mouth --master <기존 마스터.png>
+  python3 scripts/generate_master_sheets.py --print-prompts   # 생성 없이 프롬프트만 출력(무회귀/0-코드 검증)
 """
 
 from __future__ import annotations
@@ -28,6 +30,7 @@ import requests
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.character_spec import load_spec  # noqa: E402
 from lib.vtube_io import ROOT, now_iso, rel, write_json  # noqa: E402
 
 KEY_PATH = Path.home() / ".config/vtube/openai_api_key"
@@ -36,16 +39,10 @@ MODEL = "gpt-image-2"
 CANVAS = 2048
 # 2026-06 단가 ($/1M tokens): text in 5, image in 8, image out 30 — 추정용 (청구는 OpenAI 콘솔이 SSOT)
 PRICE = {"text_in": 5.0, "image_in": 8.0, "image_out": 30.0}
+DEFAULT_SPEC = ROOT / "characters/autorig-character-004.yaml"
 
-# ── 위벨 (장송의 프리렌) — 이름 직지정(1차) / 서술형 폴백(IP 거부 시) ────────────
-UEBEL_NAMED = "Übel from Sousou no Frieren (Frieren: Beyond Journey's End)"
-UEBEL_DESC = (
-    "an anime female mage character with layered dark-green hair (shoulder length, slightly "
-    "messy, two long thin side strands), sharp green eyes with narrow pupils, a faint "
-    "mischievous smile, wearing a modest black dress with white trim"
-)
-
-MASTER_PROMPT = (
+# ── 프롬프트 템플릿 (구조 고정) — 캐릭터 변수는 {who}/{style}로 스펙에서 주입 ────────────
+MASTER_TEMPLATE = (
     "Generate a 2048x2048 front-facing upper-body anime illustration of {who}, "
     "single character centered, fully clothed in a modest outfit, simple flat light "
     "background, the neck fully visible (no high collar), wearing a thin dark choker, "
@@ -56,12 +53,12 @@ MASTER_PROMPT = (
     "(not blended into the dress body), anime illustration, clean lineart"
 )
 
-MOUTH_PROMPT = (
+# ★ {style} = 스펙 expression_style — 캐릭터 표정 성격이 입 개방 정도를 결정 (사후 튜닝 삽질 차단)
+MOUTH_TEMPLATE = (
     "Using this exact character, generate a 2048x2048 sheet on pure magenta #FF00FF "
-    "background, 2x2 grid of the character's mouth region. This character (Übel) is calm and "
-    "reserved with a gentle smile — keep the smile gentle and the corners raised, but the "
-    "mouth DOES open clearly (enough to show teeth and interior for talking), just not a huge "
-    "exaggerated grin. Make the four cells clearly different in openness. "
+    "background, 2x2 grid of the character's mouth region. Character personality: {style}. "
+    "Reflect that personality in how much the mouth opens. Make the four cells clearly "
+    "different in openness. "
     "CRITICAL: in EVERY cell the mouth corners stay raised following the exact same gentle "
     "upward smile curve as the closed reference mouth, and the UPPER edge of the mouth opening "
     "curves upward at the corners matching that smile line — never a flat horizontal oval. "
@@ -69,19 +66,19 @@ MOUTH_PROMPT = (
     "Top-left: mouth closed, gentle smile (same as reference). "
     "Top-right: slightly open, a thin dark opening under the smile line. "
     "Bottom-left: half open, clearly showing the upper teeth, corners still smiling. "
-    "Bottom-right: clearly open showing upper teeth, dark interior fill and a small tongue — "
-    "a clear opening (not tiny, not huge), the upper edge still curving up at the corners like "
-    "the smile. "
+    "Bottom-right: clearly open showing upper teeth, dark interior fill and a small tongue, "
+    "the upper edge still curving up at the corners like the smile. "
     "In the bottom-right cell keep separable parts: a distinct unbroken upper lip stroke that "
     "follows the upward smile curve, a distinct lower lip stroke, dark solid interior fill, "
     "clearly colored teeth, clearly colored tongue. Same art style, same skin tone. "
     "Mouth region only — do not draw the chin or the face outline."
 )
 
-EYES_PROMPT = (
+EYES_TEMPLATE = (
     "Using this exact character, generate a 2048x2048 sheet on pure magenta #FF00FF "
     "background, 2x3 grid (2 rows, 3 columns) of the character's both-eyes region including "
-    "eyebrows, identical eye positions, sizes and spacing in every cell: "
+    "eyebrows, identical eye positions, sizes and spacing in every cell. "
+    "Character personality: {style}. "
     "row1-col1 both eyes closed in happy smiling arcs (^^), "
     "row1-col2 left eye closed in a smiling arc and right eye open exactly as the reference, "
     "row1-col3 both eyes wide open in surprise with small pupils, "
@@ -91,7 +88,7 @@ EYES_PROMPT = (
     "Same art style, same colors. Eyes region only — do not draw the nose, hair or face outline."
 )
 
-ACCENT_PROMPT = (
+ACCENT_TEMPLATE = (  # 캐릭터 무관 (스킨톤만 참조에서 따라감)
     "Using this exact character's art style, generate a 2048x2048 sheet on pure magenta "
     "#FF00FF background, 2x2 grid: top-left a pair of soft pink anime blush patches matching "
     "the character's skin tone, top-right a vertical dark-blue gloom shading patch (forehead "
@@ -99,7 +96,18 @@ ACCENT_PROMPT = (
     "drop. Flat painterly style matching the reference, each item centered in its cell."
 )
 
-JOBS = [("master", None), ("mouth", MOUTH_PROMPT), ("eyes", EYES_PROMPT), ("accent", ACCENT_PROMPT)]
+JOB_KINDS = ["master", "mouth", "eyes", "accent"]
+
+
+def build_prompts(spec: dict) -> dict[str, str]:
+    """스펙 변수를 템플릿에 주입해 캐릭터별 프롬프트 4종을 만든다."""
+    style = spec["expression_style"]
+    return {
+        "master": MASTER_TEMPLATE.format(who=spec["ip_named"]),
+        "mouth": MOUTH_TEMPLATE.format(style=style),
+        "eyes": EYES_TEMPLATE.format(style=style),
+        "accent": ACCENT_TEMPLATE,
+    }
 
 
 def api_key() -> str:
@@ -113,13 +121,6 @@ def estimate_usd(usage: dict) -> float:
     image_in = usage.get("input_tokens_details", {}).get("image_tokens", 0)
     out = usage.get("output_tokens", 0)
     return round((text_in * PRICE["text_in"] + image_in * PRICE["image_in"] + out * PRICE["image_out"]) / 1e6, 4)
-
-
-def is_refusal(resp: requests.Response) -> bool:
-    if resp.status_code != 400:
-        return False
-    msg = str(resp.json().get("error", {})).lower()
-    return any(k in msg for k in ("moderation", "content_policy", "safety", "rejected"))
 
 
 def call_images(key: str, kind: str, prompt: str, quality: str, master_png: Path | None) -> tuple[bytes, dict]:
@@ -141,11 +142,11 @@ def call_images(key: str, kind: str, prompt: str, quality: str, master_png: Path
 
 
 def generate_one(key: str, kind: str, prompt: str, quality: str, master_png: Path | None,
-                 out_dir: Path, log: list[dict]) -> Path:
+                 out_dir: Path, log: list[dict], spec: dict) -> Path:
     """1장 생성 (+IP 폴백 1회) → raw 저장 + 2048 업스케일 저장."""
     attempts = [prompt]
-    if UEBEL_NAMED in prompt:
-        attempts.append(prompt.replace(UEBEL_NAMED, UEBEL_DESC))  # IP 거부 폴백
+    if spec["ip_named"] in prompt:
+        attempts.append(prompt.replace(spec["ip_named"], spec["ip_desc"]))  # IP 거부 폴백
     last_err = None
     for i, p in enumerate(attempts):
         try:
@@ -170,13 +171,29 @@ def generate_one(key: str, kind: str, prompt: str, quality: str, master_png: Pat
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--out-dir", type=Path, default=Path("experiments/autorig-character-004/generated"))
-    parser.add_argument("--only", choices=[k for k, _ in JOBS], default=None)
+    parser.add_argument("--character-spec", type=Path, default=DEFAULT_SPEC,
+                        help="characters/<id>.yaml (외형·표정 성격·색 힌트)")
+    parser.add_argument("--out-dir", type=Path, default=None,
+                        help="기본: experiments/<spec.id>/generated")
+    parser.add_argument("--only", choices=JOB_KINDS, default=None)
     parser.add_argument("--master", type=Path, default=None, help="기존 마스터 재사용 (시트만 재생성 시)")
     parser.add_argument("--quality", choices=["low", "medium", "high"], default="high")
     parser.add_argument("--dry-run", action="store_true", help="low 품질 마스터 1장만 — API 왕복·비용 로그 검증")
+    parser.add_argument("--print-prompts", action="store_true",
+                        help="생성 없이 프롬프트만 출력 (무회귀/신규 캐릭터 0-코드 검증)")
     args = parser.parse_args()
-    out_dir = args.out_dir if args.out_dir.is_absolute() else ROOT / args.out_dir
+
+    spec = load_spec(args.character_spec)
+    prompts = build_prompts(spec)
+    if args.print_prompts:
+        for kind in JOB_KINDS:
+            if args.only and kind != args.only:
+                continue
+            print(f"===== {kind} =====\n{prompts[kind]}\n")
+        return 0
+
+    out_dir = args.out_dir or (ROOT / "experiments" / spec["id"] / "generated")
+    out_dir = out_dir if out_dir.is_absolute() else ROOT / out_dir
     out_dir.mkdir(parents=True, exist_ok=True)
     key = api_key()
     quality = "low" if args.dry_run else args.quality
@@ -184,29 +201,28 @@ def main() -> int:
     log: list[dict] = []
     master_path = args.master if args.master and args.master.is_absolute() else (ROOT / args.master if args.master else None)
     try:
-        for kind, sheet_prompt in JOBS:
+        for kind in JOB_KINDS:
             if args.only and kind != args.only:
                 continue
             if args.dry_run and kind != "master":
                 continue
             if kind == "master":
                 if master_path is None:
-                    master_path = generate_one(key, "master", MASTER_PROMPT.format(who=UEBEL_NAMED),
-                                               quality, None, out_dir, log)
+                    master_path = generate_one(key, "master", prompts["master"], quality, None, out_dir, log, spec)
             else:
                 if master_path is None or not master_path.exists():
                     raise SystemExit("시트 생성에는 마스터가 필요합니다 (--master 또는 master 선행 생성)")
                 # 참조는 raw 1024 우선 (입력 토큰 절약), 없으면 지정 마스터
                 ref = out_dir / "master_raw_1024.png"
-                generate_one(key, kind, sheet_prompt, quality,
-                             ref if ref.exists() else master_path, out_dir, log)
+                generate_one(key, kind, prompts[kind], quality,
+                             ref if ref.exists() else master_path, out_dir, log, spec)
     finally:
         if log:
             total = round(sum(r["estimated_usd"] for r in log), 4)
             write_json(out_dir / "generation_log.json", {
                 "generated_at": now_iso(), "model": MODEL, "quality": quality,
-                "character": "uebel (Sousou no Frieren)", "requests": log,
-                "total_estimated_usd": total})
+                "character": spec["name"], "character_spec": rel(args.character_spec),
+                "requests": log, "total_estimated_usd": total})
             print(f"총 추정 비용: ${total} ({len(log)}건) — 로그: {rel(out_dir / 'generation_log.json')}")
     return 0
 
