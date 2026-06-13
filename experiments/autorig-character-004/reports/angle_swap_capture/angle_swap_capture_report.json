@@ -1,0 +1,80 @@
+{
+  "generated_at": "2026-06-13T13:13:40.092754+00:00",
+  "project": "/Users/family/jason/Vtube/experiments/autorig-character-004/rig_v0_angle_project",
+  "url": "http://127.0.0.1:55839/",
+  "poses": [
+    {
+      "pose": "front_0",
+      "params": {
+        "ParamAngleX": 0
+      },
+      "changedRatio": 0,
+      "screenshot": "desktop_front_0.png"
+    },
+    {
+      "pose": "front_mouth_open",
+      "params": {
+        "ParamAngleX": 0,
+        "ParamMouthOpenY": 1
+      },
+      "changedRatio": 0,
+      "screenshot": "desktop_front_mouth_open.png"
+    },
+    {
+      "pose": "L_live_14",
+      "params": {
+        "ParamAngleX": -14
+      },
+      "changedRatio": 0,
+      "screenshot": "desktop_L_live_14.png"
+    },
+    {
+      "pose": "L_cross_20",
+      "params": {
+        "ParamAngleX": -20
+      },
+      "changedRatio": 0,
+      "screenshot": "desktop_L_cross_20.png"
+    },
+    {
+      "pose": "L_art_40",
+      "params": {
+        "ParamAngleX": -40
+      },
+      "changedRatio": 0,
+      "screenshot": "desktop_L_art_40.png"
+    },
+    {
+      "pose": "L_art_80",
+      "params": {
+        "ParamAngleX": -80
+      },
+      "changedRatio": 0,
+      "screenshot": "desktop_L_art_80.png"
+    },
+    {
+      "pose": "R_cross_20",
+      "params": {
+        "ParamAngleX": 20
+      },
+      "changedRatio": 0,
+      "screenshot": "desktop_R_cross_20.png"
+    },
+    {
+      "pose": "R_art_40",
+      "params": {
+        "ParamAngleX": 40
+      },
+      "changedRatio": 0,
+      "screenshot": "desktop_R_art_40.png"
+    },
+    {
+      "pose": "R_art_80",
+      "params": {
+        "ParamAngleX": 80
+      },
+      "changedRatio": 0,
+      "screenshot": "desktop_R_art_80.png"
+    }
+  ]
+}

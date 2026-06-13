@@ -1,0 +1,258 @@
+{
+  "ok": true,
+  "results": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      "poses": [
+        {
+          "pose": "front_0",
+          "parameters": {
+            "ParamAngleX": 0
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/angle_swap_capture/screenshots/desktop_front_0.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "2f2be6ca",
+            "nonBackground": 4191052,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "REVISE",
+          "messages": [
+            "pose barely differs from neutral"
+          ]
+        },
+        {
+          "pose": "front_mouth_open",
+          "parameters": {
+            "ParamAngleX": 0,
+            "ParamMouthOpenY": 1
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/angle_swap_capture/screenshots/desktop_front_mouth_open.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "e7c6b077",
+            "nonBackground": 4191052,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "REVISE",
+          "messages": [
+            "pose barely differs from neutral"
+          ]
+        },
+        {
+          "pose": "L_live_14",
+          "parameters": {
+            "ParamAngleX": -14
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/angle_swap_capture/screenshots/desktop_L_live_14.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "06d204cc",
+            "nonBackground": 4191053,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "REVISE",
+          "messages": [
+            "pose barely differs from neutral"
+          ]
+        },
+        {
+          "pose": "L_cross_20",
+          "parameters": {
+            "ParamAngleX": -20
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/angle_swap_capture/screenshots/desktop_L_cross_20.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "f9ccf069",
+            "nonBackground": 4192515,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "REVISE",
+          "messages": [
+            "pose barely differs from neutral"
+          ]
+        },
+        {
+          "pose": "L_art_40",
+          "parameters": {
+            "ParamAngleX": -40
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/angle_swap_capture/screenshots/desktop_L_art_40.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "33147c15",
+            "nonBackground": 4192912,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "REVISE",
+          "messages": [
+            "pose barely differs from neutral"
+          ]
+        },
+        {
+          "pose": "L_art_80",
+          "parameters": {
+            "ParamAngleX": -80
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/angle_swap_capture/screenshots/desktop_L_art_80.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "70166ec7",
+            "nonBackground": 4193206,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "REVISE",
+          "messages": [
+            "pose barely differs from neutral"
+          ]
+        },
+        {
+          "pose": "R_cross_20",
+          "parameters": {
+            "ParamAngleX": 20
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/angle_swap_capture/screenshots/desktop_R_cross_20.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "aeaaccda",
+            "nonBackground": 4192515,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "REVISE",
+          "messages": [
+            "pose barely differs from neutral"
+          ]
+        },
+        {
+          "pose": "R_art_40",
+          "parameters": {
+            "ParamAngleX": 40
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/angle_swap_capture/screenshots/desktop_R_art_40.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "1fced784",
+            "nonBackground": 4192912,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "REVISE",
+          "messages": [
+            "pose barely differs from neutral"
+          ]
+        },
+        {
+          "pose": "R_art_80",
+          "parameters": {
+            "ParamAngleX": 80
+          },
+          "screenshot": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/angle_swap_capture/screenshots/desktop_R_art_80.png",
+          "metrics": {
+            "width": 2048,
+            "height": 2048,
+            "hash": "513c8c90",
+            "nonBackground": 4193206,
+            "alphaPixels": 4194304,
+            "diffPixels": 0,
+            "totalAbsDiff": 0,
+            "changedRatio": 0,
+            "contentBounds": [
+              0,
+              0,
+              2048,
+              2048
+            ]
+          },
+          "verdict": "REVISE",
+          "messages": [
+            "pose barely differs from neutral"
+          ]
+        }
+      ]
+    }
+  ]
+}

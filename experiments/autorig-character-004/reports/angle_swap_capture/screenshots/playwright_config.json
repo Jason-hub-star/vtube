@@ -1,0 +1,71 @@
+{
+  "url": "http://127.0.0.1:55839/",
+  "outDir": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/angle_swap_capture/screenshots",
+  "resultPath": "/Users/family/jason/Vtube/experiments/autorig-character-004/reports/angle_swap_capture/screenshots/playwright_result.json",
+  "poses": [
+    {
+      "name": "front_0",
+      "parameters": {
+        "ParamAngleX": 0
+      }
+    },
+    {
+      "name": "front_mouth_open",
+      "parameters": {
+        "ParamAngleX": 0,
+        "ParamMouthOpenY": 1
+      }
+    },
+    {
+      "name": "L_live_14",
+      "parameters": {
+        "ParamAngleX": -14
+      }
+    },
+    {
+      "name": "L_cross_20",
+      "parameters": {
+        "ParamAngleX": -20
+      }
+    },
+    {
+      "name": "L_art_40",
+      "parameters": {
+        "ParamAngleX": -40
+      }
+    },
+    {
+      "name": "L_art_80",
+      "parameters": {
+        "ParamAngleX": -80
+      }
+    },
+    {
+      "name": "R_cross_20",
+      "parameters": {
+        "ParamAngleX": 20
+      }
+    },
+    {
+      "name": "R_art_40",
+      "parameters": {
+        "ParamAngleX": 40
+      }
+    },
+    {
+      "name": "R_art_80",
+      "parameters": {
+        "ParamAngleX": 80
+      }
+    }
+  ],
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000
+    }
+  ],
+  "captureElement": "canvas",
+  "showOverlays": false
+}

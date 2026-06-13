@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-06-13T13:05:29.023244+00:00",
+  "source_parts": "experiments/autorig-character-004/angle_swap_project/parts",
+  "count": 4,
+  "method": "FLIP_LEFT_RIGHT around canvas center x",
+  "written": [
+    "head_angle_right_1.png",
+    "head_angle_right_2.png",
+    "head_angle_right_3.png",
+    "head_angle_right_4.png"
+  ],
+  "note": "좌향 head_angle_1..4 -> 우향 head_angle_right_1..4 무료 미러"
+}

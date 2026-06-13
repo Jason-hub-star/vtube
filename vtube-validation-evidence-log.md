@@ -5644,3 +5644,26 @@ notes:
   - 범위: 좌향 5각도·표정없음 검증 전용. 후속: 우향 미러 / 끄덕임 상하(AngleY) / 하이브리드(작은각도 메시+큰각도 작화) / 본체 통합
   - 도구 결론: gpt-image-2 다각도 시트가 최적 (SV3D/Zero123 사물용 부적합, Anisora는 연속회전 필요시 다음카드)
 ```
+
+## AUTORIG-ANGLE-SWAP-002
+
+```yaml
+id: AUTORIG-ANGLE-SWAP-002
+date: 2026-06-13
+owner: Claude (Opus)
+status: VERIFIED_RUNTIME_RENDER
+hypothesis: 좌향 검증 미니(001)를 본체 위벨 리그(50파트·표정·입)에 비파괴 통합 가능. rig.js partOpacity(L194)가 파트별 opacity 곡선을 곱하므로, 라이브 50파트에 ParamAngleX 크로스페이드 곡선 1개씩 더하면 기존 표정/입 곡선과 충돌 없이 합성 — 정면 표정 라이브 + 옆모습 작화 회전 공존. 우향은 좌향 수평 flip(무료, 주인님 선택).
+output:
+  - scripts/mirror_angle_parts.py (신규 — 좌향 head_angle_1..4 수평 flip → head_angle_right_1..4, 캔버스중심 x=1024 앵커 유지)
+  - scripts/integrate_angle_swap.py (신규 — 원본 통째 복사 비파괴, 작화 8파트 sprite 주입, ParamAngleX ±80, 라이브 크로스페이드 곡선 50파트 주입, 본체 머리앵커 정렬+작은 컴포넌트 제거)
+  - scripts/capture_angle_swap.py (신규 — pose_sweep 번들 node+playwright 하니스 재사용, 각도 9스윕 실런타임 캡처)
+  - experiments/autorig-character-004/rig_v0_angle_project (58파트 통합), reports/angle_swap_capture/ (캡처 9장)
+metric:
+  - 8065 헤드리스 캡처(메모리 visual-verify-real-render 규율 준수): 정면 X=0 라이브 리그 풀가시 + ParamMouthOpenY=1 입 개폐 생존(곱셈 크로스페이드 입증), 좌우 ±80 옆모습 작화 회전(미러 양방향), 크로스페이드 ±20 더블렌더 0
+  - 정렬 폴리시(A): 본체 정면 실루엣 합성 실측 머리 cx 1019·top 36·폭 510, 작화 폭 408 → scale 1.25, 머리앵커 일치로 크기/위치 팝 제거; 작은 비연결 컴포넌트(연두 유령 파편) 제거
+  - 런타임 코드 변경 0 (partOpacity 곱셈·draw_pixi sprite 폴백 재사용)
+notes:
+  - 핵심 입증: 표정 리그와 각도 작화가 한 프로젝트에서 opacity 곱셈으로 공존 — 중앙 ±14 표정밴드, 외곽 16~80 작화밴드 하드 스왑
+  - 알려진 한계: 작화는 머리+가슴 크롭 → 측면 회전 시 하체/치마 사라짐(버스트업 뷰 무방). changedRatio는 neutral 포즈 부재로 0(무의미) — 판정은 이미지로
+  - 후속(미검증): 끄덕임 AngleY 시트 / 하이브리드(작은각도 메시+큰각도 작화) / 트래킹 yaw 게인 ±80 확장(웹캠 풀턴 도달)
+```
