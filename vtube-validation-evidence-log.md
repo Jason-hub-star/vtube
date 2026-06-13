@@ -5629,7 +5629,8 @@ notes:
 id: AUTORIG-ANGLE-SWAP-001
 date: 2026-06-13
 owner: Claude (Opus)
-status: VERIFIED_DIRECTION_RUNTIME_RENDER
+status: ABANDONED  # 2026-06-13 폐기 — 정면에서 옆모습은 작화 스왑으로 안 됨(옆모습이 정지사진·전환이 사진넘기기). 코드·미니·드라이브 리셋. 머리각도는 본체 메시 ±30 유지. 아래는 시도 기록(교훈 보존).
+prior_status: VERIFIED_DIRECTION_RUNTIME_RENDER
 hypothesis: 위벨 끄덕임/옆모습이 의사3D 격자라 평면적 — 공식은 39워프·143키폼 메시 변형이라 자동리깅 불가. 우리 강점(AI 생성 쌈)으로 각도별 작화를 생성해 ParamAngleX opacity 스왑하면 옆모습 회전이 런타임 코드 변경 없이 된다. (주인님 "각도별 PNG 생성, 애초에 png 아닌가" 통찰 → 웹검색으로 IPAdapter/ControlNet 업계표준 확인했으나 gpt-image-2만으로 충분)
 output:
   - 각도 시트 생성: gpt-image-2 5각도(정면~좌측면 20도간격) $0.22, 정합 완벽 (angle_test/angle5_sheet.png)
@@ -5651,7 +5652,8 @@ notes:
 id: AUTORIG-ANGLE-SWAP-002
 date: 2026-06-13
 owner: Claude (Opus)
-status: VERIFIED_RUNTIME_RENDER
+status: ABANDONED  # 2026-06-13 폐기 — 통합은 런타임상 작동했으나 옆모습 작화가 정지사진(표정없음)이라 "정면에서 옆모습 보여주기"는 현재 방식으로 불가(주인님 판정). rig_v0_angle_project·통합/미러/캡처 스크립트·drive.html 하이브리드 매핑 전부 리셋. 교훈: 작화 스왑은 2.5D 사진전환이 본질, 풀옆모습 살아있는 회전은 생성리깅(절차적 눈꺼풀 PoC 실패) 또는 3D(PNG→3D 원클릭 리깅툴 부재) 필요.
+prior_status: VERIFIED_RUNTIME_RENDER
 hypothesis: 좌향 검증 미니(001)를 본체 위벨 리그(50파트·표정·입)에 비파괴 통합 가능. rig.js partOpacity(L194)가 파트별 opacity 곡선을 곱하므로, 라이브 50파트에 ParamAngleX 크로스페이드 곡선 1개씩 더하면 기존 표정/입 곡선과 충돌 없이 합성 — 정면 표정 라이브 + 옆모습 작화 회전 공존. 우향은 좌향 수평 flip(무료, 주인님 선택).
 output:
   - scripts/mirror_angle_parts.py (신규 — 좌향 head_angle_1..4 수평 flip → head_angle_right_1..4, 캔버스중심 x=1024 앵커 유지)
