@@ -5544,3 +5544,27 @@ metric:
 notes:
   - H2 재판정 대기 (8062/8063) — 누적 반영: 어깨 데드존 / HEAD-Z-PIVOT / RIG-COHESION 3건 / MOUTH-ANCHOR
 ```
+
+## AUTORIG-CHARACTER-004-MOUTH-LIP-RIDE-001
+
+```yaml
+id: AUTORIG-CHARACTER-004-MOUTH-LIP-RIDE-001
+date: 2026-06-13
+owner: Claude (Opus)
+status: P5_VALIDATED_FULLRUN_RUNNING
+hypothesis: 입이 "미소선 밑에 새로 열린다"(주인님 H2 4차)의 근본은 닫힘(마스터 미소선)과 열림(시트 윗입술)이 다른 작화라 스왑 경계에서 윗입술이 점프하는 구조. 미소선을 윗입술로 승격하면 닫힘/열림이 같은 작화가 되어 미소곡선이 제자리에서 그대로 열린다.
+diagnosis_evidence:
+  - "mouth_line(마스터): bbox y 510~530, 입꼬리 올라간 미소 곡선"
+  - "mouth_parts_upper_lip(시트 추출): bbox y 528~538, 18px 아래의 다른 모양 — 두 작화가 다름이 픽셀로 확정 (생성·자산 문제 아님, 구조 문제)"
+output:
+  - lib/rig_keyforms.py (MOUTH_LOWER_IDS 신설 — 윗입술 제외 4종; mouth_line opacity 곡선 제거=항상 켜짐; 하부 페이드 0~0.14)
+  - build_autorig_rig_v0.py (윗입술 부품 소스 제외, 하부 draw_order 405~408 < mouth_line 410 — 미소선이 입안 윗경계 가림)
+  - extract_mouth_parts.py (입안 상단을 미소선 하단보다 OVERLAP 8px 위에 물림 — 윗입술↔입안 이음새 0)
+  - validate_mouth_parts_keyforms.py (lip_ride_smile_line_persists 검사: mouth_line MouthOpenY 곡선 없음 + 하부 페이드 보유; 연속성 합집합에 mouth_line 포함)
+metric:
+  - 빌드 검증 단독: 10검사 전부 PASS (vertical_continuity 6px→0px after overlap, lip_ride_smile_line_persists PASS)
+  - 개폐 시뮬(v 0/0.2/0.5/1.0): 미소선 고정, 그 아래로만 입안 드러남 (시각 확인)
+notes:
+  - 시트 윗입술 부품(upper_lip)은 추출은 유지(4상태 폴백 호환)하되 리그에서만 제외
+  - H2 재판정 대기 — 누적: 어깨 데드존 / HEAD-Z-PIVOT / RIG-COHESION 3건 / MOUTH-ANCHOR / MOUTH-LIP-RIDE
+```

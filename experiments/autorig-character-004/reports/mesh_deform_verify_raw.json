@@ -8,19 +8,19 @@
     "nod": 1667711560,
     "tilt": 587701372,
     "gaze_turn": 984787858,
-    "combo": 212791180,
-    "body_tilt": 1836000043
+    "combo": 1915025073,
+    "body_tilt": 1855038312
   },
   "neck": {
     "head_max": 0
   },
   "timing": {
-    "head_turn": 72.9,
-    "nod": 72.1,
-    "tilt": 66.3,
-    "gaze_turn": 73,
-    "combo": 656.9,
-    "body_tilt": 86
+    "head_turn": 75.2,
+    "nod": 75.8,
+    "tilt": 65.1,
+    "gaze_turn": 124.1,
+    "combo": 423.3,
+    "body_tilt": 88.8
   },
   "errors": [],
   "backend": "canvas"

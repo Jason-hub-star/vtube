@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-"""MOUTH-PARTS-001 검증: 부품형 입의 윤곽 연속·클립 누출 0을 수치로 검사 (P5).
+"""MOUTH-LIP-RIDE-001 검증: 미소선=윗입술 부품형 입의 윤곽 연속·클립 누출 0을 수치로 검사 (P5).
 
 blink 검증기(EYE-NATURAL-002)가 정점 키폼 보간의 런타임 픽셀 등가성을 이미 증명했으므로,
 여기서는 그 등가성 위에서 성립하는 구조 불변량을 검사한다:
-  1. 부품 5종 전부 ParamMouthOpenY 정점 키폼 + 동일 키 값 세트
-  2. 모든 키 v에서 부품·정점 공통의 세로 붕괴비 h(v) (±0.6px) & x 불변
-     → 어느 v에서든 부품 간 상대 기하 불변 = 입술 윤곽 연속(±1px)의 구조적 보장
+  1. 하부 4종(입안·이빨·혀·아랫입술) 전부 ParamMouthOpenY 정점 키폼 + 동일 키 값 세트
+  2. 모든 키 v에서 부품·정점 공통의 세로 붕괴비 h(v) (±0.6px) & x 불변 + 공통 앵커(미소선 중심)
+     → 어느 v에서든 부품 간 상대 기하 불변 = 윤곽 연속(±1px)의 구조적 보장
   3. 이빨/혀 알파 ⊆ 입안(솔리드) 알파 1px 팽창 — 균일 변환이라 전 v에서 클립 누출 0
-  4. 입 합집합 알파의 중앙 60% 컬럼에 내부 세로 갭 ≤ 2px (수평 이음새 없음)
-  5. mouth_line ↔ 부품 교대 곡선 창(0.08~0.14) 존재
+  4. 미소선+하부 합집합 알파의 중앙 60% 컬럼에 내부 세로 갭 ≤ 2px (윗입술↔입안 이음새 없음)
+  5. 미소선=윗입술 불변: mouth_line은 MouthOpenY opacity 곡선이 없어야 한다(항상 켜짐), 하부 4종은 페이드 곡선 보유
   6. MouthForm 입꼬리 키폼: 중앙 ±0.5px 고정, 꼬리 진폭 ≤ 10px
 
 사용: python3 scripts/validate_mouth_parts_keyforms.py --project <rig_v0_project> --out-dir <dir>
@@ -25,7 +25,7 @@ import scipy.ndimage as ndi
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from lib.rig_keyforms import MOUTH_PART_IDS  # noqa: E402
+from lib.rig_keyforms import MOUTH_LOWER_IDS  # noqa: E402
 from lib.vtube_io import ROOT, load_json, now_iso, write_json  # noqa: E402
 
 
@@ -45,12 +45,12 @@ def main() -> int:
         print(f"{'PASS' if ok else 'FAIL'} {name} {detail}")
 
     meshes = {m["part_id"]: m for m in character["meshes"]}
-    missing = [pid for pid in MOUTH_PART_IDS if pid not in meshes]
+    missing = [pid for pid in MOUTH_LOWER_IDS if pid not in meshes]
     if missing:
         check("parts_present", False, f"부품 메시 없음: {missing}")
     else:
         check("parts_present", True)
-        specs = {pid: meshes[pid].get("vertex_keyforms") or {} for pid in MOUTH_PART_IDS}
+        specs = {pid: meshes[pid].get("vertex_keyforms") or {} for pid in MOUTH_LOWER_IDS}
         key_sets = {pid: tuple(k["value"] for k in s.get("keys", [])) for pid, s in specs.items()}
         same_keys = len(set(key_sets.values())) == 1 and all(
             s.get("parameter_id") == "ParamMouthOpenY" for s in specs.values())
@@ -60,7 +60,7 @@ def main() -> int:
         if same_keys:
             max_dev = 0.0
             x_moved = 0.0
-            for pid in MOUTH_PART_IDS:
+            for pid in MOUTH_LOWER_IDS:
                 base = np.asarray(meshes[pid]["vertices"], dtype=float)
                 for key in specs[pid]["keys"]:
                     kv = np.asarray(key["vertices"], dtype=float)
@@ -78,7 +78,7 @@ def main() -> int:
             # 절편에서 앵커를 역산해 산포까지 검사한다 (자기리뷰: 기울기 단독 검사의 구멍)
             slopes_by_v: dict[float, list[float]] = {}
             anchors_by_v: dict[float, list[float]] = {}
-            for pid in MOUTH_PART_IDS:
+            for pid in MOUTH_LOWER_IDS:
                 base = np.asarray(meshes[pid]["vertices"], dtype=float)
                 for key in specs[pid]["keys"]:
                     kv = np.asarray(key["vertices"], dtype=float)
@@ -100,10 +100,12 @@ def main() -> int:
             leak = int((a & ~interior_d).sum())
             check(f"clip_leak_{pid.rsplit('_', 1)[1]}", leak == 0, f"누출 {leak}px")
 
-        # 합집합 세로 연속성: 중앙 60% 컬럼에 내부 갭 ≤ 2px
+        # 미소선(윗입술)+하부 합집합 세로 연속성: 중앙 60% 컬럼 내부 갭 ≤ 2px (윗입술↔입안 이음새 포함)
         union = np.zeros_like(interior_a)
-        for pid in MOUTH_PART_IDS:
-            union |= np.asarray(Image.open(project / f"parts/{pid}.png").convert("RGBA"))[..., 3] > 8
+        for pid in (*MOUTH_LOWER_IDS, "mouth_line"):
+            pp = project / f"parts/{pid}.png"
+            if pp.exists():
+                union |= np.asarray(Image.open(pp).convert("RGBA"))[..., 3] > 8
         xs = np.where(union.any(axis=0))[0]
         x0, x1 = xs.min(), xs.max()
         lo, hi = int(x0 + 0.2 * (x1 - x0)), int(x0 + 0.8 * (x1 - x0))
@@ -115,11 +117,13 @@ def main() -> int:
                 worst_gap = max(worst_gap, int(runs.max()) - 1)
         check("vertical_continuity", worst_gap <= 2, f"중앙 컬럼 최악 내부 갭 {worst_gap}px")
 
-    # 교대 곡선 창
+    # MOUTH-LIP-RIDE-001 핵심 불변: 미소선(윗입술)은 MouthOpenY opacity 곡선이 없어야(항상 켜짐 →
+    # 미소곡선이 제자리 유지), 하부 4종은 페이드 곡선 보유. 미소선이 사라지면 윗입술 점프 = 회귀.
     curves = {(c["part_id"], c["parameter_id"]): c for c in character.get("part_opacity_keyframes", [])}
-    line = curves.get(("mouth_line", "ParamMouthOpenY"))
-    swap_ok = bool(line) and all(curves.get((pid, "ParamMouthOpenY")) for pid in MOUTH_PART_IDS)
-    check("swap_curves_present", swap_ok)
+    line_stays = ("mouth_line", "ParamMouthOpenY") not in curves
+    lowers_fade = all(curves.get((pid, "ParamMouthOpenY")) for pid in MOUTH_LOWER_IDS)
+    check("lip_ride_smile_line_persists", line_stays and lowers_fade,
+          f"미소선 MouthOpenY 곡선 {'없음(OK)' if line_stays else '있음(FAIL—사라짐)'}, 하부 페이드 {lowers_fade}")
 
     # MouthForm 입꼬리 키폼
     ml = next((m for m in character["meshes"] if m["part_id"] == "mouth_line"), None)

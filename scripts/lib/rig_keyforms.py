@@ -13,6 +13,12 @@ EXPRESSION_NAMES = ("smile", "wink", "surprise", "jito", "squeeze", "heart")
 ACCENT_PARAMS = {"blush": "ParamCheek", "gloom": "ParamGloom", "tear": "ParamTear", "sweat": "ParamSweat"}
 MOUTH_PART_IDS = ("mouth_parts_interior", "mouth_parts_teeth", "mouth_parts_tongue",
                   "mouth_parts_upper_lip", "mouth_parts_lower_lip")
+# MOUTH-LIP-RIDE-001 (004 H2 4차): 닫힘(마스터 미소선)과 열림(시트 윗입술)이 다른 작화라
+# 스왑 경계에서 윗입술이 점프 = "미소선 밑에 새 입". 미소선(mouth_line)을 윗입술로 승격하면
+# 닫힘/열림이 같은 작화 → 미소곡선이 제자리에서 그대로 열린다. 시트 윗입술 부품은 폐기,
+# 아래 4종만 미소선 아래로 펼친다 (입안 윗경계는 미소선이 가린다).
+MOUTH_LOWER_IDS = ("mouth_parts_interior", "mouth_parts_teeth",
+                   "mouth_parts_tongue", "mouth_parts_lower_lip")
 # 표정 활성 시 숨길 기본 눈 계열 (존재하는 것만 곡선 부착)
 BASE_EYE_PART_IDS = ("L_eye_white", "R_eye_white", "L_iris", "R_iris",
                      "L_upper_lash", "R_upper_lash", "L_lower_lash", "R_lower_lash",
@@ -166,16 +172,16 @@ def attach_mouth_height_keyforms(meshes: list[dict], bbox_by_id: dict) -> list[s
 
 
 def attach_mouth_parts_keyforms(meshes: list[dict], bbox_by_id: dict, anchor_y: float) -> list[str]:
-    """부품형 입 연속 개폐 (MOUTH-PARTS-001) — 공통 앵커(입선 상단) 세로 스케일 H(v).
+    """부품형 입 연속 개폐 (MOUTH-LIP-RIDE-001) — 미소선(윗입술) 아래로 펼치는 세로 스케일 H(v).
 
-    모든 부품이 같은 H(v)·같은 앵커를 공유 → 어느 v에서든 부품 간 상대 기하가 불변이라
-    입술 윤곽 연속·입안 클립 정합이 구조적으로 보장된다 (검증은 validate_mouth_parts_keyforms).
-    v=0 의 0.04는 '닫힌 입선 두께로 붕괴' — mouth_line 크로스페이드(0.08~0.14)와 겹치는
-    구간에서 기하가 거의 같아 잔상이 원리적으로 작다.
+    하부 4종(입안·이빨·혀·아랫입술)이 공통 앵커=미소선 중심·공통 H(v)를 공유 →
+    위쪽은 미소선에 고정되고 아래로만 펼쳐진다. 윗입술은 미소선이 담당(키폼 없음, 항상 고정).
+    어느 v에서든 부품 간 상대 기하 불변이라 클립 정합이 구조적으로 보장된다.
+    v=0 의 0.04는 '미소선 두께로 붕괴' — opacity 페이드(0~0.14)와 겹쳐 닫힘에서 안 보인다.
     """
     H = [(0.0, 0.04), (0.25, 0.30), (0.55, 0.62), (1.0, 1.0)]
     attached = []
-    for pid in MOUTH_PART_IDS:
+    for pid in MOUTH_LOWER_IDS:
         mesh = next((m for m in meshes if m["part_id"] == pid), None)
         if mesh is None or pid not in bbox_by_id:
             continue
@@ -233,15 +239,13 @@ def build_opacity_curves(use_arap: bool, use_mouth_states: bool, use_mouth_warp:
                 peak = 0.92 if name == "gloom" else 1.0  # 그늘은 살짝 투명 — 머리 위 오버레이
                 part_opacity_keyframes.append(curve(f"accent_{name}", param, [(0.0, 0.0), (1.0, peak)]))
     if use_mouth_parts:
-        # MOUTH-PARTS-001: 닫힘은 원본 입선, 0.08~0.14에서 부품 입으로 교대 —
-        # 이 구간 부품은 입선 두께로 붕괴돼 있어(attach_mouth_parts_keyforms H(0)=0.04)
-        # 교차 기하가 거의 같다. 이후는 정점 키폼 연속 개폐 (스왑·크로스페이드 없음 = 잔상 원리적 0).
-        part_opacity_keyframes.append(
-            curve("mouth_line", "ParamMouthOpenY", [(0.0, 1.0), (0.08, 1.0), (0.14, 0.0), (1.0, 0.0)]))
-        for pid in MOUTH_PART_IDS:
+        # MOUTH-LIP-RIDE-001: 미소선 = 윗입술 (MouthOpenY로 안 사라짐 — opacity 곡선 없음 = 항상 1).
+        # 닫힘/열림이 같은 작화라 미소곡선이 제자리에서 그대로 열린다 (스왑 점프 폐기).
+        # 하부 4종은 살짝 벌릴 때 페이드 인 — 닫힘에선 미소선 뒤로 붕괴(H(0)=0.04)+opacity 0이라 안 보임.
+        for pid in MOUTH_LOWER_IDS:
             if pid in bbox_by_id:
                 part_opacity_keyframes.append(
-                    curve(pid, "ParamMouthOpenY", [(0.0, 0.0), (0.08, 0.0), (0.14, 1.0), (1.0, 1.0)]))
+                    curve(pid, "ParamMouthOpenY", [(0.0, 0.0), (0.06, 0.0), (0.14, 1.0), (1.0, 1.0)]))
     if use_arap:
         # EYE-NATURAL-002: 깜빡임 패치 1장 + 정점 키폼 (메시 vertex_keyforms가 감김 담당).
         # 완전 열림(v=1)에서만 숨김 — 0.97~1.0 페이드 구간은 워프 t≤0.04 ≈ 항등이라
