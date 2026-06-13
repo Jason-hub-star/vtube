@@ -1,6 +1,6 @@
 {
   "test_id": "CLOTH-PHYS-001-drape-and-junction",
-  "generated_at": "2026-06-13T09:32:55.636899+00:00",
+  "generated_at": "2026-06-13T10:17:57.128068+00:00",
   "renderer": "pixi",
   "claim": "옷 밑단은 몸 스웨이를 스프링만큼 늦게 따르고(A/B 분리 증명), 목 접합(가중~0)은 등변위",
   "physics": {

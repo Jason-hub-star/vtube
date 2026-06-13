@@ -1,72 +1,72 @@
 {
   "test_id": "SHEET-P0",
-  "generated_at": "2026-06-13T09:28:49.666823+00:00",
+  "generated_at": "2026-06-13T10:34:22.054524+00:00",
   "sheet": "experiments/autorig-character-004/generated/mouth.png",
   "kind": "mouth",
-  "bg_magenta_ratio": 0.9333,
+  "bg_magenta_ratio": 0.9141,
   "cells": [
     {
       "cell": "r1c1",
-      "content_ratio": 0.0409,
+      "content_ratio": 0.128,
       "bbox": [
-        67,
-        274,
-        644,
-        402
+        16,
+        265,
+        717,
+        514
       ],
-      "bbox_width": 577,
-      "width_dev": 0.003,
+      "bbox_width": 701,
+      "width_dev": 0.001,
       "corners": [
-        67,
-        644
+        16,
+        717
       ]
     },
     {
       "cell": "r1c2",
-      "content_ratio": 0.0775,
+      "content_ratio": 0.1345,
       "bbox": [
-        65,
-        283,
-        634,
-        420
+        0,
+        263,
+        702,
+        514
       ],
-      "bbox_width": 569,
-      "width_dev": 0.011,
+      "bbox_width": 702,
+      "width_dev": 0.001,
       "corners": [
-        65,
-        634
+        0,
+        702
       ]
     },
     {
       "cell": "r2c1",
-      "content_ratio": 0.14,
+      "content_ratio": 0.1899,
       "bbox": [
-        67,
-        183,
-        650,
-        380
+        16,
+        34,
+        717,
+        322
       ],
-      "bbox_width": 583,
-      "width_dev": 0.013,
+      "bbox_width": 701,
+      "width_dev": 0.001,
       "corners": [
-        67,
-        650
+        16,
+        717
       ]
     },
     {
       "cell": "r2c2",
-      "content_ratio": 0.2844,
+      "content_ratio": 0.2442,
       "bbox": [
-        63,
-        92,
-        637,
-        464
+        0,
+        33,
+        702,
+        380
       ],
-      "bbox_width": 574,
-      "width_dev": 0.003,
+      "bbox_width": 702,
+      "width_dev": 0.001,
       "corners": [
-        63,
-        637
+        0,
+        702
       ]
     }
   ],

@@ -1,20 +1,20 @@
 # Rig Performance Report
 
-Generated: 2026-06-12T13:27:52.506413+00:00
+Generated: 2026-06-13T10:20:13.520950+00:00
 Renderer: canvas
 
 | 상태 | scale 1.0 (ms) | scale 0.55 (ms) |
 |---|---:|---:|
 | backend | canvas | canvas |
-| neutral | 100.5 | 170.9 |
-| head_turn | 72.1 | 93.4 |
-| nod | 70.4 | 94.5 |
-| tilt | 73.4 | 94.9 |
-| gaze_turn | 71.6 | 93.9 |
-| blink | 151.9 | 200.1 |
-| mouth | 222.2 | 272.3 |
-| combo | 200.4 | 202.8 |
-| physics_step | 389.2 | 415 |
+| neutral | 173.3 | 236.7 |
+| head_turn | 104.2 | 129.9 |
+| nod | 119.3 | 121.7 |
+| tilt | 83.6 | 106.8 |
+| gaze_turn | 94.6 | 117.2 |
+| blink | 183.3 | 214.9 |
+| mouth | 281.1 | 341.2 |
+| combo | 290 | 297.8 |
+| physics_step | 501.6 | 502.2 |
 | raf_fps | 1 | 1 |
 
-재생: {'frames': 175, 'wall_s': 9.77, 'effective_fps': 18}
+재생: {'frames': 175, 'wall_s': 9.43, 'effective_fps': 19}

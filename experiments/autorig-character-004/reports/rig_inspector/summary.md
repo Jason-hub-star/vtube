@@ -1,15 +1,15 @@
 # AUTORIG Rig Inspector Summary
 
-Generated: 2026-06-12T13:24:58.059761+00:00
+Generated: 2026-06-13T10:16:19.793747+00:00
 Project: `experiments/autorig-character-004/rig_v0_project`
 
 ## Counts
 
 | item | count |
 |---|---:|
-| parts | 50 |
-| meshes | 50 |
-| deformers | 10 |
+| parts | 49 |
+| meshes | 49 |
+| deformers | 11 |
 | parameters | 25 |
 | keyform_bindings | 61 |
 | physics_profiles | 6 |
@@ -26,23 +26,23 @@ Project: `experiments/autorig-character-004/rig_v0_project`
 
 | score | part_a | part_b | bbox_gap | contact_length |
 |---:|---|---|---:|---:|
-| 78.365 | `neck_under` | `hair_front_L` | 65.0 | 0 |
-| 78.365 | `neck_under` | `hair_front_C` | 65.0 | 0 |
-| 78.365 | `neck_under` | `hair_front_R` | 145.0 | 0 |
-| 72.701 | `clothes` | `mouth_parts_lower_lip` | 80.0 | 0 |
-| 72.581 | `clothes` | `mouth_parts_interior` | 80.0 | 0 |
-| 69.321 | `neck_under` | `choker` | 0.0 | 26 |
-| 68.825 | `clothes` | `face_base` | 43.0 | 0 |
-| 66.631 | `neck` | `clothes` | 0.0 | 63 |
-| 66.365 | `clothes` | `hair_front_L` | 95.0 | 0 |
-| 66.365 | `clothes` | `hair_front_C` | 95.0 | 0 |
-| 63.821 | `clothes` | `neck_skin` | 0.0 | 112 |
-| 61.141 | `neck_under` | `mouth_parts_lower_lip` | 50.0 | 0 |
-| 61.061 | `neck_under` | `mouth_parts_tongue` | 58.0 | 0 |
-| 61.021 | `neck_under` | `mouth_parts_interior` | 50.0 | 0 |
-| 60.365 | `raw_bottomwear` | `clothes` | 0.0 | 86 |
-| 59.415 | `hair_back_L` | `R_arm` | 34.0 | 0 |
-| 59.415 | `hair_back_L` | `L_arm` | 74.632 | 0 |
-| 57.29 | `hair_back_L` | `neck_skin` | 0.0 | 48 |
-| 56.025 | `hair_back_L` | `neck_under` | 0.0 | 51 |
-| 55.985 | `hair_back_R` | `neck_under` | 0.0 | 51 |
+| 80.015 | `neck_under` | `hair_front_L` | 65.0 | 0 |
+| 80.015 | `neck_under` | `hair_front_C` | 65.0 | 0 |
+| 80.015 | `neck_under` | `hair_front_R` | 145.0 | 0 |
+| 71.627 | `clothes` | `face_base` | 43.0 | 0 |
+| 68.015 | `clothes` | `hair_front_L` | 95.0 | 0 |
+| 68.015 | `clothes` | `hair_front_C` | 95.0 | 0 |
+| 62.562 | `neck_under` | `mouth_parts_lower_lip` | 59.0 | 0 |
+| 62.482 | `neck_under` | `mouth_parts_tongue` | 73.0 | 0 |
+| 62.442 | `neck_under` | `mouth_parts_interior` | 59.0 | 0 |
+| 62.25 | `neck_skin` | `hair_front_L` | 77.0 | 0 |
+| 62.25 | `neck_skin` | `hair_front_C` | 77.0 | 0 |
+| 62.25 | `neck_skin` | `hair_front_R` | 157.0 | 0 |
+| 60.565 | `hair_back_L` | `R_arm` | 34.0 | 0 |
+| 60.565 | `hair_back_L` | `L_arm` | 74.632 | 0 |
+| 59.9 | `neck` | `hair_front_L` | 0.0 | 47 |
+| 58.576 | `neck_under` | `choker` | 0.0 | 26 |
+| 57.7 | `neck` | `hair_front_R` | 0.0 | 91 |
+| 57.45 | `neck` | `hair_front_C` | 0.0 | 96 |
+| 57.175 | `hair_back_L` | `neck_under` | 0.0 | 51 |
+| 57.135 | `hair_back_R` | `neck_under` | 0.0 | 51 |

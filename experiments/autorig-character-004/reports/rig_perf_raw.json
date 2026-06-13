@@ -2,35 +2,35 @@
   "scales": {
     "1.0": {
       "backend": "canvas",
-      "neutral": 104.3,
-      "head_turn": 73.3,
-      "nod": 76.5,
-      "tilt": 67,
-      "gaze_turn": 74.3,
-      "blink": 165.3,
-      "mouth": 249.2,
-      "combo": 224.3,
-      "physics_step": 420.9,
+      "neutral": 173.3,
+      "head_turn": 104.2,
+      "nod": 119.3,
+      "tilt": 83.6,
+      "gaze_turn": 94.6,
+      "blink": 183.3,
+      "mouth": 281.1,
+      "combo": 290,
+      "physics_step": 501.6,
       "raf_fps": 1
     },
     "0.55": {
       "backend": "canvas",
-      "neutral": 173.9,
-      "head_turn": 96,
-      "nod": 95.3,
-      "tilt": 88.3,
-      "gaze_turn": 96.2,
-      "blink": 202.5,
-      "mouth": 276,
-      "combo": 210.8,
-      "physics_step": 426,
+      "neutral": 236.7,
+      "head_turn": 129.9,
+      "nod": 121.7,
+      "tilt": 106.8,
+      "gaze_turn": 117.2,
+      "blink": 214.9,
+      "mouth": 341.2,
+      "combo": 297.8,
+      "physics_step": 502.2,
       "raf_fps": 1
     }
   },
   "replay": {
     "frames": 175,
-    "wall_s": 9.95,
-    "effective_fps": 18
+    "wall_s": 9.43,
+    "effective_fps": 19
   },
   "errors": []
 }

@@ -1,0 +1,7 @@
+{
+  "generated_at": "2026-06-13T10:36:22.684379+00:00",
+  "source": "experiments/autorig-character-004/generated/master.png",
+  "widen": 1.15,
+  "extend_up_px": 70,
+  "output": "experiments/autorig-character-004/hidden_neck/neck_under.png"
+}
