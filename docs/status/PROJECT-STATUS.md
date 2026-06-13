@@ -1,6 +1,6 @@
 # Vtube Project Status
 
-Updated: 2026-06-13 (004 입 H2 5라운드 — 진짜 입술 개폐 MOUTH-LIP-PARTS(윗입술 고정+아랫입술 하강) + 템플릿화 정비 AUTORIG-TEMPLATE-001 완료. 입 H2 판정 대기)
+Updated: 2026-06-13 (입 MOUTH-LIP-PARTS·템플릿화 TEMPLATE-001·각도입체감 ANGLE-SWAP-001 3돌파. 입 H2 + 각도후속이 다음 차례)
 
 ## Current Phase
 
@@ -73,12 +73,31 @@ Updated: 2026-06-13 (004 입 H2 5라운드 — 진짜 입술 개폐 MOUTH-LIP-PA
 - 보류(백로그): 신체/머리 sway·head tx(3D 미세 — H2 육안이 잡음).
 - 상세: evidence log `AUTORIG-TEMPLATE-001`, 스펙 `docs/ref/AUTORIG-MASTER-SPEC.md` §1.5·조건 11.
 
+## AUTORIG-ANGLE-SWAP-001 (각도 입체감 돌파) — 2026-06-13 방향 검증
+
+주인님 통찰("각도별 PNG 생성, 애초에 png 아닌가") → 의사3D 격자의 평면 한계를 AI 생성 각도 작화로 돌파. 공식 Live2D는 39워프·143키폼 메시변형(자동리깅 불가)이지만 우리는 생성이 싸다.
+
+- **검증 흐름**: gpt-image-2 5각도(정면~좌측면 20도간격) $0.22 정합완벽 → `extract_angle_sheet.py`(셀분리·흰배경제거·머리중심정렬) → `build_angle_swap_project.py`(5 sprite 파트 + ParamAngleX opacity 스왑, 입 4상태 curve 이식).
+- **실측**: 자체 런타임 헤드리스 캡처(8064)에서 AngleX 0→-40→-80 = 정면→3/4→완전측면 회전 작동, **런타임 코드 0변경**(partOpacity 임의 파라미터·draw_pixi sprite 폴백 이미 지원), 콘솔에러 0.
+- 웹검색 결론: IPAdapter/ControlNet이 업계표준이나 gpt-image-2만으로 충분. SV3D/Zero123은 사물용 부적합, Anisora는 연속회전 필요시 다음카드.
+- 미니 프로젝트: `experiments/autorig-character-004/angle_swap_project/` (8064). 상세: evidence `AUTORIG-ANGLE-SWAP-001`.
+- **후속 (미검증)**: ① 우향 미러(좌우반전) ② 끄덕임 상하 각도시트(AngleY) ③ 하이브리드(작은각도 메시키폼+큰각도 작화스왑) ④ 본체 위벨리그 통합(표정과 공존).
+
 ## Next Actions
 
 1. **004 입 H2 판정** — 8062 입 슬라이더로 미소 개폐 확인 → 합격 시 정비 코드(TEMPLATE-001)로 통합 풀런 → rig v2.0 박제. 잔여 후보: 치마 드레이프 ±9px(주인님 체감).
-2. `AUTORIG-PLAYER-001` — 사용자 산출물(웹 링크·OBS 브라우저 소스·투명 모드 `?transparent=1`·오픈 ZIP).
-3. `AUTORIG-ANCHOR-DETECT-001` — 임의 업로드 PNG 앵커 자동 검출 + rembg 전처리 (프로덕션 갭).
-4. 분해 풀해상도화 (CUDA 런북 `docs/archive/2026-06-08-superseded-plans/`) + 키폼 사다리.
+2. **ANGLE-SWAP 후속** — 8064 각도 회전 체감 후 방향 결정(미러/끄덕임/하이브리드/본체통합). 입체 각도가 위벨뿐 아니라 전 캐릭터 공통 자산.
+3. `AUTORIG-PLAYER-001` — 사용자 산출물(웹 링크·OBS 브라우저 소스·투명 모드 `?transparent=1`·오픈 ZIP).
+4. `AUTORIG-ANCHOR-DETECT-001` — 임의 업로드 PNG 앵커 자동 검출 + rembg 전처리 (프로덕션 갭).
+5. 분해 풀해상도화 (CUDA 런북 `docs/archive/2026-06-08-superseded-plans/`) + 키폼 사다리.
+
+## 다음 세션 빠른 재개 (서버·게이트 상태)
+
+- **떠있을 수 있는 서버**(세션 종료 시 꺼짐 — 재기동 필요): 8062 입 리깅앱·8063/drive 웹캠·8064 각도스왑·8095 관제탑.
+  - 입: `python3 scripts/mini_cubism_preview_server.py --project experiments/autorig-character-004/rig_v0_project --port 8062`
+  - 각도: `python3 scripts/mini_cubism_preview_server.py --project experiments/autorig-character-004/angle_swap_project --port 8064`
+- **대기 게이트**: 입 풀런 `runs/autorig-character-004_20260613_193420` H2 WAITING (주인님 판정 미완).
+- **미커밋 변화 없음** — 모든 작업 커밋 완료(최신: ANGLE-SWAP-001 9cbbaad). progress.html은 입 풀런 기준.
 
 ## Rules
 

@@ -51,7 +51,8 @@ sed -n '1,220p' /Users/family/jason/jason-agent-harness-template/harnesses/vtube
 
 1. `AUTORIG-CHARACTER-004` — 위벨 풀런 **H2 재판정 대기** (부품형 입=윗입술 고정+아랫입술 하강 MOUTH-LIP-PARTS, 표정 6종·액센트, H2 5라운드 반영). 입 5번 삽질 교훈 → 정비로 박제
 2. `AUTORIG-TEMPLATE-001` — **캐릭터 스펙 분리 정비 완료 (2026-06-13)**: `characters/<id>.yaml`(외형·`expression_style`·색 힌트) + `lib/character_spec.py`, `generate_master_sheets --character-spec`, 색·OVERLAP·목높이 실측 자동화. 005부터 코드 0줄 수정으로 캐릭터 추가. 잔여: 입 H2 후 정비 코드로 통합 풀런
-3. `AUTORIG-PLAYER-001` — 사용자 산출물 (웹 링크·OBS 브라우저 소스·투명 모드 `?transparent=1`·오픈 ZIP)
+3. `AUTORIG-ANGLE-SWAP-001` — **각도 입체감 방향 검증 완료 (2026-06-13)**: AI 생성 각도 작화를 ParamAngleX opacity 스왑 → 옆모습 회전이 자체 런타임 코드 0변경으로 작동(8064 캡처 확증). `extract_angle_sheet.py`+`build_angle_swap_project.py`. 후속: 우향미러·끄덕임(AngleY)·하이브리드·본체통합. 전 캐릭터 공통 자산
+4. `AUTORIG-PLAYER-001` — 사용자 산출물 (웹 링크·OBS 브라우저 소스·투명 모드 `?transparent=1`·오픈 ZIP)
 3. `AUTORIG-ANCHOR-DETECT-001` — 임의 업로드 PNG 앵커 자동 검출 + rembg 입력 전처리 (프로덕션 갭)
 4. `AUTORIG-RIG-SCHEMA-001` — rig JSON 스키마 확정 (mini_rig.json: 메시/디포머/pin_edges/물리)
 5. `AUTORIG-EDITOR-001` — 분산 에디터(8092/5174/review_app) 통합
