@@ -19,6 +19,10 @@ MOUTH_PART_IDS = ("mouth_parts_interior", "mouth_parts_teeth", "mouth_parts_tong
 # 아래 4종만 미소선 아래로 펼친다 (입안 윗경계는 미소선이 가린다).
 MOUTH_LOWER_IDS = ("mouth_parts_interior", "mouth_parts_teeth",
                    "mouth_parts_tongue", "mouth_parts_lower_lip")
+# MOUTH-LIP-PARTS (004 H2 5차, 주인님 "입 시트로 일관 처리"): 윗입술(고정)+아랫입술(개폐)+입안.
+# 입안 3종은 윗입술~아랫입술 사이라 닫힘에선 안 보이게 opacity 페이드. 아랫입술(lower_lip)은
+# 항상 켜진 채 H(v)로 닫힘(윗입술에 붙음)~열림(하강) — 닫힘=윗입술+아랫입술이 위벨 미소.
+MOUTH_CAVITY_IDS = ("mouth_parts_interior", "mouth_parts_teeth", "mouth_parts_tongue")
 # 표정 활성 시 숨길 기본 눈 계열 (존재하는 것만 곡선 부착)
 BASE_EYE_PART_IDS = ("L_eye_white", "R_eye_white", "L_iris", "R_iris",
                      "L_upper_lash", "R_upper_lash", "L_lower_lash", "R_lower_lash",
@@ -200,17 +204,18 @@ def attach_mouthform_line_keyforms(meshes: list[dict], bbox_by_id: dict) -> list
     MouthOpenY를 쓰므로, Form의 정점 키폼은 닫힌 mouth_line 전담. 열린 입의 Form은
     기존 mouth_warp 디포머 바인딩 근사 유지.
     """
-    mesh = next((m for m in meshes if m["part_id"] == "mouth_line"), None)
-    if mesh is None or "mouth_line" not in bbox_by_id:
+    target = "mouth_parts_upper_lip" if "mouth_parts_upper_lip" in bbox_by_id else "mouth_line"
+    mesh = next((m for m in meshes if m["part_id"] == target), None)
+    if mesh is None or target not in bbox_by_id:
         return []
-    x, _y, w, _h = bbox_by_id["mouth_line"]
+    x, _y, w, _h = bbox_by_id[target]
     cx = x + w / 2
     keys = []
     for v, amp in ((-1, 6.0), (0, 0.0), (1, -7.0)):  # 화면 y는 아래가 + — 음수 amp가 입꼬리 올림
         keys.append({"value": v, "vertices": [
             [vx, round(vy + amp * (abs(vx - cx) / max(w / 2, 1)) ** 1.6, 1)] for vx, vy in mesh["vertices"]]})
     mesh["vertex_keyforms"] = {"parameter_id": "ParamMouthForm", "keys": keys}
-    return ["mouth_line"]
+    return [target]
 
 
 def curve(part, param, points):
@@ -239,10 +244,12 @@ def build_opacity_curves(use_arap: bool, use_mouth_states: bool, use_mouth_warp:
                 peak = 0.92 if name == "gloom" else 1.0  # 그늘은 살짝 투명 — 머리 위 오버레이
                 part_opacity_keyframes.append(curve(f"accent_{name}", param, [(0.0, 0.0), (1.0, peak)]))
     if use_mouth_parts:
-        # MOUTH-LIP-RIDE-001: 미소선 = 윗입술 (MouthOpenY로 안 사라짐 — opacity 곡선 없음 = 항상 1).
-        # 닫힘/열림이 같은 작화라 미소곡선이 제자리에서 그대로 열린다 (스왑 점프 폐기).
-        # 하부 4종은 살짝 벌릴 때 페이드 인 — 닫힘에선 미소선 뒤로 붕괴(H(0)=0.04)+opacity 0이라 안 보임.
-        for pid in MOUTH_LOWER_IDS:
+        # MOUTH-LIP-PARTS: 마스터 입선(mouth_line)은 위치 참조용으로 sources에 남되 항상 숨김 —
+        # 다문 선 한 줄이라 윗입술로 부적합, 시트 upper_lip이 윗입술. (전 MouthOpenY값 opacity 0)
+        part_opacity_keyframes.append(curve("mouth_line", "ParamMouthOpenY", [(0.0, 0.0), (1.0, 0.0)]))
+        # 윗입술(upper_lip)·아랫입술(lower_lip)은 항상 켜짐(곡선 없음=1) — 닫힘에서 둘이 만나 위벨 미소.
+        # 입안 3종만 살짝 벌릴 때 페이드 인(닫힘엔 윗/아랫입술 사이 붕괴+opacity 0).
+        for pid in MOUTH_CAVITY_IDS:
             if pid in bbox_by_id:
                 part_opacity_keyframes.append(
                     curve(pid, "ParamMouthOpenY", [(0.0, 0.0), (0.06, 0.0), (0.14, 1.0), (1.0, 1.0)]))

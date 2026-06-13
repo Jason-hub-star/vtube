@@ -25,7 +25,7 @@ import scipy.ndimage as ndi
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from lib.rig_keyforms import MOUTH_LOWER_IDS  # noqa: E402
+from lib.rig_keyforms import MOUTH_CAVITY_IDS, MOUTH_LOWER_IDS  # noqa: E402
 from lib.vtube_io import ROOT, load_json, now_iso, write_json  # noqa: E402
 
 
@@ -100,9 +100,9 @@ def main() -> int:
             leak = int((a & ~interior_d).sum())
             check(f"clip_leak_{pid.rsplit('_', 1)[1]}", leak == 0, f"누출 {leak}px")
 
-        # 미소선(윗입술)+하부 합집합 세로 연속성: 중앙 60% 컬럼 내부 갭 ≤ 2px (윗입술↔입안 이음새 포함)
+        # 윗입술+아랫입술+입안 합집합 세로 연속성: 중앙 60% 컬럼 내부 갭 ≤ 2px (입술↔입안 이음새 포함)
         union = np.zeros_like(interior_a)
-        for pid in (*MOUTH_LOWER_IDS, "mouth_line"):
+        for pid in (*MOUTH_LOWER_IDS, "mouth_parts_upper_lip"):
             pp = project / f"parts/{pid}.png"
             if pp.exists():
                 union |= np.asarray(Image.open(pp).convert("RGBA"))[..., 3] > 8
@@ -117,16 +117,22 @@ def main() -> int:
                 worst_gap = max(worst_gap, int(runs.max()) - 1)
         check("vertical_continuity", worst_gap <= 2, f"중앙 컬럼 최악 내부 갭 {worst_gap}px")
 
-    # MOUTH-LIP-RIDE-001 핵심 불변: 미소선(윗입술)은 MouthOpenY opacity 곡선이 없어야(항상 켜짐 →
-    # 미소곡선이 제자리 유지), 하부 4종은 페이드 곡선 보유. 미소선이 사라지면 윗입술 점프 = 회귀.
+    # MOUTH-LIP-PARTS 핵심 불변: 윗입술(upper_lip)은 고정 — MouthOpenY opacity/정점키폼 없이
+    # MouthForm 입꼬리 키폼만. 입안 3종은 페이드, 마스터 입선(mouth_line)은 숨김(opacity 0).
     curves = {(c["part_id"], c["parameter_id"]): c for c in character.get("part_opacity_keyframes", [])}
-    line_stays = ("mouth_line", "ParamMouthOpenY") not in curves
-    lowers_fade = all(curves.get((pid, "ParamMouthOpenY")) for pid in MOUTH_LOWER_IDS)
-    check("lip_ride_smile_line_persists", line_stays and lowers_fade,
-          f"미소선 MouthOpenY 곡선 {'없음(OK)' if line_stays else '있음(FAIL—사라짐)'}, 하부 페이드 {lowers_fade}")
+    upper_mesh = next((m for m in character["meshes"] if m["part_id"] == "mouth_parts_upper_lip"), None)
+    upper_form = (upper_mesh.get("vertex_keyforms") or {}).get("parameter_id") == "ParamMouthForm" if upper_mesh else False
+    upper_no_open = ("mouth_parts_upper_lip", "ParamMouthOpenY") not in curves
+    cavity_fade = all(curves.get((pid, "ParamMouthOpenY")) for pid in MOUTH_CAVITY_IDS)
+    line_hidden = ("mouth_line", "ParamMouthOpenY") in curves  # opacity 0 곡선으로 숨김
+    check("lip_parts_structure", upper_form and upper_no_open and cavity_fade and line_hidden,
+          f"윗입술 고정(MouthForm {upper_form}, MouthOpen 곡선없음 {upper_no_open}), 입안 페이드 {cavity_fade}, 입선 숨김 {line_hidden}")
 
-    # MouthForm 입꼬리 키폼
-    ml = next((m for m in character["meshes"] if m["part_id"] == "mouth_line"), None)
+    # MouthForm 입꼬리 키폼 (MOUTH-LIP-PARTS: 윗입술 upper_lip이 보유, 폴백 mouth_line)
+    ml = next((m for m in character["meshes"]
+               if m["part_id"] == "mouth_parts_upper_lip"
+               and (m.get("vertex_keyforms") or {}).get("parameter_id") == "ParamMouthForm"), None) \
+        or next((m for m in character["meshes"] if m["part_id"] == "mouth_line"), None)
     spec = (ml or {}).get("vertex_keyforms") or {}
     if spec.get("parameter_id") == "ParamMouthForm":
         base = np.asarray(ml["vertices"], dtype=float)

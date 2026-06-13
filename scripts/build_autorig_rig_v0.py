@@ -152,9 +152,10 @@ def main() -> int:
     if args.hidden_neck_dir is not None and (args.hidden_neck_dir / "neck_under.png").exists():
         hidden.append(("neck_under", args.hidden_neck_dir / "neck_under.png", 199))  # 원본 목(200) 바로 뒤
     if use_mouth_parts:
-        # MOUTH-LIP-RIDE-001: 윗입술 = 미소선(mouth_line, 410) — 하부 4종만 미소선보다 뒤(작은 번호)에
-        # 깔아 미소선이 입안 윗경계를 가린다. 시트 윗입술 부품(upper_lip)은 미사용 (미소선이 대신).
-        for i, name in enumerate(("interior", "tongue", "teeth", "lower_lip")):
+        # MOUTH-LIP-PARTS: 진짜 입술 개폐 — 윗입술(시트, 고정) + 아랫입술(시트 미소곡선, 개폐) +
+        # 입안/이빨/혀(그 사이, 페이드). 닫힘=윗입술+아랫입술 만나 위벨 미소, 열림=윗입술 고정·아랫입술 하강.
+        # draw order(뒤→앞): 입안 → 혀 → 이빨 → 윗입술 → 아랫입술 (입술이 입안 가림)
+        for i, name in enumerate(("interior", "tongue", "teeth", "upper_lip", "lower_lip")):
             hidden.append((f"mouth_parts_{name}", args.mouth_parts_dir / f"mouth_parts_{name}.png", 405 + i))
     elif use_mouth_states:
         # v21 최종 입 성공패턴: 풀 상태 스프라이트 크로스페이드 (분리 내부 레이어 폐기)
