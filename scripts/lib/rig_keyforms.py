@@ -158,7 +158,47 @@ def build_keyform_bindings() -> list[dict]:
         # 입 패럴랙스 — 입이 머리 윤곽(±22)보다 더 쏠림(±6 추가) = 앞면 입체 단서.
         binding("ParamAngleX", 30, "mouth_warp", tx=6),
         binding("ParamAngleX", -30, "mouth_warp", tx=-6),
+        # 코 돌출(R3) — 가장 앞으로 튀어나온 특징이라 윤곽보다 가장 크게 쏠림(±8).
+        binding("ParamAngleX", 30, "nose_warp", tx=8),
+        binding("ParamAngleX", -30, "nose_warp", tx=-8),
     ]
+
+
+def attach_cheek_keyforms(meshes: list[dict]) -> list[str]:
+    """ANGLE-FORESHORTEN-001 R3: 얼굴 메시 먼쪽 볼 정점을 AngleX에서 안으로 압축(비대칭 원근).
+    +30=image-left(저x) 볼 압축, -30=image-right(고x) 볼 압축. Izumi 頬 분리 등가 효과를
+    파츠 분리 없이 vertex_keyforms로. 외곽+중하단 가중(이마·코는 거의 안 움직임). 머리카락이
+    볼을 덮는 캐릭터는 체감 작지만 무해(정합 PASS)·범용.
+    """
+    import statistics
+    face = next((m for m in meshes if m["part_id"] == "face_base"), None)
+    if not face or not face.get("vertices"):
+        return []
+    V = [list(p) for p in face["vertices"]]
+    xs = [x for x, _ in V]
+    ys = [y for _, y in V]
+    cx = statistics.median(xs)
+    xr = max(xs) - min(xs)
+    ymid = (min(ys) + max(ys)) / 2
+    yh = max((max(ys) - min(ys)) / 2, 1)
+
+    def compress(sign: int) -> list[list[float]]:
+        out = []
+        for x, y in V:
+            far = (x < cx) if sign > 0 else (x > cx)
+            yw = max(0.0, (y - ymid) / yh)              # 중하단 가중(턱·볼)
+            ow = abs(x - cx) / max(xr * 0.5, 1)         # 외곽 가중
+            if far and abs(x - cx) > xr * 0.20:
+                out.append([x + (cx - x) * 0.16 * yw * ow, y])
+            else:
+                out.append([x, y])
+        return out
+
+    face["vertex_keyforms"] = {"parameter_id": "ParamAngleX", "keys": [
+        {"value": -30, "vertices": compress(-1)},
+        {"value": 0, "vertices": [list(p) for p in V]},
+        {"value": 30, "vertices": compress(1)}]}
+    return ["face_base"]
 
 
 def attach_mouth_height_keyforms(meshes: list[dict], bbox_by_id: dict) -> list[str]:

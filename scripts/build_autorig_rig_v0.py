@@ -26,7 +26,7 @@ import numpy as np
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from lib.rig_keyforms import EXPRESSION_NAMES, attach_mouth_height_keyforms, attach_mouth_parts_keyforms, attach_mouthform_line_keyforms, binding, binding_r, build_keyform_bindings, build_opacity_curves, build_parameters, build_physics_profiles  # noqa: E402
+from lib.rig_keyforms import EXPRESSION_NAMES, attach_cheek_keyforms, attach_mouth_height_keyforms, attach_mouth_parts_keyforms, attach_mouthform_line_keyforms, binding, binding_r, build_keyform_bindings, build_opacity_curves, build_parameters, build_physics_profiles  # noqa: E402
 from lib.rig_mesh import alpha_stats, build_vertex_weights, grid_mesh, pad_bounds  # noqa: E402
 from lib.vtube_io import ROOT, load_json, now_iso, rel, write_json  # noqa: E402
 from run_arap_blink_experiment import blink_mesh, eye_bbox_from_layer  # noqa: E402
@@ -67,6 +67,8 @@ def deformer_of(pid: str) -> str:
         return "front_hair_warp"
     if "eyewear" in pid or "earwear" in pid:
         return "head_angle_warp"  # 안경·귀걸이 = 얼굴 부착 액세서리
+    if pid == "nose_reference":
+        return "nose_warp"  # ANGLE-FORESHORTEN-001 R3: 코 돌출 시프트 전용 워프
     if "brow" in pid or "face" in pid or "nose" in pid or is_ear(pid):
         return "head_angle_warp"
     if pid.startswith("hair_front_"):
@@ -319,6 +321,10 @@ def main() -> int:
     for pid in attach_mouthform_line_keyforms(meshes, bbox_by_id):
         mesh = next(m for m in meshes if m["part_id"] == pid)
         write_json(out / mesh["mesh_path"], mesh)
+    # ANGLE-FORESHORTEN-001 R3: 먼쪽 볼 정점 압축 (비대칭 원근, vertex_keyforms)
+    for pid in attach_cheek_keyforms(meshes):
+        mesh = next(m for m in meshes if m["part_id"] == pid)
+        write_json(out / mesh["mesh_path"], mesh)
 
     def union_bbox(*pids: str) -> list[int]:
         # 빈 파트(알파 0 → [0,0,4,4])는 제외 — 원점으로 bounds가 끌려가는 것 방지
@@ -339,6 +345,7 @@ def main() -> int:
     eye_l_bounds = pad_bounds(union_bbox("L_eye_white", "L_iris", "L_upper_lash", "eye_L_closed_lid"), 30)
     eye_r_bounds = pad_bounds(union_bbox("R_eye_white", "R_iris", "R_upper_lash", "eye_R_closed_lid"), 30)
     mouth_bounds = pad_bounds(union_bbox("mouth_line", "mouth_inner", "mouth_teeth", "mouth_parts_interior"), 40)
+    nose_bounds = pad_bounds(bbox_by_id.get("nose_reference", [1001, 441, 25, 35]), 30)  # 코 돌출 워프(R3)
     head_bounds = pad_bounds(union_bbox("face_base", "front_hair", "L_brow", "R_brow", "mouth_line"), 60)  # 하향 연장 금지: 턱은 가장자리 핀 근처라 적게 움직여야 목이 따라갈 수 있다 (공식 의사3D)
     if use_hair_chunks:
         hair_bounds = pad_bounds(union_bbox("hair_front_L", "hair_front_C", "hair_front_R"), 30)
@@ -415,6 +422,8 @@ def main() -> int:
         {"id": "eye_L_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("eye_L_warp", []), "bounds": eye_l_bounds, "pivot": center(eye_l_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
         {"id": "eye_R_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("eye_R_warp", []), "bounds": eye_r_bounds, "pivot": center(eye_r_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
         {"id": "mouth_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("mouth_warp", []), "bounds": mouth_bounds, "pivot": center(mouth_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
+        # ANGLE-FORESHORTEN-001 R3: 코 돌출 — 비핀 2×2라 AngleX tx로 코가 가까운 쪽으로 더 쏠림
+        {"id": "nose_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("nose_warp", []), "bounds": nose_bounds, "pivot": center(nose_bounds), "lattice": {"cols": 2, "rows": 2}, "edge_pinned": False},
         {"id": "front_hair_warp", "type": "warp", "parent_id": "head_angle_warp", "child_ids": children.get("front_hair_warp", []), "bounds": hair_bounds, "pivot": center(hair_bounds), "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
         # 뒷머리 = 통짜 머리 감쇠 추종 (공식: 後ろ髪の曲面 ← AngleX/Y, 얼굴 체인 소속).
         # 부모는 root (upper 자식이면 upper bounds와 부분 겹침 → 머리카락 내부 시어) —
