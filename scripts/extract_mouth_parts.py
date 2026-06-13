@@ -153,8 +153,10 @@ def main() -> int:
 
     write_json(out / "mouth_parts_manifest.json", {
         "generated_at": now_iso(), "ok": True, "sheet": rel(args.sheet),
-        # anchor_y = 윗입술이 앉는 입선 중심 — 리그 붕괴 앵커와 동일해야 v→0이 입선 위로 수렴
-        "scale": round(scale, 5), "anchor_y": round(line_center_y), "split_y_cell": split_y,
+        # anchor_y = 입안 상단(미소선 바로 아래) — H(v) 세로 스케일의 고정점.
+        # 미소선 중심이 아니라 입안 상단이어야 윗부분이 고정되고 아래로만 펼쳐진다 = 윗입술 고정
+        # (중심 앵커는 입안이 위로도 올라가 미소선을 어둡게 덮어 미소선이 묻혔다 — H2 5차 진단).
+        "scale": round(scale, 5), "anchor_y": round(line_bottom_y - OVERLAP), "split_y_cell": split_y,
         "mouth_line_bbox": [mx0, my0, mx1, my1], "parts": part_boxes, "written": written,
     })
     print(f"mouth_parts: {written} -> {rel(out)}")
