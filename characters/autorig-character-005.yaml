@@ -1,0 +1,28 @@
+id: autorig-character-005
+name: "GPT-chan (지피쨩)"
+
+# IP 1차: 오리지널 마스코트라 캐릭터명 직지정 가능
+ip_named: "GPT-chan, an original silver-haired anime mascot girl in white-and-black techwear"
+# IP 거부 시 폴백: 외형 서술 (캐릭터명 없이)
+ip_desc: >-
+  an original anime girl with a short silver-white bob and side-swept bangs, bright blue eyes,
+  a small blue triangular hair clip, wearing an open white hooded techwear jacket over a black
+  high-neck bodysuit with glowing blue circuit-line accents, and a thin dark collar
+
+appearance:
+  hair: "short silver-white bob, chin length, side-swept bangs, a small blue triangular hair clip on one side"
+  eyes: "bright blue eyes, calm and sharp"
+  outfit: "open white hooded techwear jacket over a black high-neck bodysuit with blue circuit-line accents, a thin dark collar at the neck"
+
+# 쿨·첨단 AI 톤 — 입 개방 정도·눈 표정을 결정 (입/눈 시트 프롬프트에 주입)
+expression_style: >-
+  cool, composed and confident — a cutting-edge AI persona with a faint knowing smile;
+  reserved and never grinning wide, eyes calm and intelligent; keep every mouth opening
+  small and measured, corners only slightly raised
+
+# 색 힌트 (실측이 최종 — 분리 임계 보조). 은발 vs 검은 보디수트 = 분리 쉬움(위벨 암녹/검정 난제 없음)
+colors:
+  hair_rgb: [210, 214, 222]
+  clothing_rgb: [28, 30, 36]
+
+constraints: [neck_visible, choker_thin]

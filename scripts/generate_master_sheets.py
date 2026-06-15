@@ -53,6 +53,19 @@ MASTER_TEMPLATE = (
     "(not blended into the dress body), anime illustration, clean lineart"
 )
 
+# 레퍼런스 시드용 (--reference) — 기존 캐릭터 그림을 images/edits로 차렷 정면 마스터로 정리.
+# 정체성(머리·의상·색)은 시드가 고정, 자세만 분해하기 좋게 교정(양팔 차렷·손 펴짐·몸 안 가림).
+MASTER_EDIT_TEMPLATE = (
+    "Using this exact same character (keep the identical hairstyle, hair color, eyes, outfit, "
+    "colors and accessories), redraw as a 2048x2048 front-facing UPPER-BODY anime illustration "
+    "(head down to the hips) on a plain pure-white background. Single character centered, facing "
+    "forward, BOTH ARMS relaxed straight down at the sides — hands NOT on the hips, NOT crossing "
+    "or covering the torso, arms clearly separated from the body so the torso outline is fully "
+    "visible. Neck fully visible (no high collar covering it), bangs not covering the eyes, eyes "
+    "open, mouth closed with a clearly drawn dark smile line, hair in distinct left/center/right "
+    "masses. Keep the outfit and all colors identical to the reference. Clean lineart, flat anime style."
+)
+
 # ★ {style} = 스펙 expression_style — 캐릭터 표정 성격이 입 개방 정도를 결정 (사후 튜닝 삽질 차단)
 MOUTH_TEMPLATE = (
     "Using this exact character, generate a 2048x2048 sheet on pure magenta #FF00FF "
@@ -104,6 +117,7 @@ def build_prompts(spec: dict) -> dict[str, str]:
     style = spec["expression_style"]
     return {
         "master": MASTER_TEMPLATE.format(who=spec["ip_named"]),
+        "master_edit": MASTER_EDIT_TEMPLATE,
         "mouth": MOUTH_TEMPLATE.format(style=style),
         "eyes": EYES_TEMPLATE.format(style=style),
         "accent": ACCENT_TEMPLATE,
@@ -177,6 +191,8 @@ def main() -> int:
                         help="기본: experiments/<spec.id>/generated")
     parser.add_argument("--only", choices=JOB_KINDS, default=None)
     parser.add_argument("--master", type=Path, default=None, help="기존 마스터 재사용 (시트만 재생성 시)")
+    parser.add_argument("--reference", type=Path, default=None,
+                        help="레퍼런스 PNG 시드 — 마스터를 images/edits로 차렷 정면 정리 생성(정체성 유지)")
     parser.add_argument("--quality", choices=["low", "medium", "high"], default="high")
     parser.add_argument("--dry-run", action="store_true", help="low 품질 마스터 1장만 — API 왕복·비용 로그 검증")
     parser.add_argument("--print-prompts", action="store_true",
@@ -200,6 +216,9 @@ def main() -> int:
 
     log: list[dict] = []
     master_path = args.master if args.master and args.master.is_absolute() else (ROOT / args.master if args.master else None)
+    reference = args.reference if (args.reference is None or args.reference.is_absolute()) else ROOT / args.reference
+    if reference is not None and not reference.exists():
+        raise SystemExit(f"--reference 없음: {reference}")
     try:
         for kind in JOB_KINDS:
             if args.only and kind != args.only:
@@ -208,7 +227,11 @@ def main() -> int:
                 continue
             if kind == "master":
                 if master_path is None:
-                    master_path = generate_one(key, "master", prompts["master"], quality, None, out_dir, log, spec)
+                    # 레퍼런스 시드면 images/edits로 차렷 정면 정리, 아니면 텍스트 from-scratch
+                    if reference is not None:
+                        master_path = generate_one(key, "master", prompts["master_edit"], quality, reference, out_dir, log, spec)
+                    else:
+                        master_path = generate_one(key, "master", prompts["master"], quality, None, out_dir, log, spec)
             else:
                 if master_path is None or not master_path.exists():
                     raise SystemExit("시트 생성에는 마스터가 필요합니다 (--master 또는 master 선행 생성)")
