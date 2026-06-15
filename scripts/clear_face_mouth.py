@@ -41,11 +41,25 @@ def main() -> int:
     rgb, alpha = fb[..., :3], fb[..., 3]
     lum = rgb.mean(-1)
     mx0, my0, mx1, my1 = layer_bbox(mline)
-    cx, line_h = (mx0 + mx1) / 2.0, max(my1 - my0, 6)
-    # 구운 입 = 미소선 위~아래로 약 line_h*2 아래까지. 타원으로 덮음(페더).
-    cy = my0 + line_h * 2.0
-    ax = (mx1 - mx0) * 0.85
-    ay = line_h * 3.0
+    cx0, line_h, line_w = (mx0 + mx1) / 2.0, max(my1 - my0, 6), max(mx1 - mx0, 10)
+    # 구운 미소선은 분해 mouth_line보다 넓을 수 있다(입꼬리 잔존=수염). face_base에서 실제
+    # 어두운 입 픽셀을 검출해 그 범위를 덮는다. seed 영역: mouth_line 중심 ±1.6배 폭, 아래로 4배.
+    ry0, ry1 = int(my0 - line_h), int(my0 + line_h * 5)
+    rx0, rx1 = int(cx0 - line_w * 1.6), int(cx0 + line_w * 1.6)
+    sub_lum = lum[ry0:ry1, rx0:rx1]
+    sub_a = alpha[ry0:ry1, rx0:rx1]
+    dark = (sub_lum < 115) & (sub_a > 128)
+    dys, dxs = np.where(dark)
+    if len(dxs):  # 실제 어두운 입 범위(입꼬리 포함)
+        bx0, bx1 = rx0 + int(dxs.min()), rx0 + int(dxs.max())
+        by0, by1 = ry0 + int(dys.min()), ry0 + int(dys.max())
+        cx = (bx0 + bx1) / 2.0
+        cy = (by0 + by1) / 2.0
+        ax = (bx1 - bx0) / 2.0 * 1.35 + 6   # 입꼬리까지 + 여유
+        ay = (by1 - by0) / 2.0 * 1.35 + 6
+    else:  # 폴백: mouth_line 기반
+        cx, cy = cx0, my0 + line_h * 2.0
+        ax, ay = line_w * 0.85, line_h * 3.0
 
     # 피부색: 타원 바깥 ~안쪽 링의 밝은 살구 픽셀 중앙값
     yy, xx = np.mgrid[0:fb.shape[0], 0:fb.shape[1]]
