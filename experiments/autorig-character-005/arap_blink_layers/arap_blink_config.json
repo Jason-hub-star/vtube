@@ -1,0 +1,31 @@
+{
+  "assembly": "experiments/autorig-character-005/reports/full_assembly/assembly.png",
+  "eye_white_L": "experiments/autorig-character-005/seethrough_true_reskinned/L_eye_white.png",
+  "eye_white_R": "experiments/autorig-character-005/seethrough_true_reskinned/R_eye_white.png",
+  "t_steps": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "patch_pad": 26,
+  "skin_band": 0.9,
+  "lower_rise": 0.2,
+  "lower_band": 0.35,
+  "smile_lid_center": 0.34,
+  "smile_low_center": 0.42,
+  "notes": "워프 형태(아치 깊이 등)는 run_arap_blink_experiment.curtain_warp의 0.45/0.28/0.55 상수 — 조정 후 본 스크립트 재실행. lower_rise=아랫꺼풀 상승 비율(EYE-NATURAL-001, 0이면 구형 셔터식)",
+  "generated_at": "2026-06-15T03:16:30.836969+00:00",
+  "baked": [
+    "eye_L_arap_000.png",
+    "eye_L_arap_025.png",
+    "eye_L_arap_050.png",
+    "eye_L_arap_075.png",
+    "eye_L_arap_100.png",
+    "eye_R_arap_000.png",
+    "eye_R_arap_025.png",
+    "eye_R_arap_050.png",
+    "eye_R_arap_075.png",
+    "eye_R_arap_100.png"
+  ]
+}

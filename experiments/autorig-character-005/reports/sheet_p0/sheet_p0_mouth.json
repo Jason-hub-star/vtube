@@ -1,0 +1,75 @@
+{
+  "test_id": "SHEET-P0",
+  "generated_at": "2026-06-15T03:16:22.154255+00:00",
+  "sheet": "experiments/autorig-character-005/generated/mouth.png",
+  "kind": "mouth",
+  "bg_magenta_ratio": 0.6702,
+  "cells": [
+    {
+      "cell": "r1c1",
+      "content_ratio": 0.603,
+      "bbox": [
+        0,
+        177,
+        717,
+        696
+      ],
+      "bbox_width": 717,
+      "width_dev": 0.0,
+      "corners": [
+        0,
+        717
+      ]
+    },
+    {
+      "cell": "r1c2",
+      "content_ratio": 0.6038,
+      "bbox": [
+        0,
+        177,
+        717,
+        696
+      ],
+      "bbox_width": 717,
+      "width_dev": 0.0,
+      "corners": [
+        0,
+        717
+      ]
+    },
+    {
+      "cell": "r2c1",
+      "content_ratio": 0.608,
+      "bbox": [
+        0,
+        14,
+        717,
+        538
+      ],
+      "bbox_width": 717,
+      "width_dev": 0.0,
+      "corners": [
+        0,
+        717
+      ]
+    },
+    {
+      "cell": "r2c2",
+      "content_ratio": 0.6097,
+      "bbox": [
+        0,
+        15,
+        717,
+        538
+      ],
+      "bbox_width": 717,
+      "width_dev": 0.0,
+      "corners": [
+        0,
+        717
+      ]
+    }
+  ],
+  "failures": [],
+  "status": "PASS"
+}

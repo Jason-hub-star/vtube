@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-06-15T03:16:31.732116+00:00",
+  "chin_line_y": 497,
+  "cut_y": 574,
+  "x_range": [
+    951,
+    1059
+  ],
+  "neck_height_px": 77,
+  "tail_px": 28,
+  "outputs": [
+    "experiments/autorig-character-005/neck_split/neck_skin.png",
+    "experiments/autorig-character-005/neck_split/clothes_trimmed.png"
+  ]
+}

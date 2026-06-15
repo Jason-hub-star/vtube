@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-06-15T03:16:27.297888+00:00",
+  "source_manifest": "experiments/autorig-character-005/layer_manifest.json",
+  "original": "experiments/autorig-character-005/generated/master.png",
+  "haze_alpha": 28,
+  "layers": [
+    {
+      "part_id": "back_hair",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/back_hair.png",
+      "draw_order": 100,
+      "own_ratio": 0.02326
+    },
+    {
+      "part_id": "neck",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/neck.png",
+      "draw_order": 200,
+      "own_ratio": 0.00042
+    },
+    {
+      "part_id": "raw_footwear",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/raw_footwear.png",
+      "draw_order": 203,
+      "own_ratio": 0.0
+    },
+    {
+      "part_id": "raw_legwear",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/raw_legwear.png",
+      "draw_order": 204,
+      "own_ratio": 0.04826
+    },
+    {
+      "part_id": "raw_bottomwear",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/raw_bottomwear.png",
+      "draw_order": 205,
+      "own_ratio": 0.03762
+    },
+    {
+      "part_id": "clothes",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/clothes.png",
+      "draw_order": 210,
+      "own_ratio": 0.11845
+    },
+    {
+      "part_id": "L_arm",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/L_arm.png",
+      "draw_order": 220,
+      "own_ratio": 0.05064
+    },
+    {
+      "part_id": "R_arm",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/R_arm.png",
+      "draw_order": 220,
+      "own_ratio": 0.04807
+    },
+    {
+      "part_id": "choker",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/choker.png",
+      "draw_order": 230,
+      "own_ratio": 0.0
+    },
+    {
+      "part_id": "L_ear_outer",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/L_ear_outer.png",
+      "draw_order": 317,
+      "own_ratio": 0.00114
+    },
+    {
+      "part_id": "R_ear_outer",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/R_ear_outer.png",
+      "draw_order": 318,
+      "own_ratio": 0.00105
+    },
+    {
+      "part_id": "face_base",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/face_base.png",
+      "draw_order": 319,
+      "own_ratio": 0.02006
+    },
+    {
+      "part_id": "mouth_line",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/mouth_line.png",
+      "draw_order": 410,
+      "own_ratio": 2e-05
+    },
+    {
+      "part_id": "nose_reference",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/nose_reference.png",
+      "draw_order": 415,
+      "own_ratio": 5e-05
+    },
+    {
+      "part_id": "R_eye_white",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/R_eye_white.png",
+      "draw_order": 500,
+      "own_ratio": 0.00018
+    },
+    {
+      "part_id": "L_eye_white",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/L_eye_white.png",
+      "draw_order": 500,
+      "own_ratio": 0.0002
+    },
+    {
+      "part_id": "R_iris",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/R_iris.png",
+      "draw_order": 510,
+      "own_ratio": 0.00035
+    },
+    {
+      "part_id": "L_iris",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/L_iris.png",
+      "draw_order": 510,
+      "own_ratio": 0.00041
+    },
+    {
+      "part_id": "L_upper_lash",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/L_upper_lash.png",
+      "draw_order": 530,
+      "own_ratio": 0.00045
+    },
+    {
+      "part_id": "R_upper_lash",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/R_upper_lash.png",
+      "draw_order": 530,
+      "own_ratio": 0.00048
+    },
+    {
+      "part_id": "L_brow",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/L_brow.png",
+      "draw_order": 540,
+      "own_ratio": 2e-05
+    },
+    {
+      "part_id": "R_brow",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/R_brow.png",
+      "draw_order": 540,
+      "own_ratio": 3e-05
+    },
+    {
+      "part_id": "ear_inner",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/ear_inner.png",
+      "draw_order": 605,
+      "own_ratio": 0.00017
+    },
+    {
+      "part_id": "raw_eyewear",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/raw_eyewear.png",
+      "draw_order": 620,
+      "own_ratio": 0.0
+    },
+    {
+      "part_id": "front_hair",
+      "path": "experiments/autorig-character-005/seethrough_true_reskinned/front_hair.png",
+      "draw_order": 700,
+      "own_ratio": 0.0
+    }
+  ]
+}

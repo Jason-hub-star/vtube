@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-15T04:14:21.202686+00:00",
+  "ok": true,
+  "sheet": "experiments/autorig-character-005/generated/mouth.png",
+  "scale": 0.06929,
+  "anchor_y": 430,
+  "split_y_cell": 449,
+  "mouth_line_bbox": [
+    973,
+    426,
+    1037,
+    439
+  ],
+  "parts": {
+    "interior": {
+      "px": 345306,
+      "cell_bbox": [
+        33,
+        168,
+        928,
+        692
+      ]
+    },
+    "tongue": {
+      "px": 8963,
+      "cell_bbox": [
+        382,
+        464,
+        588,
+        524
+      ]
+    },
+    "teeth": {
+      "px": 321475,
+      "cell_bbox": [
+        33,
+        168,
+        928,
+        692
+      ]
+    },
+    "lower_lip": {
+      "px": 1011,
+      "cell_bbox": [
+        107,
+        449,
+        869,
+        692
+      ]
+    },
+    "upper_lip": {
+      "px": 2142,
+      "cell_bbox": [
+        32,
+        168,
+        928,
+        449
+      ]
+    }
+  },
+  "written": [
+    "mouth_parts_interior.png",
+    "mouth_parts_tongue.png",
+    "mouth_parts_teeth.png",
+    "mouth_parts_lower_lip.png",
+    "mouth_parts_upper_lip.png"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "test_id": "SHEET-P0",
+  "generated_at": "2026-06-15T03:16:22.497716+00:00",
+  "sheet": "experiments/autorig-character-005/generated/accent.png",
+  "kind": "accent",
+  "bg_magenta_ratio": 0.8525,
+  "cells": [
+    {
+      "cell": "r1c1",
+      "content_ratio": 0.2504,
+      "bbox": [
+        0,
+        258,
+        717,
+        521
+      ],
+      "bbox_width": 717
+    },
+    {
+      "cell": "r1c2",
+      "content_ratio": 0.4693,
+      "bbox": [
+        72,
+        13,
+        622,
+        616
+      ],
+      "bbox_width": 550
+    },
+    {
+      "cell": "r2c1",
+      "content_ratio": 0.2988,
+      "bbox": [
+        212,
+        0,
+        504,
+        717
+      ],
+      "bbox_width": 292
+    },
+    {
+      "cell": "r2c2",
+      "content_ratio": 0.1338,
+      "bbox": [
+        274,
+        0,
+        438,
+        717
+      ],
+      "bbox_width": 164
+    }
+  ],
+  "failures": [],
+  "status": "PASS"
+}

@@ -1,0 +1,107 @@
+{
+  "test_id": "SHEET-P0",
+  "generated_at": "2026-06-15T03:16:22.325990+00:00",
+  "sheet": "experiments/autorig-character-005/generated/eyes.png",
+  "kind": "eyes",
+  "bg_magenta_ratio": 0.9586,
+  "cells": [
+    {
+      "cell": "r1c1",
+      "content_ratio": 0.0321,
+      "bbox": [
+        0,
+        500,
+        477,
+        704
+      ],
+      "bbox_width": 477,
+      "pair": {
+        "width": 477.0,
+        "gap": 323.3120794009885
+      },
+      "width_dev": 0.002
+    },
+    {
+      "cell": "r1c2",
+      "content_ratio": 0.0675,
+      "bbox": [
+        0,
+        500,
+        478,
+        714
+      ],
+      "bbox_width": 478,
+      "pair": {
+        "width": 478.0,
+        "gap": 324.62501704484674
+      },
+      "width_dev": 0.0
+    },
+    {
+      "cell": "r1c3",
+      "content_ratio": 0.1101,
+      "bbox": [
+        0,
+        500,
+        478,
+        716
+      ],
+      "bbox_width": 478,
+      "pair": {
+        "width": 478.0,
+        "gap": 328.07643943778857
+      },
+      "width_dev": 0.0
+    },
+    {
+      "cell": "r2c1",
+      "content_ratio": 0.0807,
+      "bbox": [
+        0,
+        0,
+        477,
+        219
+      ],
+      "bbox_width": 477,
+      "pair": {
+        "width": 477.0,
+        "gap": 326.59199017539197
+      },
+      "width_dev": 0.002
+    },
+    {
+      "cell": "r2c2",
+      "content_ratio": 0.0411,
+      "bbox": [
+        0,
+        0,
+        478,
+        223
+      ],
+      "bbox_width": 478,
+      "pair": {
+        "width": 478.0,
+        "gap": 327.2388763670607
+      },
+      "width_dev": 0.0
+    },
+    {
+      "cell": "r2c3",
+      "content_ratio": 0.1041,
+      "bbox": [
+        0,
+        0,
+        478,
+        225
+      ],
+      "bbox_width": 478,
+      "pair": {
+        "width": 478.0,
+        "gap": 328.46481129925684
+      },
+      "width_dev": 0.0
+    }
+  ],
+  "failures": [],
+  "status": "PASS"
+}

@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-06-15T03:16:28.634002+00:00",
+  "sheet": "experiments/autorig-character-005/generated/mouth.png",
+  "lip_width_in_patch": 0.65,
+  "lip_y_in_patch": 0.17,
+  "scale_margin": 0.97,
+  "feather_px": 18,
+  "written": [
+    "mouth_state_closed.png",
+    "mouth_state_small.png",
+    "mouth_state_mid.png",
+    "mouth_state_wide.png"
+  ]
+}

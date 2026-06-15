@@ -49,7 +49,8 @@ sed -n '1,220p' /Users/family/jason/jason-agent-harness-template/harnesses/vtube
 
 ## Current Next Work
 
-1. `AUTORIG-CHARACTER-004` — 위벨 풀런 **H2 재판정 대기** (부품형 입=윗입술 고정+아랫입술 하강 MOUTH-LIP-PARTS, 표정 6종·액센트, H2 5라운드 반영). 입 5번 삽질 교훈 → 정비로 박제
+1. `AUTORIG-CHARACTER-005` (지피쨩) — **첫 "코드 0줄 3D급" 빌드 완료 (2026-06-15)**: 머리 XYZ 입체(foreshortening)+상체회전(torso_turn_warp)을 빌더 자동 내장, 맥 MPS 분해, 입 3단 수정(원형·이중·입꼬리 해소). **다음 우선: 턱 "수염" = face_base 알파 가장자리가 목 위에 점선 이음새(은발 보브라 턱 노출). fix=face_base 가장자리 목에 페더 블렌드.** 상세: evidence `AUTORIG-CHARACTER-005`, PROJECT-STATUS 인수인계
+2. `AUTORIG-CHARACTER-004` — 위벨 풀런 **H2 재판정 대기** (부품형 입=윗입술 고정+아랫입술 하강 MOUTH-LIP-PARTS, 표정 6종·액센트, H2 5라운드 반영). 입 5번 삽질 교훈 → 정비로 박제
 2. `AUTORIG-TEMPLATE-001` — **캐릭터 스펙 분리 정비 완료 (2026-06-13)**: `characters/<id>.yaml`(외형·`expression_style`·색 힌트) + `lib/character_spec.py`, `generate_master_sheets --character-spec`, 색·OVERLAP·목높이 실측 자동화. 005부터 코드 0줄 수정으로 캐릭터 추가. 잔여: 입 H2 후 정비 코드로 통합 풀런
 3. `AUTORIG-PLAYER-001` — 사용자 산출물 (웹 링크·OBS 브라우저 소스·투명 모드 `?transparent=1`·오픈 ZIP)
 4. `AUTORIG-ANCHOR-DETECT-001` — 임의 업로드 PNG 앵커 자동 검출 + rembg 입력 전처리 (프로덕션 갭)

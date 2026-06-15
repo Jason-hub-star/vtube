@@ -5729,3 +5729,37 @@ verdict: 바인딩으론 불가. 상체회전은 **구조적 워프 필요** —
 notes:
   - de-risk 핵심 성과: 상체회전 ~45% 위험이 "구조 설계 필요"로 구체화. 005 트리 설계에 반영.
 ```
+
+## AUTORIG-CHARACTER-005 (지피쨩) — 하프바디 3D급 빌드 + 턱 수염 미해결
+
+```yaml
+id: AUTORIG-CHARACTER-005
+date: 2026-06-15
+owner: Claude (Opus)
+status: BUILT_RIG_v0 / 턱_수염_미해결 (다음 세션 인수인계)
+context: 005 지피쨩(은발 보브·테크웨어, 쿨 AI)을 "처음부터 전방위 입체구조" 빌더로 빌드.
+         위벨 입체 레버를 빌더에 일반화(Phase 0~1) 후 005가 코드 0줄로 상속.
+done:
+  - 분해: 맥 MPS(CUDA 불필요 — 그 런북은 폐기)로 See-through 640 분해 성공. 모델 HF 자동
+    다운로드(~14GB, ~/.cache/huggingface 캐시 — 다음 세션 재사용). ComfyUI 8188 기동본 재사용.
+  - 생성($1.10): #3 시드 차렷 정면 마스터(--reference, 입선 강조 재생성)+입/눈/액센트 시트.
+  - 빌더 자동 내장(005 코드 0줄): torso_turn_warp(상체회전 sx0.96)+head_z sx0.88/sy0.85(좌우·끄덕임
+    foreshortening)+먼눈/코/볼. 46파트·13디포머.
+  - 입 3단 수정: ①윗입술 상단띠 보존(원형 해소) ②face_base 구운 입 제거 clear_face_mouth(이중 입
+    해소) ③입꼬리 검출 덮기(수염 1차). 입은 단일·정상 개폐 확인.
+  - 파이프라인 robustness(005가 위벨과 달라 드러남): mouth 임계 150→80, 빈 머리레이어 가드(짧은
+    보브 front_hair 0px), 존재 청크만 복사, master --reference 옵션, 타임아웃 600s,
+    extract_mouth_parts 윗입술 상단띠, analyze_rig_cohesion vertex_keyform 경고.
+미해결 (다음 세션 우선):
+  - **턱 "수염"**: 입을 벌리면(사실 정적) 턱 주변에 점선 경계가 보임. 진단: 입 아님(입 단일 정상),
+    face_base 파트의 **알파 가장자리가 목(neck_skin) 위에 옅은 점선 이음새**로 비침(454 fringe px).
+    위벨은 머리카락이 턱을 덮어 안 보였음. 005는 은발 보브라 턱 노출 → 드러남.
+  - 시도(실패): clear_face_mouth(이중 입은 고쳤으나 수염 무관), 가장자리 RGB fringe→인접피부 교체
+    (수염 안 사라짐) → 알파 경계 seam 자체가 원인.
+  - **다음 fix 방향**: face_base 알파 가장자리를 목에 **페더 블렌드**(턱 윤곽 부드럽게 사라지게) 또는
+    reskin 매팅 개선(가장자리 anti-alias 더 부드럽게). 위벨엔 무해해야(턱 가려짐). 8066 캡처로 검증.
+  - 부차: 눈 주변 점선(메시 경계 미세), face_base|neck_skin 정합 14px(머리 foreshortening, 칼라 가림).
+notes:
+  - "005부터 코드 0줄 3D급" 실증 — 머리 XYZ 입체+상체회전 자동 상속. 본질은 2D 메시변형(움직임에서 3D감).
+  - 서버: 8188 ComfyUI(MPS), 8066 드라이브(005, /drive 경로!), 8062/8063 위벨.
+```
