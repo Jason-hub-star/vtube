@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project_kind": "mini_cubism_v0",
   "experiment_id": "autorig-rig-v0",
-  "generated_at": "2026-06-15T03:16:33.564394+00:00",
+  "generated_at": "2026-06-15T04:15:19.819801+00:00",
   "source_selection": {
     "visible_layers": "experiments/autorig-character-005/seethrough_true_reskinned/reskin_manifest.json",
     "hidden_layers": [
@@ -20,7 +20,7 @@
       "id": "hair_back_L",
       "display_name": "hair_back_L",
       "source_path": "parts/hair_back_L.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/hair_chunks/hair_back_L.png",
+      "original_source_path": "experiments/autorig-character-005/hair_chunks/hair_back_L.png",
       "bbox": [
         753,
         25,
@@ -36,7 +36,7 @@
       "id": "hair_back_R",
       "display_name": "hair_back_R",
       "source_path": "parts/hair_back_R.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/hair_chunks/hair_back_R.png",
+      "original_source_path": "experiments/autorig-character-005/hair_chunks/hair_back_R.png",
       "bbox": [
         956,
         25,
@@ -52,7 +52,7 @@
       "id": "neck_under",
       "display_name": "neck_under",
       "source_path": "parts/neck_under.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/hidden_neck/neck_under.png",
+      "original_source_path": "experiments/autorig-character-005/hidden_neck/neck_under.png",
       "bbox": [
         967,
         512,
@@ -132,7 +132,7 @@
       "id": "clothes",
       "display_name": "clothes",
       "source_path": "parts/clothes.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/neck_split/clothes_trimmed.png",
+      "original_source_path": "experiments/autorig-character-005/neck_split/clothes_trimmed.png",
       "bbox": [
         592,
         498,
@@ -148,7 +148,7 @@
       "id": "neck_skin",
       "display_name": "neck_skin",
       "source_path": "parts/neck_skin.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/neck_split/neck_skin.png",
+      "original_source_path": "experiments/autorig-character-005/neck_split/neck_skin.png",
       "bbox": [
         952,
         498,
@@ -260,7 +260,7 @@
       "id": "mouth_parts_interior",
       "display_name": "mouth_parts_interior",
       "source_path": "parts/mouth_parts_interior.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/mouth_parts/mouth_parts_interior.png",
+      "original_source_path": "experiments/autorig-character-005/mouth_parts/mouth_parts_interior.png",
       "bbox": [
         974,
         430,
@@ -276,7 +276,7 @@
       "id": "mouth_parts_tongue",
       "display_name": "mouth_parts_tongue",
       "source_path": "parts/mouth_parts_tongue.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/mouth_parts/mouth_parts_tongue.png",
+      "original_source_path": "experiments/autorig-character-005/mouth_parts/mouth_parts_tongue.png",
       "bbox": [
         998,
         450,
@@ -292,7 +292,7 @@
       "id": "mouth_parts_teeth",
       "display_name": "mouth_parts_teeth",
       "source_path": "parts/mouth_parts_teeth.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/mouth_parts/mouth_parts_teeth.png",
+      "original_source_path": "experiments/autorig-character-005/mouth_parts/mouth_parts_teeth.png",
       "bbox": [
         974,
         430,
@@ -308,7 +308,7 @@
       "id": "mouth_parts_upper_lip",
       "display_name": "mouth_parts_upper_lip",
       "source_path": "parts/mouth_parts_upper_lip.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/mouth_parts/mouth_parts_upper_lip.png",
+      "original_source_path": "experiments/autorig-character-005/mouth_parts/mouth_parts_upper_lip.png",
       "bbox": [
         974,
         430,
@@ -324,7 +324,7 @@
       "id": "mouth_parts_lower_lip",
       "display_name": "mouth_parts_lower_lip",
       "source_path": "parts/mouth_parts_lower_lip.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/mouth_parts/mouth_parts_lower_lip.png",
+      "original_source_path": "experiments/autorig-character-005/mouth_parts/mouth_parts_lower_lip.png",
       "bbox": [
         979,
         449,
@@ -468,7 +468,7 @@
       "id": "eye_L_blink",
       "display_name": "eye_L_blink",
       "source_path": "parts/eye_L_blink.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/arap_blink_layers/eye_L_arap_000.png",
+      "original_source_path": "experiments/autorig-character-005/arap_blink_layers/eye_L_arap_000.png",
       "bbox": [
         1021,
         244,
@@ -484,7 +484,7 @@
       "id": "eye_R_blink",
       "display_name": "eye_R_blink",
       "source_path": "parts/eye_R_blink.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/arap_blink_layers/eye_R_arap_000.png",
+      "original_source_path": "experiments/autorig-character-005/arap_blink_layers/eye_R_arap_000.png",
       "bbox": [
         854,
         251,
@@ -500,7 +500,7 @@
       "id": "eye_L_smile",
       "display_name": "eye_L_smile",
       "source_path": "parts/eye_L_smile.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/arap_blink_layers/eye_L_arap_000.png",
+      "original_source_path": "experiments/autorig-character-005/arap_blink_layers/eye_L_arap_000.png",
       "bbox": [
         1021,
         244,
@@ -516,7 +516,7 @@
       "id": "eye_R_smile",
       "display_name": "eye_R_smile",
       "source_path": "parts/eye_R_smile.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/arap_blink_layers/eye_R_arap_000.png",
+      "original_source_path": "experiments/autorig-character-005/arap_blink_layers/eye_R_arap_000.png",
       "bbox": [
         854,
         251,
@@ -564,7 +564,7 @@
       "id": "eye_expr_smile",
       "display_name": "eye_expr_smile",
       "source_path": "parts/eye_expr_smile.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/eye_expr/eye_expr_smile.png",
+      "original_source_path": "experiments/autorig-character-005/eye_expr/eye_expr_smile.png",
       "bbox": [
         851,
         253,
@@ -580,7 +580,7 @@
       "id": "eye_expr_wink",
       "display_name": "eye_expr_wink",
       "source_path": "parts/eye_expr_wink.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/eye_expr/eye_expr_wink.png",
+      "original_source_path": "experiments/autorig-character-005/eye_expr/eye_expr_wink.png",
       "bbox": [
         851,
         253,
@@ -596,7 +596,7 @@
       "id": "eye_expr_surprise",
       "display_name": "eye_expr_surprise",
       "source_path": "parts/eye_expr_surprise.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/eye_expr/eye_expr_surprise.png",
+      "original_source_path": "experiments/autorig-character-005/eye_expr/eye_expr_surprise.png",
       "bbox": [
         851,
         253,
@@ -612,7 +612,7 @@
       "id": "eye_expr_jito",
       "display_name": "eye_expr_jito",
       "source_path": "parts/eye_expr_jito.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/eye_expr/eye_expr_jito.png",
+      "original_source_path": "experiments/autorig-character-005/eye_expr/eye_expr_jito.png",
       "bbox": [
         851,
         253,
@@ -628,7 +628,7 @@
       "id": "eye_expr_squeeze",
       "display_name": "eye_expr_squeeze",
       "source_path": "parts/eye_expr_squeeze.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/eye_expr/eye_expr_squeeze.png",
+      "original_source_path": "experiments/autorig-character-005/eye_expr/eye_expr_squeeze.png",
       "bbox": [
         851,
         249,
@@ -644,7 +644,7 @@
       "id": "eye_expr_heart",
       "display_name": "eye_expr_heart",
       "source_path": "parts/eye_expr_heart.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/eye_expr/eye_expr_heart.png",
+      "original_source_path": "experiments/autorig-character-005/eye_expr/eye_expr_heart.png",
       "bbox": [
         851,
         253,
@@ -660,7 +660,7 @@
       "id": "accent_blush",
       "display_name": "accent_blush",
       "source_path": "parts/accent_blush.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/accents/accent_blush.png",
+      "original_source_path": "experiments/autorig-character-005/accents/accent_blush.png",
       "bbox": [
         880,
         322,
@@ -676,7 +676,7 @@
       "id": "accent_tear",
       "display_name": "accent_tear",
       "source_path": "parts/accent_tear.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/accents/accent_tear.png",
+      "original_source_path": "experiments/autorig-character-005/accents/accent_tear.png",
       "bbox": [
         1078,
         356,
@@ -724,7 +724,7 @@
       "id": "accent_gloom",
       "display_name": "accent_gloom",
       "source_path": "parts/accent_gloom.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/accents/accent_gloom.png",
+      "original_source_path": "experiments/autorig-character-005/accents/accent_gloom.png",
       "bbox": [
         900,
         117,
@@ -740,7 +740,7 @@
       "id": "accent_sweat",
       "display_name": "accent_sweat",
       "source_path": "parts/accent_sweat.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-005/accents/accent_sweat.png",
+      "original_source_path": "experiments/autorig-character-005/accents/accent_sweat.png",
       "bbox": [
         1120,
         248,

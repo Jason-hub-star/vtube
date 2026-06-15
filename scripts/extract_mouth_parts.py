@@ -68,7 +68,12 @@ def main() -> int:
     if n == 0:
         return give_up("두꺼운 입안 성분 없음")
     interior_core = labels == (np.bincount(labels.ravel())[1:].argmax() + 1)
-    interior_dark = dark & ndi.binary_dilation(interior_core, iterations=6)
+    # MOUTH-LIP-PARTS R2(005): 입안 핵심(열림으로 얇은 입술선 제거됨) 상단보다 위의 어두운 띠는
+    # 항상 윗입술 스트로크. 팽창(6)이 입안에 가까운 얇은 윗입술선을 흡수해 입술이 비던 문제
+    # (005 쿨 입선) → 상단 띠 보존. 위벨은 입술이 이미 분리돼 무영향.
+    core_top = int(np.where(interior_core.any(axis=1))[0].min())
+    above_core = np.arange(mask.shape[0])[:, None] < core_top
+    interior_dark = dark & ndi.binary_dilation(interior_core, iterations=6) & ~above_core
     strokes = dark & ~interior_dark
 
     # 혀 = 최대 분홍 성분
