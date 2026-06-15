@@ -5693,3 +5693,39 @@ notes:
   - 후속 후보: 볼(頬) 파츠 분리(비대칭 원근), 눈썹 모양변형, 팔 리깅.
   - 라운드2(2026-06-13): 2D 착시 정교화 — 먼 눈 좁히기(eye_R@+30/eye_L@-30 sx=0.82, 회전방향따라 비대칭)+입 패럴랙스(±6). 8062 크롭 캡처로 먼/가까운 눈 크기차 확인, 정합 PASS·pose_sweep 175. 후속: 코 이동(nose_warp 필요)·볼 파츠·각도 재작화.
 ```
+
+## AUTORIG-ANGLE-FORESHORTEN-001-R4 (끄덕임) + BODY-TURN-001 (상체회전)
+
+```yaml
+id: AUTORIG-ANGLE-FORESHORTEN-001-R4
+date: 2026-06-14
+owner: Claude (Opus)
+status: VERIFIED_RUNTIME_RENDER
+context: 005(지피쨩) "하프바디 3D급" 전, 신기법을 위벨 기존 리그로 먼저 프로토타입(de-risk).
+hypothesis: 끄덕임(AngleY)이 평행이동(ty)뿐이라 납작 — X의 foreshortening(head_z sx)을 Y에 sy로 이식하면 끄덕일 때 얼굴 세로 압축=입체.
+output:
+  - rig_keyforms.build_keyform_bindings: head_z_warp AngleY sy=0.85 + back_hair_warp 동기 sy=0.85
+  - scripts/capture_pose.py (신규 — pose_sweep 하니스 재사용, 임의 포즈 캡처. nod/body 검증용)
+metric:
+  - 8062 캡처: sy=0.78 강테스트에서 얼굴 세로 압축 명백(작동 확증), sy=0.85 확정, 정합 PASS(fail 0)
+  - 위벨은 머리카락이 정수리·이마 덮어 체감 작음(볼·X와 동일 한계) — 얼굴 보이는 005엔 큼
+notes:
+  - 끄덕임은 X와 같은 패턴이라 저위험 예상(~25%)대로 쉽게 성공
+```
+
+```yaml
+id: BODY-TURN-001
+date: 2026-06-14
+owner: Claude (Opus)
+status: BLOCKED_NEEDS_STRUCTURE
+hypothesis: 머리 돌 때(AngleX) 상체(가슴)도 같이 foreshorten하면 体の回転(마네킹 방지).
+attempt: body_warp에 AngleX tx=±8 sx=0.96 바인딩.
+metric:
+  - 토르소 가슴 x중심 580.2→579.2 = 1px만 이동(사실상 무효) — body_warp가 edge-pin이라 affine 바인딩을 흡수(윤곽 고정), 내부만 미세 시어
+  - 동시에 shoulder_hair|clothes 16px FAIL(>14) — 효과는 없는데 seam만 터짐
+verdict: 바인딩으론 불가. 상체회전은 **구조적 워프 필요** — 허리 피벗 비핀 상체 워프(가슴 압축, 골반 고정).
+  단 균일 sx는 스커트까지 압축하므로 허리→가슴 세로 그라데이션(per-row 격자 또는 상체 파트 분리) 필요.
+  → 위벨 retrofit 부적합. 005 워프 트리에 처음부터 설계(from-scratch 이점).
+notes:
+  - de-risk 핵심 성과: 상체회전 ~45% 위험이 "구조 설계 필요"로 구체화. 005 트리 설계에 반영.
+```

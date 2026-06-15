@@ -99,6 +99,11 @@ def build_keyform_bindings() -> list[dict]:
         # (deformer_of → upper_warp). Izumi 분석 근거(각도=메시 원근변형). 8062 캡처·정합 PASS 확인.
         binding("ParamAngleX", -30, "head_z_warp", sx=0.88),
         binding("ParamAngleX", 30, "head_z_warp", sx=0.88),
+        # ANGLE-FORESHORTEN-001 R4: 끄덕임(AngleY)도 세로 원근 단축 — 끄덕일 때 얼굴 세로 압축.
+        # X의 sx와 대칭(비핀 head_z_warp). back_hair_warp 동기(아래). 위벨은 머리카락이 정수리를
+        # 덮어 체감 작지만 얼굴 보이는 캐릭터(005)엔 큼. 8062 캡처(sy 0.78 강테스트)로 작동 확증.
+        binding("ParamAngleY", -30, "head_z_warp", sy=0.85),
+        binding("ParamAngleY", 30, "head_z_warp", sy=0.85),
         # CHAIN-001 upper_warp = 공식 首の位置: 몸 스웨이·호흡이 머리·목·뒷머리를 통째로 운반
         # (진폭은 body_warp와 동일 — 목 경계 상대 슬립 0)
         # BodyAngleX 운반(tx)은 빌더가 sway_px로 부여 (몸 진자 회전의 접합부 실효 변위와 결합)
@@ -110,8 +115,9 @@ def build_keyform_bindings() -> list[dict]:
         # 앞머리·얼굴만 좁아져 뒷머리 이음새 29px 터짐(정합 FAIL). 둘 다 턱관절 피벗이라 동축.
         binding("ParamAngleX", -30, "back_hair_warp", tx=-13, sx=0.88),
         binding("ParamAngleX", 30, "back_hair_warp", tx=13, sx=0.88),
-        binding("ParamAngleY", -30, "back_hair_warp", ty=-7),
-        binding("ParamAngleY", 30, "back_hair_warp", ty=7),
+        # R4: 뒷머리도 head_z_warp와 세로 동기 압축(sy=0.85) — 앞/뒷머리 세로 이음새 유지.
+        binding("ParamAngleY", -30, "back_hair_warp", ty=-7, sy=0.85),
+        binding("ParamAngleY", 30, "back_hair_warp", ty=7, sy=0.85),
         # HEAD-Z-PIVOT-001 후속 (RIG-COHESION-001 실측: ±5는 앞/뒷머리 29px 어긋남):
         # Z 회전은 머리와 완전 동률 — 피벗 동일(턱 관절)이라 정적 어긋남 0, 지연은 물리 스프링 담당
         binding_r("ParamAngleZ", -30, "back_hair_warp", rotate=-10),
