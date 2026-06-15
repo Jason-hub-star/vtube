@@ -95,10 +95,11 @@ rig: `experiments/autorig-character-005/rig_v0_project`.
   게이트 추가(teeth 0.6·lower 0.015) + `generate_master_sheets` 입 프롬프트 강화(피부 금지·입 크게) +
   입 시트 재생성→재빌드→8066 실런타임 닫힘/벌림 정상 확인. evidence `mouth_fix_verify/`.
 
-- 🔴 **다음 우선 — 턱 "수염"**: 입 벌리면 턱에 점선 경계. 진단=입 아님(입 정상), **face_base 알파
-  가장자리가 목 위에 점선 이음새**(454 fringe px). 위벨은 머리로 턱 가려 무문제. 005는 은발 보브라
-  턱 노출. 시도실패: clear_face_mouth(이중입만 고침)·RGB fringe 교체(수염 무관)=알파 seam이 원인.
-  **fix 방향**: face_base 알파 가장자리를 목에 페더 블렌드 / reskin 매팅 개선. evidence `AUTORIG-CHARACTER-005`.
+- 🟡 **턱 "수염" (우선순위↓ — 실사용 크기엔 안 보임)**: 구 rig(깨진 입)와 신 rig를 같은 뷰포트로
+  비교한 결과 턱-목 경계는 **양쪽 동일하게 옅게 잔존** = 입과 독립(face_base 알파 seam, 454 fringe px).
+  단 8066 42% 전체뷰에선 거의 안 보이고 5~6배 극확대 시에만 보임 → 우선순위 하향. 시도실패:
+  clear_face_mouth·RGB fringe 교체(둘 다 무관)=알파 seam이 원인. **완전 제거 원하면**: face_base 알파
+  가장자리 목에 페더 블렌드 / reskin 매팅 개선. evidence `AUTORIG-CHARACTER-005` + mouth_fix_verify/.
 - **분해 재개**: ComfyUI 8188(MPS) 기동 = `cd experiments/see-through-layer-decomp-001/external_repos/ComfyUI;
   PYTORCH_ENABLE_MPS_FALLBACK=1 ../../.venv-comfyui/bin/python main.py --port 8188`. 모델은 HF 캐시
   (~/.cache/huggingface) 재사용. 분해 해상도 **640**(1280은 MPS 메모리 크래시).

@@ -5736,7 +5736,7 @@ notes:
 id: AUTORIG-CHARACTER-005
 date: 2026-06-15
 owner: Claude (Opus)
-status: MOUTH_PARTS_FIXED + BUILT_RIG_v0 / 턱_수염_미해결 (다음 세션 인수인계)
+status: MOUTH_PARTS_FIXED + BUILT_RIG_v0 / 턱_수염_실사용무해(극확대만, 우선순위↓)
 context: 005 지피쨩(은발 보브·테크웨어, 쿨 AI)을 "처음부터 전방위 입체구조" 빌더로 빌드.
          위벨 입체 레버를 빌더에 일반화(Phase 0~1) 후 005가 코드 0줄로 상속.
 done:
@@ -5761,14 +5761,17 @@ done:
   - 파이프라인 robustness(005가 위벨과 달라 드러남): mouth 임계 150→80, 빈 머리레이어 가드(짧은
     보브 front_hair 0px), 존재 청크만 복사, master --reference 옵션, 타임아웃 600s,
     extract_mouth_parts 윗입술 상단띠, analyze_rig_cohesion vertex_keyform 경고.
-미해결 (다음 세션 우선):
-  - **턱 "수염"**: 입을 벌리면(사실 정적) 턱 주변에 점선 경계가 보임. 진단: 입 아님(입 단일 정상),
-    face_base 파트의 **알파 가장자리가 목(neck_skin) 위에 옅은 점선 이음새**로 비침(454 fringe px).
-    위벨은 머리카락이 턱을 덮어 안 보였음. 005는 은발 보브라 턱 노출 → 드러남.
+잔여 (우선순위 낮음 — 실사용 크기엔 안 보임):
+  - **턱 "수염" (입과 독립 — 비교 검증으로 재확인)**: 입 수정 후 턱이 깨끗해 보여 "입 번짐이 원인?"
+    가설을 세웠으나, 구 rig(*_BROKEN_backup, 깨진 입)와 신 rig를 같은 뷰포트로 입 벌림 캡처 비교한
+    결과 **턱-목 경계는 양쪽 rig에 동일하게 옅게 잔존** → 가설 기각. 턱 seam은 입과 무관하게
+    face_base 알파 가장자리(목 위 옅은 이음새, 454 fringe px) 그대로다. 단 **실사용 크기(8066 42%
+    전체뷰)에선 거의 안 보이고 5~6배 극확대 시에만 보임** → 우선순위 하향. evidence: 8066 실런타임
+    비교 reports/mouth_fix_verify/old_vs_new_mouth_open.png.
   - 시도(실패): clear_face_mouth(이중 입은 고쳤으나 수염 무관), 가장자리 RGB fringe→인접피부 교체
     (수염 안 사라짐) → 알파 경계 seam 자체가 원인.
-  - **다음 fix 방향**: face_base 알파 가장자리를 목에 **페더 블렌드**(턱 윤곽 부드럽게 사라지게) 또는
-    reskin 매팅 개선(가장자리 anti-alias 더 부드럽게). 위벨엔 무해해야(턱 가려짐). 8066 캡처로 검증.
+  - **완전 제거 fix 방향(원하면)**: face_base 알파 가장자리를 목에 **페더 블렌드** 또는 reskin 매팅
+    개선(가장자리 anti-alias 더 부드럽게). 위벨엔 무해해야(턱 가려짐).
   - 부차: 눈 주변 점선(메시 경계 미세), face_base|neck_skin 정합 14px(머리 foreshortening, 칼라 가림).
 notes:
   - "005부터 코드 0줄 3D급" 실증 — 머리 XYZ 입체+상체회전 자동 상속. 본질은 2D 메시변형(움직임에서 3D감).
