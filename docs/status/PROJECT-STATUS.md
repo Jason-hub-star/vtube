@@ -94,6 +94,9 @@ rig: `experiments/autorig-character-005/rig_v0_project`.
   그려져 추출기가 피부를 이빨로 오인(teeth/interior 0.93)했었다. fix: `extract_mouth_parts.py` 비율
   게이트 추가(teeth 0.6·lower 0.015) + `generate_master_sheets` 입 프롬프트 강화(피부 금지·입 크게) +
   입 시트 재생성→재빌드→8066 실런타임 닫힘/벌림 정상 확인. evidence `mouth_fix_verify/`.
+- ✅ **파이프라인 함정 방어 3갭 보강 (2026-06-15)**: 다음 캐릭터(006+)가 같은 입 함정에 안 빠지게
+  — (A) SHEET-P0 피부 면적 게이트(시트에 얼굴 그려지면 전경 살구색>80% FAIL→재생성) (B) 4상태
+  개구상태 품질 게이트 (C) 부품 upper_lip 하한 + gate_ratios 기록. 전부 회귀 검증. evidence `AUTORIG-CHARACTER-005`.
 
 - 🟡 **턱 "수염" (우선순위↓ — 실사용 크기엔 안 보임)**: 구 rig(깨진 입)와 신 rig를 같은 뷰포트로
   비교한 결과 턱-목 경계는 **양쪽 동일하게 옅게 잔존** = 입과 독립(face_base 알파 seam, 454 fringe px).

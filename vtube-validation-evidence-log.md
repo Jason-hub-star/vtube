@@ -5758,6 +5758,17 @@ done:
     재생성($0.22)→재추출 ok:True(teeth 0.20·lower 0.032 정상)→rig 재빌드→validate_mouth_parts_keyforms
     PASS(클립 누출 0)→8066 실런타임 닫힘/벌림 모두 정상 시각 확인(reports/mouth_fix_verify/).
     구 산출물은 *_BROKEN_backup으로 보존.
+  - **다음 캐릭터 함정 방어 건강성 체크 + 3갭 보강 (주인님 요청)**: "006+가 같은 함정에 안 빠지나"
+    파이프라인 전체 추적 → 다층 방어 확인(부품 비율 게이트→4상태 폴백[피부 강건, 구 시트 wide로
+    실증]→P5 mouth_parts_keyforms[FAIL=중단]→H2 사람 게이트). 발견한 3갭 보강·회귀검증(004·005신
+    =PASS / 005구=FAIL):
+    · **A** SHEET-P0(validate_generated_sheets) 피부 면적 게이트 — 전경 살구색(R-B>15·중간밝기)
+      비율 > 80%면 FAIL = 시트 단계 근본 차단(재생성 유도). 004 60%·005신 0.3% 통과 / 005구 94% 차단.
+    · **B** extract_mouth_states 개구상태 품질 게이트 — small/mid/wide 빈입(<150px)·개구역전 검출
+      exit3. closed 제외(닫힘=콘텐츠 최소 정상, 피부없는 입만 시트는 closed 0px 가능; 4상태가
+      부품보다 먼저 실행돼 정상시트가 막혀 부품 시도조차 못 하는 회귀 방지).
+    · **C** extract_mouth_parts upper_lip 하한 0.008 추가(윗입술 소실 방어) + gate_ratios manifest
+      기록(신규 캐릭터 누적 → 임계 재조정 근거) + 표본 한계(현 3캐릭터) 주석.
   - 파이프라인 robustness(005가 위벨과 달라 드러남): mouth 임계 150→80, 빈 머리레이어 가드(짧은
     보브 front_hair 0px), 존재 청크만 복사, master --reference 옵션, 타임아웃 600s,
     extract_mouth_parts 윗입술 상단띠, analyze_rig_cohesion vertex_keyform 경고.

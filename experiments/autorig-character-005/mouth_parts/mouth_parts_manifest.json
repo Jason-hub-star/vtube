@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T06:43:20.089384+00:00",
+  "generated_at": "2026-06-15T07:50:38.304966+00:00",
   "ok": true,
   "sheet": "experiments/autorig-character-005/generated/mouth.png",
   "scale": 0.08423,
@@ -64,5 +64,11 @@
     "mouth_parts_teeth.png",
     "mouth_parts_lower_lip.png",
     "mouth_parts_upper_lip.png"
-  ]
+  ],
+  "gate_ratios": {
+    "teeth": 0.1982,
+    "tongue": 0.2741,
+    "upper_lip": 0.0778,
+    "lower_lip": 0.0318
+  }
 }

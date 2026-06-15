@@ -31,6 +31,14 @@ TRIM_TOP = 0.30             # 패치 상단 피부(코 근처) 잘라내기 — 
 TRIM_SIDE = 0.10
 FADE_BOTTOM_START = 0.60    # (트림 후 높이 비율) 여기부터 알파 페이드 — 원본 턱선이 비치게
 FADE_BOTTOM_FULL = 0.82     # 여기서 완전 투명
+# MOUTH-STATES-GATE (갭 B): 4상태는 부품 추출 폴백의 "보험"이라 깨지면 H2까지 안 잡힌다.
+# 극단 실패(빈 입)·개구 역전만 잡는 보수적 안전망. exit 3 = 입 시트 자체 문제 → 파이프라인 중단.
+# closed는 제외: 입 닫힘이라 콘텐츠 최소가 정상이고(피부 없는 입만 시트는 closed가 0px일 수
+# 있음 — 빌드에서 원본 mouth_line으로 표현), 4상태가 부품보다 먼저 실행돼 정상 시트가 막히면
+# 부품 시도조차 못 한다. 개구 상태(small/mid/wide)만 검사. 표본: 005신 small 374·wide 2225,
+# 005구 small 659·wide 1366, 004 small 5017·wide 7334 — 전부 통과.
+GATE_STATES = ("small", "mid", "wide")  # closed 제외 — 개구 상태만 품질 검사
+MIN_STATE_PX = 150          # 개구 상태 알파 픽셀 하한 (미만 = 입 추출 실패/빈 레이어)
 
 
 def main() -> int:
@@ -65,6 +73,7 @@ def main() -> int:
     print(f"chin line y = {chin_line_y} (입라인 {int(lip_y)}, 보호 컷 {chin_line_y - CHIN_GUARD_PX})")
 
     written = []
+    state_alpha = {}  # 상태별 알파 픽셀 (MOUTH-STATES-GATE 품질 검증)
     shared = None  # 첫 상태(closed)의 변환을 전 상태에 공유 — 상태 간 정합
     for name, row, col in STATES:
         cell = sheet[row * 1024 : (row + 1) * 1024, col * 1024 : (col + 1) * 1024]
@@ -158,8 +167,21 @@ def main() -> int:
         path = out / f"mouth_state_{name}.png"
         canvas.save(path)
         written.append(path.name)
+        state_alpha[name] = int((arr[..., 3] > 20).sum())
+
+    # MOUTH-STATES-GATE: 개구 상태 빈 입·개구 역전 검출 → exit 3 (입 시트 자체 문제)
+    gate_fail = [f"{s}={state_alpha[s]}px" for s in GATE_STATES if state_alpha.get(s, 0) < MIN_STATE_PX]
+    if state_alpha.get("wide", 0) < state_alpha.get("small", 0):
+        gate_fail.append(f"개구 역전(wide {state_alpha.get('wide')} < small {state_alpha.get('small')})")
+    if gate_fail:
+        write_json(out / "mouth_states_config.json", {
+            "generated_at": now_iso(), "ok": False, "sheet": rel(args.sheet),
+            "state_alpha": state_alpha, "gate_fail": gate_fail})
+        print(f"FAIL 4상태 품질 게이트: {'; '.join(gate_fail)} — 입 시트 재생성 필요")
+        return 3
 
     write_json(out / "mouth_states_config.json", {
+        "ok": True, "state_alpha": state_alpha,
         "generated_at": now_iso(),
         "sheet": rel(args.sheet),
         "lip_width_in_patch": LIP_WIDTH_IN_PATCH,

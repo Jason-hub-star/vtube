@@ -35,6 +35,11 @@ GRID = {"mouth": (2, 2), "eyes": (2, 3), "accent": (2, 2)}
 CENTER_WINDOW = 0.70  # 측정은 셀 중앙 70%만 — 딸려온 얼굴 윤곽 스트로크 오염 회피 (§3.5)
 MIN_CONTENT, MAX_CONTENT = 0.005, 0.80
 BG_MAGENTA_MIN = 0.30  # 시트 전체에서 마젠타 배경이 차지해야 하는 최소 비율
+# MOUTH-SKIN-GATE (005 함정 근본 예방): 입 시트에 얼굴/턱 하관이 그려지면 전경 대부분이
+# 살구색 피부가 되고, 추출기의 white(이빨) 분류가 피부를 이빨로 오인해 입이 깨진다(005 사고).
+# 시트 단계에서 잡아 재생성을 유도한다. 살구색=따뜻한 색(R-B 큼)으로 무채색 이빨과 구분.
+# 표본: 004(살구 입술 60.3%)·005신(검은 입술선 0.3%) PASS / 005구(얼굴 덩어리 93.9%) FAIL.
+MAX_SKIN_RATIO = 0.80  # 전경 중 살구색 피부 비율 상한 (mouth 한정)
 
 
 def cell_content(img: np.ndarray) -> tuple[np.ndarray, tuple[int, int, int, int] | None]:
@@ -84,6 +89,18 @@ def main() -> int:
     cells, failures = [], []
     if bg_ratio < BG_MAGENTA_MIN:
         failures.append(f"마젠타 배경 비율 {bg_ratio:.2f} < {BG_MAGENTA_MIN} — 크로마 배경 미준수")
+    skin_ratio = None
+    if args.kind == "mouth":  # MOUTH-SKIN-GATE: 전경 살구색 피부 과다 = 얼굴/턱 그려짐
+        fg = chroma_alpha(img, CHROMA) >= 0.5
+        rgb = img[fg].astype(int)
+        if len(rgb):
+            R, G, B, lum = rgb[:, 0], rgb[:, 1], rgb[:, 2], rgb.mean(axis=1)
+            skin = (R - B > 15) & (lum >= 150) & (lum <= 248) & (R > G) & (G > B)
+            skin_ratio = float(skin.mean())
+            if skin_ratio > MAX_SKIN_RATIO:
+                failures.append(
+                    f"전경 살구색 피부 {skin_ratio:.1%} > {MAX_SKIN_RATIO:.0%} — 입 시트에 얼굴/턱이 "
+                    f"그려짐(추출기가 피부를 이빨로 오인). 시트 재생성 필요")
     for r in range(rows):
         for c in range(cols):
             name = f"r{r + 1}c{c + 1}"
@@ -131,8 +148,9 @@ def main() -> int:
 
     status = "PASS" if not failures else "FAIL"
     report = {"test_id": "SHEET-P0", "generated_at": now_iso(), "sheet": rel(sheet_path),
-              "kind": args.kind, "bg_magenta_ratio": round(bg_ratio, 4), "cells": cells,
-              "failures": failures, "status": status}
+              "kind": args.kind, "bg_magenta_ratio": round(bg_ratio, 4),
+              "skin_ratio": round(skin_ratio, 4) if skin_ratio is not None else None,
+              "cells": cells, "failures": failures, "status": status}
     write_json(out / f"sheet_p0_{args.kind}.json", report)
     print(json.dumps(report, ensure_ascii=False, indent=2))
     return 0 if status == "PASS" else 1

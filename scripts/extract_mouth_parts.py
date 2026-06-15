@@ -35,10 +35,15 @@ MIN_PX = {"interior": 5000, "teeth": 1500, "tongue": 1500, "upper_lip": 800, "lo
 # 깨지면 비율이 무너진다. 005는 어두운 입안을 흰색(이빨)으로 거의 전부 오분류(teeth/interior
 # 0.93)하고 입술 스트로크가 소실(lower_lip/interior 0.003)됐는데 px만으로는 못 잡았다.
 # 004 정상: teeth 0.16·lower_lip 0.31 — 큰 여유로 구분. 입 5번 삽질 교훈을 자동 검증으로 박제.
+# ── 비율 게이트 임계 (표본 한계: 현재 3캐릭터 004·005신·005구 기반) ──────────────────
+# 신규 캐릭터에서 정상인데 FAIL 나면 manifest의 gate_ratios 누적값으로 임계를 재조정한다
+# (게이트 추가보다 오탐을 경계 — lower/teeth가 핵심, upper는 보수적 보조).
 MAX_TEETH_RATIO = 0.60   # teeth/interior 상한. 초과 = 어두운 입안/피부를 흰색(이빨)으로 오분류.
-#   004(정상) 0.16·005 새시트(정상) 0.20 통과 / 005 구시트(피부 오분류) 0.93 차단.
-MIN_LOWER_RATIO = 0.015  # lower_lip/interior 하한 = 입술 스트로크 소실 검출 (teeth 게이트 보조).
-#   004(두꺼운 입술) 0.31·005 새시트(얇은 쿨 입술) 0.032 통과 / 005 구시트(소실) 0.003 차단.
+#   004 0.16·005신 0.20 통과 / 005구(피부 오분류) 0.93 차단.
+MIN_LOWER_RATIO = 0.015  # lower_lip/interior 하한 = 아랫입술 스트로크 소실 (teeth 게이트 보조).
+#   004 0.31·005신 0.032 통과 / 005구(소실) 0.003 차단.
+MIN_UPPER_RATIO = 0.008  # upper_lip/interior 하한 = 윗입술 소실 (보수적 — 004 0.030·005신 0.078
+#   대비 3.75배 이상 여유). 005구 0.006은 teeth·lower로도 잡히나 다른 유형(윗입술만 소실) 방어.
 DRAW_NAMES = ("interior", "tongue", "teeth", "lower_lip", "upper_lip")  # 아래→위
 
 
@@ -122,13 +127,14 @@ def main() -> int:
 
     # MOUTH-PARTS-P1 비율 게이트 — 절대 px는 통과해도 색 분류 깨짐(005 사고)을 잡는다.
     interior_px = max(counts["interior"], 1)
-    teeth_ratio = counts["teeth"] / interior_px
-    lower_ratio = counts["lower_lip"] / interior_px
+    gate_ratios = {k: round(counts[k] / interior_px, 4) for k in ("teeth", "tongue", "upper_lip", "lower_lip")}
     ratio_fail = []
-    if teeth_ratio > MAX_TEETH_RATIO:
-        ratio_fail.append(f"teeth/interior {teeth_ratio:.2f} > {MAX_TEETH_RATIO} (입안을 이빨로 오분류)")
-    if lower_ratio < MIN_LOWER_RATIO:
-        ratio_fail.append(f"lower_lip/interior {lower_ratio:.3f} < {MIN_LOWER_RATIO} (입술 스트로크 소실)")
+    if gate_ratios["teeth"] > MAX_TEETH_RATIO:
+        ratio_fail.append(f"teeth/interior {gate_ratios['teeth']:.2f} > {MAX_TEETH_RATIO} (입안을 이빨로 오분류)")
+    if gate_ratios["lower_lip"] < MIN_LOWER_RATIO:
+        ratio_fail.append(f"lower_lip/interior {gate_ratios['lower_lip']:.3f} < {MIN_LOWER_RATIO} (아랫입술 소실)")
+    if gate_ratios["upper_lip"] < MIN_UPPER_RATIO:
+        ratio_fail.append(f"upper_lip/interior {gate_ratios['upper_lip']:.3f} < {MIN_UPPER_RATIO} (윗입술 소실)")
     if ratio_fail:
         return give_up("부품 비율 깨짐: " + "; ".join(ratio_fail))
 
@@ -185,6 +191,8 @@ def main() -> int:
         # (중심 앵커는 입안이 위로도 올라가 미소선을 어둡게 덮어 미소선이 묻혔다 — H2 5차 진단).
         "scale": round(scale, 5), "anchor_y": round(line_bottom_y - overlap), "split_y_cell": split_y,
         "mouth_line_bbox": [mx0, my0, mx1, my1], "parts": part_boxes, "written": written,
+        # gate_ratios: 비율 게이트 통과값 (관측성 — 신규 캐릭터마다 누적해 임계 적절성 검증)
+        "gate_ratios": gate_ratios,
     })
     print(f"mouth_parts: {written} -> {rel(out)}")
     return 0
