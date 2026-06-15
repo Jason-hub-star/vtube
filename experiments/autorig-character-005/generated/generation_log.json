@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-06-15T03:00:01.813882+00:00",
+  "generated_at": "2026-06-15T06:40:25.054360+00:00",
   "model": "gpt-image-2",
   "quality": "high",
   "character": "GPT-chan (지피쨩)",
   "character_spec": "characters/autorig-character-005.yaml",
   "requests": [
     {
-      "kind": "master",
+      "kind": "mouth",
       "attempt": 0,
       "fallback_used": false,
       "quality": "high",
       "usage": {
-        "input_tokens": 1279,
+        "input_tokens": 1405,
         "input_tokens_details": {
-          "image_tokens": 1080,
-          "text_tokens": 199
+          "image_tokens": 1024,
+          "text_tokens": 381
         },
         "output_tokens": 7024,
         "output_tokens_details": {
           "image_tokens": 7024,
           "text_tokens": 0
         },
-        "total_tokens": 8303
+        "total_tokens": 8429
       },
-      "estimated_usd": 0.2204,
-      "out": "experiments/autorig-character-005/generated/master.png"
+      "estimated_usd": 0.2208,
+      "out": "experiments/autorig-character-005/generated/mouth.png"
     }
   ],
-  "total_estimated_usd": 0.2204
+  "total_estimated_usd": 0.2208
 }

@@ -31,6 +31,14 @@ from lib.vtube_io import ROOT, now_iso, rel, write_json  # noqa: E402
 
 SCALE_MARGIN = 0.97  # v21 교훈 (extract_mouth_states 동일): 폭은 원본 입선에 절제 정합
 MIN_PX = {"interior": 5000, "teeth": 1500, "tongue": 1500, "upper_lip": 800, "lower_lip": 800}
+# MOUTH-PARTS-P1 비율 게이트 (005 지피쨩 사고): 절대 px(MIN_PX)는 통과해도 색 분류가
+# 깨지면 비율이 무너진다. 005는 어두운 입안을 흰색(이빨)으로 거의 전부 오분류(teeth/interior
+# 0.93)하고 입술 스트로크가 소실(lower_lip/interior 0.003)됐는데 px만으로는 못 잡았다.
+# 004 정상: teeth 0.16·lower_lip 0.31 — 큰 여유로 구분. 입 5번 삽질 교훈을 자동 검증으로 박제.
+MAX_TEETH_RATIO = 0.60   # teeth/interior 상한. 초과 = 어두운 입안/피부를 흰색(이빨)으로 오분류.
+#   004(정상) 0.16·005 새시트(정상) 0.20 통과 / 005 구시트(피부 오분류) 0.93 차단.
+MIN_LOWER_RATIO = 0.015  # lower_lip/interior 하한 = 입술 스트로크 소실 검출 (teeth 게이트 보조).
+#   004(두꺼운 입술) 0.31·005 새시트(얇은 쿨 입술) 0.032 통과 / 005 구시트(소실) 0.003 차단.
 DRAW_NAMES = ("interior", "tongue", "teeth", "lower_lip", "upper_lip")  # 아래→위
 
 
@@ -111,6 +119,18 @@ def main() -> int:
     lacking = [k for k, v in counts.items() if v < MIN_PX[k]]
     if lacking:
         return give_up(f"부품 픽셀 부족: { {k: counts[k] for k in lacking} }")
+
+    # MOUTH-PARTS-P1 비율 게이트 — 절대 px는 통과해도 색 분류 깨짐(005 사고)을 잡는다.
+    interior_px = max(counts["interior"], 1)
+    teeth_ratio = counts["teeth"] / interior_px
+    lower_ratio = counts["lower_lip"] / interior_px
+    ratio_fail = []
+    if teeth_ratio > MAX_TEETH_RATIO:
+        ratio_fail.append(f"teeth/interior {teeth_ratio:.2f} > {MAX_TEETH_RATIO} (입안을 이빨로 오분류)")
+    if lower_ratio < MIN_LOWER_RATIO:
+        ratio_fail.append(f"lower_lip/interior {lower_ratio:.3f} < {MIN_LOWER_RATIO} (입술 스트로크 소실)")
+    if ratio_fail:
+        return give_up("부품 비율 깨짐: " + "; ".join(ratio_fail))
 
     # 공유 변환: 콘텐츠 폭 → 원본 입선 폭 (0.97). MOUTH-LIP-RIDE-001: 윗입술은 미소선이
     # 담당하므로 입안(interior) 상단을 미소선 하단보다 OVERLAP px 위에 물려 미소선이 입안

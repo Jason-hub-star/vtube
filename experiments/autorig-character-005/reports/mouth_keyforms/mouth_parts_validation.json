@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-06-15T06:48:09.558984+00:00",
+  "project": "/Users/family/jason/Vtube/experiments/autorig-character-005/rig_v0_project",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "parts_present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "uniform_keyform_keys",
+      "ok": true,
+      "detail": "키 세트: [(0.0, 0.25, 0.55, 1.0)]"
+    },
+    {
+      "name": "uniform_vertical_scale",
+      "ok": true,
+      "detail": "세로 선형 잔차 max 0.041px, x 이동 0.000px"
+    },
+    {
+      "name": "shared_h_across_parts",
+      "ok": true,
+      "detail": "부품 간 h 산포 0.0077"
+    },
+    {
+      "name": "shared_anchor_across_parts",
+      "ok": true,
+      "detail": "부품 간 앵커 산포 0.15px"
+    },
+    {
+      "name": "clip_leak_teeth",
+      "ok": true,
+      "detail": "누출 0px"
+    },
+    {
+      "name": "clip_leak_tongue",
+      "ok": true,
+      "detail": "누출 0px"
+    },
+    {
+      "name": "vertical_continuity",
+      "ok": true,
+      "detail": "중앙 컬럼 최악 내부 갭 0px"
+    },
+    {
+      "name": "lip_parts_structure",
+      "ok": true,
+      "detail": "윗입술 고정(MouthForm True, MouthOpen 곡선없음 True), 입안 페이드 True, 입선 숨김 True"
+    },
+    {
+      "name": "mouthform_corner_keyforms",
+      "ok": true,
+      "detail": "꼬리 진폭 max 7.0px, 중앙 0.00px"
+    }
+  ]
+}

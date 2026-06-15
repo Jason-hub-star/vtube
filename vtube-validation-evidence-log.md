@@ -5736,7 +5736,7 @@ notes:
 id: AUTORIG-CHARACTER-005
 date: 2026-06-15
 owner: Claude (Opus)
-status: BUILT_RIG_v0 / 턱_수염_미해결 (다음 세션 인수인계)
+status: MOUTH_PARTS_FIXED + BUILT_RIG_v0 / 턱_수염_미해결 (다음 세션 인수인계)
 context: 005 지피쨩(은발 보브·테크웨어, 쿨 AI)을 "처음부터 전방위 입체구조" 빌더로 빌드.
          위벨 입체 레버를 빌더에 일반화(Phase 0~1) 후 005가 코드 0줄로 상속.
 done:
@@ -5746,7 +5746,18 @@ done:
   - 빌더 자동 내장(005 코드 0줄): torso_turn_warp(상체회전 sx0.96)+head_z sx0.88/sy0.85(좌우·끄덕임
     foreshortening)+먼눈/코/볼. 46파트·13디포머.
   - 입 3단 수정: ①윗입술 상단띠 보존(원형 해소) ②face_base 구운 입 제거 clear_face_mouth(이중 입
-    해소) ③입꼬리 검출 덮기(수염 1차). 입은 단일·정상 개폐 확인.
+    해소) ③입꼬리 검출 덮기(수염 1차).
+  - **입 부품 비율 깨짐 발견·수정 (후속 세션 — "입 정상"은 오판이었다)**: 위벨(004) 입 매니페스트와
+    대조하니 005 입 부품이 깨져 있었다 — 입 시트에 살구색 얼굴 하관이 그려져(생성 모델이 프롬프트
+    "Mouth region only — do not draw the chin" 위반) 추출기 white(이빨) 분류가 피부[253,243,231]를
+    이빨로 오인(전경 91.9%). 절대 px MIN_PX는 통과하나 비율이 깨짐: teeth/interior 0.93(정상 0.16)·
+    lower_lip/interior 0.003(정상 0.31). 렌더에서 덩어리로 보여 "단일 정상"으로 오판됐다.
+    fix: ①extract_mouth_parts.py **비율 게이트** 추가(MAX_TEETH_RATIO 0.6·MIN_LOWER_RATIO 0.015 —
+    회귀: 005구=FAIL·005신=PASS·004=PASS, 입 5번 삽질 교훈을 자동 검증으로 박제) ②generate_master_sheets
+    MOUTH_TEMPLATE 강화(입을 셀에 크게·피부 절대 금지·"skin would be misread as teeth") ③입 시트
+    재생성($0.22)→재추출 ok:True(teeth 0.20·lower 0.032 정상)→rig 재빌드→validate_mouth_parts_keyforms
+    PASS(클립 누출 0)→8066 실런타임 닫힘/벌림 모두 정상 시각 확인(reports/mouth_fix_verify/).
+    구 산출물은 *_BROKEN_backup으로 보존.
   - 파이프라인 robustness(005가 위벨과 달라 드러남): mouth 임계 150→80, 빈 머리레이어 가드(짧은
     보브 front_hair 0px), 존재 청크만 복사, master --reference 옵션, 타임아웃 600s,
     extract_mouth_parts 윗입술 상단띠, analyze_rig_cohesion vertex_keyform 경고.

@@ -72,8 +72,9 @@ MASTER_EDIT_TEMPLATE = (
 MOUTH_TEMPLATE = (
     "Using this exact character, generate a 2048x2048 sheet on pure magenta #FF00FF "
     "background, 2x2 grid of the character's mouth region. Character personality: {style}. "
-    "Reflect that personality in how much the mouth opens. Make the four cells clearly "
-    "different in openness. "
+    "Reflect that personality ONLY in how WIDE the mouth opens — never in its drawn size. "
+    "The mouth art must be LARGE and fill most of each cell in every cell. Make the four cells "
+    "clearly different in openness. "
     "CRITICAL: in EVERY cell the mouth corners stay raised following the exact same gentle "
     "upward smile curve as the closed reference mouth, and the UPPER edge of the mouth opening "
     "curves upward at the corners matching that smile line — never a flat horizontal oval. "
@@ -86,7 +87,10 @@ MOUTH_TEMPLATE = (
     "In the bottom-right cell keep separable parts: a distinct unbroken upper lip stroke that "
     "follows the upward smile curve, a distinct lower lip stroke, dark solid interior fill, "
     "clearly colored teeth, clearly colored tongue. Same art style, same skin tone. "
-    "Mouth region only — do not draw the chin or the face outline."
+    "CRITICAL: draw ONLY the lips and the mouth opening. The entire area around the mouth "
+    "must be pure magenta #FF00FF — absolutely NO skin, cheeks, chin, jaw, neck or face "
+    "outline anywhere in the sheet (skin-colored fill would be misread as teeth by the "
+    "deterministic extractor)."
 )
 
 EYES_TEMPLATE = (
