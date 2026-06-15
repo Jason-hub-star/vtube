@@ -232,6 +232,14 @@ def main() -> int:
             "python3", "scripts/build_hidden_neck.py", "--master", str(args.master),
             "--mouth-line", str(mouth_line), "--clothes", str(reskin_dir / "clothes.png"),
             "--face", str(reskin_dir / "face_base.png"), "--out-dir", str(exp / "hidden_neck")])
+        # MOUTH-CLEAR-001: 부품형 입 사용 시 face_base 구운 입을 피부로 덮음(이중 입 차단).
+        # hidden_neck 다음(원본 face로 목 채취) · 빌드 전. mouth_states 폴백이면 face 입 유지.
+        if use_mouth_parts:
+            sh(writer, "P3", "clear_face_mouth", [
+                "python3", "scripts/clear_face_mouth.py",
+                "--face", str(reskin_dir / "face_base.png"),
+                "--mouth-line", str(mouth_line),
+                "--out", str(reskin_dir / "face_base.png")])
         writer.stage_completed("P3")
 
         # ---- P4 리그 빌드 ----------------------------------------------------
