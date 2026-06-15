@@ -37,6 +37,11 @@ def split_layer(src: Path, names: list[str], out_dir: Path) -> list[dict]:
     img = np.asarray(Image.open(src).convert("RGBA"))
     alpha = img[..., 3]
     ys, xs = np.where(alpha > 8)
+    if len(xs) == 0:
+        # 빈 머리 레이어(예: 짧은 보브를 분해가 전부 back_hair로 분류 → front_hair 0px).
+        # 크래시 대신 건너뜀 — 빌더가 없는 청크는 무시(front_hair_warp 자식 0).
+        print(f"  [split] {src.name} 빈 레이어 — 건너뜀")
+        return []
     x0, x1 = int(xs.min()), int(xs.max()) + 1
     n = len(names)
     # 콘텐츠 폭 기준 경계 (n-1개)
@@ -103,7 +108,11 @@ def main() -> int:
     checks = []
     for source_name, chunk_names in SPLITS.items():
         src = (args.reskin_dir if args.reskin_dir.is_absolute() else ROOT / args.reskin_dir) / f"{source_name}.png"
+        if not src.exists():
+            continue
         entries = split_layer(src, chunk_names, out)
+        if not entries:
+            continue  # 빈 머리 레이어(짧은 보브 등) — recompose 검증 건너뜀
         checks.append(recompose_check(entries, src, out, source_name))
         all_entries += entries
 

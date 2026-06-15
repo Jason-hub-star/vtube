@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T02:23:55.555265+00:00",
+  "generated_at": "2026-06-15T03:00:01.813882+00:00",
   "model": "gpt-image-2",
   "quality": "high",
   "character": "GPT-chan (지피쨩)",
@@ -11,84 +11,21 @@
       "fallback_used": false,
       "quality": "high",
       "usage": {
-        "input_tokens": 1241,
+        "input_tokens": 1279,
         "input_tokens_details": {
           "image_tokens": 1080,
-          "text_tokens": 161
+          "text_tokens": 199
         },
         "output_tokens": 7024,
         "output_tokens_details": {
           "image_tokens": 7024,
           "text_tokens": 0
         },
-        "total_tokens": 8265
+        "total_tokens": 8303
       },
-      "estimated_usd": 0.2202,
+      "estimated_usd": 0.2204,
       "out": "experiments/autorig-character-005/generated/master.png"
-    },
-    {
-      "kind": "mouth",
-      "attempt": 0,
-      "fallback_used": false,
-      "quality": "high",
-      "usage": {
-        "input_tokens": 1334,
-        "input_tokens_details": {
-          "image_tokens": 1024,
-          "text_tokens": 310
-        },
-        "output_tokens": 7024,
-        "output_tokens_details": {
-          "image_tokens": 7024,
-          "text_tokens": 0
-        },
-        "total_tokens": 8358
-      },
-      "estimated_usd": 0.2205,
-      "out": "experiments/autorig-character-005/generated/mouth.png"
-    },
-    {
-      "kind": "eyes",
-      "attempt": 0,
-      "fallback_used": false,
-      "quality": "high",
-      "usage": {
-        "input_tokens": 1247,
-        "input_tokens_details": {
-          "image_tokens": 1024,
-          "text_tokens": 223
-        },
-        "output_tokens": 7024,
-        "output_tokens_details": {
-          "image_tokens": 7024,
-          "text_tokens": 0
-        },
-        "total_tokens": 8271
-      },
-      "estimated_usd": 0.22,
-      "out": "experiments/autorig-character-005/generated/eyes.png"
-    },
-    {
-      "kind": "accent",
-      "attempt": 0,
-      "fallback_used": false,
-      "quality": "high",
-      "usage": {
-        "input_tokens": 1127,
-        "input_tokens_details": {
-          "image_tokens": 1024,
-          "text_tokens": 103
-        },
-        "output_tokens": 7024,
-        "output_tokens_details": {
-          "image_tokens": 7024,
-          "text_tokens": 0
-        },
-        "total_tokens": 8151
-      },
-      "estimated_usd": 0.2194,
-      "out": "experiments/autorig-character-005/generated/accent.png"
     }
   ],
-  "total_estimated_usd": 0.8801
+  "total_estimated_usd": 0.2204
 }

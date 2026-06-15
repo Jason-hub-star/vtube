@@ -62,7 +62,9 @@ MASTER_EDIT_TEMPLATE = (
     "forward, BOTH ARMS relaxed straight down at the sides — hands NOT on the hips, NOT crossing "
     "or covering the torso, arms clearly separated from the body so the torso outline is fully "
     "visible. Neck fully visible (no high collar covering it), bangs not covering the eyes, eyes "
-    "open, mouth closed with a clearly drawn dark smile line, hair in distinct left/center/right "
+    "open. The mouth is CLOSED but drawn as a DISTINCT, clearly visible solid dark smile line "
+    "(a definite dark mouth line with a gentle upward curve — NOT faint, NOT a barely-visible thin "
+    "line); the closed mouth must read clearly against the skin. Hair in distinct left/center/right "
     "masses. Keep the outfit and all colors identical to the reference. Clean lineart, flat anime style."
 )
 
@@ -142,13 +144,13 @@ def call_images(key: str, kind: str, prompt: str, quality: str, master_png: Path
     headers = {"Authorization": f"Bearer {key}"}
     common = {"model": MODEL, "prompt": prompt, "size": "1024x1024", "quality": quality, "n": 1}
     if master_png is None:
-        resp = requests.post(f"{API}/images/generations", headers=headers, json=common, timeout=300)
+        resp = requests.post(f"{API}/images/generations", headers=headers, json=common, timeout=600)
     else:
         with open(master_png, "rb") as f:
             resp = requests.post(
                 f"{API}/images/edits", headers=headers,
                 data={k: str(v) for k, v in common.items()},
-                files={"image": (master_png.name, f, "image/png")}, timeout=300)
+                files={"image": (master_png.name, f, "image/png")}, timeout=600)
     if resp.status_code != 200:
         raise RuntimeError(f"{kind}: HTTP {resp.status_code} {resp.text[:300]}")
     body = resp.json()

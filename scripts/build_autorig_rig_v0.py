@@ -150,7 +150,9 @@ def main() -> int:
     if use_hair_chunks:
         for name, order in (("hair_back_L", 100), ("hair_back_R", 101),
                             ("hair_front_L", 700), ("hair_front_C", 701), ("hair_front_R", 702)):
-            sources.append((name, args.hair_chunks_dir / f"{name}.png", order))
+            chunk_path = args.hair_chunks_dir / f"{name}.png"
+            if chunk_path.exists():  # 짧은 보브 등 빈 front_hair는 청크 미생성 → 존재하는 것만
+                sources.append((name, chunk_path, order))
     # 숨은 레이어: 감은꺼풀은 눈 위(앞), 입 내부는 mouth_line 바로 아래
     hidden = []
     if args.hidden_neck_dir is not None and (args.hidden_neck_dir / "neck_under.png").exists():
