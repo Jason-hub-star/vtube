@@ -392,6 +392,10 @@ def main() -> int:
         body_bounds = [body_bounds[0], head_cy, body_bounds[2], body_bounds[3] + (body_bounds[1] - head_cy)]
     # BODY-SWAY-001 v3: 몸 피벗 = 골반(바닥 중앙) — BodyAngleX/Z 진자 회전의 축
     body_pivot = [center(body_bounds)[0], body_bounds[1] + body_bounds[3]]
+    # BODY-TURN-001: 상체회전(体の回転) bounds = 몸 상부 ~42%(어깨~허리, 스커트 제외).
+    # 런타임 latticeDisplacementAt이 bounds 밖 정점은 변위 0 → 스커트 자동 고정(파트분리 불필요).
+    torso_bounds = [body_bounds[0], body_bounds[1], body_bounds[2], round(body_bounds[3] * 0.42)]
+    torso_pivot = center(torso_bounds)  # 가슴 중앙(sx 가로압축 축)
     # HEAD-Z-PIVOT-001 (004 H2 주인님 실측: "기울임 기준점이 목 같다"): AngleZ를 edge-pin 격자에
     # 넣으면 실루엣 고정 + 얼굴 내부 시어만 남아 회전축이 읽히지 않는다 → 비핀 전용 회전 디포머.
     # 피벗 = 머리-목 관절(턱 아래) — 머리 전체가 강체로 까딱이고, 피벗 근처(턱·윗목)는 변위 ≈ 0
@@ -407,7 +411,10 @@ def main() -> int:
     deformers = [
         # lattice/edge_pinned: FFD 격자 (공식 워프 메커니즘). edge_pinned=경계 연결, false=전역 이동.
         {"id": "root_warp", "type": "warp", "parent_id": None, "child_ids": children.get("root_warp", []), "bounds": [0, 0, CANVAS, CANVAS], "pivot": [1024, 1024], "lattice": {"cols": 3, "rows": 3}, "edge_pinned": False},
-        {"id": "body_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("body_warp", []), "bounds": body_bounds, "pivot": body_pivot, "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
+        # BODY-TURN-001: 상체회전 워프 — root와 body_warp 사이 비핀 중간 변환. 직접 파트 없음(child_ids=[]),
+        # body_warp 서브트리(가슴 옷)가 체인으로 상속. bounds=가슴이라 스커트 정점은 변위 0(고정).
+        {"id": "torso_turn_warp", "type": "warp", "parent_id": "root_warp", "child_ids": [], "bounds": torso_bounds, "pivot": torso_pivot, "lattice": {"cols": 2, "rows": 2}, "edge_pinned": False},
+        {"id": "body_warp", "type": "warp", "parent_id": "torso_turn_warp", "child_ids": children.get("body_warp", []), "bounds": body_bounds, "pivot": body_pivot, "lattice": {"cols": 5, "rows": 5}, "edge_pinned": True},
         {"id": "upper_warp", "type": "warp", "parent_id": "root_warp", "child_ids": children.get("upper_warp", []), "bounds": upper_bounds, "pivot": center(upper_bounds), "lattice": {"cols": 3, "rows": 3}, "edge_pinned": False},
         # HEAD-Z-PIVOT-001: 머리 강체 기울임 전용 (AngleZ ±10) — 머리 서브트리 전체를 턱 관절
         # 피벗으로 회전. 목은 이 체인 밖(upper 자식)이라 고정 — 자체 바인딩(±3 핀 격자)만 "살짝 늘어남".

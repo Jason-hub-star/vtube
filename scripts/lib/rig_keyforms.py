@@ -104,6 +104,10 @@ def build_keyform_bindings() -> list[dict]:
         # 덮어 체감 작지만 얼굴 보이는 캐릭터(005)엔 큼. 8062 캡처(sy 0.78 강테스트)로 작동 확증.
         binding("ParamAngleY", -30, "head_z_warp", sy=0.85),
         binding("ParamAngleY", 30, "head_z_warp", sy=0.85),
+        # BODY-TURN-001: 상체회전(体の回転) — 머리 돌 때 가슴도 같이 가로압축(머리 0.88의 ~35%).
+        # 비핀 torso_turn_warp(가슴 bounds 한정)라 가슴만 좁아지고 스커트 고정. "머리만 도는 마네킹" 방지.
+        binding("ParamAngleX", -30, "torso_turn_warp", sx=0.96),
+        binding("ParamAngleX", 30, "torso_turn_warp", sx=0.96),
         # CHAIN-001 upper_warp = 공식 首の位置: 몸 스웨이·호흡이 머리·목·뒷머리를 통째로 운반
         # (진폭은 body_warp와 동일 — 목 경계 상대 슬립 0)
         # BodyAngleX 운반(tx)은 빌더가 sway_px로 부여 (몸 진자 회전의 접합부 실효 변위와 결합)

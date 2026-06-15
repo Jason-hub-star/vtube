@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project_kind": "mini_cubism_v0",
   "experiment_id": "autorig-rig-v0",
-  "generated_at": "2026-06-13T10:36:26.768016+00:00",
+  "generated_at": "2026-06-15T02:08:02.634024+00:00",
   "source_selection": {
     "visible_layers": "experiments/autorig-character-004/seethrough_true_reskinned/reskin_manifest.json",
     "hidden_layers": [
@@ -20,7 +20,7 @@
       "id": "hair_back_L",
       "display_name": "hair_back_L",
       "source_path": "parts/hair_back_L.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/hair_chunks/hair_back_L.png",
+      "original_source_path": "experiments/autorig-character-004/hair_chunks/hair_back_L.png",
       "bbox": [
         757,
         34,
@@ -36,7 +36,7 @@
       "id": "hair_back_R",
       "display_name": "hair_back_R",
       "source_path": "parts/hair_back_R.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/hair_chunks/hair_back_R.png",
+      "original_source_path": "experiments/autorig-character-004/hair_chunks/hair_back_R.png",
       "bbox": [
         1038,
         37,
@@ -52,7 +52,7 @@
       "id": "neck_under",
       "display_name": "neck_under",
       "source_path": "parts/neck_under.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/hidden_neck/neck_under.png",
+      "original_source_path": "experiments/autorig-character-004/hidden_neck/neck_under.png",
       "bbox": [
         959,
         628,
@@ -132,7 +132,7 @@
       "id": "clothes",
       "display_name": "clothes",
       "source_path": "parts/clothes.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/shoulder_hair/clothes_filled.png",
+      "original_source_path": "experiments/autorig-character-004/shoulder_hair/clothes_filled.png",
       "bbox": [
         751,
         658,
@@ -148,7 +148,7 @@
       "id": "neck_skin",
       "display_name": "neck_skin",
       "source_path": "parts/neck_skin.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/neck_split/neck_skin.png",
+      "original_source_path": "experiments/autorig-character-004/neck_split/neck_skin.png",
       "bbox": [
         934,
         640,
@@ -164,7 +164,7 @@
       "id": "shoulder_hair",
       "display_name": "shoulder_hair",
       "source_path": "parts/shoulder_hair.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/shoulder_hair/shoulder_hair.png",
+      "original_source_path": "experiments/autorig-character-004/shoulder_hair/shoulder_hair.png",
       "bbox": [
         1208,
         721,
@@ -276,7 +276,7 @@
       "id": "mouth_parts_interior",
       "display_name": "mouth_parts_interior",
       "source_path": "parts/mouth_parts_interior.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/mouth_parts/mouth_parts_interior.png",
+      "original_source_path": "experiments/autorig-character-004/mouth_parts/mouth_parts_interior.png",
       "bbox": [
         972,
         519,
@@ -292,7 +292,7 @@
       "id": "mouth_parts_tongue",
       "display_name": "mouth_parts_tongue",
       "source_path": "parts/mouth_parts_tongue.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/mouth_parts/mouth_parts_tongue.png",
+      "original_source_path": "experiments/autorig-character-004/mouth_parts/mouth_parts_tongue.png",
       "bbox": [
         998,
         540,
@@ -308,7 +308,7 @@
       "id": "mouth_parts_teeth",
       "display_name": "mouth_parts_teeth",
       "source_path": "parts/mouth_parts_teeth.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/mouth_parts/mouth_parts_teeth.png",
+      "original_source_path": "experiments/autorig-character-004/mouth_parts/mouth_parts_teeth.png",
       "bbox": [
         980,
         524,
@@ -324,7 +324,7 @@
       "id": "mouth_parts_upper_lip",
       "display_name": "mouth_parts_upper_lip",
       "source_path": "parts/mouth_parts_upper_lip.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/mouth_parts/mouth_parts_upper_lip.png",
+      "original_source_path": "experiments/autorig-character-004/mouth_parts/mouth_parts_upper_lip.png",
       "bbox": [
         981,
         523,
@@ -340,7 +340,7 @@
       "id": "mouth_parts_lower_lip",
       "display_name": "mouth_parts_lower_lip",
       "source_path": "parts/mouth_parts_lower_lip.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/mouth_parts/mouth_parts_lower_lip.png",
+      "original_source_path": "experiments/autorig-character-004/mouth_parts/mouth_parts_lower_lip.png",
       "bbox": [
         982,
         530,
@@ -484,7 +484,7 @@
       "id": "eye_L_blink",
       "display_name": "eye_L_blink",
       "source_path": "parts/eye_L_blink.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/arap_blink_layers/eye_L_arap_000.png",
+      "original_source_path": "experiments/autorig-character-004/arap_blink_layers/eye_L_arap_000.png",
       "bbox": [
         1056,
         313,
@@ -500,7 +500,7 @@
       "id": "eye_R_blink",
       "display_name": "eye_R_blink",
       "source_path": "parts/eye_R_blink.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/arap_blink_layers/eye_R_arap_000.png",
+      "original_source_path": "experiments/autorig-character-004/arap_blink_layers/eye_R_arap_000.png",
       "bbox": [
         854,
         325,
@@ -516,7 +516,7 @@
       "id": "eye_L_smile",
       "display_name": "eye_L_smile",
       "source_path": "parts/eye_L_smile.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/arap_blink_layers/eye_L_arap_000.png",
+      "original_source_path": "experiments/autorig-character-004/arap_blink_layers/eye_L_arap_000.png",
       "bbox": [
         1056,
         313,
@@ -532,7 +532,7 @@
       "id": "eye_R_smile",
       "display_name": "eye_R_smile",
       "source_path": "parts/eye_R_smile.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/arap_blink_layers/eye_R_arap_000.png",
+      "original_source_path": "experiments/autorig-character-004/arap_blink_layers/eye_R_arap_000.png",
       "bbox": [
         854,
         325,
@@ -580,7 +580,7 @@
       "id": "eye_expr_smile",
       "display_name": "eye_expr_smile",
       "source_path": "parts/eye_expr_smile.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/eye_expr/eye_expr_smile.png",
+      "original_source_path": "experiments/autorig-character-004/eye_expr/eye_expr_smile.png",
       "bbox": [
         838,
         291,
@@ -596,7 +596,7 @@
       "id": "eye_expr_wink",
       "display_name": "eye_expr_wink",
       "source_path": "parts/eye_expr_wink.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/eye_expr/eye_expr_wink.png",
+      "original_source_path": "experiments/autorig-character-004/eye_expr/eye_expr_wink.png",
       "bbox": [
         838,
         291,
@@ -612,7 +612,7 @@
       "id": "eye_expr_surprise",
       "display_name": "eye_expr_surprise",
       "source_path": "parts/eye_expr_surprise.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/eye_expr/eye_expr_surprise.png",
+      "original_source_path": "experiments/autorig-character-004/eye_expr/eye_expr_surprise.png",
       "bbox": [
         838,
         291,
@@ -628,7 +628,7 @@
       "id": "eye_expr_jito",
       "display_name": "eye_expr_jito",
       "source_path": "parts/eye_expr_jito.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/eye_expr/eye_expr_jito.png",
+      "original_source_path": "experiments/autorig-character-004/eye_expr/eye_expr_jito.png",
       "bbox": [
         838,
         291,
@@ -644,7 +644,7 @@
       "id": "eye_expr_squeeze",
       "display_name": "eye_expr_squeeze",
       "source_path": "parts/eye_expr_squeeze.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/eye_expr/eye_expr_squeeze.png",
+      "original_source_path": "experiments/autorig-character-004/eye_expr/eye_expr_squeeze.png",
       "bbox": [
         838,
         291,
@@ -660,7 +660,7 @@
       "id": "eye_expr_heart",
       "display_name": "eye_expr_heart",
       "source_path": "parts/eye_expr_heart.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/eye_expr/eye_expr_heart.png",
+      "original_source_path": "experiments/autorig-character-004/eye_expr/eye_expr_heart.png",
       "bbox": [
         838,
         291,
@@ -676,7 +676,7 @@
       "id": "accent_blush",
       "display_name": "accent_blush",
       "source_path": "parts/accent_blush.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/accents/accent_blush.png",
+      "original_source_path": "experiments/autorig-character-004/accents/accent_blush.png",
       "bbox": [
         881,
         447,
@@ -692,7 +692,7 @@
       "id": "accent_tear",
       "display_name": "accent_tear",
       "source_path": "parts/accent_tear.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/accents/accent_tear.png",
+      "original_source_path": "experiments/autorig-character-004/accents/accent_tear.png",
       "bbox": [
         1146,
         425,
@@ -740,7 +740,7 @@
       "id": "hair_front_L",
       "display_name": "hair_front_L",
       "source_path": "parts/hair_front_L.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/hair_chunks/hair_front_L.png",
+      "original_source_path": "experiments/autorig-character-004/hair_chunks/hair_front_L.png",
       "bbox": [
         800,
         93,
@@ -756,7 +756,7 @@
       "id": "hair_front_C",
       "display_name": "hair_front_C",
       "source_path": "parts/hair_front_C.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/hair_chunks/hair_front_C.png",
+      "original_source_path": "experiments/autorig-character-004/hair_chunks/hair_front_C.png",
       "bbox": [
         885,
         93,
@@ -772,7 +772,7 @@
       "id": "hair_front_R",
       "display_name": "hair_front_R",
       "source_path": "parts/hair_front_R.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/hair_chunks/hair_front_R.png",
+      "original_source_path": "experiments/autorig-character-004/hair_chunks/hair_front_R.png",
       "bbox": [
         1028,
         100,
@@ -788,7 +788,7 @@
       "id": "accent_gloom",
       "display_name": "accent_gloom",
       "source_path": "parts/accent_gloom.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/accents/accent_gloom.png",
+      "original_source_path": "experiments/autorig-character-004/accents/accent_gloom.png",
       "bbox": [
         942,
         123,
@@ -804,7 +804,7 @@
       "id": "accent_sweat",
       "display_name": "accent_sweat",
       "source_path": "parts/accent_sweat.png",
-      "original_source_path": "/Users/family/jason/Vtube/experiments/autorig-character-004/accents/accent_sweat.png",
+      "original_source_path": "experiments/autorig-character-004/accents/accent_sweat.png",
       "bbox": [
         1185,
         288,
@@ -39448,9 +39448,30 @@
       "edge_pinned": false
     },
     {
-      "id": "body_warp",
+      "id": "torso_turn_warp",
       "type": "warp",
       "parent_id": "root_warp",
+      "child_ids": [],
+      "bounds": [
+        464,
+        364,
+        1113,
+        707
+      ],
+      "pivot": [
+        1020,
+        718
+      ],
+      "lattice": {
+        "cols": 2,
+        "rows": 2
+      },
+      "edge_pinned": false
+    },
+    {
+      "id": "body_warp",
+      "type": "warp",
+      "parent_id": "torso_turn_warp",
       "child_ids": [
         "neck_under",
         "raw_footwear",
@@ -39541,8 +39562,7 @@
         "ear_inner",
         "raw_eyewear",
         "accent_gloom",
-        "accent_sweat",
-        "nose_warp"
+        "accent_sweat"
       ],
       "bounds": [
         765,
@@ -39668,6 +39688,29 @@
       "edge_pinned": true
     },
     {
+      "id": "nose_warp",
+      "type": "warp",
+      "parent_id": "head_angle_warp",
+      "child_ids": [
+        "nose_reference"
+      ],
+      "bounds": [
+        971,
+        411,
+        85,
+        95
+      ],
+      "pivot": [
+        1014,
+        458
+      ],
+      "lattice": {
+        "cols": 2,
+        "rows": 2
+      },
+      "edge_pinned": false
+    },
+    {
       "id": "front_hair_warp",
       "type": "warp",
       "parent_id": "head_angle_warp",
@@ -39713,29 +39756,6 @@
       "lattice": {
         "cols": 5,
         "rows": 5
-      },
-      "edge_pinned": false
-    },
-    {
-      "id": "nose_warp",
-      "type": "warp",
-      "parent_id": "head_angle_warp",
-      "child_ids": [
-        "nose_reference"
-      ],
-      "bounds": [
-        971,
-        411,
-        85,
-        95
-      ],
-      "pivot": [
-        1013,
-        458
-      ],
-      "lattice": {
-        "cols": 2,
-        "rows": 2
       },
       "edge_pinned": false
     }
@@ -40229,6 +40249,114 @@
           1.0
         ],
         "rotate": 10,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleX",
+      "key_value": -30,
+      "target_id": "head_z_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.88,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleX",
+      "key_value": 30,
+      "target_id": "head_z_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.88,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleY",
+      "key_value": -30,
+      "target_id": "head_z_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          0.85
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleY",
+      "key_value": 30,
+      "target_id": "head_z_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          0.85
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleX",
+      "key_value": -30,
+      "target_id": "torso_turn_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.96,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleX",
+      "key_value": 30,
+      "target_id": "torso_turn_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.96,
+          1.0
+        ],
+        "rotate": 0,
         "opacity": 1
       }
     },
@@ -40899,6 +41027,114 @@
       }
     },
     {
+      "parameter_id": "ParamAngleX",
+      "key_value": 30,
+      "target_id": "eye_R_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.82,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleX",
+      "key_value": -30,
+      "target_id": "eye_L_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.82,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleX",
+      "key_value": 30,
+      "target_id": "mouth_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          6,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleX",
+      "key_value": -30,
+      "target_id": "mouth_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          -6,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleX",
+      "key_value": 30,
+      "target_id": "nose_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          8,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
+      "parameter_id": "ParamAngleX",
+      "key_value": -30,
+      "target_id": "nose_warp",
+      "delta_type": "deformer_transform",
+      "deltas": {
+        "translate": [
+          -8,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rotate": 0,
+        "opacity": 1
+      }
+    },
+    {
       "parameter_id": "ParamBodyAngleX",
       "key_value": -10,
       "target_id": "body_warp",
@@ -41109,186 +41345,6 @@
         "scale": [
           1.0,
           1.0
-        ],
-        "rotate": 0,
-        "opacity": 1
-      }
-    },
-    {
-      "parameter_id": "ParamAngleX",
-      "key_value": -30,
-      "target_id": "head_z_warp",
-      "delta_type": "deformer_transform",
-      "deltas": {
-        "translate": [
-          0.0,
-          0.0
-        ],
-        "scale": [
-          0.88,
-          1.0
-        ],
-        "rotate": 0,
-        "opacity": 1
-      }
-    },
-    {
-      "parameter_id": "ParamAngleX",
-      "key_value": 30,
-      "target_id": "head_z_warp",
-      "delta_type": "deformer_transform",
-      "deltas": {
-        "translate": [
-          0.0,
-          0.0
-        ],
-        "scale": [
-          0.88,
-          1.0
-        ],
-        "rotate": 0,
-        "opacity": 1
-      }
-    },
-    {
-      "parameter_id": "ParamAngleX",
-      "key_value": 30,
-      "target_id": "eye_R_warp",
-      "delta_type": "deformer_transform",
-      "deltas": {
-        "translate": [
-          0.0,
-          0.0
-        ],
-        "scale": [
-          0.82,
-          1.0
-        ],
-        "rotate": 0,
-        "opacity": 1
-      }
-    },
-    {
-      "parameter_id": "ParamAngleX",
-      "key_value": -30,
-      "target_id": "eye_L_warp",
-      "delta_type": "deformer_transform",
-      "deltas": {
-        "translate": [
-          0.0,
-          0.0
-        ],
-        "scale": [
-          0.82,
-          1.0
-        ],
-        "rotate": 0,
-        "opacity": 1
-      }
-    },
-    {
-      "parameter_id": "ParamAngleX",
-      "key_value": 30,
-      "target_id": "mouth_warp",
-      "delta_type": "deformer_transform",
-      "deltas": {
-        "translate": [
-          6,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0
-        ],
-        "rotate": 0,
-        "opacity": 1
-      }
-    },
-    {
-      "parameter_id": "ParamAngleX",
-      "key_value": -30,
-      "target_id": "mouth_warp",
-      "delta_type": "deformer_transform",
-      "deltas": {
-        "translate": [
-          -6,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0
-        ],
-        "rotate": 0,
-        "opacity": 1
-      }
-    },
-    {
-      "parameter_id": "ParamAngleX",
-      "key_value": 30,
-      "target_id": "nose_warp",
-      "delta_type": "deformer_transform",
-      "deltas": {
-        "translate": [
-          8,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0
-        ],
-        "rotate": 0,
-        "opacity": 1
-      }
-    },
-    {
-      "parameter_id": "ParamAngleX",
-      "key_value": -30,
-      "target_id": "nose_warp",
-      "delta_type": "deformer_transform",
-      "deltas": {
-        "translate": [
-          -8,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0
-        ],
-        "rotate": 0,
-        "opacity": 1
-      }
-    },
-    {
-      "parameter_id": "ParamAngleY",
-      "key_value": -30,
-      "target_id": "head_z_warp",
-      "delta_type": "deformer_transform",
-      "deltas": {
-        "translate": [
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          0.85
-        ],
-        "rotate": 0,
-        "opacity": 1
-      }
-    },
-    {
-      "parameter_id": "ParamAngleY",
-      "key_value": 30,
-      "target_id": "head_z_warp",
-      "delta_type": "deformer_transform",
-      "deltas": {
-        "translate": [
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          0.85
         ],
         "rotate": 0,
         "opacity": 1

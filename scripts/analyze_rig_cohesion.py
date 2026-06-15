@@ -207,11 +207,17 @@ def main() -> int:
                     failures.append(row)
 
     rows.sort(key=lambda r: -r["mean_px"])
+    # 정점 키폼(볼 등) 파트는 메시 정점 보간이라 이 seam-점 해석 재현 밖 — 침묵 갭 방지 경고.
+    # (런타임 캡처 pose_sweep/capture_pose가 실제 렌더로 검증함. ANGLE-FORESHORTEN R3 자기리뷰)
+    vk_parts = sorted({m["part_id"] for m in character.get("meshes", []) if m.get("vertex_keyforms")})
     status = "FAIL" if (args.check and failures) else "PASS"
     write_json(out / "rig_cohesion_report.json", {
         "generated_at": now_iso(), "project": str(project), "status": status,
         "checked_rows": len(rows), "failures": failures, "worst": rows[:20],
+        "vertex_keyform_parts_not_analytically_covered": vk_parts,
     })
+    if vk_parts:
+        print(f"[경고] 정점키폼 파트 {vk_parts} — 해석 게이트 밖, 런타임 캡처로 검증 필요")
     print(f"{'쌍':28s} {'파라미터':16s} {'값':>5s} {'mean':>7s} {'max':>7s} {'허용':>5s}")
     for r in rows[:14]:
         flag = "" if r["ok"] else "  ← FAIL"
